@@ -1,6 +1,8 @@
 ﻿l_english:
  G01:0 "Powiat Krakowski"
  G01_ADJ:0 "Cracovian"
+ G02:0 "Powiat Szczecinecki"
+ G02_ADJ:0 "Szczecinecki"
  ADA:0 "Adal"
  ADE:1 "Aden"
  AKK:0 "Aq Qoyunlu"
