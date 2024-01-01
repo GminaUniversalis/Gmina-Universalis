@@ -1,0 +1,16 @@
+better_workspace = {
+	build_cost = -0.15
+	build_time = -0.20
+}
+great_army = 
+{
+	local_friendly_movement_speed = 0.1
+	manpower_recovery_speed = 0.1
+}
+great_victory ={
+	land_morale = 0.1
+	core_creation = -0.15
+}
+great_diplomacy ={
+	ae_impact = -0.15
+}

@@ -1,0 +1,226 @@
+G02_develop ={ 
+	slot = 1
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = G02
+	}
+	has_country_shield = yes
+	
+	develop_Szczecinek = {
+		icon = mission_colonial
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 1
+		}
+			trigger = {
+				1 = {
+					development = 30
+				    }
+				 	  }
+					   effect = {
+						add_prestige = 25
+						add_legitimacy = 25
+						add_country_modifier = {
+							name = better_workspace
+							duration = 3650
+						}
+					}
+}	
+	develop_Szczecinek_2 = {
+		icon = mission_eastern_european_city
+		required_missions = { develop_Szczecinek }
+		provinces_to_highlight = {
+			province_id = 1
+		}
+		trigger = {
+			1 = {
+						has_building = marketplace
+						has_building = workshop
+			}
+		}
+		effect = {
+			1 = {
+			remove_building = marketplace
+			add_building = trade_depot
+			}
+		}
+}
+	develop_Szczecinek_3 = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { develop_Szczecinek_2 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+		}
+	}
+	develop_Szczecinek_4 = {
+		icon = mission_have_manufactories
+		required_missions = { develop_Szczecinek_3 }
+		trigger = {
+			calc_true_if = {
+				desc = build_manufactories_mission_tooltip
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "proto_industrialization"
+				duration = -1
+			}
+		}
+	}
+}
+G02_conquest ={
+	slot = 3
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = G02
+	}
+	has_country_shield = yes
+	conquest_Szczecinek = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		trigger = { grown_by_development = 50 }
+		effect = {
+			add_yearly_manpower = 3
+		}
+	}
+	conquest_Szczecinek_2 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { conquest_Szczecinek }
+		trigger = {
+			army_size_percentage = 1 
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "great_army"
+				duration = -1
+			}
+		}
+	}
+}
+G02_conquest_2 ={
+	slot = 2
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = G02
+	}
+	has_country_shield = yes
+
+	conquest_Szczecinek_3 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { conquest_Szczecinek_2 }
+		position = 3
+		trigger = {
+			4370={
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "great_victory"
+				duration = 3650
+			}
+
+		}
+
+	}
+}
+G02_conquest_4 ={
+	slot = 4
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = G02
+	}
+	has_country_shield = yes
+
+	conquest_Szczecinek_4 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { conquest_Szczecinek_2 }
+		position = 3
+		trigger = {
+			1746={
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "great_victory"
+				duration = 3650
+			}
+
+		}
+
+	}
+}
+G02_diplomacy ={
+		slot = 5
+		generic = no
+		ai = yes
+	
+		potential = {
+			tag = G02
+		}
+		has_country_shield = yes
+		diplomacy_Szczecinek ={
+		icon = mission_alliances
+		required_missions = {  }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = building_alliances.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "great_diplomacy"
+				duration = 5475
+			}
+		}
+		}
+
+}
+
+
