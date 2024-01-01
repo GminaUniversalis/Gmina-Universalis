@@ -1,0 +1,78 @@
+		G01_ideas = {
+	start = {
+		trade_efficiency = 0.15
+		improve_relation_modifier = 0.2
+		
+	}
+	
+	bonus = {
+		global_ship_trade_power = 0.2
+	}	
+
+	trigger = {
+		tag = G01
+	}
+	free = yes
+	
+	Cracovian_Metro = {
+		movement_speed = 0.15
+	}
+	Old_City = {
+		prestige = 1
+	}
+	City_of_Trade = {
+		global_trade_power = 0.1
+		burghers_loyalty_modifier = 0.1
+	}
+	Cracovian_Churches = {
+		tolerance_own = 2
+	}
+	Wawel = {
+		defensiveness = 0.2
+		hostile_attrition = 0.5
+	}
+	Kombinat = {
+		production_efficiency = 0.2
+	}
+	Cracovian_Machetes = {
+		infantry_power = 0.20
+	}
+}
+		G02_ideas = {
+			start = {
+				idea_cost = -0.1
+				discipline = 0.05
+			}
+
+			bonus = {
+				fire_damage_received = -0.10
+			}
+			
+			trigger = {
+				tag = G02
+			}
+			free = yes
+
+			Pomeranian_Wall_Museum = {
+				defensiveness = 0.15
+			}
+			Pomeranian_Dukes_Castle = {
+				legitimacy = 1
+			}
+			Church_of_Mary = 
+			{
+				tolerance_own = 2
+			}
+			Bismarck_Tower = {
+				culture_conversion_cost = -0.15
+			}
+			Kaulfuss_Monument = {
+				technology_cost = -0.1
+			}
+			Post-Soviet_Barracks = {
+				land_forcelimit_modifier = 0.15
+			}
+			Citizen_Wlapko = {
+				global_unrest = -2
+			}
+		}
