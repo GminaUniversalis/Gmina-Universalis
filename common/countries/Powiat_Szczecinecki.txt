@@ -1,8 +1,10 @@
 #Country Name: Please see filename.
+
 graphical_culture = westerngfx
 color = { 130 1 130 }
 revolutionary_colors = { 50 10 130 }
 monarch_names = { 
+
 	"Marian #0" = 45
 	"Daniel #0" = 50
 	"Jerzy #0" = 25
