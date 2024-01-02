@@ -1,0 +1,14 @@
+#Borne Sulinowo
+owner = G02
+controller = G02
+culture = zachodniopomorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = gu_vodka
+base_manpower = 1
+capital = "Borne Sulinowo"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+add_core = G02

@@ -1,0 +1,15 @@
+#1783 - Eastern Siberia
+religion = catholic
+is_city = yes
+add_core = G01
+owner = G01
+controller = G01
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Rutki"
+is_city = yes
+culture = podlaska
+discovered_by = western
+discovered_by = eastern

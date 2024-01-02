@@ -1,0 +1,12 @@
+#4328 - Chagai
+1673.1.1 = { discovered_by = ENG }
+1677.1.1 = { discovered_by = FRA }
+1707.5.12 = { discovered_by = GBR }
+add_core = G01
+owner = G01
+culture = lodzka
+religion = catholic
+controller = G01
+is_city = no
+discovered_by = western
+discovered_by = eastern

@@ -1,14 +1,10 @@
 #Country Name: Please see filename.
 
 graphical_culture = westerngfx
-
-color = { 130  1  130 }
-
+color = { 130 1 130 }
 revolutionary_colors = { 50 10 130 }
+monarch_names = { 
 
-
-
-monarch_names = {
 	"Marian #0" = 45
 	"Daniel #0" = 50
 	"Jerzy #0" = 25
@@ -21,24 +17,14 @@ monarch_names = {
 	"Oktawian #0" = 1
 	"Szymon #0" = 20
 	"Andrzej #0" = 12
-
-
-	
 }
-
-leader_names = {
-
+leader_names = { 
 }
-
-ship_names = {
-
+ship_names = { 
 }
-
-
-army_names = {
+army_names = { 
 	"Armee von $PROVINCE$" 
 }
-
-fleet_names = {
-	"Stadtflotte"
+fleet_names = { 
+	"Stadtflotte" 
 }

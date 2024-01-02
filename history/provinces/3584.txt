@@ -1,0 +1,9 @@
+discovered_by = western
+discovered_by = eastern
+is_city = no
+culture = lubelska
+trade_goods = gu_mushrooms
+religion = catholic
+add_core = G01
+owner = G01
+controller = G01
