@@ -1,0 +1,8 @@
+#4276 - Jabal Tubaiq
+1507.9.1 = { discovered_by = POR }
+add_core = G01
+owner = G01
+culture = podlaska
+religion = catholic
+controller = G01
+is_city = no

@@ -1,0 +1,14 @@
+#Siennica Rozana
+add_core = G01
+owner = G01
+controller = G01
+culture = podlaska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Siennica Rozana"
+is_city = yes
+discovered_by = western
+discovered_by = eastern

@@ -1,0 +1,8 @@
+discovered_by = south_american
+1593.1.1 = { discovered_by = SPA }
+add_core = G01
+owner = G01
+culture = zielonogorska
+religion = catholic
+controller = G01
+is_city = no

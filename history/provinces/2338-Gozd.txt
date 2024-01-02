@@ -1,0 +1,14 @@
+#Gozd
+add_core = G01
+owner = G01
+controller = G01
+culture = warszawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Gozd"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
