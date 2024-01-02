@@ -1316,7 +1316,12 @@ gu_mushrooms = {
 		supply_limit = 6
 	}
 	chance = {
-		factor = 0
+		factor = 30
+
+		modifier = {
+			factor = 0
+			NOT = { has_terrain = forest }
+		}
 	}
 }
 
@@ -1329,7 +1334,12 @@ gu_fruits = {
 		local_manpower_modifier = 0.25
 	}
 	chance = {
-		factor = 0
+		factor = 10
+
+		modifier = {
+			factor = 3
+			has_terrain = grasslands
+		}
 	}
 }
 
@@ -1342,7 +1352,12 @@ gu_vegetables = {
 		supply_limit_modifier = 0.3
 	}
 	chance = {
-		factor = 0
+		factor = 10
+
+		modifier = {
+			factor = 3
+			has_terrain = farmlands
+		}
 	}
 }
 
@@ -1355,7 +1370,7 @@ gu_dairy = {
 		local_defensiveness = 0.15
 	}
 	chance = {
-		factor = 0
+		factor = 5
 	}
 }
 
@@ -1381,7 +1396,12 @@ gu_lumber = {
 		local_build_cost = -0.20
 	}
 	chance = {
-		factor = 0
+		factor = 30
+
+		modifier = {
+			factor = 0
+			NOT = { has_terrain = forest }
+		}
 	}
 }
 
@@ -1394,7 +1414,7 @@ gu_stone = {
 		local_development_cost = -0.1
 	}
 	chance = {
-		factor = 0
+		factor = 3
 	}
 }
 
@@ -1407,7 +1427,7 @@ gu_apiculture = {
 		local_garrison_size = 0.15
 	}
 	chance = {
-		factor = 0
+		factor = 3
 	}
 }
 
@@ -1420,7 +1440,7 @@ gu_horses = {
 		local_movement_speed = 0.20
 	}
 	chance = {
-		factor = 0
+		factor = 5
 	}
 }
 
@@ -1459,7 +1479,7 @@ gu_vodka = {
 		local_unrest = -2
 	}
 	chance = {
-		factor = 0
+		factor = 5
 	}
 }
 
@@ -1480,6 +1500,10 @@ gu_ceramics = {
 	color = { 0 1 0.79 }
 	modifier = {
 		legitimacy = 0.25
+		devotion = 0.25
+		horde_unity = 0.25
+		republican_tradition = 0.12
+		meritocracy = 0.1
 	}
 	province = {
 		local_autonomy = -0.1
@@ -1498,7 +1522,7 @@ gu_hemp = {
 		local_hostile_movement_speed = -0.2
 	}
 	chance = {
-		factor = 0
+		factor = 10
 	}
 }
 
@@ -1524,7 +1548,7 @@ gu_oil = {
 		trade_value_modifier = 0.10
 	}
 	chance = {
-		factor = 0
+		factor = 5
 	}
 }
 
