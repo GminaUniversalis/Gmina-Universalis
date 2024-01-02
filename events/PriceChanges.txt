@@ -399,59 +399,6 @@ country_event = {
 }
 
 
-# Changing Patterns of Consumption
-country_event = {
-	id = prices.23
-	title = prices.23.t
-	desc = prices.23.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		OR = {
-			capital_scope = { continent = europe }
-			AND = {
-				any_owned_province = { continent = europe }
-				dip_tech = 25
-			}
-		}
-		sugar = 5
-		dip_tech = 20
-		OR = {
-			trading_part = {
-				trade_goods = cocoa
-				value = 0.05
-			}
-			trading_part = {
-				trade_goods = tea
-				value = 0.05
-			}
-			trading_part = {
-				trade_goods = coffee
-				value = 0.05
-			}
-		}
-		NOT = { has_global_flag = popularization_of_sugar_happened }
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	
-	option = {
-		name = prices.23.a
-		change_price = {
-			trade_goods = sugar
-			key = POPULARIZATION_OF_SUGAR
-			value = 0.5
-			duration = -1
-		}
-	}
-}
-
 # Development of Ironworking
 country_event = {
 	id = prices.28
