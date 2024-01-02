@@ -103,16 +103,8 @@ G02_conquest ={
 	}
 	has_country_shield = yes
 	conquest_Szczecinek = {
-		icon = mission_conquer_50_development
-		required_missions = { }
-		trigger = { grown_by_development = 50 }
-		effect = {
-			add_yearly_manpower = 3
-		}
-	}
-	conquest_Szczecinek_2 = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { conquest_Szczecinek }
+		required_missions = {}
 		trigger = {
 			army_size_percentage = 1 
 		}
@@ -121,8 +113,68 @@ G02_conquest ={
 				name = "great_army"
 				duration = -1
 			}
+				Powiat_koszalinski = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				Powiat_drawski = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
 		}
 	}
+	conquest_Szczecinek_2 = {
+		icon = mission_conquer_50_development
+		required_missions = { conquest_Szczecinek }
+		trigger = { grown_by_development = 50 }
+		effect = {
+			add_yearly_manpower = 3
+		}
+	}
+	
+	conquest_Szczecinek_7 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { conquest_Szczecinek_6
+							  conquest_Szczecinek_5
+							  conquest_Szczecinek_2 }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 237
+			province_id = 4552
+		}
+		trigger = { 
+			4552={
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				}
+			237={
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			}
+
+		}
+		effect = { 
+			2978 = {
+				owner = {
+				  root = {
+					declare_war_with_cb = {
+						who = PREV
+						casus_belli = cb_restore_personal_union
+				  }
+				}
+			  }
+
+		}
+	}
+}
 }
 G02_conquest_2 ={
 	slot = 2
@@ -138,6 +190,9 @@ G02_conquest_2 ={
 		icon = mission_build_up_to_force_limit
 		required_missions = { conquest_Szczecinek_2 }
 		position = 3
+		provinces_to_highlight = {
+			province_id = 4370
+		}
 		trigger = {
 			4370={
 			type = all
@@ -149,6 +204,39 @@ G02_conquest_2 ={
 			add_country_modifier = {
 				name = "great_victory"
 				duration = 3650
+			}
+			Powiat_kolobrzeski = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+		}
+
+	}
+	conquest_Szczecinek_5 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { conquest_Szczecinek_3 }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 48
+		}
+		trigger = {
+			48={
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			}
+		}
+		effect = { 
+			Powiat_bialogardzki = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
 
 		}
@@ -169,6 +257,9 @@ G02_conquest_4 ={
 		icon = mission_build_up_to_force_limit
 		required_missions = { conquest_Szczecinek_2 }
 		position = 3
+		provinces_to_highlight = {
+			province_id = 1746
+		}
 		trigger = {
 			1746={
 			type = all
@@ -180,6 +271,43 @@ G02_conquest_4 ={
 			add_country_modifier = {
 				name = "great_victory"
 				duration = 3650
+			}
+			Powiat_swidwinski = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+		}
+
+	}
+	conquest_Szczecinek_6 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { conquest_Szczecinek_4 }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 4551
+		}
+		trigger = {
+			4551={
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "great_victory"
+				duration = 3650
+			}
+			Powiat_lobeski = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
 
 		}
@@ -219,6 +347,22 @@ G02_diplomacy ={
 				duration = 5475
 			}
 		}
+		}
+		diplomacy_Szczecinek_2={
+			icon = mission_diplomatic_relation
+			required_missions = {
+				diplomacy_Szczecinek
+			}
+			trigger = {
+				num_of_non_tributary_subjects = 1
+			}
+
+			effect = {
+				add_country_modifier ={
+					name = "better_overlord"
+					duration=-1
+				}
+			}
 		}
 
 }
