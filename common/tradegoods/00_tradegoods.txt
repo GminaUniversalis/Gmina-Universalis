@@ -1480,6 +1480,10 @@ gu_ceramics = {
 	color = { 0 1 0.79 }
 	modifier = {
 		legitimacy = 0.25
+		devotion = 0.25
+		horde_unity = 0.25
+		republican_tradition = 0.12
+		meritocracy = 0.1
 	}
 	province = {
 		local_autonomy = -0.1
