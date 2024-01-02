@@ -28,3 +28,4 @@ G01 = "countries/Powiat_Krakowski.txt"
 #Wielkopolskie
 
 #Zachodniopomorskie
+G02 = "countries/Powiat_Szczecinecki.txt"
