@@ -620,7 +620,7 @@
  gu_sulfur:0 "Sulfur"
  gu_sulfurDESC:0 "Sulfur, due to its properties, quickly became an object of human interest. In ancient times, the combustible properties of sulfur were used to disinfect and prevent pestilence. Even then, it was also noted that bathing in springs from which sulfur was emitted had healing properties and beneficial effects on the skin and nervous system. Sulfur smoke was also used to oxidize barrels for storing wine. After the invention of firearms, sulfur gained great importance as an ingredient in gunpowder."
  gu_oil:0 "Oil"
- gu_oilDESC:0 ""Oil, a widely traded commodity, is a versatile and widely used product in various industries due to its unique properties and taste.""
+ gu_oilDESC:0 "Oil, a widely traded commodity, is a versatile and widely used product in various industries due to its unique properties and taste."
  NONE:0 " "
  REGIMENT_SIZE:0 "§Y$SIZE$§! men\n"
  REGIMENT_STRENGTH:0 "Regiment Strength: §Y$VALUE$§W"
