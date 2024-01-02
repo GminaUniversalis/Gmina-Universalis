@@ -6,3 +6,4 @@ culture = kielecko-radomska
 religion = catholic
 controller = G01
 is_city = no
+discovered_by = eastern

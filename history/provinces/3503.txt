@@ -1,0 +1,9 @@
+add_core = G01
+discovered_by = western
+discovered_by = eastern
+owner = G01
+culture = trojmiasto
+religion = catholic
+controller = G01
+is_city = no
+trade_goods = gu_amber

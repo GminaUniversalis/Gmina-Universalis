@@ -1,0 +1,9 @@
+add_core = G01
+discovered_by = western
+discovered_by = eastern
+owner = G01
+culture = mazurska
+trade_goods = unknown
+religion = catholic
+controller = G01
+is_city = no

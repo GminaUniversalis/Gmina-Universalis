@@ -1,9 +1,5 @@
-discovered_by = north_american
-
-
-
-
-1692.1.1 = {	discovered_by = ENG } #Henry Kelsey
+1692.1.1 = { discovered_by = ENG }
 1707.5.12 = { discovered_by = GBR }
 1732.1.1 = { discovered_by = FRA }
-
+discovered_by = western
+discovered_by = eastern

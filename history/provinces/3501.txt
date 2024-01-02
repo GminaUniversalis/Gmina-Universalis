@@ -1,0 +1,8 @@
+discovered_by = western
+discovered_by = eastern
+culture = lubelska
+is_city = no
+add_core = G01
+owner = G01
+trade_goods = gu_hemp
+controller = G01

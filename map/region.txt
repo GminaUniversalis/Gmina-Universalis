@@ -14,22 +14,22 @@ Swietokrzyskie = {
 }
 Lubelskie = { 
 	areas = { 
-		Powiat_pulawski Powiat_tomaszowski Powiat_janowski Powiat_krasnicki Powiat_opolski Powiat_lubartowski Powiat_radzynski Powiat_parczewski Powiat_wlodawski Powiat_bialski
-		Powiat_leczynski Powiat_swidnicki Powiat_lubelski Powiat_krasnostawski Powiat_zamojski Powiat_chelmski Powiat_hrubieszowski Powiat_lukowski Powiat_rycki Powiat_bilgorajski
+		Powiat_pulawski Powiat_tomaszowski Powiat_janowski Powiat_krasnicki Powiat_opolski Powiat_radzynski Powiat_parczewski Powiat_wlodawski Powiat_bialski Powiat_leczynski
+		Powiat_swidnicki Powiat_lubelski Powiat_krasnostawski Powiat_chelmski Powiat_hrubieszowski Powiat_lukowski Powiat_rycki Powiat_lubartowski Powiat_zamojski Powiat_bilgorajski
 	}
 }
 Podkarpackie = { 
 	areas = { 
 		Powiat_tarnobrzeski Powiat_debnicki Powiat_mielecki Powiat_stalowowolski Powiat_nizanski Powiat_kolbuszowski Powiat_lezajski Powiat_lancuski Powiat_ropczycko_sedziszowski Powiat_jasielski
-		Powiat_strzyzowski Powiat_przeworski Powiat_rzeszowski Powiat_lubaczowski Powiat_jaroslawski Powiat_przemyski Powiat_sanocki Powiat_leski Powiat_bieszczadzki Powiat_krosnienski
+		Powiat_przeworski Powiat_rzeszowski Powiat_lubaczowski Powiat_jaroslawski Powiat_przemyski Powiat_sanocki Powiat_leski Powiat_bieszczadzki Powiat_strzyzowski Powiat_krosnienski
 	}
 }
 Mazowieckie = { 
 	areas = { 
-		Powiat_zurominski Powiat_mlawski Powiat_przasnyski Powiat_ciechanowski Powiat_plonski Powiat_sochaczewski Powiat_warszawski_zachodni Powiat_legionowski Powiat_pultuski Powiat_makowski
-		Powiat_ostrolecki Powiat_wyszkowski Powiat_wolominski Powiat_Warszawa Powiat_zyrardów Powiat_grodziski Powiat_pruszkowski Powiat_piaseczynski Powiat_grójecki Powiat_bialobrzeski
-		Powiat_przysuski Powiat_radomski Powiat_szydlowiecki Powiat_lipski Powiat_zwolenski Powiat_kozienicki Powiat_otwocki Powiat_garwolinski Powiat_minski Powiat_siedlecki
-		Powiat_sokolowski Powiat_wegrowski Powiat_ostrowski Powiat_losicki Powiat_sierpecki Powiat_gostyninski Powiat_plocki Powiat_nowodworski 
+		Powiat_zurominski Powiat_mlawski Powiat_przasnyski Powiat_ciechanowski Powiat_plonski Powiat_sochaczewski Powiat_warszawski_zachodni Powiat_legionowski Powiat_makowski Powiat_ostrolecki
+		Powiat_wyszkowski Powiat_wolominski Powiat_Warszawa Powiat_zyrardów Powiat_grodziski Powiat_pruszkowski Powiat_piaseczynski Powiat_grójecki Powiat_bialobrzeski Powiat_przysuski
+		Powiat_radomski Powiat_szydlowiecki Powiat_lipski Powiat_zwolenski Powiat_kozienicki Powiat_otwocki Powiat_garwolinski Powiat_minski Powiat_siedlecki Powiat_sokolowski
+		Powiat_wegrowski Powiat_ostrowski Powiat_losicki Powiat_sierpecki Powiat_gostyninski Powiat_plocki Powiat_pultuski Powiat_nowodworski 
 	}
 }
 Podlasie = { 
@@ -46,8 +46,8 @@ Zachodnio-Pomorskie = {
 }
 Pomorskie = { 
 	areas = { 
-		Powiat_bytowski Powiat_slupski Powiat_kartuski Powiat_koscierski Powiat_starogardzki Powiat_tczewski Powiat_malborski Powiat_sztumski Powiat_kwidzynski Powiat_gdanski
-		Trójmiasto Powiat_wejherowski Powiat_pucki Powiat_leborski Powiat_chojnicki powiat_czluchowski powiat_nowodworski 
+		Powiat_bytowski Powiat_slupski Powiat_kartuski Powiat_koscierski Powiat_starogardzki Powiat_tczewski Powiat_sztumski Powiat_kwidzynski Powiat_gdanski Trójmiasto
+		Powiat_wejherowski Powiat_pucki Powiat_leborski Powiat_chojnicki powiat_czluchowski Powiat_nowodworski Powiat_malborski powiat_nowodworski 
 	}
 }
 Kujawsko-Pomorskie = { 
@@ -58,8 +58,8 @@ Kujawsko-Pomorskie = {
 }
 Lubuskie = { 
 	areas = { 
-		powiat_wschowski powiat_nowosolski powiat_zaganski powiat_zielonogorski powiat_swiebodzinski powiat_slubnicki powiat_sulecinski powiat_miedzyrzecki Powiat_strzelecko-drezdenecki powiat_gorzowski
-		powiat_zarski powiat_krosnienski 
+		powiat_wschowski powiat_nowosolski powiat_zaganski powiat_zielonogorski powiat_swiebodzinski powiat_sulecinski powiat_miedzyrzecki Powiat_strzelecko-drezdenecki powiat_gorzowski powiat_zarski
+		powiat_slubnicki powiat_krosnienski 
 	}
 }
 Wielkopolska = { 
@@ -72,15 +72,15 @@ Wielkopolska = {
 }
 Warminsko-Mazurskie = { 
 	areas = { 
-		Powiat_nowomiejski Powiat_ostrodzki Powiat_ilawski Powiat_dzialdowski Powiat_elblaski Powiat_lidzbarski Powiat_nidzicki Powiat_szczycienski Powiat_mragowski Powiat_piski
-		Powiat_elcki Powiat_suwalski Powiat_olecki Powiat_goldapski Powiat_gizycki Powiat_wegorzewski Powiat_olsztynski Powiat_bartoszycki Powiat_ketrzynski Powiat_braniewski
+		Powiat_nowomiejski Powiat_ilawski Powiat_dzialdowski Powiat_elblaski Powiat_lidzbarski Powiat_nidzicki Powiat_szczycienski Powiat_mragowski Powiat_piski Powiat_elcki
+		Powiat_suwalski Powiat_olecki Powiat_goldapski Powiat_gizycki Powiat_wegorzewski Powiat_olsztynski Powiat_bartoszycki Powiat_ketrzynski Powiat_braniewski Powiat_ostrodzki
 	}
 }
 Lódzkie = { 
 	areas = { 
 		Powiat_laski Powiat_wieruszowski Powiat_wielunski Powiat_pajeczanski Powiat_radomszczanski Powiat_leczycki Powiat_kutnowski Powiat_poddebnicki Powiat_sieradzki Powiat_zdunskowolski
-		powiat_pabianicki Powiat_belchatowski Powiat_piotrkowski Powiat_lodzki Powiat_zgierski Powiat_lowicki Powiat_brzezinski Powiat_skierniewicki Powiat_rawski Powiat_tomaszowski_lodz
-		Powiat_opoczynski 
+		powiat_pabianicki Powiat_belchatowski Powiat_piotrkowski Powiat_lodzki Powiat_zgierski Powiat_brzezinski Powiat_skierniewicki Powiat_rawski Powiat_tomaszowski_lodz Powiat_opoczynski
+		Powiat_lowicki 
 	}
 }
 Dolnoslaskie = { 

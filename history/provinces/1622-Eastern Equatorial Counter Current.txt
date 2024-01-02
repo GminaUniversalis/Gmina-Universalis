@@ -1,9 +1,7 @@
-discovered_by = indian
-
-
-
-
 1405.1.1 = { discovered_by = MNG }
 1498.1.1 = { discovered_by = POR }
 1521.1.1 = { discovered_by = SPA }
-
+discovered_by = western
+discovered_by = eastern
+1444.11.11 = { 
+}

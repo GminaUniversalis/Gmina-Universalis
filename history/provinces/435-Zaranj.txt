@@ -2,9 +2,7 @@
 add_core = G01
 owner = G01
 controller = G01
-culture = polish
 religion = catholic
-hre = no
 base_tax = 1
 base_production = 1
 trade_goods = unknown
