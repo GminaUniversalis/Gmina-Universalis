@@ -36,8 +36,6 @@ Powiat_rzeszowski = {
 	2786 2789 2792 2094 1210 
 }
 Powiat_krosnienski = { 
-	4023 4048 4039 4020 4047 1947 1930 1203 4426 4427
-	1098 
 }
 Powiat_strzyzowski = { 
 	1204 2796 2794 2781 1798 
@@ -363,7 +361,6 @@ Powiat_legionowski = {
 	464 1988 2409 4183 4193 
 }
 Powiat_nowodworski = { 
-	1837 2425 4180 2413 2412 1017 
 }
 Powiat_gostyninski = { 
 	1857 4329 430 2223 2218 
@@ -502,7 +499,6 @@ Powiat_gdanski = {
 	199 987 4161 17 22 4144 4160 4157 
 }
 powiat_nowodworski = { 
-	8 18 9 4113 3503 
 }
 Powiat_elblaski = { 
 	2 999 25 1982 770 275 273 988 4745 4242
@@ -664,7 +660,6 @@ powiat_slubnicki = {
 	2828 2829 805 2947 743 
 }
 powiat_krosnienski = { 
-	2931 744 2889 2900 2933 803 800 
 }
 powiat_swiebodzinski = { 
 	810 811 1802 2822 2821 2833 
@@ -1029,4 +1024,17 @@ Bytom = {
 }
 Jaworzno = { 
 	4080 153 1149 1155 
+}
+Powiat_nowodworski_maz = { 
+	2425 1837 4180 1017 2412 2413 
+}
+Powiat_nowodworski_pom = { 
+	9 8 18 3503 4113 
+}
+powiat_krosnienski_lubu = { 
+	2889 2900 2933 803 800 744 2931 
+}
+Powiat_krosnienski_pod = { 
+	1203 4426 1098 1930 4047 1947 4020 4048 4039 4023
+	4427 
 }
