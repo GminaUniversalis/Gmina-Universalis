@@ -1,7 +1,4 @@
 #Czernichow
-add_core = G01
-owner = G01
-controller = G01
 culture = metropolia
 religion = catholic
 hre = yes

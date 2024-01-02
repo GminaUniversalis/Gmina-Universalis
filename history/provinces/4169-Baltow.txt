@@ -1,9 +1,7 @@
 #High Atlas
 discovered_by = western
-add_core = G01
-owner = G01
 culture = kielecko-radomska
 religion = catholic
-controller = G01
 is_city = no
 discovered_by = eastern
+trade_goods = unknown

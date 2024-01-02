@@ -1,12 +1,9 @@
 #Wieliczka
-add_core = G01
-owner = G01
-controller = G01
 culture = galicyjska
 religion = catholic
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = salt
 base_manpower = 1
 capital = "Wieliczka"
 is_city = yes

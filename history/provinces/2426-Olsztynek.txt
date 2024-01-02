@@ -1,10 +1,8 @@
 #2426 - Yamal
 1450.1.1 = { discovered_by = SIB }
 1581.1.1 = { discovered_by = RUS }
-add_core = G01
-owner = G01
 culture = mazurska
-controller = G01
 is_city = no
 discovered_by = western
 discovered_by = eastern
+trade_goods = unknown

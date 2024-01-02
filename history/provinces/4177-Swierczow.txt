@@ -2,10 +2,8 @@
 discovered_by = eastern
 1673.1.1 = { discovered_by = ENG }
 1707.5.12 = { discovered_by = GBR }
-add_core = G01
-owner = G01
 culture = wroclawska
 religion = catholic
-controller = G01
 is_city = no
 discovered_by = western
+trade_goods = unknown

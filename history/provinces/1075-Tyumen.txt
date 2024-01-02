@@ -1,7 +1,4 @@
 #Tyumen
-add_core = G01
-owner = G01
-controller = G01
 culture = warszawska
 religion = catholic
 base_tax = 1

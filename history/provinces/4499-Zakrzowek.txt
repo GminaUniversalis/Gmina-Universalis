@@ -1,7 +1,4 @@
 #Zakrzowek
-add_core = G01
-owner = G01
-controller = G01
 culture = lubelska
 religion = catholic
 base_tax = 1
