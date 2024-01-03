@@ -1,608 +1,591 @@
-# A province can only belong to one area!
-#Sea Areas:
-#No restriction on size.
-#############################
-#Deprecated:
-#############################
-#The areas below are used within other scripts and should be not deleted
-pomerelia_area = { }
-sonora_y_sinaloa_area = { }
-magadan_area = { }
-netherlands_area = { }
-indonesian_islands_area = { }
-iceland_area = { }
-south_laos_area = { }
-Powiat_bieszczadzki = { 
+powiat_bieszczadzki = { 
 	1102 4032 4027 
 }
-Powiat_leski = { 
+powiat_leski = { 
 	1792 1193 1103 1101 1100 
 }
-Powiat_sanocki = { 
+powiat_sanocki = { 
 	1194 1172 4035 1195 4049 1167 4038 531 
 }
-Powiat_jasielski = { 
+powiat_jasielski = { 
 	4072 4076 1273 1202 4073 4058 4077 1151 4046 4422
 	4022 
 }
-Powiat_brzozowski = { 
+powiat_brzozowski = { 
 }
-Powiat_przemyski = { 
+powiat_przemyski = { 
 	2032 4062 2030 2033 536 2031 1791 4414 2734 2736
 	4869 1087 1085 4868 2735 1086 1084 
 }
-Powiat_rzeszowski = { 
+powiat_rzeszowski = { 
 	4421 2029 2052 521 4457 2775 2024 2788 4862 554
-	2786 2789 2792 2094 1210 
+	2786 2789 2792 2094 1210
 }
-Powiat_krosnienski = { 
+powiat_krosnienski = { 
 }
-Powiat_strzyzowski = { 
+powiat_strzyzowski = { 
 	1204 2796 2794 2781 1798 
 }
-Powiat_lancuski = { 
+powiat_lancuski = { 
 	523 4495 4456 2051 2097 556 4454 
 }
-Powiat_przeworski = { 
+
+powiat_przeworski = { 
 	4458 2092 515 4460 527 4453 517 4455 548 4442
 }
-Powiat_jaroslawski = { 
+powiat_jaroslawski = { 
 	4417 540 1107 1108 1090 4858 2101 2027 4434 533
 	4534 
 }
-Powiat_lubaczowski = { 
+powiat_lubaczowski = { 
 	4410 4857 1091 4939 1089 4937 1242 4413 
 }
-Powiat_lezajski = { 
+powiat_lezajski = { 
 	511 2069 4467 4509 4468 550 
 }
-Powiat_nizanski = { 
+powiat_nizanski = { 
 	2063 2061 4497 4496 2761 1211 2791 
 }
-Powiat_stalowowolski = { 
+powiat_stalowowolski = { 
 	1223 1224 2762 966 2759 2764 
 }
-Powiat_tarnobrzeski = { 
+powiat_tarnobrzeski = { 
 	2758 2772 2053 2757 4158 
 }
-Powiat_kolbuszowski = { 
+powiat_kolbuszowski = { 
 	2773 4074 4066 1207 2793 4075 
 }
-Powiat_mielecki = { 
+powiat_mielecki = { 
 	2765 2763 1214 2769 2768 4064 1799 2779 4053 4065
 }
-Powiat_debnicki = { 
+powiat_debnicki = { 
 	2777 2795 2782 4052 2776 2774 4061 
 }
-Powiat_ropczycko_sedziszowski = { 
+powiat_ropczycko_sedziszowski = { 
 	1205 2785 2784 1206 2783 
 }
-Powiat_gorlicki = { 
+powiat_gorlicki = { 
 	4021 4024 4098 4101 4040 4104 4056 4099 4045 4037
 }
-Powiat_nowosadecki = { 
+powiat_nowosadecki = { 
 	4025 4026 4030 4036 1200 1199 1197 4042 1198 4093
 	4094 1164 4105 1196 4097 4031 2289 
 }
-Powiat_tarnowski = { 
+powiat_tarnowski = { 
 	4055 4069 4050 4103 4109 4071 1925 2780 2790 2778
 	1208 4059 1209 4044 4070 4063 4067 4068 
 }
-Powiat_brzeski = { 
+powiat_brzeski = { 
 	4146 1147 1171 1219 1201 788 4034 
 }
-Powiat_nowotarski = { 
+powiat_nowotarski = { 
 	4029 4028 4863 1178 1177 1035 1034 1038 2440 2880
 	1176 2856 1163 4781 
 }
-Powiat_tatrzanski = { 
+powiat_tatrzanski = { 
 	1181 789 1179 1180 833 
 }
-Powiat_limanowski = { 
+powiat_limanowski = { 
 	4865 4864 4783 2727 4107 4848 2726 4041 1182 4847
 	4051 1800 
 }
-Powiat_myslenicki = { 
+powiat_myslenicki = { 
 	4784 2025 1184 2731 1999 1093 2728 2729 4846 
 }
-Powiat_wielicki = { 
+powiat_wielicki = { 
 	1185 2951 2950 4043 2730 
 }
-Powiat_krakowski = { 
+powiat_krakowski = { 
 	2733 2732 4850 1165 4855 4851 4102 1092 4854 1189
 	4106 1190 365 2326 356 4108 262 1188 
 }
-Powiat_bochenski = { 
+powiat_bochenski = { 
 	1248 2952 4057 1183 2294 4849 1186 1192 1187 
 }
-Powiat_proszowicki = { 
+powiat_proszowicki = { 
 	2756 4321 2319 1218 1191 1228 
 }
-Powiat_miechowski = { 
+powiat_miechowski = { 
 	4320 2325 1233 364 2474 354 357 
 }
-Powiat_olkuski = { 
+powiat_olkuski = { 
 	2449 355 4095 4567 2448 2451 
 }
-Powiat_chrzanowski = { 
+powiat_chrzanowski = { 
 	1169 4079 1166 1306 1797 
 }
-Powiat_oswiecimski = { 
+powiat_oswiecimski = { 
 	1790 1801 1173 1796 1795 4082 4087 4726 136 
 }
-Powiat_wadowicki = { 
+powiat_wadowicki = { 
 	4078 4100 4081 4085 4086 1170 2949 1901 798 4852
 }
-Powiat_suski = { 
+powiat_suski = { 
 	1998 4856 1094 4867 4853 4866 1168 1097 4782 
 }
-Powiat_dabrowski = { 
+powiat_dabrowski = { 
 	4060 4054 4527 1215 1225 2787 2767 
 }
-Powiat_kazimierski = { 
+powiat_kazimierski = { 
 	1232 360 2760 1213 1216 
 }
-Powiat_pinczowski = { 
+powiat_pinczowski = { 
 	2320 4323 2323 1221 2274 
 }
-Powiat_buski = { 
+powiat_buski = { 
 	2798 2800 1226 1222 1229 362 2802 1230 
 }
-Powiat_staszowski = { 
+powiat_staszowski = { 
 	359 2324 4319 2797 4033 2799 2766 1220 
 }
-Powiat_sandomierski = { 
+powiat_sandomierski = { 
 	4521 1234 4512 1227 2322 2043 1217 2321 
 }
-Powiat_opatowski = { 
+powiat_opatowski = { 
 	351 363 2315 4316 358 2316 361 4317 
 }
-Powiat_ostrowiecki = { 
+powiat_ostrowiecki = { 
 	340 4169 2455 352 4566 2473 
 }
-Powiat_starachowicki = { 
+powiat_starachowicki = { 
 	1882 341 1009 402 4283 
 }
-Powiat_kielecki = { 
+powiat_kielecki = { 
 	353 2954 2450 2238 1123 1120 2275 4318 2317 2318
 	2249 2245 1114 1131 2250 1130 2264 2240 2244 2243
 }
-Powiat_konecki = { 
+powiat_konecki = { 
 	2999 2268 1133 1135 2265 1137 1134 2259 
 }
-Powiat_wloszczowski = { 
+powiat_wloszczowski = { 
 	1142 1143 1249 1156 2284 1157 
 }
-Powiat_jedrzejowski = { 
+powiat_jedrzejowski = { 
 	2290 2285 2288 1158 1159 2286 2475 1160 2277 
 }
-Powiat_tomaszowski = { 
+powiat_tomaszowski = { 
 	4860 4859 2737 1986 537 535 4416 4412 1239 4438
 	1106 2739 2085 
 }
-Powiat_zamojski = { 
+powiat_zamojski = { 
 	547 4439 2037 4415 2026 4441 2100 2080 4448 2048
-	4446 2049 520 4451 542 3505 
+	4446 2049 520 4451 542 3505
 }
-Powiat_hrubieszowski = { 
+powiat_hrubieszowski = { 
 	4861 1088 4408 1246 1109 4409 572 2738 
 }
-Powiat_chelmski = { 
+powiat_chelmski = { 
 	971 4407 2099 541 2083 2034 4419 4432 1946 4436
 	4424 2090 4420 539 1949 4418 
 }
-Powiat_wlodawski = { 
+powiat_wlodawski = { 
 	4423 569 2035 4431 2056 4430 544 4435 
 }
-Powiat_bialski = { 
+powiat_bialski = { 
 	2054 2057 4411 510 4513 2076 4510 4511 4501 551
 	526 2093 4480 4461 4449 2075 507 4491 4463 2065
 }
-Powiat_parczewski = { 
+powiat_parczewski = { 
 	516 503 2058 518 740 2036 4429 
 }
-Powiat_radzynski = { 
+powiat_radzynski = { 
 	4462 528 2127 4210 2227 4276 2231 452 
 }
-Powiat_lukowski = { 
+powiat_lukowski = { 
 	575 2121 2124 458 460 1967 2198 457 1968 2350
 	4343 
 }
-Powiat_rycki = { 
+powiat_rycki = { 
 	4306 425 2199 465 4269 383 
 }
-Powiat_lubartowski = { 
+powiat_lubartowski = { 
 	2339 4504 504 2067 2088 514 4506 4464 530 2333
-	4503 2336 3501 
+	4503 2336 3501
 }
-Powiat_lubelski = { 
+powiat_lubelski = { 
 	2072 4505 2060 578 508 4498 968 969 2077 4492
 	2087 4465 4502 2064 2086 525 512 
 }
-Powiat_swidnicki = { 
+powiat_swidnicki = { 
 	2068 513 519 4433 2066 
 }
-Powiat_krasnostawski = { 
+powiat_krasnostawski = { 
 	991 2084 545 4425 543 549 552 2082 4507 546
 }
-Powiat_janowski = { 
+powiat_janowski = { 
 	506 2078 4494 2079 4466 4459 2770 
 }
-Powiat_krasnicki = { 
+powiat_krasnicki = { 
 	2059 4499 4452 2801 2932 2074 524 2771 774 4322
 }
-Powiat_opolski = { 
+powiat_opolski = { 
 	2454 403 400 398 4285 399 1099 
 }
-Powiat_pulawski = { 
+powiat_pulawski = { 
 	397 404 2062 967 2347 386 2346 4282 391 2335
 	1779 
 }
-Powiat_skarzyski = { 
+powiat_skarzyski = { 
 	2452 2453 2343 2472 2344 
 }
-Powiat_leczynski = { 
+powiat_leczynski = { 
 	1948 4428 532 2089 529 505 
 }
-Powiat_bilgorajski = { 
+powiat_bilgorajski = { 
 	4500 522 2028 4444 4447 2050 4443 4445 4437 4508
-	2073 3502 559 3584 
+	2073 559 3684 3502
 }
-Powiat_siedlecki = { 
+powiat_siedlecki = { 
 	2354 4688 4686 4209 712 442 444 4344 2349 477
 	2368 1784 739 4685 
 }
-Powiat_siedlecki2 = { 
-}
-Powiat_sokolowski = { 
+powiat_sokolowski = { 
 	1071 478 2360 2355 437 2118 2362 4184 1819 
 }
-Powiat_ostrowski = { 
+powiat_ostrowski = { 
 	1830 1052 2122 4229 4228 4230 734 2155 981 4231
 	2694 727 
 }
-Powiat_losicki = { 
+powiat_losicki = { 
 	2200 509 576 1785 4687 4689 
 }
-Powiat_ostrolecki = { 
+powiat_ostrolecki = { 
 	733 2103 1013 737 4186 1043 1044 298 290 291
 	4543 4542 
 }
-Powiat_makowski = { 
+powiat_makowski = { 
 	1046 979 4359 1049 4662 724 2108 4659 4666 1047
 }
-Powiat_przasnyski = { 
+powiat_przasnyski = { 
 	1850 1042 4657 538 4655 289 206 
 }
-Powiat_mlawski = { 
+powiat_mlawski = { 
 	1050 4216 1048 1030 1027 2744 738 4191 1843 1028
 }
-Powiat_zurominski = { 
+powiat_zurominski = { 
 	732 2743 4232 977 1024 4214 
 }
-Powiat_plonski = { 
+powiat_plonski = { 
 	2154 729 2741 38 1839 1818 4181 4651 1014 4663
 	4654 2106 
 }
-Powiat_ciechanowski = { 
+powiat_ciechanowski = { 
 	4189 1023 1029 4360 4187 978 1825 1026 4215 
 }
-Powiat_pultuski = { 
+powiat_pultuski = { 
 	1020 4188 4156 4182 1018 1025 731 
 }
-Powiat_wyszkowski = { 
+powiat_wyszkowski = { 
 	2105 2104 4660 2185 4190 4192 
 }
-Powiat_wegrowski = { 
+powiat_wegrowski = { 
 	4218 4681 735 1019 2125 4265 2120 461 1021 1832
 }
-Powiat_wolominski = { 
+powiat_wolominski = { 
 	4683 2444 2421 4131 2418 1997 4935 2126 474 303
 	470 2415 
 }
-Powiat_minski = { 
+powiat_minski = { 
 	2366 472 2420 467 4936 1965 473 1966 475 453
 	454 1820 1081 
 }
-Powiat_garwolinski = { 
+powiat_garwolinski = { 
 	4222 4693 963 2129 4516 2128 2201 711 393 4272
 	2327 2095 555 2055 
 }
-Powiat_kozienicki = { 
+powiat_kozienicki = { 
 	463 2197 1849 384 2328 395 394 
 }
-Powiat_zwolenski = { 
+powiat_zwolenski = { 
 	396 4273 385 4277 2331 
 }
-Powiat_lipski = { 
+powiat_lipski = { 
 	2332 4278 2456 4286 401 4287 
 }
-Powiat_radomski = { 
+powiat_radomski = { 
 	4284 2341 4279 4281 2330 2337 2338 4274 392 2329
 	2340 2334 4270 4280 
 }
-Powiat_szydlowiecki = { 
+powiat_szydlowiecki = { 
 	2345 389 387 388 390 
 }
-Powiat_przysuski = { 
+powiat_przysuski = { 
 	380 4268 379 1855 381 405 4271 2313 
 }
-Powiat_bialobrzeski = { 
+powiat_bialobrzeski = { 
 	4297 378 2195 448 4520 450 
 }
-Powiat_grójecki = { 
+powiat_grojecki = { 
 	2225 2226 710 577 2192 2189 713 1786 1008 4207
 }
-Powiat_piaseczynski = { 
+powiat_piaseczynski = { 
 	4680 4206 304 468 1212 1994 
 }
-Powiat_otwocki = { 
+powiat_otwocki = { 
 	962 459 4267 718 4682 1787 719 2419 
 }
-Powiat_pruszkowski = { 
+powiat_pruszkowski = { 
 	1240 4934 285 284 2447 1241 
 }
-Powiat_grodziski = { 
+powiat_grodziski = { 
 	1974 2410 2367 2365 2208 287 
 }
-Powiat_zyrardów = { 
+powiat_zyrardow = { 
 	4335 299 302 2230 2228 
 }
-Powiat_sochaczewski = { 
+powiat_sochaczewski = { 
 	2417 469 466 449 2427 1074 433 2416 
 }
-Powiat_warszawski_zachodni = { 
+powiat_warszawski_zachodni = { 
 	288 2414 1987 1244 1243 1989 286 
 }
-Powiat_Warszawa = { 
+powiat_warszawa = { 
 	257 
 }
-Powiat_legionowski = { 
+powiat_legionowski = { 
 	464 1988 2409 4183 4193 
 }
-Powiat_nowodworski = { 
-}
-Powiat_gostyninski = { 
+powiat_gostyninski = { 
 	1857 4329 430 2223 2218 
 }
-Powiat_plocki = { 
+powiat_plocki = { 
 	1080 4217 1069 4691 1073 4123 972 1780 1075 27
 	29 272 1768 4331 4330 2234 
 }
-Powiat_sierpecki = { 
+powiat_sierpecki = { 
 	2961 976 37 4537 19 4536 279 
 }
-Powiat_siemiatycki = { 
+powiat_siemiatycki = { 
 	4493 2364 2428 4690 2236 980 1969 455 2363 
 }
-Powiat_hajnowski = { 
+powiat_hajnowski = { 
 	2356 1970 2358 2352 2357 2359 479 4692 2353 
 }
-Powiat_bielski = { 
+powiat_bielski = { 
 	476 456 2361 440 2370 1973 439 1060 
 }
-Powiat_wysokomazowiecki = { 
+powiat_wysokomazowiecki = { 
 	443 4185 1032 4679 1045 2102 2966 1062 2442 
 }
-Powiat_zambrowski = { 
+powiat_zambrowski = { 
 	4227 1847 2745 1852 1783 
 }
-Powiat_lomzynski = { 
+powiat_lomzynski = { 
 	1031 1057 715 2439 1058 1041 1040 1033 1056 4658
 }
-Powiat_kolnenski = { 
+powiat_kolnenski = { 
 	2411 1036 1037 4208 1039 283 
 }
-Powiat_grajewski = { 
+powiat_grajewski = { 
 	2406 1782 2436 4540 1943 282 
 }
-Powiat_augustowski = { 
+powiat_augustowski = { 
 	1756 1955 4258 4251 1981 2405 4530 
 }
-Powiat_sejnenski = { 
+powiat_sejnenski = { 
 	1964 4129 305 4266 1077 
 }
-Powiat_suwalski = { 
+powiat_suwalski = { 
 	997 4262 4116 296 1962 1079 1755 4122 1963 
 }
-Powiat_sokólski = { 
+powiat_sokolski = { 
 	280 1944 2429 1070 2430 2433 1068 716 1076 2369
 }
-Powiat_moniecki = { 
+powiat_moniecki = { 
 	1942 1067 2431 1061 2432 2119 714 
 }
-Powiat_bialostocki = { 
+powiat_bialostocki = { 
 	2437 1059 1066 4684 1054 2443 1063 1055 1064 1065
 	2434 480 2441 471 953 2351 
 }
-Powiat_Swinioujscie = { 
+powiat_swinioujscie = { 
 	1858 
 }
-Powiat_Kamienski = { 
+powiat_kamienski = { 
 	228 1851 4556 231 232 4553 
 }
-Powiat_Policki = { 
+powiat_policki = { 
 	227 117 116 2977 
 }
-Powiat_Szczecinski = { 
+powiat_szczecinski = { 
 	2978 
 }
-Powiat_Goleniowski = { 
+powiat_goleniowski = { 
 	208 230 207 4150 229 4787 
 }
-Powiat_gryfinski = { 
+powiat_gryfinski = { 
 	104 2992 2981 1875 481 2979 107 111 4729 
 }
-Powiat_Stargardzki = { 
+powiat_stargardzki = { 
 	4727 2980 4739 115 114 4730 4740 113 2976 1933
 	106 
 }
-Powiat_gryficki = { 
+powiat_gryficki = { 
 	4555 4558 4361 1747 216 4788 
 }
-Powiat_kolobrzeski = { 
+powiat_kolobrzeski = { 
 	4372 239 48 374 4559 241 218 
 }
-Powiat_koszalinski = { 
+powiat_koszalinski = { 
 	235 372 4370 1860 246 1861 243 238 4371 
 }
-Powiat_slawienski = { 
+powiat_slawienski = { 
 	247 1804 1105 4121 1104 4380 
 }
-Powiat_bialogardzki = { 
+powiat_bialogardzki = { 
 	240 236 237 4376 
 }
-Powiat_swidwinski = { 
+powiat_swidwinski = { 
 	233 4369 4366 1749 4551 209 
 }
-Powiat_lobeski = { 
+powiat_lobeski = { 
 	219 4552 224 4548 1745 
 }
-Powiat_drawski = { 
+powiat_drawski = { 
 	215 4789 1746 2754 112 
 }
-Powiat_walecki = { 
+powiat_walecki = { 
 	4546 226 1748 222 223 
 }
-Powiat_szczecinecki = { 
+powiat_szczecinecki = { 
 	245 4747 4130 4374 234 1 
 }
-Powiat_mysliborski = { 
+powiat_mysliborski = { 
 	2655 105 1862 101 4728 
 }
-Powiat_pyrzycki = { 
+powiat_pyrzycki = { 
 	1774 102 109 486 10 103 
 }
-Powiat_choszczenski = { 
+powiat_choszczenski = { 
 	4737 1934 197 4145 122 2984 
 }
-Powiat_slupski = { 
+powiat_slupski = { 
 	249 2995 370 4362 1978 375 4118 4377 376 4119
 	4120 
 }
-Powiat_leborski = { 
+powiat_leborski = { 
 	1979 252 253 4364 4114 
 }
-Powiat_wejherowski = { 
+powiat_wejherowski = { 
 	371 369 4110 251 250 4363 24 23 20 2752
 }
-Powiat_pucki = { 
+powiat_pucki = { 
 	4153 21 986 985 315 4152 4151 
 }
-Trójmiasto = { 
+powiat_trojmiasto = { 
 	1777 1776 43 
 }
-Powiat_kartuski = { 
+powiat_kartuski = { 
 	198 248 4697 195 4387 4389 194 2753 
 }
-Powiat_gdanski = { 
+powiat_gdanski = { 
 	199 987 4161 17 22 4144 4160 4157 
 }
 powiat_nowodworski = { 
 }
-Powiat_elblaski = { 
+powiat_elblaski = { 
 	2 999 25 1982 770 275 273 988 4745 4242
 }
-Powiat_malborski = { 
+powiat_malborski = { 
 	4164 4143 4163 1841 1985 7 
 }
-Powiat_tczewski = { 
+powiat_tczewski = { 
 	4 5 16 6 1866 13 
 }
-Powiat_sztumski = { 
+powiat_sztumski = { 
 	26 4165 4166 1983 1984 
 }
-Powiat_kwidzynski = { 
+powiat_kwidzynski = { 
 	14 91 12 4769 2969 42 
 }
-Powiat_starogardzki = { 
+powiat_starogardzki = { 
 	87 183 88 89 184 4388 1743 4768 1878 4142
 	952 15 203 
 }
-Powiat_koscierski = { 
+powiat_koscierski = { 
 	4695 179 190 994 4154 4776 4694 180 
 }
-Powiat_bytowski = { 
+powiat_bytowski = { 
 	4378 4112 4367 175 4785 984 4368 4379 373 4365
 }
-Powiat_braniewski = { 
+powiat_braniewski = { 
 	11 1960 33 1961 1834 4241 28 
 }
-Powiat_bartoszycki = { 
+powiat_bartoszycki = { 
 	34 30 32 3 31 4248 
 }
-Powiat_ketrzynski = { 
+powiat_ketrzynski = { 
 	1959 4124 313 308 1956 4260 
 }
-Powiat_wegorzewski = { 
+powiat_wegorzewski = { 
 	306 4264 2422 2423 
 }
-Powiat_goldapski = { 
+powiat_goldapski = { 
 	1082 1078 1972 
 }
-Powiat_olecki = { 
+powiat_olecki = { 
 	1083 4263 4256 1957 
 }
-Powiat_elcki = { 
+powiat_elcki = { 
 	4257 268 4259 314 1753 
 }
-Powiat_gizycki = { 
+powiat_gizycki = { 
 	4254 1754 309 4261 1958 4250 
 }
-Powiat_piski = { 
+powiat_piski = { 
 	312 992 1778 301 
 }
-Powiat_mragowski = { 
+powiat_mragowski = { 
 	307 4147 4117 4253 4255 
 }
-Powiat_olsztynski = { 
+powiat_olsztynski = { 
 	292 293 300 294 295 4243 964 4148 4249 4544
 	4247 2426 996 
 }
-Powiat_lidzbarski = { 
+powiat_lidzbarski = { 
 	311 1752 310 274 2408 
 }
-Powiat_szczycienski = { 
+powiat_szczycienski = { 
 	278 1941 4545 4252 4245 297 2407 995 
 }
-Powiat_nidzicki = { 
+powiat_nidzicki = { 
 	2438 2742 1051 2435 
 }
-Powiat_dzialdowski = { 
+powiat_dzialdowski = { 
 	1835 1012 1015 1845 1945 2445 
 }
-Powiat_ostrodzki = { 
-	4115 954 2962 1072 1781 4244 4246 3504 771 
+powiat_ostrodzki = { 
+	4115 954 2962 1072 1781 4244 4246 771 3504
 }
-Powiat_ilawski = { 
+powiat_ilawski = { 
 	271 39 35 1935 276 281 4539 
 }
-Powiat_nowomiejski = { 
+powiat_nowomiejski = { 
 	4529 1842 36 270 1937 
 }
-Powiat_swiecki = { 
+powiat_swiecki = { 
 	4746 982 49 55 204 79 1744 4715 4775 1762
 	44 
 }
-Powiat_tucholski = { 
+powiat_tucholski = { 
 	181 185 182 186 191 174 
 }
-Powiat_chojnicki = { 
+powiat_chojnicki = { 
 	196 1879 168 4111 167 
 }
 powiat_czluchowski = { 
 	244 242 4375 217 172 4385 169 
 }
-Powiat_sepolenski = { 
+powiat_sepolenski = { 
 	4386 177 121 4384 
 }
-Powiat_zlotowski = { 
+powiat_zlotowski = { 
 	171 170 2989 210 4557 2755 225 4373 
 }
 powiat_nakielski = { 
 	178 333 2985 176 2983 
 }
-Powiat_bydgoski = { 
+powiat_bydgoski = { 
 	2972 4766 4390 202 187 2991 70 4696 4719 
 }
 powiat_chelminski = { 
@@ -611,43 +594,43 @@ powiat_chelminski = {
 powiat_grudziadzki = { 
 	2997 2963 254 1859 2958 4523 4238 
 }
-Powiat_brodnicki = { 
+powiat_brodnicki = { 
 	256 277 534 4535 4541 261 1936 4538 40 4528
 }
-Powiat_wabrzeski = { 
+powiat_wabrzeski = { 
 	1939 993 264 4526 258 
 }
-Powiat_rypinski = { 
+powiat_rypinski = { 
 	4155 767 41 269 4524 4525 
 }
 powiat_golubsko-dobrzynski = { 
 	1938 255 4533 263 259 2960 
 }
-Powiat_torunski = { 
+powiat_torunski = { 
 	80 4758 4767 1872 94 72 1871 74 166 1869
 }
-Powiat_inowroclawski = { 
+powiat_inowroclawski = { 
 	4764 4720 205 4622 2649 4713 4392 201 973 
 }
-Powiat_mogilenski = { 
+powiat_mogilenski = { 
 	68 2654 4765 4718 
 }
-Powiat_radziejowski = { 
+powiat_radziejowski = { 
 	92 96 4383 77 95 97 100 
 }
-Powiat_aleksandrowski = { 
+powiat_aleksandrowski = { 
 	1870 4710 1742 4712 1873 4722 4721 165 974 
 }
 powiat_lipnowski = { 
 	84 69 110 1931 1940 2424 260 2959 83 
 }
-Powiat_zninski = { 
+powiat_zninski = { 
 	189 75 188 1880 4777 193 
 }
 powiat_gorzowski = { 
 	2827 2825 1006 2656 485 2823 807 808 
 }
-Powiat_strzelecko-drezdenecki = { 
+powiat_strzelecko-drezdenecki = { 
 	124 120 4736 123 125 
 }
 powiat_miedzyrzecki = { 
@@ -658,8 +641,6 @@ powiat_sulecinski = {
 }
 powiat_slubnicki = { 
 	2828 2829 805 2947 743 
-}
-powiat_krosnienski = { 
 }
 powiat_swiebodzinski = { 
 	810 811 1802 2822 2821 2833 
@@ -679,362 +660,359 @@ powiat_zaganski = {
 powiat_wschowski = { 
 	819 742 2804 
 }
-Powiat_pilski = { 
+powiat_pilski = { 
 	221 2751 220 4549 1750 2990 4550 212 4560 
 }
-Powiat_czarnkowsko-trzcianecki = { 
+powiat_czarnkowsko-trzcianecki = { 
 	4547 108 983 126 2982 119 4732 2986 
 }
-Powiat_chodzieski = { 
+powiat_chodzieski = { 
 	214 211 2988 213 2987 
 }
-Powiat_wagrowiecki = { 
+powiat_wagrowiecki = { 
 	4734 1247 173 4735 127 192 200 
 }
-Powiat_obornicki = { 
+powiat_obornicki = { 
 	4733 1877 826 
 }
-Powiat_szamotulski = { 
+powiat_szamotulski = { 
 	4600 827 4731 4601 4596 2807 4609 830 
 }
-Powiat_miedzychodzki = { 
+powiat_miedzychodzki = { 
 	118 813 2806 2945 
 }
-Powiat_nowotomyski = { 
+powiat_nowotomyski = { 
 	2824 825 2814 4613 2809 4608 
 }
-Powiat_wolsztynski = { 
+powiat_wolsztynski = { 
 	2808 4612 2817 
 }
-Powiat_grodziski_poznan = { 
+powiat_grodziski_poznan = { 
 	834 2812 823 4614 4607 
 }
-Powiat_poznanski = { 
+powiat_poznanski = { 
 	4611 832 500 4599 499 497 495 2658 4620 501
 	4602 2813 496 4623 2659 4619 4603 4610 
 }
-Powiat_gnieznienski = { 
+powiat_gnieznienski = { 
 	494 1881 4391 4618 488 489 4624 2631 4584 484
 }
-Powiat_slupecki = { 
+powiat_slupecki = { 
 	4570 2648 4646 850 4571 2630 2622 4573 
 }
-Powiat_kolski = { 
+powiat_kolski = { 
 	4774 4141 57 4773 411 4716 63 54 66 1868
 	2310 
 }
-Powiat_turecki = { 
+powiat_turecki = { 
 	419 2205 4304 4179 4302 2202 4296 2307 2309 
 }
-Powiat_kaliski = { 
+powiat_kaliski = { 
 	4295 4292 462 1856 2308 2196 4303 421 420 2306
 	407 4647 
 }
-Powiat_pleszewski = { 
+powiat_pleszewski = { 
 	2624 4582 2647 2646 4642 2633 
 }
-Powiat_ostrowski_poznan = { 
+powiat_ostrowski_poznan = { 
 	4574 2303 2644 2643 4575 2645 2628 4583 
 }
-Powiat_krotoszynski = { 
+powiat_krotoszynski = { 
 	2652 4590 845 2650 838 841 
 }
-Powiat_rawicki = { 
+powiat_rawicki = { 
 	4588 4711 2660 2663 2819 
 }
-Powiat_gostynski = { 
+powiat_gostynski = { 
 	4592 2661 2002 836 482 2664 840 
 }
-Powiat_jarocinski = { 
+powiat_jarocinski = { 
 	4593 2651 2629 847 
 }
-Powiat_wrzesinski = { 
+powiat_wrzesinski = { 
 	849 4581 4585 846 4591 
 }
-Powiat_sredzki = { 
+powiat_sredzki = { 
 	2635 837 2640 4586 2662 
 }
-Powiat_sremski = { 
+powiat_sremski = { 
 	4597 4595 829 493 
 }
-Powiat_koscianski = { 
+powiat_koscianski = { 
 	490 828 492 4621 824 
 }
-Powiat_leszczynski = { 
+powiat_leszczynski = { 
 	2818 1003 2939 4615 487 4616 2811 2810 
 }
-Powiat_kutnowski = { 
+powiat_kutnowski = { 
 	4772 4289 45 2217 408 4288 4170 4342 2219 412
 	413 
 }
-Powiat_lowicki = { 
+powiat_lowicki = { 
 	2222 446 2216 429 4290 4332 4171 427 4334 3500
 }
-Powiat_skierniewicki = { 
+powiat_skierniewicki = { 
 	2213 4326 4325 2235 4336 4345 432 4328 2224 990
 }
-Powiat_rawski = { 
+powiat_rawski = { 
 	4324 434 2233 949 451 950 
 }
-Powiat_tomaszowski_lodz = { 
+powiat_tomaszowski_lodz = { 
 	2221 447 2232 4327 2220 334 2458 2457 321 350
 	377 
 }
-Powiat_opoczynski = { 
+powiat_opoczynski = { 
 	382 1854 1132 1129 2261 2253 2248 1115 
 }
-Powiat_piotrkowski = { 
+powiat_piotrkowski = { 
 	2266 1116 367 2466 368 339 1110 347 1127 2237
 	1113 2262 
 }
-Powiat_radomszczanski = { 
+powiat_radomszczanski = { 
 	1125 2252 1145 1146 1144 1122 2247 2251 2295 1150
 	1136 1121 1124 2256 
 }
-Powiat_pajeczanski = { 
+powiat_pajeczanski = { 
 	1128 2267 1117 2260 2746 4301 325 326 
 }
-Powiat_belchatowski = { 
+powiat_belchatowski = { 
 	423 2204 4532 2246 366 4565 348 4305 
 }
-Powiat_wielunski = { 
+powiat_wielunski = { 
 	324 2302 328 327 4307 4178 1846 2304 330 417
 }
-Powiat_wieruszowski = { 
+powiat_wieruszowski = { 
 	4298 2301 4313 4314 2300 329 4310 
 }
-Powiat_sieradzki = { 
+powiat_sieradzki = { 
 	332 2211 2207 2314 406 4294 2212 2215 4339 414
 	4337 
 }
-Powiat_poddebnicki = { 
+powiat_poddebnicki = { 
 	415 416 4340 4293 2465 335 
 }
-Powiat_leczycki = { 
+powiat_leczycki = { 
 	424 2206 4291 409 2312 410 4168 2311 
 }
-Powiat_zgierski = { 
+powiat_zgierski = { 
 	4562 336 337 344 345 2469 2470 4569 4568 
 }
-Powiat_brzezinski = { 
+powiat_brzezinski = { 
 	4564 2467 2468 1751 431 
 }
-Powiat_lodzki = { 
+powiat_lodzki = { 
 	342 4563 338 2459 2460 2463 2461 
 }
 powiat_pabianicki = { 
 	2464 4167 155 4338 2462 349 4561 
 }
-Powiat_zdunskowolski = { 
+powiat_zdunskowolski = { 
 	4300 2214 426 2210 
 }
-Powiat_laski = { 
+powiat_laski = { 
 	343 4341 428 2209 2203 
 }
-Powiat_zgorzelecki = { 
+powiat_zgorzelecki = { 
 	2926 2891 2918 2908 2923 2927 748 
 }
-Powiat_boleslawiecki = { 
+powiat_boleslawiecki = { 
 	2925 2928 752 2885 2910 2886 
 }
-Powiat_lubanski = { 
+powiat_lubanski = { 
 	2917 759 2916 2911 2899 765 761 
 }
-Powiat_lwowecki = { 
+powiat_lwowecki = { 
 	749 2898 2924 757 760 
 }
-Powiat_karkonoski = { 
+powiat_karkonoski = { 
 	753 754 755 756 2921 2922 2912 2915 2919 758
 }
-Powiat_kamiennogorski = { 
+powiat_kamiennogorski = { 
 	2894 2892 764 762 
 }
-Powiat_walbrzyski = { 
+powiat_walbrzyski = { 
 	763 775 2855 2859 776 2857 2884 799 2879 
 }
-Powiat_jaworski = { 
+powiat_jaworski = { 
 	2887 2896 769 773 772 2848 
 }
-Powiat_zlotoryjski = { 
+powiat_zlotoryjski = { 
 	2913 2914 750 766 2897 751 
 }
-Powiat_legnicki = { 
+powiat_legnicki = { 
 	2888 2904 785 2906 2907 2895 784 2838 2837 
 }
-Powiat_polkowicki = { 
+powiat_polkowicki = { 
 	768 2835 2941 2882 801 502 
 }
-Powiat_glogowski = { 
+powiat_glogowski = { 
 	2834 2816 1004 4617 2815 2803 
 }
-Powiat_lubinski = { 
+powiat_lubinski = { 
 	2920 2893 795 2840 
 }
-Powiat_gorowski = { 
+powiat_gorowski = { 
 	1005 2805 483 835 
 }
-Powiat_wolowski = { 
+powiat_wolowski = { 
 	2946 2940 839 
 }
-Powiat_trzebnicki = { 
+powiat_trzebnicki = { 
 	4589 2653 842 2636 4594 844 
 }
-Powiat_milicki = { 
+powiat_milicki = { 
 	2634 843 2632 
 }
-Powiat_olesnicki = { 
+powiat_olesnicki = { 
 	4598 2621 4579 1001 852 2627 4572 2642 
 }
-Powiat_wroclawski = { 
+powiat_wroclawski = { 
 	4587 2626 2623 2638 794 792 1000 2847 787 2839
 }
-Powiat_sredzki_slask = { 
+powiat_sredzki_slask = { 
 	2637 2872 2841 2851 2852 
 }
 powiat_swidnicki_slask = { 
 	777 2853 2883 2850 2877 2861 2858 2867 
 }
-Powiat_dzierzoniowski = { 
+powiat_dzierzoniowski = { 
 	1095 2869 782 1971 2845 2844 783 
 }
-Powiat_klodzki = { 
+powiat_klodzki = { 
 	2854 790 2878 2849 2846 2842 778 2865 2860 779
 	780 2868 2866 2873 
 }
-Powiat_zabkowicki = { 
+powiat_zabkowicki = { 
 	781 786 2863 2870 2876 2862 2874 
 }
-Powiat_strzelinski = { 
+powiat_strzelinski = { 
 	791 2843 2836 4641 853 
 }
-Powiat_olawski = { 
+powiat_olawski = { 
 	848 851 346 4580 
 }
 powiat_wloclawski = { 
 	98 82 1876 4771 1775 53 56 81 86 4382
 	4381 85 2975 2973 
 }
-Powiat_koninski = { 
+powiat_koninski = { 
 	90 4649 1865 99 4770 78 1874 2971 1758 2618
 	4606 418 71 331 861 
 }
-Powiat_ostrzeszowski = { 
+powiat_ostrzeszowski = { 
 	2305 4643 422 4299 2641 2667 4315 
 }
-Powiat_kepinski = { 
+powiat_kepinski = { 
 	316 4309 323 319 317 2296 4311 
 }
-Powiat_namyslowski = { 
+powiat_namyslowski = { 
 	2499 2668 151 4177 2348 
 }
-Powiat_kluczborski = { 
+powiat_kluczborski = { 
 	2297 322 318 145 
 }
-Powiat_oleski = { 
+powiat_oleski = { 
 	2298 4312 4308 320 1773 3003 4698 
 }
-Powiat_strzelecki = { 
+powiat_strzelecki = { 
 	4702 144 4779 4780 4750 4174 4705 
 }
-Powiat_kedzierzynsko-kozielski = { 
+powiat_kedzierzynsko-kozielski = { 
 	4531 4759 61 4778 46 4748 
 }
-Powiat_glubczycki = { 
+powiat_glubczycki = { 
 	47 4741 2964 4786 
 }
-Powiat_prudnicki = { 
+powiat_prudnicki = { 
 	2996 858 855 52 
 }
-Powiat_krapkowicki = { 
+powiat_krapkowicki = { 
 	2993 2956 2998 60 1863 
 }
-Already
-taken! = { 
-}
-Powiat_opolski_opole = { 
+powiat_opolski_opole = { 
 	4761 143 147 142 4700 4762 132 4760 1759 4709
 	3001 4648 859 959 
 }
-Powiat_brzeski_opole = { 
+powiat_brzeski_opole = { 
 	860 4576 2617 4640 854 2615 
 }
-Powiat_nyski = { 
+powiat_nyski = { 
 	2657 2871 4645 4578 856 2614 2619 857 2875 
 }
-Powiat_klobucki = { 
+powiat_klobucki = { 
 	2299 1112 2239 1848 164 163 1119 2255 2254 
 }
-Powiat_czestochowski = { 
+powiat_czestochowski = { 
 	2242 441 2241 2272 158 2273 2257 1138 2269 2271
 	2292 1140 2293 2291 1126 1161 2280 
 }
-Powiat_zawiercianski = { 
+powiat_zawiercianski = { 
 	2283 2281 2282 2287 2276 1153 1152 1154 2279 1162
 }
-Powiat_myszkowski = { 
+powiat_myszkowski = { 
 	955 1148 2278 1139 2258 
 }
-Powiat_lubliniecki = { 
+powiat_lubliniecki = { 
 	4701 4699 146 1853 1764 141 2263 1118 
 }
-Powiat_tarnogorski = { 
+powiat_tarnogorski = { 
 	1765 159 4176 4704 4706 2750 148 1954 
 }
-Powiat_gliwicki = { 
+powiat_gliwicki = { 
 	149 4703 4175 150 4754 1953 162 957 138 
 }
-Powiat_raciborski = { 
+powiat_raciborski = { 
 	134 2994 4749 51 4742 958 2965 58 
 }
-Powiat_wodzislawski = { 
+powiat_wodzislawski = { 
 	4743 62 4717 131 1770 133 50 1769 4738 
 }
-Powiat_rybnicki = { 
+powiat_rybnicki = { 
 	128 129 130 4751 1828 1831 4756 
 }
-Powiat_cieszynski = { 
+powiat_cieszynski = { 
 	2955 4708 4707 76 1763 4752 135 4744 64 2957
 	1757 4084 
 }
-Powiat_zywiecki = { 
+powiat_zywiecki = { 
 	1174 1175 4088 4083 2864 1096 2948 4096 4090 4089
 	4092 2967 266 4725 4091 
 }
-Powiat_bielski_slask = { 
+powiat_bielski_slask = { 
 	267 1771 2970 265 2968 1007 1772 1826 4753 4724
 	956 
 }
-Powiat_pszczynski = { 
+powiat_pszczynski = { 
 	152 139 59 1864 1767 137 67 
 }
-Powiat_bierunsko-ledzinski = { 
+powiat_bierunsko-ledzinski = { 
 	1111 1793 1794 4240 4236 
 }
-Powiat_mikolowski = { 
+powiat_mikolowski = { 
 	4126 4173 4125 3002 4755 
 }
-Powiat_bedzinski = { 
+powiat_bedzinski = { 
 	1141 2270 4239 161 4127 4757 157 
 }
-Aglomeracja_Katowicka = { 
+powiat_aglomeracja_Katowicka = { 
 	1318 140 154 1827 1952 3000 1951 
 }
-Bytom = { 
+powiat_bytom = { 
 	4128 156 1766 160 
 }
-Jaworzno = { 
+powiat_jaworzno = { 
 	4080 153 1149 1155 
 }
-Powiat_nowodworski_maz = { 
+powiat_nowodworski_maz = { 
 	2425 1837 4180 1017 2412 2413 
 }
-Powiat_nowodworski_pom = { 
-	9 8 18 3503 4113 
+powiat_nowodworski_pom = { 
+	9 8 18 4113 3503
 }
 powiat_krosnienski_lubu = { 
 	2889 2900 2933 803 800 744 2931 
 }
-Powiat_krosnienski_pod = { 
+powiat_krosnienski_pod = { 
 	1203 4426 1098 1930 4047 1947 4020 4048 4039 4023
 	4427 
 }
