@@ -733,8 +733,6 @@ provinces;red;green;blue;x;x
 986;21;80;32;Jastarnia;x
 987;149;82;79;Kolbudy;x
 988;22;84;126;Tolkmicko;x
-990;22;88;32;Kowiesy;x
-991;150;90;79;Fajsławice;x
 992;22;92;126;Biala Piska;x
 993;150;94;173;Wabrzezno;x
 994;22;96;32;Koscierzyna;x
@@ -994,7 +992,7 @@ provinces;red;green;blue;x;x
 1318;209;246;4;Katowice;x
 1325;76;250;250;Lake Balaton;x
 1326;77;200;200;Caspian Sea;x
-1327;78;200;250;Aral Sea;x
+1327;78;200;250;Male Dabie;x
 1336;87;220;250;Coast of Makran;x
 1423;46;201;251;Cook Strait;x
 1446;69;201;201;Horn of Africa;x
@@ -1160,7 +1158,7 @@ provinces;red;green;blue;x;x
 1885;2;0;240;Central Finnish Lakes;x
 1886;3;0;244;Storavan;x
 1887;4;0;248;Storsjon;x
-1888;5;0;232;Kara Sea;x
+1888;5;0;232;Zalew Szczecinski Poludnie;x
 1889;6;0;236;Lake Geneva;x
 1890;7;0;240;Lake Constance;x
 1891;8;0;244;Lake Tuz;x
@@ -1240,7 +1238,7 @@ provinces;red;green;blue;x;x
 1972;216;114;79;Dubeniki;x
 1973;88;124;126;City of Bransk;x
 1974;215;110;173;Podkowa Lesna;x
-1976;93;0;244;Dead Sea;x
+1976;93;0;244;Zalew Szczecinski Wschod;x
 1977;94;0;248;MÃ¤laren;x
 1978;95;0;232;Glowczyce;x
 1979;96;0;236;Leba;x
@@ -1260,8 +1258,10 @@ provinces;red;green;blue;x;x
 2000;60;221;221;Qinghai Lake;x
 2001;95;200;200;Siling Lake;x
 2002;200;135;255;Piaski;x
+2007;140;32;248;Niemcy Wschod;x
+2008;145;64;232;Niemcy Zachod;x
+2009;150;128;236;Czechy Zachod;x
 2024;255;15;160;Boguchwala;x
-2025;255;16;40;South Georgia;x
 2026;255;17;120;Miaczyn;x
 2027;230;18;160;Pawlosiow;x
 2028;255;19;90;Tereszpol;x
@@ -1914,14 +1914,18 @@ provinces;red;green;blue;x;x
 3001;232;5;5;Dobrzen Wielki;x
 3002;134;198;192;Orzesze;x
 3003;188;110;220;Zebowice;x
-3500;219;23;200;Zduny;
-3501;219;23;201;Jeziorzany;
+3004;189;110;220;Czechy Zachód;
+3200;219;32;10;Niemcy Poludnie;
+3238;219;32;48;Niemcy Polnoc;
+3218;219;32;28;Holandia;
+3219;219;32;29;Czechy Wschód;
+3419;219;32;229;Bornholm;
+#3500;219;23;200;;
+#3501;219;23;201;;
 #3502;219;23;202;;
-3503;219;23;203;Sztutowo;
-3504;219;23;204;Morąg;
-3505;219;23;205;Krasnobród;
-3502;219;23;202;Frampol;
-3584;225;25;184;Goraj;
+#3503;219;23;203;;
+#3504;219;23;204;;
+#3505;219;23;205;;
 4020;239;204;149;Dukla;x
 4021;244;97;32;Sekowa;x
 4022;217;166;43;Krempna;x
@@ -2555,15 +2559,15 @@ provinces;red;green;blue;x;x
 4776;177;186;20;Drzycim;x
 4777;202;126;16;Lipusz;x
 4778;32;31;94;Rogowo;x
-4779;124;10;162;Jemielnica;x
-4780;25;224;138;Strzelce Opolskie;x
-4781;197;9;45;Rabka-Zdroj;x
+#tucosbrakuje
+4780;25;224;138;Jemielnica;x
+4781;197;9;45;Strzelce Opolskie;x
 4782;45;197;9;Rabka-Zdroj;x
 4783;9;45;197;Jordanow;x
 4784;135;45;9;City of Mszana Dolna;x
 4785;98;179;208;Wisniowa;x
 4786;45;27;97;Lipnica;x
-4787;91;178;26;Prignitz;x
+4787;91;178;26;Stepnica;x
 4788;168;196;4;Stepnica;x
 4789;254;145;124;Ploty;x
 4846;229;139;97;Zlocieniec;x
@@ -2591,9 +2595,10 @@ provinces;red;green;blue;x;x
 4868;136;85;174;Makow Podhalanski;x
 4869;56;20;83;Stubno;x
 4870;40;100;119;Przemysl;x
-4935;210;40;41;Zabki;x
-4936;210;70;81;Kauai;x 
 4934;210;10;1;Willandra Lakes;x
-4937;210;20;121;Narol;x
-4939;210;80;11;City of Lubaczow;x
-4941;30;216;201;Lake Tulare;x
+4941;30;216;201;Warta;x
+
+3420;219;23;120;RNW;
+3290;219;32;100;UnusedLand100;
+3105;207;110;54;Unused92;
+3013;199;110;220;Unused10;
