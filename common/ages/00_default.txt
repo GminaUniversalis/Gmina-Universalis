@@ -10,55 +10,17 @@ age_of_discovery = {
 	
 
 	objectives = {
-		obj_discover_america = {
-			allow = {
-				capital_scope = {
-					OR = {
-						continent = europe
-						continent = asia
-						continent = africa
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = obj_discover_america_tooltip
-					OR = {
-						north_america = { has_discovered = ROOT }
-						south_america = { has_discovered = ROOT }
-						new_world = { has_discovered = ROOT }
-					}
-				}
+		obj_100_political_unity = {
+			religious_unity = 100
 		}
-		obj_100_development = {
-			allow = {
-				capital_scope = {
-					NOT = {
-						continent = europe
-						continent = asia
-						continent = africa
-					}
-				}
-			}
-			total_development = 100
 
-		}
-		
-		
-		
-	
-		obj_5_centers_of_trade = {
-			calc_true_if = {
-				all_owned_province = {
-					OR = {
-						province_has_center_of_trade_of_level = 2
-						province_has_center_of_trade_of_level = 3
-					}
-					controlled_by = owner
-					is_core = ROOT
-				}
-				amount = 5
+		obj_vodka_monopoly = {
+			trading_bonus = {
+				trade_goods = gu_vodka
+				value = yes
 			}
 		}
+
 		obj_30_development_city = {
 			custom_trigger_tooltip = {
 				tooltip = obj_30_development_city_tooltip
@@ -71,11 +33,12 @@ age_of_discovery = {
 				}
 			}
 		}
-		obj_renaissance = {
-	 		has_institution = renaissance
-	 		all_state_province = {
-	 			renaissance = 100
-	 		}
+
+		obj_urbanisation = {
+			num_of_owned_provinces_with = {
+				has_terrain = farmlands
+				value = 5 
+			}
 		}
 		
 		obj_two_unions = {
@@ -92,8 +55,11 @@ age_of_discovery = {
 			vassal = 5
 		}		
 	
-		obj_two_continents = {
-			num_of_continents = 2
+		obj_5_year_plan = {
+			num_of_owned_provinces_with = {
+				has_building = workshop
+				value = 5 
+			}
 		}
 	
 		obj_humiliate_rival = {
