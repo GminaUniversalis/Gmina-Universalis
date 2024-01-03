@@ -1,9 +1,7 @@
 #Unpassable mountains in The Caucasus.
 discovered_by = eastern
 discovered_by = western
-add_core = G01
-owner = G01
 culture = warszawska
 religion = catholic
-controller = G01
 is_city = no
+trade_goods = unknown

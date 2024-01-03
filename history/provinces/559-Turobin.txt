@@ -1,12 +1,9 @@
 #Turobin
-add_core = G01
-owner = G01
-controller = G01
 culture = lubelska
 religion = catholic
 base_tax = 1
 base_production = 1
-trade_goods = gu_mushrooms
+trade_goods = unknown
 base_manpower = 1
 capital = "Turobin"
 is_city = yes

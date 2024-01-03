@@ -1,8 +1,6 @@
-add_core = G01
-owner = G01
 culture = warszawska
 religion = catholic
-controller = G01
 is_city = no
 discovered_by = western
 discovered_by = eastern
+trade_goods = unknown

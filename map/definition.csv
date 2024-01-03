@@ -733,6 +733,8 @@ provinces;red;green;blue;x;x
 986;21;80;32;Jastarnia;x
 987;149;82;79;Kolbudy;x
 988;22;84;126;Tolkmicko;x
+990;22;88;32;Kowiesy;x
+991;150;90;79;Fajsławice;x
 992;22;92;126;Biala Piska;x
 993;150;94;173;Wabrzezno;x
 994;22;96;32;Koscierzyna;x
@@ -1259,6 +1261,7 @@ provinces;red;green;blue;x;x
 2001;95;200;200;Siling Lake;x
 2002;200;135;255;Piaski;x
 2024;255;15;160;Boguchwala;x
+2025;255;16;40;South Georgia;x
 2026;255;17;120;Miaczyn;x
 2027;230;18;160;Pawlosiow;x
 2028;255;19;90;Tereszpol;x
@@ -1911,12 +1914,14 @@ provinces;red;green;blue;x;x
 3001;232;5;5;Dobrzen Wielki;x
 3002;134;198;192;Orzesze;x
 3003;188;110;220;Zebowice;x
-#3500;219;23;200;;
-#3501;219;23;201;;
+3500;219;23;200;Zduny;
+3501;219;23;201;Jeziorzany;
 #3502;219;23;202;;
-#3503;219;23;203;;
-#3504;219;23;204;;
-#3505;219;23;205;;
+3503;219;23;203;Sztutowo;
+3504;219;23;204;Morąg;
+3505;219;23;205;Krasnobród;
+3502;219;23;202;Frampol;
+3584;225;25;184;Goraj;
 4020;239;204;149;Dukla;x
 4021;244;97;32;Sekowa;x
 4022;217;166;43;Krempna;x
@@ -2550,8 +2555,9 @@ provinces;red;green;blue;x;x
 4776;177;186;20;Drzycim;x
 4777;202;126;16;Lipusz;x
 4778;32;31;94;Rogowo;x
-4780;25;224;138;Jamielnica;x
-4781;197;9;45;Stzrelce Opolskie;x
+4779;124;10;162;Jemielnica;x
+4780;25;224;138;Strzelce Opolskie;x
+4781;197;9;45;Rabka-Zdroj;x
 4782;45;197;9;Rabka-Zdroj;x
 4783;9;45;197;Jordanow;x
 4784;135;45;9;City of Mszana Dolna;x
@@ -2585,5 +2591,9 @@ provinces;red;green;blue;x;x
 4868;136;85;174;Makow Podhalanski;x
 4869;56;20;83;Stubno;x
 4870;40;100;119;Przemysl;x
+4935;210;40;41;Zabki;x
+4936;210;70;81;Kauai;x 
 4934;210;10;1;Willandra Lakes;x
+4937;210;20;121;Narol;x
+4939;210;80;11;City of Lubaczow;x
 4941;30;216;201;Lake Tulare;x
