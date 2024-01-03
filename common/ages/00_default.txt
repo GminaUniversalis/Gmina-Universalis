@@ -36,7 +36,7 @@ age_of_discovery = {
 
 		obj_urbanisation = {
 			num_of_owned_provinces_with = {
-				has_terrain = farmlands
+				has_terrain = urban
 				value = 5 
 			}
 		}
