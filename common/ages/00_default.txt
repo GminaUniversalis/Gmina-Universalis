@@ -11,7 +11,7 @@ age_of_discovery = {
 
 	objectives = {
 		obj_100_political_unity = {
-			religious_unity = 100
+			religious_unity = 1
 		}
 
 		obj_vodka_monopoly = {

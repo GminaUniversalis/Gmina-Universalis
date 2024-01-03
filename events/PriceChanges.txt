@@ -39,10 +39,30 @@ country_event = {
 	option = {
 		name = prices.4.a
 		change_price = {
-			trade_goods = fish
+			trade_goods = livestock
 			key = PROTESTANT_DONT_EAT_FISH
-			value = -0.1
+			value = 0.5
 			duration = -1
+		}
+
+		add_country_modifier = {
+			name = "communism_price_increase"
+			duration = 1825
+		}
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+				}
+				
+				country_event = { 
+					id = communism.1
+					days = 30
+				}
+			}
 		}
 	}
 }

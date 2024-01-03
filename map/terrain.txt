@@ -333,7 +333,7 @@ categories =  {
 		sound_type = plains
 
 		movement_cost = 1.5
-		defence = 3
+		defence = 2
 		local_development_cost = 0.20
 		supply_limit = 4
 		
