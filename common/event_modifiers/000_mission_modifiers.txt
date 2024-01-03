@@ -14,3 +14,11 @@ great_victory ={
 great_diplomacy ={
 	ae_impact = -0.15
 }
+better_overlord ={
+	liberty_desire_from_subject_development = -0.05
+	diplomatic_annexation_cost = -0.1
+}
+cool_head ={
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.2
+}

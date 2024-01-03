@@ -1,8 +1,10 @@
 #1173 - Namib Desert / Skeleton Coast
-1487.1.1 = { discovered_by = POR }
 culture = galicyjska
 religion = catholic
 is_city = no
+base_tax = 1
+base_production = 9
+trade_goods = slaves
+base_manpower = 1
 discovered_by = western
 discovered_by = eastern
-trade_goods = unknown

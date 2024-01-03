@@ -7,4 +7,5 @@ religion = catholic
 is_city = no
 discovered_by = western
 discovered_by = eastern
-trade_goods = unknown
+trade_goods = gu_amber
+center_of_trade = 1
