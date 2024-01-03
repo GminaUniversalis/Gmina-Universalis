@@ -1,4 +1,4 @@
-﻿powiat_bieszczadzki = { 
+powiat_bieszczadzki = { 
 	1102 4032 4027 
 }
 powiat_leski = { 
@@ -29,6 +29,7 @@ powiat_strzyzowski = {
 powiat_lancuski = { 
 	523 4495 4456 2051 2097 556 4454 
 }
+
 powiat_przeworski = { 
 	4458 2092 515 4460 527 4453 517 4455 548 4442
 }
@@ -168,7 +169,7 @@ powiat_tomaszowski = {
 }
 powiat_zamojski = { 
 	547 4439 2037 4415 2026 4441 2100 2080 4448 2048
-	4446 2049 520 4451 542
+	4446 2049 520 4451 542 3505
 }
 powiat_hrubieszowski = { 
 	4861 1088 4408 1246 1109 4409 572 2738 
@@ -199,7 +200,7 @@ powiat_rycki = {
 }
 powiat_lubartowski = { 
 	2339 4504 504 2067 2088 514 4506 4464 530 2333
-	4503 2336
+	4503 2336 3501
 }
 powiat_lubelski = { 
 	2072 4505 2060 578 508 4498 968 969 2077 4492
@@ -232,7 +233,7 @@ powiat_leczynski = {
 }
 powiat_bilgorajski = { 
 	4500 522 2028 4444 4447 2050 4443 4445 4437 4508
-	2073 559
+	2073 559 3684 3502
 }
 powiat_siedlecki = { 
 	2354 4688 4686 4209 712 442 444 4344 2349 477
@@ -554,7 +555,7 @@ powiat_dzialdowski = {
 	1835 1012 1015 1845 1945 2445 
 }
 powiat_ostrodzki = { 
-	4115 954 2962 1072 1781 4244 4246 771 
+	4115 954 2962 1072 1781 4244 4246 771 3504
 }
 powiat_ilawski = { 
 	271 39 35 1935 276 281 4539 
@@ -748,7 +749,7 @@ powiat_kutnowski = {
 	413 
 }
 powiat_lowicki = { 
-	2222 446 2216 429 4290 4332 4171 427 4334
+	2222 446 2216 429 4290 4332 4171 427 4334 3500
 }
 powiat_skierniewicki = { 
 	2213 4326 4325 2235 4336 4345 432 4328 2224 990
@@ -1006,7 +1007,7 @@ powiat_nowodworski_maz = {
 	2425 1837 4180 1017 2412 2413 
 }
 powiat_nowodworski_pom = { 
-	9 8 18 4113 
+	9 8 18 4113 3503
 }
 powiat_krosnienski_lubu = { 
 	2889 2900 2933 803 800 744 2931 
