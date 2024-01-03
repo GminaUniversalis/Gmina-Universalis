@@ -66,7 +66,7 @@ zachodnio_pomorskie_region = {
 }
 pomorskie_region = { 
 	areas = { 
-		powiat_bytowski powiat_slupski powiat_kartuski powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski _powiat_trojmiasto
+		powiat_bytowski powiat_slupski powiat_kartuski powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski powiat_trojmiasto
 		powiat_wejherowski powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski powiat_nowodworski_pom 
 	}
 }
