@@ -12,3 +12,5 @@ is_city = yes
 discovered_by = western
 discovered_by = eastern
 add_core = G02
+fort_15th = yes
+center_of_trade = 1
