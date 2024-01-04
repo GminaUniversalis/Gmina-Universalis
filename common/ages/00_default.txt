@@ -132,10 +132,7 @@ age_of_discovery = {
 
 		ab_rich_coal_deposits = {
 			allow = {
-				num_of_owned_provinces_with = {
-					trade_goods = gu_coal
-					value = 3 
-				}
+				gu_coal = 3
 			}
 			modifier = {
 				global_trade_goods_size_modifier = 0.2
