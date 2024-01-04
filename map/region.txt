@@ -28,97 +28,350 @@ malopolska_region = {
 }
 swietokrzyskie_region = { 
 	areas = { 
-		powiat_jedrzejowski powiat_wloszczowski powiat_konecki powiat_kielecki powiat_pinczowski powiat_kazimierski powiat_buski powiat_staszowski powiat_sandomierski powiat_opatowski
-		powiat_ostrowiecki powiat_starachowicki powiat_skarzyski 
+		powiat_jedrzejowski 
+		powiat_wloszczowski 
+		powiat_konecki 
+		powiat_kielecki 
+		powiat_pinczowski 
+		powiat_kazimierski 
+		powiat_buski 
+		powiat_staszowski 
+		powiat_sandomierski 
+		powiat_opatowski
+		powiat_ostrowiecki 
+		powiat_starachowicki 
+		powiat_skarzyski 
 	}
 }
 lubelskie_region = { 
 	areas = { 
-		powiat_pulawski powiat_tomaszowski powiat_janowski powiat_krasnicki powiat_opolski powiat_radzynski powiat_parczewski powiat_wlodawski powiat_bialski powiat_leczynski
-		powiat_swidnicki powiat_lubelski powiat_krasnostawski powiat_chelmski powiat_hrubieszowski powiat_lukowski powiat_rycki powiat_lubartowski powiat_zamojski powiat_bilgorajski
+		powiat_pulawski 
+		powiat_tomaszowski 
+		powiat_janowski 
+		powiat_krasnicki 
+		powiat_opolski 
+		powiat_radzynski 
+		powiat_parczewski 
+		powiat_wlodawski 
+		powiat_bialski 
+		powiat_leczynski
+		powiat_swidnicki 
+		powiat_lubelski 
+		powiat_krasnostawski 
+		powiat_chelmski 
+		powiat_hrubieszowski 
+		powiat_lukowski 
+		powiat_rycki 
+		powiat_lubartowski 
+		powiat_zamojski 
+		powiat_bilgorajski
 	}
 }
 podkarpackie_region = { 
 	areas = { 
-		powiat_tarnobrzeski powiat_debnicki powiat_mielecki powiat_stalowowolski powiat_nizanski powiat_kolbuszowski powiat_lezajski powiat_lancuski powiat_ropczycko_sedziszowski powiat_jasielski
-		powiat_przeworski powiat_rzeszowski powiat_lubaczowski powiat_jaroslawski powiat_przemyski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_krosnienski_pod
+		powiat_tarnobrzeski 
+		powiat_debnicki 
+		powiat_mielecki 
+		powiat_stalowowolski 
+		powiat_nizanski 
+		powiat_kolbuszowski 
+		powiat_lezajski 
+		powiat_lancuski 
+		powiat_ropczycko_sedziszowski 
+		powiat_jasielski
+		powiat_przeworski 
+		powiat_rzeszowski 
+		powiat_lubaczowski 
+		powiat_jaroslawski 
+		powiat_przemyski 
+		powiat_sanocki 
+		powiat_leski 
+		powiat_bieszczadzki 
+		powiat_strzyzowski 
+		powiat_krosnienski_pod
 	}
 }
 mazowieckie_region = { 
 	areas = { 
-		powiat_zurominski powiat_mlawski powiat_przasnyski powiat_ciechanowski powiat_sochaczewski powiat_warszawski_zachodni powiat_legionowski powiat_makowski powiat_ostrolecki powiat_wyszkowski
-		powiat_wolominski powiat_warszawa powiat_zyrardow powiat_grodziski powiat_pruszkowski powiat_piaseczynski powiat_grojecki powiat_bialobrzeski powiat_przysuski powiat_radomski
-		powiat_szydlowiecki powiat_lipski powiat_zwolenski powiat_kozienicki powiat_otwocki powiat_garwolinski powiat_minski powiat_siedlecki powiat_sokolowski powiat_wegrowski
-		powiat_ostrowski powiat_losicki powiat_sierpecki powiat_gostyninski powiat_plocki powiat_plonski powiat_pultuski powiat_nowodworski_maz 
+		powiat_zurominski 
+		powiat_mlawski 
+		powiat_przasnyski 
+		powiat_ciechanowski 
+		powiat_sochaczewski 
+		powiat_warszawski_zachodni 
+		powiat_legionowski 
+		powiat_makowski 
+		powiat_ostrolecki 
+		powiat_wyszkowski
+		powiat_wolominski 
+		powiat_warszawa 
+		powiat_zyrardow 
+		powiat_grodziski 
+		powiat_pruszkowski 
+		powiat_piaseczynski 
+		powiat_grojecki 
+		powiat_bialobrzeski 
+		powiat_przysuski 
+		powiat_radomski
+		powiat_szydlowiecki 
+		powiat_lipski 
+		powiat_zwolenski 
+		powiat_kozienicki 
+		powiat_otwocki 
+		powiat_garwolinski 
+		powiat_minski 
+		powiat_siedlecki 
+		powiat_sokolowski 
+		powiat_wegrowski
+		powiat_ostrowski 
+		powiat_losicki 
+		powiat_sierpecki 
+		powiat_gostyninski 
+		powiat_plocki 
+		powiat_plonski 
+		powiat_pultuski 
+		powiat_nowodworski_maz 
 	}
 }
 podlasie_region = { 
 	areas = { 
-		powiat_siemiatycki powiat_hajnowski powiat_bielski powiat_wysokomazowiecki powiat_zambrowski powiat_lomzynski powiat_kolnenski powiat_grajewski powiat_augustowski powiat_sejnenski
-		powiat_sokolski powiat_moniecki powiat_bialostocki 
+		powiat_siemiatycki 
+		powiat_hajnowski 
+		powiat_bielski 
+		powiat_wysokomazowiecki 
+		powiat_zambrowski 
+		powiat_lomzynski 
+		powiat_kolnenski 
+		powiat_grajewski 
+		powiat_augustowski 
+		powiat_sejnenski
+		powiat_sokolski 
+		powiat_moniecki 
+		powiat_bialostocki 
 	}
 }
 zachodnio_pomorskie_region = { 
 	areas = { 
-		powiat_slawienski powiat_koszalinski powiat_szczecinecki powiat_bialogardzki powiat_kolobrzeski powiat_gryficki powiat_swidwinski powiat_drawski powiat_walecki powiat_choszczenski
-		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_szczecinski powiat_pyrzycki powiat_gryfinski powiat_mysliborski
+		powiat_slawienski 
+		powiat_koszalinski 
+		powiat_szczecinecki 
+		powiat_bialogardzki 
+		powiat_kolobrzeski 
+		powiat_gryficki 
+		powiat_swidwinski 
+		powiat_drawski 
+		powiat_walecki 
+		powiat_choszczenski
+		powiat_lobeski 
+		powiat_stargardzki 
+		powiat_goleniowski 
+		powiat_kamienski 
+		powiat_swinioujscie 
+		powiat_policki 
+		powiat_szczecinski 
+		powiat_pyrzycki 
+		powiat_gryfinski 
+		powiat_mysliborski
 	}
 }
 pomorskie_region = { 
 	areas = { 
-		powiat_bytowski powiat_slupski powiat_kartuski powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski powiat_trojmiasto
+		powiat_bytowski 
+		powiat_slupski 
+		powiat_kartuski 
+		powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski powiat_trojmiasto
 		powiat_wejherowski powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski powiat_nowodworski_pom 
 	}
 }
 kujawsko_pomorskie_region = { 
 	areas = { 
-		powiat_tucholski powiat_swiecki powiat_sepolenski powiat_nakielski powiat_bydgoski powiat_mogilenski powiat_inowroclawski powiat_aleksandrowski powiat_radziejowski powiat_wloclawski
-		powiat_lipnowski powiat_grudziadzki powiat_chelminski powiat_brodnicki powiat_wabrzeski powiat_rypinski powiat_torunski powiat_golubsko-dobrzynski powiat_zninski 
+		powiat_tucholski 
+		powiat_swiecki 
+		powiat_sepolenski 
+		powiat_nakielski 
+		powiat_bydgoski 
+		powiat_mogilenski 
+		powiat_inowroclawski 
+		powiat_aleksandrowski 
+		powiat_radziejowski 
+		powiat_wloclawski
+		powiat_lipnowski 
+		powiat_grudziadzki 
+		powiat_chelminski 
+		powiat_brodnicki 
+		powiat_wabrzeski 
+		powiat_rypinski 
+		powiat_torunski 
+		powiat_golubsko-dobrzynski 
+		powiat_zninski 
 	}
 }
 lubuskie_region = { 
 	areas = { 
-		powiat_wschowski powiat_nowosolski powiat_zaganski powiat_zielonogorski powiat_swiebodzinski powiat_miedzyrzecki powiat_strzelecko-drezdenecki powiat_gorzowski powiat_zarski powiat_slubnicki
-		powiat_sulecinski powiat_krosnienski powiat_krosnienski_lubu 
+		powiat_wschowski 
+		powiat_nowosolski 
+		powiat_zaganski 
+		powiat_zielonogorski 
+		powiat_swiebodzinski 
+		powiat_miedzyrzecki 
+		powiat_strzelecko-drezdenecki 
+		powiat_gorzowski powiat_zarski 
+		powiat_slubnicki
+		powiat_sulecinski 
+		powiat_krosnienski 
+		powiat_krosnienski_lubu 
 	}
 }
 wielkopolska_region = { 
 	areas = { 
-		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_ostrowski_poznan powiat_kaliski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski
-		powiat_slupecki powiat_jarocinski powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki
-		powiat_obornicki powiat_wrzesinski powiat_poznanski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski
+		powiat_leszczynski 
+		powiat_rawicki 
+		powiat_gostynski 
+		powiat_krotoszynski 
+		powiat_ostrowski_poznan 
+		powiat_kaliski 
+		powiat_turecki 
+		powiat_kolski 
+		powiat_pleszewski 
+		powiat_koninski
+		powiat_slupecki 
+		powiat_jarocinski 
+		powiat_wolsztynski 
+		powiat_nowotomyski 
+		powiat_grodziski_poznan 
+		powiat_koscianski 
+		powiat_sremski 
+		powiat_miedzychodzki 
+		powiat_szamotulski 
+		powiat_czarnkowsko-trzcianecki
+		powiat_obornicki 
+		powiat_wrzesinski 
+		powiat_poznanski 
+		powiat_sredzki 
+		powiat_gnieznienski 
+		powiat_wagrowiecki 
+		powiat_chodzieski 
+		powiat_pilski 
+		powiat_zlotowski 
+		powiat_ostrzeszowski
 		powiat_kepinski 
 	}
 }
 warminsko_mazurskie_region = { 
 	areas = { 
-		powiat_nowomiejski powiat_ilawski powiat_dzialdowski powiat_elblaski powiat_lidzbarski powiat_nidzicki powiat_szczycienski powiat_mragowski powiat_piski powiat_elcki
-		powiat_suwalski powiat_olecki powiat_goldapski powiat_gizycki powiat_wegorzewski powiat_olsztynski powiat_bartoszycki powiat_ketrzynski powiat_braniewski powiat_ostrodzki
+		powiat_nowomiejski 
+		powiat_ilawski 
+		powiat_dzialdowski 
+		powiat_elblaski 
+		powiat_lidzbarski 
+		powiat_nidzicki 
+		powiat_szczycienski 
+		powiat_mragowski 
+		powiat_piski 
+		powiat_elcki
+		powiat_suwalski 
+		powiat_olecki 
+		powiat_goldapski 
+		powiat_gizycki 
+		powiat_wegorzewski 
+		powiat_olsztynski 
+		powiat_bartoszycki 
+		powiat_ketrzynski 
+		powiat_braniewski 
+		powiat_ostrodzki
 	}
 }
 dolnoslaskie_region = { 
 	areas = { 
-		powiat_olawski powiat_olesnicki powiat_milicki powiat_strzelinski powiat_zabkowicki powiat_klodzki powiat_dzierzoniowski powiat_gorowski powiat_glogowski powiat_polkowicki
-		powiat_boleslawiecki powiat_zgorzelecki powiat_lwowecki powiat_lubanski powiat_legnicki powiat_jaworski powiat_zlotoryjski powiat_karkonoski powiat_kamiennogorski powiat_walbrzyski
-		powiat_swidnicki_slask powiat_wroclawski powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski 
+		powiat_olawski 
+		powiat_olesnicki 
+		powiat_milicki 
+		powiat_strzelinski 
+		powiat_zabkowicki 
+		powiat_klodzki 
+		powiat_dzierzoniowski 
+		powiat_gorowski 
+		powiat_glogowski 
+		powiat_polkowicki
+		powiat_boleslawiecki 
+		powiat_zgorzelecki 
+		powiat_lwowecki 
+		powiat_lubanski 
+		powiat_legnicki 
+		powiat_jaworski 
+		powiat_zlotoryjski 
+		powiat_karkonoski 
+		powiat_kamiennogorski 
+		powiat_walbrzyski
+		powiat_swidnicki_slask 
+		powiat_wroclawski 
+		powiat_wolowski 
+		powiat_sredzki_slask
+		powiat_trzebnicki 
+		powiat_lubinski 
 	}
 }
 opolskie_region = { 
 	areas = { 
-		powiat_kedzierzynsko-kozielski powiat_strzelecki powiat_oleski powiat_kluczborski powiat_namyslowski powiat_brzeski_opole powiat_nyski powiat_prudnicki powiat_glubczycki powiat_krapkowicki
+		powiat_kedzierzynsko-kozielski 
+		powiat_strzelecki 
+		powiat_oleski 
+		powiat_kluczborski 
+		powiat_namyslowski 
+		powiat_brzeski_opole 
+		powiat_nyski 
+		powiat_prudnicki 
+		powiat_glubczycki 
+		powiat_krapkowicki
 		powiat_opolski_opole 
 	}
 }
 slaskie_region = { 
 	areas = { 
-		powiat_klobucki powiat_myszkowski powiat_czestochowski powiat_lubliniecki powiat_zawiercianski powiat_jaworzno powiat_bedzinski powiat_tarnogorski powiat_bytom powiat_raciborski
-		powiat_wodzislawski powiat_gliwicki powiat_mikolowski powiat_aglomeracja_Katowicka powiat_bierunsko-ledzinski powiat_rybnicki powiat_pszczynski powiat_cieszynski powiat_bielski_slask powiat_zywiecki
+		powiat_klobucki 
+		powiat_myszkowski 
+		powiat_czestochowski 
+		powiat_lubliniecki 
+		powiat_zawiercianski 
+		powiat_jaworzno 
+		powiat_bedzinski 
+		powiat_tarnogorski 
+		powiat_bytom 
+		powiat_raciborski
+		powiat_wodzislawski 
+		powiat_gliwicki 
+		powiat_mikolowski 
+		powiat_aglomeracja_Katowicka 
+		powiat_bierunsko-ledzinski 
+		powiat_rybnicki 
+		powiat_pszczynski 
+		powiat_cieszynski 
+		powiat_bielski_slask 
+		powiat_zywiecki
 	}
 }
 lodzkie_region= {
 	areas = { 
-		powiat_laski powiat_wieruszowski powiat_wielunski powiat_pajeczanski powiat_radomszczanski powiat_leczycki powiat_kutnowski powiat_poddebnicki powiat_sieradzki powiat_zdunskowolski
-		powiat_pabianicki powiat_belchatowski powiat_piotrkowski powiat_lodzki powiat_zgierski powiat_brzezinski powiat_skierniewicki powiat_rawski powiat_tomaszowski_lodz powiat_opoczynski
+		powiat_laski 
+		powiat_wieruszowski 
+		powiat_wielunski 
+		powiat_pajeczanski 
+		powiat_radomszczanski 
+		powiat_leczycki 
+		powiat_kutnowski 
+		powiat_poddebnicki 
+		powiat_sieradzki 
+		powiat_zdunskowolski
+		powiat_pabianicki 
+		powiat_belchatowski 
+		powiat_piotrkowski 
+		powiat_lodzki 
+		powiat_zgierski 
+		powiat_brzezinski 
+		powiat_skierniewicki 
+		powiat_rawski 
+		powiat_tomaszowski_lodz 
+		powiat_opoczynski
 		powiat_lowicki 
 	}
 }
