@@ -2,7 +2,7 @@
 religion = catholic
 base_tax = 1
 base_production = 1
-trade_goods = gu_ceramics
+trade_goods = unknown
 base_manpower = 1
 capital = "Sycow"
 is_city = yes
