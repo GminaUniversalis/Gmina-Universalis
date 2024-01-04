@@ -1,7 +1,6 @@
-#1793 - El Djouf
-1445.1.1 = { discovered_by = POR }
-1600.1.1 = { discovered_by = MOR }
+#1793 - Bierun
 culture = metropolia
+religion = catholic
 hre = yes
 is_city = no
 discovered_by = western

@@ -1,11 +1,14 @@
-#Morag
-culture = mazurska
+#4870 - Australian Lakes
+discovered_by = western
+discovered_by = eastern
+#Przemysl
+culture = lemkowska
 religion = catholic
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Morag"
+capital = "Przemysl"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
