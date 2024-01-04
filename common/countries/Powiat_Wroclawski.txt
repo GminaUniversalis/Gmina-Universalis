@@ -1,0 +1,37 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+color = { 
+	80  165  10
+}
+
+revolutionary_colors = { 117 26 196 }
+monarch_names = { 
+
+	"Marian #0" = 45
+	"Daniel #0" = 50
+	"Jerzy #0" = 25
+	"Radoslaw #0" = 10
+	"Czeslaw #0" = 20
+	"Slawomir #0" = 15
+	"Jacek #0" = 30
+	"Dawid #0" = 60
+	"Marcel #0" = 10
+	"Oktawian #0" = 1
+	"Szymon #0" = 20
+	"Andrzej #0" = 12
+}
+leader_names = {
+
+}
+ship_names = {
+	"WKS Dzida"
+	"WKS Tarcza"
+	"WKS Miecz"
+}
+army_names = { 
+	"Kohorta z $PROVINCE$" 
+}
+fleet_names = { 
+	"Breslau Fleet" 
+}

@@ -2,10 +2,13 @@
 religion = catholic
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_hemp
 base_manpower = 1
 capital = "Miedzyborz"
 is_city = yes
+culture = legnicka
 discovered_by = western
 discovered_by = eastern
-culture = legnicka
+latent_trade_goods = { 
+	coal 
+}

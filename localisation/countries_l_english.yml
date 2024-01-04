@@ -3,6 +3,8 @@
  G01_ADJ:0 "Cracovian"
  G02:0 "Powiat Szczecinecki"
  G02_ADJ:0 "Szczecinecki"
+ WRO:0 "Powiat Wrocławski"
+ WRO_ADJ:0 "Wrocławski"
  ADA:0 "Adal"
  ADE:1 "Aden"
  AKK:0 "Aq Qoyunlu"
