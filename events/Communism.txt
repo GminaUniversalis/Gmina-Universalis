@@ -19,6 +19,8 @@ country_event = {
 	option = {
 		name = communism.1.a
 
+		add_stability = -1
+
 		add_country_modifier = {
 			name = "communism_price_increase"
 			duration = 1825
