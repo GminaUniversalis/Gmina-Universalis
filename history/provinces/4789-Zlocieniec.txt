@@ -1,11 +1,11 @@
-#Lipusz
-culture = kujawska
+#Zlocieniec
+culture = zachodniopomorska
 religion = catholic
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Lipusz"
+capital = "Zlocieniec"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
