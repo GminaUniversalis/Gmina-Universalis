@@ -113,14 +113,14 @@ G02_conquest ={
 				name = "great_army"
 				duration = -1
 			}
-				Powiat_koszalinski = {
+			powiat_koszalinski = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT	}
 						NOT = { is_core = ROOT	}
 					}
 					add_permanent_claim = ROOT
 				}
-				Powiat_drawski = {
+				powiat_drawski = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT	}
 						NOT = { is_core = ROOT	}
@@ -222,7 +222,7 @@ G02_conquest_2 ={
 				name = "great_victory"
 				duration = 3650
 			}
-			Powiat_kolobrzeski = {
+			powiat_kolobrzeski = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -248,7 +248,11 @@ G02_conquest_2 ={
 			}
 		}
 		effect = { 
-			Powiat_bialogardzki = {
+			add_country_modifier = {
+				name = building_navy
+				duration = 3650
+			}
+			powiat_bialogardzki = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -286,10 +290,10 @@ G02_conquest_4 ={
 		}
 		effect = { 
 			add_country_modifier = {
-				name = "great_victory"
+				name = "besieging_forts"
 				duration = 3650
 			}
-			Powiat_swidwinski = {
+			powiat_swidwinski = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -316,10 +320,10 @@ G02_conquest_4 ={
 		}
 		effect = { 
 			add_country_modifier = {
-				name = "great_victory"
+				name = "loyal_army"
 				duration = 3650
 			}
-			Powiat_lobeski = {
+			powiat_lobeski = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}

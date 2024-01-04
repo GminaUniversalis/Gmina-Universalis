@@ -4,7 +4,7 @@ better_workspace = {
 }
 great_army = 
 {
-	local_friendly_movement_speed = 0.1
+	movement_speed = 0.1
 	manpower_recovery_speed = 0.1
 }
 great_victory ={
@@ -21,4 +21,21 @@ better_overlord ={
 cool_head ={
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.2
+}
+building_navy ={
+	global_ship_cost = -0.1
+	global_ship_recruit_speed = -0.1
+	sailors_recovery_speed = 0.1
+	global_sailors = 2500
+}
+besieging_forts ={
+	siege_ability = 0.1
+	movement_speed = 0.1
+	prestige_from_land = 0.1
+}
+loyal_army ={
+	discipline = 0.025
+	army_tradition_from_battle = 0.1
+	drill_gain_modifier = 0.25
+
 }
