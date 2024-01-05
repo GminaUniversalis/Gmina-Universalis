@@ -61,6 +61,7 @@ categories =  {
 		nation_designer_cost_multiplier = 1.05
 		
 		terrain_override = {
+			787 794 2847
 		}		
 	}
 	
@@ -308,7 +309,7 @@ categories =  {
 		allowed_num_of_buildings = 1
 		
 		terrain_override = {
-			1
+			1 2839
 		}	
 	}	
 

@@ -2,6 +2,135 @@
 
 # Uses all 'modifiers' possible thats exported as a Modifier.
 
+communism_group = {
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 18 }
+	
+	communism_pzpr = {
+		icon = 30
+		color = { 0.84 0.15 0.1 }
+		country = {
+				tolerance_own = 2
+				advisor_pool = 1
+		}
+		country_as_secondary = {
+			idea_cost = -0.1
+		}
+		province = {
+				local_missionary_strength = -0.02
+		}
+		heretic = { REVISIONIST }
+
+		allowed_conversion = {
+			communism_sd
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = communism_pzpr
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		}
+
+		uses_hussite_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			clerical_poverty_aspect
+			bread_and_wine_aspect
+			sola_scriptura_aspect
+		}
+		aspects_name = PROTESTANT_ASPECTS
+	}
+
+	communism_sd = {
+		icon = 31
+		color = { 0.1 0.45 0.77 }
+		country = {
+				tolerance_own = 2
+				advisor_pool = 1
+		}
+		country_as_secondary = {
+			idea_cost = -0.1
+		}
+		province = {
+				local_missionary_strength = -0.02
+		}
+		heretic = { REVISIONIST }
+
+		allowed_conversion = {
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = communism_sd
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		}
+
+		uses_hussite_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			clerical_poverty_aspect
+			bread_and_wine_aspect
+			sola_scriptura_aspect
+		}
+		aspects_name = PROTESTANT_ASPECTS
+	}
+
+	communism_zsl = {
+		icon = 32
+		color = { 0.56 0.77 0.1 }
+		country = {
+				tolerance_own = 2
+				advisor_pool = 1
+		}
+		country_as_secondary = {
+			idea_cost = -0.1
+		}
+		province = {
+				local_missionary_strength = -0.02
+		}
+		heretic = { REVISIONIST }
+
+		allowed_conversion = {
+			communism_sd
+			communism_pzpr
+		}
+
+		on_convert = {
+			change_religion = communism_zsl
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		}
+
+		uses_hussite_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			clerical_poverty_aspect
+			bread_and_wine_aspect
+			sola_scriptura_aspect
+		}
+		aspects_name = PROTESTANT_ASPECTS
+	}
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+	crusade_name = WAR_WITH_COUNTER_REVISIONISM
+}
+
 christian = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
