@@ -1,3 +1,4 @@
+
 F15_ideas = {
 	start = {
 		
@@ -39,7 +40,6 @@ F15_ideas = {
 		infantry_power = 0.20
 	}
 }
-
 P03_ideas = {
 	start = {
 		idea_cost = -0.1
@@ -131,7 +131,7 @@ P03_ideas = {
 				infantry_power = 0.1
 			}
 			Zalew = {
-				global_tax_modifier = 0.1
+				global_tax_modifier = 0.1 
 			}
 			Oriental_cuisine = {
 				num_accepted_cultures = 2
@@ -245,6 +245,7 @@ P03_ideas = {
 				construction_cost = -0.1
 				cosntruction_time = -0.15
 			}
+
 			Consumer_capital_of_the_lowersilesia = {
 				land_morale = 0.15
 			}
@@ -268,8 +269,6 @@ P03_ideas = {
 			bonus = {
 				global_tax_modifier = 0.2
 			}
-
-
 		}
 		A06_ideas = {
 			start ={
@@ -306,5 +305,3 @@ P03_ideas = {
 				global_garrison_growth = 0.25
 			}
 		}
-		
-		

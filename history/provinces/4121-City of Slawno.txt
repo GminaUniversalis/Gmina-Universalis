@@ -9,3 +9,4 @@ capital = "City of Slawno"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+center_of_trade = 2

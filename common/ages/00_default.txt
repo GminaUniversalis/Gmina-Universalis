@@ -1,0 +1,786 @@
+age_of_discovery = {
+	start = 1400
+	
+	can_start = {
+		always = yes
+	}
+	
+	religious_conflicts = yes
+	papacy = 1.0
+	
+
+	objectives = {
+		obj_100_political_unity = {
+			religious_unity = 1
+		}
+
+		obj_vodka_monopoly = {
+			trading_bonus = {
+				trade_goods = gu_vodka
+				value = yes
+			}
+		}
+
+		obj_urbanisation = {
+			num_of_owned_provinces_with = {
+				has_terrain = urban
+				value = 5 
+			}
+		}
+		
+		obj_war_orders = {
+			has_commanding_three_star = yes
+		}	
+	
+		obj_5_year_plan = {
+			num_of_owned_provinces_with = {
+				has_building = workshop
+				value = 5 
+			}
+		}
+
+		obj_industralisation = {
+			production_income_percentage = 0.40
+		}
+	
+		obj_join_opposition = {
+			has_institution = renaissance
+			all_state_province = {
+				renaissance = 100
+			}
+	   	}
+	}		
+	
+	abilities = {
+		ab_zomo = {
+			modifier = {
+				harsh_treatment_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_large_panel_buildings = {
+			modifier = {
+				development_cost = -0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}			
+		}
+		
+		ab_stachanowcy = {
+			modifier = {
+				production_efficiency = 0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_hand_of_kremlin = {
+			modifier = {
+				land_forcelimit_modifier = 0.25
+			}
+			ai_will_do = {
+				factor = 10
+			}	
+		}
+		
+		ab_foreign_debt = {
+			modifier = {
+				interest = -1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_security_service = {
+			modifier = {
+				spy_offence = 0.3
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_3_milion_party = {
+			modifier = {
+				tolerance_own = 2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_huge_dockyards = {
+			allow = {
+				num_of_owned_provinces_with = {
+					has_port = yes
+					value = 3 
+				}
+			}
+			modifier = {
+				global_ship_cost = -0.3	
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_rich_coal_deposits = {
+			allow = {
+				gu_coal = 3
+			}
+			modifier = {
+				global_trade_goods_size_modifier = 0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_western_smugglers = {
+			allow = {
+				num_of_owned_provinces_with = {
+					value = 3
+					region = lubuskie_region
+				}
+			}
+			modifier = {
+				placed_merchant_power = 3
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_martial_law = {
+			allow = {
+				army_size_percentage = 0.9
+			}
+			modifier = {
+				global_unrest = -2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}
+
+age_of_reformation = {
+	start = 1530
+	
+	can_start = {
+		is_religion_enabled = protestant
+	}
+	
+	
+	religious_conflicts = yes
+	papacy = 1.25
+	
+	objectives = {
+		obj_christian_convert = {
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = hussite
+			}
+		}
+		
+		obj_humanism_religious = {
+			OR = {
+				full_idea_group = humanist_ideas
+				full_idea_group = religious_ideas
+			}
+		}
+		
+		obj_convert_10_provinces = {
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_10_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 10 }
+			}
+		}
+		
+		obj_colonial_empire = {
+			colony = 5
+		}
+		
+		obj_force_converted = {
+			custom_trigger_tooltip = {
+				tooltip = obj_force_converted_tooltip
+				has_country_flag = force_converted
+			}
+		}
+		
+		obj_asian_trade = {
+			OR = {
+				trading_bonus = {
+					trade_goods = spices
+					value = yes
+				}
+				trading_bonus = {
+					trade_goods = cloves
+					value = yes
+				}
+				trading_bonus = {
+					trade_goods = chinaware
+					value = yes
+				}
+				trading_bonus = {
+					trade_goods = silk
+					value = yes
+				}
+			}
+		
+		
+		}
+		
+		obj_unify_culture = {	
+			is_subject = no
+			has_unified_culture_group = yes
+		}
+	}	
+	
+	
+	abilities = {	
+		ab_allow_religion_enforced = {
+			effect = {
+				custom_tooltip = religion_enforced_edict
+				set_country_flag = religion_enforced_edict
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		ab_siege_blockades = {
+			modifier = {
+				siege_blockade_progress = 1
+			}
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					NOT = {
+							num_of_ports = 5
+					}
+				}
+
+			}
+		}
+
+		
+		ab_warscore_vs_religion = {
+			modifier = {
+				warscore_cost_vs_other_religion = -0.25
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_mercenary_discipline = {
+			modifier = {
+				mercenary_discipline = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_ship_power_propagation = {
+			modifier = {
+				ship_power_propagation = 0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		
+		ab_institution_spread_from_true_faith = {
+			modifier = {
+				institution_spread_from_true_faith = 0.5
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_prestige_per_development_from_conversion = {
+			modifier = {
+				prestige_per_development_from_conversion = 0.3
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_spain_shock_tactics = {
+			allow = {
+				tag = SPA
+			}
+			modifier = {
+				leader_land_shock = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_mughal_artillery = {
+			allow = {
+				tag = MUG
+			}
+			modifier = {
+				artillery_power = 0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		ab_polish_legitimacy = {
+			allow = {
+				OR = {
+					tag = PLC
+					tag = POL
+					custom_trigger_tooltip = {
+						tooltip = enable_this_ability_tt
+						has_country_flag = unlock_polish_ability_flag
+					}
+				}
+			}
+			modifier = {
+				global_trade_goods_size_modifier = 0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		ab_persia_development = {
+			allow = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = unlocked_this_ab_tt
+						has_country_flag = enable_persian_age_ability_flag
+					}
+					tag = PER
+					tag = ERS
+				}
+			}
+			modifier = {
+				development_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	
+	}
+}
+
+
+
+
+age_of_absolutism = {
+	start = 1620
+	
+	can_start = {
+		is_institution_enabled = global_trade
+	}
+	
+	papacy = 1.5
+	
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+	}
+		
+	objectives = {
+		obj_3_trade_companies = {
+			num_of_trade_companies = 3
+		}
+		
+		obj_universities = {
+			num_of_owned_provinces_with = {
+				has_building = university 
+				value = 5 
+			}
+		}
+	
+		obj_large_forcelimit = {
+			land_forcelimit = 200
+		}
+		
+		obj_90_absolutism = {
+			absolutism = 90
+		}
+		
+		obj_emperor_of_china = {
+			is_emperor_of_china = yes
+			imperial_mandate = 50
+		}
+		
+		obj_cultures_accepted = {
+			num_accepted_cultures = 5
+		}
+		
+		obj_win_religious_war = {
+			custom_trigger_tooltip = {
+				tooltip = obj_religious_league_war_on_winning_side_tooltip
+				has_country_flag = religious_league_war_on_winning_side
+			}
+			
+		}
+	}	
+	
+	abilities = {
+	
+		ab_allow_edict_of_absolutism = {
+			effect = {
+				custom_tooltip = edict_of_absolutism_tt
+				set_country_flag = edict_of_absolutism
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_rival_change = {
+			modifier = {
+				rival_change_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		ab_rival_border_fort = {
+			modifier = {
+				rival_border_fort_maintenance = -1.0
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+
+		ab_autonomy = {
+			modifier = {
+				autonomy_change_time = -0.5
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+
+		ab_harsh_treatment = {
+			modifier = {
+				harsh_treatment_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+	
+		ab_adm_efficiency = {
+			modifier = {
+				administrative_efficiency = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_yearly_absolutism = {
+			modifier = {
+				yearly_absolutism = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	
+	
+		ab_french_absolutism = {
+			allow = {
+				tag = FRA
+			}
+			modifier = {
+				max_absolutism_effect = 0.3
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_dutch_trade = {
+			allow = {
+				tag = NED
+			}
+			modifier = {
+				trade_steering = 0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}	
+		ab_sweden_manpower = {
+			allow = {
+				OR = {
+					tag = SWE
+					tag = SCA
+				}
+			}
+			modifier = {
+				manpower_recovery_speed = 0.35
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_manchu_banner = {
+			allow = {
+				OR = {
+					tag = MCH
+					tag = QNG
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						NOT = { primary_culture = manchu }
+						NOT = { primary_culture = manchu_new }
+						NOT = { has_government_attribute = allow_banners }
+					}
+					custom_tooltip = ab_manchu_banner_tt
+				}
+			}
+			modifier = {
+				amount_of_banners = 0.5
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}
+
+age_of_revolutions = {
+	start = 1710
+	
+	can_start = {
+		is_institution_enabled = enlightenment
+	}
+	
+	papacy = 2.0
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+	}	
+	
+	objectives = {
+		obj_parliament = {
+			has_parliament = yes
+		}
+		
+		obj_emperor = {
+			OR = {	
+				is_emperor = yes
+				government_rank = 3
+				is_emperor_of_china = yes
+			}
+		}
+		obj_large_subject = {
+			any_subject_country = {
+				total_development = 250
+			}
+		}
+		obj_disc_army = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.25
+				extra_shortcut = yes
+			}
+		}
+		obj_huge_capital = {
+			capital_scope = {
+				development = 50
+			}
+		}
+		obj_great_general = {
+			has_commanding_three_star = yes
+		}
+	
+		obj_two_institutions = {
+			num_of_owned_and_controlled_institutions = 2
+		}
+	}
+
+	abilities = {
+		ab_allow_anti_revolutionary_zeal = {
+			modifier = {
+				liberty_desire_from_subject_development = -0.33
+			}
+			ai_will_do = {
+				factor = 15
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 30
+						}
+					}
+				}
+			}
+		}
+
+		ab_napoleonic_warfare = {
+			modifier = {
+				artillery_levels_available_vs_fort = 3
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+
+		ab_force_march = {
+			modifier = {
+				force_march_free = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_more_ships_can_fire = {
+			modifier = {
+				global_naval_engagement_modifier = 0.20
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_no_distance_for_core = {
+			modifier = {
+				ignore_coring_distance = yes
+			}
+			ai_will_do = {
+				factor = 15
+				modifier = {
+					# AI peace code relies on being limited by coring range, or it will create crazy border gore where it can't reach its new lands
+					factor = 0
+					OR = {
+						is_subject = no
+						overlord = {
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+		
+		ab_backrow_artillery = {
+			modifier = {
+				backrow_artillery_damage = 0.20
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		ab_same_contine_lib_desire = {
+			modifier = {
+				reduced_liberty_desire_on_same_continent = 25
+			}
+			ai_will_do = {
+				factor = 15
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 30
+							same_continent = ROOT
+						}
+					}
+				}
+			}
+		}
+		ab_pru_military = {
+			allow = {
+				OR = {
+					tag = PRU
+					tag = GER
+				}
+			}
+			modifier = {
+				fire_damage_received = -0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_gbr_fleet = {
+			allow = {
+				OR = {
+					tag = AVE
+					tag = GBR
+				}
+			}
+			modifier = {
+				max_admiral_fire = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_russia_boost = {
+			allow = {
+				tag = RUS
+			}
+			modifier = {
+				min_autonomy_in_territories = -0.1
+			}	
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_austrian_morale = {
+			allow = {
+				OR = {
+					tag = HAB
+					tag = HLR
+				}
+			}
+			modifier = {
+				morale_damage_received = -0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}
