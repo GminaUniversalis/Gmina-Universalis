@@ -39,7 +39,7 @@ communism_group = {
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			clerical_poverty_aspect
+			women_in_party
 			bread_and_wine_aspect
 			sola_scriptura_aspect
 		}
@@ -79,7 +79,7 @@ communism_group = {
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			clerical_poverty_aspect
+			women_in_party
 			bread_and_wine_aspect
 			sola_scriptura_aspect
 		}
@@ -119,7 +119,7 @@ communism_group = {
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			clerical_poverty_aspect
+			women_in_party
 			bread_and_wine_aspect
 			sola_scriptura_aspect
 		}
