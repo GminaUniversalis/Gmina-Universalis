@@ -1,7 +1,6 @@
 #2426 - Yamal
-1450.1.1 = { discovered_by = SIB }
-1581.1.1 = { discovered_by = RUS }
 culture = mazurska
+religion = catholic
 is_city = no
 discovered_by = western
 discovered_by = eastern
