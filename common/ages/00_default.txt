@@ -144,13 +144,9 @@ age_of_discovery = {
 
 		ab_western_smugglers = {
 			allow = {
-				num_of_provinces_owned_or_owned_by_subjects_with = {
-					value = 5
-					OR = {
-						region = zachodnio_pomorskie_region
-						region = lubuskie_region
-						region = dolnoslaskie_region
-					}
+				num_of_owned_provinces_with = {
+					value = 3
+					region = lubuskie_region
 				}
 			}
 			modifier = {
