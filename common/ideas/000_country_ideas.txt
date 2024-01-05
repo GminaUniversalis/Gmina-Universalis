@@ -1,5 +1,6 @@
 G01_ideas = {
 	start = {
+		
 		trade_efficiency = 0.15
 		improve_relation_modifier = 0.2
 		
@@ -39,6 +40,98 @@ G01_ideas = {
 	}
 }
 
+
+
+			Pomeranian_Wall_Museum = {
+				defensiveness = 0.15
+			}
+			Pomeranian_Dukes_Castle = {
+				legitimacy = 1
+			}
+			Church_of_Mary = 
+			{
+				tolerance_own = 2
+			}
+			Bismarck_Tower = {
+				culture_conversion_cost = -0.15
+			}
+			Kaulfuss_Monument = {
+				technology_cost = -0.1
+			}
+			Post-Soviet_Barracks = {
+				land_forcelimit_modifier = 0.15
+			}
+			Citizen_Wlapko = {
+				global_unrest = -2
+			}
+		}
+		RADOM_ideas ={
+			start = {
+				stability_cost_modifier = -0.1
+				global_manpower_modifier = 0.075
+			}
+
+			bonus = {
+				global_foreign_trade_power = 0.15
+			}
+
+			Radomski_czerwiec = {
+				land_morale = 0.1
+			}
+			WSHR = {
+				caravan_power = 0.1
+			}
+			Ryenk_Radomski = {
+				development_cost = -0.1
+			}
+			Old_capital = {
+				presitge_decay = -0.05
+			}
+			TPS_ZDR = {
+				diplomatic_reputation = 1
+			}
+			Ilza_castle = {
+				papal_influence = 1
+			}
+			Military_infrastructure = {
+				artillery_power = 0.15
+			}
+
+		}
+		OLKUSZ_ideas ={
+			start = {
+				global_trade_goods_size_modifier = 0.1
+				hostile_attrition = 2
+			}
+			Wolbromian_cross = {
+				global_missionary_strength = 0.02
+			}
+			Olkuszian_aficionados = {
+				infantry_power = 0.1
+			}
+			Zalew = {
+				global_tax_modifier = 0.1
+			}
+			Oriental_cuisine = {
+				num_accepted_cultures = 2
+			}
+			Rabka_fortress = {
+				defensiveness = 0.2
+			}
+			Land_of_factories = {
+				development_cost = -0.1
+			}
+			Workers_strong_together = {
+				discipline = 0.05
+			}
+			Rubber_paradise = {
+				trade_efficiency = 0.1
+			}
+			bonus = {
+				build_cost = -0.1
+			}
+		}
+		
 
 G02_ideas = {
 	start = {
@@ -122,3 +215,4 @@ WRO_ideas = {
 		discipline = 0.05
 	}
 }
+
