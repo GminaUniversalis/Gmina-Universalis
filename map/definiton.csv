@@ -1037,7 +1037,44 @@ provinces;red;green;blue;x;x
 1662;29;203;203;Lake Michigan;x
 1663;30;203;253;Lake Superior;x
 1664;31;223;253;Lake Nipigon;x
-1665;32;253;253;Lake Winnipeg;x
+1665;32;253;253;Lake Winnipeg;
+1705;72;253;253;Eastern Pacific #6;x
+1706;73;203;203;Eastern Pacific #7;x
+1707;74;203;253;Eastern Pacific #8;x
+1708;75;223;253;Eastern Pacific #9;x
+1709;76;253;253;Eastern Pacific #10;x
+1710;77;203;203;Eastern Pacific #11;x
+1711;78;203;253;Eastern Pacific #12;x
+1712;79;223;253;Eastern Pacific #13;x
+1713;80;253;253;Eastern Pacific #14;x
+1714;81;203;203;Eastern Pacific #15;x
+1715;82;203;253;Eastern Pacific #16;x
+1716;83;223;253;Eastern Pacific #17;x
+1717;85;203;203;Southern Pacifc #1;x
+1718;86;203;253;Southern Pacifc #2;x
+1719;87;223;253;Southern Pacifc #3;x
+1720;88;253;253;Southern Pacifc #4;x
+1721;89;203;203;Southern Pacifc #5;x
+1722;90;203;253;Southern Pacifc #6;x
+1723;91;223;253;Southern Pacifc #7;x
+1724;92;253;253;Southern Pacifc #8;x
+1725;93;203;203;Southern Pacifc #9;x
+1726;94;203;253;Southern Pacifc #10;x
+1727;95;223;253;Southern Pacifc #11;x
+1728;96;253;253;Southern Pacifc #12;x
+1729;97;203;203;Southern Pacifc #13;x
+1730;98;203;253;Southern Pacifc #14;x
+1731;99;223;253;Southern Pacifc #15;x
+1732;100;253;253;Southern Pacifc #16;x
+1733;101;203;203;Southern Pacifc #17;x
+1734;102;203;253;Southern Pacifc #18;x
+1735;103;223;253;Southern Pacifc #19;x
+1736;104;203;203;Southern Pacifc #20;x
+1737;106;203;253;Southern Pacifc #22;x
+1738;107;223;253;Southern Pacifc #23;x
+1739;108;253;253;Southern Pacifc #24;x
+1740;109;203;203;Southern Pacifc #25;x
+1741;110;203;253;Southern Pacifc #26;x
 1742;66;68;126;Bcdkowo;x
 1743;194;70;173;Osieczna;x
 1744;66;72;32;Swiekatowo;x
@@ -1917,15 +1954,19 @@ provinces;red;green;blue;x;x
 3004;189;110;220;Czechy Zachód;
 3200;219;32;10;Niemcy Poludnie;
 3238;219;32;48;Niemcy Polnoc;
+3288;219;32;98;Litwa;
+3289;219;32;99;Ukraina Zachod;
 3218;219;32;28;Holandia;
 3219;219;32;29;Czechy Wschód;
 3419;219;32;229;Bornholm;
-#3500;219;23;200;;
+3500;219;23;200;Bialorus;
 #3501;219;23;201;;
 #3502;219;23;202;;
 #3503;219;23;203;;
 #3504;219;23;204;;
-#3505;219;23;205;;
+3505;219;23;205;Krolewiec;
+3619;225;25;209;Bialorus wschod;
+3721;100;11;121;Ukraina wschod;
 4020;239;204;149;Dukla;x
 4021;244;97;32;Sekowa;x
 4022;217;166;43;Krempna;x
@@ -2559,7 +2600,6 @@ provinces;red;green;blue;x;x
 4776;177;186;20;Drzycim;x
 4777;202;126;16;Lipusz;x
 4778;32;31;94;Rogowo;x
-#tucosbrakuje
 4780;25;224;138;Jemielnica;x
 4781;197;9;45;Strzelce Opolskie;x
 4782;45;197;9;Rabka-Zdroj;x
