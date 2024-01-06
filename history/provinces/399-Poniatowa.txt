@@ -9,3 +9,6 @@ capital = "Poniatowa"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D05
+controller = D05
+add_core = D05

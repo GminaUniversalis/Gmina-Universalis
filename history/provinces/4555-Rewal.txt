@@ -9,3 +9,6 @@ capital = "Rewal"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = P06
+controller = P06
+add_core = P06

@@ -9,3 +9,6 @@ capital = "Dobron"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C11
+controller = C11
+add_core = C11

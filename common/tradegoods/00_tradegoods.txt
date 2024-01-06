@@ -92,7 +92,7 @@ grain = {
 }
 
 wine = {
-	color = { 1 0.13 0.62 }
+	color = { 0.36 0.13 0.28 }
 	modifier = {
 		global_unrest = -1
 	}

@@ -9,3 +9,6 @@ capital = "City of Krasnik"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D04
+controller = D04
+add_core = D04

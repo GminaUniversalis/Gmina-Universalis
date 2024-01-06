@@ -9,3 +9,6 @@ capital = "Jozefow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G25
+controller = G25
+add_core = G25

@@ -9,3 +9,6 @@ capital = "Wola Myslowska"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D16
+controller = D16
+add_core = D16

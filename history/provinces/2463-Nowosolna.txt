@@ -9,3 +9,6 @@ capital = "Nowosolna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C14
+controller = C14
+add_core = C14

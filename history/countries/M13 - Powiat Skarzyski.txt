@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = zachodniopomorska 
+capital = 2343	# Skarzysko-Kamienna

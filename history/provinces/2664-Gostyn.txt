@@ -9,3 +9,6 @@ capital = "Gostyn"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R03
+controller = R03
+add_core = R03

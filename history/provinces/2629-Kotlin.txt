@@ -9,3 +9,6 @@ capital = "Kotlin"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R12
+controller = R12
+add_core = R12

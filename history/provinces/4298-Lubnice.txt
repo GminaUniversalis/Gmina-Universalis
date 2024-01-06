@@ -9,3 +9,6 @@ capital = "Lubnice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C02
+controller = C02
+add_core = C02

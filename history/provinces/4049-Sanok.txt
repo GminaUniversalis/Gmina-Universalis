@@ -9,3 +9,6 @@ capital = "Sanok"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I16
+controller = I16
+add_core = I16

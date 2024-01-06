@@ -9,3 +9,6 @@ capital = "City of Zdunska Wola"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C10
+controller = C10
+add_core = C10

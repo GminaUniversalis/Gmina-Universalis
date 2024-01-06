@@ -9,3 +9,6 @@ capital = "Kcynia"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B04
+controller = B04
+add_core = B04

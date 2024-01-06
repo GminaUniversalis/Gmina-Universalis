@@ -9,3 +9,6 @@ capital = "Gorzkow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D13
+controller = D13
+add_core = D13

@@ -9,3 +9,6 @@ capital = "Cycow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D10
+controller = D10
+add_core = D10

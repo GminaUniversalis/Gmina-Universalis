@@ -734,7 +734,7 @@ province;red;green;blue;x;x
 987;149;82;79;Kolbudy;x
 988;22;84;126;Tolkmicko;x
 990;22;88;32;Kowiesy;x
-991;150;90;79;Fajslawice;x
+991;150;90;79;Fajsławice;x
 992;22;92;126;Biala Piska;x
 993;150;94;173;Wabrzezno;x
 994;22;96;32;Koscierzyna;x
@@ -994,7 +994,7 @@ province;red;green;blue;x;x
 1318;209;246;4;Katowice;x
 1325;76;250;250;Lake Balaton;x
 1326;77;200;200;Caspian Sea;x
-1327;78;200;250;Male Dabie;x
+1327;78;200;250;Aral Sea;x
 1336;87;220;250;Coast of Makran;x
 1423;46;201;251;Cook Strait;x
 1446;69;201;201;Horn of Africa;x
@@ -1037,51 +1037,10 @@ province;red;green;blue;x;x
 1660;27;223;253;Lake Erie;x
 1661;28;253;253;Lake Huron;x
 1662;29;203;203;Lake Michigan;x
-1663;30;203;253;Jezioro Wilczkowo;x
-1664;31;223;253;Jezioro Trzesiecko;x
-1665;32;253;253;Jezioro Wierzchowo;x
-1694;61;203;203;Jezioro Wielimie;x
-1695;62;203;253;Gwda;x
-1696;63;223;253;Notec;x
-1697;64;253;253;Bug;x
-1705;72;253;253;Eastern Pacific #6;x
-1706;73;203;203;Eastern Pacific #7;x
-1707;74;203;253;Eastern Pacific #8;x
-1708;75;223;253;Eastern Pacific #9;x
-1709;76;253;253;Eastern Pacific #10;x
-1710;77;203;203;Eastern Pacific #11;x
-1711;78;203;253;Eastern Pacific #12;x
-1712;79;223;253;Eastern Pacific #13;x
-1713;80;253;253;Eastern Pacific #14;x
-1714;81;203;203;Eastern Pacific #15;x
-1715;82;203;253;Eastern Pacific #16;x
-1716;83;223;253;Eastern Pacific #17;x
-1717;85;203;203;Southern Pacifc #1;x
-1718;86;203;253;Southern Pacifc #2;x
-1719;87;223;253;Southern Pacifc #3;x
-1720;88;253;253;Southern Pacifc #4;x
-1721;89;203;203;Southern Pacifc #5;x
-1722;90;203;253;Southern Pacifc #6;x
-1723;91;223;253;Southern Pacifc #7;x
-1724;92;253;253;Southern Pacifc #8;x
-1725;93;203;203;Southern Pacifc #9;x
-1726;94;203;253;Southern Pacifc #10;x
-1727;95;223;253;Southern Pacifc #11;x
-1728;96;253;253;Southern Pacifc #12;x
-1729;97;203;203;Southern Pacifc #13;x
-1730;98;203;253;Southern Pacifc #14;x
-1731;99;223;253;Southern Pacifc #15;x
-1732;100;253;253;Southern Pacifc #16;x
-1733;101;203;203;Southern Pacifc #17;x
-1734;102;203;253;Southern Pacifc #18;x
-1735;103;223;253;Southern Pacifc #19;x
-1736;104;203;203;Southern Pacifc #20;x
-1737;106;203;253;Southern Pacifc #22;x
-1738;107;223;253;Southern Pacifc #23;x
-1739;108;253;253;Southern Pacifc #24;x
-1740;109;203;203;Southern Pacifc #25;x
-1741;110;203;253;Southern Pacifc #26;x
-1742;66;68;126;Bcdkowo;x
+1663;30;203;253;Lake Superior;x
+1664;31;223;253;Lake Nipigon;x
+1665;32;253;253;Lake Winnipeg;x
+1742;66;68;126;Badkowo;x
 1743;194;70;173;Osieczna;x
 1744;66;72;32;Swiekatowo;x
 1745;195;74;79;Dobra;x
@@ -1201,7 +1160,7 @@ province;red;green;blue;x;x
 1885;2;0;240;Central Finnish Lakes;x
 1886;3;0;244;Storavan;x
 1887;4;0;248;Storsjon;x
-1888;5;0;232;Zalew Szczecinski Poludnie;x
+1888;5;0;232;Kara Sea;x
 1889;6;0;236;Lake Geneva;x
 1890;7;0;240;Lake Constance;x
 1891;8;0;244;Lake Tuz;x
@@ -1281,7 +1240,7 @@ province;red;green;blue;x;x
 1972;216;114;79;Dubeniki;x
 1973;88;124;126;City of Bransk;x
 1974;215;110;173;Podkowa Lesna;x
-1976;93;0;244;Zalew Szczecinski Wschod;x
+1976;93;0;244;Dead Sea;x
 1977;94;0;248;MÃ¤laren;x
 1978;95;0;232;Glowczyce;x
 1979;96;0;236;Leba;x
@@ -1301,11 +1260,8 @@ province;red;green;blue;x;x
 2000;60;221;221;Qinghai Lake;x
 2001;95;200;200;Siling Lake;x
 2002;200;135;255;Piaski;x
-2007;140;32;248;Niemcy Wschod;x
-2008;145;64;232;Niemcy Zachod;x
-2009;150;128;236;Czechy Zachod;x
 2024;255;15;160;Boguchwala;x
-2025;255;16;40;Koszyce;x
+2025;255;16;40;South Georgia;x
 2026;255;17;120;Miaczyn;x
 2027;230;18;160;Pawlosiow;x
 2028;255;19;90;Tereszpol;x
@@ -1958,23 +1914,11 @@ province;red;green;blue;x;x
 3001;232;5;5;Dobrzen Wielki;x
 3002;134;198;192;Orzesze;x
 3003;188;110;220;Zebowice;x
-3004;189;110;220;Granica;
-3200;219;32;10;Niemcy Poludnie;
-3238;219;32;48;Niemcy Polnoc;
-3288;219;32;98;Litwa;
-3289;219;32;99;Ukraina Zachod;
-3218;219;32;28;Holandia;
-3219;219;32;29;Czechy Wschód;
-3419;219;32;229;Bornholm;
-3619;225;25;209;Bialorus wschod;
-3721;100;11;121;Ukraina wschod;
-3888;100;12;188;Bialorus zachod;
 3500;219;23;200;Zduny;
 3501;219;23;201;Jeziorzany;
 3502;219;23;202;Frampol;
 3503;219;23;203;Sztutowo;
 3504;219;23;204;Morąg;
-3887;100;12;187;Krolewiec;
 3505;219;23;205;Krasnobród;
 3584;225;25;184;Goraj;
 4020;239;204;149;Dukla;x
@@ -2650,9 +2594,4 @@ province;red;green;blue;x;x
 4934;210;10;1;Willandra Lakes;x
 4937;210;20;121;Narol;x
 4939;210;80;11;City of Lubaczow;x
-4941;30;216;201;Warta;x
-
-3418;219;32;228;Belgia;
-3290;219;32;100;Luksemburg;
-3105;207;110;54;Francja;
-3013;199;110;220;Slowacja;
+4941;30;216;201;Lake Tulare;x

@@ -9,3 +9,6 @@ capital = "Nisko"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I05
+controller = I05
+add_core = I05

@@ -9,3 +9,6 @@ capital = "Stary Targ"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = K07
+controller = K07
+add_core = K07

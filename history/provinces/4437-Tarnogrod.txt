@@ -9,3 +9,6 @@ capital = "Tarnogrod"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D20
+controller = D20
+add_core = D20

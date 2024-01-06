@@ -9,3 +9,6 @@ capital = "Pionki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G20
+controller = G20
+add_core = G20

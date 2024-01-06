@@ -9,3 +9,6 @@ capital = "Dobryszyce"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C05
+controller = C05
+add_core = C05

@@ -11,13 +11,26 @@ age_of_discovery = {
 
 	objectives = {
 		obj_100_political_unity = {
-			religious_unity = 1
+			religious_unity = 100
 		}
 
 		obj_vodka_monopoly = {
 			trading_bonus = {
 				trade_goods = gu_vodka
 				value = yes
+			}
+		}
+
+		obj_30_development_city = {
+			custom_trigger_tooltip = {
+				tooltip = obj_30_development_city_tooltip
+				any_owned_province = {
+					exclude_from_progress = {
+						is_core = ROOT
+						controlled_by = owner
+					}
+					development_discounting_tribal = 30
+				}
 			}
 		}
 
@@ -28,9 +41,19 @@ age_of_discovery = {
 			}
 		}
 		
-		obj_war_orders = {
-			has_commanding_three_star = yes
-		}	
+		obj_two_unions = {
+			allow = {
+				religion_group = christian
+			}
+			personal_union  = 2
+		}
+		
+		obj_many_vassals = {
+			allow = {
+				NOT = { religion_group = christian }
+			}
+			vassal = 5
+		}		
 	
 		obj_5_year_plan = {
 			num_of_owned_provinces_with = {
@@ -38,131 +61,137 @@ age_of_discovery = {
 				value = 5 
 			}
 		}
-
-		obj_industralisation = {
-			production_income_percentage = 0.40
-		}
 	
-		obj_join_opposition = {
-			has_institution = renaissance
-			all_state_province = {
-				renaissance = 100
+		obj_humiliate_rival = {
+			custom_trigger_tooltip = {
+				tooltip = obj_humiliate_rival_tooltip
+				has_country_flag = humiliated_rival
 			}
-	   	}
+		}
 	}		
 	
 	abilities = {
-		ab_zomo = {
-			modifier = {
-				harsh_treatment_cost = -0.5
+		ab_allow_feudal_de_jure_law = {
+			effect = {
+				custom_tooltip = feudal_de_jure_law
+				set_country_flag = feudal_de_jure_law
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_large_panel_buildings = {
+		ab_justified_wars = {
 			modifier = {
-				development_cost = -0.1
+				ae_impact = -0.1
 			}
 			ai_will_do = {
 				factor = 10
 			}			
 		}
 		
-		ab_stachanowcy = {
+
+		ab_transfer_vassal_wargoal = {
 			modifier = {
-				production_efficiency = 0.1
+				can_transfer_vassal_wargoal = yes
+				can_chain_claim = yes
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_hand_of_kremlin = {
+		ab_free_war_taxes = {
 			modifier = {
-				land_forcelimit_modifier = 0.25
+				war_taxes_cost_modifier = -1.0
 			}
 			ai_will_do = {
 				factor = 10
 			}	
 		}
 		
-		ab_foreign_debt = {
+
+		ab_cavalry_armies = {
 			modifier = {
-				interest = -1
+				cav_to_inf_ratio = 0.2
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-
-		ab_security_service = {
+		ab_colony_boost_development = {
 			modifier = {
-				spy_offence = 0.3
+				colony_development_boost = 1
+			}
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					NOT = { num_of_colonists = 1 }
+				}
+			}
+		}
+		
+		ab_attack_bonus_in_capital_terrain = {
+			modifier = {
+				attack_bonus_in_capital_terrain = 1
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_3_milion_party = {
+		ab_ottoman_siege_ability = {
+			allow = {
+				tag = TUR
+			}
 			modifier = {
-				tolerance_own = 2
+				leader_siege = 1 
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 100
 			}
 		}
 		
-		ab_huge_dockyards = {
+		ab_portugal_colonial_growth = {
+		
 			allow = {
-				num_of_owned_provinces_with = {
-					has_port = yes
-					value = 3 
+				tag = POR
+			}
+			modifier = {
+				global_colonial_growth = 50
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_denmark_reduced_lib_desire = {
+		
+			allow = {
+				tag = DAN
+			}
+			modifier = {
+				reduced_liberty_desire = 30
+			}
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 20
+						}
+					}
 				}
 			}
-			modifier = {
-				global_ship_cost = -0.3	
-			}
-			ai_will_do = {
-				factor = 100
-			}
 		}
-
-		ab_rich_coal_deposits = {
+		ab_venice_ship_trade = {
+		
 			allow = {
-				gu_coal = 3
+				tag = VEN
 			}
 			modifier = {
-				global_trade_goods_size_modifier = 0.2
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-
-		ab_western_smugglers = {
-			allow = {
-				num_of_owned_provinces_with = {
-					value = 3
-					region = lubuskie_region
-				}
-			}
-			modifier = {
-				placed_merchant_power = 3
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-
-		ab_martial_law = {
-			allow = {
-				army_size_percentage = 0.9
-			}
-			modifier = {
-				global_unrest = -2
+				global_ship_trade_power = 0.5
 			}
 			ai_will_do = {
 				factor = 100

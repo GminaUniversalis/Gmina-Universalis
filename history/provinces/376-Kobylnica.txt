@@ -9,3 +9,6 @@ capital = "Kobylnica"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = K02
+controller = K02
+add_core = K02

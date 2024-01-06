@@ -9,3 +9,6 @@ capital = "Osiek"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = K05
+controller = K05
+add_core = K05

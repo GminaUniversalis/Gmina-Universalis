@@ -9,3 +9,6 @@ capital = "City of Dzialdowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = N03
+controller = N03
+add_core = N03

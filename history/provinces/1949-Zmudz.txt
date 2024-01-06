@@ -9,3 +9,6 @@ capital = "Zmudz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D14
+controller = D14
+add_core = D14

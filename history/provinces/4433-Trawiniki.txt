@@ -9,3 +9,6 @@ capital = "Trawiniki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D11
+controller = D11
+add_core = D11

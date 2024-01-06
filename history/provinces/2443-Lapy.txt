@@ -9,3 +9,6 @@ capital = "Lapy"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = J13
+controller = J13
+add_core = J13

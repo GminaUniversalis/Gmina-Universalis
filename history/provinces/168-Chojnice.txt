@@ -9,3 +9,6 @@ capital = "Chojnice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = K14
+controller = K14
+add_core = K14

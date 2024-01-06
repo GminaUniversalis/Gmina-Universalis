@@ -10,3 +10,6 @@ capital = "Lubomia"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = L11
+controller = L11
+add_core = L11

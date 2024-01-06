@@ -9,3 +9,6 @@ capital = "Sztutowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = K13
+controller = K13
+add_core = K13

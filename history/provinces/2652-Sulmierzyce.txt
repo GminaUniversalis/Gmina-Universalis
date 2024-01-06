@@ -9,3 +9,6 @@ capital = "Sulmierzyce"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R04
+controller = R04
+add_core = R04

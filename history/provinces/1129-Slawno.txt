@@ -9,3 +9,6 @@ capital = "Slawno"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C20
+controller = C20
+add_core = C20

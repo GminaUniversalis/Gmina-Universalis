@@ -9,3 +9,6 @@ capital = "Chelmiec"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = F05
+controller = F05
+add_core = F05

@@ -9,3 +9,6 @@ capital = "Zegocina"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = F13
+controller = F13
+add_core = F13

@@ -9,3 +9,6 @@ capital = "Sulkowice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = F12
+controller = F12
+add_core = F12

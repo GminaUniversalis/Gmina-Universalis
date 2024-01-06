@@ -9,3 +9,6 @@ capital = "Lisia Gora"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = F06
+controller = F06
+add_core = F06

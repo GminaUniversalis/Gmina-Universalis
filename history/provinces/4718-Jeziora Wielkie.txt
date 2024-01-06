@@ -9,3 +9,6 @@ capital = "Jeziora Wielkie"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B06
+controller = B06
+add_core = B06

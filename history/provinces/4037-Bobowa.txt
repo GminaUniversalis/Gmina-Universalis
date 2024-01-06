@@ -9,3 +9,6 @@ capital = "Bobowa"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = F04
+controller = F04
+add_core = F04

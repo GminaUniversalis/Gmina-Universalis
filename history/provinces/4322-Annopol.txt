@@ -4,3 +4,6 @@ culture = lubelska
 religion = catholic
 is_city = no
 trade_goods = unknown
+owner = D04
+controller = D04
+add_core = D04

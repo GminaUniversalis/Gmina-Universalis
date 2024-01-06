@@ -9,3 +9,6 @@ capital = "Bisztynek"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = N17
+controller = N17
+add_core = N17

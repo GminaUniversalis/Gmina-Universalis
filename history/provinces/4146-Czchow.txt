@@ -5,3 +5,6 @@ culture = galicyjska
 religion = catholic
 is_city = no
 trade_goods = unknown
+owner = F07
+controller = F07
+add_core = F07

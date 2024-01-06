@@ -9,3 +9,6 @@ capital = "Lipiany"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = P18
+controller = P18
+add_core = P18

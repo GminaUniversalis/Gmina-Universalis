@@ -10,3 +10,6 @@ capital = "Podrinje"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = L13
+controller = L13
+add_core = L13

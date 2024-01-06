@@ -10,3 +10,6 @@ capital = "Raciborz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = L10
+controller = L10
+add_core = L10

@@ -9,3 +9,6 @@ capital = "Rogozno"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R21
+controller = R21
+add_core = R21

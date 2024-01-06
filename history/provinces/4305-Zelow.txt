@@ -9,3 +9,6 @@ capital = "Zelow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C12
+controller = C12
+add_core = C12

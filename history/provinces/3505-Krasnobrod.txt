@@ -9,3 +9,6 @@ capital = "Krasnobrod"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D19
+controller = D19
+add_core = D19

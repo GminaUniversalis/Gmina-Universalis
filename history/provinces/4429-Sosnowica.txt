@@ -9,3 +9,6 @@ capital = "Sosnowica"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D07
+controller = D07
+add_core = D07

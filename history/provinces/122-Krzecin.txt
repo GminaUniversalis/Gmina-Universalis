@@ -9,3 +9,6 @@ capital = "Krzecin"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = P10
+controller = P10
+add_core = P10

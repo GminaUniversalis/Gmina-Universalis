@@ -9,3 +9,6 @@ capital = "Ostrzeszow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R30
+controller = R30
+add_core = R30

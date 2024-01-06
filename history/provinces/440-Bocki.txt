@@ -9,3 +9,6 @@ capital = "Bocki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = J03
+controller = J03
+add_core = J03

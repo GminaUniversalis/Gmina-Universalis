@@ -9,3 +9,6 @@ capital = "Bukowno"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = F10
+controller = F10
+add_core = F10

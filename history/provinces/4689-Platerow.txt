@@ -9,3 +9,6 @@ capital = "Platerow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G32
+controller = G32
+add_core = G32

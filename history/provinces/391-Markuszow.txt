@@ -9,3 +9,6 @@ capital = "Markuszow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D01
+controller = D01
+add_core = D01

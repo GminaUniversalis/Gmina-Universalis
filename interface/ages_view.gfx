@@ -203,19 +203,41 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_obj_war_orders"
-		texturefile = "gfx/interface/ages/obj_war_orders.dds"
+		name = "GFX_obj_30_development_city"
+		texturefile = "gfx/interface/ages/obj_30_development_city.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_industralisation"
-		texturefile = "gfx/interface/ages/obj_industralisation.dds"
+		name = "GFX_obj_renaissance"
+		texturefile = "gfx/interface/ages/obj_renaissance.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_join_opposition"
-		texturefile = "gfx/interface/ages/obj_join_opposition.dds"
+		name = "GFX_obj_two_unions"
+		texturefile = "gfx/interface/ages/obj_two_unions.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_obj_two_continents"
+		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_humiliate_rival"
+		texturefile = "gfx/interface/ages/obj_humiliate_rival.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_100_development"	
+		texturefile = "gfx/interface/ages/obj_100_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_many_vassals"		
+		texturefile = "gfx/interface/ages/obj_many_vassals.dds"
+	}
+
+
 
 	# Age of Reformation Objectives
 	spriteType = {
@@ -363,60 +385,67 @@ spriteTypes = {
 	
 	# Age of Discovery Abilities
 	spriteType = {
-		name = "GFX_ab_zomo"
-		texturefile = "gfx/interface/ages/ab_zomo.dds"
+		name = "GFX_ab_allow_feudal_de_jure_law"
+		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_large_panel_buildings"
-		texturefile = "gfx/interface/ages/ab_large_panel_buildings.dds"
+		name = "GFX_ab_claim_duration"
+		texturefile = "gfx/interface/ages/ab_claim_duration.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_stachanowcy"
-		texturefile = "gfx/interface/ages/ab_stachanowcy.dds"
+		name = "GFX_ab_transfer_vassal_wargoal"
+		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_hand_of_kremlin"
-		texturefile = "gfx/interface/ages/ab_hand_of_kremlin.dds"
+		name = "GFX_ab_can_chain_claim"
+		texturefile = "gfx/interface/ages/ab_can_chain_claim.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_foreign_debt"
-		texturefile = "gfx/interface/ages/ab_foreign_debt.dds"
+		name = "GFX_ab_free_exploration_maintenance"
+		texturefile = "gfx/interface/ages/ab_free_exploration_maintenance.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_security_service"
-		texturefile = "gfx/interface/ages/ab_security_service.dds"
+		name = "GFX_ab_colony_boost_development"
+		texturefile = "gfx/interface/ages/ab_colony_boost_development.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_3_milion_party"
-		texturefile = "gfx/interface/ages/ab_3_milion_party.dds"
+		name = "GFX_ab_attack_bonus_in_capital_terrain"
+		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_ab_huge_dockyards"
-		texturefile = "gfx/interface/ages/ab_huge_dockyards.dds"
+		name = "GFX_ab_ottoman_siege_ability"
+		texturefile = "gfx/interface/ages/ab_ottoman_siege_ability.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_ab_rich_coal_deposits"
-		texturefile = "gfx/interface/ages/ab_rich_coal_deposits.dds"
+		name = "GFX_ab_portugal_colonial_growth"
+		texturefile = "gfx/interface/ages/ab_portugal_colonial_growth.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_ab_western_smugglers"
-		texturefile = "gfx/interface/ages/ab_western_smugglers.dds"
+		name = "GFX_ab_venice_ship_trade"
+		texturefile = "gfx/interface/ages/ab_venice_ship_trade.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_ab_martial_law"
-		texturefile = "gfx/interface/ages/ab_martial_law.dds"
+		name = "GFX_ab_denmark_reduced_lib_desire"
+		texturefile = "gfx/interface/ages/ab_denmark_reduced_lib_desire.dds"
 	}	
-		
+	
+	spriteType = {
+		name = "GFX_ab_justified_wars"
+		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
+	}
+	
+	
+	
 	# Age of Reformation Abilities
 	spriteType = {
 		name = "GFX_ab_allow_religion_enforced"

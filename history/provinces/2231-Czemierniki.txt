@@ -9,3 +9,6 @@ capital = "Czemierniki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D06
+controller = D06
+add_core = D06

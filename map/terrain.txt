@@ -21,7 +21,7 @@ categories =  {
 	}
 
 	inland_ocean = {
-		color = { 0 0 200 }
+		color = { 12 100 220 }
 
 		sound_type = sea
 		is_water = yes
@@ -61,7 +61,6 @@ categories =  {
 		nation_designer_cost_multiplier = 1.05
 		
 		terrain_override = {
-			787 794 2847
 		}		
 	}
 	
@@ -309,7 +308,7 @@ categories =  {
 		allowed_num_of_buildings = 1
 		
 		terrain_override = {
-			1 2839
+			1
 		}	
 	}	
 
@@ -334,7 +333,7 @@ categories =  {
 		sound_type = plains
 
 		movement_cost = 1.5
-		defence = 2
+		defence = 3
 		local_development_cost = 0.20
 		supply_limit = 4
 		
@@ -381,6 +380,10 @@ terrain = {
 	drylands			= { type = drylands			color = {	22	 } }
 	highlands			= { type = highlands		color = {	23	 } }
 	dry_highlands		= { type = highlands		color = {	24	 } }
+
+	urban				= { type = urban			color = {	25	 } }
+	floodplains			= { type = floodplains		color = {	26	 } }
+	crossing			= { type = crossing			color = {	27	 } }
 	
 	woods				= { type = woods			color = { 	255	 } }
 	jungle				= { type = jungle			color = { 	254	 } }

@@ -9,3 +9,6 @@ capital = "Tyszowice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D02
+controller = D02
+add_core = D02

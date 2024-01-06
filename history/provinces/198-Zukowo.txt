@@ -9,3 +9,6 @@ capital = "Zukowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = K03
+controller = K03
+add_core = K03

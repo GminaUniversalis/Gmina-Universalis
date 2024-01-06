@@ -9,3 +9,6 @@ is_city = yes
 discovered_by = western
 discovered_by = eastern
 culture = legnicka
+owner = A15
+controller = A15
+add_core = A15

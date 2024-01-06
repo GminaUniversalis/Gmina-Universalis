@@ -9,3 +9,6 @@ capital = "Cielaadz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C18
+controller = C18
+add_core = C18

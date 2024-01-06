@@ -9,3 +9,6 @@ capital = "Gora Kalwaria"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G16
+controller = G16
+add_core = G16

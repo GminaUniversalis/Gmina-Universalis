@@ -9,3 +9,6 @@ capital = "Rzepin"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = E09
+controller = E09
+add_core = E09

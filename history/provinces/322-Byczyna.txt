@@ -9,3 +9,6 @@ capital = "Byczyna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = H04
+controller = H04
+add_core = H04

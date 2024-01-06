@@ -9,3 +9,6 @@ capital = "Rymanow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I20
+controller = I20
+add_core = I20

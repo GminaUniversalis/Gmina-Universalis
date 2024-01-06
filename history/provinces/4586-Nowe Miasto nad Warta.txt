@@ -9,3 +9,6 @@ capital = "Nowe Miasto nad Warta"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R24
+controller = R24
+add_core = R24

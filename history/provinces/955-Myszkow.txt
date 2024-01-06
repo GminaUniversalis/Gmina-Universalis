@@ -10,3 +10,6 @@ capital = "Myszkow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = L02
+controller = L02
+add_core = L02

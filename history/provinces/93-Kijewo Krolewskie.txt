@@ -9,3 +9,6 @@ capital = "Kijewo Krolewskie"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B13
+controller = B13
+add_core = B13

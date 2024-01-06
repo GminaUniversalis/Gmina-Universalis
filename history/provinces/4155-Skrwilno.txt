@@ -5,3 +5,6 @@ culture = kujawska
 religion = catholic
 is_city = no
 trade_goods = unknown
+owner = B16
+controller = B16
+add_core = B16

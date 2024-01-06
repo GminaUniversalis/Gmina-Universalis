@@ -9,3 +9,6 @@ capital = "City of Mragowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = N08
+controller = N08
+add_core = N08

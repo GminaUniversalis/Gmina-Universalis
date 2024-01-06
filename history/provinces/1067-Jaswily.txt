@@ -9,3 +9,6 @@ capital = "Jaswily"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = J12
+controller = J12
+add_core = J12

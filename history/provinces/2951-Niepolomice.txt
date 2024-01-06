@@ -9,3 +9,6 @@ capital = "Niepolomice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = F02
+controller = F02
+add_core = F02

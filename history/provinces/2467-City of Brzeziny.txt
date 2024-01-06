@@ -9,3 +9,6 @@ capital = "City of Brzeziny"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = C16
+controller = C16
+add_core = C16

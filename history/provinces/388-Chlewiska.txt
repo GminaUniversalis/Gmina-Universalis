@@ -9,3 +9,6 @@ capital = "Chlewiska"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G21
+controller = G21
+add_core = G21

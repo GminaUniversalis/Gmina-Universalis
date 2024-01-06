@@ -9,3 +9,6 @@ capital = "Jawornik Polski"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I11
+controller = I11
+add_core = I11

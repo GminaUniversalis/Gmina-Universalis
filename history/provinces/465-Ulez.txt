@@ -9,3 +9,6 @@ capital = "Ulez"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D17
+controller = D17
+add_core = D17

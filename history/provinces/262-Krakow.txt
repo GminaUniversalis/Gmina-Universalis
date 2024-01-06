@@ -1,6 +1,4 @@
 #Krakow
-owner = F15
-controller = F15
 culture = galicyjska
 religion = catholic
 base_tax = 1
@@ -11,4 +9,6 @@ capital = "Krakow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = F15
+controller = F15
 add_core = F15

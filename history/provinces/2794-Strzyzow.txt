@@ -9,3 +9,6 @@ capital = "Strzyzow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I19
+controller = I19
+add_core = I19

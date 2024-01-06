@@ -9,3 +9,6 @@ capital = "Wisznice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = D09
+controller = D09
+add_core = D09

@@ -1,24 +1,39 @@
-government = republic
-add_government_reform = oligarchy_reform
-government_rank = 1
-mercantilism = 25
-technology_group = western
-religion = communism_zsl
+#Country Name: Powiat Wroclawski
 
-primary_culture = wroclawska
-capital = 2839 #Wrocław
-1440.1.1 = { 
-	monarch = { 
-
-		name = "Wojciech"
-		dynasty = "Adamiec"
-		birth_date = 1396.1.1
-		adm = 6
-		dip = 6
-		mil = 6
-
-	}
+graphical_culture = westerngfx
+color = { 202  181  40 }
+revolutionary_colors = { 4 4 13 }
+historical_idea_groups = {
 }
-
-
-
+historical_units = {
+	bardiche_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	hungarian_hussar
+	polish_musketeer
+	polish_hussar
+	polish_tercio
+	polish_winged_hussar
+	russian_lancer
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
+}
+monarch_names = {
+    "Leopold #1" = 100
+}
+leader_names = {
+    Leman
+}
+ship_names = {
+    "Comte de Smet de Nayer"
+}
+army_names = {
+	"Placeholder $PROVINCE$"
+}
+fleet_names = {
+	"Placeholder_Fleet1"
+}

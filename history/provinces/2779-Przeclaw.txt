@@ -9,3 +9,6 @@ capital = "Przeclaw"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I03
+controller = I03
+add_core = I03
