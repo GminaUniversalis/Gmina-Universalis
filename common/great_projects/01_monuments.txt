@@ -3,7 +3,7 @@ sky_tower = {
 	start = 2839
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1560.01.01 #Yusuf I
+	date = 1444.01.01 #Yusuf I
 	
 	#time to build
 	time = {
