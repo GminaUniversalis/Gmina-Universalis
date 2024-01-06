@@ -1035,9 +1035,13 @@ provinces;red;green;blue;x;x
 1660;27;223;253;Lake Erie;x
 1661;28;253;253;Lake Huron;x
 1662;29;203;203;Lake Michigan;x
-1663;30;203;253;Lake Superior;x
-1664;31;223;253;Lake Nipigon;x
-1665;32;253;253;Lake Winnipeg;
+1663;30;203;253;Jezioro Wilczkowo;x
+1664;31;223;253;Jezioro Trzesiecko;x
+1665;32;253;253;Jezioro Wierzchowo;x
+1694;61;203;203;Jezioro Wielimie;x
+1695;62;203;253;Gwda;x
+1696;63;223;253;Notec;x
+1697;64;253;253;Bug;x
 1705;72;253;253;Eastern Pacific #6;x
 1706;73;203;203;Eastern Pacific #7;x
 1707;74;203;253;Eastern Pacific #8;x
