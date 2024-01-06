@@ -6,3 +6,6 @@ is_city = no
 discovered_by = western
 discovered_by = eastern
 trade_goods = unknown
+owner = U01
+controller = U01
+add_core = U01

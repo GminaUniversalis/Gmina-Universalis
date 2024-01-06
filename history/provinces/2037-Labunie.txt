@@ -9,3 +9,6 @@ capital = "Labunie"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U19
+controller = U19
+add_core = U19

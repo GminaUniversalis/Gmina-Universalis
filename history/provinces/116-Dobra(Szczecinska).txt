@@ -9,3 +9,6 @@ capital = "Dobra(Szczecinska)"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = P16
+controller = P16
+add_core = P16

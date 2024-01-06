@@ -9,3 +9,6 @@ capital = "Pysznica"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I04
+controller = I04
+add_core = I04

@@ -9,3 +9,6 @@ capital = "Wolbrom"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X10
+controller = X10
+add_core = X10

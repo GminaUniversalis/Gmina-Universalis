@@ -9,3 +9,6 @@ capital = "Kamienica"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X17
+controller = X17
+add_core = X17

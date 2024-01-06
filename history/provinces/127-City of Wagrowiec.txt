@@ -9,3 +9,6 @@ capital = "City of Wagrowiec"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R26
+controller = R26
+add_core = R26

@@ -10,3 +10,6 @@ capital = "Ledziny"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = L15
+controller = L15
+add_core = L15

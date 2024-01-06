@@ -9,3 +9,6 @@ capital = "Ropczyce"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I09
+controller = I09
+add_core = I09

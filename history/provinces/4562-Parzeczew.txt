@@ -9,3 +9,6 @@ capital = "Parzeczew"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Q15
+controller = Q15
+add_core = Q15

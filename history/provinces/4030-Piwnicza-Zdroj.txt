@@ -9,3 +9,6 @@ capital = "Piwnicza"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X05
+controller = X05
+add_core = X05

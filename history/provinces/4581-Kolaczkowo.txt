@@ -9,3 +9,6 @@ capital = "Kolaczkowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R22
+controller = R22
+add_core = R22

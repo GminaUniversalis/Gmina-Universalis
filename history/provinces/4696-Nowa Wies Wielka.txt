@@ -9,3 +9,6 @@ capital = "Nowa Wies Wielka"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B05
+controller = B05
+add_core = B05

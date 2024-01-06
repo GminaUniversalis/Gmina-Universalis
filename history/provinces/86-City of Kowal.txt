@@ -9,3 +9,6 @@ capital = "City of Kowal"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B10
+controller = B10
+add_core = B10

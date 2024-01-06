@@ -9,3 +9,6 @@ capital = "Punsk"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = J10
+controller = J10
+add_core = J10

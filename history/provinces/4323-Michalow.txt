@@ -9,3 +9,6 @@ capital = "Michalow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = M05
+controller = M05
+add_core = M05

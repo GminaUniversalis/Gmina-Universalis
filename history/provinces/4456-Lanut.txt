@@ -9,3 +9,6 @@ capital = "Lanut"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I08
+controller = I08
+add_core = I08

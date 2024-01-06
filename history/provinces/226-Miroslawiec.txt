@@ -9,3 +9,6 @@ capital = "Miroslawiec"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = P09
+controller = P09
+add_core = P09

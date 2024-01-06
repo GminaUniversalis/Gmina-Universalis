@@ -9,3 +9,6 @@ capital = "Deblin"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U17
+controller = U17
+add_core = U17

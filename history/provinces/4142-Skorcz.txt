@@ -9,3 +9,6 @@ capital = "Skorcz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Y05
+controller = Y05
+add_core = Y05

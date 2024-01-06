@@ -10,3 +10,6 @@ is_city = yes
 culture = podlaska
 discovered_by = western
 discovered_by = eastern
+owner = J05
+controller = J05
+add_core = J05

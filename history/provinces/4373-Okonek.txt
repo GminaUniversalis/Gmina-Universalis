@@ -9,3 +9,6 @@ capital = "Okonek"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R29
+controller = R29
+add_core = R29

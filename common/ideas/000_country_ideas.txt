@@ -1,5 +1,5 @@
 
-F15_ideas = {
+X15_ideas = {
 	start = {
 		
 		trade_efficiency = 0.15
@@ -12,7 +12,7 @@ F15_ideas = {
 	}	
 
 	trigger = {
-		tag = F15
+		tag = X15
 	}
 	free = yes
 	
@@ -77,13 +77,13 @@ P03_ideas = {
 		global_unrest = -2
 	}
 }
-		C05_ideas ={
+		Q05_ideas ={
 			start = {
 				stability_cost_modifier = -0.1
 				global_manpower_modifier = 0.075
 			}
 			trigger = {
-				tag = C05
+				tag = Q05
 			}
 			free = yes
 
@@ -114,13 +114,13 @@ P03_ideas = {
 			}
 
 		}
-		F10_ideas ={
+		X10_ideas ={
 			start = {
 				global_trade_goods_size_modifier = 0.1
 				hostile_attrition = 2
 			}
 			trigger = {
-				tag = F10
+				tag = X10
 			}
 			free = yes
 			Wolbromian_cross = {

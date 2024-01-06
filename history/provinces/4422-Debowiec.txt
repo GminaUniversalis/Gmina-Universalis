@@ -9,3 +9,6 @@ capital = "Debowiec"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I10
+controller = I10
+add_core = I10

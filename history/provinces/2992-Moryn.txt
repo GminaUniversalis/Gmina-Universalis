@@ -9,3 +9,6 @@ capital = "Moryn"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = P19
+controller = P19
+add_core = P19

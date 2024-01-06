@@ -9,3 +9,6 @@ capital = "Slupia Konecka"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = M03
+controller = M03
+add_core = M03

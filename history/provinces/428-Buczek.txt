@@ -9,3 +9,6 @@ capital = "Buczek"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Q01
+controller = Q01
+add_core = Q01

@@ -5,3 +5,6 @@ culture = lodzka
 religion = catholic
 is_city = no
 trade_goods = unknown
+owner = Q03
+controller = Q03
+add_core = Q03

@@ -9,3 +9,6 @@ capital = "Raciechowice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X12
+controller = X12
+add_core = X12

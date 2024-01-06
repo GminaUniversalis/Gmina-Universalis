@@ -9,3 +9,6 @@ capital = "Kluki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Q12
+controller = Q12
+add_core = Q12

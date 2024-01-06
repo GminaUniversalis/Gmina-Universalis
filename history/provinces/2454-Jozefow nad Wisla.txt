@@ -9,3 +9,6 @@ capital = "Jozefow nad Wisla"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U05
+controller = U05
+add_core = U05

@@ -1,18 +1,14 @@
 #Wroclaw
 religion = catholic
-base_tax = 8
-base_production = 10
-trade_goods = paper
-base_manpower = 12
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
 capital = "Wroclaw"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-culture = wroclawska
+culture = legnicka
 owner = A22
 controller = A22
-center_of_trade = 3
-latent_trade_goods = { 
-	coal 
-}
 add_core = A22

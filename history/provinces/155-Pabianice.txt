@@ -9,3 +9,6 @@ capital = "Pabianice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Q11
+controller = Q11
+add_core = Q11

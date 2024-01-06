@@ -5,3 +5,6 @@ culture = trojmiasto
 religion = catholic
 is_city = no
 trade_goods = unknown
+owner = Y09
+controller = Y09
+add_core = Y09

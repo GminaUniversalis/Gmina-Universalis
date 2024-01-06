@@ -9,3 +9,6 @@ capital = "Jodlowa"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I02
+controller = I02
+add_core = I02

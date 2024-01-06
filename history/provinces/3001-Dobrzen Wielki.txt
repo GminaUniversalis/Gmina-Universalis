@@ -9,3 +9,6 @@ capital = "Dobrzen Wielki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = H11
+controller = H11
+add_core = H11

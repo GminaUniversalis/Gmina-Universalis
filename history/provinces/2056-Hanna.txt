@@ -9,3 +9,6 @@ capital = "Hanna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U08
+controller = U08
+add_core = U08

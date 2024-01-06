@@ -9,3 +9,6 @@ capital = "Ustronie Morskie"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = P05
+controller = P05
+add_core = P05

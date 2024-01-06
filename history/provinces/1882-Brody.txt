@@ -9,3 +9,6 @@ capital = "Brody"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = M12
+controller = M12
+add_core = M12

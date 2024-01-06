@@ -9,3 +9,6 @@ capital = "Lyszkowice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Q21
+controller = Q21
+add_core = Q21

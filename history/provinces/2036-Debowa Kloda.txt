@@ -9,3 +9,6 @@ capital = "Debowa Kloda"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U07
+controller = U07
+add_core = U07

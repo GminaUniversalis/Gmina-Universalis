@@ -9,3 +9,6 @@ capital = "Prignitz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = H09
+controller = H09
+add_core = H09

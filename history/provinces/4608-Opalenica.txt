@@ -9,3 +9,6 @@ capital = "Opalenica"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R14
+controller = R14
+add_core = R14

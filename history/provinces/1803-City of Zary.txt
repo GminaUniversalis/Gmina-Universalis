@@ -1,9 +1,9 @@
-1661.6.22 = { 
-	discovered_by = POR
-}
 culture = zielonogorska
 religion = catholic
-is_city = no
+is_city = yes
 discovered_by = western
 discovered_by = eastern
 trade_goods = unknown
+owner = W13
+controller = W13
+add_core = W13

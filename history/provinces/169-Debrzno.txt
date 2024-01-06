@@ -9,3 +9,6 @@ capital = "Debrzno"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Y15
+controller = Y15
+add_core = Y15

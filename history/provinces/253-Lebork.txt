@@ -9,3 +9,6 @@ capital = "Lebork"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Y13
+controller = Y13
+add_core = Y13

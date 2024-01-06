@@ -10,3 +10,6 @@ capital = "Psary"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = L07
+controller = L07
+add_core = L07

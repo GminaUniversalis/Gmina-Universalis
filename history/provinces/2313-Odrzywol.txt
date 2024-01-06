@@ -9,3 +9,6 @@ capital = "Odrzywol"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G19
+controller = G19
+add_core = G19

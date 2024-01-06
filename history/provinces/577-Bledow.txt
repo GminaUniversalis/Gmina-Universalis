@@ -9,3 +9,6 @@ capital = "Bledow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G17
+controller = G17
+add_core = G17

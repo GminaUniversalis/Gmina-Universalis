@@ -9,3 +9,6 @@ capital = "Trzebieszow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U16
+controller = U16
+add_core = U16

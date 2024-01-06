@@ -9,3 +9,6 @@ capital = "Repki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G29
+controller = G29
+add_core = G29

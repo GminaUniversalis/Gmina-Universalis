@@ -9,3 +9,6 @@ capital = "Brzeszcze"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X11
+controller = X11
+add_core = X11

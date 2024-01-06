@@ -9,3 +9,6 @@ capital = "Alwernia"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X03
+controller = X03
+add_core = X03

@@ -9,3 +9,6 @@ capital = "Bukowina Tatrzanska"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X01
+controller = X01
+add_core = X01

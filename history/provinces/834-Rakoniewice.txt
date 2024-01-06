@@ -9,3 +9,6 @@ capital = "Rakoniewice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R15
+controller = R15
+add_core = R15

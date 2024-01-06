@@ -7,3 +7,6 @@ is_city = no
 discovered_by = western
 discovered_by = eastern
 trade_goods = unknown
+owner = G32
+controller = G32
+add_core = G32

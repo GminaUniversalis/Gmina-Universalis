@@ -9,3 +9,6 @@ capital = "Kolczyglowy"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Y01
+controller = Y01
+add_core = Y01

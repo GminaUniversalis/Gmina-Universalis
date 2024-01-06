@@ -10,3 +10,6 @@ capital = "Bytom"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = L09
+controller = L09
+add_core = L09

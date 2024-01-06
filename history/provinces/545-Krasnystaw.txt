@@ -9,3 +9,6 @@ capital = "Krasnystaw"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U13
+controller = U13
+add_core = U13

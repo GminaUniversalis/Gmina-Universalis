@@ -9,3 +9,6 @@ capital = "Pokoj"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = H05
+controller = H05
+add_core = H05

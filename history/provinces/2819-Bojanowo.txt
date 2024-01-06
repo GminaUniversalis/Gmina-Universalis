@@ -9,3 +9,6 @@ capital = "Bojanowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R02
+controller = R02
+add_core = R02

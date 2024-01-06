@@ -9,3 +9,6 @@ capital = "Brudzen Duzy"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G35
+controller = G35
+add_core = G35

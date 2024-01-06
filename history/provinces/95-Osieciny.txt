@@ -9,3 +9,6 @@ capital = "Osieciny"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B09
+controller = B09
+add_core = B09

@@ -9,3 +9,6 @@ capital = "Zabor"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = W04
+controller = W04
+add_core = W04

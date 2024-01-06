@@ -9,3 +9,6 @@ capital = "Nowa Sarzyna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I07
+controller = I07
+add_core = I07

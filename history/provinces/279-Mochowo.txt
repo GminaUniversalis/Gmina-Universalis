@@ -9,3 +9,6 @@ capital = "Mochowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G33
+controller = G33
+add_core = G33

@@ -9,3 +9,6 @@ capital = "Barczewo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = N16
+controller = N16
+add_core = N16

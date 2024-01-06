@@ -9,3 +9,6 @@ capital = "City of Hajnowka"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = J02
+controller = J02
+add_core = J02

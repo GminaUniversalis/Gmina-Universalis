@@ -9,3 +9,6 @@ capital = "Chociwel"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = P12
+controller = P12
+add_core = P12

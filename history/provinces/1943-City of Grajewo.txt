@@ -9,3 +9,6 @@ capital = "City of Grajewo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = J08
+controller = J08
+add_core = J08

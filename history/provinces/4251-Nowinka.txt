@@ -9,3 +9,6 @@ capital = "Nowinka"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = J09
+controller = J09
+add_core = J09

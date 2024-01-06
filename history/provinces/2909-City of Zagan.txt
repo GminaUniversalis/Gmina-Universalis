@@ -9,3 +9,6 @@ capital = "City of Zagan"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = W03
+controller = W03
+add_core = W03

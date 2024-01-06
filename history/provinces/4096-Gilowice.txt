@@ -10,3 +10,6 @@ capital = "Gilowice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = L20
+controller = L20
+add_core = L20

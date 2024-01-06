@@ -9,3 +9,6 @@ capital = "Tuchow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X06
+controller = X06
+add_core = X06

@@ -9,3 +9,6 @@ capital = "Bytom Odranski"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = W02
+controller = W02
+add_core = W02

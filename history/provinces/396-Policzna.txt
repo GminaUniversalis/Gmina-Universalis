@@ -9,3 +9,6 @@ capital = "Policzna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G23
+controller = G23
+add_core = G23

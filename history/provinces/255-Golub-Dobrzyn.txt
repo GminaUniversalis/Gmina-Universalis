@@ -9,3 +9,6 @@ capital = "Golub"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B18
+controller = B18
+add_core = B18

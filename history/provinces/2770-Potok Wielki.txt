@@ -9,3 +9,6 @@ capital = "Potok Wielki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U03
+controller = U03
+add_core = U03

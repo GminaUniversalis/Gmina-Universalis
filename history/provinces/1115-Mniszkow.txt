@@ -9,3 +9,6 @@ capital = "Mniszkow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Q20
+controller = Q20
+add_core = Q20

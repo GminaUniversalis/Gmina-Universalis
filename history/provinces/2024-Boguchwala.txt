@@ -9,3 +9,6 @@ capital = "Boguchwala"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I12
+controller = I12
+add_core = I12

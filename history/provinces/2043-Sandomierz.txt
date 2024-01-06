@@ -9,3 +9,6 @@ capital = "Sandomierz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = M09
+controller = M09
+add_core = M09

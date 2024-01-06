@@ -9,3 +9,6 @@ capital = "Zabski"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G11
+controller = G11
+add_core = G11

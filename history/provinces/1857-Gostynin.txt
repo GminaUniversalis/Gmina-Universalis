@@ -9,3 +9,6 @@ capital = "Gostynin"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G34
+controller = G34
+add_core = G34

@@ -9,3 +9,6 @@ capital = "Miedzyrzecz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = W06
+controller = W06
+add_core = W06

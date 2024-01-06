@@ -5,3 +5,6 @@ culture = poznanska
 religion = catholic
 is_city = no
 trade_goods = unknown
+owner = R07
+controller = R07
+add_core = R07

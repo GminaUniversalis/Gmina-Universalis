@@ -9,3 +9,6 @@ capital = "Galewice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Q02
+controller = Q02
+add_core = Q02

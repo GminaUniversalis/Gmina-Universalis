@@ -9,3 +9,6 @@ capital = "Lniano"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B02
+controller = B02
+add_core = B02

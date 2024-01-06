@@ -1,12 +1,28 @@
+#Country Name: Powiat Szczecinecki
 
 graphical_culture = westerngfx
 color = { 130 1 130 }
-
-
-revolutionary_colors = { 50 10 130 }
-
+revolutionary_colors = { 1 2 3 }
+historical_idea_groups = {
+}
+historical_units = {
+	bardiche_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	hungarian_hussar
+	polish_musketeer
+	polish_hussar
+	polish_tercio
+	polish_winged_hussar
+	russian_lancer
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
+}
 monarch_names = { 
-
 	"Marian #0" = 45
 	"Daniel #0" = 50
 	"Jerzy #0" = 25
@@ -20,16 +36,15 @@ monarch_names = {
 	"Szymon #0" = 20
 	"Andrzej #0" = 12
 }
-leader_names = { 
+leader_names = {
+    Leman
 }
-ship_names = { 
+ship_names = {
+    "Comte de Smet de Nayer"
 }
-army_names = { 
-	"Armee von $PROVINCE$" 
+army_names = {
+	"Placeholder $PROVINCE$"
 }
 fleet_names = { 
 	"Stadtflotte" 
 }
-
-
-

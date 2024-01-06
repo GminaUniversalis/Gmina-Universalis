@@ -9,3 +9,6 @@ capital = "Niedzwiada"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U18
+controller = U18
+add_core = U18

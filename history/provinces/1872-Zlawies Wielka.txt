@@ -9,3 +9,6 @@ capital = "Zlawies Wielka"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = B17
+controller = B17
+add_core = B17

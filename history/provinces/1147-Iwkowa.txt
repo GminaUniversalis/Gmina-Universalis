@@ -9,3 +9,6 @@ capital = "Iwkowa"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X07
+controller = X07
+add_core = X07

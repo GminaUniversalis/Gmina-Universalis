@@ -9,3 +9,6 @@ capital = "Czosnow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G38
+controller = G38
+add_core = G38

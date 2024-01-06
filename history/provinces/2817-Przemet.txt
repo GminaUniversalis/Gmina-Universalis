@@ -9,3 +9,6 @@ capital = "Przemet"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = R13
+controller = R13
+add_core = R13

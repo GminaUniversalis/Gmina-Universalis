@@ -9,3 +9,6 @@ capital = "Koszyce"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = X09
+controller = X09
+add_core = X09

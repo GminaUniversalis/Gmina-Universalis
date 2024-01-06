@@ -9,3 +9,6 @@ capital = "Czarna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = I18
+controller = I18
+add_core = I18

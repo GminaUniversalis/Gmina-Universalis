@@ -9,3 +9,6 @@ capital = "Jablonna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U12
+controller = U12
+add_core = U12

@@ -9,3 +9,6 @@ capital = "Sulecin"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = W10
+controller = W10
+add_core = W10

@@ -9,3 +9,6 @@ capital = "Wejherowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = Y11
+controller = Y11
+add_core = Y11

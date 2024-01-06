@@ -9,3 +9,6 @@ capital = "Lubowidz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = G01
+controller = G01
+add_core = G01

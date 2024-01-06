@@ -9,3 +9,6 @@ capital = "Zbaszynek"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = W05
+controller = W05
+add_core = W05

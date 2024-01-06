@@ -9,3 +9,6 @@ capital = "Tuczna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = U09
+controller = U09
+add_core = U09
