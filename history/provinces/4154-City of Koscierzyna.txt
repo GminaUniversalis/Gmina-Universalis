@@ -1,7 +1,0 @@
-#Natural borders between france and spain.
-discovered_by = eastern
-discovered_by = western
-culture = trojmiasto
-religion = catholic
-is_city = no
-trade_goods = unknown

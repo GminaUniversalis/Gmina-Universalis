@@ -1,0 +1,39 @@
+#Country Name: Powiat Wagrowiecki
+
+graphical_culture = westerngfx
+color = { 136  52  124 }
+revolutionary_colors = { 7 5 14 }
+historical_idea_groups = {
+}
+historical_units = {
+	bardiche_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	hungarian_hussar
+	polish_musketeer
+	polish_hussar
+	polish_tercio
+	polish_winged_hussar
+	russian_lancer
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
+}
+monarch_names = {
+    "Leopold #1" = 100
+}
+leader_names = {
+    Leman
+}
+ship_names = {
+    "Comte de Smet de Nayer"
+}
+army_names = {
+	"Placeholder $PROVINCE$"
+}
+fleet_names = {
+	"Placeholder_Fleet1"
+}

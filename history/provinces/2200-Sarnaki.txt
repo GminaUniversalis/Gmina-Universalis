@@ -1,9 +1,0 @@
-#Suleiman Range
-1690.1.1 = { discovered_by = ENG }
-1707.5.12 = { discovered_by = GBR }
-culture = warszawska
-religion = catholic
-is_city = no
-discovered_by = western
-discovered_by = eastern
-trade_goods = unknown

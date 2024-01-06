@@ -1,31 +1,39 @@
+#Country Name: Powiat Wroclawski
+
 graphical_culture = westerngfx
-
-color = { 196 186 56 }
-
-revolutionary_colors = { 255 30 73}
-
-monarch_names = { 
-
-	"Marian #0" = 45
-	"Daniel #0" = 50
-	"Jerzy #0" = 25
-	"Radoslaw #0" = 10
-	"Czeslaw #0" = 20
-	"Slawomir #0" = 15
-	"Jacek #0" = 30
-	"Dawid #0" = 60
-	"Marcel #0" = 10
-	"Oktawian #0" = 1
-	"Szymon #0" = 20
-	"Andrzej #0" = 12
+color = { 202  181  40 }
+revolutionary_colors = { 4 4 13 }
+historical_idea_groups = {
 }
-leader_names = { 
+historical_units = {
+	bardiche_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	hungarian_hussar
+	polish_musketeer
+	polish_hussar
+	polish_tercio
+	polish_winged_hussar
+	russian_lancer
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
 }
-ship_names = { 
+monarch_names = {
+    "Leopold #1" = 100
 }
-army_names = { 
-	"Armee von $PROVINCE$" 
+leader_names = {
+    Leman
 }
-fleet_names = { 
-	"Stadtflotte" 
+ship_names = {
+    "Comte de Smet de Nayer"
+}
+army_names = {
+	"Placeholder $PROVINCE$"
+}
+fleet_names = {
+	"Placeholder_Fleet1"
 }
