@@ -237,6 +237,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_combat_terrain_urban"
 		texturefile = "gfx/interface/combat_terrain_urban.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_high_urban"
+		texturefile = "gfx/interface/combat_terrain_high_urban.dds"
 	}		
 
 	spriteType = {
