@@ -1,7 +1,7 @@
 #Country Name: Powiat Olesnicki
 
 graphical_culture = westerngfx
-color = { 91  236  93 }
+color = { 245 200 66 }
 revolutionary_colors = { 15 15 2 }
 historical_idea_groups = {
 }
