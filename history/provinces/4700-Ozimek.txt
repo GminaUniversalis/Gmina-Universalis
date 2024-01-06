@@ -9,6 +9,10 @@ capital = "Ozimek"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+<<<<<<< HEAD
 owner = H11
 controller = H11
 add_core = H11
+=======
+hre = yes
+>>>>>>> 1a164109 (Banner)

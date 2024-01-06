@@ -7,6 +7,10 @@ religion = catholic
 is_city = no
 discovered_by = western
 trade_goods = unknown
+<<<<<<< HEAD
 owner = H05
 controller = H05
 add_core = H05
+=======
+hre = yes
+>>>>>>> 1a164109 (Banner)
