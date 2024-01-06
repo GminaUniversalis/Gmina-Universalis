@@ -1,0 +1,14 @@
+#Stryszow
+culture = wroclawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Stryszow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = H01
+controller = H01
+add_core = H01

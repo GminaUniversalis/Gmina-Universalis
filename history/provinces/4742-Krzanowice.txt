@@ -1,0 +1,15 @@
+#Krzanowice
+culture = metropolia
+religion = catholic
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Krzanowice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L10
+controller = L10
+add_core = L10

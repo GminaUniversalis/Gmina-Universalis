@@ -1,0 +1,14 @@
+#Zwierzyniec
+culture = lubelska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Zwierzyniec"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = U19
+controller = U19
+add_core = U19

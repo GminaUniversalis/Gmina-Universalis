@@ -1,0 +1,16 @@
+#Swinioujscie
+culture = zachodniopomorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Swinioujscie"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+center_of_trade = 3
+
+owner = P15
+controller = P15
+add_core = P15

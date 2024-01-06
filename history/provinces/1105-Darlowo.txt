@@ -1,0 +1,14 @@
+#Darlowo
+culture = zachodniopomorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Darlowo"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = P01
+controller = P01
+add_core = P01

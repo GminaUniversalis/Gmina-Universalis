@@ -1,0 +1,14 @@
+#Lubncie
+culture = kielecko-radomska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Lubncie"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = M08
+controller = M08
+add_core = M08

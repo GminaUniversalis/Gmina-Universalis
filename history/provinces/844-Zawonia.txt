@@ -1,0 +1,14 @@
+#Zawonia
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Zawonia"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = legnicka
+owner = A25
+controller = A25
+add_core = A25

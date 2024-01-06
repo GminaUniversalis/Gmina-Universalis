@@ -1,0 +1,14 @@
+#Barwice
+culture = zachodniopomorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = gu_fruits
+base_manpower = 2
+capital = "Barwice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = P03
+controller = P03
+add_core = P03

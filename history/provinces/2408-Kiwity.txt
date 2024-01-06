@@ -1,0 +1,14 @@
+#Kiwity
+culture = mazurska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Kiwity"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = N05
+controller = N05
+add_core = N05

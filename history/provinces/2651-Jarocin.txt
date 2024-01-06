@@ -1,0 +1,14 @@
+#Jarocin
+culture = poznanska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Jarocin"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R12
+controller = R12
+add_core = R12

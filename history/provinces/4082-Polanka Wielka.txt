@@ -1,0 +1,14 @@
+#Polanka Wielka
+culture = galicyjska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Polanka Wielka"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = X11
+controller = X11
+add_core = X11

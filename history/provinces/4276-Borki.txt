@@ -1,0 +1,11 @@
+#4276 - Jabal Tubaiq
+1507.9.1 = { discovered_by = POR }
+culture = lubelska
+religion = catholic
+is_city = no
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = U06
+controller = U06
+add_core = U06

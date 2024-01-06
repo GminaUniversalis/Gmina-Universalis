@@ -1,0 +1,14 @@
+#Bogatynia
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Bogatynia"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = legnicka
+owner = A12
+controller = A12
+add_core = A12

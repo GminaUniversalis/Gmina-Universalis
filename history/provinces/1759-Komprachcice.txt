@@ -1,0 +1,14 @@
+#Komprachcice
+culture = wroclawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Komprachcice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = H11
+controller = H11
+add_core = H11

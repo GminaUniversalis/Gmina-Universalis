@@ -1,0 +1,10 @@
+#2426 - Yamal
+culture = mazurska
+religion = catholic
+is_city = no
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = N16
+controller = N16
+add_core = N16

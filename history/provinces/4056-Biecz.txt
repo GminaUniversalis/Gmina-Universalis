@@ -1,0 +1,14 @@
+#Biecz
+culture = galicyjska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Biecz"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = X04
+controller = X04
+add_core = X04

@@ -1,0 +1,14 @@
+#Poronin
+culture = galicyjska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Poronin"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = X01
+controller = X01
+add_core = X01

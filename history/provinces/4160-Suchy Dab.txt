@@ -1,0 +1,10 @@
+#Mountains blocking movement in central europe
+discovered_by = western
+discovered_by = eastern
+culture = trojmiasto
+religion = catholic
+is_city = no
+trade_goods = unknown
+owner = Y09
+controller = Y09
+add_core = Y09

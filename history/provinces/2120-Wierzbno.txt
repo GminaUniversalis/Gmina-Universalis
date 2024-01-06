@@ -1,0 +1,14 @@
+#Wierzbno
+culture = warszawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Wierzbno"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G30
+controller = G30
+add_core = G30

@@ -1,0 +1,10 @@
+#1798 - Imatong
+culture = lemkowska
+religion = catholic
+is_city = no
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = I19
+controller = I19
+add_core = I19

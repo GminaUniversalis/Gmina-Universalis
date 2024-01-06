@@ -1,0 +1,10 @@
+#High Atlas
+discovered_by = western
+discovered_by = eastern
+culture = lodzka
+religion = catholic
+is_city = no
+trade_goods = unknown
+owner = Q06
+controller = Q06
+add_core = Q06

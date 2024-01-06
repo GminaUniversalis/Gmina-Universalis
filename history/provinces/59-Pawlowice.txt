@@ -1,0 +1,15 @@
+#Pawlowice
+culture = metropolia
+religion = catholic
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Pawlowice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L17
+controller = L17
+add_core = L17

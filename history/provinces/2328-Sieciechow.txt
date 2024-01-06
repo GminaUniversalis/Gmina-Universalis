@@ -1,0 +1,14 @@
+#Sieciechow
+culture = warszawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Sieciechow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G24
+controller = G24
+add_core = G24

@@ -1,0 +1,10 @@
+#Unpassable mountains in The Caucasus.
+discovered_by = eastern
+discovered_by = western
+culture = warszawska
+religion = catholic
+is_city = no
+trade_goods = unknown
+owner = G37
+controller = G37
+add_core = G37

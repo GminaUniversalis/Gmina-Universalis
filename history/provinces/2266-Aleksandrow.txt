@@ -1,0 +1,14 @@
+#Aleksandrow
+culture = lodzka
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Aleksandrow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = Q13
+controller = Q13
+add_core = Q13

@@ -1,0 +1,11 @@
+#1794 - Central Sahara
+culture = metropolia
+hre = yes
+is_city = yes
+religion = catholic
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = L15
+controller = L15
+add_core = L15

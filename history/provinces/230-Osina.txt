@@ -1,0 +1,14 @@
+#Osina
+culture = zachodniopomorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Osina"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = P13
+controller = P13
+add_core = P13

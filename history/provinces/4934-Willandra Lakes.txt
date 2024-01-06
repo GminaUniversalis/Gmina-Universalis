@@ -1,0 +1,14 @@
+#Willandra Lakes
+culture = warszawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Willandra Lakes"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G15
+controller = G15
+add_core = G15

@@ -1,0 +1,14 @@
+#Strzelno
+culture = kujawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Strzelno"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = B06
+controller = B06
+add_core = B06

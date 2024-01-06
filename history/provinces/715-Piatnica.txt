@@ -1,0 +1,14 @@
+#Piatnica
+culture = podlaska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Piatnica"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = J06
+controller = J06
+add_core = J06

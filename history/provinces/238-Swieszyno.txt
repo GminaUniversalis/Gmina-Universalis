@@ -1,0 +1,14 @@
+#Swieszyno
+culture = zachodniopomorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Swieszyno"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = P02
+controller = P02
+add_core = P02

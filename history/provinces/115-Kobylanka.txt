@@ -1,0 +1,14 @@
+#Kobylanka
+culture = zachodniopomorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Kobylanka"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = P12
+controller = P12
+add_core = P12

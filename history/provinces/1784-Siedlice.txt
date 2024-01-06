@@ -1,0 +1,11 @@
+#1784 - Tian Shan
+1622.1.1 = { discovered_by = RUS }
+culture = warszawska
+religion = catholic
+is_city = no
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = G28
+controller = G28
+add_core = G28

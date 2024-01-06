@@ -1,0 +1,14 @@
+#City of Lubaczow
+culture = lemkowska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "City of Lubaczow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = I13
+controller = I13
+add_core = I13

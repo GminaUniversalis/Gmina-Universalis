@@ -1,0 +1,14 @@
+#Goluchow
+culture = poznanska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Goluchow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R09
+controller = R09
+add_core = R09

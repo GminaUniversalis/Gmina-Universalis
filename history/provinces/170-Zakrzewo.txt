@@ -1,0 +1,14 @@
+#Zakrzewo
+culture = poznanska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Zakrzewo"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R29
+controller = R29
+add_core = R29

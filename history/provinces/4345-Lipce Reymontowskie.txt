@@ -1,0 +1,14 @@
+#Lipce Reymontowskie
+culture = lodzka
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Lipce Reymontowskie"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = Q17
+controller = Q17
+add_core = Q17

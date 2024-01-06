@@ -1,0 +1,14 @@
+#City of Gubin
+culture = zielonogorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "City of Gubin"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = W12
+controller = W12
+add_core = W12

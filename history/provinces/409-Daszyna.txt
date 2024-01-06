@@ -1,0 +1,14 @@
+#Daszyna
+culture = lodzka
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Daszyna"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = Q06
+controller = Q06
+add_core = Q06

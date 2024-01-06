@@ -1,0 +1,14 @@
+#Gmina Sanok
+culture = lemkowska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Gmina Sanok"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = I16
+controller = I16
+add_core = I16

@@ -1,0 +1,9 @@
+culture = galicyjska
+religion = catholic
+is_city = no
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = X03
+controller = X03
+add_core = X03

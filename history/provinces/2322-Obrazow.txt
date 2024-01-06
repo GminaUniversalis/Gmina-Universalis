@@ -1,0 +1,14 @@
+#Obrazow
+culture = kielecko-radomska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Obrazow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = M09
+controller = M09
+add_core = M09

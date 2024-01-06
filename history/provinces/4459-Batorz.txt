@@ -1,0 +1,14 @@
+#Batorz
+culture = lubelska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Batorz"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = U03
+controller = U03
+add_core = U03

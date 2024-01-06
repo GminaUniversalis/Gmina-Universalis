@@ -1,0 +1,14 @@
+#Tarnowo Podgorne
+culture = poznanska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Tarnowo Podgorne"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R23
+controller = R23
+add_core = R23

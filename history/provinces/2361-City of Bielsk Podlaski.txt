@@ -1,0 +1,14 @@
+#City of Bielsk Podlaski
+culture = podlaska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "City of Bielsk Podlaski"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = J03
+controller = J03
+add_core = J03

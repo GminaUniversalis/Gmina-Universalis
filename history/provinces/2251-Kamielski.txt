@@ -1,0 +1,10 @@
+# Bagoe - Wasteland province
+culture = lodzka
+religion = catholic
+is_city = no
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = Q05
+controller = Q05
+add_core = Q05

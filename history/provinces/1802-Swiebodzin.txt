@@ -1,0 +1,10 @@
+1533.8.29 = { discovered_by = SPA }
+culture = zielonogorska
+religion = catholic
+is_city = no
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = W05
+controller = W05
+add_core = W05

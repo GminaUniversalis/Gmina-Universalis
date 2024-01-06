@@ -1,0 +1,14 @@
+#Gruta
+culture = kujawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Gruta"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = B12
+controller = B12
+add_core = B12

@@ -1,0 +1,14 @@
+#Ksiaz Wielkopolski
+culture = poznanska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Ksiaz Wielkopolski"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R17
+controller = R17
+add_core = R17

@@ -1,0 +1,14 @@
+#Czempin
+culture = poznanska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Czempin"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R16
+controller = R16
+add_core = R16

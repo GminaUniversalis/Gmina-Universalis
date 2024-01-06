@@ -1,0 +1,14 @@
+#Zapolice
+culture = lodzka
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Zapolice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = Q10
+controller = Q10
+add_core = Q10

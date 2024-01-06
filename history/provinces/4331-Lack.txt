@@ -1,0 +1,14 @@
+#Lack
+culture = warszawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Lack"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G35
+controller = G35
+add_core = G35

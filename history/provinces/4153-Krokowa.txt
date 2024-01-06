@@ -1,0 +1,10 @@
+#Mountains splitting Norway from Sweden.
+discovered_by = eastern
+discovered_by = western
+culture = trojmiasto
+religion = catholic
+is_city = no
+trade_goods = unknown
+owner = Y12
+controller = Y12
+add_core = Y12

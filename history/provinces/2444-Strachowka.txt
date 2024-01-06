@@ -1,0 +1,14 @@
+#Strachowka
+culture = warszawska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Strachowka"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G11
+controller = G11
+add_core = G11

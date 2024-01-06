@@ -1,0 +1,13 @@
+#1173 - Namib Desert / Skeleton Coast
+culture = galicyjska
+religion = catholic
+is_city = no
+base_tax = 1
+base_production = 9
+trade_goods = slaves
+base_manpower = 1
+discovered_by = western
+discovered_by = eastern
+owner = X11
+controller = X11
+add_core = X11

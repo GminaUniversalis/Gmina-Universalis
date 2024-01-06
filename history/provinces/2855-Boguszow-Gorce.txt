@@ -1,0 +1,14 @@
+#Boguszow
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Boguszow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = legnicka
+owner = A20
+controller = A20
+add_core = A20

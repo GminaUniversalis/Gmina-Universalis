@@ -1,0 +1,15 @@
+#Pilica
+culture = metropolia
+religion = catholic
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Pilica"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L05
+controller = L05
+add_core = L05

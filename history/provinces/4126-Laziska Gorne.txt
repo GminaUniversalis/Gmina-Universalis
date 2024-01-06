@@ -1,0 +1,15 @@
+#Laziska Gorne
+culture = metropolia
+religion = catholic
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Laziska Gorne"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L13
+controller = L13
+add_core = L13

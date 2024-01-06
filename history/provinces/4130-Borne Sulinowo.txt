@@ -1,0 +1,14 @@
+#Borne Sulinowo
+culture = zachodniopomorska
+religion = catholic
+base_tax = 1
+base_production = 2
+trade_goods = iron
+base_manpower = 1
+capital = "Borne Sulinowo"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = P03
+controller = P03
+add_core = P03

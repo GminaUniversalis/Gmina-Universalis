@@ -1,0 +1,14 @@
+#Chmielnik
+culture = kielecko-radomska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Chmielnik"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = M04
+controller = M04
+add_core = M04

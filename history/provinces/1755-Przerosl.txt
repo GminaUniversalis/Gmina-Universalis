@@ -1,0 +1,14 @@
+#Przerosl
+culture = mazurska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Przerosl"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = N11
+controller = N11
+add_core = N11

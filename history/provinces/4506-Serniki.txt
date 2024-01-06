@@ -1,0 +1,14 @@
+#Serniki
+culture = lubelska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Serniki"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = U18
+controller = U18
+add_core = U18

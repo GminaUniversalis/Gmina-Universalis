@@ -1,0 +1,14 @@
+#Ostrow Wielkopolski
+culture = poznanska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Ostrow Wielkopolski"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R05
+controller = R05
+add_core = R05

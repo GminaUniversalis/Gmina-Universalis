@@ -1,0 +1,10 @@
+#1787 - Himalaya
+culture = warszawska
+religion = catholic
+is_city = no
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = G25
+controller = G25
+add_core = G25

@@ -1,0 +1,14 @@
+discovered_by = western
+discovered_by = eastern
+culture = warszawska
+religion = catholic
+is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Nasielsk"
+is_city = yes
+owner = G38
+controller = G38
+add_core = G38

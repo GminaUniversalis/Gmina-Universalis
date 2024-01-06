@@ -1,0 +1,14 @@
+#Bledzew
+culture = zielonogorska
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Bledzew"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = W06
+controller = W06
+add_core = W06

@@ -1,0 +1,12 @@
+#1793 - Bierun
+culture = metropolia
+religion = catholic
+hre = yes
+capital = "Bierun"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+trade_goods = unknown
+owner = L15
+controller = L15
+add_core = L15
