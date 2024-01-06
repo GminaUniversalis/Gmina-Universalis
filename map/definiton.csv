@@ -1963,15 +1963,15 @@ province;red;green;blue;x;x
 3218;219;32;28;Holandia;
 3219;219;32;29;Czechy Wschód;
 3419;219;32;229;Bornholm;
-3500;219;23;200;Bialorus;
-3505;219;23;205;Krolewiec;
 3619;225;25;209;Bialorus wschod;
 3721;100;11;121;Ukraina wschod;
+3888;100;12;188;Bialorus zachod;
 3500;219;23;200;Zduny;
 3501;219;23;201;Jeziorzany;
 3502;219;23;202;Frampol;
 3503;219;23;203;Sztutowo;
 3504;219;23;204;Morąg;
+3887;100;12;187;Krolewiec;
 3505;219;23;205;Krasnobród;
 3584;225;25;184;Goraj;
 4020;239;204;149;Dukla;x
