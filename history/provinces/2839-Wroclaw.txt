@@ -9,10 +9,10 @@ is_city = yes
 discovered_by = western
 discovered_by = eastern
 culture = wroclawska
-add_core = WRO
-owner = WRO
-controller = WRO
+owner = A22
+controller = A22
 center_of_trade = 3
 latent_trade_goods = { 
 	coal 
 }
+add_core = A22

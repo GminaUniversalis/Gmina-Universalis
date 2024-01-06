@@ -1,7 +1,6 @@
 #Skawina
-add_core = G01
-owner = G01
-controller = G01
+owner = F15
+controller = F15
 culture = galicyjska
 religion = catholic
 base_tax = 1
@@ -12,3 +11,4 @@ capital = "Skawina"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+add_core = F15
