@@ -4,6 +4,12 @@ tags={
 	"Alternative History"
 	"Missions And Decisions"
 }
+
+dependencies={
+	"UI a la Artemis"
+	"Banners 4.0 Updated"
+}
+
 name="Gmina Universalis"
 picture="thumnbnail.png"
 replace_path="common/province_names"
