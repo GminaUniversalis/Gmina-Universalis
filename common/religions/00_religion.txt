@@ -197,7 +197,7 @@ christian = {
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 		
 		papacy = {
-			papal_tag = F15
+			papal_tag = X15
 			election_cost = 5
 			seat_of_papacy = 262 # Krakow
 			

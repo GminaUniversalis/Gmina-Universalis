@@ -1603,7 +1603,7 @@ guiTypes = {
 					position = { x= 0 y = 0 }
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
-					text = "NO_GURU_TITLE"	
+					text = "NO_GURU_TITLE"		
 					maxWidth = 200
 					maxHeight = 24
 					Orientation = "UPPER_LEFT"
@@ -2029,8 +2029,8 @@ guiTypes = {
 			dontRender = ""
 			horizontalBorder = ""
 			Orientation = "UPPER_LEFT"
-		
-			# iconType =
+
+		# iconType =
 			# {
 			# 	name = "fervor_bg"
 			# 	spriteType = "GFX_country_religion_view_fervor_bg"
@@ -2271,16 +2271,16 @@ guiTypes = {
 			name = "show_subjects"
 			if_resolution = {
 				max_height = 899
-				position = { x=40 y=534 }
+				position = { x=40 y=529 }
 			}
 			if_resolution = {
 				max_height = 1079
 				min_height = 900
-				position = { x=40 y=684 }
+				position = { x=40 y=679 }
 			}
 			if_resolution = {
 				min_height = 1080
-				position = { x=40 y=864 }
+				position = { x=40 y=859 }
 			}
 			quadTextureSprite ="GFX_checkbox_gold_32"
 		}
@@ -2290,16 +2290,16 @@ guiTypes = {
 			name = "show_subjects_title"
 			if_resolution = {
 				max_height = 899
-				position = {x = 74 y = 539 }
+				position = {x = 74 y = 534 }
 			}
 			if_resolution = {
 				max_height = 1079
 				min_height = 900
-				position = {x = 74 y = 689 }
+				position = {x = 74 y = 684 }
 			}
 			if_resolution = {
 				min_height = 1080
-				position = {x = 74 y = 869 }
+				position = {x = 74 y = 864 }
 			}
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -2308,7 +2308,7 @@ guiTypes = {
 			text = "MACRO_BUILDR_INCL_SUBJ"
 			format = left
 		}
-		iconType = {
+	iconType = {
 			name ="automatic_missionariy_BG"
 			spriteType = "GFX_macro_diplomacy_slot_small"
 			if_resolution = {
@@ -2388,7 +2388,7 @@ guiTypes = {
 			}
 			quadTextureSprite ="GFX_button_plus"
 		}
-
+		
 		iconType =
 		{
 			name ="full_unity_bg"
@@ -2409,7 +2409,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 
 		}		
-
+		
 		instantTextBoxType = {
 			name = "full_unity"
 			position = { x = 42 y =391 }
@@ -2422,7 +2422,7 @@ guiTypes = {
 			format = left
 			
 		}
-
+		
 		###Defender of the Faith
 
         iconType = {
@@ -2470,7 +2470,7 @@ guiTypes = {
 		guiButtonType = 
 		{
 			name ="defender_of_the_faith_shield"
-			quadTextureSprite = "GFX_shield_thin"
+			quadTextureSprite = "GFX_shield_thin_old"
 			position = { x = 393 y = 260 }
 			tooltip = ""
 			tooltipText =""
@@ -2482,7 +2482,7 @@ guiTypes = {
 		guiButtonType = 
 		{
 			name ="defender_of_the_faith_emperor_shield"
-			quadTextureSprite = "GFX_shield_medium"
+			quadTextureSprite = "GFX_shield_medium_old"
 			position = { x = 403 y = 260 }
 			tooltip = ""
 			tooltipText =""
