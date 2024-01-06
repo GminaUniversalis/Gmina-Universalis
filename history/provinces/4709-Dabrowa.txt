@@ -9,3 +9,4 @@ capital = "Dabrowa"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+hre = yes
