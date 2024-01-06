@@ -1,8 +1,13 @@
 spriteTypes = {
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_great_project_place_holder"	
 		texturefile = "gfx//interface//great_projects//great_project_place_holder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_sky_tower"	
+		texturefile = "gfx//interface//great_projects//great_project_sky_tower.dds"
 	}
 
 	spriteType = {
