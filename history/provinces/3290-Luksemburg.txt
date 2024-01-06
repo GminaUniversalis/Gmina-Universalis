@@ -1,4 +1,7 @@
+#1796 - Przeciszow
+culture = galicyjska
+religion = catholic
+is_city = no
 discovered_by = western
 discovered_by = eastern
-is_city = no
 trade_goods = unknown

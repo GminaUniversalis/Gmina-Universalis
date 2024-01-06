@@ -61,6 +61,7 @@ categories =  {
 		nation_designer_cost_multiplier = 1.05
 		
 		terrain_override = {
+			787 794 2847
 		}		
 	}
 	
@@ -292,6 +293,53 @@ categories =  {
 		supply_limit = 6
 		
 		terrain_override = {
+		}	
+	}
+
+	urban = {
+		color = { 52 44 44  }
+
+		type = plains
+		sound_type = plains
+
+		movement_cost = 1.2
+		defence = 2
+		local_development_cost = -0.10
+		supply_limit = 10
+		allowed_num_of_buildings = 1
+		
+		terrain_override = {
+			1 2839
+		}	
+	}	
+
+	floodplains = {
+		color = { 132 212 212  }
+
+		type = plains
+		sound_type = plains
+
+		movement_cost = 1.1
+		supply_limit = 8
+		
+		terrain_override = {
+			2
+		}	
+	}	
+
+	crossing = {
+		color = { 144 36 164  }
+
+		type = plains
+		sound_type = plains
+
+		movement_cost = 1.5
+		defence = 2
+		local_development_cost = 0.20
+		supply_limit = 4
+		
+		terrain_override = {
+			3
 		}	
 	}	
 }

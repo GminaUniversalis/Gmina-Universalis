@@ -1,5 +1,5 @@
 #Dolnoslaskie
-
+A22 = "countries/Powiat_Wroclawski.txt"
 #Kujawsko-Pomorskie
 
 #Lubelskie
@@ -7,7 +7,7 @@
 #Lodzkie
 
 #Malopolska
-G01 = "countries/Powiat_Krakowski.txt"
+F15 = "countries/Powiat_Krakowski.txt"
 
 #Mazowieckie
 
@@ -28,4 +28,4 @@ G01 = "countries/Powiat_Krakowski.txt"
 #Wielkopolskie
 
 #Zachodniopomorskie
-G02 = "countries/Powiat_Szczecinecki.txt"
+P03 = "countries/Powiat_Szczecinecki.txt"

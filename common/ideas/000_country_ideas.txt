@@ -1,5 +1,7 @@
-		G01_ideas = {
+
+F15_ideas = {
 	start = {
+		
 		trade_efficiency = 0.15
 		improve_relation_modifier = 0.2
 		
@@ -10,7 +12,7 @@
 	}	
 
 	trigger = {
-		tag = G01
+		tag = F15
 	}
 	free = yes
 	
@@ -38,41 +40,268 @@
 		infantry_power = 0.20
 	}
 }
-		G02_ideas = {
-			start = {
-				idea_cost = -0.1
-				discipline = 0.05
-			}
+P03_ideas = {
+	start = {
+		idea_cost = -0.1
+		discipline = 0.05
+	}
 
-			bonus = {
-				fire_damage_received = -0.10
+	bonus = {
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = P03
+	}
+	free = yes
+
+	Pomeranian_Wall_Museum = {
+		defensiveness = 0.15
+	}
+	Pomeranian_Dukes_Castle = {
+		legitimacy = 1
+	}
+	Church_of_Mary = 
+	{
+		tolerance_own = 2
+	}
+	Bismarck_Tower = {
+		culture_conversion_cost = -0.15
+	}
+	Kaulfuss_Monument = {
+		technology_cost = -0.1
+	}
+	Post-Soviet_Barracks = {
+		land_forcelimit_modifier = 0.15
+	}
+	Citizen_Wlapko = {
+		global_unrest = -2
+	}
+}
+		C05_ideas ={
+			start = {
+				stability_cost_modifier = -0.1
+				global_manpower_modifier = 0.075
 			}
-			
 			trigger = {
-				tag = G02
+				tag = C05
 			}
 			free = yes
 
-			Pomeranian_Wall_Museum = {
+			bonus = {
+				global_foreign_trade_power = 0.15
+			}
+
+			Radomski_czerwiec = {
+				land_morale = 0.1
+			}
+			WSHR = {
+				caravan_power = 0.1
+			}
+			Ryenk_Radomski = {
+				development_cost = -0.1
+			}
+			Old_capital = {
+				presitge_decay = -0.05
+			}
+			TPS_ZDR = {
+				diplomatic_reputation = 1
+			}
+			Ilza_castle = {
+				papal_influence = 1
+			}
+			Military_infrastructure = {
+				artillery_power = 0.15
+			}
+
+		}
+		F10_ideas ={
+			start = {
+				global_trade_goods_size_modifier = 0.1
+				hostile_attrition = 2
+			}
+			trigger = {
+				tag = F10
+			}
+			free = yes
+			Wolbromian_cross = {
+				global_missionary_strength = 0.02
+			}
+			Olkuszian_aficionados = {
+				infantry_power = 0.1
+			}
+			Zalew = {
+				global_tax_modifier = 0.1 
+			}
+			Oriental_cuisine = {
+				num_accepted_cultures = 2
+			}
+			Rabka_fortress = {
+				defensiveness = 0.2
+			}
+			Land_of_factories = {
+				development_cost = -0.1
+			}
+			Workers_strong_together = {
+				discipline = 0.05
+			}
+			Rubber_paradise = {
+				trade_efficiency = 0.1
+			}
+			bonus = {
+				build_cost = -0.1
+			}
+		}
+		A22_ideas = {
+			start = {
+				advisor_cost = -0.2
+				culture_conversion_cost = -0.2
+			}
+		
+			bonus = {
+				legitimacy = 1
+				devotion = 1
+				republican_tradition = 0.3
+				meritocracy = 1
+				horde_unity = 1
+			}
+			
+			trigger = {
+				tag = A22
+			}
+			free = yes
+		
+			Wroclaw_rat_undercity = {
+				spy_offence = 0.4
+			}
+			Wroclaw_city_of_bridges = {
+				trade_efficiency = 0.1
+			}
+			Wroclaw_city_of_gnomes = 
+			{
+				administrative_efficiency = 0.05
+			}
+			Wroclaw_festung_breslau = {
+				siege_ability = 0.2
+			}
+			Wroclaw_polish_twink_town = {
+				tolerance_heathen = 3
+			}
+			Wroclaw_MPK = {
+				hostile_attrition = 2
+			}
+			Wroclaw_memory_of_our_flood = {
+				discipline = 0.05
+			}
+		}
+		G31_ideas ={
+			start ={
+				religious_unity = 0.2
+				army_tradition_decay = -0.01
+			}
+			trigger = {
+				tag = G31
+			}
+			free = yes
+			Central_Park = {
+				culture_conversion_cost - 0.25
+			}
+			Railroad_Center = {
+				movement_speed = 0.1
+			}
+			Rivalry_with_Kalisz = {
 				defensiveness = 0.15
 			}
-			Pomeranian_Dukes_Castle = {
-				legitimacy = 1
+			Konkatedra = {
+				tolerance_own = 1
 			}
-			Church_of_Mary = 
-			{
-				tolerance_own = 2
+			Zombies_were_born_here = {
+				production_efficiency = 0.1
 			}
-			Bismarck_Tower = {
-				culture_conversion_cost = -0.15
+			Republic_of_Ostrów = {
+				land_morale = 0.1
 			}
-			Kaulfuss_Monument = {
-				technology_cost = -0.1
+			Piaski_Szczygliczka = {
+				improve_relation_modifier = 0.15
 			}
-			Post-Soviet_Barracks = {
-				land_forcelimit_modifier = 0.15
+			City_of_Sport = {
+				land_attrition = - 0.05
+				infantry_power = 0.05
 			}
-			Citizen_Wlapko = {
-				global_unrest = -2
+			bonus = {
+				global_trade_goods_size_modifier = 0.1
+			}
+		}
+		A15_ideas = {
+			start={
+				manpower_recovery_speed= 0.2
+				defensiveness=0.15
+			}
+			trigger = {
+				tag = A15
+			}
+			free = yes
+			30_plan = {
+				construction_cost = -0.1
+				cosntruction_time = -0.15
+			}
+
+			Consumer_capital_of_the_lowersilesia = {
+				land_morale = 0.15
+			}
+			Freshly_renovated_Square = {
+				prestige = 1
+				movement_speed = 0.1
+			}
+			Derby_of_Lower_Silesia = {
+				leader_land_shock = 1
+			}
+			Great_Copper_Smelter = {
+				global_trade_goods_size_modifier = 0.15
+			}
+			Dziury_na_Zlotryjska = {
+				hostile_attrition = 1
+			}
+			Grandpa_on_the_throne = {
+				monarch_lifespan = 0.15
+			}
+
+			bonus = {
+				global_tax_modifier = 0.2
+			}
+		}
+		A06_ideas = {
+			start ={
+				prestige_decay = -0.01
+				diplomatic_reputation = 1
+			}
+			trigger = {
+				tag=A06
+			}
+			free=yes
+		
+			Little_Prague = {
+				prestige = 1
+			}
+			Plurinational_Legacy = {
+				num_accepted_cultures = 2
+			}
+			Important_Trade_Hub = {
+				caravan_power = 0.25
+			}
+			Twierdza_Klodzko = {
+				defensiveness = 0.2
+			}
+			Legacy_of_Czerwona_Szkola = {
+				global_trade_goods_size_modifier = 0.1
+			}
+			PKS_w_Klodzku = {
+				movement_speed = 0.1
+			}
+			Osiedle_Leona_Kruczkowskiego = {
+				development_cost = -0.1
+			}
+			bonus = {
+				global_garrison_growth = 0.25
 			}
 		}

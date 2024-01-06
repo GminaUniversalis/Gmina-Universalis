@@ -1,0 +1,86 @@
+women_in_party = {
+	cost = 100
+	modifier = {
+		advisor_cost = -0.1
+		female_advisor_chance = 0.4
+	}
+}
+
+pgrs = {
+	cost = 100
+	modifier = {
+		production_efficiency = 0.1	
+	}
+}
+
+contacts_in_moscow = {
+	cost = 100
+	modifier = {
+		global_manpower = 5
+	}
+}
+
+united_workers = {
+	cost = 100
+	modifier = {
+		reinforce_speed = 0.15
+	}
+}
+
+
+milicja_stations = {
+	cost = 100
+	modifier = {
+		garrison_size = 0.3
+	}
+}
+
+no_borders = {
+	cost = 100
+	modifier = {
+		enable_forced_march = yes
+		force_march_free = yes
+	}	
+}
+
+marxist_books = {
+	cost = 100
+	modifier = {
+		stability_cost_modifier = -0.3
+	}
+}
+
+censorship = {
+	cost = 100
+	modifier = {
+		tolerance_own = 2
+	}
+}
+
+second_thoughts = {
+	cost = 100
+	modifier = {
+		global_institution_spread = 0.5
+	}
+}
+
+minorities_trust = {
+	cost = 100
+	modifier = {
+		global_unrest = -2
+	}
+}
+
+legacy_of_witos = {
+	cost = 100
+	modifier = {
+			improve_relation_modifier = 0.15
+	}
+}
+
+agrarian_tradition = {
+	cost = 100
+	modifier = {
+		land_morale = 0.10
+	}
+}

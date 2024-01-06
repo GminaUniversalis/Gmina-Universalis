@@ -188,7 +188,7 @@ gu_beer = {
 }
 
 gu_vodka = {
-	base_price = 2
+	base_price = 3.5
 }
 
 gu_tourists = {
