@@ -10,14 +10,14 @@ communism_group = {
 		icon = 30
 		color = { 0.84 0.15 0.1 }
 		country = {
-				tolerance_own = 2
-				advisor_pool = 1
+			yearly_corruption = 0.15	
+			stability_cost_modifier = 0.5
 		}
 		country_as_secondary = {
-			idea_cost = -0.1
+			global_manpower_modifier = 0.10
 		}
 		province = {
-				local_missionary_strength = -0.02
+			local_production_efficiency = -0.3
 		}
 		heretic = { REVISIONIST }
 
@@ -39,9 +39,14 @@ communism_group = {
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
+			marxist_books
+			censorship
 			women_in_party
-			bread_and_wine_aspect
-			sola_scriptura_aspect
+			pgrs
+			contacts_in_moscow
+			united_workers
+			milicja_stations
+			no_borders
 		}
 		aspects_name = PROTESTANT_ASPECTS
 	}
@@ -50,14 +55,14 @@ communism_group = {
 		icon = 31
 		color = { 0.1 0.45 0.77 }
 		country = {
-				tolerance_own = 2
-				advisor_pool = 1
+			yearly_corruption = 0.15	
+			administrative_efficiency = -0.05
 		}
 		country_as_secondary = {
-			idea_cost = -0.1
+			idea_cost = -0.05
 		}
 		province = {
-				local_missionary_strength = -0.02
+			local_production_efficiency = -0.3
 		}
 		heretic = { REVISIONIST }
 
@@ -79,9 +84,14 @@ communism_group = {
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
+			second_thoughts
+			minorities_trust
 			women_in_party
-			bread_and_wine_aspect
-			sola_scriptura_aspect
+			pgrs
+			contacts_in_moscow
+			united_workers
+			milicja_stations
+			no_borders
 		}
 		aspects_name = PROTESTANT_ASPECTS
 	}
@@ -90,14 +100,14 @@ communism_group = {
 		icon = 32
 		color = { 0.56 0.77 0.1 }
 		country = {
-				tolerance_own = 2
-				advisor_pool = 1
+			yearly_corruption = 0.15	
+			core_creation = 0.20
 		}
 		country_as_secondary = {
-			idea_cost = -0.1
+			army_tradition = 0.5
 		}
 		province = {
-				local_missionary_strength = -0.02
+			local_production_efficiency = -0.3
 		}
 		heretic = { REVISIONIST }
 
@@ -119,9 +129,14 @@ communism_group = {
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
+			legacy_of_witos
+			agrarian_tradition
 			women_in_party
-			bread_and_wine_aspect
-			sola_scriptura_aspect
+			pgrs
+			contacts_in_moscow
+			united_workers
+			milicja_stations
+			no_borders
 		}
 		aspects_name = PROTESTANT_ASPECTS
 	}
