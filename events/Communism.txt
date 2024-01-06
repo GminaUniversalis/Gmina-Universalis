@@ -37,6 +37,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		current_age = age_of_discovery
+	}
+
 	mean_time_to_happen = {
 		days = 1
 	}
