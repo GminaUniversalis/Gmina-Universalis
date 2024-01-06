@@ -1,8 +1,6 @@
-#4276 - Jabal Tubaiq
-1507.9.1 = { discovered_by = POR }
 culture = lubelska
 religion = catholic
-is_city = no
+is_city = yes
 discovered_by = western
 discovered_by = eastern
 trade_goods = unknown

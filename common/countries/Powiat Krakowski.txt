@@ -1,8 +1,8 @@
 #Country Name: Powiat Krakowski
 
 graphical_culture = westerngfx
-color = { 128  111  26 }
-revolutionary_colors = { 0 1 0 }
+color = { 250 240 250 }
+revolutionary_colors = { 8 1 8 }
 historical_idea_groups = {
 }
 historical_units = {
@@ -22,8 +22,10 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
-monarch_names = {
-    "Leopold #1" = 100
+monarch_names = { 
+	"Sztabka #0" = 75
+	"Szwabka #0" = 50
+	"Oskar #0" = 25
 }
 leader_names = {
     Leman
@@ -34,6 +36,6 @@ ship_names = {
 army_names = {
 	"Placeholder $PROVINCE$"
 }
-fleet_names = {
-	"Placeholder_Fleet1"
+fleet_names = { 
+	"Stadtflotte" 
 }
