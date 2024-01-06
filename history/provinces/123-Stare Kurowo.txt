@@ -9,3 +9,6 @@ capital = "Stare Kurowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = W07
+controller = W07
+add_core = W07

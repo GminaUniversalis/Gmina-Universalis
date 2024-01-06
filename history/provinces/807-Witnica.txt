@@ -9,3 +9,6 @@ capital = "Witnica"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+owner = A08
+controller = A08
+add_core = A08
