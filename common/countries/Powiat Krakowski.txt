@@ -1,20 +1,22 @@
-government = monarchy
-add_government_reform = autocracy_reform
-government_rank = 1
-mercantilism = 25
-technology_group = western
-religion = communism_pzpr
 
-primary_culture = galicyjska
-capital = 262# Krakow
-1430.1.1 = { 
-	monarch = { 
+graphical_culture = westerngfx
 
-		name = "Mateusz"
-		dynasty = "Inglot"
-		birth_date = 1425.1.1
-		adm = 4
-		dip = 0
-		mil = 5
-	}
+color = { 250 240 250 }
+revolutionary_colors = { 8 1 8 }
+
+monarch_names = { 
+	"Sztabka #0" = 75
+	"Szwabka #0" = 50
+	"Oskar #0" = 25
 }
+leader_names = { 
+}
+ship_names = { 
+}
+army_names = { 
+	"Armee von $PROVINCE$" 
+}
+fleet_names = { 
+	"Stadtflotte" 
+}
+

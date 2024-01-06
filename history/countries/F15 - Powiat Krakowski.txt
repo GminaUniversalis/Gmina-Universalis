@@ -3,10 +3,12 @@ add_government_reform = autocracy_reform
 government_rank = 1
 mercantilism = 25
 technology_group = western
-religion = communism_pzpr
-
+religion = catholic
+graphical_culture = westerngfx
 primary_culture = galicyjska
-capital = 262# Krakow
+capital = 262 #Krakow
+fixed_capital = 262 #Krakow
+
 1430.1.1 = { 
 	monarch = { 
 

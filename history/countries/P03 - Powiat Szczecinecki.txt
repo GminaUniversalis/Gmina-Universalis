@@ -4,9 +4,11 @@ government_rank = 1
 mercantilism = 25
 technology_group = western
 religion = communism_sd
-
+graphical_culture = westerngfx
 primary_culture = zachodniopomorska
-capital = 1#City of Szczecinek
+capital = 1 #City of Szczecinek
+fixed_capital = 1 #City of Szczecinek
+
 1440.1.1 = { 
 	monarch = { 
 

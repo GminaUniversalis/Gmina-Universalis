@@ -1,10 +1,10 @@
-G02_develop ={ 
+P03_develop ={ 
 	slot = 1
 	generic = no
 	ai = yes
 
 	potential = {
-		tag = G02
+		tag = P03
 	}
 	has_country_shield = yes
 	
@@ -93,13 +93,13 @@ G02_develop ={
 		}
 	}
 }
-G02_conquest ={
+P03_conquest ={
 	slot = 3
 	generic = no
 	ai = yes
 
 	potential = {
-		tag = G02
+		tag = P03
 	}
 	has_country_shield = yes
 	conquest_Szczecinek = {
@@ -193,13 +193,13 @@ G02_conquest ={
 	}
 }
 
-G02_conquest_2 ={
+P03_conquest_2 ={
 	slot = 2
 	generic = no
 	ai = yes
 
 	potential = {
-		tag = G02
+		tag = P03
 	}
 	has_country_shield = yes
 
@@ -264,13 +264,13 @@ G02_conquest_2 ={
 
 	}
 }
-G02_conquest_4 ={
+P03_conquest_4 ={
 	slot = 4
 	generic = no
 	ai = yes
 
 	potential = {
-		tag = G02
+		tag = P03
 	}
 	has_country_shield = yes
 
@@ -335,13 +335,13 @@ G02_conquest_4 ={
 
 	}
 }
-G02_diplomacy ={
+P03_diplomacy ={
 		slot = 5
 		generic = no
 		ai = yes
 	
 		potential = {
-			tag = G02
+			tag = P03
 		}
 		has_country_shield = yes
 		diplomacy_Szczecinek ={

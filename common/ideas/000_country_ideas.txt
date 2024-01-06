@@ -61,8 +61,7 @@ P03_ideas = {
 	Pomeranian_Dukes_Castle = {
 		legitimacy = 1
 	}
-	Church_of_Mary = 
-	{
+	Church_of_Mary = {
 		tolerance_own = 2
 	}
 	Bismarck_Tower = {
@@ -177,8 +176,7 @@ P03_ideas = {
 			Wroclaw_city_of_bridges = {
 				trade_efficiency = 0.1
 			}
-			Wroclaw_city_of_gnomes = 
-			{
+			Wroclaw_city_of_gnomes = {
 				administrative_efficiency = 0.05
 			}
 			Wroclaw_festung_breslau = {
@@ -225,7 +223,7 @@ P03_ideas = {
 				improve_relation_modifier = 0.15
 			}
 			City_of_Sport = {
-				land_attrition = - 0.05
+				land_attrition = -0.05
 				infantry_power = 0.05
 			}
 			bonus = {
@@ -276,7 +274,7 @@ P03_ideas = {
 				diplomatic_reputation = 1
 			}
 			trigger = {
-				tag=A06
+				tag = A06
 			}
 			free=yes
 		

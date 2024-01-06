@@ -150,7 +150,7 @@ christian = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
 	
-	center_of_religion = 118 # Rome
+	center_of_religion = 262 # Rome
 
 	# Flag emblem values - Used for Dynamic Setup of Random Nations.
 	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
@@ -197,7 +197,7 @@ christian = {
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 		
 		papacy = {
-			papal_tag = G01
+			papal_tag = F15
 			election_cost = 5
 			seat_of_papacy = 262 # Krakow
 			
