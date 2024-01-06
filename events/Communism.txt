@@ -27,3 +27,23 @@ country_event = {
 		}
 	}
 }
+
+# Political nominee
+country_event = {
+	id = communism.2
+	title = communism.2.t
+	desc = communism.2.d
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = communism.2.a
+		add_corruption = 2
+		add_legitimacy = -10
+	}
+}
