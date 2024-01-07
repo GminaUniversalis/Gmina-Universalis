@@ -76,13 +76,13 @@ P03_ideas = {
 		global_unrest = -2
 	}
 }
-		Q05_ideas ={
+		G20_ideas ={
 			start = {
 				stability_cost_modifier = -0.1
 				global_manpower_modifier = 0.075
 			}
 			trigger = {
-				tag = Q05
+				tag = G20
 			}
 			free = yes
 
@@ -100,7 +100,7 @@ P03_ideas = {
 				development_cost = -0.1
 			}
 			Old_capital = {
-				presitge_decay = -0.05
+				prestige_decay = -0.005
 			}
 			TPS_ZDR = {
 				diplomatic_reputation = 1
@@ -133,9 +133,6 @@ P03_ideas = {
 			}
 			Oriental_cuisine = {
 				num_accepted_cultures = 2
-			}
-			Rabka_fortress = {
-				defensiveness = 0.2
 			}
 			Land_of_factories = {
 				development_cost = -0.1
@@ -191,13 +188,13 @@ P03_ideas = {
 				discipline = 0.05
 			}
 		}
-		G31_ideas ={
+		R05_ideas ={
 			start ={
 				religious_unity = 0.2
 				army_tradition_decay = -0.01
 			}
 			trigger = {
-				tag = G31
+				tag = R05
 			}
 			free = yes
 			Central_Park = {
@@ -239,8 +236,8 @@ P03_ideas = {
 			}
 			free = yes
 			30_plan = {
-				construction_cost = -0.1
-				cosntruction_time = -0.15
+				build_cost = -0.1
+				build_time = -0.15
 			}
 
 			Consumer_capital_of_the_lowersilesia = {
@@ -269,7 +266,7 @@ P03_ideas = {
 		}
 		A06_ideas = {
 			start ={
-				prestige_decay = -0.01
+				prestige_decay = -0.001
 				diplomatic_reputation = 1
 			}
 			trigger = {
