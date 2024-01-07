@@ -1,5 +1,5 @@
 #Country Name: Powiat Bialostocki
-graphical_culture = westerngfx
+graphical_culture = easterngfx
 color = { 158 139 253 }
 revolutionary_colors = { 10 4 5 }
 historical_idea_groups = { 
