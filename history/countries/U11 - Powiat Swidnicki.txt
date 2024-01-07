@@ -5,3 +5,16 @@ technology_group = eastern
 religion = communism_pzpr
 primary_culture = lubelska
 capital = 2066
+
+1440.1.1 = { 
+	monarch = { 
+
+		name = "Maciej"
+		dynasty = "Gap"
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 6
+		mil = 2
+
+	}
+}
