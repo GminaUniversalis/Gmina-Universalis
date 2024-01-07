@@ -2759,6 +2759,7 @@
  mountain:0 "Mountains"
  coastal_desert:0 "Coastal Desert"
  urban:0 "Urban"
+ high_urban:0 "High Urban"
  floodplains:0 "Floodplains"
  crossing:0 "Crossing"
  new_world:1 "The New World"

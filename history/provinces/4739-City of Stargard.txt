@@ -1,6 +1,6 @@
 #City of Stargard
 culture = zachodniopomorska
-religion = catholic
+religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
@@ -10,7 +10,6 @@ is_city = yes
 discovered_by = western
 discovered_by = eastern
 center_of_trade = 2
-
 owner = P12
 controller = P12
 add_core = P12

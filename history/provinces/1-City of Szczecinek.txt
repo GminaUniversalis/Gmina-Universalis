@@ -1,6 +1,6 @@
 #City of Szczecinek
 culture = zachodniopomorska
-religion = catholic
+religion = communism_sd
 base_tax = 4
 base_production = 5
 trade_goods = gu_lumber
@@ -9,8 +9,8 @@ capital = "City of Szczecinek"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-fort_15th = yes
 center_of_trade = 1
 owner = P03
 controller = P03
 add_core = P03
+fort_15th = yes

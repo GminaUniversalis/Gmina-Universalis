@@ -1,11 +1,10 @@
 #Country Name: Powiat Piaseczynski
-
 graphical_culture = westerngfx
-color = { 221  85  76 }
+color = { 221 85 76 }
 revolutionary_colors = { 13 15 8 }
-historical_idea_groups = {
+historical_idea_groups = { 
 }
-historical_units = {
+historical_units = { 
 	bardiche_infantry
 	eastern_knights
 	slavic_stradioti
@@ -22,18 +21,18 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
-monarch_names = {
-    "Leopold #1" = 100
+monarch_names = { 
+	"Leopold #1" = 100
 }
-leader_names = {
-    Leman
+leader_names = { 
+	Leman
 }
-ship_names = {
-    "Comte de Smet de Nayer"
+ship_names = { 
+	"Comte de Smet de Nayer" 
 }
-army_names = {
-	"Placeholder $PROVINCE$"
+army_names = { 
+	"Placeholder $PROVINCE$" 
 }
-fleet_names = {
-	"Placeholder_Fleet1"
+fleet_names = { 
+	"Placeholder_Fleet1" 
 }
