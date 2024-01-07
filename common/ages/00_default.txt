@@ -188,11 +188,11 @@ age_of_reformation = {
 		}
 		
 		obj_combat_inflation = {
-			NOT { inflation = 1 }
+			NOT  = { inflation = 1 }
 		}
 		
 		obj_root_out_corruption = {
-			NOT { corruption = 1 }
+			NOT = { corruption = 1 }
 		}
 		
 		obj_establish_small_business = {
@@ -204,7 +204,7 @@ age_of_reformation = {
 		}
 		
 		obj_abstain_violence = {
-			NOT { army_size_percentage = 0.5 }
+			NOT = { army_size_percentage = 0.5 }
 		}
 		
 		obj_appease_west = {	
@@ -215,7 +215,7 @@ age_of_reformation = {
 	
 	abilities = {	
 		ab_decommunisation = {
-			effect = {
+			modifier = {
 				global_heathen_missionary_strength = 0.02
 			}
 			ai_will_do = {
@@ -280,7 +280,10 @@ age_of_reformation = {
 
 		ab_kickstart_economy = {
 			allow = {
-				manufactory = 8
+				num_of_owned_provinces_with = {
+					has_building = workshop
+					value = 5 
+				}
 			}
 			modifier = {
 				production_efficiency = 0.15
@@ -304,10 +307,13 @@ age_of_reformation = {
 		
 		ab_sell_public_property = {
 			allow = {
-				religion_group = liberalism
+				NOT = { religion_group = communism} 
 			}
 			effect = {
 				add_treasury = 1000	
+			}
+			modifier = {
+
 			}
 			ai_will_do = {
 				factor = 100
