@@ -297,19 +297,36 @@ categories =  {
 	}
 
 	urban = {
-		color = { 52 44 44  }
+		color = { 156 164 157 }
+
+		type = plains
+		sound_type = plains
+
+		movement_cost = 1.2
+		defence = 1
+		local_development_cost = -0.10
+		supply_limit = 12
+		allowed_num_of_buildings = 1
+		
+		terrain_override = {
+			1
+		}	
+	}
+	
+	high_urban = {
+		color = { 55 47 47 }
 
 		type = plains
 		sound_type = plains
 
 		movement_cost = 1.2
 		defence = 2
-		local_development_cost = -0.10
-		supply_limit = 10
-		allowed_num_of_buildings = 1
+		local_development_cost = -0.20
+		supply_limit = 16
+		allowed_num_of_buildings = 2
 		
 		terrain_override = {
-			1 2839
+			2839
 		}	
 	}	
 

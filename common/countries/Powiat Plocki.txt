@@ -1,11 +1,10 @@
 #Country Name: Powiat Plocki
-
 graphical_culture = westerngfx
-color = { 152  196  173 }
+color = { 152 196 173 }
 revolutionary_colors = { 10 13 10 }
-historical_idea_groups = {
+historical_idea_groups = { 
 }
-historical_units = {
+historical_units = { 
 	bardiche_infantry
 	eastern_knights
 	slavic_stradioti
@@ -22,18 +21,18 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
-monarch_names = {
-    "Leopold #1" = 100
+monarch_names = { 
+	"Leopold #1" = 100
 }
-leader_names = {
-    Leman
+leader_names = { 
+	Leman
 }
-ship_names = {
-    "Comte de Smet de Nayer"
+ship_names = { 
+	"Comte de Smet de Nayer" 
 }
-army_names = {
-	"Placeholder $PROVINCE$"
+army_names = { 
+	"Placeholder $PROVINCE$" 
 }
-fleet_names = {
-	"Placeholder_Fleet1"
+fleet_names = { 
+	"Placeholder_Fleet1" 
 }

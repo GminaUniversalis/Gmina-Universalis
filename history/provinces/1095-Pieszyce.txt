@@ -1,5 +1,5 @@
 #Pieszyce
-religion = catholic
+religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
@@ -12,3 +12,4 @@ culture = legnicka
 owner = A07
 controller = A07
 add_core = A07
+hre = yes

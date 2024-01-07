@@ -1,5 +1,5 @@
 #Kobierzyce
-religion = catholic
+religion = communism_zsl
 base_tax = 1
 base_production = 1
 trade_goods = unknown
@@ -12,3 +12,4 @@ culture = legnicka
 owner = A22
 controller = A22
 add_core = A22
+hre = yes

@@ -1,6 +1,6 @@
-government = monarchy
-add_government_reform = autocracy_reform
-government_rank = 1
+government = republic
+add_government_reform = pirate_republic_reform
+government_rank = 2
 mercantilism = 25
 technology_group = western
 religion = communism_zsl
@@ -13,7 +13,7 @@ fixed_capital = 2839 #Wrocław
 
 		name = "Wojciech"
 		dynasty = "Adamiec"
-		birth_date = 1396.1.1
+		birth_date = 1420.1.1
 		adm = 6
 		dip = 6
 		mil = 6

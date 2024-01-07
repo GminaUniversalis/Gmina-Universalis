@@ -1,6 +1,6 @@
 #Pawlowiczki
 culture = wroclawska
-religion = catholic
+religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
@@ -9,6 +9,8 @@ capital = "Pawlowiczki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+<<<<<<< HEAD 
 owner = H01
 controller = H01
-add_core = H01
+hre = yes
+>>>>>>> 1a164109 (Banner) 
