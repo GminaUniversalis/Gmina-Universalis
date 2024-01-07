@@ -4,4 +4,6 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = metropolia
-capital = 138	# Gliwice
+capital = 138	#Gliwice
+fixed_capital = 138 #Gliwice
+elector = yes

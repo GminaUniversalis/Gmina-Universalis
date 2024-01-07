@@ -4,4 +4,6 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = metropolia
-capital = 1007	# Gojijiwininiwag
+capital = 265 #Bielsko Biala
+fixed_capital 265 #Bielsko Biala
+elector = yes

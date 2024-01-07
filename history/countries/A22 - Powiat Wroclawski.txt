@@ -7,6 +7,7 @@ religion = communism_zsl
 primary_culture = legnicka
 capital = 2839 #Wrocław
 fixed_capital = 2839 #Wrocław
+elector = yes
 
 1440.1.1 = { 
 	monarch = { 

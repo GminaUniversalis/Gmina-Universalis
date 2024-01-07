@@ -254,14 +254,11 @@ renaissance = {
 			region = pomorskie_region
 			region = zachodnio_pomorskie_region
 		}
-		num_of_owned_provinces_with = {
-			has_terrain = urban
-			value = 2 
-		}
+		has_terrain = urban
 		has_port = yes
 		is_state = yes
 		OR = {
-			development = 20
+			development = 12
 			is_capital = yes
 		}
 	}
