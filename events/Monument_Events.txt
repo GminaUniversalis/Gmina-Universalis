@@ -1,0 +1,167 @@
+namespace = monument_events
+
+# Monument reaches highest tier
+country_event = {
+    id = monument_events.1
+    title = monument_events.1.t
+    desc = monument_events.1.d
+	picture = GREAT_BUILDING_eventPicture
+	goto = monument_province
+	
+	trigger = {
+		has_dlc = "Leviathan"
+		any_owned_province = {
+			has_great_project = {
+				type = any
+				tier = 3
+			}
+			NOT = { has_province_flag = monument_triggered_highest_tier_event_flag }	#The same monument shouldn't trigger this event multiple times
+		}
+		NOT = { has_country_modifier = monumental_pride }
+	}
+	
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_great_project = {
+						type = any
+						tier = 3
+					}
+					NOT = { has_province_flag = monument_triggered_highest_tier_event_flag }	#The same monument shouldn't trigger this event multiple times
+				}
+				save_event_target_as = monument_province
+				set_province_flag = monument_triggered_highest_tier_event_flag
+			}
+		}
+    }
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+    option = { #great!
+        name = monument_events.1.a
+		if = {
+			limit = {
+				NOT = { stability = 1 }
+			}
+			add_stability = 1
+		}
+		else = {
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+		}
+		add_country_modifier = {
+			name = monumental_pride
+			duration = 3650
+		}
+    }
+}
+
+# Monument in poor state
+country_event = {
+    id = monument_events.2
+    title = monument_events.2.t
+    desc = monument_events.2.d
+	picture = ADVISOR_eventPicture
+	goto = monument_province_2
+	
+	trigger = {
+		has_dlc = "Leviathan"
+		any_owned_province = {
+			has_great_project = {
+				type = any
+				tier = 0
+			}
+			NOT = {
+				has_great_project = {
+					type = any
+					tier = 3
+				}
+			}
+			OR = {
+				NOT = { has_province_flag = monument_neglected_monument_flag }
+				had_province_flag = {
+					flag = monument_triggered_highest_tier_event_flag
+					days = 1825
+				}
+			}
+		}
+		NOT = { has_country_modifier = monument_boost }
+		monthly_income = 40
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_great_project = {
+						type = any
+						tier = 0
+					}
+					NOT = {
+						has_great_project = {
+							type = any
+							tier = 3
+						}
+					}
+					OR = {
+						NOT = { has_province_flag = monument_neglected_monument_flag }
+						had_province_flag = {
+							flag = monument_neglected_monument_flag
+							days = 1825
+						}
+					}
+				}
+				save_event_target_as = monument_province_2
+				if = {
+					limit = {
+						event_target:monument_province_2 = {
+							has_province_flag = monument_neglected_monument_flag
+						}
+					}
+					event_target:monument_province_2 = {
+						clr_province_flag = monument_neglected_monument_flag
+					}
+				}
+			}
+		}
+    }
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+
+    option = { #use some money to boost it
+        name = monument_events.2.a
+		if = {
+			limit = {
+				NOT = { monthly_income = 84 }
+			}
+			add_years_of_income = -0.5
+		}
+		else = {
+			add_treasury = -500
+		}
+		add_country_modifier = {
+			name = monument_boost
+			duration = 3650
+		}
+		define_advisor = {
+			type = artist
+			skill = 2
+			discount = yes
+		}
+    }
+    option = { #ignore it
+        name = monument_events.2.b
+        event_target:monument_province_2 = {
+			add_unrest = 2
+			hidden_effect = {
+				set_province_flag = monument_neglected_monument_flag
+			}
+		}
+    }
+}

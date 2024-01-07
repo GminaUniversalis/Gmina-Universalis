@@ -172,10 +172,10 @@ age_of_discovery = {
 }
 
 age_of_reformation = {
-	start = 1530
+	start = 1500
 	
 	can_start = {
-		is_religion_enabled = protestant
+		is_year = 1500
 	}
 	
 	
@@ -183,204 +183,154 @@ age_of_reformation = {
 	papacy = 1.25
 	
 	objectives = {
-		obj_christian_convert = {
-			OR = {
-				religion = protestant
-				religion = reformed
-				religion = anglican
-				religion = hussite
-			}
+		obj_embrace_free_market = {
+			trade_income_percentage = 0.4
 		}
 		
-		obj_humanism_religious = {
-			OR = {
-				full_idea_group = humanist_ideas
-				full_idea_group = religious_ideas
-			}
+		obj_combat_inflation = {
+			NOT  = { inflation = 1 }
 		}
 		
-		obj_convert_10_provinces = {
-			custom_trigger_tooltip = {
-				tooltip = obj_convert_10_provinces_tooltip
-				check_variable = { which = num_converted_religion value = 10 }
-			}
+		obj_root_out_corruption = {
+			NOT = { corruption = 1 }
 		}
 		
-		obj_colonial_empire = {
-			colony = 5
+		obj_establish_small_business = {
+			marketplace = 8
 		}
 		
-		obj_force_converted = {
-			custom_trigger_tooltip = {
-				tooltip = obj_force_converted_tooltip
-				has_country_flag = force_converted
-			}
+		obj_snowball_economy = {
+			num_of_trading_bonuses = 2
 		}
 		
-		obj_asian_trade = {
-			OR = {
-				trading_bonus = {
-					trade_goods = spices
-					value = yes
-				}
-				trading_bonus = {
-					trade_goods = cloves
-					value = yes
-				}
-				trading_bonus = {
-					trade_goods = chinaware
-					value = yes
-				}
-				trading_bonus = {
-					trade_goods = silk
-					value = yes
-				}
-			}
-		
-		
+		obj_abstain_violence = {
+			NOT = { army_size_percentage = 0.5 }
 		}
 		
-		obj_unify_culture = {	
-			is_subject = no
-			has_unified_culture_group = yes
+		obj_appease_west = {	
+			diplomatic_reputation = 3
 		}
 	}	
 	
 	
 	abilities = {	
-		ab_allow_religion_enforced = {
+		ab_decommunisation = {
+			modifier = {
+				global_heathen_missionary_strength = 0.02
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_standarisation_of_taxes = {
+			modifier = {
+				global_tax_modifier = 0.15
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_opened_to_west = {
+			modifier = {
+				improve_relation_modifier = 0.3
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_eagle_with_crown = {
+			modifier = {
+				prestige = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_free_press = {
+			modifier = {
+				tolerance_heathen = 1
+				tolerance_heretic = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_laissezfaire = {
+			modifier = {
+				trade_efficiency = 0.15
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_lobby_bill = {
+			modifier = {
+				embargo_efficiency = 0.5	
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_kickstart_economy = {
+			allow = {
+				num_of_owned_provinces_with = {
+					has_building = workshop
+					value = 5 
+				}
+			}
+			modifier = {
+				production_efficiency = 0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		ab_rise_of_tourism = {
+			allow = {
+				gu_tourists = 5
+			}
+			modifier = {
+				diplomatic_reputation = 3
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		ab_sell_public_property = {
+			allow = {
+				NOT = { religion_group = communism} 
+			}
 			effect = {
-				custom_tooltip = religion_enforced_edict
-				set_country_flag = religion_enforced_edict
+				add_treasury = 1000	
 			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
-	
-		ab_siege_blockades = {
 			modifier = {
-				siege_blockade_progress = 1
-			}
-			ai_will_do = {
-				factor = 10
-				modifier = {
-					factor = 0
-					NOT = {
-							num_of_ports = 5
-					}
-				}
 
-			}
-		}
-
-		
-		ab_warscore_vs_religion = {
-			modifier = {
-				warscore_cost_vs_other_religion = -0.25
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		
-		ab_mercenary_discipline = {
-			modifier = {
-				mercenary_discipline = 0.05
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		ab_ship_power_propagation = {
-			modifier = {
-				ship_power_propagation = 0.2
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		
-		
-		ab_institution_spread_from_true_faith = {
-			modifier = {
-				institution_spread_from_true_faith = 0.5
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-
-		ab_prestige_per_development_from_conversion = {
-			modifier = {
-				prestige_per_development_from_conversion = 0.3
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-
-		ab_spain_shock_tactics = {
-			allow = {
-				tag = SPA
-			}
-			modifier = {
-				leader_land_shock = 1
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_mughal_artillery = {
+
+		ab_use_unemployed = {
 			allow = {
-				tag = MUG
+				technology_group = eastern
 			}
 			modifier = {
-				artillery_power = 0.15
+				global_manpower_modifier = 0.25
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		
-		ab_polish_legitimacy = {
-			allow = {
-				OR = {
-					tag = PLC
-					tag = POL
-					custom_trigger_tooltip = {
-						tooltip = enable_this_ability_tt
-						has_country_flag = unlock_polish_ability_flag
-					}
-				}
-			}
-			modifier = {
-				global_trade_goods_size_modifier = 0.33
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-		
-		ab_persia_development = {
-			allow = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = unlocked_this_ab_tt
-						has_country_flag = enable_persian_age_ability_flag
-					}
-					tag = PER
-					tag = ERS
-				}
-			}
-			modifier = {
-				development_cost = -0.2
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-	
 	}
 }
 
