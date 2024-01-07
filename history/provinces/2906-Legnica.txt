@@ -1,5 +1,5 @@
 #Legnica
-religion = catholic
+religion = communism_zsl
 base_tax = 1
 base_production = 1
 trade_goods = unknown
@@ -9,10 +9,8 @@ is_city = yes
 discovered_by = western
 discovered_by = eastern
 culture = legnicka
-<<<<<<< HEAD
+<<<<<<< HEAD 
 owner = A15
 controller = A15
-add_core = A15
-=======
 hre = yes
->>>>>>> 1a164109 (Banner)
+>>>>>>> 1a164109 (Banner) 
