@@ -62,7 +62,7 @@ province;red;green;blue;x;x
 61;136;154;64;Cisek;x
 62;8;156;128;Gorzyce;x
 63;137;158;192;Kolo;x
-64;9;32;255;Landshut;x
+64;9;32;255;Ustron;x
 65;137;34;0;Lisewo;x
 66;9;36;64;Koscielec;x
 67;137;38;128;Jastrebie-Zdroj;x
@@ -114,7 +114,7 @@ province;red;green;blue;x;x
 113;144;130;192;Dobrzany;x
 114;16;132;255;Stara Dlbrowa;x
 115;144;134;0;Kobylanka;x
-116;16;136;64;Dobra(Szczecinska);x
+116;16;136;64;Dobra Szczecinska;x
 117;144;138;128;Police;x
 118;16;140;192;Miedzychod;x
 119;145;142;255;Drawsko;x
@@ -613,7 +613,7 @@ province;red;green;blue;x;x
 773;238;42;192;Jawor;x
 774;110;44;255;Goscieradow;x
 775;238;46;0;Stare Bogaczowice;x
-776;110;48;64;Mierszow;x
+776;110;48;64;Mieroszow;x
 777;239;50;128;Strzegom;x
 778;111;52;192;Duszniki-Zdroj;x
 779;239;54;255;Miedzylesie;x
@@ -1877,7 +1877,7 @@ province;red;green;blue;x;x
 2920;241;204;106;Lubin;x
 2921;217;232;114;Jelenia Gora;x
 2922;21;102;201;Podgorzyn;x
-2923;218;229;92;City of Zagorzelec;x
+2923;218;229;92;City of Zgorzelec;x
 2924;94;145;166;Lubomierz;x
 2925;49;196;123;Nowogrodziec;x
 2926;52;123;87;Zagorzelec;x
@@ -2326,7 +2326,7 @@ province;red;green;blue;x;x
 4424;200;161;210;Wierzbica;x
 4425;41;164;76;City of Krasnystaw;x
 4426;125;191;66;Korczyna;x
-4427;203;173;64;Kroscienko wyzne;x
+4427;203;173;64;Kroscienko Wyzne;x
 4428;169;212;66;Puchaczow;x
 4429;136;124;77;Sosnowica;x
 4430;152;147;85;Wyryki;x

@@ -1,15 +1,18 @@
-#Landshut
-culture = metropolia
+#Mieroszow
 religion = catholic
-hre = yes
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Landshut"
+capital = "Mieroszow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L18
-controller = L18
-add_core = L18
+culture = legnicka
+<<<<<<< HEAD
+owner = A20
+controller = A20
+add_core = A20
+=======
+hre = yes
+>>>>>>> 1a164109 (Banner)

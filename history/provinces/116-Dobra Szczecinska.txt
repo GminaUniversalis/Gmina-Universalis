@@ -1,14 +1,14 @@
-#kodrlb
-culture = lodzka
+#Dobra Szczecinska
+culture = zachodniopomorska
 religion = catholic
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "kodrlb"
+capital = "Dobra Szczecinska"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = Q05
-controller = Q05
-add_core = Q05
+owner = P16
+controller = P16
+add_core = P16
