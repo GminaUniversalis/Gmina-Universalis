@@ -1,7 +1,7 @@
-#Country Name: Powiat Nowodworski Pom
+#Country Name: Powiat Nowodworski Mazowieckie
 graphical_culture = westerngfx
-color = { 79 199 198 }
-revolutionary_colors = { 6 8 4 }
+color = { 107 172 22 }
+revolutionary_colors = { 1 6 10 }
 historical_idea_groups = { 
 }
 historical_units = { 
