@@ -212,7 +212,7 @@ P03_ideas = {
 			Zombies_were_born_here = {
 				production_efficiency = 0.1
 			}
-			Republic_of_Ostrów = {
+			Republic_of_Ostrow = {
 				land_morale = 0.1
 			}
 			Piaski_Szczygliczka = {
@@ -297,5 +297,48 @@ P03_ideas = {
 			}
 			bonus = {
 				global_garrison_growth = 0.25
+			}
+		}
+
+		P17_ideas = {
+			start = {
+			cav_to_inf_ratio = 0.25
+			horde_unity = 1
+			legitimacy = 1
+			republican_tradition = 1
+			devotion = 1
+			}
+			
+			bonus = {
+				land_forcelimit_modifier = 0.15
+			}	
+		
+			trigger = {
+				tag = P17
+			}
+			free = yes
+			
+			Wild_East = {
+				cavalry_power = 0.15
+			}
+			Dukes_of_Pomerania = {
+				prestige = 1
+			}
+			Multicultural_City = {
+				years_of_nationalism = -5
+			}
+			Legacy_of_Stocznia = {
+				naval_morale = 0.1
+				ship_durability = 0.05
+			}
+			Our_new_face = {
+				global_tax_modifier = 0.15
+			}
+			Forever_in_development = {
+				development_cost = -0.1
+			}
+			Bigger_than_you_think = {
+				governing_capacity_modifier = 0.1
+				core_creation = -0.15
 			}
 		}
