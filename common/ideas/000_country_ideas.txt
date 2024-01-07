@@ -212,7 +212,7 @@ P03_ideas = {
 			Zombies_were_born_here = {
 				production_efficiency = 0.1
 			}
-			Republic_of_Ostrów = {
+			Republic_of_Ostrow = {
 				land_morale = 0.1
 			}
 			Piaski_Szczygliczka = {
@@ -302,7 +302,7 @@ P03_ideas = {
 
 		P17_ideas = {
 			start = {
-			cav_to_inf_ratio = 025
+			cav_to_inf_ratio = 0.25
 			horde_unity = 1
 			legitimacy = 1
 			republican_tradition = 1
