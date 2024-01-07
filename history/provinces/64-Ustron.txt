@@ -1,0 +1,15 @@
+#Ustron
+culture = metropolia
+religion = communism_pzpr
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Ustron"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L18
+controller = L18
+add_core = L18
