@@ -1,11 +1,11 @@
-#Idzbark Warminski
+#Lidzbark Warminski
 culture = mazurska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Idzbark Warminski"
+capital = "Lidzbark Warminski"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
