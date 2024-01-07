@@ -4,4 +4,6 @@ government_rank = 1
 technology_group = eastern
 religion = communism_pzpr
 primary_culture = metropolia
-capital = 1007
+capital = 265 #Bielsko Biala
+fixed_capital = 265 #Bielsko Biala
+elector = yes
