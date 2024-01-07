@@ -1,6 +1,6 @@
 #Klodawa
 culture = zielonogorska
-religion = communism_zsl
+religion = catholic
 base_tax = 1
 base_production = 1
 trade_goods = unknown
@@ -9,6 +9,6 @@ capital = "Klodawa"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = A08
-controller = A08
-add_core = A08
+owner = W08
+controller = W08
+add_core = W08
