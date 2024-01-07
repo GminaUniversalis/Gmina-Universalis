@@ -302,14 +302,15 @@ P03_ideas = {
 
 		P17_ideas = {
 			start = {
-				
-				trade_efficiency = 0.15
-				improve_relation_modifier = 0.2
-				
+			cav_to_inf_ratio = 025
+			horde_unity = 1
+			legitimacy = 1
+			republican_tradition = 1
+			devotion = 1
 			}
 			
 			bonus = {
-				global_ship_trade_power = 0.2
+				land_forcelimit_modifier = 0.15
 			}	
 		
 			trigger = {
@@ -317,27 +318,27 @@ P03_ideas = {
 			}
 			free = yes
 			
-			Cracovian_Metro = {
-				movement_speed = 0.15
+			Wild_East = {
+				cavalry_power = 0.15
 			}
-			Old_City = {
+			Dukes_of_Pomerania = {
 				prestige = 1
 			}
-			City_of_Trade = {
-				global_trade_power = 0.1
-				burghers_loyalty_modifier = 0.1
+			Multicultural_City = {
+				years_of_nationalism = -5
 			}
-			Cracovian_Churches = {
-				tolerance_own = 2
+			Legacy_of_Stocznia = {
+				naval_morale = 0.1
+				ship_durability = 0.05
 			}
-			Wawel = {
-				defensiveness = 0.2
-				hostile_attrition = 0.5
+			Our_new_face = {
+				global_tax_modifier = 0.15
 			}
-			Kombinat = {
-				production_efficiency = 0.2
+			Forever_in_development = {
+				development_cost = -0.1
 			}
-			Cracovian_Machetes = {
-				infantry_power = 0.20
+			Bigger_than_you_think = {
+				governing_capacity_modifier = 0.1
+				core_creation = -0.15
 			}
 		}
