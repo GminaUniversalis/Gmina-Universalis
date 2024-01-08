@@ -299,18 +299,18 @@ country_event = {
 			trade_goods = gu_vegetables
 			key = STONKA
 			value = -0.25
-			duration = -1
+			duration = 3650
 		}
+	}
 
-		immediate = {
-			every_owned_province = {
-				limit = {
-					trade_goods = gu_vegetables
-				}
-				add_province_modifier = {
-					name = stonka_attack
-					duration = 730
-				}
+	immediate = {
+		every_owned_province = {
+			limit = {
+				trade_goods = gu_vegetables
+			}
+			add_province_modifier = {
+				name = stonka_attack
+				duration = 730
 			}
 		}
 	}
