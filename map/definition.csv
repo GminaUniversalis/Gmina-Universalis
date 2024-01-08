@@ -1039,6 +1039,8 @@ province;red;green;blue;x;x
 1663;30;203;253;Jezioro Wilczkowo;x
 1664;31;223;253;Jezioro Trzesiecko;x
 1665;32;253;253;Jezioro Wierzchowo;x
+1688;55;223;253;Central Pacific #2;x
+1689;56;253;253;Central Pacific #3;x
 1690;57;203;203;Nysa Klodzka;x
 1691;58;203;253;Bobr;x
 1692;59;223;253;Bzura;x
@@ -1912,7 +1914,6 @@ province;red;green;blue;x;x
 2946;42;72;201;Winsko;x
 2947;68;225;26;Slubice;x
 2948;196;104;191;Slemien;x
-2949;72;198;51;Wadowice;x
 2950;32;218;173;Biskupice;x
 2951;236;57;116;Niepolomice;x
 2952;236;220;116;Lapanow;x
@@ -2661,9 +2662,10 @@ province;red;green;blue;x;x
 4937;210;20;121;Narol;x
 4939;210;80;11;City of Lubaczow;x
 4941;30;216;201;Warta;x
-#2778;178;66;140;;x
+2778;178;66;140;Bogoria;x
 550;78;108;0;Belgia;x
 #3418;219;32;228;;
 3290;219;32;100;Luksemburg;
 3105;207;110;54;Francja;
 3013;199;110;220;Slowacja;
+2137;72;198;51;Wadowice;x
