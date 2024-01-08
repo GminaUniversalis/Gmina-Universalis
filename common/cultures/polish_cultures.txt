@@ -1,31 +1,6 @@
 #narazie jako placeholder dałem nazwiska z basegame eu4
-gornoslaska = {
+gornoslaska_cg = {
 	graphical_culture = westerngfx
-	
-	metropolia = { 
-		
-		dynasty_names = {
-			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-			Premyslovci Podebrad 
-			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
-			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
-		}
-	}
-	
-	bielska = { 
-		
-		dynasty_names = {
-			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-			Premyslovci Podebrad 
-			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
-			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
-		}
-	}
-	
 	opolska = { 
 		
 		dynasty_names = {
@@ -37,8 +12,7 @@ gornoslaska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	rybnicka = { 
+	gornoslaska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -49,13 +23,22 @@ gornoslaska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
 }
-
 malopolska = {
 	graphical_culture = westerngfx
 	
-	galicyjska = { 
+	zachodnio-krakowska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	wschodnio-krakowska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -67,19 +50,7 @@ malopolska = {
 		}
 	}
 	
-	rus_czerwona = { 
-		
-		dynasty_names = {
-			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-			Premyslovci Podebrad 
-			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
-			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
-		}
-	}
-	
-	kielecko-radomska = { 
+	krakowska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -102,8 +73,7 @@ malopolska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	lubelska = { 
+goralska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -114,9 +84,18 @@ malopolska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
+	lachska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
 }
-
 podlaska_cg = {
 	graphical_culture = westerngfx
 	
@@ -131,10 +110,41 @@ podlaska_cg = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-
+poleska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	suwalska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	grodzienska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
 }
-
-mazowiecka = {
+mazowiecka_cg = {
 	graphical_culture = westerngfx
 	
 	warszawska = { 
@@ -148,8 +158,7 @@ mazowiecka = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	lowicka = { 
+	kurpiowska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -160,7 +169,6 @@ mazowiecka = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
 	plocka = { 
 		
 		dynasty_names = {
@@ -172,8 +180,7 @@ mazowiecka = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	lomzynska = { 
+	mazowiecka = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -184,66 +191,11 @@ mazowiecka = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	mazurska = { 
-		
-		dynasty_names = {
-			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-			Premyslovci Podebrad 
-			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
-			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
-		}
-	}
-	
 }
-
-goralska = {
-	graphical_culture = westerngfx
-
-	lemkowska = { 
-		
-		dynasty_names = {
-			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-			Premyslovci Podebrad 
-			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
-			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
-		}
-	}
-	
-	tatrzanska = { 
-		
-		dynasty_names = {
-			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-			Premyslovci Podebrad 
-			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
-			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
-		}
-	}
-	
-	zywiecka = { 
-		
-		dynasty_names = {
-			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-			Premyslovci Podebrad 
-			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
-			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
-		}
-	}
-
-}
-
-wielkopolska = {
+wielkopolska_cg = {
 	graphical_culture = westerngfx
 	
-	leszczynsko-kaliska = { 
+	biskupinska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -254,7 +206,6 @@ wielkopolska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
 	poznanska = { 
 		
 		dynasty_names = {
@@ -266,8 +217,7 @@ wielkopolska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	pilska = { 
+	wielkopolska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -278,8 +228,7 @@ wielkopolska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	kujawska = { 
+	krainska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -290,20 +239,7 @@ wielkopolska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	warminska = { 
-		
-		dynasty_names = {
-			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-			Premyslovci Podebrad 
-			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
-			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
-		}
-	}
-	
-	gorzowska = { 
+	kaliska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -317,10 +253,44 @@ wielkopolska = {
 	
 }
 
-lodzka_cg = {
+
+wschodnia_cg = {
 	graphical_culture = westerngfx
 	
-	lodzka = { 
+	podgorzanska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	lubelska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	lachowska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	kresowa = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -333,8 +303,114 @@ lodzka_cg = {
 	}
 	
 }
-
-pomorska = {
+staropolska_cg = {
+	graphical_culture = westerngfx
+	
+	kielecka = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	radomska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	
+}
+niemiecka_cg = {
+	graphical_culture = westerngfx
+	
+	niemiecka = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	wilamowicka = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	
+}
+ukrainska_cg = {
+	graphical_culture = westerngfx
+	
+	ukrainska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	
+}
+zachodniopomorska_cg = {
+	graphical_culture = westerngfx
+	
+	zachodniopomorska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	srodkowopomorska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	lubuska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+}
+kaszubska_cg = {
 	graphical_culture = westerngfx
 	
 	kaszubska = { 
@@ -349,6 +425,191 @@ pomorska = {
 		}
 	}
 	
+}
+warminskomazurska_cg = {
+	graphical_culture = westerngfx
+	
+	warminska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	mazurska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	
+}
+ruska_cg = {
+	graphical_culture = westerngfx
+	
+	lemkowa = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	bojkowa = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	tatarska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	
+}
+kujawska_cg = {
+	graphical_culture = westerngfx
+	
+	kujawska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	dobrzynska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	chelminska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	
+}
+srodkowa_cg = {
+	graphical_culture = westerngfx
+	
+	lowicka = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	leczycka = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	sieradzka = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	wielunska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	centralna = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	
+}
+slonska_cg = {
+	graphical_culture = westerngfx
+	
+	slonska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	
+}
+pomorska_cg = {
+	graphical_culture = westerngfx
+	
+	
+	
 	trojmiasto = { 
 		
 		dynasty_names = {
@@ -361,7 +622,7 @@ pomorska = {
 		}
 	}
 	
-	poludniowa = { 
+	pomorska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -372,8 +633,29 @@ pomorska = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	
-	zachodniopomorska = { 
+	zulawska = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	kociewiacka = { 
+		
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	borowicka = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -387,10 +669,10 @@ pomorska = {
 	
 }
 
-dolnoslaska = {
+dolnoslaska_cg = {
 	graphical_culture = westerngfx
 	
-	wroclawska = { 
+	misnienska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -402,7 +684,7 @@ dolnoslaska = {
 		}
 	}
 	
-	walbrzyska = { 
+	dolnoslaska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -414,7 +696,7 @@ dolnoslaska = {
 		}
 	}
 	
-	legnicka = { 
+	 klodzka = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
@@ -426,7 +708,7 @@ dolnoslaska = {
 		}
 	}
 
-	zielonogorska = { 
+	wroclawska = { 
 		
 		dynasty_names = {
 			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
