@@ -1,14 +1,12 @@
-#Example: Large parts of Africa and south east Asia
+
 tropical = { 
 }
 arid = { 
 }
 arctic = { 
 }
-#Example: Most of Europe north of med.
 mild_winter = { 
 }
-#Example: Inland Europe & Scandinavia
 normal_winter = { 
 	1 2 3 4 5 6 7 8 9 10
 	11 12 13 14 15 16 17 18 19 20
@@ -270,12 +268,11 @@ normal_winter = {
 	4862 4863 4864 4865 4866 4867 4868 4869 4935 4936
 	4934 4937 4939 3420 3290 3105 3013 
 }
-#Example: Russia & Lappland
 severe_winter = { 
 }
 impassable = { 
 	3218 3238 3200 3004 3419 3219 2009 2008 2007 3290
-	3105 3013 3418 3289 3721 3288 3619 3888 3887
+	3105 3013 3418 3289 3721 3288 3619 3888 3887 550
 }
 mild_monsoon = { 
 }

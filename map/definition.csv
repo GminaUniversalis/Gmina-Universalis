@@ -544,7 +544,6 @@ province;red;green;blue;x;x
 547;206;102;128;City of Zamosc;x
 548;78;104;192;Sieniawa;x
 549;206;106;255;Krasniczyn;x
-550;78;108;0;Mahakoshal;x
 551;206;110;64;Tuczna;x
 552;78;112;128;Izbica;x
 554;79;116;255;Trzebownisko;x
@@ -1044,6 +1043,8 @@ province;red;green;blue;x;x
 1695;62;203;253;Gwda;x
 1696;63;223;253;Notec;x
 1697;64;253;253;Bug;x
+1703;70;203;253;Dunajec;x
+1704;71;223;253;San;x
 1705;72;253;253;Eastern Pacific #6;x
 1706;73;203;203;Eastern Pacific #7;x
 1707;74;203;253;Eastern Pacific #8;x
@@ -1732,7 +1733,7 @@ province;red;green;blue;x;x
 2775;204;79;98;Lubiena;x
 2776;89;155;254;Pilzno;x
 2777;89;124;82;Czarna;x
-2778;178;66;140;Werder;x
+
 2779;183;255;142;Przeclaw;x
 2780;219;174;92;Skrzyszow;x
 2781;89;138;43;Czudec;x
@@ -2652,7 +2653,9 @@ province;red;green;blue;x;x
 4939;210;80;11;City of Lubaczow;x
 4941;30;216;201;Warta;x
 
-3418;219;32;228;Belgia;
+#2778;178;66;140;;x
+550;78;108;0;Belgia;x
+#3418;219;32;228;;
 3290;219;32;100;Luksemburg;
 3105;207;110;54;Francja;
 3013;199;110;220;Slowacja;
