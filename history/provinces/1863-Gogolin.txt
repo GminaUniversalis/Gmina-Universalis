@@ -1,5 +1,5 @@
 #Gogolin
-culture = wroclawska
+culture = gornoslaska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
@@ -9,8 +9,6 @@ capital = "Gogolin"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-<<<<<<< HEAD 
 owner = H10
 controller = H10
 hre = yes
->>>>>>> 1a164109 (Banner) 

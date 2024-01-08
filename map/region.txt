@@ -89,6 +89,7 @@ podkarpackie_region = {
 		powiat_bieszczadzki 
 		powiat_strzyzowski 
 		powiat_krosnienski_pod
+		powiat_brzozowski
 	}
 }
 mazowieckie_region = { 

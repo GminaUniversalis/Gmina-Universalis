@@ -1,5 +1,5 @@
 #Byczyna
-culture = wroclawska
+culture = gornoslaska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
@@ -9,8 +9,6 @@ capital = "Byczyna"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-<<<<<<< HEAD 
 owner = H04
 controller = H04
 hre = yes
->>>>>>> 1a164109 (Banner) 

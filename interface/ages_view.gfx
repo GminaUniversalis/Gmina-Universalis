@@ -219,38 +219,38 @@ spriteTypes = {
 
 	# Age of Reformation Objectives
 	spriteType = {
-		name = "GFX_obj_christian_convert"
-		texturefile = "gfx/interface/ages/obj_christian_convert.dds"
+		name = "GFX_obj_embrace_free_market"
+		texturefile = "gfx/interface/ages/obj_embrace_free_market.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_humanism_religious"
-		texturefile = "gfx/interface/ages/obj_humanism_religious.dds"
+		name = "GFX_obj_combat_inflation"
+		texturefile = "gfx/interface/ages/obj_combat_inflation.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_convert_10_provinces"
-		texturefile = "gfx/interface/ages/obj_convert_10_provinces.dds"
+		name = "GFX_obj_root_out_corruption"
+		texturefile = "gfx/interface/ages/obj_root_out_corruption.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_colonial_empire"
-		texturefile = "gfx/interface/ages/obj_colonial_empire.dds"
+		name = "GFX_obj_establish_small_business"
+		texturefile = "gfx/interface/ages/obj_establish_small_business.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_force_converted"
-		texturefile = "gfx/interface/ages/obj_force_converted.dds"
+		name = "GFX_obj_snowball_economy"
+		texturefile = "gfx/interface/ages/obj_snowball_economy.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_asian_trade"
-		texturefile = "gfx/interface/ages/obj_asian_trade.dds"
+		name = "GFX_obj_abstain_violence"
+		texturefile = "gfx/interface/ages/obj_abstain_violence.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_unify_culture"
-		texturefile = "gfx/interface/ages/obj_unify_culture.dds"
+		name = "GFX_obj_appease_west"
+		texturefile = "gfx/interface/ages/obj_appease_west.dds"
 	}
 	
 
@@ -419,58 +419,58 @@ spriteTypes = {
 		
 	# Age of Reformation Abilities
 	spriteType = {
-		name = "GFX_ab_allow_religion_enforced"
-		texturefile = "gfx/interface/ages/ab_allow_religion_enforced.dds"
+		name = "GFX_ab_decommunisation"
+		texturefile = "gfx/interface/ages/ab_decommunisation.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_culture_cost"
-		texturefile = "gfx/interface/ages/ab_culture_cost.dds"
+		name = "GFX_ab_standarisation_of_taxes"
+		texturefile = "gfx/interface/ages/ab_standarisation_of_taxes.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_cheaper_enforce_religion"
-		texturefile = "gfx/interface/ages/ab_cheaper_enforce_religion.dds"
+		name = "GFX_ab_opened_to_west"
+		texturefile = "gfx/interface/ages/ab_opened_to_west.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_placed_merchants"
-		texturefile = "gfx/interface/ages/ab_placed_merchants.dds"
+		name = "GFX_ab_eagle_with_crown"
+		texturefile = "gfx/interface/ages/ab_eagle_with_crown.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_ship_power_propagation"
-		texturefile = "gfx/interface/ages/ab_ship_power_propagation.dds"
+		name = "GFX_ab_free_press"
+		texturefile = "gfx/interface/ages/ab_free_press.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_institution_spread_from_true_faith"
-		texturefile = "gfx/interface/ages/ab_institution_spread_from_true_faith.dds"
+		name = "GFX_ab_laissezfaire"
+		texturefile = "gfx/interface/ages/ab_laissezfaire.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_prestige_per_development_from_conversion"
-		texturefile = "gfx/interface/ages/ab_prestige_per_development_from_conversion.dds"
+		name = "GFX_ab_lobby_bill"
+		texturefile = "gfx/interface/ages/ab_lobby_bill.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_spain_tercio"
-		texturefile = "gfx/interface/ages/ab_spain_tercio.dds"
+		name = "GFX_ab_kickstart_economy"
+		texturefile = "gfx/interface/ages/ab_kickstart_economy.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_mughal_artillery"
-		texturefile = "gfx/interface/ages/ab_mughal_artillery.dds"
+		name = "GFX_ab_rise_of_tourism"
+		texturefile = "gfx/interface/ages/ab_rise_of_tourism.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_polish_legitimacy"
-		texturefile = "gfx/interface/ages/ab_polish_legitimacy.dds"
+		name = "GFX_ab_sell_public_property"
+		texturefile = "gfx/interface/ages/ab_sell_public_property.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_persia_reinforce"
-		texturefile = "gfx/interface/ages/ab_persia_reinforce.dds"
+		name = "GFX_ab_use_unemployed"
+		texturefile = "gfx/interface/ages/ab_use_unemployed.dds"
 	}
 	
 
