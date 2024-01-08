@@ -5,3 +5,17 @@ technology_group = western
 religion = communism_pzpr
 primary_culture = legnicka
 capital = 2850
+
+
+1440.1.1 = { 
+	monarch = { 
+
+		name = "Maciej"
+		dynasty = "Gapstein"
+		birth_date = 1422.1.1
+		adm = 5
+		dip = 6
+		mil = 2
+	}
+    add_ruler_personality = free_thinker_personality
+}
