@@ -1,21 +1,7 @@
-government = republic
-add_government_reform = peasants_republic
+government = monarchy
+add_government_reform = autocracy_reform
 government_rank = 1
 technology_group = eastern
 religion = communism_pzpr
 primary_culture = trojmiasto
 capital = 12
-
-
-1440.1.1 = { 
-	monarch = { 
-
-		name = "Jakub"
-		dynasty = "Jakimczuk"
-		birth_date = 1420.1.1
-		adm = 6
-		dip = 3
-		mil = 5
-
-	}
-}

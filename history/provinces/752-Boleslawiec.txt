@@ -8,7 +8,9 @@ capital = "Boleslawiec"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-culture = legnicka
+culture = dolnoslaska
+<<<<<<< HEAD 
 owner = A11
 controller = A11
 hre = yes
+>>>>>>> 1a164109 (Banner) 

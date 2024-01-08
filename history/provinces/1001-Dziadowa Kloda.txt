@@ -8,7 +8,9 @@ capital = "Dziadowa Kloda"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-culture = legnicka
+culture = wielunska
+<<<<<<< HEAD 
 owner = A02
 controller = A02
 hre = yes
+>>>>>>> 1a164109 (Banner) 

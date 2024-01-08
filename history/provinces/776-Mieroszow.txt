@@ -8,9 +8,9 @@ capital = "Mieroszow"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-culture = legnicka
+culture = dolnoslaska
+<<<<<<< HEAD 
 owner = A20
 controller = A20
-add_core = A20
-=======
 hre = yes
+>>>>>>> 1a164109 (Banner) 

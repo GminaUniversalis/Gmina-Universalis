@@ -8,7 +8,9 @@ capital = "Luban"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-culture = legnicka
+culture = misnienska
+<<<<<<< HEAD 
 owner = A14
 controller = A14
 hre = yes
+>>>>>>> 1a164109 (Banner) 
