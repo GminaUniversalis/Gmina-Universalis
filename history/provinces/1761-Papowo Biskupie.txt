@@ -1,5 +1,5 @@
 #Papowo Biskupie
-culture = kujawska
+culture = chelminska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
@@ -10,5 +10,5 @@ is_city = yes
 discovered_by = western
 discovered_by = eastern
 owner = B13
-controller = B13
+controller = U14
 add_core = B13
