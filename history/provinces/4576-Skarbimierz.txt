@@ -9,8 +9,6 @@ capital = "Skarbimierz"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-<<<<<<< HEAD 
 owner = H06
 controller = H06
 hre = yes
->>>>>>> 1a164109 (Banner) 
