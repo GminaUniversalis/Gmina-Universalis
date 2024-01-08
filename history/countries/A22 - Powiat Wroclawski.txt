@@ -18,7 +18,6 @@ elector = yes
 		adm = 5
 		dip = 6
 		mil = 4
-
 	}
 
 	add_ruler_personality = incorruptible_personality
