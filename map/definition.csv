@@ -1039,10 +1039,19 @@ province;red;green;blue;x;x
 1663;30;203;253;Jezioro Wilczkowo;x
 1664;31;223;253;Jezioro Trzesiecko;x
 1665;32;253;253;Jezioro Wierzchowo;x
+1690;57;203;203;Nysa Klodzka;x
+1691;58;203;253;Bobr;x
+1692;59;223;253;Bzura;x
+1693;60;253;253;Pilica;x
 1694;61;203;203;Jezioro Wielimie;x
 1695;62;203;253;Gwda;x
 1696;63;223;253;Notec;x
 1697;64;253;253;Bug;x
+1698;65;203;203;Czarna;x
+1699;66;203;253;Czarna Nida;x
+1700;67;223;253;Bobrza;x
+1701;68;253;253;Nida;x
+1702;69;203;203;Narew;x
 1703;70;203;253;Dunajec;x
 1704;71;223;253;San;x
 1705;72;253;253;Eastern Pacific #6;x
@@ -1733,7 +1742,6 @@ province;red;green;blue;x;x
 2775;204;79;98;Lubiena;x
 2776;89;155;254;Pilzno;x
 2777;89;124;82;Czarna;x
-
 2779;183;255;142;Przeclaw;x
 2780;219;174;92;Skrzyszow;x
 2781;89;138;43;Czudec;x
@@ -1967,6 +1975,7 @@ province;red;green;blue;x;x
 3218;219;32;28;Holandia;
 3219;219;32;29;Czechy Wschód;
 3419;219;32;229;Bornholm;
+3525;219;24;225;Nysa Luzycka;
 3619;225;25;209;Bialorus wschod;
 3721;100;11;121;Ukraina wschod;
 3888;100;12;188;Bialorus zachod;
@@ -2526,7 +2535,7 @@ province;red;green;blue;x;x
 4689;255;150;0;Platerow;x
 4690;231;61;8;City of Siemiatycze;x
 4691;255;227;0;Wyszogrod;x
-4692;255;213;0;Narew;x
+4692;255;213;0;Narwa;x
 4693;254;103;217;Parysow;x
 4694;172;194;112;Dziemiany;x
 4695;195;118;123;Stara Kiszewa;x
@@ -2652,7 +2661,6 @@ province;red;green;blue;x;x
 4937;210;20;121;Narol;x
 4939;210;80;11;City of Lubaczow;x
 4941;30;216;201;Warta;x
-
 #2778;178;66;140;;x
 550;78;108;0;Belgia;x
 #3418;219;32;228;;
