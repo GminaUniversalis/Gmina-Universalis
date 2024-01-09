@@ -11,4 +11,5 @@ discovered_by = eastern
 culture = dolnoslaska
 owner = A25
 controller = A25
+add_core = A25
 hre = yes
