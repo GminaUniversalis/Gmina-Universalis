@@ -1,5 +1,7 @@
 #4177 - Elburz Mountains
 discovered_by = eastern
+1673.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }
 culture = gornoslaska
 religion = communism_pzpr
 is_city = no
@@ -7,5 +9,4 @@ discovered_by = western
 trade_goods = unknown
 owner = H05
 controller = H05
-add_core = H05
 hre = yes
