@@ -3,5 +3,5 @@ add_government_reform = autocracy_reform
 government_rank = 1
 technology_group = eastern
 religion = communism_pzpr
-primary_culture = warszawska
+primary_culture = plocka
 capital = 1069

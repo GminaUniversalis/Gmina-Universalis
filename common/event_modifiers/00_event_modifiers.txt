@@ -6,6 +6,24 @@ communism_price_increase = {
 	global_unrest = 3
 }
 
+stonka_attack = {
+	local_unrest = 3
+}
+
+border_crossing_modifier = {
+	province_trade_power_value = 5
+	local_defensiveness = 0.1
+	local_tax_modifier = 0.05
+	picture = "border_crossing_icon"
+}
+
+airport_modifier = {
+	province_trade_power_value = 8
+	local_friendly_movement_speed = 0.5
+	local_tax_modifier = 0.20
+	picture = "airport_icon"
+}
+
 national_bank_interest = {
 	interest = -0.5
 }

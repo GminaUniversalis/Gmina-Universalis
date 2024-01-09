@@ -3,5 +3,5 @@ add_government_reform = autocracy_reform
 government_rank = 1
 technology_group = western
 religion = communism_pzpr
-primary_culture = kielecko-radomska
+primary_culture = kielecka
 capital = 1222
