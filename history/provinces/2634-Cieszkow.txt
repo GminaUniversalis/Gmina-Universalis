@@ -11,4 +11,5 @@ discovered_by = eastern
 culture = biskupinska
 owner = A03
 controller = A03
+add_core = A03
 hre = yes

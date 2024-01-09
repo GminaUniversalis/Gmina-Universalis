@@ -11,4 +11,5 @@ discovered_by = eastern
 culture = klodzka
 owner = A20
 controller = A20
+add_core = A20
 hre = yes
