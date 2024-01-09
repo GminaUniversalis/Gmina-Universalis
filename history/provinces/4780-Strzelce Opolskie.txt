@@ -11,4 +11,5 @@ discovered_by = western
 discovered_by = eastern
 owner = H02
 controller = H02
+add_core = H02
 hre = yes
