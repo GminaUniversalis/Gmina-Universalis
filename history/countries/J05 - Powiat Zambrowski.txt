@@ -3,5 +3,5 @@ add_government_reform = autocracy_reform
 government_rank = 1
 technology_group = eastern
 religion = communism_zsl
-primary_culture = podlaska
+primary_culture = mazowiecka
 capital = 1783
