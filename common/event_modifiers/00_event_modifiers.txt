@@ -10,6 +10,10 @@ stonka_attack = {
 	local_unrest = 3
 }
 
+moonshiners_problem = {
+	local_unrest = 3
+}
+
 border_crossing_modifier = {
 	province_trade_power_value = 5
 	local_defensiveness = 0.1
