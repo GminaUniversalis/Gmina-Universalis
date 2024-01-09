@@ -959,6 +959,8 @@
  desc_communism_price_increase:0 "Prices of our goods were raised once again."
  stonka_attack:0 "Colorado beetle attack"
  desc_stonka_attack:0 "Those american bastards are attacking us again!"
+ moonshiners_problem:0 "Moonshiners"
+ desc_moonshiners_problem:0 "They are making alcohol again."
  national_bank_interest:0 "National Inflation Policy"
  desc_national_bank_interest:0 "Our country's monetary policy focuses on minimizing inflation for the good of our general economy."
  national_bank_inflation:0 "Growing Financial Sector"

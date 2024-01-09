@@ -317,6 +317,50 @@ country_event = {
 }
 
 
+# Bimbrownie 1980
+country_event = {
+	id = prices.5
+	title = prices.5.t
+	desc = prices.5.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		gu_vodka = 3
+		is_year = 1477
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = prices.5.a
+		change_price = {
+			trade_goods = gu_vodka
+			key = MOONSHINERS
+			value = -0.15
+			duration = -1
+		}
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				trade_goods = gu_vodka
+			}
+			add_province_modifier = {
+				name = moonshiners_problem
+				duration = 3650
+			}
+		}
+	}
+}
+
+
 # New Draperies
 country_event = {
 	id = prices.13
