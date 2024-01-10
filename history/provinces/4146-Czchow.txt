@@ -8,3 +8,4 @@ trade_goods = unknown
 owner = X07
 controller = X07
 add_core = X07
+discovered_by = ottoman

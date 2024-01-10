@@ -12,3 +12,4 @@ is_city = yes
 owner = G38
 controller = G38
 add_core = G38
+discovered_by = ottoman

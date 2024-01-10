@@ -1,14 +1,15 @@
-#Powhatan
-culture = pomorska
+#Warszawa
+culture = warszawska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Powhatan"
+capital = "Warszawa"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = Y05
-controller = Y05
-add_core = Y05
+owner = G12
+controller = G12
+add_core = G12
+discovered_by = ottoman

@@ -1,49 +1,49 @@
 # A region can only belong to one super region.
-malopolska_superregion = {
+malopolska_superregion = { 
 	malopolska_region 
 }
-swietokrzyskie_superregion = {
-	swietokrzyskie_region
+swietokrzyskie_superregion = { 
+	swietokrzyskie_region 
 }
 lubelskie_superregion = { 
-	lubelskie_region
+	lubelskie_region 
 }
-podkarpackie_superregion = {
-	podkarpackie_region
+podkarpackie_superregion = { 
+	podkarpackie_region 
 }
-mazowieckie_superregion = {
-	mazowieckie_region
+mazowieckie_superregion = { 
+	mazowieckie_region 
 }
-podlasie_superregion = {
-	podlasie_region
+podlasie_superregion = { 
+	podlasie_region 
 }
-zachodnio_pomorskie_superregion = {
-	zachodnio_pomorskie_region
+zachodnio_pomorskie_superregion = { 
+	zachodnio_pomorskie_region 
 }
-pomorskie_superregion = {
-	pomorskie_region
+pomorskie_superregion = { 
+	pomorskie_region 
 }
-kujawsko_pomorskie_superregion = {
-	kujawsko_pomorskie_region
+kujawsko_pomorskie_superregion = { 
+	kujawsko_pomorskie_region 
 }
-lubuskie_superregion = {
-	lubuskie_region
+lubuskie_superregion = { 
+	lubuskie_region 
 }
-wielkopolska_superregion = {
-	wielkopolska_region
+wielkopolska_superregion = { 
+	wielkopolska_region 
 }
-warminsko_mazurskie_superregion = {
-	warminsko_mazurskie_region
+warminsko_mazurskie_superregion = { 
+	warminsko_mazurskie_region 
 }
-dolnoslaskie_superregion = {
-	dolnoslaskie_region
+dolnoslaskie_superregion = { 
+	dolnoslaskie_region 
 }
-opolskie_superregion = {
-	opolskie_region
+opolskie_superregion = { 
+	opolskie_region 
 }
-slaskie_superregion = {
-	slaskie_region
+slaskie_superregion = { 
+	slaskie_region 
 }
-lodzkie_superregion= {
-	lodzkie_region
+lodzkie_superregion = { 
+	lodzkie_region 
 }
