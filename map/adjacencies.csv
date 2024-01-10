@@ -1,3 +1,9 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4151;986;sea;1571;-1;-1;-1;-1;Kosakowo-Jastarnia
+3006;3005;sea;1289;-1;-1;-1;-1;Bielany-Bialoleka
+3158;1011;sea;1289;-1;-1;-1;-1;Zoliboz-Praga Polnoc
+257;1011;sea;1289;-1;-1;-1;-1;Srodmiescie-Praga Polnoc
+257;1010;sea;1289;-1;-1;-1;-1;Srodmiescie-Praga Poludnie
+3279;3558;sea;1289;-1;-1;-1;-1;Moktow-Wawer
+3550;3558;sea;1289;-1;-1;-1;-1;-Wawer
 -1;-1;;-1;-1;-1;-1;-1;-1;
