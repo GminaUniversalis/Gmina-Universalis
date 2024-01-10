@@ -9,3 +9,4 @@ trade_goods = unknown
 owner = L15
 controller = L15
 add_core = L15
+discovered_by = ottoman

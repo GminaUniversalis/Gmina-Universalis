@@ -1,14 +1,15 @@
-#Warszawa
+#Bialoleka
 culture = warszawska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Warszawa"
+capital = "Bialoleka"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
 owner = G12
 controller = G12
 add_core = G12
+discovered_by = ottoman

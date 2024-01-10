@@ -7,3 +7,4 @@ trade_goods = unknown
 owner = Q17
 controller = Q17
 add_core = Q17
+discovered_by = ottoman

@@ -1,14 +1,15 @@
-#Kruszowica
-culture = kujawska
+#Wlochy
+culture = warszawska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Kruszowica"
+capital = "Wlochy"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = B07
-controller = B07
-add_core = B07
+owner = G12
+controller = G12
+add_core = G12
+discovered_by = ottoman
