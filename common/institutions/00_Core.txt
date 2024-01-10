@@ -254,7 +254,10 @@ renaissance = {
 			region = pomorskie_region
 			region = zachodnio_pomorskie_region
 		}
-		has_terrain = urban
+		OR = {
+			has_terrain = urban
+			has_terrain = high_urban
+		}
 		has_port = yes
 		is_state = yes
 		OR = {

@@ -13,3 +13,8 @@ owner = A22
 controller = A22
 add_core = A22
 hre = yes
+
+add_permanent_province_modifier = {
+	name = satellite_city_modifier
+	duration = -1
+}
