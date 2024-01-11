@@ -12244,14 +12244,12 @@ siamese_age_of_openness = {
 	global_spy_defence = -0.15
 }
 
-emerald_buddha = {
-	prestige = 0.5
-	monthly_karma = 0.1
+emerald_kaczka = {
+	prestige = 5
 }
 
-emerald_buddha_alternate = {
-	prestige = 0.5
-	monthly_karma = -0.1
+emerald_kaczka_alternate = {
+	prestige = -5
 }
 
 estate_burghers_tropical_mod = {
