@@ -988,10 +988,10 @@ province;red;green;blue;x;x
 1260;11;220;250;Lake Peipus;x
 1261;12;250;250;Ladoga;x
 1262;13;200;200;Onega;x
-1263;14;200;250;Barents Sea;x
+1263;14;200;250;Odra;x
 1273;224;123;123;Kolaczyce;x
-1289;40;250;250;Western Approaches;x
-1304;55;220;250;Bay of Napoli;x
+1289;40;250;250;Wisla;x
+1304;55;220;250;Zalew Szczecinski Zachod;x
 1306;181;48;132;Babice;x
 1318;209;246;4;Katowice;x
 1325;76;250;250;Lake Balaton;x
@@ -1006,7 +1006,6 @@ province;red;green;blue;x;x
 1563;58;202;252;Hatton Bank;x
 1564;59;222;252;Eastern Gibbs Fracture;x
 1565;60;252;252;Western Gibbs Fracture;x
-1566;61;202;202;Iberian Shelf;x
 1567;62;202;252;Sea of Azores;x
 1568;63;222;252;Corner Seamounts;x
 1570;65;202;202;New England Seamounts;x
@@ -2693,7 +2692,6 @@ province;red;green;blue;x;x
 4941;30;216;201;Warta;x
 2778;178;66;140;Bogoria;x
 550;78;108;0;Belgia;x
-#3418;219;32;228;;
 3290;219;32;100;Luksemburg;
 3105;207;110;54;Francja;
 3013;199;110;220;Slowacja;
