@@ -159,9 +159,9 @@ liberalism_group = {
 		icon = 28
 		allow_female_defenders_of_the_faith = yes
 
-		# allowed_conversion = {
-		# 	# Other liberal parties
-		# }
+		allowed_conversion = {
+			communism_zsl
+		}
 
 		allowed_center_conversion = {
 			communism_sd
