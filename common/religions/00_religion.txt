@@ -146,6 +146,56 @@ communism_group = {
 	crusade_name = WAR_WITH_COUNTER_REVISIONISM
 }
 
+
+liberalism_group = {
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 18 }
+
+	ai_will_propagate_through_trade = yes
+
+	liberalism_ud = {
+		color = { 52 52 140 }
+		icon = 28
+		allow_female_defenders_of_the_faith = yes
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+		country = {
+			free_dip_policy = 1
+			idea_cost = -0.05
+		}
+		
+		country_as_secondary = {
+			idea_cost = -0.05
+		}
+
+		province = {
+			local_development_cost = -0.1	
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			divorce_consort_aspect
+			gain_consort_aspect
+			dissolve_monasteries_aspect
+		}
+		aspects_name = ANGLICAN_ASPECTS
+		
+		heretic = { FASCISTS }
+		
+		date = 1534.11.3 # act of supremacy
+	}
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+	crusade_name = WAR_WITH_FASCISM
+}
+
+
 christian = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
