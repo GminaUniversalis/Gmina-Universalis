@@ -536,7 +536,7 @@ age_of_revolutions = {
 	start = 1680
 	
 	can_start = {
-		1680
+		is_year = 1680
 	}
 	
 	papacy = 2.0
