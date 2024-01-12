@@ -338,10 +338,10 @@ age_of_reformation = {
 
 
 age_of_absolutism = {
-	start = 1620
+	start = 1590
 	
 	can_start = {
-		is_institution_enabled = global_trade
+		is_year = 1590
 	}
 	
 	papacy = 1.5
@@ -533,10 +533,10 @@ age_of_absolutism = {
 }
 
 age_of_revolutions = {
-	start = 1710
+	start = 1680
 	
 	can_start = {
-		is_institution_enabled = enlightenment
+		1680
 	}
 	
 	papacy = 2.0
