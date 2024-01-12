@@ -1,0 +1,17 @@
+namespace = politics
+
+country_event = {
+	id = politics.1
+	title = politics.1.t
+	desc = politics.1.d
+	picture = REFORM_eventPicture
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = politics.1.a
+		enable_religion = liberalism_ud
+	}
+}

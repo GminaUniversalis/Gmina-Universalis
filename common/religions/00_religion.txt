@@ -24,6 +24,7 @@ communism_group = {
 		allowed_conversion = {
 			communism_sd
 			communism_zsl
+			liberalism_ud
 		}
 
 		on_convert = {
@@ -69,6 +70,7 @@ communism_group = {
 		allowed_conversion = {
 			communism_pzpr
 			communism_zsl
+			liberalism_ud
 		}
 
 		on_convert = {
