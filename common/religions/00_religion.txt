@@ -114,6 +114,7 @@ communism_group = {
 		allowed_conversion = {
 			communism_sd
 			communism_pzpr
+			liberalism_ud
 		}
 
 		on_convert = {
@@ -158,11 +159,38 @@ liberalism_group = {
 		icon = 28
 		allow_female_defenders_of_the_faith = yes
 
+		# allowed_conversion = {
+		# 	# Other liberal parties
+		# }
+
 		allowed_center_conversion = {
 			communism_sd
 			communism_pzpr
 			communism_zsl
 		}
+
+		on_convert = {
+			change_religion = liberalism_ud
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_ud
+						}
+					}
+					change_religion = liberalism_ud
+					add_reform_center = liberalism_ud
+				}
+			}			
+		}
+
 		country = {
 			free_dip_policy = 1
 			idea_cost = -0.05
@@ -179,15 +207,27 @@ liberalism_group = {
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			divorce_consort_aspect
-			gain_consort_aspect
-			dissolve_monasteries_aspect
+			stability_aspect
+			innovativeness_aspect
+			expel_heretics_aspect
+			diplomats_of_the_reformation_aspect
+			icons_of_the_church_aspect
+			spread_the_book_of_common_prayer
 		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_ud
+				}
+			}
+		}
+
 		aspects_name = ANGLICAN_ASPECTS
 		
 		heretic = { FASCISTS }
 		
-		date = 1534.11.3 # act of supremacy
+		date = 1445.1.1
 	}
 
 	defender_of_faith = yes
