@@ -17,7 +17,7 @@
 feudalism = {
 
 	bonus = {
-		free_leader_pool = 1
+		state_maintenance_modifier = -0.25
 	}
 
 	trade_company_efficiency = 0.2
@@ -185,8 +185,7 @@ feudalism = {
 renaissance = {
 
 	bonus = {
-		development_cost = -0.05
-		build_cost = -0.05
+		free_leader_pool = 3
 	}
 
 	trade_company_efficiency = 0.4
