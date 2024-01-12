@@ -1,9 +1,3 @@
-1524.1.1 = { discovered_by = FRA }
-1600.1.1 = { 
-	discovered_by = muslim
-	discovered_by = ottoman
-}
 discovered_by = western
 discovered_by = eastern
-religion = communism_pzpr
 discovered_by = ottoman

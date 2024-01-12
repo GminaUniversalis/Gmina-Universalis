@@ -336,8 +336,8 @@ on_separate_war_won = {
 # country
 # root = loser country, from = winner country
 on_war_lost = {
-	ROOT = { country_event = { id = flavor_cri.6 } }
-	ROOT = { country_event = { id = tributary_events.32 } }
+	# ROOT = { country_event = { id = flavor_cri.6 } }
+	# ROOT = { country_event = { id = tributary_events.32 } }
 	if = {
         limit = {
             government = republic
