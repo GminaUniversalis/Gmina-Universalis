@@ -255,7 +255,7 @@ province;red;green;blue;x;x
 254;36;156;255;Rogozno;x
 255;164;158;0;Golub-Dobrzyn;x
 256;36;32;64;Jablonowo Pomorskie;x
-257;164;34;128;Warszawa;x
+257;164;34;128;Srodmiescie;x
 258;36;36;192;Debowa Laka;x
 259;165;38;255;Ciechocin;x
 260;37;40;0;Chrostkowo;x
@@ -700,7 +700,7 @@ province;red;green;blue;x;x
 861;131;86;173;Grodziec;x
 949;144;134;173;Regnow;x
 950;16;136;32;Cielaadz;x
-952;16;140;126;Powhatan;x
+952;16;140;126;City of Skórcz;x
 953;145;142;173;Zabludow;x
 954;17;144;32;City of Ostroda;x
 955;145;146;79;Myszkow;x
@@ -751,10 +751,13 @@ province;red;green;blue;x;x
 1007;152;122;79;Gojijiwininiwag;x
 1008;24;124;126;Warka;x
 1009;153;126;173;Starachowice;x
+1010;25;128;32;Praga Poludnie;x
+1011;153;130;79;Praga Polnoc;x
 1012;25;132;126;Dzialdowo;x
 1013;233;94;0;Troszyn;x
 1014;25;136;32;Zaluski;x
 1015;153;138;79;City of Dzialdowo;x
+1016;26;140;126;Ochota;x
 1017;154;142;173;Nowy Dwor Mazowiecki;x
 1018;26;144;32;Pokrzywnica;x
 1019;154;146;79;Miedzna;x
@@ -985,10 +988,10 @@ province;red;green;blue;x;x
 1260;11;220;250;Lake Peipus;x
 1261;12;250;250;Ladoga;x
 1262;13;200;200;Onega;x
-1263;14;200;250;Barents Sea;x
+1263;14;200;250;Odra;x
 1273;224;123;123;Kolaczyce;x
-1289;40;250;250;Western Approaches;x
-1304;55;220;250;Bay of Napoli;x
+1289;40;250;250;Wisla;x
+1304;55;220;250;Zalew Szczecinski Zachod;x
 1306;181;48;132;Babice;x
 1318;209;246;4;Katowice;x
 1325;76;250;250;Lake Balaton;x
@@ -1003,7 +1006,6 @@ province;red;green;blue;x;x
 1563;58;202;252;Hatton Bank;x
 1564;59;222;252;Eastern Gibbs Fracture;x
 1565;60;252;252;Western Gibbs Fracture;x
-1566;61;202;202;Iberian Shelf;x
 1567;62;202;252;Sea of Azores;x
 1568;63;222;252;Corner Seamounts;x
 1570;65;202;202;New England Seamounts;x
@@ -1039,6 +1041,17 @@ province;red;green;blue;x;x
 1663;30;203;253;Jezioro Wilczkowo;x
 1664;31;223;253;Jezioro Trzesiecko;x
 1665;32;253;253;Jezioro Wierzchowo;x
+1676;43;223;253;Wkra;x
+1677;44;253;253;Drawa;x
+1678;45;203;203;Obra;x
+1679;46;203;253;Wisloka;x
+1680;47;223;253;Prosna;x
+1681;48;253;253;Wislok;x
+1682;49;203;203;Raba;x
+1683;50;203;253;Rega;x
+1684;51;223;253;Parseta;x
+1685;52;253;253;Slupia;x
+1686;53;203;203;Mala Panew;x
 1687;54;203;253;Wieprz;x
 1688;55;223;253;Baryczx
 1689;56;253;253;Pisa;x
@@ -1970,14 +1983,28 @@ province;red;green;blue;x;x
 3002;134;198;192;Orzesze;x
 3003;188;110;220;Zebowice;x
 3004;189;110;220;Granica;
+3005;190;110;220;Bialoleka;
+3006;191;110;220;Bielany;
+3113;207;110;62;Targowek;
+3114;207;110;63;Wola;
+3158;207;110;107;Zoliboz;
+3199;219;32;9;Rembertow;
 3200;219;32;10;Niemcy Poludnie;
+3201;219;32;11;Bemowo;
 3238;219;32;48;Niemcy Polnoc;
+3287;219;32;97;Wlochy;
 3288;219;32;98;Litwa;
 3289;219;32;99;Ukraina Zachod;
 3218;219;32;28;Holandia;
 3219;219;32;29;Czechy Wschód;
+3279;219;32;89;Mokotow;
+3394;219;32;204;Wesola;
 3419;219;32;229;Bornholm;
+3485;219;23;185;Ursus;
 3525;219;24;225;Nysa Luzycka;
+3549;219;24;249;Ursynow;
+3550;219;24;150;Wilanow;
+3558;225;25;158;Wawer;
 3619;225;25;209;Bialorus wschod;
 3721;100;11;121;Ukraina wschod;
 3888;100;12;188;Bialorus zachod;
@@ -2665,7 +2692,6 @@ province;red;green;blue;x;x
 4941;30;216;201;Warta;x
 2778;178;66;140;Bogoria;x
 550;78;108;0;Belgia;x
-#3418;219;32;228;;
 3290;219;32;100;Luksemburg;
 3105;207;110;54;Francja;
 3013;199;110;220;Slowacja;

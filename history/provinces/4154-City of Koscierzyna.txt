@@ -1,6 +1,9 @@
 #Natural borders between france and spain.
 discovered_by = eastern
 discovered_by = western
+base_tax = 1
+base_production = 1
+base_manpower = 1
 culture = kaszubska
 religion = communism_pzpr
 is_city = no
@@ -8,3 +11,4 @@ trade_goods = unknown
 owner = Y04
 controller = Y04
 add_core = Y04
+discovered_by = ottoman

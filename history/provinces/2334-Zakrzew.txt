@@ -8,3 +8,4 @@ trade_goods = unknown
 owner = G20
 controller = G20
 add_core = G20
+discovered_by = ottoman
