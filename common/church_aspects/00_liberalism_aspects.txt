@@ -1,0 +1,205 @@
+stability_aspect = {
+	sprite = "GFX_progress_of_the_supreme_governor_icon"
+	cost = 200
+	trigger = {
+		NOT = { stability = 3 }
+	}
+	effect = {
+		add_stability = 1
+		add_legitimacy = 10
+		add_devotion = 10
+		add_horde_unity = 10
+		add_meritocracy = 10
+		add_republican_tradition = 5
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			stability = 0
+		}
+		modifier = {
+			factor = 0.5
+			stability = 1
+		}
+		modifier = {
+			factor = 0.5
+			stability = 2
+		}
+		modifier = {
+			factor = 0
+			stability = 3
+		}
+	}
+}
+
+innovativeness_aspect = {
+	sprite = "GFX_innovativeness_aspect"
+	cost = 100
+	trigger = {}
+	effect = {
+		custom_tooltip = innovativeness_aspect_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = anglican_innovativeness
+				duration = 5475
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
+						has_building = university
+					}
+					religion = ROOT
+					controlled_by = ROOT
+					same_continent = ROOT
+				}
+				add_base_production = 1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0.25
+			innovativeness = 90
+		}
+		modifier = {
+			factor = 0.25
+			reform_level = 5
+		}
+	}
+}
+
+expel_heretics_aspect = {
+	sprite = "GFX_expel_heretics_aspect"
+	cost = 100
+	trigger = {}
+	effect = {
+		custom_tooltip = expel_heretics_aspect_tt
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_colony = yes
+				}
+				add_colonysize = 100
+				random_list = {
+					67 = {}
+					11 = {
+						change_religion = catholic
+					}
+					11 = {
+						trigger = { is_religion_enabled = protestant }
+						change_religion = protestant
+					}
+					11 = {
+						trigger = { is_religion_enabled = reformed }
+						change_religion = reformed
+					}
+				}
+			}
+			add_country_modifier = {
+				name = expelling_heretics
+				duration = 5475
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			stability = 0
+		}
+		modifier = {
+			factor = 0.5
+			stability = 1
+		}
+		modifier = {
+			factor = 0.5
+			stability = 2
+		}
+	}
+}
+
+diplomats_of_the_reformation_aspect = {
+	sprite = "GFX_diplomats_of_the_reformation_aspect"
+	cost = 100
+	trigger = {}
+	effect = {
+		custom_tooltip = diplomats_of_the_reformation_aspect_tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					OR = {
+						religion = protestant
+						religion = reformed
+						religion = anglican
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = anglican_reformation_diplomacy
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = anglican_reformation_diplomacy
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+icons_of_the_church_aspect = {
+	sprite = "GFX_icons_of_the_church_icon"
+	cost = 200
+	trigger = {}
+	effect = {
+		custom_tooltip = icons_of_the_church_aspect_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = anglican_militarized_church_aspect
+				duration = 5475
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
+spread_the_book_of_common_prayer = {
+	sprite = "GFX_spread_the_book_of_common_prayer"
+	cost = 50
+	potential = {
+		has_unlocked_church_aspect = {
+			church_aspect = spread_the_book_of_common_prayer
+		}
+	}
+	trigger = {
+		rebel_progress_at_least = { value = 20 }
+	}
+	effect = {
+		add_rebel_progress = {
+			value = -20
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 100
+			rebel_progress_at_least = { value = 80 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { rebel_progress_at_least = { value = 50 } }
+		}
+	}
+}
