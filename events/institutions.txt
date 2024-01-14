@@ -23,22 +23,9 @@ country_event = {
 	desc = institution_events.2.d
 	
 	picture = {
-		trigger = {
-			OR = {
-				NOT = { has_dlc = "Cradle of Civilization" }
-				NOT = { religion_group = muslim }
-			}
-		}
 		picture = PAINTER_ARTIST_eventPicture
 	}
-	picture = {
-		trigger = {
-			has_dlc = "Cradle of Civilization"
-			religion_group = muslim
-		}
-		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
-	}
-	
+
 	is_triggered_only = yes
 
 	goto = institution_origin
@@ -3181,7 +3168,7 @@ country_event = {
 	}
 }
 
-#Healthy Criticism? - Coffee Houses / Karagöz Etc
+#Healthy Criticism? - Coffee Houses / Karagï¿½z Etc
 province_event = {
 	id = institution_events.73
 	title = institution_events.73.t #Healthy Criticism?

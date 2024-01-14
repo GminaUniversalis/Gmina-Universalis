@@ -1,12 +1,5 @@
-#
-# remember to add graphics for relevant ones when you add to this
-#
-# if a modifier is scaled, its multiplied with development in the province.
-
-
-# any_friendly_coast_border_province is a special scope made for institution spread.
-# It checks for adjacent provinces or provinces one seazone away.
-# Friendly is defined as at positive relations or owned by the same country that owns the province.
+# TODO LIST:
+# Change history sections
 
 #######################################
 # Communism.  
@@ -17,21 +10,14 @@
 feudalism = {
 
 	bonus = {
-		state_maintenance_modifier = -0.25
+		state_maintenance_modifier = -0.1
 	}
 
 	trade_company_efficiency = 0.2
 
-	#effect = { } # When a country embraces it
-
 	history = {
 		is_year = 1000
 	}
-	
-	# no need for events, as its there from the start.
-	#can_start = {	is_year = 1000	}
-	#start_chance = 100
-	#on_start = institution_events.1
 
 	can_embrace = {
 		always = yes
@@ -296,43 +282,6 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_10
-				continent = europe
-				development = 10
-			}
-		}
-		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_20
-				development = 20
-				continent = europe
-			}
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_5_post_1500
-				continent = europe
-				is_year = 1500
-				development = 5
-			}
-		}
-		modifier = {
 			factor = 5
 			scale = yes
 			potential = {
@@ -399,14 +348,16 @@ renaissance = {
 
 
 #######################################
-# New World
+# Free Market
 # 
-# Colonising is good.. mkay.-.
+# Flows from wealthiest trading node
 #######################################
+
+
 new_world_i = {
 
 	bonus = {
-		global_prov_trade_power_modifier = 0.10
+		trade_efficiency = 0.05
 	}
 
 	trade_company_efficiency = 0.6
@@ -689,15 +640,16 @@ new_world_i = {
 	}
 }
 
-
-
 #######################################
-# Printing Press
+# Internet
+# 
+# Flows from cities
 #######################################
+
 printing_press = {
 
 	bonus = {
-		stability_cost_modifier = -0.05
+		innovativeness_gain = 0.2	
 	}
 
 	trade_company_efficiency = 0.8
@@ -1039,17 +991,17 @@ printing_press = {
 	}
 }
 
-
-
-
-
 #######################################
-# Global Trade
+# YouTube
+# 
+# Flows from ???
 #######################################
+
 global_trade = {
 
 	bonus = {
-		merchants = 1
+		advisor_cost = -0.1
+		advisor_pool = 3
 	}
 
 	trade_company_efficiency = 1.0
@@ -1345,14 +1297,16 @@ global_trade = {
 	}
 }
 
+#######################################
+# InPost
+# 
+# Flows from ???
+#######################################
 
-#######################################
-# Manufactories
-#######################################
 manufactories = {
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.1
+		merchants = 1	
 	}
 
 	trade_company_efficiency = 1.25
@@ -1851,15 +1805,16 @@ manufactories = {
 	}
 }
 
-
-
 #######################################
-# Enlightenment
+# BLIK
+# 
+# Flows from ???
 #######################################
+
 enlightenment = {
 
 	bonus = {
-		culture_conversion_cost = -0.25
+		global_tax_modifier = 0.1	
 	}
 
 	trade_company_efficiency = 1.5
@@ -2234,18 +2189,19 @@ enlightenment = {
 	}
 }
 
-
-
 #######################################
-# Industrialisation
+# Artificial Inteligence
+# 
+# Flows from ???
 #######################################
+
 industrialization = {
 	
 	trade_company_efficiency = 2.0
 
 	bonus = {
 		global_manpower_modifier = 0.25
-		global_tax_modifier = 0.15
+		all_power_cost = -0.05	
 	}
 
 	historical_start_date = 1750.1.1
