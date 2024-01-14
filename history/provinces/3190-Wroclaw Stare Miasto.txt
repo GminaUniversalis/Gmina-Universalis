@@ -1,0 +1,18 @@
+#Wroclaw - Stare Miasto
+religion = communism_zsl
+base_tax = 7
+base_production = 10
+trade_goods = paper
+base_manpower = 12
+capital = "Wroclaw - Stare Miasto"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = wroclawska
+center_of_trade = 3
+hre = yes
+discovered_by = ottoman
+add_core = A27
+fort_15th = yes
+owner = A27
+controller = A27
