@@ -8,13 +8,11 @@ primary_culture = wroclawska
 add_accepted_culture = dolnoslaska
 add_accepted_culture = ukrainska
 add_accepted_culture = opolska
-capital = 2839 #Wrocław
-fixed_capital = 2839 #Wrocław
+capital = 792#Wrocław
+fixed_capital = 2839#Wrocław
 elector = yes
-
 1440.1.1 = { 
 	monarch = { 
-
 		name = "Wojciech"
 		dynasty = "Adamiec"
 		birth_date = 1420.1.1
@@ -22,6 +20,5 @@ elector = yes
 		dip = 6
 		mil = 4
 	}
-
 	add_ruler_personality = incorruptible_personality
 }

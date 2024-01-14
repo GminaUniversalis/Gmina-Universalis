@@ -12,27 +12,27 @@ gen_europe = {
 	}
 	has_country_shield = no
 	
-	gen_eur_trade_node = {
-		icon = mission_war_chest
-		required_missions = { }
-		position = 1
+	# gen_eur_trade_node = {  Powodowało spam w error logu
+	# 	icon = mission_war_chest
+	# 	required_missions = { }
+	# 	position = 1
 		
-		trigger = {
-			home_trade_node = {
-				highest_value_trade_node = yes
-				is_strongest_trade_power = ROOT
-			}
+	# 	trigger = {
+	# 		home_trade_node = {
+	# 			highest_value_trade_node = yes
+	# 			is_strongest_trade_power = ROOT
+	# 		}
 			
-		}
+	# 	}
 		
-		effect = {
-			add_prestige = 30
-			add_country_modifier = {
-				name = "gen_eur_trade_node_mod"
-				duration = 7300
-			}
-		}
-	}
+	# 	effect = {
+	# 		add_prestige = 30
+	# 		add_country_modifier = {
+	# 			name = "gen_eur_trade_node_mod"
+	# 			duration = 7300
+	# 		}
+	# 	}
+	# }
 	
 	gen_eur_defender_faith = {
 		icon = mission_european_church
