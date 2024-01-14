@@ -1,0 +1,16 @@
+#Wroclaw - Psie Pole
+religion = communism_zsl
+base_tax = 7
+base_production = 10
+trade_goods = paper
+base_manpower = 12
+capital = "Wroclaw - Psie Pole"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = wroclawska
+hre = yes
+discovered_by = ottoman
+add_core = A27
+owner = A27
+controller = A27
