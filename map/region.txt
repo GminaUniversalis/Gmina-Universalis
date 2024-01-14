@@ -2,7 +2,7 @@
 malopolska_region = { 
 	areas = { 
 		powiat_tatrzanski powiat_wielicki powiat_chrzanowski powiat_gorlicki powiat_nowosadecki powiat_tarnowski powiat_brzeski powiat_miechowski powiat_proszowicki powiat_olkuski
-		powiat_oswiecimski powiat_myslenicki powiat_bochenski powiat_krakowski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki 
+		powiat_oswiecimski powiat_myslenicki powiat_bochenski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki powiat_krakowski 
 	}
 }
 swietokrzyskie_region = { 

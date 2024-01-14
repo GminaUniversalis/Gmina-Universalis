@@ -39,6 +39,47 @@ X15_ideas = {
 		infantry_power = 0.20
 	}
 }
+X20_ideas = {
+	start = {
+		
+		trade_efficiency = 0.15
+		improve_relation_modifier = 0.2
+		
+	}
+	
+	bonus = {
+		global_ship_trade_power = 0.2
+	}	
+
+	trigger = {
+		tag = X20
+	}
+	free = yes
+	
+	Cracovian_Metro = {
+		movement_speed = 0.15
+	}
+	Old_City = {
+		prestige = 1
+	}
+	City_of_Trade = {
+		global_trade_power = 0.1
+		burghers_loyalty_modifier = 0.1
+	}
+	Cracovian_Churches = {
+		tolerance_own = 2
+	}
+	Wawel = {
+		defensiveness = 0.2
+		hostile_attrition = 0.5
+	}
+	Kombinat = {
+		production_efficiency = 0.2
+	}
+	Cracovian_Machetes = {
+		infantry_power = 0.20
+	}
+}
 P03_ideas = {
 	start = {
 		idea_cost = -0.1
@@ -163,6 +204,47 @@ P03_ideas = {
 			
 			trigger = {
 				tag = A22
+			}
+			free = yes
+		
+			Wroclaw_rat_undercity = {
+				spy_offence = 0.4
+			}
+			Wroclaw_city_of_bridges = {
+				trade_efficiency = 0.1
+			}
+			Wroclaw_city_of_gnomes = {
+				administrative_efficiency = 0.05
+			}
+			Wroclaw_festung_breslau = {
+				siege_ability = 0.2
+			}
+			Wroclaw_polish_twink_town = {
+				tolerance_heathen = 3
+			}
+			Wroclaw_MPK = {
+				hostile_attrition = 2
+			}
+			Wroclaw_memory_of_our_flood = {
+				discipline = 0.05
+			}
+		}
+		A27_ideas = {
+			start = {
+				advisor_cost = -0.2
+				culture_conversion_cost = -0.2
+			}
+		
+			bonus = {
+				legitimacy = 1
+				devotion = 1
+				republican_tradition = 0.3
+				meritocracy = 1
+				horde_unity = 1
+			}
+			
+			trigger = {
+				tag = A27
 			}
 			free = yes
 		
