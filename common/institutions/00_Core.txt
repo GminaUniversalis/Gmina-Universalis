@@ -16,7 +16,7 @@ feudalism = {
 	trade_company_efficiency = 0.2
 
 	history = {
-		is_year = 1000
+		is_year = 1350
 	}
 
 	can_embrace = {
