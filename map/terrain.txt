@@ -326,7 +326,7 @@ categories =  {
 		allowed_num_of_buildings = 2
 		
 		terrain_override = {
-			2839
+			3190
 		}	
 	}	
 
