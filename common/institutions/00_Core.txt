@@ -468,7 +468,7 @@ new_world_i = {
 		always = yes
 	}
 	
-		embracement_speed = {
+	embracement_speed = {
 	
 		modifier = {
 			factor = 0.4 #Not scaled
@@ -516,10 +516,10 @@ new_world_i = {
 				has_port = no
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_non_port_province_global_trade
+				tooltip = tooltip_neighbor_non_port_province_new_world_i
 				has_port = no
 				any_neighbor_province = {
-					global_trade = 100
+					new_world_i = 100
 					
 				}
 			}
@@ -532,10 +532,10 @@ new_world_i = {
 				has_port = yes
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_port_province_global_trade
+				tooltip = tooltip_neighbor_non_port_province_new_world_i
 				has_port = yes
 				any_neighbor_province = {
-					global_trade = 100
+					new_world_i = 100
 					
 				}
 			}
@@ -550,14 +550,14 @@ new_world_i = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_colonial_overlord_global_trade
+				tooltip = tooltip_colonial_overlord_new_world_i
 				OR = {
 					has_port = yes
 					is_capital = yes
 				}
 				owner = {
 					is_colonial_nation = yes
-					overlord = { has_institution = global_trade }
+					overlord = { has_institution = new_world_i }
 				}
 			}
 		}
@@ -571,16 +571,16 @@ new_world_i = {
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = global_trade
+					has_institution = new_world_i
 				}
 				continent = owner
 			}
 			
 			custom_trigger_tooltip = {
-				tooltip = tooltip_global_trade_embraced
+				tooltip = tooltip_new_world_i_embraced
 				is_owned_by_trade_company = no
 				owner = {
-					has_institution = global_trade
+					has_institution = new_world_i
 				}
 			}
 		}
@@ -589,16 +589,16 @@ new_world_i = {
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = global_trade
+					has_institution = new_world_i
 				}
 				NOT = { continent = owner }
 			}
 			
 			custom_trigger_tooltip = {
-				tooltip = tooltip_global_trade_embraced_other_continent
+				tooltip = tooltip_new_world_i_embraced_other_continent
 				is_owned_by_trade_company = no
 				owner = {
-					has_institution = global_trade
+					has_institution = new_world_i
 				}
 			}
 		}
@@ -728,31 +728,23 @@ printing_press = {
 		is_year = 1550
 		is_institution_enabled = new_world_i
 		is_in_capital_area = yes
-		is_island = no
 		is_state = yes
 		OR = {
-			development = 15
+			development = 26
 			is_capital = yes
-			trade_goods = paper
+			OR = {
+				has_terrain = urban
+				has_terrain = high_urban
+			}
 		}
-		OR = {
-			religion = protestant
-			religion = reformed
-			region = north_german_region
-			region = south_german_region
-		}
-
 	}
 	start_chance = 5		#in 100 for when a province can_start
 	
-	
 	on_start = institution_events.4
-	
-	
+		
 	can_embrace = {
 		always = yes
 	}
-
 	
 	embracement_speed = {
 	
@@ -785,31 +777,7 @@ printing_press = {
 				}
 			}
 		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { has_estate = estate_church }
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_printing_press_clergy
-				any_neighbor_province = {
-					printing_press = 100
-				}
-				owner = {
-					has_estate = estate_church
-					estate_loyalty = {
-						estate = estate_church
-						loyalty = 40
-					}
-					estate_territory = {
-						estate = estate_church
-						territory = 30
-					}
-				}
-			}
-		}
+		
 		modifier = {
 			factor = 1
 			custom_trigger_tooltip = {
@@ -820,84 +788,19 @@ printing_press = {
 				}
 			}
 		}
+
 		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
+			factor = 0.5
 			custom_trigger_tooltip = {
-				tooltip = tooltip_development_20_capital
-				development = 20
-				is_capital = yes
-				continent = europe
+				tooltip = tooltip_has_urban_or_high_urban_terrain
+				OR = {
+					has_terrain = urban
+					has_terrain = high_urban
+				}
 			}
+			
 		}
-		modifier = {
-			factor = 2
-			potential = {
-				owner = {
-					religion_group = christian
-				}
-			}
-			if = {
-				limit = { has_dlc = "Rule Britannia" }
-				custom_trigger_tooltip = {
-					tooltip = tooltip_owner_protestant
-					is_owned_by_trade_company = no
-					owner = {
-						OR = {
-							religion = protestant
-							religion = reformed
-							religion = anglican
-							religion = hussite
-						}
-					}
-				}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = tooltip_owner_protestant
-					is_owned_by_trade_company = no
-					owner = {
-						OR = {
-							religion = protestant
-							religion = reformed
-							religion = anglican
-							religion = hussite
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			if = {
-				limit = {
-					has_dlc = "Rule Britannia"
-				}
-				custom_trigger_tooltip = {
-					tooltip = tooltip_province_protestant_RB
-					OR = {
-						religion = reformed
-						religion = protestant
-						religion = anglican
-						religion = hussite
-					}
-				}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = tooltip_province_protestant
-					OR = {
-						religion = reformed
-						religion = protestant
-						religion = anglican
-						religion = hussite
-					}
-				}
-			}
-		}
+
 		modifier = {
 			factor = 3
 			scale = yes

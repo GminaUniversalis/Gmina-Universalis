@@ -1537,6 +1537,7 @@
  
  #Industrialization Institution and other Institutions work
  tooltip_global_trade_embraced_other_continent:0 "Not Trade Company & Owner has embraced §YGlobal Trade§! - overseas province"
+ tooltip_new_world_i_embraced_other_continent:0 "Not Trade Company & Owner has embraced §YColonialism§! - overseas province"
  tooltip_manufactories_embraced_other_continent:0 "Not Trade Company & Owner has embraced §YManufactories§! - overseas province"
  tooltip_any_neighbor_with_worse_tech_has_embraced_enlightenment:0 "Capital & Neighbor with lower Tech has embraced §YEnlightenment§!"
  tooltip_enlightenment_embraced_other_continent:0 "Not Trade Company & Owner has embraced §YEnlightenment§! - overseas province"
