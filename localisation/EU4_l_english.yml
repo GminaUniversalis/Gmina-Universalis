@@ -1993,6 +1993,8 @@
  CV_UPRISING_PROGRESS_DESC:1 "When the progress reaches 100%, the faction will revolt and $SIZE|Y$ worth of rebel armies will spawn. The faction has a $VAL|%1Y$ chance of increasing the progress by §R$INC$%§! each month due to how much unrest is in their provinces. At this pace, the next revolt will be in about $YEARS|Y1$ years."
  CV_UPRISING_PROGRESS_VAL:0 "Uprising progress: $VAL|Y1$%"
  CV_REBEL_OCCPROV_DESC:0 "Provinces occupied by the rebels"
+ GMINA_DAWN:0 "Gmina's Dawn"
+ GMINA_DAWN_DESC:0 "Poland is shattered, divided between warrying states seeking only own gain. Cultural (dialectal) diffreneces are just one of another reasons to jump at each other's throats."
  RISE_OF_THE_OTTOMANS:0 "Rise of the Ottomans"
  RISE_OF_THE_OTTOMANS_DESC:0 "Rumors of Ottoman weakness caused Pope Eugene IV to call for a crusade against them in 1443. With the West still embroiled in the Hundred Years War, the King of Hungary and Poland, Wladyslav III, took on the cause to finally expel the scourge of Christendom from Europe. Led by general John Hunyadi, The White Knight, the Hungarian army saw some initial success, but was ultimately defeated. The abdicated Sultan Murad II came back to aid his son and led the Ottoman army to victory at the battle of Varna where King Wladyslav was killed. Peace was eventually signed but the way for further Ottoman expansion into Eastern Europe now lay open..."
  CV_IDEAS_UNLOCK_ADM_LEVEL:0 "Unlocked at\n$NAME$ "

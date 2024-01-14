@@ -1302,10 +1302,10 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Art of War"
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
+		# OR = {
+		# 	tag = CAS
+		# 	tag = SPA
+		# }
 		is_year = 1588
 		NOT = { is_year = 1644 }
 		hre_leagues_enabled = yes
@@ -1400,65 +1400,65 @@ country_event = {
 }
 
 # Enforce Sound Toll for Sweden
-country_event = {
-	id = tyw_events.32
-	title = "tyw_events.32.t"
-	desc = "tyw_events.32.d"
-	picture = TOLLS_SHIP_CARGO_eventPicture
+# country_event = {
+# 	id = tyw_events.32
+# 	title = "tyw_events.32.t"
+# 	desc = "tyw_events.32.d"
+# 	picture = TOLLS_SHIP_CARGO_eventPicture
 
-	trigger = {
-		has_dlc = "Art of War"
-		tag = DAN
-		exists = SWE
-		owns = 12
-		is_free_or_tributary_trigger = yes
-		SWE = {
-			is_free_or_tributary_trigger = yes
-			NOT = { war_with = ROOT }
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		tag = DAN
+# 		exists = SWE
+# 		owns = 12
+# 		is_free_or_tributary_trigger = yes
+# 		SWE = {
+# 			is_free_or_tributary_trigger = yes
+# 			NOT = { war_with = ROOT }
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 600
-	}
+# 	mean_time_to_happen = {
+# 		months = 600
+# 	}
 
-	option = {
-		name = "tyw_events.32.a"
-		hidden_effect = {
-			SWE = {
-				country_event = { id = tyw_events.33 days = 7 }
-			}
-		}
-		tooltip = {
-			SWE = {
-				12 = {
-					add_trade_modifier = {
-						who = prev
-						duration = 3650
-						power = -10
-						key = enforced_sound_toll
-					}
-				}
-				add_casus_belli = {
-					target = ROOT
-					type = cb_trade_war_triggered
-					months = 60
-				}
-			}
-		}
-		SWE = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_enforced_sound_toll
-			}
-		}
-	}
+# 	option = {
+# 		name = "tyw_events.32.a"
+# 		hidden_effect = {
+# 			SWE = {
+# 				country_event = { id = tyw_events.33 days = 7 }
+# 			}
+# 		}
+# 		tooltip = {
+# 			SWE = {
+# 				12 = {
+# 					add_trade_modifier = {
+# 						who = prev
+# 						duration = 3650
+# 						power = -10
+# 						key = enforced_sound_toll
+# 					}
+# 				}
+# 				add_casus_belli = {
+# 					target = ROOT
+# 					type = cb_trade_war_triggered
+# 					months = 60
+# 				}
+# 			}
+# 		}
+# 		SWE = {
+# 			add_opinion = {
+# 				who = ROOT
+# 				modifier = opinion_enforced_sound_toll
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = "tyw_events.32.b"
-		add_dip_power = 20
-	}
-}
+# 	option = {
+# 		name = "tyw_events.32.b"
+# 		add_dip_power = 20
+# 	}
+# }
 
 # Denmark Enforces Sound Toll
 country_event = {
@@ -1488,237 +1488,237 @@ country_event = {
 }
 
 # Request Ottoman Backing to Claim Poland
-country_event = {
-	id = tyw_events.34
-	title = "tyw_events.34.t"
-	desc = "tyw_events.34.d"
-	picture = TRANSYLVANIAN_OTTOMAN_eventPicture
+# country_event = {
+# 	id = tyw_events.34
+# 	title = "tyw_events.34.t"
+# 	desc = "tyw_events.34.d"
+# 	picture = TRANSYLVANIAN_OTTOMAN_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		has_dlc = "Art of War"
-		tag = TRA
-		TUR = {
-			has_opinion = {
-				who = ROOT
-				value = 50
-			}
-		}
-		OR = {
-			POL = {
-				is_neighbor_of = ROOT
-				NOT = { alliance_with = ROOT }
-				NOT = { alliance_with = TUR }
-				is_free_or_tributary_trigger = yes
-			}
-			PLC = {
-				is_neighbor_of = ROOT
-				NOT = { alliance_with = ROOT }
-				NOT = { alliance_with = TUR }
-				is_free_or_tributary_trigger = yes
-			}
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		tag = TRA
+# 		TUR = {
+# 			has_opinion = {
+# 				who = ROOT
+# 				value = 50
+# 			}
+# 		}
+# 		OR = {
+# 			POL = {
+# 				is_neighbor_of = ROOT
+# 				NOT = { alliance_with = ROOT }
+# 				NOT = { alliance_with = TUR }
+# 				is_free_or_tributary_trigger = yes
+# 			}
+# 			PLC = {
+# 				is_neighbor_of = ROOT
+# 				NOT = { alliance_with = ROOT }
+# 				NOT = { alliance_with = TUR }
+# 				is_free_or_tributary_trigger = yes
+# 			}
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 360
-	}
+# 	mean_time_to_happen = {
+# 		months = 360
+# 	}
 
-	option = {
-		name = "tyw_events.34.a"
-		TUR = {
-			country_event = {
-				id = tyw_events.35
-				days = 7
-				tooltip = "tyw_events.34.a.tt"
-			}
-		}
-		if = {
-			limit = { exists = PLC }
-			PLC = {
-				add_opinion = {
-					who = ROOT
-					modifier = conspired_with_ottomans
-				}
-			}
-		}
-		if = {
-			limit = { exists = POL }
-			POL = {
-				add_opinion = {
-					who = ROOT
-					modifier = conspired_with_ottomans
-				}
-			}
-		}
-	}
+# 	option = {
+# 		name = "tyw_events.34.a"
+# 		TUR = {
+# 			country_event = {
+# 				id = tyw_events.35
+# 				days = 7
+# 				tooltip = "tyw_events.34.a.tt"
+# 			}
+# 		}
+# 		if = {
+# 			limit = { exists = PLC }
+# 			PLC = {
+# 				add_opinion = {
+# 					who = ROOT
+# 					modifier = conspired_with_ottomans
+# 				}
+# 			}
+# 		}
+# 		if = {
+# 			limit = { exists = POL }
+# 			POL = {
+# 				add_opinion = {
+# 					who = ROOT
+# 					modifier = conspired_with_ottomans
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = "tyw_events.34.b"
-		add_dip_power = 20
-	}
-}
+# 	option = {
+# 		name = "tyw_events.34.b"
+# 		add_dip_power = 20
+# 	}
+# }
 
 # Transylvania Requests Backing to Claim Poland
-country_event = {
-	id = tyw_events.35
-	title = "tyw_events.35.t"
-	desc = "tyw_events.35.d"
-	picture = TRANSYLVANIAN_OTTOMAN_eventPicture
+# country_event = {
+# 	id = tyw_events.35
+# 	title = "tyw_events.35.t"
+# 	desc = "tyw_events.35.d"
+# 	picture = TRANSYLVANIAN_OTTOMAN_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = "tyw_events.35.a"
-		if = {
-			limit = { exists = POL }
-			POL = {
-				every_owned_province = {
-					limit = {
-						any_neighbor_province = { owned_by = FROM}
-					}
-					add_claim = FROM
-				}
-			}
-		}
-		if = {
-			limit = { exists = PLC }
-			PLC = {
-				every_owned_province = {
-					limit = {
-						any_neighbor_province = { owned_by = FROM}
-					}
-					add_claim = FROM
-				}
-			}
-		}
-		ai_chance = {
-			factor = 50
-		}
-	}
+# 	option = {
+# 		name = "tyw_events.35.a"
+# 		if = {
+# 			limit = { exists = POL }
+# 			POL = {
+# 				every_owned_province = {
+# 					limit = {
+# 						any_neighbor_province = { owned_by = FROM}
+# 					}
+# 					add_claim = FROM
+# 				}
+# 			}
+# 		}
+# 		if = {
+# 			limit = { exists = PLC }
+# 			PLC = {
+# 				every_owned_province = {
+# 					limit = {
+# 						any_neighbor_province = { owned_by = FROM}
+# 					}
+# 					add_claim = FROM
+# 				}
+# 			}
+# 		}
+# 		ai_chance = {
+# 			factor = 50
+# 		}
+# 	}
 
-	option = {
-		name = "tyw_events.35.b"
-		add_dip_power = 20
-		FROM = {
-			add_opinion = {
-				who = ROOT
-				modifier = refused_backing_claims
-			}
-		}
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 5
-				OR = {
-					has_opinion = {
-						who = POL
-						value = 0
-					}
-					has_opinion = {
-						who = PLC
-						value = 0
-					}
-				}
-			}
-			modifier = {
-				factor = 5
-				OR = {
-					has_opinion = {
-						who = POL
-						value = 100
-					}
-					has_opinion = {
-						who = PLC
-						value = 100
-					}
-				}
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = "tyw_events.35.b"
+# 		add_dip_power = 20
+# 		FROM = {
+# 			add_opinion = {
+# 				who = ROOT
+# 				modifier = refused_backing_claims
+# 			}
+# 		}
+# 		ai_chance = {
+# 			factor = 10
+# 			modifier = {
+# 				factor = 5
+# 				OR = {
+# 					has_opinion = {
+# 						who = POL
+# 						value = 0
+# 					}
+# 					has_opinion = {
+# 						who = PLC
+# 						value = 0
+# 					}
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 5
+# 				OR = {
+# 					has_opinion = {
+# 						who = POL
+# 						value = 100
+# 					}
+# 					has_opinion = {
+# 						who = PLC
+# 						value = 100
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
 # Free Hungary from Religious Oppression
-country_event = {
-	id = tyw_events.36
-	title = "tyw_events.36.t"
-	desc = "tyw_events.36.d"
-	picture = TRANSYLVANIA_BETHLEN_INVASION_eventPicture
+# country_event = {
+# 	id = tyw_events.36
+# 	title = "tyw_events.36.t"
+# 	desc = "tyw_events.36.d"
+# 	picture = TRANSYLVANIA_BETHLEN_INVASION_eventPicture
 
-	trigger = {
-		has_dlc = "Art of War"
-		tag = TRA
-		hre_leagues_enabled = yes
-		any_neighbor_country = {
-			NOT = { tag = HUN }
-			any_owned_province = {
-				culture = hungarian
-				religion = ROOT
-				any_neighbor_province = { owned_by = ROOT }
-				NOT = { is_claim = ROOT }
-			}
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		tag = TRA
+# 		hre_leagues_enabled = yes
+# 		any_neighbor_country = {
+# 			NOT = { tag = HUN }
+# 			any_owned_province = {
+# 				culture = hungarian
+# 				religion = ROOT
+# 				any_neighbor_province = { owned_by = ROOT }
+# 				NOT = { is_claim = ROOT }
+# 			}
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 240
-	}
+# 	mean_time_to_happen = {
+# 		months = 240
+# 	}
 
-	option = {
-		name = "tyw_events.36.a"
-		every_owned_province = {
-			every_neighbor_province = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { owned_by = HUN }
-					culture = hungarian
-					religion = ROOT
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = "tyw_events.36.a"
+# 		every_owned_province = {
+# 			every_neighbor_province = {
+# 				limit = {
+# 					NOT = { owned_by = ROOT }
+# 					NOT = { owned_by = HUN }
+# 					culture = hungarian
+# 					religion = ROOT
+# 					NOT = { is_claim = ROOT }
+# 				}
+# 				add_claim = ROOT
+# 			}
+# 		}
+# 	}
+# }
 
 # Golden Age of Transylvania
-country_event = {
-	id = tyw_events.37
-	title = "tyw_events.37.t"
-	desc = "tyw_events.37.d"
-	picture = PRINCELY_PALACE_TRANSYLVANIA_eventPicture
+# country_event = {
+# 	id = tyw_events.37
+# 	title = "tyw_events.37.t"
+# 	desc = "tyw_events.37.d"
+# 	picture = PRINCELY_PALACE_TRANSYLVANIA_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		has_dlc = "Art of War"
-		tag = TRA
-		is_year = 1600
-		adm = 3
-		dip = 3
-		mil = 3
-		OR = {
-			adm = 5
-			dip = 5
-			mil = 5
-		}
-		is_at_war = no
-		stability = 0
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		tag = TRA
+# 		is_year = 1600
+# 		adm = 3
+# 		dip = 3
+# 		mil = 3
+# 		OR = {
+# 			adm = 5
+# 			dip = 5
+# 			mil = 5
+# 		}
+# 		is_at_war = no
+# 		stability = 0
+# 	}
 
-	mean_time_to_happen = {
-		months = 240
-	}
+# 	mean_time_to_happen = {
+# 		months = 240
+# 	}
 
-	option = {
-		name = "tyw_events.37.a"
-		add_country_modifier = {
-			name = "golden_age_transylvania"
-			duration = 5475
-		}
-	}
-}
+# 	option = {
+# 		name = "tyw_events.37.a"
+# 		add_country_modifier = {
+# 			name = "golden_age_transylvania"
+# 			duration = 5475
+# 		}
+# 	}
+# }
 
 # United in Prayer
 country_event = {
@@ -1774,70 +1774,70 @@ country_event = {
 }
 
 # God is Spanish
-country_event = {
-	id = tyw_events.39
-	title = "tyw_events.39.t"
-	desc = "tyw_events.39.d"
-	picture = GASPAR_DE_GUZMAN_eventPicture
+# country_event = {
+# 	id = tyw_events.39
+# 	title = "tyw_events.39.t"
+# 	desc = "tyw_events.39.d"
+# 	picture = GASPAR_DE_GUZMAN_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		has_dlc = "Art of War"
-		tag = SPA
-		is_in_league_war = yes
-		war_score = 30
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		tag = SPA
+# 		is_in_league_war = yes
+# 		war_score = 30
+# 	}
 
-	mean_time_to_happen = {
-		months = 360
-	}
+# 	mean_time_to_happen = {
+# 		months = 360
+# 	}
 
-	option = {
-		name = "tyw_events.39.a"
-		add_country_modifier = {
-			name = "god_is_spanish"
-			duration = 3650
-		}
-	}
-}
+# 	option = {
+# 		name = "tyw_events.39.a"
+# 		add_country_modifier = {
+# 			name = "god_is_spanish"
+# 			duration = 3650
+# 		}
+# 	}
+# }
 
 # God Wants Peace
-country_event = {
-	id = tyw_events.40
-	title = "tyw_events.40.t"
-	desc = "tyw_events.40.d"
-	picture = GASPAR_DE_GUZMAN_eventPicture
+# country_event = {
+# 	id = tyw_events.40
+# 	title = "tyw_events.40.t"
+# 	desc = "tyw_events.40.d"
+# 	picture = GASPAR_DE_GUZMAN_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		has_dlc = "Art of War"
-		tag = SPA
-		is_in_league_war = yes
-		NOT = { war_score = -30 }
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		tag = SPA
+# 		is_in_league_war = yes
+# 		NOT = { war_score = -30 }
+# 	}
 
-	mean_time_to_happen = {
-		months = 360
-		modifier = {
-			factor = 0.1
-			has_country_modifier = god_is_spanish
-		}
-	}
+# 	mean_time_to_happen = {
+# 		months = 360
+# 		modifier = {
+# 			factor = 0.1
+# 			has_country_modifier = god_is_spanish
+# 		}
+# 	}
 
-	option = {
-		name = "tyw_events.40.a"
-		if = {
-			limit = { has_country_modifier = god_is_spanish }
-			remove_country_modifier = god_is_spanish
-		}
-		add_country_modifier = {
-			name = "god_wants_peace"
-			duration = 3650
-		}
-	}
-}
+# 	option = {
+# 		name = "tyw_events.40.a"
+# 		if = {
+# 			limit = { has_country_modifier = god_is_spanish }
+# 			remove_country_modifier = god_is_spanish
+# 		}
+# 		add_country_modifier = {
+# 			name = "god_wants_peace"
+# 			duration = 3650
+# 		}
+# 	}
+# }
 
 # Bartering Increases
 country_event = {
@@ -1900,103 +1900,103 @@ country_event = {
 }
 
 # Capturing the Spanish Treasure Fleet
-country_event = {
-	id = tyw_events.42
-	title = "tyw_events.42.t"
-	desc = "tyw_events.42.d"
-	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
+# country_event = {
+# 	id = tyw_events.42
+# 	title = "tyw_events.42.t"
+# 	desc = "tyw_events.42.d"
+# 	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		has_dlc = "Art of War"
-		tag = NED
-		has_privateers = yes
-		NOT = { alliance_with = SPA }
-		SPA = {
-			any_active_trade_node = {
-				has_merchant = PREV
-				is_overseas = yes
-				any_privateering_country = { tag = ROOT }
-			}
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		tag = NED
+# 		has_privateers = yes
+# 		NOT = { alliance_with = SPA }
+# 		SPA = {
+# 			any_active_trade_node = {
+# 				has_merchant = PREV
+# 				is_overseas = yes
+# 				any_privateering_country = { tag = ROOT }
+# 			}
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 600
-	}
+# 	mean_time_to_happen = {
+# 		months = 600
+# 	}
 
-	option = {
-		name = "tyw_events.42.a"
-		SPA = {
-			add_opinion = {
-				who = ROOT
-				modifier = attacked_treasure_fleet
-			}
-		}
-		random = {
-			chance = 60
-			country_event = {
-				id = tyw_events.43
-				days = 14
-			}
-			tooltip = {
-				add_treasury = 300
-				SPA = {
-					add_treasury = -300
-					add_casus_belli = {
-						target = ROOT
-						type = cb_trade_war_triggered
-						months = 60
-					}
-				}
-			}
-		}
-	}
+# 	option = {
+# 		name = "tyw_events.42.a"
+# 		SPA = {
+# 			add_opinion = {
+# 				who = ROOT
+# 				modifier = attacked_treasure_fleet
+# 			}
+# 		}
+# 		random = {
+# 			chance = 60
+# 			country_event = {
+# 				id = tyw_events.43
+# 				days = 14
+# 			}
+# 			tooltip = {
+# 				add_treasury = 300
+# 				SPA = {
+# 					add_treasury = -300
+# 					add_casus_belli = {
+# 						target = ROOT
+# 						type = cb_trade_war_triggered
+# 						months = 60
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = "tyw_events.42.b"
-		add_prestige = -10
-	}
-}
+# 	option = {
+# 		name = "tyw_events.42.b"
+# 		add_prestige = -10
+# 	}
+# }
 
 # Spanish Treasure Fleet Captured!
-country_event = {
-	id = tyw_events.43
-	title = "tyw_events.43.t"
-	desc = "tyw_events.43.d"
-	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
+# country_event = {
+# 	id = tyw_events.43
+# 	title = "tyw_events.43.t"
+# 	desc = "tyw_events.43.d"
+# 	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = "tyw_events.43.a"
-		add_treasury = 300
-		SPA = {
-			country_event = { id = tyw_events.44 days = 7 }
-		}
-	}
-}
+# 	option = {
+# 		name = "tyw_events.43.a"
+# 		add_treasury = 300
+# 		SPA = {
+# 			country_event = { id = tyw_events.44 days = 7 }
+# 		}
+# 	}
+# }
 
 # Treasure Fleet Captured by the Dutch
-country_event = {
-	id = tyw_events.44
-	title = "tyw_events.44.t"
-	desc = "tyw_events.44.d"
-	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
+# country_event = {
+# 	id = tyw_events.44
+# 	title = "tyw_events.44.t"
+# 	desc = "tyw_events.44.d"
+# 	picture = DUTCH_SHIPS_PLUNDERING_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = "tyw_events.44.a"
-		add_treasury = -300
-		add_casus_belli = {
-			target = FROM
-			type = cb_trade_war_triggered
-			months = 60
-		}
-	}
-}
+# 	option = {
+# 		name = "tyw_events.44.a"
+# 		add_treasury = -300
+# 		add_casus_belli = {
+# 			target = FROM
+# 			type = cb_trade_war_triggered
+# 			months = 60
+# 		}
+# 	}
+# }
 
 # An Educated [Ruler]
 country_event = {

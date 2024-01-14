@@ -57,74 +57,74 @@ country_event = {
 }
 
 # Bribing the Sejm
-country_event = {
-	id = elective_monarchy.3
-	title = elective_monarchy.3.t
-	desc = elective_monarchy.3.d
-	picture = SEJM_eventPicture
+# country_event = {
+# 	id = elective_monarchy.3
+# 	title = elective_monarchy.3.t
+# 	desc = elective_monarchy.3.d
+# 	picture = SEJM_eventPicture
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-		has_dlc = "Res Publica"
-		government = monarchy
-		years_of_income = 0.5
-		if = {
-			limit = {
-				exists = POL
-			}
-			knows_country = POL
-			POL = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-			}
-		}
-		else_if = {
-			limit = {
-				exists = PLC
-			}
-			knows_country = PLC
-			PLC = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-			}
-		}
-		else = {
-			any_known_country = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-			}
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Res Publica"
+# 		government = monarchy
+# 		years_of_income = 0.5
+# 		if = {
+# 			limit = {
+# 				exists = POL
+# 			}
+# 			knows_country = POL
+# 			POL = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				exists = PLC
+# 			}
+# 			knows_country = PLC
+# 			PLC = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 			}
+# 		}
+# 		else = {
+# 			any_known_country = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 			}
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}	
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}	
 
-	option = {
-		name = elective_monarchy.3.a
-		add_years_of_income = -0.5
-		add_prestige = 3
-		random_known_country = {
-			limit = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-			}
-			add_heir_support = 25
-		}		
-	}
-	option = {
-		name = elective_monarchy.3.b
-		add_prestige = -1
-		random_known_country = {
-			limit = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-			}
-			add_heir_support = -10
-		}
-	}	
-}
+# 	option = {
+# 		name = elective_monarchy.3.a
+# 		add_years_of_income = -0.5
+# 		add_prestige = 3
+# 		random_known_country = {
+# 			limit = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 			}
+# 			add_heir_support = 25
+# 		}		
+# 	}
+# 	option = {
+# 		name = elective_monarchy.3.b
+# 		add_prestige = -1
+# 		random_known_country = {
+# 			limit = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 			}
+# 			add_heir_support = -10
+# 		}
+# 	}	
+# }
 
 # Assassination plot against foreign heir
 country_event = {
@@ -200,83 +200,83 @@ country_event = {
 }
 
 # Demands for conversion of foreign heir
-country_event = {
-	id = elective_monarchy.6
-	title = elective_monarchy.6.t
-	desc = elective_monarchy.6.d
-	picture = SEJM_eventPicture
+# country_event = {
+# 	id = elective_monarchy.6
+# 	title = elective_monarchy.6.t
+# 	desc = elective_monarchy.6.d
+# 	picture = SEJM_eventPicture
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-		has_dlc = "Res Publica"
-		government = monarchy
-		if = {
-			limit = {
-				exists = POL
-			}
-			knows_country = POL
-			POL = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-				NOT = { religion = ROOT }
-			}
-		}
-		else_if = {
-			limit = {
-				exists = PLC
-			}
-			knows_country = PLC
-			PLC = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-				NOT = { religion = ROOT }
-			}
-		}
-		else = {
-			any_known_country = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-				NOT = { religion = ROOT }
-			}
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Res Publica"
+# 		government = monarchy
+# 		if = {
+# 			limit = {
+# 				exists = POL
+# 			}
+# 			knows_country = POL
+# 			POL = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 				NOT = { religion = ROOT }
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				exists = PLC
+# 			}
+# 			knows_country = PLC
+# 			PLC = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 				NOT = { religion = ROOT }
+# 			}
+# 		}
+# 		else = {
+# 			any_known_country = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 				NOT = { religion = ROOT }
+# 			}
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}	
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}	
 
-	option = {
-		name = elective_monarchy.6.a
-		add_stability = -1
-		ai_chance = { factor = 75 }
-		random_known_country = {
-			limit = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT
-				NOT = { religion = ROOT }
-				NOT = { has_ruler_flag = elective_monarchy_heir_converted }
-			}
-			add_heir_support = 10
-			set_ruler_flag = elective_monarchy_heir_converted
-		}		
-	}
-	option = {
-		name = elective_monarchy.6.b
-		ai_chance = { factor = 25 }
-		random_known_country = {
-			limit = {
-				has_government_attribute = has_polish_election
-				heir_nationality = ROOT	
-				NOT = { religion = ROOT }
-				NOT = { has_ruler_flag = elective_monarchy_heir_converted }
-			}
-			add_heir_support = -100
-			set_ruler_flag = elective_monarchy_heir_converted
-			set_ruler_flag = elective_monarchy_heir_refused_converted
-		}
-	}	
-}
+# 	option = {
+# 		name = elective_monarchy.6.a
+# 		add_stability = -1
+# 		ai_chance = { factor = 75 }
+# 		random_known_country = {
+# 			limit = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT
+# 				NOT = { religion = ROOT }
+# 				NOT = { has_ruler_flag = elective_monarchy_heir_converted }
+# 			}
+# 			add_heir_support = 10
+# 			set_ruler_flag = elective_monarchy_heir_converted
+# 		}		
+# 	}
+# 	option = {
+# 		name = elective_monarchy.6.b
+# 		ai_chance = { factor = 25 }
+# 		random_known_country = {
+# 			limit = {
+# 				has_government_attribute = has_polish_election
+# 				heir_nationality = ROOT	
+# 				NOT = { religion = ROOT }
+# 				NOT = { has_ruler_flag = elective_monarchy_heir_converted }
+# 			}
+# 			add_heir_support = -100
+# 			set_ruler_flag = elective_monarchy_heir_converted
+# 			set_ruler_flag = elective_monarchy_heir_refused_converted
+# 		}
+# 	}	
+# }
 
 country_event = {
 	id = elective_monarchy.7
