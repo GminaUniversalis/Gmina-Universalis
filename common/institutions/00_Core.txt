@@ -243,7 +243,7 @@ renaissance = {
 			is_capital = yes
 		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 8		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.2
@@ -301,6 +301,7 @@ renaissance = {
 				}
 			}
 		}
+		
 		modifier = {
 			factor = 2
 			scale = yes
@@ -317,6 +318,31 @@ renaissance = {
 					has_institution = renaissance
 				}
 			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			has_terrain = urban
+		}
+
+		modifier = {
+			factor = 1.2
+			has_terrain = high_urban
+		}
+
+		modifier = {
+			factor = 0.2
+			development = 10
+		}
+
+		modifier = {
+			factor = 0.2
+			development = 20
+		}
+
+		modifier = {
+			factor = 0.2
+			development = 30
 		}
 	}
 	
@@ -779,26 +805,13 @@ printing_press = {
 		}
 		
 		modifier = {
-			factor = 1
-			custom_trigger_tooltip = {
-				tooltip = tooltip_dip_tech15_capital
-				is_capital = yes
-				owner = {
-					dip_tech = 15
-				}
-			}
+			factor = 0.8
+			has_terrain = urban
 		}
 
 		modifier = {
-			factor = 0.5
-			custom_trigger_tooltip = {
-				tooltip = tooltip_has_urban_or_high_urban_terrain
-				OR = {
-					has_terrain = urban
-					has_terrain = high_urban
-				}
-			}
-			
+			factor = 1.2
+			has_terrain = high_urban
 		}
 
 		modifier = {

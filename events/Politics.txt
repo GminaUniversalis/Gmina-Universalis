@@ -13,6 +13,17 @@ country_event = {
     trigger = {
         is_year = 1480
 		has_institution = renaissance
+		OR = {
+			religion = communism_pzpr
+			religion = communism_zsl
+			religion = communism_sd
+		}
+		
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = liberalism_ud
+			}
+		}
     }
 
     mean_time_to_happen = {
@@ -65,14 +76,169 @@ country_event = {
 
 	option = {
 		name = politics.1.a
+
+		ai_chance = { factor = 100 }
+
 		enable_religion = liberalism_ud
 
 		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_ud
+				}
+			}
 			change_religion = liberalism_ud
 			add_reform_center = liberalism_ud
 			add_permanent_province_modifier = {
 				name = "religious_zeal_at_conv"
 				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = liberalism_ud
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = liberalism_ud	
+	}
+}
+
+# Start of KLD
+country_event = {
+	id = politics.2
+	title = politics.2.t
+	desc = politics.2.d
+	picture = REFORM_eventPicture
+
+	major = yes
+    fire_only_once = yes
+	
+    trigger = {
+        is_year = 1480
+		has_institution = renaissance
+		OR = {
+			religion = communism_pzpr
+			religion = communism_zsl
+			religion = communism_sd
+		}
+		
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = liberalism_kld
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+	    months = 30
+
+		modifier = {
+			factor = 0.8
+			stability = 3
+		}
+
+		modifier = {
+			factor = 0.6
+			has_center_of_trade_of_level = 2
+		}
+
+		modifier = {
+			factor = 0.6
+			has_center_of_trade_of_level = 3
+		}
+
+		modifier = {
+			factor = 0.7
+			trade_income_percentage = 0.4
+		}
+
+		modifier = {
+			factor = 0.7
+			trade_income_percentage = 0.5
+		}
+
+		modifier = {
+			factor = 0.7
+			trade_income_percentage = 0.6
+		}
+	}
+
+	immediate= {
+        enable_religion = liberalism_kld
+    }
+
+	option = {
+		name = politics.2.a
+
+		ai_chance = { factor = 100 }
+
+		enable_religion = liberalism_kld
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_kld
+				}
+			}
+			change_religion = liberalism_kld
+			add_reform_center = liberalism_kld
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = liberalism_kld
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = liberalism_kld	
+	}
+
+	option = {
+		name = politics.2.b
+
+		ai_chance = { factor = 0 }
+		enable_religion = liberalism_kld
+
+		random_owned_province = {
+			change_religion = liberalism_kld
+			add_reform_center = liberalism_kld
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = liberalism_kld
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
 			}
 		}
 	}
@@ -107,30 +273,99 @@ country_event = {
 # 	}
 # }
 
-# # End of SD?
-# country_event = {
-# 	id = politics.3
-# 	title = politics.3.t
-# 	desc = politics.3.d
-# 	picture = REFORM_eventPicture
+# End of SD?
+country_event = {
+	id = politics.3
+	title = politics.3.t
+	desc = politics.3.d
+	picture = REFORM_eventPicture
 
-# 	major = yes
-#     fire_only_once = yes
+	major = yes
+    fire_only_once = yes
 	
-#     trigger = {
-# 		current_age = age_of_reformation
-# 		is_religion_enabled = liberalism_ud
-#     }
+    trigger = {
+		current_age = age_of_reformation
+		is_religion_enabled = liberalism_ud
+		has_matching_religion = communism_sd
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = liberalism_ud
+			}
+		}
+    }
 
-#     mean_time_to_happen = {
-# 	    months = 9
-# 	}
+    mean_time_to_happen = {
+	    months = 9
+	}
 
-#     immediate= {
-#         enable_religion = liberalism_ud
-#     }
+	option = {
+		name = politics.3.a
+		ai_chance = { factor = 10 }
 
-# 	option = {
-# 		name = politics.3.a
-# 	}
-# }
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_ud
+				}
+			}
+			change_religion = liberalism_ud
+			add_reform_center = liberalism_ud
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = liberalism_ud
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = politics.3.b
+		ai_chance = { factor = 10 }
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_kld
+				}
+			}
+			change_religion = liberalism_kld
+			add_reform_center = liberalism_kld
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = liberalism_kld
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = politics.3.c
+		ai_chance = { factor = 5 }
+	}
+}
