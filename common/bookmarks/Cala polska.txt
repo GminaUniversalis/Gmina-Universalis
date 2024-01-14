@@ -7,9 +7,9 @@ bookmark =
 	center = 112
 	default = yes
 	
-	country = X15 #Krakowski
+	country = X20 #Krakow
 	country = P03 #Szczecinecki
-	country = A22 #Wrocławski
+	country = A27 #Wrocław
 	country = M04 #Kielecki
 	country = Y09 #Gdanski
 	country = P17 #Szczecinski
@@ -19,7 +19,7 @@ bookmark =
 	country = R23 #Poznanski
 	country = L14 #Katowice
 	
-	easy_country = X15 #Krakowski
+	easy_country = X20 #Krakow
 	easy_country = P03 #Szczecinecki
-	easy_country = A22 #Wrocławski
+	easy_country = A27 #Wrocła
 }
