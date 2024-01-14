@@ -25,6 +25,7 @@ communism_group = {
 			communism_sd
 			communism_zsl
 			liberalism_ud
+			liberalism_kld
 		}
 
 		on_convert = {
@@ -71,6 +72,7 @@ communism_group = {
 			communism_pzpr
 			communism_zsl
 			liberalism_ud
+			liberalism_kld
 		}
 
 		on_convert = {
@@ -117,6 +119,7 @@ communism_group = {
 			communism_sd
 			communism_pzpr
 			liberalism_ud
+			liberalism_kld
 		}
 
 		on_convert = {
@@ -162,7 +165,7 @@ liberalism_group = {
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
-			communism_zsl
+
 		}
 
 		allowed_center_conversion = {
@@ -221,6 +224,82 @@ liberalism_group = {
 			any_owned_province = {
 				can_have_center_of_reformation_trigger = {
 					RELIGION = liberalism_ud
+				}
+			}
+		}
+
+		aspects_name = ANGLICAN_ASPECTS
+		
+		heretic = { FASCISTS }
+		
+		date = 1445.1.1
+	}
+
+	liberalism_kld = {
+		color = { 224 224 218 }
+		icon = 29
+		allow_female_defenders_of_the_faith = yes
+
+		allowed_conversion = {
+
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = liberalism_kld
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_kld
+						}
+					}
+					change_religion = liberalism_kld
+					add_reform_center = liberalism_kld
+				}
+			}			
+		}
+
+		country = {
+			free_dip_policy = 1
+			idea_cost = -0.05
+		}
+		
+		country_as_secondary = {
+			idea_cost = -0.05
+		}
+
+		province = {
+			local_development_cost = -0.1	
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			stability_aspect
+			innovativeness_aspect
+			expel_heretics_aspect
+			diplomats_of_the_reformation_aspect
+			icons_of_the_church_aspect
+			spread_the_book_of_common_prayer
+		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_kld
 				}
 			}
 		}

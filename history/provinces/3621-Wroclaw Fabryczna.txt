@@ -1,7 +1,7 @@
 #Wroclaw - Fabryczna
 religion = communism_zsl
-base_tax = 7
-base_production = 10
+base_tax = 12
+base_production = 12
 trade_goods = paper
 base_manpower = 12
 capital = "Wroclaw - Fabryczna"

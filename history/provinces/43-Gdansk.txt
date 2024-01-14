@@ -1,10 +1,10 @@
 #Gdansk
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 16
+base_production = 13
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 12
 capital = "Gdansk"
 is_city = yes
 discovered_by = western

@@ -585,6 +585,7 @@
  propagate_religion_policy:0 "Religious Center"
  protestant_center_of_reformation:0 "Center of Reformation"
  liberalism_ud_center_of_reformation:0 "Political Center"
+ liberalism_kld_center_of_reformation:0 "Political Center"
  reformed_center_of_reformation:0 "Center of Reformation"
  catholic_center_of_reformation:0 "Center of Catholicism"
  INVITE_SCHOLAR_INSTANT_TOOLTIP:0 "§YInvite a Scholar§!"
