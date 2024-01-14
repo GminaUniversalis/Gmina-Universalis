@@ -361,8 +361,6 @@ new_world_i = {
 	}
 
 	trade_company_efficiency = 0.6
-
-
 	historical_start_date = 1500.1.1
 
 	history = {
@@ -439,84 +437,92 @@ new_world_i = {
 			is_year = 1800
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1500
 		is_institution_enabled = renaissance
-		OR = {
-			continent = europe
-		}
-		has_port = yes
 		is_island = no
-		is_state = yes
+		highest_value_trade_node = yes
 		OR = {
-			province_has_center_of_trade_of_level = 1
-			development = 12
+			province_has_center_of_trade_of_level = 3
+			province_has_center_of_trade_of_level = 2
 			is_capital = yes
-		}
-		is_in_capital_area = yes
-		owner = { 
-			has_any_exploration_idea = yes
-			#at least one province colonised or colonising, or have a subject colony
-			OR = {
-				any_owned_province = {
-					OR = {
-						continent = north_america
-						continent = south_america
-						continent = new_world
-					}
-				}
-				any_subject_country = {
-					OR = {
-						is_subject_of_type = colony
-						is_subject_of_type = crown_colony
-						is_subject_of_type = private_enterprise
-						is_subject_of_type = self_governing_colony
-					}
-					capital_scope = {
-						OR = {
-							continent = north_america
-							continent = south_america
-							continent = new_world
-						}
-					}
-				}
-			}
-			OR = {
-				north_america = { has_discovered = PREV }
-				south_america = { has_discovered = PREV }
-				new_world = { has_discovered = PREV }
+			AND = {
+				is_year = 1520 #fallback
+				province_has_center_of_trade_of_level = 1
 			}
 		}
+		owner = {
+			any_active_trade_node = {
+				is_strongest_trade_power = PREV
+				highest_value_trade_node = yes
+			}
+		}
+
 	}
-	start_chance = 5		#in 100 for when a province can_start
-	
+	start_chance = 25		#in 100 for when a province can_start
 	
 	on_start = institution_events.3
-	
-	
-	
-
-	
 	
 	can_embrace = {
 		always = yes
 	}
-
-
 	
-	embracement_speed = {
+		embracement_speed = {
 	
 		modifier = {
-			factor = 1.2
+			factor = 0.4 #Not scaled
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 0.8 #Not Scaled
+			province_trade_power = 25
+		}
+		modifier = {
+			factor = 1.2 #Not Scaled
+			province_trade_power = 35
+		}
+		modifier = {
+			factor = 1.6 #Not Scaled
+			province_trade_power = 45
+		}
+		modifier = {
+			factor = 0.4
 			scale = yes
+			potential = {
+				province_has_center_of_trade_of_level = 3
+			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
-				any_friendly_coast_border_province = {
-					new_world_i = 100
+				tooltip = tooltip_center_of_trade_3_spread
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			potential = {
+				province_has_center_of_trade_of_level = 2
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_center_of_trade_spread
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		
+		modifier = {
+			factor = 0.25
+			scale = yes
+			potential = {
+				has_port = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_non_port_province_global_trade
+				has_port = no
+				any_neighbor_province = {
+					global_trade = 100
+					
 				}
 			}
-			
 		}
 		
 		modifier = {
@@ -524,53 +530,13 @@ new_world_i = {
 			scale = yes
 			potential = {
 				has_port = yes
-				NOT = {
-					any_friendly_coast_border_province = {
-						new_world_i = 100
-					}
-				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_port_province_new_world
+				tooltip = tooltip_neighbor_port_province_global_trade
 				has_port = yes
 				any_neighbor_province = {
-					new_world_i = 100
-				}
-			}
-		}
-		
-		#Port provinces in countries with colonial subjects
-		modifier = {
-			factor = 10
-			potential = {
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					capital_scope = {
-						NOT = { continent = north_america }
-						NOT = { continent = south_america }
-						NOT = { continent = new_world }
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_has_colonial_subject_in_new_world
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					colony = 1
-					any_subject_country = {
-						is_colonial_nation = yes
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-							capital_scope = { continent = new_world }
-						}
-					}
+					global_trade = 100
+					
 				}
 			}
 		}
@@ -584,31 +550,55 @@ new_world_i = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_colonial_overlord_new_world_i
+				tooltip = tooltip_colonial_overlord_global_trade
 				OR = {
 					has_port = yes
 					is_capital = yes
 				}
 				owner = {
 					is_colonial_nation = yes
-					overlord = { has_institution = new_world_i }
+					overlord = { has_institution = global_trade }
 				}
 			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			printing_press = 100
 		}
 		modifier = {
 			factor = 2
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = new_world_i
+					has_institution = global_trade
 				}
+				continent = owner
 			}
 			
 			custom_trigger_tooltip = {
-				tooltip = tooltip_new_world_i_embraced
+				tooltip = tooltip_global_trade_embraced
 				is_owned_by_trade_company = no
 				owner = {
-					has_institution = new_world_i
+					has_institution = global_trade
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = global_trade
+				}
+				NOT = { continent = owner }
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_global_trade_embraced_other_continent
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = global_trade
 				}
 			}
 		}
