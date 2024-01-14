@@ -135,11 +135,10 @@ country_event = {
 				}
 				owner = {
 					OR = {
-						technology_group = indian
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = chinese
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+
 					}
 				}
 			}
@@ -177,11 +176,9 @@ country_event = {
 						}
 						owner = {
 							OR = {
-								technology_group = indian
-								technology_group = east_african
-								technology_group = central_african
-								technology_group = sub_saharan
-								technology_group = chinese
+								technology_group = western
+								technology_group = eastern
+								technology_group = ottoman
 							}
 						}
 					}
@@ -191,11 +188,9 @@ country_event = {
 					limit = {
 						owner = {
 							OR = {
-								technology_group = indian
-								technology_group = east_african
-								technology_group = central_african
-								technology_group = sub_saharan
-								technology_group = chinese
+								technology_group = western
+								technology_group = eastern
+								technology_group = ottoman
 							}
 						}
 					}
@@ -251,10 +246,10 @@ country_event = {
     trigger = {
 		any_owned_province = {
 			is_owned_by_trade_company = yes
-			OR = {
-				region = west_india_region
-				region = bengal_region
-			}
+			# OR = {
+			# 	region = west_india_region
+			# 	region = bengal_region
+			# }
 			OR = {
 				has_trade_company_investment_in_area  = {
 					investment = company_warehouse
@@ -272,15 +267,15 @@ country_event = {
 				has_province_modifier = opium_modifier
 			}
 		}
-		667 = { # Canton
-			has_discovered = ROOT
-			owner = {
-				culture_group = east_asian
-			}
-			NOT = {
-				owned_by = ROOT
-			}
-		}
+		# 667 = { # Canton
+		# 	has_discovered = ROOT
+		# 	owner = {
+		# 		culture_group = east_asian
+		# 	}
+		# 	NOT = {
+		# 		owned_by = ROOT
+		# 	}
+		# }
     }
 	goto = opium_province
 	
@@ -293,10 +288,10 @@ country_event = {
 			random_owned_province = {
 				limit = { 
 					is_owned_by_trade_company = yes
-					OR = {
-						region = west_india_region
-						region = bengal_region
-					}
+					# OR = {
+					# 	region = west_india_region
+					# 	region = bengal_region
+					# }
 					OR = {
 						has_trade_company_investment_in_area  = {
 							investment = company_warehouse

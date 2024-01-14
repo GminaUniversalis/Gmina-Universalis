@@ -235,13 +235,6 @@ renaissance = {
 				}
 				superregion = central_america_superregion
 			}
-			AND = {
-				is_year = 1600
-				continent = asia
-				owner = {
-					NOT = { government = tribal }
-				}
-			}
 			is_year = 1780
 		}
 	}
@@ -303,20 +296,6 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 1
-			potential = {
-				region = italy_region
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_italian_capital
-				is_capital = yes
-				region = italy_region
-				culture_group = latin
-			}
-			
-			
-		}
-		modifier = {
 			factor = 0.05
 			scale = yes
 			potential = {
@@ -351,25 +330,6 @@ renaissance = {
 				continent = europe
 				is_year = 1500
 				development = 5
-			}
-		}
-		modifier = {
-			factor = 0.5
-			scale = yes
-			potential = {
-				OR = {
-					area = flanders_area
-					area = tuscany_area
-					area = venetia_area
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_flanders_tuscany_venetia
-				OR = {
-					area = flanders_area
-					area = tuscany_area
-					area = venetia_area
-				}
 			}
 		}
 		modifier = {
@@ -453,7 +413,6 @@ new_world_i = {
 
 
 	historical_start_date = 1500.1.1
-	historical_start_province = 224 #Sevilla
 
 	history = {
 		OR = {
@@ -535,8 +494,6 @@ new_world_i = {
 		is_institution_enabled = renaissance
 		OR = {
 			continent = europe
-			continent = asia
-			continent = africa
 		}
 		has_port = yes
 		is_island = no
