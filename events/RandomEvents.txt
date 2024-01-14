@@ -9621,11 +9621,11 @@ country_event = {
 		name = "EVTOPTB882"
 		random_province = {
 			limit = {
-				OR = {
-					region = bengal_region
-					region = west_india_region
-					region = coromandel_region
-				}
+				# OR = {
+				# 	region = bengal_region
+				# 	region = west_india_region
+				# 	region = coromandel_region
+				# }
 				NOT ={
 					is_core = ROOT
 					owned_by = ROOT

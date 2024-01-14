@@ -274,10 +274,10 @@ christian = {
 			levy_church_tax = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X15 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X15 }
 					NOT = { has_country_modifier = papal_sanction_for_church_taxes }
 				}
 				effect = {
@@ -293,10 +293,10 @@ christian = {
 			bless_monarch = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X15 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X15 }
 					NOT = { has_country_modifier = papal_blessing }
 				}
 				effect = {
@@ -312,10 +312,10 @@ christian = {
 			indulgence_for_sins = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X15 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X15 }
 					NOT = { has_country_modifier = papal_indulgence }
 				}
 				effect = {
@@ -331,10 +331,10 @@ christian = {
 			local_saint = {
 				cost = 100
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X15 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X15 }
 					NOT = { stability = 3 }
 				}
 				effect = {
@@ -351,10 +351,10 @@ christian = {
 			forgiveness_for_usury = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X15 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X15 }
 					NOT = { has_country_modifier = usury_forgiven }
 				}
 				effect = {
@@ -374,11 +374,11 @@ christian = {
 			proclaim_holy_war = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X15 }
 				}
 				allow = {
 					is_at_war = yes
-					NOT = { war_with = PAP }
+					NOT = { war_with = X15 }
 					NOT = { has_country_modifier = papal_sanction_for_holy_war }
 				}
 				effect = {
@@ -398,11 +398,11 @@ christian = {
 			send_papal_legate = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X15 }
 					is_papal_controller = no
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X15 }
 					NOT = { has_country_modifier = papal_legate }
 				}
 				effect = {
@@ -418,10 +418,10 @@ christian = {
 			sanction_commercial_monopoly = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X15 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X15 }
 					NOT = { mercantilism = 100 }
 				}
 				effect = {
@@ -440,7 +440,7 @@ christian = {
 				potential = {
 					has_dlc = "Emperor"
 					is_papal_controller = yes
-					tag = PAP
+					tag = X15
 				}
 				allow = {
 					is_papal_controller = yes

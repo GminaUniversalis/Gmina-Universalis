@@ -839,20 +839,20 @@ country_event = {
 				has_terrain = hills
 				has_terrain = highlands
 			}
-			OR = {
-				region = deccan_region
-				region = coromandel_region
-			}
+			# OR = {
+			# 	region = deccan_region
+			# 	region = coromandel_region
+			# }
 			is_capital = no
 			base_tax = 2
 			is_city = yes
 		}
 		any_owned_province = {
 			has_port = yes
-			OR = {
-				region = deccan_region
-				region = coromandel_region
-			}
+			# OR = {
+			# 	region = deccan_region
+			# 	region = coromandel_region
+			# }
 			OR = {
 				owner = { government = republic }
 				development = 7
@@ -884,10 +884,10 @@ country_event = {
 						has_terrain = hills
 						has_terrain = highlands
 					}
-					OR = {
-						region = deccan_region
-						region = coromandel_region
-					}
+					# OR = {
+					# 	region = deccan_region
+					# 	region = coromandel_region
+					# }
 					is_capital = no
 					base_tax = 2
 					is_city = yes
@@ -946,10 +946,10 @@ country_event = {
 					development = 7
 					province_trade_power = 5
 				}
-				OR = {
-					region = deccan_region
-					region = coromandel_region
-				}
+				# OR = {
+				# 	region = deccan_region
+				# 	region = coromandel_region
+				# }
 				is_city = yes
 			}
 			add_base_tax = 1
