@@ -1,9 +1,9 @@
 #Katy Wrocaawskie
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 4
+base_production = 5
+trade_goods = iron
+base_manpower = 4
 capital = "Katy Wrocaawskie"
 is_city = yes
 discovered_by = western

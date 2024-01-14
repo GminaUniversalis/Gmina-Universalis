@@ -1,9 +1,9 @@
 #Wroclaw
 religion = communism_zsl
-base_tax = 7
-base_production = 10
+base_tax = 65
+base_production = 69
 trade_goods = paper
-base_manpower = 12
+base_manpower = 62
 capital = "Wroclaw"
 is_city = yes
 discovered_by = western
@@ -15,9 +15,7 @@ add_core = A22
 center_of_trade = 3
 hre = yes
 discovered_by = ottoman
-add_permanent_province_modifier = {
+add_permanent_province_modifier = { 
 	name = airport_modifier
 	duration = -1
 }
-
-
