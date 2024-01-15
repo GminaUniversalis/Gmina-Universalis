@@ -8574,6 +8574,18 @@ double_entry_booking = {
 }
 
 #Institution Birthplaces
+birthplace_of_the_solidarity = {
+	local_institution_spread = 0.3	
+}
+
+birthplace_of_the_free_market = {
+	trade_goods_size_modifier = 0.1	
+}
+
+birthplace_of_the_internet = {
+	trade_value_modifier = 0.2	
+}
+
 birthplace_of_the_renaissance = {
 	local_development_cost = -0.05
 }
