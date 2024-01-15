@@ -161,7 +161,7 @@ liberalism_group = {
 
 	liberalism_ud = {
 		color = { 52 52 140 }
-		icon = 28
+		icon = 33
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
@@ -237,7 +237,7 @@ liberalism_group = {
 
 	liberalism_kld = {
 		color = { 224 224 218 }
-		icon = 29
+		icon = 34
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
@@ -273,16 +273,16 @@ liberalism_group = {
 		}
 
 		country = {
-			free_dip_policy = 1
-			idea_cost = -0.05
+			innovativeness_gain = 0.25
+			trade_steering = 0.2
 		}
 		
 		country_as_secondary = {
-			idea_cost = -0.05
+			trade_steering = 0.1
 		}
 
 		province = {
-			local_development_cost = -0.1	
+			trade_value_modifier = 0.1	
 		}
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
