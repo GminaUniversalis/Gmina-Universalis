@@ -1,6 +1,6 @@
 #Country Name: Wroclaw
 graphical_culture = westerngfx
-color = { 180 105 110 }
+color = { 80 165 10 }
 revolutionary_colors = { 6 0 10 }
 historical_idea_groups = { 
 }

@@ -161,7 +161,7 @@ liberalism_group = {
 
 	liberalism_ud = {
 		color = { 52 52 140 }
-		icon = 28
+		icon = 33
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
@@ -212,12 +212,12 @@ liberalism_group = {
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			stability_aspect
-			innovativeness_aspect
-			expel_heretics_aspect
-			diplomats_of_the_reformation_aspect
-			icons_of_the_church_aspect
-			spread_the_book_of_common_prayer
+			thin_line_aspect
+			small_constitution_aspect
+			sell_industry_aspect
+			international_connections_aspect
+			support_from_elite_aspect
+			disband_military_base_aspect
 		}
 
 		will_get_center = { #Refered to even for initial CoR Spawn
@@ -237,7 +237,7 @@ liberalism_group = {
 
 	liberalism_kld = {
 		color = { 224 224 218 }
-		icon = 29
+		icon = 34
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
@@ -273,27 +273,27 @@ liberalism_group = {
 		}
 
 		country = {
-			free_dip_policy = 1
-			idea_cost = -0.05
+			innovativeness_gain = 0.25
+			trade_steering = 0.2
 		}
 		
 		country_as_secondary = {
-			idea_cost = -0.05
+			trade_steering = 0.1
 		}
 
 		province = {
-			local_development_cost = -0.1	
+			trade_value_modifier = 0.1	
 		}
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			stability_aspect
-			innovativeness_aspect
-			expel_heretics_aspect
-			diplomats_of_the_reformation_aspect
-			icons_of_the_church_aspect
-			spread_the_book_of_common_prayer
+			straight_to_europe_aspect
+			liberal_but_conservative_aspect
+			sell_industry_aspect
+			international_connections_aspect
+			support_from_elite_aspect
+			disband_military_base_aspect
 		}
 
 		will_get_center = { #Refered to even for initial CoR Spawn

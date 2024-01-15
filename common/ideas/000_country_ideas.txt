@@ -149,16 +149,12 @@ P03_ideas = {
 		}
 		A22_ideas = {
 			start = {
-				advisor_cost = -0.2
-				culture_conversion_cost = -0.2
+				caravan_power = 0.2
+				global_tax_modifier = 0.1	
 			}
 		
 			bonus = {
-				legitimacy = 1
-				devotion = 1
-				republican_tradition = 0.3
-				meritocracy = 1
-				horde_unity = 1
+				merchants = 1
 			}
 			
 			trigger = {
@@ -166,28 +162,32 @@ P03_ideas = {
 			}
 			free = yes
 		
-			Wroclaw_rat_undercity = {
-				spy_offence = 0.4
+			Wroclawski_throne_for_king = {
+				ae_impact = -0.15	
 			}
-			Wroclaw_city_of_bridges = {
-				trade_efficiency = 0.1
+			Wroclawski_sleza_mountain = {
+				tolerance_own = 2
 			}
-			Wroclaw_city_of_gnomes = {
-				administrative_efficiency = 0.05
+			Wroclawski_silesian_black_soils = {
+				global_trade_goods_size_modifier = 0.1	
 			}
-			Wroclaw_festung_breslau = {
-				siege_ability = 0.2
+			Wroclawski_road_junctions = {
+				global_trade_power = 0.1
 			}
-			Wroclaw_polish_twink_town = {
-				tolerance_heathen = 3
+			Wroclawski_korean_minority = {
+				num_accepted_cultures = 2	
 			}
-			Wroclaw_MPK = {
-				hostile_attrition = 2
+			Wroclawski_pearl_of_mannerism = {
+				global_missionary_strength = 0.02	
 			}
-			Wroclaw_memory_of_our_flood = {
-				discipline = 0.05
+			Wroclawski_nation_of_palaces = {
+				horde_unity = 1
+				legitimacy = 1
+				republican_tradition = 0.3
+				devotion = 1
 			}
 		}
+		
 		R05_ideas ={
 			start ={
 				religious_unity = 0.2
@@ -305,7 +305,7 @@ P03_ideas = {
 			cav_to_inf_ratio = 0.25
 			horde_unity = 1
 			legitimacy = 1
-			republican_tradition = 1
+			republican_tradition = 0.3
 			devotion = 1
 			}
 			
@@ -521,7 +521,7 @@ B10_ideas = {
 	House_of_Bishops = {
 		devotion = 1
 		legitimacy = 1
-		republican_tradition = 0.2
+		republican_tradition = 0.3
 	}
 	Hall_of_Masters = {
 		movement_speed = 0.1

@@ -10,21 +10,19 @@ namespace = institution_events
 
 
 ########################################
-# Feudalism
+# Electrification
 ########################################
 # no event needed, available from the start
 
 #######################################
-# Renaissance
+# Solidarity
 #######################################
 country_event = {
 	id = institution_events.2
 	title = institution_events.2.t
 	desc = institution_events.2.d
 	
-	picture = {
-		picture = PAINTER_ARTIST_eventPicture
-	}
+	picture = SOLIDARITYPicture
 
 	is_triggered_only = yes
 
@@ -59,7 +57,7 @@ country_event = {
 		custom_tooltip = institution_events.2.a.tt
 		FROM = {
 			add_permanent_province_modifier = {
-				name = "birthplace_of_the_renaissance"
+				name = "birthplace_of_the_solidarity"
 				duration = -1
 			}
 		}
@@ -90,27 +88,11 @@ country_event = {
 	id = institution_events.200
 	title = institution_events.2.t
 	desc = institution_events.200.d
-	picture = {
-		trigger = {
-			OR = {
-				NOT = { has_dlc = "Cradle of Civilization" }
-				NOT = { religion_group = muslim }
-			}
-		}
-		picture = PAINTER_ARTIST_eventPicture
-	}
-	picture = {
-		trigger = {
-			has_dlc = "Cradle of Civilization"
-			religion_group = muslim
-		}
-		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
-	}
+	picture = SOLIDARITYPicture
 
 	goto = institution_origin
 	
 	is_triggered_only = yes
-	
 
 	trigger = {
 		always = yes			#
@@ -131,26 +113,10 @@ country_event = {
 	id = institution_events.201
 	title = institution_events.2.t
 	desc = institution_events.201.d
-	picture = {
-		trigger = {
-			OR = {
-				NOT = { has_dlc = "Cradle of Civilization" }
-				NOT = { religion_group = muslim }
-			}
-		}
-		picture = PAINTER_ARTIST_eventPicture
-	}
-	picture = {
-		trigger = {
-			has_dlc = "Cradle of Civilization"
-			religion_group = muslim
-		}
-		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
-	}
-
+	picture = SOLIDARITYPicture
+	
 	is_triggered_only = yes
 	
-
 	trigger = {
 		always = no			#
 	}
@@ -166,74 +132,13 @@ country_event = {
 }
 
 #######################################
-# New World
+# Free Market
 #######################################
 country_event = {
 	id = institution_events.3
 	title = institution_events.3.t
-	picture = EXPLORERS_eventPicture
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = asia }
-			religion = confucianism
-		}
-		desc = institution_events.3.dc
-	}
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = asia }
-			OR = {
-				is_subject_of_type = daimyo_vassal
-				tag = JAP
-				has_reform = shogunate
-			}
-		}
-		desc = institution_events.3.djap1
-	}
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = asia }
-			OR = {
-				has_reform = indep_daimyo
-				AND = {
-					capital_scope = { region = japan_region }
-					NOT = { 
-						OR = {
-							tag = JAP
-							has_reform = shogunate
-						}
-					}
-					is_subject = no
-				}
-			}
-		}
-		desc = institution_events.3.djap2
-	}
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = asia }
-		}
-		desc = institution_events.3.da
-	}
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = oceania }
-			primary_culture = polynesian
-		}
-		desc = institution_events.3.dpoly
-	}
-
-	desc = {
-		trigger = {
-			capital_scope = { NOT = { continent = asia } }
-		}
-		desc = institution_events.3.d
-	}
+	desc = institution_events.301.d
+	picture = FREE_MARKETPicture
 	
 	is_triggered_only = yes
 
@@ -268,7 +173,7 @@ country_event = {
 		custom_tooltip = institution_events.3.a.tt
 		FROM = {
 			add_permanent_province_modifier = {
-				name = "birthplace_of_the_new_world"
+				name = "birthplace_of_the_free_market"
 				duration = -1
 			}
 		}
@@ -298,70 +203,9 @@ country_event = {
 country_event = {
 	id = institution_events.300
 	title = institution_events.3.t
+	desc = institution_events.301.d
 	
-	desc = {
-		trigger = { FROM = { 
-			capital_scope = { continent = asia }
-			religion = confucianism
-		} }
-		desc = institution_events.3.dc
-	}
-	
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { continent = asia }
-			OR = {
-				is_subject_of_type = daimyo_vassal
-				tag = JAP
-				has_reform = shogunate
-			}
-		} }
-		desc = institution_events.3.djap1
-	}
-	
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { continent = asia }
-			OR = {
-				has_reform = indep_daimyo
-				AND = {
-					capital_scope = { region = japan_region }
-					NOT = { 
-						OR = {
-							tag = JAP
-							has_reform = shogunate
-						}
-					}
-					is_subject = no
-				}
-			}
-		} }
-		desc = institution_events.3.djap2
-	}
-	
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { continent = asia }
-		} }
-		desc = institution_events.3.da
-	}
-	
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { continent = oceania }
-			primary_culture = polynesian
-		} }
-		desc = institution_events.3.dpoly
-	}
-
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { NOT = { continent = asia } }
-		} } 
-		desc = institution_events.300.d
-	}
-	
-	picture = EXPLORERS_eventPicture
+	picture = FREE_MARKETPicture
 
 	is_triggered_only = yes
 
@@ -386,7 +230,7 @@ country_event = {
 	id = institution_events.301
 	title = institution_events.3.t
 	desc = institution_events.301.d
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = FREE_MARKETPicture
 
 	is_triggered_only = yes
 	
@@ -408,21 +252,13 @@ country_event = {
 
 
 #######################################
-# Printing Press
+# Internet
 #######################################
 country_event = {
 	id = institution_events.4
 	title = institution_events.4.t
 	desc = institution_events.4.d
-	
-	picture = {
-		trigger = { NOT = { has_dlc = "Rights of Man" } }
-		picture = BIG_BOOK_eventPicture
-	}
-	picture = {
-		trigger = { has_dlc = "Rights of Man" }
-		picture = PRINTING_PRESS_eventPicture
-	}
+	picture = INTERNETPicture
 
 	is_triggered_only = yes
 
@@ -457,24 +293,16 @@ country_event = {
 		custom_tooltip = institution_events.4.a.tt
 		FROM = {
 			add_permanent_province_modifier = {
-				name = "birthplace_of_printing_press"
+				name = "birthplace_of_the_internet"
 				duration = -1
 			}
 		}
 		hidden_effect = {
 			every_country = {
 				limit = {
-					OR = {
-						AND = {
-							ai = no
-							knows_country = ROOT
-						}
-						owns_core_province = 112 #Venice
-						owns_core_province = 118 #Rome
-						owns_core_province = 183 #Paris
-						owns_core_province = 1868 #Augsburg
-					}
+					ai = no
 					NOT = { tag = ROOT }
+					knows_country = ROOT
 				}
 				country_event = { id = institution_events.400 }
 			}
@@ -488,50 +316,6 @@ country_event = {
 				country_event = { id = institution_events.401 }
 			}
 		}
-		if = {
-			limit = {
-				owns_core_province = 112 #Aldine Press/Venetian Printing Industry
-			}
-			112 = {
-				add_institution_embracement = {
-					which = "printing_press"
-					value = 25
-				}
-			}
-		}
-		if = {
-			limit = {
-				owns_core_province = 183 #Parisian Printing Industry
-			}
-			183 = {
-				add_institution_embracement = {
-					which = "printing_press"
-					value = 25
-				}
-			}
-		}
-		if = {
-			limit = {
-				owns_core_province = 1868 #Augsburg Printers
-			}
-			1868 = {
-				add_institution_embracement = {
-					which = "printing_press"
-					value = 25
-				}
-			}
-		}
-		if = {
-			limit = {
-				owns_core_province = 118 #Roman Printers
-			}
-			118 = {
-				add_institution_embracement = {
-					which = "printing_press"
-					value = 25
-				}
-			}
-		}
 	}
 }
 
@@ -539,14 +323,7 @@ country_event = {
 	id = institution_events.400
 	title = institution_events.4.t
 	desc = institution_events.400.d
-	picture = {
-		trigger = { NOT = { has_dlc = "Rights of Man" } }
-		picture = BIG_BOOK_eventPicture
-	}
-	picture = {
-		trigger = { has_dlc = "Rights of Man" }
-		picture = PRINTING_PRESS_eventPicture
-	}
+	picture = INTERNETPicture
 
 	is_triggered_only = yes
 
@@ -563,50 +340,6 @@ country_event = {
 	option = {
 		name = institution_events.4.a
 		custom_tooltip = institution_events.4.a.tt
-		if = {
-			limit = {
-				owns_core_province = 112 #Aldine Press/Venetian Printing Industry
-			}
-			112 = {
-				add_institution_embracement = {
-					which = "printing_press"
-					value = 25
-				}
-			}
-		}
-		if = {
-			limit = {
-				owns_core_province = 183 #Parisian Printing Industry
-			}
-			183 = {
-				add_institution_embracement = {
-					which = "printing_press"
-					value = 25
-				}
-			}
-		}
-		if = {
-			limit = {
-				owns_core_province = 1868 #Augsburg Printers
-			}
-			1868 = {
-				add_institution_embracement = {
-					which = "printing_press"
-					value = 25
-				}
-			}
-		}
-		if = {
-			limit = {
-				owns_core_province = 118 #Roman Printers
-			}
-			118 = {
-				add_institution_embracement = {
-					which = "printing_press"
-					value = 25
-				}
-			}
-		}
 	}
 }
 
@@ -615,7 +348,7 @@ country_event = {
 	id = institution_events.401
 	title = institution_events.4.t
 	desc = institution_events.401.d
-	picture = SHIP_SAILING_eventPicture
+	picture = INTERNETPicture
 
 	is_triggered_only = yes
 	
