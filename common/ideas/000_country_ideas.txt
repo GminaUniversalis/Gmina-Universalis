@@ -154,11 +154,7 @@ P03_ideas = {
 			}
 		
 			bonus = {
-				legitimacy = 1
-				devotion = 1
-				republican_tradition = 0.3
-				meritocracy = 1
-				horde_unity = 1
+				merchants = 1
 			}
 			
 			trigger = {
