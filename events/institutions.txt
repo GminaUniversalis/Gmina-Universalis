@@ -23,7 +23,7 @@ country_event = {
 	desc = institution_events.2.d
 	
 	picture = {
-		picture = PAINTER_ARTIST_eventPicture
+		picture = SOLIDARITYPicture
 	}
 
 	is_triggered_only = yes
@@ -171,7 +171,7 @@ country_event = {
 country_event = {
 	id = institution_events.3
 	title = institution_events.3.t
-	picture = EXPLORERS_eventPicture
+	picture = FREE_MARKETPicture
 	
 	desc = {
 		trigger = {
@@ -416,14 +416,8 @@ country_event = {
 	desc = institution_events.4.d
 	
 	picture = {
-		trigger = { NOT = { has_dlc = "Rights of Man" } }
-		picture = BIG_BOOK_eventPicture
+		picture = INTERNETPicture
 	}
-	picture = {
-		trigger = { has_dlc = "Rights of Man" }
-		picture = PRINTING_PRESS_eventPicture
-	}
-
 	is_triggered_only = yes
 
 	goto = institution_origin
