@@ -212,12 +212,12 @@ liberalism_group = {
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			stability_aspect
-			innovativeness_aspect
-			expel_heretics_aspect
-			diplomats_of_the_reformation_aspect
-			icons_of_the_church_aspect
-			spread_the_book_of_common_prayer
+			thin_line_aspect
+			small_constitution_aspect
+			sell_industry_aspect
+			international_connections_aspect
+			support_from_elite_aspect
+			disband_military_base_aspect
 		}
 
 		will_get_center = { #Refered to even for initial CoR Spawn
@@ -288,12 +288,12 @@ liberalism_group = {
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			stability_aspect
-			innovativeness_aspect
-			expel_heretics_aspect
-			diplomats_of_the_reformation_aspect
-			icons_of_the_church_aspect
-			spread_the_book_of_common_prayer
+			straight_to_europe_aspect
+			liberal_but_conservative_aspect
+			sell_industry_aspect
+			international_connections_aspect
+			support_from_elite_aspect
+			disband_military_base_aspect
 		}
 
 		will_get_center = { #Refered to even for initial CoR Spawn

@@ -10814,6 +10814,15 @@ anglican_innovativeness = {
 	reform_progress_growth = 0.15
 }
 
+support_from_elite = {
+	innovativeness_gain = 0.4
+	advisor_cost = -0.1
+}
+
+disband_military = {
+	administrative_efficiency = 0.08
+}
+
 expelling_heretics = {
 	religious_unity = 0.1
 	colonist_placement_chance = 0.05
