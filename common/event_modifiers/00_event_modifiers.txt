@@ -8579,11 +8579,11 @@ birthplace_of_the_solidarity = {
 }
 
 birthplace_of_the_free_market = {
-	trade_goods_size_modifier = 0.1	
+	trade_value_modifier = 0.2	
 }
 
 birthplace_of_the_internet = {
-	trade_value_modifier = 0.2	
+	trade_goods_size_modifier = 0.1	
 }
 
 birthplace_of_the_renaissance = {
