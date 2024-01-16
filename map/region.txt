@@ -94,6 +94,7 @@ slaskie_region = {
 	areas = { 
 		powiat_klobucki powiat_myszkowski powiat_czestochowski powiat_lubliniecki powiat_zawiercianski powiat_jaworzno powiat_bedzinski powiat_tarnogorski powiat_bytom powiat_raciborski
 		powiat_wodzislawski powiat_gliwicki powiat_mikolowski powiat_aglomeracja_Katowicka powiat_bierunsko-ledzinski powiat_rybnicki powiat_pszczynski powiat_cieszynski powiat_bielski_slask powiat_zywiecki
+		rybnik Katowice 
 	}
 }
 lodzkie_region = { 
