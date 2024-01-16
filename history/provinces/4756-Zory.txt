@@ -1,5 +1,4 @@
 #Zory
-culture = cieszynska
 religion = communism_pzpr
 hre = yes
 base_tax = 1
@@ -10,7 +9,7 @@ capital = "Zory"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L16
-controller = L16
-add_core = L16
+owner = L23
+controller = L23
 discovered_by = ottoman
+add_core = L23
