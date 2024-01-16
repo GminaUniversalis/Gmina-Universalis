@@ -1,0 +1,16 @@
+#Gdansk - Srodmiescie
+culture = trojmiasto
+religion = communism_pzpr
+base_tax = 4
+base_production = 4
+trade_goods = unknown
+base_manpower = 4
+capital = "Srodmiescie"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+add_core = Y10
+discovered_by = ottoman
+add_core = Y19
+owner = Y19
+controller = Y19

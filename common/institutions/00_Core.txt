@@ -1,12 +1,5 @@
-#
-# remember to add graphics for relevant ones when you add to this
-#
-# if a modifier is scaled, its multiplied with development in the province.
-
-
-# any_friendly_coast_border_province is a special scope made for institution spread.
-# It checks for adjacent provinces or provinces one seazone away.
-# Friendly is defined as at positive relations or owned by the same country that owns the province.
+# TODO LIST:
+# Change history sections
 
 #######################################
 # Communism.  
@@ -17,21 +10,14 @@
 feudalism = {
 
 	bonus = {
-		state_maintenance_modifier = -0.25
+		state_maintenance_modifier = -0.1
 	}
 
 	trade_company_efficiency = 0.2
 
-	#effect = { } # When a country embraces it
-
 	history = {
-		is_year = 1000
+		is_year = 1350
 	}
-	
-	# no need for events, as its there from the start.
-	#can_start = {	is_year = 1000	}
-	#start_chance = 100
-	#on_start = institution_events.1
 
 	can_embrace = {
 		always = yes
@@ -257,7 +243,7 @@ renaissance = {
 			is_capital = yes
 		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 8		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.2
@@ -296,43 +282,6 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_10
-				continent = europe
-				development = 10
-			}
-		}
-		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_20
-				development = 20
-				continent = europe
-			}
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_5_post_1500
-				continent = europe
-				is_year = 1500
-				development = 5
-			}
-		}
-		modifier = {
 			factor = 5
 			scale = yes
 			potential = {
@@ -352,6 +301,7 @@ renaissance = {
 				}
 			}
 		}
+		
 		modifier = {
 			factor = 2
 			scale = yes
@@ -368,6 +318,31 @@ renaissance = {
 					has_institution = renaissance
 				}
 			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			has_terrain = urban
+		}
+
+		modifier = {
+			factor = 1.2
+			has_terrain = high_urban
+		}
+
+		modifier = {
+			factor = 0.2
+			development = 10
+		}
+
+		modifier = {
+			factor = 0.2
+			development = 20
+		}
+
+		modifier = {
+			factor = 0.2
+			development = 30
 		}
 	}
 	
@@ -399,19 +374,19 @@ renaissance = {
 
 
 #######################################
-# New World
+# Free Market
 # 
-# Colonising is good.. mkay.-.
+# Flows from wealthiest trading node
 #######################################
+
+
 new_world_i = {
 
 	bonus = {
-		global_prov_trade_power_modifier = 0.10
+		trade_efficiency = 0.05
 	}
 
 	trade_company_efficiency = 0.6
-
-
 	historical_start_date = 1500.1.1
 
 	history = {
@@ -488,84 +463,92 @@ new_world_i = {
 			is_year = 1800
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1500
 		is_institution_enabled = renaissance
-		OR = {
-			continent = europe
-		}
-		has_port = yes
 		is_island = no
-		is_state = yes
+		highest_value_trade_node = yes
 		OR = {
-			province_has_center_of_trade_of_level = 1
-			development = 12
+			province_has_center_of_trade_of_level = 3
+			province_has_center_of_trade_of_level = 2
 			is_capital = yes
-		}
-		is_in_capital_area = yes
-		owner = { 
-			has_any_exploration_idea = yes
-			#at least one province colonised or colonising, or have a subject colony
-			OR = {
-				any_owned_province = {
-					OR = {
-						continent = north_america
-						continent = south_america
-						continent = new_world
-					}
-				}
-				any_subject_country = {
-					OR = {
-						is_subject_of_type = colony
-						is_subject_of_type = crown_colony
-						is_subject_of_type = private_enterprise
-						is_subject_of_type = self_governing_colony
-					}
-					capital_scope = {
-						OR = {
-							continent = north_america
-							continent = south_america
-							continent = new_world
-						}
-					}
-				}
-			}
-			OR = {
-				north_america = { has_discovered = PREV }
-				south_america = { has_discovered = PREV }
-				new_world = { has_discovered = PREV }
+			AND = {
+				is_year = 1520 #fallback
+				province_has_center_of_trade_of_level = 1
 			}
 		}
+		owner = {
+			any_active_trade_node = {
+				is_strongest_trade_power = PREV
+				highest_value_trade_node = yes
+			}
+		}
+
 	}
-	start_chance = 5		#in 100 for when a province can_start
-	
+	start_chance = 25		#in 100 for when a province can_start
 	
 	on_start = institution_events.3
-	
-	
-	
-
-	
 	
 	can_embrace = {
 		always = yes
 	}
-
-
 	
 	embracement_speed = {
 	
 		modifier = {
-			factor = 1.2
+			factor = 0.4 #Not scaled
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 0.8 #Not Scaled
+			province_trade_power = 25
+		}
+		modifier = {
+			factor = 1.2 #Not Scaled
+			province_trade_power = 35
+		}
+		modifier = {
+			factor = 1.6 #Not Scaled
+			province_trade_power = 45
+		}
+		modifier = {
+			factor = 0.4
 			scale = yes
+			potential = {
+				province_has_center_of_trade_of_level = 3
+			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
-				any_friendly_coast_border_province = {
+				tooltip = tooltip_center_of_trade_3_spread
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			potential = {
+				province_has_center_of_trade_of_level = 2
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_center_of_trade_spread
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		
+		modifier = {
+			factor = 0.25
+			scale = yes
+			potential = {
+				has_port = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_non_port_province_new_world_i
+				has_port = no
+				any_neighbor_province = {
 					new_world_i = 100
+					
 				}
 			}
-			
 		}
 		
 		modifier = {
@@ -573,53 +556,13 @@ new_world_i = {
 			scale = yes
 			potential = {
 				has_port = yes
-				NOT = {
-					any_friendly_coast_border_province = {
-						new_world_i = 100
-					}
-				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_port_province_new_world
+				tooltip = tooltip_neighbor_non_port_province_new_world_i
 				has_port = yes
 				any_neighbor_province = {
 					new_world_i = 100
-				}
-			}
-		}
-		
-		#Port provinces in countries with colonial subjects
-		modifier = {
-			factor = 10
-			potential = {
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					capital_scope = {
-						NOT = { continent = north_america }
-						NOT = { continent = south_america }
-						NOT = { continent = new_world }
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_has_colonial_subject_in_new_world
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					colony = 1
-					any_subject_country = {
-						is_colonial_nation = yes
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-							capital_scope = { continent = new_world }
-						}
-					}
+					
 				}
 			}
 		}
@@ -644,6 +587,11 @@ new_world_i = {
 				}
 			}
 		}
+		
+		modifier = {
+			factor = 0.5
+			printing_press = 100
+		}
 		modifier = {
 			factor = 2
 			scale = yes
@@ -651,10 +599,29 @@ new_world_i = {
 				owner = {
 					has_institution = new_world_i
 				}
+				continent = owner
 			}
 			
 			custom_trigger_tooltip = {
 				tooltip = tooltip_new_world_i_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = new_world_i
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = new_world_i
+				}
+				NOT = { continent = owner }
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_new_world_i_embraced_other_continent
 				is_owned_by_trade_company = no
 				owner = {
 					has_institution = new_world_i
@@ -689,15 +656,16 @@ new_world_i = {
 	}
 }
 
-
-
 #######################################
-# Printing Press
+# Internet
+# 
+# Flows from cities
 #######################################
+
 printing_press = {
 
 	bonus = {
-		stability_cost_modifier = -0.05
+		innovativeness_gain = 0.2	
 	}
 
 	trade_company_efficiency = 0.8
@@ -786,31 +754,23 @@ printing_press = {
 		is_year = 1550
 		is_institution_enabled = new_world_i
 		is_in_capital_area = yes
-		is_island = no
 		is_state = yes
 		OR = {
-			development = 15
+			development = 26
 			is_capital = yes
-			trade_goods = paper
+			OR = {
+				has_terrain = urban
+				has_terrain = high_urban
+			}
 		}
-		OR = {
-			religion = protestant
-			religion = reformed
-			region = north_german_region
-			region = south_german_region
-		}
-
 	}
 	start_chance = 5		#in 100 for when a province can_start
 	
-	
 	on_start = institution_events.4
-	
-	
+		
 	can_embrace = {
 		always = yes
 	}
-
 	
 	embracement_speed = {
 	
@@ -843,119 +803,17 @@ printing_press = {
 				}
 			}
 		}
+		
 		modifier = {
-			factor = 0.1
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { has_estate = estate_church }
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_printing_press_clergy
-				any_neighbor_province = {
-					printing_press = 100
-				}
-				owner = {
-					has_estate = estate_church
-					estate_loyalty = {
-						estate = estate_church
-						loyalty = 40
-					}
-					estate_territory = {
-						estate = estate_church
-						territory = 30
-					}
-				}
-			}
+			factor = 0.8
+			has_terrain = urban
 		}
+
 		modifier = {
-			factor = 1
-			custom_trigger_tooltip = {
-				tooltip = tooltip_dip_tech15_capital
-				is_capital = yes
-				owner = {
-					dip_tech = 15
-				}
-			}
+			factor = 1.2
+			has_terrain = high_urban
 		}
-		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_20_capital
-				development = 20
-				is_capital = yes
-				continent = europe
-			}
-		}
-		modifier = {
-			factor = 2
-			potential = {
-				owner = {
-					religion_group = christian
-				}
-			}
-			if = {
-				limit = { has_dlc = "Rule Britannia" }
-				custom_trigger_tooltip = {
-					tooltip = tooltip_owner_protestant
-					is_owned_by_trade_company = no
-					owner = {
-						OR = {
-							religion = protestant
-							religion = reformed
-							religion = anglican
-							religion = hussite
-						}
-					}
-				}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = tooltip_owner_protestant
-					is_owned_by_trade_company = no
-					owner = {
-						OR = {
-							religion = protestant
-							religion = reformed
-							religion = anglican
-							religion = hussite
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			if = {
-				limit = {
-					has_dlc = "Rule Britannia"
-				}
-				custom_trigger_tooltip = {
-					tooltip = tooltip_province_protestant_RB
-					OR = {
-						religion = reformed
-						religion = protestant
-						religion = anglican
-						religion = hussite
-					}
-				}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = tooltip_province_protestant
-					OR = {
-						religion = reformed
-						religion = protestant
-						religion = anglican
-						religion = hussite
-					}
-				}
-			}
-		}
+
 		modifier = {
 			factor = 3
 			scale = yes
@@ -1039,17 +897,17 @@ printing_press = {
 	}
 }
 
-
-
-
-
 #######################################
-# Global Trade
+# YouTube
+# 
+# Flows from ???
 #######################################
+
 global_trade = {
 
 	bonus = {
-		merchants = 1
+		advisor_cost = -0.1
+		advisor_pool = 3
 	}
 
 	trade_company_efficiency = 1.0
@@ -1345,14 +1203,16 @@ global_trade = {
 	}
 }
 
+#######################################
+# InPost
+# 
+# Flows from ???
+#######################################
 
-#######################################
-# Manufactories
-#######################################
 manufactories = {
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.1
+		merchants = 1	
 	}
 
 	trade_company_efficiency = 1.25
@@ -1851,15 +1711,16 @@ manufactories = {
 	}
 }
 
-
-
 #######################################
-# Enlightenment
+# BLIK
+# 
+# Flows from ???
 #######################################
+
 enlightenment = {
 
 	bonus = {
-		culture_conversion_cost = -0.25
+		global_tax_modifier = 0.1	
 	}
 
 	trade_company_efficiency = 1.5
@@ -2234,18 +2095,19 @@ enlightenment = {
 	}
 }
 
-
-
 #######################################
-# Industrialisation
+# Artificial Inteligence
+# 
+# Flows from ???
 #######################################
+
 industrialization = {
 	
 	trade_company_efficiency = 2.0
 
 	bonus = {
 		global_manpower_modifier = 0.25
-		global_tax_modifier = 0.15
+		all_power_cost = -0.05	
 	}
 
 	historical_start_date = 1750.1.1
