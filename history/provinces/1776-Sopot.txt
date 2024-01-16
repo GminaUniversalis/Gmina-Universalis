@@ -1,15 +1,17 @@
 #Sopot
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 9
+base_production = 7
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 8
 capital = "Sopot"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = Y10
-controller = Y10
 add_core = Y10
 discovered_by = ottoman
+add_core = Y20
+fort_15th = yes
+owner = Y20
+controller = Y20

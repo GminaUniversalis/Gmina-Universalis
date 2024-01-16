@@ -7601,40 +7601,40 @@ determine_value_of_trade_goods_silk = {
 			which = chance_modifier_silk
 			value = 1
 		}
-		if = {
-			limit = {
-				ROOT = {
-					normal_or_historical_nations = no
-					FROM = { NOT = { religion_group = dharmic } }
-					FROM = { NOT = { religion_group = eastern } }
-				}
-			}
-			multiply_variable = {
-				which = chance_modifier_silk
-				value = 0.5
-			}
-		}
-		if = {
-			limit = {
-				ROOT = {
-					normal_or_historical_nations = no
-					OR = {
-						region = south_china_region
-						region = xinan_region
-						region = north_china_region
-						region = hindusthan_region
-						region = bengal_region
-						region = deccan_region
-						region = coromandel_region
-					}
-					development_discounting_tribal = 20
-				}
-			}
-			multiply_variable = {
-				which = chance_modifier_silk
-				value = 1.5
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		ROOT = {
+		# 			normal_or_historical_nations = no
+		# 			FROM = { NOT = { religion_group = dharmic } }
+		# 			FROM = { NOT = { religion_group = eastern } }
+		# 		}
+		# 	}
+		# 	multiply_variable = {
+		# 		which = chance_modifier_silk
+		# 		value = 0.5
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		ROOT = {
+		# 			normal_or_historical_nations = no
+		# 			OR = {
+		# 				region = south_china_region
+		# 				region = xinan_region
+		# 				region = north_china_region
+		# 				region = hindusthan_region
+		# 				region = bengal_region
+		# 				region = deccan_region
+		# 				region = coromandel_region
+		# 			}
+		# 			development_discounting_tribal = 20
+		# 		}
+		# 	}
+		# 	multiply_variable = {
+		# 		which = chance_modifier_silk
+		# 		value = 1.5
+		# 	}
+		# }
 		if = {
 			limit = {
 				has_country_flag = encourage_cash_crops_flag

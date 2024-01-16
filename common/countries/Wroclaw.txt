@@ -1,0 +1,50 @@
+#Country Name: Wroclaw
+graphical_culture = westerngfx
+color = { 80 165 10 }
+revolutionary_colors = { 6 0 10 }
+historical_idea_groups = { 
+}
+historical_units = { 
+	bardiche_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	hungarian_hussar
+	polish_musketeer
+	polish_hussar
+	polish_tercio
+	polish_winged_hussar
+	russian_lancer
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
+}
+monarch_names = { 
+	"Sutryk #0" = 45
+	"Zdrojewski #0" = 50
+	"Huskowski #0" = 25
+	"Dutkewicz #0" = 10
+	"Slawomir #0" = 15
+	"Jacek #0" = 30
+	"Dawid #0" = 60
+	"Marcel #0" = 10
+	"Oktawian #0" = 1
+	"Szymon #0" = 20
+	"Andrzej #0" = 12
+}
+leader_names = { 
+	Wrocek
+	Krasnal
+	Sutryk
+}
+ship_names = { 
+	"WKS Dzida" "WKS Tarcza" "WKS Miecz" 
+}
+army_names = { 
+	"Kohorta $PROVINCE$" 
+}
+fleet_names = { 
+	"Breslau Flotte" 
+}

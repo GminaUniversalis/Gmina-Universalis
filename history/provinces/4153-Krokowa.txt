@@ -9,3 +9,6 @@ owner = Y12
 controller = Y12
 add_core = Y12
 discovered_by = ottoman
+base_tax = 5
+base_manpower = 5
+base_production = 5

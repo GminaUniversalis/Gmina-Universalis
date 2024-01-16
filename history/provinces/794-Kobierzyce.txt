@@ -1,14 +1,14 @@
 #Kobierzyce
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 7
+base_production = 19
+trade_goods = grain
+base_manpower = 4
 capital = "Kobierzyce"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-culture = dolnoslaska
+culture = wroclawska
 owner = A22
 controller = A22
 add_core = A22

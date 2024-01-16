@@ -1,6 +1,6 @@
 sky_tower = {
 	# province it starts in
-	start = 2839
+	start = 3190
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #Yusuf I

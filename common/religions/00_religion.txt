@@ -24,6 +24,8 @@ communism_group = {
 		allowed_conversion = {
 			communism_sd
 			communism_zsl
+			liberalism_ud
+			liberalism_kld
 		}
 
 		on_convert = {
@@ -69,6 +71,8 @@ communism_group = {
 		allowed_conversion = {
 			communism_pzpr
 			communism_zsl
+			liberalism_ud
+			liberalism_kld
 		}
 
 		on_convert = {
@@ -114,6 +118,8 @@ communism_group = {
 		allowed_conversion = {
 			communism_sd
 			communism_pzpr
+			liberalism_ud
+			liberalism_kld
 		}
 
 		on_convert = {
@@ -145,6 +151,171 @@ communism_group = {
 	can_form_personal_unions = yes
 	crusade_name = WAR_WITH_COUNTER_REVISIONISM
 }
+
+
+liberalism_group = {
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 18 }
+
+	ai_will_propagate_through_trade = yes
+
+	liberalism_ud = {
+		color = { 52 52 140 }
+		icon = 33
+		allow_female_defenders_of_the_faith = yes
+
+		allowed_conversion = {
+
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = liberalism_ud
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_ud
+						}
+					}
+					change_religion = liberalism_ud
+					add_reform_center = liberalism_ud
+				}
+			}			
+		}
+
+		country = {
+			free_dip_policy = 1
+			idea_cost = -0.05
+		}
+		
+		country_as_secondary = {
+			idea_cost = -0.05
+		}
+
+		province = {
+			local_development_cost = -0.1	
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			thin_line_aspect
+			small_constitution_aspect
+			sell_industry_aspect
+			international_connections_aspect
+			support_from_elite_aspect
+			disband_military_base_aspect
+		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_ud
+				}
+			}
+		}
+
+		aspects_name = ANGLICAN_ASPECTS
+		
+		heretic = { FASCISTS }
+		
+		date = 1445.1.1
+	}
+
+	liberalism_kld = {
+		color = { 224 224 218 }
+		icon = 34
+		allow_female_defenders_of_the_faith = yes
+
+		allowed_conversion = {
+
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = liberalism_kld
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_kld
+						}
+					}
+					change_religion = liberalism_kld
+					add_reform_center = liberalism_kld
+				}
+			}			
+		}
+
+		country = {
+			innovativeness_gain = 0.25
+			trade_steering = 0.2
+		}
+		
+		country_as_secondary = {
+			trade_steering = 0.1
+		}
+
+		province = {
+			trade_value_modifier = 0.1	
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			straight_to_europe_aspect
+			liberal_but_conservative_aspect
+			sell_industry_aspect
+			international_connections_aspect
+			support_from_elite_aspect
+			disband_military_base_aspect
+		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_kld
+				}
+			}
+		}
+
+		aspects_name = ANGLICAN_ASPECTS
+		
+		heretic = { FASCISTS }
+		
+		date = 1445.1.1
+	}
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+	crusade_name = WAR_WITH_FASCISM
+}
+
 
 christian = {
 	defender_of_faith = yes
@@ -197,7 +368,7 @@ christian = {
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 		
 		papacy = {
-			papal_tag = X15
+			papal_tag = X20
 			election_cost = 5
 			seat_of_papacy = 262 # Krakow
 			
@@ -274,10 +445,10 @@ christian = {
 			levy_church_tax = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X20 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X20 }
 					NOT = { has_country_modifier = papal_sanction_for_church_taxes }
 				}
 				effect = {
@@ -293,10 +464,10 @@ christian = {
 			bless_monarch = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X20 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X20 }
 					NOT = { has_country_modifier = papal_blessing }
 				}
 				effect = {
@@ -312,10 +483,10 @@ christian = {
 			indulgence_for_sins = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X20 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X20 }
 					NOT = { has_country_modifier = papal_indulgence }
 				}
 				effect = {
@@ -331,10 +502,10 @@ christian = {
 			local_saint = {
 				cost = 100
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X20 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X20 }
 					NOT = { stability = 3 }
 				}
 				effect = {
@@ -351,10 +522,10 @@ christian = {
 			forgiveness_for_usury = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X20 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X20 }
 					NOT = { has_country_modifier = usury_forgiven }
 				}
 				effect = {
@@ -374,11 +545,11 @@ christian = {
 			proclaim_holy_war = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X20 }
 				}
 				allow = {
 					is_at_war = yes
-					NOT = { war_with = PAP }
+					NOT = { war_with = X20 }
 					NOT = { has_country_modifier = papal_sanction_for_holy_war }
 				}
 				effect = {
@@ -398,11 +569,11 @@ christian = {
 			send_papal_legate = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X20 }
 					is_papal_controller = no
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X20 }
 					NOT = { has_country_modifier = papal_legate }
 				}
 				effect = {
@@ -418,10 +589,10 @@ christian = {
 			sanction_commercial_monopoly = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = X20 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = X20 }
 					NOT = { mercantilism = 100 }
 				}
 				effect = {
@@ -440,7 +611,7 @@ christian = {
 				potential = {
 					has_dlc = "Emperor"
 					is_papal_controller = yes
-					tag = PAP
+					tag = X20
 				}
 				allow = {
 					is_papal_controller = yes

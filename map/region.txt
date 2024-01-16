@@ -2,7 +2,7 @@
 malopolska_region = { 
 	areas = { 
 		powiat_tatrzanski powiat_wielicki powiat_chrzanowski powiat_gorlicki powiat_nowosadecki powiat_tarnowski powiat_brzeski powiat_miechowski powiat_proszowicki powiat_olkuski
-		powiat_oswiecimski powiat_myslenicki powiat_bochenski powiat_krakowski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki 
+		powiat_oswiecimski powiat_myslenicki powiat_bochenski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki powiat_krakowski 
 	}
 }
 swietokrzyskie_region = { 
@@ -47,7 +47,8 @@ zachodnio_pomorskie_region = {
 pomorskie_region = { 
 	areas = { 
 		powiat_bytowski powiat_slupski powiat_kartuski powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski powiat_trojmiasto
-		powiat_wejherowski powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski powiat_nowodworski_pom 
+		powiat_wejherowski powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski powiat_nowodworski_pom Gdansk gdansk_zachodni
+		gdansk_centralny sobieszewo gdynia_polnoc gdynia_poludnie 
 	}
 }
 kujawsko_pomorskie_region = { 
@@ -66,8 +67,8 @@ wielkopolska_region = {
 	areas = { 
 		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_ostrowski_poznan powiat_kaliski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski
 		powiat_slupecki powiat_jarocinski powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki
-		powiat_obornicki powiat_wrzesinski powiat_poznanski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski
-		powiat_kepinski 
+		powiat_obornicki powiat_wrzesinski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski powiat_kepinski
+		powiat_poznanski 
 	}
 }
 warminsko_mazurskie_region = { 
@@ -80,7 +81,7 @@ dolnoslaskie_region = {
 	areas = { 
 		powiat_olawski powiat_olesnicki powiat_milicki powiat_strzelinski powiat_zabkowicki powiat_klodzki powiat_dzierzoniowski powiat_gorowski powiat_glogowski powiat_polkowicki
 		powiat_boleslawiecki powiat_zgorzelecki powiat_lwowecki powiat_lubanski powiat_legnicki powiat_jaworski powiat_zlotoryjski powiat_karkonoski powiat_kamiennogorski powiat_walbrzyski
-		powiat_swidnicki_slask powiat_wroclawski powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski 
+		powiat_swidnicki_slask powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski powiat_wroclawski wroclaw 
 	}
 }
 opolskie_region = { 

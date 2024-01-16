@@ -41,7 +41,7 @@ province;red;green;blue;x;x
 40;5;112;0;Osiek;x
 41;133;114;64;City of Rypin;x
 42;6;116;128;Gardeja;x
-43;134;118;192;Gdansk;x
+43;134;118;192;Gdansk - Srodmiescie;x
 44;6;120;255;Jezewo;x
 45;134;122;0;Lanieta;x
 46;6;124;64;Pawlowiczki;x
@@ -1142,7 +1142,7 @@ province;red;green;blue;x;x
 1774;71;132;126;Bielice;x
 1775;199;134;173;Lubien Kujawski;x
 1776;71;136;32;Sopot;x
-1777;199;138;79;Gdynia;x
+1777;199;138;79;Gdynia Srodmiescie;x
 1778;71;140;126;Pisz;x
 1779;199;142;173;Baranow;x
 1780;72;144;32;Slupno;x
@@ -1999,7 +1999,19 @@ province;red;green;blue;x;x
 3219;219;32;29;Czechy Wschód;
 3279;219;32;89;Mokotow;
 3394;219;32;204;Wesola;
+3559;225;25;159;Wroclaw-Lesnica;
+3621;100;10;121;Wroclaw-Fabryczna;
+3618;225;25;208;Wroclaw-Kozanow;
+3620;100;10;120;Wroclaw-Grabiszyn;
+3614;225;25;204;Wroclaw-Krzyki;
+3217;219;32;27;Wroclaw-Gaj;
+3387;219;32;197;Wroclaw-Ksieze;
+3388;219;32;198;Wroclaw-Srodmiescie;
+3190;219;32;0;Wroclaw-Stare Miasto;
+3220;219;32;30;Wroclaw-Swiniary;
+3416;219;32;226;Wroclaw-Osobowice;
 3419;219;32;229;Bornholm;
+3425;219;23;125;Wroclaw-Kowalew;
 3485;219;23;185;Ursus;
 3525;219;24;225;Nysa Luzycka;
 3549;219;24;249;Ursynow;
@@ -2696,3 +2708,49 @@ province;red;green;blue;x;x
 3105;207;110;54;Francja;
 3013;199;110;220;Slowacja;
 2137;72;198;51;Wadowice;x
+3418;219;32;228;Pradnik Bialy;
+3291;219;32;101;Bronowice;
+3222;219;32;32;Zwierzyniec;
+3188;207;140;137;Krowodrza;
+3162;207;110;111;Debniki;
+3140;207;110;89;Pradnik Czerwony;
+3100;207;110;49;Czyzyny;
+3065;207;110;14;Mistrzejowice;
+3042;207;110;241;Wzgorza Krzeslawickie;
+3016;202;110;220;Nowa Huta;
+3007;192;110;220;Swoszowice;
+3008;193;110;220;Podgorze;
+3236;219;32;46;Lagiewniki-Borek Falecki
+3237;219;32;47;Biezanow-Prokocim;
+998;23;104;32;Podgorze Duchackie;x
+4357;125;226;241;Stara Odra;x
+3445;219;23;145;Kiekrz;
+3444;219;23;144;Osowa;
+1805;75;68;126;Matarnia;x
+1806;203;70;173;Kokoszki;x
+1807;76;72;32;Jasien;x
+1808;204;74;79;Orunia Gorna;x
+1809;76;76;126;Orunia Dolna;x
+1810;204;78;173;Olszynka;x
+1811;76;80;32;Krakowiec;x
+1812;204;82;79;Swibno;x
+1813;76;84;126;Sobieszewo;x
+1814;205;86;173;Oliwa;x
+1815;77;88;32;Stara Oliwa;x
+1816;205;90;79;Bretowo;x
+1817;77;92;126;Przymorze;x
+1821;78;100;126;Port;x
+1822;206;102;173;Stogi;x
+1823;78;104;32;Wrzeszcz;x
+1824;206;106;79;Piecki-Migowo;x
+1829;79;116;126;Maly Kack;x
+1833;79;124;126;Wielki Kack;x
+1836;208;130;79;Dabrowa;x
+1500;123;221;251;Martwa Wisla;x
+1501;124;251;251;Wisla Smiala;x
+1838;208;134;173;Wiczlino;x
+1840;208;138;79;Oksywie;x
+1844;209;146;79;Pustki Cisowskie;x
+3062;207;110;11;Chwarzno;
+3063;207;110;12;Cisowa;
+3064;207;110;13;Chylonia;

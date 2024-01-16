@@ -13,3 +13,7 @@ owner = G38
 controller = G38
 add_core = G38
 discovered_by = ottoman
+add_permanent_province_modifier = { 
+	name = airport_modifier
+	duration = -1
+}

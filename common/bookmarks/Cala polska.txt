@@ -1,0 +1,25 @@
+bookmark =
+{
+	name = "GMINA_DAWN"
+	desc = "GMINA_DAWN_DESC"
+	date = 1444.11.11
+	
+	center = 112
+	default = yes
+	
+	country = X20 #Krakow
+	country = P03 #Szczecinecki
+	country = A27 #Wrocław
+	country = M04 #Kielecki
+	country = Y09 #Gdanski
+	country = P17 #Szczecinski
+	country = Q14 #Łódzki
+	country = L04 #Lublinecki
+	country = G20 #Radomski
+	country = R23 #Poznanski
+	country = L14 #Katowice
+	
+	easy_country = X20 #Krakow
+	easy_country = P03 #Szczecinecki
+	easy_country = A27 #Wrocła
+}

@@ -1,9 +1,9 @@
-#Oskarek tu byl
+#Oskarek tu byl i chuj mnie to boli, jak sie komuś coś nie podoba to może wypierdalać
 
-namespace = flavor_lna
+namespace = flavor_pis
+
 normal_or_historical_nations = yes
 
-# The Emerald Buddha by Daniel Tolman
 country_event = {
 	id = flavor_pis.1
 	title = flavor_pis.1.t
@@ -78,6 +78,15 @@ country_event = {
 	picture = BUDDHA_eventPicture
 	
 	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			NOT = {
+				controlled_by = ROOT
+			
+			}
+		}
+	}
 	
 	option = {
 		name = flavor_pis.2.a

@@ -1,0 +1,13 @@
+#Krakow - Pradnik Bialy
+culture = krakowska
+religion = catholic
+base_tax = 33
+base_production = 33
+trade_goods = gu_tourists
+base_manpower = 33
+capital = "Pradnik Bialy"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+fort_15th = yes

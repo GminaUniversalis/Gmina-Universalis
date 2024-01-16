@@ -1553,7 +1553,8 @@ rebel_sentiment = {
 
 
 conversion_zeal = {
-	global_heretic_missionary_strength = 0.10
+	global_heretic_missionary_strength = 0.08
+	global_heathen_missionary_strength = 0.08
 	missionary_maintenance_cost = -0.33
 }
 
@@ -8573,6 +8574,18 @@ double_entry_booking = {
 }
 
 #Institution Birthplaces
+birthplace_of_the_solidarity = {
+	local_institution_spread = 0.3	
+}
+
+birthplace_of_the_free_market = {
+	trade_value_modifier = 0.2	
+}
+
+birthplace_of_the_internet = {
+	trade_goods_size_modifier = 0.1	
+}
+
 birthplace_of_the_renaissance = {
 	local_development_cost = -0.05
 }
@@ -10799,6 +10812,15 @@ a_new_consort_heir_modifier = {
 anglican_innovativeness = {
 	innovativeness_gain = 0.5
 	reform_progress_growth = 0.15
+}
+
+support_from_elite = {
+	innovativeness_gain = 0.4
+	advisor_cost = -0.1
+}
+
+disband_military = {
+	administrative_efficiency = 0.08
 }
 
 expelling_heretics = {
