@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "UDPicture"
+		texturefile = "gfx/event_pictures/politics/UD_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "KLDPicture"
+		texturefile = "gfx/event_pictures/politics/KLD_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "ELECTRIFICATIONPicture"
 		texturefile = "gfx/event_pictures/event_pictures_tradegoods/institution_event_electrification.dds"
 		alwaystransparent = yes
