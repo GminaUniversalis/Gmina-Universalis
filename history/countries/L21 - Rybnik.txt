@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = western
+religion = communism_pzpr
+primary_culture = slonska
+capital = 4751	#Rybnik
+fixed_capital = 4751 #Rybnik
+elector = yes
+elector = yes

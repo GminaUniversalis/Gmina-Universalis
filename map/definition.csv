@@ -2634,7 +2634,7 @@ province;red;green;blue;x;x
 4748;170;79;248;Renska Wies;x
 4749;39;120;238;Rudnik;x
 4750;167;101;106;Ujazd;x
-4751;162;186;147;Rybnik;x
+4751;162;186;147;Rybnik Srodmiescie;x
 4752;232;189;231;Strumien;x
 4753;144;219;143;Wilamowice;x
 4754;177;229;130;Sosnicowice;x
@@ -2754,3 +2754,11 @@ province;red;green;blue;x;x
 3062;207;110;11;Chwarzno;
 3063;207;110;12;Cisowa;
 3064;207;110;13;Chylonia;
+3280;219;32;90;Stodoly;
+3278;219;32;88;Boguszowice;
+3277;219;32;87;Niedobczyce;
+3232;219;32;42;Wielopole;
+3206;219;32;16;Meksyk;
+3153;207;110;102;Ochojec;
+3106;207;110;55;Gotartowice;
+3091;207;110;40;Unused78;
