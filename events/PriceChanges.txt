@@ -76,7 +76,7 @@ country_event = {
 				
 				country_event = { 
 					id = communism.1
-					days = 30
+					days = 90
 				}
 			}
 		}
@@ -154,7 +154,7 @@ country_event = {
 				
 				country_event = { 
 					id = communism.1
-					days = 30
+					days = 90
 				}
 			}
 		}
@@ -265,7 +265,7 @@ country_event = {
 				
 				country_event = { 
 					id = communism.1
-					days = 30
+					days = 90
 				}
 			}
 		}
