@@ -26,9 +26,9 @@ communism_group = {
 			communism_zsl
 			liberalism_ud
 			liberalism_kld
-			conservative_kpn
-			conservative_zchn
-			conservative_pc
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
 		}
 
 		on_convert = {
@@ -76,9 +76,9 @@ communism_group = {
 			communism_zsl
 			liberalism_ud
 			liberalism_kld
-			conservative_kpn
-			conservative_zchn
-			conservative_pc
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
 		}
 
 		on_convert = {
@@ -126,9 +126,9 @@ communism_group = {
 			communism_pzpr
 			liberalism_ud
 			liberalism_kld
-			conservative_kpn
-			conservative_zchn
-			conservative_pc
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
 		}
 
 		on_convert = {
@@ -325,14 +325,14 @@ liberalism_group = {
 	crusade_name = WAR_WITH_FASCISM
 }
 
-conservative_group = {
+conservatism_group = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 1 57 }
 	crusade_name = WAR_WITH_COMMUNISM
 
-	conservative_kpn = {
+	conservatism_kpn = {
 		color = { 48 0 0 }
 		icon = 39
 		country = {
@@ -358,7 +358,7 @@ conservative_group = {
 		}
 
 		on_convert = {
-			change_religion = conservative_kpn
+			change_religion = conservatism_kpn
 			add_prestige = -100
 			
 			add_country_modifier = {
@@ -370,11 +370,11 @@ conservative_group = {
 				random_owned_province = {
 					limit = {
 						can_have_center_of_reformation_trigger = {
-							RELIGION = conservative_kpn
+							RELIGION = conservatism_kpn
 						}
 					}
-					change_religion = conservative_kpn
-					add_reform_center = conservative_kpn
+					change_religion = conservatism_kpn
+					add_reform_center = conservatism_kpn
 				}
 			}			
 		}
@@ -414,7 +414,7 @@ conservative_group = {
 		}
 	}
 
-	conservative_zchn = {
+	conservatism_zchn = {
 		color = { 46 178 255 }
 		icon = 40
 		country = {
@@ -440,7 +440,7 @@ conservative_group = {
 		}
 
 		on_convert = {
-			change_religion = conservative_zchn
+			change_religion = conservatism_zchn
 			add_prestige = -100
 			
 			add_country_modifier = {
@@ -452,11 +452,11 @@ conservative_group = {
 				random_owned_province = {
 					limit = {
 						can_have_center_of_reformation_trigger = {
-							RELIGION = conservative_zchn
+							RELIGION = conservatism_zchn
 						}
 					}
-					change_religion = conservative_zchn
-					add_reform_center = conservative_zchn
+					change_religion = conservatism_zchn
+					add_reform_center = conservatism_zchn
 				}
 			}			
 		}
@@ -496,7 +496,7 @@ conservative_group = {
 		}
 	}
 
-	conservative_pc = {
+	conservatism_pc = {
 		color = { 255 134 59 }
 		icon = 41
 		country = {
@@ -522,7 +522,7 @@ conservative_group = {
 		}
 
 		on_convert = {
-			change_religion = conservative_pc
+			change_religion = conservatism_pc
 			add_prestige = -100
 			
 			add_country_modifier = {
@@ -534,11 +534,11 @@ conservative_group = {
 				random_owned_province = {
 					limit = {
 						can_have_center_of_reformation_trigger = {
-							RELIGION = conservative_pc
+							RELIGION = conservatism_pc
 						}
 					}
-					change_religion = conservative_pc
-					add_reform_center = conservative_pc
+					change_religion = conservatism_pc
+					add_reform_center = conservatism_pc
 				}
 			}			
 		}
