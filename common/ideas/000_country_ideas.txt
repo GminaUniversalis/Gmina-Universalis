@@ -198,7 +198,7 @@ P03_ideas = {
 			}
 			free = yes
 			Central_Park = {
-				culture_conversion_cost - 0.25
+				culture_conversion_cost = -0.25
 			}
 			Railroad_Center = {
 				movement_speed = 0.1
@@ -882,7 +882,7 @@ Y10_ideas = {
 		global_autonomy = -0.1
 		state_maintenance_modifier = -0.25
 	}
-	Danziger_shipyards  = {
+	Danziger_shipyards = {
 		global_ship_cost = -0.15
 	}
 	Imperial_dragons = {
@@ -902,6 +902,129 @@ Y10_ideas = {
 		artillery_fire = 1
 	}
 }	
+Y19_ideas = {
+	start = {
+		
+		core_creation = -0.25
+		max_absolutism = 20
+		
+	}
+	
+	bonus = {
+		governing_capacity_modifier = 0.25
+	}	
+
+	trigger = {
+		tag = Y19
+	}
+	free = yes
+	
+	Empire_reborn = {
+		global_autonomy = -0.1
+		state_maintenance_modifier = -0.25
+	}
+	Danziger_shipyards = {
+		global_ship_cost = -0.15
+	}
+	Imperial_dragons = {
+		infantry_power = 0.15
+	}
+	Coexistence = {
+		num_accepted_cultures = 3
+	}
+	Pearl_of_baltic = {
+		global_ship_trade_power = 0.25
+	}
+	Hanza_legacy = {
+		trade_range_modifier = 0.5
+	}
+	Superior_firepower = {
+		artillery_power = 0.1
+		artillery_fire = 1
+	}
+}
+Y20_ideas = {
+	start = {
+		
+		core_creation = -0.25
+		max_absolutism = 20
+		
+	}
+	
+	bonus = {
+		governing_capacity_modifier = 0.25
+	}	
+
+	trigger = {
+		tag = Y20
+	}
+	free = yes
+	
+	Empire_reborn = {
+		global_autonomy = -0.1
+		state_maintenance_modifier = -0.25
+	}
+	Danziger_shipyards = {
+		global_ship_cost = -0.15
+	}
+	Imperial_dragons = {
+		infantry_power = 0.15
+	}
+	Coexistence = {
+		num_accepted_cultures = 3
+	}
+	Pearl_of_baltic = {
+		global_ship_trade_power = 0.25
+	}
+	Hanza_legacy = {
+		trade_range_modifier = 0.5
+	}
+	Superior_firepower = {
+		artillery_power = 0.1
+		artillery_fire = 1
+	}
+}
+Y21_ideas = {
+	start = {
+		
+		core_creation = -0.25
+		max_absolutism = 20
+		
+	}
+	
+	bonus = {
+		governing_capacity_modifier = 0.25
+	}	
+
+	trigger = {
+		tag = Y21
+	}
+	free = yes
+	
+	Empire_reborn = {
+		global_autonomy = -0.1
+		state_maintenance_modifier = -0.25
+	}
+	Danziger_shipyards = {
+		global_ship_cost = -0.15
+	}
+	Imperial_dragons = {
+		infantry_power = 0.15
+	}
+	Coexistence = {
+		num_accepted_cultures = 3
+	}
+	Pearl_of_baltic = {
+		global_ship_trade_power = 0.25
+	}
+	Hanza_legacy = {
+		trade_range_modifier = 0.5
+	}
+	Superior_firepower = {
+		artillery_power = 0.1
+		artillery_fire = 1
+	}
+}		
 P02_ideas = {
 	start = {
 		
@@ -922,7 +1045,7 @@ P02_ideas = {
 	Brick_Gothic_Architecture = {
 		prestige = 1
 	}
-	Hanseatic_Traditions  = {
+	Hanseatic_Traditions = {
 		trade_efficiency = 0.1
 	}
 	Clerical_History = {
@@ -963,7 +1086,7 @@ B12_ideas = {
 		manpower_in_true_faith_provinces= 0.10
 		institution_spread_from_true_faith = 0.1
 	}
-	Monastic_knighthood  = {
+	Monastic_knighthood = {
 		garrison_size = 0.3
 	}
 	Growing_bourgeoisie = {
@@ -1002,7 +1125,7 @@ G13_ideas = {
 	Diversified_diplomacy = {
 		diplomatic_reputation = 1
 	}
-	Mszczonow_Geothermal_Energy  = {
+	Mszczonow_Geothermal_Energy = {
 		state_maintenance_modifier = -0.15
 	}
 	Miedniewice_sanctuary = {
@@ -1042,21 +1165,21 @@ J12_ideas = {
 	Biebrza_National_Park = {
 		prestige = 1
 	}
-	Tsar_Road  = {
+	Tsar_Road = {
 		movement_speed = -0.05
 		hostile_attrition = 2
 	}
-	Dead_Men  = {
+	Dead_Men = {
 		morale_damage = 0.2
 	}
 	Last_Jagiellonian = {
 		prestige_decay = -0.01
 		legitimacy = 1
 	}
-	Art_in_Osowiec  = {
+	Art_in_Osowiec = {
 		trade_efficiency = 0.1
 	}
-	Military_material  = {
+	Military_material = {
 		reinforce_cost_modifier = -0.25
 	}
 	Rural_community = {
@@ -1083,19 +1206,19 @@ Y06_ideas = {
 	Vistula_gateway = {
 		global_foreign_trade_power = 0.2
 	}
-	Kociewie_northern_post  = {
+	Kociewie_northern_post = {
 		tolerance_own = 1
 	}
-	Danzig_rule  = {
+	Danzig_rule = {
 		diplomatic_reputation = 3
 	}
-	Amber_road  = {
+	Amber_road = {
 		caravan_power = 0.25
 	}
-	Greatly_advanced_administration  = {
+	Greatly_advanced_administration = {
 		expand_administration_cost = -1
 	}
-	Vistula_crossings  = {
+	Vistula_crossings = {
 		global_tax_modifier = 0.1
 	}
 	Danzigian_dragons = {
@@ -1122,19 +1245,19 @@ H01_ideas = {
 	Szlagier_Maszyna = {
 		monthly_splendor = 1
 	}
-	Zakłady_Azotowe  = {
+	Zakłady_Azotowe = {
 		global_trade_goods_size_modifier = 0.05
 	}
-	Unification  = {
+	Unification = {
 		stability_cost_modifier = -0.1
 	}
-	the_Gypsies  = {
+	the_Gypsies = {
 		num_accepted_cultures = 1
 	}
-	Artillery_Unit  = {
+	Artillery_Unit = {
 		artillery_power = 0.05
 	}
-	Inland_Sailing  = {
+	Inland_Sailing = {
 		trade_efficiency = 0.15
 	}
 	Atrycja_died = {
@@ -1161,19 +1284,19 @@ I18_ideas = {
 	Szlagier_Maszyna = {
 		monthly_splendor = 1
 	}
-	Zakłady_Azotowe  = {
+	Zakłady_Azotowe = {
 		global_trade_goods_size_modifier = 0.05
 	}
-	Unification  = {
+	Unification = {
 		stability_cost_modifier = -0.1
 	}
-	the_Gypsies  = {
+	the_Gypsies = {
 		num_accepted_cultures = 1
 	}
-	Artillery_Unit  = {
+	Artillery_Unit = {
 		artillery_power = 0.05
 	}
-	Inland_Sailing  = {
+	Inland_Sailing = {
 		trade_efficiency = 0.15
 	}
 	Atrycja_died = {
