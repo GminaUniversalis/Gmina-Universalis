@@ -1,5 +1,4 @@
 #Jastrebie
-culture = cieszynska
 religion = communism_pzpr
 hre = yes
 base_tax = 1
@@ -10,7 +9,7 @@ capital = "Jastrebie"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L17
-controller = L17
-add_core = L17
+owner = L22
+controller = L22
 discovered_by = ottoman
+add_core = L22
