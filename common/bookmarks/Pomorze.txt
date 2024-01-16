@@ -1,0 +1,19 @@
+bookmark =
+{
+	name = "Pomorze_bookmark"
+	desc = "Pomorze_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 1
+	default = yes
+	
+	country = P17 #Szczecin
+	country = P15 #Swinioujscie
+	country = Y19 #Gdansk
+	country = Y09 #Gdanski
+
+	
+	easy_country = Y02 #Slupsk
+	easy_country = P03 #Szczecinecki
+	easy_country = A27 #Wrocła
+}
