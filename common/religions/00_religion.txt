@@ -336,15 +336,14 @@ conservatism_group = {
 		color = { 48 0 0 }
 		icon = 39
 		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
+			global_missionary_strength = 0.03
+			army_tradition = 2
 		}
 		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
+			army_tradition = 1
 		}
 		province = {
-			local_missionary_strength = -0.01
+			local_missionary_strength = -0.02
 		}
 
 		allowed_conversion = {
@@ -418,15 +417,14 @@ conservatism_group = {
 		color = { 46 178 255 }
 		icon = 40
 		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
+			shock_damage = 0.10	
+			infantry_cost = -0.10
 		}
 		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
+			infantry_cost = -0.05	
 		}
 		province = {
-			local_missionary_strength = -0.01
+			regiment_recruit_speed = -0.25	
 		}
 
 		allowed_conversion = {
@@ -500,15 +498,14 @@ conservatism_group = {
 		color = { 255 134 59 }
 		icon = 41
 		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
+			land_morale = 0.10
+			drill_gain_modifier = 0.40	
 		}
 		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
+			land_morale = 0.05
 		}
 		province = {
-			local_missionary_strength = -0.01
+			local_friendly_movement_speed = 0.20	
 		}
 
 		allowed_conversion = {
