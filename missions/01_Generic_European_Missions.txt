@@ -12,7 +12,7 @@ gen_europe = {
 	}
 	has_country_shield = no
 	
-	# gen_eur_trade_node = {  Powodowało spam w error logu
+	# gen_eur_trade_node = {  Powodowa³o spam w error logu
 	# 	icon = mission_war_chest
 	# 	required_missions = { }
 	# 	position = 1

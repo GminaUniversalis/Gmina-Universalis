@@ -788,6 +788,7 @@ opole = {
 	outgoing = { 
 		name = "swidnica"
 		path = { 
+			1759 959 2614 4578 2657 2874 2862 2844 782 2858 2867
 		}
 		control = { 
 		}
