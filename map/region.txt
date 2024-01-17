@@ -68,7 +68,7 @@ wielkopolska_region = {
 		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_ostrowski_poznan powiat_kaliski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski
 		powiat_slupecki powiat_jarocinski powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki
 		powiat_obornicki powiat_wrzesinski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski powiat_kepinski
-		powiat_poznanski 
+		powiat_poznanski poznan 
 	}
 }
 warminsko_mazurskie_region = { 
