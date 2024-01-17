@@ -29,6 +29,7 @@ communism_group = {
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_psl
 		}
 
 		on_convert = {
@@ -79,6 +80,7 @@ communism_group = {
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_psl
 		}
 
 		on_convert = {
@@ -108,7 +110,7 @@ communism_group = {
 
 	communism_zsl = {
 		icon = 32
-		color = { 0.56 0.77 0.1 }
+		color = { 0.6 0.9 0.1 }
 		country = {
 			yearly_corruption = 0.15	
 			core_creation = 0.20
@@ -129,6 +131,7 @@ communism_group = {
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_psl
 		}
 
 		on_convert = {
@@ -1233,6 +1236,291 @@ conservatism_group = {
 				}
 			}
 		}
+	}
+
+	conservatism_psl = {
+		color = { 0.0 0.7 0.04 }
+		icon = 42
+		country = {
+			monarch_lifespan = 0.15
+			tolerance_heathen = 3
+		}
+		country_as_secondary = {
+			tolerance_heathen = 2
+		}
+		province = {
+			local_production_efficiency = 0.15
+		}
+
+		allowed_conversion = {
+
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = conservatism_psl
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = conservatism_psl
+						}
+					}
+					change_religion = conservatism_psl
+					add_reform_center = conservatism_psl
+				}
+			}			
+		}
+
+		can_have_secondary_religion = yes
+
+		gurus = {
+			guru_roman_bartoszcze = {
+				trigger = {
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 1000
+				}
+				modifier = {
+					country_admin_power = 1
+				}
+				teachings = {
+					family_farms = {
+						type = ADM
+						cost = 50
+
+						reduced_liberty_desire = 10
+					}
+					rural_solidarity = {
+						type = DIP
+						cost = 50
+
+						autonomy_change_time = -0.20	
+					}
+					fatherland = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+
+			guru_waldemar_pawlak = {
+				trigger = {
+					is_year = 1520
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 1000
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					family_farms = {
+						type = ADM
+						cost = 50
+
+						reduced_liberty_desire = 10
+					}
+					rural_solidarity = {
+						type = DIP
+						cost = 50
+
+						autonomy_change_time = -0.20	
+					}
+					fatherland = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+
+			guru_jaroslaw_kalinowski = {
+				trigger = {
+					is_year = 1545
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 1000
+				}
+				modifier = {
+					country_military_power = 1
+				}
+				teachings = {
+					family_farms = {
+						type = ADM
+						cost = 50
+
+						reduced_liberty_desire = 10
+					}
+					rural_solidarity = {
+						type = DIP
+						cost = 50
+
+						autonomy_change_time = -0.20	
+					}
+					fatherland = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+
+			guru_janusz_wojciechowski = {
+				trigger = {
+					is_year = 1595
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 1000
+				}
+				modifier = {
+					country_admin_power = 1
+				}
+				teachings = {
+					family_farms = {
+						type = ADM
+						cost = 50
+
+						reduced_liberty_desire = 10
+					}
+					rural_solidarity = {
+						type = DIP
+						cost = 50
+
+						autonomy_change_time = -0.20	
+					}
+					fatherland = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+
+			guru_antoni_podraza = {
+				trigger = {
+					is_year = 1610
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 1000
+				}
+				modifier = {
+					country_military_power = 1
+				}
+				teachings = {
+					family_farms = {
+						type = ADM
+						cost = 50
+
+						reduced_liberty_desire = 10
+					}
+					rural_solidarity = {
+						type = DIP
+						cost = 50
+
+						autonomy_change_time = -0.20	
+					}
+					fatherland = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+
+			guru_janusz_piechocinski = {
+				trigger = {
+					is_year = 1650
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 1000
+				}
+				modifier = {
+					country_admin_power = 1
+				}
+				teachings = {
+					family_farms = {
+						type = ADM
+						cost = 50
+
+						reduced_liberty_desire = 10
+					}
+					rural_solidarity = {
+						type = DIP
+						cost = 50
+
+						autonomy_change_time = -0.20	
+					}
+					fatherland = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+
+			guru_wladyslaw_kosiniak_kamysz = {
+				trigger = {
+					is_year = 1680
+					NOT = { has_global_flag = guru_event_happening }
+				}
+				chance = {
+					factor = 1000
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					family_farms = {
+						type = ADM
+						cost = 50
+
+						reduced_liberty_desire = 10
+					}
+					rural_solidarity = {
+						type = DIP
+						cost = 50
+
+						autonomy_change_time = -0.20	
+					}
+					fatherland = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+		}
+		
+		heretic = { MARXISTS }
+		
+		date = 1480.1.1
 	}
 }
 
