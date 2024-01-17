@@ -638,13 +638,6 @@ katowice = {
 		control = { 
 		}
 	}
-	outgoing = { 
-		name = "czestochowa"
-		path = { 
-		}
-		control = { 
-		}
-	}
 	members = { 
 		4173 1111 1793 4240 4236 154 1794 3091 140 4125
 		1767 4126 3019 4830 4832 4829 1827 3089 4827 4831
@@ -674,6 +667,13 @@ czestochowa = {
 	}
 	outgoing = { 
 		name = "lodz"
+		path = { 
+		}
+		control = { 
+		}
+	}
+	outgoing = { 
+		name = "katowice"
 		path = { 
 		}
 		control = { 
