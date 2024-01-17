@@ -1,8 +1,8 @@
 #Strzelin
-religion = communism_pzpr
+religion = communism_sd
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_stone
 base_manpower = 1
 capital = "Strzelin"
 is_city = yes

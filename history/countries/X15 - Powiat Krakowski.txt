@@ -3,14 +3,12 @@ add_government_reform = autocracy_reform
 government_rank = 1
 mercantilism = 25
 technology_group = western
-religion = catholic
+religion = communism_sd
 primary_culture = krakowska
-capital = 4850 #Skawina
-fixed_capital = 4850 #Skawina
-
+capital = 4850#Skawina
+fixed_capital = 4850#Skawina
 1430.1.1 = { 
 	monarch = { 
-
 		name = "Mateusz"
 		dynasty = "Inglot"
 		birth_date = 1425.1.1
