@@ -1,6 +1,6 @@
 #Kostrzyn
 culture = wielkopolska
-religion = communism_pzpr
+religion = communism_zsl
 base_tax = 1
 base_production = 1
 trade_goods = unknown
@@ -13,4 +13,3 @@ owner = R23
 controller = R23
 add_core = R23
 discovered_by = ottoman
-add_core = R32
