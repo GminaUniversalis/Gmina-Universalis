@@ -643,7 +643,7 @@ Q14_ideas = {
 	Ziemia_Obiecana = {
 		development_cost = -0.1
 	}
-	Bałucki_Folklor  = {
+	Ba³ucki_Folklor  = {
 		land_morale = 0.1
 	}
 	Miasto_kultur = {
@@ -1245,7 +1245,7 @@ H01_ideas = {
 	Szlagier_Maszyna = {
 		monthly_splendor = 1
 	}
-	Zakłady_Azotowe = {
+	Zak³ady_Azotowe = {
 		global_trade_goods_size_modifier = 0.05
 	}
 	Unification = {
@@ -1284,7 +1284,7 @@ I18_ideas = {
 	Szlagier_Maszyna = {
 		monthly_splendor = 1
 	}
-	Zakłady_Azotowe = {
+	Zak³ady_Azotowe = {
 		global_trade_goods_size_modifier = 0.05
 	}
 	Unification = {

@@ -788,6 +788,7 @@ opole = {
 	outgoing = { 
 		name = "swidnica"
 		path = { 
+			1759 959 2614 4578 2657 2874 2862 2844 782 2858 2867
 		}
 		control = { 
 		}
@@ -859,6 +860,7 @@ swidnica = {
 	outgoing = { 
 		name = "wroclaw"
 		path = { 
+			2877 1000 792 3620 3190
 		}
 		control = { 
 		}
@@ -888,6 +890,7 @@ kailisz = {
 	outgoing = { 
 		name = "wroclaw"
 		path = { 
+			4574 2644 4583 4598 2627 4587 2839 3190
 		}
 		control = { 
 		}
@@ -1060,6 +1063,7 @@ wroclaw = {
 	outgoing = { 
 		name = "legnica"
 		path = { 
+			3618 3621 2872 2841 2837 2906
 		}
 		control = { 
 		}
@@ -1067,6 +1071,7 @@ wroclaw = {
 	outgoing = { 
 		name = "poznan"
 		path = { 
+			3416 3220 2636 2653 4589 2663 482 490 493 4603 501
 		}
 		control = { 
 		}
