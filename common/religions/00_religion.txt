@@ -1240,7 +1240,7 @@ conservatism_group = {
 
 	conservatism_psl = {
 		color = { 0.0 0.7 0.04 }
-		icon = 42
+		icon = 43
 		country = {
 			monarch_lifespan = 0.15
 			tolerance_heathen = 3
