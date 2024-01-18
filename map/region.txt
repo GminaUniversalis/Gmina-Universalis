@@ -15,6 +15,7 @@ lubelskie_region = {
 	areas = { 
 		powiat_pulawski powiat_tomaszowski powiat_janowski powiat_krasnicki powiat_opolski powiat_radzynski powiat_parczewski powiat_wlodawski powiat_bialski powiat_leczynski
 		powiat_swidnicki powiat_lubelski powiat_krasnostawski powiat_chelmski powiat_hrubieszowski powiat_lukowski powiat_rycki powiat_lubartowski powiat_zamojski powiat_bilgorajski
+		Lublin 
 	}
 }
 podkarpackie_region = { 
@@ -68,7 +69,7 @@ wielkopolska_region = {
 		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_ostrowski_poznan powiat_kaliski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski
 		powiat_slupecki powiat_jarocinski powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki
 		powiat_obornicki powiat_wrzesinski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski powiat_kepinski
-		powiat_poznanski 
+		powiat_poznanski poznan 
 	}
 }
 warminsko_mazurskie_region = { 
@@ -101,6 +102,6 @@ lodzkie_region = {
 	areas = { 
 		powiat_laski powiat_wieruszowski powiat_wielunski powiat_pajeczanski powiat_radomszczanski powiat_leczycki powiat_kutnowski powiat_poddebnicki powiat_sieradzki powiat_zdunskowolski
 		powiat_pabianicki powiat_belchatowski powiat_piotrkowski powiat_lodzki powiat_zgierski powiat_brzezinski powiat_skierniewicki powiat_rawski powiat_tomaszowski_lodz powiat_opoczynski
-		powiat_lowicki 
+		powiat_lowicki Lodz 
 	}
 }
