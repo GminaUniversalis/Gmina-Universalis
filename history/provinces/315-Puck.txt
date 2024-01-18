@@ -2,7 +2,7 @@
 culture = kaszubska
 religion = communism_pzpr
 base_tax = 5
-base_production = 5
+base_production = 3
 trade_goods = unknown
 base_manpower = 5
 capital = "Puck"

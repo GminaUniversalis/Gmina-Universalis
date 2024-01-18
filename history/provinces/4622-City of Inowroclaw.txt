@@ -1,10 +1,10 @@
 #City of Inowroclaw
 culture = kaliska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 10
+base_production = 12
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 11
 capital = "City of Inowroclaw"
 is_city = yes
 discovered_by = western

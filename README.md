@@ -1,21 +1,21 @@
 ### Gmina Universalis
 
-Hello there english-speaking folks. This is Gmina Universalis, total conversion mod about your favourite meme country of Poland.
-Main premise of this mod is that it's created, based on Poland's smallest administrative subdivision, which is called "Gmina"
+What is Gmina Universalis?
 
-This mod is currently in unplayable state and I have no clue why it is on main workshop page
+To put it straight, it is, or it's supposed to be a total overhaul mod taking place in glorious meme country of Poland, where Gmina act's as provinces, Powiat as countries, and religions were converted to political parties.
 
-TODO LIST:
-- Every 'Powiat' (which is tier higher in terms of adm subdivisions than 'Gmina') will be made into country (380)
-- Formable 'Wojewodztwa' (which is highest tier in terms of adm subdivisions, above 'Powiat', 16 of them)
-- Bigger rivers will be navigable, like in CK2
--Monuments in every major city, with their most recognizable landmarks
-- Cultures based on polish dialects
+What are Gmina and Powiat you might ask? 
+It's administrative division of Poland. Usually Powiat consists of around 5 Gmina's with some exceptions, but you will get the idea.
 
-Potential submods:
-- Religions as political parties, we have some own circus over there
-- Major cities, will be made into a separate locations, accesible via main provinces, with their districts as provinces
+Due to the dire need to adapt the game mechanics to the Polish reality, many things had to be changed and the timeline was slightly "bent".
 
-Links:
-Discord:
-https://discord.gg/5HnTZe3AJa - Of course most of us there will speak polish, but we know english, surprise.
+The planned game start by reality and "lore" is in 1969, during the deep and dark communist period, where most of the country is controlled by the PZPR (Polish United Workers Party) , and through the centuries it lasts more or less until the present day. The timeline was "bent" due to stretching over 50 years of Polish history into 377 years of the game, compromises had to be made in some places, BUT
+
+This is not a historical mod.
+
+
+It will include all the things that define our cardboard country, what it is and what it consists of, whether it be things from now, 10 years, 50 years or 300 years ago, it doesn't matter, just everything.
+
+My main idea was that when you choose your Gmina or Powiat to play, you will find something familiar there, whether it be a monument, a mission tree, some modifier or a description in the idea referring to some local memes.
+
+I just want it to be a mod where you can choose any country, conquer the poland in "what if" scenario, have fun with your friends in multiplayer and just have a good time playing without sweating.

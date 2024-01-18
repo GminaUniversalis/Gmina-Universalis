@@ -1,10 +1,10 @@
 #Mszana Dolna
 culture = lachska
 religion = communism_pzpr
-base_tax = 1
+base_tax = 3
 base_production = 1
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 3
 capital = "Mszana Dolna"
 is_city = yes
 discovered_by = western
