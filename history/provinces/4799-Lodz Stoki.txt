@@ -1,15 +1,15 @@
-#Lodz
+#Lodz Stoki
 culture = centralna
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Lodz"
+capital = "Stoki"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = Q14
-controller = Q14
-add_core = Q14
+owner = Q22
+controller = Q22
 discovered_by = ottoman
+add_core = Q22

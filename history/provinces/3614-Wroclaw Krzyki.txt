@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 7
 base_production = 10
-trade_goods = paper
+trade_goods = gu_horses
 base_manpower = 12
 capital = "Wroclaw - Krzyki"
 is_city = yes

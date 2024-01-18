@@ -714,7 +714,7 @@ province;red;green;blue;x;x
 966;18;40;32;Zaleszany;x
 967;147;42;79;Janowiec;x
 968;19;44;126;Garbow;x
-969;147;46;173;Lublin;x
+969;147;46;173;Lublin Stare Miasto;x
 971;147;50;79;Dubienka;x
 972;19;52;126;Plock;x
 973;147;54;173;Dabrowa Biskupia;x
@@ -1644,7 +1644,7 @@ province;red;green;blue;x;x
 2458;249;249;145;Bedkow;x
 2459;21;1;95;Rzgow;x
 2460;147;151;46;Tuszyn;x
-2461;84;131;246;Lodz;x
+2461;84;131;246;Lodz Centrum;x
 2462;210;11;196;City of Pabianice;x
 2463;42;12;145;Nowosolna;x
 2464;168;151;95;Lutomiersk;x
@@ -2787,3 +2787,39 @@ province;red;green;blue;x;x
 4825;139;124;98;Glowna;x
 4824;182;255;0;Antoninek;x
 4823;74;237;125;Krzesiny;x
+4822;240;117;163;Zemborzyce;x
+1319;70;200;250;Jezioro Lublin;x
+4821;118;178;134;Abramowice;x
+4820;179;39;82;Wrotkow;x
+4819;238;111;151;Ponikwoda;x
+4818;158;68;193;Hajdow-Zadebie;x
+4817;136;32;11;Glusk;x
+4816;81;176;19;Slawin;x
+4815;150;40;142;Weglin;x
+4814;204;29;35;Szerokie;x
+4813;193;124;50;Czechow;x
+4812;115;67;188;Felin;x
+4811;78;19;109;Kosminek;x
+4810;251;189;80;Dziesiata;x
+4809;58;125;63;Czuby;x
+4808;230;213;205;Tatary;x
+4807;185;69;211;Nad Nerem;x
+4806;228;15;86;Ruda;x
+4805;238;141;151;Chojny;x
+4804;148;41;14;Wiskitno;x
+4803;248;45;0;Osiedle-Andrzejow;x
+4802;79;254;101;Mileszki;x
+4801;183;228;84;Nowosolna;x
+4800;132;11;182;Dolina Lodki;x
+4799;15;154;146;Stoki;x
+4798;4;235;103;Widzew-Wschod;x
+4797;228;249;251;Chojny-Dabrowa;x
+4796;237;99;81;Rokicie;x
+4795;221;84;31;Os Wzniesien Lodzkich;x
+4794;148;48;116;Lagiewniki;x
+4793;237;108;140;Baluty Zachodnie;x
+4792;153;169;173;Baluty Centrum;x
+4791;50;43;20;Radogoszcz;x
+4790;170;98;56;Zlotno;x
+4932;200;60;131;Stare Polesie;x
+4933;200;90;171;Lublinek;x
