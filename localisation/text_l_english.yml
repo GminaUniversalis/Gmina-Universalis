@@ -482,6 +482,8 @@
  communism_group:0 "Communism"
  liberalism_group:0 "Liberalism"
  conservatism_group:0 "Conservatism"
+ socialism_group:0 "Socialism"
+ populism_group:0 "Populism"
  REVISIONIST:0 "Revisionist"
  communism_pzpr:0 "PZPR"
  communism_pzpr_religion_desc:1 "Polska Zjednoczona Partia Robotnicza - The Polish United Workers' Party, commonly abbreviated to PZPR, was the communist party which ruled the Polish People's Republic as a one-party state from 1948 to 1989."
