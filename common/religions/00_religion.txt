@@ -1331,23 +1331,23 @@ conservatism_group = {
 					country_diplomatic_power = 1
 				}
 				teachings = {
-					family_farms = {
+					volunteer_fire_department = {
 						type = ADM
 						cost = 50
 
-						reduced_liberty_desire = 10
+						global_unrest = -1
 					}
-					rural_solidarity = {
+					warsaw_stock = {
 						type = DIP
 						cost = 50
 
-						autonomy_change_time = -0.20	
+						trade_efficiency = 0.10	
 					}
-					fatherland = {
+					green_banner = {
 						type = MIL
 						cost = 50
 
-						land_morale = 0.05
+						fire_damage = 0.05	
 					}
 				}
 			}
@@ -1364,23 +1364,23 @@ conservatism_group = {
 					country_military_power = 1
 				}
 				teachings = {
-					family_farms = {
+					minister_of_food = {
 						type = ADM
 						cost = 50
 
-						reduced_liberty_desire = 10
+						global_supply_limit_modifier = 0.20
 					}
-					rural_solidarity = {
+					honour_order = {
 						type = DIP
 						cost = 50
 
-						autonomy_change_time = -0.20	
+						diplomatic_reputation = 2
 					}
-					fatherland = {
+					psl_reborn = {
 						type = MIL
 						cost = 50
 
-						land_morale = 0.05
+						land_forcelimit_modifier = 0.10
 					}
 				}
 			}
@@ -1397,23 +1397,23 @@ conservatism_group = {
 					country_admin_power = 1
 				}
 				teachings = {
-					family_farms = {
+					criminal_code_reform = {
 						type = ADM
 						cost = 50
 
-						reduced_liberty_desire = 10
+						yearly_corruption = -0.20	
 					}
-					rural_solidarity = {
+					european_commisar = {
 						type = DIP
 						cost = 50
 
-						autonomy_change_time = -0.20	
+						improve_relation_modifier = 0.2
 					}
-					fatherland = {
+					psl_piast = {
 						type = MIL
 						cost = 50
 
-						land_morale = 0.05
+						drill_gain_modifier = 0.5
 					}
 				}
 			}
@@ -1430,23 +1430,23 @@ conservatism_group = {
 					country_military_power = 1
 				}
 				teachings = {
-					family_farms = {
+					secular_culture_club = {
 						type = ADM
 						cost = 50
 
-						reduced_liberty_desire = 10
+						technology_cost = -0.05
 					}
-					rural_solidarity = {
+					lessons_of_history = {
 						type = DIP
 						cost = 50
 
-						autonomy_change_time = -0.20	
+						idea_cost = -0.05
 					}
-					fatherland = {
+					honorable_psl_member = {
 						type = MIL
 						cost = 50
 
-						land_morale = 0.05
+						morale_damage = 0.05
 					}
 				}
 			}
@@ -1463,23 +1463,23 @@ conservatism_group = {
 					country_admin_power = 1
 				}
 				teachings = {
-					family_farms = {
+					planning_and_statistics = {
 						type = ADM
 						cost = 50
 
-						reduced_liberty_desire = 10
+						build_cost = -0.10
 					}
-					rural_solidarity = {
+					polish_asian_trade = {
 						type = DIP
 						cost = 50
 
-						autonomy_change_time = -0.20	
+						trade_range_modifier = 0.2	
 					}
-					fatherland = {
+					national_security_council = {
 						type = MIL
 						cost = 50
 
-						land_morale = 0.05
+						defensiveness = 0.1
 					}
 				}
 			}
@@ -1496,23 +1496,23 @@ conservatism_group = {
 					country_diplomatic_power = 1
 				}
 				teachings = {
-					family_farms = {
+					minister_of_work = {
 						type = ADM
 						cost = 50
 
-						reduced_liberty_desire = 10
+						country_admin_power = 1
 					}
-					rural_solidarity = {
+					vice_prime_minister = {
 						type = DIP
 						cost = 50
 
-						autonomy_change_time = -0.20	
+						country_diplomatic_power = 1
 					}
-					fatherland = {
+					minister_of_defence = {
 						type = MIL
 						cost = 50
 
-						land_morale = 0.05
+						country_military_power = 1
 					}
 				}
 			}
