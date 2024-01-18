@@ -1,0 +1,30 @@
+Y19_rebuild ={ 
+	slot = 1
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = Y19
+	}
+	has_country_shield = yes
+	
+	rebuild_Gdansk = {
+		icon = mission_explore_caribbean
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 43
+		}
+			trigger = {
+				43 = {
+					development = 20
+				    }
+				 	  }
+					   effect = {
+						add_prestige = 10
+						add_years_of_income = 3
+						add_country_modifier = {
+							name = rebuild_Gdansk
+							duration = 3650
+						}
+					}
+}	
