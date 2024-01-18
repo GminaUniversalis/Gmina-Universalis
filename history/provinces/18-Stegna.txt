@@ -1,10 +1,10 @@
 #Stegna
 culture = zulawska
 religion = communism_sd
-base_tax = 6
-base_production = 8
+base_tax = 2
+base_production = 1
 trade_goods = unknown
-base_manpower = 5
+base_manpower = 2
 capital = "Stegna"
 is_city = yes
 discovered_by = western

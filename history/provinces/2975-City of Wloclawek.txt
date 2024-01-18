@@ -1,10 +1,10 @@
 #City of Wloclawek
 culture = kujawska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 19
+base_production = 19
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 17
 capital = "City of Wloclawek"
 is_city = yes
 discovered_by = western

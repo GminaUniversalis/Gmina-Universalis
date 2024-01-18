@@ -1,10 +1,10 @@
 #Barwice
 culture = srodkowopomorska
-religion = communism_sd
+religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = gu_fruits
-base_manpower = 2
+base_manpower = 1
 capital = "Barwice"
 is_city = yes
 discovered_by = western

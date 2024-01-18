@@ -4,10 +4,10 @@ discovered_by = eastern
 #Przemysl
 culture = kresowa
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 2
 capital = "Przemysl"
 is_city = yes
 discovered_by = western
