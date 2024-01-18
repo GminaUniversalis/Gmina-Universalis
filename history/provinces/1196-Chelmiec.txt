@@ -1,10 +1,10 @@
 #Chelmiec
 culture = lachska
 religion = communism_zsl
-base_tax = 1
-base_production = 1
+base_tax = 5
+base_production = 4
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 5
 capital = "Chelmiec"
 is_city = yes
 discovered_by = western

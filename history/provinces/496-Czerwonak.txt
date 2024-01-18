@@ -1,10 +1,10 @@
 #Czerwonak
 culture = poznanska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 4
+base_production = 5
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 5
 capital = "Czerwonak"
 is_city = yes
 discovered_by = western
@@ -13,4 +13,3 @@ owner = R23
 controller = R23
 add_core = R23
 discovered_by = ottoman
-add_core = R32

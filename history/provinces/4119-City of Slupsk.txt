@@ -1,10 +1,10 @@
 #City of Slupsk
 culture = srodkowopomorska
 religion = communism_zsl
-base_tax = 1
-base_production = 1
+base_tax = 17
+base_production = 17
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 14
 capital = "City of Slupsk"
 is_city = yes
 discovered_by = western
