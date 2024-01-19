@@ -1,10 +1,10 @@
 #Przemet
 culture = poznanska
 religion = communism_sd
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 2
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 3
 capital = "Przemet"
 is_city = yes
 discovered_by = western
