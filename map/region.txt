@@ -42,7 +42,7 @@ podlasie_region = {
 zachodnio_pomorskie_region = { 
 	areas = { 
 		powiat_slawienski powiat_koszalinski powiat_szczecinecki powiat_bialogardzki powiat_kolobrzeski powiat_gryficki powiat_swidwinski powiat_drawski powiat_walecki powiat_choszczenski
-		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_szczecinski powiat_pyrzycki powiat_gryfinski powiat_mysliborski
+		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_pyrzycki powiat_gryfinski powiat_mysliborski Szczecin
 	}
 }
 pomorskie_region = { 
@@ -61,7 +61,7 @@ kujawsko_pomorskie_region = {
 lubuskie_region = { 
 	areas = { 
 		powiat_wschowski powiat_nowosolski powiat_zaganski powiat_zielonogorski powiat_swiebodzinski powiat_miedzyrzecki powiat_strzelecko-drezdenecki powiat_gorzowski powiat_zarski powiat_slubnicki
-		powiat_sulecinski powiat_krosnienski powiat_krosnienski_lubu 
+		powiat_sulecinski powiat_krosnienski_lubu 
 	}
 }
 wielkopolska_region = { 

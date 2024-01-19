@@ -22,8 +22,6 @@ powiat_rzeszowski = {
 	4421 2029 2052 521 4457 2775 2024 2788 4862 554
 	2786 2789 2792 2094 1210 
 }
-powiat_krosnienski = { 
-}
 powiat_strzyzowski = { 
 	1204 2796 2794 2781 1798 
 }
@@ -408,9 +406,6 @@ powiat_kamienski = {
 powiat_policki = { 
 	227 117 116 2977 
 }
-powiat_szczecinski = { 
-	2978 
-}
 powiat_goleniowski = { 
 	208 230 207 4150 229 4787 
 }
@@ -478,8 +473,6 @@ powiat_kartuski = {
 }
 powiat_gdanski = { 
 	199 987 4161 17 22 4144 4160 4157 
-}
-powiat_nowodworski = { 
 }
 powiat_elblaski = { 
 	2 999 25 1982 770 275 273 988 4745 4242
@@ -1060,4 +1053,10 @@ Lodz = {
 Lublin = { 
 	969 4809 4810 4820 4822 4821 4817 4811 4818 4812
 	4808 4819 4813 4816 4814 4815 
+}
+Szczecin = { 
+	4395 4394 3585 3196 3451 4397 4396 4398 4405 4399
+	4403 4404 4402 2978 4401 4400 4406 4393 
+}
+powiat_nowodworski = { 
 }
