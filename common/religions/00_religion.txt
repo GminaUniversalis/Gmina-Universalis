@@ -1533,11 +1533,7 @@ socialism_group = {
 	religious_schools = {
 		hanafi_school = {
 			potential_invite_scholar = {
-				OR = {
-					knows_of_scholar_country_capital_trigger = yes
-					has_country_flag = can_always_invite_hanafi_school
-					has_country_flag = privilege_can_always_invite_hanafi_school
-				}
+				has_matching_religion = socialism_sld
 			}
 
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
