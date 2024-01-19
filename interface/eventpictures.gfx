@@ -30,6 +30,30 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "PSLPicture"
+		texturefile = "gfx/event_pictures/politics/PSL_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "SLDPicture"
+		texturefile = "gfx/event_pictures/politics/SLD_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "PZPR_ENDPicture"
+		texturefile = "gfx/event_pictures/politics/PZPR_END_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "SD_DILEMAPicture"
+		texturefile = "gfx/event_pictures/politics/DILEMA_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "ELECTRIFICATIONPicture"
 		texturefile = "gfx/event_pictures/event_pictures_tradegoods/institution_event_electrification.dds"
 		alwaystransparent = yes
