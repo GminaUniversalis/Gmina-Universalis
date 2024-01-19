@@ -39,3 +39,7 @@ loyal_army ={
 	drill_gain_modifier = 0.25
 
 }
+rebuild_Gdansk ={
+	development_cost = -0.1
+	build_cost = -0.1
+}

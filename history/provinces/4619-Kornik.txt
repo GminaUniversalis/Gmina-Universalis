@@ -1,10 +1,10 @@
 #Kornik
 culture = wielkopolska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 5
+base_production = 9
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 5
 capital = "Kornik"
 is_city = yes
 discovered_by = western
@@ -13,4 +13,3 @@ owner = R23
 controller = R23
 add_core = R23
 discovered_by = ottoman
-add_core = R32

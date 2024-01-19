@@ -1,11 +1,10 @@
 #Country Name: Powiat Krakowski
-
 graphical_culture = westerngfx
 color = { 250 240 250 }
 revolutionary_colors = { 8 1 8 }
-historical_idea_groups = {
+historical_idea_groups = { 
 }
-historical_units = {
+historical_units = { 
 	bardiche_infantry
 	eastern_knights
 	slavic_stradioti
@@ -27,14 +26,14 @@ monarch_names = {
 	"Szwabka #0" = 50
 	"Oskar #0" = 25
 }
-leader_names = {
-    Leman
+leader_names = { 
+	Leman
 }
-ship_names = {
-    "Comte de Smet de Nayer"
+ship_names = { 
+	"Comte de Smet de Nayer" 
 }
-army_names = {
-	"Placeholder $PROVINCE$"
+army_names = { 
+	"Placeholder $PROVINCE$" 
 }
 fleet_names = { 
 	"Stadtflotte" 

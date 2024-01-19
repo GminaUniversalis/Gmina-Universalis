@@ -1,10 +1,10 @@
 #Kosakowo
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 5
-base_production = 5
+base_tax = 3
+base_production = 2
 trade_goods = unknown
-base_manpower = 5
+base_manpower = 4
 capital = "Kosakowo"
 is_city = yes
 discovered_by = western

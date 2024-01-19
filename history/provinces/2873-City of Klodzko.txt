@@ -1,9 +1,9 @@
 #City of Klodzko
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 4
+base_production = 5
+trade_goods = paper
+base_manpower = 5
 capital = "City of Klodzko"
 is_city = yes
 discovered_by = western

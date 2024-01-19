@@ -643,17 +643,17 @@ Q14_ideas = {
 	Ziemia_Obiecana = {
 		development_cost = -0.1
 	}
-	Bałucki_Folklor  = {
+	Balucki_Folklor  = {
 		land_morale = 0.1
 	}
 	Miasto_kultur = {
 		num_accepted_cultures = 4
 	}
 	Rzymianscy_przemyslowcy = {
-		heavy_ship_power = 0.2
+		global_trade_goods_size_modifier = 0.1
 	}
 	LODZ_KURWA = {
-		global_trade_goods_size_modifier = 0.1
+		heavy_ship_power = 0.2
 	}
 	Morda_Limanka = {
 		shock_damage_received = -0.15
@@ -905,13 +905,13 @@ Y10_ideas = {
 Y19_ideas = {
 	start = {
 		
-		core_creation = -0.25
-		max_absolutism = 20
+		infantry_power = 0.1
+		diplomatic_upkeep = 3
 		
 	}
 	
 	bonus = {
-		governing_capacity_modifier = 0.25
+		global_prosperity_growth = 0.25
 	}	
 
 	trigger = {
@@ -919,40 +919,43 @@ Y19_ideas = {
 	}
 	free = yes
 	
-	Empire_reborn = {
-		global_autonomy = -0.1
-		state_maintenance_modifier = -0.25
+	Declining_empire = {
+		prestige = -0.5
+		global_unrest = -1
 	}
-	Danziger_shipyards = {
+	Broken_Jewel_Hanza = {
 		global_ship_cost = -0.15
 	}
-	Imperial_dragons = {
-		infantry_power = 0.15
+	Vistula_estuary = {
+		development_cost = -0.1
 	}
-	Coexistence = {
-		num_accepted_cultures = 3
+	Mercenarny_haven = {
+		mercenary_cost = -0.25
 	}
-	Pearl_of_baltic = {
-		global_ship_trade_power = 0.25
+	Fleet_destroyed = {
+		global_ship_trade_power = -0.25
+		heavy_ship_power = -0.5
+		light_ship_power = -0.5
+		global_tax_modifier = 0.1
 	}
-	Hanza_legacy = {
-		trade_range_modifier = 0.5
+	Free_city_senate = {
+		yearly_corruption = -0.2
 	}
-	Superior_firepower = {
-		artillery_power = 0.1
-		artillery_fire = 1
+	Legacy_emperor = {
+		land_morale = 0.1
+		legitimacy = 1
 	}
 }
 Y20_ideas = {
 	start = {
 		
-		core_creation = -0.25
-		max_absolutism = 20
+		improve_relation_modifier = 0.5
+		diplomats = 1
 		
 	}
 	
 	bonus = {
-		governing_capacity_modifier = 0.25
+		inflation_reduction = 0.15
 	}	
 
 	trigger = {
@@ -960,28 +963,27 @@ Y20_ideas = {
 	}
 	free = yes
 	
-	Empire_reborn = {
-		global_autonomy = -0.1
-		state_maintenance_modifier = -0.25
+	Tourist_haven = {
+		manpower_recovery_speed = 0.15
 	}
-	Danziger_shipyards = {
-		global_ship_cost = -0.15
+	Between_two_giants = {
+		defensiveness = 0.4
 	}
-	Imperial_dragons = {
-		infantry_power = 0.15
+	Efficient_infrastructure = {
+		movement_speed = 0.1
 	}
-	Coexistence = {
-		num_accepted_cultures = 3
+	danzig_remembrance = {
+		reform_progress_growth = 0.3
 	}
-	Pearl_of_baltic = {
-		global_ship_trade_power = 0.25
+	Most_finest_horses = {
+		discipline = 0.05
 	}
-	Hanza_legacy = {
-		trade_range_modifier = 0.5
+	Opera_lesna = {
+		diplomatic_reputation = 1
 	}
-	Superior_firepower = {
-		artillery_power = 0.1
-		artillery_fire = 1
+	Birthplace_of_herr_Tusk = {
+		global_unrest = -1
+		prestige = 1
 	}
 }
 Y21_ideas = {
@@ -1245,7 +1247,7 @@ H01_ideas = {
 	Szlagier_Maszyna = {
 		monthly_splendor = 1
 	}
-	Zakłady_Azotowe = {
+	Zak³ady_Azotowe = {
 		global_trade_goods_size_modifier = 0.05
 	}
 	Unification = {
@@ -1284,7 +1286,7 @@ I18_ideas = {
 	Szlagier_Maszyna = {
 		monthly_splendor = 1
 	}
-	Zakłady_Azotowe = {
+	Zak³ady_Azotowe = {
 		global_trade_goods_size_modifier = 0.05
 	}
 	Unification = {

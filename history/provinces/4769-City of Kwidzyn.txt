@@ -1,10 +1,10 @@
 #City of Kwidzyn
 culture = zulawska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 7
+base_production = 10
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 6
 capital = "City of Kwidzyn"
 is_city = yes
 discovered_by = western

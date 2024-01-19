@@ -1,10 +1,10 @@
 #Zabierzow
 culture = zachodnio-krakowska
-religion = catholic
-base_tax = 1
-base_production = 1
+religion = communism_sd
+base_tax = 5
+base_production = 6
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 5
 capital = "Zabierzow"
 is_city = yes
 discovered_by = western
@@ -13,7 +13,6 @@ owner = X15
 controller = X15
 add_core = X15
 discovered_by = ottoman
-
 add_permanent_province_modifier = { 
 	name = airport_modifier
 	duration = -1

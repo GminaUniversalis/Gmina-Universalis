@@ -1,10 +1,10 @@
 #City of Mielec
 culture = wschodnio-krakowska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 9
+base_production = 19
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 10
 capital = "City of Mielec"
 is_city = yes
 discovered_by = western
