@@ -991,12 +991,10 @@ province;red;green;blue;x;x
 1263;14;200;250;Odra;x
 1273;224;123;123;Kolaczyce;x
 1289;40;250;250;Wisla;x
-1304;55;220;250;Zalew Szczecinski Zachod;x
 1306;181;48;132;Babice;x
 1318;209;246;4;Katowice;x
 1325;76;250;250;Lake Balaton;x
 1326;77;200;200;Caspian Sea;x
-1327;78;200;250;Male Dabie;x
 1336;87;220;250;Coast of Makran;x
 1423;46;201;251;Cook Strait;x
 1446;69;201;201;Horn of Africa;x
@@ -1227,7 +1225,6 @@ province;red;green;blue;x;x
 1885;2;0;240;Central Finnish Lakes;x
 1886;3;0;244;Storavan;x
 1887;4;0;248;Storsjon;x
-1888;5;0;232;Zalew Szczecinski Poludnie;x
 1889;6;0;236;Lake Geneva;x
 1890;7;0;240;Lake Constance;x
 1891;8;0;244;Lake Tuz;x
@@ -1307,7 +1304,6 @@ province;red;green;blue;x;x
 1972;216;114;79;Dubeniki;x
 1973;88;124;126;City of Bransk;x
 1974;215;110;173;Podkowa Lesna;x
-1976;93;0;244;Zalew Szczecinski Wschod;x
 1977;94;0;248;MÃ¤laren;x
 1978;95;0;232;Glowczyce;x
 1979;96;0;236;Leba;x
@@ -1956,7 +1952,6 @@ province;red;green;blue;x;x
 2975;42;231;108;City of Wloclawek;x
 2976;205;23;23;Chociwel;x
 2977;248;231;136;Kolbaskowo;x
-2978;99;204;234;Szczecin;x
 2979;192;219;10;Banie;x
 2980;241;15;15;Stargard;x
 2981;222;108;69;Cedynia;x
@@ -2143,7 +2138,6 @@ province;red;green;blue;x;x
 4132;70;229;231;Mweru;x
 4133;88;239;241;Kivu;x
 4134;103;216;217;Rutanzige;x
-4135;139;230;231;Lake Albert;x
 4136;45;225;227;Zaysan;x
 4137;79;222;224;Alakol;x
 4138;40;196;198;Issyk-Kul;x
@@ -2823,3 +2817,31 @@ province;red;green;blue;x;x
 4790;170;98;56;Zlotno;x
 4932;200;60;131;Stare Polesie;x
 4933;200;90;171;Lublinek;x
+4406;131;123;246;Glebokie-Pilchowo;x
+4405;135;83;198;Warszewo;x
+4404;186;179;78;Pogodno;x
+4403;174;133;74;Niebuszewo;x
+4402;8;19;70;Gumience;x
+4401;99;2;220;Pomorzany;x
+4400;4;138;139;Wyspa Pucka;x
+4399;209;206;232;Zelechowa;x
+4398;145;54;67;Goclaw;x
+4397;87;141;35;Miedzyodrze;x
+4396;38;227;36;Skolwin;x
+4395;7;183;221;Podjuchy;x
+4394;223;76;249;Sloneczne;x
+4393;181;227;89;Plonia;x
+3585;225;25;185;Dabie;
+3451;219;23;151;Wielgowo;
+4135;139;230;231;Male Dabie;x
+1327;78;200;250;Dabie;x
+1304;55;220;250;Zalew Szczecinski Zachod;x
+1888;5;0;232;Zalew Szczecinski Poludnie;x
+1976;93;0;244;Zalew Szczecinski Wschod;x
+2978;99;204;234;Szczecin Centrum;x
+1290;41;200;200;Odra Zachodnia;x
+1291;42;200;250;Odra Zachodnia;x
+1292;43;220;250;Regalica;x
+1293;44;250;250;Odra;x
+3196;219;32;6;Kasztanowe;
+4000;100;14;100;Swinia;
