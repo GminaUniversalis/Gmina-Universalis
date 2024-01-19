@@ -8,7 +8,7 @@ communism_group = {
 	
 	communism_pzpr = {
 		icon = 30
-		color = { 0.84 0.15 0.1 }
+		color = { 128 10 0 }
 		country = {
 			yearly_corruption = 0.15	
 			stability_cost_modifier = 0.5
@@ -30,6 +30,7 @@ communism_group = {
 			conservatism_zchn
 			conservatism_pc
 			conservatism_psl
+			socialism_sld
 		}
 
 		on_convert = {
@@ -81,6 +82,7 @@ communism_group = {
 			conservatism_zchn
 			conservatism_pc
 			conservatism_psl
+			socialism_sld
 		}
 
 		on_convert = {
@@ -132,6 +134,7 @@ communism_group = {
 			conservatism_zchn
 			conservatism_pc
 			conservatism_psl
+			socialism_sld
 		}
 
 		on_convert = {
