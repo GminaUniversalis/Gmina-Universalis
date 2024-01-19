@@ -2087,6 +2087,7 @@ socialism_group = {
 		}
 
 		heretic = { FASCISTS }
+		date = 1480.1.1
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
