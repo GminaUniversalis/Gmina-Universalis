@@ -100,7 +100,7 @@ wine = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 0
+		factor = 5
 	}
 }
 
@@ -1325,6 +1325,7 @@ gu_mushrooms = {
 	}
 }
 
+
 gu_fruits = {
 	color = { 1 0 0 }
 	modifier = {
@@ -1437,7 +1438,7 @@ gu_horses = {
 		cavalry_power = 0.10
 	}
 	province = {
-		local_movement_speed = 0.20
+		local_friendly_movement_speed = 0.2
 	}
 	chance = {
 		factor = 5
