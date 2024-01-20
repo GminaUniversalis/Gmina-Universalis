@@ -1,15 +1,15 @@
-#Bydgoszcz
+#Torun Katarzynka
 culture = kujawska
 religion = communism_zsl
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Bydgoszcz"
+capital = "Katarzynka"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = B05
-controller = B05
-add_core = B05
+owner = B21
+controller = B21
 discovered_by = ottoman
+add_core = B21
