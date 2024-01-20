@@ -57,7 +57,7 @@ country_event = {
 	id = communism.3
 	title = communism.3.t
 	desc = communism.3.d
-	picture = CORRUPTION_eventPicture
+	picture = ECONOMY_eventPicture
 
 	is_triggered_only = yes
 
