@@ -70,7 +70,6 @@ province;red;green;blue;x;x
 69;137;42;255;Bobrowniki;x
 70;10;44;0;Dabrowa Chelminska;x
 71;138;46;64;Krzymow;x
-72;10;48;128;Torun;x
 73;138;50;192;Stolno;x
 74;10;52;255;Lubicz;x
 75;138;54;0;Barcin;x
@@ -104,7 +103,6 @@ province;red;green;blue;x;x
 103;85;80;32;Warnice;x
 104;14;112;255;Mieszkowice;x
 105;143;114;0;Nowogrodek Pomorski;x
-106;15;116;64;Modena;x
 107;143;118;128;Widuchowa;x
 108;15;120;192;Czarnkow;x
 109;143;122;255;Kozielice;x
@@ -859,7 +857,6 @@ province;red;green;blue;x;x
 1117;168;86;173;Stzrelce Wielkie;x
 1118;40;88;32;Herby;x
 1119;168;90;79;Wreczyca Wielka;x
-1120;40;92;126;Kielce;x
 1121;169;94;173;Dobryszyce;x
 1122;41;96;32;kodrlb;x
 1123;169;98;79;Daleszyce;x
@@ -1763,7 +1760,6 @@ province;red;green;blue;x;x
 2785;255;153;153;Ropczyce;x
 2786;86;100;255;Swilcza;x
 2787;201;151;89;Medrzechow;x
-2788;201;201;89;Rzeszow;x
 2789;194;170;163;Glogow Malopolski;x
 2790;194;89;105;Lisia Gora;x
 2791;126;107;255;Nisko;x
@@ -1825,8 +1821,8 @@ province;red;green;blue;x;x
 2847;61;225;80;Sobotka;x
 2848;112;183;0;Wadroze Wielkie;x
 2849;195;231;140;Szczytna;x
-2850;238;42;55;Jaworzyna  Slaska;x
-2851;217;40;128;Kostomaoty;x
+2850;238;42;55;Jaworzyna Slaska;x
+2851;217;40;128;Kostomloty;x
 2852;102;64;154;Udanin;x
 2853;239;193;128;Dobromierz;x
 2854;39;54;255;Nowa Ruda;x
@@ -1964,7 +1960,6 @@ province;red;green;blue;x;x
 2988;232;11;11;Tarragona;x
 2989;200;58;78;Zlotow;x
 2990;181;150;96;Wysoka;x
-2991;243;21;172;Bydgoszcz;x
 2992;91;125;222;Moryn;x
 2993;136;48;142;Strzeleczki;x
 2994;248;245;157;Pietrowice Wielkie;x
@@ -1995,7 +1990,7 @@ province;red;green;blue;x;x
 3279;219;32;89;Mokotow;
 3394;219;32;204;Wesola;
 3559;225;25;159;Wroclaw-Lesnica;
-3621;100;10;121;Wroclaw-Fabryczna;
+3621;100;10;121;Wroclaw-Strachowice;
 3618;225;25;208;Wroclaw-Kozanow;
 3620;100;10;120;Wroclaw-Grabiszyn;
 3614;225;25;204;Wroclaw-Krzyki;
@@ -2012,7 +2007,7 @@ province;red;green;blue;x;x
 3549;219;24;249;Ursynow;
 3550;219;24;150;Wilanow;
 3558;225;25;158;Wawer;
-3619;225;25;209;Bialorus wschod;
+3677;100;10;177;Bialorus wschod;
 3721;100;11;121;Ukraina wschod;
 3888;100;12;188;Bialorus zachod;
 3500;219;23;200;Zduny;
@@ -2845,3 +2840,77 @@ province;red;green;blue;x;x
 1293;44;250;250;Odra;x
 3196;219;32;6;Kasztanowe;
 4000;100;14;100;Swinia;
+4001;100;14;101;Oplawiec;
+4019;100;14;119;Osowa Gora;
+4018;100;14;118;Legnowo;
+4017;100;14;117;Fordon 2;
+4016;100;14;116;Las Gdanski;
+3695;100;10;195;Brydyujscie;
+3657;100;10;157;Wypaleniska;
+3609;225;25;209;Gorny Taras;
+3565;225;25;165;Zimne Wody;
+3544;219;24;244;Piaski;
+3515;219;24;215;Rynkowo;
+3281;219;32;91;Bartodzieje;
+3268;219;32;78;Blonie;
+3184;207;140;133;Lotnisko;
+3124;207;110;73;Glinki;
+2991;243;21;172;Bydgoszcz Centrum;x
+3103;207;110;52;Piaski;
+3090;207;110;39;Starotorunskie Przedmiescie;
+3049;207;110;248;Podgórz;
+3171;207;110;120;Stawki;
+3180;207;110;129;Barbarka;
+3234;219;32;44;Wrzosy;
+3257;219;32;67;Kaszczorek;
+3282;219;32;92;Katarzynka;
+3298;219;32;108;Bydgoskie przedmiescie;
+3314;219;32;124;Bielawy;
+3396;219;32;206;Na Skarpie;
+3422;219;23;122;Rudak;
+3482;219;23;182;Rubinkowo;
+3520;219;24;220;Bielany;
+3808;100;12;108;Mokre;
+72;10;48;128;Torun Centrum;x
+3650;100;10;150;Wroclaw Zerniki;
+3681;100;10;181;Wroclaw Pilczyce;
+3655;100;10;155;Wroclaw Ratyn;
+3577;225;25;177;Wroclaw Pracze;
+3531;219;24;231;Wroclaw Redziny;
+3135;207;110;84;Wroclaw Polanowice;
+3122;207;110;71;Wroclaw Swiniary;
+3083;207;110;32;Wroclaw Karlowice;
+3073;207;110;22;Wroclaw Poludnie;
+3037;207;110;236;Wroclaw Swojczyce;
+3017;203;110;220;Wroclaw Sepolno;
+3060;207;110;9;Wroclaw Muchobor;
+3134;207;110;83;Wroclaw Zakrzow;
+3095;207;110;44;Bukowka;
+3133;207;110;82;Folwark;
+3148;207;110;97;Bialogon;
+3560;225;25;160;Barwinek;
+3561;225;25;161;Podkarczowka;
+4639;209;14;225;Zalesie;x
+4638;169;176;200;Os Na Stoku;x
+4637;129;137;175;Szydlowek;x
+4636;89;69;150;Skrzetle;x
+4635;69;14;250;Herby;x
+4634;9;176;225;Slichowice;x
+1120;40;92;126;Kielce Centrum;x
+4633;248;137;200;Budziwoj;x
+4632;208;69;175;Biala;x
+4631;168;14;150;Bzianka;x
+4630;128;176;250;Zalesie;x
+4629;88;137;225;Nowe Miasto;x
+4628;68;69;200;Drabinianka;x
+4627;8;14;175;Przybyszowka;x
+4626;247;176;150;Matysówka;x
+4625;167;69;225;Slocina;x
+4356;201;167;29;Wilkowyje;x
+4355;248;245;172;Zaleze;x
+4354;135;77;125;Zwieczyca;x
+4353;89;35;145;Zawiszy Czarnego;x
+4352;219;168;88;Staromiescie;x
+4351;104;196;152;Kotuli;x
+4350;154;86;212;Pogwizdow Nowy;x
+2788;201;201;89;Rzeszow Srodmiescie;x
