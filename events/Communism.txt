@@ -52,7 +52,7 @@ country_event = {
 	}
 }
 
-# Political nominee
+# Inflation growing
 country_event = {
 	id = communism.3
 	title = communism.3.t
