@@ -1,5 +1,4 @@
 #4870 - Australian Lakes
-discovered_by = western
 discovered_by = eastern
 #Przemysl
 culture = kresowa
@@ -10,8 +9,6 @@ trade_goods = unknown
 base_manpower = 2
 capital = "Przemysl"
 is_city = yes
-discovered_by = western
-discovered_by = eastern
 owner = I15
 controller = I15
 add_core = I15
