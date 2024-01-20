@@ -1,4 +1,4 @@
-czechy = { 
+tn_czechy = { 
 	location = 2009
 	inland = yes
 	end = yes
@@ -9,7 +9,7 @@ czechy = {
 		3219 2009 
 	}
 }
-niemcy = { 
+tn_niemcy = { 
 	location = 2007
 	end = yes
 	color = { 
@@ -19,7 +19,7 @@ niemcy = {
 		2007 3200 2008 3238 
 	}
 }
-francja = { 
+tn_francja = { 
 	location = 3105
 	end = yes
 	color = { 
@@ -29,7 +29,7 @@ francja = {
 		3105 
 	}
 }
-niderlandy = { 
+tn_niderlandy = { 
 	location = 3218
 	end = yes
 	color = { 
@@ -39,7 +39,7 @@ niderlandy = {
 		3218 550 3290 
 	}
 }
-baltyk = { 
+tn_baltyk = { 
 	location = 3419
 	end = yes
 	color = { 
@@ -49,7 +49,7 @@ baltyk = {
 		3419 
 	}
 }
-slowacja = { 
+tn_slowacja = { 
 	location = 3013
 	end = yes
 	color = { 
@@ -59,7 +59,7 @@ slowacja = {
 		3013 
 	}
 }
-ukraina = { 
+tn_ukraina = { 
 	location = 3721
 	end = yes
 	color = { 
@@ -69,7 +69,7 @@ ukraina = {
 		3721 3289 
 	}
 }
-bialorus = { 
+tn_bialorus = { 
 	location = 3888
 	end = yes
 	color = { 
@@ -79,7 +79,7 @@ bialorus = {
 		3888 3619 
 	}
 }
-krolewiec = { 
+tn_krolewiec = { 
 	location = 3887
 	end = yes
 	color = { 
@@ -89,7 +89,7 @@ krolewiec = {
 		3887 
 	}
 }
-litwa = { 
+tn_litwa = { 
 	location = 3288
 	end = yes
 	color = { 
@@ -99,20 +99,20 @@ litwa = {
 		3288 
 	}
 }
-przemysl = { 
+tn_przemysl = { 
 	location = 1086
 	color = { 
 		128 64 0 
 	}
 	outgoing = { 
-		name = "rzeszow"
+		name = "tn_rzeszow"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "tarnow"
+		name = "tn_tarnow"
 		path = { 
 		}
 		control = { 
@@ -126,27 +126,27 @@ przemysl = {
 		1085 1087 4868 2735 
 	}
 }
-zamosc = { 
+tn_zamosc = { 
 	location = 547
 	color = { 
 		128 0 255 
 	}
 	outgoing = { 
-		name = "rzeszow"
+		name = "tn_rzeszow"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lublin"
+		name = "tn_lublin"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "kielce"
+		name = "tn_kielce"
 		path = { 
 		}
 		control = { 
@@ -163,27 +163,27 @@ zamosc = {
 		520 2082 546 2084 991 4507 559 
 	}
 }
-bialystok = { 
+tn_bialystok = { 
 	location = 1065
 	color = { 
 		0 128 64 
 	}
 	outgoing = { 
-		name = "suwalki"
+		name = "tn_suwalki"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "biala_podlaska"
+		name = "tn_biala_podlaska"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lomza"
+		name = "tn_lomza"
 		path = { 
 		}
 		control = { 
@@ -199,20 +199,20 @@ bialystok = {
 		2433 1076 2430 1068 716 480 714 2431 
 	}
 }
-rzeszow = { 
+tn_rzeszow = { 
 	location = 2788
 	color = { 
 		0 0 255 
 	}
 	outgoing = { 
-		name = "lublin"
+		name = "tn_lublin"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "tarnow"
+		name = "tn_tarnow"
 		path = { 
 		}
 		control = { 
@@ -230,34 +230,34 @@ rzeszow = {
 		2781 2796 1204 4937 1089 4468 1224 2762 1223 4497
 	}
 }
-tarnow = { 
+tn_tarnow = { 
 	location = 4063
 	color = { 
 		255 255 0 
 	}
 	outgoing = { 
-		name = "lublin"
+		name = "tn_lublin"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "kielce"
+		name = "tn_kielce"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "krakow"
+		name = "tn_krakow"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "nowy_targ"
+		name = "tn_nowy_targ"
 		path = { 
 		}
 		control = { 
@@ -273,34 +273,34 @@ tarnow = {
 		4073 4077 4422 4046 1151 4022 2763 2765 4034 
 	}
 }
-lublin = { 
+tn_lublin = { 
 	location = 969
 	color = { 
 		192 192 192 
 	}
 	outgoing = { 
-		name = "biala_podlaska"
+		name = "tn_biala_podlaska"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "warszawa"
+		name = "tn_warszawa"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "radom"
+		name = "tn_radom"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "siedlce"
+		name = "tn_siedlce"
 		path = { 
 		}
 		control = { 
@@ -319,13 +319,13 @@ lublin = {
 		3501 967 
 	}
 }
-biala_podlaska = { 
+tn_biala_podlaska = { 
 	location = 4511
 	color = { 
 		255 255 255 
 	}
 	outgoing = { 
-		name = "siedlce"
+		name = "tn_siedlce"
 		path = { 
 		}
 		control = { 
@@ -339,20 +339,20 @@ biala_podlaska = {
 		4689 1785 4687 2075 4435 4429 544 2035 4423 
 	}
 }
-nowy_targ = { 
+tn_nowy_targ = { 
 	location = 1034
 	color = { 
 		255 128 0 
 	}
 	outgoing = { 
-		name = "southern_silesia"
+		name = "tn_southern_silesia"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "krakow"
+		name = "tn_krakow"
 		path = { 
 		}
 		control = { 
@@ -367,34 +367,34 @@ nowy_targ = {
 		4042 1200 1800 1182 2289 4031 4097 
 	}
 }
-krakow = { 
+tn_krakow = { 
 	location = 262
 	color = { 
 		255 128 255 
 	}
 	outgoing = { 
-		name = "kielce"
+		name = "tn_kielce"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "silesian_conurbation"
+		name = "tn_silesian_conurbation"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "czestochowa"
+		name = "tn_czestochowa"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lodz"
+		name = "tn_lodz"
 		path = { 
 		}
 		control = { 
@@ -415,20 +415,20 @@ krakow = {
 		4846 1213 2294 
 	}
 }
-suwalki = { 
+tn_suwalki = { 
 	location = 296
 	color = { 
 		255 255 0 
 	}
 	outgoing = { 
-		name = "olsztyn"
+		name = "tn_olsztyn"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lomza"
+		name = "tn_lomza"
 		path = { 
 		}
 		control = { 
@@ -443,27 +443,27 @@ suwalki = {
 		268 4255 2405 4530 
 	}
 }
-kielce = { 
+tn_kielce = { 
 	location = 1120
 	color = { 
 		128 255 255 
 	}
 	outgoing = { 
-		name = "radom"
+		name = "tn_radom"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "czestochowa"
+		name = "tn_czestochowa"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lodz"
+		name = "tn_lodz"
 		path = { 
 		}
 		control = { 
@@ -480,27 +480,27 @@ kielce = {
 		2286 2475 351 
 	}
 }
-radom = { 
+tn_radom = { 
 	location = 2330
 	color = { 
 		0 255 0 
 	}
 	outgoing = { 
-		name = "warszawa"
+		name = "tn_warszawa"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "czestochowa"
+		name = "tn_czestochowa"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lodz"
+		name = "tn_lodz"
 		path = { 
 		}
 		control = { 
@@ -519,34 +519,34 @@ radom = {
 		334 2458 4520 2473 
 	}
 }
-czestochowa = { 
+tn_czestochowa = { 
 	location = 441
 	color = { 
 		128 0 64 
 	}
 	outgoing = { 
-		name = "opole"
+		name = "tn_opole"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "kalisz"
+		name = "tn_kalisz"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lodz"
+		name = "tn_lodz"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "silesian_conurbation"
+		name = "tn_silesian_conurbation"
 		path = { 
 		}
 		control = { 
@@ -563,13 +563,13 @@ czestochowa = {
 		339 2266 1125 
 	}
 }
-silesian_conurbation = { 
+tn_silesian_conurbation = { 
 	location = 1318
 	color = { 
 		0 128 0 
 	}
 	outgoing = { 
-		name = "southern_silesia"
+		name = "tn_southern_silesia"
 		path = { 
 		}
 		control = { 
@@ -585,13 +585,13 @@ silesian_conurbation = {
 		141 2263 1118 146 4699 4701 3002 
 	}
 }
-southern_silesia = { 
+tn_southern_silesia = { 
 	location = 4751
 	color = { 
 		0 255 255 
 	}
 	outgoing = { 
-		name = "opole"
+		name = "tn_opole"
 		path = { 
 		}
 		control = { 
@@ -608,20 +608,20 @@ southern_silesia = {
 		2967 266 1771 2970 4725 4096 
 	}
 }
-opole = { 
+tn_opole = { 
 	location = 4761
 	color = { 
 		128 0 255 
 	}
 	outgoing = { 
-		name = "kalisz"
+		name = "tn_kalisz"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "swidnica"
+		name = "tn_swidnica"
 		path = { 
 			1759 959 2614 4578 2657 2874 2862 2844 782 2858
 			2867 
@@ -630,7 +630,7 @@ opole = {
 		}
 	}
 	outgoing = { 
-		name = "wroclaw"
+		name = "tn_wroclaw"
 		path = { 
 		}
 		control = { 
@@ -645,13 +645,13 @@ opole = {
 		1863 
 	}
 }
-swidnica = { 
+tn_swidnica = { 
 	location = 2867
 	color = { 
 		128 255 255 
 	}
 	outgoing = { 
-		name = "wroclaw"
+		name = "tn_wroclaw"
 		path = { 
 			2877 1000 792 3620 3190 
 		}
@@ -659,7 +659,7 @@ swidnica = {
 		}
 	}
 	outgoing = { 
-		name = "legnica"
+		name = "tn_legnica"
 		path = { 
 		}
 		control = { 
@@ -675,20 +675,20 @@ swidnica = {
 		2874 2657 2619 
 	}
 }
-siedlce = { 
+tn_siedlce = { 
 	location = 739
 	color = { 
 		255 0 0 
 	}
 	outgoing = { 
-		name = "warszawa"
+		name = "tn_warszawa"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lomza"
+		name = "tn_lomza"
 		path = { 
 		}
 		control = { 
@@ -704,13 +704,13 @@ siedlce = {
 		393 2327 2201 711 
 	}
 }
-lomza = { 
+tn_lomza = { 
 	location = 1058
 	color = { 
 		255 128 255 
 	}
 	outgoing = { 
-		name = "ostroleka"
+		name = "tn_ostroleka"
 		path = { 
 		}
 		control = { 
@@ -724,34 +724,34 @@ lomza = {
 		992 1778 301 
 	}
 }
-ostroleka = { 
+tn_ostroleka = { 
 	location = 4186
 	color = { 
 		0 128 255 
 	}
 	outgoing = { 
-		name = "warszawa"
+		name = "tn_warszawa"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "plock"
+		name = "tn_plock"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "torun"
+		name = "tn_torun"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "olsztyn"
+		name = "tn_olsztyn"
 		path = { 
 		}
 		control = { 
@@ -767,20 +767,20 @@ ostroleka = {
 		2108 4666 724 4662 738 2445 
 	}
 }
-warszawa = { 
+tn_warszawa = { 
 	location = 257
 	color = { 
 		255 128 64 
 	}
 	outgoing = { 
-		name = "plock"
+		name = "tn_plock"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lodz"
+		name = "tn_lodz"
 		path = { 
 		}
 		control = { 
@@ -803,27 +803,27 @@ warszawa = {
 		474 1997 1820 2225 433 2235 4336 4345 432 
 	}
 }
-plock = { 
+tn_plock = { 
 	location = 972
 	color = { 
 		255 0 255 
 	}
 	outgoing = { 
-		name = "olsztyn"
+		name = "tn_olsztyn"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "torun"
+		name = "tn_torun"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "lodz"
+		name = "tn_lodz"
 		path = { 
 		}
 		control = { 
@@ -839,20 +839,20 @@ plock = {
 		4381 98 1876 81 56 86 82 4771 1775 53
 	}
 }
-olsztyn = { 
+tn_olsztyn = { 
 	location = 292
 	color = { 
 		128 0 255 
 	}
 	outgoing = { 
-		name = "trojmiasto"
+		name = "tn_trojmiasto"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "torun"
+		name = "tn_torun"
 		path = { 
 		}
 		control = { 
@@ -867,27 +867,27 @@ olsztyn = {
 		30 34 28 294 1781 
 	}
 }
-lodz = { 
+tn_lodz = { 
 	location = 2461
 	color = { 
 		255 128 128 
 	}
 	outgoing = { 
-		name = "kalisz"
+		name = "tn_kalisz"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "konin"
+		name = "tn_konin"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "torun"
+		name = "tn_torun"
 		path = { 
 		}
 		control = { 
@@ -908,13 +908,13 @@ lodz = {
 		4806 4807 4800 4795 2203 419 2202 
 	}
 }
-kalisz = { 
+tn_kalisz = { 
 	location = 407
 	color = { 
 		192 192 192 
 	}
 	outgoing = { 
-		name = "wroclaw"
+		name = "tn_wroclaw"
 		path = { 
 			4574 2644 4583 4598 2627 4587 2839 3190 
 		}
@@ -922,14 +922,14 @@ kalisz = {
 		}
 	}
 	outgoing = { 
-		name = "konin"
+		name = "tn_konin"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "poznan"
+		name = "tn_poznan"
 		path = { 
 		}
 		control = { 
@@ -946,34 +946,34 @@ kalisz = {
 		2196 462 2308 1856 
 	}
 }
-konin = { 
+tn_konin = { 
 	location = 2971
 	color = { 
 		255 255 0 
 	}
 	outgoing = { 
-		name = "poznan"
+		name = "tn_poznan"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "pila"
+		name = "tn_pila"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "bydgoszcz"
+		name = "tn_bydgoszcz"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "torun"
+		name = "tn_torun"
 		path = { 
 		}
 		control = { 
@@ -990,20 +990,20 @@ konin = {
 		189 846 4591 
 	}
 }
-torun = { 
+tn_torun = { 
 	location = 72
 	color = { 
 		255 128 0 
 	}
 	outgoing = { 
-		name = "bydgoszcz"
+		name = "tn_bydgoszcz"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "trojmiasto"
+		name = "tn_trojmiasto"
 		path = { 
 		}
 		control = { 
@@ -1019,34 +1019,34 @@ torun = {
 		261 40 2960 
 	}
 }
-pila = { 
+tn_pila = { 
 	location = 2751
 	color = { 
 		255 0 0 
 	}
 	outgoing = { 
-		name = "gorzow"
+		name = "tn_gorzow"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "szczecin"
+		name = "tn_szczecin"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "bydgoszcz"
+		name = "tn_bydgoszcz"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "szczecinek"
+		name = "tn_szczecinek"
 		path = { 
 		}
 		control = { 
@@ -1060,13 +1060,13 @@ pila = {
 		171 4373 192 200 826 
 	}
 }
-wroclaw = { 
+tn_wroclaw = { 
 	location = 3190
 	color = { 
 		0 255 64 
 	}
 	outgoing = { 
-		name = "legnica"
+		name = "tn_legnica"
 		path = { 
 			3618 3621 2872 2841 2837 2906 
 		}
@@ -1074,7 +1074,7 @@ wroclaw = {
 		}
 	}
 	outgoing = { 
-		name = "poznan"
+		name = "tn_poznan"
 		path = { 
 			3416 3220 2636 2653 4589 2663 482 490 493 4603
 			501 
@@ -1092,20 +1092,20 @@ wroclaw = {
 		2615 860 151 4177 2348 2634 
 	}
 }
-bydgoszcz = { 
+tn_bydgoszcz = { 
 	location = 2991
 	color = { 
 		0 255 255 
 	}
 	outgoing = { 
-		name = "trojmiasto"
+		name = "tn_trojmiasto"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "szczecinek"
+		name = "tn_szczecinek"
 		path = { 
 		}
 		control = { 
@@ -1118,27 +1118,27 @@ bydgoszcz = {
 		70 4719 4696 2983 333 
 	}
 }
-poznan = { 
+tn_poznan = { 
 	location = 501
 	color = { 
 		255 128 0 
 	}
 	outgoing = { 
-		name = "zielona_gora"
+		name = "tn_zielona_gora"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "gorzow"
+		name = "tn_gorzow"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "trojmiasto"
+		name = "tn_trojmiasto"
 		path = { 
 		}
 		control = { 
@@ -1157,20 +1157,20 @@ poznan = {
 		4839 4834 4835 2824 2809 813 4731 4600 827 
 	}
 }
-legnica = { 
+tn_legnica = { 
 	location = 2906
 	color = { 
 		255 255 0 
 	}
 	outgoing = { 
-		name = "zgorzelec"
+		name = "tn_zgorzelec"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "zielona_gora"
+		name = "tn_zielona_gora"
 		path = { 
 		}
 		control = { 
@@ -1183,13 +1183,13 @@ legnica = {
 		2920 2893 795 2840 2803 502 2896 2914 2913 750
 	}
 }
-zgorzelec = { 
+tn_zgorzelec = { 
 	location = 2923
 	color = { 
 		0 0 255 
 	}
 	outgoing = { 
-		name = "zielona_gora"
+		name = "tn_zielona_gora"
 		path = { 
 		}
 		control = { 
@@ -1202,20 +1202,20 @@ zgorzelec = {
 		754 756 757 2919 2910 
 	}
 }
-zielona_gora = { 
+tn_zielona_gora = { 
 	location = 2831
 	color = { 
 		0 255 255 
 	}
 	outgoing = { 
-		name = "szczecin"
+		name = "tn_szczecin"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "gorzow"
+		name = "tn_gorzow"
 		path = { 
 		}
 		control = { 
@@ -1229,13 +1229,13 @@ zielona_gora = {
 		1802 2833 802 817 2903 2881 2902 793 2820 822
 	}
 }
-gorzow = { 
+tn_gorzow = { 
 	location = 1006
 	color = { 
 		255 128 255 
 	}
 	outgoing = { 
-		name = "szczecin"
+		name = "tn_szczecin"
 		path = { 
 		}
 		control = { 
@@ -1248,13 +1248,13 @@ gorzow = {
 		2944 804 743 805 2947 2828 2829 806 809 2830
 	}
 }
-szczecinek = { 
+tn_szczecinek = { 
 	location = 1
 	color = { 
 		128 128 255 
 	}
 	outgoing = { 
-		name = "koszalin"
+		name = "tn_koszalin"
 		path = { 
 		}
 		control = { 
@@ -1266,20 +1266,20 @@ szczecinek = {
 		209 1749 4551 4366 
 	}
 }
-koszalin = { 
+tn_koszalin = { 
 	location = 4370
 	color = { 
 		0 255 0 
 	}
 	outgoing = { 
-		name = "trojmiasto"
+		name = "tn_trojmiasto"
 		path = { 
 		}
 		control = { 
 		}
 	}
 	outgoing = { 
-		name = "szczecin"
+		name = "tn_szczecin"
 		path = { 
 		}
 		control = { 
@@ -1293,7 +1293,7 @@ koszalin = {
 		237 1861 175 4112 246 
 	}
 }
-trojmiasto = { 
+tn_trojmiasto = { 
 	location = 1777
 	end = yes
 	color = { 
@@ -1313,7 +1313,7 @@ trojmiasto = {
 		4143 9 18 3503 8 4113 
 	}
 }
-szczecin = { 
+tn_szczecin = { 
 	location = 2978
 	end = yes
 	color = { 
