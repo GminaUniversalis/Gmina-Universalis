@@ -8,7 +8,7 @@ malopolska_region = {
 swietokrzyskie_region = { 
 	areas = { 
 		powiat_jedrzejowski powiat_wloszczowski powiat_konecki powiat_kielecki powiat_pinczowski powiat_kazimierski powiat_buski powiat_staszowski powiat_sandomierski powiat_opatowski
-		powiat_ostrowiecki powiat_starachowicki powiat_skarzyski 
+		powiat_ostrowiecki powiat_starachowicki powiat_skarzyski Kielce 
 	}
 }
 lubelskie_region = { 
@@ -21,8 +21,8 @@ lubelskie_region = {
 podkarpackie_region = { 
 	areas = { 
 		powiat_tarnobrzeski powiat_debnicki powiat_mielecki powiat_stalowowolski powiat_nizanski powiat_kolbuszowski powiat_lezajski powiat_lancuski powiat_ropczycko_sedziszowski powiat_jasielski
-		powiat_przeworski powiat_rzeszowski powiat_lubaczowski powiat_jaroslawski powiat_przemyski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_krosnienski_pod
-		powiat_brzozowski 
+		powiat_przeworski powiat_lubaczowski powiat_jaroslawski powiat_przemyski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_krosnienski_pod powiat_brzozowski
+		powiat_rzeszowski  
 	}
 }
 mazowieckie_region = { 
@@ -55,7 +55,8 @@ pomorskie_region = {
 kujawsko_pomorskie_region = { 
 	areas = { 
 		powiat_tucholski powiat_swiecki powiat_sepolenski powiat_nakielski powiat_bydgoski powiat_mogilenski powiat_inowroclawski powiat_aleksandrowski powiat_radziejowski powiat_wloclawski
-		powiat_lipnowski powiat_grudziadzki powiat_chelminski powiat_brodnicki powiat_wabrzeski powiat_rypinski powiat_torunski powiat_golubsko-dobrzynski powiat_zninski 
+		powiat_lipnowski powiat_grudziadzki powiat_chelminski powiat_brodnicki powiat_wabrzeski powiat_rypinski powiat_torunski powiat_golubsko-dobrzynski powiat_zninski Bydgoszcz
+		Torun 
 	}
 }
 lubuskie_region = { 
@@ -82,7 +83,8 @@ dolnoslaskie_region = {
 	areas = { 
 		powiat_olawski powiat_olesnicki powiat_milicki powiat_strzelinski powiat_zabkowicki powiat_klodzki powiat_dzierzoniowski powiat_gorowski powiat_glogowski powiat_polkowicki
 		powiat_boleslawiecki powiat_zgorzelecki powiat_lwowecki powiat_lubanski powiat_legnicki powiat_jaworski powiat_zlotoryjski powiat_karkonoski powiat_kamiennogorski powiat_walbrzyski
-		powiat_swidnicki_slask powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski powiat_wroclawski wroclaw 
+		powiat_swidnicki_slask powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski powiat_wroclawski Krzyki psie_pole_wschod wroclaw psie_pole_zachod
+		Fabryczna 
 	}
 }
 opolskie_region = { 

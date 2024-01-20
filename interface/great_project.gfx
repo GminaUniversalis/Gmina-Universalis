@@ -11,6 +11,31 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_centennial_hall"	
+		texturefile = "gfx//interface//great_projects//great_project_centennial_hall.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_ostrow_tumski"	
+		texturefile = "gfx//interface//great_projects//great_project_ostrow_tumski.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_japanese_garden"	
+		texturefile = "gfx//interface//great_projects//great_project_japanese_garden.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_wroclaw_market_square"	
+		texturefile = "gfx//interface//great_projects//great_project_wroclaw_market_square.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_wroclaw_gnomes"	
+		texturefile = "gfx//interface//great_projects//great_project_wroclaw_gnomes.dds"
+	}
+
+	spriteType = {
 		name = "GFX_great_project_hagia_sophia"	
 		texturefile = "gfx//interface//great_projects//great_project_hagia_sophia.dds"
 	}
