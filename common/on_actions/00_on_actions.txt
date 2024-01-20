@@ -2135,7 +2135,8 @@ on_bi_yearly_pulse_2 = {
 		200 = corruption_event.13
 		200 = corruption_event.14
 		200 = corruption_event.15
-		2000 = communism.2
+		1200 = communism.2
+		1200 = communism.3
 
 		4000 = 0
 	}
@@ -2335,29 +2336,29 @@ on_bi_yearly_pulse_4 = {
 on_bi_yearly_pulse_5 = {
 	random_events = { #all these were shifted from on_bi_yearly_pulse_1
 		# Anglican Events
-		100 = anglican_events.1
-		100 = anglican_events.2
-		100 = anglican_events.3
-		100 = anglican_events.4
-		100 = anglican_events.5
-		100 = anglican_events.6
-		100 = anglican_events.7
-		100 = anglican_events.8
-		100 = anglican_events.9
-		100 = anglican_events.10
-		100 = anglican_events.11
-		100 = anglican_events.12
-		100 = anglican_events.13
-		150 = anglican_events.15
+		# 100 = anglican_events.1
+		# 100 = anglican_events.2
+		# 100 = anglican_events.3
+		# 100 = anglican_events.4
+		# 100 = anglican_events.5
+		# 100 = anglican_events.6
+		# 100 = anglican_events.7
+		# 100 = anglican_events.8
+		# 100 = anglican_events.9
+		# 100 = anglican_events.10
+		# 100 = anglican_events.11
+		# 100 = anglican_events.12
+		# 100 = anglican_events.13
+		# 150 = anglican_events.15
 		
-		# Hussite Events
-		100 = hussite.1
-		100 = hussite.2
-		100 = hussite.3
-		100 = hussite.4
-		100 = hussite.5
-		100 = hussite.6
-		100 = hussite.7
+		# # Hussite Events
+		# 100 = hussite.1
+		# 100 = hussite.2
+		# 100 = hussite.3
+		# 100 = hussite.4
+		# 100 = hussite.5
+		# 100 = hussite.6
+		# 100 = hussite.7
 
 
 		#Mamluk Events
@@ -2382,30 +2383,30 @@ on_bi_yearly_pulse_5 = {
 
 		#Russian Principalities
 
-		100 = russian_principality_events.1
-		125 = russian_principality_events.2
-		125 = russian_principality_events.3
-		125 = russian_principality_events.4
-		125 = russian_principality_events.6
-		125 = russian_principality_events.5
-		125 = russian_principality_events.7
-		100 = russian_principality_events.8
-		75 = russian_principality_events.9
-		125 = russian_principality_events.10
+		# 100 = russian_principality_events.1
+		# 125 = russian_principality_events.2
+		# 125 = russian_principality_events.3
+		# 125 = russian_principality_events.4
+		# 125 = russian_principality_events.6
+		# 125 = russian_principality_events.5
+		# 125 = russian_principality_events.7
+		# 100 = russian_principality_events.8
+		# 75 = russian_principality_events.9
+		# 125 = russian_principality_events.10
 
-		#Tsardoms
+		# #Tsardoms
 
-		125 = russian_tsardom_events.1
-		125 = russian_tsardom_events.2
-		125 = russian_tsardom_events.3
-		100 = russian_tsardom_events.4
-		125 = russian_tsardom_events.5
-		100 = russian_tsardom_events.6
-		100 = russian_tsardom_events.7
-		100 = russian_tsardom_events.8
-		125 = russian_tsardom_events.9
-		125 = russian_tsardom_events.10
-		100 = russian_tsardom_events.11
+		# 125 = russian_tsardom_events.1
+		# 125 = russian_tsardom_events.2
+		# 125 = russian_tsardom_events.3
+		# 100 = russian_tsardom_events.4
+		# 125 = russian_tsardom_events.5
+		# 100 = russian_tsardom_events.6
+		# 100 = russian_tsardom_events.7
+		# 100 = russian_tsardom_events.8
+		# 125 = russian_tsardom_events.9
+		# 125 = russian_tsardom_events.10
+		# 100 = russian_tsardom_events.11
 
 		#Streltsy Events
 		# 125 = streltsy_events.1
@@ -2421,14 +2422,14 @@ on_bi_yearly_pulse_5 = {
 		75 = patriarch_events.4
 		75 = patriarch_events.5
 
-		# Catholic  Events
-		100 = catholic_flavor.4
-		100 = catholic_flavor.5
-		100 = catholic_flavor.6
-		100 = catholic_flavor.7
-		100 = catholic_flavor.8
-		100 = catholic_flavor.9
-		100 = catholic_flavor.10
+		# # Catholic  Events
+		# 100 = catholic_flavor.4
+		# 100 = catholic_flavor.5
+		# 100 = catholic_flavor.6
+		# 100 = catholic_flavor.7
+		# 100 = catholic_flavor.8
+		# 100 = catholic_flavor.9
+		# 100 = catholic_flavor.10
 
 		# Japanese Daimyos
 		# 15 = flavor_jap.10
@@ -2446,12 +2447,12 @@ on_bi_yearly_pulse_5 = {
 
 
 
-		# China
-		75 = meritocracy_events.1
-		75 = meritocracy_events.2
-		75 = meritocracy_events.3
-		75 = meritocracy_events.4
-		75 = meritocracy_events.5
+		# # China
+		# 75 = meritocracy_events.1
+		# 75 = meritocracy_events.2
+		# 75 = meritocracy_events.3
+		# 75 = meritocracy_events.4
+		# 75 = meritocracy_events.5
 		# 50 = china_events.11
 		# 25 = china_events.12
 		# 25 = china_events.24
