@@ -1,10 +1,10 @@
 #Sitno
-culture = lubelska
+culture = kresowa
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 2
 capital = "Sitno"
 is_city = yes
 discovered_by = western

@@ -1,10 +1,10 @@
 #City of Zamosc
-culture = lubelska
+culture = kresowa
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 12
+base_production = 11
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 10
 capital = "City of Zamosc"
 is_city = yes
 discovered_by = western

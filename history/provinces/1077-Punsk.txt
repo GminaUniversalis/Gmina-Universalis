@@ -1,8 +1,8 @@
 #Punsk
-culture = suwalska
+culture = litewska
 religion = communism_pzpr
 base_tax = 1
-base_production = 1
+base_production = 2
 trade_goods = unknown
 base_manpower = 1
 capital = "Punsk"

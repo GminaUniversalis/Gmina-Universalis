@@ -1,11 +1,11 @@
 #Brenna
-culture = goralska
-religion = communism_pzpr
+culture = cieszynska
+religion = communism_sd
 hre = yes
-base_tax = 1
+base_tax = 2
 base_production = 1
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 2
 capital = "Brenna"
 is_city = yes
 discovered_by = western

@@ -1,12 +1,12 @@
-#Mierzecie
+#Mierzecice
 culture = zaglebiowska
-religion = communism_pzpr
+religion = communism_sd
 hre = yes
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Mierzecie"
+capital = "Mierzecice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
@@ -14,3 +14,7 @@ owner = L07
 controller = L07
 add_core = L07
 discovered_by = ottoman
+add_permanent_province_modifier = { 
+	name = airport_modifier
+	duration = -1
+}

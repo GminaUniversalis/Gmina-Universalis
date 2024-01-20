@@ -1,7 +1,7 @@
 #Nowosolna
-culture = leczycka
+culture = centralna
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
@@ -13,3 +13,4 @@ owner = Q14
 controller = Q14
 add_core = Q14
 discovered_by = ottoman
+add_core = Q22

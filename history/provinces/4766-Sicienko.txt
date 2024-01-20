@@ -1,10 +1,10 @@
 #Sicienko
 culture = kujawska
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 2
 capital = "Sicienko"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = B05
 controller = B05
 add_core = B05
 discovered_by = ottoman
+add_core = B20

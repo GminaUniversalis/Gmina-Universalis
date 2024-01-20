@@ -6,4 +6,31 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 257;1010;sea;1289;-1;-1;-1;-1;Srodmiescie-Praga Poludnie
 3279;3558;sea;1289;-1;-1;-1;-1;Moktow-Wawer
 3550;3558;sea;1289;-1;-1;-1;-1;-Wawer
+3482;3422;sea;1289;-1;-1;-1;-1; Rubinkowo - Rudak
+72;3103;sea;1289;-1;-1;-1;-1; Stare miasto Torun - Piaski
+70;202;sea;1289;-1;-1;-1;-1; Dobrcz - Dabrowa Chelminska
+4825;4844;sea;4941;-1;-1;-1;-1; Naramowice - Glowna
+4823;4840;sea;4941;-1;-1;-1;-1; Wilda - Gluszyna
+501;4826;sea;4941;-1;-1;-1;-1; Stare Miasto Poznan - Zegrze
+4400;4401;sea;1291;-1;-1;-1;-1; Pomorzany - Wyspa Pucka
+4400;4399;sea;1291;-1;-1;-1;-1; Zeluchowa - Wyspa Pucka
+3162;262;sea;1289;-1;-1;-1;-1; Debniki - Stare Miasto
+3008;262;sea;1289;-1;-1;-1;-1; Podgorze - Stare Miasto
+3008;3100;sea;1289;-1;-1;-1;-1; Podgorze - Czyzyny
+3008;3016;sea;1289;-1;-1;-1;-1; Podgorze - Nowa Huta
+3618;3220;sea;1263;-1;-1;-1;-1; Kozanow - Osobowice
+3190;3416;sea;1263;-1;-1;-1;-1; Stare Miasto Wroclaw - Rozanka
+3190;3388;sea;1263;-1;-1;-1;-1; Stare Miasto Wroclaw - Srodmiescie
+3073;3388;sea;1263;-1;-1;-1;-1; Wroclaw Poludnie - Srodmiescie
+3017;3387;sea;1263;-1;-1;-1;-1; Sepolno - Ksieze
+3017;3037;sea;4357;-1;-1;-1;-1; Sepolno - Swojczyce
+3017;3425;sea;4357;-1;-1;-1;-1; Sepolno - Kowale
+3388;3083;sea;4357;-1;-1;-1;-1; Srodmiescie - Karlowice
+3388;3416;sea;4357;-1;-1;-1;-1; Srodmiescie - Rozanka
+4400;3585;sea;1292;-1;-1;-1;-1; Wyspa Pucka - Dabie
+4400;4395;sea;1292;-1;-1;-1;-1; Wyspa Pucka - Podjuchy
+4395;2977;sea;1293;-1;-1;-1;-1; Podjuchy - Kolbaskowo
+1813;18;sea;1289;-1;-1;-1;-1; Swibno - Stegna
+1812;17;sea;1500;-1;-1;-1;-1; Sobieszewo - Pruszcz Gdanski
+1810;1822;sea;1500;-1;-1;-1;-1; Olszynka - Stogi
 -1;-1;;-1;-1;-1;-1;-1;-1;

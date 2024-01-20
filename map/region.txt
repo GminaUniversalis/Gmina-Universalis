@@ -2,26 +2,27 @@
 malopolska_region = { 
 	areas = { 
 		powiat_tatrzanski powiat_wielicki powiat_chrzanowski powiat_gorlicki powiat_nowosadecki powiat_tarnowski powiat_brzeski powiat_miechowski powiat_proszowicki powiat_olkuski
-		powiat_oswiecimski powiat_myslenicki powiat_bochenski powiat_krakowski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki 
+		powiat_oswiecimski powiat_myslenicki powiat_bochenski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki powiat_krakowski 
 	}
 }
 swietokrzyskie_region = { 
 	areas = { 
 		powiat_jedrzejowski powiat_wloszczowski powiat_konecki powiat_kielecki powiat_pinczowski powiat_kazimierski powiat_buski powiat_staszowski powiat_sandomierski powiat_opatowski
-		powiat_ostrowiecki powiat_starachowicki powiat_skarzyski 
+		powiat_ostrowiecki powiat_starachowicki powiat_skarzyski Kielce 
 	}
 }
 lubelskie_region = { 
 	areas = { 
 		powiat_pulawski powiat_tomaszowski powiat_janowski powiat_krasnicki powiat_opolski powiat_radzynski powiat_parczewski powiat_wlodawski powiat_bialski powiat_leczynski
 		powiat_swidnicki powiat_lubelski powiat_krasnostawski powiat_chelmski powiat_hrubieszowski powiat_lukowski powiat_rycki powiat_lubartowski powiat_zamojski powiat_bilgorajski
+		Lublin 
 	}
 }
 podkarpackie_region = { 
 	areas = { 
 		powiat_tarnobrzeski powiat_debnicki powiat_mielecki powiat_stalowowolski powiat_nizanski powiat_kolbuszowski powiat_lezajski powiat_lancuski powiat_ropczycko_sedziszowski powiat_jasielski
-		powiat_przeworski powiat_rzeszowski powiat_lubaczowski powiat_jaroslawski powiat_przemyski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_krosnienski_pod
-		powiat_brzozowski 
+		powiat_przeworski powiat_lubaczowski powiat_jaroslawski powiat_przemyski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_krosnienski_pod powiat_brzozowski
+		powiat_rzeszowski  
 	}
 }
 mazowieckie_region = { 
@@ -41,33 +42,35 @@ podlasie_region = {
 zachodnio_pomorskie_region = { 
 	areas = { 
 		powiat_slawienski powiat_koszalinski powiat_szczecinecki powiat_bialogardzki powiat_kolobrzeski powiat_gryficki powiat_swidwinski powiat_drawski powiat_walecki powiat_choszczenski
-		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_szczecinski powiat_pyrzycki powiat_gryfinski powiat_mysliborski
+		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_pyrzycki powiat_gryfinski powiat_mysliborski Szczecin
 	}
 }
 pomorskie_region = { 
 	areas = { 
 		powiat_bytowski powiat_slupski powiat_kartuski powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski powiat_trojmiasto
-		powiat_wejherowski powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski powiat_nowodworski_pom 
+		powiat_wejherowski powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski powiat_nowodworski_pom Gdansk gdansk_zachodni
+		gdansk_centralny sobieszewo gdynia_polnoc gdynia_poludnie 
 	}
 }
 kujawsko_pomorskie_region = { 
 	areas = { 
 		powiat_tucholski powiat_swiecki powiat_sepolenski powiat_nakielski powiat_bydgoski powiat_mogilenski powiat_inowroclawski powiat_aleksandrowski powiat_radziejowski powiat_wloclawski
-		powiat_lipnowski powiat_grudziadzki powiat_chelminski powiat_brodnicki powiat_wabrzeski powiat_rypinski powiat_torunski powiat_golubsko-dobrzynski powiat_zninski 
+		powiat_lipnowski powiat_grudziadzki powiat_chelminski powiat_brodnicki powiat_wabrzeski powiat_rypinski powiat_torunski powiat_golubsko-dobrzynski powiat_zninski Bydgoszcz
+		Torun 
 	}
 }
 lubuskie_region = { 
 	areas = { 
 		powiat_wschowski powiat_nowosolski powiat_zaganski powiat_zielonogorski powiat_swiebodzinski powiat_miedzyrzecki powiat_strzelecko-drezdenecki powiat_gorzowski powiat_zarski powiat_slubnicki
-		powiat_sulecinski powiat_krosnienski powiat_krosnienski_lubu 
+		powiat_sulecinski powiat_krosnienski_lubu 
 	}
 }
 wielkopolska_region = { 
 	areas = { 
 		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_ostrowski_poznan powiat_kaliski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski
 		powiat_slupecki powiat_jarocinski powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki
-		powiat_obornicki powiat_wrzesinski powiat_poznanski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski
-		powiat_kepinski 
+		powiat_obornicki powiat_wrzesinski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski powiat_kepinski
+		powiat_poznanski poznan 
 	}
 }
 warminsko_mazurskie_region = { 
@@ -80,7 +83,8 @@ dolnoslaskie_region = {
 	areas = { 
 		powiat_olawski powiat_olesnicki powiat_milicki powiat_strzelinski powiat_zabkowicki powiat_klodzki powiat_dzierzoniowski powiat_gorowski powiat_glogowski powiat_polkowicki
 		powiat_boleslawiecki powiat_zgorzelecki powiat_lwowecki powiat_lubanski powiat_legnicki powiat_jaworski powiat_zlotoryjski powiat_karkonoski powiat_kamiennogorski powiat_walbrzyski
-		powiat_swidnicki_slask powiat_wroclawski powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski 
+		powiat_swidnicki_slask powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski powiat_wroclawski Krzyki psie_pole_wschod wroclaw_srodmiescie psie_pole_zachod
+		Fabryczna 
 	}
 }
 opolskie_region = { 
@@ -93,12 +97,13 @@ slaskie_region = {
 	areas = { 
 		powiat_klobucki powiat_myszkowski powiat_czestochowski powiat_lubliniecki powiat_zawiercianski powiat_jaworzno powiat_bedzinski powiat_tarnogorski powiat_bytom powiat_raciborski
 		powiat_wodzislawski powiat_gliwicki powiat_mikolowski powiat_aglomeracja_Katowicka powiat_bierunsko-ledzinski powiat_rybnicki powiat_pszczynski powiat_cieszynski powiat_bielski_slask powiat_zywiecki
+		rybnik Katowice 
 	}
 }
 lodzkie_region = { 
 	areas = { 
 		powiat_laski powiat_wieruszowski powiat_wielunski powiat_pajeczanski powiat_radomszczanski powiat_leczycki powiat_kutnowski powiat_poddebnicki powiat_sieradzki powiat_zdunskowolski
 		powiat_pabianicki powiat_belchatowski powiat_piotrkowski powiat_lodzki powiat_zgierski powiat_brzezinski powiat_skierniewicki powiat_rawski powiat_tomaszowski_lodz powiat_opoczynski
-		powiat_lowicki 
+		powiat_lowicki Lodz 
 	}
 }

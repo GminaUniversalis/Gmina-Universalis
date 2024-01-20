@@ -1,8 +1,8 @@
 #Jordanow Slaski
-religion = communism_zsl
+religion = communism_sd
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = grain
 base_manpower = 1
 capital = "Jordanow Slaski"
 is_city = yes

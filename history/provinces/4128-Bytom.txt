@@ -1,6 +1,6 @@
 #Bytom
 culture = gornoslaska
-religion = communism_pzpr
+religion = communism_sd
 hre = yes
 base_tax = 1
 base_production = 1
@@ -10,7 +10,8 @@ capital = "Bytom"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L09
-controller = L09
+owner = L31
+controller = L31
 add_core = L09
 discovered_by = ottoman
+add_core = L31

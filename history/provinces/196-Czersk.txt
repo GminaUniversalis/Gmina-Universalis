@@ -1,10 +1,10 @@
 #Czersk
-culture = pomorska
-religion = communism_pzpr
-base_tax = 1
-base_production = 1
+culture = borowicka
+religion = communism_zsl
+base_tax = 2
+base_production = 2
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 2
 capital = "Czersk"
 is_city = yes
 discovered_by = western

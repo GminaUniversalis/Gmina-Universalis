@@ -1,14 +1,14 @@
 #Dobroszyce
 religion = communism_zsl
-base_tax = 1
+base_tax = 2
 base_production = 1
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 2
 capital = "Dobroszyce"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-culture = opolska
+culture = dolnoslaska
 owner = A02
 controller = A02
 add_core = A02

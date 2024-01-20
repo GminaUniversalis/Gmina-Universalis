@@ -1,9 +1,9 @@
 #Czernica
 religion = communism_zsl
-base_tax = 1
+base_tax = 3
 base_production = 1
-trade_goods = unknown
-base_manpower = 1
+trade_goods = gu_vegetables
+base_manpower = 4
 capital = "Czernica"
 is_city = yes
 discovered_by = western

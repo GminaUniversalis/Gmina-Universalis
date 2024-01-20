@@ -1,5 +1,83 @@
 spriteTypes = {
 	spriteType = {
+		name = "UDPicture"
+		texturefile = "gfx/event_pictures/politics/UD_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "KLDPicture"
+		texturefile = "gfx/event_pictures/politics/KLD_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "KPNPicture"
+		texturefile = "gfx/event_pictures/politics/KPN_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "ZCHNPicture"
+		texturefile = "gfx/event_pictures/politics/ZCHN_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "PCPicture"
+		texturefile = "gfx/event_pictures/politics/PC_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "PSLPicture"
+		texturefile = "gfx/event_pictures/politics/PSL_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "SLDPicture"
+		texturefile = "gfx/event_pictures/politics/SLD_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "PZPR_ENDPicture"
+		texturefile = "gfx/event_pictures/politics/PZPR_END_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "SD_DILEMAPicture"
+		texturefile = "gfx/event_pictures/politics/DILEMA_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "ELECTRIFICATIONPicture"
+		texturefile = "gfx/event_pictures/event_pictures_tradegoods/institution_event_electrification.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SOLIDARITYPicture"
+		texturefile = "gfx/event_pictures/event_pictures_tradegoods/institution_event_solidarity.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FREE_MARKETPicture"
+		texturefile = "gfx/event_pictures/event_pictures_tradegoods/institution_event_free_market.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "INTERNETPicture"
+		texturefile = "gfx/event_pictures/event_pictures_tradegoods/institution_event_internet.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "RADOM_JUNEPicture"
 		texturefile = "gfx/event_pictures/event_pictures_tradegoods/RADOM_JUNEPicture.dds"
 		alwaystransparent = yes

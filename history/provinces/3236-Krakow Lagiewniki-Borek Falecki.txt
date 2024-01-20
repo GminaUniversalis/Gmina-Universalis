@@ -1,0 +1,16 @@
+#Krakow - Lagiewniki-Borek Falecki
+culture = krakowska
+religion = catholic
+base_tax = 7
+base_production = 7
+trade_goods = gu_tourists
+base_manpower = 7
+capital = "Lagiewniki-Borek Falecki"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+add_core = X20
+owner = X20
+controller = X20
+fort_15th = yes

@@ -1,6 +1,6 @@
 #Swietochlowice
 culture = slonska
-religion = communism_pzpr
+religion = communism_sd
 hre = yes
 base_tax = 1
 base_production = 1
@@ -10,7 +10,7 @@ capital = "Swietochlowice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L14
-controller = L14
-add_core = L14
+owner = L27
+controller = L27
 discovered_by = ottoman
+add_core = L27

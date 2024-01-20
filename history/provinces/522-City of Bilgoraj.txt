@@ -1,10 +1,10 @@
 #City of Bilgoraj
-culture = lubelska
+culture = kresowa
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 4
+base_production = 6
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 5
 capital = "City of Bilgoraj"
 is_city = yes
 discovered_by = western
