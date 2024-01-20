@@ -1,0 +1,15 @@
+#Bydgoszcz Wypaleniska
+culture = kujawska
+religion = communism_zsl
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Wypaleniska"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = B20
+controller = B20
+discovered_by = ottoman
+add_core = B20
