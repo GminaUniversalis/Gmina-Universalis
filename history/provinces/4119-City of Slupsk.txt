@@ -7,6 +7,7 @@ trade_goods = unknown
 base_manpower = 14
 capital = "City of Slupsk"
 is_city = yes
+center_of_trade = 2
 discovered_by = western
 discovered_by = eastern
 owner = Y02
