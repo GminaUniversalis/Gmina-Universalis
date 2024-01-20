@@ -834,7 +834,7 @@
  CREATEJANISSARIES:1 "Conscript Janissaries"
  JANISSARIES_REGIMENT:0 "Janissary Regiment\n$EFFECT$"
  RAJPUT_REGIMENT:0 "Rajput Regiment\n$EFFECT$"
- GAIN_PIETY:0 "Move $VALUE|Y$ towards Progressiveness"
+ GAIN_PIETY:0 "Move $VALUE|Y$ towards Progressivism"
  LOSE_PIETY:0 "Move $VALUE|Y$ towards Communism"
  RELIGION_VIEW_BANNER_INSTANT:0 "$NAME|Y$\n$DESC$"
  RELIGION_VIEW_BANNER_DELAYED:0 "Has the following relations with other Schools:\n$RELATION$"
