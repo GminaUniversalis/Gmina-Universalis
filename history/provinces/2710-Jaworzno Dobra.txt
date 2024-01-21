@@ -1,0 +1,17 @@
+#Jaworzno Dobra
+culture = zachodnio-krakowska
+religion = communism_pzpr
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Jaworzno - Dobra"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L34
+controller = L34
+add_core = L06
+discovered_by = ottoman
+add_core = L34
