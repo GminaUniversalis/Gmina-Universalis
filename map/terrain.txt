@@ -201,6 +201,7 @@ categories =  {
 		nation_designer_cost_multiplier = 0.8
 		
 		terrain_override = {
+			2692
 		}
 	}
 	
