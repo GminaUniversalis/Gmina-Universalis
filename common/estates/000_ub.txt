@@ -1,0 +1,40 @@
+estate_ub = {
+    icon = 4
+    trigger = {
+			religion_group = communism_group
+    }
+    country_modifier_happy = {
+		global_spy_defence = 0.4
+		fabricate_claims_cost = -0.2
+	}
+    country_modifier_neutral = {
+		global_spy_defence = 0.4
+	}
+    country_modifier_angry = {
+		spy_action_cost_modifier = 0.6
+		global_unrest = 4
+	}
+  province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = { religion_group = owner }
+		}
+
+	}
+    land_ownership_modifier = {
+		ub_loyalty_modifier = 0.2
+	}
+    base_influence = 20
+    contributes_to_curia_treasury = no
+    color = { 10 110 110 }
+    privileges = {
+		estate_emeryci_land_rights
+     }
+	 privileges = {
+		estate_emeryci_13
+	 }
+	 
+     influence_from_dev_modifier = 1.0
+            
+}
