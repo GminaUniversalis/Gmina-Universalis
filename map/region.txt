@@ -1,14 +1,15 @@
 #Wymagany RNW
 malopolska_region = { 
 	areas = { 
-		powiat_tatrzanski powiat_wielicki powiat_chrzanowski powiat_gorlicki powiat_nowosadecki powiat_tarnowski powiat_brzeski powiat_miechowski powiat_proszowicki powiat_olkuski
-		powiat_oswiecimski powiat_myslenicki powiat_bochenski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki powiat_krakowski 
+		powiat_tatrzanski powiat_chrzanowski powiat_gorlicki powiat_nowosadecki powiat_tarnowski powiat_brzeski powiat_miechowski powiat_proszowicki powiat_olkuski powiat_oswiecimski
+		powiat_myslenicki powiat_bochenski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki krakow_polnoc krakow_huta powiat_krakowski
+		krakow_centrum krakow_poludnie powiat_wielicki 
 	}
 }
 swietokrzyskie_region = { 
 	areas = { 
 		powiat_jedrzejowski powiat_wloszczowski powiat_konecki powiat_kielecki powiat_pinczowski powiat_kazimierski powiat_buski powiat_staszowski powiat_sandomierski powiat_opatowski
-		powiat_ostrowiecki powiat_starachowicki powiat_skarzyski Kielce 
+		powiat_ostrowiecki powiat_starachowicki powiat_skarzyski kielce_centrum kielce_herby kielce_bialogon 
 	}
 }
 lubelskie_region = { 
@@ -22,7 +23,7 @@ podkarpackie_region = {
 	areas = { 
 		powiat_tarnobrzeski powiat_debnicki powiat_mielecki powiat_stalowowolski powiat_nizanski powiat_kolbuszowski powiat_lezajski powiat_lancuski powiat_ropczycko_sedziszowski powiat_jasielski
 		powiat_przeworski powiat_lubaczowski powiat_jaroslawski powiat_przemyski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_krosnienski_pod powiat_brzozowski
-		powiat_rzeszowski  
+		rzeszow_poludnie rzeszow_wschod powiat_rzeszowski rzeszow_zachod rzeszow_centrum 
 	}
 }
 mazowieckie_region = { 
@@ -30,33 +31,35 @@ mazowieckie_region = {
 		powiat_zurominski powiat_mlawski powiat_przasnyski powiat_ciechanowski powiat_sochaczewski powiat_warszawski_zachodni powiat_legionowski powiat_makowski powiat_ostrolecki powiat_wyszkowski
 		powiat_wolominski powiat_zyrardow powiat_grodziski powiat_pruszkowski powiat_piaseczynski powiat_grojecki powiat_bialobrzeski powiat_przysuski powiat_radomski powiat_szydlowiecki
 		powiat_lipski powiat_zwolenski powiat_kozienicki powiat_otwocki powiat_garwolinski powiat_minski powiat_siedlecki powiat_sokolowski powiat_wegrowski powiat_ostrowski
-		powiat_losicki powiat_sierpecki powiat_gostyninski powiat_plocki powiat_plonski powiat_pultuski powiat_nowodworski_maz powiat_warszawa 
+		powiat_losicki powiat_sierpecki powiat_gostyninski powiat_plocki powiat_plonski powiat_pultuski powiat_nowodworski_maz warszawa_srodmiescie warszawa_mokotow warszawa_wola_ochota
+		warszawa_praga warszawa_praga_poludnie 
 	}
 }
 podlasie_region = { 
 	areas = { 
 		powiat_siemiatycki powiat_hajnowski powiat_bielski powiat_wysokomazowiecki powiat_zambrowski powiat_lomzynski powiat_kolnenski powiat_grajewski powiat_augustowski powiat_sejnenski
-		powiat_sokolski powiat_moniecki powiat_bialostocki 
+		powiat_sokolski powiat_moniecki powiat_bialostocki bialystok_zachod bialystok_wschod bialystok_centrum bialystok_poludnie 
 	}
 }
 zachodnio_pomorskie_region = { 
 	areas = { 
 		powiat_slawienski powiat_koszalinski powiat_szczecinecki powiat_bialogardzki powiat_kolobrzeski powiat_gryficki powiat_swidwinski powiat_drawski powiat_walecki powiat_choszczenski
-		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_pyrzycki powiat_gryfinski powiat_mysliborski Szczecin
+		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_pyrzycki powiat_gryfinski powiat_mysliborski szczecin_srodmiescie
+		szczecin_zachod szczecin_polnoc szczecin_prawobrzerze 
 	}
 }
 pomorskie_region = { 
 	areas = { 
-		powiat_bytowski powiat_slupski powiat_kartuski powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski powiat_trojmiasto
-		powiat_wejherowski powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski powiat_nowodworski_pom Gdansk gdansk_zachodni
-		gdansk_centralny sobieszewo gdynia_polnoc gdynia_poludnie 
+		powiat_bytowski powiat_slupski powiat_kartuski powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski powiat_wejherowski
+		powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski_pom gdansk_zachodni gdansk_centralny sobieszewo gdynia_polnoc
+		gdynia_poludnie 
 	}
 }
 kujawsko_pomorskie_region = { 
 	areas = { 
-		powiat_tucholski powiat_swiecki powiat_sepolenski powiat_nakielski powiat_bydgoski powiat_mogilenski powiat_inowroclawski powiat_aleksandrowski powiat_radziejowski powiat_wloclawski
-		powiat_lipnowski powiat_grudziadzki powiat_chelminski powiat_brodnicki powiat_wabrzeski powiat_rypinski powiat_torunski powiat_golubsko-dobrzynski powiat_zninski Bydgoszcz
-		Torun 
+		powiat_tucholski powiat_swiecki powiat_sepolenski powiat_nakielski powiat_mogilenski powiat_inowroclawski powiat_aleksandrowski powiat_radziejowski powiat_wloclawski powiat_lipnowski
+		powiat_grudziadzki powiat_chelminski powiat_brodnicki powiat_wabrzeski powiat_rypinski powiat_golubsko-dobrzynski powiat_zninski Torun_centrum powiat_torunski torun_stawki
+		torun_rubinkowo torun_bydgoskie Bydgoszcz_dolny_taras powiat_bydgoski bydgoszcz_fordon bydgoszcz_zachodnie_osiedla bydgoszcz_gorny_taras 
 	}
 }
 lubuskie_region = { 
@@ -70,7 +73,7 @@ wielkopolska_region = {
 		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_ostrowski_poznan powiat_kaliski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski
 		powiat_slupecki powiat_jarocinski powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki
 		powiat_obornicki powiat_wrzesinski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski powiat_kepinski
-		powiat_poznanski poznan 
+		poznan_stare_miasto poznan_grunwald poznan_jezyce poznan_polnoc powiat_poznanski poznan_nowe_miasto 
 	}
 }
 warminsko_mazurskie_region = { 
@@ -95,15 +98,15 @@ opolskie_region = {
 }
 slaskie_region = { 
 	areas = { 
-		powiat_klobucki powiat_myszkowski powiat_czestochowski powiat_lubliniecki powiat_zawiercianski powiat_jaworzno powiat_bedzinski powiat_tarnogorski powiat_bytom powiat_raciborski
-		powiat_wodzislawski powiat_gliwicki powiat_mikolowski powiat_aglomeracja_Katowicka powiat_bierunsko-ledzinski powiat_rybnicki powiat_pszczynski powiat_cieszynski powiat_bielski_slask powiat_zywiecki
-		rybnik Katowice 
+		powiat_klobucki powiat_myszkowski powiat_czestochowski powiat_lubliniecki powiat_zawiercianski powiat_bedzinski powiat_tarnogorski powiat_bytom powiat_raciborski powiat_wodzislawski
+		powiat_gliwicki powiat_mikolowski powiat_aglomeracja_Katowicka powiat_bierunsko-ledzinski powiat_rybnicki powiat_pszczynski powiat_cieszynski powiat_bielski_slask powiat_zywiecki rybnik
+		katowice_poludnie katowice_srodmiescie katowice_zachod jaworzno_polnoc jaworzno_poludnie jaworzno_centrum  
 	}
 }
 lodzkie_region = { 
 	areas = { 
 		powiat_laski powiat_wieruszowski powiat_wielunski powiat_pajeczanski powiat_radomszczanski powiat_leczycki powiat_kutnowski powiat_poddebnicki powiat_sieradzki powiat_zdunskowolski
 		powiat_pabianicki powiat_belchatowski powiat_piotrkowski powiat_lodzki powiat_zgierski powiat_brzezinski powiat_skierniewicki powiat_rawski powiat_tomaszowski_lodz powiat_opoczynski
-		powiat_lowicki Lodz 
+		powiat_lowicki lodz_polesie lodz_gorna lodz_widzew Lodz_srodmiescie lodz_baluty 
 	}
 }

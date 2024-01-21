@@ -802,7 +802,6 @@ province;red;green;blue;x;x
 1062;32;104;32;Kobylin-Borzymy;x
 1063;160;106;79;Suraz;x
 1064;32;108;126;Juchnowiec-Koscielny;x
-1065;161;110;173;Bialystok;x
 1066;33;112;32;Dobrzyniewo Duze;x
 1067;161;114;79;Jaswily;x
 1068;33;116;126;Janow;x
@@ -891,7 +890,6 @@ province;red;green;blue;x;x
 1152;45;156;126;Poreba;x
 1153;173;158;173;Zawiercie;x
 1154;45;32;32;Lazy;x
-1155;173;34;79;Dabrowa Gornicza;x
 1156;46;36;126;Secemin;x
 1157;174;38;173;Moskorzew;x
 1158;46;40;32;Jedrzejow;x
@@ -2078,7 +2076,6 @@ province;red;green;blue;x;x
 4077;145;76;136;Jaslo;x
 4078;219;94;40;Spytkownice;x
 4079;220;158;209;Chrzanow;x
-4080;120;115;207;Jaworzno;x
 4081;82;225;176;Tomice;x
 4082;217;90;204;Polanka Wielka;x
 4083;217;173;199;Wegierska Gorka;x
@@ -2914,3 +2911,53 @@ province;red;green;blue;x;x
 4351;104;196;152;Kotuli;x
 4350;154;86;212;Pogwizdow Nowy;x
 2788;201;201;89;Rzeszow Srodmiescie;x
+4349;105;219;142;Dojildy Gorne;x
+4348;198;47;101;Dojilidy;x
+4347;144;206;207;Odra;x
+4346;149;226;227;Odra;x
+3226;219;32;36;Zawady;
+3225;219;32;35;Nowe Miasto;
+3224;219;32;34;Bagnowka;
+3191;219;32;1;Jaroszowka;
+3189;207;140;138;Starosielce;
+3152;207;110;101;Wygoda;
+3099;207;110;48;Piasta-Skorupy;
+3098;207;110;47;Bacieczki;
+3052;208;110;1;Bialostoczek;
+2725;124;63;62;Sloneczny Stok;x
+2724;221;212;104;Kawaleryjskie;x
+1065;161;110;173;Bialystok Srodmiescie;x
+2723;33;198;152;Jelen;x
+2722;178;198;73;Cezarowka;x
+2721;131;198;119;Byczyna;x
+2720;82;206;171;Kozmin-Jeziorki;x
+2719;119;128;17;Dlugoszyn;x
+2718;241;207;129;Szczakowa;x
+2717;201;219;43;Pieczyska;x
+2716;137;255;124;Dabrowa Narodowa;x
+2715;127;150;255;Wesole Miasteczko;x
+2714;255;89;185;Bory-Stara Huta;x
+2713;255;228;94;Ciezkowice;x
+2712;175;65;144;Wiloszyn;x
+2711;105;135;119;Niedzieliska;x
+2710;87;204;89;Dobra;x
+4080;120;115;207;Jaworzno Srodmiescie;x
+2709;196;102;196;Bledow;x
+2708;255;107;28;Okradzionow;x
+2707;234;86;86;Łęka;x
+2706;255;61;138;Tucznawa;x
+2705;131;183;111;Zabkowice;x
+2704;132;76;108;Trzebieslawice;x
+2703;104;158;82;Ujejsce;x
+2702;65;219;88;Strzemieszyce Wielkie;x
+2701;219;211;164;Strzemieszyce Male;x
+2700;197;255;53;Losien;x
+2699;255;75;66;Antoniow;x
+2698;163;207;58;Golonog Wschodni;x
+2697;163;70;58;Golonog Poludniowy;x
+2696;181;45;81;Reden;x
+2695;107;66;100;Zielona-Pogoria;x
+4224;36;150;179;Jezioro Pogoria;x
+2693;104;16;91;Huta Katowice;x
+2692;216;67;201;Pustynia Bledowska;x
+1155;173;34;79;Dabrowa Gornicza Srodmiescie;x

@@ -337,9 +337,8 @@ powiat_sochaczewski = {
 powiat_warszawski_zachodni = { 
 	288 2414 1987 1244 1243 1989 286 
 }
-powiat_warszawa = { 
-	257 3114 3158 1011 3113 3005 3006 3201 3485 3287
-	1016 3279 3549 3550 3558 3394 3199 1010 
+warszawa_srodmiescie = { 
+	257 3114 3158 1016 
 }
 powiat_legionowski = { 
 	464 1988 2409 4183 4193 
@@ -394,8 +393,8 @@ powiat_moniecki = {
 	1942 1067 2431 1061 2432 2119 714 
 }
 powiat_bialostocki = { 
-	2437 1059 1066 4684 1054 2443 1063 1055 1064 1065
-	2434 480 2441 471 953 2351 
+	2437 1059 1066 4684 1054 2443 1063 1055 1064 2434
+	480 2441 471 953 2351 
 }
 powiat_swinioujscie = { 
 	1858 
@@ -982,7 +981,7 @@ powiat_mikolowski = {
 	4126 4173 4125 3002 4755 
 }
 powiat_bedzinski = { 
-	1141 2270 4239 161 4127 157 4757 1149 
+	1141 2270 4239 161 4127 157 1149 4757 153 
 }
 powiat_aglomeracja_Katowicka = { 
 	140 154 1827 1952 3000 1951 
@@ -990,8 +989,8 @@ powiat_aglomeracja_Katowicka = {
 powiat_bytom = { 
 	4128 156 160 
 }
-powiat_jaworzno = { 
-	4080 153 1155 
+jaworzno_centrum = { 
+	4080 2715 2710 2712 2713 
 }
 powiat_nowodworski_maz = { 
 	2425 1837 4180 1017 2412 2413 
@@ -1009,9 +1008,8 @@ powiat_krosnienski_pod = {
 wroclaw_srodmiescie = { 
 	3017 3388 3190 
 }
-krakow = { 
-	3162 3222 3418 3188 3140 262 3100 3065 3042 3016
-	3008 3237 998 3236 3007 
+krakow_centrum = { 
+	262 3188 3008 3100 
 }
 gdynia_poludnie = { 
 	1833 1776 1836 1829 3062 
@@ -1028,43 +1026,29 @@ gdansk_centralny = {
 gdynia_polnoc = { 
 	1777 1844 1838 3063 3064 1840 
 }
-powiat_trojmiasto = { 
-}
-Gdansk = { 
-}
 rybnik = { 
-	4751 3232 3280 3153 3277 3206 3278 3106 
+	4751 3206 3278 3106 
 }
-Katowice = { 
-	1318 4828 4829 3089 3019 4827 3091 4830 4832 4831
-	4833 
+katowice_srodmiescie = { 
+	1318 4828 4829 4832 
 }
-poznan = { 
-	501 4825 4826 4824 4842 4823 4840 4841 4836 4837
-	4838 4843 4844 4845 4839 4834 4835 3445 2813 
+poznan_stare_miasto = { 
+	4825 4826 501 4840 
 }
-Lodz = { 
-	2461 4805 4804 4803 4798 4802 4801 4800 4799 4794
-	4791 4792 4932 4790 4933 4796 4806 4807 4797 4793
-	4795 
+Lodz_srodmiescie = { 
+	4799 4798 2461 4796 
 }
 Lublin = { 
-	969 4809 4810 4820 4822 4821 4817 4811 4818 4812
-	4808 4819 4813 4816 4814 4815 
+	969 4809 4808 
 }
-Szczecin = { 
-	4395 4394 3585 3196 3451 4397 4396 4398 4405 4399
-	4403 4404 4402 2978 4401 4400 4406 4393 
+szczecin_srodmiescie = { 
+	4399 4403 2978 4400 
 }
-powiat_nowodworski = { 
+Bydgoszcz_dolny_taras = { 
+	2991 3281 3565 3657 
 }
-Bydgoszcz = { 
-	2991 3515 3544 4001 3268 3184 4019 4016 3281 3124
-	3565 4018 3657 3695 3609 4017 
-}
-Torun = { 
-	72 3808 3482 3282 3234 3520 3180 3090 3298 3103
-	3049 3171 3422 3257 3396 3314 
+Torun_centrum = { 
+	72 3808 3482 3520 3298 
 }
 Fabryczna = { 
 	3577 3681 3559 3655 3650 3621 3060 3618 
@@ -1078,9 +1062,8 @@ psie_pole_wschod = {
 Krzyki = { 
 	3387 3073 3217 3614 3620 
 }
-Kielce = { 
-	1120 4637 4636 4635 4634 3561 4639 3148 3560 3095
-	3133 4638 
+kielce_centrum = { 
+	1120 3095 3133 4638 
 }
 rzeszow_centrum = { 
 	2788 4353 4629 4354 4351 
@@ -1093,4 +1076,130 @@ rzeszow_poludnie = {
 }
 rzeszow_wschod = { 
 	4626 4625 4356 4355 
+}
+bialystok_zachod = { 
+	2725 3189 3098 3226 
+}
+bialystok_poludnie = { 
+	4348 4349 3225 
+}
+bialystok_centrum = { 
+	3099 2724 1065 3052 
+}
+bialystok_wschod = { 
+	3152 3191 3224 
+}
+szczecin_prawobrzerze = { 
+	3585 3196 3451 4393 4394 4395 
+}
+szczecin_zachod = { 
+	4402 4404 4406 4401 
+}
+szczecin_polnoc = { 
+	4405 4398 4396 4397 
+}
+bydgoszcz_gorny_taras = { 
+	3184 3268 3124 4018 
+}
+bydgoszcz_zachodnie_osiedla = { 
+	4019 4001 3544 3515 
+}
+bydgoszcz_fordon = { 
+	4017 3609 3695 4016 
+}
+torun_stawki = { 
+	3103 3049 3171 3422 
+}
+torun_bydgoskie = { 
+	3090 3180 3234 
+}
+torun_rubinkowo = { 
+	3282 3314 3396 3257 
+}
+poznan_grunwald = { 
+	4837 2813 4836 4835 
+}
+poznan_jezyce = { 
+	4838 4834 3445 4839 
+}
+poznan_nowe_miasto = { 
+	4841 4823 4842 4824 
+}
+poznan_polnoc = { 
+	4844 4845 4843 
+}
+warszawa_praga = { 
+	3005 1011 3113 
+}
+warszawa_praga_poludnie = { 
+	1010 3199 3558 3394 
+}
+warszawa_mokotow = { 
+	3550 3549 3279 
+}
+warszawa_wola_ochota = { 
+	3201 3006 3287 3485 
+}
+lodz_polesie = { 
+	4790 4933 4807 4932 
+}
+lodz_baluty = { 
+	4793 4791 4794 4795 4792 
+}
+lodz_widzew = { 
+	4800 4802 4801 4803 
+}
+lodz_gorna = { 
+	4806 4797 4805 4804 
+}
+kielce_bialogon = { 
+	3148 4639 3561 3560 
+}
+kielce_herby = { 
+	4634 4635 4636 4637 
+}
+krakow_poludnie = { 
+	3162 3236 3007 998 3237 
+}
+krakow_huta = { 
+	3016 3042 3065 
+}
+krakow_polnoc = { 
+	3222 3418 3140 
+}
+katowice_poludnie = { 
+	3091 3019 4827 3089 
+}
+katowice_zachod = { 
+	4831 4830 4833 
+}
+rybnik_polnoc = { 
+	3232 3153 3280 3277 
+}
+lublin_poludnie = { 
+	4822 4821 4820 4810 4817 
+}
+lublin_wschod = { 
+	4811 4812 4818 4819 
+}
+lublin_zachod = { 
+	4813 4816 4814 4815 
+}
+jaworzno_polnoc = { 
+	2719 2716 2711 2718 2717 
+}
+jaworzno_poludnie = { 
+	2723 2714 2721 2722 2720 
+}
+dabrowa_gornicza_srodmiescie = { 
+	1155 2696 2697 2698 
+}
+dabrowa_gornicza_strzemieszyce = { 
+	2702 2701 2693 2700 
+}
+dabrowa_gornicza_pogoria = { 
+	2695 2699 2703 2705 2704 
+}
+dabrowa_gornicza_bledow = { 
+	2706 2707 2708 2709 2692 
 }
