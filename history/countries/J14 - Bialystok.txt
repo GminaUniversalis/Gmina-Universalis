@@ -1,4 +1,9 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = autocracy_reform
 government_rank = 1
-technology_group = western
+technology_group = eastern
+religion = communism_pzpr
+primary_culture = podlaska
+capital = 1065
+fixed_capital = 1065
+
