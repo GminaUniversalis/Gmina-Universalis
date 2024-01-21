@@ -1,16 +1,15 @@
-#Dabrowa Gornicza
-culture = zaglebiowska
+#Bialystok Kawaleryjskie
+culture = podlaska
 religion = communism_pzpr
-hre = yes
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Dabrowa Gornicza"
+capital = "Bialystok - Kawaleryjskie"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L35
-controller = L35
+owner = J14
+controller = J14
 discovered_by = ottoman
-add_core = L35
+add_core = J14
