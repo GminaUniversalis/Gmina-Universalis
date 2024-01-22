@@ -527,7 +527,7 @@
  Inland_Sailing_desc:0 "The Oder River flows through KK, carrying barges with coal from Silesia; besides that, there is even a technical school for inland navigation"
  Atrycja_died:0 "Atrycja"
  Atrycja_died_desc:0 "The nitrogen plants produce semi-finished products for the production of gunpowder. Literally, mix them in the right proportions, and it's ready."
- W03_ideas:0 "¯agaªskie ideas"
+ W03_ideas:0 "¯agaªskie ideas""
  W03_ideas_start:0 "¯agaªskie traditions"
  W03_ideas_bonus:0 "¯agaªska ambition"
  Great_Escape:0 "Great Escape"
@@ -543,7 +543,7 @@
  Military_Hand:0 "Military Hand"
  Military_Hand_desc:0 "When it is full of military people everywhere, nobody is in a hurry to unrest"
  Dynamic_development:0 "Dynamic development"
- Dynamic_development _desc:0 "Dynamic development will have a positive impact on investors, maybe they will come from the west?"
+ Dynamic_development_desc:0 "Dynamic development will have a positive impact on investors, maybe they will come from the west?"
  B16_ideas:0 "Rypiªskie ideas"
  B16_ideas_start:0 "Rypiªskie traditions"
  B16_ideas_bonus:0 "Rypiªska ambition"
@@ -552,7 +552,7 @@
  better_place:0 "New better place"
  better_place_desc:0 "After the destruction of the city by the Teutonic Knights in 1329r, it was rebuilt in a place better for defense. The new center became a hill above the Rypienica River"
  Nobleman_from_under_Rypin:0 "Nobleman from under Rypin"
- Nobleman_from_under_Rypin_desc:0 Szlachcic spod Rypina. In the 17th and 18th centuries a proverb functioned Nobleman from under Rypin, which meant someone uncouth, provincial."
+ Nobleman_from_under_Rypin_desc:0 "Szlachcic spod Rypina. In the 17th and 18th centuries a proverb functioned Nobleman from under Rypin, which meant someone uncouth, provincial."
  Last_Supper:0 "Last Supper"
  Last_Supper_desc:0 "Ostatnia Wieczerza - a sacred engraving by Mr. and Mrs. Bednarski, which depicts the Last Supper with an area of 212 m2. The work, located in the Sacred Heart Church. is one of the largest stained glass windows in Europe."
  Crater_on_Mars:0 "Crater on Mars"
@@ -574,7 +574,76 @@
  Lost_voivodeship_desc:0 "ocal rulers didn’t forget how powerful where their predecessors. They’re staring at lands that were formerly controlled from Pi³a with desire and will not hesitate to take them back when circumstanses allow them to take action."
  City_of_Staszic:0 "City of Staszic"
  City_of_Staszic_desc:0 "Great politician and thinker Stanisław Staszic was born in Pi³a. Remembrance of him brings benefits"
- Smilowo:0 "Śmi³owo"
+ Smilowo:0 "Œmi³owo"
  Smilowo_desc:0 "Local businessman created meat empire then expanded it to other branches. That increased wealth of Commune Kaczory giving benefits also to Powiat Pilski."
  Grave_of_Drzymala:0 "Grave of Drzyma³a"
  Grave_of_Drzymala_desc:0 "Legendary Polish peasant known for his struggle against Prussian administration have finally found peace in a local graveyard. His legacy is still present in peoples minds and will affect any potential occupier."
+ P15_ideas:0 "Œwinioujscie ideas"
+ P15_ideas_start:0 "Œwinioujscie traditions"
+ P15_ideas_bonus:0 "Œwinioujscie ambition"
+ German_Tourism:0 "German Tourism"
+ German_Tourism_desc:0 "Œwinioujscie is popular summer destination for our westeren neighbors. Our location and renown brings profit to us."
+ Scandinavian_Invasions:0 "Scandinavian Invasions"
+ Scandinavian_Invasions_desc:0 "For centuries we were goal for northern raids. There was also point when we were under control of Scandinavians. It still affects us to this day."
+ Gate_to_Baltic:0 "Gate to Baltic"
+ Gate_to_Baltic_desc:0 "Placed to next to Baltic Sea we control Odra mouth. Every city on the river depends on us."
+ Local_Expansion:0 "Local Expansion"
+ Local_Expansion_desc:0 "Œwinioujscie is small in compare to our neighbors. We don't have so much place for development so we have to grow tall."
+ Fortress_swinoujscie:0 "Fortress Œwinioujscie"
+ Fortress_swinoujscie_desc:0 "Fortress builded in XIX century by Prussians is important place on our map. Except of defensive features it was also training place for armies and strategic point for artillery."
+ City_on_Islands:0 "City on Islands"
+ City_on_Islands_desc:0 "Œwinioujscie is placed on three islands. To maintain condition of the city we have to invest in navy."
+ Prussian_Legacy:0 "Prussian Legacy"
+ Prussian_Legacy_desc:0 "Of course Germans have their place in our history like in every city in western Poland."
+ W08_ideas:0 "Gorzowskie ideas"
+ W08_ideas_start:0 "Gorzowskie traditions"
+ W08_ideas_bonus:0 "Gorzowska ambition"
+ Never_Ending_War:0 "Never Ending War"
+ Never_Ending_War_desc:0 "Our rivalry with Zielona Góra will never end - we have to be united against them and always prepared for fight"
+ Polish_Romani:0 "Home of Polish Romani"
+ Polish_Romani_desc:0 "Gorzów was always open for Romani who found here their home. They developed here their culture and we learned to live in harmony with others"
+ City_of_Speedway:0 "City of Speedway"
+ City_of_Speedway_desc:0 "Sport is important for our city and Stal Gorzów Wielkopolski is our pride. This team was represented by some of the greatest drivers who were achieving the highest goals in discipline (which doesn't exist)."
+ Between_Metropolises:0 "Between Metropolises"
+ Between_Metropolises_desc:0 "We are not small but there are places bigger than us. We are between Szczecin, Poznaª and of course our greatest rival - Zielona Góra. Also we are not so far from Berlin. We have to use this to our advantage"
+ German_Fortifications:0 "German Fortifications"
+ German_Fortifications_desc:0 "For a long time we were part of Brandenburgian land. Germans build there great fortifications with Kostrzyn Fortress as main representative of their architecture."
+ Voivode_Headquarters:0 "Voivode Headquarters"
+ Voivode_Headquarters_desc:0 "Lubuskie has 2 capitals - Zielona Góra where is place for Lubuskie Local Goverment and Gorzów Wielkopolski where is voivode headquarters. Of course it has influence on us."
+ So_much_space:0 "So much place"
+ So_much_space_desc:0 "A big part of land in powiat isn't used or is undeveloped. We need to start investments there or we will be behind other"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

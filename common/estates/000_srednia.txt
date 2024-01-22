@@ -1,0 +1,59 @@
+estate_srednia = {
+    icon = 1
+    trigger = {
+        always = yes
+    }
+    country_modifier_happy = {
+		production_efficiency = 0.4
+		build_cost = -0.2
+	}
+    country_modifier_neutral = {
+		production_efficiency = 0.2
+	}
+    country_modifier_angry = {
+		global_unrest = 4
+		production_efficiency = -0.4
+	}
+  province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+		modifier = {
+			factor = 0.8
+			development = 20
+		}
+		modifier = {
+			factor = 0.5
+			development = 15
+		}
+		modifier = {
+			factor = 0.2
+			development = 10
+		}
+	}
+    land_ownership_modifier = {
+		srednia_loyalty_modifier = 0.5
+	}
+    base_influence = 15
+    contributes_to_curia_treasury = no
+    color = { 180 10 10 }
+    privileges = {
+		estate_emeryci_land_rights
+     }
+	 privileges = {
+		estate_emeryci_13
+	 }
+     agendas = {
+            estate_church_develop_x
+     }
+     influence_from_dev_modifier = 1.0
+	 custom_name = {
+		desc = estate_robotnicy
+		trigger = {
+			religion_group = communism_group
+		}
+	}
+            
+}

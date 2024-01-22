@@ -1,0 +1,57 @@
+estate_kler = {
+    icon = 1
+    trigger = {
+		NOT = { 
+			religion_group = communism_group
+		}
+    }
+    country_modifier_happy = {
+		tolerance_own = 3
+		global_tax_modifier = 0.2
+	}
+    country_modifier_neutral = {
+		tolerance_own = 1
+	}
+    country_modifier_angry = {
+		global_unrest = 1
+		tolerance_own = -3
+		prestige = -1
+	}
+  province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			NOT = { religion_group = owner }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion = owner }
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+		modifier = {
+			factor = 1.2
+			base_tax = 10
+		}
+	}
+	
+    land_ownership_modifier = {
+		kler_loyalty_modifier = 0.3
+	}
+    base_influence = 10
+    contributes_to_curia_treasury = no
+    color = { 255 255 0 }
+    privileges = {
+		estate_emeryci_land_rights
+     }
+	 privileges = {
+		estate_emeryci_13
+	 }
+     agendas = {
+            estate_church_develop_x
+     }
+     influence_from_dev_modifier = 1.0
+	}
+            
