@@ -528,8 +528,8 @@ powiat_mragowski = {
 	307 4147 4117 4253 4255 
 }
 powiat_olsztynski = { 
-	292 293 300 294 295 4243 964 4148 4249 4544
-	4247 2426 996 
+	293 300 294 295 4243 964 4148 4249 4544 4247
+	2426 996 
 }
 powiat_lidzbarski = { 
 	311 1752 310 274 2408 
@@ -919,8 +919,8 @@ powiat_krapkowicki = {
 	2993 2956 2998 60 1863 
 }
 powiat_opolski_opole = { 
-	4761 143 147 142 4700 4762 132 4760 1759 4709
-	3001 4648 859 959 
+	143 147 142 4700 4762 132 4760 1759 4709 3001
+	4648 859 959 
 }
 powiat_brzeski_opole = { 
 	860 4576 2617 4640 854 2615 
@@ -981,7 +981,7 @@ powiat_mikolowski = {
 	4126 4173 4125 3002 4755 
 }
 powiat_bedzinski = { 
-	1141 2270 4239 161 4127 157 1149 4757 153 
+	1141 2270 4239 161 4127 157 1149 4757 
 }
 powiat_aglomeracja_Katowicka = { 
 	140 154 1827 1952 3000 1951 
@@ -1202,4 +1202,46 @@ dabrowa_gornicza_pogoria = {
 }
 dabrowa_gornicza_bledow = { 
 	2706 2707 2708 2709 2692 
+}
+opole_poludnie = { 
+	2673 2609 2678 
+}
+opole_goslawice = { 
+	2677 2611 2610 2605 
+}
+opole_czarnowasy = { 
+	2606 2676 2608 2607 
+}
+opole_wrzoski = { 
+	2675 2669 2612 2613 
+}
+opole_chmielowice = { 
+	2670 2674 2672 2671 
+}
+opole_centrum = { 
+	2604 2603 4761 
+}
+sosnowiec_pogon = { 
+	2686 2688 2685 
+}
+sosnowiec_centrum = { 
+	153 2684 2690 
+}
+sosnowiec_zagorze = { 
+	2689 2679 2680 2681 
+}
+sosnowiec_bobrek = { 
+	2683 2687 2682 2691 
+}
+olsztyn_centrum = { 
+	292 2596 2595 
+}
+olsztyn_mazurskie = { 
+	2597 2594 2593 
+}
+olsztyn_wojska_polskiego = { 
+	2591 2590 2592 
+}
+olsztyn_dajtki = { 
+	2598 2600 2599 2601 2602 
 }
