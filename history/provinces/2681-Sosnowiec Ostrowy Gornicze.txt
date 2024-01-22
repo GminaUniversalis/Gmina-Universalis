@@ -1,0 +1,16 @@
+#Sosnowiec Ostrowy Gornicze
+culture = zaglebiowska
+religion = communism_sd
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Sosnowiec - Ostrowy Gornicze"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L33
+controller = L33
+discovered_by = ottoman
+add_core = L33
