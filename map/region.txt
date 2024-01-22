@@ -83,7 +83,8 @@ wielkopolska_region = {
 warminsko_mazurskie_region = { 
 	areas = { 
 		powiat_nowomiejski powiat_ilawski powiat_dzialdowski powiat_elblaski powiat_lidzbarski powiat_nidzicki powiat_szczycienski powiat_mragowski powiat_piski powiat_elcki
-		powiat_suwalski powiat_olecki powiat_goldapski powiat_gizycki powiat_wegorzewski powiat_olsztynski powiat_bartoszycki powiat_ketrzynski powiat_braniewski powiat_ostrodzki
+		powiat_suwalski powiat_olecki powiat_goldapski powiat_gizycki powiat_wegorzewski powiat_bartoszycki powiat_ketrzynski powiat_braniewski powiat_ostrodzki powiat_olsztynski
+		 olsztyn_dajtki olsztyn_centrum olsztyn_mazurskie olsztyn_wojska_polskiego 
 	}
 }
 dolnoslaskie_region = { 
@@ -97,15 +98,15 @@ dolnoslaskie_region = {
 opolskie_region = { 
 	areas = { 
 		powiat_kedzierzynsko-kozielski powiat_strzelecki powiat_oleski powiat_kluczborski powiat_namyslowski powiat_brzeski_opole powiat_nyski powiat_prudnicki powiat_glubczycki powiat_krapkowicki
-		powiat_opolski_opole 
+		powiat_opolski_opole opole_czarnowasy opole_centrum opole_goslawice opole_poludnie opole_wrzoski opole_chmielowice 
 	}
 }
 slaskie_region = { 
 	areas = { 
 		powiat_klobucki powiat_myszkowski powiat_czestochowski powiat_lubliniecki powiat_zawiercianski powiat_tarnogorski powiat_bytom powiat_raciborski powiat_wodzislawski powiat_gliwicki
 		powiat_mikolowski powiat_aglomeracja_Katowicka powiat_bierunsko-ledzinski powiat_pszczynski powiat_cieszynski powiat_bielski_slask powiat_zywiecki rybnik_poludnie katowice_poludnie katowice_srodmiescie
-		katowice_zachod jaworzno_polnoc jaworzno_poludnie jaworzno_centrum powiat_bedzinski dabrowa_gornicza_srodmiescie dabrowa_gornicza_strzemieszyce dabrowa_gornicza_bledow dabrowa_gornicza_pogoria powiat_rybnicki
-		rybnik_polnoc 
+		katowice_zachod jaworzno_polnoc jaworzno_poludnie jaworzno_centrum dabrowa_gornicza_srodmiescie dabrowa_gornicza_strzemieszyce dabrowa_gornicza_bledow dabrowa_gornicza_pogoria powiat_rybnicki rybnik_polnoc
+		powiat_bedzinski 
 	}
 }
 lodzkie_region = { 

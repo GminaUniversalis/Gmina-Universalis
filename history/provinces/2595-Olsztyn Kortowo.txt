@@ -1,15 +1,15 @@
-#Olsztyn
+#Olsztyn Kortowo
 culture = warminska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Olsztyn"
+capital = "Olsztyn - Kortowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = N16
-controller = N16
-add_core = N16
+owner = N21
+controller = N21
 discovered_by = ottoman
+add_core = N21
