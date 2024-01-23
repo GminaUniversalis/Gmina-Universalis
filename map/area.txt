@@ -1246,10 +1246,10 @@ olsztyn_dajtki = {
 	2598 2600 2599 2601 2602 
 }
 myslowice_srodmiescie = { 
-	3338 154 
+	3337 3338 154 
 }
 myslowice_poludnie = { 
-	3333 3334 3336 3337 3335 
+	3333 3336 3335 
 }
 tychy_stare = { 
 	2587 2588 140 
