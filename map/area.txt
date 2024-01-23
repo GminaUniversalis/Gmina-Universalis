@@ -984,7 +984,7 @@ powiat_bedzinski = {
 	1141 2270 4239 161 4127 157 1149 4757 
 }
 powiat_aglomeracja_Katowicka = { 
-	140 1827 1952 3000 1951 
+	1827 1952 3000 1951 
 }
 powiat_bytom = { 
 	4128 156 160 
@@ -1249,5 +1249,11 @@ myslowice_srodmiescie = {
 	3338 154 
 }
 myslowice_poludnie = { 
-	3333 3334 3336 3337 3335
+	3333 3334 3336 3337 3335 
+}
+tychy_stare = { 
+	2587 2588 140 
+}
+tychy_polnoc = { 
+	2589 2585 2586 
 }

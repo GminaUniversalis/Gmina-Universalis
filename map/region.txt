@@ -106,7 +106,7 @@ slaskie_region = {
 		powiat_klobucki powiat_myszkowski powiat_czestochowski powiat_lubliniecki powiat_zawiercianski powiat_tarnogorski powiat_bytom powiat_raciborski powiat_wodzislawski powiat_gliwicki
 		powiat_mikolowski powiat_aglomeracja_Katowicka powiat_bierunsko-ledzinski powiat_pszczynski powiat_cieszynski powiat_bielski_slask powiat_zywiecki rybnik_poludnie katowice_poludnie katowice_srodmiescie
 		katowice_zachod jaworzno_polnoc jaworzno_poludnie jaworzno_centrum dabrowa_gornicza_srodmiescie dabrowa_gornicza_strzemieszyce dabrowa_gornicza_bledow dabrowa_gornicza_pogoria powiat_rybnicki rybnik_polnoc
-		powiat_bedzinski sosnowiec_centrum sosnowiec_pogon sosnowiec_zagorze sosnowiec_bobrek myslowice 
+		powiat_bedzinski sosnowiec_centrum sosnowiec_pogon sosnowiec_zagorze sosnowiec_bobrek myslowice_srodmiescie myslowice_poludnie tychy_polnoc stare_tychy 
 	}
 }
 lodzkie_region = { 
