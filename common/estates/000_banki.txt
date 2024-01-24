@@ -1,0 +1,57 @@
+estate_banki = {
+    icon = 1
+    trigger = {
+        always = yes
+    }
+    country_modifier_happy = {
+		interest = -1
+		inflation_reduction = 0.05
+		trade_efficiency = 0.2
+	}
+    country_modifier_neutral = {
+		trade_efficiency = 0.2
+	}
+    country_modifier_angry = {
+		trade_efficiency = -0.4
+		interest = 3
+	}
+  province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+		modifier = {
+			factor = 1
+			development = 20
+		}
+		modifier = {
+			factor = 0.7
+			development = 15
+		}
+		
+	}
+    land_ownership_modifier = {
+		banki_loyalty_modifier = 0.7
+	}
+    base_influence = 15
+    contributes_to_curia_treasury = no
+    color = { 40 40 180 }
+    privileges = {
+		estate_emeryci_land_rights
+     }
+	 privileges = {
+		estate_emeryci_13
+	 }
+     agendas = {
+            estate_church_develop_x
+     }
+     influence_from_dev_modifier = 1.0
+	 custom_name = {
+		desc = estate_lichwiarze
+		trigger = {
+			religion_group = communism_group
+		}
+	}
+            
+}
