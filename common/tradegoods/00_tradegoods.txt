@@ -1553,6 +1553,313 @@ gu_oil = {
 	}
 }
 
+gu_wheat = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_triticale = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_barley = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_maize = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_poultry = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_pigs = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_cattle = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_metalworking = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_chemicals = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_consumer_goods = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_confectionery = {
+	color = { 0.79 1 0 }
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_software = {
+	color = { 0.79 1 0 }
+
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7
+	
+	trigger = {
+		OR = {
+			development_discounting_tribal = 20
+			owner = { innovativeness = 20 }
+		}
+	}
+
+	modifier = {
+		trade_steering = 0.1
+	}
+
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_finances = {
+	color = { 0.79 1 0 }
+
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7
+	
+	trigger = {
+		OR = {
+			development_discounting_tribal = 20
+			owner = { innovativeness = 20 }
+		}
+	}
+
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_woodworking = {
+	color = { 0.79 1 0 }
+
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7
+	
+	trigger = {
+		OR = {
+			development_discounting_tribal = 20
+			owner = { innovativeness = 20 }
+		}
+	}
+
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_electronics = {
+	color = { 0.79 1 0 }
+
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7
+	
+	trigger = {
+		OR = {
+			development_discounting_tribal = 20
+			owner = { innovativeness = 20 }
+		}
+	}
+
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_processed_food = {
+	color = { 0.79 1 0 }
+
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7
+	
+	trigger = {
+		OR = {
+			development_discounting_tribal = 20
+			owner = { innovativeness = 20 }
+		}
+	}
+
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_vehicles = {
+	color = { 0.79 1 0 }
+
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7
+	
+	trigger = {
+		OR = {
+			development_discounting_tribal = 20
+			owner = { innovativeness = 20 }
+		}
+	}
+
+	modifier = {
+		trade_steering = 0.1
+	}
+	province = {
+		trade_value_modifier = 0.10
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+gu_euro = {
+	color = { 0.79 1 0 }
+	chance = {
+		factor = 0
+	}
+}
+
 unknown = {
 	color = { 0.5 0.5 0.5 }
 }
