@@ -984,7 +984,7 @@ powiat_bedzinski = {
 	1141 2270 4239 161 4127 157 1149 4757 
 }
 powiat_aglomeracja_Katowicka = { 
-	140 154 1827 1952 3000 1951 
+	  1951 
 }
 powiat_bytom = { 
 	4128 156 160 
@@ -1244,4 +1244,25 @@ olsztyn_wojska_polskiego = {
 }
 olsztyn_dajtki = { 
 	2598 2600 2599 2601 2602 
+}
+myslowice_srodmiescie = { 
+	3337 3338 154 
+}
+myslowice_poludnie = { 
+	3333 3336 3335 
+}
+tychy_stare = { 
+	2587 2588 140 
+}
+tychy_polnoc = { 
+	2589 2585 2586 
+}
+chorzow = { 
+	2584 1827 2583 2581 2582 
+}
+siemanowice = { 
+	2580 2579 1952 
+}
+swietochlowice = { 
+	2578 2577 3000
 }
