@@ -149,7 +149,6 @@ province;red;green;blue;x;x
 150;21;76;0;Rudziniec;x
 151;149;78;64;Domaszowice;x
 152;21;80;128;Goczalkowice-Zdroj;x
-153;149;82;192;Sosnowiec;x
 154;22;84;255;Myslowice;x
 155;150;86;0;Pabianice;x
 156;22;88;64;Zabrze;x
@@ -288,7 +287,6 @@ province;red;green;blue;x;x
 289;169;98;255;Chorzele;x
 290;41;100;0;Lyse;x
 291;169;102;64;Myszyniec;x
-292;41;104;128;Olsztyn;x
 293;169;106;192;Swiatki;x
 294;42;108;255;Kolno;x
 295;170;110;0;Biskupiec;x
@@ -802,7 +800,6 @@ province;red;green;blue;x;x
 1062;32;104;32;Kobylin-Borzymy;x
 1063;160;106;79;Suraz;x
 1064;32;108;126;Juchnowiec-Koscielny;x
-1065;161;110;173;Bialystok;x
 1066;33;112;32;Dobrzyniewo Duze;x
 1067;161;114;79;Jaswily;x
 1068;33;116;126;Janow;x
@@ -891,7 +888,6 @@ province;red;green;blue;x;x
 1152;45;156;126;Poreba;x
 1153;173;158;173;Zawiercie;x
 1154;45;32;32;Lazy;x
-1155;173;34;79;Dabrowa Gornicza;x
 1156;46;36;126;Secemin;x
 1157;174;38;173;Moskorzew;x
 1158;46;40;32;Jedrzejow;x
@@ -1031,8 +1027,6 @@ province;red;green;blue;x;x
 1658;25;203;203;Lake Okeechobee;x
 1659;26;203;253;Lake Ontario;x
 1660;27;223;253;Lake Erie;x
-1661;28;253;253;Lake Huron;x
-1662;29;203;203;Lake Michigan;x
 1663;30;203;253;Jezioro Wilczkowo;x
 1664;31;223;253;Jezioro Trzesiecko;x
 1665;32;253;253;Jezioro Wierzchowo;x
@@ -1887,7 +1881,7 @@ province;red;green;blue;x;x
 2913;208;20;175;Wojcieszow;x
 2914;62;16;191;Swierzawa;x
 2915;133;105;215;Janowice Wielkie;x
-2916;200;153;63;Skierczyn;x
+2916;200;153;63;Siekierczyn;x
 2917;81;145;18;Luban;x
 2918;239;221;25;Sulikow;x
 2919;128;188;22;Kowary;x
@@ -2078,7 +2072,6 @@ province;red;green;blue;x;x
 4077;145;76;136;Jaslo;x
 4078;219;94;40;Spytkownice;x
 4079;220;158;209;Chrzanow;x
-4080;120;115;207;Jaworzno;x
 4081;82;225;176;Tomice;x
 4082;217;90;204;Polanka Wielka;x
 4083;217;173;199;Wegierska Gorka;x
@@ -2633,7 +2626,6 @@ province;red;green;blue;x;x
 4758;186;81;38;Chelmza;x
 4759;220;54;163;Bierawa;x
 4760;194;192;231;Proszkow;x
-4761;154;237;147;Opole;x
 4762;243;138;80;Chrzastowice;x
 4764;179;106;111;Gniewkowo;x
 4765;255;253;196;Dabrowa;x
@@ -2914,3 +2906,123 @@ province;red;green;blue;x;x
 4351;104;196;152;Kotuli;x
 4350;154;86;212;Pogwizdow Nowy;x
 2788;201;201;89;Rzeszow Srodmiescie;x
+4349;105;219;142;Dojildy Gorne;x
+4348;198;47;101;Dojilidy;x
+4347;144;206;207;Odra;x
+4346;149;226;227;Odra;x
+3226;219;32;36;Zawady;
+3225;219;32;35;Nowe Miasto;
+3224;219;32;34;Bagnowka;
+3191;219;32;1;Jaroszowka;
+3189;207;140;138;Starosielce;
+3152;207;110;101;Wygoda;
+3099;207;110;48;Piasta-Skorupy;
+3098;207;110;47;Bacieczki;
+3052;208;110;1;Bialostoczek;
+2725;124;63;62;Sloneczny Stok;x
+2724;221;212;104;Kawaleryjskie;x
+1065;161;110;173;Bialystok Srodmiescie;x
+2723;33;198;152;Jelen;x
+2722;178;198;73;Cezarowka;x
+2721;131;198;119;Byczyna;x
+2720;82;206;171;Kozmin-Jeziorki;x
+2719;119;128;17;Dlugoszyn;x
+2718;241;207;129;Szczakowa;x
+2717;201;219;43;Pieczyska;x
+2716;137;255;124;Dabrowa Narodowa;x
+2715;127;150;255;Wesole Miasteczko;x
+2714;255;89;185;Bory-Stara Huta;x
+2713;255;228;94;Ciezkowice;x
+2712;175;65;144;Wiloszyn;x
+2711;105;135;119;Niedzieliska;x
+2710;87;204;89;Dobra;x
+4080;120;115;207;Jaworzno Srodmiescie;x
+2709;196;102;196;Bledow;x
+2708;255;107;28;Okradzionow;x
+2707;234;86;86;Łęka;x
+2706;255;61;138;Tucznawa;x
+2705;131;183;111;Zabkowice;x
+2704;132;76;108;Trzebieslawice;x
+2703;104;158;82;Ujejsce;x
+2702;65;219;88;Strzemieszyce Wielkie;x
+2701;219;211;164;Strzemieszyce Male;x
+2700;197;255;53;Losien;x
+2699;255;75;66;Antoniow;x
+2698;163;207;58;Golonog Wschodni;x
+2697;163;70;58;Golonog Poludniowy;x
+2696;181;45;81;Reden;x
+2695;107;66;100;Zielona-Pogoria;x
+4224;36;150;179;Jezioro Pogoria;x
+2693;104;16;91;Huta Katowice;x
+2692;216;67;201;Pustynia Bledowska;x
+1155;173;34;79;Dabrowa Gornicza Srodmiescie;x
+2691;216;58;34;Maczki;x
+2690;165;116;117;Srodula;x
+2689;198;98;83;Zagorze Polnocne;x
+2688;130;85;130;Pogon;x
+2687;216;49;158;Modrzejow;x
+2686;44;214;56;Milowice;x
+2685;237;46;40;Stary Sosnowiec;x
+2684;79;130;125;Sielec;x
+2683;130;64;29;Kalinowa;x
+2682;92;59;239;Juliusz;x
+2681;76;118;155;Ostrowy Gornicze;x
+2680;55;130;71;Kazimierz Gorniczy;x
+2679;21;117;104;Zagorze Poludniowe;x
+153;149;82;192;Sosnowiec Centrum;x
+2678;214;113;131;Nowa Wies Krolewska;x
+2677;48;55;127;Malina;x
+2676;150;146;184;Czarnowasy;x
+2675;29;38;119;Wrzoski;x
+2674;60;214;57;Chmielowice;x
+2673;51;255;40;Grotowice;x
+2672;192;101;46;Szczepanowice;
+2671;237;231;46;Winow-Nadodrze;x
+2670;111;61;95;Zaodrze;x
+2669;237;31;46;Slawice;x
+2613;161;131;246;Polwies;x
+2612;35;221;46;Bierkowice;x
+2611;203;41;95;Grudzice;x
+2610;77;132;145;Kolonia Goslawicka;x
+2609;140;131;196;Groszowice;x
+2608;14;130;246;Swierkle;x
+2607;242;255;46;Brzezie;x
+2606;116;3;95;Wroblin;x
+2605;179;219;145;Goslawice;x
+2604;53;131;196;Zakrzow;x
+2603;95;122;46;Chabry;x
+4761;154;237;147;Opole Stare Miasto;x
+2602;158;114;95;Dajtki;x
+2601;32;64;145;Gutkowo;x
+1662;29;203;203;Jezioro Uklei;x
+1661;28;253;253;Jezioro Kortowskie;x
+2600;200;31;196;Likusy;x
+2599;74;15;246;Redykajny;x
+2598;137;28;46;Nad Jeziorem Dlugim;x
+2597;11;51;95;Generalow-Pieczewo;x
+2596;239;18;145;Brzeziny;x
+2595;113;131;196;Kortowo;x
+2594;176;181;246;Mazurskie;x
+2593;221;144;246;Pojezierze;x
+2592;50;131;46;Wojska Polskiego;x
+2591;218;26;95;Zielona Gorka;x
+2590;92;45;145;Podlesna;x
+292;41;104;128;Olsztyn Srodmiescie;x
+3333;41;104;127;Dzieckowice;x
+3335;100;104;200;Krasowy;x
+3336;5;104;200;Brzezinka;x
+3337;5;104;5;Morgi;x
+3338;5;200;5;Brzeczkowice;x
+2589;155;31;196;Wilkowyje;x
+2588;29;41;246;Paprocany;x
+2587;197;197;46;Urbanowice;x
+2586;71;194;95;Wygorzele;x
+2585;134;31;145;Makolowiec;x
+2584;8;121;196;Chorzow Batory;x
+2583;236;51;246;Chorzow II;x
+2582;110;1;46;WPKiW;x
+2581;173;199;95;Chorzow Stary;x
+2580;47;1;145;Bytkow;x
+2579;215;2;196;Bangow;x
+2578;89;121;246;Zgoda;x
+2577;152;1;46;Chropaczow;x

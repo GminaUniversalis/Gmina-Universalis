@@ -936,7 +936,7 @@ Y19_ideas = {
 		global_ship_trade_power = -0.25
 		heavy_ship_power = -0.5
 		light_ship_power = -0.5
-		global_tax_modifier = 0.1
+		global_tax_modifier = -0.1
 	}
 	Free_city_senate = {
 		yearly_corruption = -0.2
@@ -1498,5 +1498,79 @@ R28_ideas = {
 	}
 	Grave_of_Drzymala = {
 		enemy_core_creation = 0.5
+	}
+}
+P15_ideas = {
+	start = {
+		merchants = 1
+		diplomatic_reputation = 1
+	}
+
+	bonus = {
+		development_cost = -0.05
+	}
+	
+	trigger = {
+		tag = P15
+	}
+	free = yes
+
+	German_Tourism = {
+		global_tax_modifier = 0.2
+	}
+	Scandinavian_Invasions = {
+		may_perform_slave_raid = yes
+	}
+	Gate_to_Baltic = {
+		trade_steering = 0.2
+	}
+	Local_Expansion = {
+		expand_infrastructure_cost_modifier = -0.2
+	}
+	Fortress_swinoujscie = {
+		artillery_power = 0.1
+	}
+	City_on_Islands = {
+		naval_maintenance_modifier = -0.2
+	}
+	Prussian_Legacy = {
+		discipline = 0.05
+	}
+}
+W08_ideas = {
+	start = {
+		improve_relation_modifier = 0.33
+		global_manpower_modifier = 0.15
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.1
+	}
+	
+	trigger = {
+		tag = W08
+	}
+	free = yes
+
+	Never_Ending_War = {
+		discipline = 0.05
+	}
+	Polish_Romani = {
+		years_of_nationalism = -5
+	}
+	City_of_Speedway = {
+		religious_unity = 0.15
+	}
+	Between_Metropolises = {
+		trade_steering = 0.2
+	}
+	German_Fortifications = {
+		fort_maintenance_modifier = -0.2
+	}
+	Voivode_Headquarters = {
+		max_absolutism = 15
+	}
+	So_much_space = {
+		development_cost = -0.1
 	}
 }
