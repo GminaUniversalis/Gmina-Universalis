@@ -987,7 +987,7 @@ powiat_aglomeracja_Katowicka = {
 	  1951 
 }
 powiat_bytom = { 
-	4128 156 160 
+	 4128 2569  2570 2571 2572
 }
 jaworzno_centrum = { 
 	4080 2715 2710 2712 2713 
@@ -1265,4 +1265,10 @@ siemanowice = {
 }
 swietochlowice = { 
 	2578 2577 3000
+}
+piekary = { 
+	2576 2575 2574 2573 160
+}
+bytom_polnoc = { 
+	2567 2568 2566 2565
 }
