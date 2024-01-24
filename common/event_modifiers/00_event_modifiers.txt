@@ -40,6 +40,13 @@ airport_modifier = {
 	picture = "airport_icon"
 }
 
+local_airport_modifier = {
+	province_trade_power_value = 4
+	local_friendly_movement_speed = 0.3
+	local_tax_modifier = 0.10
+	picture = "airport_icon"
+}
+
 national_bank_interest = {
 	interest = -0.5
 }
