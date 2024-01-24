@@ -757,14 +757,6 @@ glass = {
 	chance = {
 		factor = 5
 		modifier = {
-			factor = 0
-			area = newfoundland_area
-		}
-		modifier = {
-			factor = 0
-			NOT = { development_discounting_tribal = 18 }
-		}
-		modifier = {
 			factor = 2.0
 			development_discounting_tribal = 22
 		}
@@ -1194,7 +1186,7 @@ gu_wheat = {
 }
 
 gu_triticale = {
-	color = { 0.79 1 0 }
+	color = { 0.83 0.95 0.54 }
 	modifier = {
 		religious_unity = 0.20
 	}
@@ -1214,7 +1206,7 @@ gu_triticale = {
 }
 
 gu_barley = {
-	color = { 0.79 1 0 }
+	color = { 0.95 0.83 0.50 }
 	modifier = {
 		land_attrition = -0.10	
 	}
@@ -1234,7 +1226,7 @@ gu_barley = {
 }
 
 gu_maize = {
-	color = { 0.79 1 0 }
+	color = { 0.98 0.93 0.37 }
 	modifier = {
 		land_maintenance_modifier = -0.05
 	}
@@ -1254,7 +1246,7 @@ gu_maize = {
 }
 
 gu_poultry = {
-	color = { 0.79 1 0 }
+	color = { 0.89 0.79 0.47 }
 	modifier = {
 		shock_damage = 0.08
 	}
@@ -1267,7 +1259,7 @@ gu_poultry = {
 }
 
 gu_pigs = {
-	color = { 0.79 1 0 }
+	color = { 0.93 0.75 0.91 }
 	modifier = {
 		chance_to_inherit = 0.4	
 	}
@@ -1280,7 +1272,7 @@ gu_pigs = {
 }
 
 gu_cattle = {
-	color = { 0.79 1 0 }
+	color = { 0.85 0.88 0.89 }
 	modifier = {
 		cavalry_cost = -0.10	
 	}
@@ -1293,7 +1285,7 @@ gu_cattle = {
 }
 
 gu_metalworking = {
-	color = { 0.79 1 0 }
+	color = { 0.26 0.41 0.61 }
 	modifier = {
 		shock_damage_received = -0.08	
 	}
@@ -1306,7 +1298,7 @@ gu_metalworking = {
 }
 
 gu_chemicals = {
-	color = { 0.79 1 0 }
+	color = { 0.2 0.2 0.2 }
 	modifier = {
 		fire_damage = 0.08
 	}
@@ -1319,7 +1311,7 @@ gu_chemicals = {
 }
 
 gu_consumer_goods = {
-	color = { 0.79 1 0 }
+	color = { 0.60 0.62 0.92 }
 	modifier = {
 		promote_culture_cost = -0.35
 	}
@@ -1339,7 +1331,7 @@ gu_consumer_goods = {
 }
 
 gu_confectionery = {
-	color = { 0.79 1 0 }
+	color = { 0.43 0.26 0.06 }
 	modifier = {
 		improve_relation_modifier = 0.25
 	}
@@ -1359,7 +1351,7 @@ gu_confectionery = {
 }
 
 gu_software = {
-	color = { 0.79 1 0 }
+	color = { 0.35 0.64 0.52 }
 
 	is_latent = yes
 	is_valuable = yes
@@ -1393,7 +1385,7 @@ gu_software = {
 }
 
 gu_finances = {
-	color = { 0.79 1 0 }
+	color = { 0.72 0.41 0.6 }
 
 	is_latent = yes
 	is_valuable = yes
@@ -1426,7 +1418,7 @@ gu_finances = {
 }
 
 gu_woodworking = {
-	color = { 0.79 1 0 }
+	color = { 0.04 0.31 0.01 }
 
 	is_latent = yes
 	is_valuable = yes
@@ -1452,7 +1444,7 @@ gu_woodworking = {
 }
 
 gu_electronics = {
-	color = { 0.79 1 0 }
+	color = { 0.35 0.96 0.27 }
 
 	is_latent = yes
 	is_valuable = yes
@@ -1478,7 +1470,7 @@ gu_electronics = {
 }
 
 gu_processed_food = {
-	color = { 0.79 1 0 }
+	color = { 0.65 0.8 0.4 }
 
 	is_latent = yes
 	is_valuable = yes
@@ -1504,7 +1496,7 @@ gu_processed_food = {
 }
 
 gu_vehicles = {
-	color = { 0.79 1 0 }
+	color = { 0.9 0.46 0.46 }
 
 	is_latent = yes
 	is_valuable = yes
@@ -1530,7 +1522,7 @@ gu_vehicles = {
 }
 
 gu_euro = {
-	color = { 0.01 0.07 0.91 }
+	color = { 0.04 0.09 1 }
 	chance = {
 		factor = 1
 	}
