@@ -984,7 +984,7 @@ powiat_bedzinski = {
 	1141 2270 4239 161 4127 157 1149 4757 
 }
 powiat_aglomeracja_Katowicka = { 
-	1827 1952 3000 1951 
+	  1951 
 }
 powiat_bytom = { 
 	4128 156 160 
@@ -1256,4 +1256,13 @@ tychy_stare = {
 }
 tychy_polnoc = { 
 	2589 2585 2586 
+}
+chorzow = { 
+	2584 1827 2583 2581 2582 
+}
+siemanowice = { 
+	2580 2579 1952 
+}
+swietochlowice = { 
+	2578 2577 3000
 }
