@@ -1,4 +1,8 @@
 #Wroclaw - Stare Miasto
+latent_trade_goods = {
+    gu_software
+}
+
 religion = communism_zsl
 base_tax = 7
 base_production = 10

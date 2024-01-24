@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 6
 base_production = 5
-trade_goods = livestock
+trade_goods = gu_poultry
 base_manpower = 7
 capital = "Dlugoleka"
 is_city = yes
