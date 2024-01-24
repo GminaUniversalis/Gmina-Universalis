@@ -983,9 +983,6 @@ powiat_mikolowski = {
 powiat_bedzinski = { 
 	1141 2270 4239 161 4127 157 1149 4757 
 }
-powiat_aglomeracja_Katowicka = { 
-	  1951 
-}
 powiat_bytom = { 
 	 4128 2569  2570 2571 2572
 }
@@ -1272,3 +1269,20 @@ piekary = {
 bytom_polnoc = { 
 	2567 2568 2566 2565
 }
+ruda_polnoc = {
+2560 2559 1951
+}
+ruda_poludnie = {
+2564 2563 2562 2561
+}
+zabrze_centrum = {
+2555 2558 156 2549
+}
+zabrze_polnoc = {
+2553 2557 2554 2556
+}
+zabrze_zaborze = {
+2551 2550 2552
+}
+
+

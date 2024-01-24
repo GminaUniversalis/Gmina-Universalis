@@ -1,6 +1,6 @@
 #Ruda
-culture = gornoslaska
-religion = communism_pzpr
+culture = slonska
+religion = communism_sd
 hre = yes
 base_tax = 1
 base_production = 1
@@ -10,7 +10,7 @@ capital = "Ruda"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L32
-controller = L32
+owner = L26
+controller = L26
 discovered_by = ottoman
-add_core = L32
+add_core = L26
