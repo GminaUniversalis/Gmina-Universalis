@@ -1,6 +1,6 @@
 #Myslenice
-culture = zachodnio-krakowska
-religion = communism_pzpr
+culture = gornoslaska
+religion = communism_sd
 base_tax = 3
 base_production = 2
 trade_goods = unknown
@@ -11,5 +11,5 @@ discovered_by = western
 discovered_by = eastern
 owner = X12
 controller = X12
-add_core = X12
 discovered_by = ottoman
+add_core = X12

@@ -1,6 +1,6 @@
 #Gliwice
-culture = ukrainska
-religion = communism_pzpr
+culture = gornoslaska
+religion = communism_sd
 hre = yes
 base_tax = 1
 base_production = 1
@@ -10,7 +10,7 @@ capital = "Gliwice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L12
-controller = L12
-add_core = L12
+owner = L36
+controller = L36
 discovered_by = ottoman
+add_core = L36
