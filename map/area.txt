@@ -948,7 +948,7 @@ powiat_tarnogorski = {
 	1765 1766 159 4176 4704 4706 2750 148 1954 
 }
 powiat_gliwicki = { 
-	149 4703 4175 150 4754 1953 162 957 138 
+	149 4703 4175 150 4754 1953 162 957 
 }
 powiat_raciborski = { 
 	134 2994 4749 51 4742 958 2965 58 
@@ -983,11 +983,8 @@ powiat_mikolowski = {
 powiat_bedzinski = { 
 	1141 2270 4239 161 4127 157 1149 4757 
 }
-powiat_aglomeracja_Katowicka = { 
-	  1951 
-}
 powiat_bytom = { 
-	4128 156 160 
+	 4128 2569  2570 2571 2572
 }
 jaworzno_centrum = { 
 	4080 2715 2710 2712 2713 
@@ -1266,3 +1263,37 @@ siemanowice = {
 swietochlowice = { 
 	2578 2577 3000
 }
+piekary = { 
+	2576 2575 2574 2573 160
+}
+bytom_polnoc = { 
+	2567 2568 2566 2565
+}
+ruda_polnoc = {
+2560 2559 1951
+}
+ruda_poludnie = {
+2564 2563 2562 2561
+}
+zabrze_centrum = {
+2555 2558 156 2549
+}
+zabrze_polnoc = {
+2553 2557 2554 2556
+}
+zabrze_zaborze = {
+2551 2550 2552
+}
+gliwice_labedy = {
+ 2539 2538 2537 2541
+}
+gliwice_srodmiescie = {
+ 138 2540 2546 2547
+}
+gliwice_bojkow = {
+ 2548 2544 2545
+}
+gliwice_wschod = {
+ 2543 2542 2536
+}
+
