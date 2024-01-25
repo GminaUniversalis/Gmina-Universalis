@@ -2,7 +2,7 @@
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
-trade_goods = grain
+trade_goods = gu_barley
 base_manpower = 2
 capital = "Marcinowice"
 is_city = yes

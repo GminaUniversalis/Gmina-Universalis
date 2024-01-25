@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 2
 base_production = 2
-trade_goods = grain
+trade_goods = gu_barley
 base_manpower = 3
 capital = "Zorawina"
 is_city = yes

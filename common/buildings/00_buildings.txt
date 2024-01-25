@@ -1858,6 +1858,10 @@ weapons = {
 		copper
 		iron
 		gu_coal
+		gu_metalworking
+		gu_chemicals
+		gu_electronics
+		gu_vehicles
 	}
 	onmap = yes
 	on_built = {
@@ -1991,6 +1995,10 @@ tradecompany = {
 		gu_tourists
 		gu_vodka
 		gu_sulfur
+		gu_consumer_goods
+		gu_confectionery
+		gu_software
+		gu_finances
 	}
 	onmap = yes
 	on_built = {
@@ -2035,6 +2043,13 @@ farm_estate = {
 		gu_oscypek
 		gu_horses
 		gu_oil
+		gu_wheat
+		gu_barley
+		gu_triticale
+		gu_maize
+		gu_poultry
+		gu_pigs
+		gu_cattle
 	}
 	onmap = yes
 	on_built = {
@@ -2095,6 +2110,8 @@ mills = {
 		gu_lumber
 		gu_amber
 		gu_ceramics
+		gu_woodworking
+		gu_processed_food
 	}
 	onmap = yes
 	on_built = {
