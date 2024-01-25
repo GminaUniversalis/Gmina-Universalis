@@ -2456,6 +2456,8 @@ on_bi_yearly_pulse_5 = {
 		# 50 = china_events.11
 		# 25 = china_events.12
 		# 25 = china_events.24
+		700 = communism.4
+		700 = communism.5
 
 		2000 = 0
 	}
