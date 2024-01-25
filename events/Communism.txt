@@ -57,7 +57,7 @@ country_event = {
 	id = communism.3
 	title = communism.3.t
 	desc = communism.3.d
-	picture = ECONOMY_eventPicture
+	picture = INFLATIONPicture
 
 	is_triggered_only = yes
 
@@ -73,5 +73,79 @@ country_event = {
 		name = communism.3.a
 		add_inflation = 3
 		add_legitimacy = -10
+	}
+}
+
+# Western agent among advisors
+country_event = {
+	id = communism.4
+	title = communism.4.t
+	desc = communism.4.d
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = communism.4.a
+		kill_advisor = random
+		add_prestige = -20
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = communism.4.b
+		add_corruption = 2
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Western agent in power
+country_event = {
+	id = communism.5
+	title = communism.5.t
+	desc = communism.5.d
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = communism.5.a
+		kill_ruler = yes
+		add_prestige = -30
+
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+	option = {
+		name = communism.5.b
+		add_corruption = 3
+
+		ai_chance = {
+			factor = 70
+		}
 	}
 }
