@@ -1,7 +1,7 @@
 #Ursus
 culture = warszawska
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
 trade_goods = gu_metalworking
 base_manpower = 1
