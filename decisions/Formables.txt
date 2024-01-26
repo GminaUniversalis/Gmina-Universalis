@@ -1,0 +1,124 @@
+country_decisions = {
+
+	silesian_conurbation_forming = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_silesian_conurbation_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = SCO }
+			NOT = { tag = SCO }
+			OR = {
+				ai = no
+				AND = {
+					NOT = { exists = SCO }
+					num_of_cities = 4
+				}
+			}
+			OR = {
+				primary_culture = gornoslaska
+				primary_culture = cieszynska
+				primary_culture = opolska
+				primary_culture = niemiecka
+                primary_culture = slonska
+                primary_culture = zaglebiowska
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1318	# Katowice
+                province_id = 153	# Sosnowiec
+                province_id = 138	# Gliwice
+                province_id = 156	# Zabrze
+                province_id = 4128	# Bytom
+                province_id = 1951	# Ruda Śląska
+                province_id = 140	# Tychy
+                province_id = 1155	# Dąbrowa Górnicza
+                province_id = 1827	# Chorzów
+                province_id = 4080	# Jaworzno
+                province_id = 154	# Mysłowice
+                province_id = 1952	# Siemianowice Śląskie
+                province_id = 4706	# Tarnowskie Góry
+                province_id = 160	# Piekary Śląskie
+                province_id = 4757	# Będzin
+                province_id = 3000	# Świętochłowice
+                province_id = 162	# Knurów
+                province_id = 4173	# Mikołów
+                province_id = 157	# Czeladź
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = SCO }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+            adm_tech = 10
+            owns_core_province = 1318	# Katowice
+            owns_core_province = 153	# Sosnowiec
+            owns_core_province = 138	# Gliwice
+            owns_core_province = 156	# Zabrze
+            owns_core_province = 4128	# Bytom
+            owns_core_province = 1951	# Ruda Śląska
+            owns_core_province = 140	# Tychy
+            owns_core_province = 1155	# Dąbrowa Górnicza
+            owns_core_province = 1827	# Chorzów
+            owns_core_province = 4080	# Jaworzno
+            owns_core_province = 154	# Mysłowice
+            owns_core_province = 1952	# Siemianowice Śląskie
+            owns_core_province = 4706	# Tarnowskie Góry
+            owns_core_province = 160	# Piekary Śląskie
+            owns_core_province = 4757	# Będzin
+            owns_core_province = 3000	# Świętochłowice
+            owns_core_province = 162	# Knurów
+            owns_core_province = 4173	# Mikołów
+            owns_core_province = 157	# Czeladź
+		}
+		effect = {
+			set_country_flag = sco_chose_pu_flag
+			change_tag = SCO
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				SCO = { set_government_rank = 2 }
+			}
+			slaskie_region = {
+				add_permanent_claim = SCO
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_silesian_conurbation_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #If there is no Poland then Polish minors will prioritize reforming it.
+	}
+	
+}

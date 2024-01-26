@@ -1,0 +1,6 @@
+# Country Name: Silesian Conurbation
+graphical_culture = westerngfx
+color = { 
+	29 255 17 
+}
+revolutionary_colors = { 1 9 7 }
