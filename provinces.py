@@ -160,8 +160,50 @@ def modify_provinces(provinces):
             f.writelines(data)
 
 
+def modify_terrains(provinces):
+    terrains = {
+        'farmlands': [],
+        'woods': [],
+        'forest': [],
+        'marsh': [],
+        'hills': [],
+        'mountain': [],
+        'grasslands': [],
+        'coastline': [],
+        'drylands': [],
+        'highlands': [],
+        'steppe': [],
+        'urban': [],
+        'high_urban': [],
+        'floodplains': [],
+        'crossing': [],
+    }
+    for province in provinces:
+        id = province['id']
+        terrain = province['terrain']
+        if terrain:
+            terrains[terrain].append(id)
+
+    with open(f"map/terrain.txt", 'r') as f:
+        data = f.readlines()
+
+    for terrain_type in terrains.keys():
+        list_of_provinces = " ".join(str(p) for p in terrains[terrain_type])
+        overwrite = False
+
+        for line, content in enumerate(data):
+            if f"{terrain_type} " in content:
+                overwrite = True
+            if overwrite and f"terrain_override" in content:
+                data[line] = f"\t\tterrain_override = {{ {list_of_provinces} }}\n"
+
+    with open(f"map/terrain.txt", 'w') as f:
+            f.writelines(data)
+
+
 data = read_data('Trade Goods.csv')
 data = adjust_data(data)
 provinces = data_to_dict(data)
 provinces = adjust_provinces(provinces)
-modify_provinces(provinces)
+# modify_provinces(provinces)
+# modify_terrains(provinces)
