@@ -1,10 +1,10 @@
 #City of Lomza
 culture = mazowiecka
 religion = communism_zsl
-base_tax = 11
+base_tax = 12
 base_production = 10
-trade_goods = unknown
-base_manpower = 10
+trade_goods = gu_beer
+base_manpower = 11
 capital = "City of Lomza"
 is_city = yes
 discovered_by = western

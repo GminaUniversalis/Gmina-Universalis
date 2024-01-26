@@ -1,9 +1,9 @@
 #Zelow
 culture = sieradzka
 religion = communism_zsl
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods = wool
 base_manpower = 2
 capital = "Zelow"
 is_city = yes

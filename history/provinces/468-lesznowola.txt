@@ -1,10 +1,10 @@
 #lesznowola
 culture = warszawska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 8
+base_production = 7
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 6
 capital = "lesznowola"
 is_city = yes
 discovered_by = western

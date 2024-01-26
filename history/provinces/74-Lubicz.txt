@@ -2,7 +2,7 @@
 culture = kujawska
 religion = communism_pzpr
 base_tax = 3
-base_production = 3
+base_production = 2
 trade_goods = unknown
 base_manpower = 4
 capital = "Lubicz"

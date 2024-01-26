@@ -2,9 +2,9 @@
 culture = kujawska
 religion = communism_pzpr
 base_tax = 4
-base_production = 6
+base_production = 5
 trade_goods = unknown
-base_manpower = 5
+base_manpower = 4
 capital = "Biale Blota"
 is_city = yes
 discovered_by = western

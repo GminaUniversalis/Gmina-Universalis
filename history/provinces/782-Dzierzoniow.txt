@@ -1,9 +1,9 @@
 #Dzierzoniow
 religion = communism_pzpr
-base_tax = 2
+base_tax = 1
 base_production = 1
-trade_goods = gu_apiculture
-base_manpower = 2
+trade_goods = gu_vegetables
+base_manpower = 1
 capital = "Dzierzoniow"
 is_city = yes
 discovered_by = western

@@ -2,10 +2,10 @@
 culture = zaglebiowska
 religion = communism_sd
 hre = yes
-base_tax = 1
-base_production = 1
+base_tax = 5
+base_production = 4
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 5
 capital = "Czeladz"
 is_city = yes
 discovered_by = western

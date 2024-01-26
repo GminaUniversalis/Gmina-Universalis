@@ -1,8 +1,8 @@
 #City of Tczew
 culture = kociewiacka
 religion = communism_pzpr
-base_tax = 8
-base_production = 11
+base_tax = 9
+base_production = 12
 trade_goods = unknown
 base_manpower = 10
 capital = "City of Tczew"

@@ -1,7 +1,7 @@
 #City of Rawa Mazowiecka
 culture = mazowiecka
 religion = communism_pzpr
-base_tax = 3
+base_tax = 2
 base_production = 4
 trade_goods = unknown
 base_manpower = 3

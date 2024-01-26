@@ -1,9 +1,9 @@
 #Dobczyce
 culture = zachodnio-krakowska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_tax = 3
+base_production = 2
+trade_goods = cloth
 base_manpower = 2
 capital = "Dobczyce"
 is_city = yes

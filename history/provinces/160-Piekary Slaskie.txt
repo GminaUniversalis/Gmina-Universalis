@@ -2,10 +2,10 @@
 culture = slonska
 religion = communism_sd
 hre = yes
-base_tax = 1
-base_production = 1
+base_tax = 9
+base_production = 6
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 9
 capital = "Piekary Slaskie"
 is_city = yes
 discovered_by = western

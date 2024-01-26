@@ -1,10 +1,10 @@
 #Rogozno
 culture = chelminska
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 2
+base_production = 2
+trade_goods = gu_poultry
+base_manpower = 3
 capital = "Rogozno"
 is_city = yes
 discovered_by = western

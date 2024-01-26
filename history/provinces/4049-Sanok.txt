@@ -1,10 +1,10 @@
 #Sanok
 culture = podgorzanska
 religion = communism_zsl
-base_tax = 3
-base_production = 1
+base_tax = 6
+base_production = 11
 trade_goods = unknown
-base_manpower = 3
+base_manpower = 6
 capital = "Sanok"
 is_city = yes
 discovered_by = western
