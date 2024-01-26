@@ -2,8 +2,8 @@
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
-trade_goods = gu_barley
-base_manpower = 2
+trade_goods = gu_wheat
+base_manpower = 1
 capital = "Marcinowice"
 is_city = yes
 discovered_by = western

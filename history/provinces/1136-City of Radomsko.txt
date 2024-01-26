@@ -1,9 +1,9 @@
 #City of Radomsko
 culture = sieradzka
 religion = communism_sd
-base_tax = 6
-base_production = 9
-trade_goods = unknown
+base_tax = 7
+base_production = 10
+trade_goods = gu_lumber
 base_manpower = 8
 capital = "City of Radomsko"
 is_city = yes

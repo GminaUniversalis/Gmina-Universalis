@@ -1,9 +1,9 @@
 #City of Pulawy
 culture = lubelska
 religion = communism_pzpr
-base_tax = 7
+base_tax = 8
 base_production = 11
-trade_goods = unknown
+trade_goods = gu_chemicals
 base_manpower = 8
 capital = "City of Pulawy"
 is_city = yes

@@ -1,9 +1,9 @@
 #City of Chelmno
 culture = chelminska
 religion = communism_pzpr
-base_tax = 3
+base_tax = 2
 base_production = 3
-trade_goods = unknown
+trade_goods = iron
 base_manpower = 3
 capital = "City of Chelmno"
 is_city = yes

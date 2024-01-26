@@ -2,7 +2,7 @@
 culture = kujawska
 religion = communism_pzpr
 base_tax = 1
-base_production = 2
+base_production = 1
 trade_goods = unknown
 base_manpower = 1
 capital = "Osie"

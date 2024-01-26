@@ -1,9 +1,9 @@
 #Puchaczow
 culture = lubelska
 religion = communism_sd
-base_tax = 2
-base_production = 5
-trade_goods = unknown
+base_tax = 1
+base_production = 4
+trade_goods = gu_coal
 base_manpower = 1
 capital = "Puchaczow"
 is_city = yes

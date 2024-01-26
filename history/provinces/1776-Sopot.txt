@@ -1,10 +1,10 @@
 #Sopot
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 9
-base_production = 7
-trade_goods = unknown
-base_manpower = 8
+base_tax = 11
+base_production = 9
+trade_goods = gu_tourists
+base_manpower = 6
 capital = "Sopot"
 is_city = yes
 discovered_by = western

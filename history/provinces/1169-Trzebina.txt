@@ -1,10 +1,10 @@
 #Trzebina
 culture = zachodnio-krakowska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 4
+base_production = 4
+trade_goods = gu_coal
+base_manpower = 6
 capital = "Trzebina"
 is_city = yes
 discovered_by = western

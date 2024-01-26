@@ -1,10 +1,10 @@
 #Nowe Miasto nad Warta
 culture = wielkopolska
 religion = communism_sd
-base_tax = 2
+base_tax = 1
 base_production = 1
 trade_goods = unknown
-base_manpower = 2
+base_manpower = 1
 capital = "Nowe Miasto nad Warta"
 is_city = yes
 discovered_by = western

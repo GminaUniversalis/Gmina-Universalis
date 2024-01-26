@@ -1,10 +1,10 @@
 #Brwinow
 culture = warszawska
 religion = communism_pzpr
-base_tax = 3
-base_production = 2
+base_tax = 5
+base_production = 3
 trade_goods = unknown
-base_manpower = 3
+base_manpower = 5
 capital = "Brwinow"
 is_city = yes
 discovered_by = western

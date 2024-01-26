@@ -2,8 +2,8 @@
 culture = lubelska
 religion = communism_sd
 base_tax = 2
-base_production = 4
-trade_goods = unknown
+base_production = 3
+trade_goods = gu_dairy
 base_manpower = 3
 capital = "City of Krasnystaw"
 is_city = yes

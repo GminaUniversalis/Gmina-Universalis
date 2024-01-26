@@ -2,8 +2,8 @@
 culture = mazowiecka
 religion = communism_zsl
 base_tax = 2
-base_production = 2
-trade_goods = unknown
+base_production = 1
+trade_goods = gu_beer
 base_manpower = 2
 capital = "Lomza"
 is_city = yes

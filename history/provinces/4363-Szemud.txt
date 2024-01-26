@@ -2,9 +2,9 @@
 culture = pomorska
 religion = communism_pzpr
 base_tax = 4
-base_production = 2
-trade_goods = unknown
-base_manpower = 4
+base_production = 1
+trade_goods = gu_stone
+base_manpower = 3
 capital = "Szemud"
 is_city = yes
 discovered_by = western

@@ -1,10 +1,10 @@
 #City of Elblag
 culture = warminska
 religion = communism_pzpr
-base_tax = 18
-base_production = 16
-trade_goods = unknown
-base_manpower = 19
+base_tax = 22
+base_production = 17
+trade_goods = gu_metalworking
+base_manpower = 21
 capital = "City of Elblag"
 is_city = yes
 discovered_by = western

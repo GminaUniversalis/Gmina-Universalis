@@ -2,10 +2,10 @@
 culture = zaglebiowska
 religion = communism_zsl
 hre = yes
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 41
+base_production = 45
+trade_goods = gu_lumber
+base_manpower = 31
 capital = "Olsztyn"
 is_city = yes
 discovered_by = western

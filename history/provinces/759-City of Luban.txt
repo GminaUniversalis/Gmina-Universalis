@@ -1,9 +1,9 @@
 #City of Luban
 religion = communism_pzpr
 base_tax = 3
-base_production = 4
-trade_goods = unknown
-base_manpower = 4
+base_production = 3
+trade_goods = cloth
+base_manpower = 3
 capital = "City of Luban"
 is_city = yes
 discovered_by = western

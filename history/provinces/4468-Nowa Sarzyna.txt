@@ -1,9 +1,9 @@
 #Nowa Sarzyna
 culture = lachowska
 religion = communism_sd
-base_tax = 2
+base_tax = 3
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_chemicals
 base_manpower = 3
 capital = "Nowa Sarzyna"
 is_city = yes

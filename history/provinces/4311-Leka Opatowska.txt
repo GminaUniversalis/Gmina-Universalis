@@ -1,8 +1,8 @@
 #Leka Opatowska
 culture = wielunska
 religion = communism_sd
-base_tax = 2
-base_production = 3
+base_tax = 1
+base_production = 2
 trade_goods = unknown
 base_manpower = 1
 capital = "Leka Opatowska"
