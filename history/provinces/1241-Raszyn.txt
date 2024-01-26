@@ -1,7 +1,7 @@
 #Raszyn
 culture = warszawska
 religion = communism_pzpr
-base_tax = 4
+base_tax = 5
 base_production = 7
 trade_goods = unknown
 base_manpower = 4

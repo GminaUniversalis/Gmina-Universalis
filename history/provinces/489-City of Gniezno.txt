@@ -1,10 +1,10 @@
 #City of Gniezno
 culture = wielkopolska
 religion = communism_sd
-base_tax = 9
+base_tax = 10
 base_production = 12
-trade_goods = unknown
-base_manpower = 11
+trade_goods = glass
+base_manpower = 12
 capital = "City of Gniezno"
 is_city = yes
 discovered_by = western

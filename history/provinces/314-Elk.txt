@@ -1,9 +1,9 @@
 #Elk
 culture = mazurska
 religion = communism_sd
-base_tax = 3
+base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_pigs
 base_manpower = 2
 capital = "Elk"
 is_city = yes

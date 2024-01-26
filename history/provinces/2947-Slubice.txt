@@ -1,10 +1,10 @@
 #Slubice
 culture = lubuska
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 3
+base_production = 4
+trade_goods = fur
+base_manpower = 3
 capital = "Slubice"
 is_city = yes
 discovered_by = western

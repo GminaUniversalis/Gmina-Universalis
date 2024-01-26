@@ -192,7 +192,7 @@ gu_vodka = {
 }
 
 gu_tourists = {
-	base_price = 3.5
+	base_price = 2.0
 }
 
 gu_ceramics = {
@@ -209,6 +209,79 @@ gu_sulfur = {
 
 gu_oil = {
 	base_price = 2.5
+}
+
+gu_wheat = {
+	base_price = 2.7
+}
+
+gu_triticale = {
+	base_price = 2.5
+}
+
+gu_barley = {
+	base_price = 2.3
+}
+
+gu_maize = {
+	base_price = 3.0
+}
+
+gu_poultry = {
+	base_price = 2.0
+}
+
+gu_pigs = {
+	base_price = 2.0
+}
+
+gu_cattle = {
+	base_price = 2.0
+}
+
+gu_metalworking = {
+	base_price = 5.0
+}
+
+gu_chemicals = {
+	base_price = 4.0
+}
+
+gu_consumer_goods = {
+	base_price = 2.5
+}
+
+gu_confectionery = {
+	base_price = 3.5
+}
+
+gu_software = {
+	base_price = 8.0
+}
+
+gu_finances = {
+	base_price = 7.0
+}
+
+gu_woodworking = {
+	base_price = 4.0
+}
+
+gu_electronics = {
+	base_price = 6.0
+}
+
+gu_processed_food = {
+	base_price = 4.5
+}
+
+gu_vehicles = {
+	base_price = 6.0
+}
+
+gu_euro = {
+	base_price = 0
+	goldtype = yes
 }
 
 unknown = {

@@ -1,10 +1,10 @@
 #City of Grudziadz
 culture = chelminska
 religion = communism_zsl
-base_tax = 17
-base_production = 13
+base_tax = 20
+base_production = 14
 trade_goods = unknown
-base_manpower = 15
+base_manpower = 16
 capital = "City of Grudziadz"
 is_city = yes
 discovered_by = western

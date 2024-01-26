@@ -30,7 +30,21 @@ country_event = {
 	option = {
 		name = prices.1.a
 		change_price = {
-			trade_goods = livestock
+			trade_goods = gu_poultry
+			key = RADOM_JUNE
+			value = 0.5
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_pigs
+			key = RADOM_JUNE
+			value = 0.5
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_cattle
 			key = RADOM_JUNE
 			value = 0.5
 			duration = -1
@@ -114,7 +128,28 @@ country_event = {
 	option = {
 		name = prices.1.a
 		change_price = {
-			trade_goods = grain
+			trade_goods = gu_wheat
+			key = DECEMBER_MASSACRES
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_triticale
+			key = DECEMBER_MASSACRES
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_barley
+			key = DECEMBER_MASSACRES
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_maize
 			key = DECEMBER_MASSACRES
 			value = 0.3
 			duration = -1
@@ -209,7 +244,28 @@ country_event = {
 		}
 
 		change_price = {
-			trade_goods = grain
+			trade_goods = gu_wheat
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_triticale
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_barley
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_maize
 			key = MARTIAL_LAW_ECONOMIC_REFORM
 			value = 0.3
 			duration = -1
@@ -962,133 +1018,6 @@ country_event = {
 		}
 	}
 }
-
-# Columbian Exchange
-country_event = {
-	id = prices.37
-	title = prices.37.t
-	desc = prices.37.d
-	picture = EXPLORERS_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = columbian_exchange_happened }
-		is_institution_enabled = new_world_i
-		any_owned_province = {
-			OR = {
-				continent = europe
-				continent = asia
-				continent = africa
-			}
-			OR = {
-				trade_goods = grain
-				trade_goods = livestock
-			}
-		}
-		OR = {
-			any_owned_province = {
-				OR = {
-					continent = north_america
-					continent = south_america
-					continent = new_world
-				}
-				OR = {
-					trade_goods = grain
-					trade_goods = livestock
-				}
-			}
-			any_subject_country = {
-				any_owned_province = {
-					OR = {
-						continent = north_america
-						continent = south_america
-						continent = new_world
-					}
-					OR = {
-						trade_goods = grain
-						trade_goods = livestock
-					}
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = prices.37.a
-		change_price = {
-			trade_goods = grain
-			key = COLUMBIAN_EXCHANGE
-			value = -0.20
-			duration = -1
-		}
-		change_price = {
-			trade_goods = livestock
-			key = COLUMBIAN_EXCHANGE
-			value = 0.25
-			duration = -1
-		}
-	}
-}
-
-
-# Selective Breeding
-country_event = {
-	id = prices.42
-	title = prices.42.t
-	desc = prices.42.d
-	picture = TRADEGOODS_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		has_institution = enlightenment
-		NOT = { has_global_flag = selective_breeding_happened }
-		livestock = 5
-		any_owned_province = {
-			enlightenment = 100
-			trade_goods = livestock
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = prices.42.a
-		add_dip_power = 100
-		add_innovativeness_small_effect = yes
-		change_price = {
-			trade_goods = livestock
-			key = SELECTIVE_BREEDING
-			value = 0.35
-			duration = -1
-		}
-		change_price = {
-			trade_goods = wool
-			key = SELECTIVE_BREEDING
-			value = 0.35
-			duration = -1
-		}
-		random_owned_province = {
-			limit = {
-				enlightenment = 100
-				trade_goods = livestock
-			}
-			add_base_production = 3
-		}
-	}
-}
-
 
 # Improvements in Lensmaking
 country_event = {

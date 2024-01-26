@@ -1,9 +1,9 @@
 #City of Bialogard
 culture = srodkowopomorska
 religion = communism_pzpr
-base_tax = 4
-base_production = 4
-trade_goods = unknown
+base_tax = 3
+base_production = 3
+trade_goods = gu_lumber
 base_manpower = 4
 capital = "City of Bialogard"
 is_city = yes

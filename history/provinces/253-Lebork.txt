@@ -1,10 +1,10 @@
 #Lebork
 culture = srodkowopomorska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 6
+base_production = 6
+trade_goods = iron
+base_manpower = 6
 capital = "Lebork"
 is_city = yes
 center_of_trade = 1

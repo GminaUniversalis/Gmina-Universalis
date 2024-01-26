@@ -1,8 +1,8 @@
 #City of Lubin
 religion = communism_sd
-base_tax = 10
-base_production = 13
-trade_goods = unknown
+base_tax = 11
+base_production = 14
+trade_goods = copper
 base_manpower = 12
 capital = "City of Lubin"
 is_city = yes

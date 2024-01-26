@@ -1,8 +1,8 @@
 #City of Glogow
 religion = communism_zsl
-base_tax = 10
-base_production = 10
-trade_goods = unknown
+base_tax = 11
+base_production = 11
+trade_goods = copper
 base_manpower = 11
 capital = "City of Glogow"
 is_city = yes

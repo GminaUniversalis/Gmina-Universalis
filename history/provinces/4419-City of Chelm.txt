@@ -1,9 +1,9 @@
 #City of Chelm
 culture = kresowa
 religion = communism_sd
-base_tax = 12
+base_tax = 15
 base_production = 9
-trade_goods = unknown
+trade_goods = gu_stone
 base_manpower = 10
 capital = "City of Chelm"
 is_city = yes

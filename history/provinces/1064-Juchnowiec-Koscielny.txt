@@ -1,10 +1,10 @@
 #Juchnowiec
 culture = podlaska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 2
+base_production = 3
+trade_goods = gu_stone
+base_manpower = 3
 capital = "Juchnowiec"
 is_city = yes
 discovered_by = western

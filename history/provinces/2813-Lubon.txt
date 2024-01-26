@@ -1,10 +1,10 @@
 #Lubon
 culture = poznanska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 5
+base_production = 3
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 6
 capital = "Lubon"
 is_city = yes
 discovered_by = western

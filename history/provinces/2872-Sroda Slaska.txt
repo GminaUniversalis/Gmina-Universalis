@@ -1,9 +1,9 @@
 #Sroda Slaska
 religion = communism_zsl
-base_tax = 2
-base_production = 3
-trade_goods = unknown
-base_manpower = 2
+base_tax = 3
+base_production = 5
+trade_goods = wine
+base_manpower = 3
 capital = "Sroda Slaska"
 is_city = yes
 discovered_by = western

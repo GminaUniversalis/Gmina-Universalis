@@ -1,9 +1,9 @@
 #City of Garwolin
 culture = mazowiecka
 religion = communism_pzpr
-base_tax = 3
+base_tax = 2
 base_production = 5
-trade_goods = unknown
+trade_goods = gu_lumber
 base_manpower = 3
 capital = "City of Garwolin"
 is_city = yes

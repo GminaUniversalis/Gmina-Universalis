@@ -1,9 +1,9 @@
 #Ostroda
 culture = mazurska
 religion = communism_sd
-base_tax = 3
-base_production = 3
-trade_goods = unknown
+base_tax = 2
+base_production = 2
+trade_goods = fish
 base_manpower = 3
 capital = "Ostroda"
 is_city = yes

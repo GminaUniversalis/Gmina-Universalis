@@ -2,8 +2,8 @@
 culture = poleska
 religion = communism_zsl
 base_tax = 1
-base_production = 2
-trade_goods = unknown
+base_production = 1
+trade_goods = gu_vegetables
 base_manpower = 1
 capital = "City of Terespol"
 is_city = yes

@@ -1,9 +1,9 @@
 #Zakowice Slaskie
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 3
+base_production = 3
 trade_goods = paper
-base_manpower = 1
+base_manpower = 3
 capital = "Zakowice Slaskie"
 is_city = yes
 discovered_by = western
