@@ -1,10 +1,10 @@
 #Jastkow
 culture = lubelska
 religion = communism_pzpr
-base_tax = 3
+base_tax = 2
 base_production = 1
-trade_goods = unknown
-base_manpower = 3
+trade_goods = gu_beer
+base_manpower = 2
 capital = "Jastkow"
 is_city = yes
 discovered_by = western

@@ -1,10 +1,10 @@
 #Nysa
 culture = opolska
 religion = communism_zsl
-base_tax = 2
-base_production = 1
-trade_goods = unknown
-base_manpower = 3
+base_tax = 8
+base_production = 9
+trade_goods = gu_confectionery
+base_manpower = 10
 capital = "Nysa"
 is_city = yes
 discovered_by = western

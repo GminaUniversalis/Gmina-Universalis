@@ -1,9 +1,9 @@
 #City of Wejherowo
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 7
+base_tax = 8
 base_production = 7
-trade_goods = unknown
+trade_goods = gu_tourists
 base_manpower = 8
 capital = "City of Wejherowo"
 is_city = yes

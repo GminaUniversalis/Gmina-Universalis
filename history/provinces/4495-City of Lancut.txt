@@ -1,9 +1,9 @@
 #City of Lancut
 culture = lachowska
 religion = communism_sd
-base_tax = 3
+base_tax = 2
 base_production = 5
-trade_goods = unknown
+trade_goods = paper
 base_manpower = 3
 capital = "City of Lancut"
 is_city = yes

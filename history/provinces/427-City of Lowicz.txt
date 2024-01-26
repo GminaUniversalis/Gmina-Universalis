@@ -2,9 +2,9 @@
 culture = lowicka
 religion = communism_sd
 base_tax = 4
-base_production = 6
-trade_goods = unknown
-base_manpower = 5
+base_production = 5
+trade_goods = gu_fruits
+base_manpower = 4
 capital = "City of Lowicz"
 is_city = yes
 discovered_by = western

@@ -1,10 +1,10 @@
 #Rzgow
 culture = centralna
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = unknown
-base_manpower = 1
+trade_goods = cloth
+base_manpower = 2
 capital = "Rzgow"
 is_city = yes
 discovered_by = western

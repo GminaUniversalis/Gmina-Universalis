@@ -1,10 +1,10 @@
 #City Of Tomaszow Lubelski
 culture = kresowa
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 2
+base_production = 4
+trade_goods = iron
+base_manpower = 3
 capital = "City Of Tomaszow Lubelski"
 is_city = yes
 discovered_by = western

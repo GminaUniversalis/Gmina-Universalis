@@ -1,9 +1,9 @@
 #City of Lubawa
 culture = mazurska
 religion = communism_sd
-base_tax = 2
-base_production = 4
-trade_goods = unknown
+base_tax = 1
+base_production = 3
+trade_goods = cloth
 base_manpower = 2
 capital = "City of Lubawa"
 is_city = yes

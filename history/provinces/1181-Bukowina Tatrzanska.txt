@@ -1,10 +1,10 @@
 #Bukowina Tatrzanska
 culture = goralska
 religion = communism_zsl
-base_tax = 3
-base_production = 2
-trade_goods = unknown
-base_manpower = 3
+base_tax = 2
+base_production = 1
+trade_goods = gu_oscypek
+base_manpower = 2
 capital = "Bukowina Tatrzanska"
 is_city = yes
 discovered_by = western

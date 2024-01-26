@@ -1,10 +1,10 @@
 #Prignitz
 culture = opolska
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 3
+base_production = 2
+trade_goods = iron
+base_manpower = 3
 capital = "Prignitz"
 is_city = yes
 discovered_by = western

@@ -1,9 +1,9 @@
 #Polkowice
 religion = communism_zsl
-base_tax = 5
+base_tax = 8
 base_production = 1
-trade_goods = unknown
-base_manpower = 1
+trade_goods = copper
+base_manpower = 5
 capital = "Polkowice"
 is_city = yes
 discovered_by = western

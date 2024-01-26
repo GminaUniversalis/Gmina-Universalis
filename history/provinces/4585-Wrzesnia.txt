@@ -1,10 +1,10 @@
 #Wrzesnia
 culture = wielkopolska
 religion = communism_zsl
-base_tax = 2
-base_production = 3
+base_tax = 7
+base_production = 12
 trade_goods = unknown
-base_manpower = 3
+base_manpower = 9
 capital = "Wrzesnia"
 is_city = yes
 discovered_by = western

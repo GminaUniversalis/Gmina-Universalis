@@ -2,9 +2,9 @@
 culture = kaszubska
 religion = communism_pzpr
 base_tax = 4
-base_production = 3
-trade_goods = unknown
-base_manpower = 4
+base_production = 2
+trade_goods = gu_confectionery
+base_manpower = 3
 capital = "Sierakowice"
 is_city = yes
 discovered_by = western

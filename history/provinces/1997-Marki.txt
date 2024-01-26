@@ -1,10 +1,10 @@
 #Marki
 culture = warszawska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 7
+base_production = 5
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 8
 capital = "Marki"
 is_city = yes
 discovered_by = western

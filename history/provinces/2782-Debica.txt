@@ -2,9 +2,9 @@
 culture = wschodnio-krakowska
 religion = communism_pzpr
 base_tax = 3
-base_production = 5
-trade_goods = unknown
-base_manpower = 5
+base_production = 4
+trade_goods = gu_chemicals
+base_manpower = 4
 capital = "Debica"
 is_city = yes
 discovered_by = western
