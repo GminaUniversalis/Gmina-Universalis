@@ -1575,7 +1575,7 @@ W08_ideas = {
 	}
 }
 
-SIL_CON_ideas = {
+GZM_ideas = {
 	start = {
 		improve_relation_modifier = 0.33
 		global_manpower_modifier = 0.15
@@ -1586,7 +1586,7 @@ SIL_CON_ideas = {
 	}
 	
 	trigger = {
-		tag = SCO
+		tag = GZM
 	}
 	free = yes
 

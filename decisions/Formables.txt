@@ -3,7 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			NOT = { has_country_flag = formed_silesian_conurbation_flag }
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -12,12 +12,12 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = SCO }
-			NOT = { tag = SCO }
+			NOT = { exists = GZM }
+			NOT = { tag = GZM }
 			OR = {
 				ai = no
 				AND = {
-					NOT = { exists = SCO }
+					NOT = { exists = GZM }
 					num_of_cities = 4
 				}
 			}
@@ -64,42 +64,42 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = SCO }
+			NOT = { exists = GZM }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
             adm_tech = 10
-            country_or_non_sovereign_subject_holds = 1318	# Katowice
-            country_or_non_sovereign_subject_holds = 153	# Sosnowiec
-            country_or_non_sovereign_subject_holds = 138	# Gliwice
-            country_or_non_sovereign_subject_holds = 156	# Zabrze
-            country_or_non_sovereign_subject_holds = 4128	# Bytom
-            country_or_non_sovereign_subject_holds = 1951	# Ruda Śląska
-            country_or_non_sovereign_subject_holds = 140	# Tychy
-            country_or_non_sovereign_subject_holds = 1155	# Dąbrowa Górnicza
-            country_or_non_sovereign_subject_holds = 1827	# Chorzów
-            country_or_non_sovereign_subject_holds = 4080	# Jaworzno
-            country_or_non_sovereign_subject_holds = 154	# Mysłowice
-            country_or_non_sovereign_subject_holds = 1952	# Siemianowice Śląskie
-            country_or_non_sovereign_subject_holds = 4706	# Tarnowskie Góry
-            country_or_non_sovereign_subject_holds = 160	# Piekary Śląskie
-            country_or_non_sovereign_subject_holds = 4757	# Będzin
-            country_or_non_sovereign_subject_holds = 3000	# Świętochłowice
-            country_or_non_sovereign_subject_holds = 162	# Knurów
-            country_or_non_sovereign_subject_holds = 4173	# Mikołów
-            country_or_non_sovereign_subject_holds = 157	# Czeladź
+            owns_or_non_sovereign_subject_of = 1318	# Katowice
+            owns_or_non_sovereign_subject_of = 153	# Sosnowiec
+            owns_or_non_sovereign_subject_of = 138	# Gliwice
+            owns_or_non_sovereign_subject_of = 156	# Zabrze
+            owns_or_non_sovereign_subject_of = 4128	# Bytom
+            owns_or_non_sovereign_subject_of = 1951	# Ruda Śląska
+            owns_or_non_sovereign_subject_of = 140	# Tychy
+            owns_or_non_sovereign_subject_of = 1155	# Dąbrowa Górnicza
+            owns_or_non_sovereign_subject_of = 1827	# Chorzów
+            owns_or_non_sovereign_subject_of = 4080	# Jaworzno
+            owns_or_non_sovereign_subject_of = 154	# Mysłowice
+            owns_or_non_sovereign_subject_of = 1952	# Siemianowice Śląskie
+            owns_or_non_sovereign_subject_of = 4706	# Tarnowskie Góry
+            owns_or_non_sovereign_subject_of = 160	# Piekary Śląskie
+            owns_or_non_sovereign_subject_of = 4757	# Będzin
+            owns_or_non_sovereign_subject_of = 3000	# Świętochłowice
+            owns_or_non_sovereign_subject_of = 162	# Knurów
+            owns_or_non_sovereign_subject_of = 4173	# Mikołów
+            owns_or_non_sovereign_subject_of = 157	# Czeladź
 		}
 		effect = {
-			set_country_flag = sco_chose_pu_flag
-			change_tag = SCO
+			set_country_flag = gzm_chose_pu_flag
+			change_tag = GZM
 			on_change_tag_effect = yes
 			restore_country_name = yes
 			swap_non_generic_missions = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
-				SCO = { set_government_rank = 2 }
+				GZM = { set_government_rank = 2 }
 			}
 			slaskie_region = {
-				add_permanent_claim = SCO
+				add_permanent_claim = GZM
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -110,7 +110,7 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			set_country_flag = formed_silesian_conurbation_flag
+			set_country_flag = formed_metropolis_gzm_flag
 		}
 		ai_will_do = {
 			factor = 1
