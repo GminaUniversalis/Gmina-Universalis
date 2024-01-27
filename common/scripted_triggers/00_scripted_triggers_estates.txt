@@ -14,18 +14,21 @@ has_any_estates = {
 	custom_trigger_tooltip = {
 		tooltip = has_any_estates_tt
 		OR = {
-			has_estate = estate_emeryci
-			has_estate = estate_rodziny
-			has_estate = estate_wojsko
-			has_estate = estate_rolnicy
-			has_estate = estate_banki
-			has_estate = estate_gorniki
-			has_estate = estate_intellectuals
-			has_estate = estate_inwestorzy
-			has_estate = estate_kler
-			has_estate = estate_srednia
-			has_estate = estate_ub
-
+			has_estate = estate_brahmins
+			has_estate = estate_burghers
+			has_estate = estate_church
+			has_estate = estate_cossacks
+			has_estate = estate_dhimmi
+			has_estate = estate_jains
+			has_estate = estate_maratha
+			has_estate = estate_nobles
+			has_estate = estate_nomadic_tribes
+			has_estate = estate_rajput
+			has_estate = estate_vaisyas
+			has_estate = estate_janissaries
+			has_estate = estate_eunuchs
+			has_estate = estate_qizilbash
+			has_estate = estate_ghulams
 		}
 	}
 }
