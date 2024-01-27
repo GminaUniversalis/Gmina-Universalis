@@ -1,6 +1,6 @@
 #Wroclaw - Lesnica
-latent_trade_goods = {
-    gu_processed_food
+latent_trade_goods = { 
+	gu_processed_food 
 }
 religion = communism_zsl
 base_tax = 7
