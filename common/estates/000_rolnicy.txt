@@ -1,0 +1,70 @@
+estate_rolnicy = {
+    icon = 4
+    trigger = {
+        always=no
+    }
+    country_modifier_happy = {
+		improve_relation_modifier = 0.2
+		development_cost = -0.1
+		legitimacy = 1
+		republican_tradition = 0.5
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 1
+	}
+    country_modifier_neutral = {
+		improve_relation_modifier = 0.2
+	}
+    country_modifier_angry = {
+		improve_relation_modifier = -0.4
+		global_unrest = 3
+	}
+  province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			has_terrain = farmlands
+		}
+
+	}
+    land_ownership_modifier = {
+		rolnicy_loyalty_modifier = 0.5
+	}
+    base_influence = 5
+    contributes_to_curia_treasury = no
+    color = { 100 50 100 }
+
+	 privileges = {
+		estate_rolnicy_obietnice
+	 }
+	 privileges = {
+		estate_rolnicy_land_rights
+	 }
+	 privileges = {
+		estate_rolnicy_datki
+	 }
+	 privileges = {
+		estate_rolnicy_odc
+	 }
+	 privileges = {
+		estate_rolnicy_eud
+	 }
+	 privileges = {
+		estate_rolnicy_eua
+	 }
+	 privileges = {
+		estate_rolnicy_gmoa
+	 }
+	 privileges = {
+		estate_rolnicy_gmod
+	 }
+     agendas = {
+        estate_rolnicy_hire_advisor
+		estate_rolnicy_develop_x
+		estate_rolnicy_expand_into_x
+		estate_rolnicy_reduce_war_exhaustion
+		estate_rolnicy_build_production_building_in_y
+     }
+     influence_from_dev_modifier = 1.0
+            
+}
