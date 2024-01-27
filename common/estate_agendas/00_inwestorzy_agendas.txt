@@ -1,0 +1,49 @@
+estate_inwestorzy_hire_advisor  = {
+	can_select = { 
+	NOT = {
+		employed_advisor = {
+			category = DIP
+		}
+	}}
+
+	selection_weight = {
+	factor = 1
+	}
+	task_requirements = {
+	if = {
+		limit = {
+			has_estate_agenda_auto_completion = {
+				estate = estate_inwestorzy
+			}
+		}
+		has_estate_agenda_auto_completion = {
+			estate = estate_inwestorzy
+		}
+	}
+	else = {
+		employed_advisor = {
+			category = DIP
+		}
+		is_in_deficit = no
+	}
+	}
+	task_completed_effect = {
+	on_completed_agenda_effect = {
+		estate = estate_inwestorzy
+	}
+	add_estate_loyalty = {
+		estate = estate_inwestorzy
+		loyalty = 10
+	}
+	}
+	failing_effect = {
+	on_failed_agenda_effect = yes
+	clr_auto_complete_flag = yes
+	add_estate_loyalty_modifier = {
+		estate = estate_inwestorzy
+		desc = EST_VAL_AGENDA_DENIED
+		loyalty = -5
+		duration = 7300
+	}
+	}
+}

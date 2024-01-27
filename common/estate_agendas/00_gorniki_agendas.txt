@@ -1,0 +1,49 @@
+estate_gorniki_hire_advisor  = {
+	can_select = { 
+	NOT = {
+		employed_advisor = {
+			category = MIL
+		}
+	}
+}
+	selection_weight = {
+	factor = 1
+	}
+	task_requirements = {
+	if = {
+		limit = {
+			has_estate_agenda_auto_completion = {
+				estate = estate_gorniki
+			}
+		}
+		has_estate_agenda_auto_completion = {
+			estate = estate_gorniki
+		}
+	}
+	else = {
+		employed_advisor = {
+			category = MIL
+		}
+		is_in_deficit = no
+	}
+	}
+	task_completed_effect = {
+	on_completed_agenda_effect = {
+		estate = estate_gorniki
+	}
+	add_estate_loyalty = {
+		estate = estate_gorniki
+		loyalty = 10
+	}
+	}
+	failing_effect = {
+	on_failed_agenda_effect = yes
+	clr_auto_complete_flag = yes
+	add_estate_loyalty_modifier = {
+		estate = estate_gorniki
+		desc = EST_VAL_AGENDA_DENIED
+		loyalty = -5
+		duration = 7300
+	}
+	}
+}

@@ -1,6 +1,7 @@
 estate_ub = {
     icon = 4
     trigger = {
+		always = no
 			religion_group = communism_group
     }
     country_modifier_happy = {
@@ -33,6 +34,9 @@ estate_ub = {
      }
 	 privileges = {
 		estate_emeryci_13
+	 }
+	 agendas = {
+		estate_ub_hire_advisor
 	 }
 	 
      influence_from_dev_modifier = 1.0

@@ -1,5 +1,5 @@
 estate_emeryci = {
-    icon = 4
+    icon = 1
     trigger = {
         always=yes
     }
@@ -46,7 +46,33 @@ estate_emeryci = {
 	 privileges = {
 		estate_emeryci_13
 	 }
-	 
-     influence_from_dev_modifier = 1.0
-            
+	 privileges = {
+		estate_emeryci_klub_seniora
+	 }
+	 privileges = {
+		estate_emeryci_obietnice
+	 }
+	 privileges = {
+		estate_emeryci_rada
+	 }
+	 privileges = {
+		estate_emeryci_wiek
+	 }
+	 privileges = {
+		estate_emeryci_at
+	 }
+	 privileges = {
+		estate_emeryci_ac
+	 }
+	 privileges = {
+		estate_emeryci_scl
+	 }
+	 agendas = {
+		estate_emeryci_hire_advisor
+		estate_emeryci_build_temple_in_y
+		estate_emeryci_legitimacy
+		estate_emeryci_prestige
+	}
+
+influence_from_dev_modifier = 1.0
 }
