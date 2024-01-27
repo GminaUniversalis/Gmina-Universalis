@@ -1,0 +1,70 @@
+estate_wojsko = {
+    icon = 5
+    trigger = {
+        always=no
+    }
+    country_modifier_happy = {
+		army_tradition_decay = -0.01
+		recover_army_morale_speed = 0.1
+		yearly_army_professionalism = 0.001
+	}
+    country_modifier_neutral = {
+		army_tradition_decay = -0.005
+	}
+    country_modifier_angry = {
+		discipline = -0.1
+		morale_damage_received = 0.2
+	}
+  	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = owner
+			religion_group = owner
+		}
+		modifier = {
+			factor = 1.5
+			base_manpower = 5
+		}
+	}
+    land_ownership_modifier = {
+		wojsko_loyalty_modifier = 0.5
+	}
+    base_influence = 15
+    contributes_to_curia_treasury = no
+    color = { 40 100 50 }
+	 privileges = {
+		estate_wojsko_old_doc
+	 }
+	 privileges = {
+		estate_wojsko_new_doc
+	 }
+	 privileges = {
+		estate_wojsko_fire
+	 }
+	 privileges = {
+		estate_wojsko_blitz
+	 }
+	 privileges = {
+		estate_wojsko_gp
+	 }
+	 privileges = {
+		estate_wojsko_obietnice
+	 }
+	 privileges = {
+		estate_wojsko_land_rights
+	 }
+     agendas = {
+		estate_wojsko_increase_army_professionalism
+		estate_wojsko_hire_advisor
+		estate_wojsko_get_allies
+		estate_wojsko_befriend_rival_of_rival
+		estate_wojsko_break_coalition
+		estate_wojsko_build_an_army
+		estate_wojsko_bigger_army_than_rival
+		estate_wojsko_build_up_manpower_reserves
+		estate_wojsko_develop_x
+     }
+     influence_from_dev_modifier = 1.0
+            
+}

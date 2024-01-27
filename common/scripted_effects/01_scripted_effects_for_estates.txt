@@ -6,446 +6,352 @@
 each_estate_effect = {
 	if = {
 		limit = {
-			has_estate = estate_brahmins
-		}
-		[[effect]
-			$effect$
-		]
-		[[brahmins_effect]
-			$brahmins_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_church
-		}
-		[[effect]
-			$effect$
-		]
-		[[church_effect]
-			$church_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_maratha
-		}
-		[[effect]
-			$effect$
-		]
-		[[maratha_effect]
-			$maratha_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_nobles
-		}
-		[[effect]
-			$effect$
-		]
-		[[nobles_effect]
-			$nobles_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_rajput
-		}
-		[[effect]
-			$effect$
-		]
-		[[rajput_effect]
-			$rajput_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_burghers
-		}
-		[[effect]
-			$effect$
-		]
-		[[burghers_effect]
-			$burghers_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_vaisyas
-		}
-		[[effect]
-			$effect$
-		]
-		[[vaisyas_effect]
-			$vaisyas_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_cossacks
-		}
-		[[effect]
-			$effect$
-		]
-		[[cossacks_effect]
-			$cossacks_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_nomadic_tribes
-		}
-		[[effect]
-			$effect$
-		]
-		[[tribes_effect]
-			$tribes_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_dhimmi
-		}
-		[[effect]
-			$effect$
-		]
-		[[dhimmi_effect]
-			$dhimmi_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_jains
-		}
-		[[effect]
-			$effect$
-		]
-		[[jains_effect]
-			$jains_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_janissaries
-		}
-		[[effect]
-			$effect$
-		]
-		[[janissaries_effect]
-			$janissaries_effect$
-		]
-	}
-	if = {
-		limit = {
-			has_estate = estate_eunuchs
+			has_estate = estate_wojsko
 		}
 		[[effect]
 			$effect$
 		]
 		[[eunuchs_effect]
-			$eunuchs_effect$
+			$wojsko_effect$
 		]
 	}
 	if = {
 		limit = {
-			has_estate = estate_qizilbash
+			has_estate = estate_rodziny
 		}
 		[[effect]
 			$effect$
 		]
 		[[eunuchs_effect]
-			$qizilbash_effect$
+			$rodziny_effect$
 		]
 	}
 	if = {
 		limit = {
-			has_estate = estate_ghulams
+			has_estate = estate_banki
 		}
 		[[effect]
 			$effect$
 		]
 		[[eunuchs_effect]
-			$ghulams_effect$
+			$banki_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_rolnicy
+		}
+		[[effect]
+			$effect$
+		]
+		[[eunuchs_effect]
+			$rolnicy_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_emeryci
+		}
+		[[effect]
+			$effect$
+		]
+		[[eunuchs_effect]
+			$emeryci_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_gorniki
+		}
+		[[effect]
+			$effect$
+		]
+		[[eunuchs_effect]
+			$gorniki_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_intellectuals
+		}
+		[[effect]
+			$effect$
+		]
+		[[eunuchs_effect]
+			$intellectuals_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_inewstorzy
+		}
+		[[effect]
+			$effect$
+		]
+		[[eunuchs_effect]
+			$inwestorzy_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_kler
+		}
+		[[effect]
+			$effect$
+		]
+		[[eunuchs_effect]
+			$kler_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_srednia
+		}
+		[[effect]
+			$effect$
+		]
+		[[eunuchs_effect]
+			$srednia_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_ub
+		}
+		[[effect]
+			$effect$
+		]
+		[[eunuchs_effect]
+			$ub_effect$
 		]
 	}
 }
-
-#Clergy
-add_estate_church_loyalty_effect = {
+#UB
+add_estate_ub_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_church
+			has_estate = estate_ub
 		}
 		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = 10
-		}
-	}
-	else_if = {
-		limit = {
-			religion = hinduism
-			has_estate = estate_brahmins
-		}
-		add_estate_loyalty = {
-			estate = estate_brahmins
+			estate = estate_ub
 			loyalty = 10
 		}
 	}
 }
-reduce_estate_church_loyalty_effect = {
+reduce_estate_ub_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_church
+			has_estate = estate_ub
 		}
 		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = -10
-		}
-	}
-	else_if = {
-		limit = {
-			religion = hinduism
-			has_estate = estate_brahmins
-		}
-		add_estate_loyalty = {
-			estate = estate_brahmins
+			estate = estate_ub
 			loyalty = -10
 		}
 	}
 }
-
-#Dhimmi
-add_estate_dhimmi_loyalty_effect = {
+#Srednia
+add_estate_srednia_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_dhimmi
+			has_estate = estate_srednia
 		}
 		add_estate_loyalty = {
-			estate = estate_dhimmi
-			loyalty = 10
-		}
-	}
-	else_if = {
-		limit = {
-			religion_group = muslim
-			has_estate = estate_brahmins
-		}
-		add_estate_loyalty = {
-			estate = estate_brahmins
+			estate = estate_srednia
 			loyalty = 10
 		}
 	}
 }
-reduce_estate_dhimmi_loyalty_effect = {
+reduce_estate_srednia_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_dhimmi
+			has_estate = estate_srednia
 		}
 		add_estate_loyalty = {
-			estate = estate_dhimmi
-			loyalty = -10
-		}
-	}
-	else_if = {
-		limit = {
-			religion_group = muslim
-			has_estate = estate_brahmins
-		}
-		add_estate_loyalty = {
-			estate = estate_brahmins
+			estate = estate_srednia
 			loyalty = -10
 		}
 	}
 }
-
-#Nobles
-add_estate_nobles_loyalty_effect = {
+#Kler
+add_estate_kler_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_nobles
+			has_estate = estate_kler
 		}
 		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = 10
-		}
-	}
-	else_if = {
-		limit = {
-			has_estate = estate_rajput
-		}
-		add_estate_loyalty = {
-			estate = estate_rajput
-			loyalty = 10
-		}
-	}
-	else_if = {
-		limit = {
-			has_estate = estate_maratha
-		}
-		add_estate_loyalty = {
-			estate = estate_maratha
+			estate = estate_kler
 			loyalty = 10
 		}
 	}
 }
-reduce_estate_nobles_loyalty_effect = {
+reduce_estate_kler_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_nobles
+			has_estate = estate_kler
 		}
 		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -10
-		}
-	}
-	else_if = {
-		limit = {
-			has_estate = estate_rajput
-		}
-		add_estate_loyalty = {
-			estate = estate_rajput
-			loyalty = -10
-		}
-	}
-	else_if = {
-		limit = {
-			has_estate = estate_maratha
-		}
-		add_estate_loyalty = {
-			estate = estate_maratha
+			estate = estate_kler
 			loyalty = -10
 		}
 	}
 }
-
-#Burghers
-add_estate_burghers_loyalty_effect = {
+#Intellectuals
+add_estate_intellectuals_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_burghers
+			has_estate = estate_intellectuals
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = 10
-		}
-	}
-	else_if = {
-		limit = {
-			has_estate = estate_vaisyas
-		}
-		add_estate_loyalty = {
-			estate = estate_vaisyas
-			loyalty = 10
-		}
-	}
-	else_if = {
-		limit = {
-			has_estate = estate_jains
-		}
-		add_estate_loyalty = {
-			estate = estate_jains
+			estate = estate_intellectuals
 			loyalty = 10
 		}
 	}
 }
-reduce_estate_burghers_loyalty_effect = {
+reduce_estate_intellectuals_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_burghers
+			has_estate = estate_intellectuals
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = -10
-		}
-	}
-	else_if = {
-		limit = {
-			has_estate = estate_vaisyas
-		}
-		add_estate_loyalty = {
-			estate = estate_vaisyas
-			loyalty = -10
-		}
-	}
-	else_if = {
-		limit = {
-			has_estate = estate_jains
-		}
-		add_estate_loyalty = {
-			estate = estate_jains
+			estate = estate_intellectuals
 			loyalty = -10
 		}
 	}
 }
-
-#Cossacks
-add_estate_cossacks_loyalty_effect = {
+#Gorniki
+add_estate_gorniki_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_cossacks
+			has_estate = estate_gorniki
 		}
 		add_estate_loyalty = {
-			estate = estate_cossacks
+			estate = estate_gorniki
 			loyalty = 10
 		}
 	}
 }
-reduce_estate_cossacks_loyalty_effect = {
+reduce_estate_gorniki_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_cossacks
+			has_estate = estate_gorniki
 		}
 		add_estate_loyalty = {
-			estate = estate_cossacks
+			estate = estate_gorniki
 			loyalty = -10
 		}
 	}
 }
-
-#Jains
-add_estate_jains_loyalty_effect = {
+#Banki
+add_estate_banki_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_jains
+			has_estate = estate_banki
 		}
 		add_estate_loyalty = {
-			estate = estate_jains
+			estate = estate_banki
 			loyalty = 10
 		}
 	}
 }
-reduce_estate_jains_loyalty_effect = {
+reduce_estate_banki_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_jains
+			has_estate = estate_banki
 		}
 		add_estate_loyalty = {
-			estate = estate_jains
+			estate = estate_banki
 			loyalty = -10
 		}
 	}
 }
-
-#Rajput
-add_estate_rajput_loyalty_effect = {
+#Emeryci
+add_estate_emeryci_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_rajput
+			has_estate = estate_emeryci
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_emeryci
 			loyalty = 10
 		}
 	}
 }
-reduce_estate_rajput_loyalty_effect = {
+reduce_estate_emeryci_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_rajput
+			has_estate = estate_emeryci
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_emeryci
+			loyalty = -10
+		}
+	}
+}
+#Rodziny
+add_estate_rodziny_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_rodziny
+		}
+		add_estate_loyalty = {
+			estate = estate_rodziny
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_rodziny_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_rodziny
+		}
+		add_estate_loyalty = {
+			estate = estate_rodziny
+			loyalty = -10
+		}
+	}
+}
+#Rolnicy
+add_estate_rolnicy_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_rolnicy
+		}
+		add_estate_loyalty = {
+			estate = estate_rolnicy
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_rolnicy_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_rolnicy
+		}
+		add_estate_loyalty = {
+			estate = estate_rolnicy
+			loyalty = -10
+		}
+	}
+}
+#Wojsko
+add_estate_wojsko_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_wojsko
+		}
+		add_estate_loyalty = {
+			estate = estate_wojsko
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_wojsko_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_wojsko
+		}
+		add_estate_loyalty = {
+			estate = estate_wojsko
 			loyalty = -10
 		}
 	}
@@ -3654,152 +3560,112 @@ pick_random_estate_if_present = {
 	random_list = {
 		1 = { 
 			trigger = {
-				has_estate = estate_brahmins
-				NOT = { has_country_flag = estate_brahmins_$flag$ }
+				has_estate = estate_wojsko
+				NOT = { has_country_flag = estate_wojsko_$flag$ }
 			}
-			set_country_flag = estate_brahmins_$flag$
+			set_country_flag = estate_wojsko_$flag$
 			[[estate_action]
-			$estate_action$ = estate_brahmins
+			$estate_action$ = estate_wojsko
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_church
-				NOT = { has_country_flag = estate_church_$flag$ }
+				has_estate = estate_rolnicy
+				NOT = { has_country_flag = estate_rolnicy_$flag$ }
 			}
-			set_country_flag = estate_church_$flag$
+			set_country_flag = estate_rolnicy_$flag$
 			[[estate_action]
-			$estate_action$ = estate_church
+			$estate_action$ = estate_rolnicy
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_maratha
-				NOT = { has_country_flag = estate_maratha_$flag$ }
+				has_estate = estate_rodziny
+				NOT = { has_country_flag = estate_rodziny_$flag$ }
 			}
-			set_country_flag = estate_maratha_$flag$ 
+			set_country_flag = estate_rodziny_$flag$
 			[[estate_action]
-			$estate_action$ = estate_maratha
+			$estate_action$ = estate_rodziny
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_nobles
-				NOT = { has_country_flag = estate_nobles_$flag$ }
+				has_estate = estate_emeryci
+				NOT = { has_country_flag = estate_emeryci_$flag$ }
 			}
-			set_country_flag = estate_nobles_$flag$
+			set_country_flag = estate_emeryci_$flag$
 			[[estate_action]
-			$estate_action$ = estate_nobles
+			$estate_action$ = estate_emeryci
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_burghers
-				NOT = { has_country_flag = estate_burghers_$flag$ }
+				has_estate = estate_banki
+				NOT = { has_country_flag = estate_banki_$flag$ }
 			}
-			set_country_flag = estate_burghers_$flag$
+			set_country_flag = estate_banki_$flag$
 			[[estate_action]
-			$estate_action$ = estate_burghers
+			$estate_action$ = estate_banki
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_vaisyas
-				NOT = { has_country_flag = estate_vaisyas_$flag$ }
+				has_estate = estate_gorniki
+				NOT = { has_country_flag = estate_gorniki_$flag$ }
 			}
-			set_country_flag = estate_vaisyas_$flag$
+			set_country_flag = estate_gorniki_$flag$
 			[[estate_action]
-			$estate_action$ = estate_vaisyas
+			$estate_action$ = estate_gorniki
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_cossacks
-				NOT = { has_country_flag = estate_cossacks_$flag$ }
+				has_estate = estate_intellectuals
+				NOT = { has_country_flag = estate_intellectuals_$flag$ }
 			}
-			set_country_flag = estate_cossacks_$flag$
+			set_country_flag = estate_intellectuals_$flag$
 			[[estate_action]
-			$estate_action$ = estate_cossacks
+			$estate_action$ = estate_intellectuals
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_nomadic_tribes
-				NOT = { has_country_flag = estate_nomadic_tribes_$flag$ }
+				has_estate = estate_inwestorzy
+				NOT = { has_country_flag = estate_inwestorzy_$flag$ }
 			}
-			set_country_flag = estate_nomadic_tribes_$flag$
+			set_country_flag = estate_inwestorzy_$flag$
 			[[estate_action]
-			$estate_action$ = estate_nomadic_tribes
+			$estate_action$ = estate_inwestorzy
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_dhimmi
-				NOT = { has_country_flag = estate_dhimmi_$flag$ }
+				has_estate = estate_kler
+				NOT = { has_country_flag = estate_kler_$flag$ }
 			}
-			set_country_flag = estate_dhimmi_$flag$
+			set_country_flag = estate_kler_$flag$
 			[[estate_action]
-			$estate_action$ = estate_dhimmi
+			$estate_action$ = estate_kler
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_jains
-				NOT = { has_country_flag = estate_jains_$flag$ }
+				has_estate = estate_srednia
+				NOT = { has_country_flag = estate_srednia_$flag$ }
 			}
-			set_country_flag = estate_jains_$flag$
+			set_country_flag = estate_srednia_$flag$
 			[[estate_action]
-			$estate_action$ = estate_jains
+			$estate_action$ = estate_srednia
 			]
 		}
-		1 = { 
+		1 = {
 			trigger = {
-				has_estate = estate_rajput
-				NOT = { has_country_flag = estate_rajput_$flag$ }
+				has_estate = estate_ub
+				NOT = { has_country_flag = estate_ub_$flag$ }
 			}
-			set_country_flag = estate_rajput_$flag$
+			set_country_flag = estate_ub_$flag$
 			[[estate_action]
-			$estate_action$ = estate_rajput
-			]
-		}
-		1 = { 
-			trigger = {
-				has_estate = estate_janissaries
-				NOT = { has_country_flag = estate_janissaries_$flag$ }
-			}
-			set_country_flag = estate_janissaries_$flag$
-			[[estate_action]
-			$estate_action$ = estate_janissaries
-			]
-		}
-		1 = { 
-			trigger = {
-				has_estate = estate_eunuchs
-				NOT = { has_country_flag = estate_eunuchs_$flag$ }
-			}
-			set_country_flag = estate_eunuchs_$flag$
-			[[estate_action]
-			$estate_action$ = estate_eunuchs
-			]
-		}
-		1 = { 
-			trigger = {
-				has_estate = estate_qizilbash
-				NOT = { has_country_flag = estate_qizilbash_$flag$ }
-			}
-			set_country_flag = estate_qizilbash_$flag$
-			[[estate_action]
-			$estate_action$ = estate_qizilbash
-			]
-		}
-		1 = { 
-			trigger = {
-				has_estate = estate_ghulams
-				NOT = { has_country_flag = estate_ghulams_$flag$ }
-			}
-			set_country_flag = estate_ghulams_$flag$
-			[[estate_action]
-			$estate_action$ = estate_ghulams
+			$estate_action$ = estate_ub
 			]
 		}
 	}
@@ -4523,21 +4389,17 @@ auto_complete_estate_agenda = {
 
 clr_auto_complete_flag = {
 	hidden_effect = {
-		clr_country_flag = auto_complete_estate_agenda_estate_nobles
-		clr_country_flag = auto_complete_estate_agenda_estate_brahmins
-		clr_country_flag = auto_complete_estate_agenda_estate_burghers
-		clr_country_flag = auto_complete_estate_agenda_estate_church
-		clr_country_flag = auto_complete_estate_agenda_estate_cossacks
-		clr_country_flag = auto_complete_estate_agenda_estate_dhimmi
-		clr_country_flag = auto_complete_estate_agenda_estate_jains
-		clr_country_flag = auto_complete_estate_agenda_estate_maratha
-		clr_country_flag = auto_complete_estate_agenda_estate_nomadic_tribes
-		clr_country_flag = auto_complete_estate_agenda_estate_rajput
-		clr_country_flag = auto_complete_estate_agenda_estate_vaisyas
-		clr_country_flag = auto_complete_estate_agenda_estate_janissaries
-		clr_country_flag = auto_complete_estate_agenda_estate_eunuchs
-		clr_country_flag = auto_complete_estate_agenda_estate_qizilbash
-		clr_country_flag = auto_complete_estate_agenda_estate_ghulams
+		clr_country_flag = auto_complete_estate_agenda_estate_banki
+		clr_country_flag = auto_complete_estate_agenda_estate_emeryci
+		clr_country_flag = auto_complete_estate_agenda_estate_gorniki
+		clr_country_flag = auto_complete_estate_agenda_estate_intellectuals
+		clr_country_flag = auto_complete_estate_agenda_estate_inwestorzy
+		clr_country_flag = auto_complete_estate_agenda_estate_kler
+		clr_country_flag = auto_complete_estate_agenda_estate_rodziny
+		clr_country_flag = auto_complete_estate_agenda_estate_rolnicy
+		clr_country_flag = auto_complete_estate_agenda_estate_srednia
+		clr_country_flag = auto_complete_estate_agenda_estate_ub
+		clr_country_flag = auto_complete_estate_agenda_estate_wojsko
 		clr_country_flag = auto_complete_estate_agenda_all
 	}
 }
@@ -6392,20 +6254,16 @@ select_grand_vizier_from_estate = {
 	}
 }
 clr_grand_vizier_flags = {
-	clr_country_flag = selected_grand_vizier_from_estate_nobles
-	clr_country_flag = selected_grand_vizier_from_estate_brahmins
-	clr_country_flag = selected_grand_vizier_from_estate_burghers
-	clr_country_flag = selected_grand_vizier_from_estate_church
-	clr_country_flag = selected_grand_vizier_from_estate_cossacks
-	clr_country_flag = selected_grand_vizier_from_estate_dhimmi
-	clr_country_flag = selected_grand_vizier_from_estate_jains
-	clr_country_flag = selected_grand_vizier_from_estate_maratha
-	clr_country_flag = selected_grand_vizier_from_estate_nomadic_tribes
-	clr_country_flag = selected_grand_vizier_from_estate_rajput
-	clr_country_flag = selected_grand_vizier_from_estate_vaisyas
-	clr_country_flag = selected_grand_vizier_from_estate_janissaries
-	clr_country_flag = selected_grand_vizier_from_estate_eunuchs
-	clr_country_flag = selected_grand_vizier_from_estate_qizilbash
-	clr_country_flag = selected_grand_vizier_from_estate_ghulams
+	clr_country_flag = selected_grand_vizier_from_estate_banki
+	clr_country_flag = selected_grand_vizier_from_estate_emeryci
+	clr_country_flag = selected_grand_vizier_from_estate_gorniki
+	clr_country_flag = selected_grand_vizier_from_estate_intellectuals
+	clr_country_flag = selected_grand_vizier_from_estate_inwestorzy
+	clr_country_flag = selected_grand_vizier_from_estate_kler
+	clr_country_flag = selected_grand_vizier_from_estate_rodziny
+	clr_country_flag = selected_grand_vizier_from_estate_rolnicy
+	clr_country_flag = selected_grand_vizier_from_estate_srednia
+	clr_country_flag = selected_grand_vizier_from_estate_ub
+	clr_country_flag = selected_grand_vizier_from_estate_wojsko
 	clr_country_flag = selected_grand_vizier_from_all
 }

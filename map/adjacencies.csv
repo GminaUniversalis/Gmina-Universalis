@@ -33,4 +33,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1813;18;sea;1289;-1;-1;-1;-1; Swibno - Stegna
 1812;17;sea;1500;-1;-1;-1;-1; Sobieszewo - Pruszcz Gdanski
 1810;1822;sea;1500;-1;-1;-1;-1; Olszynka - Stogi
+4353;4628;sea;1681;-1;-1;-1;-1; Zawiszy Czarnego - Drabinianka
+2788;4629;sea;1681;-1;-1;-1;-1; Srodmiescie Rzeszow - Nowe Miasto
+4352;4355;sea;1681;-1;-1;-1;-1; Staromiescie - Zaleze
+2606;2676;sea;1686;-1;-1;-1;-1; Wroblin - Czarnowasy
+2606;2669;sea;1263;-1;-1;-1;-1; Wroblin - Slawice
+4761;2670;sea;1263;-1;-1;-1;-1; Stare Miasto Opole - Zaodrze
 -1;-1;;-1;-1;-1;-1;-1;-1;
