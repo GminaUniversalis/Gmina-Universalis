@@ -1,6 +1,6 @@
 #Wroclaw - Stare Miasto
-latent_trade_goods = {
-    gu_software
+latent_trade_goods = { 
+	gu_software 
 }
 religion = communism_zsl
 base_tax = 7
@@ -19,4 +19,3 @@ add_core = A27
 owner = A27
 controller = A27
 fort_15th = yes
-

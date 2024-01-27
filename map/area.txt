@@ -957,7 +957,7 @@ powiat_wodzislawski = {
 	4743 62 4717 131 1770 133 50 1769 4738 
 }
 powiat_rybnicki = { 
-	128 129 130 1828 1831 4756 
+	128 129 130 1828 1831
 }
 powiat_cieszynski = { 
 	2955 4708 4707 76 1763 4752 135 4744 64 2957
@@ -972,7 +972,7 @@ powiat_bielski_slask = {
 	956 
 }
 powiat_pszczynski = { 
-	152 139 59 1864 1767 137 67 
+	152 139 59 1864 1767 137
 }
 powiat_bierunsko-ledzinski = { 
 	1111 1793 1794 4240 4236 

@@ -1,5 +1,5 @@
 ﻿l_english:
- tc_biala_podlaska:0 "Bielsko - Podlaska Kompania"
+ tc_biala_podlaska:0 "Bielsko-Podlaska Kompania"
  tc_bialystok:0 "Bia³ostocka Kompania"
  tc_bydgoszcz:0 "Bydgoska Kompania"
  tc_czestochowa:0 "Cz²stochowska Kompania"
@@ -24,7 +24,7 @@
  tc_rzeszow:0 "Rzeszowska Kompania"
  tc_siedlce:0 "Siedlecka Kompania"
  tc_silesian_conurbation:0 "Kompania Konurbacji Œl¹skiej"
- tc_southern_silesia:0 "Po³ódniowo - Œl¹ska Kompania"
+ tc_southern_silesia:0 "Po³ódniowo-Œl¹ska Kompania"
  tc_suwalki:0 "Suwalska Kompania"
  tc_swidnica:0 "Œwidnicka Kompania"
  tc_szczecin:0 "Szczeciªska Kompania"
@@ -33,5 +33,10 @@
  tc_torun:0 "Toruªska Kompania"
  tc_trojmiasto:0 "Trójmiejska Kompania"
  tc_warszawa:0 "Warszawska Kompania"
+ tc_wroclaw:0 "Wroc³awska Kompania"
+ tc_zamosc:0 "Zamojska Kompania"
+ tc_zgorzelec:0 "Zgorzelska Kompania"
+ tc_zielona_gora:0 "Zielono-Górska Kompania"
+ tc_legnica:0 "Legnicka Kompania"
  
  
