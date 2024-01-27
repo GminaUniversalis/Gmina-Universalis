@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-#4870 - Australian Lakes
-discovered_by = eastern
-=======
->>>>>>> Stashed changes
 #Przemysl
 culture = kresowa
 religion = communism_pzpr
@@ -16,3 +11,5 @@ owner = I15
 controller = I15
 add_core = I15
 discovered_by = ottoman
+discovered_by = western
+discovered_by = eastern
