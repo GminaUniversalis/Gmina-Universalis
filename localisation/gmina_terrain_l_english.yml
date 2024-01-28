@@ -1,0 +1,6 @@
+﻿l_english:
+ urban:0 "Urban"
+ high_urban:0 "High Urban"
+ floodplains:0 "Floodplains"
+ crossing:0 "Crossing"
+ tooltip_has_urban_or_high_urban_terrain:0 "Has urban or high urban terrain category."
