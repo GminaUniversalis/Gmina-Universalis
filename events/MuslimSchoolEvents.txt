@@ -3322,55 +3322,7 @@ country_event = {
 }
 
 #Neo Sufism (Most likely going to trigger in India)
-country_event = {
-	id = muslim_school_events.21
-	title = muslim_school_events.21.t
-	desc = muslim_school_events.21.d
-	picture = PRAYER_IN_MOSQUE_eventPicture
-	
-	major = yes
 
-	trigger = {
-		has_dlc = "Cradle of Civilization"
-		is_year = 1600
-		NOT = { has_global_flag = neo_sufism }
-		uses_piety = yes
-		NOT = { piety = 0.3 }
-		NOT = { dominant_religion = ROOT }
-		any_owned_province = {
-			NOT = { religion_group = muslim }
-			tolerance_to_this = 3
-		}
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = neo_sufism
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 600
-	}
-	
-	option = {
-		name = muslim_school_events.21.a #They are sadly misguided.
-		custom_tooltip = muslim_school_events.21.a.tt #From now on the religious establishment will react more strongly to impious conduct of the [Root.Monarch.GetTitle].
-		if = {
-			limit = {
-				has_estate = "estate_church"
-			}
-			tooltip = {
-				add_estate_influence_modifier = {
-					estate = estate_church
-					desc = EST_VAL_NEO_SUFISM
-					influence = 10
-					duration = -1
-				}
-			}
-		}
-	}
-}
 
 
 #Birth of Wahabism

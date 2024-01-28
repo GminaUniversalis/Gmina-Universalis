@@ -177,20 +177,7 @@ country_event = {
 		}
 	}
 	
-	option = { # none are above the laws of God
-		name = "hussite.4.a"
-		add_church_power = 20
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -10
-		}
-		add_estate_influence_modifier = {
-			estate = estate_nobles
-			desc = EST_VAL_PUNISHMENT_FOR_SINS
-			influence = -10
-			duration = 3650
-		}
-	}
+
 	
 	option = { # symbolic punishments only
 		name = "hussite.4.b"

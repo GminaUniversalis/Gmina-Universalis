@@ -875,61 +875,6 @@ on_great_project_constructed = {
 
 # OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
 # country
-on_new_monarch = {
-	on_new_monarch_effect = yes
-	# crimean_succession_effect = yes #Scripted effect
-	# slesvig_question_effect = yes #Scripted effect
-	# # ambrosian_republic_effect = yes
-	# succession_culture_religion_effect = yes
-	# sheik_ul_islam_effect = yes
-	# # hab_remove_mission_mods_if_not_emperor_effect = yes
-	# thu_remain_von_wettin_effect = yes
-	# ladislaus_postumus_union_effect = yes
-	events = {
-		# tribal_succession.1		# Harsh anti-tribals.
-		9492 					# Remove some event modifiers
-		# flavor_boh.8			# Winter King in Prague
-		# flavor_kol.1			# Bavarian Archbishop
-		# war_of_the_roses.101	# WotR - House of Lancaster wins
-		# war_of_the_roses.102	# WotR - House of York wins
-		# war_of_the_roses.106	# WotR - Another dynasty has seized the throne
-		# flavor_tur.102			# Janissary Reward
-		# flavor_ori.7			# Hamvira Victorious
-		# flavor_kbo.1			# The two branches of the Sayfawa dynasty
-		# flavor_kbo.8			# Sayfawa pretenders
-		# flavor_zan.5			# Coup of Coup of Suleiman and Muhammad al-Mazlum.
-		# purple_phoenix.1		# BYZ pretenders
-		# flavor_pol.3480			# The Pacta Conventa
-		# protestantism_events.15	# Catholic Leaning Monarch
-		# tengri_events.17		# Keep the Khojas in Power?
-		# flavor_tus.15			# Savonarola Dies
-		# flavor_brapru.22		# Succession of Albrecht Achilles
-		# flavor_brapru.25		# Dispositio Achillea (can also trigger from flavor_brapru.22)
-		# flavor_nor.27			# Proclamation in Hamar
-		# china_events.43			# Picking new Capital for China
-		# celestial_empire_events.3 #Resistance to Sinicization
-		# flavor_boh.2			#Heretic Kings
-		# flavor_hun.17			#Maintaining the Black Army
-		# flavor_tim.1			#Death of Shah Rukh
-		# muslim_school_events.20 #No Religious School
-		# flavor_daimyo.4			#Shiba Yoshikado
-		# flavor_fra.9000			# Fran�ois Villon
-		# flavor_sca.2			# Education Focus of the new Ruler
-		# flavor_rus.128			# Peter the Great
-		# flavor_rus.131			# Streltsy Payment
-		# flavor_gbr.102			# Religious Stance of the King
-		# MEE_Byzantine_Events.42 # Demetrios claims the throne
-	}
-	random_events = {
-		1000 = 0
-		# 100 = flavor_kol.1		# Bavarian Archbishop
-		# 100 = flavor_hsa.3		# Hansa: Tagfahrt
-		# 100 = inti_events.1		# Birth of a Panaca
-		50 = dynastic_events.4
-		50 = dynastic_events.5
-		25 = harem_events.7		#Failed Policy of Fratricide
-	}
-}
 
 on_new_consort = {
 	country_event = { id = consort_events.2 }
@@ -1521,18 +1466,8 @@ on_mandate_of_heaven_gained = {
 		}
 		remove_country_modifier = lost_mandate_of_heaven
 	}
-	country_event = { #Reforming the Bureaucracy
-		id = china_events.31
-		days = 365
-	}
-	country_event = {
-		id = china_events.32 #Records of the last Empire
-		days = 183
-	}
-	country_event = {
-		id = celestial_empire_events.2
-		days = 1825
-	}
+
+
 }
 
 # When a nation loses the Mandate of Heaven
@@ -2333,135 +2268,7 @@ on_bi_yearly_pulse_4 = {
 	}
 }
 
-on_bi_yearly_pulse_5 = {
-	random_events = { #all these were shifted from on_bi_yearly_pulse_1
-		# Anglican Events
-		# 100 = anglican_events.1
-		# 100 = anglican_events.2
-		# 100 = anglican_events.3
-		# 100 = anglican_events.4
-		# 100 = anglican_events.5
-		# 100 = anglican_events.6
-		# 100 = anglican_events.7
-		# 100 = anglican_events.8
-		# 100 = anglican_events.9
-		# 100 = anglican_events.10
-		# 100 = anglican_events.11
-		# 100 = anglican_events.12
-		# 100 = anglican_events.13
-		# 150 = anglican_events.15
-		
-		# # Hussite Events
-		# 100 = hussite.1
-		# 100 = hussite.2
-		# 100 = hussite.3
-		# 100 = hussite.4
-		# 100 = hussite.5
-		# 100 = hussite.6
-		# 100 = hussite.7
 
-
-		#Mamluk Events
-
-		# 175 = mamluk_events.1
-		# 175 = mamluk_events.2
-		# 175 = mamluk_events.3
-		# 235 = mamluk_events.4
-		# 185 = mamluk_events.5
-		# 175 = mamluk_events.6
-		# 250 = mamluk_events.7
-		# 185 = mamluk_events.10
-		# 185 = mamluk_events.11
-		# 235 = mamluk_events.12
-
-		#Colonization of Siberia
-		# 125 = siberian_events.2
-		# 125 = siberian_events.3
-		# 125 = siberian_events.4
-		# 125 = siberian_events.5
-		# 125 = siberian_events.6
-
-		#Russian Principalities
-
-		# 100 = russian_principality_events.1
-		# 125 = russian_principality_events.2
-		# 125 = russian_principality_events.3
-		# 125 = russian_principality_events.4
-		# 125 = russian_principality_events.6
-		# 125 = russian_principality_events.5
-		# 125 = russian_principality_events.7
-		# 100 = russian_principality_events.8
-		# 75 = russian_principality_events.9
-		# 125 = russian_principality_events.10
-
-		# #Tsardoms
-
-		# 125 = russian_tsardom_events.1
-		# 125 = russian_tsardom_events.2
-		# 125 = russian_tsardom_events.3
-		# 100 = russian_tsardom_events.4
-		# 125 = russian_tsardom_events.5
-		# 100 = russian_tsardom_events.6
-		# 100 = russian_tsardom_events.7
-		# 100 = russian_tsardom_events.8
-		# 125 = russian_tsardom_events.9
-		# 125 = russian_tsardom_events.10
-		# 100 = russian_tsardom_events.11
-
-		#Streltsy Events
-		# 125 = streltsy_events.1
-		# 125 = streltsy_events.3
-		# 125 = streltsy_events.4
-		# 125 = streltsy_events.5
-		# 100 = streltsy_events.6
-
-		#Orthodox Metropolitans
-		125 = patriarch_events.1
-		125 = patriarch_events.2
-		125 = patriarch_events.3
-		75 = patriarch_events.4
-		75 = patriarch_events.5
-
-		# # Catholic  Events
-		# 100 = catholic_flavor.4
-		# 100 = catholic_flavor.5
-		# 100 = catholic_flavor.6
-		# 100 = catholic_flavor.7
-		# 100 = catholic_flavor.8
-		# 100 = catholic_flavor.9
-		# 100 = catholic_flavor.10
-
-		# Japanese Daimyos
-		# 15 = flavor_jap.10
-		# 50 = flavor_jap.28
-		# 100 = flavor_jap.40
-		# 100 = flavor_jap.42
-		# 100 = flavor_jap.43
-		# 100 = flavor_jap.45
-		# 100 = flavor_jap.49
-		# 100 = flavor_jap.51
-		# 100 = flavor_jap.52
-		# 100 = flavor_jap.53
-		# 100 = flavor_jap.54
-		# 100 = flavor_jap.55
-
-
-
-		# # China
-		# 75 = meritocracy_events.1
-		# 75 = meritocracy_events.2
-		# 75 = meritocracy_events.3
-		# 75 = meritocracy_events.4
-		# 75 = meritocracy_events.5
-		# 50 = china_events.11
-		# 25 = china_events.12
-		# 25 = china_events.24
-		700 = communism.4
-		700 = communism.5
-
-		2000 = 0
-	}
-}
 
 
 
@@ -2674,27 +2481,7 @@ on_thri_yearly_pulse_3 = {
 	}
 }
 
-on_thri_yearly_pulse_4 = {
-	random_events = {
-		#Low Mandate Events
-		10 = china_events.45
-		10 = china_events.46
-		50 = china_events.47
-		10 = china_events.48
-		10 = china_events.49
-		10 = china_events.50
-		50 = china_events.51
-		10 = china_events.52
-		10 = china_events.53
-		50 = china_events.54
-		#10 = china_events.55 (triggers via neighbors)
-		10 = china_events.56
-		75 = china_events.57
-		50 = china_events.58
-		10 = china_events.59
-		50 = china_events.60
-	}
-}
+
 
 on_four_year_pulse = {
 	random_events = {
@@ -2870,48 +2657,7 @@ on_four_year_pulse = {
 		# 50 = tribal_federation_events.8
 		# 50 = tribal_federation_events.10
 
-		#Empire of China
-		# 100 = china_events.1
-		# 100 = china_events.2
-		# 100 = china_events.3
-		# 100 = china_events.4
-		# 75 = china_events.5
-		# 100 = china_events.6
-		# 100 = china_events.7
-		# 100 = china_events.8
-		# 100 = china_events.9
-		# 100 = china_events.10
-		# 100 = china_events.11
-		# 100 = china_events.12
-		# 100 = china_events.13
-		# 100 = china_events.14
-		# 100 = china_events.15
-		# 100 = china_events.16
-		# 100 = china_events.17
-		# 100 = china_events.18
-		# 100 = china_events.19
-		# 100 = china_events.20
-		# 100 = china_events.21
-		# 100 = china_events.22
-		# 100 = china_events.23
-		# 100 = china_events.24
-		# 100 = china_events.25
-		# 100 = china_events.26
-		# 100 = china_events.27
-		# 100 = china_events.28
-		# 100 = china_events.29
-		# 100 = china_events.30
-		# 100 = china_events.33
-		# 100 = china_events.34
-		# 100 = china_events.35
-		# 100 = china_events.36
-		# 100 = china_events.37
-		# 100 = china_events.38
-		# 100 = china_events.39
-		# 50 = china_events.40
-		# 100 = china_events.41
-		# 100 = china_events.42
-		# 100 = china_events.44
+		
 
 		# 10 = tortoise.1 # Galapagos Island Tortoises
 		
@@ -4567,23 +4313,7 @@ on_refuse_tribute = {
 }
 
 # country
-on_leader_recruited = {
-	if = {
-		limit = {
-			has_estate_privilege = estate_nobles_command_of_the_military
-		}
-		add_estate_influence_modifier = {
-			estate = estate_nobles
-			influence = 5
-			duration = 3650
-			desc = EST_VAL_NOBLE_LEADER
-		}
-	}
-	if = {
-		limit = { has_government_attribute = theocratic_monarchy_mechanic }
-		change_statists_vs_orangists = 0.01
-	}
-}
+
 
 # country
 on_general_recruited = {

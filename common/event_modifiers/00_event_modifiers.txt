@@ -3695,22 +3695,7 @@ economic_development_of_mazovia = {
 	local_development_cost = -0.1
 }
 
-#Polish timers
-pol_not_ending_stagnation_timer = { }
-pol_sejm_refuse_timer = { }
-pol_sejm_veto_timer = { }
-pol_tur_tension_timer = { }
 
-mng_closed_china = {
-	idea_cost = 0.10
-	global_institution_spread = -0.1
-	global_prov_trade_power_modifier = 0.4
-}
-mng_open_china = {
-	idea_cost = -0.10
-	technology_cost = -0.10
-	global_prov_trade_power_modifier = -0.25
-}
 
 hol_expand_loan_market = {
 	interest = -0.25
@@ -8343,11 +8328,7 @@ fought_back_the_hungarians = {
 	legitimacy = 1
 }
 
-#China:
-uniter_of_the_manchus = {
-	manpower_recovery_speed = 0.1
-	land_morale = 0.1
-}
+
 
 #FRA:
 

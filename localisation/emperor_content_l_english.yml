@@ -1446,17 +1446,7 @@
  NOT_RELEVANT_TRADE_REGION:0 "[Root.GetName] needs at least 1% trade share in [From.GetName]'s home trade node."
  NOT_RELEVANT_TRADE_REGION_FROM:0 "[From.GetName] needs at least 1% trade share in [Root.GetName]'s home trade node."
  
- country_estate_nobles_name:0 "[This.GetNobilityName]"
- country_estate_burghers_name:0 "[This.GetBurghersName]"
- country_estate_church_name:0 "[This.GetClergyName]"
- country_estate_nomadic_tribes_name:0 "[This.GetTribesName]"
- country_estate_dhimmi_name:0 "[This.GetDhimmiName]"
- country_estate_cossacks_name:0 "[This.GetCossacksName]"
- country_estate_vaisyas_name:0 "[This.GetVaishyasName]"
- country_estate_brahmins_name:0 "[This.GetBrahminsName]"
- country_estate_jains_name:0 "[This.GetJainsName]"
- country_estate_rajput_name:0 "[This.GetRajputsName]"
- country_estate_maratha_name:0 "[This.GetMarathasName]"
+
 
  MODIFIER_MAX_REVOLUTIONARY_ZEAL:0 "Maximum Revolutionary Zeal"
  MODIFIER_YEARLY_REVOLUTIONARY_ZEAL:0 "Yearly Revolutionary Zeal"
@@ -1625,17 +1615,7 @@
  judaism_string:0 "Judaism"
  zoroastrianism_string:0 "Zoroastrianism"
  EST_VAL_CORRUPT_CONNECTIONS:0 "Corrupt Connections: $VAL|Y$§Y%§!"
- this_brahmins:0 "[This.GetBrahminsName]"
- this_dhimmi:0 "[This.GetDhimmiName]"
- this_clergy:0 "[This.GetClergyName]"
- this_vaisyas:0 "[This.GetVaishyasName]"
- this_jains:0 "[This.GetJainsName]"
- this_burghers:0 "[This.GetBurghersName]"
- this_rajputs:0 "[This.GetRajputsName]"
- this_marathas:0 "[This.GetMarathasName]"
- this_nobles:0 "[This.GetNobilityName]"
- this_nomadic_tribes:0 "[This.GetTribesName]"
- fallback_string_nobility:0 "nobility"
+
  EST_VAL_ACCEPTED_POPE_DEMANDS:0 "Bowed to Papal Demands: $VAL|Y$§Y%§!"
  insult_german_humor:0 "They say that German humor is no laughing matter."
 

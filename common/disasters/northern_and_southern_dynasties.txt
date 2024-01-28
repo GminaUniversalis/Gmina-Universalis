@@ -8,45 +8,7 @@ northern_and_southern_dynasties = {
 		NOT = { mission_completed = mnd_dai_prevent_division }
 	}
 	
-	can_start = {
-		has_any_disaster = no
-		NOT = { current_age = age_of_discovery }
-		NOT = { ADM = 3 }
-		NOT = { DIP = 3 }
-		NOT = { MIL = 3 }
-		NOT = { exists = TOK }
-		NOT = { exists = ANN }
-		AND = {
-			num_of_owned_provinces_with = {
-				value = 1
-				OR = {
-					area = north_laos_area
-					area = central_thai_area
-					area = northern_thai_area
-					area = red_river_delta_area
-					area = sukhothai_area
-					area = champasak_area
-					area = khorat_area
-					area = vientiane_area
-					superregion = china_superregion
-					region = burma_region
-				}
-			}
-			num_of_owned_provinces_with = {
-				value = 1
-				OR = {
-					area = vietnam_area
-					area = cambodia_area
-					area = mekong_area
-					area = angkor_area
-					area = champa_area
-					area = tay_nguyen_area
-					region = malaya_region
-					region = indonesia_region
-				}
-			}
-		}
-	}
+
 	
 	can_stop = { 
 		has_any_disaster = yes

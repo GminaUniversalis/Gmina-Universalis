@@ -4,6 +4,7 @@ estate_wojsko_old_doc = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.15	
+	on_invalid = { clr_country_flag = wojsko_old_doc } 
 	is_valid = {
 		NOT = {
 			has_country_flag = wojsko_new_doc
@@ -28,6 +29,7 @@ estate_wojsko_new_doc = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.15
+	on_invalid = { clr_country_flag = wojsko_new_doc } 
 	is_valid = {
 		NOT = {
 			has_country_flag = wojsko_old_doc
@@ -66,6 +68,7 @@ estate_wojsko_blitz = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.15
+	on_invalid = { clr_country_flag = wojsko_blitz } 
 	is_valid = {
 		NOT = {
 			has_country_flag = wojsko_fire
@@ -91,6 +94,7 @@ estate_wojsko_fire = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.15
+	on_invalid = { clr_country_flag = wojsko_fire } 
 	is_valid = {
 		NOT = {
 			has_country_flag = wojsko_blitz

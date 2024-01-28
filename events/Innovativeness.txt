@@ -282,72 +282,6 @@ country_event = {
 
 
 # Education for the Poor?
-country_event = {
-	id = innovativeness_events.5
-	title = "innovativeness_events.5.t"
-	desc = "innovativeness_events.5.d"
-	picture = ROYAL_SOCIETY_eventPicture
-	goto = poor_province
-	trigger = {
-		has_dlc = "Rule Britannia"
-		innovativeness = 1
-		any_owned_province = {
-			NOT = { development = 12 }
-			is_capital = no
-			#continent = CAPITAL
-		}
-	}
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					NOT = { development = 12 }
-					is_capital = no
-					#continent = CAPITAL
-				}
-				save_event_target_as = poor_province
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "innovativeness_events.5.a" #
-		ai_chance = {
-			factor = 40
-		}
-		add_innovativeness_small_effect = yes
-		if = {
-			limit = { has_estate = estate_church }
-			add_estate_influence_modifier = {
-				estate = estate_church
-				desc = EST_VAL_PUBLIC_SCHOOLS
-				influence = 10
-				duration = 3650
-			}
-		}
-		event_target:poor_province = {
-			add_province_modifier = {
-				name = "public_schools"
-				duration = 10950
-			}
-		}
-	}
-	option = {
-		name = "innovativeness_events.5.b"
-		ai_chance = {
-			factor = 60
-		}
-		reduce_estate_church_loyalty_effect = yes
-		add_prestige = -5
-	}
-}
 
 # [Root.GetRoyalOrState] Patronage
 country_event = {
@@ -702,46 +636,7 @@ country_event = {
 
 # Physiocrats
 # Weirdo agrarian gentry
-country_event = {
-	id = innovativeness_events.14
-	title = "innovativeness_events.14.t"
-	desc = "innovativeness_events.14.d"
-	picture = INDUSTRIALIZATION_eventPictures
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "Rule Britannia"
-		innovativeness = 5
-		has_institution = enlightenment
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	option = { # adopt their ideas
-		name = "innovativeness_events.14.a"
-		add_innovativeness_big_effect = yes
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_influence_modifier = {
-				estate = estate_nobles
-				desc = PHYSIOCRACY
-				influence = 10
-				duration = 3650
-			}
-			add_mercantilism = -2
-		}
-		else = {
-			add_mercantilism = -4
-		}
-	}
-	option = {
-		name = "innovativeness_events.14.b"
-		add_mercantilism = 1
-	}
-}
+
 
 # Cabinet of Curiosities
 country_event = {

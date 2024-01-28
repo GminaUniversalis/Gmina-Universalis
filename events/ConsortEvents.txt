@@ -360,28 +360,7 @@ country_event = {
 				add_years_of_income = -0.25
 				clr_country_flag = pay_money
 			}
-			pay_legitimacy_or_give_noble_influence = {
-				custom_tooltip = consort_events.3.a.tt.3
-				if = {
-					limit = {
-						has_estate = estate_nobles
-					}
-					add_estate_influence_modifier = {
-						estate = estate_nobles
-						desc = EST_VAL_FURTHERED_SPOUSES_FAMILY_NOBLES
-						influence = 10
-						duration = 7300
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_estate = estate_nobles }
-					}
-					add_legitimacy = -10
-					add_horde_unity = -10
-				}
-				clr_country_flag = pay_legitimacy_or_give_noble_influence
-			}
+			
 			kick_advisor = {
 				custom_tooltip = consort_events.3.a.tt.4
 				kill_advisor = random
@@ -714,27 +693,7 @@ country_event = {
 				add_years_of_income = -0.35
 				clr_country_flag = pay_money
 			}
-			pay_legitimacy_or_give_noble_influence = {
-				custom_tooltip = consort_events.3.a.tt.3
-				if = {
-					limit = {
-						has_estate = estate_nobles
-					}
-					add_estate_influence_modifier = {
-						estate = estate_nobles
-						desc = EST_VAL_FURTHERED_SPOUSES_FAMILY_NOBLES
-						influence = 15
-						duration = 7300
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_estate = estate_nobles }
-					}
-					add_prestige = -10
-				}
-				clr_country_flag = pay_legitimacy_or_give_noble_influence
-			}
+			
 			kick_advisor = {
 				custom_tooltip = consort_events.3.a.tt.4
 				kill_advisor = random

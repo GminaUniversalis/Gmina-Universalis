@@ -211,6 +211,7 @@ estate_rodziny_ofm = {
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
+	on_invalid = { clr_country_flag = rodziny_ofm} 
 	is_valid = {
 		NOT = {
 			has_country_flag = rodziny_nfm
@@ -236,6 +237,7 @@ estate_rodziny_nfm = {
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
+	on_invalid = { clr_country_flag = rodziny_nfm } 
 	is_valid = {
 		NOT = {
 			has_country_flag = rodziny_ofm

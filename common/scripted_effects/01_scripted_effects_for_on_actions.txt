@@ -203,20 +203,6 @@ on_new_monarch_effect = {
 	}
 	if = {
 		limit = {
-			NOT = { has_dlc = "Mandate of Heaven" }
-			has_country_modifier = the_mandate_of_heaven
-			NOT = { legitimacy = 80 }
-		}
-		country_event = { id = china_events.32 }	# History of last ruler
-	}
-	if = {
-		limit = {
-			religion = jewish
-		}
-		clr_country_flag = ruler_is_messiah
-	}
-	if = {
-		limit = {
 			is_or_was_tag = {
 				tag = TEU
 			}
