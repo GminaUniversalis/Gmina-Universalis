@@ -2270,7 +2270,7 @@ on_bi_yearly_pulse_4 = {
 on_bi_yearly_pulse_5 = {
 	random_events = { #all these were shifted from on_bi_yearly_pulse_1
 	700 = communism.4
-		700 = communism.5
+	700 = communism.5
 }}
 
 
