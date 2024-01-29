@@ -1,0 +1,15 @@
+#Kalisz Korczak
+culture = kaliska
+religion = communism_sd
+base_tax = 22
+base_production = 23
+trade_goods = unknown
+base_manpower = 17
+capital = "Kalisz - Korczak"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R33
+controller = R33
+discovered_by = ottoman
+add_core = R33
