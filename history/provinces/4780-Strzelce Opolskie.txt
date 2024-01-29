@@ -1,10 +1,10 @@
 #Strzelce Opolskie
 culture = gornoslaska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 2
+base_tax = 4
+base_production = 6
+trade_goods = gu_stone
+base_manpower = 5
 capital = "Strzelce Opolskie"
 is_city = yes
 discovered_by = western

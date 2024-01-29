@@ -1,10 +1,10 @@
 #Radom
 culture = radomska
 religion = communism_zsl
-base_tax = 1
-base_production = 1
+base_tax = 40
+base_production = 39
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 37
 capital = "Radom"
 is_city = yes
 discovered_by = western

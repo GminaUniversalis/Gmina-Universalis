@@ -1,7 +1,7 @@
 #City of Zlotow
 culture = krainska
 religion = communism_sd
-base_tax = 3
+base_tax = 2
 base_production = 10
 trade_goods = unknown
 base_manpower = 3

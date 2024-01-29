@@ -2,8 +2,8 @@
 culture = kujawska
 religion = communism_pzpr
 base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_production = 2
+trade_goods = gu_tourists
 base_manpower = 1
 capital = "Ciechocinek"
 is_city = yes

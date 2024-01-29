@@ -2,7 +2,7 @@
 religion = communism_pzpr
 base_tax = 2
 base_production = 2
-trade_goods = unknown
+trade_goods = gu_ceramics
 base_manpower = 2
 capital = "Nowogrodziec"
 is_city = yes

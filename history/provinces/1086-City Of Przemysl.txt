@@ -1,11 +1,11 @@
 #City Of Przemysl
 culture = kresowa
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 13
+base_production = 11
 trade_goods = unknown
-base_manpower = 1
-capital = "City Of Przemysl"
+base_manpower = 10
+capital = "Przemysl"
 is_city = yes
 discovered_by = western
 discovered_by = eastern

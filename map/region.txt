@@ -84,7 +84,7 @@ warminsko_mazurskie_region = {
 	areas = { 
 		powiat_nowomiejski powiat_ilawski powiat_dzialdowski powiat_elblaski powiat_lidzbarski powiat_nidzicki powiat_szczycienski powiat_mragowski powiat_piski powiat_elcki
 		powiat_suwalski powiat_olecki powiat_goldapski powiat_gizycki powiat_wegorzewski powiat_bartoszycki powiat_ketrzynski powiat_braniewski powiat_ostrodzki powiat_olsztynski
-		 olsztyn_dajtki olsztyn_centrum olsztyn_mazurskie olsztyn_wojska_polskiego 
+		olsztyn_dajtki olsztyn_centrum olsztyn_mazurskie olsztyn_wojska_polskiego 
 	}
 }
 dolnoslaskie_region = { 

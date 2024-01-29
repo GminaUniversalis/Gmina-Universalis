@@ -1,4 +1,7 @@
 #Wroclaw - Polanowice
+latent_trade_goods = { 
+	gu_electronics 
+}
 religion = communism_zsl
 base_tax = 7
 base_production = 10

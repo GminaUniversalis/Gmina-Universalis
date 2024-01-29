@@ -1,10 +1,10 @@
 #City of Zamosc
 culture = kresowa
 religion = communism_pzpr
-base_tax = 12
-base_production = 11
-trade_goods = unknown
-base_manpower = 10
+base_tax = 15
+base_production = 12
+trade_goods = gu_lumber
+base_manpower = 11
 capital = "City of Zamosc"
 is_city = yes
 discovered_by = western

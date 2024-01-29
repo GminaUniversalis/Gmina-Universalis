@@ -1,8 +1,8 @@
 #City of  Zgorzelec
 religion = catholic
 base_tax = 4
-base_production = 5
-trade_goods = unknown
+base_production = 4
+trade_goods = iron
 base_manpower = 5
 capital = "City of  Zgorzelec"
 is_city = yes

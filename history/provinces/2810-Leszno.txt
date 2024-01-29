@@ -2,8 +2,8 @@
 culture = poznanska
 religion = communism_sd
 base_tax = 2
-base_production = 2
-trade_goods = unknown
+base_production = 1
+trade_goods = sugar
 base_manpower = 2
 capital = "Leszno"
 is_city = yes

@@ -2,10 +2,10 @@
 culture = cieszynska
 religion = communism_pzpr
 hre = yes
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 5
+base_production = 8
+trade_goods = cloth
+base_manpower = 6
 capital = "Cieszyn"
 is_city = yes
 discovered_by = western

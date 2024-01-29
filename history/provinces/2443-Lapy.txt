@@ -1,10 +1,10 @@
 #Lapy
 culture = podlaska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 3
+base_production = 2
+trade_goods = gu_dairy
+base_manpower = 3
 capital = "Lapy"
 is_city = yes
 discovered_by = western

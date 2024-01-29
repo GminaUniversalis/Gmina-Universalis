@@ -1,10 +1,10 @@
 #Legionowo
 culture = warszawska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 9
+base_production = 5
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 9
 capital = "Legionowo"
 is_city = yes
 discovered_by = western

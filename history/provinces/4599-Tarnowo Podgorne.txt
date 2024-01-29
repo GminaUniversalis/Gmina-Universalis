@@ -1,8 +1,8 @@
 #Tarnowo Podgorne
 culture = poznanska
 religion = communism_pzpr
-base_tax = 7
-base_production = 20
+base_tax = 8
+base_production = 22
 trade_goods = unknown
 base_manpower = 6
 capital = "Tarnowo Podgorne"

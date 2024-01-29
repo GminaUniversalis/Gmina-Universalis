@@ -1,9 +1,9 @@
 #City of Kolobrzeg
 culture = srodkowopomorska
 religion = communism_pzpr
-base_tax = 8
+base_tax = 9
 base_production = 8
-trade_goods = unknown
+trade_goods = gu_amber
 base_manpower = 8
 capital = "City of Kolobrzeg"
 is_city = yes

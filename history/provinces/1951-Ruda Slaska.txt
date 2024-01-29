@@ -2,10 +2,10 @@
 culture = slonska
 religion = communism_sd
 hre = yes
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 26
+base_production = 21
+trade_goods = iron
+base_manpower = 24
 capital = "Ruda Slaska"
 is_city = yes
 discovered_by = western

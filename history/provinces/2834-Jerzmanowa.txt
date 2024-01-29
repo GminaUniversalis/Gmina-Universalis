@@ -1,8 +1,8 @@
 #Jerzmanowa
 religion = communism_zsl
-base_tax = 2
+base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_wheat
 base_manpower = 1
 capital = "Jerzmanowa"
 is_city = yes

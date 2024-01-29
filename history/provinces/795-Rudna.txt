@@ -2,8 +2,8 @@
 religion = communism_zsl
 base_tax = 2
 base_production = 1
-trade_goods = unknown
-base_manpower = 2
+trade_goods = copper
+base_manpower = 1
 capital = "Rudna"
 is_city = yes
 discovered_by = western
