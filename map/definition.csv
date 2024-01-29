@@ -401,7 +401,6 @@ province;red;green;blue;x;x
 404;57;72;255;Wawolnica;x
 405;185;74;0;Potworow;x
 406;58;76;64;Warta;x
-407;186;78;128;Kalisz;x
 408;58;80;192;City of Kutno;x
 409;186;82;255;Daszyna;x
 410;58;84;0;City of Leczyca;x
@@ -433,7 +432,6 @@ province;red;green;blue;x;x
 437;190;138;128;Sabine;x
 439;190;142;255;Rudka;x
 440;62;144;0;Bocki;x
-441;191;146;64;Czestochowa;x
 442;63;148;128;Domanice;x
 443;191;150;192;Ciechanowiec;x
 444;63;152;255;Skorzec;x
@@ -832,7 +830,6 @@ province;red;green;blue;x;x
 1095;165;42;79;Pieszyce;x
 1096;37;44;126;Koszarawa;x
 1097;165;46;173;City of Jordanow;x
-1098;37;248;32;Krosno;x
 1099;165;50;79;Chodel;x
 1100;38;52;126;Olszanica;x
 1101;166;54;173;Lesko;x
@@ -1536,7 +1533,6 @@ province;red;green;blue;x;x
 2327;154;216;222;Sobolew;x
 2328;0;120;91;Sieciechow;x
 2329;101;125;54;Jastrzebia;x
-2330;59;82;37;Radom;x
 2331;250;203;224;Kazanow;x
 2332;188;228;233;Chotcza;x
 2333;0;124;194;Abramow;x
@@ -1871,7 +1867,6 @@ province;red;green;blue;x;x
 2903;225;47;5;Szprotawa;x
 2904;198;166;54;City of Chojnow;x
 2905;227;31;59;Trzebiel;x
-2906;219;44;97;Legnica;x
 2907;31;236;55;Krotoszyce;x
 2908;231;147;101;Zawidow;x
 2909;56;203;20;City of Zagan;x
@@ -2034,7 +2029,6 @@ province;red;green;blue;x;x
 4039;38;234;130;Iwonicz-Zdroj;x
 4040;44;52;201;Gorlice;x
 4041;145;165;177;Dobra;x
-4042;220;30;106;Nowy Sacz;x
 4043;171;67;109;Gdow;x
 4044;219;159;183;Wojnicz;x
 4045;44;123;42;luzna;x
@@ -2055,7 +2049,6 @@ province;red;green;blue;x;x
 4060;215;17;73;Radgoszcz;x
 4061;141;193;135;Jodlowa;x
 4062;57;208;42;Domaradz;x
-4063;203;160;93;City of Tarnow;x
 4064;172;118;32;Wadowice Gorne;x
 4065;220;52;0;City of Mielec;x
 4066;187;203;173;Cmolas;x
@@ -2676,7 +2669,6 @@ province;red;green;blue;x;x
 4866;156;144;105;Zawoja;x
 4867;227;196;94;Makow Podhalanski;x
 4868;136;85;174;Stubno;x
-4869;56;20;83;Przemysl;x
 4935;210;40;41;Zabki;x
 4936;210;70;81;Sulejowek;x 
 4934;210;10;1;Willandra Lakes;x
@@ -3008,3 +3000,145 @@ province;red;green;blue;x;x
 2591;218;26;95;Zielona Gorka;x
 2590;92;45;145;Podlesna;x
 292;41;104;128;Olsztyn Srodmiescie;x
+3333;41;104;127;Dzieckowice;x
+3335;100;104;200;Krasowy;x
+3336;5;104;200;Brzezinka;x
+3337;5;104;5;Morgi;x
+3338;5;200;5;Brzeczkowice;x
+2589;155;31;196;Wilkowyje;x
+2588;29;41;246;Paprocany;x
+2587;197;197;46;Urbanowice;x
+2586;71;194;95;Wygorzele;x
+2585;134;31;145;Makolowiec;x
+2584;8;121;196;Chorzow Batory;x
+2583;236;51;246;Chorzow II;x
+2582;110;1;46;WPKiW;x
+2581;173;199;95;Chorzow Stary;x
+2580;47;1;145;Bytkow;x
+2579;215;2;196;Bangow;x
+2578;89;121;246;Zgoda;x
+2577;152;1;46;Chropaczow;x
+2576;26;3;95;Brzeziny Slaskie;x
+2575;194;214;145;Dabrowka Wielka;x
+2574;68;1;196;Szarlej;x
+2573;131;101;246;Kozlowa Gora;x
+2572;5;202;46;Lagiewniki-Bytom;x
+2571;233;111;95;Szombierki;x
+2570;107;31;145;Rozbark;x
+2569;170;31;196;Bobrek;x
+2568;44;131;246;Miechowice;x
+2567;212;215;46;Stroszek;x
+2566;86;141;95;Stolarzowice;x
+2565;149;122;145;Sucha Gora;x
+2564;23;31;196;Halemba;x
+2563;191;123;246;Kochlowice;x
+2562;65;133;46;Bielszowice;x
+2561;128;181;95;Wirek;x
+2560;2;131;145;Ruda;x
+2559;250;141;196;Chebzie;x
+2550;82;31;145;Makoszowy;x
+2551;208;199;95;Guido;x
+2552;40;61;46;Zaborze;x
+2553;166;31;246;Zabrze Biskupice;x
+2554;103;21;196;Rokitnica;x
+2555;229;31;145;Osiedle Kopernika;x
+2556;61;31;95;Grzybowice;x
+2557;187;222;46;Mikulczyce;x
+2558;124;131;246;Maciejow;x
+2549;145;255;196;Centrum-Poludnie;x
+2548;19;131;246;Bojkow;x
+2547;247;131;46;Ostropa;x
+2546;121;161;95;Wojtowa Wies;x
+2545;184;31;145;Sikornik-Trynek;x
+2544;58;1;196;Ligota Zabrska;x
+2543;226;41;246;Bailona;x
+2542;100;3;46;Sosnica;x
+2541;163;191;95;Gliwice-Brzezinka;x
+2540;37;6;145;Stare Gliwice;x
+2539;205;1;196;Labedy;x
+2538;79;131;246;Czechowice;x
+2537;142;31;46;Gliwice-Kopernika;x
+2536;16;19;95;Gliwice-Zerniki;x
+2535;244;231;145;Baranowice;x
+2534;118;131;196;Roj;x
+2533;181;201;246;Kleszczowka;x
+2532;55;131;46;Rowien;x
+2531;223;132;95;Rogozna;x
+2530;97;12;145;Zory-Zachod;x
+2529;160;221;196;Borynia;x
+2528;34;122;246;Szeroka;x
+2527;202;202;46;Bzie;x
+2526;76;1;95;Zofiowka;x
+2525;139;11;145;Jastrzebski-Zdroj;x
+2524;13;31;196;Ruptawa;x
+2523;115;141;46;Zlote Lany;x
+2522;115;141;46;Tarnow Rzedzin;x
+2521;178;3;95;Tarnow Krzyz;x
+2520;52;183;145;Klikowa;x
+2519;220;44;196;Moscice;x
+2518;94;48;246;Guminska-Zablocie;x
+2517;157;164;46;Chyszow-Krakowska;x
+4063;203;160;93;Tarnow Centrum;x
+2516;31;64;95;Wyczerpy-Aniolow;x
+2515;199;232;145;Polnoc;x
+2514;73;112;196;Kiedrzyn;x
+2513;136;158;246;Tysiaclecie;x
+2512;10;121;46;Ostatni Grosz;x
+2511;238;244;95;Zawodzie;x
+2510;112;164;145;Mirow;x
+2509;175;43;196;Bleszno;x
+2508;49;141;246;Grabowka;
+2507;217;131;46;Lisieniec;
+2506;91;2;95;Stradom;x
+2505;154;243;145;Gnaszyn;x
+2504;28;171;196;Dzbow;x
+441;191;146;64;Czestochowa Stare Miasto;x
+2503;196;31;246;Helena;x
+2502;70;161;46;Kochanowskiego;x
+2501;133;231;95;Zawada;x
+2500;7;131;145;Biegonice;x
+2498;109;41;246;Falkowa;x
+4042;220;30;106;Nowy Sacz Centrum;x
+2497;172;191;46;Bialobrzegi;x
+2496;46;231;95;Zawodzie;x
+2495;214;231;145;Turaszowka;x
+2494;88;38;196;Polanka;x
+2493;151;161;246;Suchodol;x
+2492;25;191;46;Traugutta;x
+2491;193;139;95;Kroscienko;x
+1098;37;248;32;Krosno Centrum;x
+2490;67;201;145;Kruhel Wielki;x
+2489;130;130;196;Slowackiego;x
+2488;4;51;246;Za Wiarem;x
+2487;232;201;46;Lwowskie;x
+2486;106;12;95;Zielonka;x
+2485;169;2;145;Przemyslawa;x
+2484;43;51;196;Marii Konopnickiej;x
+2483;211;31;246;Warnenczyka;x
+2482;85;91;46;Lipowica;x
+2481;148;161;95;Winna Gora;x
+4869;56;20;83;Przemysl;x
+2480;22;32;145;Borki;x
+2479;190;100;196;Predocinek;x
+2478;64;119;246;Akademickie;x
+2477;127;20;145;Obozisko;x
+2476;1;0;145;Dzierzkow;x
+2047;85;160;133;Stara Wola;x
+2330;59;82;37;Radom Centrum;x
+2046;193;131;23;Szczypiorno;
+2045;53;124;86;Sulislawice;
+2044;181;16;160;Piwonice;x
+2042;246;92;62;Kalisz Winiary;x
+2041;64;189;3;Rypinek;x
+2040;84;237;87;Zagorzynek;x
+2039;213;242;165;Dobrzec;x
+2038;213;157;165;Korczak;x
+2023;55;14;120;Ogrody;x
+2022;155;5;120;Tyniec;x
+407;186;78;128;Kalisz Centrum;x
+2021;25;13;70;Nowy Dwor;x
+2020;155;12;160;Glinki;x
+2019;105;11;120;Piekary Osiedle;x
+2018;55;10;40;Stare Piekary;x
+2017;105;9;160;Przedmiescie Glogowskie;x	
+2906;219;44;97;Legnica;x

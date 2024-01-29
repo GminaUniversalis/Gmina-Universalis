@@ -1,0 +1,16 @@
+#Czestochowa Polnoc
+culture = zachodnio-krakowska
+religion = communism_zsl
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = gu_tourists
+base_manpower = 1
+capital = "Czestochowa - Polnoc"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L37
+controller = L37
+discovered_by = ottoman
+add_core = L37

@@ -71,7 +71,7 @@ powiat_nowosadecki = {
 }
 powiat_tarnowski = { 
 	4055 4069 4050 4103 4109 4071 1925 2780 2790 1208
-	4059 1209 4044 4070 4063 4067 4068 
+	4059 1209 4044 4070 4067 4068 
 }
 powiat_brzeski = { 
 	4146 1147 1171 1219 1201 788 4034 
@@ -241,8 +241,8 @@ powiat_sokolowski = {
 	1071 478 2360 2355 437 2118 2362 4184 1819 
 }
 powiat_ostrowski = { 
-	1830 1052 2122 4229 4228 4230 734 2155 981 4231
-	2694 727 
+	1830 1052 4229 4228 4230 734 2155 981 4231 2694
+	727 
 }
 powiat_losicki = { 
 	2200 509 576 1785 4687 4689 
@@ -932,8 +932,8 @@ powiat_klobucki = {
 	2299 1112 2239 1848 164 163 1119 2255 2254 
 }
 powiat_czestochowski = { 
-	2242 441 2241 2272 158 2273 2257 1138 2269 2271
-	2292 1140 2293 2291 1126 1161 2280 
+	2242 2241 2272 158 2273 2257 1138 2269 2271 2292
+	1140 2293 2291 1126 1161 2280 
 }
 powiat_zawiercianski = { 
 	2283 2281 2282 2287 2276 1153 1152 1154 2279 1162
@@ -957,7 +957,7 @@ powiat_wodzislawski = {
 	4743 62 4717 131 1770 133 50 1769 4738 
 }
 powiat_rybnicki = { 
-	128 129 130 1828 1831 4756 
+	128 129 130 1828 1831 
 }
 powiat_cieszynski = { 
 	2955 4708 4707 76 1763 4752 135 4744 64 2957
@@ -972,7 +972,7 @@ powiat_bielski_slask = {
 	956 
 }
 powiat_pszczynski = { 
-	152 139 59 1864 1767 137 67 
+	152 139 59 1864 1767 137 
 }
 powiat_bierunsko-ledzinski = { 
 	1111 1793 1794 4240 4236 
@@ -987,7 +987,7 @@ powiat_aglomeracja_Katowicka = {
 	140 154 1827 1952 3000 1951 
 }
 powiat_bytom = { 
-	4128 156 160 
+	4128 2569 2570 2571 2572 
 }
 jaworzno_centrum = { 
 	4080 2715 2710 2712 2713 
@@ -1244,4 +1244,88 @@ olsztyn_wojska_polskiego = {
 }
 olsztyn_dajtki = { 
 	2598 2600 2599 2601 2602 
+}
+myslowice_srodmiescie = { 
+	3337 3338 154 
+}
+myslowice_poludnie = { 
+	3333 3336 3335 
+}
+tychy_stare = { 
+	2587 2588 140 
+}
+tychy_polnoc = { 
+	2589 2585 2586 
+}
+chorzow = { 
+	2584 1827 2583 2581 2582 
+}
+siemanowice = { 
+	2580 2579 1952 
+}
+swietochlowice = { 
+	2578 2577 3000 
+}
+piekary = { 
+	2576 2575 2574 2573 160 
+}
+bytom_polnoc = { 
+	2567 2568 2566 2565 
+}
+ruda_polnoc = { 
+	2560 2559 1951 
+}
+ruda_poludnie = { 
+	2564 2563 2562 2561 
+}
+zabrze_centrum = { 
+	2555 2558 156 2549 
+}
+zabrze_polnoc = { 
+	2553 2557 2554 2556 
+}
+zabrze_zaborze = { 
+	2551 2550 2552 
+}
+gliwice_labedy = { 
+	2539 2538 2537 2541 
+}
+gliwice_srodmiescie = { 
+	138 2540 2546 2547 
+}
+gliwice_bojkow = { 
+	2548 2544 2545 
+}
+gliwice_wschod = { 
+	2543 2542 2536 
+}
+zory_rowien = { 
+	2532 2534 2531 
+}
+zory_centrum = { 
+	4756 2533 2535 2530 
+}
+jastrzebie_polnoc = { 
+	2529 2528 2526 
+}
+jastrzebie_polodnie = { 
+	2527 67 2525 2524 2523 
+}
+tarnow_wschod = { 
+	2521 4063 2522 2518 
+}
+tarnow_zachod = { 
+	2520 2517 2519 
+}
+czestochowa_wschod = { 
+	2511 2516 2510 2515 
+}
+czestochowa_centrum = { 
+	2512 441 2506 2509 
+}
+czestochowa_polnoc = { 
+	2514 2513 2508 
+}
+czestochowa_zachod = { 
+	2507 2505 2504 
 }
