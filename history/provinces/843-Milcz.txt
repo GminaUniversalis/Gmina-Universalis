@@ -1,9 +1,9 @@
 #Milcz
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 4
+base_production = 3
+trade_goods = fish
+base_manpower = 4
 capital = "Milcz"
 is_city = yes
 discovered_by = western

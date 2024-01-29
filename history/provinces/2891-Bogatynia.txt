@@ -1,9 +1,9 @@
 #Bogatynia
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 5
+base_production = 5
+trade_goods = gu_coal
+base_manpower = 4
 capital = "Bogatynia"
 is_city = yes
 discovered_by = western

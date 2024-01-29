@@ -2,8 +2,8 @@
 culture = kaszubska
 religion = communism_pzpr
 base_tax = 3
-base_production = 2
-trade_goods = unknown
+base_production = 1
+trade_goods = gu_lumber
 base_manpower = 3
 capital = "Luzino"
 is_city = yes

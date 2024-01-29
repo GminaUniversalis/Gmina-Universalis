@@ -1,9 +1,9 @@
 #City of Walcz
 culture = zachodniopomorska
 religion = communism_pzpr
-base_tax = 4
-base_production = 4
-trade_goods = unknown
+base_tax = 3
+base_production = 3
+trade_goods = iron
 base_manpower = 4
 capital = "City of Walcz"
 is_city = yes

@@ -1,7 +1,7 @@
 #City of Minsk Mazowiecki
 culture = mazowiecka
 religion = communism_pzpr
-base_tax = 6
+base_tax = 7
 base_production = 7
 trade_goods = unknown
 base_manpower = 7

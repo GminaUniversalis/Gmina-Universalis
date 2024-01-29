@@ -1,9 +1,9 @@
 #City of Hrubieszow
 culture = kresowa
 religion = communism_pzpr
-base_tax = 3
-base_production = 3
-trade_goods = unknown
+base_tax = 2
+base_production = 2
+trade_goods = sugar
 base_manpower = 3
 capital = "City of Hrubieszow"
 is_city = yes

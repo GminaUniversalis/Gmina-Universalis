@@ -2,10 +2,10 @@
 culture = cieszynska
 religion = communism_pzpr
 hre = yes
-base_tax = 2
-base_production = 1
+base_tax = 3
+base_production = 5
 trade_goods = unknown
-base_manpower = 3
+base_manpower = 4
 capital = "Skoczow"
 is_city = yes
 discovered_by = western

@@ -2,8 +2,8 @@
 culture = lachska
 religion = communism_zsl
 base_tax = 5
-base_production = 4
-trade_goods = unknown
+base_production = 3
+trade_goods = gu_stone
 base_manpower = 5
 capital = "Chelmiec"
 is_city = yes

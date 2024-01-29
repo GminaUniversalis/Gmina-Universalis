@@ -2,10 +2,10 @@
 culture = gornoslaska
 religion = communism_pzpr
 hre = yes
-base_tax = 1
-base_production = 1
+base_tax = 6
+base_production = 7
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 6
 capital = "Knurow"
 is_city = yes
 discovered_by = western

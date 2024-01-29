@@ -241,7 +241,7 @@ powiat_sokolowski = {
 	1071 478 2360 2355 437 2118 2362 4184 1819 
 }
 powiat_ostrowski = { 
-	1830 1052 2122 4229 4228 4230 734 2155 981 4231
+	1830 1052 4229 4228 4230 734 2155 981 4231
 	2694 727 
 }
 powiat_losicki = { 
@@ -363,7 +363,7 @@ powiat_bielski = {
 	476 456 2361 440 2370 1973 439 1060 
 }
 powiat_wysokomazowiecki = { 
-	443 4185 1032 4679 1045 2102 2966 1062 2442 
+	443 4185 1032 4679 1045 2102 2966 1062 2442 2122
 }
 powiat_zambrowski = { 
 	4227 1847 2745 1852 1783 
@@ -948,7 +948,7 @@ powiat_tarnogorski = {
 	1765 1766 159 4176 4704 4706 2750 148 1954 
 }
 powiat_gliwicki = { 
-	149 4703 4175 150 4754 1953 162 957 138 
+	149 4703 4175 150 4754 1953 162 957 
 }
 powiat_raciborski = { 
 	134 2994 4749 51 4742 958 2965 58 
@@ -957,7 +957,7 @@ powiat_wodzislawski = {
 	4743 62 4717 131 1770 133 50 1769 4738 
 }
 powiat_rybnicki = { 
-	128 129 130 1828 1831 4756 
+	128 129 130 1828 1831
 }
 powiat_cieszynski = { 
 	2955 4708 4707 76 1763 4752 135 4744 64 2957
@@ -972,7 +972,7 @@ powiat_bielski_slask = {
 	956 
 }
 powiat_pszczynski = { 
-	152 139 59 1864 1767 137 67 
+	152 139 59 1864 1767 137
 }
 powiat_bierunsko-ledzinski = { 
 	1111 1793 1794 4240 4236 
@@ -983,11 +983,8 @@ powiat_mikolowski = {
 powiat_bedzinski = { 
 	1141 2270 4239 161 4127 157 1149 4757 
 }
-powiat_aglomeracja_Katowicka = { 
-	140 154 1827 1952 3000 1951 
-}
 powiat_bytom = { 
-	4128 156 160 
+	 4128 2569  2570 2571 2572
 }
 jaworzno_centrum = { 
 	4080 2715 2710 2712 2713 
@@ -1244,4 +1241,70 @@ olsztyn_wojska_polskiego = {
 }
 olsztyn_dajtki = { 
 	2598 2600 2599 2601 2602 
+}
+myslowice_srodmiescie = { 
+	3337 3338 154 
+}
+myslowice_poludnie = { 
+	3333 3336 3335 
+}
+tychy_stare = { 
+	2587 2588 140 
+}
+tychy_polnoc = { 
+	2589 2585 2586 
+}
+chorzow = { 
+	2584 1827 2583 2581 2582 
+}
+siemanowice = { 
+	2580 2579 1952 
+}
+swietochlowice = { 
+	2578 2577 3000
+}
+piekary = { 
+	2576 2575 2574 2573 160
+}
+bytom_polnoc = { 
+	2567 2568 2566 2565
+}
+ruda_polnoc = {
+2560 2559 1951
+}
+ruda_poludnie = {
+2564 2563 2562 2561
+}
+zabrze_centrum = {
+2555 2558 156 2549
+}
+zabrze_polnoc = {
+2553 2557 2554 2556
+}
+zabrze_zaborze = {
+2551 2550 2552
+}
+gliwice_labedy = {
+ 2539 2538 2537 2541
+}
+gliwice_srodmiescie = {
+ 138 2540 2546 2547
+}
+gliwice_bojkow = {
+ 2548 2544 2545
+}
+gliwice_wschod = {
+ 2543 2542 2536
+}
+zory_rowien = {
+2532 2534 2531
+}
+zory_centrum = {
+4756 2533 2535 2530
+}
+jastrzebie_polnoc = {
+2529 2528 2526
+}
+jastrzebie_polodnie = {
+2527 67 2525 2524 2523
 }

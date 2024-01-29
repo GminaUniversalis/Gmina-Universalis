@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 5
 base_production = 7
-trade_goods = unknown
+trade_goods = iron
 base_manpower = 6
 capital = "City of Olawa"
 is_city = yes

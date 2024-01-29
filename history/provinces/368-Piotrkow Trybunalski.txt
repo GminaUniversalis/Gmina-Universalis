@@ -1,10 +1,10 @@
 #Piotrkow Trybunalski
 culture = sieradzka
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 15
+base_production = 15
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 12
 capital = "Piotrkow Trybunalski"
 is_city = yes
 discovered_by = western

@@ -1,11 +1,11 @@
 #Myslowice
 culture = gornoslaska
-religion = communism_pzpr
+religion = communism_sd
 hre = yes
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 15
+base_production = 12
+trade_goods = gu_coal
+base_manpower = 13
 capital = "Myslowice"
 is_city = yes
 discovered_by = western

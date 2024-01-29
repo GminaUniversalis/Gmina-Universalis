@@ -1,10 +1,10 @@
 #Krynica
 culture = lemkowa
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 3
+base_production = 2
+trade_goods = gu_tourists
+base_manpower = 2
 capital = "Krynica"
 is_city = yes
 discovered_by = western

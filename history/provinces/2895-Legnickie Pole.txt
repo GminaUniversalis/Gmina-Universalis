@@ -1,8 +1,8 @@
 #Legnickie Pole
 religion = communism_zsl
 base_tax = 1
-base_production = 4
-trade_goods = unknown
+base_production = 3
+trade_goods = gu_wheat
 base_manpower = 1
 capital = "Legnickie Pole"
 is_city = yes

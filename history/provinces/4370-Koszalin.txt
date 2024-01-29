@@ -1,10 +1,10 @@
 #Koszalin
 culture = srodkowopomorska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 22
+base_production = 24
+trade_goods = glass
+base_manpower = 19
 capital = "Koszalin"
 is_city = yes
 center_of_trade = 3

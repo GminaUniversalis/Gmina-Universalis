@@ -1,9 +1,9 @@
 #City of Suwalki
 culture = suwalska
 religion = communism_pzpr
-base_tax = 13
-base_production = 13
-trade_goods = unknown
+base_tax = 15
+base_production = 14
+trade_goods = iron
 base_manpower = 12
 capital = "City of Suwalki"
 is_city = yes

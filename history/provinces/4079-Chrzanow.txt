@@ -1,10 +1,10 @@
 #Chrzanow
 culture = zachodnio-krakowska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 6
+base_production = 8
+trade_goods = iron
+base_manpower = 8
 capital = "Chrzanow"
 is_city = yes
 discovered_by = western

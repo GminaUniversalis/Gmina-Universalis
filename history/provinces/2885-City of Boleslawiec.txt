@@ -2,7 +2,7 @@
 religion = communism_pzpr
 base_tax = 6
 base_production = 8
-trade_goods = unknown
+trade_goods = gu_ceramics
 base_manpower = 7
 capital = "City of Boleslawiec"
 is_city = yes

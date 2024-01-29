@@ -1,9 +1,9 @@
 #City of Olesnica
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 5
+base_production = 6
+trade_goods = paper
+base_manpower = 6
 capital = "City of Olesnica"
 is_city = yes
 discovered_by = western

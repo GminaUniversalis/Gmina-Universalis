@@ -1,10 +1,10 @@
 #Grodzisk Mazowiecki
 culture = warszawska
 religion = communism_pzpr
-base_tax = 3
-base_production = 3
+base_tax = 11
+base_production = 11
 trade_goods = unknown
-base_manpower = 4
+base_manpower = 10
 capital = "Grodzisk Mazowiecki"
 is_city = yes
 discovered_by = western
