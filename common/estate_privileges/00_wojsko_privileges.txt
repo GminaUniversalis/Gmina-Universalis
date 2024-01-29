@@ -181,7 +181,7 @@ estate_wojsko_land_rights = {
 			OR = {
 				NOT = { crown_land_share = 25 }
 				estate_influence = {
-					estate = estate_church
+					estate = estate_wojsko
 					influence = 75
 				}
 			}

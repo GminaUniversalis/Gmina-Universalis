@@ -54,7 +54,7 @@ estate_rolnicy_land_rights = {
 			OR = {
 				NOT = { crown_land_share = 25 }
 				estate_influence = {
-					estate = estate_church
+					estate = estate_rolnicy
 					influence = 75
 				}
 			}

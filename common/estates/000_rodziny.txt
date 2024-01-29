@@ -63,7 +63,6 @@ estate_rodziny = {
 		estate_rodziny_build_temple_in_y
 		estate_rodziny_build_port_building_in_y
 		estate_rodziny_build_production_building_in_y 
-		estate_rodziny_develop_x_tax
 		estate_rodziny_develop_x_manpower
 		estate_rodziny_develop_x_production
 		estate_rodziny_recover_stability

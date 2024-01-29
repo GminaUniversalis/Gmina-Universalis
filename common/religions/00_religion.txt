@@ -2493,7 +2493,7 @@ christian = {
 		country = {
 			global_tax_modifier = 0.1
 			improve_relation_modifier = 0.15
-			church_loyalty_modifier = 0.1
+
 		}
 		
 		country_as_secondary = {
@@ -3096,7 +3096,6 @@ dharmic = {
 		country = {
 			tolerance_heathen = 1
 			tolerance_own = 1
-			brahmins_hindu_influence_modifier = 0.2
 		}
 		country_as_secondary = {
 			tolerance_heretic = 1
@@ -3227,7 +3226,7 @@ dharmic = {
 						type = DIP
 						cost = 50
 
-						church_loyalty_modifier = 0.05
+
 					}
 					wrestling_akhara = {
 						type = MIL
@@ -3286,9 +3285,6 @@ dharmic = {
 						type = MIL
 						cost = 50
 
-						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
-						maratha_exclusive_loyalty_modifier = 0.05
 					}
 				}
 			}
@@ -3508,9 +3504,7 @@ dharmic = {
 						type = MIL
 						cost = 50
 
-						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
-						maratha_exclusive_loyalty_modifier = 0.05
+
 					}
 				}
 			}
@@ -3822,7 +3816,6 @@ pagan = {
 		country = {
 			land_morale = 0.1
 			global_unrest = -2
-			burghers_influence_modifier = -0.05
 		}
 		country_as_secondary = {
 			land_morale = 0.05

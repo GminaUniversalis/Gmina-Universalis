@@ -23,7 +23,7 @@ X15_ideas = {
 	}
 	City_of_Trade = {
 		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.1
+
 	}
 	Cracovian_Churches = {
 		tolerance_own = 2
@@ -753,7 +753,7 @@ X05_ideas = {
 	}
 	
 	bonus = {
-		burghers_loyalty_modifier = 0.1
+
 	}	
 
 	trigger = {
@@ -1330,7 +1330,7 @@ X20_ideas = {
 	}
 	City_of_Trade = {
 		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.1
+
 	}
 	Cracovian_Churches = {
 		tolerance_own = 2

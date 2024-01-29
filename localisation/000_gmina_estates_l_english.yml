@@ -1,4 +1,16 @@
 ﻿l_english:
+ #Event
+ estate_privileges_and_agendas_events.3.a:1 "The Proposal of the Army
+ estate_privileges_and_agendas_events.3.b:1 "The Proposal of the Farmers"
+ estate_privileges_and_agendas_events.3.c:1 "The Proposal of the Families"
+ estate_privileges_and_agendas_events.3.d:1 "The Proposal of the Retirees"
+ estate_privileges_and_agendas_events.3.e:1 "The Proposal of the Security Office"
+ estate_privileges_and_agendas_events.3.f:1 "The Proposal of the Middle Class"
+ estate_privileges_and_agendas_events.3.g:1 "The Proposal of the Clergy"
+ estate_privileges_and_agendas_events.3.h:1 "The Proposal of the Investors"
+ estate_privileges_and_agendas_events.3.i:1 "The Proposal of the Intellectuals"
+ estate_privileges_and_agendas_events.3.j:1 "The Proposal of the Miners"
+ estate_privileges_and_agendas_events.3.k:1 "The Proposal of the Banks"
  #Emeryci
  estate_emeryci:0 "Retirees"
  estate_emeryci_desc:0 "Retirees represent a community of seniors in a given country who have transitioned into retirement after concluding their active professional careers. This group encompasses individuals in retirement age, typically exceeding 60-65 years, depending on the retirement policy of the specific country. Members of this community enjoy well-deserved rest after years of work and often engage in diverse social, cultural, and recreational activities. Within society, "retirees" play a significant role, contributing to cultural heritage, sharing experiences, and serving as mentors for younger generations."
@@ -20,7 +32,7 @@
  estate_emeryci_ac_desc:0 "A dedicated advocate for the rights and well-being of retirees"
  estate_emeryci_scl:0 "Retirees In The Government"
  estate_emeryci_scl_desc:0"Retirees in government positions refer to individuals who have retired from their careers but continue to serve in various roles within the government"
- estate_emeryci_hire_advisor:0 "Hire an Administrative Advisor"
+ estate_emeryci_hire_advisor:0 "Hire Administrative For Reritees"
  estate_emeryci_hire_advisor_desc:0 "Retirees desire the [Root.Monarch.GetTitle] to hire a new administrative advisor"
  estate_emeryci_build_temple_in_y:0 "Retirees Demand More Temples"
  estate_emeryci_build_temple_in_y_desc:0 "Retirees have recognized that there are too few temples in our country"
@@ -76,8 +88,6 @@
  estate_rodziny_build_port_building_in_y_desc:0 "Families have recognized that there are too few docks in our country"
  estate_rodziny_build_production_building_in_y :0 "Families Demand More Workshops"
  estate_rodziny_build_production_building_in_y_desc:0 "Families have recognized that there are too few workshops in our country"
- estate_rodziny_develop_x_tax:0 "Families Demand To Develop Administraction"
- estate_rodziny_develop_x_tax_desc:0 "Families have noticed that our administrative development in the region is insufficient"
  estate_rodziny_develop_x_manpower:0 "Families Demand To Develop Security"
  estate_rodziny_develop_x_manpower_desc:0 "Families have noticed that our security development in the region is insufficient"
  estate_rodziny_develop_x_production:0 "Families Demand To Develop Production"

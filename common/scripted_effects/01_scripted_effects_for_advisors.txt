@@ -397,12 +397,12 @@ internal_advisor_generation_effect = { #Only used within generate_advisor_of_typ
 				limit = { 
 					religion_group = dharmic
 					capital_scope = {
-						# OR = {
-						# 	region = persia_region
-						# 	region = khorasan_region
-						# 	region = west_india_region
-						# 	region = hindusthan_region
-						# }
+						OR = {
+							region = persia_region
+							region = khorasan_region
+							region = west_india_region
+							region = hindusthan_region
+						}
 					}
 				}
 				define_advisor = {

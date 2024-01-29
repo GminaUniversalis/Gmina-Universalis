@@ -844,7 +844,7 @@ the_statue_in_restraint_of_appeals = {
 	global_unrest = -1
 	prestige = 0.5
 	papal_influence = -10
-	church_loyalty_modifier = 0.05
+
 	religion = yes
 }
 
@@ -1166,7 +1166,7 @@ the_popery_act = {
 
 the_sheikh_ul_islam = {
 	global_missionary_strength = 0.01
-	church_loyalty_modifier = 0.05
+
 	religion = yes
 }
 
@@ -2431,20 +2431,17 @@ vasa_centralization_reforms = {
 
 swe_debt_with_the_clergy = {
 	legitimacy = -0.5
-	church_loyalty_modifier = -0.1
-	church_influence_modifier = 0.1
+
 }
 
 swe_debt_with_the_burghers = {
 	legitimacy = -0.5
-	burghers_loyalty_modifier = -0.1
-	burghers_influence_modifier = 0.1
+
 }
 
 swe_debt_with_the_nobles = {
 	legitimacy = -0.5
-	nobles_loyalty_modifier = -0.1
-	nobles_influence_modifier = 0.1
+
 }
 
 church_reduction = {
@@ -3111,7 +3108,7 @@ tur_opposed_valide_sultan_modifier = {
 
 tur_secured_vali_ahad_modifier = {
 	stability_cost_modifier = -0.1
-	nobles_loyalty_modifier = 0.05
+
 }
 
 tur_rebellion_line_modifier = {
@@ -3139,8 +3136,7 @@ tur_jade_techniques_of_far_east_modifier = {
 }
 
 tur_abu_hanifa_mosque_modifier = { 
-	church_loyalty_modifier = 0.05
-	church_influence_modifier = 0.05
+
 	tolerance_own = 1 
 }
 
@@ -3172,7 +3168,7 @@ tur_shattered_the_janissaries = {
 	legitimacy = 1
 	republican_tradition = 0.5
 	max_absolutism = 15
-	janissaries_influence_modifier = -0.5
+
 }
 
 tur_reformation_of_the_ottoman_estates = {
@@ -3319,7 +3315,7 @@ tur_janissary = {
 
 hun_black_army = {
 	land_forcelimit_modifier = -0.05
-	nobles_influence_modifier = -0.1
+
 }
 
 mercenary_concessions = {
@@ -5121,15 +5117,13 @@ dan_granting_privileges_to_juniors_extra = {
 
 dan_granted_privileges_to_nobility = {
 	global_tax_modifier = 0.1
-	nobles_loyalty_modifier = 0.1
-	nobles_influence_modifier = 0.1
+
 	liberty_desire = -5
 }
 
 dan_granted_privileges_to_nobility_extra = {
 	global_tax_modifier = 0.25
-	nobles_loyalty_modifier = 0.2
-	nobles_influence_modifier = 0.2
+
 	liberty_desire = -15
 }
 
@@ -5140,7 +5134,7 @@ dan_losing_ruling_grip = {
 
 stockholm_bloodbath = {
 	liberty_desire = 25
-	nobles_influence_modifier = -0.25
+
 }
 
 dan_danish_investment = {
@@ -8277,7 +8271,7 @@ legitimacy_defended = {
 
 horde_unity_defended = {
 	horde_unity = 0.5
-	nomadic_tribes_loyalty_modifier = 0.05
+
 }
 
 baltic_ambition = {
@@ -11328,28 +11322,28 @@ eng_reformer_ruler = {
 	tolerance_heretic = -1
 	church_power_modifier = 0.5
 	monthly_fervor_increase = 0.5
-	church_influence_modifier = -0.15
+
 	religion = yes
 }
 
 eng_catholic_ruler = {
 	tolerance_heretic = -1
 	papal_influence = 2
-	church_influence_modifier = 0.1
+
 	religion = yes
 }
 
 eng_reformer_ruler_for_catholic_gb = {
 	tolerance_heretic = 1
 	tolerance_own = -2
-	church_influence_modifier = -0.15
+
 	religion = yes
 }
 
 eng_catholic_ruler_for_reformed_gb = {
 	tolerance_heretic = 1
 	tolerance_own = -2
-	church_influence_modifier = 0.1
+
 	religion = yes
 }
 
@@ -11383,14 +11377,14 @@ eng_the_crown_of_italy = {	#Permanent
 }
 
 eng_taxation_of_the_clergy = {
-	church_influence_modifier = -0.15
+
 	global_tax_modifier = 0.33
 	tolerance_own = -2
 	religion = yes
 }
 
 eng_protects_the_clergy = {
-	church_loyalty_modifier = 0.1
+
 	tolerance_own = 2
 	tolerance_heretic = -2
 	religion = yes
@@ -11406,14 +11400,14 @@ eng_taxation_of_the_clergy_prot = {
 }
 
 eng_protects_the_clergy_prot = {
-	church_loyalty_modifier = 0.1
+
 	tolerance_heretic = 2
 	tolerance_own = -2
 	religion = yes
 }
 
 eng_foreign_religious_control = {
-	church_influence_modifier = 0.1
+
 }
 
 eng_end_of_the_english_reformation = {
@@ -11421,7 +11415,7 @@ eng_end_of_the_english_reformation = {
 }
 
 eng_order_of_chivalry = {	#Permanent
-	nobles_loyalty_modifier = 0.05
+
 	monthly_splendor = 0.25
 }
 
@@ -11571,7 +11565,7 @@ ingolstadt_beer_city = {
 
 bav_religious_mandate_mod = {
 	global_religious_conversion_resistance = 0.5
-	church_loyalty_modifier = -0.05
+
 }
 
 bav_building_wife_church = {
@@ -12273,7 +12267,6 @@ sisters_takeover = {
 	global_manpower_modifier = 0.2
 	female_advisor_chance = 1.0
 	church_privilege_slots = 1
-	church_loyalty_modifier = 0.05
 	tolerance_own = 1
 	tolerance_heretic = -3
 }
@@ -12532,9 +12525,7 @@ makahiki_mod = {
 
 historic_ava_mod = {
 	global_unrest = -1
-	burghers_loyalty_modifier = 0.05
-	church_loyalty_modifier = 0.05
-	nobles_loyalty_modifier = 0.05
+
 }
 
 respect_faamatai_mod = {
@@ -12882,12 +12873,12 @@ mal_nobles_take_over = {
 
 mal_radical_clergy = {
 	tolerance_heathen = -3
-	dhimmi_loyalty_modifier = -0.2
+
 }
 
 mal_radical_dhimmi = {
 	tolerance_own = -3
-	church_loyalty_modifier = -0.2
+
 }
 
 mal_burghers_take_over = {
@@ -13020,8 +13011,8 @@ gathers_soldiers_for_the_ruler = {
 }
 
 internal_marriage = {
-	nobles_loyalty_modifier = 0.1
-	nobles_influence_modifier = 0.05
+
+
 	heir_chance = 1
 }
 
@@ -13124,7 +13115,7 @@ teu_the_last_reyse = {
 teu_renewed_hanseatic_relations = {
 	naval_maintenance_modifier = -0.2
 	land_maintenance_modifier = -0.1
-	burghers_influence_modifier = 0.1
+
 }
 
 liv_merc_focus = {
@@ -13477,7 +13468,7 @@ PRU_toleranzedikt = {
 	advisor_cost = -0.05
 }
 PRU_bitter_resistance = {
-	church_loyalty_modifier = -0.05
+
 }
 
 BRA_reformed_kreditwerk = {
@@ -13935,12 +13926,12 @@ per_muzaffarid_centre_of_admin_modifier = {
 per_sponsorship_of_christian_armenians_modifier = {
 	tolerance_heathen = 1
 	manpower_recovery_speed = 0.1
-	qizilbash_loyalty_modifier = -0.1
+
 }
 per_elitist_caste_modifier = {
 	same_culture_advisor_cost = -0.2
 	culture_conversion_cost = -0.2 
-	qizilbash_loyalty_modifier = 0.1
+
 }
 per_turkmen_recruits_modifier = {
 	local_manpower_modifier = 0.33 
@@ -14039,7 +14030,7 @@ per_porcelain_exports_to_the_west_modifier = {
 zoroastrian_interests = {
 	tolerance_own = -2
 	tolerance_heathen = 2
-	church_loyalty_modifier = -0.2
+
 	can_not_build_missionaries = yes
 	religion = yes
 }

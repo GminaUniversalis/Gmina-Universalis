@@ -38,7 +38,7 @@ estate_emeryci_land_rights = {
 			OR = {
 				NOT = { crown_land_share = 25 }
 				estate_influence = {
-					estate = estate_church
+					estate = estate_emeryci
 					influence = 75
 				}
 			}
@@ -209,32 +209,15 @@ estate_emeryci_klub_seniora = {
 			limit = { prestige = -40 }
 			add_prestige = 40
 		}
-		else = {
+		else_if = {
+			limit = { prestige = -100 }
 			add_prestige = 50
 		}
-		AND ={
-			if = {
-			limit = { prestige = 50 }
-			add_prestige = 10
-		}
-		else_if = {
-			limit = { prestige = 0 }
-			add_prestige = 20
-		}
-		else_if = {
-			limit = { prestige = -20 }
-			add_prestige = 30
-		}
-		else_if = {
-			limit = { prestige = -40 }
-			add_prestige = 40
-		}
 		else = {
-			add_prestige = 50
+			add_prestige = 5
 		}
 
 		}
-	}
 	penalties = {
 		global_tax_modifier = -0.2
 	}
@@ -242,6 +225,7 @@ estate_emeryci_klub_seniora = {
 		prestige = 1
 	}
 }
+
 estate_emeryci_rada ={
 	icon = privilege_admin_power
 	land_share = 0
@@ -332,10 +316,8 @@ estate_emeryci_scl ={
 	max_absolutism = -5
 	loyalty = 0
 	influence = 0.1
-	influence_scaled_conditional_modifier =
-	 {
-	trigger = 
-			{	
+	loyalty_scaled_conditional_modifier = {
+	trigger = {	
 		limit = { estate_loyalty = 
 					{
 					estate = estate_emeryci
@@ -348,8 +330,7 @@ estate_emeryci_scl ={
 		idea_cost = 0.15
 		diplomatic_reputation = -1 
 	}
-	influence_scaled_conditional_modifier =
-	 {
+	loyalty_scaled_conditional_modifier = {
 	trigger = 
 			{	
 		limit = { estate_loyalty = 
@@ -364,7 +345,7 @@ estate_emeryci_scl ={
 		idea_cost = 0.1
 		diplomatic_reputation = -0.5
 	}
-	influence_scaled_conditional_modifier =
+	loyalty_scaled_conditional_modifier =
 	 {
 	trigger = 
 			{	
@@ -380,7 +361,7 @@ estate_emeryci_scl ={
 		idea_cost = -0.1
 		diplomatic_reputation = 0.5
 	}
-	influence_scaled_conditional_modifier =
+	loyalty_scaled_conditional_modifier =
 	 {
 	trigger = 
 			{	
