@@ -543,6 +543,10 @@
  L36_ADJ:0 "Gliwicki"
  L37:0 "Cz²estochowa"
  L37_ADJ:0 "Cz²estochowa"
+ L38:0 "Metropolis GZM"
+ L38_ADJ:0 "Metropolis GZM"
+ L39:0 "Rybnik Coal Area"
+ L39_ADJ:0 "Rybnik Coal Area"
  M01:0 "Powiat J²drzejowski"
  M01_ADJ:0 "Powiat J²drzejowski"
  M02:0 "Powiat W³oszczowski"
@@ -723,3 +727,5 @@
  P20_ADJ:0 "Powiat Myœliborski"
  P21:0 "Koszalin"
  P21_ADJ:0 "Koszalin"
+
+

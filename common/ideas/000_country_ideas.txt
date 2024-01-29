@@ -1574,3 +1574,81 @@ W08_ideas = {
 		development_cost = -0.1
 	}
 }
+
+L38_ideas = {
+	start = {
+		global_manpower_modifier = 0.20
+		fire_damage = 0.10
+	}
+
+	bonus = {
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = L38
+	}
+	free = yes
+
+	L38_1 = {
+		global_trade_goods_size_modifier = 0.20
+	}
+	L38_2 = {
+		production_efficiency = 0.15
+	}
+	L38_3 = {
+		relation_with_accepted_culture = 15
+	}
+	L38_4 = {
+		prestige = 1
+	}
+	L38_5 = {
+		build_cost = -0.15
+	}
+	L38_6 = {
+		diplomats = 1
+		imperial_authority = 0.2
+	}
+	L38_7 = {
+		technology_cost = -0.10
+	}
+}
+
+L39_ideas = {
+	start = {
+		accept_vassalization_reasons = 25
+		ae_impact = -0.15
+	}
+
+	bonus = {
+		vassal_manpower_bonus = 0.30
+	}
+	
+	trigger = {
+		tag = L39
+	}
+	free = yes
+
+	L39_1 = {
+		global_trade_goods_size_modifier = 0.30
+		monarch_lifespan = -0.10
+	}
+	L39_2 = {
+		state_maintenance_modifier = -0.20
+	}
+	L39_3 = {
+		production_efficiency = 0.15
+	}
+	L39_4 = {
+		morale_damage_received = -0.20	
+	}
+	L39_5 = {
+		diplomatic_reputation = 2
+	}
+	L39_6 = {
+		idea_cost = -0.10
+	}
+	L39_7 = {
+		global_manpower_modifier = 0.25
+	}
+}
