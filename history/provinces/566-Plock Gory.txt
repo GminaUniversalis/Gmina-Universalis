@@ -1,0 +1,15 @@
+#Plock - Gory
+culture = plocka
+religion = communism_pzpr
+base_tax = 31
+base_production = 32
+trade_goods = gu_sulfur
+base_manpower = 21
+capital = "Plock - Gory"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G40
+controller = G40
+discovered_by = ottoman
+add_core = G40

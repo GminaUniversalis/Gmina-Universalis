@@ -1,0 +1,15 @@
+#Tarnow - Krzyz
+culture = wschodnio-krakowska
+religion = communism_pzpr
+base_tax = 1
+base_production = 1
+trade_goods = gu_chemicals
+base_manpower = 1
+capital = "Tarnow - Krzyz"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = X21
+controller = X21
+discovered_by = ottoman
+add_core = X21

@@ -15,8 +15,7 @@ powiat_brzozowski = {
 	536 2031 2033 2032 2030 4062 
 }
 powiat_przemyski = { 
-	1791 4414 2734 2736 4869 1087 1085 4868 2735 1086
-	1084 
+	1791 4414 2734 2736 4869 1087 1085 4868 2735 1084
 }
 powiat_rzeszowski = { 
 	4421 2029 2052 521 4457 2775 2024 4862 554 2786
@@ -66,12 +65,12 @@ powiat_gorlicki = {
 	4021 4024 4098 4101 4040 4104 4056 4099 4045 4037
 }
 powiat_nowosadecki = { 
-	4025 4026 4030 4036 1200 1199 1197 4042 1198 4093
-	4094 1164 4105 1196 4097 4031 2289 
+	4025 4026 4030 4036 1200 1199 1197 1198 4093 4094
+	1164 4105 1196 4097 4031 2289 
 }
 powiat_tarnowski = { 
 	4055 4069 4050 4103 4109 4071 1925 2780 2790 1208
-	4059 1209 4044 4070 4063 4067 4068 
+	4059 1209 4044 4070 4067 4068 
 }
 powiat_brzeski = { 
 	4146 1147 1171 1219 1201 788 4034 
@@ -241,8 +240,8 @@ powiat_sokolowski = {
 	1071 478 2360 2355 437 2118 2362 4184 1819 
 }
 powiat_ostrowski = { 
-	1830 1052 4229 4228 4230 734 2155 981 4231
-	2694 727 
+	1830 1052 4229 4228 4230 734 2155 981 4231 2694
+	727 
 }
 powiat_losicki = { 
 	2200 509 576 1785 4687 4689 
@@ -301,8 +300,8 @@ powiat_lipski = {
 	2332 4278 2456 4286 401 4287 
 }
 powiat_radomski = { 
-	4284 2341 4279 4281 2330 2337 2338 4274 392 2329
-	2340 2334 4270 4280 
+	4284 2341 4279 4281 2337 2338 4274 392 2329 2340
+	2334 4270 4280 
 }
 powiat_szydlowiecki = { 
 	2345 389 387 388 390 
@@ -347,8 +346,8 @@ powiat_gostyninski = {
 	1857 4329 430 2223 2218 
 }
 powiat_plocki = { 
-	1080 4217 1069 4691 1073 4123 972 1780 1075 27
-	29 272 1768 4331 4330 2234 
+	1080 4217 1069 4691 1073 4123 1780 1075 27 29
+	272 1768 4331 4330 2234 
 }
 powiat_sierpecki = { 
 	2961 976 37 4537 19 4536 279 
@@ -421,7 +420,7 @@ powiat_kolobrzeski = {
 	4372 239 48 374 4559 241 218 
 }
 powiat_koszalinski = { 
-	235 372 4370 1860 246 1861 243 238 4371 
+	235 372 1860 246 1861 243 238 4371 
 }
 powiat_slawienski = { 
 	247 1804 1105 4121 1104 4380 
@@ -473,7 +472,7 @@ powiat_gdanski = {
 	199 987 4161 17 22 4144 4160 4157 
 }
 powiat_elblaski = { 
-	2 999 25 1982 770 275 273 988 4745 4242
+	2 999 25 1982 770 275 273 988 4242 
 }
 powiat_malborski = { 
 	4164 4143 4163 1841 1985 7 
@@ -635,7 +634,7 @@ powiat_swiebodzinski = {
 	810 811 1802 2822 2821 2833 
 }
 powiat_zielonogorski = { 
-	802 816 2832 2831 2942 796 817 491 741 818
+	802 816 2832 2942 796 817 491 741 818 
 }
 powiat_nowosolski = { 
 	820 4605 4604 831 2820 822 793 797 
@@ -698,7 +697,7 @@ powiat_turecki = {
 }
 powiat_kaliski = { 
 	4295 4292 462 1856 2308 2196 4303 421 420 2306
-	407 4647 
+	4647 
 }
 powiat_pleszewski = { 
 	2624 4582 2647 2646 4642 2633 
@@ -932,8 +931,8 @@ powiat_klobucki = {
 	2299 1112 2239 1848 164 163 1119 2255 2254 
 }
 powiat_czestochowski = { 
-	2242 441 2241 2272 158 2273 2257 1138 2269 2271
-	2292 1140 2293 2291 1126 1161 2280 
+	2242 2241 2272 158 2273 2257 1138 2269 2271 2292
+	1140 2293 2291 1126 1161 2280 
 }
 powiat_zawiercianski = { 
 	2283 2281 2282 2287 2276 1153 1152 1154 2279 1162
@@ -957,7 +956,7 @@ powiat_wodzislawski = {
 	4743 62 4717 131 1770 133 50 1769 4738 
 }
 powiat_rybnicki = { 
-	128 129 130 1828 1831
+	128 129 130 1828 1831 
 }
 powiat_cieszynski = { 
 	2955 4708 4707 76 1763 4752 135 4744 64 2957
@@ -972,7 +971,7 @@ powiat_bielski_slask = {
 	956 
 }
 powiat_pszczynski = { 
-	152 139 59 1864 1767 137
+	152 139 59 1864 1767 137 
 }
 powiat_bierunsko-ledzinski = { 
 	1111 1793 1794 4240 4236 
@@ -984,7 +983,7 @@ powiat_bedzinski = {
 	1141 2270 4239 161 4127 157 1149 4757 
 }
 powiat_bytom = { 
-	 4128 2569  2570 2571 2572
+	4128 2569 2570 2571 2572 
 }
 jaworzno_centrum = { 
 	4080 2715 2710 2712 2713 
@@ -999,8 +998,7 @@ powiat_krosnienski_lubu = {
 	2889 2900 2933 803 800 744 2931 
 }
 powiat_krosnienski_pod = { 
-	1203 4426 1098 1930 4047 1947 4020 4048 4039 4023
-	4427 
+	1203 4426 1930 4047 1947 4020 4048 4039 4023 4427
 }
 wroclaw_srodmiescie = { 
 	3017 3388 3190 
@@ -1261,50 +1259,149 @@ siemanowice = {
 	2580 2579 1952 
 }
 swietochlowice = { 
-	2578 2577 3000
+	2578 2577 3000 
 }
 piekary = { 
-	2576 2575 2574 2573 160
+	2576 2575 2574 2573 160 
 }
 bytom_polnoc = { 
-	2567 2568 2566 2565
+	2567 2568 2566 2565 
 }
-ruda_polnoc = {
-2560 2559 1951
+ruda_polnoc = { 
+	2560 2559 1951 
 }
-ruda_poludnie = {
-2564 2563 2562 2561
+ruda_poludnie = { 
+	2564 2563 2562 2561 
 }
-zabrze_centrum = {
-2555 2558 156 2549
+zabrze_centrum = { 
+	2555 2558 156 2549 
 }
-zabrze_polnoc = {
-2553 2557 2554 2556
+zabrze_polnoc = { 
+	2553 2557 2554 2556 
 }
-zabrze_zaborze = {
-2551 2550 2552
+zabrze_zaborze = { 
+	2551 2550 2552 
 }
-gliwice_labedy = {
- 2539 2538 2537 2541
+gliwice_labedy = { 
+	2539 2538 2537 2541 
 }
-gliwice_srodmiescie = {
- 138 2540 2546 2547
+gliwice_srodmiescie = { 
+	138 2540 2546 2547 
 }
-gliwice_bojkow = {
- 2548 2544 2545
+gliwice_bojkow = { 
+	2548 2544 2545 
 }
-gliwice_wschod = {
- 2543 2542 2536
+gliwice_wschod = { 
+	2543 2542 2536 
 }
-zory_rowien = {
-2532 2534 2531
+zory_rowien = { 
+	2532 2534 2531 
 }
-zory_centrum = {
-4756 2533 2535 2530
+zory_centrum = { 
+	4756 2533 2535 2530 
 }
-jastrzebie_polnoc = {
-2529 2528 2526
+jastrzebie_polnoc = { 
+	2529 2528 2526 
 }
-jastrzebie_polodnie = {
-2527 67 2525 2524 2523
+jastrzebie_polodnie = { 
+	2527 67 2525 2524 2523 
+}
+tarnow_wschod = { 
+	2521 4063 2522 2518 
+}
+tarnow_zachod = { 
+	2520 2517 2519 
+}
+czestochowa_wschod = { 
+	2511 2516 2510 2515 
+}
+czestochowa_centrum = { 
+	2512 441 2506 2509 
+}
+czestochowa_polnoc = { 
+	2514 2513 2508 
+}
+czestochowa_zachod = { 
+	2507 2505 2504 
+}
+elblag_centrum = { 
+	4745 605 604 592 591 
+}
+elblag_wschod = { 
+	593 599 600 601 
+}
+elblag_zachod = { 
+	603 598 597 602 
+}
+elblag_polnoc = { 
+	596 595 594 
+}
+koszalin_centrum = { 
+	4370 585 
+}
+koszalin_poludnie = { 
+	582 590 
+}
+koszalin_wschod = { 
+	583 588 589 
+}
+koszalin_zachod = { 
+	586 587 584 
+}
+zielona_gora_poludnie = { 
+	2016 2015 2014 
+}
+zielona_gora_wschod = { 
+	436 435 106 2010 
+}
+zielona_gora_polnoc = { 
+	2011 2012 2013 
+}
+zielona_gora_centrum = { 
+	2831 562 564 563 
+}
+zg_centrum_poludnie = { 
+	561 438 445 498 
+}
+zg_centrum_polnoc = { 
+	553 557 558 560 
+}
+kalisz_centrum = { 
+	2041 407 2040 
+}
+kalisz_prawobrzeze = { 
+	2022 2023 2042 2044 
+}
+kalisz_lewobrzeze = { 
+	2038 2039 2046 2045 
+}
+radom_centrum = { 
+	2330 2480 2479 2476 
+}
+radom_polnoc = { 
+	2477 2047 2478 
+}
+nowy_sacz = { 
+	4042 2500 2501 2498 2502 2503 
+}
+krosno_centrum = { 
+	1098 2491 2496 2497 
+}
+krosno_lotnisko = { 
+	2493 2492 2494 2495 
+}
+przemysl_centrum = { 
+	2483 1086 2482 2481 2485 2484 
+}
+przemysl_poludnie = { 
+	2489 2486 2490 2487 2488 
+}
+plock_poludnie = { 
+	565 566 567 568 
+}
+plock_centrum = { 
+	972 580 581 
+}
+plock_polnoc = { 
+	573 571 574 579 570 
 }
