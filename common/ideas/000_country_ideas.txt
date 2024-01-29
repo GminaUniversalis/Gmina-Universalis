@@ -226,43 +226,6 @@ R05_ideas ={
 		global_trade_goods_size_modifier = 0.1
 	}
 }
-
-A06_ideas = {
-	start ={
-		prestige_decay = -0.001
-		diplomatic_reputation = 1
-	}
-	trigger = {
-		tag = A06
-	}
-	free=yes
-
-	Little_Prague = {
-		prestige = 1
-	}
-	Plurinational_Legacy = {
-		num_accepted_cultures = 2
-	}
-	Important_Trade_Hub = {
-		caravan_power = 0.25
-	}
-	Twierdza_Klodzko = {
-		defensiveness = 0.2
-	}
-	Legacy_of_Czerwona_Szkola = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	PKS_w_Klodzku = {
-		movement_speed = 0.1
-	}
-	Osiedle_Leona_Kruczkowskiego = {
-		development_cost = -0.1
-	}
-	bonus = {
-		global_garrison_growth = 0.25
-	}
-}
-
 A15_ideas = {
 	start={
 		manpower_recovery_speed= 0.2
@@ -299,6 +262,41 @@ A15_ideas = {
 
 	bonus = {
 		global_tax_modifier = 0.2
+	}
+}
+A06_ideas = {
+	start ={
+		prestige_decay = -0.001
+		diplomatic_reputation = 1
+	}
+	trigger = {
+		tag = A06
+	}
+	free=yes
+
+	Little_Prague = {
+		prestige = 1
+	}
+	Plurinational_Legacy = {
+		num_accepted_cultures = 2
+	}
+	Important_Trade_Hub = {
+		caravan_power = 0.25
+	}
+	Twierdza_Klodzko = {
+		defensiveness = 0.2
+	}
+	Legacy_of_Czerwona_Szkola = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	PKS_w_Klodzku = {
+		movement_speed = 0.1
+	}
+	Osiedle_Leona_Kruczkowskiego = {
+		development_cost = -0.1
+	}
+	bonus = {
+		global_garrison_growth = 0.25
 	}
 }
 
@@ -1574,43 +1572,6 @@ W08_ideas = {
 	}
 	So_much_space = {
 		development_cost = -0.1
-	}
-}
-
-L21_ideas = {
-	start={
-		accept_vassalization_reasons = 15
-		ae_impact = -0.15
-	}
-	trigger = {
-		tag = L21
-	}
-	free = yes
-	capital_of_row = {
-		global_trade_goods_size_modifier = 0.15
-	}
-	mysteries_of_zalew = {
-		diplomatic_reputation = 2
-	}
-	rybnik_power_station = {
-		state_maintenance_modifier = -0.20	
-	}
-	rybniks = {
-		improve_relation_modifier = 0.25
-	}
-	ruda_and_nacyna = {
-		trade_steering = 0.1
-	}
-	smog_dense_like_milk = {
-		hostile_attrition = 2	
-		max_hostile_attrition = 2
-	}
-	pike_king_of_waters = {
-		prestige = 1
-	}
-
-	bonus = {
-		vassal_manpower_bonus = 0.25
 	}
 }
 
