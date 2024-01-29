@@ -196,6 +196,7 @@ def modify_terrains(provinces):
                 overwrite = True
             if overwrite and f"terrain_override" in content:
                 data[line] = f"\t\tterrain_override = {{ {list_of_provinces} }}\n"
+                break
 
     with open(f"map/terrain.txt", 'w') as f:
             f.writelines(data)
