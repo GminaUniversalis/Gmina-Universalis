@@ -1,0 +1,15 @@
+#Przemysl Lwowskie
+culture = kresowa
+religion = communism_pzpr
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+base_manpower = 2
+capital = "Przemysl - Lwowskie"
+is_city = yes
+owner = I23
+controller = I23
+add_core = I23

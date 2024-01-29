@@ -1,0 +1,16 @@
+#Koszalin Morskie
+culture = srodkowopomorska
+religion = communism_pzpr
+base_tax = 22
+base_production = 24
+trade_goods = glass
+base_manpower = 19
+capital = "Koszalin - Morskie"
+is_city = yes
+center_of_trade = 3
+discovered_by = western
+discovered_by = eastern
+owner = P21
+controller = P21
+discovered_by = ottoman
+add_core = P21

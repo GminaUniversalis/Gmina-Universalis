@@ -5,9 +5,9 @@ random_new_world_region = {
 }
 malopolska_region = { 
 	areas = { 
-		powiat_tatrzanski powiat_chrzanowski powiat_gorlicki powiat_nowosadecki powiat_brzeski powiat_miechowski powiat_proszowicki powiat_olkuski powiat_oswiecimski powiat_myslenicki
-		powiat_bochenski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki krakow_polnoc krakow_huta powiat_krakowski krakow_centrum
-		krakow_poludnie powiat_wielicki powiat_tarnowski tarnow_wschod tarnow_zachod 
+		powiat_tatrzanski powiat_chrzanowski powiat_gorlicki powiat_brzeski powiat_miechowski powiat_proszowicki powiat_olkuski powiat_oswiecimski powiat_myslenicki powiat_bochenski
+		powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki krakow_polnoc krakow_huta powiat_krakowski krakow_centrum krakow_poludnie
+		powiat_wielicki powiat_tarnowski tarnow_wschod tarnow_zachod powiat_nowosadecki nowy_sacz 
 	}
 }
 swietokrzyskie_region = { 
@@ -26,17 +26,17 @@ lubelskie_region = {
 podkarpackie_region = { 
 	areas = { 
 		powiat_tarnobrzeski powiat_debnicki powiat_mielecki powiat_stalowowolski powiat_nizanski powiat_kolbuszowski powiat_lezajski powiat_lancuski powiat_ropczycko_sedziszowski powiat_jasielski
-		powiat_przeworski powiat_lubaczowski powiat_jaroslawski powiat_przemyski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_krosnienski_pod powiat_brzozowski
-		rzeszow_poludnie rzeszow_wschod powiat_rzeszowski rzeszow_zachod rzeszow_centrum 
+		powiat_przeworski powiat_lubaczowski powiat_jaroslawski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_brzozowski rzeszow_poludnie rzeszow_wschod
+		powiat_rzeszowski rzeszow_zachod rzeszow_centrum powiat_krosnienski_pod krosno_lotnisko krosno_centrum powiat_przemyski przemysl_poludnie przemysl_centrum 
 	}
 }
 mazowieckie_region = { 
 	areas = { 
 		powiat_zurominski powiat_mlawski powiat_przasnyski powiat_ciechanowski powiat_sochaczewski powiat_warszawski_zachodni powiat_legionowski powiat_makowski powiat_ostrolecki powiat_wyszkowski
-		powiat_wolominski powiat_zyrardow powiat_grodziski powiat_pruszkowski powiat_piaseczynski powiat_grojecki powiat_bialobrzeski powiat_przysuski powiat_radomski powiat_szydlowiecki
-		powiat_lipski powiat_zwolenski powiat_kozienicki powiat_otwocki powiat_garwolinski powiat_minski powiat_siedlecki powiat_sokolowski powiat_wegrowski powiat_ostrowski
-		powiat_losicki powiat_sierpecki powiat_gostyninski powiat_plocki powiat_plonski powiat_pultuski powiat_nowodworski_maz warszawa_srodmiescie warszawa_mokotow warszawa_wola_ochota
-		warszawa_praga warszawa_praga_poludnie 
+		powiat_wolominski powiat_zyrardow powiat_grodziski powiat_pruszkowski powiat_piaseczynski powiat_grojecki powiat_bialobrzeski powiat_przysuski powiat_szydlowiecki powiat_lipski
+		powiat_zwolenski powiat_kozienicki powiat_otwocki powiat_garwolinski powiat_minski powiat_siedlecki powiat_sokolowski powiat_wegrowski powiat_ostrowski powiat_losicki
+		powiat_sierpecki powiat_gostyninski powiat_plonski powiat_pultuski powiat_nowodworski_maz warszawa_srodmiescie warszawa_mokotow warszawa_wola_ochota warszawa_praga warszawa_praga_poludnie
+		powiat_radomski radom_centrum radom_polnoc powiat_plocki plock_centrum plock_polnoc plock_poludnie 
 	}
 }
 podlasie_region = { 
@@ -47,9 +47,9 @@ podlasie_region = {
 }
 zachodnio_pomorskie_region = { 
 	areas = { 
-		powiat_slawienski powiat_koszalinski powiat_szczecinecki powiat_bialogardzki powiat_kolobrzeski powiat_gryficki powiat_swidwinski powiat_drawski powiat_walecki powiat_choszczenski
-		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_pyrzycki powiat_gryfinski powiat_mysliborski szczecin_srodmiescie
-		szczecin_zachod szczecin_polnoc szczecin_prawobrzerze 
+		powiat_slawienski powiat_szczecinecki powiat_bialogardzki powiat_kolobrzeski powiat_gryficki powiat_swidwinski powiat_drawski powiat_walecki powiat_choszczenski powiat_lobeski
+		powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_pyrzycki powiat_gryfinski powiat_mysliborski szczecin_srodmiescie szczecin_zachod
+		szczecin_polnoc szczecin_prawobrzerze powiat_koszalinski koszalin_wschod koszalin_poludnie koszalin_centrum koszalin_zachod 
 	}
 }
 pomorskie_region = { 
@@ -68,31 +68,31 @@ kujawsko_pomorskie_region = {
 }
 lubuskie_region = { 
 	areas = { 
-		powiat_wschowski powiat_nowosolski powiat_zaganski powiat_zielonogorski powiat_swiebodzinski powiat_miedzyrzecki powiat_strzelecko-drezdenecki powiat_gorzowski powiat_zarski powiat_slubnicki
-		powiat_sulecinski powiat_krosnienski_lubu 
+		powiat_wschowski powiat_nowosolski powiat_zaganski powiat_swiebodzinski powiat_miedzyrzecki powiat_strzelecko-drezdenecki powiat_gorzowski powiat_zarski powiat_slubnicki powiat_sulecinski
+		powiat_krosnienski_lubu powiat_zielonogorski zielona_gora_polnoc zg_centrum_polnoc zg_centrum_poludnie zielona_gora_centrum zielona_gora_wschod zielona_gora_poludnie 
 	}
 }
 wielkopolska_region = { 
 	areas = { 
-		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_ostrowski_poznan powiat_kaliski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski
-		powiat_slupecki powiat_jarocinski powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki
-		powiat_obornicki powiat_wrzesinski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski powiat_kepinski
-		poznan_stare_miasto poznan_grunwald poznan_jezyce poznan_polnoc powiat_poznanski poznan_nowe_miasto 
+		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski powiat_slupecki powiat_jarocinski
+		powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki powiat_obornicki powiat_wrzesinski
+		powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski powiat_kepinski poznan_stare_miasto poznan_grunwald
+		poznan_jezyce poznan_polnoc powiat_poznanski poznan_nowe_miasto powiat_kaliski powiat_ostrowski_poznan kalisz_lewobrzeze kalisz_centrum kalisz_prawobrzeze 
 	}
 }
 warminsko_mazurskie_region = { 
 	areas = { 
-		powiat_nowomiejski powiat_ilawski powiat_dzialdowski powiat_elblaski powiat_lidzbarski powiat_nidzicki powiat_szczycienski powiat_mragowski powiat_piski powiat_elcki
-		powiat_suwalski powiat_olecki powiat_goldapski powiat_gizycki powiat_wegorzewski powiat_bartoszycki powiat_ketrzynski powiat_braniewski powiat_ostrodzki powiat_olsztynski
-		olsztyn_dajtki olsztyn_centrum olsztyn_mazurskie olsztyn_wojska_polskiego 
+		powiat_nowomiejski powiat_ilawski powiat_dzialdowski powiat_lidzbarski powiat_nidzicki powiat_szczycienski powiat_mragowski powiat_piski powiat_elcki powiat_suwalski
+		powiat_olecki powiat_goldapski powiat_gizycki powiat_wegorzewski powiat_bartoszycki powiat_ketrzynski powiat_braniewski powiat_ostrodzki powiat_olsztynski olsztyn_dajtki
+		olsztyn_centrum olsztyn_mazurskie olsztyn_wojska_polskiego powiat_elblaski elblag_wschod elblag_centrum elblag_zachod elblag_polnoc 
 	}
 }
 dolnoslaskie_region = { 
 	areas = { 
 		powiat_olawski powiat_olesnicki powiat_milicki powiat_strzelinski powiat_zabkowicki powiat_klodzki powiat_dzierzoniowski powiat_gorowski powiat_glogowski powiat_polkowicki
-		powiat_boleslawiecki powiat_zgorzelecki powiat_lwowecki powiat_lubanski powiat_legnicki powiat_jaworski powiat_zlotoryjski powiat_karkonoski powiat_kamiennogorski powiat_walbrzyski
-		powiat_swidnicki_slask powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski powiat_wroclawski Krzyki psie_pole_wschod wroclaw_srodmiescie psie_pole_zachod
-		Fabryczna 
+		powiat_boleslawiecki powiat_zgorzelecki powiat_lwowecki powiat_lubanski powiat_jaworski powiat_zlotoryjski powiat_karkonoski powiat_kamiennogorski powiat_walbrzyski powiat_swidnicki_slask
+		powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski powiat_wroclawski Krzyki psie_pole_wschod wroclaw_srodmiescie psie_pole_zachod Fabryczna
+		powiat_legnicki  
 	}
 }
 opolskie_region = { 
@@ -108,7 +108,7 @@ slaskie_region = {
 		dabrowa_gornicza_srodmiescie dabrowa_gornicza_strzemieszyce dabrowa_gornicza_bledow dabrowa_gornicza_pogoria powiat_rybnicki rybnik_polnoc powiat_bedzinski sosnowiec_centrum sosnowiec_pogon sosnowiec_zagorze
 		sosnowiec_bobrek myslowice_srodmiescie myslowice_poludnie tychy_polnoc chorzow tychy_stare swietochlowice siemanowice zabrze_polnoc zabrze_centrum
 		gliwice_labedy gliwice_srodmiescie gliwice_bojkow ruda_polnoc ruda_poludnie zabrze_zaborze piekary bytom_polnoc gliwice_wschod powiat_mikolowski
-		zory_rowien zory_centrum powiat_pszczynski jastrzebie_polnoc jastrzebie_polodnie powiat_czestochowski  
+		zory_rowien zory_centrum powiat_pszczynski jastrzebie_polnoc jastrzebie_polodnie powiat_czestochowski czestochowa_zachod czestochowa_polnoc czestochowa_centrum czestochowa_wschod
 	}
 }
 lodzkie_region = { 

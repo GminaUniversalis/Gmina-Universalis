@@ -428,7 +428,6 @@ province;red;green;blue;x;x
 432;61;128;128;Slupia;x
 433;189;130;192;Ilow;x
 434;62;132;255;Rawa Mazowiecka;x
-435;190;134;0;Zaranj;x
 437;190;138;128;Sabine;x
 439;190;142;255;Rudka;x
 440;62;144;0;Bocki;x
@@ -710,7 +709,6 @@ province;red;green;blue;x;x
 968;19;44;126;Garbow;x
 969;147;46;173;Lublin Stare Miasto;x
 971;147;50;79;Dubienka;x
-972;19;52;126;Plock;x
 973;147;54;173;Dabrowa Biskupia;x
 974;20;56;32;Nieszawa;x
 976;20;60;126;Rosciszewo;x
@@ -1792,7 +1790,6 @@ province;red;green;blue;x;x
 2828;155;76;12;Gorzyca;x
 2829;212;200;121;Osno Lubuskie;x
 2830;212;54;121;Slonsk;x
-2831;129;170;176;Zielona Gora;x
 2832;53;203;7;Czerwiensk;x
 2833;203;28;28;Skape;x
 2834;229;187;219;Jerzmanowa;x
@@ -2309,7 +2306,6 @@ province;red;green;blue;x;x
 4367;219;150;147;Bytow;x
 4368;231;51;43;Borzytuchom;x
 4369;221;244;212;Rabino;x
-4370;115;143;176;Koszalin;x
 4371;146;207;152;Biesiekierz;x
 4372;207;182;116;Dygowo;x
 4373;161;114;192;Okonek;x
@@ -2603,7 +2599,6 @@ province;red;green;blue;x;x
 4742;24;36;126;Krzanowice;x
 4743;70;32;26;Lubomia;x
 4744;35;63;199;Skoczow;x
-4745;86;194;97;City of Elblag;x
 4746;213;132;0;Nowe;x
 4747;111;118;8;Szczecinek;x
 4748;170;79;248;Renska Wies;x
@@ -3141,4 +3136,64 @@ province;red;green;blue;x;x
 2019;105;11;120;Piekary Osiedle;x
 2018;55;10;40;Stare Piekary;x
 2017;105;9;160;Przedmiescie Glogowskie;x	
-2906;219;44;97;Legnica;x
+2906;219;44;97;Legnica Centrum;x
+2016;155;8;120;Ochla;x
+2015;65;7;40;Jargoniewice;x
+2014;105;6;160;Barcikowice;x
+2013;75;4;40;Przylep;x
+2012;105;3;160;Lezyca;x
+2011;155;2;120;Krepa;x
+2010;55;1;80;Nowy Kisielin;x
+106;15;116;64;Lugowo;x
+435;190;134;0;Sucha;x
+436;62;136;64;Drzonków;x
+438;62;140;192;Jedrzychow;x
+445;191;154;0;Piastowskie;x
+498;71;132;192;Łóżyckie;x
+553;207;114;192;Zacisze;x
+557;207;122;128;Zjednoczenia;x
+558;79;124;192;Batorego;x
+560;80;128;0;Strumykowa;x
+561;208;130;64;Slowackiego;x
+562;80;132;128;Keplera;x
+563;208;134;192;Braniborskie;x
+564;80;136;255;Wazow;x
+2831;129;170;176;Zielona Gora Centrum;
+565;208;138;0;Ciechomice;x
+566;80;140;64;Góry;x
+567;209;142;128;Pradolina Wisły;x
+568;81;144;192;Radziwie;x
+570;81;148;0;Płock Winiary;x
+571;209;150;64;Podolszyce;x
+573;209;154;192;Borowiczki-Imielnica;x
+574;82;156;255;Trzepowo;x
+579;210;38;255;PKN Orlen-Tereny przemyslowe;x
+580;82;40;0;Miodowa Skarpa;x
+581;211;42;64;Kochanowskiego;x
+972;19;52;126;Plock Stare Miasto;x
+582;83;44;128;Raduszka;x
+583;211;46;192;Lubiatowo;x
+584;83;48;255;Jamno-Łabusz;x
+585;211;50;0;Kotarbińskiego;x
+586;83;52;64;Morskie;x
+587;211;54;128;Nowobramskie;x
+588;84;56;192;Rokosowo;x
+589;212;58;255;Bukowe-Jedliny;x
+590;84;60;0;Os.Lechitów;x
+4370;115;143;176;Koszalin Centrum;x
+591;212;62;64;Zawodzie;x
+592;84;64;128;Zatorze;x
+593;212;66;192;Warszawskie Przedmiescie;x
+594;84;68;255;Leszków;x
+595;213;70;0;Jelenia Dolina;x
+596;85;72;64;Krasny Las;
+597;213;74;128;Zajazd;x
+598;85;76;192;Rubno;x
+599;213;78;255;Bażantowo;x
+600;85;80;0;Stagniewo;x
+601;213;82;64;Dąbrowa;x
+602;86;84;128;Kamionka;x
+603;214;86;192;Zdrój;x
+604;86;88;255;Winnica;x
+605;214;90;0;Kopernika;x
+4745;86;194;97;Elbląg Centrum;x
