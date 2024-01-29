@@ -1,5 +1,5 @@
 estate_rodziny = {
-    icon = 1
+    icon = 3
     trigger = {
         always=yes
     }
@@ -40,14 +40,33 @@ estate_rodziny = {
     base_influence = 15
     contributes_to_curia_treasury = no
     color = { 90 80 90 }
-    privileges = {
-		estate_emeryci_land_rights
-     }
 	 privileges = {
-		estate_emeryci_13
+		estate_rodziny_obietnice
+	 }
+	 privileges = {
+		estate_rodziny_land_rights
+	 }
+	 privileges = {
+		estate_rodziny_pp
+	 }
+	 privileges = {
+		estate_rodziny_hfs
+	 }
+	 privileges = {
+		estate_rodziny_ofm 
+	 }
+	 privileges = {
+		estate_rodziny_nfm
 	 }
      agendas = {
-            estate_church_develop_x
+        estate_rodziny_hire_advisor
+		estate_rodziny_build_temple_in_y
+		estate_rodziny_build_port_building_in_y
+		estate_rodziny_build_production_building_in_y 
+		estate_rodziny_develop_x_tax
+		estate_rodziny_develop_x_manpower
+		estate_rodziny_develop_x_production
+		estate_rodziny_recover_stability
      }
      influence_from_dev_modifier = 1.0
             

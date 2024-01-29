@@ -1,7 +1,7 @@
 estate_rolnicy = {
-    icon = 1
+    icon = 4
     trigger = {
-        always=yes
+        always=no
     }
     country_modifier_happy = {
 		improve_relation_modifier = 0.2
@@ -33,14 +33,37 @@ estate_rolnicy = {
     base_influence = 5
     contributes_to_curia_treasury = no
     color = { 100 50 100 }
-    privileges = {
-		estate_emeryci_land_rights
-     }
+
 	 privileges = {
-		estate_emeryci_13
+		estate_rolnicy_obietnice
+	 }
+	 privileges = {
+		estate_rolnicy_land_rights
+	 }
+	 privileges = {
+		estate_rolnicy_datki
+	 }
+	 privileges = {
+		estate_rolnicy_odc
+	 }
+	 privileges = {
+		estate_rolnicy_eud
+	 }
+	 privileges = {
+		estate_rolnicy_eua
+	 }
+	 privileges = {
+		estate_rolnicy_gmoa
+	 }
+	 privileges = {
+		estate_rolnicy_gmod
 	 }
      agendas = {
-            estate_church_develop_x
+        estate_rolnicy_hire_advisor
+		estate_rolnicy_develop_x
+		estate_rolnicy_expand_into_x
+		estate_rolnicy_reduce_war_exhaustion
+		estate_rolnicy_build_production_building_in_y
      }
      influence_from_dev_modifier = 1.0
             

@@ -1,7 +1,7 @@
 estate_srednia = {
     icon = 1
     trigger = {
-        always = yes
+        always = no
     }
     country_modifier_happy = {
 		production_efficiency = 0.4
@@ -46,7 +46,7 @@ estate_srednia = {
 		estate_emeryci_13
 	 }
      agendas = {
-            estate_church_develop_x
+		estate_srednia_hire_advisor
      }
      influence_from_dev_modifier = 1.0
 	 custom_name = {

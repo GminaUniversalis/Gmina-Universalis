@@ -155,7 +155,6 @@ estate_emeryci_land_rights = {
 		}
 	}
 }
-
 estate_emeryci_13 = {
 	icon = privilege_admin_power
 	land_share = 5
@@ -171,3 +170,235 @@ estate_emeryci_13 = {
 		global_unrest = -2
 	}
 }
+estate_emeryci_obietnice = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.1
+	on_granted = {
+	
+	}
+	penalties = {
+	
+	}
+	benefits = {
+	
+	}
+}
+estate_emeryci_klub_seniora = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.15
+	influence = 0.1
+	on_granted = {
+		if = {
+			limit = { prestige = 50 }
+			add_prestige = 10
+		}
+		else_if = {
+			limit = { prestige = 0 }
+			add_prestige = 20
+		}
+		else_if = {
+			limit = { prestige = -20 }
+			add_prestige = 30
+		}
+		else_if = {
+			limit = { prestige = -40 }
+			add_prestige = 40
+		}
+		else = {
+			add_prestige = 50
+		}
+		AND ={
+			if = {
+			limit = { prestige = 50 }
+			add_prestige = 10
+		}
+		else_if = {
+			limit = { prestige = 0 }
+			add_prestige = 20
+		}
+		else_if = {
+			limit = { prestige = -20 }
+			add_prestige = 30
+		}
+		else_if = {
+			limit = { prestige = -40 }
+			add_prestige = 40
+		}
+		else = {
+			add_prestige = 50
+		}
+
+		}
+	}
+	penalties = {
+		global_tax_modifier = -0.2
+	}
+	benefits = {
+		prestige = 1
+	}
+}
+estate_emeryci_rada ={
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.15
+	influence = 0.1
+	on_granted = {
+	if = {
+		limit = { legitimacy = 50 }
+		add_legitimacy = 10
+	}
+	else_if = {
+		limit = { legitimacy = 0 }
+		add_legitimacy = 20
+	}
+	else_if = {
+		limit = { legitimacy = -20 }
+		add_legitimacy = 30
+	}
+	else_if = {
+		limit = { legitimacy = -40 }
+		add_legitimacy = 40
+	}
+	else = {
+		add_legitimacy = 50
+		}
+	}
+	penalties = {
+		global_tax_modifier = -0.2
+	}
+	benefits = {
+		legitimacy = 1
+	}
+}
+estate_emeryci_wiek = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = -0.15
+	on_granted = {		
+	}
+	penalties = {
+		global_unrest = 1.5
+		yearly_corruption = 0.03
+	}
+	benefits = {
+		production_efficiency = 0.15
+		global_tax_modifier = 0.10
+
+	}
+}
+
+estate_emeryci_at ={
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0
+	influence = 0.05
+	on_granted = {
+	}
+	penalties = {
+		legitimacy = -0.5
+		prestige = -0.5
+	}
+	benefits = {
+		diplomatic_reputation = 1
+	}
+}
+estate_emeryci_ac ={
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.15
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		adm_advisor_cost = -0.15
+	}
+}
+
+estate_emeryci_scl ={
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0
+	influence = 0.1
+	influence_scaled_conditional_modifier =
+	 {
+	trigger = 
+			{	
+		limit = { estate_loyalty = 
+					{
+					estate = estate_emeryci
+					loyalty = 100
+					} 
+				}
+			}
+	}
+	modifier = {
+		idea_cost = 0.15
+		diplomatic_reputation = -1 
+	}
+	influence_scaled_conditional_modifier =
+	 {
+	trigger = 
+			{	
+		limit = { estate_loyalty = 
+					{
+					estate = estate_emeryci
+					loyalty = 60
+					} 
+				}
+			}
+	}
+	modifier = {
+		idea_cost = 0.1
+		diplomatic_reputation = -0.5
+	}
+	influence_scaled_conditional_modifier =
+	 {
+	trigger = 
+			{	
+		limit = { estate_loyalty = 
+					{
+					estate = estate_emeryci
+					loyalty = 20
+					} 
+				}
+			}
+	}
+	modifier = {
+		idea_cost = -0.1
+		diplomatic_reputation = 0.5
+	}
+	influence_scaled_conditional_modifier =
+	 {
+	trigger = 
+			{	
+		limit = { estate_loyalty = 
+					{
+					estate = estate_emeryci
+					loyalty = 0
+					} 
+				}
+			}
+	}
+	modifier = {
+		idea_cost = -0.15
+		diplomatic_reputation = 1 
+	}
+	penalties = {
+	}
+	benefits ={
+	}
+}
+

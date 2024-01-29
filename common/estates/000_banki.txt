@@ -1,7 +1,7 @@
 estate_banki = {
     icon = 1
     trigger = {
-        always = yes
+        always = no
     }
     country_modifier_happy = {
 		interest = -1
@@ -38,20 +38,14 @@ estate_banki = {
     contributes_to_curia_treasury = no
     color = { 40 40 180 }
     privileges = {
-		estate_emeryci_land_rights
+		
      }
 	 privileges = {
-		estate_emeryci_13
+		
 	 }
      agendas = {
-            estate_church_develop_x
+		estate_banki_hire_advisor 
      }
      influence_from_dev_modifier = 1.0
-	 custom_name = {
-		desc = estate_lichwiarze
-		trigger = {
-			religion_group = communism_group
-		}
 	}
             
-}

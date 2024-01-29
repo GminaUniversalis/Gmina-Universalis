@@ -1,6 +1,7 @@
 estate_intellectuals = {
     icon = 1
     trigger = {
+		always = no
 		NOT = { 
 			religion_group = communism_group
 		}
@@ -39,13 +40,13 @@ estate_intellectuals = {
     contributes_to_curia_treasury = no
     color = { 25 50 75 }
     privileges = {
-		estate_emeryci_land_rights
+
      }
 	 privileges = {
-		estate_emeryci_13
+
 	 }
      agendas = {
-            estate_church_develop_x
+		estate_intellectuals_hire_advisor
      }
      influence_from_dev_modifier = 1.0     
 }
