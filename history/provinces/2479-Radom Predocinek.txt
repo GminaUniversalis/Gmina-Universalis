@@ -1,0 +1,15 @@
+#Radom Predocinek
+culture = radomska
+religion = communism_zsl
+base_tax = 40
+base_production = 39
+trade_goods = unknown
+base_manpower = 37
+capital = "Radom - Predocinek"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G39
+controller = G39
+discovered_by = ottoman
+add_core = G39

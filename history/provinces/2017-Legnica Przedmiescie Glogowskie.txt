@@ -1,0 +1,16 @@
+#Legnica Przedmiescia Glogowskie
+religion = communism_zsl
+base_tax = 20
+base_production = 23
+trade_goods = copper
+base_manpower = 17
+capital = "Legnica - Przedmiescia Głogowskie"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = dolnoslaska
+owner = A28
+controller = A28
+hre = yes
+discovered_by = ottoman
+add_core = A28
