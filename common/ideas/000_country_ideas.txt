@@ -1616,12 +1616,12 @@ L21_ideas = {
 
 GZM_ideas = {
 	start = {
-		improve_relation_modifier = 0.33
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.20
+		fire_damage = 0.10
 	}
 
 	bonus = {
-		manpower_recovery_speed = 0.1
+		fire_damage_received = -0.10
 	}
 	
 	trigger = {
@@ -1629,37 +1629,38 @@ GZM_ideas = {
 	}
 	free = yes
 
-	sco_1 = {
-		discipline = 0.05
+	gzm_1 = {
+		global_trade_goods_size_modifier = 0.20
 	}
-	sco_2 = {
-		years_of_nationalism = -5
+	gzm_2 = {
+		production_efficiency = 0.15
 	}
-	sco_3 = {
-		religious_unity = 0.15
+	gzm_3 = {
+		relation_with_accepted_culture = 15
 	}
-	sco_4 = {
-		trade_steering = 0.2
+	gzm_4 = {
+		prestige = 1
 	}
-	sco_5 = {
-		fort_maintenance_modifier = -0.2
+	gzm_5 = {
+		build_cost = -0.15
 	}
-	sco_6 = {
-		max_absolutism = 15
+	gzm_6 = {
+		diplomats = 1
+		imperial_authority = 0.2
 	}
-	sco_7 = {
-		development_cost = -0.1
+	gzm_7 = {
+		technology_cost = -0.10
 	}
 }
 
 ROW_ideas = {
 	start = {
-		improve_relation_modifier = 0.33
-		global_manpower_modifier = 0.15
+		accept_vassalization_reasons = 25
+		ae_impact = -0.15
 	}
 
 	bonus = {
-		manpower_recovery_speed = 0.1
+		vassal_manpower_bonus = 0.30
 	}
 	
 	trigger = {
@@ -1667,25 +1668,26 @@ ROW_ideas = {
 	}
 	free = yes
 
-	sco_1 = {
-		discipline = 0.05
+	row_1 = {
+		global_trade_goods_size_modifier = 0.30
+		monarch_lifespan = -0.10
 	}
-	sco_2 = {
-		years_of_nationalism = -5
+	row_2 = {
+		state_maintenance_modifier = -0.20
 	}
-	sco_3 = {
-		religious_unity = 0.15
+	row_3 = {
+		production_efficiency = 0.15
 	}
-	sco_4 = {
-		trade_steering = 0.2
+	row_4 = {
+		morale_damage_received = -0.20	
 	}
-	sco_5 = {
-		fort_maintenance_modifier = -0.2
+	row_5 = {
+		diplomatic_reputation = 2
 	}
-	sco_6 = {
-		max_absolutism = 15
+	row_6 = {
+		idea_cost = -0.10
 	}
-	sco_7 = {
-		development_cost = -0.1
+	row_7 = {
+		global_manpower_modifier = 0.25
 	}
 }
