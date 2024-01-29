@@ -1,6 +1,6 @@
 sky_tower = {
 	# province it starts in
-	start = 3620
+	start = 3073
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #Yusuf I
@@ -184,7 +184,7 @@ sky_tower = {
 }
 centennial_hall = {
 	# province it starts in
-	start = 3387
+	start = 3017
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #Yusuf I
@@ -544,7 +544,7 @@ ostrow_tumski = {
 
 japanese_garden = {
 	# province it starts in
-	start = 3387
+	start = 3017
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #Yusuf I
