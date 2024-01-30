@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 1
 base_production = 1
-trade_goods = gu_poultry
+trade_goods = gu_cattle
 base_manpower = 1
 capital = "Dziadowa Kloda"
 is_city = yes
