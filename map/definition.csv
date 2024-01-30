@@ -260,7 +260,6 @@ province;red;green;blue;x;x
 262;37;44;128;Krakow;x
 263;165;46;192;Kowalewo Pomorskie;x
 264;37;48;255;Rynsk;x
-265;165;50;0;Bielsko-Biala;x
 266;38;52;64;Lodygowice;x
 267;166;54;128;Szczyrk;x
 268;38;56;192;Prostki;x
@@ -720,7 +719,7 @@ province;red;green;blue;x;x
 982;21;72;32;Warlubie;x
 983;149;74;79;Lubasz;x
 984;21;76;126;Tuchomie;x
-985;149;78;173;Hel;x
+666;149;78;173;Hel;x
 986;21;80;32;Jastarnia;x
 987;149;82;79;Kolbudy;x
 988;22;84;126;Tolkmicko;x
@@ -739,7 +738,6 @@ province;red;green;blue;x;x
 1003;152;114;79;Wloszakowice;x
 1004;24;116;126;City of Glogow;x
 1005;152;118;173;Niechlow;x
-1006;24;120;32;Gorzow Wielkopolski;x
 1007;152;122;79;Gojijiwininiwag;x
 1008;24;124;126;Warka;x
 1009;153;126;173;Starachowice;x
@@ -1148,7 +1146,7 @@ province;red;green;blue;x;x
 1798;202;54;173;Niebylec;x
 1799;74;56;32;Radomysl Wielki;x
 1800;203;58;79;Jodlownik;x
-1801;75;60;126;Auschwitz;x
+1488;75;60;126;Auschwitz;x
 1802;203;62;173;Swiebodzin;x
 1803;75;64;32;City of Zary;x
 1804;203;66;79;City of Darlowo;x
@@ -1206,9 +1204,6 @@ province;red;green;blue;x;x
 1880;214;90;79;Gasawa;x
 1881;213;74;79;Klecko;x
 1882;214;94;173;Brody;x
-1883;0;0;232;Western Finnish Lakes;x
-1884;1;0;236;East Finnish Lakes;x
-1885;2;0;240;Central Finnish Lakes;x
 1886;3;0;244;Storavan;x
 1887;4;0;248;Storsjon;x
 1889;6;0;236;Lake Geneva;x
@@ -1837,7 +1832,6 @@ province;red;green;blue;x;x
 2876;58;117;171;Zakowice Slaskie;x
 2877;97;56;208;Zarow;x
 2878;191;40;143;Radkow;x
-2879;9;140;159;Walbrzych;x
 2880;164;234;53;Jablonka;x
 2881;124;22;150;Malomice;x
 2882;140;215;23;Przemkow;x
@@ -1878,7 +1872,6 @@ province;red;green;blue;x;x
 2918;239;221;25;Sulikow;x
 2919;128;188;22;Kowary;x
 2920;241;204;106;Lubin;x
-2921;217;232;114;Jelenia Gora;x
 2922;21;102;201;Podgorzyn;x
 2923;218;229;92;City of Zgorzelec;x
 2924;94;145;166;Lubomierz;x
@@ -1927,7 +1920,6 @@ province;red;green;blue;x;x
 2968;88;163;215;Jaworze;x
 2969;121;225;101;Sadlinki;x
 2970;255;239;163;Wilkowice;x
-2971;231;154;5;Konin;x
 2972;249;240;1;Koronowo;x
 2973;255;162;53;Fabianki;x
 2974;248;19;19;City of Chelmno;x
@@ -1951,7 +1943,6 @@ province;red;green;blue;x;x
 2994;248;245;157;Pietrowice Wielkie;x
 2995;234;228;174;Slupsk;x
 2996;229;171;33;Glogowek;x
-2997;34;25;232;Grudziadz;x
 2998;48;193;191;Zdzieszowice;x
 2999;255;90;203;Staporkow;x
 3000;231;176;70;Swietochlowice;x
@@ -2100,7 +2091,6 @@ province;red;green;blue;x;x
 4116;119;162;166;Suwalki;x
 4117;205;163;151;Sorkwity;x
 4118;180;212;180;Potegowo;x
-4119;177;112;53;City of Slupsk;x
 4120;160;91;132;Kepice;x
 4121;185;241;202;City of Slawno;x
 4122;43;136;207;Filipow;x
@@ -2317,7 +2307,6 @@ province;red;green;blue;x;x
 4379;181;38;38;Kolczyglowy;x
 4380;186;74;52;Malechowo;x
 4381;24;57;119;Brzesc Kujawski;x
-4382;213;194;38;Wloclawek;x
 4383;220;189;139;City of Radziejow;x
 4384;234;156;30;Sepolno Krajenskie;x
 4385;206;210;106;City of Czluchow;x
@@ -3197,3 +3186,88 @@ province;red;green;blue;x;x
 604;86;88;255;Winnica;x
 605;214;90;0;Kopernika;x
 4745;86;194;97;Elbląg Centrum;x
+606;86;92;64;Jagniątków;x
+607;214;94;128;Sobieszów;x
+608;86;96;192;Cieplice Śląskie-Zdrój;x
+609;215;98;255;Goduszyn;x
+610;87;100;0;Zabobrze;x
+611;215;102;64;Strupice;x
+612;87;104;128;Maciejowa;x
+613;215;106;192;Czarna;x
+2921;217;232;114;Jelenia Gora Centrum;x
+614;87;108;255;Glinik;x
+615;215;110;0;Sobięcin;x
+616;88;112;64;Biały Kamień;x
+617;216;114;128;Rusinowa-Kozice;x
+618;88;116;192;Stary Zdrój;x
+619;216;118;255;Piaskowa Góra;x
+620;88;120;0;Poniatów;x
+621;216;122;64;Lubiechów;x
+622;88;124;128;Szczawienko;x
+2879;9;140;159;Walbrzych Centrum;x 
+623;217;126;192;Mikuszowice Śląskie;x
+624;89;128;255;Stare Bielsko;x
+625;217;130;0;Wapienica;x
+626;89;132;64;Kamienica;x
+627;217;134;128;Komorowice Śląskie;x
+628;89;136;192;Komorowice Krakowskie;x
+629;217;138;255;Hałcnów;x
+630;90;140;0;Lipnik;x
+631;218;142;64;Mikuszowice;x
+632;90;144;128;Straconka;x
+633;218;146;192;Leszczyny;x
+634;90;148;255;Biała Krakowska;x
+635;218;150;0;Dolne Przedmieście;x
+265;165;50;0;Bielsko-Biala Centrum;x
+636;90;152;64;Małyszyn;x
+637;219;154;128;Chwalęcice;x
+638;91;156;192;Osiedle Sady;x
+639;219;158;255;Janice;x
+640;91;32;0;Zawarcie;x
+641;219;34;64;Zakanale;x
+642;91;36;128;Siedlice;x
+1006;24;120;32;Gorzow Wielkopolski Centrum;x
+643;219;38;192;Nadrzecze;x
+644;92;40;255;Zatorze;x
+645;220;42;0;Żwirownia;x
+646;92;44;64;Ryczewo;x
+647;220;46;128;Strzelnica;x
+648;92;48;192;Bohaterów Westerplatte/Jednostka wojskowa?;
+649;220;50;255;Osiedle Akademickie;x
+650;92;52;0;Osiedle Słowińskie;x
+4119;177;112;53;Slupsk Centrum;x
+651;221;54;64;Mniszek;x
+4940;29;216;197;Jezioro Rudnickie;x
+652;93;56;128;Miłolas;x
+653;221;58;192;Szpital;x
+654;93;60;255;Rynek;x
+655;221;62;0;Owczarki;x
+656;93;64;64;Tarpno;x
+657;221;66;128;Lotnisko;x
+658;94;68;192;Targowisko;x
+2997;34;25;232;Grudziądz Śródmieście;x
+659;222;70;255;Zachód Przemysłowy;x
+660;94;72;0;Zawiśle;x
+661;222;74;64;Agricola;x
+662;94;76;128;Michelin;x
+663;222;78;192;Rybnica;x
+664;94;80;255;Wschód Leśny;x
+665;223;82;0;Południe;x
+985;95;84;64;Zazamcze;x
+1801;111;221;251;Wschód Mieszkaniowy;x
+4382;213;194;38;Włocławek Śródmieście;x
+667;223;86;128;XXXX;x
+668;95;88;192;Pątnów;x
+669;223;90;255;XXXX;x
+1883;0;0;232;Jezioro Gosławskie;x
+1884;1;0;236;Jezioro Pątnowskie;x
+1885;2;0;240;Zbiorniki;x
+670;95;92;0;Maliniec;x
+671;223;94;64;Gosławice;x
+672;96;96;128;Laskówiec;x
+673;224;98;192;Zakładowa;x
+674;96;100;255;Chorzeń;x
+675;224;102;0;Morzysław;x
+676;96;104;64;Wilków;x
+677;224;106;128;Zatorze;x
+2971;231;154;5;Konin Starówka;x
