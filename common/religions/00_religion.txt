@@ -353,7 +353,7 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-
+			conservatism_aws
 		}
 
 		allowed_center_conversion = {
@@ -422,7 +422,7 @@ conservatism_group = {
 				}
 
 				ai_will_do = {
-					factor = 0.05
+					factor = 1
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -484,7 +484,7 @@ conservatism_group = {
 				}
 
 				ai_will_do = {
-					factor = 0.05
+					factor = 1
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -654,7 +654,7 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-
+			conservatism_aws
 		}
 
 		allowed_center_conversion = {
@@ -723,7 +723,7 @@ conservatism_group = {
 				}
 
 				ai_will_do = {
-					factor = 0.05
+					factor = 1
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -785,7 +785,7 @@ conservatism_group = {
 				}
 
 				ai_will_do = {
-					factor = 0.05
+					factor = 1
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -1024,7 +1024,7 @@ conservatism_group = {
 				}
 
 				ai_will_do = {
-					factor = 0.05
+					factor = 1
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -1049,7 +1049,7 @@ conservatism_group = {
 				}
 
 				ai_will_do = {
-					factor = 0.02
+					factor = 1
 					modifier = {
 						factor = 0
 						NOT = {
@@ -1086,7 +1086,7 @@ conservatism_group = {
 				}
 
 				ai_will_do = {
-					factor = 0.05
+					factor = 1
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -1162,7 +1162,7 @@ conservatism_group = {
 				}
 
 				ai_will_do = {
-					factor = 0.02
+					factor = 1
 					modifier = {
 						factor = 0
 						NOT = {
@@ -1232,6 +1232,314 @@ conservatism_group = {
 
 				visible = {
 					always = no
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+	}
+
+	conservatism_aws = {
+		color = { 235 245 255 }
+		icon = 42
+		country = {
+			infantry_power = 0.15
+			general_cost = -0.60
+		}
+		country_as_secondary = {
+			infantry_power = 0.075
+		}
+		province = {
+			local_garrison_size = 0.3
+		}
+
+		allowed_conversion = {
+
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+			conservatism_kpn
+			conservatism_zchn
+		}
+
+		on_convert = {
+			change_religion = conservatism_aws
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = conservatism_aws
+						}
+					}
+					change_religion = conservatism_aws
+					add_reform_center = conservatism_aws
+				}
+			}			
+		}
+		
+		heretic = { MARXISTS }
+		
+		date = 1530.1.1
+		has_patriarchs = yes		# Uses patriarch authority
+		
+		orthodox_icons = {
+			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
+
+			icon_jan_pawel_2 = {
+				monarch_diplomatic_power = 2
+				idea_cost = -0.15
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_stefan_wyszynski = {
+				discipline = 0.05
+				manpower_recovery_speed = 0.2
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}
+
+			icon_jerzy_popieluszko = {
+				stability_cost_modifier = -0.40
+				global_unrest = -2
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						NOT = {
+							calc_true_if = {
+								all_owned_province = {
+									unrest = 1
+								}
+								amount = 2
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						calc_true_if = {
+							all_owned_province = {
+								unrest = 1
+							}
+							amount = 5
+						}
+					}
+				}
+			}
+
+			icon_leszek_moczulski = {
+				culture_conversion_cost = -0.30
+				global_missionary_strength = 0.03
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = no
+				}
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						NOT = {religious_unity = 0.7} 
+					}
+				}
+			}
+
+			icon_romuald_szeremietiew = {
+				build_cost = -0.15
+				great_project_upgrade_cost = -0.15	
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_stefan_niesiolowski = {
+				cavalry_cost = -0.15	
+				cavalry_power = 0.15		
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_marek_jurek = {
+				mercenary_cost = -0.15	
+				mercenary_discipline = 0.10
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = no
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_lech_kaczynski = {
+				embracement_cost = -0.4	
+				global_institution_spread = 0.25	
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = no
+				}
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						NOT = {
+							calc_true_if = {
+								all_owned_province = {
+									current_institution = 1
+									NOT = { current_institution = 95 }
+								}
+								amount = 1
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						calc_true_if = {
+							all_owned_province = {
+								current_institution = 1
+								NOT = { current_institution = 95 }
+							}
+							amount = 5
+						}
+					}
+				}
+			}
+
+			icon_jaroslaw_kaczynski = {
+				artillery_levels_available_vs_fort = 1	
+				siege_ability = 0.25	
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = no
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_jerzy_buzek = {
+				diplomatic_reputation = 3
+				improve_relation_modifier = 0.25
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
+				}
+
+				ai_will_do = {
+					factor = 0.5
+
+					modifier = {
+						factor = 6
+						num_of_subjects = 1
+					}
+				}
+			}
+
+			icon_marian_krzaklewski = {
+				spy_offence = 0.80
+				spy_action_cost_modifier = -0.60
+				
+				allow = {
+					always = yes
+				}
+
+				visible = {
+					always = yes
 				}
 
 				ai_will_do = {
@@ -2777,7 +3085,7 @@ christian = {
 				}
 
 				ai_will_do = {
-					factor = 0.05
+					factor = 1
 					modifier = {
 						factor = 0
 						is_at_war = no

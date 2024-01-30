@@ -5,34 +5,39 @@
  socialism_group:0 "Socialism"
  populism_group:0 "Populism"
  REVISIONIST:0 "Revisionist"
+ # Communism
  communism_pzpr:0 "PZPR"
- #Communism
  communism_pzpr_religion_desc:1 "Polska Zjednoczona Partia Robotnicza - The Polish United Workers' Party, commonly abbreviated to PZPR, was the communist party which ruled the Polish People's Republic as a one-party state from 1948 to 1989."
  communism_sd:0 "SD"
  communism_sd_religion_desc:1 "Stronnictwo Demokratyczne - In the People's Republic of Poland SD became a "satellite" party of the communist Polish United Workers' Party regime. Even so, the party managed to sustain its non-Marxist orientation."
  communism_zsl:0 "ZSL"
  communism_zsl_religion_desc:1 "Zjednoczone Stronnictwo Ludowe - The United People's Party was an agrarian socialist political party in the People's Republic of Poland. It was formed on 27 November 1949 from the merger of the pro-Communist Stronnictwo Ludowe party with remnants of the independent Polish People's Party of Stanis³aw Miko³ajczyk."
+ # Liberalism
  liberalism_ud:0 "UD"
  liberalism_ud_religion_desc:1 "Unia Demokratyczna - The Democratic Union was a liberal Christian-democratic party in Poland. The party was founded in 1991 by Prime Minister, Christian Democrat Tadeusz Mazowiecki. The party had a market-socialist profile with Christian-democratic influence. Important members were Bronis³aw Geremek, Jacek Kuroª, Adam Michnik, Hanna Suchocka, Jan Rokita and Aleksander Hall."
  liberalism_kld:0 "KLD"
  liberalism_kld_religion_desc:1 "Kongres Liberalno Demokratyczny - The Liberal Democratic Congress was a conservative-liberal political party in Poland. The party, led by Donald Tusk, had roots in the Solidarity movement. It advocated free market economy and individual liberty (however in Catholic understanding), rejected extremism and fanaticism and favoured European integration (in the form of European Union membership), rapid privatisation of the enterprises still owned by the Polish state and decentralisation of the government."
+ # Conservatism
  conservatism_kpn:0 "KPN"
  conservatism_kpn_religion_desc:1 "Konfederacja Polski Niepodleg³ej - Confederation of Independent Poland was a Polish nationalist political party founded on 1 September 1979 by Leszek Moczulski and others declaring support for the pre-war traditions of Sanacja and Józef Pi³sudski. It was the first independent political party that was publicly proclaimed in the Eastern Bloc, it was however unrecognized by the communist People's Republic of Poland government and its chief activists were arrested several times. It didn't participate in the Polish Roundtable Negotiations with the communists."
  conservatism_zchn:0 "ZChN"
  conservatism_zchn_religion_desc:1 "Zjednoczenie Chrzeœcijaªsko-Narodowe - The Christian National Union was a Christian-democratic and nationalist political party in Poland. Established on 15 September 1989, the party traced its tradition to the Solidarity movement (both the trade union and the Solidarity Citizens' Committee), as well as pre-World War II National Democracy and Polish Christian Democratic Party. The party adhered to the Christian right, advocating social conservatism."
  conservatism_pc:0 "PC"
  conservatism_pc_religion_desc:1 "Porozumienie Centrum - The Centre Agreement was a Christian-democratic political party in Poland. It was established in 1990 and had its roots in the Solidarity trade union and its political arm, the Solidarity Citizens' Committee. Its main leader was Jaros³aw Kaczyªski. In its programme, the PC opposed socialism and was strongly anti-communist."
+ conservatism_aws:0 "AWS"
+ conservatism_aws_religion_desc:1 "Akcja Wyborcza Solidarnoœ¾ - Solidarity Electoral Action was a coalition of political parties in Poland, active from 1996 to 2001. AWS was the political arm of the Solidarity trade union, whose leader Lech Wałęsa (also an AWS member), was President of Poland from 1990 to 1995, and the successor of the parties emerged from the fragmentation of the Solidarity Citizens' Committee. The coalition was led by Marian Krzaklewski and Jerzy Buzek, who was Prime Minister of Poland from 1997 to 2001. Today's main parties in Poland, Law and Justice and Civic Platform, came out from the ashes of AWS."
  conservatism_psl:0 "PSL"
  conservatism_psl_religion_desc:1 "Polskie Stronnictwo Ludowwe - The Polish People's Party is an agrarian political party in Poland. Its history traces back to 1895, when it held the name People's Party. During the Second Polish Republic, the Polish People's Party was represented by a number of parties that held its name. They were all supportive of agrarian policies, although they spanned from the left-wing to the centre-right on the political spectrum. It was reformed to the People's Party shortly after the Sanacja regime took power. It took part into the formation of Polish government-in-exile during the World War II."
+ # Socialism
  socialism_sld:0 "SLD"
  socialism_sld_religion_desc:1 "Sojusz Lewicy Demokratycznej - The Democratic Left Alliance was a social-democratic political party in Poland. It was formed on 9 July 1991 as an electoral alliance of centre-left parties, and became a single party on 15 April 1999. It was the major coalition party in Poland between 1993 and 1997, and between 2001 and 2005, with four Prime ministers coming from the party - Józef Oleksy, Włodzimierz Cimoszewicz, Leszek Miller and Marek Belka. It then faded into opposition, overshadowed by the rise of Civic Platform and Law and Justice. In February 2020, the party initiated a process to absorb the Spring party, choosing the name New Left, and changing to a more modern logo. The party was a member of the Party of European Socialists and Progressive Alliance."
- #PSL
+ # PSL Gurus
  guru_roman_bartoszcze:0 "Roman Bartoszcze"
  guru_waldemar_pawlak:0 "Waldemar Pawlak"
  guru_jaroslaw_kalinowski:0 "Jarosław Kalinowski"
  guru_janusz_wojciechowski:0 "Janusz Wojciechowski"
  guru_antoni_podraza:0 "Antoni Podraza"
- guru_janusz_piechocinski:0 "Janusz Piechociński"
+ guru_janusz_piechocinski:0 "Janusz Piechociªski"
  guru_wladyslaw_kosiniak_kamysz:0 "Władysław Kosiniak-Kamysz"
  family_farms:0 "Family Farms"
  rural_solidarity:0 "Rural Solidarity"
@@ -55,7 +60,7 @@
  minister_of_work:0 "Minister of Work"
  vice_prime_minister:0 "Vice Prime Minister"
  minister_of_defence:0 "Minister of Defense"
- #Liberalism
+ # Liberalism Aspects
  support_from_elite:0 "Support from The Elite"
  desc_support_from_elite:0 "We are better for sure."
  disband_military:0 "Disband a military base"
