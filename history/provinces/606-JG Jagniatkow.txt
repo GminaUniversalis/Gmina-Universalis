@@ -1,0 +1,16 @@
+#Jelenia Gora Jagniatkow
+religion = communism_zsl
+base_tax = 16
+base_production = 15
+trade_goods = iron
+base_manpower = 14
+capital = "Jelenia Gora - Jagniatkow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = dolnoslaska
+owner = A29
+controller = A29
+hre = yes
+discovered_by = ottoman
+add_core = A29

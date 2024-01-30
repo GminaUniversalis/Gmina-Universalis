@@ -76,272 +76,272 @@ P03_ideas = {
 		global_unrest = -2
 	}
 }
-G20_ideas ={
-	start = {
-		stability_cost_modifier = -0.1
-		global_manpower_modifier = 0.075
-	}
-	trigger = {
-		tag = G20
-	}
-	free = yes
+		G20_ideas ={
+			start = {
+				stability_cost_modifier = -0.1
+				global_manpower_modifier = 0.075
+			}
+			trigger = {
+				tag = G20
+			}
+			free = yes
 
-	bonus = {
-		global_foreign_trade_power = 0.15
-	}
+			bonus = {
+				global_foreign_trade_power = 0.15
+			}
 
-	Radomski_czerwiec = {
-		land_morale = 0.1
-	}
-	WSHR = {
-		caravan_power = 0.1
-	}
-	Ryenk_Radomski = {
-		development_cost = -0.1
-	}
-	Old_capital = {
-		prestige_decay = -0.005
-	}
-	TPS_ZDR = {
-		diplomatic_reputation = 1
-	}
-	Ilza_castle = {
-		papal_influence = 1
-	}
-	Military_infrastructure = {
-		artillery_power = 0.15
-	}
+			Radomski_czerwiec = {
+				land_morale = 0.1
+			}
+			WSHR = {
+				caravan_power = 0.1
+			}
+			Ryenk_Radomski = {
+				development_cost = -0.1
+			}
+			Old_capital = {
+				prestige_decay = -0.005
+			}
+			TPS_ZDR = {
+				diplomatic_reputation = 1
+			}
+			Ilza_castle = {
+				papal_influence = 1
+			}
+			Military_infrastructure = {
+				artillery_power = 0.15
+			}
 
-}
-X10_ideas ={
-	start = {
-		land_maintenance_modifier = -0.15
-		hostile_attrition = 1
-	}
-	trigger = {
-		tag = X10
-	}
-	free = yes
-	Wolbromian_cross = {
-		global_missionary_strength = 0.02
-	}
-	Olkuszian_aficionados = {
-		infantry_power = 0.1
-	}
-	Zalew = {
-		global_tax_modifier = 0.1 
-	}
-	Oriental_cuisine = {
-		num_accepted_cultures = 2
-	}
-	Land_of_factories = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	Workers_strong_together = {
-		discipline = 0.05
-	}
-	Rubber_paradise = {
-		trade_efficiency = 0.1
-	}
-	bonus = {
-		build_cost = -0.1
-	}
-}
-A22_ideas = {
-	start = {
-		caravan_power = 0.2
-		global_tax_modifier = 0.1	
-	}
+		}
+		X10_ideas ={
+			start = {
+				land_maintenance_modifier = -0.15
+				hostile_attrition = 1
+			}
+			trigger = {
+				tag = X10
+			}
+			free = yes
+			Wolbromian_cross = {
+				global_missionary_strength = 0.02
+			}
+			Olkuszian_aficionados = {
+				infantry_power = 0.1
+			}
+			Zalew = {
+				global_tax_modifier = 0.1 
+			}
+			Oriental_cuisine = {
+				num_accepted_cultures = 2
+			}
+			Land_of_factories = {
+				global_trade_goods_size_modifier = 0.1
+			}
+			Workers_strong_together = {
+				discipline = 0.05
+			}
+			Rubber_paradise = {
+				trade_efficiency = 0.1
+			}
+			bonus = {
+				build_cost = -0.1
+			}
+		}
+		A22_ideas = {
+			start = {
+				caravan_power = 0.2
+				global_tax_modifier = 0.1	
+			}
+		
+			bonus = {
+				merchants = 1
+			}
+			
+			trigger = {
+				tag = A22
+			}
+			free = yes
+		
+			Wroclawski_throne_for_king = {
+				ae_impact = -0.15	
+			}
+			Wroclawski_sleza_mountain = {
+				tolerance_own = 2
+			}
+			Wroclawski_silesian_black_soils = {
+				global_trade_goods_size_modifier = 0.1	
+			}
+			Wroclawski_road_junctions = {
+				global_trade_power = 0.1
+			}
+			Wroclawski_korean_minority = {
+				num_accepted_cultures = 2	
+			}
+			Wroclawski_pearl_of_mannerism = {
+				global_missionary_strength = 0.02	
+			}
+			Wroclawski_nation_of_palaces = {
+				horde_unity = 1
+				legitimacy = 1
+				republican_tradition = 0.3
+				devotion = 1
+			}
+		}
+		
+		R05_ideas ={
+			start ={
+				religious_unity = 0.2
+				army_tradition_decay = -0.01
+			}
+			trigger = {
+				tag = R05
+			}
+			free = yes
+			Central_Park = {
+				culture_conversion_cost = -0.25
+			}
+			Railroad_Center = {
+				movement_speed = 0.1
+			}
+			Rivalry_with_Kalisz = {
+				defensiveness = 0.15
+			}
+			Konkatedra = {
+				tolerance_own = 1
+			}
+			Zombies_were_born_here = {
+				production_efficiency = 0.1
+			}
+			Republic_of_Ostrow = {
+				land_morale = 0.1
+			}
+			Piaski_Szczygliczka = {
+				improve_relation_modifier = 0.15
+			}
+			City_of_Sport = {
+				land_attrition = -0.05
+				infantry_power = 0.05
+			}
+			bonus = {
+				global_trade_goods_size_modifier = 0.1
+			}
+		}
+		A15_ideas = {
+			start={
+				manpower_recovery_speed= 0.2
+				defensiveness=0.15
+			}
+			trigger = {
+				tag = A15
+			}
+			free = yes
+			30_plan = {
+				build_cost = -0.1
+				build_time = -0.15
+			}
 
-	bonus = {
-		merchants = 1
-	}
-	
-	trigger = {
-		tag = A22
-	}
-	free = yes
+			Consumer_capital_of_the_lowersilesia = {
+				land_morale = 0.15
+			}
+			Freshly_renovated_Square = {
+				prestige = 1
+				movement_speed = 0.1
+			}
+			Derby_of_Lower_Silesia = {
+				leader_land_shock = 1
+			}
+			Great_Copper_Smelter = {
+				global_trade_goods_size_modifier = 0.15
+			}
+			Dziury_na_Zlotryjska = {
+				hostile_attrition = 1
+			}
+			Grandpa_on_the_throne = {
+				monarch_lifespan = 0.15
+			}
 
-	Wroclawski_throne_for_king = {
-		ae_impact = -0.15	
-	}
-	Wroclawski_sleza_mountain = {
-		tolerance_own = 2
-	}
-	Wroclawski_silesian_black_soils = {
-		global_trade_goods_size_modifier = 0.1	
-	}
-	Wroclawski_road_junctions = {
-		global_trade_power = 0.1
-	}
-	Wroclawski_korean_minority = {
-		num_accepted_cultures = 2	
-	}
-	Wroclawski_pearl_of_mannerism = {
-		global_missionary_strength = 0.02	
-	}
-	Wroclawski_nation_of_palaces = {
-		horde_unity = 1
-		legitimacy = 1
-		republican_tradition = 0.3
-		devotion = 1
-	}
-}
+			bonus = {
+				global_tax_modifier = 0.2
+			}
+		}
+		A06_ideas = {
+			start ={
+				prestige_decay = -0.001
+				diplomatic_reputation = 1
+			}
+			trigger = {
+				tag = A06
+			}
+			free=yes
+		
+			Little_Prague = {
+				prestige = 1
+			}
+			Plurinational_Legacy = {
+				num_accepted_cultures = 2
+			}
+			Important_Trade_Hub = {
+				caravan_power = 0.25
+			}
+			Twierdza_Klodzko = {
+				defensiveness = 0.2
+			}
+			Legacy_of_Czerwona_Szkola = {
+				global_trade_goods_size_modifier = 0.1
+			}
+			PKS_w_Klodzku = {
+				movement_speed = 0.1
+			}
+			Osiedle_Leona_Kruczkowskiego = {
+				development_cost = -0.1
+			}
+			bonus = {
+				global_garrison_growth = 0.25
+			}
+		}
 
-R05_ideas ={
-	start ={
-		religious_unity = 0.2
-		army_tradition_decay = -0.01
-	}
-	trigger = {
-		tag = R05
-	}
-	free = yes
-	Central_Park = {
-		culture_conversion_cost = -0.25
-	}
-	Railroad_Center = {
-		movement_speed = 0.1
-	}
-	Rivalry_with_Kalisz = {
-		defensiveness = 0.15
-	}
-	Konkatedra = {
-		tolerance_own = 1
-	}
-	Zombies_were_born_here = {
-		production_efficiency = 0.1
-	}
-	Republic_of_Ostrow = {
-		land_morale = 0.1
-	}
-	Piaski_Szczygliczka = {
-		improve_relation_modifier = 0.15
-	}
-	City_of_Sport = {
-		land_attrition = -0.05
-		infantry_power = 0.05
-	}
-	bonus = {
-		global_trade_goods_size_modifier = 0.1
-	}
-}
-A15_ideas = {
-	start={
-		manpower_recovery_speed= 0.2
-		defensiveness=0.15
-	}
-	trigger = {
-		tag = A15
-	}
-	free = yes
-	30_plan = {
-		build_cost = -0.1
-		build_time = -0.15
-	}
-
-	Consumer_capital_of_the_lowersilesia = {
-		land_morale = 0.15
-	}
-	Freshly_renovated_Square = {
-		prestige = 1
-		movement_speed = 0.1
-	}
-	Derby_of_Lower_Silesia = {
-		leader_land_shock = 1
-	}
-	Great_Copper_Smelter = {
-		global_trade_goods_size_modifier = 0.15
-	}
-	Dziury_na_Zlotryjska = {
-		hostile_attrition = 1
-	}
-	Grandpa_on_the_throne = {
-		monarch_lifespan = 0.15
-	}
-
-	bonus = {
-		global_tax_modifier = 0.2
-	}
-}
-A06_ideas = {
-	start ={
-		prestige_decay = -0.001
-		diplomatic_reputation = 1
-	}
-	trigger = {
-		tag = A06
-	}
-	free=yes
-
-	Little_Prague = {
-		prestige = 1
-	}
-	Plurinational_Legacy = {
-		num_accepted_cultures = 2
-	}
-	Important_Trade_Hub = {
-		caravan_power = 0.25
-	}
-	Twierdza_Klodzko = {
-		defensiveness = 0.2
-	}
-	Legacy_of_Czerwona_Szkola = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	PKS_w_Klodzku = {
-		movement_speed = 0.1
-	}
-	Osiedle_Leona_Kruczkowskiego = {
-		development_cost = -0.1
-	}
-	bonus = {
-		global_garrison_growth = 0.25
-	}
-}
-
-P17_ideas = {
-	start = {
-	cav_to_inf_ratio = 0.25
-	horde_unity = 1
-	legitimacy = 1
-	republican_tradition = 0.3
-	devotion = 1
-	}
-	
-	bonus = {
-		land_forcelimit_modifier = 0.15
-	}	
-
-	trigger = {
-		tag = P17
-	}
-	free = yes
-	
-	Wild_East = {
-		cavalry_power = 0.15
-	}
-	Dukes_of_Pomerania = {
-		prestige = 1
-	}
-	Multicultural_City = {
-		years_of_nationalism = -5
-	}
-	Legacy_of_Stocznia = {
-		naval_morale = 0.1
-		ship_durability = 0.05
-	}
-	Our_new_face = {
-		global_tax_modifier = 0.15
-	}
-	Forever_in_development = {
-		development_cost = -0.1
-	}
-	Bigger_than_you_think = {
-		governing_capacity_modifier = 0.1
-		core_creation = -0.15
-	}
-}
+		P17_ideas = {
+			start = {
+			cav_to_inf_ratio = 0.25
+			horde_unity = 1
+			legitimacy = 1
+			republican_tradition = 0.3
+			devotion = 1
+			}
+			
+			bonus = {
+				land_forcelimit_modifier = 0.15
+			}	
+		
+			trigger = {
+				tag = P17
+			}
+			free = yes
+			
+			Wild_East = {
+				cavalry_power = 0.15
+			}
+			Dukes_of_Pomerania = {
+				prestige = 1
+			}
+			Multicultural_City = {
+				years_of_nationalism = -5
+			}
+			Legacy_of_Stocznia = {
+				naval_morale = 0.1
+				ship_durability = 0.05
+			}
+			Our_new_face = {
+				global_tax_modifier = 0.15
+			}
+			Forever_in_development = {
+				development_cost = -0.1
+			}
+			Bigger_than_you_think = {
+				governing_capacity_modifier = 0.1
+				core_creation = -0.15
+			}
+		}
 Y02_ideas = {
 	start = {
 		
@@ -1575,7 +1575,7 @@ W08_ideas = {
 	}
 }
 
-GZM_ideas = {
+L38_ideas = {
 	start = {
 		global_manpower_modifier = 0.20
 		fire_damage = 0.10
@@ -1586,35 +1586,35 @@ GZM_ideas = {
 	}
 	
 	trigger = {
-		tag = GZM
+		tag = L38
 	}
 	free = yes
 
-	gzm_1 = {
+	L38_1 = {
 		global_trade_goods_size_modifier = 0.20
 	}
-	gzm_2 = {
+	L38_2 = {
 		production_efficiency = 0.15
 	}
-	gzm_3 = {
+	L38_3 = {
 		relation_with_accepted_culture = 15
 	}
-	gzm_4 = {
+	L38_4 = {
 		prestige = 1
 	}
-	gzm_5 = {
+	L38_5 = {
 		build_cost = -0.15
 	}
-	gzm_6 = {
+	L38_6 = {
 		diplomats = 1
 		imperial_authority = 0.2
 	}
-	gzm_7 = {
+	L38_7 = {
 		technology_cost = -0.10
 	}
 }
 
-ROW_ideas = {
+L39_ideas = {
 	start = {
 		accept_vassalization_reasons = 25
 		ae_impact = -0.15
@@ -1625,30 +1625,30 @@ ROW_ideas = {
 	}
 	
 	trigger = {
-		tag = ROW
+		tag = L39
 	}
 	free = yes
 
-	row_1 = {
+	L39_1 = {
 		global_trade_goods_size_modifier = 0.30
 		monarch_lifespan = -0.10
 	}
-	row_2 = {
+	L39_2 = {
 		state_maintenance_modifier = -0.20
 	}
-	row_3 = {
+	L39_3 = {
 		production_efficiency = 0.15
 	}
-	row_4 = {
+	L39_4 = {
 		morale_damage_received = -0.20	
 	}
-	row_5 = {
+	L39_5 = {
 		diplomatic_reputation = 2
 	}
-	row_6 = {
+	L39_6 = {
 		idea_cost = -0.10
 	}
-	row_7 = {
+	L39_7 = {
 		global_manpower_modifier = 0.25
 	}
 }

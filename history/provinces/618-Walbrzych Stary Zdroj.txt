@@ -1,0 +1,16 @@
+#Walbrzych Stary Zdroj
+religion = communism_pzpr
+base_tax = 21
+base_production = 19
+trade_goods = gu_coal
+base_manpower = 19
+capital = "Walbrzych - Stary Zdroj"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = dolnoslaska
+owner = A30
+controller = A30
+hre = yes
+discovered_by = ottoman
+add_core = A30

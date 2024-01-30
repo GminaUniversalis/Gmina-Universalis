@@ -1,4 +1,4 @@
-#Bielsko
+#Bielsko Straconka
 culture = zachodnio-krakowska
 religion = communism_sd
 hre = yes
@@ -6,11 +6,11 @@ base_tax = 1
 base_production = 1
 trade_goods = iron
 base_manpower = 1
-capital = "Bielsko"
+capital = "Bielsko - Straconka"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = L19
-controller = L19
-add_core = L19
+owner = L40
+controller = L40
 discovered_by = ottoman
+add_core = L40

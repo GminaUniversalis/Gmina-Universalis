@@ -12,12 +12,12 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = GZM }
-			NOT = { tag = GZM }
+			NOT = { exists = L38 }
+			NOT = { tag = L38 }
 			OR = {
 				ai = no
 				AND = {
-					NOT = { exists = GZM }
+					NOT = { exists = L38 }
 					num_of_cities = 4
 				}
 			}
@@ -64,7 +64,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = GZM }
+			NOT = { exists = L38 }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
             adm_tech = 10
@@ -90,16 +90,16 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = gzm_chose_pu_flag
-			change_tag = GZM
+			change_tag = L38
 			on_change_tag_effect = yes
 			restore_country_name = yes
 			swap_non_generic_missions = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
-				GZM = { set_government_rank = 2 }
+				L38 = { set_government_rank = 2 }
 			}
 			slaskie_region = {
-				add_permanent_claim = GZM
+				add_permanent_claim = L38
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -131,12 +131,12 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = ROW }
-			NOT = { tag = ROW }
+			NOT = { exists = L39 }
+			NOT = { tag = L39 }
 			OR = {
 				ai = no
 				AND = {
-					NOT = { exists = ROW }
+					NOT = { exists = L39 }
 					num_of_cities = 4
 				}
 			}
@@ -172,7 +172,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = ROW }
+			NOT = { exists = L39 }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
             adm_tech = 10
@@ -216,16 +216,16 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = row_chose_pu_flag
-			change_tag = ROW
+			change_tag = L39
 			on_change_tag_effect = yes
 			restore_country_name = yes
 			swap_non_generic_missions = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
-				ROW = { set_government_rank = 2 }
+				L39 = { set_government_rank = 2 }
 			}
 			slaskie_region = {
-				add_permanent_claim = ROW
+				add_permanent_claim = L39
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
