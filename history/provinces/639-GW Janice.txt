@@ -1,15 +1,15 @@
-#Gorzow Wielkopolski
+#Gorzow Wielkopolski - Janice
 culture = lubuska
 religion = communism_pzpr
 base_tax = 25
 base_production = 27
 trade_goods = gu_sulfur
 base_manpower = 21
-capital = "Gorzow Wielkopolski"
+capital = "Gorzow Wielkopolski - Janice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = W08
-controller = W08
-add_core = W08
+owner = W14
+controller = W14
 discovered_by = ottoman
+add_core = W14

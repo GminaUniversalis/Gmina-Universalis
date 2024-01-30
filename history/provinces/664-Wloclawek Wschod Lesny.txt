@@ -1,15 +1,15 @@
-#Wloclawek
+#Wloclawek Wschod Lesny
 culture = kujawska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Wloclawek"
+capital = "Wloclawek - Wschod Lesny"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = B10
-controller = B10
-add_core = B10
+owner = B23
+controller = B23
 discovered_by = ottoman
+add_core = B23

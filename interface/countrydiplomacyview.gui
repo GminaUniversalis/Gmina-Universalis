@@ -1721,7 +1721,7 @@ guiTypes = {
 		}
 	}
 
-	# ROW 1 Wars
+	# L39 1 Wars
 	windowType = {
 		name = "countrydiplomacyview_shieldvalueitem"
 		backGround =""

@@ -1,16 +1,16 @@
-#City of Slupsk
+#Slupsk Centrum
 culture = srodkowopomorska
 religion = communism_zsl
 base_tax = 20
 base_production = 19
 trade_goods = iron
 base_manpower = 16
-capital = "City of Slupsk"
+capital = "Slupsk - Centrum"
 is_city = yes
 center_of_trade = 2
 discovered_by = western
 discovered_by = eastern
-owner = Y02
-controller = Y02
-add_core = Y02
+owner = Y22
+controller = Y22
 discovered_by = ottoman
+add_core = Y22

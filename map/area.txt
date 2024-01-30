@@ -112,7 +112,7 @@ powiat_chrzanowski = {
 	1169 4079 1166 1306 1797 
 }
 powiat_oswiecimski = { 
-	1790 1801 1173 1796 1795 4082 4087 4726 136 
+	1790 1488 1173 1796 1795 4082 4087 4726 136 
 }
 powiat_wadowicki = { 
 	4078 4100 4081 4085 4086 1901 798 4852 1170 2137
@@ -453,8 +453,7 @@ powiat_choszczenski = {
 	4737 1934 197 4145 122 2984 
 }
 powiat_slupski = { 
-	249 2995 370 4362 1978 375 4118 4377 376 4119
-	4120 
+	249 2995 370 4362 1978 375 4118 4377 376 4120
 }
 powiat_leborski = { 
 	1979 252 253 4364 4114 
@@ -463,7 +462,7 @@ powiat_wejherowski = {
 	371 369 4110 251 250 4363 24 23 20 2752
 }
 powiat_pucki = { 
-	4153 21 986 985 315 4152 4151 
+	4153 21 986 666 315 4152 4151 
 }
 powiat_kartuski = { 
 	198 248 4697 195 4387 4389 194 2753 
@@ -580,7 +579,7 @@ powiat_chelminski = {
 	4714 93 1760 2974 73 65 1761 
 }
 powiat_grudziadzki = { 
-	2997 2963 254 1859 2958 4523 4238 
+	2997 254 1859 2958 4523 4238 
 }
 powiat_brodnicki = { 
 	256 277 534 4535 4541 261 1936 4538 40 4528
@@ -616,7 +615,7 @@ powiat_zninski = {
 	189 75 188 1880 4777 193 
 }
 powiat_gorzowski = { 
-	2827 2825 1006 2656 485 2823 807 808 
+	2827 2825 2656 485 2823 807 808 
 }
 powiat_strzelecko-drezdenecki = { 
 	124 120 4736 123 125 
@@ -813,13 +812,13 @@ powiat_lwowecki = {
 	749 2898 2924 757 760 
 }
 powiat_karkonoski = { 
-	753 754 755 756 2921 2922 2912 2915 2919 758
+	753 754 755 756 2922 2912 2915 2919 758 
 }
 powiat_kamiennogorski = { 
 	2894 2892 764 762 
 }
 powiat_walbrzyski = { 
-	763 775 2855 2859 776 2857 2884 799 2879 
+	763 775 2855 2859 776 2857 2884 799 
 }
 powiat_jaworski = { 
 	2887 2896 769 773 772 2848 
@@ -828,7 +827,7 @@ powiat_zlotoryjski = {
 	2913 2914 750 766 2897 751 
 }
 powiat_legnicki = { 
-	2888 2904 785 2906 2907 2895 784 2838 2837 
+	2888 2904 785 2907 2895 784 2838 2837 
 }
 powiat_polkowicki = { 
 	768 2835 2941 2882 801 502 
@@ -881,11 +880,11 @@ powiat_olawski = {
 }
 powiat_wloclawski = { 
 	98 82 1876 4771 1775 53 56 81 86 4382
-	4381 85 2975 2973 
+	4381 85 2973 
 }
 powiat_koninski = { 
-	90 4649 1865 99 4770 78 1874 2971 1758 2618
-	4606 418 71 331 861 
+	90 4649 1865 99 4770 78 1874 1758 2618 4606
+	418 71 331 861 
 }
 powiat_ostrzeszowski = { 
 	2305 4643 422 4299 2641 2667 4315 
@@ -967,8 +966,7 @@ powiat_zywiecki = {
 	4092 2967 266 4725 4091 
 }
 powiat_bielski_slask = { 
-	267 1771 2970 265 2968 1007 1772 1826 4753 4724
-	956 
+	267 1771 2970 2968 1007 1772 1826 4753 4724 956
 }
 powiat_pszczynski = { 
 	152 139 59 1864 1767 137 
@@ -1404,4 +1402,70 @@ plock_centrum = {
 }
 plock_polnoc = { 
 	573 571 574 579 570 
+}
+legnica = { 
+	2906 2020 2021 2019 2018 2017 
+}
+gorzow_wielkopolski_zawarcie = { 
+	640 642 641 
+}
+gorzow_wielkopolski_centrum = { 
+	636 1006 637 638 639 
+}
+slupsk_zachod = { 
+	4119 645 644 643 
+}
+slupsk_wschod = { 
+	646 650 648 649 647 
+}
+grudziadz_poludnie = { 
+	2963 651 652 653 
+}
+grudziadz_polnoc = { 
+	657 658 654 656 655 
+}
+wloclawek_poludnie = { 
+	662 665 664 
+}
+wloclawek_polnoc = { 
+	661 660 659 
+}
+wloclawek_centrum = { 
+	663 1801 2975 985 
+}
+konin_polnoc = { 
+	671 668 670 
+}
+konin_zachod = { 
+	2971 677 673 674 
+}
+konin_wschod = { 
+	676 675 672 
+}
+jelenia_gora_poludnie = { 
+	606 607 608 
+}
+jelenia_gora_centrum = { 
+	2921 613 609 
+}
+jelenia_gora_polnoc = { 
+	610 611 612 
+}
+walbrzych_polnoc = { 
+	620 619 622 621 618 
+}
+walbrzych_poludnie = { 
+	617 2879 616 615 614 
+}
+bielsko_biala_poludnie = { 
+	623 625 626 
+}
+bielsko_biala_centrum = { 
+	633 265 634 
+}
+bielsko_biala_wschod = { 
+	631 632 630 629 
+}
+bielsko_biala_polnoc = { 
+	628 627 635 624 
 }

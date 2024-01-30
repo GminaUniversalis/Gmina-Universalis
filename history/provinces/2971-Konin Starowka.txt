@@ -1,0 +1,16 @@
+#Konin Starowka
+culture = kaliska
+religion = communism_sd
+base_tax = 17
+base_production = 16
+trade_goods = unknown
+base_manpower = 12
+capital = "Konin - Starowka"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R34
+controller = R34
+discovered_by = ottoman
+add_core = R34
+center_of_trade = 2
