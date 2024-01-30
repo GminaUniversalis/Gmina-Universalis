@@ -167,7 +167,6 @@ communism_group = {
 	crusade_name = WAR_WITH_COUNTER_REVISIONISM
 }
 
-
 liberalism_group = {
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 1 18 }
@@ -1835,7 +1834,6 @@ conservatism_group = {
 	}
 }
 
-
 socialism_group = {
 	defender_of_faith = yes
 	flags_with_emblem_percentage = 33
@@ -2396,6 +2394,56 @@ socialism_group = {
 
 		heretic = { FASCISTS }
 		date = 1480.1.1
+		
+		uses_piety = yes				# Uses piety mechanics
+	}
+
+	socialism_up = {
+		color = { 255 157 150 }
+		icon = 47
+		allow_female_defenders_of_the_faith = yes
+
+		country = {
+			manpower_in_true_faith_provinces= 0.15
+			expand_infrastructure_cost_modifier = -0.80
+		}
+		country_as_secondary = {
+			expand_infrastructure_cost_modifier = -0.40
+		}
+		province = {
+			local_build_cost = -0.10
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = socialism_up
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = socialism_up
+						}
+					}
+					change_religion = socialism_up
+					add_reform_center = socialism_up
+				}
+			}			
+		}
+
+		heretic = { FASCISTS }
+		date = 1506.1.1
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
