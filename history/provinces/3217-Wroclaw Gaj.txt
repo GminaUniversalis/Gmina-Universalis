@@ -1,4 +1,4 @@
-#Wroclaw - Lesnica
+#Wroclaw - Gaj
 latent_trade_goods = { 
 	gu_processed_food 
 }
@@ -7,7 +7,7 @@ base_tax = 7
 base_production = 10
 trade_goods = paper
 base_manpower = 12
-capital = "Wroclaw - Lesnica"
+capital = "Wroclaw - Gaj"
 is_city = yes
 discovered_by = western
 discovered_by = eastern

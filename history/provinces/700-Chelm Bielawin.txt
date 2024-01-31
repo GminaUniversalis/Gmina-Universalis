@@ -1,0 +1,15 @@
+#Chelm Bielawin
+culture = kresowa
+religion = communism_sd
+base_tax = 15
+base_production = 9
+trade_goods = gu_stone
+base_manpower = 10
+capital = "Chelm - Bielawin"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = U23
+controller = U23
+discovered_by = ottoman
+add_core = U23

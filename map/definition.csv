@@ -289,7 +289,6 @@ province;red;green;blue;x;x
 293;169;106;192;Swiatki;x
 294;42;108;255;Kolno;x
 295;170;110;0;Biskupiec;x
-296;42;112;64;City of Suwalki;x
 297;74;227;77;Jedwabno;x
 298;42;116;192;Kadzidlo;x
 299;170;118;255;Zyrandow;x
@@ -361,7 +360,6 @@ province;red;green;blue;x;x
 365;180;122;0;Slomniki;x
 366;52;124;64;Belchatow;x
 367;180;126;128;Wolborz;x
-368;52;128;192;Piotrkow Trybunalski;x
 369;180;130;255;Gniewno;x
 370;52;132;0;Smoldzino;x
 371;181;134;64;Choczewo;x
@@ -567,7 +565,6 @@ province;red;green;blue;x;x
 735;153;134;173;Stoczek;x
 737;233;98;128;Rzekun;x
 738;105;100;192;Radzanow;x
-739;233;102;255;City of Siedlice;x
 740;105;104;0;Parczew;x
 741;233;106;64;Bojadla;x
 742;106;108;128;Wschowa;x
@@ -636,7 +633,6 @@ province;red;green;blue;x;x
 805;243;106;0;Rzepin;x
 806;115;108;64;Krzeszyce;x
 807;243;110;128;Witnica;x
-808;115;112;192;Kostrzyn nad Odra;x
 809;243;114;255;Lubniewice;x
 810;115;116;0;Lagow;x
 811;243;118;64;Lubrza;x
@@ -787,7 +783,6 @@ province;red;green;blue;x;x
 1055;159;90;79;Poswietne;x
 1056;31;92;126;Nowogrod;x
 1057;159;94;173;Lomza;x
-1058;32;96;32;City of Lomza;x
 1059;160;98;79;Tykocin;x
 1060;32;100;126;Wyszki;x
 1061;160;102;173;Trzczianne;x
@@ -979,7 +974,6 @@ province;red;green;blue;x;x
 1289;40;250;250;Wisla;x
 1306;181;48;132;Babice;x
 1318;209;246;4;Katowice;x
-1325;76;250;250;Lake Balaton;x
 1326;77;200;200;Caspian Sea;x
 1336;87;220;250;Coast of Makran;x
 1423;46;201;251;Cook Strait;x
@@ -1206,7 +1200,6 @@ province;red;green;blue;x;x
 1882;214;94;173;Brody;x
 1886;3;0;244;Storavan;x
 1887;4;0;248;Storsjon;x
-1889;6;0;236;Lake Geneva;x
 1890;7;0;240;Lake Constance;x
 1891;8;0;244;Lake Tuz;x
 1892;9;0;248;Lake Van;x
@@ -1327,7 +1320,6 @@ province;red;green;blue;x;x
 2050;184;70;8;Lukowa;x
 2051;215;241;160;Bialobrzegi;x
 2052;122;234;32;Blazowa;x
-2053;225;142;66;Tarnobrzeg;x
 2054;156;201;151;Slawatycze;x
 2055;156;201;221;Miastkow Koscielny;x
 2056;156;61;221;Hanna;x
@@ -1764,7 +1756,6 @@ province;red;green;blue;x;x
 2807;31;196;124;Altagracia;x
 2808;212;203;165;Siedlec;x
 2809;193;104;146;Zbaszyn;x
-2810;184;224;133;Leszno;x
 2811;196;122;203;SwiSciechowa;x
 2812;39;189;75;Wielichowo;x
 2813;68;93;174;Lubon;x
@@ -2152,7 +2143,6 @@ province;red;green;blue;x;x
 4183;148;243;182;Wieliszew;x
 4184;29;167;101;Ceranow;x
 4185;136;40;113;Klukowo;x
-4186;164;211;156;Ostroleka;x
 4187;137;170;36;Opino Gorna;x
 4188;219;191;83;Swiercze;x
 4189;183;128;213;Glinojeck;x
@@ -2265,7 +2255,6 @@ province;red;green;blue;x;x
 4322;184;65;29;Annopol;x
 4323;224;40;15;Michalow;x
 4324;149;186;149;Biala Rawska;x
-4325;222;47;29;City of Skierniewicze;x
 4326;134;196;131;Skierniewicze;x
 4327;244;221;131;Budzieszewice;x
 4328;143;34;255;Gluchow;x
@@ -2329,7 +2318,6 @@ province;red;green;blue;x;x
 4416;157;72;136;Krynica;x
 4417;141;167;109;Pruchnik;x
 4418;117;239;166;Kamien;x
-4419;38;123;72;City of Chelm;x
 4420;186;136;135;Ruda-Huta;x
 4421;139;213;167;Dynow;x
 4422;164;123;44;Debowiec;x
@@ -2349,7 +2337,6 @@ province;red;green;blue;x;x
 4436;136;232;0;Siedliszcze;x
 4437;54;129;205;Tarnogrod;x
 4438;205;54;168;Krasnobrod;x
-4439;145;107;154;Zamosc;x
 4441;194;210;199;Sitno;x
 4442;85;174;169;Adamowka;x
 4443;149;183;181;Ksiezopol;x
@@ -2398,7 +2385,6 @@ province;red;green;blue;x;x
 4508;66;30;116;Biszcza;x
 4509;124;37;78;Kurylowka;x
 4510;193;162;69;Biala Podlaska;x
-4511;102;77;89;City of Biala Podlaska;x
 4512;49;208;224;Koprzywnica;x
 4513;50;71;157;Konstantynow;x
 4516;167;66;99;City of Garwolin;x
@@ -3256,9 +3242,7 @@ province;red;green;blue;x;x
 985;95;84;64;Zazamcze;x
 1801;111;221;251;Wschód Mieszkaniowy;x
 4382;213;194;38;Włocławek Śródmieście;x
-667;223;86;128;XXXX;x
 668;95;88;192;Pątnów;x
-669;223;90;255;XXXX;x
 1883;0;0;232;Jezioro Gosławskie;x
 1884;1;0;236;Jezioro Pątnowskie;x
 1885;2;0;240;Zbiorniki;x
@@ -3271,3 +3255,80 @@ province;red;green;blue;x;x
 676;96;104;64;Wilków;x
 677;224;106;128;Zatorze;x
 2971;231;154;5;Konin Starówka;x
+678;96;108;192;Meszcze;x
+679;225;110;255;Szczekanica;x
+680;97;112;0;Osiedle Górne;x
+681;225;114;64;Osiedle Piastowskie;x
+368;52;128;192;Piotrkow Trybunalski Centrum;x
+682;97;116;128;Rawka;x
+683;225;118;192;Bajkowa;x
+669;223;90;255;Dąbrowice;x
+667;223;86;128;Graniczna;x
+684;97;120;255;Makowska;x
+685;225;122;0;Mazowiecka;x
+4325;222;47;29;Skierniewicze Centrum;x
+686;98;124;64;Wielowieś;x
+687;226;126;128;Zwierzyniec;x
+688;98;128;192;Podłęże;x
+689;226;130;255;Nagnajów;x
+1889;6;0;236;Jezioro Tarnobrzeskie;x
+690;98;132;0;Kajmów;x
+691;226;134;64;Biała Góra;x
+692;98;136;128;Podchoiny;x
+693;227;138;192;Sobów;x
+2053;225;142;66;Tarnobrzeg Centrum;x
+694;99;140;255;Nowa Osada;x
+695;227;142;0;Zamczysko;x
+696;99;144;64;Karolówka;x
+697;227;146;128;Klińskiego;x
+698;99;148;192;Majdan;x
+4439;145;107;154;Zamosc Centrum;x
+699;227;150;255;Wygon;x
+700;100;152;0;Bieławin;x
+701;228;154;64;Południe;x
+702;100;156;128;Wolwinów;x
+703;228;158;192;Kopalnia;x
+4419;38;123;72;Chelm Srodmiescie;x
+704;100;32;255;Sielczyk;x
+705;228;34;0;Rataja;x
+706;100;36;64;Kopernika;x
+707;229;38;128;Zofilas;x
+708;101;40;192;Za Torami;x
+4511;102;77;89;Biala Podlaska Centrum;x
+709;229;42;255;Złote Piaski;x
+717;230;58;128;Orlicz Dreszera;x
+720;102;64;0;Stara Wieś;x
+721;231;66;64;Nowe Siedlce;x
+739;233;102;255;Siedlce Śródmieście;x
+722;103;68;128;Łazek;x
+723;231;70;192;Wojciechowice;x
+877;134;118;173;Centrum;x
+725;231;74;0;Kaczyny;x
+726;103;76;64;Łęczysk;x
+4186;164;211;156;Ostrołęka Śródmieście;x
+728;104;80;192;Grobla;x
+730;104;84;0;Łomżyce;x
+736;217;164;164;Kraska;x
+862;4;88;32;Wyzwolenia;x
+1058;32;96;32;Łomża Stare Miasto;x
+1325;76;250;250;Czarna Hańcza;x
+863;132;90;79;Studzieniczne;x
+864;4;92;126;Czarnoziem;x
+865;132;94;173;Krzywólka;x
+866;4;96;32;Jaćwingów;x
+867;132;98;79;Piastowskie;x
+868;4;100;126;Zahańcze;x
+869;133;102;173;Dubowo;x
+870;5;104;32;Leśna;x
+296;42;112;64;Suwałki Centrum;x
+871;133;106;79;Grzybowo;x
+872;5;108;126;Zatorze;x
+873;133;110;173;Huby Strzyżewskie;x
+874;5;112;32;Przylesie;x
+875;133;114;79;Zaborowo;x
+876;6;116;126;Leszczynko;x
+2810;184;224;133;Leszno Centrum;x
+878;6;120;32;Szumiłowo;x
+879;134;122;79;Drzewice;x
+880;6;124;126;Kostrzyn - Stare Miasto;x
+808;115;112;192;Kostrzyn nad Odra;x

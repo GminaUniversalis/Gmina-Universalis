@@ -1,4 +1,4 @@
-#Wroclaw - Swiniary
+#Wroclaw - Œwiniary
 latent_trade_goods = { 
 	gu_vehicles 
 }
@@ -7,7 +7,7 @@ base_tax = 7
 base_production = 10
 trade_goods = paper
 base_manpower = 12
-capital = "Wroclaw - Swiniary"
+capital = "Wroclaw - Œwiniary"
 is_city = yes
 discovered_by = western
 discovered_by = eastern

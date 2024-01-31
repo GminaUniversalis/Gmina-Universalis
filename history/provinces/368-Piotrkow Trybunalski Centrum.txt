@@ -1,0 +1,15 @@
+#Piotrkow Trybunalski - Centrum
+culture = sieradzka
+religion = communism_pzpr
+base_tax = 15
+base_production = 15
+trade_goods = unknown
+base_manpower = 12
+capital = "PT - Centrum"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = Q23
+controller = Q23
+discovered_by = ottoman
+add_core = Q23

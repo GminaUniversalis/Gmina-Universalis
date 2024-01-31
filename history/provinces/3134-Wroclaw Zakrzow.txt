@@ -1,4 +1,4 @@
-#Wroclaw - Zakrzow
+#Wroclaw - Zakrzów
 latent_trade_goods = { 
 	gu_finances 
 }
@@ -7,7 +7,7 @@ base_tax = 7
 base_production = 10
 trade_goods = paper
 base_manpower = 12
-capital = "Wroclaw - Zakrzow"
+capital = "Wroclaw - Zakrzów"
 is_city = yes
 discovered_by = western
 discovered_by = eastern

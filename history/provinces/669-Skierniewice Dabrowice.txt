@@ -1,0 +1,15 @@
+#Skierniewice Dabrowice
+culture = mazowiecka
+religion = communism_sd
+base_tax = 9
+base_production = 7
+trade_goods = cloth
+base_manpower = 8
+capital = "Skierniewice - Dabrowice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = Q24
+controller = Q24
+discovered_by = ottoman
+add_core = Q24
