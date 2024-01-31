@@ -6,6 +6,30 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "UWPicture"
+		texturefile = "gfx/event_pictures/politics/UW_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "AWSPicture"
+		texturefile = "gfx/event_pictures/politics/AWS_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "UPPicture"
+		texturefile = "gfx/event_pictures/politics/UP_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "SAMOOBRONAPicture"
+		texturefile = "gfx/event_pictures/politics/SAMOOBRONA_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "UDPicture"
 		texturefile = "gfx/event_pictures/politics/UD_event.dds"
 		alwaystransparent = yes
