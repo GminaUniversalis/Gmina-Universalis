@@ -13,3 +13,4 @@ owner = B10
 controller = B10
 add_core = B10
 discovered_by = ottoman
+latent_trade_goods = { gu_processed_food }

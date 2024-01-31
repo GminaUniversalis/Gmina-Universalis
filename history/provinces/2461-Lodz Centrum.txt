@@ -14,3 +14,4 @@ controller = Q22
 discovered_by = ottoman
 add_core = Q22
 center_of_trade = 3
+latent_trade_goods = { gu_finances }

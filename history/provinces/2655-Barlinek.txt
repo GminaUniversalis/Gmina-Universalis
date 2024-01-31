@@ -13,3 +13,4 @@ owner = P20
 controller = P20
 add_core = P20
 discovered_by = ottoman
+latent_trade_goods = { gu_woodworking }

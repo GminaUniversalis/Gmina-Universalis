@@ -18,3 +18,4 @@ hre = yes
 discovered_by = ottoman
 add_core = A27
 center_of_trade = 1
+latent_trade_goods = { gu_finances }

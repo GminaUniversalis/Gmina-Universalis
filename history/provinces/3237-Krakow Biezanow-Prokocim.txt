@@ -13,3 +13,4 @@ discovered_by = ottoman
 add_core = X20
 owner = X20
 controller = X20
+latent_trade_goods = { gu_finances }

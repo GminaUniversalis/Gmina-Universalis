@@ -164,12 +164,12 @@ def modify_provinces(provinces):
                 data[line] = f"trade_goods = {province['trade good']}\n" 
             elif 'latent_trade_goods' in content and latent_trade_goods:
                 has_latent_trade_goods = True
-                data[line] = f"latent_trade_goods = { {latent_trade_goods} }\n"
+                data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
         
         if latent_trade_goods and not has_latent_trade_goods:
             if f"\n" not in data[-1]:
                 data[-1] = data[-1] + "\n"
-            data.append(f"latent_trade_goods = { {latent_trade_goods} }\n")
+            data.append(f"latent_trade_goods = {{ {latent_trade_goods} }}\n")
 
         with open(f"history/provinces/{file}", 'w') as f:
             f.writelines(data)
@@ -222,8 +222,5 @@ data = read_data('Trade Goods.csv')
 data = adjust_data(data)
 provinces = data_to_dict(data)
 provinces = adjust_provinces(provinces)
-
-for province in provinces:
-    print(f"{province['prov']} : {province['latent trade good']}")
 # modify_provinces(provinces)
 # modify_terrains(provinces)

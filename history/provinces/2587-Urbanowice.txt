@@ -14,3 +14,4 @@ owner = L24
 controller = L24
 discovered_by = ottoman
 add_core = L24
+latent_trade_goods = { gu_vehicles }
