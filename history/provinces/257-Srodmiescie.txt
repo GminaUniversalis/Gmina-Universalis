@@ -1,9 +1,9 @@
 #Warszawa
 culture = warszawska
 religion = communism_pzpr
-base_tax = 13
-base_production = 22
-trade_goods = unknown
+base_tax = 14
+base_production = 21
+trade_goods = gu_consumer_goods
 base_manpower = 4
 capital = "Warszawa"
 is_city = yes
@@ -13,3 +13,4 @@ owner = G12
 controller = G12
 add_core = G12
 discovered_by = ottoman
+latent_trade_goods = { gu_finances }

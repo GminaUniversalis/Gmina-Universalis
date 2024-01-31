@@ -1,13 +1,13 @@
 #Wroclaw - Gaj
-latent_trade_goods = { 
+trade_goods = gu_consumer_goods
 	gu_processed_food 
 }
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
-capital = "Wroclaw - Gaj"
+base_tax = 2
+base_production = 3
+trade_goods = gu_consumer_goods
+base_manpower = 3
+capital = "Wroclaw - Lesnica"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
@@ -17,3 +17,4 @@ discovered_by = ottoman
 add_core = A27
 owner = A27
 controller = A27
+latent_trade_goods = { gu_finances }

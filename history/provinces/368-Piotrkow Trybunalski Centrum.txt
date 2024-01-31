@@ -1,10 +1,10 @@
 #Piotrkow Trybunalski - Centrum
 culture = sieradzka
 religion = communism_pzpr
-base_tax = 15
-base_production = 15
+base_tax = 3
+base_production = 3
 trade_goods = unknown
-base_manpower = 12
+base_manpower = 2
 capital = "PT - Centrum"
 is_city = yes
 discovered_by = western

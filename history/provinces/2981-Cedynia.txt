@@ -13,3 +13,4 @@ owner = P19
 controller = P19
 add_core = P19
 discovered_by = ottoman
+latent_trade_goods = { gu_processed_food }

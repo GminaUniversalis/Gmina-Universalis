@@ -1,10 +1,10 @@
 #Gorzow Wielkopolski - Malyszyn
 culture = lubuska
 religion = communism_pzpr
-base_tax = 25
-base_production = 27
-trade_goods = gu_sulfur
-base_manpower = 21
+base_tax = 3
+base_production = 3
+trade_goods = unknown
+base_manpower = 2
 capital = "Gorzow Wielkopolski - Malyszyn"
 is_city = yes
 discovered_by = western

@@ -1,9 +1,9 @@
 #Wroclaw - Sepolno
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
+base_tax = 5
+base_production = 8
+trade_goods = gu_tourists
+base_manpower = 5
 capital = "Wroclaw - Sepolno"
 is_city = yes
 discovered_by = western

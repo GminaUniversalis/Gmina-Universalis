@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 1
 base_production = 1
-trade_goods = gu_dairy
+trade_goods = fur
 base_manpower = 1
 capital = "Myslakowice"
 is_city = yes

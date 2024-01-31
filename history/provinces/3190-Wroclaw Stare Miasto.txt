@@ -1,12 +1,12 @@
 #Wroclaw - Stare Miasto
-latent_trade_goods = { 
+trade_goods = gu_tourists
 	gu_software 
 }
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
+base_tax = 8
+base_production = 5
+trade_goods = gu_tourists
+base_manpower = 5
 capital = "Wroclaw - Stare Miasto"
 is_city = yes
 discovered_by = western

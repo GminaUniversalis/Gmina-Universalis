@@ -1,13 +1,13 @@
-#Wroclaw - Œwiniary
-latent_trade_goods = { 
+#Wroclaw - Swiniary
+trade_goods = gu_consumer_goods
 	gu_vehicles 
 }
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
-capital = "Wroclaw - Œwiniary"
+base_tax = 3
+base_production = 1
+trade_goods = gu_consumer_goods
+base_manpower = 1
+capital = "Wroclaw - Swiniary"
 is_city = yes
 discovered_by = western
 discovered_by = eastern

@@ -1,9 +1,9 @@
 #Jelenia Gora Centrum
 religion = communism_pzpr
-base_tax = 16
-base_production = 15
+base_tax = 1
+base_production = 1
 trade_goods = iron
-base_manpower = 14
+base_manpower = 1
 capital = "Jelenia Gora - Centrum"
 is_city = yes
 discovered_by = western

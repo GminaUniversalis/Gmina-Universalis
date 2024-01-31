@@ -2,8 +2,8 @@
 culture = warszawska
 religion = communism_pzpr
 base_tax = 5
-base_production = 3
-trade_goods = unknown
+base_production = 4
+trade_goods = gu_hemp
 base_manpower = 6
 capital = "Bialoleka"
 is_city = yes
