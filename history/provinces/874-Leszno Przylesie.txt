@@ -1,0 +1,15 @@
+#Leszno Przylesie
+culture = poznanska
+religion = communism_sd
+base_tax = 2
+base_production = 1
+trade_goods = sugar
+base_manpower = 2
+capital = "Leszno - Przylesie"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R35
+controller = R35
+discovered_by = ottoman
+add_core = R35

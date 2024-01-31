@@ -1,0 +1,15 @@
+#Ostroleka Kaczyny
+culture = kurpiowska
+religion = communism_pzpr
+base_tax = 11
+base_production = 11
+trade_goods = unknown
+base_manpower = 9
+capital = "Ostroleka - Kaczyny"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G42
+controller = G42
+discovered_by = ottoman
+add_core = G42

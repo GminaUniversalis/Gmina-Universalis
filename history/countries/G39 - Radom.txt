@@ -1,4 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 2
 technology_group = western
+religion = communism_zsl
+capital = 2330
+fixed_capital = 2330
+primary_culture = radomska

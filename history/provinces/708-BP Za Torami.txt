@@ -1,0 +1,15 @@
+#Biala Podlaska Za Torami
+culture = poleska
+religion = communism_zsl
+base_tax = 11
+base_production = 10
+trade_goods = iron
+base_manpower = 10
+capital = "BP - Za Torami"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = U24
+controller = U24
+discovered_by = ottoman
+add_core = U24

@@ -1,0 +1,15 @@
+#Zamosc Karolowka
+culture = kresowa
+religion = communism_pzpr
+base_tax = 3
+base_production = 1
+trade_goods = gu_wheat
+base_manpower = 4
+capital = "Zamosc - Karolowka"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = U22
+controller = U22
+discovered_by = ottoman
+add_core = U22

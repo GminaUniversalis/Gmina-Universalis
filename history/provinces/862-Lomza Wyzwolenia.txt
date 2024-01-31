@@ -1,0 +1,15 @@
+#Lomza Wyzwolenia
+culture = mazowiecka
+religion = communism_zsl
+base_tax = 12
+base_production = 10
+trade_goods = gu_beer
+base_manpower = 11
+capital = "Lomza - Wyzwolenia"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = J15
+controller = J15
+discovered_by = ottoman
+add_core = J15
