@@ -1,10 +1,10 @@
 #Zielona Gora - Lozyckie
 culture = dolnoslaska
 religion = communism_pzpr
-base_tax = 31
-base_production = 34
-trade_goods = copper
-base_manpower = 26
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
 capital = "ZG - Lozyckie"
 is_city = yes
 discovered_by = western

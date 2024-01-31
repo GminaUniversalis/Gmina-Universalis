@@ -1,9 +1,9 @@
 #Gdansk - Srodmiescie
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 4
-base_production = 4
-trade_goods = unknown
+base_tax = 3
+base_production = 2
+trade_goods = gu_beer
 base_manpower = 4
 capital = "Srodmiescie"
 is_city = yes

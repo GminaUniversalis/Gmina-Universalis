@@ -144,6 +144,9 @@ def modify_provinces(provinces):
         id = province['id']
         file = find_file(id)
 
+        if not file:
+            continue
+
         with open(f"history/provinces/{file}", 'r') as f:
             data = f.readlines()
 

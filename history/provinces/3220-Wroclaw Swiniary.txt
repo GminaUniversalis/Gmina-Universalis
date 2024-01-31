@@ -1,10 +1,10 @@
-#Wroclaw - Swiniary
+#Wroclaw - Osobowice
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
-capital = "Wroclaw - Swiniary"
+base_tax = 2
+base_production = 1
+trade_goods = gu_vegetables
+base_manpower = 1
+capital = "Wroclaw - Osobowice"
 is_city = yes
 discovered_by = western
 discovered_by = eastern

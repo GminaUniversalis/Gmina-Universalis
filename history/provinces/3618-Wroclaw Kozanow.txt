@@ -1,9 +1,9 @@
 #Wroclaw - Kozanów
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
+base_tax = 4
+base_production = 5
+trade_goods = gu_consumer_goods
+base_manpower = 4
 capital = "Wroclaw - Kozanow"
 is_city = yes
 discovered_by = western

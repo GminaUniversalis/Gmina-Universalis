@@ -2,10 +2,10 @@
 culture = gornoslaska
 religion = communism_sd
 hre = yes
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 6
+base_production = 8
+trade_goods = gu_consumer_goods
+base_manpower = 8
 capital = "D¹b"
 is_city = yes
 discovered_by = western

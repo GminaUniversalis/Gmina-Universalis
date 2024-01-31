@@ -2,10 +2,10 @@
 culture = slonska
 religion = communism_sd
 hre = yes
-base_tax = 9
-base_production = 5
-trade_goods = gu_coal
-base_manpower = 8
+base_tax = 3
+base_production = 1
+trade_goods = gu_metalworking
+base_manpower = 3
 capital = "Swietochlowice"
 is_city = yes
 discovered_by = western

@@ -1,10 +1,10 @@
 #City of Suwalki
 culture = suwalska
 religion = communism_pzpr
-base_tax = 15
-base_production = 14
+base_tax = 1
+base_production = 1
 trade_goods = iron
-base_manpower = 12
+base_manpower = 1
 capital = "City of Suwalki"
 is_city = yes
 discovered_by = western

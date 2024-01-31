@@ -2,10 +2,10 @@
 culture = gornoslaska
 religion = communism_sd
 hre = yes
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 4
+base_production = 7
+trade_goods = gu_coal
+base_manpower = 5
 capital = "Janów-Nikiszowiec"
 is_city = yes
 discovered_by = western

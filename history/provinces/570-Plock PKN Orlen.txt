@@ -1,10 +1,10 @@
 #Plock - PKN Orlen
 culture = plocka
 religion = communism_pzpr
-base_tax = 31
-base_production = 32
-trade_goods = gu_sulfur
-base_manpower = 21
+base_tax = 2
+base_production = 2
+trade_goods = unknown
+base_manpower = 1
 capital = "Plock - PKN Orlen"
 is_city = yes
 discovered_by = western

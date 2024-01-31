@@ -1,9 +1,9 @@
 #Gdynia
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 7
-base_production = 9
-trade_goods = unknown
+base_tax = 9
+base_production = 11
+trade_goods = gu_tourists
 base_manpower = 8
 capital = "Gdynia"
 is_city = yes

@@ -1,10 +1,10 @@
 #Konin Maliniec
 culture = kaliska
 religion = communism_sd
-base_tax = 17
-base_production = 16
+base_tax = 1
+base_production = 1
 trade_goods = unknown
-base_manpower = 12
+base_manpower = 1
 capital = "Konin - Maliniec"
 is_city = yes
 discovered_by = western

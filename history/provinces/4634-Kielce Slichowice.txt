@@ -1,10 +1,10 @@
 #Kielce Slichowice
 culture = kielecka
 religion = communism_pzpr
-base_tax = 11
-base_production = 11
-trade_goods = unknown
-base_manpower = 11
+base_tax = 5
+base_production = 4
+trade_goods = gu_confectionery
+base_manpower = 6
 capital = "Kielce - Slichowice"
 is_city = yes
 discovered_by = western

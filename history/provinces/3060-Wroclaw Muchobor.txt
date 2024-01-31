@@ -1,9 +1,9 @@
 #Wroclaw - Muchobor
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
+base_tax = 2
+base_production = 5
+trade_goods = gu_ceramics
+base_manpower = 2
 capital = "Wroclaw - Muchobor"
 is_city = yes
 discovered_by = western

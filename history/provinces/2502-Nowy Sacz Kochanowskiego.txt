@@ -1,10 +1,10 @@
 #Nowy Sacz Kochanowskiego
 culture = lachska
 religion = communism_zsl
-base_tax = 21
-base_production = 24
-trade_goods = iron
-base_manpower = 15
+base_tax = 3
+base_production = 4
+trade_goods = unknown
+base_manpower = 2
 capital = "Nowy Sacz - Kochanowskiego"
 is_city = yes
 discovered_by = western

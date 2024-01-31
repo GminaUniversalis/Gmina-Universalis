@@ -2,10 +2,10 @@
 culture = zaglebiowska
 religion = communism_sd
 hre = yes
-base_tax = 35
-base_production = 35
-trade_goods = gu_coal
-base_manpower = 35
+base_tax = 4
+base_production = 4
+trade_goods = gu_consumer_goods
+base_manpower = 4
 capital = "Sosnowiec - Centrum"
 is_city = yes
 discovered_by = western

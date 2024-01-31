@@ -1,10 +1,10 @@
 #Szczecin
 culture = zachodniopomorska
 religion = communism_sd
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 4
+base_production = 7
+trade_goods = naval_supplies
+base_manpower = 2
 capital = "Szczecin"
 is_city = yes
 discovered_by = western
