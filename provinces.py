@@ -75,7 +75,7 @@ def adjust_data(data):
         'Processed Food': 'gu_processed_food',
         'Vehicles': 'gu_vehicles',
         'Euro': 'unknown',
-        '0': 'unknown'
+        '0': 'unknown',
     }
 
     terrain_replacements = {
@@ -117,7 +117,7 @@ def adjust_provinces(provinces):
         if type(province['trade good']) != str:
             province['trade good'] = None
         
-        if type(province['latent trade good']) != str:
+        if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown':
             province['latent trade good'] = None
 
         if province['tax']:
@@ -146,6 +146,9 @@ def modify_provinces(provinces):
 
         if not file:
             continue
+        
+        latent_trade_goods = province['latent trade good']
+        has_latent_trade_goods = False
 
         with open(f"history/provinces/{file}", 'r') as f:
             data = f.readlines()
@@ -157,9 +160,17 @@ def modify_provinces(provinces):
                 data[line] = f"base_production = {province['prod']}\n"
             elif 'base_manpower' in content and province['manpower']:
                 data[line] = f"base_manpower = {province['manpower']}\n"
-            elif 'trade_goods' in content and province['trade good']:
+            elif 'trade_goods = ' in content and province['trade good']:
                 data[line] = f"trade_goods = {province['trade good']}\n" 
+            elif 'latent_trade_goods' in content and latent_trade_goods:
+                has_latent_trade_goods = True
+                data[line] = f"latent_trade_goods = { {latent_trade_goods} }\n"
         
+        if latent_trade_goods and not has_latent_trade_goods:
+            if f"\n" not in data[-1]:
+                data[-1] = data[-1] + "\n"
+            data.append(f"latent_trade_goods = { {latent_trade_goods} }\n")
+
         with open(f"history/provinces/{file}", 'w') as f:
             f.writelines(data)
 
@@ -211,5 +222,8 @@ data = read_data('Trade Goods.csv')
 data = adjust_data(data)
 provinces = data_to_dict(data)
 provinces = adjust_provinces(provinces)
+
+for province in provinces:
+    print(f"{province['prov']} : {province['latent trade good']}")
 # modify_provinces(provinces)
 # modify_terrains(provinces)
