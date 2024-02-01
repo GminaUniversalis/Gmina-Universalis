@@ -1832,6 +1832,59 @@ conservatism_group = {
 		
 		date = 1480.1.1
 	}
+
+	conservatism_lpr = {
+		color = { 30 10 0 }
+		icon = 45
+		country = {
+			global_manpower_modifier = 0.2
+			tolerance_own = 2
+		}
+		country_as_secondary = {
+			manpower_percentage = 0.1
+		}
+		province = {
+			local_years_of_nationalism = 15
+		}
+
+		allowed_conversion = {
+			conservatism_aws
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = conservatism_lpr
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = conservatism_lpr
+						}
+					}
+					change_religion = conservatism_lpr
+					add_reform_center = conservatism_lpr
+				}
+			}			
+		}
+		
+		heretic = { MARXISTS }
+		
+		date = 1560.1.1
+
+		fervor = yes
+	}
 }
 
 socialism_group = {
