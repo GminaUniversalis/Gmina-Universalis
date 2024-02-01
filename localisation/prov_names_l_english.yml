@@ -727,7 +727,7 @@
  PROV982:1 "Warlubie"
  PROV983:1 "Lubasz"
  PROV984:1 "Tuchomie"
- PROV985:1 "Hel"
+ PROV666:1 "Hel"
  PROV986:1 "Jastarnia"
  PROV987:1 "Kolbudy"
  PROV988:1 "Tolkmicko"
@@ -3313,4 +3313,4 @@
  PROV878:0 "Szumi³owo"
  PROV879:0 "Drzewice"
  PROV880:0 "Stare Miasto"
- 
+ PROV1488:0 "Auschwitz"
