@@ -1,5 +1,5 @@
 fervor_army = {
-	cost = 8
+	cost = 6
 	potential = {
 	}
 	trigger = {
@@ -16,7 +16,7 @@ fervor_army = {
 }
 
 fervor_family = {
-	cost = 8
+	cost = 6
 	potential = {
 	}
 	trigger = {
@@ -32,7 +32,7 @@ fervor_family = {
 }
 
 fervor_gminy = {
-	cost = 8
+	cost = 6
 	potential = {
 	}
 	trigger = {
@@ -48,7 +48,7 @@ fervor_gminy = {
 }
 
 fervor_egoism = {
-	cost = 8
+	cost = 6
 	potential = {
 	}
 	trigger = {

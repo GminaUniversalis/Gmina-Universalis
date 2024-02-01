@@ -1834,7 +1834,7 @@ conservatism_group = {
 	}
 
 	conservatism_lpr = {
-		color = { 30 10 0 }
+		color = { 101 57 130 }
 		icon = 45
 		country = {
 			global_manpower_modifier = 0.2
@@ -1848,7 +1848,7 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-			conservatism_aws
+			
 		}
 
 		allowed_center_conversion = {
@@ -1881,7 +1881,7 @@ conservatism_group = {
 		
 		heretic = { MARXISTS }
 		
-		date = 1560.1.1
+		date = 1575.1.1
 
 		fervor = yes
 	}
