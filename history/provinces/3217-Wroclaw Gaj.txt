@@ -1,7 +1,4 @@
 #Wroclaw - Gaj
-trade_goods = gu_consumer_goods
-	gu_processed_food 
-}
 religion = communism_zsl
 base_tax = 2
 base_production = 3

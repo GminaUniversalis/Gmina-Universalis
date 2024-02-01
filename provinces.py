@@ -160,9 +160,9 @@ def modify_provinces(provinces):
                 data[line] = f"base_production = {province['prod']}\n"
             elif 'base_manpower' in content and province['manpower']:
                 data[line] = f"base_manpower = {province['manpower']}\n"
-            elif 'trade_goods = ' in content and province['trade good']:
+            elif content.startswith('trade_goods = ') and province['trade good']:
                 data[line] = f"trade_goods = {province['trade good']}\n" 
-            elif 'latent_trade_goods' in content and latent_trade_goods:
+            elif content.startswith('latent_trade_goods = ') and latent_trade_goods:
                 has_latent_trade_goods = True
                 data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
         
