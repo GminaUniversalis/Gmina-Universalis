@@ -1,10 +1,10 @@
 #Tarnobrzeg Centrum
 culture = lachowska
 religion = communism_pzpr
-base_tax = 10
+base_tax = 1
 base_production = 7
 trade_goods = gu_sulfur
-base_manpower = 8
+base_manpower = 1
 capital = "Tarnobrzeg - Centrum"
 is_city = yes
 discovered_by = western

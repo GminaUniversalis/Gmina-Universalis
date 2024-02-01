@@ -1,10 +1,10 @@
 #Skierniewice Mazowieckie
 culture = mazowiecka
 religion = communism_sd
-base_tax = 9
-base_production = 7
-trade_goods = cloth
-base_manpower = 8
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
 capital = "Skierniewice - Mazowieckie"
 is_city = yes
 discovered_by = western

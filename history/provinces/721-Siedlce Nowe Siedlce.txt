@@ -1,10 +1,10 @@
 #Siedlce Nowe Siedlce
 culture = podlaska
 religion = communism_pzpr
-base_tax = 17
-base_production = 18
+base_tax = 3
+base_production = 3
 trade_goods = unknown
-base_manpower = 14
+base_manpower = 2
 capital = "Siedlce - Nowe Siedlce"
 is_city = yes
 discovered_by = western

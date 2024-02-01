@@ -14,7 +14,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_colony_terrain_coastline"
-		texturefile = "gfx/interface/colony_terrain_inland_ocean.dds"
+		texturefile = "gfx/interface/colony_terrain_coastline.dds"
 	}
 
 	spriteType = {
