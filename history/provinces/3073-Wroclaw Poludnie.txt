@@ -1,7 +1,4 @@
 #Wroclaw - Poludnie
-trade_goods = gu_consumer_goods
-	gu_euro 
-}
 religion = communism_zsl
 base_tax = 3
 base_production = 8

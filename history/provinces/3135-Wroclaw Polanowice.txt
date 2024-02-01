@@ -1,7 +1,4 @@
 #Wroclaw - Polanowice
-trade_goods = gu_chemicals
-	gu_electronics 
-}
 religion = communism_zsl
 base_tax = 2
 base_production = 1

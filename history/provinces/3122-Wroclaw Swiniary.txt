@@ -1,7 +1,4 @@
 #Wroclaw - Swiniary
-trade_goods = gu_consumer_goods
-	gu_vehicles 
-}
 religion = communism_zsl
 base_tax = 3
 base_production = 1

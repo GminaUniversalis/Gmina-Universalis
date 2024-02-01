@@ -1,7 +1,4 @@
 #Wroclaw - Zakrzow
-trade_goods = gu_consumer_goods
-	gu_finances 
-}
 religion = communism_zsl
 base_tax = 2
 base_production = 1
