@@ -163,7 +163,7 @@ class GminaPainter:
     def modify_provinces(self):
         for province in self.provinces:
             id = province['id']
-            file = self.find_file(id)
+            file = self._find_file(id)
 
             if not file:
                 continue

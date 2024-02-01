@@ -1,10 +1,10 @@
 #Chelm Bielawin
 culture = kresowa
 religion = communism_sd
-base_tax = 15
-base_production = 9
-trade_goods = gu_stone
-base_manpower = 10
+base_tax = 2
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
 capital = "Chelm - Bielawin"
 is_city = yes
 discovered_by = western

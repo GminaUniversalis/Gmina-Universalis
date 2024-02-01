@@ -1,10 +1,10 @@
 #Biala Podlaska Za Torami
 culture = poleska
 religion = communism_zsl
-base_tax = 11
-base_production = 10
-trade_goods = iron
-base_manpower = 10
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
 capital = "BP - Za Torami"
 is_city = yes
 discovered_by = western
