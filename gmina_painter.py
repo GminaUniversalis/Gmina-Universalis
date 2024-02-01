@@ -1,9 +1,21 @@
-# This is a script for updating provinces with csv file
+# GminaPainter is a tool for updating provinces with csv file
 # Author: Wojciech "Shogun" Adamiec
 
+HEADER = """
+  ________          .__                 __________         .__           __                   
+ /  _____/   _____  |__|  ____  _____   \______   \_____   |__|  ____  _/  |_   ____  _______  
+/   \  ___  /     \ |  | /    \ \__  \   |     ___/\__  \  |  | /    \ \   __\_/ __ \ \_  __ \ 
+\    \_\  \|  Y Y  \|  ||   |  \ / __ \_ |    |     / __ \_|  ||   |  \ |  |  \  ___/  |  | \/ 
+ \______  /|__|_|  /|__||___|  /(____  / |____|    (____  /|__||___|  / |__|   \___  > |__|    
+        \/       \/          \/      \/                 \/          \/             \/          
+
+"""
+
+import typer
 import pandas as pd
 import math
 import os
+from typing_extensions import Annotated
 
 
 class GminaPainter:
@@ -138,20 +150,25 @@ class GminaPainter:
                 if type(value) != str and math.isnan(value):
                     province[key] = None
 
-            if type(province['trade good']) != str:
-                province['trade good'] = None
-            
-            if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown':
-                province['latent trade good'] = None
+            self._handle_trade_goods_exceptions(province)
+            self._handle_dev_and_terrain_corner_cases(province)
 
-            if province['tax']:
-                province['tax'] = int(province['tax'])
-            if province['prod']:
-                province['prod'] = int(province['prod'])
-            if province['manpower']:
-                province['manpower'] = int(province['manpower'])
-            if not province['terrain'] or province['terrain'] == "0":
-                province['terrain'] = None
+    def _handle_trade_goods_exceptions(self, province):
+        if type(province['trade good']) != str:
+            province['trade good'] = None
+            
+        if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown':
+            province['latent trade good'] = None
+
+    def _handle_dev_and_terrain_corner_cases(self, province):
+        if province['tax']:
+            province['tax'] = int(province['tax'])
+        if province['prod']:
+            province['prod'] = int(province['prod'])
+        if province['manpower']:
+            province['manpower'] = int(province['manpower'])
+        if not province['terrain'] or province['terrain'] == "0":
+            province['terrain'] = None
 
     def _find_file(self, id):
         parent_path = os.listdir("history/provinces")
@@ -221,6 +238,21 @@ class GminaPainter:
                 f.writelines(data)
 
 
-gmina_painter = GminaPainter('Trade Goods.csv')
-# gmina_painter.modify_provinces()
-# gmina_painter.modify_terrains()
+def main(
+        provinces: Annotated[bool, typer.Option("--provinces", "-p")] = False,
+        terrains: Annotated[bool, typer.Option("--terrains", "-t")] = False,
+    ):
+    gmina_painter = GminaPainter('Trade Goods.csv')
+    
+    if provinces:
+        print(f"OVERWRITE PROVINCES")
+        gmina_painter.modify_provinces()
+        
+    if terrains:
+        print(f"OVERWRITE TERRAINS")
+        gmina_painter.modify_terrains()
+        
+
+if __name__ == "__main__":
+    print(HEADER)
+    typer.run(main)
