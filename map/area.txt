@@ -4,77 +4,35 @@ powiat_bieszczadzki = {
 powiat_leski = { 
 	1792 1193 1103 1101 1100 
 }
-powiat_sanocki = { 
-}
-powiat_jasielski = { 
-}
 powiat_brzozowski = { 
 	536 2031 2033 2032 2030 4062 
 }
 powiat_przemyski = { 
 	2736 4869 1084 
 }
-powiat_rzeszowski = { 
-}
 powiat_strzyzowski = { 
 	1204 2796 2794 2781 1798 
-}
-powiat_lancuski = { 
-}
-powiat_przeworski = { 
-}
-powiat_jaroslawski = { 
-}
-powiat_lubaczowski = { 
 }
 powiat_lezajski = { 
 	511 2069 4467 4509 4468 
 }
-powiat_nizanski = { 
-}
-powiat_stalowowolski = { 
-}
 powiat_tarnobrzeski = { 
 	2758 2772 2757 4158 
-}
-powiat_kolbuszowski = { 
-}
-powiat_mielecki = { 
-}
-powiat_debnicki = { 
 }
 powiat_ropczycko_sedziszowski = { 
 	1205 2785 2784 1206 2783 
 }
-powiat_gorlicki = { 
-}
-powiat_nowosadecki = { 
-}
 powiat_tarnowski = { 
 	2780 2790 1208 4067 
-}
-powiat_brzeski = { 
-}
-powiat_nowotarski = { 
 }
 powiat_tatrzanski = { 
 	1181 789 1179 1180 833 
 }
-powiat_limanowski = { 
-}
-powiat_myslenicki = { 
-}
 powiat_wielicki = { 
 	1185 2951 2950 4043 2730 
 }
-powiat_krakowski = { 
-}
-powiat_bochenski = { 
-}
 powiat_proszowicki = { 
 	2756 4321 2319 1218 1191 1228 
-}
-powiat_miechowski = { 
 }
 powiat_olkuski = { 
 	2449 355 4095 4567 2448 2451 
@@ -85,10 +43,6 @@ powiat_chrzanowski = {
 powiat_oswiecimski = { 
 	1796 1795 4082 4087 4726 
 }
-powiat_wadowicki = { 
-}
-powiat_suski = { 
-}
 powiat_dabrowski = { 
 	4060 4054 4527 1215 1225 2787 2767 
 }
@@ -98,45 +52,17 @@ powiat_kazimierski = {
 powiat_pinczowski = { 
 	2320 4323 2323 1221 2274 
 }
-powiat_buski = { 
-}
-powiat_staszowski = { 
-}
-powiat_sandomierski = { 
-}
-powiat_opatowski = { 
-}
 powiat_ostrowiecki = { 
 	340 4169 2455 352 4566 2473 
 }
 powiat_starachowicki = { 
 	1882 341 1009 402 4283 
 }
-powiat_kielecki = { 
-}
-powiat_konecki = { 
-}
-powiat_wloszczowski = { 
-}
-powiat_jedrzejowski = { 
-}
-powiat_tomaszowski = { 
-}
 powiat_zamojski = { 
 	4439 2037 4441 2080 4448 
 }
-powiat_hrubieszowski = { 
-}
-powiat_chelmski = { 
-}
-powiat_wlodawski = { 
-}
 powiat_bialski = { 
 	2076 4510 4501 4463 
-}
-powiat_parczewski = { 
-}
-powiat_radzynski = { 
 }
 powiat_lukowski = { 
 	457 1968 2350 4343 
@@ -144,22 +70,8 @@ powiat_lukowski = {
 powiat_rycki = { 
 	4306 425 2199 465 4269 383 
 }
-powiat_lubartowski = { 
-}
-powiat_lubelski = { 
-}
 powiat_swidnicki = { 
 	2068 513 519 4433 2066 
-}
-powiat_krasnostawski = { 
-}
-powiat_janowski = { 
-}
-powiat_krasnicki = { 
-}
-powiat_opolski = { 
-}
-powiat_pulawski = { 
 }
 powiat_skarzyski = { 
 	2452 2453 2343 2472 2344 
@@ -167,78 +79,26 @@ powiat_skarzyski = {
 powiat_leczynski = { 
 	1948 4428 532 2089 529 505 
 }
-powiat_bilgorajski = { 
-}
 powiat_siedlecki = { 
 	477 2368 1784 
-}
-powiat_sokolowski = { 
-}
-powiat_ostrowski = { 
-}
-powiat_losicki = { 
-}
-powiat_ostrolecki = { 
-}
-powiat_makowski = { 
-}
-powiat_przasnyski = { 
-}
-powiat_mlawski = { 
-}
-powiat_zurominski = { 
-}
-powiat_plonski = { 
-}
-powiat_ciechanowski = { 
-}
-powiat_pultuski = { 
-}
-powiat_wyszkowski = { 
-}
-powiat_wegrowski = { 
-}
-powiat_wolominski = { 
-}
-powiat_minski = { 
-}
-powiat_garwolinski = { 
-}
-powiat_kozienicki = { 
 }
 powiat_zwolenski = { 
 	396 4273 385 4277 2331 
 }
-powiat_lipski = { 
-}
-powiat_radomski = { 
-}
 powiat_szydlowiecki = { 
 	2345 389 387 388 390 
-}
-powiat_przysuski = { 
 }
 powiat_bialobrzeski = { 
 	4297 378 2195 448 4520 450 
 }
-powiat_grojecki = { 
-}
 powiat_piaseczynski = { 
 	4680 4206 304 468 1212 1994 
-}
-powiat_otwocki = { 
-}
-powiat_pruszkowski = { 
 }
 powiat_grodziski = { 
 	1974 2410 2367 2365 2208 287 
 }
 powiat_zyrardow = { 
 	4335 299 302 2230 2228 
-}
-powiat_sochaczewski = { 
-}
-powiat_warszawski_zachodni = { 
 }
 warszawa_srodmiescie = { 
 	257 3114 3158 1016 
@@ -252,23 +112,11 @@ powiat_gostyninski = {
 powiat_plocki = { 
 	1780 1075 29 272 
 }
-powiat_sierpecki = { 
-}
-powiat_siemiatycki = { 
-}
-powiat_hajnowski = { 
-}
-powiat_bielski = { 
-}
-powiat_wysokomazowiecki = { 
-}
 powiat_zambrowski = { 
 	4227 1847 2745 1852 1783 
 }
 powiat_lomzynski = { 
 	1031 1057 
-}
-powiat_kolnenski = { 
 }
 powiat_grajewski = { 
 	2406 1782 2436 4540 1943 282 
@@ -285,14 +133,8 @@ powiat_suwalski = {
 powiat_sokolski = { 
 	280 1944 2429 1070 1068 716 
 }
-powiat_moniecki = { 
-}
-powiat_bialostocki = { 
-}
 powiat_swinioujscie = { 
 	1858 
-}
-powiat_kamienski = { 
 }
 powiat_policki = { 
 	227 117 116 2977 
@@ -302,10 +144,6 @@ powiat_goleniowski = {
 }
 powiat_gryfinski = { 
 	2979 107 111 4729 
-}
-powiat_stargardzki = { 
-}
-powiat_gryficki = { 
 }
 powiat_kolobrzeski = { 
 	4372 239 48 374 
@@ -318,8 +156,6 @@ powiat_slawienski = {
 powiat_bialogardzki = { 
 	240 236 237 4376 
 }
-powiat_swidwinski = { 
-}
 powiat_lobeski = { 
 	219 4552 224 4548 1745 
 }
@@ -328,8 +164,6 @@ powiat_drawski = {
 }
 powiat_walecki = { 
 	4546 226 1748 222 223 
-}
-powiat_szczecinecki = { 
 }
 powiat_mysliborski = { 
 	2655 105 1862 101 4728 
@@ -340,12 +174,8 @@ powiat_pyrzycki = {
 powiat_choszczenski = { 
 	4737 1934 197 4145 122 2984 
 }
-powiat_slupski = { 
-}
 powiat_leborski = { 
 	1979 252 253 4364 4114 
-}
-powiat_wejherowski = { 
 }
 powiat_pucki = { 
 	4153 315 4152 4151 
@@ -367,8 +197,6 @@ powiat_tczewski = {
 }
 powiat_sztumski = { 
 	26 4165 4166 1983 1984 
-}
-powiat_kwidzynski = { 
 }
 powiat_starogardzki = { 
 	87 183 88 89 15 
@@ -409,8 +237,6 @@ powiat_piski = {
 powiat_mragowski = { 
 	307 4147 4117 4253 4255 
 }
-powiat_olsztynski = { 
-}
 powiat_lidzbarski = { 
 	311 1752 310 274 2408 
 }
@@ -419,23 +245,11 @@ powiat_szczycienski = {
 powiat_nidzicki = { 
 	2438 2742 1051 2435 
 }
-powiat_dzialdowski = { 
-}
-powiat_ostrodzki = { 
-}
-powiat_ilawski = { 
-}
 powiat_nowomiejski = { 
 	4529 1842 36 270 1937 
 }
-powiat_swiecki = { 
-}
-powiat_tucholski = { 
-}
 powiat_chojnicki = { 
 	196 1879 168 4111 167 
-}
-powiat_czluchowski = { 
 }
 powiat_sepolenski = { 
 	4386 177 121 4384 
@@ -445,15 +259,11 @@ powiat_zlotowski = {
 powiat_nakielski = { 
 	178 333 2985 176 2983 
 }
-powiat_bydgoski = { 
-}
 powiat_chelminski = { 
 	4714 93 73 65 1761 
 }
 powiat_grudziadzki = { 
 	2997 4523 4238 
-}
-powiat_brodnicki = { 
 }
 powiat_wabrzeski = { 
 	1939 993 264 4526 258 
@@ -464,24 +274,14 @@ powiat_rypinski = {
 powiat_golubsko-dobrzynski = { 
 	1938 255 4533 263 259 2960 
 }
-powiat_torunski = { 
-}
 powiat_inowroclawski = { 
 	4764 4720 4713 973 
 }
 powiat_mogilenski = { 
 	68 2654 4765 4718 
 }
-powiat_radziejowski = { 
-}
-powiat_aleksandrowski = { 
-}
-powiat_lipnowski = { 
-}
 powiat_zninski = { 
 	189 75 188 1880 4777 193 
-}
-powiat_gorzowski = { 
 }
 powiat_strzelecko-drezdenecki = { 
 	124 120 4736 123 125 
@@ -497,35 +297,17 @@ powiat_slubnicki = {
 powiat_swiebodzinski = { 
 	810 811 1802 2822 2821 2833 
 }
-powiat_zielonogorski = { 
-}
-powiat_nowosolski = { 
-}
-powiat_zarski = { 
-}
-powiat_zaganski = { 
-}
 powiat_wschowski = { 
 	819 742 2804 
-}
-powiat_pilski = { 
-}
-powiat_czarnkowsko-trzcianecki = { 
 }
 powiat_chodzieski = { 
 	214 211 2988 213 2987 
 }
-powiat_wagrowiecki = { 
-}
 powiat_obornicki = { 
 	4733 1877 826 
 }
-powiat_szamotulski = { 
-}
 powiat_miedzychodzki = { 
 	118 813 2806 2945 
-}
-powiat_nowotomyski = { 
 }
 powiat_wolsztynski = { 
 	2808 4612 2817 
@@ -533,29 +315,11 @@ powiat_wolsztynski = {
 powiat_grodziski_poznan = { 
 	834 2812 823 4614 4607 
 }
-powiat_poznanski = { 
-}
-powiat_gnieznienski = { 
-}
-powiat_slupecki = { 
-}
-powiat_kolski = { 
-}
-powiat_turecki = { 
-}
-powiat_kaliski = { 
-}
-powiat_pleszewski = { 
-}
-powiat_ostrowski_poznan = { 
-}
 powiat_krotoszynski = { 
 	2652 4590 845 2650 838 841 
 }
 powiat_rawicki = { 
 	4588 4711 2660 2663 2819 
-}
-powiat_gostynski = { 
 }
 powiat_jarocinski = { 
 	4593 2651 2629 847 
@@ -572,48 +336,14 @@ powiat_sremski = {
 powiat_koscianski = { 
 	490 828 492 4621 824 
 }
-powiat_leszczynski = { 
-}
-powiat_kutnowski = { 
-}
-powiat_lowicki = { 
-}
-powiat_skierniewicki = { 
-}
 powiat_rawski = { 
 	4324 434 2233 949 451 950 
-}
-powiat_tomaszowski_lodz = { 
-}
-powiat_opoczynski = { 
-}
-powiat_piotrkowski = { 
-}
-powiat_radomszczanski = { 
-}
-powiat_pajeczanski = { 
-}
-powiat_belchatowski = { 
-}
-powiat_wielunski = { 
-}
-powiat_wieruszowski = { 
-}
-powiat_sieradzki = { 
 }
 powiat_poddebnicki = { 
 	415 416 4340 4293 2465 335 
 }
-powiat_leczycki = { 
-}
-powiat_zgierski = { 
-}
 powiat_brzezinski = { 
 	4564 2467 2468 1751 431 
-}
-powiat_lodzki = { 
-}
-powiat_pabianicki = { 
 }
 powiat_zdunskowolski = { 
 	4300 2214 426 2210 
@@ -621,28 +351,14 @@ powiat_zdunskowolski = {
 powiat_laski = { 
 	343 4341 428 2209 2203 
 }
-powiat_zgorzelecki = { 
-}
 powiat_boleslawiecki = { 
 	2925 2928 752 2885 2910 2886 
-}
-powiat_lubanski = { 
 }
 powiat_lwowecki = { 
 	749 2898 2924 757 760 
 }
-powiat_karkonoski = { 
-}
 powiat_kamiennogorski = { 
 	2894 2892 764 762 
-}
-powiat_walbrzyski = { 
-}
-powiat_jaworski = { 
-}
-powiat_zlotoryjski = { 
-}
-powiat_legnicki = { 
 }
 powiat_polkowicki = { 
 	768 2835 2941 2882 801 502 
@@ -659,27 +375,17 @@ powiat_gorowski = {
 powiat_wolowski = { 
 	2946 2940 839 
 }
-powiat_trzebnicki = { 
-}
 powiat_milicki = { 
 	2634 843 2632 
 }
 powiat_olesnicki = { 
 	4598 2621 4579 1001 852 2627 4572 2642 
 }
-powiat_wroclawski = { 
-}
 powiat_sredzki_slask = { 
 	2637 2872 2841 2851 2852 
 }
-powiat_swidnicki_slask = { 
-}
 powiat_dzierzoniowski = { 
 	1095 2869 782 1971 2845 2844 783 
-}
-powiat_klodzki = { 
-}
-powiat_zabkowicki = { 
 }
 powiat_strzelinski = { 
 	791 2843 2836 4641 853 
@@ -690,24 +396,14 @@ powiat_olawski = {
 powiat_wloclawski = { 
 	4382 4381 85 2973 
 }
-powiat_koninski = { 
-}
-powiat_ostrzeszowski = { 
-}
-powiat_kepinski = { 
-}
 powiat_namyslowski = { 
 	2499 2668 151 4177 2348 
 }
 powiat_kluczborski = { 
 	2297 322 318 145 
 }
-powiat_oleski = { 
-}
 powiat_strzelecki = { 
 	4702 144 4779 4780 4750 4174 4705 
-}
-powiat_kedzierzynsko-kozielski = { 
 }
 powiat_glubczycki = { 
 	47 4741 2964 4786 
@@ -718,39 +414,11 @@ powiat_prudnicki = {
 powiat_krapkowicki = { 
 	2993 2956 2998 60 1863 
 }
-powiat_opolski_opole = { 
-}
-powiat_brzeski_opole = { 
-}
-powiat_nyski = { 
-}
-powiat_klobucki = { 
-}
-powiat_czestochowski = { 
-}
-powiat_zawiercianski = { 
-}
 powiat_myszkowski = { 
 	955 1148 2278 1139 2258 
 }
-powiat_lubliniecki = { 
-}
-powiat_tarnogorski = { 
-}
-powiat_gliwicki = { 
-}
-powiat_raciborski = { 
-}
-powiat_wodzislawski = { 
-}
 powiat_rybnicki = { 
 	128 129 130 1828 1831 
-}
-powiat_cieszynski = { 
-}
-powiat_zywiecki = { 
-}
-powiat_bielski_slask = { 
 }
 powiat_pszczynski = { 
 	152 139 59 1864 1767 137 
@@ -770,14 +438,8 @@ powiat_bytom = {
 jaworzno_centrum = { 
 	4080 2715 2710 2712 2713 
 }
-powiat_nowodworski_maz = { 
-}
 powiat_nowodworski_pom = { 
 	9 8 18 4113 3503 
-}
-powiat_krosnienski_lubu = { 
-}
-powiat_krosnienski_pod = { 
 }
 wroclaw_srodmiescie = { 
 	3017 3388 3190 
