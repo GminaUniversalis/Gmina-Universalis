@@ -177,7 +177,48 @@ class GminaPainter:
                 return file
         return None
 
-    def modify_provinces(self):
+    def modify_dev(self):
+        for province in self.provinces:
+            id = province['id']
+            file = self._find_file(id)
+
+            if not file:
+                continue
+
+            with open(f"history/provinces/{file}", 'r') as f:
+                data = f.readlines()
+
+            for line, content in enumerate(data):
+                if 'base_tax' in content and province['tax']:
+                    data[line] = f"base_tax = {province['tax']}\n"
+                elif 'base_production' in content and province['prod']:
+                    data[line] = f"base_production = {province['prod']}\n"
+                elif 'base_manpower' in content and province['manpower']:
+                    data[line] = f"base_manpower = {province['manpower']}\n"
+                
+            with open(f"history/provinces/{file}", 'w') as f:
+                f.writelines(data)
+    
+    def modify_trade_goods(self):
+        for province in self.provinces:
+            id = province['id']
+            file = self._find_file(id)
+
+            if not file:
+                continue
+            
+            with open(f"history/provinces/{file}", 'r') as f:
+                data = f.readlines()
+
+            for line, content in enumerate(data):
+                if content.startswith('trade_goods = ') and province['trade good']:
+                    data[line] = f"trade_goods = {province['trade good']}\n" 
+                    break
+        
+            with open(f"history/provinces/{file}", 'w') as f:
+                f.writelines(data)
+    
+    def modify_latent_trade_goods(self):
         for province in self.provinces:
             id = province['id']
             file = self._find_file(id)
@@ -192,17 +233,10 @@ class GminaPainter:
                 data = f.readlines()
 
             for line, content in enumerate(data):
-                if 'base_tax' in content and province['tax']:
-                    data[line] = f"base_tax = {province['tax']}\n"
-                elif 'base_production' in content and province['prod']:
-                    data[line] = f"base_production = {province['prod']}\n"
-                elif 'base_manpower' in content and province['manpower']:
-                    data[line] = f"base_manpower = {province['manpower']}\n"
-                elif content.startswith('trade_goods = ') and province['trade good']:
-                    data[line] = f"trade_goods = {province['trade good']}\n" 
-                elif content.startswith('latent_trade_goods = ') and latent_trade_goods:
+                if content.startswith('latent_trade_goods = ') and latent_trade_goods:
                     has_latent_trade_goods = True
                     data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
+                    break
             
             if latent_trade_goods and not has_latent_trade_goods:
                 if f"\n" not in data[-1]:
@@ -239,17 +273,28 @@ class GminaPainter:
 
 
 def main(
-        provinces: Annotated[bool, typer.Option("--provinces", "-p")] = False,
-        terrains: Annotated[bool, typer.Option("--terrains", "-t")] = False,
+        all: Annotated[bool, typer.Option("--all", "-a", help="Update all.")] = False,
+        dev: Annotated[bool, typer.Option("--dev", "-d", help="Update dev.")] = False,
+        trade_goods: Annotated[bool, typer.Option("--goods", "-g", help="Update trade goods.")] = False,
+        latent_trade_goods: Annotated[bool, typer.Option("--latent", "-l", help="Update latent trade goods.")] = False,
+        terrains: Annotated[bool, typer.Option("--terrains", "-t", help="Update terrains types.")] = False,
     ):
     gmina_painter = GminaPainter('Trade Goods.csv')
     
-    if provinces:
-        print(f"OVERWRITE PROVINCES")
-        gmina_painter.modify_provinces()
+    if all or dev:
+        print(f"OVERWRITING DEV")
+        gmina_painter.modify_dev()
+
+    if all or trade_goods:
+        print(f"OVERWRITING TRADE GOODS")
+        gmina_painter.modify_trade_goods()
+    
+    if all or latent_trade_goods:
+        print(f"OVERWRITING LATENT TRADE GOODS")
+        gmina_painter.modify_latent_trade_goods()
         
-    if terrains:
-        print(f"OVERWRITE TERRAINS")
+    if all or terrains:
+        print(f"OVERWRITING TERRAINS")
         gmina_painter.modify_terrains()
         
 
