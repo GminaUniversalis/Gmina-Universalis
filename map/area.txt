@@ -128,7 +128,7 @@ powiat_sejnenski = {
 	1964 4129 305 4266 1077 
 }
 powiat_suwalski = { 
-	4116 1962 1079 1963 
+	4116 1962 1079 1963 1078 
 }
 powiat_sokolski = { 
 	280 1944 2429 1070 1068 716 
@@ -217,10 +217,10 @@ powiat_ketrzynski = {
 	1959 4124 313 308 1956 4260 
 }
 powiat_wegorzewski = { 
-	306 4264 2422 2423 
+	306 4264 2423 
 }
 powiat_goldapski = { 
-	1082 1078 1972 
+	1972 1082 2422 
 }
 powiat_olecki = { 
 	1083 4263 4256 1957 
@@ -2077,7 +2077,7 @@ Already
 rozprza = { 
 	1127 2237 1113 347 
 }
-Already 
+Already
 szczercow = { 
 	2204 4532 4305 423 
 }
@@ -2384,7 +2384,8 @@ trzebnica = {
 prusice = { 
 	2653 4589 2636 
 }
-Already taken! = { 
+Already 
+taken! = { 
 	367 2466 1110 339 
 }
 luzino = { 
