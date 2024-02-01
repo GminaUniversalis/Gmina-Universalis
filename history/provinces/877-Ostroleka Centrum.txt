@@ -1,10 +1,10 @@
 #Ostroleka Centrum
 culture = kurpiowska
 religion = communism_pzpr
-base_tax = 11
-base_production = 11
+base_tax = 1
+base_production = 1
 trade_goods = unknown
-base_manpower = 9
+base_manpower = 1
 capital = "Ostroleka - Centrum"
 is_city = yes
 discovered_by = western
