@@ -2,6 +2,16 @@ spriteTypes = {
 	# Liberalism Aspects
 
 	spriteType = {
+		name = "GFX_assimilate_competition_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/assimilate_competition_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_shock_therapy_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/shock_therapy_aspect_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_sell_industry_aspect"
 		texturefile = "gfx/interface/liberalism_aspects/sell_industry_aspect_icon.dds"
 	}

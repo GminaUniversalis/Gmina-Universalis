@@ -169,3 +169,47 @@ liberal_but_conservative_aspect = {
 		}
 	}
 }
+
+assimilate_competition_aspect = {
+	sprite = "GFX_assimilate_competition_aspect"
+	cost = 100
+	trigger = {
+
+	}
+	effect = {
+		custom_tooltip = assimilate_competition_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = assimilate_competition
+				duration = 3650
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			num_of_subjects = 1
+		}
+	}
+}
+
+shock_therapy_aspect = {
+	sprite = "GFX_shock_therapy_aspect"
+	cost = 200
+	trigger = {
+
+	}
+	effect = {
+		custom_tooltip = shock_therapy_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = shock_therapy
+				duration = 3650
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

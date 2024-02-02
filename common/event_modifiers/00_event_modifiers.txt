@@ -10847,6 +10847,16 @@ liberal_but_conservative = {
 	shock_damage_received = -0.1
 }
 
+assimilate_competition = {
+	reduced_liberty_desire = -15
+	years_to_integrate_personal_union = -10
+}
+
+shock_therapy = {
+	global_unrest = 3
+	global_trade_goods_size_modifier = 0.25
+}
+
 expelling_heretics = {
 	religious_unity = 0.1
 	colonist_placement_chance = 0.05
