@@ -1,0 +1,17 @@
+has_airport_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = has_airport_tooltip
+		OR = {
+			has_province_modifier = airport
+		}
+	}
+}
+
+has_border_crossing_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = has_border_crossing_tooltip
+		OR = {
+			has_province_modifier = border_crossing
+		}
+	}
+}

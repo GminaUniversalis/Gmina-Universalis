@@ -3917,9 +3917,7 @@ dharmic = {
 						type = MIL
 						cost = 50
 
-						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
-						maratha_exclusive_loyalty_modifier = 0.05
+
 					}
 				}
 			}
