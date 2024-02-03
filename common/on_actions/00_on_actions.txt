@@ -3815,42 +3815,42 @@ on_revoke_estate_land = {
 		name = revoked_estate_modifier
 		duration = 5475 #15 years
 	}
-	if = {
-		limit = {
-			has_estate = estate_cossacks
-			owner = {
-				NOT = {
-					estate_loyalty = {
-						estate = estate_cossacks
-						loyalty = 40
-					}
-				}
-			}
-		}
-		spawn_rebels = {
-			type = cossack_rebels
-			size = 1
-		}
-		province_event = { id = cossack_estate_events.15 }
-	}
-	if = {
-		limit = {
-			has_estate = estate_dhimmi
-			owner = {
-				NOT = {
-					estate_loyalty = {
-						estate = estate_dhimmi
-						loyalty = 40
-					}
-				}
-			}
-		}
-		spawn_rebels = {
-			type = religious_rebels
-			size = 1
-		}
-		province_event = { id = dhimmi_estate_events.9 }
-	}
+	# if = {
+	# 	limit = {
+	# 		has_estate = estate_cossacks
+	# 		owner = {
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_cossacks
+	# 					loyalty = 40
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	spawn_rebels = {
+	# 		type = cossack_rebels
+	# 		size = 1
+	# 	}
+	# 	province_event = { id = cossack_estate_events.15 }
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_estate = estate_dhimmi
+	# 		owner = {
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_dhimmi
+	# 					loyalty = 40
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	spawn_rebels = {
+	# 		type = religious_rebels
+	# 		size = 1
+	# 	}
+	# 	province_event = { id = dhimmi_estate_events.9 }
+	# }
 	if = {
 		limit = {
 			has_estate = estate_church
@@ -3943,16 +3943,126 @@ on_revoke_estate_land = {
 		}
 		province_event = { id = tribal_estate_events.10 }
 	}
+	# if = {
+	# 	limit = {
+	# 		has_estate = estate_brahmins
+	# 		owner = {
+	# 			NOT = {
+	# 				religion = hinduism
+	# 			}
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_brahmins
+	# 					loyalty = 40
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	spawn_rebels = {
+	# 		type = religious_rebels
+	# 		size = 1
+	# 	}
+	# 	province_event = { id = brahmins_estate_events.1 }
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_estate = estate_brahmins
+	# 		owner = {
+	# 			religion = hinduism
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_brahmins
+	# 					loyalty = 40
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	spawn_rebels = {
+	# 		type = particularist_rebels
+	# 		size = 1
+	# 	}
+	# 	province_event = { id = brahmins_estate_events.1 }
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_estate = estate_vaisyas
+	# 		owner = {
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_vaisyas
+	# 					loyalty = 40
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	spawn_rebels = {
+	# 		type = particularist_rebels
+	# 		size = 1
+	# 	}
+	# 	province_event = { id = vaisyas_estate_events.1 }
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_estate = estate_rajput
+	# 		owner = {
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_rajput
+	# 					loyalty = 40
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	spawn_rebels = {
+	# 		type = noble_rebels
+	# 		size = 1
+	# 	}
+	# 	province_event = { id = rajputs_estate_events.1 }
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_estate = estate_jains
+	# 		owner = {
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_jains
+	# 					loyalty = 40
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	spawn_rebels = {
+	# 		type = particularist_rebels
+	# 		size = 1
+	# 	}
+	# 	province_event = { id = jains_estate_events.1 }
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_estate = estate_maratha
+	# 		owner = {
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_maratha
+	# 					loyalty = 40
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	spawn_rebels = {
+	# 		type = noble_rebels
+	# 		size = 1
+	# 	}
+	# 	province_event = { id = marathas_estate_events.1 }
+	# }
+	################### GMINA ESTATES ####################
 	if = {
 		limit = {
-			has_estate = estate_brahmins
+			has_estate = estate_retirees
 			owner = {
 				NOT = {
-					religion = hinduism
-				}
-				NOT = {
 					estate_loyalty = {
-						estate = estate_brahmins
+						estate = estate_retirees
 						loyalty = 40
 					}
 				}
@@ -3962,16 +4072,15 @@ on_revoke_estate_land = {
 			type = religious_rebels
 			size = 1
 		}
-		province_event = { id = brahmins_estate_events.1 }
+		province_event = { id = church_estate_events.11 }
 	}
 	if = {
 		limit = {
-			has_estate = estate_brahmins
+			has_estate = estate_families
 			owner = {
-				religion = hinduism
 				NOT = {
 					estate_loyalty = {
-						estate = estate_brahmins
+						estate = estate_families
 						loyalty = 40
 					}
 				}
@@ -3981,15 +4090,15 @@ on_revoke_estate_land = {
 			type = particularist_rebels
 			size = 1
 		}
-		province_event = { id = brahmins_estate_events.1 }
+		province_event = { id = burghers_estate_events.16 }
 	}
 	if = {
 		limit = {
-			has_estate = estate_vaisyas
+			has_estate = estate_army
 			owner = {
 				NOT = {
 					estate_loyalty = {
-						estate = estate_vaisyas
+						estate = estate_army
 						loyalty = 40
 					}
 				}
@@ -3999,33 +4108,15 @@ on_revoke_estate_land = {
 			type = particularist_rebels
 			size = 1
 		}
-		province_event = { id = vaisyas_estate_events.1 }
+		province_event = { id = burghers_estate_events.16 }
 	}
 	if = {
 		limit = {
-			has_estate = estate_rajput
+			has_estate = estate_farmers
 			owner = {
 				NOT = {
 					estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 40
-					}
-				}
-			}
-		}
-		spawn_rebels = {
-			type = noble_rebels
-			size = 1
-		}
-		province_event = { id = rajputs_estate_events.1 }
-	}
-	if = {
-		limit = {
-			has_estate = estate_jains
-			owner = {
-				NOT = {
-					estate_loyalty = {
-						estate = estate_jains
+						estate = estate_farmers
 						loyalty = 40
 					}
 				}
@@ -4035,25 +4126,133 @@ on_revoke_estate_land = {
 			type = particularist_rebels
 			size = 1
 		}
-		province_event = { id = jains_estate_events.1 }
+		province_event = { id = burghers_estate_events.16 }
 	}
 	if = {
 		limit = {
-			has_estate = estate_maratha
+			has_estate = estate_middle_class
 			owner = {
 				NOT = {
 					estate_loyalty = {
-						estate = estate_maratha
+						estate = estate_middle_class
 						loyalty = 40
 					}
 				}
 			}
 		}
 		spawn_rebels = {
-			type = noble_rebels
+			type = particularist_rebels
 			size = 1
 		}
-		province_event = { id = marathas_estate_events.1 }
+		province_event = { id = burghers_estate_events.16 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_banks
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_banks
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = particularist_rebels
+			size = 1
+		}
+		province_event = { id = burghers_estate_events.16 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_ub
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_ub
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = particularist_rebels
+			size = 1
+		}
+		province_event = { id = burghers_estate_events.16 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_intellectuals
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_intellectuals
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = particularist_rebels
+			size = 1
+		}
+		province_event = { id = burghers_estate_events.16 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_investors
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_investors
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = particularist_rebels
+			size = 1
+		}
+		province_event = { id = burghers_estate_events.16 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_priests
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_priests
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = particularist_rebels
+			size = 1
+		}
+		province_event = { id = burghers_estate_events.16 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_miners
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_miners
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = particularist_rebels
+			size = 1
+		}
+		province_event = { id = burghers_estate_events.16 }
 	}
 }
 

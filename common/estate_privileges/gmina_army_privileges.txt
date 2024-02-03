@@ -185,7 +185,7 @@ estate_army_land_rights = {
 					influence = 75
 				}
 			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
+			NOT = { has_estate_privilege = estate_priests_land_rights }
 		}
 		modifier = {
 			factor = 0
@@ -196,12 +196,12 @@ estate_army_land_rights = {
 			OR = {
 				AND = {
 					governing_capacity_percentage = 0.9
-					NOT = { has_estate_privilege = estate_church_land_rights }
+					NOT = { has_estate_privilege = estate_priests_land_rights }
 				}
 				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
 				AND = {
 					governing_capacity_percentage = 0.6
-					has_estate_privilege = estate_church_land_rights
+					has_estate_privilege = estate_priests_land_rights
 				}
 			}
 		}
@@ -214,7 +214,7 @@ estate_army_land_rights = {
 					NOT = { crown_land_share = 60 }
 				}
 			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
+			NOT = { has_estate_privilege = estate_priests_land_rights }
 		}
 		modifier = {
 			factor = 0.8
@@ -225,7 +225,7 @@ estate_army_land_rights = {
 					NOT = { crown_land_share = 50 }
 				}
 			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
+			NOT = { has_estate_privilege = estate_priests_land_rights }
 		}
 		modifier = {
 			factor = 0.8
@@ -258,15 +258,7 @@ estate_army_land_rights = {
 		#Has already a similar privilege active
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_brahmins_land_rights
-		}
-		modifier = {
-			factor = 0.75
 			has_estate_privilege = estate_nobles_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_maratha_land_rights
 		}
 		modifier = {
 			factor = 0.75
@@ -274,27 +266,39 @@ estate_army_land_rights = {
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_vaisyas_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_cossacks_land_rights
-		}
-		modifier = {
-			factor = 0.75
 			has_estate_privilege = estate_nomadic_tribes_land_rights
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_dhimmi_land_rights
+			has_estate_privilege = estate_families_land_rights
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_jains_land_rights
+			has_estate_privilege = estate_retirees_land_rights
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_rajput_land_rights
+			has_estate_privilege = estate_farmers_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_miners_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_investors_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_ub_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_middle_class_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_intellectuals_land_rights
 		}
 	}
 }
