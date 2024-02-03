@@ -1,10 +1,10 @@
 #Lodz Centrum
 culture = centralna
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 8
+base_production = 10
+trade_goods = cloth
+base_manpower = 7
 capital = "Centrum"
 is_city = yes
 discovered_by = western
@@ -14,3 +14,4 @@ controller = Q22
 discovered_by = ottoman
 add_core = Q22
 center_of_trade = 3
+latent_trade_goods = { gu_finances }

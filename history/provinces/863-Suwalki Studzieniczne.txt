@@ -1,0 +1,15 @@
+#Suwalki Studzieniczne
+culture = suwalska
+religion = communism_pzpr
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Suwalki - Studzieniczne"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = N23
+controller = N23
+discovered_by = ottoman
+add_core = N23

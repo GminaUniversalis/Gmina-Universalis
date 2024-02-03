@@ -2,10 +2,10 @@
 culture = gornoslaska
 religion = communism_sd
 hre = yes
-base_tax = 45
-base_production = 54
+base_tax = 3
+base_production = 4
 trade_goods = unknown
-base_manpower = 32
+base_manpower = 2
 capital = "Gliwice"
 is_city = yes
 discovered_by = western

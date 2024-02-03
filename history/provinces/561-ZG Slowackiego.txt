@@ -1,0 +1,15 @@
+#Zielona Gora - Slowackiego
+culture = dolnoslaska
+religion = communism_pzpr
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "ZG - Slowackiego"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = W11
+controller = W11
+discovered_by = ottoman
+add_core = W11

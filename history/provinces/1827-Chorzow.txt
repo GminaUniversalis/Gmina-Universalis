@@ -2,10 +2,10 @@
 culture = slonska
 religion = communism_sd
 hre = yes
-base_tax = 23
-base_production = 19
-trade_goods = gu_coal
-base_manpower = 19
+base_tax = 7
+base_production = 6
+trade_goods = gu_metalworking
+base_manpower = 6
 capital = "Chorzow"
 is_city = yes
 discovered_by = western

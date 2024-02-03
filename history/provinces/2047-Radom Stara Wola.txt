@@ -1,0 +1,15 @@
+#Radom Stara Wola
+culture = radomska
+religion = communism_zsl
+base_tax = 5
+base_production = 5
+trade_goods = unknown
+base_manpower = 5
+capital = "Radom - Stara Wola"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = G39
+controller = G39
+discovered_by = ottoman
+add_core = G39

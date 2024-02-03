@@ -1,10 +1,10 @@
 #Lodz Baluty Zachodnie
 culture = centralna
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 5
+base_production = 5
+trade_goods = wool
+base_manpower = 5
 capital = "Baluty Zachodnie"
 is_city = yes
 discovered_by = western

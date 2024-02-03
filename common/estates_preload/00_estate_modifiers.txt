@@ -1,0 +1,149 @@
+#Define estate loyalty and influence modifiers here
+estate_church = {
+	modifier_definition = {
+		type = loyalty
+		key = church_loyalty_modifier
+		trigger = {
+			has_estate = estate_church
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = church_influence_modifier
+		trigger = {
+			has_estate = estate_church
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = church_privilege_slots
+		trigger = {
+			has_estate = estate_church
+		}
+	}
+}
+estate_nobles = {
+	modifier_definition = {
+		type = loyalty
+		key = nobles_loyalty_modifier
+		trigger = {
+			has_estate = estate_nobles
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = nobles_influence_modifier
+		trigger = {
+			has_estate = estate_nobles
+		}
+	}
+
+	# No Other Nobility like estate
+	modifier_definition = {
+		type = loyalty
+		key = nobles_exclusive_loyalty_modifier
+		trigger = {
+			has_estate = estate_nobles
+	#		NOT = { has_estate = estate_maratha }
+	#		NOT = { has_estate = estate_rajput }
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = nobles_exclusive_influence_modifier
+		trigger = {
+			has_estate = estate_nobles
+	#		NOT = { has_estate = estate_maratha }
+	#		NOT = { has_estate = estate_rajput }
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = nobles_privilege_slots
+		trigger = {
+			has_estate = estate_nobles
+		}
+	}
+}
+estate_burghers = {
+	modifier_definition = {
+		type = loyalty
+		key = burghers_loyalty_modifier
+		trigger = {
+			has_estate = estate_burghers
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = burghers_influence_modifier
+		trigger = {
+			has_estate = estate_burghers
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = burghers_privilege_slots
+		trigger = {
+			has_estate = estate_burghers
+		}
+	}
+}
+estate_nomadic_tribes = {
+	modifier_definition = {
+		type = loyalty
+		key = nomadic_tribes_loyalty_modifier
+		trigger = {
+			has_estate = estate_nomadic_tribes
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = nomadic_tribes_influence_modifier
+		trigger = {
+			has_estate = estate_nomadic_tribes
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = nomadic_tribes_privilege_slots
+		trigger = {
+			has_estate = estate_nomadic_tribes
+		}
+	}
+}
+#For special scripted modifiers which are not in the code base.
+estate_special = {
+	#For the Republics which only have limited terms
+	modifier_definition = {
+		type = privileges
+		key = max_terms
+		trigger = {
+			has_government_attribute = has_limited_terms
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = num_of_pronoiars
+		trigger = {
+			OR = {
+				has_government_attribute = enables_pronoias
+	#			tag = BYZ
+			}
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = influence_to_vassal_elevation_cost
+		trigger = {
+			always = yes
+		}
+	}
+}

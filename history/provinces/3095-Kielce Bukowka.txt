@@ -1,10 +1,10 @@
 #Kielce Bukowka
 culture = kielecka
 religion = communism_pzpr
-base_tax = 11
-base_production = 11
-trade_goods = unknown
-base_manpower = 11
+base_tax = 2
+base_production = 2
+trade_goods = gu_lumber
+base_manpower = 1
 capital = "Kielce - Bokowka"
 is_city = yes
 discovered_by = western

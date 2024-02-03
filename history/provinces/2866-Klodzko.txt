@@ -2,7 +2,7 @@
 religion = communism_pzpr
 base_tax = 2
 base_production = 1
-trade_goods = gu_wheat
+trade_goods = gu_maize
 base_manpower = 3
 capital = "Klodzko"
 is_city = yes

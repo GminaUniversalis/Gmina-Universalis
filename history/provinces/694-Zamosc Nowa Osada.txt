@@ -1,0 +1,15 @@
+#Zamosc Nowa Osada
+culture = kresowa
+religion = communism_pzpr
+base_tax = 2
+base_production = 2
+trade_goods = unknown
+base_manpower = 1
+capital = "Zamosc - Nowa Osada"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = U22
+controller = U22
+discovered_by = ottoman
+add_core = U22

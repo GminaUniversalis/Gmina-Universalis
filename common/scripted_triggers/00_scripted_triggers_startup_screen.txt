@@ -1,6 +1,5 @@
 #These tags use the plural form of their names
 tag_with_plural_name_trigger = {
-	# OR = {
 	# 	tag = AKK
 	# 	tag = ANU
 	# 	tag = AZT
@@ -28,5 +27,4 @@ tag_with_plural_name_trigger = {
 	# 	tag = YAS
 	# 	tag = AVE
 	# 	tag = EIC
-	# }
 }

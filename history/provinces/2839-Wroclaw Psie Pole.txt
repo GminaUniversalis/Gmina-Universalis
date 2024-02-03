@@ -1,9 +1,9 @@
 #Wroclaw - Psie Pole
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
+base_tax = 3
+base_production = 2
+trade_goods = gu_consumer_goods
+base_manpower = 2
 capital = "Wroclaw - Psie Pole"
 is_city = yes
 discovered_by = western

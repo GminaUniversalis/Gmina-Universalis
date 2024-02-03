@@ -2,8 +2,8 @@
 culture = warszawska
 religion = communism_pzpr
 base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_production = 2
+trade_goods = gu_consumer_goods
 base_manpower = 1
 capital = "Rembertow"
 is_city = yes

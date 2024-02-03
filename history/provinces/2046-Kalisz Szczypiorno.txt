@@ -1,0 +1,15 @@
+#Kalisz Szczypiorno
+culture = kaliska
+religion = communism_sd
+base_tax = 2
+base_production = 2
+trade_goods = unknown
+base_manpower = 1
+capital = "Kalisz - Szczypiorno"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R33
+controller = R33
+discovered_by = ottoman
+add_core = R33

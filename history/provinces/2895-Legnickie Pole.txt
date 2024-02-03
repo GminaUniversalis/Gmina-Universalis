@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 1
 base_production = 3
-trade_goods = gu_wheat
+trade_goods = gu_maize
 base_manpower = 1
 capital = "Legnickie Pole"
 is_city = yes

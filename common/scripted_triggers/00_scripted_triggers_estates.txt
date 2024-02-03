@@ -14,21 +14,21 @@ has_any_estates = {
 	custom_trigger_tooltip = {
 		tooltip = has_any_estates_tt
 		OR = {
-			has_estate = estate_brahmins
+			has_estate = estate_retirees
+			has_estate = estate_families
+			has_estate = estate_army
+			has_estate = estate_farmers
+			has_estate = estate_banks
+			has_estate = estate_miners
+			has_estate = estate_intellectuals
+			has_estate = estate_investors
+			has_estate = estate_priests
+			has_estate = estate_middle_class
+			has_estate = estate_ub
 			has_estate = estate_burghers
 			has_estate = estate_church
-			has_estate = estate_cossacks
-			has_estate = estate_dhimmi
-			has_estate = estate_jains
-			has_estate = estate_maratha
 			has_estate = estate_nobles
 			has_estate = estate_nomadic_tribes
-			has_estate = estate_rajput
-			has_estate = estate_vaisyas
-			has_estate = estate_janissaries
-			has_estate = estate_eunuchs
-			has_estate = estate_qizilbash
-			has_estate = estate_ghulams
 		}
 	}
 }
@@ -46,15 +46,15 @@ has_exempt_from_seize_land_for_estate_nobles = {
 		has_estate_privilege = estate_nobles_levies
 		has_estate_privilege = estate_nobles_golden_liberty
 		#Jolof's starting privileges
-		has_estate_privilege = estate_nobles_decentralized_tribe
-		has_estate_privilege = estate_nobles_tribe_unification
+		# has_estate_privilege = estate_nobles_decentralized_tribe
+		# has_estate_privilege = estate_nobles_tribe_unification
 		#Norway's starting privileges
-		has_estate_privilege = estate_nobles_danish_nobility
-		has_estate_privilege = estate_nobles_nobles_instead_of_royal_court
+		# has_estate_privilege = estate_nobles_danish_nobility
+		# has_estate_privilege = estate_nobles_nobles_instead_of_royal_court
 		#England's starting privilege
-		has_estate_privilege = estate_nobles_english_villeinage
+		# has_estate_privilege = estate_nobles_english_villeinage
 		#Prussia's privilege
-		has_estate_privilege = estate_nobles_consolidated_noble_contracts
+		# has_estate_privilege = estate_nobles_consolidated_noble_contracts
 	}
 }
 has_exempt_from_seize_land_for_estate_brahmins = {
@@ -68,11 +68,11 @@ has_exempt_from_seize_land_for_estate_church = {
 		has_estate_privilege = estate_church_inwards_perfection
 		has_estate_privilege = estate_church_administrative_privileges
 		#Livonian Order's starting privileges
-		has_estate_privilege = estate_church_lands_of_riga
-		has_estate_privilege = estate_church_bishopric_of_dorpat
-		has_estate_privilege = estate_church_bishopric_of_osel_wiek
-		has_estate_privilege = estate_church_bishopric_of_courland
-		has_estate_privilege = estate_church_bishopric_of_reval
+		# has_estate_privilege = estate_church_lands_of_riga
+		# has_estate_privilege = estate_church_bishopric_of_dorpat
+		# has_estate_privilege = estate_church_bishopric_of_osel_wiek
+		# has_estate_privilege = estate_church_bishopric_of_courland
+		# has_estate_privilege = estate_church_bishopric_of_reval
 	}
 }
 has_exempt_from_seize_land_for_estate_cossacks = {
@@ -145,34 +145,42 @@ can_swap_out_of_estate_granting_reform = {
 
 #Country scope
 #Bugged for whatever reason...
-#any_estate_influence = {
-#	OR = {
-#		if = { limit = { has_estate = estate_emeryci }			estate_influence = { estate =  estate_emeryci			influence = $influence$ } }
-#		if = { limit = { has_estate = estate_banki }			estate_influence = { estate = estate_banki				influence = $influence$ } }
-#		if = { limit = { has_estate = estate_gorniki }			estate_influence = { estate = estate_gorniki			influence = $influence$ } }
-#		if = { limit = { has_estate = estate_intellectuals }	estate_influence = { estate = estate_intellectuals		influence = $influence$ } }
-#		if = { limit = { has_estate = estate_inwestorzy }		estate_influence = { estate = estate_inwestorzy			influence = $influence$ } }
-#		if = { limit = { has_estate = estate_kler }				estate_influence = { estate = estate_kler 				influence = $influence$ } }
-#		if = { limit = { has_estate = estate_rodziny }			estate_influence = { estate = estate_rodziny			influence = $influence$ } }
-#		if = { limit = { has_estate = estate_rolnicy }			estate_influence = { estate = estate_rolnicy			influence = $influence$ } }
-#		if = { limit = { has_estate = estate_srednia }			estate_influence = { estate = estate_srednia 			influence = $influence$ } }
-#		if = { limit = { has_estate = estate_ub }				estate_influence = { estate = estate_ub 				influence = $influence$ } }
-#		if = { limit = { has_estate = estate_wojsko }			estate_influence = { estate = estate_wojsko				influence = $influence$ } }
-#	}
-#}
+any_estate_influence = {
+	OR = {
+		if = { limit = { has_estate = estate_retirees }			estate_influence = { estate =  estate_retirees			influence = $influence$ } }
+		if = { limit = { has_estate = estate_banks }			estate_influence = { estate = estate_banks				influence = $influence$ } }
+		if = { limit = { has_estate = estate_miners }			estate_influence = { estate = estate_miners			influence = $influence$ } }
+		if = { limit = { has_estate = estate_intellectuals }	estate_influence = { estate = estate_intellectuals		influence = $influence$ } }
+		if = { limit = { has_estate = estate_investors }		estate_influence = { estate = estate_investors			influence = $influence$ } }
+		if = { limit = { has_estate = estate_priests }				estate_influence = { estate = estate_priests 				influence = $influence$ } }
+		if = { limit = { has_estate = estate_families }			estate_influence = { estate = estate_families			influence = $influence$ } }
+		if = { limit = { has_estate = estate_farmers }			estate_influence = { estate = estate_farmers			influence = $influence$ } }
+		if = { limit = { has_estate = estate_middle_class }			estate_influence = { estate = estate_middle_class 			influence = $influence$ } }
+		if = { limit = { has_estate = estate_ub }				estate_influence = { estate = estate_ub 				influence = $influence$ } }
+		if = { limit = { has_estate = estate_army }			estate_influence = { estate = estate_army				influence = $influence$ } }
+		if = { limit = { has_estate = estate_church }			estate_influence = { estate = estate_church			influence = $influence$ } }
+		if = { limit = { has_estate = estate_burghers }			estate_influence = { estate = estate_burghers		influence = $influence$ } }
+		if = { limit = { has_estate = estate_nobles }			estate_influence = { estate = estate_nobles			influence = $influence$ } }
+		if = { limit = { has_estate = estate_nomadic_tribes }	estate_influence = { estate = estate_nomadic_tribes	influence = $influence$ } }
+	}
+}
 any_estate_loyalty = {
 	OR = {
-				if = { limit = { has_estate = estate_emeryci }			estate_loyalty = { estate =  estate_emeryci			loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_banki }			estate_loyalty = { estate = estate_banki		loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_gorniki }			estate_loyalty = { estate = estate_gorniki		loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_intellectuals }	estate_loyalty = { estate = estate_intellectuals		loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_inwestorzy }		estate_loyalty = { estate = estate_inwestorzy		loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_kler }				estate_loyalty = { estate = estate_kler 		loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_rodziny }			estate_loyalty = { estate = estate_rodziny		loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_rolnicy }			estate_loyalty = { estate = estate_rolnicy		loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_srednia }			estate_loyalty = { estate = estate_srednia 	loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_ub }				estate_loyalty = { estate = estate_ub 			loyalty = $loyalty$ } }
-		#		if = { limit = { has_estate = estate_wojsko }			estate_loyalty = { estate = estate_wojsko		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_retirees }			estate_loyalty = { estate =  estate_retirees			loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_banks }			estate_loyalty = { estate = estate_banks		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_miners }			estate_loyalty = { estate = estate_miners		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_intellectuals }	estate_loyalty = { estate = estate_intellectuals		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_investors }		estate_loyalty = { estate = estate_investors		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_priests }				estate_loyalty = { estate = estate_priests 		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_families }			estate_loyalty = { estate = estate_families		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_farmers }			estate_loyalty = { estate = estate_farmers		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_middle_class }			estate_loyalty = { estate = estate_middle_class 	loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_ub }				estate_loyalty = { estate = estate_ub 			loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_army }			estate_loyalty = { estate = estate_army		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_church }			estate_loyalty = { estate = estate_church			loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_burghers }			estate_loyalty = { estate = estate_burghers			loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_nobles }			estate_loyalty = { estate = estate_nobles			loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_nomadic_tribes }	estate_loyalty = { estate = estate_nomadic_tribes	loyalty = $loyalty$ } }
 	}
 }
 
@@ -350,47 +358,45 @@ estate_action_off_shared_cooldown = {
 		}
 	}
 }
-
-has_estate_agenda_of_estate_wojsko = {
+has_estate_agenda_of_estate_army = {
 	OR = {
-		has_active_estate_agenda = estate_wojsko_increase_army_professionalism
-		has_active_estate_agenda = estate_wojsko_hire_advisor
-		has_active_estate_agenda = estate_wojsko_get_allies
-		has_active_estate_agenda = estate_wojsko_befriend_rival_of_rival
-		has_active_estate_agenda = estate_wojsko_break_coalition
-		has_active_estate_agenda = estate_wojsko_build_an_army
-		has_active_estate_agenda = estate_wojsko_bigger_army_than_rival
-		has_active_estate_agenda = estate_wojsko_build_up_manpower_reserves
-		has_active_estate_agenda = estate_wojsko_develop_x
+		has_active_estate_agenda = estate_army_increase_army_professionalism
+		has_active_estate_agenda = estate_army_hire_advisor
+		has_active_estate_agenda = estate_army_get_allies
+		has_active_estate_agenda = estate_army_befriend_rival_of_rival
+		has_active_estate_agenda = estate_army_break_coalition
+		has_active_estate_agenda = estate_army_build_an_army
+		has_active_estate_agenda = estate_army_bigger_army_than_rival
+		has_active_estate_agenda = estate_army_build_up_manpower_reserves
+		has_active_estate_agenda = estate_army_develop_x
 }
 }
-has_estate_agenda_of_estate_rolnicy = {
+has_estate_agenda_of_estate_farmers = {
 	OR = {
-		has_active_estate_agenda = estate_rolnicy_hire_advisor
-		has_active_estate_agenda = estate_rolnicy_develop_x
-		has_active_estate_agenda = estate_rolnicy_expand_into_x 
-		has_active_estate_agenda = estate_rolnicy_reduce_war_exhaustion
-		has_active_estate_agenda = estate_rolnicy_build_production_building_in_y
+		has_active_estate_agenda = estate_farmers_hire_advisor
+		has_active_estate_agenda = estate_farmers_develop_x
+		has_active_estate_agenda = estate_farmers_expand_into_x 
+		has_active_estate_agenda = estate_farmers_reduce_war_exhaustion
+		has_active_estate_agenda = estate_farmers_build_production_building_in_y
 }
 }
-has_estate_agenda_of_estate_rodziny = {
+has_estate_agenda_of_estate_families = {
 	OR = {
-		has_active_estate_agenda = estate_rodziny_hire_advisor
-		has_active_estate_agenda = estate_rodziny_build_temple_in_y
-		has_active_estate_agenda = estate_rodziny_build_port_building_in_y
-		has_active_estate_agenda = estate_rodziny_build_production_building_in_y 
-		has_active_estate_agenda = estate_rodziny_develop_x_tax
-		has_active_estate_agenda = estate_rodziny_develop_x_manpower
-		has_active_estate_agenda = estate_rodziny_develop_x_production
-		has_active_estate_agenda = estate_rodziny_recover_stability
+		has_active_estate_agenda = estate_families_hire_advisor
+		has_active_estate_agenda = estate_families_build_temple_in_y
+		has_active_estate_agenda = estate_families_build_port_building_in_y
+		has_active_estate_agenda = estate_families_build_production_building_in_y 
+		has_active_estate_agenda = estate_families_develop_x_manpower
+		has_active_estate_agenda = estate_families_develop_x_production
+		has_active_estate_agenda = estate_families_recover_stability
 }
 }
-has_estate_agenda_of_estate_emeryci = {
+has_estate_agenda_of_estate_retirees = {
 	OR = {
-		has_active_estate_agenda = estate_emeryci_hire_advisor
-		has_active_estate_agenda = estate_emeryci_build_temple_in_y
-		has_active_estate_agenda = estate_emeryci_legitimacy
-		has_active_estate_agenda = estate_emeryci_prestige
+		has_active_estate_agenda = estate_retirees_hire_advisor
+		has_active_estate_agenda = estate_retirees_build_temple_in_y
+		has_active_estate_agenda = estate_retirees_legitimacy
+		has_active_estate_agenda = estate_retirees_prestige
 }
 }
 has_estate_agenda_of_estate_intellectuals = {
@@ -398,19 +404,19 @@ has_estate_agenda_of_estate_intellectuals = {
 		has_active_estate_agenda = estate_intellectuals_hire_advisor
 }
 }
-has_estate_agenda_of_estate_inwestorzy = {
+has_estate_agenda_of_estate_investors = {
 	OR = {
-		has_active_estate_agenda = estate_inwestorzy_hire_advisor
+		has_active_estate_agenda = estate_investors_hire_advisor
 }
 }
-has_estate_agenda_of_estate_kler = {
+has_estate_agenda_of_estate_priests = {
 	OR = {
-		has_active_estate_agenda = estate_kler_hire_advisor
+		has_active_estate_agenda = estate_priests_hire_advisor
 }
 }
-has_estate_agenda_of_estate_srednia = {
+has_estate_agenda_of_estate_middle_class = {
 	OR = {
-		has_active_estate_agenda = estate_srednia_hire_advisor
+		has_active_estate_agenda = estate_middle_class_hire_advisor
 }
 }
 has_estate_agenda_of_estate_ub = {
@@ -418,17 +424,133 @@ has_estate_agenda_of_estate_ub = {
 		has_active_estate_agenda = estate_ub_hire_advisor
 }
 }
-has_estate_agenda_of_estate_banki = {
+has_estate_agenda_of_estate_banks = {
 	OR = {
-		has_active_estate_agenda = estate_banki_hire_advisor 
+		has_active_estate_agenda = estate_banks_hire_advisor 
 }
 }
-has_estate_agenda_of_estate_gorniki = {
+has_estate_agenda_of_estate_miners = {
 	OR = {
-		has_active_estate_agenda = estate_gorniki_hire_advisor
+		has_active_estate_agenda = estate_miners_hire_advisor
 }
 }
-
+has_estate_agenda_of_estate_nobles = {
+	OR = {
+		has_active_estate_agenda = estate_nobles_develop_x
+		has_active_estate_agenda = estate_nobles_build_army_building_in_y
+		has_active_estate_agenda = estate_nobles_build_fort_building_in_y
+		has_active_estate_agenda = estate_nobles_build_university_in_y
+		has_active_estate_agenda = estate_nobles_build_manufactory_in_y
+		has_active_estate_agenda = estate_nobles_get_allies
+		has_active_estate_agenda = estate_nobles_befriend_rival_of_rival
+		has_active_estate_agenda = estate_nobles_restore_legitimacy
+		has_active_estate_agenda = estate_nobles_relations_with_X
+		has_active_estate_agenda = estate_nobles_break_coalition
+		has_active_estate_agenda = estate_nobles_condottieri_rivals
+		has_active_estate_agenda = estate_nobles_support_independence
+		has_active_estate_agenda = estate_nobles_retake_core
+		has_active_estate_agenda = estate_nobles_crush_revolts
+		has_active_estate_agenda = estate_nobles_regain_liberty
+		has_active_estate_agenda = estate_nobles_convert_province_culture
+		has_active_estate_agenda = estate_nobles_protect_our_culture
+		has_active_estate_agenda = estate_nobles_vassalise_vulnerable_country
+		has_active_estate_agenda = estate_nobles_expand_into_x
+		has_active_estate_agenda = estate_nobles_complete_conquest_of_x
+		has_active_estate_agenda = estate_nobles_annex_subject
+		has_active_estate_agenda = estate_nobles_build_an_army
+		has_active_estate_agenda = estate_nobles_bigger_army_than_rival
+		has_active_estate_agenda = estate_nobles_build_up_manpower_reserves
+		has_active_estate_agenda = estate_nobles_recover_abysmal_prestige
+		has_active_estate_agenda = estate_nobles_improve_prestige
+		has_active_estate_agenda = estate_nobles_hire_advisor
+		has_active_estate_agenda = estate_nobles_fire_advisor
+	}
+}
+has_estate_agenda_of_estate_burghers = {
+	OR = {
+		has_active_estate_agenda = estate_burghers_develop_x
+		has_active_estate_agenda = estate_burghers_build_trade_building_in_y
+		has_active_estate_agenda = estate_burghers_build_port_building_in_y
+		has_active_estate_agenda = estate_burghers_build_production_building_in_y
+		has_active_estate_agenda = estate_burghers_build_university_in_y
+		has_active_estate_agenda = estate_burghers_build_manufactory_in_y
+		has_active_estate_agenda = estate_burghers_pay_off_loans
+		has_active_estate_agenda = estate_burghers_restore_republican_tradition
+		has_active_estate_agenda = estate_burghers_restore_currency
+		has_active_estate_agenda = estate_burghers_recovery_from_hyperinflation
+		has_active_estate_agenda = estate_burghers_increase_trade_power_in_X
+		has_active_estate_agenda = estate_burghers_access_sea
+		has_active_estate_agenda = estate_burghers_build_a_fleet
+		has_active_estate_agenda = estate_burghers_bigger_fleet_than_rival
+		has_active_estate_agenda = estate_burghers_improve_dip_rep
+		has_active_estate_agenda = estate_burghers_get_cash
+		has_active_estate_agenda = estate_burghers_discover_X_in_america
+		has_active_estate_agenda = estate_burghers_colonise_X
+		has_active_estate_agenda = estate_burghers_colonise_more_X
+		has_active_estate_agenda = estate_burghers_colonial_nation
+		has_active_estate_agenda = estate_burghers_expand_trade_company
+		has_active_estate_agenda = estate_burghers_trade_post_in_india
+		has_active_estate_agenda = estate_burghers_trade_post_in_malacca
+		has_active_estate_agenda = estate_burghers_trade_post_in_china
+		has_active_estate_agenda = estate_burghers_silk_trade
+		has_active_estate_agenda = estate_burghers_spice_trade
+		has_active_estate_agenda = estate_burghers_tea_trade
+		has_active_estate_agenda = estate_burghers_reduce_corruption
+		has_active_estate_agenda = estate_burghers_protect_against_piracy
+		has_active_estate_agenda = estate_burghers_hire_advisor
+		has_active_estate_agenda = estate_burghers_fire_advisor
+	}
+}
+has_estate_agenda_of_estate_church = {
+	OR = {
+		has_active_estate_agenda = estate_church_develop_x
+		has_active_estate_agenda = estate_church_build_temple_in_y
+		has_active_estate_agenda = estate_church_build_university_in_y
+		has_active_estate_agenda = estate_church_build_manufactory_in_y
+		has_active_estate_agenda = estate_church_convert_province_x
+		has_active_estate_agenda = estate_church_reduce_war_exhaustion
+		has_active_estate_agenda = estate_church_recover_stability
+		has_active_estate_agenda = estate_church_increase_stability
+		has_active_estate_agenda = estate_church_reduce_overextension
+		has_active_estate_agenda = estate_church_restore_devotion
+		has_active_estate_agenda = estate_church_root_out_heresy
+		has_active_estate_agenda = estate_church_relations_with_pope
+		has_active_estate_agenda = estate_church_restore_the_holy_see
+		has_active_estate_agenda = estate_church_crush_religious_revolts
+		has_active_estate_agenda = estate_church_protect_brethren
+		has_active_estate_agenda = estate_church_propagate_religion
+		has_active_estate_agenda = estate_church_relations_with_dotf
+		has_active_estate_agenda = estate_church_hire_advisor
+		has_active_estate_agenda = estate_church_fire_advisor
+	}
+}
+has_estate_agenda_of_estate_nomadic_tribes = {
+	OR = {
+		has_active_estate_agenda = estate_nomadic_tribes_raze_a_province
+		has_active_estate_agenda = estate_nomadic_tribes_develop_x
+		has_active_estate_agenda = estate_nomadic_tribes_restore_horde_unity
+		has_active_estate_agenda = estate_nomadic_tribes_befriend_rival_of_rival
+		has_active_estate_agenda = estate_nomadic_tribes_relations_with_X
+		has_active_estate_agenda = estate_nomadic_tribes_retake_core
+		has_active_estate_agenda = estate_nomadic_tribes_crush_revolts
+		has_active_estate_agenda = estate_nomadic_tribes_regain_liberty
+		has_active_estate_agenda = estate_nomadic_tribes_convert_province_culture
+		has_active_estate_agenda = estate_nomadic_tribes_protect_our_culture
+		has_active_estate_agenda = estate_nomadic_tribes_vassalise_vulnerable_country
+		has_active_estate_agenda = estate_nomadic_tribes_expand_into_x
+		has_active_estate_agenda = estate_nomadic_tribes_complete_conquest_of_x
+		has_active_estate_agenda = estate_nomadic_tribes_annex_subject
+		has_active_estate_agenda = estate_nomadic_tribes_build_an_army
+		has_active_estate_agenda = estate_nomadic_tribes_bigger_army_than_rival
+		has_active_estate_agenda = estate_nomadic_tribes_build_up_manpower_reserves
+		has_active_estate_agenda = estate_nomadic_tribes_three_privileges
+		has_active_estate_agenda = estate_nomadic_tribes_recover_stability
+		has_active_estate_agenda = estate_nomadic_tribes_increase_stability
+		has_active_estate_agenda = estate_nomadic_tribes_despoil_x
+		has_active_estate_agenda = estate_nomadic_tribes_hire_advisor
+		has_active_estate_agenda = estate_nomadic_tribes_fire_advisor
+	}
+}
 
 has_estate_agenda_of_estate = {
 	has_estate_agenda_of_$estate$ = yes
@@ -447,222 +569,37 @@ is_not_blocked_by_estate_privilege = {
 }
 
 can_select_adm_privilege_for_estate_nobles = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_brahmins = {
 	NOT = { has_estate_privilege = estate_church_religious_state }
 }
 can_select_adm_privilege_for_estate_burghers = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
 	NOT = { has_estate_privilege = estate_church_religious_state }
 }
 can_select_adm_privilege_for_estate_church = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-}
-can_select_adm_privilege_for_estate_cossacks = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_dhimmi = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_jains = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_maratha = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
 }
 can_select_adm_privilege_for_estate_nomadic_tribes = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
 	NOT = { has_estate_privilege = estate_church_religious_state }
 }
-can_select_adm_privilege_for_estate_rajput = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_vaisyas = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_janissaries = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_eunuchs = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_qizilbash = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-can_select_adm_privilege_for_estate_ghulams = {
-	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-	NOT = { has_estate_privilege = estate_church_religious_state }
-}
-
 can_select_dip_privilege_for_estate_nobles = {
 	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_brahmins = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
 }
 can_select_dip_privilege_for_estate_burghers = {
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
 }
 can_select_dip_privilege_for_estate_church = {
 	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_cossacks = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_dhimmi = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_jains = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-}
-can_select_dip_privilege_for_estate_maratha = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
 }
 can_select_dip_privilege_for_estate_nomadic_tribes = {
 	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
 }
-can_select_dip_privilege_for_estate_rajput = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_vaisyas = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_janissaries = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_eunuchs = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_qizilbash = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-can_select_dip_privilege_for_estate_ghulams = {
-	NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-	NOT = { has_estate_privilege = estate_jains_diplomacy }
-}
-
 can_select_mil_privilege_for_estate_nobles = {
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_brahmins = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
 }
 can_select_mil_privilege_for_estate_burghers = {
 	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
 }
 can_select_mil_privilege_for_estate_church = {
 	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_cossacks = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_dhimmi = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_jains = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_maratha = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
 }
 can_select_mil_privilege_for_estate_nomadic_tribes = {
 	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_rajput = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_vaisyas = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_janissaries = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_eunuchs = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_qizilbash = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_ghulams_military }
-}
-can_select_mil_privilege_for_estate_ghulams = {
-	NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-	NOT = { has_estate_privilege = estate_maratha_military }
-	NOT = { has_estate_privilege = estate_rajput_military }
-	NOT = { has_estate_privilege = estate_qizilbash_military }
 }
 
 

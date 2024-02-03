@@ -1,0 +1,15 @@
+#Konin Wilkow
+culture = kaliska
+religion = communism_sd
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Konin - Wilkow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = R34
+controller = R34
+discovered_by = ottoman
+add_core = R34

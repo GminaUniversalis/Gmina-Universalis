@@ -5,116 +5,152 @@ random_new_world_region = {
 }
 malopolska_region = { 
 	areas = { 
-		powiat_tatrzanski powiat_chrzanowski powiat_gorlicki powiat_nowosadecki powiat_tarnowski powiat_brzeski powiat_miechowski powiat_proszowicki powiat_olkuski powiat_oswiecimski
-		powiat_myslenicki powiat_bochenski powiat_nowotarski powiat_limanowski powiat_suski powiat_dabrowski powiat_wadowicki krakow_polnoc krakow_huta powiat_krakowski
-		krakow_centrum krakow_poludnie powiat_wielicki 
+		ksiaz_wielki oswiecim spytkowice powiat_chrzanowski wadowice tomice powiat_oswiecimski krzeszowice makow_podhalanski jordanow
+		pcim kalwaria_zebrzydowska jablonka powiat_tatrzanski nowy_targ kroscienko_nad_dunajcem gorlice stary_sacz grzybow nowy_sacz
+		krynica_zdroj chelmiec limanowa mszana_dolna powiat_wielicki dobczyce lapanow bochnia powiat_proszowicki powiat_olkuski
+		miechow michalowice zielonki krakow_huta krakow_centrum krakow_polnoc skawina krakow_poludnie sekowa moszczenica
+		tuchow powiat_dabrowski powiat_tarnowski radlow gnojnik brzesko zakliczyn tarnow_wschod tarnow_zachod myslenice
 	}
 }
 swietokrzyskie_region = { 
 	areas = { 
-		powiat_jedrzejowski powiat_wloszczowski powiat_konecki powiat_kielecki powiat_pinczowski powiat_kazimierski powiat_buski powiat_staszowski powiat_sandomierski powiat_opatowski
-		powiat_ostrowiecki powiat_starachowicki powiat_skarzyski kielce_centrum kielce_herby kielce_bialogon 
+		wloszczowa radkow sedziszow jedrzejow malogoszcz konin radoszyce powiat_skarzyski miedziana_gora checiny
+		kielce_herby kielce_bialogon kielce_centrum powiat_starachowicki gorno rakow powiat_ostrowiecki sandomierz ozarow opatow
+		klimontow polaniec staszow gnojno morawica busko_zdroj powiat_kazimierski powiat_pinczowski 
 	}
 }
 lubelskie_region = { 
 	areas = { 
-		powiat_pulawski powiat_tomaszowski powiat_janowski powiat_krasnicki powiat_opolski powiat_radzynski powiat_parczewski powiat_wlodawski powiat_bialski powiat_leczynski
-		powiat_swidnicki powiat_lubelski powiat_krasnostawski powiat_chelmski powiat_hrubieszowski powiat_lukowski powiat_rycki powiat_lubartowski powiat_zamojski powiat_bilgorajski
-		lublin_zachod lublin_poludnie Lublin lublin_wschod 
+		lukow biala_podlaska janow_podlaski powiat_bialski miedzyrzec_podlaski stoczek_lukowski radzyn_podlaski powiat_rycki powiat_lukowski borki
+		jeziorzany baranow pulawy wilkow opole_lubelskie lubartow markuszow annopol konopnica modliborzyce
+		krasnik janow_lubelski lublin_zachod Lublin lublin_poludnie lublin_wschod niemce terespol rossosz parczew
+		ostrow_lubelski sosnowica urszulin wlodawa powiat_leczynski glusk wysokie powiat_swidnicki rejowiec chelm_lubelski
+		chelm kamien krasnystaw bialopole rudnik bilgoraj ksiazopol tereszpol szczebrzeszyn zamosc
+		zwierzyniec grabowiec powiat_zamojski jarczow laszczow mircze tomaszow_lubelski hrubieszow 
 	}
 }
 podkarpackie_region = { 
 	areas = { 
-		powiat_tarnobrzeski powiat_debnicki powiat_mielecki powiat_stalowowolski powiat_nizanski powiat_kolbuszowski powiat_lezajski powiat_lancuski powiat_ropczycko_sedziszowski powiat_jasielski
-		powiat_przeworski powiat_lubaczowski powiat_jaroslawski powiat_przemyski powiat_sanocki powiat_leski powiat_bieszczadzki powiat_strzyzowski powiat_krosnienski_pod powiat_brzozowski
-		rzeszow_poludnie rzeszow_wschod powiat_rzeszowski rzeszow_zachod rzeszow_centrum 
+		wadowice_gorne tarnobrzeg_poludnie tarnobrzeg_polnoc zaklikow cieszanow lubaczow gawluszowice mielec powiat_ropczycko_sedziszowski debica
+		pilzno jaslo iwonicz_zdroj miejsce_piastowe krempna besko powiat_bieszczadzki powiat_przemyski przemysl_poludnie przemysl_centrum
+		powiat_leski sanok korczyna krosno_centrum krosno_lotnisko powiat_brzozowski dynow bircza medyka pruchnica
+		jaroslaw handia radymno chmielnik rzeszow_poludnie lubiena powiat_strzyzowski rzeszow_centrum rzeszow_wschod rzeszow_zachod
+		bialobrzegi powiat_lezajski lancut przeworsk powiat_tarnobrzeski dzikowiec kolbuszowa nisko jarocin stalowa_wola
+		trzebownisko 
 	}
 }
 mazowieckie_region = { 
 	areas = { 
-		powiat_zurominski powiat_mlawski powiat_przasnyski powiat_ciechanowski powiat_sochaczewski powiat_warszawski_zachodni powiat_legionowski powiat_makowski powiat_ostrolecki powiat_wyszkowski
-		powiat_wolominski powiat_zyrardow powiat_grodziski powiat_pruszkowski powiat_piaseczynski powiat_grojecki powiat_bialobrzeski powiat_przysuski powiat_radomski powiat_szydlowiecki
-		powiat_lipski powiat_zwolenski powiat_kozienicki powiat_otwocki powiat_garwolinski powiat_minski powiat_siedlecki powiat_sokolowski powiat_wegrowski powiat_ostrowski
-		powiat_losicki powiat_sierpecki powiat_gostyninski powiat_plocki powiat_plonski powiat_pultuski powiat_nowodworski_maz warszawa_srodmiescie warszawa_mokotow warszawa_wola_ochota
-		warszawa_praga warszawa_praga_poludnie 
+		myszyniec strzegowo szydlowo chorzele krasnosielec ciechanow gasocin grudusk przasnysz glinojeck
+		winnica kadzidlo pasieki ostroleka rozan makow biezun zuromin mlawa zawidz
+		powiat_plocki plock_centrum plock_poludnie plock_polnoc powiat_gostyninski gabin drobin sierpc raciaz czerwinsk
+		plonsk bodzanow sochaczew mlodzieszyn zakroczym nowy_dwor_mazowiecki Tluszcz leszno warszawa_praga warszawa_wola_ochota
+		sulejowek warszawa_mokotow warszawa_praga_poludnie raszyn warszawa_srodmiescie izabelin powiat_legionowski Radzymin wolomin wyszkow
+		dlugosiodlo ostrow_mazowiecka sadowne powiat_piaseczynski powiat_zyrardow powiat_grodziski pruszkow grojec rusinow przysucha
+		powiat_szydlowiecki skaryszew lipsko sienno radom_centrum powiat_zwolenski sieciechow powiat_bialobrzeski kozienice radom_polnoc
+		przytyk pionki mogielnica warka garwolin laskrzew parysow jakubow minsk_mazowiecki celestynow
+		wierzbno mordy losice stara_kornica powiat_siedlecki siedlce domanice korczew repki ceranow
+		brok nur sokolow_podlaski wegrow otwock pultusk 
 	}
 }
 podlasie_region = { 
 	areas = { 
-		powiat_siemiatycki powiat_hajnowski powiat_bielski powiat_wysokomazowiecki powiat_zambrowski powiat_lomzynski powiat_kolnenski powiat_grajewski powiat_augustowski powiat_sejnenski
-		powiat_sokolski powiat_moniecki powiat_bialostocki bialystok_zachod bialystok_wschod bialystok_centrum bialystok_poludnie 
+		kolno stawiski jedwabne bialystok_centrum bialystok_wschod bialystok_zachod bialystok_poludnie czarna_bialostocka kryszyn monki
+		powiat_grajewski filipow powiat_suwalski powiat_sejnenski suwalki_poludnie suwalki_polnoc augustow powiat_augustowski powiat_sokolski sokolka
+		michalowo nowogrod powiat_lomzynski lomza choroszcz powiat_zambrowski wysokie_mazowieckie klukowo siematycze bransk
+		milejczyce kleszczele hajnowka narew bielsk_podlaski lapy 
 	}
 }
 zachodnio_pomorskie_region = { 
 	areas = { 
-		powiat_slawienski powiat_koszalinski powiat_szczecinecki powiat_bialogardzki powiat_kolobrzeski powiat_gryficki powiat_swidwinski powiat_drawski powiat_walecki powiat_choszczenski
-		powiat_lobeski powiat_stargardzki powiat_goleniowski powiat_kamienski powiat_swinioujscie powiat_policki powiat_pyrzycki powiat_gryfinski powiat_mysliborski szczecin_srodmiescie
-		szczecin_zachod szczecin_polnoc szczecin_prawobrzerze 
+		szczecinek slawno darlowo gryfice powiat_gryfinski chojna powiat_mysliborski starogard powiat_choszczenski dobrzany
+		powiat_lobeski powiat_drawski powiat_walecki barwice bobolice koszalin_centrum koszalin_zachod koszalin_poludnie koszalin_wschod powiat_koszalinski
+		powiat_bialogardzki polczyn_zdroj swidwin powiat_kolobrzeski goscino rewal kamien_pomorski powiat_goleniowski miedzyzdroje powiat_swinioujscie
+		powiat_policki szczecin_zachod szczecin_srodmiescie szczecin_polnoc szczecin_prawobrzerze chociwel powiat_pyrzycki 
 	}
 }
 pomorskie_region = { 
 	areas = { 
-		powiat_bytowski powiat_slupski powiat_kartuski powiat_koscierski powiat_starogardzki powiat_tczewski powiat_sztumski powiat_kwidzynski powiat_gdanski powiat_wejherowski
-		powiat_pucki powiat_leborski powiat_chojnicki powiat_czluchowski powiat_malborski powiat_nowodworski_pom gdansk_zachodni gdansk_centralny sobieszewo gdynia_polnoc
-		gdynia_poludnie 
+		czluchow prabuty powiat_nowodworski_pom powiat_sztumski powiat_malborski kwidzyn skorcz powiat_tczewski sobieszewo pruszcz_gdanski
+		gdansk_centralny gdansk_zachodni gdynia_poludnie hel powiat_pucki choczewo chlewnica wejherowo luzino gdynia_polnoc
+		powiat_kartuski powiat_gdanski powiat_starogardzki czarna_woda borsk powiat_koscierski chmielno powiat_chojnicki czarne powiat_bytowski
+		miastko slupsk slupsk_wschod slupsk_zachod ustka powiat_leborski 
 	}
 }
 kujawsko_pomorskie_region = { 
 	areas = { 
-		powiat_tucholski powiat_swiecki powiat_sepolenski powiat_nakielski powiat_mogilenski powiat_inowroclawski powiat_aleksandrowski powiat_radziejowski powiat_wloclawski powiat_lipnowski
-		powiat_grudziadzki powiat_chelminski powiat_brodnicki powiat_wabrzeski powiat_rypinski powiat_golubsko-dobrzynski powiat_zninski Torun_centrum powiat_torunski torun_stawki
-		torun_rubinkowo torun_bydgoskie Bydgoszcz_dolny_taras powiat_bydgoski bydgoszcz_fordon bydgoszcz_zachodnie_osiedla bydgoszcz_gorny_taras 
+		gorzno brodnica powiat_rypinski jablonowo powiat_wabrzeski lasin powiat_grudziadzki grudziadz_polnoc grudziadz_poludnie nowe
+		swiecie tuchola powiat_sepolenski cekcyn pruszcz bydgoszcz_zachodnie_osiedla bydgoszcz_gorny_taras bydgoszcz_fordon Bydgoszcz_dolny_taras solec_kujawski
+		powiat_nakielski powiat_zninski inowroclaw powiat_inowroclawski powiat_mogilenski piotrkow_kujawski izbica_kujawska kowal wloclawek_poludnie wloclawek_centrum
+		radziejow zakrzewo nieszawa aleksandrow_kujawski chelmno powiat_chelminski chelmza koronowo torun_bydgoskie Torun_centrum
+		torun_rubinkowo torun_stawki czernikowo skepe powiat_wloclawski lipno wloclawek_polnoc wielgie powiat_golubsko-dobrzynski 
 	}
 }
 lubuskie_region = { 
 	areas = { 
-		powiat_wschowski powiat_nowosolski powiat_zaganski powiat_zielonogorski powiat_swiebodzinski powiat_miedzyrzecki powiat_strzelecko-drezdenecki powiat_gorzowski powiat_zarski powiat_slubnicki
-		powiat_sulecinski powiat_krosnienski_lubu 
+		powiat_wschowski Kostrzyn_nad_odra witnica powiat_strzelecko-drezdenecki gorzow_wielkopolski_centrum santok gorzow_wielkopolski_zawarcie powiat_sulecinski skwerzyna miedzyrzecz
+		powiat_slubnicki powiat_swiebodzinski babimost gubin laknica lubsko zary gozdnica szprotawa zagan
+		nowa_sol zielona_gora_poludnie swidnica zg_centrum_poludnie zielona_gora_centrum zielona_gora_wschod zg_centrum_polnoc zielona_gora_polnoc krosno_odrzanskie trzebiechow
+		nowe_miasteczko 
 	}
 }
 wielkopolska_region = { 
 	areas = { 
-		powiat_leszczynski powiat_rawicki powiat_gostynski powiat_krotoszynski powiat_ostrowski_poznan powiat_kaliski powiat_turecki powiat_kolski powiat_pleszewski powiat_koninski
-		powiat_slupecki powiat_jarocinski powiat_wolsztynski powiat_nowotomyski powiat_grodziski_poznan powiat_koscianski powiat_sremski powiat_miedzychodzki powiat_szamotulski powiat_czarnkowsko-trzcianecki
-		powiat_obornicki powiat_wrzesinski powiat_sredzki powiat_gnieznienski powiat_wagrowiecki powiat_chodzieski powiat_pilski powiat_zlotowski powiat_ostrzeszowski powiat_kepinski
-		poznan_stare_miasto poznan_grunwald poznan_jezyce poznan_polnoc powiat_poznanski poznan_nowe_miasto 
+		golancz klodawa grabow_nad_prosna trzcinica kepno przygodzice ostrzeszow opatowek kalisz_prawobrzeze liskow
+		kalisz_centrum kalisz_lewobrzeze ostrow_wielkopolski dabie slesin kolo brudzew turek malanow stawiszyn
+		sompolno stare_miasto powiat_rawicki powiat_krotoszynski pleszew chocz krobia powiat_jarocinski gostyn osieczna
+		leszno_centrum leszno_wschod wloszakowice powiat_sremski powiat_koscianski powiat_sredzki poznan_nowe_miasto kornik powiat_wrzesinski konin_zachod
+		konin_wschod konin_polnoc golina orchowo slupca witkowo gniezno klecko kostrzyn wagrowiec
+		powiat_obornicki powiat_chodzieski czarnkow powiat_miedzychodzki obrzycko szamotuly tomysl powiat_wolsztynski lwowek powiat_grodziski_poznan
+		rokietnica puszczykowo poznan_grunwald poznan_jezyce poznan_stare_miasto poznan_polnoc wyrzysk zlotow jastrowie pila
+		trzcinianka 
 	}
 }
 warminsko_mazurskie_region = { 
 	areas = { 
-		powiat_nowomiejski powiat_ilawski powiat_dzialdowski powiat_elblaski powiat_lidzbarski powiat_nidzicki powiat_szczycienski powiat_mragowski powiat_piski powiat_elcki
-		powiat_suwalski powiat_olecki powiat_goldapski powiat_gizycki powiat_wegorzewski powiat_bartoszycki powiat_ketrzynski powiat_braniewski powiat_ostrodzki powiat_olsztynski
-		olsztyn_dajtki olsztyn_centrum olsztyn_mazurskie olsztyn_wojska_polskiego 
+		dzialdowo powiat_goldapski elblag_wschod elblag_centrum elblag_polnoc elblag_zachod braniewo powiat_elblaski powiat_braniewski paslek
+		powiat_lidzbarski powiat_bartoszycki dobre_miasto olsztyn_mazurskie olsztyn_wojska_polskiego olsztyn_dajtki olsztyn_centrum morag susz ilawa
+		lubawa powiat_nowomiejski lidzbark ostroda powiat_nidzicki wielbark olsztynek pasym barczewo szczytno
+		swietajno powiat_ketrzynski powiat_wegorzewski powiat_mragowski powiat_piski powiat_gizycki powiat_olecki powiat_elcki 
 	}
 }
 dolnoslaskie_region = { 
 	areas = { 
-		powiat_olawski powiat_olesnicki powiat_milicki powiat_strzelinski powiat_zabkowicki powiat_klodzki powiat_dzierzoniowski powiat_gorowski powiat_glogowski powiat_polkowicki
-		powiat_boleslawiecki powiat_zgorzelecki powiat_lwowecki powiat_lubanski powiat_legnicki powiat_jaworski powiat_zlotoryjski powiat_karkonoski powiat_kamiennogorski powiat_walbrzyski
-		powiat_swidnicki_slask powiat_wolowski powiat_sredzki_slask powiat_trzebnicki powiat_lubinski powiat_wroclawski Krzyki psie_pole_wschod wroclaw_srodmiescie psie_pole_zachod
-		Fabryczna 
+		powiat_milicki zgorzelec zawidow luban powiat_glogowski ruja powiat_lubinski powiat_polkowicki powiat_boleslawiecki wojcieszow
+		jawor chojnow legnica zlotoryja paszowice jelenia_gora_centrum szklarska_poreba jelenia_gora_polnoc powiat_lwowecki jelenia_gora_poludnie
+		karpacz swieradow_zdroj powiat_kamiennogorski szczawno_zdroj walbrzych_polnoc walbrzych_poludnie jedlina_zdroj powiat_gorowski powiat_sredzki_slask strzegom
+		swidnica_slask kobierzyce sobotka wroclaw_srodmiescie Krzyki psie_pole_zachod Fabryczna psie_pole_wschod czernica powiat_olawski
+		powiat_strzelinski zabkowice_slaskie powiat_dzierzoniowski powiat_wolowski prusice trzebnica powiat_olesnicki kamieniec_zabkowicki bystrzyca_klodzka klodzko
+		polanica_zdroj nowa_ruda 
 	}
 }
 opolskie_region = { 
 	areas = { 
-		powiat_kedzierzynsko-kozielski powiat_strzelecki powiat_oleski powiat_kluczborski powiat_namyslowski powiat_brzeski_opole powiat_nyski powiat_prudnicki powiat_glubczycki powiat_krapkowicki
-		powiat_opolski_opole opole_czarnowasy opole_centrum opole_goslawice opole_poludnie opole_wrzoski opole_chmielowice 
+		brzeg otmuchow nysa skoroszyce powiat_namyslowski rudniki powiat_kluczborski olesno murow olszanka
+		niemodlin powiat_prudnicki powiat_glubczycki polska_cerkiew kedzierzyn_kozle powiat_krapkowicki powiat_strzelecki ozimek opole_poludnie opole_goslawice
+		opole_centrum opole_czarnowasy opole_chmielowice opole_wrzoski 
 	}
 }
 slaskie_region = { 
 	areas = { 
-		powiat_klobucki powiat_myszkowski powiat_czestochowski powiat_lubliniecki powiat_zawiercianski powiat_tarnogorski powiat_bytom powiat_raciborski powiat_wodzislawski powiat_gliwicki
-		powiat_bierunsko-ledzinski powiat_cieszynski powiat_bielski_slask powiat_zywiecki rybnik_poludnie katowice_poludnie katowice_srodmiescie katowice_zachod jaworzno_polnoc jaworzno_poludnie
-		jaworzno_centrum dabrowa_gornicza_srodmiescie dabrowa_gornicza_strzemieszyce dabrowa_gornicza_bledow dabrowa_gornicza_pogoria powiat_rybnicki rybnik_polnoc powiat_bedzinski sosnowiec_centrum sosnowiec_pogon
-		sosnowiec_zagorze sosnowiec_bobrek myslowice_srodmiescie myslowice_poludnie tychy_polnoc chorzow tychy_stare swietochlowice siemanowice zabrze_polnoc
-		zabrze_centrum gliwice_labedy gliwice_srodmiescie gliwice_bojkow ruda_polnoc ruda_poludnie zabrze_zaborze piekary bytom_polnoc gliwice_wschod
-		powiat_mikolowski zory_rowien zory_centrum powiat_pszczynski jastrzebie_polnoc jastrzebie_polodnie 
+		kruszyna krzepice pietrowice_wielkie raciborz radlin powiat_rybnicki rybnik_polnoc wodzislaw_slaski zory_rowien zory_centrum
+		rybnik_poludnie jastrzebie_polodnie gorzyce jastrzebie_polnoc cieszyn skoczow powiat_pszczynski jasienica szczyrk bielsko_biala_polnoc
+		bielsko_biala_poludnie bielsko_biala_centrum bielsko_biala_wschod sucha_beskidzka zywiec lipowa milowka koszarawa gilowice wilamowice
+		wisla myslowice_poludnie katowice_zachod knurow gliwice_wschod gliwice_bojkow zabrze_zaborze powiat_mikolowski katowice_poludnie tychy_stare
+		powiat_bierunsko-ledzinski jaworzno_poludnie jaworzno_centrum sosnowiec_bobrek myslowice_srodmiescie siemanowice katowice_srodmiescie chorzow swietochlowice ruda_polnoc
+		ruda_poludnie zabrze_centrum zabrze_polnoc pyskowice gliwice_labedy gliwice_srodmiescie bytom_polnoc piekary powiat_bytom tychy_polnoc
+		sosnowiec_centrum sosnowiec_pogon powiat_bedzinski sosnowiec_zagorze dabrowa_gornicza_strzemieszyce siewierz bedzin dabrowa_gornicza_bledow jaworzno_polnoc szczekociny
+		zawiercie koniecpol czestochowa_zachod czestochowa_wschod czestochowa_polnoc czestochowa_centrum lubliniec konopiska boronow powiat_myszkowski
+		tarnowskie_gory ozarowice mstow klobuck popow dabrowa_gornicza_pogoria dabrowa_gornicza_srodmiescie 
 	}
 }
 lodzkie_region = { 
 	areas = { 
-		powiat_laski powiat_wieruszowski powiat_wielunski powiat_pajeczanski powiat_radomszczanski powiat_leczycki powiat_kutnowski powiat_poddebnicki powiat_sieradzki powiat_zdunskowolski
-		powiat_pabianicki powiat_belchatowski powiat_piotrkowski powiat_lodzki powiat_zgierski powiat_brzezinski powiat_skierniewicki powiat_rawski powiat_tomaszowski_lodz powiat_opoczynski
-		powiat_lowicki lodz_polesie lodz_gorna lodz_widzew Lodz_srodmiescie lodz_baluty 
+		skierniewice krosniewice kutno zychlin kiernozia lowicz skierniewice_grabina skierniewice_centrum powiat_brzezinski gluchow
+		powiat_rawski czerniewice tomaszow_mazowiecki piotrkow_trybunalski taken! rzgow powiat_zdunskowolski grabow leczyca ozorkow
+		piatek domaniewice glowno andrespol pabianice dlutow ujazd Lodz_srodmiescie lodz_widzew lodz_gorna
+		lodz_polesie lutomiersk zgierz lodz_baluty powiat_poddebnicki sieradz warta brzezno czarnozyly wielun
+		boleslawiec wieruszow wierzchlas powiat_laski belchatow szczercow sulmierzyce siemkowice pajeczno radomsko
+		rozprza dobryszyce zytno maslowice sulejow opoczno paradyz 
 	}
 }

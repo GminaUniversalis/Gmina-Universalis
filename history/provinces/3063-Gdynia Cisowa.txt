@@ -1,10 +1,10 @@
 #Gdynia Cisowa
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 16
-base_production = 13
-trade_goods = unknown
-base_manpower = 1
+base_tax = 7
+base_production = 6
+trade_goods = glass
+base_manpower = 6
 capital = "Cisowa"
 is_city = yes
 discovered_by = western

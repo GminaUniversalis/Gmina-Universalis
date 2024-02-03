@@ -2,9 +2,9 @@
 culture = slonska
 religion = communism_sd
 hre = yes
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods = copper
 base_manpower = 1
 capital = "Brzeziny Slaskie"
 is_city = yes

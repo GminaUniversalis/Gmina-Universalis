@@ -2,9 +2,9 @@
 culture = slonska
 religion = communism_sd
 hre = yes
-base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_tax = 2
+base_production = 2
+trade_goods = gu_metalworking
 base_manpower = 1
 capital = "Szarlej"
 is_city = yes
