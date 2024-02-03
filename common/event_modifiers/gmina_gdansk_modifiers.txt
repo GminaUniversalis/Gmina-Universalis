@@ -1,0 +1,4 @@
+rebuild_Gdansk ={
+	development_cost = -0.1
+	build_cost = -0.1
+}
