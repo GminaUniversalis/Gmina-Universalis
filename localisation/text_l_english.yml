@@ -6461,7 +6461,7 @@
  enact_stato_da_mar_desc:0 "Venice faces in two directions, we have our political interests in northern Italy and our trading interests in the Mediterranean. To ensure our trading interests are protected we should split our administration in two and have our trade interests run by the Stato da Mar."
  desc_stato_da_mar:0 "The Stato da Mar is the official term for the Venetian possessions not in Italy. The administrative set up of these lands is entirely geared towards sea control and trade, merchants feel the benefits."
  allow_fuggers_title:0 "Allow Fuggers Financial Control."
- allow_fuggers_desc:0 "The founding in 1397 of the Medici bank put that influential family at the center of European banking, however, rash loans have put the bank under pressure and new wealthy families are appearing in its place. The Fugger family, a wealthy Swabian textile family, have offered their services to us."
+ allow_fuggers_desc:0 "The founding in 1397 of the Medici bank put that influential family at the center of European banksng, however, rash loans have put the bank under pressure and new wealthy families are appearing in its place. The Fugger family, a wealthy Swabian textile family, have offered their services to us."
  desc_fugger_banks:0 "In return for certain feudal concessions the Fugger family have given us their services. It allows us to raise monies much quicker and cheaper than our opponents can."
  establish_hofkriegsrat_title:0 "Establish Hofkriegsrat"
  establish_hofkriegsrat_desc:0 "Hofkriegsrat was established in 1556 by Ferdinand I, responsible for recruitment and supply of munitions and food to the troops and for the maintenance of strongholds."

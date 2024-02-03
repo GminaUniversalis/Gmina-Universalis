@@ -221,25 +221,25 @@ country_event = {
 	}
 
 	after = {
-		clr_country_flag = estate_rodziny_present_agenda
-		clr_country_flag = estate_rolnicy_present_agenda
-		clr_country_flag = estate_wojsko_present_agenda
-		clr_country_flag = estate_banki_present_agenda
-		clr_country_flag = estate_emeryci_present_agenda
-		clr_country_flag = estate_gorniki_present_agenda
+		clr_country_flag = estate_families_present_agenda
+		clr_country_flag = estate_farmers_present_agenda
+		clr_country_flag = estate_army_present_agenda
+		clr_country_flag = estate_banks_present_agenda
+		clr_country_flag = estate_retirees_present_agenda
+		clr_country_flag = estate_miners_present_agenda
 		clr_country_flag = estate_intellectuals_present_agenda
-		clr_country_flag = estate_inwestorzy_present_agenda
-		clr_country_flag = estate_kler_present_agenda
-		clr_country_flag = estate_srednia_present_agenda
+		clr_country_flag = estate_investors_present_agenda
+		clr_country_flag = estate_priests_present_agenda
+		clr_country_flag = estate_middle_class_present_agenda
 		clr_country_flag = estate_ub_present_agenda
 		clear_estate_agenda_cache = ROOT
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.a
-		trigger = { has_country_flag = estate_wojsko_present_agenda }
-		start_estate_agenda = estate_wojsko
-		goto = estate_wojsko
+		trigger = { has_country_flag = estate_army_present_agenda }
+		start_estate_agenda = estate_army
+		goto = estate_army
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -247,7 +247,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_wojsko
+						estate = estate_army
 					}
 				}
 			}
@@ -256,7 +256,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_wojsko
+						estate = estate_army
 					}
 				}
 			}
@@ -264,18 +264,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_wojsko
+					estate = estate_army
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_wojsko
+					estate = estate_army
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_wojsko
+					estate = estate_army
 					higher_than_influence = no
 				}
 			}
@@ -283,9 +283,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.b
-		trigger = { has_country_flag = estate_rolnicy_present_agenda }
-		start_estate_agenda = estate_rolnicy
-		goto = estate_rolnicy
+		trigger = { has_country_flag = estate_farmers_present_agenda }
+		start_estate_agenda = estate_farmers
+		goto = estate_farmers
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -293,7 +293,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_rolnicy
+						estate = estate_farmers
 					}
 				}
 			}
@@ -302,7 +302,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_rolnicy
+						estate = estate_farmers
 					}
 				}
 			}
@@ -310,18 +310,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_rolnicy
+					estate = estate_farmers
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_rolnicy
+					estate = estate_farmers
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_rolnicy
+					estate = estate_farmers
 					higher_than_influence = no
 				}
 			}
@@ -329,9 +329,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.c
-		trigger = { has_country_flag = estate_rodziny_present_agenda }
-		start_estate_agenda = estate_rodziny
-		goto = estate_rodziny
+		trigger = { has_country_flag = estate_families_present_agenda }
+		start_estate_agenda = estate_families
+		goto = estate_families
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -339,7 +339,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_rodziny
+						estate = estate_families
 					}
 				}
 			}
@@ -348,7 +348,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_rodziny
+						estate = estate_families
 					}
 				}
 			}
@@ -356,18 +356,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_rodziny
+					estate = estate_families
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_rodziny
+					estate = estate_families
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_rodziny
+					estate = estate_families
 					higher_than_influence = no
 				}
 			}
@@ -375,9 +375,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.k
-		trigger = { has_country_flag = estate_banki_present_agenda }
-		start_estate_agenda = estate_banki
-		goto = estate_banki
+		trigger = { has_country_flag = estate_banks_present_agenda }
+		start_estate_agenda = estate_banks
+		goto = estate_banks
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -385,7 +385,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_banki
+						estate = estate_banks
 					}
 				}
 			}
@@ -394,7 +394,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_banki
+						estate = estate_banks
 					}
 				}
 			}
@@ -402,18 +402,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_banki
+					estate = estate_banks
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_banki
+					estate = estate_banks
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_banki
+					estate = estate_banks
 					higher_than_influence = no
 				}
 			}
@@ -421,9 +421,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.j
-		trigger = { has_country_flag = estate_gorniki_present_agenda }
-		start_estate_agenda = estate_gorniki
-		goto = estate_gorniki
+		trigger = { has_country_flag = estate_miners_present_agenda }
+		start_estate_agenda = estate_miners
+		goto = estate_miners
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -431,7 +431,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_gorniki
+						estate = estate_miners
 					}
 				}
 			}
@@ -440,7 +440,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_gorniki
+						estate = estate_miners
 					}
 				}
 			}
@@ -448,18 +448,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_gorniki
+					estate = estate_miners
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_gorniki
+					estate = estate_miners
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_gorniki
+					estate = estate_miners
 					higher_than_influence = no
 				}
 			}
@@ -513,9 +513,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.h
-		trigger = { has_country_flag = estate_inwestorzy_present_agenda }
-		start_estate_agenda = estate_inwestorzy
-		goto = estate_inwestorzy
+		trigger = { has_country_flag = estate_investors_present_agenda }
+		start_estate_agenda = estate_investors
+		goto = estate_investors
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -523,7 +523,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_inwestorzy
+						estate = estate_investors
 					}
 				}
 			}
@@ -532,7 +532,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_inwestorzy
+						estate = estate_investors
 					}
 				}
 			}
@@ -540,18 +540,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_inwestorzy
+					estate = estate_investors
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_inwestorzy
+					estate = estate_investors
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_inwestorzy
+					estate = estate_investors
 					higher_than_influence = no
 				}
 			}
@@ -559,9 +559,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.g
-		trigger = { has_country_flag = estate_kler_present_agenda }
-		start_estate_agenda = estate_kler
-		goto = estate_kler
+		trigger = { has_country_flag = estate_priests_present_agenda }
+		start_estate_agenda = estate_priests
+		goto = estate_priests
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -569,7 +569,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_kler
+						estate = estate_priests
 					}
 				}
 			}
@@ -578,7 +578,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_kler
+						estate = estate_priests
 					}
 				}
 			}
@@ -586,18 +586,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_kler
+					estate = estate_priests
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_kler
+					estate = estate_priests
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_kler
+					estate = estate_priests
 					higher_than_influence = no
 				}
 			}
@@ -605,9 +605,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.f
-		trigger = { has_country_flag = estate_srednia_present_agenda }
-		start_estate_agenda = estate_srednia
-		goto = estate_srednia
+		trigger = { has_country_flag = estate_middle_class_present_agenda }
+		start_estate_agenda = estate_middle_class
+		goto = estate_middle_class
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -615,7 +615,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_srednia
+						estate = estate_middle_class
 					}
 				}
 			}
@@ -624,7 +624,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_srednia
+						estate = estate_middle_class
 					}
 				}
 			}
@@ -632,18 +632,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_srednia
+					estate = estate_middle_class
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_srednia
+					estate = estate_middle_class
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_srednia
+					estate = estate_middle_class
 					higher_than_influence = no
 				}
 			}
@@ -697,9 +697,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.d
-		trigger = { has_country_flag = estate_emeryci_present_agenda }
-		start_estate_agenda = estate_emeryci
-		goto = estate_emeryci
+		trigger = { has_country_flag = estate_retirees_present_agenda }
+		start_estate_agenda = estate_retirees
+		goto = estate_retirees
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -707,7 +707,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_emeryci
+						estate = estate_retirees
 					}
 				}
 			}
@@ -716,7 +716,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_emeryci
+						estate = estate_retirees
 					}
 				}
 			}
@@ -724,18 +724,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_emeryci
+					estate = estate_retirees
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_emeryci
+					estate = estate_retirees
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_emeryci
+					estate = estate_retirees
 					higher_than_influence = no
 				}
 			}

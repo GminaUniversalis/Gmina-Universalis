@@ -19,7 +19,7 @@ divorce_consort_effect = {
 	if = {
 		limit = {
 			religion = catholic
-			NOT = { exists = X15 }
+			NOT = { exists = X20 }
 			has_foreign_consort = yes
 		}
 
@@ -50,7 +50,7 @@ divorce_consort_effect = {
 				NOT = { religion = catholic }
 				AND = {
 					religion = catholic
-					NOT = { exists = X15 }
+					NOT = { exists = X20 }
 				}
 			}
 			has_foreign_consort = no
@@ -95,7 +95,7 @@ divorce_consort_effect = {
 				}
 				AND = {
 					religion = catholic
-					NOT = { exists = X15 }
+					NOT = { exists = X20 }
 				}
 			}
 		}
@@ -111,11 +111,11 @@ divorce_consort_effect = {
 		}
 	}
 
-	#X15al dispensation
+	#X20al dispensation
 	if = {
 		limit = {
 			religion = catholic 
-			exists = X15
+			exists = X20
 		}
 
 		#How much influence will you spend?
@@ -128,7 +128,7 @@ divorce_consort_effect = {
 			OR = {
 				NOT = { religion = catholic }
 				AND = {
-					NOT = { exists = X15 }
+					NOT = { exists = X20 }
 					religion = catholic
 				}
 			}

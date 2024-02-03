@@ -1,0 +1,49 @@
+estate_miners = {
+    icon = 2
+    trigger = {
+		always = no
+		gu_coal = 3
+    }
+    country_modifier_happy = {
+		global_trade_goods_size_modifier = 0.2
+		infantry_power = 0.1
+	}
+    country_modifier_neutral = {
+		global_trade_goods_size_modifier = 0.1
+	}
+    country_modifier_angry = {
+		global_trade_goods_size_modifier = -0.2
+		global_unrest = 6
+	}
+  province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+		modifier = {
+			factor = 0.75
+			has_terrain = hills
+		}
+		modifier = {
+			factor = 0.5
+			has_terrain = highlands
+		}
+	}
+    land_ownership_modifier = {
+		miners_loyalty_modifier = 0.5
+	}
+    base_influence = 5
+    contributes_to_curia_treasury = no
+    color = { 200 250 150 }
+    privileges = {
+		
+     }
+	 privileges = {
+	
+	 }
+     agendas = {
+		estate_miners_hire_advisor
+     }
+     influence_from_dev_modifier = 1.0     
+}
