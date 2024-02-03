@@ -1120,7 +1120,7 @@ country_event = {
 	option = {
 		name = politics.6.b
 
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 10 }
 		add_stability = -1
 	}
 }
@@ -1288,7 +1288,7 @@ country_event = {
 	option = {
 		name = politics.7.b
 
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 10 }
 		add_stability = -1
 	}
 }
@@ -1593,7 +1593,7 @@ country_event = {
 	option = {
 		name = politics.8.pzpr
 
-		ai_chance = { factor = 60 }
+		ai_chance = { factor = 20 }
 		add_stability = -1
 	}
 }
@@ -1859,7 +1859,7 @@ country_event = {
 	option = {
 		name = politics.8.pzpr
 
-		ai_chance = { factor = 60 }
+		ai_chance = { factor = 20 }
 		add_stability = -1
 	}
 }
@@ -2164,7 +2164,7 @@ country_event = {
 	option = {
 		name = politics.8.pzpr
 
-		ai_chance = { factor = 120 }
+		ai_chance = { factor = 60 }
 		add_stability = -1
 	}
 }
@@ -2430,7 +2430,7 @@ country_event = {
 	option = {
 		name = politics.8.pzpr
 
-		ai_chance = { factor = 120 }
+		ai_chance = { factor = 60 }
 		add_stability = -1
 	}
 }
@@ -2795,7 +2795,198 @@ country_event = {
 	option = {
 		name = politics.11.b
 
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 10 }
+		add_stability = -1
+	}
+}
+
+# Start of UW
+country_event = {
+	id = politics.12
+	title = politics.12.t
+	desc = politics.12.d
+	picture = UWPicture
+
+	major = yes
+    fire_only_once = yes
+	
+    trigger = {
+        is_year = 1520
+		OR = {
+			religion = liberalism_kld
+			religion = liberalism_ud
+		}
+		
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = liberalism_uw
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+	    months = 30
+
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				type = random
+				amount = 6
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						religion = liberalism_kld
+						religion = liberalism_ud
+					}
+					any_owned_province = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_uw
+						}
+					}
+				}
+
+				country_event = { 
+					id = politics.112
+					days = 30
+				}
+			}
+
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						religion = liberalism_kld
+						religion = liberalism_ud
+					}
+				}
+
+				country_event = { 
+					id = politics.112
+					days = 70
+				}
+			}
+		}
+	}
+
+	option = {
+		name = politics.12.a
+
+		ai_chance = { factor = 100 }
+
+		enable_religion = liberalism_uw
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_uw
+				}
+			}
+			change_religion = liberalism_uw
+			add_reform_center = liberalism_uw
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = liberalism_uw
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = liberalism_uw
+	}
+
+	option = {
+		name = politics.12.b
+
+		ai_chance = { factor = 0 }
+
+		enable_religion = liberalism_uw
+		add_stability = -1
+	}
+}
+
+# Accept UW?
+country_event = {
+	id = politics.112
+	title = politics.112.t
+	desc = politics.12.d
+	picture = UWPicture
+
+	is_triggered_only = yes
+	
+    mean_time_to_happen = {
+	    months = 30
+	}
+
+	option = {
+		name = politics.12.a
+
+		ai_chance = { factor = 100 }
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_uw
+				}
+			}
+			change_religion = liberalism_uw
+			add_reform_center = liberalism_uw
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = liberalism_uw
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = liberalism_uw
+	}
+
+	option = {
+		name = politics.12.b
+
+		ai_chance = { factor = 10 }
 		add_stability = -1
 	}
 }

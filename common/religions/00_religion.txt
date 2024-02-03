@@ -336,6 +336,8 @@ liberalism_group = {
 			communism_sd
 			communism_pzpr
 			communism_zsl
+			liberalism_kld
+			liberalism_ud
 		}
 
 		on_convert = {
