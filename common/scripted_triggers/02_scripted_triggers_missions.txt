@@ -8,11 +8,11 @@ tur_al_andalus_eyalet_limit_a = {
 	# 		owns = 226
 	# 		owns = 224
 	# 		num_of_owned_provinces_with = {
-	# 			region = iberia_region
+	# 			region = #iberia_region
 	# 			value = 10
 	# 		}
 	# 		capital_scope = {
-	# 			region = iberia_region
+	# 			region = #iberia_region
 	# 		}
 	# 	}
 	# 	any_ally = {
@@ -22,11 +22,11 @@ tur_al_andalus_eyalet_limit_a = {
 	# 		owns = 226
 	# 		owns = 224
 	# 		num_of_owned_provinces_with = {
-	# 			region = iberia_region
+	# 			region = #iberia_region
 	# 			value = 10
 	# 		}
 	# 		capital_scope = {
-	# 			region = iberia_region
+	# 			region = #iberia_region
 	# 		}
 	# 	}
 	# }
@@ -35,13 +35,13 @@ tur_al_andalus_eyalet_limit_a = {
 BYZ_roman_empire_decision_trigger = {
 	# OR = {
 	# 	#Core Regions
-	# 	region = anatolia_region
+	# 	region = #anatolia_region
 	# 	region = egypt_region
 	# 	region = italy_region
 	# 	region = france_region
-	# 	region = iberia_region
+	# 	region = #iberia_region
 	# 	region = mashriq_region
-	# 	region = balkan_region
+	# 	region = #balkan_region
 	# 	#England
 	# 	area = east_midlands_area
 	# 	area = west_midlands_area
@@ -102,12 +102,12 @@ BYZ_has_leviathan = {
 BYZ_eligible_province_for_culture_conversion = {
 	# OR = {
 	# 	area = aydin_area
-	# 	area = hudavendigar_area
+	# 	area = #hudavendigar_area
 	# 	AND = {
 	# 		owner = {
 	# 			mission_completed = BYZ_avenge_1071
 	# 		}
-	# 		region = anatolia_region
+	# 		region = #anatolia_region
 	# 	}
 	# }
 }

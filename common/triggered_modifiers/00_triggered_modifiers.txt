@@ -295,7 +295,7 @@ custodian_of_the_two_holy_mosques = {
 # 		normal_or_historical_nations = yes
 # 		has_discovered = 118	# Roma
 # 		religion = catholic
-# 		NOT = { tag = PAP }
+# 		# NOT = { tag = PAP }
 # 	}
 
 # 	trigger = {	

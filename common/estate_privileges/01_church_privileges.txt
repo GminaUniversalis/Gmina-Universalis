@@ -381,7 +381,7 @@ estate_church_papal_emissary = {
 	influence = 0.05
 	is_valid = {
 		religion = catholic
-		NOT = { tag = PAP }
+		# # NOT = { tag = PAP }
 	}
 	can_select = {
 		papal_influence = 20
@@ -2897,12 +2897,12 @@ estate_church_union_of_the_churches = {
 		custom_tooltip = BYZ_may_cause_unionist_revolts
 		
 		hidden_effect = {
-			PAP = {
-				add_opinion = {
-					who = ROOT
-					modifier = BYZ_union_of_the_churches_op
-				}
-			}
+			# PAP = {
+			# 	add_opinion = {
+			# 		who = ROOT
+			# 		modifier = BYZ_union_of_the_churches_op
+			# 	}
+			# }
 		}
 	}
 	conditional_modifier = {
@@ -2940,21 +2940,21 @@ estate_church_union_of_the_churches = {
 		}
 	}
 	on_revoked = {
-		PAP = {
-			remove_opinion = {
-				who = ROOT
-				modifier = BYZ_union_of_the_churches_op
-			}
-		}
-		set_country_flag = estate_church_union_of_the_churches_removed
+		# PAP = {
+		# 	remove_opinion = {
+		# 		who = ROOT
+		# 		modifier = BYZ_union_of_the_churches_op
+		# 	}
+		# }
+		# set_country_flag = estate_church_union_of_the_churches_removed
 	}	
 	on_invalid = {
-		PAP = {
-			remove_opinion = {
-				who = ROOT
-				modifier = BYZ_union_of_the_churches_op
-			}
-		}
+		# PAP = {
+		# 	remove_opinion = {
+		# 		who = ROOT
+		# 		modifier = BYZ_union_of_the_churches_op
+		# 	}
+		# }
 	}
 	ai_will_do = {
 		factor = 0

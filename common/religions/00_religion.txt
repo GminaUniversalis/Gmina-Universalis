@@ -3583,7 +3583,7 @@ dharmic = {
 		country = {
 			tolerance_heathen = 1
 			tolerance_own = 1
-			brahmins_hindu_influence_modifier = 0.2
+			#brahmins_hindu_influence_modifier = 0.2
 		}
 		country_as_secondary = {
 			tolerance_heretic = 1
@@ -3774,7 +3774,7 @@ dharmic = {
 						cost = 50
 
 						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
+						#rajput_exclusive_loyalty_modifier = 0.05
 						maratha_exclusive_loyalty_modifier = 0.05
 					}
 				}

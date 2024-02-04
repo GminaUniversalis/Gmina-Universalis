@@ -772,7 +772,7 @@ country_event = {
 			north_america = { has_discovered = ROOT }
 			south_america = { has_discovered = ROOT }
 			south_china_region = { has_discovered = ROOT }
-			japan_region = { has_discovered = ROOT }
+			#japan_region = { has_discovered = ROOT }
 		}
 		NOT = {
 			has_country_modifier = local_trade_focus

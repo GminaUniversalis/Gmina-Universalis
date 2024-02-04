@@ -17,7 +17,7 @@ country_decisions = {
 	# 			}
 	# 		}
 	# 		OR = {
-	# 			japan_region = {
+	# 			#japan_region = {
 	# 				has_discovered = ROOT
 	# 			}
 	# 			burma_region = {
@@ -52,7 +52,7 @@ country_decisions = {
 	# 						superregion = india_superregion
 	# 						superregion = china_superregion
 	# 						superregion = east_indies_superregion
-	# 						region = japan_region
+	# 						region = #japan_region
 	# 					}
 	# 					has_port = yes
 	# 				}
@@ -76,7 +76,7 @@ country_decisions = {
 	# 					superregion = india_superregion
 	# 					superregion = china_superregion
 	# 					superregion = east_indies_superregion
-	# 					region = japan_region
+	# 					region = #japan_region
 	# 				}
 	# 				has_port = yes
 	# 			}
