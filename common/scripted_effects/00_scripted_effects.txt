@@ -1754,23 +1754,23 @@ remove_random_development = {
 }
 
 #Country effect
-mal_add_disaster_stability = {
-	custom_tooltip = mal_add_disaster_stability_tt
-	hidden_effect = {
-		if = {
-			limit = {
-				has_disaster = decline_of_mali
-			}
-			if = {
-				limit = { NOT = { stability = 3 } }
-				add_stability = 1
-			}
-			else = {
-				add_adm_power = 50
-			}
-		}
-	}
-}
+# mal_add_disaster_stability = {
+# 	custom_tooltip = mal_add_disaster_stability_tt
+# 	hidden_effect = {
+# 		if = {
+# 			limit = {
+# 				has_disaster = decline_of_mali
+# 			}
+# 			if = {
+# 				limit = { NOT = { stability = 3 } }
+# 				add_stability = 1
+# 			}
+# 			else = {
+# 				add_adm_power = 50
+# 			}
+# 		}
+# 	}
+# }
 
 #Country effect
 add_inflation_scaled_to_trade = {
@@ -6206,22 +6206,22 @@ determine_value_of_trade_goods_fish = {
 			which = chance_modifier_fish
 			value = 1
 		}
-		if = {
-			limit = {
-				ROOT = {
-					OR = {
-						region = carribeans_region
-						region = malaya_region
-						region = moluccas_region
-						region = indonesia_region
-					}
-				}
-			}
-			multiply_variable = {
-				which = chance_modifier_fish
-				value = 0.65
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		ROOT = {
+		# 			OR = {
+		# 				region = carribeans_region
+		# 				region = malaya_region
+		# 				region = moluccas_region
+		# 				region = indonesia_region
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply_variable = {
+		# 		which = chance_modifier_fish
+		# 		value = 0.65
+		# 	}
+		# }
 		if = {
 			limit = {
 				ROOT = {
@@ -6501,32 +6501,32 @@ determine_value_of_trade_goods_naval_supplies = {
 			which = chance_modifier_naval_supplies
 			value = 1
 		}
-		if = {
-			limit = {
-				ROOT = {
-					region = carribeans_region
-				}
-			}
-			multiply_variable = {
-				which = chance_modifier_naval_supplies
-				value = 0.65
-			}
-		}
-		if = {
-			limit = {
-				ROOT = {
-					OR = {
-						has_terrain = mountain
-						has_terrain = grasslands
-						region = central_africa_region
-					}
-				}
-			}
-			multiply_variable = {
-				which = chance_modifier_naval_supplies
-				value = 0.5
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		ROOT = {
+		# 			region = carribeans_region
+		# 		}
+		# 	}
+		# 	multiply_variable = {
+		# 		which = chance_modifier_naval_supplies
+		# 		value = 0.65
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		ROOT = {
+		# 			OR = {
+		# 				has_terrain = mountain
+		# 				has_terrain = grasslands
+		# 				region = central_africa_region
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply_variable = {
+		# 		which = chance_modifier_naval_supplies
+		# 		value = 0.5
+		# 	}
+		# }
 		if = {
 			limit = {
 				NOT = { num_of_ports = 1 }
@@ -7415,26 +7415,26 @@ determine_value_of_trade_goods_sugar = {
 			which = chance_modifier_sugar
 			value = 1
 		}
-		if = {
-			limit = {
-				ROOT = {
-					is_random_new_world = no
-					NOT = { province_id = 481 }
-					OR = {
-						region = carribeans_region
-						area = ceara_area
-						area = pernambuco_area
-						area = bahia_area
-						area = guyana_area
-						area = suriname_area
-					}
-				}
-			}
-			multiply_variable = {
-				which = chance_modifier_sugar
-				value = 2.5
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		ROOT = {
+		# 			is_random_new_world = no
+		# 			NOT = { province_id = 481 }
+		# 			OR = {
+		# 				region = carribeans_region
+		# 				area = ceara_area
+		# 				area = pernambuco_area
+		# 				area = bahia_area
+		# 				area = guyana_area
+		# 				area = suriname_area
+		# 			}
+		# 		}
+		# 	}
+		# 	multiply_variable = {
+		# 		which = chance_modifier_sugar
+		# 		value = 2.5
+		# 	}
+		# }
 		if = {
 			limit = {
 				has_country_flag = encourage_cash_crops_flag
