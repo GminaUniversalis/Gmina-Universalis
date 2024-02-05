@@ -2582,6 +2582,62 @@ socialism_group = {
 	crusade_name = WAR_WITH_FASCISM
 }
 
+populism_group = {
+
+	populism_samoobrona = {
+		color = { 101 57 130 }
+		icon = 45
+		country = {
+			global_tax_modifier = 0.1
+			build_cost = -0.1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+		}
+		province = {
+			
+		}
+
+		allowed_conversion = {
+			
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = populism_samoobrona
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_samoobrona
+						}
+					}
+					change_religion = populism_samoobrona
+					add_reform_center = populism_samoobrona
+				}
+			}			
+		}
+		
+		heretic = {  }
+		
+		date = 1575.1.1
+
+		personal_deity = yes
+	}
+}
+
 christian = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
