@@ -188,8 +188,8 @@ sky_tower = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			add_adm_power = -100	
-			add_dip_power = -100	
+			add_adm_power = 100	
+			add_dip_power = 100	
 			add_prestige = 50
 		}
 	}
