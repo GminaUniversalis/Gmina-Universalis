@@ -534,7 +534,7 @@ country_event = {
 		}
 		add_piety = -0.10
 		reduce_estate_church_loyalty_effect = yes
-		add_estate_dhimmi_loyalty_effect = yes
+		#add_estate_dhimmi_loyalty_effect = yes
 	}
 }
 
@@ -631,7 +631,7 @@ country_event = {
 		}
 		add_piety = -0.10
 		remove_country_modifier = dhimmi_building_restrictions
-		add_estate_dhimmi_loyalty_effect = yes
+		#add_estate_dhimmi_loyalty_effect = yes
 	}
 }
 

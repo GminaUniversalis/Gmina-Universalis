@@ -206,7 +206,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_combat_terrain_coastline"
-		texturefile = "gfx/interface/combat_terrain_inland_ocean.dds"
+		texturefile = "gfx/interface/combat_terrain_coastline.dds"
 	}
 
 	spriteType = {

@@ -179,7 +179,7 @@ liberalism_group = {
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
-
+			liberalism_uw
 		}
 
 		allowed_center_conversion = {
@@ -255,7 +255,7 @@ liberalism_group = {
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
-
+			liberalism_uw
 		}
 
 		allowed_center_conversion = {
@@ -319,10 +319,88 @@ liberalism_group = {
 		}
 
 		aspects_name = ANGLICAN_ASPECTS
-		
 		heretic = { FASCISTS }
-		
 		date = 1480.1.1
+	}
+
+	liberalism_uw = {
+		color = { 173 3 252 }
+		icon = 35
+		allow_female_defenders_of_the_faith = yes
+
+		allowed_conversion = {
+
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+			liberalism_kld
+			liberalism_ud
+		}
+
+		on_convert = {
+			change_religion = liberalism_uw
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_uw
+						}
+					}
+					change_religion = liberalism_uw
+					add_reform_center = liberalism_uw
+				}
+			}			
+		}
+
+		country = {
+			trade_efficiency = 0.15
+			free_dip_policy = 1
+		}
+		
+		country_as_secondary = {
+			trade_efficiency = 0.10
+		}
+
+		province = {
+			trade_value_modifier = 0.15
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			shock_therapy_aspect
+			assimilate_competition_aspect
+			thin_line_aspect
+			small_constitution_aspect
+			straight_to_europe_aspect
+			liberal_but_conservative_aspect
+			sell_industry_aspect
+			international_connections_aspect
+			support_from_elite_aspect
+			disband_military_base_aspect
+		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_uw
+				}
+			}
+		}
+	
+		aspects_name = ANGLICAN_ASPECTS
+		heretic = { FASCISTS }
+		date = 1520.1.1
 	}
 
 	defender_of_faith = yes
@@ -3561,7 +3639,7 @@ dharmic = {
 		country = {
 			tolerance_heathen = 1
 			tolerance_own = 1
-			brahmins_hindu_influence_modifier = 0.2
+			#brahmins_hindu_influence_modifier = 0.2
 		}
 		country_as_secondary = {
 			tolerance_heretic = 1
@@ -3752,7 +3830,7 @@ dharmic = {
 						cost = 50
 
 						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
+						#rajput_exclusive_loyalty_modifier = 0.05
 						maratha_exclusive_loyalty_modifier = 0.05
 					}
 				}
@@ -3973,9 +4051,7 @@ dharmic = {
 						type = MIL
 						cost = 50
 
-						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
-						maratha_exclusive_loyalty_modifier = 0.05
+
 					}
 				}
 			}

@@ -964,44 +964,95 @@ province;red;green;blue;x;x
 1247;187;90;79;Wapno;x
 1248;59;92;126;Bochnia;x
 1249;187;94;173;Wloszczowa;x
-1250;1;200;200;VÃ¤nern;x
-1251;2;200;250;VÃ¤ttern;x
-1260;11;220;250;Lake Peipus;x
-1261;12;250;250;Ladoga;x
-1262;13;200;200;Onega;x
+1250;1;200;200;Odra;x
+1251;2;200;250;Odra;x
+1252;3;220;250;Odra;x
+1253;4;250;250;Odra;x
+1253;4;250;250;Odra;x
+1254;5;200;200;Odra;x
+1255;6;200;250;Odra;x
+1256;7;220;250;Odra;x
+1257;8;250;250;Odra;x
+1258;9;200;200;Odra;x
+1259;10;200;250;Odra;x
+1260;11;220;250;Odra;x
+1261;12;250;250;Odra;x
+1262;13;200;200;Odra;x
 1263;14;200;250;Odra;x
+1264;15;220;250;Odra;x
+1265;16;250;250;Odra;x
+1266;17;200;200;Odra;x
+1267;18;200;250;Odra;x
+1268;19;220;250;Odra;x
+1269;20;250;250;Odra;x
+1270;21;200;200;Odra;x
+1271;22;200;250;Odra;x
+1272;23;220;250;Odra;x
 1273;224;123;123;Kolaczyce;x
+1274;25;200;200;Odra;
+1275;26;200;250;Odra;x
+1276;27;220;250;Odra;x
+1277;28;250;250;Odra;x
+1278;29;200;200;Odra;x
+1279;30;200;250;Odra;x
+1280;31;220;250;Odra;x
+1281;32;250;250;Odra;x
+1282;33;200;200;Odra;x
+1283;34;200;250;Odra;x
+1284;35;220;250;Odra;x
+1285;36;250;250;Odra;x
+1286;37;200;200;Odra;x
+1287;38;200;250;Odra;x
+1288;39;220;250;Odra;x
 1289;40;250;250;Wisla;x
+1294;45;200;200;Bóbr;x
+1295;46;200;250;Bóbr;x
+1296;47;220;250;Bóbr;x
+1297;48;250;250;Bóbr;x
+1298;49;200;200;Bóbr;x
+1299;50;200;250;Bóbr;x
+1300;51;220;250;Bóbr;x
+1301;52;250;250;Bóbr;x
+1302;53;200;200;Bóbr;x
+1303;54;200;250;Bóbr;x
+1305;56;250;250;Bóbr;x
 1306;181;48;132;Babice;x
+1307;58;200;250;Bóbr;x
+1308;59;220;250;Bóbr;x
+1309;60;250;250;Bóbr;x
+1310;61;200;200;Bóbr;x
+1311;62;200;250;Bóbr;x
+1312;63;220;250;Bóbr;x
+1313;64;250;250;Bóbr;x
 1318;209;246;4;Katowice;x
-1326;77;200;200;Caspian Sea;x
-1336;87;220;250;Coast of Makran;x
-1423;46;201;251;Cook Strait;x
-1446;69;201;201;Horn of Africa;x
-1459;82;201;251;Coast of Ciskei;x
-1530;25;202;202;Coast of Brazil;x
-1561;56;252;252;Cook Inlet;x
-1563;58;202;252;Hatton Bank;x
-1564;59;222;252;Eastern Gibbs Fracture;x
-1565;60;252;252;Western Gibbs Fracture;x
-1567;62;202;252;Sea of Azores;x
-1568;63;222;252;Corner Seamounts;x
-1570;65;202;202;New England Seamounts;x
-1571;66;202;252;Blake Plateau;x
-1574;69;202;202;Antilles Current;x
-1577;72;252;252;Southern Guiana Basin;x
-1578;73;202;202;Canary Approach;x
-1580;75;222;252;Central North Atlantic;x
-1581;76;252;252;North Equatorial Current;x
-1582;77;202;202;Northeast Sargasso Sea;x
-1583;78;202;252;Southeast Sargasso Sea;x
-1586;81;202;202;West Guinea Basin;x
-1615;110;202;252;Southeastern Arabian Sea;x
-1616;111;222;252;North Indian Ocean;x
-1618;113;202;202;Western Equatorial Counter Current;x
-1622;117;202;202;Eastern Equatorial Counter Current;x
-1636;3;223;253;Southwestern Indian Ridge;x
-1647;14;203;253;Western Indian Ocean South Equatorial Current;x
+1326;77;200;200;Odra;x
+1336;87;220;250;Odrax
+1423;46;201;251;Odra;x
+1446;69;201;201;Odra;x
+1459;82;201;251;Odra;x
+1530;25;202;202;Odra;x
+1561;56;252;252;Zalew Wiślany;x
+1563;58;202;252;Zatoka Pomorska;x
+1564;59;222;252;Zatoka Pomorska;x
+1565;60;252;252;Wybrzerze Kołobrzeskie;x
+1567;62;202;252;Wybrzerze Darłowskie;x
+1568;63;222;252;Zatoka Gdańska;x
+1570;65;202;202;Baltyk;x
+1571;66;202;252;Zatoka Gdańska;x
+1574;69;202;202;Zalew Wiślany;x
+1577;72;252;252;North Sea - Coast of Holland;x
+1578;73;202;202;Zalew Kuroński;x
+1580;75;222;252;Cieśnina Duńska;x
+1581;76;252;252;Zatoka Pucka;x
+1582;77;202;202;Zatoka Gdańska;x
+1583;78;202;252;Wybrzerze Lubiatowskie;x
+1586;81;202;202;Odra;x
+1615;110;202;252;Odra;x
+1616;111;222;252;Odra;x
+1618;113;202;202;Odra;x
+1622;117;202;202;Odra;x
+1636;3;223;253;Odra;x
+1647;14;203;253;Odra;x
 1648;15;223;253;Lake Tchad;x
 1649;16;253;253;Lake Victoria;x
 1650;17;203;203;Lake Tanganyika;x
@@ -1031,8 +1082,8 @@ province;red;green;blue;x;x
 1687;54;203;253;Wieprz;x
 1688;55;223;253;Baryczx
 1689;56;253;253;Pisa;x
-1690;57;203;203;Nysa Klodzka;x
-1691;58;203;253;Bobr;x
+1690;57;203;203;Nysa Kłodzka;x
+1691;58;203;253;Bóbr;x
 1692;59;223;253;Bzura;x
 1693;60;253;253;Pilica;x
 1694;61;203;203;Jezioro Wielimie;x
@@ -1046,43 +1097,43 @@ province;red;green;blue;x;x
 1702;69;203;203;Narew;x
 1703;70;203;253;Dunajec;x
 1704;71;223;253;San;x
-1705;72;253;253;Eastern Pacific #6;x
-1706;73;203;203;Eastern Pacific #7;x
-1707;74;203;253;Eastern Pacific #8;x
-1708;75;223;253;Eastern Pacific #9;x
-1709;76;253;253;Eastern Pacific #10;x
-1710;77;203;203;Eastern Pacific #11;x
-1711;78;203;253;Eastern Pacific #12;x
-1712;79;223;253;Eastern Pacific #13;x
-1713;80;253;253;Eastern Pacific #14;x
-1714;81;203;203;Eastern Pacific #15;x
-1715;82;203;253;Eastern Pacific #16;x
-1716;83;223;253;Eastern Pacific #17;x
-1717;85;203;203;Southern Pacifc #1;x
-1718;86;203;253;Southern Pacifc #2;x
-1719;87;223;253;Southern Pacifc #3;x
-1720;88;253;253;Southern Pacifc #4;x
-1721;89;203;203;Southern Pacifc #5;x
-1722;90;203;253;Southern Pacifc #6;x
-1723;91;223;253;Southern Pacifc #7;x
-1724;92;253;253;Southern Pacifc #8;x
-1725;93;203;203;Southern Pacifc #9;x
-1726;94;203;253;Southern Pacifc #10;x
-1727;95;223;253;Southern Pacifc #11;x
-1728;96;253;253;Southern Pacifc #12;x
-1729;97;203;203;Southern Pacifc #13;x
-1730;98;203;253;Southern Pacifc #14;x
-1731;99;223;253;Southern Pacifc #15;x
-1732;100;253;253;Southern Pacifc #16;x
-1733;101;203;203;Southern Pacifc #17;x
-1734;102;203;253;Southern Pacifc #18;x
-1735;103;223;253;Southern Pacifc #19;x
-1736;104;203;203;Southern Pacifc #20;x
-1737;106;203;253;Southern Pacifc #22;x
-1738;107;223;253;Southern Pacifc #23;x
-1739;108;253;253;Southern Pacifc #24;x
-1740;109;203;203;Southern Pacifc #25;x
-1741;110;203;253;Southern Pacifc #26;x
+1705;72;253;253;Danish Strait;x
+1706;73;203;203;Sund;x
+1707;74;203;253;Baltyk;x
+1708;75;223;253;Sund;x
+1709;76;253;253;Baltyk;x
+1710;77;203;203;Baltyk;x
+1711;78;203;253;Baltyk;x
+1712;79;223;253;Baltyk;x
+1713;80;253;253;Sund;x
+1714;81;203;203;Sund;x
+1715;82;203;253;Baltyk;x
+1716;83;223;253;Baltyk;x
+1717;85;203;203;Baltyk;x
+1718;86;203;253;Baltyk;x
+1719;87;223;253;Baltyk;x
+1720;88;253;253;Baltyk;x
+1721;89;203;203;Baltyk;x
+1722;90;203;253;Baltyk;x
+1723;91;223;253;Baltyk;x
+1724;92;253;253;Baltyk;x
+1725;93;203;203;Baltyk;x
+1726;94;203;253;Baltyk;x
+1727;95;223;253;Baltyk;x
+1728;96;253;253;Baltyk;x
+1729;97;203;203;Baltyk;x
+1730;98;203;253;Baltyk;x
+1731;99;223;253;Baltyk;x
+1732;100;253;253;Baltyk;x
+1733;101;203;203;Baltyk;x
+1734;102;203;253;Baltyk;x
+1735;103;223;253;Baltyk;x
+1736;104;203;203;Baltyk;x
+1737;106;203;253;Baltyk;x
+1738;107;223;253;Baltyk;x
+1739;108;253;253;Baltyk;x
+1740;109;203;203;Wybrzerze Łeby;x
+1741;110;203;253;Wybrzerze Ustki;x
 1742;66;68;126;Bcdkowo;x
 1743;194;70;173;Osieczna;x
 1744;66;72;32;Swiekatowo;x
@@ -3332,3 +3383,4 @@ province;red;green;blue;x;x
 879;134;122;79;Drzewice;x
 880;6;124;126;Kostrzyn - Stare Miasto;x
 808;115;112;192;Kostrzyn nad Odra;x
+881;134;126;173;Królewiec;x

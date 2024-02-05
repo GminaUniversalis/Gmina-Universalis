@@ -823,7 +823,6 @@ mercantilism = {
 	global_prov_trade_power_modifier = 2.0
 	embargo_efficiency = 1
 	burghers_loyalty_modifier = 0.1
-	vaisyas_loyalty_modifier = 0.1
 }
 
 army_tradition = {
@@ -836,11 +835,6 @@ army_tradition = {
 	rr_girondists_influence = 0.1
 	monthly_militarized_society = 0.1
 	nobles_loyalty_modifier = 0.05
-	maratha_loyalty_modifier = 0.05
-	rajput_loyalty_modifier = 0.05
-	janissaries_loyalty_modifier = 0.05
-	qizilbash_loyalty_modifier = 0.05
-	ghulams_loyalty_modifier = 0.05
 	allowed_tercio_fraction = 0.1
 	allowed_samurai_fraction = 0.1
 }
@@ -855,7 +849,6 @@ navy_tradition = {
 	blockade_efficiency = 1
 	sailors_recovery_speed = 0.2
 	burghers_loyalty_modifier = 0.05
-	vaisyas_loyalty_modifier = 0.05
 	allowed_geobukseon_fraction = 0.5
 	allowed_galleass_fraction = 0.5
 }
@@ -992,7 +985,7 @@ legitimacy = {
 horde_unity = {
 	global_unrest = -4
 	discipline = 0.10
-	#nomadic_tribes_loyalty_modifier = 0.05	#New Change
+	nomadic_tribes_loyalty_modifier = 0.05 #New Change
 }
 
 # Multiplied by current Devotion - 50
@@ -1009,7 +1002,6 @@ devotion = {
 	prestige = 2
 	global_tax_modifier = 0.50
 	church_loyalty_modifier = 0.1
-	brahmins_hindu_loyalty_modifier = 0.1
 	reform_progress_growth = 0.5
 }
 
@@ -1033,23 +1025,10 @@ corruption = {
 	min_autonomy = 50
 	global_unrest = -20
 	imperial_mandate = -1
-	brahmins_hindu_loyalty_modifier = 0.1
-	brahmins_muslim_loyalty_modifier = 0.1
-	brahmins_other_loyalty_modifier = 0.1
 	church_loyalty_modifier = 0.1
-	maratha_loyalty_modifier = 0.1
 	nobles_loyalty_modifier = 0.1
 	burghers_loyalty_modifier = 0.1
-	vaisyas_loyalty_modifier = 0.1
-	cossacks_loyalty_modifier = 0.1
 	nomadic_tribes_loyalty_modifier = 0.1
-	dhimmi_loyalty_modifier = 0.1
-	jains_loyalty_modifier = 0.1
-	rajput_loyalty_modifier = 0.1
-	eunuchs_loyalty_modifier = 0.1
-	janissaries_loyalty_modifier = 0.1
-	qizilbash_loyalty_modifier = 0.1
-	ghulams_loyalty_modifier = 0.1
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
@@ -1127,24 +1106,22 @@ prestige = {
 	monthly_heir_claim_increase = 0.05
 
 	monthly_persian_influence = 0.25
-
-	brahmins_hindu_loyalty_modifier = 0.05
-	brahmins_muslim_loyalty_modifier = 0.05
-	brahmins_other_loyalty_modifier = 0.05
 	church_loyalty_modifier = 0.05
-	maratha_loyalty_modifier = 0.05
 	nobles_loyalty_modifier = 0.05
 	burghers_loyalty_modifier = 0.05
-	vaisyas_loyalty_modifier = 0.05
-	cossacks_loyalty_modifier = 0.05
 	nomadic_tribes_loyalty_modifier = 0.05
-	dhimmi_loyalty_modifier = 0.05
-	jains_loyalty_modifier = 0.05
-	rajput_loyalty_modifier = 0.05
-	janissaries_loyalty_modifier = 0.05
-	eunuchs_loyalty_modifier = 0.05
-	qizilbash_loyalty_modifier = 0.05
-	ghulams_loyalty_modifier = 0.05
+	retirees_loyalty_modifier = 0.05
+	families_loyalty_modifier = 0.05
+	army_loyalty_modifier = 0.05
+	farmers_loyalty_modifier = 0.05
+	middle_class_loyalty_modifier = 0.05
+	banks_loyalty_modifier = 0.05
+	ub_loyalty_modifier = 0.05
+	intellectuals_loyalty_modifier = 0.05
+	investors_loyalty_modifier = 0.05
+	preists_loyalty_modifier = 0.05
+	miners_loyalty_modifier = 0.05
+
 }
 
 no_debate_in_parliament = {
@@ -1156,8 +1133,7 @@ republican_tradition = {
 	global_unrest = -2
 	rr_jacobins_influence = 0.1
 	reform_progress_growth = 1.0
-	burghers_loyalty_modifier = 0.05
-	vaisyas_loyalty_modifier = 0.05
+
 }
 
 inverse_republican_tradition = {
@@ -1191,7 +1167,6 @@ religious_unity = {
 	monthly_fervor_increase = 1
 	max_absolutism = 5
 	church_loyalty_modifier = 0.05
-	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
 }
 
@@ -1909,7 +1884,7 @@ outward_focus_modifier = {
 	diplomatic_reputation = 1
 	global_colonial_growth = 20
 	range = 0.25
-	burghers_loyalty_modifier = 0.05
+
 	harmonization_speed = 0.25
 }
 
