@@ -1,9 +1,9 @@
 #City of Nowa Sol
 culture = dolnoslaska
 religion = communism_pzpr
-base_tax = 5
+base_tax = 6
 base_production = 8
-trade_goods = unknown
+trade_goods = iron
 base_manpower = 6
 capital = "City of Nowa Sol"
 is_city = yes

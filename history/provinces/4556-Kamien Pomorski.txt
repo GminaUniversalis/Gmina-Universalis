@@ -1,10 +1,10 @@
 #Kamien Pomorski
 culture = zachodniopomorska
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = unknown
-base_manpower = 1
+trade_goods = gu_tourists
+base_manpower = 2
 capital = "Kamien Pomorski"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = P14
 controller = P14
 add_core = P14
 discovered_by = ottoman
+center_of_trade = 1

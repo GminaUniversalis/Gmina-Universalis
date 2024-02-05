@@ -1,9 +1,9 @@
 #City of Szczecinek
 culture = srodkowopomorska
 religion = communism_sd
-base_tax = 5
+base_tax = 6
 base_production = 7
-trade_goods = gu_lumber
+trade_goods = fish
 base_manpower = 7
 capital = "City of Szczecinek"
 is_city = yes

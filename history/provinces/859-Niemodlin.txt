@@ -1,9 +1,9 @@
 #Niemodlin
 culture = opolska
 religion = communism_zsl
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_cattle
 base_manpower = 2
 capital = "Niemodlin"
 is_city = yes
@@ -14,3 +14,4 @@ controller = H11
 add_core = H11
 hre = yes
 discovered_by = ottoman
+add_core = H20

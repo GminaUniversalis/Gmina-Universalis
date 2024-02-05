@@ -1,0 +1,16 @@
+#Bytkow
+culture = slonska
+religion = communism_sd
+hre = yes
+base_tax = 5
+base_production = 3
+trade_goods = gu_metalworking
+base_manpower = 4
+capital = "Bytkow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L29
+controller = L29
+discovered_by = ottoman
+add_core = L29

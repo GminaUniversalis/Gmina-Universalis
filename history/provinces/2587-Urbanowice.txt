@@ -1,0 +1,17 @@
+#Urbanowice
+culture = gornoslaska
+religion = communism_pzpr
+hre = yes
+base_tax = 5
+base_production = 6
+trade_goods = gu_metalworking
+base_manpower = 4
+capital = "Urbanowice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L24
+controller = L24
+discovered_by = ottoman
+add_core = L24
+latent_trade_goods = { gu_vehicles }

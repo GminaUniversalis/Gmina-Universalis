@@ -1,9 +1,9 @@
 #Melgiew
 culture = lubelska
 religion = communism_pzpr
-base_tax = 2
+base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_barley
 base_manpower = 2
 capital = "Melgiew"
 is_city = yes

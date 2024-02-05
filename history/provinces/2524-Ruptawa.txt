@@ -1,0 +1,16 @@
+#Ruptawa
+culture = gornoslaska
+religion = communism_pzpr
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = gu_cattle
+base_manpower = 1
+capital = "Ruptawa"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L22
+controller = L22
+discovered_by = ottoman
+add_core = L22

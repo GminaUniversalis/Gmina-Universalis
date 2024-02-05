@@ -1,10 +1,10 @@
 #Bemowo
 culture = warszawska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 4
+base_production = 2
+trade_goods = gu_consumer_goods
+base_manpower = 5
 capital = "Bemowo"
 is_city = yes
 discovered_by = western

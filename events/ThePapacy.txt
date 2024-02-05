@@ -7,757 +7,757 @@
 namespace = papacy_events
 
 # The Swiss Guard
-country_event = {
-	id = papacy_events.1
-	title = papacy_events.1.t
-	desc = papacy_events.1.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.1
+# 	title = papacy_events.1.t
+# 	desc = papacy_events.1.d
+# 	picture = RELIGION_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		if = {
-			limit = {
-				has_dlc = "Emperor"
-			}
-			has_country_flag = pap_swiss_guard_mission_flag
-		}
-		else = {
-			has_dlc = "Common Sense"
-			tag = X15
-			exists = SWI
-			has_opinion = { who = SWI value = 25 }
-			reverse_has_opinion = { who = SWI value = 25 }
-			NOT = {
-				OR = {
-					has_country_modifier = pap_swiss_guard_timer
-					has_country_modifier = pap_swiss_guard
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		if = {
+# 			limit = {
+# 				has_dlc = "Emperor"
+# 			}
+# 			has_country_flag = pap_swiss_guard_mission_flag
+# 		}
+# 		else = {
+# 			has_dlc = "Common Sense"
+# 			tag = X15
+# 			exists = SWI
+# 			has_opinion = { who = SWI value = 25 }
+# 			reverse_has_opinion = { who = SWI value = 25 }
+# 			NOT = {
+# 				OR = {
+# 					has_country_modifier = pap_swiss_guard_timer
+# 					has_country_modifier = pap_swiss_guard
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			set_country_flag = enable_swiss_guard
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			set_country_flag = enable_swiss_guard
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 200
-	}
+# 	mean_time_to_happen = {
+# 		months = 200
+# 	}
 	
-	option = {
-		name = papacy_events.1.a
-		custom_tooltip = emp_pap_swiss_guard_mercs_enabled
-		custom_tooltip = costs_no_army_professionalism
-		add_country_modifier = {
-			name = "pap_papal_swiss_guard"
-			duration = 7300
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.1.a
+# 		custom_tooltip = emp_pap_swiss_guard_mercs_enabled
+# 		custom_tooltip = costs_no_army_professionalism
+# 		add_country_modifier = {
+# 			name = "pap_papal_swiss_guard"
+# 			duration = 7300
+# 		}
+# 	}
+# }
 
 # Passetto di Borgo
-country_event = {
-	id = papacy_events.5
-	title = papacy_events.5.t
-	desc = papacy_events.5.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.5
+# 	title = papacy_events.5.t
+# 	desc = papacy_events.5.d
+# 	picture = RELIGION_eventPicture
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	goto = 118
+# 	goto = 118
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		FROM = {
-			province_id = 118 # Rome
-			is_capital = yes
-			NOT = {
-				controlled_by = X15
-			}
-		}
-		tag = X15
-		NOT = {
-			has_country_modifier = pap_passetto_di_borgo_timer
-		}
-		is_monarch_leader = no
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		FROM = {
+# 			province_id = 118 # Rome
+# 			is_capital = yes
+# 			NOT = {
+# 				controlled_by = X15
+# 			}
+# 		}
+# 		tag = X15
+# 		NOT = {
+# 			has_country_modifier = pap_passetto_di_borgo_timer
+# 		}
+# 		is_monarch_leader = no
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			add_country_modifier = {
-				name = pap_passetto_di_borgo_timer
-				duration = 1825
-				hidden = yes
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_country_modifier = {
+# 				name = pap_passetto_di_borgo_timer
+# 				duration = 1825
+# 				hidden = yes
+# 			}
+# 		}
+# 	}
 	
-	option = {
-		name = papacy_events.5.a
-		add_prestige = -5
-		add_devotion = -10
-	}
+# 	option = {
+# 		name = papacy_events.5.a
+# 		add_prestige = -5
+# 		add_devotion = -10
+# 	}
 	
-	option = {
-		name = papacy_events.5.b
-		add_devotion = 10
-		random_list = {
-			10 = {
-				kill_ruler = yes
-			}
-			90 = { }
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.5.b
+# 		add_devotion = 10
+# 		random_list = {
+# 			10 = {
+# 				kill_ruler = yes
+# 			}
+# 			90 = { }
+# 		}
+# 	}
+# }
 
 # Cardinal-Nephew
-country_event = {
-	id = papacy_events.6
-	title = papacy_events.6.t
-	desc = papacy_events.6.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.6
+# 	title = papacy_events.6.t
+# 	desc = papacy_events.6.d
+# 	picture = RELIGION_eventPicture
 	
-	goto = cardinal_nephew_province
+# 	goto = cardinal_nephew_province
 	
-	is_triggered_only = yes # pulse
+# 	is_triggered_only = yes # pulse
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		tag = X15
-		NOT = {
-			total_number_of_cardinals = 49
-		}
-		any_known_country = {
-			capital_scope = {
-				region = italy_region
-			}
-			has_opinion = { who = ROOT value = 25 }
-			reverse_has_opinion = { who = ROOT value = 25 }
-			religion = catholic
-			NOT = { num_of_cardinals = 7 }
-			any_owned_province = {
-				has_cardinal = no
-			}
-			NOT = {
-				has_country_flag = pap_cardinal_nephew_flag
-			}
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		tag = X15
+# 		NOT = {
+# 			total_number_of_cardinals = 49
+# 		}
+# 		any_known_country = {
+# 			capital_scope = {
+# 				region = italy_region
+# 			}
+# 			has_opinion = { who = ROOT value = 25 }
+# 			reverse_has_opinion = { who = ROOT value = 25 }
+# 			religion = catholic
+# 			NOT = { num_of_cardinals = 7 }
+# 			any_owned_province = {
+# 				has_cardinal = no
+# 			}
+# 			NOT = {
+# 				has_country_flag = pap_cardinal_nephew_flag
+# 			}
+# 		}
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			random_known_country = {
-				limit = {
-					capital_scope = {
-						region = italy_region
-					}
-					has_opinion = { who = ROOT value = 25 }
-					reverse_has_opinion = { who = ROOT value = 25 }
-					religion = catholic
-					NOT = { num_of_cardinals = 7 }
-					any_owned_province = {
-						has_cardinal = no
-					}
-				}
-				save_event_target_as = cardinal_nephew_country
-				random_owned_province = {
-					limit = {
-						has_cardinal = no
-						development = 10
-					}
-					save_event_target_as = cardinal_nephew_province
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_known_country = {
+# 				limit = {
+# 					capital_scope = {
+# 						region = italy_region
+# 					}
+# 					has_opinion = { who = ROOT value = 25 }
+# 					reverse_has_opinion = { who = ROOT value = 25 }
+# 					religion = catholic
+# 					NOT = { num_of_cardinals = 7 }
+# 					any_owned_province = {
+# 						has_cardinal = no
+# 					}
+# 				}
+# 				save_event_target_as = cardinal_nephew_country
+# 				random_owned_province = {
+# 					limit = {
+# 						has_cardinal = no
+# 						development = 10
+# 					}
+# 					save_event_target_as = cardinal_nephew_province
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	option = {
-		name = papacy_events.6.a
-		add_prestige = 5
-		add_devotion = 5
-	}
+# 	option = {
+# 		name = papacy_events.6.a
+# 		add_prestige = 5
+# 		add_devotion = 5
+# 	}
 	
-	option = {
-		name = papacy_events.6.b
-		add_devotion = -5
-		add_corruption = 0.25
-		event_target:cardinal_nephew_country = {
-			set_country_flag = pap_cardinal_nephew_flag
-		}
-		event_target:cardinal_nephew_province = {
-			province_event = {
-				id = papacy_events.7
-				tooltip = cardinal_nephew_tt
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.6.b
+# 		add_devotion = -5
+# 		add_corruption = 0.25
+# 		event_target:cardinal_nephew_country = {
+# 			set_country_flag = pap_cardinal_nephew_flag
+# 		}
+# 		event_target:cardinal_nephew_province = {
+# 			province_event = {
+# 				id = papacy_events.7
+# 				tooltip = cardinal_nephew_tt
+# 			}
+# 		}
+# 	}
+# }
 
 # Cardinal-Nephew from the Pope
-province_event = {
-	id = papacy_events.7
-	title = papacy_events.7.t
-	desc = papacy_events.7.d
-	picture = RELIGION_eventPicture
+# province_event = {
+# 	id = papacy_events.7
+# 	title = papacy_events.7.t
+# 	desc = papacy_events.7.d
+# 	picture = RELIGION_eventPicture
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	goto = ROOT
+# 	goto = ROOT
 	
-	option = {
-		name = papacy_events.7.a
-		add_cardinal = yes
-		owner = {
-			add_papal_influence = 20
-			add_prestige = -10
-			every_known_country = {
-				limit = {
-					num_of_cardinals = 1
-				}
-				add_opinion = {
-					who = ROOT
-					modifier = opinion_popes_pet
-				}
-			}
-			X15 = {
-				add_opinion = {
-					who = ROOT
-					modifier = opinion_cardinal_nephew
-				}
-				reverse_add_opinion = {
-					who = ROOT
-					modifier = opinion_cardinal_nephew
-				}
-				country_event = {
-					id = papacy_events.8
-					tooltip = papacy_events.8.t
-				}
-			}
-		}
-	}
+# 	option = {
+# 		name = papacy_events.7.a
+# 		add_cardinal = yes
+# 		owner = {
+# 			add_papal_influence = 20
+# 			add_prestige = -10
+# 			every_known_country = {
+# 				limit = {
+# 					num_of_cardinals = 1
+# 				}
+# 				add_opinion = {
+# 					who = ROOT
+# 					modifier = opinion_popes_pet
+# 				}
+# 			}
+# 			X15 = {
+# 				add_opinion = {
+# 					who = ROOT
+# 					modifier = opinion_cardinal_nephew
+# 				}
+# 				reverse_add_opinion = {
+# 					who = ROOT
+# 					modifier = opinion_cardinal_nephew
+# 				}
+# 				country_event = {
+# 					id = papacy_events.8
+# 					tooltip = papacy_events.8.t
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	option = {
-		name = papacy_events.7.b
-		owner = {
-			add_prestige = 5
-			X15 = {
-				country_event = {
-					id = papacy_events.9
-					tooltip = papacy_events.9.t
-				}
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.7.b
+# 		owner = {
+# 			add_prestige = 5
+# 			X15 = {
+# 				country_event = {
+# 					id = papacy_events.9
+# 					tooltip = papacy_events.9.t
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
 # Accepted Cardinal-Nephew
-country_event = {
-	id = papacy_events.8
-	title = papacy_events.8.t
-	desc = papacy_events.8.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.8
+# 	title = papacy_events.8.t
+# 	desc = papacy_events.8.d
+# 	picture = RELIGION_eventPicture
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = {
-		name = papacy_events.8.a
-		tooltip = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_cardinal_nephew
-			}
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_cardinal_nephew
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.8.a
+# 		tooltip = {
+# 			add_opinion = {
+# 				who = ROOT
+# 				modifier = opinion_cardinal_nephew
+# 			}
+# 			reverse_add_opinion = {
+# 				who = ROOT
+# 				modifier = opinion_cardinal_nephew
+# 			}
+# 		}
+# 	}
+# }
 
 # Refused Cardinal-Nephew
-country_event = {
-	id = papacy_events.9
-	title = papacy_events.9.t
-	desc = papacy_events.9.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.9
+# 	title = papacy_events.9.t
+# 	desc = papacy_events.9.d
+# 	picture = RELIGION_eventPicture
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = papacy_events.9.a
-		add_prestige = -5
-	}
-}
+# 	option = {
+# 		name = papacy_events.9.a
+# 		add_prestige = -5
+# 	}
+# }
 
 # Sack of Rome
-country_event = {
-	id = papacy_events.10
-	title = papacy_events.10.t
-	desc = papacy_events.10.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.10
+# 	title = papacy_events.10.t
+# 	desc = papacy_events.10.d
+# 	picture = RELIGION_eventPicture
 	
-	goto = 118
+# 	goto = 118
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		tag = X15
-		war_exhaustion = 2
-		118 = {
-			owned_by = X15
-			is_looted = yes
-			devastation = 10
-			controlled_by = X15
-		}
-		NOT = {
-			has_country_modifier = pap_rome_loot_timer
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		tag = X15
+# 		war_exhaustion = 2
+# 		118 = {
+# 			owned_by = X15
+# 			is_looted = yes
+# 			devastation = 10
+# 			controlled_by = X15
+# 		}
+# 		NOT = {
+# 			has_country_modifier = pap_rome_loot_timer
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 200
-	}
+# 	mean_time_to_happen = {
+# 		months = 200
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			add_country_modifier = {
-				name = pap_rome_loot_timer
-				duration = 1825
-				hidden = yes
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_country_modifier = {
+# 				name = pap_rome_loot_timer
+# 				duration = 1825
+# 				hidden = yes
+# 			}
+# 		}
+# 	}
 	
-	option = {
-		goto = 118
-		name = papacy_events.10.a
-		add_years_of_income = -0.05
-		118 = {
-			add_province_modifier = {
-				name = "roman_garisson"
-				duration = 1825
-			}
-		}
-	}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.10.a
+# 		add_years_of_income = -0.05
+# 		118 = {
+# 			add_province_modifier = {
+# 				name = "roman_garisson"
+# 				duration = 1825
+# 			}
+# 		}
+# 	}
 	
-	option = {
-		goto = 118
-		name = papacy_events.10.b
-		add_years_of_income = -0.05
-		add_war_exhaustion = -1
-		118 = {
-			add_devastation = -10
-		}
-	}
-}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.10.b
+# 		add_years_of_income = -0.05
+# 		add_war_exhaustion = -1
+# 		118 = {
+# 			add_devastation = -10
+# 		}
+# 	}
+# }
 
 # The Vatican Library
-country_event = {
-	id = papacy_events.11
-	title = papacy_events.11.t
-	desc = papacy_events.11.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.11
+# 	title = papacy_events.11.t
+# 	desc = papacy_events.11.d
+# 	picture = RELIGION_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	goto = 118
+# 	goto = 118
 	
-	trigger = {
-		if = {
-			limit = {
-				has_dlc = "Emperor"
-			}
-			has_country_flag = vatican_library_mission_flag
-		}
-		else = {
-			has_dlc = "Common Sense"
-			tag = X15
-			owns = 118
-			has_institution = renaissance
-		}
-	}
+# 	trigger = {
+# 		if = {
+# 			limit = {
+# 				has_dlc = "Emperor"
+# 			}
+# 			has_country_flag = vatican_library_mission_flag
+# 		}
+# 		else = {
+# 			has_dlc = "Common Sense"
+# 			tag = X15
+# 			owns = 118
+# 			has_institution = renaissance
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 200
-	}
+# 	mean_time_to_happen = {
+# 		months = 200
+# 	}
 	
-	option = {
-		goto = 118
-		name = papacy_events.11.a
-		add_adm_power = 5
-		custom_tooltip = adm_vatican_library_tt
-		118 = {
-			add_province_triggered_modifier = adm_vatican_library
-		}
-	}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.11.a
+# 		add_adm_power = 5
+# 		custom_tooltip = adm_vatican_library_tt
+# 		118 = {
+# 			add_province_triggered_modifier = adm_vatican_library
+# 		}
+# 	}
 	
-	option = {
-		goto = 118
-		name = papacy_events.11.b
-		add_dip_power = 5
-		custom_tooltip = dip_vatican_library_tt
-		118 = {
-			add_province_triggered_modifier = dip_vatican_library
-		}
-	}
-	option = {
-		goto = 118
-		name = papacy_events.11.c
-		add_mil_power = 5
-		custom_tooltip = mil_vatican_library_tt
-		118 = {
-			add_province_triggered_modifier = mil_vatican_library
-		}
-	}
-}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.11.b
+# 		add_dip_power = 5
+# 		custom_tooltip = dip_vatican_library_tt
+# 		118 = {
+# 			add_province_triggered_modifier = dip_vatican_library
+# 		}
+# 	}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.11.c
+# 		add_mil_power = 5
+# 		custom_tooltip = mil_vatican_library_tt
+# 		118 = {
+# 			add_province_triggered_modifier = mil_vatican_library
+# 		}
+# 	}
+# }
 
 # Sistine Chapel
-country_event = {
-	id = papacy_events.12
-	title = papacy_events.12.t
-	desc = papacy_events.12.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.12
+# 	title = papacy_events.12.t
+# 	desc = papacy_events.12.d
+# 	picture = RELIGION_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	goto = 118
+# 	goto = 118
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		tag = X15
-		owns = 118
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		tag = X15
+# 		owns = 118
+# 	}
 	
-	mean_time_to_happen = {
-		months = 200
-	}
+# 	mean_time_to_happen = {
+# 		months = 200
+# 	}
 	
-	option = {
-		goto = 118
-		name = papacy_events.12.a
-		add_years_of_income = -0.25
-		add_devotion = 5
-		custom_tooltip = sistine_chapel_tt
-		118 = {
-			add_province_triggered_modifier = pap_sistine_chapel
-		}
-		set_country_flag = pap_sistine_chapel_flag
-	}
-}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.12.a
+# 		add_years_of_income = -0.25
+# 		add_devotion = 5
+# 		custom_tooltip = sistine_chapel_tt
+# 		118 = {
+# 			add_province_triggered_modifier = pap_sistine_chapel
+# 		}
+# 		set_country_flag = pap_sistine_chapel_flag
+# 	}
+# }
 
 # Decorate the Sistine Chapel
-country_event = {
-	id = papacy_events.13
-	title = papacy_events.13.t
-	desc = papacy_events.13.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.13
+# 	title = papacy_events.13.t
+# 	desc = papacy_events.13.d
+# 	picture = RELIGION_eventPicture
 	
-	goto = 118
+# 	goto = 118
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		tag = X15
-		had_country_flag = { flag = pap_sistine_chapel_flag days = 1825 }
-		owns = 118
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		tag = X15
+# 		had_country_flag = { flag = pap_sistine_chapel_flag days = 1825 }
+# 		owns = 118
+# 	}
 	
-	mean_time_to_happen = {
-		months = 200
-	}
+# 	mean_time_to_happen = {
+# 		months = 200
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = sistine_chapel_decorated
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			set_global_flag = sistine_chapel_decorated
+# 		}
+# 	}
 	
-	option = {
-		goto = 118
-		name = papacy_events.13.a
-		trigger = {
-			NOT = {
-				is_year = 1510
-			}
-		}
-		add_years_of_income = -0.25
-		custom_tooltip = pap_sistinechapel_botticelli_tt
-		118 = {
-			add_province_triggered_modifier = pap_sistinechapel_botticelli
-		}
-	}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.13.a
+# 		trigger = {
+# 			NOT = {
+# 				is_year = 1510
+# 			}
+# 		}
+# 		add_years_of_income = -0.25
+# 		custom_tooltip = pap_sistinechapel_botticelli_tt
+# 		118 = {
+# 			add_province_triggered_modifier = pap_sistinechapel_botticelli
+# 		}
+# 	}
 	
-	option = {
-		goto = 118
-		name = papacy_events.13.b
-		trigger = {
-			is_year = 1449 
-			NOT = {
-				is_year = 1494
-			}
-		}
-		add_years_of_income = -0.25
-		custom_tooltip = pap_sistinechapel_ghirlandaio_tt
-		118 = {
-			add_province_triggered_modifier = pap_sistinechapel_ghirlandaio
-		}
-	}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.13.b
+# 		trigger = {
+# 			is_year = 1449 
+# 			NOT = {
+# 				is_year = 1494
+# 			}
+# 		}
+# 		add_years_of_income = -0.25
+# 		custom_tooltip = pap_sistinechapel_ghirlandaio_tt
+# 		118 = {
+# 			add_province_triggered_modifier = pap_sistinechapel_ghirlandaio
+# 		}
+# 	}
 	
-	option = {
-		goto = 118
-		name = papacy_events.13.c
-		trigger = {
-			is_year = 1446
-			NOT = {
-				is_year = 1523
-			}
-		}
-		add_years_of_income = -0.25
-		custom_tooltip = pap_sistinechapel_perugino_tt
-		118 = {
-			add_province_triggered_modifier = pap_sistinechapel_perugino
-		}
-	}
-	option = {
-		goto = 118
-		name = papacy_events.13.e
-		trigger = {
-			is_year = 1475 
-			NOT = {
-				is_year = 1564
-			}
-		}
-		add_years_of_income = -0.25
-		custom_tooltip = pap_sistinechapel_michelangelo_tt
-		118 = {
-			add_province_triggered_modifier = pap_sistinechapel_michelangelo
-		}
-	}
-	option = {
-		goto = 118
-		name = papacy_events.13.f
-		add_years_of_income = -0.25
-		custom_tooltip = pap_sistinechapel_decorated_tt
-		118 = {
-			add_province_triggered_modifier = pap_sistinechapel_decorated
-		}
-	}
-}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.13.c
+# 		trigger = {
+# 			is_year = 1446
+# 			NOT = {
+# 				is_year = 1523
+# 			}
+# 		}
+# 		add_years_of_income = -0.25
+# 		custom_tooltip = pap_sistinechapel_perugino_tt
+# 		118 = {
+# 			add_province_triggered_modifier = pap_sistinechapel_perugino
+# 		}
+# 	}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.13.e
+# 		trigger = {
+# 			is_year = 1475 
+# 			NOT = {
+# 				is_year = 1564
+# 			}
+# 		}
+# 		add_years_of_income = -0.25
+# 		custom_tooltip = pap_sistinechapel_michelangelo_tt
+# 		118 = {
+# 			add_province_triggered_modifier = pap_sistinechapel_michelangelo
+# 		}
+# 	}
+# 	option = {
+# 		goto = 118
+# 		name = papacy_events.13.f
+# 		add_years_of_income = -0.25
+# 		custom_tooltip = pap_sistinechapel_decorated_tt
+# 		118 = {
+# 			add_province_triggered_modifier = pap_sistinechapel_decorated
+# 		}
+# 	}
+# }
 
 # Selling of Indulgences
-country_event = {
-	id = papacy_events.14
-	title = papacy_events.14.t
-	desc = papacy_events.14.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.14
+# 	title = papacy_events.14.t
+# 	desc = papacy_events.14.d
+# 	picture = RELIGION_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		tag = X15
-		NOT = {
-			has_country_modifier = pap_indulgences
-		}
-		reform_desire = 0.50
-		NOT = { is_religion_enabled = protestant }
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		tag = X15
+# 		NOT = {
+# 			has_country_modifier = pap_indulgences
+# 		}
+# 		reform_desire = 0.50
+# 		NOT = { is_religion_enabled = protestant }
+# 	}
 	
-	mean_time_to_happen = {
-		months = 200
+# 	mean_time_to_happen = {
+# 		months = 200
 		
-		modifier = {
-			factor = 0.5
-			has_country_modifier = pap_simony
-		}
-		modifier = {
-			factor = 0.5
-			has_country_modifier = pap_veneration_relics
-		}
-	}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_country_modifier = pap_simony
+# 		}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_country_modifier = pap_veneration_relics
+# 		}
+# 	}
 	
-	option = {
-		name = papacy_events.14.a
-		ai_chance = {
-			factor = 10
-		}
-		add_stability = -1
-		add_reform_desire = -0.05
-		add_devotion = 10
-		custom_tooltip = disables_indulgences
-		set_global_flag = pap_disables_indulgences_flag
-	}
+# 	option = {
+# 		name = papacy_events.14.a
+# 		ai_chance = {
+# 			factor = 10
+# 		}
+# 		add_stability = -1
+# 		add_reform_desire = -0.05
+# 		add_devotion = 10
+# 		custom_tooltip = disables_indulgences
+# 		set_global_flag = pap_disables_indulgences_flag
+# 	}
 	
-	option = {
-		name = papacy_events.14.b
-		ai_chance = {
-			factor = 90
-		}
-		add_devotion = -10
-		add_country_modifier = {
-			name = pap_indulgences
-			duration = -1
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.14.b
+# 		ai_chance = {
+# 			factor = 90
+# 		}
+# 		add_devotion = -10
+# 		add_country_modifier = {
+# 			name = pap_indulgences
+# 			duration = -1
+# 		}
+# 	}
+# }
 
 # Simony
-country_event = {
-	id = papacy_events.15
-	title = papacy_events.15.t
-	desc = papacy_events.15.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.15
+# 	title = papacy_events.15.t
+# 	desc = papacy_events.15.d
+# 	picture = RELIGION_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		tag = X15
-		NOT = {
-			has_country_modifier = pap_simony
-		}
-		reform_desire = 0.50
-		NOT = { is_religion_enabled = protestant }
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		tag = X15
+# 		NOT = {
+# 			has_country_modifier = pap_simony
+# 		}
+# 		reform_desire = 0.50
+# 		NOT = { is_religion_enabled = protestant }
+# 	}
 	
-	mean_time_to_happen = {
-		months = 200
+# 	mean_time_to_happen = {
+# 		months = 200
 		
-		modifier = {
-			factor = 0.5
-			has_country_modifier = pap_indulgences
-		}
-		modifier = {
-			factor = 0.5
-			has_country_modifier = pap_veneration_relics
-		}
-	}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_country_modifier = pap_indulgences
+# 		}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_country_modifier = pap_veneration_relics
+# 		}
+# 	}
 	
-	option = {
-		name = papacy_events.15.a
-		ai_chance = {
-			factor = 1
-		}
-		add_stability = -1
-		add_reform_desire = -0.05
-		add_devotion = 10
-		custom_tooltip = disables_simony
-		set_global_flag = pap_disables_simony_flag
-	}
+# 	option = {
+# 		name = papacy_events.15.a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
+# 		add_stability = -1
+# 		add_reform_desire = -0.05
+# 		add_devotion = 10
+# 		custom_tooltip = disables_simony
+# 		set_global_flag = pap_disables_simony_flag
+# 	}
 	
-	option = {
-		name = papacy_events.15.b
-		ai_chance = {
-			factor = 90
-		}
-		add_devotion = -10
-		add_country_modifier = {
-			name = pap_simony
-			duration = -1
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.15.b
+# 		ai_chance = {
+# 			factor = 90
+# 		}
+# 		add_devotion = -10
+# 		add_country_modifier = {
+# 			name = pap_simony
+# 			duration = -1
+# 		}
+# 	}
+# }
 
 # Veneration of Relics
-country_event = {
-	id = papacy_events.16
-	title = papacy_events.16.t
-	desc = papacy_events.16.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.16
+# 	title = papacy_events.16.t
+# 	desc = papacy_events.16.d
+# 	picture = RELIGION_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		tag = X15
-		NOT = {
-			has_country_modifier = pap_veneration_relics
-		}
-		reform_desire = 0.25
-		NOT = { is_religion_enabled = protestant }
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		tag = X15
+# 		NOT = {
+# 			has_country_modifier = pap_veneration_relics
+# 		}
+# 		reform_desire = 0.25
+# 		NOT = { is_religion_enabled = protestant }
+# 	}
 	
-	mean_time_to_happen = {
-		months = 200
+# 	mean_time_to_happen = {
+# 		months = 200
 		
-		modifier = {
-			factor = 0.5
-			has_country_modifier = pap_simony
-		}
-		modifier = {
-			factor = 0.5
-			has_country_modifier = pap_indulgences
-		}
-	}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_country_modifier = pap_simony
+# 		}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_country_modifier = pap_indulgences
+# 		}
+# 	}
 	
-	option = {
-		name = papacy_events.16.a
-		ai_chance = {
-			factor = 10
-		}
-		add_stability = -1
-		add_reform_desire = -0.05
-		add_devotion = 10
-		custom_tooltip = disables_veneration_of_relics
-		set_global_flag = pap_disables_veneration_relics_flag
-	}
+# 	option = {
+# 		name = papacy_events.16.a
+# 		ai_chance = {
+# 			factor = 10
+# 		}
+# 		add_stability = -1
+# 		add_reform_desire = -0.05
+# 		add_devotion = 10
+# 		custom_tooltip = disables_veneration_of_relics
+# 		set_global_flag = pap_disables_veneration_relics_flag
+# 	}
 	
-	option = {
-		name = papacy_events.16.b
-		ai_chance = {
-			factor = 90
-		}
-		add_devotion = -10
-		add_country_modifier = {
-			name = pap_veneration_relics
-			duration = -1
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.16.b
+# 		ai_chance = {
+# 			factor = 90
+# 		}
+# 		add_devotion = -10
+# 		add_country_modifier = {
+# 			name = pap_veneration_relics
+# 			duration = -1
+# 		}
+# 	}
+# }
 
 # Galileo - the Earth revolves around the sun
-country_event = {
-	id = papacy_events.17
-	title = papacy_events.17.t
-	desc = papacy_events.17.d
-	picture = RELIGION_eventPicture
+# country_event = {
+# 	id = papacy_events.17
+# 	title = papacy_events.17.t
+# 	desc = papacy_events.17.d
+# 	picture = RELIGION_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		has_dlc = "Common Sense"
-		tag = X15
-		is_year = 1600
-		has_global_flag = ven_galileo_galilei_flag
-	}
+# 	trigger = {
+# 		has_dlc = "Common Sense"
+# 		tag = X15
+# 		is_year = 1600
+# 		has_global_flag = ven_galileo_galilei_flag
+# 	}
 	
-	mean_time_to_happen = {
-		months = 5
-	}
+# 	mean_time_to_happen = {
+# 		months = 5
+# 	}
 	
-	option = {
-		name = papacy_events.17.a
-		add_stability_or_adm_power = yes
-		add_country_modifier = {
-			name = innovative_modifier
-			duration = 3650
-		}
-	}
+# 	option = {
+# 		name = papacy_events.17.a
+# 		add_stability_or_adm_power = yes
+# 		add_country_modifier = {
+# 			name = innovative_modifier
+# 			duration = 3650
+# 		}
+# 	}
 	
-	option = {
-		name = papacy_events.17.b
-		add_adm_power = 50
-		add_dip_power = 50
-		add_mil_power = 50
-		add_country_modifier = {
-			name = narrowminded_modifier
-			duration = 3650
-		}
-	}
-}
+# 	option = {
+# 		name = papacy_events.17.b
+# 		add_adm_power = 50
+# 		add_dip_power = 50
+# 		add_mil_power = 50
+# 		add_country_modifier = {
+# 			name = narrowminded_modifier
+# 			duration = 3650
+# 		}
+# 	}
+# }
 
 # Sublimis Deus
 #country_event = {

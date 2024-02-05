@@ -2,8 +2,8 @@
 culture = krakowska
 religion = communism_sd
 base_tax = 4
-base_production = 3
-trade_goods = unknown
+base_production = 2
+trade_goods = gu_stone
 base_manpower = 5
 capital = "Zielonki"
 is_city = yes

@@ -1,10 +1,10 @@
 #Lodz Widzew-Wschod
 culture = centralna
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 5
+base_production = 7
+trade_goods = cloth
+base_manpower = 5
 capital = "Widzew-Wschod"
 is_city = yes
 discovered_by = western

@@ -1,10 +1,10 @@
 #Staszow
 culture = kielecka
 religion = communism_sd
-base_tax = 2
-base_production = 1
-trade_goods = unknown
-base_manpower = 2
+base_tax = 4
+base_production = 4
+trade_goods = gu_consumer_goods
+base_manpower = 4
 capital = "Staszow"
 is_city = yes
 discovered_by = western

@@ -1,10 +1,10 @@
 #Gdynia Chylonia
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 16
-base_production = 13
-trade_goods = unknown
-base_manpower = 1
+base_tax = 9
+base_production = 4
+trade_goods = gu_chemicals
+base_manpower = 7
 capital = "Cisowa"
 is_city = yes
 discovered_by = western
@@ -12,6 +12,6 @@ discovered_by = eastern
 add_core = Y10
 discovered_by = ottoman
 add_core = Y21
-fort_15th = yes
 owner = Y21
 controller = Y21
+fort_15th = yes

@@ -1,8 +1,8 @@
 #City of Kamienna Gora
 religion = communism_zsl
-base_tax = 3
+base_tax = 2
 base_production = 3
-trade_goods = unknown
+trade_goods = cloth
 base_manpower = 3
 capital = "City of Kamienna Gora"
 is_city = yes

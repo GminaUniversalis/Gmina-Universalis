@@ -1,9 +1,9 @@
 #Mogilany
 culture = krakowska
 religion = communism_sd
-base_tax = 3
-base_production = 2
-trade_goods = unknown
+base_tax = 2
+base_production = 1
+trade_goods = gu_maize
 base_manpower = 3
 capital = "Mogilany"
 is_city = yes

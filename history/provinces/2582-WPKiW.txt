@@ -1,0 +1,16 @@
+#WPKiW
+culture = slonska
+religion = communism_sd
+hre = yes
+base_tax = 2
+base_production = 1
+trade_goods = gu_tourists
+base_manpower = 1
+capital = "WPKiW"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L28
+controller = L28
+discovered_by = ottoman
+add_core = L28

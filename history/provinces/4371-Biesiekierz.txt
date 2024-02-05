@@ -1,10 +1,10 @@
 #Biesiekierz
 culture = srodkowopomorska
 religion = communism_pzpr
-base_tax = 2
+base_tax = 1
 base_production = 1
-trade_goods = unknown
-base_manpower = 2
+trade_goods = gu_lumber
+base_manpower = 1
 capital = "Biesiekierz"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = P02
 controller = P02
 add_core = P02
 discovered_by = ottoman
+latent_trade_goods = { gu_woodworking }

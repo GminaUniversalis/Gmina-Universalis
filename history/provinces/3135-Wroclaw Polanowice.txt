@@ -1,9 +1,9 @@
 #Wroclaw - Polanowice
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
+base_tax = 2
+base_production = 1
+trade_goods = gu_chemicals
+base_manpower = 1
 capital = "Wroclaw - Polanowice"
 is_city = yes
 discovered_by = western

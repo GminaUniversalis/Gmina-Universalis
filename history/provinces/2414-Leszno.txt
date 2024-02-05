@@ -1,10 +1,10 @@
 #Leszno
 culture = mazowiecka
 religion = communism_pzpr
-base_tax = 2
-base_production = 2
+base_tax = 14
+base_production = 15
 trade_goods = unknown
-base_manpower = 2
+base_manpower = 11
 capital = "Leszno"
 is_city = yes
 discovered_by = western

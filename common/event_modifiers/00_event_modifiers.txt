@@ -1,45 +1,6 @@
 ##################################################################################################
 # scriptable and usable for event-system below.
 ##################################################################################################
-
-communism_price_increase = {
-	global_unrest = 3
-}
-
-stonka_attack = {
-	local_unrest = 3
-}
-
-moonshiners_problem = {
-	local_unrest = 3
-}
-
-training_area_modifier = {
-	regiment_recruit_speed = -0.40
-	local_regiment_cost = -0.25
-	picture = "training_area_icon"
-}
-
-satellite_city_modifier = {
-	local_manpower_modifier = 0.4
-	land_forcelimit = 0.5
-	picture = "satellite_city_icon"
-}
-
-border_crossing_modifier = {
-	province_trade_power_value = 5
-	local_defensiveness = 0.1
-	local_tax_modifier = 0.05
-	picture = "border_crossing_icon"
-}
-
-airport_modifier = {
-	province_trade_power_value = 8
-	local_friendly_movement_speed = 0.5
-	local_tax_modifier = 0.20
-	picture = "airport_icon"
-}
-
 national_bank_interest = {
 	interest = -0.5
 }
@@ -3158,14 +3119,14 @@ tur_weakened_the_harem = {
 }
 
 tur_growing_influence_of_the_janissaries = {	#Permanent
-	janissaries_privilege_slots = 1
+	# #janissaries_privilege_slots = 1
 }
 
 tur_shattered_the_janissaries = {
 	legitimacy = 1
 	republican_tradition = 0.5
 	max_absolutism = 15
-	janissaries_influence_modifier = -0.5
+	#janissaries_influence_modifier = -0.5
 }
 
 tur_reformation_of_the_ottoman_estates = {
@@ -10840,6 +10801,16 @@ liberal_but_conservative = {
 	shock_damage_received = -0.1
 }
 
+assimilate_competition = {
+	reduced_liberty_desire = -15
+	years_to_integrate_personal_union = -10
+}
+
+shock_therapy = {
+	global_unrest = 3
+	global_trade_goods_size_modifier = 0.25
+}
+
 expelling_heretics = {
 	religious_unity = 0.1
 	colonist_placement_chance = 0.05
@@ -12875,7 +12846,7 @@ mal_nobles_take_over = {
 
 mal_radical_clergy = {
 	tolerance_heathen = -3
-	dhimmi_loyalty_modifier = -0.2
+	###dhimmi_loyalty_modifier = -0.2
 }
 
 mal_radical_dhimmi = {
@@ -13928,12 +13899,12 @@ per_muzaffarid_centre_of_admin_modifier = {
 per_sponsorship_of_christian_armenians_modifier = {
 	tolerance_heathen = 1
 	manpower_recovery_speed = 0.1
-	qizilbash_loyalty_modifier = -0.1
+	##qizilbash_loyalty_modifier = -0.1
 }
 per_elitist_caste_modifier = {
 	same_culture_advisor_cost = -0.2
 	culture_conversion_cost = -0.2 
-	qizilbash_loyalty_modifier = 0.1
+	##qizilbash_loyalty_modifier = 0.1
 }
 per_turkmen_recruits_modifier = {
 	local_manpower_modifier = 0.33 

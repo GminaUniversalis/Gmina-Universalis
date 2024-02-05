@@ -1,0 +1,263 @@
+estate_retirees = {
+	modifier_definition = {
+		type = loyalty
+		key = retirees_loyalty_modifier
+		trigger = {
+			has_estate = estate_retirees
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = retirees_influence_modifier
+		trigger = {
+			has_estate = estate_retirees
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = retirees_privilege_slots
+		trigger = {
+			has_estate = estate_retirees
+		}
+	}
+}
+estate_families = {
+	modifier_definition = {
+		type = loyalty
+		key = families_loyalty_modifier
+		trigger = {
+			has_estate = estate_families
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = families_influence_modifier
+		trigger = {
+			has_estate = estate_families
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = families_privilege_slots
+		trigger = {
+			has_estate = estate_families
+		}
+	}
+}
+estate_army = {
+	modifier_definition = {
+		type = loyalty
+		key = army_loyalty_modifier
+		trigger = {
+			has_estate = estate_army
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = army_influence_modifier
+		trigger = {
+			has_estate = estate_army
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = army_privilege_slots
+		trigger = {
+			has_estate = estate_army
+		}
+	}
+}
+estate_farmers = {
+	modifier_definition = {
+		type = loyalty
+		key = farmers_loyalty_modifier
+		trigger = {
+			has_estate = estate_farmers
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = farmers_influence_modifier
+		trigger = {
+			has_estate = estate_farmers
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = farmers_privilege_slots
+		trigger = {
+			has_estate = estate_farmers
+		}
+	}
+}
+estate_middle_class = {
+	modifier_definition = {
+		type = loyalty
+		key = middle_class_loyalty_modifier
+		trigger = {
+			has_estate = estate_middle_class
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = middle_class_influence_modifier
+		trigger = {
+			has_estate = estate_middle_class
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = middle_class_privilege_slots
+		trigger = {
+			has_estate = estate_middle_class
+		}
+	}
+}
+estate_banks = {
+	modifier_definition = {
+		type = loyalty
+		key = banks_loyalty_modifier
+		trigger = {
+			has_estate = estate_banks
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = banks_influence_modifier
+		trigger = {
+			has_estate = estate_banks
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = banks_privilege_slots
+		trigger = {
+			has_estate = estate_banks
+		}
+	}
+}
+estate_ub = {
+	modifier_definition = {
+		type = loyalty
+		key = ub_loyalty_modifier
+		trigger = {
+			has_estate = estate_ub
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = ub_influence_modifier
+		trigger = {
+			has_estate = estate_ub
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = ub_privilege_slots
+		trigger = {
+			has_estate = estate_ub
+		}
+	}
+}
+estate_intellectuals = {
+	modifier_definition = {
+		type = loyalty
+		key = intellectuals_loyalty_modifier
+		trigger = {
+			has_estate = estate_intellectuals
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = intellectuals_influence_modifier
+		trigger = {
+			has_estate = estate_intellectuals
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = intellectuals_privilege_slots
+		trigger = {
+			has_estate = estate_intellectuals
+		}
+	}
+}
+estate_investors = {
+	modifier_definition = {
+		type = loyalty
+		key = investors_loyalty_modifier
+		trigger = {
+			has_estate = estate_investors
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = investors_influence_modifier
+		trigger = {
+			has_estate = estate_investors
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = investors_privilege_slots
+		trigger = {
+			has_estate = estate_investors
+		}
+	}
+}
+estate_priests = {
+	modifier_definition = {
+		type = loyalty
+		key = kler_loyalty_modifier
+		trigger = {
+			has_estate = estate_priests
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = kler_influence_modifier
+		trigger = {
+			has_estate = estate_priests
+		}
+	}	
+	modifier_definition = {
+		type = privileges
+		key = kler_privilege_slots
+		trigger = {
+			has_estate = estate_priests
+	}	
+	}
+}
+estate_miners = {
+	modifier_definition = {
+		type = loyalty
+		key = miners_loyalty_modifier
+		trigger = {
+			has_estate = estate_miners
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = miners_influence_modifier
+		trigger = {
+			has_estate = estate_miners
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = miners_privilege_slots
+		trigger = {
+			has_estate = estate_miners
+		}
+	}
+}

@@ -2,10 +2,10 @@ revolution = {
 	ended_by_country_breaking_to_rebels = no
 	potential = {
 		NOT = { has_country_flag = had_revolution }
-		NOT = { tag = PAP }
+#		# NOT = { tag = PAP }
 		OR = {
 			NOT = { government = monarchy }
-			NOT = { tag = FRA }
+#			NOT = { tag = FRA }
 		}
 		#NOT = { has_reform = celestial_empire }
 		is_free_or_tributary_trigger = yes
@@ -13,7 +13,7 @@ revolution = {
 		current_age = age_of_revolutions
 		is_revolutionary = no
 		if = {
-			limit = { NOT = { has_disaster = tur_disaster_ottoman_power_struggle } }
+#			limit = { NOT = { has_disaster = tur_disaster_ottoman_power_struggle } }
 			if = {
 				limit = {
 					has_dlc = "Emperor"
@@ -45,15 +45,15 @@ revolution = {
 			}
 			has_any_disaster = no
 		}
-		else = {
-			calc_true_if = {
-				has_disaster = tur_disaster_eyalet_rebellion
-				has_disaster = tur_disaster_janissary_coup
-				has_disaster = tur_disaster_pasha_decadence
-				has_disaster = tur_disaster_plot_of_the_harem
-				amount = 3
-			}
-		}
+		# else = {
+		# 	calc_true_if = {
+		# 		has_disaster = tur_disaster_eyalet_rebellion
+		# 		has_disaster = tur_disaster_janissary_coup
+		# 		has_disaster = tur_disaster_pasha_decadence
+		# 		has_disaster = tur_disaster_plot_of_the_harem
+		# 		amount = 3
+		# 	}
+		# }
 		OR = {
 			NOT = { stability = 2 }
 			AND = {
@@ -93,7 +93,7 @@ revolution = {
 	
 	can_stop = { 
 		if = {
-			limit = { NOT = { has_disaster = tur_disaster_ottoman_power_struggle } }
+#			limit = { NOT = { has_disaster = tur_disaster_ottoman_power_struggle } }
 			OR = {
 				has_any_disaster = yes
 				stability = 3
@@ -252,17 +252,17 @@ revolution = {
 	on_monthly = {
 		events = { #Revolution for different nations
 			revolution.10 #Generic
-			revolution.15 #France (non-monarchy)
-			flavor_rus.2000 #Russia
-			revolution.31 #Spain
-			revolution.32 #Scandinavia
-			revolution.33 #UK
-			revolution.34 #Ottomans
-			revolution.37 #Germans
-			revolution.38 #Austria and HRE
-			revolution.39 #Netherlands
-			revolution.40 #EoC
-			revolution.41 #Indians
+#			revolution.15 #France (non-monarchy)
+#			flavor_rus.2000 #Russia
+#			revolution.31 #Spain
+#			revolution.32 #Scandinavia
+#			revolution.33 #UK
+#			revolution.34 #Ottomans
+#			revolution.37 #Germans
+#			revolution.38 #Austria and HRE
+#			revolution.39 #Netherlands
+#			revolution.40 #EoC
+#			revolution.41 #Indians
 		}
 		random_events = { 
 			1000 = 0

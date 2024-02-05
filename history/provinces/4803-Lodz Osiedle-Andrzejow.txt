@@ -1,10 +1,10 @@
 #Lodz Osiedle-Andrzejow
 culture = centralna
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 2
+base_production = 2
+trade_goods = gu_metalworking
+base_manpower = 3
 capital = "Osiedle-Andrzejow"
 is_city = yes
 discovered_by = western
@@ -13,4 +13,3 @@ owner = Q22
 controller = Q22
 discovered_by = ottoman
 add_core = Q22
-

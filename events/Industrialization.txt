@@ -2862,8 +2862,8 @@ country_event = {
 			else_if = {
 				limit = {
 					OR = {
-						region = west_siberia_region
-						region = east_siberia_region
+						region = west_s#iberia_region
+						region = east_s#iberia_region
 					}
 				}
 				change_trade_goods = wool

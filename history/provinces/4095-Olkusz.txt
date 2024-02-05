@@ -1,10 +1,10 @@
 #Olkusz
 culture = zachodnio-krakowska
 religion = communism_pzpr
-base_tax = 2
-base_production = 2
-trade_goods = unknown
-base_manpower = 3
+base_tax = 7
+base_production = 7
+trade_goods = copper
+base_manpower = 8
 capital = "Olkusz"
 is_city = yes
 discovered_by = western

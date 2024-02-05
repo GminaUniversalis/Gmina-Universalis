@@ -1,0 +1,16 @@
+#Walbrzych Bialy Kamien
+religion = communism_zsl
+base_tax = 2
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Walbrzych - Bialy Kamien"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+culture = dolnoslaska
+owner = A30
+controller = A30
+hre = yes
+discovered_by = ottoman
+add_core = A30

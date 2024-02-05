@@ -1,9 +1,9 @@
 #City of Gostynin
 culture = plocka
 religion = communism_pzpr
-base_tax = 3
-base_production = 4
-trade_goods = unknown
+base_tax = 2
+base_production = 3
+trade_goods = gu_dairy
 base_manpower = 3
 capital = "City of Gostynin"
 is_city = yes

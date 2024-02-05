@@ -1,15 +1,16 @@
 #City of Wloclawek
 culture = kujawska
 religion = communism_pzpr
-base_tax = 19
-base_production = 19
+base_tax = 22
+base_production = 21
 trade_goods = unknown
-base_manpower = 17
+base_manpower = 19
 capital = "City of Wloclawek"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = B10
-controller = B10
-add_core = B10
+owner = B23
+controller = B23
 discovered_by = ottoman
+add_core = B23
+center_of_trade = 2

@@ -1,8 +1,8 @@
 #Kobierzyce
 religion = communism_zsl
-base_tax = 7
-base_production = 19
-trade_goods = grain
+base_tax = 8
+base_production = 21
+trade_goods = gu_chemicals
 base_manpower = 4
 capital = "Kobierzyce"
 is_city = yes

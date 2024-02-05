@@ -1,9 +1,9 @@
 #City of Slawno
 culture = srodkowopomorska
 religion = communism_zsl
-base_tax = 2
-base_production = 2
-trade_goods = unknown
+base_tax = 1
+base_production = 1
+trade_goods = gu_lumber
 base_manpower = 2
 capital = "City of Slawno"
 is_city = yes

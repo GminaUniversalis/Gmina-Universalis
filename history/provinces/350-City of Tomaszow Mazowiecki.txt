@@ -1,9 +1,9 @@
 #City of Tomaszow Mazowiecki
 culture = centralna
 religion = communism_pzpr
-base_tax = 8
-base_production = 10
-trade_goods = unknown
+base_tax = 9
+base_production = 11
+trade_goods = wool
 base_manpower = 10
 capital = "City of Tomaszow Mazowiecki"
 is_city = yes

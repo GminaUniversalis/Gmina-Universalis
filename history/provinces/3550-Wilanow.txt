@@ -1,9 +1,9 @@
 #Wilanow
 culture = warszawska
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_consumer_goods
 base_manpower = 1
 capital = "Wilanow"
 is_city = yes

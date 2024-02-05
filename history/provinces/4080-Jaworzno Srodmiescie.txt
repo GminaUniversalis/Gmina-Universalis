@@ -1,0 +1,17 @@
+#Jaworzno
+culture = zachodnio-krakowska
+religion = communism_pzpr
+hre = yes
+base_tax = 4
+base_production = 1
+trade_goods = gu_consumer_goods
+base_manpower = 2
+capital = "Jaworzno"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L34
+controller = L34
+add_core = L06
+discovered_by = ottoman
+add_core = L34

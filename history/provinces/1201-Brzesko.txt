@@ -1,10 +1,10 @@
 #Brzesko
 culture = zachodnio-krakowska
 religion = communism_sd
-base_tax = 2
-base_production = 1
-trade_goods = unknown
-base_manpower = 4
+base_tax = 5
+base_production = 6
+trade_goods = gu_beer
+base_manpower = 6
 capital = "Brzesko"
 is_city = yes
 discovered_by = western

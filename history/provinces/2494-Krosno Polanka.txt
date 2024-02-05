@@ -1,0 +1,15 @@
+#Krosno Polanka
+culture = podgorzanska
+religion = communism_zsl
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Krosno - Polanka"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = I20
+controller = I20
+add_core = I20
+discovered_by = ottoman

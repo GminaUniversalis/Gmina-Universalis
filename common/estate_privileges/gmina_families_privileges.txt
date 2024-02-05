@@ -1,0 +1,260 @@
+estate_families_obietnice = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.1
+	on_granted = {
+	
+	}
+	penalties = {
+	
+	}
+	benefits = {
+	
+	}
+}
+estate_families_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	modifier_by_land_ownership = {
+		
+	}
+	penalties = {
+	}
+	conditional_modifier = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_families
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_church_land_rights }
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = { has_estate_privilege = estate_church_land_rights }
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_church_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_church_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_church_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1
+		}
+		modifier = {
+			factor = 10
+			governing_capacity_percentage = 1.2
+		}
+		modifier = {
+			factor = 8
+			NOT = { adm_tech = 12 }
+			governing_capacity_percentage = 0.8
+		}
+		modifier = {
+			factor = 5
+			NOT = { adm_tech = 12 }
+			NOT = { government_rank = 1 }
+			governing_capacity_percentage = 0.65
+		}
+		
+		#Has already a similar privilege active
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nobles_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_burghers_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nomadic_tribes_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_army_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_retirees_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_farmers_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_miners_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_investors_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_ub_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_middle_class_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_intellectuals_land_rights
+		}
+	}
+}
+estate_families_pp = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -10
+	loyalty = 0.15
+	influence = 0.1
+	on_granted = {
+	
+	}
+	penalties = {
+		inflation_reduction = -0.04
+		global_tax_modifier = -0.15
+	}
+	benefits = {
+		manpower_recovery_speed = 0.15
+		local_manpower_modifier = 0.05
+	}
+}
+estate_families_hfs = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0
+	on_granted = {
+	
+	}
+	penalties = {
+		trade_efficiency = -0.05
+	}
+	benefits = {
+		development_cost_modifier = -0.05
+	}
+}
+estate_families_ofm = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	is_valid = {
+		NOT = {
+			has_country_flag = families_nfm
+		}
+	}
+	on_granted = {
+		set_country_flag = families_ofm
+	}
+	on_revoked = { clr_country_flag = families_ofm }
+	penalties = {
+		tolerance_heathen = -1
+		tolerance_heretic = -1
+	}
+	benefits = {
+		global_missionary_strength = 0.01
+		stability_cost_modifier = -0.1
+	}
+	cooldown_years = 50
+}
+estate_families_nfm = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	is_valid = {
+		NOT = {
+			has_country_flag = families_ofm
+		}
+	}
+	on_granted = {
+		set_country_flag = families_nfm
+	}
+	on_revoked = { clr_country_flag = families_nfm }
+	penalties = {
+		tolerance_own = -1
+	}
+	benefits = {
+		global_tax_modifier = 0.2
+		improve_relation_modifier = 0.15
+	}
+	cooldown_years = 50
+}

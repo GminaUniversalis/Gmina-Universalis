@@ -1,0 +1,15 @@
+#Olsztyn Podlesna
+culture = warminska
+religion = communism_pzpr
+base_tax = 2
+base_production = 3
+trade_goods = unknown
+base_manpower = 2
+capital = "Olsztyn - Podlesna"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = N21
+controller = N21
+discovered_by = ottoman
+add_core = N21

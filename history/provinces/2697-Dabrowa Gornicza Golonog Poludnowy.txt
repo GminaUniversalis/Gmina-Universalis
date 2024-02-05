@@ -1,0 +1,17 @@
+#Dabrowa Gornicza Golonog Poludniowy
+culture = zaglebiowska
+religion = communism_pzpr
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = gu_consumer_goods
+base_manpower = 2
+capital = "DG - Golonog Poludniowy"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+add_core = L35
+owner = L35
+controller = L35
+is_city = yes

@@ -1,9 +1,9 @@
 #Wroclaw - Poludnie
 religion = communism_zsl
-base_tax = 7
-base_production = 10
-trade_goods = paper
-base_manpower = 12
+base_tax = 3
+base_production = 8
+trade_goods = gu_consumer_goods
+base_manpower = 3
 capital = "Wroclaw - Poludnie"
 is_city = yes
 discovered_by = western
@@ -15,3 +15,4 @@ hre = yes
 discovered_by = ottoman
 add_core = A27
 center_of_trade = 1
+latent_trade_goods = { gu_finances }

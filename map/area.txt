@@ -4,107 +4,35 @@ powiat_bieszczadzki = {
 powiat_leski = { 
 	1792 1193 1103 1101 1100 
 }
-powiat_sanocki = { 
-	1194 1172 4035 1195 4049 1167 4038 531 
-}
-powiat_jasielski = { 
-	4072 4076 1273 1202 4073 4058 4077 1151 4046 4422
-	4022 
-}
 powiat_brzozowski = { 
 	536 2031 2033 2032 2030 4062 
 }
 powiat_przemyski = { 
-	1791 4414 2734 2736 4869 1087 1085 4868 2735 1086
-	1084 
-}
-powiat_rzeszowski = { 
-	4421 2029 2052 521 4457 2775 2024 4862 554 2786
-	2789 2792 2094 1210 
+	2736 4869 1084 
 }
 powiat_strzyzowski = { 
 	1204 2796 2794 2781 1798 
 }
-powiat_lancuski = { 
-	523 4495 4456 2051 2097 556 4454 
-}
-powiat_przeworski = { 
-	4458 2092 515 4460 527 4453 517 4455 548 4442
-}
-powiat_jaroslawski = { 
-	4417 540 1107 1108 1090 4858 2101 2027 4434 533
-	4534 
-}
-powiat_lubaczowski = { 
-	4410 4857 1091 4939 1089 4937 1242 4413 
-}
 powiat_lezajski = { 
 	511 2069 4467 4509 4468 
 }
-powiat_nizanski = { 
-	2063 2061 4497 4496 2761 1211 2791 
-}
-powiat_stalowowolski = { 
-	1223 1224 2762 966 2759 2764 
-}
 powiat_tarnobrzeski = { 
-	2758 2772 2053 2757 4158 
-}
-powiat_kolbuszowski = { 
-	2773 4074 4066 1207 2793 4075 
-}
-powiat_mielecki = { 
-	2765 2763 1214 2769 2768 4064 1799 2779 4053 4065
-}
-powiat_debnicki = { 
-	2777 2795 2782 4052 2776 2774 4061 
+	2758 2772 2757 4158 
 }
 powiat_ropczycko_sedziszowski = { 
 	1205 2785 2784 1206 2783 
 }
-powiat_gorlicki = { 
-	4021 4024 4098 4101 4040 4104 4056 4099 4045 4037
-}
-powiat_nowosadecki = { 
-	4025 4026 4030 4036 1200 1199 1197 4042 1198 4093
-	4094 1164 4105 1196 4097 4031 2289 
-}
 powiat_tarnowski = { 
-	4055 4069 4050 4103 4109 4071 1925 2780 2790 1208
-	4059 1209 4044 4070 4063 4067 4068 
-}
-powiat_brzeski = { 
-	4146 1147 1171 1219 1201 788 4034 
-}
-powiat_nowotarski = { 
-	4029 4028 4863 1178 1177 1035 1034 1038 2440 2880
-	1176 2856 1163 4781 
+	2780 2790 1208 4067 
 }
 powiat_tatrzanski = { 
 	1181 789 1179 1180 833 
 }
-powiat_limanowski = { 
-	4865 4864 4783 2727 4107 4848 2726 4041 1182 4847
-	4051 1800 
-}
-powiat_myslenicki = { 
-	4784 2025 1184 2731 1999 1093 2728 2729 4846 
-}
 powiat_wielicki = { 
 	1185 2951 2950 4043 2730 
 }
-powiat_krakowski = { 
-	2733 2732 4850 1165 4855 4851 4102 1092 4854 1189
-	4106 1190 365 2326 356 4108 1188 
-}
-powiat_bochenski = { 
-	1248 2952 4057 1183 2294 4849 1186 1192 1187 
-}
 powiat_proszowicki = { 
 	2756 4321 2319 1218 1191 1228 
-}
-powiat_miechowski = { 
-	4320 2325 1233 364 2474 354 357 
 }
 powiat_olkuski = { 
 	2449 355 4095 4567 2448 2451 
@@ -113,13 +41,7 @@ powiat_chrzanowski = {
 	1169 4079 1166 1306 1797 
 }
 powiat_oswiecimski = { 
-	1790 1801 1173 1796 1795 4082 4087 4726 136 
-}
-powiat_wadowicki = { 
-	4078 4100 4081 4085 4086 1901 798 4852 1170 2137
-}
-powiat_suski = { 
-	1998 4856 1094 4867 4853 4866 1168 1097 4782 
+	1796 1795 4082 4087 4726 
 }
 powiat_dabrowski = { 
 	4060 4054 4527 1215 1225 2787 2767 
@@ -130,98 +52,26 @@ powiat_kazimierski = {
 powiat_pinczowski = { 
 	2320 4323 2323 1221 2274 
 }
-powiat_buski = { 
-	2798 2800 1226 1222 1229 362 2802 1230 
-}
-powiat_staszowski = { 
-	359 2797 4033 2799 2766 1220 2324 2778 
-}
-powiat_sandomierski = { 
-	4521 1234 4512 1227 2043 1217 2321 2322 4319 
-}
-powiat_opatowski = { 
-	351 363 2315 4316 358 2316 361 4317 
-}
 powiat_ostrowiecki = { 
 	340 4169 2455 352 4566 2473 
 }
 powiat_starachowicki = { 
 	1882 341 1009 402 4283 
 }
-powiat_kielecki = { 
-	353 2954 2450 2238 1123 2275 4318 2317 2318 2249
-	2245 1114 1131 2250 1130 2264 2240 2244 2243 
-}
-powiat_konecki = { 
-	2999 2268 1133 1135 2265 1137 1134 2259 
-}
-powiat_wloszczowski = { 
-	1142 1143 1249 1156 2284 1157 
-}
-powiat_jedrzejowski = { 
-	2290 2285 2288 1158 1159 2286 2475 1160 2277 
-}
-powiat_tomaszowski = { 
-	4860 4859 2737 1986 537 535 4416 4412 1239 4438
-	1106 2739 2085 
-}
 powiat_zamojski = { 
-	547 4439 2037 4415 2026 4441 2100 2080 4448 2048
-	4446 2049 520 4451 542 3505 
-}
-powiat_hrubieszowski = { 
-	4861 1088 4408 1246 1109 4409 572 2738 
-}
-powiat_chelmski = { 
-	971 4407 2099 541 2083 2034 4419 4432 1946 4436
-	4424 2090 4420 539 1949 4418 
-}
-powiat_wlodawski = { 
-	4423 569 2035 4431 2056 4430 544 4435 
+	4439 2037 4441 2080 4448 
 }
 powiat_bialski = { 
-	2054 2057 4411 510 4513 2076 4510 4511 4501 551
-	526 2093 4480 4461 4449 2075 507 4491 4463 2065
-}
-powiat_parczewski = { 
-	516 503 2058 518 740 2036 4429 
-}
-powiat_radzynski = { 
-	4462 528 2127 4210 2227 4276 2231 452 
+	2076 4510 4501 4463 
 }
 powiat_lukowski = { 
-	575 2121 2124 458 460 1967 2198 457 1968 2350
-	4343 
+	457 1968 2350 4343 
 }
 powiat_rycki = { 
 	4306 425 2199 465 4269 383 
 }
-powiat_lubartowski = { 
-	2339 4504 504 2067 2088 514 4506 4464 530 2333
-	4503 2336 3501 
-}
-powiat_lubelski = { 
-	2072 4505 2060 578 508 4498 968 2077 4492 2087
-	4465 4502 2064 2086 525 512 
-}
 powiat_swidnicki = { 
 	2068 513 519 4433 2066 
-}
-powiat_krasnostawski = { 
-	991 2084 545 4425 543 549 552 2082 4507 546
-}
-powiat_janowski = { 
-	506 2078 4494 2079 4466 4459 2770 
-}
-powiat_krasnicki = { 
-	2059 4499 4452 2801 2932 2074 524 2771 774 4322
-}
-powiat_opolski = { 
-	2454 403 400 398 4285 399 1099 
-}
-powiat_pulawski = { 
-	397 404 2062 967 2347 386 2346 4282 391 2335
-	1779 
 }
 powiat_skarzyski = { 
 	2452 2453 2343 2472 2344 
@@ -229,101 +79,20 @@ powiat_skarzyski = {
 powiat_leczynski = { 
 	1948 4428 532 2089 529 505 
 }
-powiat_bilgorajski = { 
-	4500 522 2028 4444 4447 2050 4443 4445 4437 4508
-	2073 559 3502 3584 
-}
 powiat_siedlecki = { 
-	2354 4688 4686 4209 712 442 444 4344 2349 477
-	2368 1784 739 4685 
-}
-powiat_sokolowski = { 
-	1071 478 2360 2355 437 2118 2362 4184 1819 
-}
-powiat_ostrowski = { 
-	1830 1052 2122 4229 4228 4230 734 2155 981 4231
-	2694 727 
-}
-powiat_losicki = { 
-	2200 509 576 1785 4687 4689 
-}
-powiat_ostrolecki = { 
-	733 2103 1013 737 4186 1043 1044 298 290 291
-	4543 4542 
-}
-powiat_makowski = { 
-	1046 979 4359 1049 4662 724 2108 4659 4666 1047
-}
-powiat_przasnyski = { 
-	1850 1042 4657 538 4655 289 206 
-}
-powiat_mlawski = { 
-	1050 4216 1048 1030 1027 2744 738 4191 1843 1028
-}
-powiat_zurominski = { 
-	732 2743 4232 977 1024 4214 
-}
-powiat_plonski = { 
-	2154 729 2741 38 1839 1818 4181 4651 1014 4663
-	4654 2106 
-}
-powiat_ciechanowski = { 
-	4189 1023 1029 4360 4187 978 1825 1026 4215 
-}
-powiat_pultuski = { 
-	1020 4188 4156 4182 1018 1025 731 
-}
-powiat_wyszkowski = { 
-	2105 2104 4660 2185 4190 4192 
-}
-powiat_wegrowski = { 
-	4218 4681 735 1019 2125 4265 2120 461 1021 1832
-}
-powiat_wolominski = { 
-	4683 2444 2421 4131 2418 1997 4935 2126 474 303
-	470 2415 
-}
-powiat_minski = { 
-	2366 472 2420 467 4936 1965 473 1966 475 453
-	454 1820 1081 
-}
-powiat_garwolinski = { 
-	4222 4693 963 2129 4516 2128 2201 711 393 4272
-	2327 2095 555 2055 
-}
-powiat_kozienicki = { 
-	463 2197 1849 384 2328 395 394 
+	477 2368 1784 
 }
 powiat_zwolenski = { 
 	396 4273 385 4277 2331 
 }
-powiat_lipski = { 
-	2332 4278 2456 4286 401 4287 
-}
-powiat_radomski = { 
-	4284 2341 4279 4281 2330 2337 2338 4274 392 2329
-	2340 2334 4270 4280 
-}
 powiat_szydlowiecki = { 
 	2345 389 387 388 390 
-}
-powiat_przysuski = { 
-	380 4268 379 1855 381 405 4271 2313 
 }
 powiat_bialobrzeski = { 
 	4297 378 2195 448 4520 450 
 }
-powiat_grojecki = { 
-	2225 2226 710 577 2192 2189 713 1786 1008 4207
-}
 powiat_piaseczynski = { 
 	4680 4206 304 468 1212 1994 
-}
-powiat_otwocki = { 
-	962 459 4267 718 4682 1787 719 2419 
-}
-powiat_pruszkowski = { 
-	1240 4934 285 284 2447 1241 
 }
 powiat_grodziski = { 
 	1974 2410 2367 2365 2208 287 
@@ -331,15 +100,8 @@ powiat_grodziski = {
 powiat_zyrardow = { 
 	4335 299 302 2230 2228 
 }
-powiat_sochaczewski = { 
-	2417 469 466 449 2427 1074 433 2416 
-}
-powiat_warszawski_zachodni = { 
-	288 2414 1987 1244 1243 1989 286 
-}
-powiat_warszawa = { 
-	257 3114 3158 1011 3113 3005 3006 3201 3485 3287
-	1016 3279 3549 3550 3558 3394 3199 1010 
+warszawa_srodmiescie = { 
+	257 3114 3158 1016 
 }
 powiat_legionowski = { 
 	464 1988 2409 4183 4193 
@@ -348,60 +110,31 @@ powiat_gostyninski = {
 	1857 4329 430 2223 2218 
 }
 powiat_plocki = { 
-	1080 4217 1069 4691 1073 4123 972 1780 1075 27
-	29 272 1768 4331 4330 2234 
-}
-powiat_sierpecki = { 
-	2961 976 37 4537 19 4536 279 
-}
-powiat_siemiatycki = { 
-	4493 2364 2428 4690 2236 980 1969 455 2363 
-}
-powiat_hajnowski = { 
-	2356 1970 2358 2352 2357 2359 479 4692 2353 
-}
-powiat_bielski = { 
-	476 456 2361 440 2370 1973 439 1060 
-}
-powiat_wysokomazowiecki = { 
-	443 4185 1032 4679 1045 2102 2966 1062 2442 
+	1780 1075 29 272 
 }
 powiat_zambrowski = { 
 	4227 1847 2745 1852 1783 
 }
 powiat_lomzynski = { 
-	1031 1057 715 2439 1058 1041 1040 1033 1056 4658
-}
-powiat_kolnenski = { 
-	2411 1036 1037 4208 1039 283 
+	1031 1057 
 }
 powiat_grajewski = { 
 	2406 1782 2436 4540 1943 282 
 }
 powiat_augustowski = { 
-	1756 1955 4258 4251 1981 2405 4530 
+	1756 1981 2405 4530 
 }
 powiat_sejnenski = { 
 	1964 4129 305 4266 1077 
 }
 powiat_suwalski = { 
-	997 4262 4116 296 1962 1079 1755 4122 1963 
+	4116 1962 1079 1963 1078 
 }
 powiat_sokolski = { 
-	280 1944 2429 1070 2430 2433 1068 716 1076 2369
-}
-powiat_moniecki = { 
-	1942 1067 2431 1061 2432 2119 714 
-}
-powiat_bialostocki = { 
-	2437 1059 1066 4684 1054 2443 1063 1055 1064 1065
-	2434 480 2441 471 953 2351 
+	280 1944 2429 1070 1068 716 
 }
 powiat_swinioujscie = { 
 	1858 
-}
-powiat_kamienski = { 
-	228 1851 4556 231 232 4553 
 }
 powiat_policki = { 
 	227 117 116 2977 
@@ -410,28 +143,18 @@ powiat_goleniowski = {
 	208 230 207 4150 229 4787 
 }
 powiat_gryfinski = { 
-	104 2992 2981 1875 481 2979 107 111 4729 
-}
-powiat_stargardzki = { 
-	4727 2980 4739 115 114 4730 4740 113 2976 1933
-}
-powiat_gryficki = { 
-	4555 4558 4361 1747 216 4788 
+	2979 107 111 4729 
 }
 powiat_kolobrzeski = { 
-	4372 239 48 374 4559 241 218 
+	4372 239 48 374 
 }
 powiat_koszalinski = { 
-	235 372 4370 1860 246 1861 243 238 4371 
+	235 372 1860 4371 
 }
 powiat_slawienski = { 
-	247 1804 1105 4121 1104 4380 
 }
 powiat_bialogardzki = { 
 	240 236 237 4376 
-}
-powiat_swidwinski = { 
-	233 4369 4366 1749 4551 209 
 }
 powiat_lobeski = { 
 	219 4552 224 4548 1745 
@@ -442,9 +165,6 @@ powiat_drawski = {
 powiat_walecki = { 
 	4546 226 1748 222 223 
 }
-powiat_szczecinecki = { 
-	245 4747 4130 4374 234 1 
-}
 powiat_mysliborski = { 
 	2655 105 1862 101 4728 
 }
@@ -454,27 +174,20 @@ powiat_pyrzycki = {
 powiat_choszczenski = { 
 	4737 1934 197 4145 122 2984 
 }
-powiat_slupski = { 
-	249 2995 370 4362 1978 375 4118 4377 376 4119
-	4120 
-}
 powiat_leborski = { 
 	1979 252 253 4364 4114 
 }
-powiat_wejherowski = { 
-	371 369 4110 251 250 4363 24 23 20 2752
-}
 powiat_pucki = { 
-	4153 21 986 985 315 4152 4151 
+	4153 315 4152 4151 
 }
 powiat_kartuski = { 
-	198 248 4697 195 4387 4389 194 2753 
+	198 248 4697 2753 
 }
 powiat_gdanski = { 
-	199 987 4161 17 22 4144 4160 4157 
+	199 4161 4160 4157 
 }
 powiat_elblaski = { 
-	2 999 25 1982 770 275 273 988 4745 4242
+	2 275 273 988 
 }
 powiat_malborski = { 
 	4164 4143 4163 1841 1985 7 
@@ -485,21 +198,17 @@ powiat_tczewski = {
 powiat_sztumski = { 
 	26 4165 4166 1983 1984 
 }
-powiat_kwidzynski = { 
-	14 91 12 4769 2969 42 
-}
 powiat_starogardzki = { 
-	87 183 88 89 184 4388 1743 4768 1878 4142
-	952 15 203 
+	87 183 88 89 15 
 }
 powiat_koscierski = { 
-	4695 179 190 994 4154 4776 4694 180 
+	190 994 4154 4776 
 }
 powiat_bytowski = { 
-	4378 4112 4367 175 4785 984 4368 4379 373 4365
+	4378 4112 4367 175 4368 
 }
 powiat_braniewski = { 
-	11 1960 33 1961 1834 4241 28 
+	11 1960 1834 4241 
 }
 powiat_bartoszycki = { 
 	34 30 32 3 31 4248 
@@ -508,10 +217,10 @@ powiat_ketrzynski = {
 	1959 4124 313 308 1956 4260 
 }
 powiat_wegorzewski = { 
-	306 4264 2422 2423 
+	306 4264 2423 
 }
 powiat_goldapski = { 
-	1082 1078 1972 
+	1972 1082 2422 
 }
 powiat_olecki = { 
 	1083 4263 4256 1957 
@@ -528,64 +237,33 @@ powiat_piski = {
 powiat_mragowski = { 
 	307 4147 4117 4253 4255 
 }
-powiat_olsztynski = { 
-	292 293 300 294 295 4243 964 4148 4249 4544
-	4247 2426 996 
-}
 powiat_lidzbarski = { 
 	311 1752 310 274 2408 
 }
 powiat_szczycienski = { 
-	278 1941 4545 4252 4245 297 2407 995 
 }
 powiat_nidzicki = { 
 	2438 2742 1051 2435 
 }
-powiat_dzialdowski = { 
-	1835 1012 1015 1845 1945 2445 
-}
-powiat_ostrodzki = { 
-	4115 954 2962 1072 1781 4244 4246 771 3504 
-}
-powiat_ilawski = { 
-	271 39 35 1935 276 281 4539 
-}
 powiat_nowomiejski = { 
 	4529 1842 36 270 1937 
 }
-powiat_swiecki = { 
-	4746 982 49 55 204 79 1744 4715 4775 1762
-	44 
-}
-powiat_tucholski = { 
-	181 185 182 186 191 174 
-}
 powiat_chojnicki = { 
 	196 1879 168 4111 167 
-}
-powiat_czluchowski = { 
-	244 242 4375 217 172 4385 169 
 }
 powiat_sepolenski = { 
 	4386 177 121 4384 
 }
 powiat_zlotowski = { 
-	171 170 2989 210 4557 2755 225 4373 
 }
 powiat_nakielski = { 
 	178 333 2985 176 2983 
 }
-powiat_bydgoski = { 
-	2972 4766 4390 202 187 70 4696 4719 
-}
 powiat_chelminski = { 
-	4714 93 1760 2974 73 65 1761 
+	4714 93 73 65 1761 
 }
 powiat_grudziadzki = { 
-	2997 2963 254 1859 2958 4523 4238 
-}
-powiat_brodnicki = { 
-	256 277 534 4535 4541 261 1936 4538 40 4528
+	2997 4523 4238 
 }
 powiat_wabrzeski = { 
 	1939 993 264 4526 258 
@@ -596,35 +274,19 @@ powiat_rypinski = {
 powiat_golubsko-dobrzynski = { 
 	1938 255 4533 263 259 2960 
 }
-powiat_torunski = { 
-	80 4758 4767 1872 94 1871 74 166 1869 
-}
 powiat_inowroclawski = { 
-	4764 4720 205 4622 2649 4713 4392 201 973 
+	4764 4720 4713 973 
 }
 powiat_mogilenski = { 
 	68 2654 4765 4718 
 }
-powiat_radziejowski = { 
-	92 96 4383 77 95 97 100 
-}
-powiat_aleksandrowski = { 
-	1870 4710 1742 4712 1873 4722 4721 165 974 
-}
-powiat_lipnowski = { 
-	84 69 110 1931 1940 2424 260 2959 83 
-}
 powiat_zninski = { 
 	189 75 188 1880 4777 193 
-}
-powiat_gorzowski = { 
-	2827 2825 1006 2656 485 2823 807 808 
 }
 powiat_strzelecko-drezdenecki = { 
 	124 120 4736 123 125 
 }
 powiat_miedzyrzecki = { 
-	812 2943 815 821 814 2826 
 }
 powiat_sulecinski = { 
 	2830 806 809 2944 804 
@@ -635,44 +297,17 @@ powiat_slubnicki = {
 powiat_swiebodzinski = { 
 	810 811 1802 2822 2821 2833 
 }
-powiat_zielonogorski = { 
-	802 816 2832 2831 2942 796 817 491 741 818
-}
-powiat_nowosolski = { 
-	820 4605 4604 831 2820 822 793 797 
-}
-powiat_zarski = { 
-	2937 745 2936 2934 2930 1803 746 2905 747 1002
-}
-powiat_zaganski = { 
-	2901 2902 2903 2881 2890 2909 2929 2935 2938 
-}
 powiat_wschowski = { 
 	819 742 2804 
-}
-powiat_pilski = { 
-	221 2751 220 4549 1750 2990 4550 212 4560 
-}
-powiat_czarnkowsko-trzcianecki = { 
-	4547 108 983 126 2982 119 4732 2986 
 }
 powiat_chodzieski = { 
 	214 211 2988 213 2987 
 }
-powiat_wagrowiecki = { 
-	4734 1247 173 4735 127 192 200 
-}
 powiat_obornicki = { 
 	4733 1877 826 
 }
-powiat_szamotulski = { 
-	4600 827 4731 4601 4596 2807 4609 830 
-}
 powiat_miedzychodzki = { 
 	118 813 2806 2945 
-}
-powiat_nowotomyski = { 
-	2824 825 2814 4613 2809 4608 
 }
 powiat_wolsztynski = { 
 	2808 4612 2817 
@@ -680,41 +315,11 @@ powiat_wolsztynski = {
 powiat_grodziski_poznan = { 
 	834 2812 823 4614 4607 
 }
-powiat_poznanski = { 
-	4611 832 500 4599 499 497 495 2658 4620 4602
-	496 4623 2659 4619 4603 4610 
-}
-powiat_gnieznienski = { 
-	494 1881 4391 4618 488 489 4624 2631 4584 484
-}
-powiat_slupecki = { 
-	4570 2648 4646 850 4571 2630 2622 4573 
-}
-powiat_kolski = { 
-	4774 4141 57 4773 411 4716 63 54 66 1868
-	2310 
-}
-powiat_turecki = { 
-	419 2205 4304 4179 4302 2202 4296 2307 2309 
-}
-powiat_kaliski = { 
-	4295 4292 462 1856 2308 2196 4303 421 420 2306
-	407 4647 
-}
-powiat_pleszewski = { 
-	2624 4582 2647 2646 4642 2633 
-}
-powiat_ostrowski_poznan = { 
-	4574 2303 2644 2643 4575 2645 2628 4583 
-}
 powiat_krotoszynski = { 
 	2652 4590 845 2650 838 841 
 }
 powiat_rawicki = { 
 	4588 4711 2660 2663 2819 
-}
-powiat_gostynski = { 
-	4592 2661 2002 836 482 2664 840 
 }
 powiat_jarocinski = { 
 	4593 2651 2629 847 
@@ -731,70 +336,14 @@ powiat_sremski = {
 powiat_koscianski = { 
 	490 828 492 4621 824 
 }
-powiat_leszczynski = { 
-	2818 1003 2939 4615 487 4616 2811 2810 
-}
-powiat_kutnowski = { 
-	4772 4289 45 2217 408 4288 4170 4342 2219 412
-	413 
-}
-powiat_lowicki = { 
-	2222 446 2216 429 4290 4332 4171 427 4334 3500
-}
-powiat_skierniewicki = { 
-	2213 4326 4325 2235 4336 4345 432 4328 2224 990
-}
 powiat_rawski = { 
 	4324 434 2233 949 451 950 
-}
-powiat_tomaszowski_lodz = { 
-	2221 447 2232 4327 2220 334 2458 2457 321 350
-	377 
-}
-powiat_opoczynski = { 
-	382 1854 1132 1129 2261 2253 2248 1115 
-}
-powiat_piotrkowski = { 
-	2266 1116 367 2466 368 339 1110 347 1127 2237
-	1113 2262 
-}
-powiat_radomszczanski = { 
-	1125 2252 1145 1146 1144 1122 2247 2251 2295 1150
-	1136 1121 1124 2256 
-}
-powiat_pajeczanski = { 
-	1128 2267 1117 2260 2746 4301 325 326 
-}
-powiat_belchatowski = { 
-	423 2204 4532 2246 366 4565 348 4305 
-}
-powiat_wielunski = { 
-	324 2302 328 327 4307 4178 1846 2304 330 417
-}
-powiat_wieruszowski = { 
-	4298 2301 4313 4314 2300 329 4310 
-}
-powiat_sieradzki = { 
-	332 2211 2207 2314 406 4294 2212 2215 4339 414
-	4337 
 }
 powiat_poddebnicki = { 
 	415 416 4340 4293 2465 335 
 }
-powiat_leczycki = { 
-	424 2206 4291 409 2312 410 4168 2311 
-}
-powiat_zgierski = { 
-	4562 336 337 344 345 2469 2470 4569 4568 
-}
 powiat_brzezinski = { 
 	4564 2467 2468 1751 431 
-}
-powiat_lodzki = { 
-	342 4563 338 2459 2460 2463 
-}
-powiat_pabianicki = { 
-	2464 4167 155 4338 2462 349 4561 
 }
 powiat_zdunskowolski = { 
 	4300 2214 426 2210 
@@ -802,35 +351,14 @@ powiat_zdunskowolski = {
 powiat_laski = { 
 	343 4341 428 2209 2203 
 }
-powiat_zgorzelecki = { 
-	2926 2891 2918 2908 2923 2927 748 
-}
 powiat_boleslawiecki = { 
 	2925 2928 752 2885 2910 2886 
-}
-powiat_lubanski = { 
-	2917 759 2916 2911 2899 765 761 
 }
 powiat_lwowecki = { 
 	749 2898 2924 757 760 
 }
-powiat_karkonoski = { 
-	753 754 755 756 2921 2922 2912 2915 2919 758
-}
 powiat_kamiennogorski = { 
 	2894 2892 764 762 
-}
-powiat_walbrzyski = { 
-	763 775 2855 2859 776 2857 2884 799 2879 
-}
-powiat_jaworski = { 
-	2887 2896 769 773 772 2848 
-}
-powiat_zlotoryjski = { 
-	2913 2914 750 766 2897 751 
-}
-powiat_legnicki = { 
-	2888 2904 785 2906 2907 2895 784 2838 2837 
 }
 powiat_polkowicki = { 
 	768 2835 2941 2882 801 502 
@@ -847,33 +375,17 @@ powiat_gorowski = {
 powiat_wolowski = { 
 	2946 2940 839 
 }
-powiat_trzebnicki = { 
-	4589 2653 842 2636 4594 844 
-}
 powiat_milicki = { 
 	2634 843 2632 
 }
 powiat_olesnicki = { 
 	4598 2621 4579 1001 852 2627 4572 2642 
 }
-powiat_wroclawski = { 
-	4587 2626 2623 2638 794 792 1000 2847 787 
-}
 powiat_sredzki_slask = { 
 	2637 2872 2841 2851 2852 
 }
-powiat_swidnicki_slask = { 
-	777 2853 2883 2850 2877 2861 2858 2867 
-}
 powiat_dzierzoniowski = { 
 	1095 2869 782 1971 2845 2844 783 
-}
-powiat_klodzki = { 
-	2854 790 2878 2849 2846 2842 778 2865 2860 779
-	780 2868 2866 2873 
-}
-powiat_zabkowicki = { 
-	781 786 2863 2870 2876 2862 2874 
 }
 powiat_strzelinski = { 
 	791 2843 2836 4641 853 
@@ -882,18 +394,7 @@ powiat_olawski = {
 	848 851 346 4580 
 }
 powiat_wloclawski = { 
-	98 82 1876 4771 1775 53 56 81 86 4382
-	4381 85 2975 2973 
-}
-powiat_koninski = { 
-	90 4649 1865 99 4770 78 1874 2971 1758 2618
-	4606 418 71 331 861 
-}
-powiat_ostrzeszowski = { 
-	2305 4643 422 4299 2641 2667 4315 
-}
-powiat_kepinski = { 
-	316 4309 323 319 317 2296 4311 
+	4382 4381 85 2973 
 }
 powiat_namyslowski = { 
 	2499 2668 151 4177 2348 
@@ -901,14 +402,8 @@ powiat_namyslowski = {
 powiat_kluczborski = { 
 	2297 322 318 145 
 }
-powiat_oleski = { 
-	2298 4312 4308 320 1773 3003 4698 
-}
 powiat_strzelecki = { 
 	4702 144 4779 4780 4750 4174 4705 
-}
-powiat_kedzierzynsko-kozielski = { 
-	4531 4759 61 4778 46 4748 
 }
 powiat_glubczycki = { 
 	47 4741 2964 4786 
@@ -919,61 +414,14 @@ powiat_prudnicki = {
 powiat_krapkowicki = { 
 	2993 2956 2998 60 1863 
 }
-powiat_opolski_opole = { 
-	4761 143 147 142 4700 4762 132 4760 1759 4709
-	3001 4648 859 959 
-}
-powiat_brzeski_opole = { 
-	860 4576 2617 4640 854 2615 
-}
-powiat_nyski = { 
-	2657 2871 4645 4578 856 2614 2619 857 2875 
-}
-powiat_klobucki = { 
-	2299 1112 2239 1848 164 163 1119 2255 2254 
-}
-powiat_czestochowski = { 
-	2242 441 2241 2272 158 2273 2257 1138 2269 2271
-	2292 1140 2293 2291 1126 1161 2280 
-}
-powiat_zawiercianski = { 
-	2283 2281 2282 2287 2276 1153 1152 1154 2279 1162
-}
 powiat_myszkowski = { 
 	955 1148 2278 1139 2258 
 }
-powiat_lubliniecki = { 
-	4701 4699 146 1853 1764 141 2263 1118 
-}
-powiat_tarnogorski = { 
-	1765 1766 159 4176 4704 4706 2750 148 1954 
-}
-powiat_gliwicki = { 
-	149 4703 4175 150 4754 1953 162 957 138 
-}
-powiat_raciborski = { 
-	134 2994 4749 51 4742 958 2965 58 
-}
-powiat_wodzislawski = { 
-	4743 62 4717 131 1770 133 50 1769 4738 
-}
 powiat_rybnicki = { 
-	128 129 130 1828 1831 4756 
-}
-powiat_cieszynski = { 
-	2955 4708 4707 76 1763 4752 135 4744 64 2957
-	1757 4084 
-}
-powiat_zywiecki = { 
-	1174 1175 4088 4083 2864 1096 2948 4096 4090 4089
-	4092 2967 266 4725 4091 
-}
-powiat_bielski_slask = { 
-	267 1771 2970 265 2968 1007 1772 1826 4753 4724
-	956 
+	128 129 130 1828 1831 
 }
 powiat_pszczynski = { 
-	152 139 59 1864 1767 137 67 
+	152 139 59 1864 1767 137 
 }
 powiat_bierunsko-ledzinski = { 
 	1111 1793 1794 4240 4236 
@@ -982,36 +430,22 @@ powiat_mikolowski = {
 	4126 4173 4125 3002 4755 
 }
 powiat_bedzinski = { 
-	1141 2270 4239 161 4127 157 4757 1149 
-}
-powiat_aglomeracja_Katowicka = { 
-	140 154 1827 1952 3000 1951 
+	1149 
 }
 powiat_bytom = { 
-	4128 156 160 
+	4128 2569 2570 2571 2572 
 }
-powiat_jaworzno = { 
-	4080 153 1155 
-}
-powiat_nowodworski_maz = { 
-	2425 1837 4180 1017 2412 2413 
+jaworzno_centrum = { 
+	4080 2715 2710 2712 2713 
 }
 powiat_nowodworski_pom = { 
 	9 8 18 4113 3503 
 }
-powiat_krosnienski_lubu = { 
-	2889 2900 2933 803 800 744 2931 
-}
-powiat_krosnienski_pod = { 
-	1203 4426 1098 1930 4047 1947 4020 4048 4039 4023
-	4427 
-}
 wroclaw_srodmiescie = { 
 	3017 3388 3190 
 }
-krakow = { 
-	3162 3222 3418 3188 3140 262 3100 3065 3042 3016
-	3008 3237 998 3236 3007 
+krakow_centrum = { 
+	262 3188 3008 3100 
 }
 gdynia_poludnie = { 
 	1833 1776 1836 1829 3062 
@@ -1028,43 +462,29 @@ gdansk_centralny = {
 gdynia_polnoc = { 
 	1777 1844 1838 3063 3064 1840 
 }
-powiat_trojmiasto = { 
+rybnik_poludnie = { 
+	4751 3206 3278 3106 
 }
-Gdansk = { 
+katowice_srodmiescie = { 
+	1318 4828 4829 4832 
 }
-rybnik = { 
-	4751 3232 3280 3153 3277 3206 3278 3106 
+poznan_stare_miasto = { 
+	4825 4826 501 4840 
 }
-Katowice = { 
-	1318 4828 4829 3089 3019 4827 3091 4830 4832 4831
-	4833 
-}
-poznan = { 
-	501 4825 4826 4824 4842 4823 4840 4841 4836 4837
-	4838 4843 4844 4845 4839 4834 4835 3445 2813 
-}
-Lodz = { 
-	2461 4805 4804 4803 4798 4802 4801 4800 4799 4794
-	4791 4792 4932 4790 4933 4796 4806 4807 4797 4793
-	4795 
+Lodz_srodmiescie = { 
+	4799 4798 2461 4796 
 }
 Lublin = { 
-	969 4809 4810 4820 4822 4821 4817 4811 4818 4812
-	4808 4819 4813 4816 4814 4815 
+	969 4809 4808 
 }
-Szczecin = { 
-	4395 4394 3585 3196 3451 4397 4396 4398 4405 4399
-	4403 4404 4402 2978 4401 4400 4406 4393 
+szczecin_srodmiescie = { 
+	4399 4403 2978 4400 
 }
-powiat_nowodworski = { 
+Bydgoszcz_dolny_taras = { 
+	2991 3281 3565 3657 
 }
-Bydgoszcz = { 
-	2991 3515 3544 4001 3268 3184 4019 4016 3281 3124
-	3565 4018 3657 3695 3609 4017 
-}
-Torun = { 
-	72 3808 3482 3282 3234 3520 3180 3090 3298 3103
-	3049 3171 3422 3257 3396 3314 
+Torun_centrum = { 
+	72 3808 3482 3520 3298 
 }
 Fabryczna = { 
 	3577 3681 3559 3655 3650 3621 3060 3618 
@@ -1078,9 +498,8 @@ psie_pole_wschod = {
 Krzyki = { 
 	3387 3073 3217 3614 3620 
 }
-Kielce = { 
-	1120 4637 4636 4635 4634 3561 4639 3148 3560 3095
-	3133 4638 
+kielce_centrum = { 
+	1120 3095 3133 4638 
 }
 rzeszow_centrum = { 
 	2788 4353 4629 4354 4351 
@@ -1093,4 +512,1900 @@ rzeszow_poludnie = {
 }
 rzeszow_wschod = { 
 	4626 4625 4356 4355 
+}
+bialystok_zachod = { 
+	2725 3189 3098 3226 
+}
+bialystok_poludnie = { 
+	4348 4349 3225 
+}
+bialystok_centrum = { 
+	3099 2724 1065 3052 
+}
+bialystok_wschod = { 
+	3152 3191 3224 
+}
+szczecin_prawobrzerze = { 
+	3585 3196 3451 4393 4394 4395 
+}
+szczecin_zachod = { 
+	4402 4404 4406 4401 
+}
+szczecin_polnoc = { 
+	4405 4398 4396 4397 
+}
+bydgoszcz_gorny_taras = { 
+	3184 3268 3124 4018 
+}
+bydgoszcz_zachodnie_osiedla = { 
+	4019 4001 3544 3515 
+}
+bydgoszcz_fordon = { 
+	4017 3609 3695 4016 
+}
+torun_stawki = { 
+	3103 3049 3171 3422 
+}
+torun_bydgoskie = { 
+	3090 3180 3234 
+}
+torun_rubinkowo = { 
+	3282 3314 3396 3257 
+}
+poznan_grunwald = { 
+	4837 2813 4836 4835 
+}
+poznan_jezyce = { 
+	4838 4834 3445 4839 
+}
+poznan_nowe_miasto = { 
+	4841 4823 4842 4824 
+}
+poznan_polnoc = { 
+	4844 4845 4843 
+}
+warszawa_praga = { 
+	3005 1011 3113 
+}
+warszawa_praga_poludnie = { 
+	1010 3199 3558 3394 
+}
+warszawa_mokotow = { 
+	3550 3549 3279 
+}
+warszawa_wola_ochota = { 
+	3201 3006 3287 3485 
+}
+lodz_polesie = { 
+	4790 4933 4807 4932 
+}
+lodz_baluty = { 
+	4793 4791 4794 4795 4792 
+}
+lodz_widzew = { 
+	4800 4802 4801 4803 
+}
+lodz_gorna = { 
+	4806 4797 4805 4804 
+}
+kielce_bialogon = { 
+	3148 4639 3561 3560 
+}
+kielce_herby = { 
+	4634 4635 4636 4637 
+}
+krakow_poludnie = { 
+	3162 3236 3007 998 3237 
+}
+krakow_huta = { 
+	3016 3042 3065 
+}
+krakow_polnoc = { 
+	3222 3418 3140 
+}
+katowice_poludnie = { 
+	3091 3019 4827 3089 
+}
+katowice_zachod = { 
+	4831 4830 4833 
+}
+rybnik_polnoc = { 
+	3232 3153 3280 3277 
+}
+lublin_poludnie = { 
+	4822 4821 4820 4810 4817 
+}
+lublin_wschod = { 
+	4811 4812 4818 4819 
+}
+lublin_zachod = { 
+	4813 4816 4814 4815 
+}
+jaworzno_polnoc = { 
+	2719 2716 2711 2718 2717 
+}
+jaworzno_poludnie = { 
+	2723 2714 2721 2722 2720 
+}
+dabrowa_gornicza_srodmiescie = { 
+	1155 2696 2697 2698 
+}
+dabrowa_gornicza_strzemieszyce = { 
+	2702 2701 2693 2700 
+}
+dabrowa_gornicza_pogoria = { 
+	2695 2699 2703 2705 2704 
+}
+dabrowa_gornicza_bledow = { 
+	2706 2707 2708 2709 2692 
+}
+opole_poludnie = { 
+	2673 2609 2678 
+}
+opole_goslawice = { 
+	2677 2611 2610 2605 
+}
+opole_czarnowasy = { 
+	2606 2676 2608 2607 
+}
+opole_wrzoski = { 
+	2675 2669 2612 2613 
+}
+opole_chmielowice = { 
+	2670 2674 2672 2671 
+}
+opole_centrum = { 
+	2604 2603 4761 
+}
+sosnowiec_pogon = { 
+	2686 2688 2685 
+}
+sosnowiec_centrum = { 
+	153 2684 2690 
+}
+sosnowiec_zagorze = { 
+	2689 2679 2680 2681 
+}
+sosnowiec_bobrek = { 
+	2683 2687 2682 2691 
+}
+olsztyn_centrum = { 
+	292 2596 2595 
+}
+olsztyn_mazurskie = { 
+	2597 2594 2593 
+}
+olsztyn_wojska_polskiego = { 
+	2591 2590 2592 
+}
+olsztyn_dajtki = { 
+	2598 2600 2599 2601 2602 
+}
+myslowice_srodmiescie = { 
+	3337 3338 154 
+}
+myslowice_poludnie = { 
+	3333 3336 3335 
+}
+tychy_stare = { 
+	2587 2588 140 
+}
+tychy_polnoc = { 
+	2589 2585 2586 
+}
+chorzow = { 
+	2584 1827 2583 2581 2582 
+}
+siemanowice = { 
+	2580 2579 1952 
+}
+swietochlowice = { 
+	2578 2577 3000 
+}
+piekary = { 
+	2576 2575 2574 2573 160 
+}
+bytom_polnoc = { 
+	2567 2568 2566 2565 
+}
+ruda_polnoc = { 
+	2560 2559 1951 
+}
+ruda_poludnie = { 
+	2564 2563 2562 2561 
+}
+zabrze_centrum = { 
+	2555 2558 156 2549 
+}
+zabrze_polnoc = { 
+	2553 2557 2554 2556 
+}
+zabrze_zaborze = { 
+	2551 2550 2552 
+}
+gliwice_labedy = { 
+	2539 2538 2537 2541 
+}
+gliwice_srodmiescie = { 
+	138 2540 2546 2547 
+}
+gliwice_bojkow = { 
+	2548 2544 2545 
+}
+gliwice_wschod = { 
+	2543 2542 2536 
+}
+zory_rowien = { 
+	2532 2534 2531 
+}
+zory_centrum = { 
+	4756 2533 2535 2530 
+}
+jastrzebie_polnoc = { 
+	2529 2528 2526 
+}
+jastrzebie_polodnie = { 
+	2527 67 2525 2524 2523 
+}
+tarnow_wschod = { 
+	2521 4063 2522 2518 
+}
+tarnow_zachod = { 
+	2520 2517 2519 
+}
+czestochowa_wschod = { 
+	2511 2516 2510 2515 
+}
+czestochowa_centrum = { 
+	2512 441 2506 2509 
+}
+czestochowa_polnoc = { 
+	2514 2513 2508 
+}
+czestochowa_zachod = { 
+	2507 2505 2504 
+}
+elblag_centrum = { 
+	4745 605 604 592 591 
+}
+elblag_wschod = { 
+	593 599 600 601 
+}
+elblag_zachod = { 
+	603 598 597 602 
+}
+elblag_polnoc = { 
+	596 595 594 
+}
+koszalin_centrum = { 
+	4370 585 
+}
+koszalin_poludnie = { 
+	582 590 
+}
+koszalin_wschod = { 
+	583 588 589 
+}
+koszalin_zachod = { 
+	586 587 584 
+}
+zielona_gora_poludnie = { 
+	2016 2015 2014 
+}
+zielona_gora_wschod = { 
+	436 435 106 2010 
+}
+zielona_gora_polnoc = { 
+	2011 2012 2013 
+}
+zielona_gora_centrum = { 
+	2831 562 564 563 
+}
+zg_centrum_poludnie = { 
+	561 438 445 498 
+}
+zg_centrum_polnoc = { 
+	553 557 558 560 
+}
+kalisz_centrum = { 
+	2041 407 2040 
+}
+kalisz_prawobrzeze = { 
+	2022 2023 2042 2044 
+}
+kalisz_lewobrzeze = { 
+	2038 2039 2046 2045 
+}
+radom_centrum = { 
+	2330 2480 2479 2476 
+}
+radom_polnoc = { 
+	2477 2047 2478 
+}
+nowy_sacz = { 
+	4042 2500 2501 2498 2502 2503 
+}
+krosno_centrum = { 
+	1098 2491 2496 2497 
+}
+krosno_lotnisko = { 
+	2493 2492 2494 2495 
+}
+przemysl_centrum = { 
+	2483 1086 2482 2481 2485 2484 
+}
+przemysl_poludnie = { 
+	2489 2486 2490 2487 2488 
+}
+plock_poludnie = { 
+	565 566 567 568 
+}
+plock_centrum = { 
+	972 580 581 
+}
+plock_polnoc = { 
+	573 571 574 579 570 
+}
+legnica = { 
+	2906 2020 2021 2019 2018 2017 
+}
+gorzow_wielkopolski_zawarcie = { 
+	640 642 641 
+}
+gorzow_wielkopolski_centrum = { 
+	636 1006 637 638 639 
+}
+slupsk_zachod = { 
+	4119 645 644 643 
+}
+slupsk_wschod = { 
+	646 650 648 649 647 
+}
+grudziadz_poludnie = { 
+	2963 651 652 653 
+}
+grudziadz_polnoc = { 
+	657 658 654 656 655 
+}
+wloclawek_poludnie = { 
+	662 665 664 
+}
+wloclawek_polnoc = { 
+	661 660 659 
+}
+wloclawek_centrum = { 
+	663 1801 2975 985 
+}
+konin_polnoc = { 
+	671 668 670 
+}
+konin_zachod = { 
+	2971 677 673 674 
+}
+konin_wschod = { 
+	676 675 672 
+}
+jelenia_gora_poludnie = { 
+	606 607 608 
+}
+jelenia_gora_centrum = { 
+	2921 613 609 
+}
+jelenia_gora_polnoc = { 
+	610 611 612 
+}
+walbrzych_polnoc = { 
+	620 619 622 621 618 
+}
+walbrzych_poludnie = { 
+	617 2879 616 615 614 
+}
+bielsko_biala_poludnie = { 
+	623 625 626 
+}
+bielsko_biala_centrum = { 
+	633 265 634 
+}
+bielsko_biala_wschod = { 
+	631 632 630 629 
+}
+bielsko_biala_polnoc = { 
+	628 627 635 624 
+}
+leszno_centrum = { 
+	874 871 2810 
+}
+leszno_wschod = { 
+	872 873 875 876 
+}
+piotrkow_trybunalski = { 
+	368 679 680 681 678 
+}
+skierniewice_centrum = { 
+	4325 684 669 
+}
+skierniewice_grabina = { 
+	667 685 683 682 
+}
+tarnobrzeg_poludnie = { 
+	689 690 691 2053 688 
+}
+tarnobrzeg_polnoc = { 
+	692 687 693 686 
+}
+zamosc = { 
+	547 694 695 696 697 698 
+}
+chelm = { 
+	4419 701 702 703 700 699 
+}
+biala_podlaska = { 
+	4511 708 707 704 705 706 
+}
+siedlce = { 
+	739 720 721 717 709 
+}
+ostroleka = { 
+	4186 726 725 877 723 722 
+}
+lomza = { 
+	1058 736 862 730 728 
+}
+suwalki_polnoc = { 
+	296 866 865 864 863 
+}
+suwalki_poludnie = { 
+	867 870 868 869 
+}
+Kostrzyn_nad_odra = { 
+	880 808 879 878 
+}
+goscino = { 
+	218 4559 241 
+}
+bobolice = { 
+	1861 246 243 238 
+}
+ustka = { 
+	4362 249 370 1978 
+}
+wejherowo = { 
+	24 23 20 2752 
+}
+hel = { 
+	21 986 666 
+}
+chmielno = { 
+	194 4387 4389 195 
+}
+miastko = { 
+	4365 373 4379 984 4785 
+}
+borsk = { 
+	4694 180 4695 179 
+}
+pruszcz_gdanski = { 
+	17 22 987 4144 
+}
+skorcz = { 
+	952 4142 4768 1878 
+}
+czarna_woda = { 
+	184 1743 203 4388 
+}
+chojna = { 
+	2981 104 2992 1875 481 
+}
+puszczykowo = { 
+	4610 4602 500 4611 832 
+}
+rokietnica = { 
+	4599 499 497 
+}
+kostrzyn = { 
+	495 496 2658 4620 
+}
+kornik = { 
+	4623 2659 4619 4603 
+}
+zlotow = { 
+	2989 210 170 171 
+}
+jastrowie = { 
+	2755 4557 225 4373 
+}
+czarne = { 
+	217 4375 244 242 
+}
+czluchow = { 
+	169 172 4385 
+}
+paslek = { 
+	4242 770 1982 25 999 
+}
+braniewo = { 
+	1961 33 28 
+}
+filipow = { 
+	1755 4122 4262 997 
+}
+augustow = { 
+	4251 1955 4258 
+}
+sokolka = { 
+	1076 2369 2433 2430 
+}
+lapy = { 
+	1055 2443 1063 1054 
+}
+choroszcz = { 
+	2437 1059 4684 1066 
+}
+czarna_bialostocka = { 
+	480 2434 2441 
+}
+michalowo = { 
+	1064 953 471 2351 
+}
+kleszczele = { 
+	2356 1970 2358 
+}
+bransk = { 
+	2370 1973 439 1060 
+}
+bielsk_podlaski = { 
+	456 2361 440 476 
+}
+narew = { 
+	4692 479 2353 
+}
+hajnowka = { 
+	2352 2357 2359 
+}
+kryszyn = { 
+	2119 714 2432 
+}
+monki = { 
+	1061 2431 1942 1067 
+}
+swietajno = { 
+	1941 278 
+}
+wielbark = { 
+	2407 297 
+}
+pasym = { 
+	4245 4252 
+}
+szczytno = { 
+	4545 995 
+}
+barczewo = { 
+	295 294 300 4243 
+}
+olsztynek = { 
+	964 996 2426 4247 
+}
+dobre_miasto = { 
+	4544 4249 4148 293 
+}
+morag = { 
+	4246 3504 771 4115 4244 
+}
+ostroda = { 
+	954 2962 1072 1781 
+}
+susz = { 
+	276 271 39 
+}
+ilawa = { 
+	35 1935 
+}
+lubawa = { 
+	281 4539 
+}
+lasin = { 
+	1859 2958 254 
+}
+chelmno = { 
+	1760 2974 
+}
+solec_kujawski = { 
+	4719 4696 187 4766 
+}
+koronowo = { 
+	2972 4390 202 70 
+}
+chelmza = { 
+	4758 80 4767 1872 94 
+}
+czernikowo = { 
+	1871 74 166 1869 
+}
+jablonowo = { 
+	256 4528 277 
+}
+gorzno = { 
+	261 4541 40 
+}
+brodnica = { 
+	1936 4538 4535 534 
+}
+jedwabne = { 
+	1041 1040 2439 715 
+}
+nowogrod = { 
+	4658 1056 1033 
+}
+pasieki = { 
+	737 1013 733 2103 
+}
+myszyniec = { 
+	4543 291 290 
+}
+kadzidlo = { 
+	4542 298 1044 1043 
+}
+nowe = { 
+	4746 982 49 
+}
+swiecie = { 
+	55 44 4775 1762 
+}
+pruszcz = { 
+	4715 79 1744 204 
+}
+pila = { 
+	221 4549 2751 220 
+}
+wyrzysk = { 
+	2990 1750 4550 212 4560 
+}
+czarnkow = { 
+	108 983 2986 4732 
+}
+trzcinianka = { 
+	4547 126 2982 119 
+}
+santok = { 
+	2656 485 2823 
+}
+witnica = { 
+	2827 807 2825 
+}
+miedzyrzecz = { 
+	814 815 821 
+}
+skwerzyna = { 
+	2943 2826 812 
+}
+szamotuly = { 
+	830 4596 2807 4609 
+}
+obrzycko = { 
+	4600 4601 4731 827 
+}
+swidwin = { 
+	4551 1749 209 
+}
+polczyn_zdroj = { 
+	233 4369 4366 
+}
+barwice = { 
+	4130 4374 234 
+}
+szczecinek = { 
+	4747 1 245 
+}
+slupsk = { 
+	2995 376 4120 
+}
+chlewnica = { 
+	375 4377 4118 
+}
+starogard = { 
+	2980 115 4739 4727 
+}
+chociwel = { 
+	114 4730 2976 
+}
+dobrzany = { 
+	113 4740 1933 
+}
+wagrowiec = { 
+	127 4735 200 192 
+}
+golancz = { 
+	173 1247 4734 
+}
+gniezno = { 
+	4618 489 4624 
+}
+witkowo = { 
+	2631 4584 484 
+}
+klecko = { 
+	488 1881 494 4391 
+}
+stare_miasto = { 
+	418 4606 331 861 
+}
+golina = { 
+	2618 1758 4649 
+}
+slesin = { 
+	99 1865 90 4770 
+}
+sompolno = { 
+	78 1874 71 
+}
+kolo = { 
+	63 1868 66 54 
+}
+klodawa = { 
+	57 4773 4141 4774 
+}
+dabie = { 
+	4716 411 2310 
+}
+leczyca = { 
+	4291 410 
+}
+piatek = { 
+	2311 4168 2312 
+}
+grabow = { 
+	2206 424 409 
+}
+kutno = { 
+	408 4288 2217 
+}
+zychlin = { 
+	4342 413 412 2219 
+}
+krosniewice = { 
+	4170 4772 45 4289 
+}
+kiernozia = { 
+	4334 2222 3500 446 
+}
+lowicz = { 
+	427 4171 2216 
+}
+domaniewice = { 
+	429 4290 4332 
+}
+kowal = { 
+	56 53 86 1775 
+}
+izbica_kujawska = { 
+	4771 82 1876 81 98 
+}
+gabin = { 
+	4330 2234 4331 1768 
+}
+bodzanow = { 
+	4123 1073 4691 1069 
+}
+drobin = { 
+	1080 4217 27 
+}
+czerwinsk = { 
+	4654 4663 1014 
+}
+plonsk = { 
+	4181 4651 2154 1818 1839 
+}
+raciaz = { 
+	2106 729 2741 38 
+}
+lipno = { 
+	83 84 69 
+}
+wielgie = { 
+	110 1931 1940 
+}
+skepe = { 
+	2959 260 2424 
+}
+sierpc = { 
+	37 279 4537 4536 
+}
+zawidz = { 
+	976 19 2961 
+}
+zuromin = { 
+	732 2743 4232 
+}
+biezun = { 
+	977 1024 4214 
+}
+dzialdowo = { 
+	1012 1015 1835 
+}
+lidzbark = { 
+	2445 1845 1945 
+}
+strzegowo = { 
+	738 4191 2744 
+}
+mlawa = { 
+	1030 1027 1048 
+}
+szydlowo = { 
+	4216 1843 1028 1050 
+}
+grudusk = { 
+	4215 4360 
+}
+ciechanow = { 
+	1029 978 4187 
+}
+glinojeck = { 
+	4189 1023 
+}
+gasocin = { 
+	1026 1825 
+}
+przasnysz = { 
+	538 1850 4655 206 
+}
+chorzele = { 
+	289 4657 1042 
+}
+makow = { 
+	4666 2108 724 4659 
+}
+rozan = { 
+	1049 4662 4359 
+}
+krasnosielec = { 
+	1046 979 1047 
+}
+kolno = { 
+	1036 1037 2411 
+}
+stawiski = { 
+	283 1039 4208 
+}
+wysokie_mazowieckie = { 
+	2102 1045 2966 1062 2442 
+}
+klukowo = { 
+	4185 443 1032 4679 2122 
+}
+ostrow_mazowiecka = { 
+	981 4231 727 2694 
+}
+brok = { 
+	2155 734 4230 
+}
+nur = { 
+	1052 4229 1830 4228 
+}
+sokolow_podlaski = { 
+	2355 478 2360 
+}
+ceranow = { 
+	4184 1819 2362 
+}
+repki = { 
+	1071 2118 437 
+}
+siematycze = { 
+	4690 1969 980 2236 2428 455 
+}
+milejczyce = { 
+	2363 2364 4493 
+}
+terespol = { 
+	2065 4491 2057 2054 
+}
+janow_podlaski = { 
+	4411 510 4513 
+}
+miedzyrzec_podlaski = { 
+	507 2075 4449 
+}
+rossosz = { 
+	4480 2093 4461 551 526 
+}
+korczew = { 
+	2354 4688 4685 
+}
+domanice = { 
+	442 4344 444 2349 
+}
+mordy = { 
+	712 4209 4686 
+}
+sulejowek = { 
+	467 4936 2420 
+}
+minsk_mazowiecki = { 
+	473 1965 475 1081 1820 454 
+}
+jakubow = { 
+	1966 453 2366 472 
+}
+wegrow = { 
+	1832 2125 1021 1019 
+}
+wierzbno = { 
+	2120 4265 461 
+}
+sadowne = { 
+	4218 4681 735 
+}
+wolomin = { 
+	2126 474 1997 4935 303 470 
+}
+Tluszcz = { 
+	4683 2444 2421 
+}
+Radzymin = { 
+	2418 4131 2415 
+}
+pultusk = { 
+	1025 731 4182 1018 
+}
+winnica = { 
+	4188 4156 1020 
+}
+wyszkow = { 
+	2185 4192 4190 
+}
+dlugosiodlo = { 
+	2104 4660 2105 
+}
+nowy_dwor_mazowiecki = { 
+	1017 1837 2425 
+}
+zakroczym = { 
+	2413 4180 2412 
+}
+aleksandrow_kujawski = { 
+	165 4721 4722 
+}
+nieszawa = { 
+	974 4712 1873 
+}
+zakrzewo = { 
+	4710 1870 1742 
+}
+inowroclaw = { 
+	4622 4392 2649 205 201 
+}
+orchowo = { 
+	4570 2648 4646 
+}
+slupca = { 
+	4571 850 2630 2622 4573 
+}
+osieczna = { 
+	4615 4616 487 
+}
+wloszakowice = { 
+	1003 2939 2811 2818 
+}
+gostyn = { 
+	2002 2664 840 
+}
+krobia = { 
+	836 4592 2661 482 
+}
+krosno_odrzanskie = { 
+	2933 2900 803 800 
+}
+gubin = { 
+	2931 744 2889 
+}
+zary = { 
+	1803 2930 746 2934 
+}
+lubsko = { 
+	745 2937 2936 
+}
+laknica = { 
+	1002 2905 747 
+}
+zagan = { 
+	2901 2929 2909 
+}
+gozdnica = { 
+	2938 2890 2935 
+}
+szprotawa = { 
+	2903 2881 2902 
+}
+nowa_sol = { 
+	820 4605 831 4604 
+}
+nowe_miasteczko = { 
+	793 822 2820 797 
+}
+turek = { 
+	4302 4179 4304 
+}
+malanow = { 
+	2307 2309 4296 
+}
+brudzew = { 
+	2205 419 2202 
+}
+stawiszyn = { 
+	2306 4303 4647 420 
+}
+liskow = { 
+	4295 421 4292 
+}
+opatowek = { 
+	2196 462 2308 1856 
+}
+przygodzice = { 
+	2644 2628 4583 
+}
+ostrow_wielkopolski = { 
+	2643 2303 4575 4574 2645 
+}
+swidnica = { 
+	2832 2942 796 
+}
+trzebiechow = { 
+	817 818 741 
+}
+babimost = { 
+	802 816 491 
+}
+radziejow = { 
+	4383 96 77 95 
+}
+piotrkow_kujawski = { 
+	92 97 100 
+}
+losice = { 
+	4687 1785 4689 
+}
+stara_kornica = { 
+	509 576 2200 
+}
+lukow = { 
+	2124 2121 575 
+}
+stoczek_lukowski = { 
+	460 458 2198 1967 
+}
+laskrzew = { 
+	711 2201 393 2327 4272 2128 
+}
+garwolin = { 
+	4516 2129 555 2095 2055 
+}
+parysow = { 
+	4693 4222 963 
+}
+otwock = { 
+	4267 962 459 
+}
+celestynow = { 
+	719 2419 1787 4682 718 
+}
+pruszkow = { 
+	4934 285 1240 
+}
+raszyn = { 
+	284 1241 2447 
+}
+izabelin = { 
+	1987 1243 1244 
+}
+leszno = { 
+	286 2414 1989 288 
+}
+sochaczew = { 
+	466 469 449 2417 
+}
+mlodzieszyn = { 
+	1074 2427 433 2416 
+}
+sanok = { 
+	4049 4035 1195 
+}
+besko = { 
+	531 4038 1167 1194 1172 
+}
+iwonicz_zdroj = { 
+	4039 4048 4023 4020 
+}
+miejsce_piastowe = { 
+	1947 4047 1930 
+}
+korczyna = { 
+	4426 1203 4427 
+}
+jaslo = { 
+	4058 4077 4076 4072 1273 1202 
+}
+krempna = { 
+	4022 1151 4046 4422 4073 
+}
+gorlice = { 
+	4040 4101 
+}
+sekowa = { 
+	4021 4104 4024 4098 
+}
+moszczenica = { 
+	4099 4045 4037 4056 
+}
+stary_sacz = { 
+	4105 1164 4094 4093 
+}
+chelmiec = { 
+	1196 4031 4097 2289 
+}
+grzybow = { 
+	1200 1199 1197 1198 
+}
+krynica_zdroj = { 
+	4025 4026 4030 4036 
+}
+tuchow = { 
+	4071 1925 4069 4055 
+}
+zakliczyn = { 
+	4103 4050 4109 4068 
+}
+radlow = { 
+	1209 4059 4070 4044 
+}
+brzesko = { 
+	1201 1219 788 4034 
+}
+gnojnik = { 
+	1171 4146 1147 
+}
+bochnia = { 
+	1192 1187 1186 1248 
+}
+lapanow = { 
+	2952 4057 4849 1183 2294 
+}
+skawina = { 
+	4850 2733 2732 
+}
+krzeszowice = { 
+	4102 4855 1165 4851 
+}
+zielonki = { 
+	1189 4854 356 1092 4108 
+}
+michalowice = { 
+	4106 365 2326 1190 1188 
+}
+spytkowice = { 
+	1163 2856 4781 
+}
+jablonka = { 
+	2880 2440 1176 
+}
+nowy_targ = { 
+	1034 1038 1035 
+}
+kroscienko_nad_dunajcem = { 
+	4028 4029 4863 1178 1177 
+}
+mszana_dolna = { 
+	4783 4864 4865 4041 1800 2727 
+}
+limanowa = { 
+	4847 4051 4848 1182 2726 4107 
+}
+medyka = { 
+	2735 4868 1085 1087 
+}
+bircza = { 
+	1791 4414 2734 
+}
+dynow = { 
+	2029 4421 2052 
+}
+trzebownisko = { 
+	554 2792 1210 2789 2786 
+}
+lubiena = { 
+	2775 2024 4862 
+}
+chmielnik = { 
+	4457 2094 521 
+}
+bialobrzegi = { 
+	2051 556 2097 523 
+}
+lancut = { 
+	4495 4456 4454 
+}
+przeworsk = { 
+	4455 4442 548 517 4453 
+}
+handia = { 
+	4460 527 2092 515 4458 
+}
+jaroslaw = { 
+	4434 4534 533 2027 
+}
+radymno = { 
+	4858 2101 1090 
+}
+pruchnica = { 
+	4417 540 1107 1108 
+}
+lubaczow = { 
+	1089 1091 4939 4857 
+}
+cieszanow = { 
+	1242 4410 4413 4937 
+}
+ksiazopol = { 
+	4443 4437 4445 2050 4508 2073 
+}
+bilgoraj = { 
+	522 4500 3502 3584 559 
+}
+tereszpol = { 
+	2028 4444 4447 
+}
+grabowiec = { 
+	4415 2026 2100 
+}
+szczebrzeszyn = { 
+	4446 520 2049 2048 
+}
+zwierzyniec = { 
+	4451 542 3505 
+}
+tomaszow_lubelski = { 
+	1239 4438 4412 2085 4416 535 
+}
+jarczow = { 
+	2739 4860 1106 4859 
+}
+laszczow = { 
+	1986 2737 537 
+}
+hrubieszow = { 
+	1246 1109 2738 4409 572 
+}
+mircze = { 
+	1088 4408 4861 
+}
+rejowiec = { 
+	4436 4432 1946 2034 
+}
+bialopole = { 
+	4407 1949 541 2099 971 
+}
+chelm_lubelski = { 
+	2083 2090 4424 
+}
+kamien = { 
+	4418 539 4420 
+}
+niemce = { 
+	2072 4505 2060 968 
+}
+konopnica = { 
+	578 2077 4498 508 4492 
+}
+glusk = { 
+	4502 4465 2087 512 
+}
+wysokie = { 
+	2086 2064 525 
+}
+krasnystaw = { 
+	545 2084 991 4425 543 
+}
+rudnik = { 
+	4507 2082 546 552 549 
+}
+radzyn_podlaski = { 
+	452 2127 4210 2227 
+}
+borki = { 
+	2231 528 4462 4276 
+}
+wlodawa = { 
+	4431 569 2056 4423 
+}
+urszulin = { 
+	4435 544 2035 4430 
+}
+parczew = { 
+	740 518 2058 503 
+}
+sosnowica = { 
+	4429 2036 516 
+}
+ostrow_lubelski = { 
+	530 4464 4506 2067 
+}
+jeziorzany = { 
+	3501 2339 2336 4504 504 
+}
+lubartow = { 
+	514 2088 4503 2333 
+}
+markuszow = { 
+	391 2062 404 
+}
+baranow = { 
+	1779 2335 4282 
+}
+pulawy = { 
+	2346 386 2347 967 397 
+}
+pionki = { 
+	2329 4274 2337 2338 392 
+}
+skaryszew = { 
+	4281 2341 4284 4279 
+}
+przytyk = { 
+	4270 2340 2334 4280 
+}
+przysucha = { 
+	379 4268 380 381 
+}
+rusinow = { 
+	1855 4271 405 2313 
+}
+opoczno = { 
+	1132 1854 382 1129 
+}
+paradyz = { 
+	2261 2253 2248 1115 
+}
+radoszyce = { 
+	1135 2265 1137 1134 
+}
+konin = { 
+	2268 1133 2999 2259 
+}
+gorno = { 
+	2238 2244 1123 2450 353 
+}
+rakow = { 
+	4318 2275 2954 
+}
+morawica = { 
+	2249 2317 2318 
+}
+checiny = { 
+	1114 2245 1131 
+}
+miedziana_gora = { 
+	2243 2240 2264 1130 2250 
+}
+sedziszow = { 
+	2475 2286 1160 
+}
+malogoszcz = { 
+	2290 2285 1159 
+}
+jedrzejow = { 
+	2288 1158 2277 
+}
+busko_zdroj = { 
+	2798 2800 1226 1222 
+}
+gnojno = { 
+	1229 1230 2802 362 
+}
+staszow = { 
+	2324 359 2778 
+}
+polaniec = { 
+	4033 2797 2799 2766 1220 
+}
+sandomierz = { 
+	2321 1217 2043 4319 
+}
+klimontow = { 
+	1234 1227 2322 4512 4521 
+}
+warka = { 
+	1786 1008 4207 
+}
+grojec = { 
+	577 2192 2189 713 
+}
+mogielnica = { 
+	2226 710 2225 
+}
+opatow = { 
+	358 4317 361 2316 4316 
+}
+ozarow = { 
+	2315 363 351 
+}
+mielec = { 
+	4065 4053 2779 
+}
+wadowice_gorne = { 
+	4064 2768 2769 1799 
+}
+gawluszowice = { 
+	1214 2763 2765 
+}
+debica = { 
+	4052 2782 2795 
+}
+pilzno = { 
+	2776 2777 2774 4061 
+}
+kolbuszowa = { 
+	2793 1207 4066 
+}
+dzikowiec = { 
+	4074 4075 2773 
+}
+nisko = { 
+	2791 2761 1211 
+}
+jarocin = { 
+	4497 4496 2063 2061 
+}
+stalowa_wola = { 
+	2759 966 2764 
+}
+zaklikow = { 
+	1223 1224 2762 
+}
+modliborzyce = { 
+	4466 2770 4459 
+}
+janow_lubelski = { 
+	4494 2078 2079 506 
+}
+annopol = { 
+	2074 2932 2771 774 4322 
+}
+krasnik = { 
+	2801 4452 524 4499 2059 
+}
+wilkow = { 
+	399 4285 398 
+}
+opole_lubelskie = { 
+	403 1099 2454 400 
+}
+kozienice = { 
+	384 2197 463 1849 
+}
+sieciechow = { 
+	395 2328 394 
+}
+ostrzeszow = { 
+	2641 2667 4643 
+}
+grabow_nad_prosna = { 
+	2305 4315 422 4299 
+}
+kepno = { 
+	323 4309 316 319 
+}
+trzcinica = { 
+	2296 4311 317 
+}
+kamien_pomorski = { 
+	4556 232 4553 
+}
+miedzyzdroje = { 
+	228 1851 231 
+}
+gryfice = { 
+	216 1747 4788 
+}
+rewal = { 
+	4555 4361 4558 
+}
+darlowo = { 
+	247 1105 1804 
+}
+slawno = { 
+	4121 1104 4380 
+}
+pleszew = { 
+	4582 2633 2624 
+}
+chocz = { 
+	2646 4642 2647 
+}
+skierniewice = { 
+	4326 2213 2224 990 
+}
+gluchow = { 
+	2235 4345 432 4336 4328 
+}
+zgierz = { 
+	4569 344 4568 
+}
+ozorkow = { 
+	336 337 4562 
+}
+glowno = { 
+	2469 345 2470 
+}
+ujazd = { 
+	2220 334 2458 
+}
+czerniewice = { 
+	2232 4327 2221 447 
+}
+tomaszow_mazowiecki = { 
+	2457 350 377 321 
+}
+rzgow = { 
+	2459 2460 338 
+}
+andrespol = { 
+	4563 2463 342 
+}
+pabianice = { 
+	2462 155 349 
+}
+lutomiersk = { 
+	4167 2464 
+}
+dlutow = { 
+	4561 4338 
+}
+sieradz = { 
+	4294 414 4337 
+}
+warta = { 
+	406 2314 2207 
+}
+brzezno = { 
+	2212 2211 332 2215 4339 
+}
+sulejow = { 
+	1116 2266 2262 
+}
+rozprza = { 
+	1127 2237 1113 347 
+}
+szczercow = { 
+	2204 4532 4305 423 
+}
+belchatow = { 
+	4565 366 348 2246 
+}
+wierzchlas = { 
+	2302 330 417 324 
+}
+wielun = { 
+	327 4307 328 
+}
+czarnozyly = { 
+	1846 2304 4178 
+}
+wieruszow = { 
+	4314 329 2300 4310 
+}
+boleslawiec = { 
+	2301 4313 4298 
+}
+pajeczno = { 
+	1128 2267 
+}
+siemkowice = { 
+	325 4301 326 
+}
+sulmierzyce = { 
+	2260 1117 2746 
+}
+radomsko = { 
+	1136 1150 2256 
+}
+dobryszyce = { 
+	1121 2247 2251 1124 
+}
+zytno = { 
+	1146 1144 1122 2295 
+}
+maslowice = { 
+	2252 1145 1125 
+}
+koniecpol = { 
+	2293 2291 1126 1161 2280 
+}
+konopiska = { 
+	158 2241 2242 2272 2273 
+}
+kruszyna = { 
+	2292 1140 2271 
+}
+mstow = { 
+	1138 2269 2257 
+}
+klobuck = { 
+	2255 1119 2254 
+}
+popow = { 
+	2239 1112 164 
+}
+krzepice = { 
+	1848 2299 163 
+}
+olesno = { 
+	1773 4698 3003 
+}
+rudniki = { 
+	4308 4312 2298 320 
+}
+niemodlin = { 
+	959 859 4709 1759 4760 
+}
+murow = { 
+	147 143 3001 4648 
+}
+ozimek = { 
+	142 4762 4700 132 
+}
+brzeg = { 
+	4640 2617 4576 
+}
+olszanka = { 
+	2615 854 860 
+}
+czernica = { 
+	2626 4587 2623 
+}
+kobierzyce = { 
+	794 792 2638 
+}
+sobotka = { 
+	2847 787 1000 
+}
+swidnica_slask = { 
+	2858 2861 2867 2850 
+}
+strzegom = { 
+	777 2853 2883 2877 
+}
+jawor = { 
+	773 772 2848 
+}
+paszowice = { 
+	2887 769 2896 
+}
+wojcieszow = { 
+	2913 2914 750 
+}
+zlotoryja = { 
+	2897 766 751 
+}
+karpacz = { 
+	758 2922 2919 2912 2915 
+}
+szklarska_poreba = { 
+	753 754 755 756 
+}
+zgorzelec = { 
+	748 2927 2923 2926 
+}
+zawidow = { 
+	2908 2918 2891 
+}
+luban = { 
+	759 2917 2916 
+}
+swieradow_zdroj = { 
+	761 2899 765 2911 
+}
+chojnow = { 
+	2904 2888 785 2907 
+}
+ruja = { 
+	2837 784 2838 2895 
+}
+szczawno_zdroj = { 
+	2859 775 763 2855 
+}
+jedlina_zdroj = { 
+	2857 2884 799 776 
+}
+nowa_ruda = { 
+	790 2854 2878 2842 
+}
+klodzko = { 
+	2873 2866 
+}
+polanica_zdroj = { 
+	2865 778 2849 2846 
+}
+bystrzyca_klodzka = { 
+	2860 2868 780 779 
+}
+kamieniec_zabkowicki = { 
+	2870 2863 786 
+}
+zabkowice_slaskie = { 
+	2876 2874 2862 781 
+}
+otmuchow = { 
+	2871 2657 2875 
+}
+nysa = { 
+	4645 857 2619 
+}
+skoroszyce = { 
+	856 4578 2614 
+}
+kedzierzyn_kozle = { 
+	4531 4759 61 
+}
+polska_cerkiew = { 
+	4778 46 4748 
+}
+raciborz = { 
+	51 2965 958 134 
+}
+pietrowice_wielkie = { 
+	2994 4742 58 4749 
+}
+radlin = { 
+	1769 50 4738 
+}
+wodzislaw_slaski = { 
+	133 1770 131 
+}
+gorzyce = { 
+	62 4743 4717 
+}
+cieszyn = { 
+	4707 76 4708 2955 
+}
+wisla = { 
+	64 1757 4084 2957 
+}
+skoczow = { 
+	4744 135 4752 1763 
+}
+zywiec = { 
+	4092 266 4725 
+}
+gilowice = { 
+	4096 4091 2948 
+}
+koszarawa = { 
+	1096 2864 4090 
+}
+milowka = { 
+	4088 1174 1175 
+}
+lipowa = { 
+	4089 2967 4083 
+}
+jordanow = { 
+	4782 1097 1168 
+}
+sucha_beskidzka = { 
+	4853 4856 1998 
+}
+makow_podhalanski = { 
+	4867 4866 1094 
+}
+pcim = { 
+	2728 2729 4846 
+}
+myslenice = { 
+	1999 1093 4784 
+}
+dobczyce = { 
+	1184 2025 2731 
+}
+wadowice = { 
+	2137 4086 4085 
+}
+tomice = { 
+	4081 4100 4078 
+}
+kalwaria_zebrzydowska = { 
+	4852 798 1901 1170 
+}
+szczyrk = { 
+	2970 267 1771 
+}
+wilamowice = { 
+	4753 4724 956 
+}
+jasienica = { 
+	1007 1772 1826 2968 
+}
+oswiecim = { 
+	1173 1790 1488 136 
+}
+miechow = { 
+	2325 354 357 4320 
+}
+ksiaz_wielki = { 
+	364 1233 2474 
+}
+lipsko = { 
+	4286 4287 2332 
+}
+sienno = { 
+	401 2456 4278 
+}
+wloszczowa = { 
+	1249 1143 1142 
+}
+radkow = { 
+	1157 2284 1156 
+}
+lubliniec = { 
+	1853 4699 146 4701 
+}
+boronow = { 
+	2263 1764 141 1118 
+}
+zawiercie = { 
+	2279 1154 1152 1153 1162 
+}
+szczekociny = { 
+	2283 2276 2281 2282 2287 
+}
+bedzin = { 
+	4757 157 4239 161 
+}
+siewierz = { 
+	1141 2270 4127 
+}
+tarnowskie_gory = { 
+	4706 1954 2750 148 
+}
+ozarowice = { 
+	4176 159 4704 1765 1766 
+}
+pyskowice = { 
+	4175 4703 149 150 
+}
+knurow = { 
+	957 162 1953 4754 
+}
+trzebnica = { 
+	842 4594 844 
+}
+prusice = { 
+	2653 4589 2636 
+}
+czarnocin = { 
+	367 2466 1110 339 
+}
+luzino = { 
+	251 250 4363 
+}
+choczewo = { 
+	371 369 4110 
+}
+kwidzyn = { 
+	4769 91 14 
+}
+prabuty = { 
+	12 42 2969 
+}
+tuchola = { 
+	185 191 174 
+}
+cekcyn = { 
+	182 181 186 
+}
+tomysl = { 
+	2824 4613 2809 
+}
+lwowek = { 
+	4608 2814 825 
 }

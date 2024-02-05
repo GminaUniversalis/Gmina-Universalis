@@ -1,9 +1,9 @@
 #Sianow
 culture = srodkowopomorska
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods = fish
 base_manpower = 2
 capital = "Sianow"
 is_city = yes
@@ -13,3 +13,4 @@ owner = P02
 controller = P02
 add_core = P02
 discovered_by = ottoman
+latent_trade_goods = { gu_processed_food }

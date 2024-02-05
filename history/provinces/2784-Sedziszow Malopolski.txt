@@ -1,10 +1,10 @@
 #Sedziszow Malopolski
 culture = lachowska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 2
+base_tax = 3
+base_production = 3
+trade_goods = gu_metalworking
+base_manpower = 4
 capital = "Sedziszow Malopolski"
 is_city = yes
 discovered_by = western

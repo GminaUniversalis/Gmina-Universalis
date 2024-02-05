@@ -2,8 +2,8 @@
 culture = trojmiasto
 religion = communism_pzpr
 base_tax = 2
-base_production = 2
-trade_goods = unknown
+base_production = 1
+trade_goods = gu_amber
 base_manpower = 2
 capital = "City of Puck"
 is_city = yes

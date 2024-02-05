@@ -1,0 +1,16 @@
+#Paprocany
+culture = gornoslaska
+religion = communism_pzpr
+hre = yes
+base_tax = 3
+base_production = 5
+trade_goods = iron
+base_manpower = 3
+capital = "Paprocany"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L24
+controller = L24
+discovered_by = ottoman
+add_core = L24

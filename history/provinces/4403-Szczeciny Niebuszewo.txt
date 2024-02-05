@@ -1,10 +1,10 @@
 #Szczecin
 culture = zachodniopomorska
 religion = communism_sd
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 5
+base_production = 4
+trade_goods = gu_consumer_goods
+base_manpower = 5
 capital = "Szczecin"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = P17
 controller = P17
 add_core = P17
 discovered_by = ottoman
+latent_trade_goods = { gu_software }

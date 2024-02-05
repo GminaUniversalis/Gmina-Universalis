@@ -1,10 +1,10 @@
 #City of Starograd Gdanski
 culture = kociewiacka
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 7
+base_production = 9
+trade_goods = gu_chemicals
+base_manpower = 8
 capital = "City of Starograd Gdanski"
 is_city = yes
 discovered_by = western

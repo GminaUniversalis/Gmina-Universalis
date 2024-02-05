@@ -1,10 +1,10 @@
 #Mokotow
 culture = warszawska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 12
+base_production = 14
+trade_goods = gu_metalworking
+base_manpower = 9
 capital = "Mokotow"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = G12
 controller = G12
 add_core = G12
 discovered_by = ottoman
+latent_trade_goods = { gu_electronics }

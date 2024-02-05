@@ -1,10 +1,10 @@
 #Dobrzen Wielki
 culture = opolska
 religion = communism_pzpr
-base_tax = 2
-base_production = 2
-trade_goods = unknown
-base_manpower = 2
+base_tax = 1
+base_production = 1
+trade_goods = gu_lumber
+base_manpower = 1
 capital = "Dobrzen Wielki"
 is_city = yes
 discovered_by = western
@@ -14,3 +14,4 @@ controller = H11
 add_core = H11
 hre = yes
 discovered_by = ottoman
+add_core = H20

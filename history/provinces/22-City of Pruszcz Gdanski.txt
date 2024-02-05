@@ -1,9 +1,9 @@
 #City of Pruszcz Gdanski
 culture = trojmiasto
 religion = communism_pzpr
-base_tax = 6
+base_tax = 7
 base_production = 7
-trade_goods = unknown
+trade_goods = glass
 base_manpower = 6
 capital = "City of Pruszcz Gdanski"
 is_city = yes

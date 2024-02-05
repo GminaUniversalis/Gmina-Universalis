@@ -2,8 +2,8 @@
 culture = pomorska
 religion = communism_pzpr
 base_tax = 5
-base_production = 4
-trade_goods = unknown
+base_production = 3
+trade_goods = gu_tourists
 base_manpower = 5
 capital = "Wejherowo"
 is_city = yes

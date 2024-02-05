@@ -1,9 +1,9 @@
 #City of Swidnica
 religion = communism_pzpr
-base_tax = 8
-base_production = 13
+base_tax = 9
+base_production = 14
 trade_goods = gu_beer
-base_manpower = 9
+base_manpower = 10
 capital = "City of Swidnica"
 is_city = yes
 discovered_by = western

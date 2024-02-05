@@ -1,9 +1,9 @@
 #City of Bielsk Podlaski
 culture = podlaska
 religion = communism_pzpr
-base_tax = 4
-base_production = 6
-trade_goods = unknown
+base_tax = 3
+base_production = 5
+trade_goods = iron
 base_manpower = 4
 capital = "City of Bielsk Podlaski"
 is_city = yes

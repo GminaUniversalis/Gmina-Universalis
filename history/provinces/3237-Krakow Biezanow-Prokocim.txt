@@ -1,10 +1,10 @@
 #Krakow - Biezanów-Prokocim
 culture = krakowska
 religion = catholic
-base_tax = 7
-base_production = 7
-trade_goods = gu_tourists
-base_manpower = 7
+base_tax = 4
+base_production = 3
+trade_goods = gu_consumer_goods
+base_manpower = 5
 capital = "Biezanów-Prokocim"
 is_city = yes
 discovered_by = western
@@ -13,4 +13,4 @@ discovered_by = ottoman
 add_core = X20
 owner = X20
 controller = X20
-fort_15th = yes
+latent_trade_goods = { gu_finances }

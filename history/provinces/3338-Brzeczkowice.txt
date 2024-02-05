@@ -1,0 +1,16 @@
+#Brzeczkowice
+culture = gornoslaska
+religion = communism_sd
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = gu_metalworking
+base_manpower = 3
+capital = "Brzeczkowice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L25
+controller = L25
+discovered_by = ottoman
+add_core = L25

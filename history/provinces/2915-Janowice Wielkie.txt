@@ -2,7 +2,7 @@
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = copper
 base_manpower = 1
 capital = "Janowice Wielkie"
 is_city = yes

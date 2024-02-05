@@ -1,0 +1,15 @@
+#Zamosc Centrum
+culture = kresowa
+religion = communism_pzpr
+base_tax = 2
+base_production = 2
+trade_goods = gu_wheat
+base_manpower = 1
+capital = "Zamosc - Centrum"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = U19
+controller = U19
+add_core = U19
+discovered_by = ottoman

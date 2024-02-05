@@ -1,10 +1,10 @@
 #Gryfice
 culture = zachodniopomorska
 religion = communism_sd
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 2
+base_tax = 3
+base_production = 3
+trade_goods = sugar
+base_manpower = 4
 capital = "Gryfice"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = P06
 controller = P06
 add_core = P06
 discovered_by = ottoman
+latent_trade_goods = { gu_woodworking }

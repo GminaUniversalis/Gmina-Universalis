@@ -1,0 +1,17 @@
+#Miechowice
+culture = gornoslaska
+religion = communism_sd
+hre = yes
+base_tax = 3
+base_production = 2
+trade_goods = gu_coal
+base_manpower = 3
+capital = "Miechowice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L31
+controller = L31
+add_core = L09
+discovered_by = ottoman
+add_core = L31

@@ -1,0 +1,16 @@
+#Zabrze Biskupice
+culture = gornoslaska
+religion = communism_pzpr
+hre = yes
+base_tax = 3
+base_production = 2
+trade_goods = gu_vegetables
+base_manpower = 3
+capital = "Zabrze Biskupice"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = L32
+controller = L32
+discovered_by = ottoman
+add_core = L32

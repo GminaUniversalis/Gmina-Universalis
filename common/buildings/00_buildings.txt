@@ -40,15 +40,15 @@ marketplace = {
 			type = production
 			value = 1
 		}
-		if = {
-			limit = {
-				FROM = { 
-					has_dlc = "Mandate of Heaven"
-					has_country_flag = mam_trade_building_prosperity_flag
-				}
-			}
-			add_prosperity = 5
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = { 
+		# 			has_dlc = "Mandate of Heaven"
+		# 			has_country_flag = mam_trade_building_prosperity_flag
+		# 		}
+		# 	}
+		# 	add_prosperity = 5
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -56,16 +56,16 @@ marketplace = {
 			type = production
 			value = 1
 		}
-		if = {
-			limit = {
-				FROM = { 
-					has_dlc = "Mandate of Heaven"
-					has_country_flag = mam_trade_building_prosperity_flag
-				}
+		# if = {
+		# 	limit = {
+		# 		FROM = { 
+		# 			has_dlc = "Mandate of Heaven"
+		# 			has_country_flag = mam_trade_building_prosperity_flag
+		# 		}
 				
-			}
-			add_prosperity = -5
-		}
+		# 	}
+		# 	add_prosperity = -5
+		# }
 	}
 
 	on_construction_started = { } #Fires when you start the construction,  ROOT - Province FROM - Country that started
@@ -144,28 +144,28 @@ temple = {
 				duration = -1
 			}
 		}
-		if = {
-			limit = {
-				FROM = {
-					has_country_flag = mosque_local_unrest_flag
-				}
-			}
-			add_province_modifier = {
-				name = turkoman_peaceful_worshipping
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
-			}
-			FROM = {
-				change_estate_land_share = {
-					estate = all
-					share = -0.25
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			has_country_flag = mosque_local_unrest_flag
+		# 		}
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = turkoman_peaceful_worshipping
+		# 		duration = -1
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+		# 	}
+		# 	FROM = {
+		# 		change_estate_land_share = {
+		# 			estate = all
+		# 			share = -0.25
+		# 		}
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -193,18 +193,18 @@ temple = {
 				}
 			}
 		}
-		remove_province_modifier = gov_expanded_temple_rights_mod
-		if = {
-			limit = {
-				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
-			}
-			FROM = {
-				change_estate_land_share = {
-					estate = all
-					share = 0.25
-				}
-			}
-		}
+		# remove_province_modifier = gov_expanded_temple_rights_mod
+		# if = {
+		# 	limit = {
+		# 		FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+		# 	}
+		# 	FROM = {
+		# 		change_estate_land_share = {
+		# 			estate = all
+		# 			share = 0.25
+		# 		}
+		# 	}
+		# }
 	}
 	on_obsolete = {
 	}
@@ -230,17 +230,17 @@ barracks = {
 				add_manpower = 1
 			}
 		}
-		if = {
-			limit = {
-				FROM = {
-					mission_completed = jap_tanegashima_teppo
-					has_dlc = "Cradle of Civilization" 
-				}
-			}
-			FROM = {
-				add_army_professionalism = 0.001
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			mission_completed = jap_tanegashima_teppo
+		# 			has_dlc = "Cradle of Civilization" 
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		add_army_professionalism = 0.001
+		# 	}
+		# }
 		add_development_from_building = {
 			building = barracks
 			type = manpower
@@ -261,17 +261,17 @@ barracks = {
 				add_manpower = -1
 			}
 		}
-		if = {
-			limit = {
-				FROM = {
-					mission_completed = jap_tanegashima_teppo
-					has_dlc = "Cradle of Civilization" 
-				}
-			}
-			FROM = {
-				add_army_professionalism = -0.001
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			mission_completed = jap_tanegashima_teppo
+		# 			has_dlc = "Cradle of Civilization" 
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		add_army_professionalism = -0.001
+		# 	}
+		# }
 		remove_development_from_building = {
 			building = barracks
 			type = manpower
@@ -284,28 +284,28 @@ barracks = {
 	on_obsolete = {
 	}
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.005
-#			}
-#		}
-#	}
+	# # THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	# on_built = {
+	# 	FROM = {
+	# 		add_army_professionalism = 0.005
+	# 	}
+	# }
+
+	# # THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	# on_destroyed = {
+	# 	FROM = {
+	# 		add_army_professionalism = -0.01
+	# 	}
+	# }
+
+	# # THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	# on_obsolete = {
+	# 	hidden_effect = {
+	# 		FROM = {
+	# 			add_army_professionalism = -0.005
+	# 		}
+	# 	}
+	# }
 
 	ai_will_do = {
 		factor = 1
@@ -338,10 +338,10 @@ shipyard = {
 			type = production
 			value = 1
 		}
-		if = {
-			limit = { has_province_modifier = sca_swe_danish_shipyard }
-			remove_province_modifier = sca_swe_danish_shipyard
-		}
+		# if = {
+		# 	limit = { has_province_modifier = sca_swe_danish_shipyard }
+		# 	remove_province_modifier = sca_swe_danish_shipyard
+		# }
 	}
 	on_obsolete = {
 	}
@@ -382,24 +382,24 @@ fort_15th = {
 						loyalty = 5
 					}
 				}
-				if = {
-					limit = {
-						has_estate = estate_maratha
-					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
-				}
-				if = {
-					limit = {
-						has_estate = estate_rajput
-					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
-				}
+				# if = {
+				# 	limit = {
+				# 		has_estate = estate_maratha
+				# 	}
+				# 	add_estate_loyalty = {
+				# 		estate = estate_maratha
+				# 		loyalty = 5
+				# 	}
+				# }
+				# if = {
+				# 	limit = {
+				# 		has_estate = estate_rajput
+				# 	}
+				# 	add_estate_loyalty = {
+				# 		estate = estate_rajput
+				# 		loyalty = 5
+				# 	}
+				# }
 			}
 		}
 		if = {
@@ -475,15 +475,15 @@ courthouse = {
 			type = tax
 			value = 1
 		}
-		if = { 
-			limit = { 
-				FROM = { has_country_flag = fra_courthouse_bonus_flag }
-			}
-			add_province_modifier = {
-				name = fra_improved_court_houses_modifier
-				duration = -1 
-			}
-		}
+		# if = { 
+		# 	limit = { 
+		# 		FROM = { has_country_flag = fra_courthouse_bonus_flag }
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = fra_improved_court_houses_modifier
+		# 		duration = -1 
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -491,7 +491,7 @@ courthouse = {
 			type = tax
 			value = 1
 		}
-		remove_province_modifier = fra_improved_court_houses_modifier
+		# remove_province_modifier = fra_improved_court_houses_modifier
 	}
 	on_obsolete = {
 	}
@@ -662,28 +662,28 @@ regimental_camp = {
 		land_forcelimit = 1
 	}
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.005
-#			}
-#		}
-#	}
+	# # THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	# on_built = {
+	# 	FROM = {
+	# 		add_army_professionalism = 0.005
+	# 	}
+	# }
+
+	# # THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	# on_destroyed = {
+	# 	FROM = {
+	# 		add_army_professionalism = -0.01
+	# 	}
+	# }
+
+	# # THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	# on_obsolete = {
+	# 	hidden_effect = {
+	# 		FROM = {
+	# 			add_army_professionalism = -0.005
+	# 		}
+	# 	}
+	# }
 	on_built = {
 		add_development_from_building = {
 			building = regimental_camp
@@ -693,17 +693,17 @@ regimental_camp = {
 		update_improved_military_buildings_modifier = {
 			building = regimental_camp
 		}
-		if = {
-			limit = {
-				FROM = {
-					mission_completed = jap_tanegashima_teppo
-					has_dlc = "Cradle of Civilization" 
-				}
-			}
-			FROM = {
-				add_army_professionalism = 0.001
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			mission_completed = jap_tanegashima_teppo
+		# 			has_dlc = "Cradle of Civilization" 
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		add_army_professionalism = 0.001
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -714,17 +714,17 @@ regimental_camp = {
 		update_improved_military_buildings_modifier = {
 			building = regimental_camp
 		}
-		if = {
-			limit = {
-				FROM = {
-					mission_completed = jap_tanegashima_teppo
-					has_dlc = "Cradle of Civilization" 
-				}
-			}
-			FROM = {
-				add_army_professionalism = -0.001
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			mission_completed = jap_tanegashima_teppo
+		# 			has_dlc = "Cradle of Civilization" 
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		add_army_professionalism = -0.001
+		# 	}
+		# }
 	}
 	on_obsolete = {
 	}
@@ -766,24 +766,24 @@ fort_16th = {
 						loyalty = 5
 					}
 				}
-				if = {
-					limit = {
-						has_estate = estate_maratha
-					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
-				}
-				if = {
-					limit = {
-						has_estate = estate_rajput
-					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
-				}
+				# if = {
+				# 	limit = {
+				# 		has_estate = estate_maratha
+				# 	}
+				# 	add_estate_loyalty = {
+				# 		estate = estate_maratha
+				# 		loyalty = 5
+				# 	}
+				# }
+				# if = {
+				# 	limit = {
+				# 		has_estate = estate_rajput
+				# 	}
+				# 	add_estate_loyalty = {
+				# 		estate = estate_rajput
+				# 		loyalty = 5
+				# 	}
+				# }
 			}
 		}
 		if = {
@@ -886,28 +886,28 @@ cathedral = {
 				duration = -1
 			}
 		}
-		if = {
-			limit = {
-				FROM = {
-					has_country_flag = mosque_local_unrest_flag
-				}
-			}
-			add_province_modifier = {
-				name = turkoman_peaceful_worshipping
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
-			}
-			FROM = {
-				change_estate_land_share = {
-					estate = all
-					share = -0.25
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			has_country_flag = mosque_local_unrest_flag
+		# 		}
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = turkoman_peaceful_worshipping
+		# 		duration = -1
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+		# 	}
+		# 	FROM = {
+		# 		change_estate_land_share = {
+		# 			estate = all
+		# 			share = -0.25
+		# 		}
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -916,14 +916,14 @@ cathedral = {
 			type = tax
 			value = 2
 		}
-		if = {
-			limit = {
-				FROM = {
-					has_country_flag = mosque_local_unrest_flag
-				}
-			}
-			remove_province_modifier = turkoman_peaceful_worshipping
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			has_country_flag = mosque_local_unrest_flag
+		# 		}
+		# 	}
+		# 	remove_province_modifier = turkoman_peaceful_worshipping
+		# }
 		if = {
 			limit = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
@@ -936,17 +936,17 @@ cathedral = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
-		if = {
-			limit = {
-				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
-			}
-			FROM = {
-				change_estate_land_share = {
-					estate = all
-					share = 0.25
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+		# 	}
+		# 	FROM = {
+		# 		change_estate_land_share = {
+		# 			estate = all
+		# 			share = 0.25
+		# 		}
+		# 	}
+		# }
 	}
 	on_obsolete = {
 	}
@@ -1115,10 +1115,10 @@ grand_shipyard = {
 			type = production
 			value = 2
 		}
-		if = {
-			limit = { has_province_modifier = sca_swe_danish_shipyard }
-			remove_province_modifier = sca_swe_danish_shipyard
-		}
+		# if = {
+		# 	limit = { has_province_modifier = sca_swe_danish_shipyard }
+		# 	remove_province_modifier = sca_swe_danish_shipyard
+		# }
 	}
 	on_obsolete = {
 	}
@@ -1142,28 +1142,28 @@ training_fields = {
 
 	make_obsolete = barracks
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
+	# # THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	# on_built = {
+	# 	FROM = {
+	# 		add_army_professionalism = 0.01
+	# 	}
+	# }
+
+	# # THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	# on_destroyed = {
+	# 	FROM = {
+	# 		add_army_professionalism = -0.02
+	# 	}
+	# }
+
+	# # THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	# on_obsolete = {
+	# 	hidden_effect = {
+	# 		FROM = {
+	# 			add_army_professionalism = -0.01
+	# 		}
+	# 	}
+	# }
 
 	modifier = {
 		local_manpower_modifier = 1
@@ -1190,17 +1190,17 @@ training_fields = {
 		update_improved_military_buildings_modifier = {
 			building = training_fields
 		}
-		if = {
-			limit = {
-				FROM = {
-					mission_completed = jap_tanegashima_teppo
-					has_dlc = "Cradle of Civilization" 
-				}
-			}
-			FROM = {
-				add_army_professionalism = 0.001
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			mission_completed = jap_tanegashima_teppo
+		# 			has_dlc = "Cradle of Civilization" 
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		add_army_professionalism = 0.001
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		if = {
@@ -1216,17 +1216,17 @@ training_fields = {
 		update_improved_military_buildings_modifier = {
 			building = training_fields
 		}
-		if = {
-			limit = {
-				FROM = {
-					mission_completed = jap_tanegashima_teppo
-					has_dlc = "Cradle of Civilization" 
-				}
-			}
-			FROM = {
-				add_army_professionalism = -0.001
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			mission_completed = jap_tanegashima_teppo
+		# 			has_dlc = "Cradle of Civilization" 
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		add_army_professionalism = -0.001
+		# 	}
+		# }
 		remove_development_from_building = {
 			building = training_fields
 			type = manpower
@@ -1268,24 +1268,24 @@ fort_17th = {
 						loyalty = 5
 					}
 				}
-				if = {
-					limit = {
-						has_estate = estate_maratha
-					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
-				}
-				if = {
-					limit = {
-						has_estate = estate_rajput
-					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
-				}
+				# if = {
+				# 	limit = {
+				# 		has_estate = estate_maratha
+				# 	}
+				# 	add_estate_loyalty = {
+				# 		estate = estate_maratha
+				# 		loyalty = 5
+				# 	}
+				# }
+				# if = {
+				# 	limit = {
+				# 		has_estate = estate_rajput
+				# 	}
+				# 	add_estate_loyalty = {
+				# 		estate = estate_rajput
+				# 		loyalty = 5
+				# 	}
+				# }
 			}
 		}
 		if = {
@@ -1447,16 +1447,16 @@ town_hall = {
 			value = 2
 			upgrade_value = 1
 		}
-		if = { 
-			limit = { 
-				FROM = { has_country_flag = fra_courthouse_bonus_flag }
-				NOT = { has_province_modifier = fra_improved_court_houses_modifier }
-			}
-			add_province_modifier = {
-				name = fra_improved_court_houses_modifier
-				duration = -1 
-			}
-		}
+		# if = { 
+		# 	limit = { 
+		# 		FROM = { has_country_flag = fra_courthouse_bonus_flag }
+		# 		NOT = { has_province_modifier = fra_improved_court_houses_modifier }
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = fra_improved_court_houses_modifier
+		# 		duration = -1 
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1464,7 +1464,7 @@ town_hall = {
 			type = tax
 			value = 2
 		}
-		remove_province_modifier = fra_improved_court_houses_modifier 
+		# remove_province_modifier = fra_improved_court_houses_modifier 
 	}
 	on_obsolete = {
 	}
@@ -1602,28 +1602,28 @@ conscription_center = {
 
 	make_obsolete = regimental_camp
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
+	# # THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	# on_built = {
+	# 	FROM = {
+	# 		add_army_professionalism = 0.01
+	# 	}
+	# }
+
+	# # THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	# on_destroyed = {
+	# 	FROM = {
+	# 		add_army_professionalism = -0.02
+	# 	}
+	# }
+
+	# # THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	# on_obsolete = {
+	# 	hidden_effect = {
+	# 		FROM = {
+	# 			add_army_professionalism = -0.01
+	# 		}
+	# 	}
+	# }
 
 	modifier = {
 		land_forcelimit = 2
@@ -1639,17 +1639,17 @@ conscription_center = {
 		update_improved_military_buildings_modifier = {
 			building = conscription_center
 		}
-		if = {
-			limit = {
-				FROM = {
-					mission_completed = jap_tanegashima_teppo
-					has_dlc = "Cradle of Civilization" 
-				}
-			}
-			FROM = {
-				add_army_professionalism = 0.001
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			mission_completed = jap_tanegashima_teppo
+		# 			has_dlc = "Cradle of Civilization" 
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		add_army_professionalism = 0.001
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1660,17 +1660,17 @@ conscription_center = {
 		update_improved_military_buildings_modifier = {
 			building = conscription_center
 		}
-		if = {
-			limit = {
-				FROM = {
-					mission_completed = jap_tanegashima_teppo
-					has_dlc = "Cradle of Civilization" 
-				}
-			}
-			FROM = {
-				add_army_professionalism = -0.001
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			mission_completed = jap_tanegashima_teppo
+		# 			has_dlc = "Cradle of Civilization" 
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		add_army_professionalism = -0.001
+		# 	}
+		# }
 	}
 	on_obsolete = {
 	}
@@ -1717,24 +1717,24 @@ fort_18th = {
 						loyalty = 5
 					}
 				}
-				if = {
-					limit = {
-						has_estate = estate_maratha
-					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
-				}
-				if = {
-					limit = {
-						has_estate = estate_rajput
-					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
-				}
+				# if = {
+				# 	limit = {
+				# 		has_estate = estate_maratha
+				# 	}
+				# 	add_estate_loyalty = {
+				# 		estate = estate_maratha
+				# 		loyalty = 5
+				# 	}
+				# }
+				# if = {
+				# 	limit = {
+				# 		has_estate = estate_rajput
+				# 	}
+				# 	add_estate_loyalty = {
+				# 		estate = estate_rajput
+				# 		loyalty = 5
+				# 	}
+				# }
 			}
 		}
 		if = {
@@ -1838,14 +1838,14 @@ wharf = {
 			factor = 1.5
 			base_production = 15
 		}
-		modifier = {
-			factor = 5
-			OR = {
-				has_province_modifier = skanemarket
-				has_province_modifier = comet_ore_modifier
-				has_province_modifier = paradise_modifier
-			}
-		}
+		# modifier = {
+		# 	factor = 5
+		# 	OR = {
+		# 		has_province_modifier = skanemarket
+		# 		has_province_modifier = comet_ore_modifier
+		# 		has_province_modifier = paradise_modifier
+		# 	}
+		# }
 		modifier = {
 			NOT = { num_free_building_slots = 3 }
 			factor = 1.5
@@ -1858,6 +1858,10 @@ weapons = {
 		copper
 		iron
 		gu_coal
+		gu_metalworking
+		gu_chemicals
+		gu_electronics
+		gu_vehicles
 	}
 	onmap = yes
 	on_built = {
@@ -1991,6 +1995,10 @@ tradecompany = {
 		gu_tourists
 		gu_vodka
 		gu_sulfur
+		gu_consumer_goods
+		gu_confectionery
+		gu_software
+		gu_finances
 	}
 	onmap = yes
 	on_built = {
@@ -2035,6 +2043,13 @@ farm_estate = {
 		gu_oscypek
 		gu_horses
 		gu_oil
+		gu_wheat
+		gu_barley
+		gu_triticale
+		gu_maize
+		gu_poultry
+		gu_pigs
+		gu_cattle
 	}
 	onmap = yes
 	on_built = {
@@ -2048,14 +2063,14 @@ farm_estate = {
 			type = production 
 			value = 1
 		}
-		if = {
-			limit = {
-				FROM = {
-					has_country_flag = geo_wine_manufactory_flag
-				}
-			}
-			add_base_production = 1
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			has_country_flag = geo_wine_manufactory_flag
+		# 		}
+		# 	}
+		# 	add_base_production = 1
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -2068,14 +2083,14 @@ farm_estate = {
 			type = production 
 			value = 1
 		}
-		if = {
-			limit = {
-				FROM = {
-					has_country_flag = geo_wine_manufactory_flag
-				}
-			}
-			add_base_production = -1
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			has_country_flag = geo_wine_manufactory_flag
+		# 		}
+		# 	}
+		# 	add_base_production = -1
+		# }
 	}
 	on_obsolete = {
 	}
@@ -2095,6 +2110,8 @@ mills = {
 		gu_lumber
 		gu_amber
 		gu_ceramics
+		gu_woodworking
+		gu_processed_food
 	}
 	onmap = yes
 	on_built = {
@@ -2202,10 +2219,10 @@ ramparts = {
 	}
 	
 	on_destroyed = {
-		if = {
-			limit = { has_province_modifier = per_reinforced_defenses }
-			remove_province_modifier = per_reinforced_defenses
-		}
+		# if = {
+		# 	limit = { has_province_modifier = per_reinforced_defenses }
+		# 	remove_province_modifier = per_reinforced_defenses
+		# }
 		remove_dev_from_building = {
 			building = manufactory 
 			type = manpower 
@@ -2266,17 +2283,17 @@ soldier_households = {
 			type = manpower 
 			value = 1 
 		}
-		if = {
-			limit = {
-				FROM = {
-					has_government_attribute = improved_military_buildings
-				}
-			}
-			add_province_modifier = {
-				name = wei_suo_system_reform_soldier_households_modifier
-				duration = -1
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			has_government_attribute = improved_military_buildings
+		# 		}
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = wei_suo_system_reform_soldier_households_modifier
+		# 		duration = -1
+		# 	}
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -2289,12 +2306,12 @@ soldier_households = {
 			type = manpower 
 			value = 1
 		}
-		if = {
-			limit = {
-				has_province_modifier = wei_suo_system_reform_soldier_households_modifier
-			}
-			remove_province_modifier = wei_suo_system_reform_soldier_households_modifier
-		}
+		# if = {
+		# 	limit = {
+		# 		has_province_modifier = wei_suo_system_reform_soldier_households_modifier
+		# 	}
+		# 	remove_province_modifier = wei_suo_system_reform_soldier_households_modifier
+		# }
 	}
 	on_obsolete = {
 	}

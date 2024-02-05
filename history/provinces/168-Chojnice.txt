@@ -2,9 +2,9 @@
 culture = borowicka
 religion = communism_zsl
 base_tax = 3
-base_production = 3
-trade_goods = unknown
-base_manpower = 4
+base_production = 2
+trade_goods = gu_tourists
+base_manpower = 3
 capital = "Chojnice"
 is_city = yes
 discovered_by = western
