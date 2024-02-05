@@ -1024,9 +1024,9 @@ province;red;green;blue;x;x
 1311;62;200;250;Bóbr;x
 1312;63;220;250;Bóbr;x
 1313;64;250;250;Bóbr;x
-1318;209;246;4;Katowice;x
+1318;209;246;4;Katowice Środmiescie;x
 1326;77;200;200;Odra;x
-1336;87;220;250;Odrax
+1336;87;220;250;Odra;x
 1423;46;201;251;Odra;x
 1446;69;201;201;Odra;x
 1459;82;201;251;Odra;x
@@ -1040,7 +1040,7 @@ province;red;green;blue;x;x
 1570;65;202;202;Baltyk;x
 1571;66;202;252;Zatoka Gdańska;x
 1574;69;202;202;Zalew Wiślany;x
-1577;72;252;252;North Sea - Coast of Holland;x
+1577;72;252;252;Wybrzerze Holandii;x
 1578;73;202;202;Zalew Kuroński;x
 1580;75;222;252;Cieśnina Duńska;x
 1581;76;252;252;Zatoka Pucka;x
@@ -1097,7 +1097,7 @@ province;red;green;blue;x;x
 1702;69;203;203;Narew;x
 1703;70;203;253;Dunajec;x
 1704;71;223;253;San;x
-1705;72;253;253;Danish Strait;x
+1705;72;253;253;Cieśnina Duńska;x
 1706;73;203;203;Sund;x
 1707;74;203;253;Baltyk;x
 1708;75;223;253;Sund;x
@@ -1134,7 +1134,7 @@ province;red;green;blue;x;x
 1739;108;253;253;Baltyk;x
 1740;109;203;203;Wybrzerze Łeby;x
 1741;110;203;253;Wybrzerze Ustki;x
-1742;66;68;126;Bcdkowo;x
+1742;66;68;126;Bądkowo;x
 1743;194;70;173;Osieczna;x
 1744;66;72;32;Swiekatowo;x
 1745;195;74;79;Dobra;x

@@ -1,0 +1,9 @@
+#Królewiec
+base_tax = 1
+base_production = 1
+base_manpower = 1
+culture = jewish
+trade_goods = gu_vehcles
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
