@@ -1088,7 +1088,7 @@ wroclaw_gnomes = {
 
 boleslawiec_chinaware_manufactory = {
 	# province it starts in
-	start = 752
+	start = 2885
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1545.01.01 #Date the silver mine started to be exploited
@@ -3292,7 +3292,7 @@ golubdobrzyn_teutonic_castle = {
 
 inowroclaw_hydropowerplant = {
 	# province it starts in
-	start = 4622
+	start = 205
 	date = 1386.01.01
 	time = {
 		months = 0
@@ -3352,7 +3352,7 @@ inowroclaw_hydropowerplant = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			trade_goods_size_modifier = 0.1		
-			local_development_cost_modifier = 0.05
+			local_development_cost_modifier = -0.05
 			local_defensiveness = 0.05			
 		}
 
@@ -3384,7 +3384,7 @@ inowroclaw_hydropowerplant = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {	
-			local_development_cost_modifier = 0.1
+			local_development_cost_modifier = -0.1
 			local_defensiveness = 0.1	
 		}
 
@@ -3417,11 +3417,11 @@ inowroclaw_hydropowerplant = {
 
 		province_modifiers = {
 			local_defensiveness = 0.2	
-			local_development_cost_modifier = 0.2				
+			local_development_cost_modifier = -0.2				
 		}
 		area_modifier = {
 			local_defensiveness = 0.2	
-			local_development_cost_modifier = 0.1		
+			local_development_cost_modifier = -0.1		
 			trade_goods_size_modifier = 0.2
 			
 		}
@@ -3581,7 +3581,7 @@ biskupin_settlment = {
 
 pesa_rolling_stock_factory = {
 	# province it starts in
-	start = 2991
+	start = 3512 #Bydgoszcz Rynkowo
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1545.01.01 #Date the silver mine started to be exploited
@@ -4425,7 +4425,7 @@ jablonna_palace = {
 
 pulawy_nitrogen_plant= {
 	# province it starts in
-	start = 383
+	start = 386 
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1545.01.01 #Date the silver mine started to be exploited
@@ -5160,7 +5160,7 @@ kostrzyn_fortress = {
 }
 
 statue_of_jesus_christ_king_of_the_universe = {
-	start = 1802 #Ulm
+	start = 1802 
 	date = 1015.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -5801,7 +5801,7 @@ steel_spider = {
 #Placeholder do każdej kurwa możliwej większej Fabryki
 lowicz_preserves_facotry= {
 	# province it starts in
-	start = 4171
+	start = 427
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1545.01.01 #Date the silver mine started to be exploited
@@ -6048,7 +6048,7 @@ belchatow_powerplant = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			trade_goods_size_modifier = 0.1		
-			local_development_cost_modifier = 0.05			
+			local_development_cost_modifier = -0.05			
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -6081,7 +6081,7 @@ belchatow_powerplant = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {	
-			local_development_cost_modifier = 0.1
+			local_development_cost_modifier = -0.1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -6115,11 +6115,11 @@ belchatow_powerplant = {
 
 		province_modifiers = {
 			local_defensiveness = 0.2	
-			local_development_cost_modifier = 0.2				
+			local_development_cost_modifier = -0.2				
 		}
 		area_modifier = {
 			local_defensiveness = 0.2	
-			local_development_cost_modifier = 0.1		
+			local_development_cost_modifier = -0.1		
 			trade_goods_size_modifier = 0.2
 			
 		}
@@ -13828,7 +13828,7 @@ stegna_beach = {
 }
 
 gates_of_hel = {
-	start = 985
+	start = 666
 	date = 975.01.01
 	time = { months = 0	}
 	build_cost = 0
