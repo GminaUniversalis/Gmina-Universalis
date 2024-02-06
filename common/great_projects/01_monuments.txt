@@ -8329,7 +8329,7 @@ natanek_hermitage = {
 
 zalipie = {
 	# province it starts in
-	start = 1773
+	start = 4527
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1190.01.01 #Cliff Palace
@@ -15628,7 +15628,7 @@ bedzin_castle = {
 
 wisla_ski_jump = {
 	# province it starts in
-	start = 1289
+	start = 1757
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1400.01.01
@@ -16002,7 +16002,7 @@ pszczyna_nitrogen_plant= {
 
 lead_and_silver_mines= {
 	# province it starts in
-	start = 4076
+	start = 4706
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1325.01.01
