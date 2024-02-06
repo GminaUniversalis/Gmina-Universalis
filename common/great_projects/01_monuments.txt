@@ -11275,7 +11275,7 @@ ursus_tractor_factory = {
 
 jarmark_europa = {
 	# province it starts in
-	start = 4568
+	start = 1011
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1050.01.01 #Almoravid Period
