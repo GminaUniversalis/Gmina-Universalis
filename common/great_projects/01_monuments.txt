@@ -18631,7 +18631,7 @@ kielce_marketplace = {
 #///////////////////////// WARMIŃSKO-MAZURSKIE
 
 lidzbarg_castle = {
-	start = 1945 
+	start = 274
 	date = 1300.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -18867,7 +18867,7 @@ elblag_canal= {
 
 gizycko_fortress = {
 	# province it starts in
-	start = 309
+	start = 4261
 	date = 1386.01.01
 	time = {
 		months = 0
