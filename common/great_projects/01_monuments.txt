@@ -5,7 +5,7 @@
 
 #ZAKAZ WRZUCANIA WIĘCEJ NIŻ 6 MONUMENTÓW W MIASTO
 
-#Województwa bez monumentów: Śląskie, Zachodniopomorskie, Warmińsko-Mazurskie, Wielkopolskie
+#Województwa bez monumentów:  Zachodniopomorskie
 #Miasta bez monumentów: Lublin, Rzeszów, i w sumie inne mniejsze gówno
 
 #PS W przyszłości jak będzie klarowniejsza sytuacja nawrzucać blokady pokroju "cab_build_in_age_of_communism = no"
