@@ -3291,9 +3291,9 @@ golubdobrzyn_teutonic_castle = {
 	}
 }
 
-inowroclaw_hydropowerplant = {
+wloclawek_hydropowerplant = {
 	# province it starts in
-	start = 205
+	start = 661
 	date = 1386.01.01
 	time = {
 		months = 0
