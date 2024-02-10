@@ -43,7 +43,7 @@ filipek = {
 	}
 }
 
-wisnowska = {
+wisniowska = {
 	promote_culture_cost = -0.1
 	female_advisor_chance = 0.2
 		
@@ -60,7 +60,7 @@ wisnowska = {
 
 sikora = {
 	development_cost = -0.10
-	build_cost = -0.1
+	land_maintenance_modifier = -0.1
 	
 	potential = { religion = populism_samoobrona }
 	trigger = {}
