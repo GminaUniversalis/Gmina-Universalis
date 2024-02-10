@@ -2586,16 +2586,16 @@ populism_group = {
 
 	populism_samoobrona = {
 		color = { 101 57 130 }
-		icon = 45
+		icon = 49
 		country = {
-			global_tax_modifier = 0.1
-			build_cost = -0.1
+			global_spy_defence = 0.2
+			advisor_cost = -0.1
 		}
 		country_as_secondary = {
-			global_tax_modifier = 0.1
+			global_spy_defence = 0.1
 		}
 		province = {
-			
+			local_tax_modifier = 0.1
 		}
 
 		allowed_conversion = {
@@ -2631,8 +2631,6 @@ populism_group = {
 		}
 		
 		heretic = {  }
-		
-		date = 1575.1.1
 
 		personal_deity = yes
 	}

@@ -1,0 +1,90 @@
+lepper = {
+	legitimacy = 1
+	discipline = 0.025
+	
+	potential = { religion = populism_samoobrona }
+	trigger = {}
+	sprite = 7
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+
+	}
+}
+
+beger = {
+	core_creation = -0.10
+	advisor_cost = -0.1
+	
+	potential = { religion = populism_samoobrona }
+	trigger = {}
+	sprite = 8
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		
+	}
+}
+
+filipek = {
+	reform_progress_growth = 0.05
+	improve_relation_modifier = 0.1
+	
+	potential = { religion = populism_samoobrona }
+	trigger = {}
+	sprite = 9
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+	
+	}
+}
+
+wisnowska = {
+	promote_culture_cost = -0.1
+	female_advisor_chance = 0.2
+		
+	potential = { religion = populism_samoobrona }
+	trigger = {}
+	sprite = 10
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+	
+	}
+}
+
+sikora = {
+	development_cost = -0.10
+	build_cost = -0.1
+	
+	potential = { religion = populism_samoobrona }
+	trigger = {}
+	sprite = 11
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+
+	}
+}
+
+
+borysiuk = {
+	global_tax_modifier = 0.1
+	production_efficiency = 0.05
+	
+	potential = { religion = populism_samoobrona }
+	trigger = {}
+	sprite = 12
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+	
+	}
+}
