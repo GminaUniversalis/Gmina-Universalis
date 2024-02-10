@@ -1,9 +1,9 @@
 ### MONUMENTY SĄ NA STAN Z 01.01.1975 ROKU AKA ZAPAŚĆ GIERKOWSKA
 
 #Posortowane względem Excela z podziałem na województwa, w przypadku dużych aglomeracji które zostały podzielone 
-#zostanie zadysponowana osobna kategoria
+#zostanie zadysponowana osobna kategoria (podobno jakiś czarnuch z excela ma zrobić tabelkę do tego)
 
-#ZAKAZ WRZUCANIA WIĘCEJ NIŻ 6 MONUMENTÓW W MIASTO
+#ZAKAZ WRZUCANIA WIĘCEJ NIŻ 6 MONUMENTÓW W MIASTO (balans?)
 
 #Województwa bez monumentów: none
 #Miasta bez monumentów: Lublin, Rzeszów, i w sumie inne mniejsze gówno idk w DLC się dorobi
@@ -20832,7 +20832,7 @@ szczecin_harbour = {
 
 red_town_hall = {
 	# province it starts in
-	start = 4403
+	start = 2978
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1519.01.01
