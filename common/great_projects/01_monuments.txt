@@ -5,10 +5,10 @@
 
 #ZAKAZ WRZUCANIA WIĘCEJ NIŻ 6 MONUMENTÓW W MIASTO
 
-#Województwa bez monumentów:  Zachodniopomorskie
-#Miasta bez monumentów: Lublin, Rzeszów, i w sumie inne mniejsze gówno
+#Województwa bez monumentów: none
+#Miasta bez monumentów: Lublin, Rzeszów, i w sumie inne mniejsze gówno idk w DLC się dorobi
 
-#PS W przyszłości jak będzie klarowniejsza sytuacja nawrzucać blokady pokroju "cab_build_in_age_of_communism = no"
+#PS W przyszłości jak będzie klarowniejsza sytuacja nawrzucać blokady pokroju "can_build_in_age_of_communism = no"
 
 #////////////////////////////////// DOLNOŚLĄSKIE
 #///WROCŁAW
