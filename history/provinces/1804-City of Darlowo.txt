@@ -1,7 +1,3 @@
-#1804 - Greenland
-1610.1.1 = { discovered_by = ENG }
-1707.5.12 = { discovered_by = GBR }
-1720.1.1 = { discovered_by = DAN }
 culture = srodkowopomorska
 religion = communism_pzpr
 is_city = no
