@@ -11739,7 +11739,7 @@ ranczo_recording_site= {
 }
 
 plock_oil_rafinery = {
-	start = 972 #plock
+	start = 579 #plock
 	date = 1000.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -18455,7 +18455,7 @@ star_manufactory = {
 
 kielce_marketplace = {
 	# province it starts in
-	start = 4568
+	start = 1120
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1050.01.01 #Almoravid Period
@@ -18628,7 +18628,7 @@ kielce_marketplace = {
 }
  
 kielecki_monument = {
-	start = 4568
+	start = 1120
 	date = 1000.01.01
 	time = { months = 0	}
 	build_cost = 0
