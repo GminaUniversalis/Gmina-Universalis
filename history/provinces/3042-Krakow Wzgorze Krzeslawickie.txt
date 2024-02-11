@@ -1,10 +1,10 @@
 #Krakow - Wzgorza Krzeslawickie
 culture = krakowska
 religion = catholic
-base_tax = 7
-base_production = 7
-trade_goods = gu_tourists
-base_manpower = 7
+base_tax = 3
+base_production = 3
+trade_goods = gu_triticale
+base_manpower = 3
 capital = "Wzgórza Krzeslawickie"
 is_city = yes
 discovered_by = western

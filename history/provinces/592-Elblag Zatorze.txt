@@ -1,10 +1,10 @@
 #Elblag Zatorze
 culture = warminska
 religion = communism_pzpr
-base_tax = 22
-base_production = 17
-trade_goods = gu_metalworking
-base_manpower = 21
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
 capital = "Elblag - Zatorze"
 is_city = yes
 discovered_by = western

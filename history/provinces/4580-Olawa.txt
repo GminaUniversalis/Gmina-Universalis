@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 3
 base_production = 2
-trade_goods = gu_poultry
+trade_goods = gu_pigs
 base_manpower = 2
 capital = "Olawa"
 is_city = yes

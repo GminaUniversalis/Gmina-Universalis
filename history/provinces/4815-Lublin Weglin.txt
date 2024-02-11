@@ -1,10 +1,10 @@
 #Lublin Weglin
 culture = lubelska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
-base_manpower = 1
+base_tax = 5
+base_production = 4
+trade_goods = gu_consumer_goods
+base_manpower = 5
 capital = "Weglin"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = U21
 controller = U21
 discovered_by = ottoman
 add_core = U21
+latent_trade_goods = { gu_electronics }

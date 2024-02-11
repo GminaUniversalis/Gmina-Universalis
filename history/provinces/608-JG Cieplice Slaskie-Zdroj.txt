@@ -1,9 +1,9 @@
 #Jelenia Gora Cieplice Slaskie-Zdroj
 religion = communism_zsl
-base_tax = 16
-base_production = 15
-trade_goods = iron
-base_manpower = 14
+base_tax = 1
+base_production = 1
+trade_goods = gu_tourists
+base_manpower = 1
 capital = "Jelenia Gora - Cieplice"
 is_city = yes
 discovered_by = western

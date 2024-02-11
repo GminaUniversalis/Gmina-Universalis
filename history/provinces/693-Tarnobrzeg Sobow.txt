@@ -1,0 +1,15 @@
+#Tarnobrzeg Sobow
+culture = lachowska
+religion = communism_pzpr
+base_tax = 1
+base_production = 7
+trade_goods = gu_sulfur
+base_manpower = 1
+capital = "Tarnobrzeg - Sobow"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+owner = I24
+controller = I24
+discovered_by = ottoman
+add_core = I24

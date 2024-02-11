@@ -1,7 +1,8 @@
 government = monarchy
 add_government_reform = autocracy_reform
-government_rank = 1
+government_rank = 2
 technology_group = eastern
 religion = communism_pzpr
 primary_culture = suwalska
-capital = 296
+capital = 4116
+fixed_capital = 4116

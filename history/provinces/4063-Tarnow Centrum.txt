@@ -1,10 +1,10 @@
 #Tarnow - Centrum
 culture = wschodnio-krakowska
 religion = communism_pzpr
-base_tax = 23
-base_production = 28
-trade_goods = gu_chemicals
-base_manpower = 19
+base_tax = 3
+base_production = 4
+trade_goods = unknown
+base_manpower = 2
 capital = "Tarnow - Centrum"
 is_city = yes
 discovered_by = western

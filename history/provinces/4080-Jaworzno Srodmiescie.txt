@@ -2,10 +2,10 @@
 culture = zachodnio-krakowska
 religion = communism_pzpr
 hre = yes
-base_tax = 1
+base_tax = 4
 base_production = 1
-trade_goods = unknown
-base_manpower = 1
+trade_goods = gu_consumer_goods
+base_manpower = 2
 capital = "Jaworzno"
 is_city = yes
 discovered_by = western
