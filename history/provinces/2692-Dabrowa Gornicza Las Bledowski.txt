@@ -1,4 +1,4 @@
-#Dabrowa Gornicza Pustynia Bledowska
+#Dabrowa Gornicza Las Bledowski
 culture = zaglebiowska
 religion = communism_pzpr
 hre = yes
@@ -6,7 +6,7 @@ base_tax = 1
 base_production = 1
 trade_goods = fish
 base_manpower = 1
-capital = "DG - Pustynia Bledowska"
+capital = "DG - Las Bledowski"
 is_city = yes
 discovered_by = western
 discovered_by = eastern

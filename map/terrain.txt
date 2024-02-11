@@ -189,7 +189,7 @@ categories =  {
 		local_development_cost = 0.50
 		nation_designer_cost_multiplier = 0.8
 		
-		terrain_override = { 2692 }
+		terrain_override = { 4567 }
 	}
 	
 	coastal_desert = {
