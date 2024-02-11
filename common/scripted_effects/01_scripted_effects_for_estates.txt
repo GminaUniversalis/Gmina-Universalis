@@ -5253,13 +5253,13 @@ estate_action_RECRUIT_INQUISITOR_CHURCH = {
 	#	influence = 10
 	#	duration = 10950
 	#}
-	if = {
-		limit = { has_estate = estate_dhimmi }
-		add_estate_loyalty = {
-			estate = estate_dhimmi
-			loyalty = -15
-		}
-	}
+	# if = {
+	# 	limit = { has_estate = estate_dhimmi }
+	# 	add_estate_loyalty = {
+	# 		estate = estate_dhimmi
+	# 		loyalty = -15
+	# 	}
+	# }
 	add_estate_loyalty = {
 		estate = estate_church
 		loyalty = -10

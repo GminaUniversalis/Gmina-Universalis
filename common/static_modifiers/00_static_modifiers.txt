@@ -1119,7 +1119,7 @@ prestige = {
 	ub_loyalty_modifier = 0.05
 	intellectuals_loyalty_modifier = 0.05
 	investors_loyalty_modifier = 0.05
-	preists_loyalty_modifier = 0.05
+	priests_loyalty_modifier = 0.05
 	miners_loyalty_modifier = 0.05
 
 }

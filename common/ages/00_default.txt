@@ -470,7 +470,7 @@ age_of_absolutism = {
 	
 		ab_french_absolutism = {
 			allow = {
-				tag = FRA
+				#tag = FRA
 			}
 			modifier = {
 				max_absolutism_effect = 0.3
@@ -481,7 +481,7 @@ age_of_absolutism = {
 		}
 		ab_dutch_trade = {
 			allow = {
-				tag = NED
+				#tag = NED
 			}
 			modifier = {
 				trade_steering = 0.33
@@ -493,8 +493,8 @@ age_of_absolutism = {
 		ab_sweden_manpower = {
 			allow = {
 				OR = {
-					tag = SWE
-					tag = SCA
+					#tag = SWE
+					#tag = SCA
 				}
 			}
 			modifier = {
@@ -508,8 +508,8 @@ age_of_absolutism = {
 		ab_manchu_banner = {
 			allow = {
 				OR = {
-					tag = MCH
-					tag = QNG
+					#tag = MCH
+					#tag = QNG
 				}
 			}
 			effect = {
@@ -682,8 +682,8 @@ age_of_revolutions = {
 		ab_pru_military = {
 			allow = {
 				OR = {
-					tag = PRU
-					tag = GER
+					#tag = PRU
+					#tag = GER
 				}
 			}
 			modifier = {
@@ -696,8 +696,8 @@ age_of_revolutions = {
 		ab_gbr_fleet = {
 			allow = {
 				OR = {
-					tag = AVE
-					tag = GBR
+					#tag = AVE
+					#tag = GBR
 				}
 			}
 			modifier = {
@@ -709,7 +709,7 @@ age_of_revolutions = {
 		}
 		ab_russia_boost = {
 			allow = {
-				tag = RUS
+				#tag = RUS
 			}
 			modifier = {
 				min_autonomy_in_territories = -0.1
@@ -721,8 +721,8 @@ age_of_revolutions = {
 		ab_austrian_morale = {
 			allow = {
 				OR = {
-					tag = HAB
-					tag = HLR
+					#tag = HAB
+					#tag = HLR
 				}
 			}
 			modifier = {
