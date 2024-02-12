@@ -36,6 +36,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_ksiaz_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_ksiaz_castle.dds"
+	}
+
+	spriteType = {
 		name = "GFX_great_project_hagia_sophia"	
 		texturefile = "gfx//interface//great_projects//great_project_hagia_sophia.dds"
 	}
