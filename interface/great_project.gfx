@@ -41,6 +41,17 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_klodzko_stronghold"	
+		texturefile = "gfx//interface//great_projects//great_project_klodzko_stronghold.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_silver_mountain_fortress"	
+		texturefile = "gfx//interface//great_projects//great_project_silver_mountain_fortress.dds"
+	}
+
+
+	spriteType = {
 		name = "GFX_great_project_hagia_sophia"	
 		texturefile = "gfx//interface//great_projects//great_project_hagia_sophia.dds"
 	}
