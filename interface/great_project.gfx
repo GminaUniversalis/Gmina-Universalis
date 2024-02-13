@@ -1,5 +1,7 @@
 spriteTypes = {
 
+	#DOLNOŚLĄSKIE
+
 	spriteType = {
 		name = "GFX_great_project_place_holder"	
 		texturefile = "gfx//interface//great_projects//great_project_place_holder.dds"
@@ -36,8 +38,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_czocha_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_czocha_castle.dds"
+	}
+
+	spriteType = {
 		name = "GFX_great_project_ksiaz_castle"	
 		texturefile = "gfx//interface//great_projects//great_project_ksiaz_castle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_kliczkow_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_kliczkow_palace.dds"
 	}
 
 	spriteType = {
@@ -49,6 +61,82 @@ spriteTypes = {
 		name = "GFX_great_project_silver_mountain_fortress"	
 		texturefile = "gfx//interface//great_projects//great_project_silver_mountain_fortress.dds"
 	}
+
+	spriteType = {
+		name = "GFX_great_project_riese_underground_complex"	
+		texturefile = "gfx//interface//great_projects//great_project_riese_underground_complex.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_churche_of_peace_in_jawor"	
+		texturefile = "gfx//interface//great_projects//great_project_churche_of_peace_in_jawor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_churche_of_peace_in_swidnica"	
+		texturefile = "gfx//interface//great_projects//great_project_churche_of_peace_in_swidnica.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_diora_radio_manufactory"	
+		texturefile = "gfx//interface//great_projects//great_project_diora_radio_manufactory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_jelcz_manufactory"	
+		texturefile = "gfx//interface//great_projects//great_project_jelcz_manufactory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_duszniki_paper_mill"	
+		texturefile = "gfx//interface//great_projects//great_project_duszniki_paper_mill.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_sniezka_observatory"	
+		texturefile = "gfx//interface//great_projects//great_project_sniezka_observatory.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_great_kghm_headquaters"	
+		texturefile = "gfx//interface//great_projects//great_project_kghm_headquaters.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	spriteType = {

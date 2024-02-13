@@ -15400,7 +15400,7 @@ slowinski_sand_dunes = {
 }
 
 gniew_castle = {
-	start = 369 #chyba
+	start = 1866
 	date = 1300.01.01
 	time = { months = 0	}
 	build_cost = 0
