@@ -68,12 +68,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_great_project_churche_of_peace_in_jawor"	
+		name = "GFX_great_project_church_of_peace_in_jawor"	
 		texturefile = "gfx//interface//great_projects//great_project_churche_of_peace_in_jawor.dds"
 	}
 
 	spriteType = {
-		name = "GFX_great_project_churche_of_peace_in_swidnica"	
+		name = "GFX_great_project_church_of_peace_in_swidnica"	
 		texturefile = "gfx//interface//great_projects//great_project_churche_of_peace_in_swidnica.dds"
 	}
 
@@ -88,6 +88,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_boleslawiec_chinaware_manufactory"	
+		texturefile = "gfx//interface//great_projects//great_project_boleslawiec_chinaware_manufactory.dds"
+	}	
+
+	spriteType = {
 		name = "GFX_great_project_duszniki_paper_mill"	
 		texturefile = "gfx//interface//great_projects//great_project_duszniki_paper_mill.dds"
 	}
@@ -98,7 +103,7 @@ spriteTypes = {
 	}	
 
 	spriteType = {
-		name = "GFX_great_kghm_headquaters"	
+		name = "GFX_great_project_kghm_headquaters"	
 		texturefile = "gfx//interface//great_projects//great_project_kghm_headquaters.dds"
 	}
 

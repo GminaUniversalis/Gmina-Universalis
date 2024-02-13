@@ -19872,7 +19872,7 @@ solaris_bus_manufactory = {
 }
 
 romet_manufactory = {
-	start = 346 #Jelcz-Laskowice
+	start = 225
 	date = 1444.01.01 #1460.01.01
 	time = { months = 0	}
 	build_cost = 0
