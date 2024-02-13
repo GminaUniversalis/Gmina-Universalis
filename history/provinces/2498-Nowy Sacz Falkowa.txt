@@ -1,9 +1,9 @@
 #Nowy Sacz Falkowa
 culture = lachska
 religion = communism_zsl
-base_tax = 3
-base_production = 4
-trade_goods = unknown
+base_tax = 2
+base_production = 3
+trade_goods = fur
 base_manpower = 2
 capital = "Nowy Sacz - Falkowa"
 is_city = yes
@@ -13,3 +13,4 @@ owner = X05
 controller = X05
 add_core = X05
 discovered_by = ottoman
+

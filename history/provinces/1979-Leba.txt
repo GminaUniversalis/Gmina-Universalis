@@ -3,11 +3,11 @@ culture = srodkowopomorska
 religion = communism_sd
 base_tax = 1
 base_production = 1
-trade_goods = gu_tourists
+trade_goods = salt
 base_manpower = 1
 capital = "Leba"
 is_city = yes
-center_of_trade = 1
+
 discovered_by = western
 discovered_by = eastern
 owner = Y13

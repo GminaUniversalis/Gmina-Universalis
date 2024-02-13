@@ -8,3 +8,4 @@ owner = G28
 controller = G28
 add_core = G28
 discovered_by = ottoman
+center_of_trade = 2

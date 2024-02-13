@@ -122,6 +122,7 @@ class GminaPainter:
         'floodplains': [],
         'crossing': [],
     }
+    PROPER_TRADE_GOODS = set(TRADE_GOOD_REPLACEMENTS.values())
 
     def __init__(self, filepath) -> None:
         self.data = None
@@ -157,8 +158,8 @@ class GminaPainter:
     def _handle_trade_goods_exceptions(self, province):
         if type(province['trade good']) != str:
             province['trade good'] = None
-            
-        if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown':
+
+        if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown' or province['latent trade good'] not in GminaPainter.PROPER_TRADE_GOODS:
             province['latent trade good'] = None
 
     def _handle_dev_and_terrain_corner_cases(self, province):
@@ -271,11 +272,17 @@ class GminaPainter:
             with open(f"history/provinces/{file}", 'r') as f:
                 data = f.readlines()
 
-            for line, content in enumerate(data):
-                if content.startswith('latent_trade_goods = ') and latent_trade_goods:
-                    has_latent_trade_goods = True
-                    data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
-                    break
+            if latent_trade_goods:
+                for line, content in enumerate(data):
+                    if content.startswith('latent_trade_goods = '):
+                        has_latent_trade_goods = True
+                        data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
+                        break
+            else:
+                for line, content in enumerate(data):
+                    if content.startswith('latent_trade_goods = '):
+                        data[line] = f"\n"
+                        break
             
             if latent_trade_goods and not has_latent_trade_goods:
                 if f"\n" not in data[-1]:

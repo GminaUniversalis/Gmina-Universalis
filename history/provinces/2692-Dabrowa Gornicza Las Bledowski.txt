@@ -4,7 +4,7 @@ religion = communism_pzpr
 hre = yes
 base_tax = 1
 base_production = 1
-trade_goods = fish
+trade_goods = gu_lumber
 base_manpower = 1
 capital = "DG - Las Bledowski"
 is_city = yes
@@ -14,3 +14,4 @@ owner = L35
 controller = L35
 discovered_by = ottoman
 add_core = L35
+

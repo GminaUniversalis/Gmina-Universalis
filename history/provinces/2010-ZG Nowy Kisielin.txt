@@ -3,7 +3,7 @@ culture = dolnoslaska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods =  
 base_manpower = 1
 capital = "ZG - Nowy Kisielin"
 is_city = yes
@@ -13,3 +13,4 @@ owner = W11
 controller = W11
 discovered_by = ottoman
 add_core = W11
+

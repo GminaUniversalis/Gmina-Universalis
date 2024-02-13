@@ -1,10 +1,10 @@
 #Suwalki Centrum
 culture = suwalska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = iron
-base_manpower = 1
+base_tax = 3
+base_production = 2
+trade_goods = gu_consumer_goods
+base_manpower = 3
 capital = "Suwalki - Centrum"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,5 @@ owner = N23
 controller = N23
 discovered_by = ottoman
 add_core = N23
+center_of_trade = 2
+

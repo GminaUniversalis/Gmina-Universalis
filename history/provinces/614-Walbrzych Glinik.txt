@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods =  
 base_manpower = 1
 capital = "Walbrzych - Glinik"
 is_city = yes
@@ -14,3 +14,4 @@ controller = A30
 hre = yes
 discovered_by = ottoman
 add_core = A30
+

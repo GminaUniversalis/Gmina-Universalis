@@ -3,7 +3,7 @@ culture = podgorzanska
 religion = communism_zsl
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_wheat
 base_manpower = 1
 capital = "Krosno - Kroscienko"
 is_city = yes
@@ -13,3 +13,4 @@ owner = I20
 controller = I20
 add_core = I20
 discovered_by = ottoman
+

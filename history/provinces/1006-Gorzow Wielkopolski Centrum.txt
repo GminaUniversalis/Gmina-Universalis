@@ -3,7 +3,7 @@ culture = lubuska
 religion = communism_pzpr
 base_tax = 3
 base_production = 3
-trade_goods = gu_sulfur
+trade_goods = unknown
 base_manpower = 2
 capital = "Gorzow Wielkopolski - Centrum"
 is_city = yes
@@ -14,3 +14,4 @@ controller = W14
 discovered_by = ottoman
 add_core = W14
 center_of_trade = 2
+

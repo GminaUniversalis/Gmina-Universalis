@@ -2,8 +2,8 @@
 culture = lachowska
 religion = communism_pzpr
 base_tax = 2
-base_production = 3
-trade_goods = unknown
+base_production = 2
+trade_goods = gu_wheat
 base_manpower = 2
 capital = "Rzeszow - Budziwoj"
 is_city = yes
@@ -13,3 +13,4 @@ owner = I22
 controller = I22
 discovered_by = ottoman
 add_core = I22
+

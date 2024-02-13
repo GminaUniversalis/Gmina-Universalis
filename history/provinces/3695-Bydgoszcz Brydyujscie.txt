@@ -1,10 +1,10 @@
 #Bydgoszcz Brydyujscie
 culture = kujawska
 religion = communism_zsl
-base_tax = 3
+base_tax = 5
 base_production = 3
-trade_goods = unknown
-base_manpower = 3
+trade_goods = gu_fruits
+base_manpower = 4
 capital = "Brydyujœcie"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = B20
 controller = B20
 discovered_by = ottoman
 add_core = B20
+latent_trade_goods = { gu_processed_food }

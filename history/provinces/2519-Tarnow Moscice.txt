@@ -2,9 +2,9 @@
 culture = wschodnio-krakowska
 religion = communism_pzpr
 base_tax = 3
-base_production = 4
-trade_goods = unknown
-base_manpower = 2
+base_production = 6
+trade_goods = gu_chemicals
+base_manpower = 3
 capital = "Tarnow - Moscice"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = X21
 controller = X21
 discovered_by = ottoman
 add_core = X21
+

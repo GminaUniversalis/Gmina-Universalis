@@ -1,10 +1,10 @@
 #Radom Centrum
 culture = radomska
 religion = communism_zsl
-base_tax = 5
-base_production = 5
-trade_goods = unknown
-base_manpower = 5
+base_tax = 10
+base_production = 9
+trade_goods = gu_consumer_goods
+base_manpower = 10
 capital = "Radom - Centrum"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = G39
 controller = G39
 discovered_by = ottoman
 add_core = G39
+

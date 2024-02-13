@@ -1,9 +1,9 @@
 #Rzeszow Nowe Miasto
 culture = lachowska
 religion = communism_pzpr
-base_tax = 2
-base_production = 3
-trade_goods = unknown
+base_tax = 4
+base_production = 4
+trade_goods = gu_consumer_goods
 base_manpower = 2
 capital = "Rzeszow - Nowe Miasto"
 is_city = yes
@@ -13,3 +13,4 @@ owner = I22
 controller = I22
 discovered_by = ottoman
 add_core = I22
+

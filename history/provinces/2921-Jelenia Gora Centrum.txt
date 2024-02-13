@@ -1,9 +1,9 @@
 #Jelenia Gora Centrum
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
+base_tax = 5
+base_production = 5
 trade_goods = iron
-base_manpower = 1
+base_manpower = 5
 capital = "Jelenia Gora - Centrum"
 is_city = yes
 discovered_by = western
@@ -13,5 +13,5 @@ owner = A29
 controller = A29
 hre = yes
 discovered_by = ottoman
-center_of_trade = 2
+
 add_core = A29

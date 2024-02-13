@@ -1,9 +1,9 @@
 #Suwalki Jacwingow
 culture = suwalska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_tax = 2
+base_production = 3
+trade_goods = gu_lumber
 base_manpower = 1
 capital = "Suwalki - Jacwingow"
 is_city = yes
@@ -13,3 +13,4 @@ owner = N23
 controller = N23
 discovered_by = ottoman
 add_core = N23
+
