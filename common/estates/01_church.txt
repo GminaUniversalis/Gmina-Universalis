@@ -3,7 +3,7 @@ estate_church = {
 
 	# If true, country will get estate
 	trigger = {
-		always = yes
+		always = no
 	}
 
 	# These scale with loyalty & power

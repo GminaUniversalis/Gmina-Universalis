@@ -4,6 +4,9 @@ estate_farmers_obietnice = {
 	max_absolutism = -5
 	loyalty = 0.1
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 	
 	}
@@ -11,7 +14,6 @@ estate_farmers_obietnice = {
 	
 	}
 	benefits = {
-	
 	}
 }
 estate_farmers_land_rights = {
@@ -21,6 +23,7 @@ estate_farmers_land_rights = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
+
 	can_select = {
 	}
 	on_granted = {
@@ -181,6 +184,9 @@ estate_farmers_datki = {
 	max_absolutism = -5
 	loyalty = 0.1
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 	
 	}
@@ -198,6 +204,9 @@ estate_farmers_odc = {
 	max_absolutism = -5
 	loyalty = -0.05
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 	
 	}
@@ -214,6 +223,9 @@ estate_farmers_eud = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		NOT = {
 			has_country_flag = farmers_eua
@@ -236,6 +248,9 @@ estate_farmers_eua = {
 	max_absolutism = 0
 	loyalty = 0.05
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		NOT = {
 			has_country_flag = farmers_eud
@@ -258,6 +273,9 @@ estate_farmers_gmoa = {
 	max_absolutism = 0
 	loyalty = 0.05
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		NOT = {
 			has_country_flag = farmers_gmod
@@ -282,6 +300,9 @@ estate_farmers_gmod = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		NOT = {
 			has_country_flag = farmers_gmoa

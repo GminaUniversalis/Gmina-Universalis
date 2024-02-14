@@ -1,9 +1,9 @@
 #City of Lubin
 religion = communism_sd
-base_tax = 11
-base_production = 14
+base_tax = 1
+base_production = 4
 trade_goods = copper
-base_manpower = 12
+base_manpower = 2
 capital = "City of Lubin"
 is_city = yes
 discovered_by = western
