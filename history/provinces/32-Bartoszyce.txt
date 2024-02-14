@@ -13,3 +13,7 @@ owner = N17
 controller = N17
 add_core = N17
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = border_crossing_modifier
+	duration = -1
+}

@@ -13,3 +13,7 @@ owner = J06
 controller = J06
 add_core = J06
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = river_tributary_modifier
+	duration = -1
+}

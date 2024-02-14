@@ -15,3 +15,7 @@ controller = P15
 add_core = P15
 discovered_by = ottoman
 center_of_trade = 3
+add_permanent_province_modifier = {
+	name = border_crossing_modifier
+	duration = -1
+}

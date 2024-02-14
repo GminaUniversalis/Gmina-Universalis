@@ -13,3 +13,7 @@ owner = P02
 controller = P02
 add_core = P02
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = isthmus_modifier_modifier
+	duration = -1
+}

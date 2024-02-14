@@ -1,10 +1,10 @@
 #Ostrowiec
 culture = kielecka
 religion = communism_pzpr
-base_tax = 2
-base_production = 4
+base_tax = 8
+base_production = 10
 trade_goods = gu_metalworking
-base_manpower = 5
+base_manpower = 11
 capital = "Ostrowiec"
 is_city = yes
 discovered_by = western

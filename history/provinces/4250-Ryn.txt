@@ -13,3 +13,7 @@ owner = N14
 controller = N14
 add_core = N14
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = isthmus_modifier_modifier
+	duration = -1
+}

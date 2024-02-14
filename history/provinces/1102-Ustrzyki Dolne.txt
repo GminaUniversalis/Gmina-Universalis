@@ -13,3 +13,7 @@ owner = I18
 controller = I18
 add_core = I18
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = border_crossing_modifier
+	duration = -1
+}

@@ -14,3 +14,7 @@ controller = H07
 add_core = H07
 hre = yes
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = border_crossing_modifier
+	duration = -1
+}
