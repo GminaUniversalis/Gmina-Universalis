@@ -3582,7 +3582,7 @@ biskupin_settlment = {
 
 pesa_rolling_stock_factory = {
 	# province it starts in
-	start = 3512 #Bydgoszcz Rynkowo
+	start = 3515 #Bydgoszcz Rynkowo
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1545.01.01 #Date the silver mine started to be exploited
@@ -4243,7 +4243,7 @@ dryport_malaszewicze = {
 #pałacyk 
 jablonna_palace = {
 	# province it starts in
-	start = 464
+	start = 4465
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1400.01.01

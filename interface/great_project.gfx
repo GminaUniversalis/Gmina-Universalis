@@ -113,9 +113,7 @@ spriteTypes = {
 		name = "GFX_great_project_kghm_headquaters"	
 		texturefile = "gfx//interface//great_projects//great_project_kghm_headquaters.dds"
 	}
-
 	#kujpom
-
 	spriteType = {
 		name = "GFX_great_project_pawel_jumper_site"	
 		texturefile = "gfx//interface//great_projects//great_project_pawel_jumper_site.dds"
@@ -147,12 +145,10 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_great_project_torun_market_square "	
-		texturefile = "gfx//interface//great_projects//great_project_torun_market_square .dds"
+		name = "GFX_great_project_torun_market_square"	
+		texturefile = "gfx//interface//great_projects//great_project_torun_market_square.dds"
 	}
-
 	#Lubelskie
-
 	spriteType = {
 		name = "GFX_great_project_dryport_malaszewicze"	
 		texturefile = "gfx//interface//great_projects//great_project_dryport_malaszewicze.dds"
@@ -164,8 +160,8 @@ spriteTypes = {
 	}
 
    spriteType = {
-		name = "GFX_great_project_pulary_nitrogen_plant"	
-		texturefile = "gfx//interface//great_projects//great_project_pulary_nitrogen_plant.dds"
+		name = "GFX_great_project_pulawy_nitrogen_plant"	
+		texturefile = "gfx//interface//great_projects//great_project_pulawy_nitrogen_plant.dds"
 	}
 
    spriteType = {
@@ -177,9 +173,7 @@ spriteTypes = {
 		name = "GFX_great_project_zamosc_old_city"	
 		texturefile = "gfx//interface//great_projects//great_project_zamosc_old_city.dds"
 	}
-
 	# Lubuskie
-
 	spriteType = {
 	name = "GFX_great_project_kostrzyn_fortress"	
 	texturefile = "gfx//interface//great_projects//great_project_kostrzyn_fortress.dds"
