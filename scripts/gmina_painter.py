@@ -143,7 +143,6 @@ class GminaPainter:
         self.data['latent trade good'] = self.data['latent trade good'].map(self.TRADE_GOOD_REPLACEMENTS).fillna(self.data['latent trade good'])
         self.data['terrain'] = self.data['terrain'].map(self.TERRAIN_REPLACEMENTS).fillna(self.data['terrain'])
 
-
     def _data_to_dict(self):
         self.provinces = self.data.to_dict(orient='records')
 
@@ -259,6 +258,9 @@ class GminaPainter:
                 
             with open(f"history/provinces/{file}", 'w') as f:
                 f.writelines(data)
+
+    def modify_province_modifiers(self):
+        pass
     
     def modify_latent_trade_goods(self):
         for province in self.provinces:
@@ -326,6 +328,7 @@ def main(
         latent_trade_goods: Annotated[bool, typer.Option("--latent", "-l", help="Update latent trade goods.")] = False,
         terrains: Annotated[bool, typer.Option("--terrains", "-t", help="Update terrains types.")] = False,
         center_of_trades: Annotated[bool, typer.Option("--centers", "-c", help="Update center of trades.")] = False,
+        modifiers: Annotated[bool, typer.Option("--modifiers", "-m", help="Update permanent province modifiers.")] = False,
     ):
     gmina_painter = GminaPainter('scripts/Trade Goods.csv')
     
@@ -348,6 +351,10 @@ def main(
     if all or center_of_trades:
         print(f"OVERWRITING CENTER OF TRADES")
         gmina_painter.modify_center_of_trades()
+    
+    if all or modifiers:
+        print(f"OVERWRITING PROVINCE MODIFIERS")
+        gmina_painter.modify_province_modifiers()
         
 
 if __name__ == "__main__":
