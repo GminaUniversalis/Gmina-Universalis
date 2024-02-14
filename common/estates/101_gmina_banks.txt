@@ -1,7 +1,7 @@
 estate_banks = {
     icon = 1
     trigger = {
-        always = no
+        always = yes
     }
     country_modifier_happy = {
 		interest = -1
@@ -41,8 +41,26 @@ estate_banks = {
 		
      }
 	 privileges = {
-		
+		estate_banks_indebted_to_banks
 	 }
+	 privileges = {
+		estate_banks_obietnice
+	 }
+	 privileges = {
+		estate_banks_land_rights
+	 }
+	privileges = {
+		estate_banks_promote_trade
+	}
+	privileges = {
+		estate_banks_valute_control
+	}
+	privileges = {
+		estate_banki_hire_merchants
+	}
+	privileges = {
+		estate_banks_economy_focus
+	}
      agendas = {
 		estate_banks_hire_advisor 
      }
