@@ -13,7 +13,3 @@ owner = U10
 controller = U10
 add_core = U10
 discovered_by = ottoman
-add_permanent_province_modifier = {
-	name = isthmus_modifier_modifier
-	duration = -1
-}

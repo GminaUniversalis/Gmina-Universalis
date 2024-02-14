@@ -14,7 +14,3 @@ owner = Y13
 controller = Y13
 add_core = Y13
 discovered_by = ottoman
-add_permanent_province_modifier = {
-	name = isthmus_modifier_modifier
-	duration = -1
-}

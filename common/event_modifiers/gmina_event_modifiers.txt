@@ -37,7 +37,7 @@ mountain_pass_modifier = {
 	picture = "mountain_pass_icon"
 }
 
-isthmus_modifier_modifier = {
+isthmus_modifier = {
 	province_trade_power_value = 3
 	local_defender_dice_roll_bonus = 1
 	picture = "isthmus_icon"

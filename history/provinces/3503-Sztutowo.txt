@@ -13,8 +13,3 @@ owner = Y18
 controller = Y18
 add_core = Y18
 discovered_by = ottoman
-
-add_permanent_province_modifier = {
-	name = isthmus_modifier_modifier
-	duration = -1
-}
