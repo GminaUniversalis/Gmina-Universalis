@@ -14,3 +14,7 @@ controller = A05
 add_core = A05
 hre = yes
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = mountain_pass_modifier
+	duration = -1
+}

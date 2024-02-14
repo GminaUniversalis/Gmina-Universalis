@@ -13,3 +13,7 @@ owner = X10
 controller = X10
 add_core = X10
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = mountain_pass_modifier
+	duration = -1
+}

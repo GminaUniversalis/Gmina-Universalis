@@ -14,3 +14,7 @@ controller = A18
 add_core = A18
 hre = yes
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = local_airport_modifier
+	duration = -1
+}
