@@ -1,9 +1,9 @@
 #Legnica Nowy Dwor
 religion = communism_zsl
-base_tax = 20
-base_production = 23
+base_tax = 5
+base_production = 8
 trade_goods = copper
-base_manpower = 17
+base_manpower = 2
 capital = "Legnica - Nowy Dwor"
 is_city = yes
 discovered_by = western
