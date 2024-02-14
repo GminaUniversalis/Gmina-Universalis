@@ -1,3 +1,10 @@
+#while True:
+#x = input("delete_")
+#print(" spriteType = {")
+#print("     name = \"GFX_great_project_"+(x)+"\"	")
+#print("     texturefile = \"gfx//interface//great_projects//great_project_"+(x)+".dds\"")
+#print(" }")
+
 spriteTypes = {
 
 	#DOLNOŚLĄSKIE
@@ -69,12 +76,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_great_project_church_of_peace_in_jawor"	
-		texturefile = "gfx//interface//great_projects//great_project_churche_of_peace_in_jawor.dds"
+		texturefile = "gfx//interface//great_projects//great_project_church_of_peace_in_jawor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_great_project_church_of_peace_in_swidnica"	
-		texturefile = "gfx//interface//great_projects//great_project_churche_of_peace_in_swidnica.dds"
+		texturefile = "gfx//interface//great_projects//great_project_church_of_peace_in_swidnica.dds"
 	}
 
 	spriteType = {
@@ -106,6 +113,142 @@ spriteTypes = {
 		name = "GFX_great_project_kghm_headquaters"	
 		texturefile = "gfx//interface//great_projects//great_project_kghm_headquaters.dds"
 	}
+
+	#kujpom
+
+	spriteType = {
+		name = "GFX_great_project_pawel_jumper_site"	
+		texturefile = "gfx//interface//great_projects//great_project_pawel_jumper_site.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_golubdobrzyn_teutonic_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_golubdobrzyn_teutonic_castle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_wloclawek_hydropowerplant"	
+		texturefile = "gfx//interface//great_projects//great_project_wloclawek_hydropowerplant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_biskupin_settlment"	
+		texturefile = "gfx//interface//great_projects//great_project_biskupin_settlment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_pesa_rolling_stock_factory"	
+		texturefile = "gfx//interface//great_projects//great_project_pesa_rolling_stock_factory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_radio_maryja_headquaters"	
+		texturefile = "gfx//interface//great_projects//great_project_radio_maryja_headquaters.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_torun_market_square "	
+		texturefile = "gfx//interface//great_projects//great_project_torun_market_square .dds"
+	}
+
+	#Lubelskie
+
+	spriteType = {
+		name = "GFX_great_project_dryport_malaszewicze"	
+		texturefile = "gfx//interface//great_projects//great_project_dryport_malaszewicze.dds"
+	}
+
+   spriteType = {
+		name = "GFX_great_project_jablonna_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_jablonna_palace.dds"
+	}
+
+   spriteType = {
+		name = "GFX_great_project_pulary_nitrogen_plant"	
+		texturefile = "gfx//interface//great_projects//great_project_pulary_nitrogen_plant.dds"
+	}
+
+   spriteType = {
+		name = "GFX_great_project_kazimierz_dolny_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_kazimierz_dolny_castle.dds"
+	}
+
+   spriteType = {
+		name = "GFX_great_project_zamosc_old_city"	
+		texturefile = "gfx//interface//great_projects//great_project_zamosc_old_city.dds"
+	}
+
+	# Lubuskie
+
+	spriteType = {
+	name = "GFX_great_project_kostrzyn_fortress"	
+	texturefile = "gfx//interface//great_projects//great_project_kostrzyn_fortress.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_statue_of_jesus_christ_king_of_the_universe"	
+	texturefile = "gfx//interface//great_projects//great_project_statue_of_jesus_christ_king_of_the_universe.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_muskauer_park"	
+	texturefile = "gfx//interface//great_projects//great_project_muskauer_park.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_planaca_styrta"	
+		texturefile = "gfx//interface//great_projects//great_project_planaca_styrta.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_steel_spider"	
+	texturefile = "gfx//interface//great_projects//great_project_steel_spider.dds"
+	}
+
+	# Łódzkie
+
+	spriteType = {
+	name = "GFX_great_project_lowicz_preserves_factory"	
+	texturefile = "gfx//interface//great_projects//great_project_lowicz_preserves_factory.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_belchatow_powerplant"	
+	texturefile = "gfx//interface//great_projects//great_project_belchatow_powerplant.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_dom_pudziana"	
+	texturefile = "gfx//interface//great_projects//great_project_dom_pudziana.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_blue_water_springs"	
+	texturefile = "gfx//interface//great_projects//great_project_blue_water_springs.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_city_of_cloth"	
+	texturefile = "gfx//interface//great_projects//great_project_city_of_cloth.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_manufaktura"	
+	texturefile = "gfx//interface//great_projects//great_project_manufaktura.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_piotrkowska_street"	
+	texturefile = "gfx//interface//great_projects//great_project_piotrkowska_street.dds"
+	}
+
+	spriteType = {
+	name = "GFX_great_project_knights_mill"	
+	texturefile = "gfx//interface//great_projects//great_project_knights_mill.dds"
+	}
+
+
+
 
 
 
