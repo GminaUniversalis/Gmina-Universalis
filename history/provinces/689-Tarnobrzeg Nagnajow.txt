@@ -1,9 +1,9 @@
 #Tarnobrzeg Nagnajow
 culture = lachowska
 religion = communism_pzpr
-base_tax = 1
-base_production = 7
-trade_goods = unknown
+base_tax = 2
+base_production = 1
+trade_goods = gu_sulfur
 base_manpower = 1
 capital = "Tarnobrzeg - Nagnajow"
 is_city = yes
@@ -13,3 +13,4 @@ owner = I24
 controller = I24
 discovered_by = ottoman
 add_core = I24
+

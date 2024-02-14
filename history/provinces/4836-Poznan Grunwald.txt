@@ -3,7 +3,7 @@ culture = poznanska
 religion = communism_pzpr
 base_tax = 3
 base_production = 3
-trade_goods = unknown
+trade_goods = gu_consumer_goods
 base_manpower = 3
 capital = "Grunwald"
 is_city = yes
@@ -13,3 +13,4 @@ owner = R32
 controller = R32
 discovered_by = ottoman
 add_core = R32
+

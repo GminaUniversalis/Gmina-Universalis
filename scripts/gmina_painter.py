@@ -122,6 +122,7 @@ class GminaPainter:
         'floodplains': [],
         'crossing': [],
     }
+    PROPER_TRADE_GOODS = set(TRADE_GOOD_REPLACEMENTS.values())
 
     def __init__(self, filepath) -> None:
         self.data = None
@@ -152,12 +153,13 @@ class GminaPainter:
 
             self._handle_trade_goods_exceptions(province)
             self._handle_dev_and_terrain_corner_cases(province)
+            self._handle_cots(province)
 
     def _handle_trade_goods_exceptions(self, province):
         if type(province['trade good']) != str:
             province['trade good'] = None
-            
-        if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown':
+
+        if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown' or province['latent trade good'] not in GminaPainter.PROPER_TRADE_GOODS:
             province['latent trade good'] = None
 
     def _handle_dev_and_terrain_corner_cases(self, province):
@@ -169,6 +171,12 @@ class GminaPainter:
             province['manpower'] = int(province['manpower'])
         if not province['terrain'] or province['terrain'] == "0":
             province['terrain'] = None
+    
+    def _handle_cots(self, province):
+        if province['cot'] in ["1", "2", "3", 1, 2, 3]:
+            province['cot'] = int(province['cot'])
+        else:
+            province['cot'] = 0
 
     def _find_file(self, id):
         parent_path = os.listdir("history/provinces")
@@ -218,6 +226,38 @@ class GminaPainter:
             with open(f"history/provinces/{file}", 'w') as f:
                 f.writelines(data)
     
+    def modify_center_of_trades(self):
+        for province in self.provinces:
+            id = province['id']
+            file = self._find_file(id)
+
+            cot_level = province['cot']
+            to_remove = not bool(cot_level)
+            to_add = bool(cot_level)
+
+            if not file:
+                continue
+            
+            with open(f"history/provinces/{file}", 'r') as f:
+                data = f.readlines()
+
+            if to_remove:
+                for line, content in enumerate(data):
+                    if content.startswith('center_of_trade ='):
+                        data[line] = f"\n" 
+                        break
+            
+            if to_add:
+                for line, content in enumerate(data):
+                    if content.startswith('center_of_trade ='):
+                        data[line] = f"center_of_trade = {cot_level}\n" 
+                        break
+                else:
+                    data.append(f"center_of_trade = {cot_level}\n")
+                
+            with open(f"history/provinces/{file}", 'w') as f:
+                f.writelines(data)
+    
     def modify_latent_trade_goods(self):
         for province in self.provinces:
             id = province['id']
@@ -232,11 +272,17 @@ class GminaPainter:
             with open(f"history/provinces/{file}", 'r') as f:
                 data = f.readlines()
 
-            for line, content in enumerate(data):
-                if content.startswith('latent_trade_goods = ') and latent_trade_goods:
-                    has_latent_trade_goods = True
-                    data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
-                    break
+            if latent_trade_goods:
+                for line, content in enumerate(data):
+                    if content.startswith('latent_trade_goods = '):
+                        has_latent_trade_goods = True
+                        data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
+                        break
+            else:
+                for line, content in enumerate(data):
+                    if content.startswith('latent_trade_goods = '):
+                        data[line] = f"\n"
+                        break
             
             if latent_trade_goods and not has_latent_trade_goods:
                 if f"\n" not in data[-1]:
@@ -247,7 +293,6 @@ class GminaPainter:
                 f.writelines(data)
 
     def modify_terrains(self):
-        
         for province in self.provinces:
             id = province['id']
             terrain = province['terrain']
@@ -278,8 +323,9 @@ def main(
         trade_goods: Annotated[bool, typer.Option("--goods", "-g", help="Update trade goods.")] = False,
         latent_trade_goods: Annotated[bool, typer.Option("--latent", "-l", help="Update latent trade goods.")] = False,
         terrains: Annotated[bool, typer.Option("--terrains", "-t", help="Update terrains types.")] = False,
+        center_of_trades: Annotated[bool, typer.Option("--centers", "-c", help="Update center of trades.")] = False,
     ):
-    gmina_painter = GminaPainter('Trade Goods.csv')
+    gmina_painter = GminaPainter('scripts/Trade Goods.csv')
     
     if all or dev:
         print(f"OVERWRITING DEV")
@@ -296,6 +342,10 @@ def main(
     if all or terrains:
         print(f"OVERWRITING TERRAINS")
         gmina_painter.modify_terrains()
+    
+    if all or center_of_trades:
+        print(f"OVERWRITING CENTER OF TRADES")
+        gmina_painter.modify_center_of_trades()
         
 
 if __name__ == "__main__":

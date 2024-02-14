@@ -1,10 +1,10 @@
 #Poznan - Krzyzowniki-Smochowice
 culture = poznanska
 religion = communism_pzpr
-base_tax = 3
-base_production = 3
-trade_goods = unknown
-base_manpower = 3
+base_tax = 4
+base_production = 5
+trade_goods = glass
+base_manpower = 4
 capital = "Krzyzowniki-Smochowice"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = R32
 controller = R32
 discovered_by = ottoman
 add_core = R32
+

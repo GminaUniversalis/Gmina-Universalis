@@ -1,10 +1,10 @@
 #Radom Dzierzkow
 culture = radomska
 religion = communism_zsl
-base_tax = 5
-base_production = 5
-trade_goods = unknown
-base_manpower = 5
+base_tax = 7
+base_production = 8
+trade_goods = gu_metalworking
+base_manpower = 6
 capital = "Radom - Dzierzkow"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = G39
 controller = G39
 discovered_by = ottoman
 add_core = G39
+latent_trade_goods = { gu_electronics }

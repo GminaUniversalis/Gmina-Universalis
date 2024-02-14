@@ -1,9 +1,9 @@
 #Olsztyn Redykajny
 culture = warminska
 religion = communism_pzpr
-base_tax = 2
+base_tax = 3
 base_production = 3
-trade_goods = unknown
+trade_goods = gu_horses
 base_manpower = 2
 capital = "Olsztyn - Redykajny"
 is_city = yes
@@ -13,3 +13,4 @@ owner = N21
 controller = N21
 discovered_by = ottoman
 add_core = N21
+

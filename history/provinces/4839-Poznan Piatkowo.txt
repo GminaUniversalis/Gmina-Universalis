@@ -1,10 +1,10 @@
 #Poznan - Piatkowo
 culture = poznanska
 religion = communism_pzpr
-base_tax = 3
-base_production = 3
-trade_goods = unknown
-base_manpower = 3
+base_tax = 5
+base_production = 4
+trade_goods = gu_consumer_goods
+base_manpower = 4
 capital = "Piatkowo"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = R32
 controller = R32
 discovered_by = ottoman
 add_core = R32
+latent_trade_goods = { gu_finances }

@@ -3,7 +3,7 @@ culture = poznanska
 religion = communism_pzpr
 base_tax = 3
 base_production = 3
-trade_goods = unknown
+trade_goods = fish
 base_manpower = 3
 capital = "Kiekrz"
 is_city = yes
@@ -13,3 +13,4 @@ owner = R32
 controller = R32
 add_core = R32
 discovered_by = ottoman
+

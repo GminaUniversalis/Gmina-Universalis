@@ -3,7 +3,7 @@ culture = zulawska
 religion = communism_sd
 base_tax = 1
 base_production = 1
-trade_goods = gu_tourists
+trade_goods = salt
 base_manpower = 1
 capital = "Sztutowo"
 is_city = yes
@@ -13,3 +13,4 @@ owner = Y18
 controller = Y18
 add_core = Y18
 discovered_by = ottoman
+

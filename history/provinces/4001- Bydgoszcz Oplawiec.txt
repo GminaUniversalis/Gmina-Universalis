@@ -3,7 +3,7 @@ culture = kujawska
 religion = communism_zsl
 base_tax = 3
 base_production = 3
-trade_goods = unknown
+trade_goods = gu_horses
 base_manpower = 3
 capital = "Op³awiec"
 is_city = yes
@@ -13,3 +13,4 @@ owner = B20
 controller = B20
 discovered_by = ottoman
 add_core = B20
+

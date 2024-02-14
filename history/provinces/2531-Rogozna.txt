@@ -4,7 +4,7 @@ religion = communism_pzpr
 hre = yes
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_vegetables
 base_manpower = 1
 capital = "Rogozna"
 is_city = yes
@@ -14,3 +14,4 @@ owner = L23
 controller = L23
 discovered_by = ottoman
 add_core = L23
+

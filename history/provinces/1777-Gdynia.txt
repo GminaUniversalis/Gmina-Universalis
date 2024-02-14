@@ -15,4 +15,6 @@ add_core = Y21
 owner = Y21
 controller = Y21
 fort_15th = yes
-center_of_trade = 3
+
+
+center_of_trade = 2

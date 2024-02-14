@@ -7,10 +7,11 @@ trade_goods = unknown
 base_manpower = 1
 capital = "Slupsk - Akademickie"
 is_city = yes
-center_of_trade = 2
+
 discovered_by = western
 discovered_by = eastern
 owner = Y22
 controller = Y22
 discovered_by = ottoman
 add_core = Y22
+

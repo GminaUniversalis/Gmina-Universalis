@@ -3,7 +3,7 @@ culture = kresowa
 religion = communism_sd
 base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_consumer_goods
 base_manpower = 1
 capital = "Chelm - Wygon"
 is_city = yes
@@ -13,3 +13,4 @@ owner = U23
 controller = U23
 discovered_by = ottoman
 add_core = U23
+

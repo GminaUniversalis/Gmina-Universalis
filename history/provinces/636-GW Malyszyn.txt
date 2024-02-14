@@ -3,7 +3,7 @@ culture = lubuska
 religion = communism_pzpr
 base_tax = 3
 base_production = 3
-trade_goods = unknown
+trade_goods =  
 base_manpower = 2
 capital = "Gorzow Wielkopolski - Malyszyn"
 is_city = yes
@@ -13,3 +13,4 @@ owner = W14
 controller = W14
 discovered_by = ottoman
 add_core = W14
+

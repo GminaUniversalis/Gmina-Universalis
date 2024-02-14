@@ -1,10 +1,10 @@
 #Skierniewice
 culture = mazowiecka
 religion = communism_sd
-base_tax = 1
+base_tax = 2
 base_production = 1
 trade_goods = cloth
-base_manpower = 1
+base_manpower = 2
 capital = "Skierniewice - Centrum"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = Q24
 controller = Q24
 discovered_by = ottoman
 add_core = Q24
+center_of_trade = 1
