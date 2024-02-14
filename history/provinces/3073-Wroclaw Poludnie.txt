@@ -16,3 +16,4 @@ discovered_by = ottoman
 add_core = A27
 
 latent_trade_goods = { gu_finances }
+center_of_trade = 1

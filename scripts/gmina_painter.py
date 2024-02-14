@@ -173,9 +173,9 @@ class GminaPainter:
             province['terrain'] = None
     
     def _handle_cots(self, province):
-        if province['cot']:
+        if province['cot'] in ["1", "2", "3", 1, 2, 3]:
             province['cot'] = int(province['cot'])
-        if not province['cot']:
+        else:
             province['cot'] = 0
 
     def _find_file(self, id):
