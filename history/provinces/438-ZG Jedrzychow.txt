@@ -1,10 +1,10 @@
 #Zielona Gora - Jedrzychow
 culture = dolnoslaska
 religion = communism_pzpr
-base_tax = 31
-base_production = 34
+base_tax = 2
+base_production = 5
 trade_goods = copper
-base_manpower = 26
+base_manpower = 1
 is_city = yes
 discovered_by = western
 discovered_by = eastern
