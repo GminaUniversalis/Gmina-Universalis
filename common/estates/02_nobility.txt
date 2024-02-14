@@ -3,7 +3,7 @@ estate_nobles = {
 
 	# If true, country will get estate
 	trigger = {
-always = yes
+always = no
 		#NOT = { has_government_attribute = is_merchant_republic }
 		#NOT = { has_reform = veche_republic }
 		#NOT = { has_reform = trading_city }

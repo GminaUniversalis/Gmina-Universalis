@@ -3,7 +3,10 @@ estate_army_old_doc = {
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
-	influence = 0.15	
+	influence = 0.15
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		NOT = {
 			has_country_flag = army_new_doc
@@ -28,6 +31,9 @@ estate_army_new_doc = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.15
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		NOT = {
 			has_country_flag = army_old_doc
@@ -53,11 +59,14 @@ estate_army_wt = {
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0.15
+	ai_will_do = {
+		factor = 1
+	}	
 	penalties = {
 	}
 	benefits = {
 		defensiveness = 0.2
-		hostile_attrition = 0.05
+		hostile_attrition = 0.5
 	}
 }
 estate_army_blitz = {
@@ -66,6 +75,9 @@ estate_army_blitz = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.15
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		NOT = {
 			has_country_flag = army_fire
@@ -91,6 +103,9 @@ estate_army_fire = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.15
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		NOT = {
 			has_country_flag = army_blitz
@@ -114,8 +129,11 @@ estate_army_gp = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = 0
-	loyalty = 0.5
+	loyalty = 0.05
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	is_valid = {
 		religion_group = communism_group
 	}
@@ -131,6 +149,9 @@ estate_army_obietnice = {
 	max_absolutism = -5
 	loyalty = 0.1
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 	
 	}
