@@ -194,7 +194,7 @@ estate_banks_promote_trade = {
 	}
 	
 }
-estate_banks_valute_control = {
+estate_banks_value_control = {
 	icon = privilege_recruit_minister
 	max_absolutism = -25
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }

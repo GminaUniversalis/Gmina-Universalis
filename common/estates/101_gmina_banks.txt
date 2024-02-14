@@ -53,7 +53,7 @@ estate_banks = {
 		estate_banks_promote_trade
 	}
 	privileges = {
-		estate_banks_valute_control
+		estate_banks_value_control
 	}
 	privileges = {
 		estate_banki_hire_merchants
