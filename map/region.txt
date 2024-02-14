@@ -31,12 +31,12 @@ lubelskie_region = {
 }
 podkarpackie_region = { 
 	areas = { 
-		wadowice_gorne tarnobrzeg_poludnie tarnobrzeg_polnoc zaklikow cieszanow lubaczow gawluszowice mielec powiat_ropczycko_sedziszowski debica
-		pilzno jaslo iwonicz_zdroj miejsce_piastowe krempna besko powiat_bieszczadzki powiat_przemyski przemysl_poludnie przemysl_centrum
-		powiat_leski sanok korczyna krosno_centrum krosno_lotnisko powiat_brzozowski dynow bircza medyka pruchnica
-		jaroslaw handia radymno chmielnik rzeszow_poludnie lubiena powiat_strzyzowski rzeszow_centrum rzeszow_wschod rzeszow_zachod
-		bialobrzegi powiat_lezajski lancut przeworsk powiat_tarnobrzeski dzikowiec kolbuszowa nisko jarocin stalowa_wola
-		trzebownisko 
+		wadowice_gorne tarnobrzeg_poludnie tarnobrzeg_polnoc zaklikow cieszanow lubaczow gawluszowice powiat_ropczycko_sedziszowski debica pilzno
+		jaslo iwonicz_zdroj miejsce_piastowe krempna besko powiat_bieszczadzki powiat_przemyski przemysl_poludnie przemysl_centrum powiat_leski
+		sanok korczyna krosno_centrum krosno_lotnisko powiat_brzozowski dynow bircza medyka pruchnica jaroslaw
+		handia radymno chmielnik rzeszow_poludnie lubiena powiat_strzyzowski rzeszow_centrum rzeszow_wschod rzeszow_zachod bialobrzegi
+		powiat_lezajski lancut przeworsk powiat_tarnobrzeski dzikowiec kolbuszowa nisko jarocin stalowa_wola trzebownisko
+		mielec wojslaw rzochow 
 	}
 }
 mazowieckie_region = { 
@@ -45,12 +45,12 @@ mazowieckie_region = {
 		winnica kadzidlo pasieki ostroleka rozan makow biezun zuromin mlawa zawidz
 		powiat_plocki plock_centrum plock_poludnie plock_polnoc powiat_gostyninski gabin drobin sierpc raciaz czerwinsk
 		plonsk bodzanow sochaczew mlodzieszyn zakroczym nowy_dwor_mazowiecki Tluszcz leszno warszawa_praga warszawa_wola_ochota
-		sulejowek warszawa_mokotow warszawa_praga_poludnie raszyn warszawa_srodmiescie izabelin powiat_legionowski Radzymin wolomin wyszkow
-		dlugosiodlo ostrow_mazowiecka sadowne powiat_piaseczynski powiat_zyrardow powiat_grodziski pruszkow grojec rusinow przysucha
-		powiat_szydlowiecki skaryszew lipsko sienno radom_centrum powiat_zwolenski sieciechow powiat_bialobrzeski kozienice radom_polnoc
-		przytyk pionki mogielnica warka garwolin laskrzew parysow jakubow minsk_mazowiecki celestynow
-		wierzbno mordy losice stara_kornica powiat_siedlecki siedlce domanice korczew repki ceranow
-		brok nur sokolow_podlaski wegrow otwock pultusk 
+		sulejowek warszawa_praga_poludnie raszyn warszawa_srodmiescie izabelin powiat_legionowski Radzymin wolomin wyszkow dlugosiodlo
+		ostrow_mazowiecka sadowne powiat_piaseczynski powiat_zyrardow powiat_grodziski pruszkow grojec rusinow przysucha powiat_szydlowiecki
+		skaryszew lipsko sienno radom_centrum powiat_zwolenski sieciechow powiat_bialobrzeski kozienice radom_polnoc przytyk
+		pionki mogielnica warka garwolin laskrzew parysow jakubow minsk_mazowiecki celestynow wierzbno
+		mordy losice stara_kornica powiat_siedlecki siedlce domanice korczew repki ceranow brok
+		nur sokolow_podlaski wegrow otwock pultusk warszawa_mokotow piaseczno_wschod piaseczno_poludnie piaseczno_zachod piaseczno_polnoc
 	}
 }
 podlasie_region = { 
@@ -65,8 +65,8 @@ zachodnio_pomorskie_region = {
 	areas = { 
 		szczecinek slawno darlowo gryfice powiat_gryfinski chojna powiat_mysliborski starogard powiat_choszczenski dobrzany
 		powiat_lobeski powiat_drawski powiat_walecki barwice bobolice koszalin_centrum koszalin_zachod koszalin_poludnie koszalin_wschod powiat_koszalinski
-		powiat_bialogardzki polczyn_zdroj swidwin powiat_kolobrzeski goscino rewal kamien_pomorski powiat_goleniowski miedzyzdroje powiat_swinioujscie
-		powiat_policki szczecin_zachod szczecin_srodmiescie szczecin_polnoc szczecin_prawobrzerze chociwel powiat_pyrzycki 
+		powiat_bialogardzki polczyn_zdroj swidwin powiat_kolobrzeski goscino rewal powiat_goleniowski miedzyzdroje powiat_swinioujscie powiat_policki
+		szczecin_zachod szczecin_srodmiescie szczecin_polnoc szczecin_prawobrzerze chociwel powiat_pyrzycki swinoujscie kamien_pomorski 
 	}
 }
 pomorskie_region = { 
@@ -102,8 +102,8 @@ wielkopolska_region = {
 		leszno_centrum leszno_wschod wloszakowice powiat_sremski powiat_koscianski powiat_sredzki poznan_nowe_miasto kornik powiat_wrzesinski konin_zachod
 		konin_wschod konin_polnoc golina orchowo slupca witkowo gniezno klecko kostrzyn wagrowiec
 		powiat_obornicki powiat_chodzieski czarnkow powiat_miedzychodzki obrzycko szamotuly tomysl powiat_wolsztynski lwowek powiat_grodziski_poznan
-		rokietnica puszczykowo poznan_grunwald poznan_jezyce poznan_stare_miasto poznan_polnoc wyrzysk zlotow jastrowie pila
-		trzcinianka 
+		rokietnica puszczykowo poznan_grunwald poznan_jezyce poznan_stare_miasto poznan_polnoc wyrzysk zlotow jastrowie trzcinianka
+		staszyce kalina pila 
 	}
 }
 warminsko_mazurskie_region = { 
@@ -147,7 +147,7 @@ slaskie_region = {
 lodzkie_region = { 
 	areas = { 
 		skierniewice krosniewice kutno zychlin kiernozia lowicz skierniewice_grabina skierniewice_centrum powiat_brzezinski gluchow
-		powiat_rawski czerniewice tomaszow_mazowiecki piotrkow_trybunalski taken! rzgow powiat_zdunskowolski grabow leczyca ozorkow
+		powiat_rawski czerniewice tomaszow_mazowiecki piotrkow_trybunalski czarnocin rzgow powiat_zdunskowolski grabow leczyca ozorkow
 		piatek domaniewice glowno andrespol pabianice dlutow ujazd Lodz_srodmiescie lodz_widzew lodz_gorna
 		lodz_polesie lutomiersk zgierz lodz_baluty powiat_poddebnicki sieradz warta brzezno czarnozyly wielun
 		boleslawiec wieruszow wierzchlas powiat_laski belchatow szczercow sulmierzyce siemkowice pajeczno radomsko

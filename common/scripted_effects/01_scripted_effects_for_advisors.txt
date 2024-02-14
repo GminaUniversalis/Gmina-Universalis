@@ -344,8 +344,8 @@ internal_advisor_generation_effect = { #Only used within generate_advisor_of_typ
 							region = horn_of_africa_region
 							region = maghreb_region
 						}
-						NOT = { region = caucasia_region }
-						NOT = { region = anatolia_region }
+						NOT = { region = #caucasia_region }
+						NOT = { region = #anatolia_region }
 					}
 				}
 				define_advisor = {
@@ -360,8 +360,8 @@ internal_advisor_generation_effect = { #Only used within generate_advisor_of_typ
 					religion_group = muslim
 					capital_scope = {
 						OR = {
-							region = caucasia_region
-							region = anatolia_region
+							region = #caucasia_region
+							region = #anatolia_region
 						}
 					}
 				}

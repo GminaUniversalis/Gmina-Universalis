@@ -2582,6 +2582,60 @@ socialism_group = {
 	crusade_name = WAR_WITH_FASCISM
 }
 
+populism_group = {
+
+	populism_samoobrona = {
+		color = { 101 57 130 }
+		icon = 49
+		country = {
+			global_spy_defence = 0.2
+			advisor_cost = -0.1
+		}
+		country_as_secondary = {
+			global_spy_defence = 0.1
+		}
+		province = {
+			local_tax_modifier = 0.1
+		}
+
+		allowed_conversion = {
+			
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = populism_samoobrona
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_samoobrona
+						}
+					}
+					change_religion = populism_samoobrona
+					add_reform_center = populism_samoobrona
+				}
+			}			
+		}
+		
+		heretic = {  }
+
+		personal_deity = yes
+	}
+}
+
 christian = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
@@ -3583,7 +3637,7 @@ dharmic = {
 		country = {
 			tolerance_heathen = 1
 			tolerance_own = 1
-			brahmins_hindu_influence_modifier = 0.2
+			#brahmins_hindu_influence_modifier = 0.2
 		}
 		country_as_secondary = {
 			tolerance_heretic = 1
@@ -3774,7 +3828,7 @@ dharmic = {
 						cost = 50
 
 						nobles_loyalty_modifier = 0.05
-						rajput_exclusive_loyalty_modifier = 0.05
+						#rajput_exclusive_loyalty_modifier = 0.05
 						maratha_exclusive_loyalty_modifier = 0.05
 					}
 				}

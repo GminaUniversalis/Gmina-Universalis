@@ -14,19 +14,19 @@ estate_church_land_rights = {
 	}
 	penalties = {
 	}
-	conditional_modifier = {
-		trigger = { has_country_flag = mng_increased_land_rights_flag }
-		modifier = {
-			stability_cost_modifier = -0.05
-		}
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_country_flag = mng_increased_land_rights_flag }
+	# 	modifier = {
+	# 		stability_cost_modifier = -0.05
+	# 	}
+	# }
 	benefits = {
 		governing_capacity = 100
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.03 }
+	# }
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -124,82 +124,82 @@ estate_church_land_rights = {
 			governing_capacity_percentage = 0.65
 		}
 		#Tag specific convincement - after tech 17 (+250 governing capacity) it should not play a role anymore
-		modifier = {
-			factor = 1.25
-			tag = MOS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RUS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TUR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = MNG
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FRA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = PLC
-			NOT = { adm_tech = 17 }
-		}
+		# modifier = {
+		# 	factor = 1.25
+		# 	tag = MOS
+		# 	NOT = { adm_tech = 17 }
+		# }
+		# modifier = {
+		# 	factor = 1.25
+		# 	tag = RUS
+		# 	NOT = { adm_tech = 17 }
+		# }
+		# modifier = {
+		# 	factor = 1.25
+		# 	tag = TUR
+		# 	NOT = { adm_tech = 17 }
+		# }
+		# modifier = {
+		# 	factor = 1.25
+		# 	tag = MNG
+		# 	NOT = { adm_tech = 17 }
+		# }
+		# modifier = {
+		# 	factor = 1.25
+		# 	tag = FRA
+		# 	NOT = { adm_tech = 17 }
+		# }
+		# modifier = {
+		# 	factor = 1.25
+		# 	tag = SPA
+		# 	NOT = { adm_tech = 17 }
+		# }
+		# modifier = {
+		# 	factor = 1.25
+		# 	tag = PLC
+		# 	NOT = { adm_tech = 17 }
+		# }
 		#Has already a similar privilege active
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_brahmins_land_rights
-		}
+		# modifier = {
+		# 	factor = 0.75
+		# 	has_estate_privilege = estate_brahmins_land_rights
+		# }
 		modifier = {
 			factor = 0.75
 			has_estate_privilege = estate_nobles_land_rights
 		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_maratha_land_rights
-		}
+		# modifier = {
+		# 	factor = 0.75
+		# 	has_estate_privilege = estate_maratha_land_rights
+		# }
 		modifier = {
 			factor = 0.75
 			has_estate_privilege = estate_burghers_land_rights
 		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_vaisyas_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_cossacks_land_rights
-		}
+		# modifier = {
+		# 	factor = 0.75
+		# 	has_estate_privilege = estate_vaisyas_land_rights
+		# }
+		# modifier = {
+		# 	factor = 0.75
+		# 	has_estate_privilege = estate_cossacks_land_rights
+		# }
 		modifier = {
 			factor = 0.75
 			has_estate_privilege = estate_nomadic_tribes_land_rights
 		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_dhimmi_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_jains_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_rajput_land_rights
-		}
+		# modifier = {
+		# 	factor = 0.75
+		# 	has_estate_privilege = estate_dhimmi_land_rights
+		# }
+		# modifier = {
+		# 	factor = 0.75
+		# 	has_estate_privilege = estate_jains_land_rights
+		# }
+		# modifier = {
+		# 	factor = 0.75
+		# 	has_estate_privilege = estate_rajput_land_rights
+		# }
 	}
 }
 
@@ -222,14 +222,14 @@ estate_church_religious_state = {
 	benefits = {
 		country_admin_power = 1
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = BYZ_upgrade_the_religious_state_estate_privilege_flag }
-		modifier = { stability_cost_modifier = -0.15 }
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.03 }
+	# }
+	# conditional_modifier = {
+	# 	trigger = { has_country_flag = BYZ_upgrade_the_religious_state_estate_privilege_flag }
+	# 	modifier = { stability_cost_modifier = -0.15 }
+	# }
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -281,10 +281,10 @@ estate_church_independent_inquisition = {
 	benefits = {
 		adm_advisor_cost = -0.15
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.03 }
+	# }
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -360,10 +360,10 @@ estate_church_new_world_mission = {
 			}
 		}
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.03 }
+	# }
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -381,7 +381,7 @@ estate_church_papal_emissary = {
 	influence = 0.05
 	is_valid = {
 		religion = catholic
-		NOT = { tag = PAP }
+		# # NOT = { tag = PAP }
 	}
 	can_select = {
 		papal_influence = 20
@@ -396,10 +396,10 @@ estate_church_papal_emissary = {
 	benefits = {
 		papal_influence = 1
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.03 }
+	# }
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -411,27 +411,27 @@ estate_church_papal_emissary = {
 			is_part_of_hre = yes
 			is_emperor = no
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				tag = SWE
-				tag = ENG
-				tag = GBR
-			}
-		}
+		# modifier = {
+		# 	factor = 0
+		# 	OR = {
+		# 		tag = SWE
+		# 		tag = ENG
+		# 		tag = GBR
+		# 	}
+		# }
 		modifier = {
 			factor = 0
 			is_absolutism_active = yes
 		}
-		modifier = {
-			factor = 0.75
-			NOT = {
-				reverse_has_opinion = {
-					who = PAP
-					value = 50
-				}
-			}
-		}
+		# modifier = {
+		# 	factor = 0.75
+		# 	NOT = {
+		# 		reverse_has_opinion = {
+		# 			who = PAP
+		# 			value = 50
+		# 		}
+		# 	}
+		# }
 	}
 }
 
@@ -450,176 +450,176 @@ estate_church_clerical_ministers = {
 		}
 	}
 	conditional_modifier = {
-		trigger = {
-			if = {
-				limit = {
-					has_dlc = "Common Sense"
-				}
-				NOT = { religion = protestant }
-				NOT = { religion = buddhism }
-				NOT = { religion = vajrayana }
-				NOT = { religion = mahayana }
-			}
-			if = {
-				limit = {
-					has_dlc = "Emperor"
-				}
-				NOT = { religion = hussite }
-			}
-			if = {
-				limit = {
-					has_dlc = "Wealth of Nations"
-				}
-				NOT = { religion = reformed }
-			}
-			if = {
-				limit = {
-					has_dlc = "Cradle of Civilization"
-				}
-				NOT = { religion_group = muslim }
-			}
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				NOT = { religion = confucianism }
-			}
-			if = {
-				limit = {
-					has_dlc = "Third Rome"
-				}
-				NOT = { religion = orthodox }
-			}
-			if = {
-				limit = {
-					has_dlc = "Origins"
-				}
-				NOT = { religion = jewish }
-			}
-			NOT = { religion = anglican }
-		}
+		# trigger = {
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "Common Sense"
+		# 		}
+		# 		NOT = { religion = protestant }
+		# 		NOT = { religion = buddhism }
+		# 		NOT = { religion = vajrayana }
+		# 		NOT = { religion = mahayana }
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "Emperor"
+		# 		}
+		# 		NOT = { religion = hussite }
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "Wealth of Nations"
+		# 		}
+		# 		NOT = { religion = reformed }
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "Cradle of Civilization"
+		# 		}
+		# 		NOT = { religion_group = muslim }
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "Mandate of Heaven"
+		# 		}
+		# 		NOT = { religion = confucianism }
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "Third Rome"
+		# 		}
+		# 		NOT = { religion = orthodox }
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "Origins"
+		# 		}
+		# 		NOT = { religion = jewish }
+		# 	}
+		# 	NOT = { religion = anglican }
+		# }
 		modifier = {
 			missionary_maintenance_cost = -0.2
 		}
 	}
 	conditional_modifier = {
-		trigger = {
-			has_dlc = "Common Sense"
-			OR = {
-				religion = buddhism
-				religion = vajrayana
-				religion = mahayana
-			}
-		}
-		modifier = {
-			yearly_karma_decay = 0.05
-		}
+		# trigger = {
+		# 	has_dlc = "Common Sense"
+		# 	OR = {
+		# 		religion = buddhism
+		# 		religion = vajrayana
+		# 		religion = mahayana
+		# 	}
+		# }
+		# modifier = {
+		# 	yearly_karma_decay = 0.05
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			has_dlc = "Common Sense"
-			religion = protestant
-		}
-		modifier = {
-			church_power_modifier = 0.1
-		}
+		# trigger = {
+		# 	has_dlc = "Common Sense"
+		# 	religion = protestant
+		# }
+		# modifier = {
+		# 	church_power_modifier = 0.1
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			has_dlc = "Emperor"
-			religion = hussite
-		}
-		modifier = {
-			church_power_modifier = 0.1
-		}
+		# trigger = {
+		# 	has_dlc = "Emperor"
+		# 	religion = hussite
+		# }
+		# modifier = {
+		# 	church_power_modifier = 0.1
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			has_dlc = "Origins"
-			religion = jewish
-		}
-		modifier = {
-			church_power_modifier = 0.1
-		}
+		# trigger = {
+		# 	has_dlc = "Origins"
+		# 	religion = jewish
+		# }
+		# modifier = {
+		# 	church_power_modifier = 0.1
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			has_dlc = "Wealth of Nations"
-			religion = reformed
-		}
-		modifier = {
-			monthly_fervor_increase = 0.5
-		}
+		# trigger = {
+		# 	has_dlc = "Wealth of Nations"
+		# 	religion = reformed
+		# }
+		# modifier = {
+		# 	monthly_fervor_increase = 0.5
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			has_dlc = "Cradle of Civilization"
-			religion_group = muslim
-		}
-		modifier = {
-			monthly_piety = 0.001
-		}
+		# trigger = {
+		# 	has_dlc = "Cradle of Civilization"
+		# 	religion_group = muslim
+		# }
+		# modifier = {
+		# 	monthly_piety = 0.001
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			has_dlc = "Mandate of Heaven"
-			religion = confucianism
-		}
-		modifier = {
-			yearly_harmony = 0.25
-		}
+		# trigger = {
+		# 	has_dlc = "Mandate of Heaven"
+		# 	religion = confucianism
+		# }
+		# modifier = {
+		# 	yearly_harmony = 0.25
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			religion = orthodox
-			NOT = { has_country_flag = BYZ_buff_clerical_ministers_for_byz }
-		}
-		modifier = {
-			yearly_patriarch_authority = 0.005
-		}
+		# trigger = {
+		# 	religion = orthodox
+		# 	NOT = { has_country_flag = BYZ_buff_clerical_ministers_for_byz }
+		# }
+		# modifier = {
+		# 	yearly_patriarch_authority = 0.005
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			religion = orthodox
-			has_country_flag = BYZ_buff_clerical_ministers_for_byz
-		}
-		modifier = {
-			yearly_patriarch_authority = 0.01
-		}
+		# trigger = {
+		# 	religion = orthodox
+		# 	has_country_flag = BYZ_buff_clerical_ministers_for_byz
+		# }
+		# modifier = {
+		# 	yearly_patriarch_authority = 0.01
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			religion = orthodox
-			has_global_flag = BYZ_buff_clerical_ministers_for_orthodox
-		}
-		modifier = {
-			tolerance_own = 1
-		}
+		# trigger = {
+		# 	religion = orthodox
+		# 	has_global_flag = BYZ_buff_clerical_ministers_for_orthodox
+		# }
+		# modifier = {
+		# 	tolerance_own = 1
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			religion = anglican
-		}
-		modifier = {
-			church_power_modifier = 0.1
-		}
+		# trigger = {
+		# 	religion = anglican
+		# }
+		# modifier = {
+		# 	church_power_modifier = 0.1
+		# }
 	}
 	conditional_modifier = {
-		trigger = {
-			has_government_attribute = clerical_ministers_tech_buff
-		}
-		modifier = {
-			technology_cost = -0.05
-		}
+		# trigger = {
+		# 	has_government_attribute = clerical_ministers_tech_buff
+		# }
+		# modifier = {
+		# 	technology_cost = -0.05
+		# }
 	}
 	penalties = {
 	}
 	benefits = {
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.03 }
+	# }
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -630,15 +630,15 @@ estate_church_clerical_ministers = {
 			factor = 0.5
 			is_absolutism_active = yes
 		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				religion = protestant
-				religion = anglican
-			}
-			religion = protestant
-			num_of_aspects = 3
-		}
+		# modifier = {
+		# 	factor = 0.5
+		# 	OR = {
+		# 		religion = protestant
+		# 		religion = anglican
+		# 	}
+		# 	religion = protestant
+		# 	num_of_aspects = 3
+		# }
 		modifier = {
 			factor = 10
 			religion = orthodox
@@ -678,10 +678,10 @@ estate_church_freedom_of_interpretation = {
 	benefits = {
 		monthly_piety = -0.001
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.03 }
+	# }
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -2897,12 +2897,12 @@ estate_church_union_of_the_churches = {
 		custom_tooltip = BYZ_may_cause_unionist_revolts
 		
 		hidden_effect = {
-			PAP = {
-				add_opinion = {
-					who = ROOT
-					modifier = BYZ_union_of_the_churches_op
-				}
-			}
+			# PAP = {
+			# 	add_opinion = {
+			# 		who = ROOT
+			# 		modifier = BYZ_union_of_the_churches_op
+			# 	}
+			# }
 		}
 	}
 	conditional_modifier = {
@@ -2940,21 +2940,21 @@ estate_church_union_of_the_churches = {
 		}
 	}
 	on_revoked = {
-		PAP = {
-			remove_opinion = {
-				who = ROOT
-				modifier = BYZ_union_of_the_churches_op
-			}
-		}
-		set_country_flag = estate_church_union_of_the_churches_removed
+		# PAP = {
+		# 	remove_opinion = {
+		# 		who = ROOT
+		# 		modifier = BYZ_union_of_the_churches_op
+		# 	}
+		# }
+		# set_country_flag = estate_church_union_of_the_churches_removed
 	}	
 	on_invalid = {
-		PAP = {
-			remove_opinion = {
-				who = ROOT
-				modifier = BYZ_union_of_the_churches_op
-			}
-		}
+		# PAP = {
+		# 	remove_opinion = {
+		# 		who = ROOT
+		# 		modifier = BYZ_union_of_the_churches_op
+		# 	}
+		# }
 	}
 	ai_will_do = {
 		factor = 0

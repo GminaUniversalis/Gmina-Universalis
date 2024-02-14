@@ -92,7 +92,6 @@ powiat_bialobrzeski = {
 	4297 378 2195 448 4520 450 
 }
 powiat_piaseczynski = { 
-	4680 4206 304 468 1212 1994 
 }
 powiat_grodziski = { 
 	1974 2410 2367 2365 2208 287 
@@ -134,7 +133,6 @@ powiat_sokolski = {
 	280 1944 2429 1070 1068 716 
 }
 powiat_swinioujscie = { 
-	1858 
 }
 powiat_policki = { 
 	227 117 116 2977 
@@ -1156,7 +1154,7 @@ pruszcz = {
 	4715 79 1744 204 
 }
 pila = { 
-	221 4549 2751 220 
+	221 2751 4671 4670 4669 
 }
 wyrzysk = { 
 	2990 1750 4550 212 4560 
@@ -1930,7 +1928,7 @@ ozarow = {
 	2315 363 351 
 }
 mielec = { 
-	4065 4053 2779 
+	4065 4678 4870 4871 
 }
 wadowice_gorne = { 
 	4064 2768 2769 1799 
@@ -1999,7 +1997,7 @@ trzcinica = {
 	2296 4311 317 
 }
 kamien_pomorski = { 
-	4556 232 4553 
+	232 4553 4556 902 
 }
 miedzyzdroje = { 
 	228 1851 231 
@@ -2073,11 +2071,9 @@ brzezno = {
 sulejow = { 
 	1116 2266 2262 
 }
-Already
 rozprza = { 
 	1127 2237 1113 347 
 }
-Already
 szczercow = { 
 	2204 4532 4305 423 
 }
@@ -2384,8 +2380,7 @@ trzebnica = {
 prusice = { 
 	2653 4589 2636 
 }
-Already 
-taken! = { 
+czarnocin = { 
 	367 2466 1110 339 
 }
 luzino = { 
@@ -2411,4 +2406,31 @@ tomysl = {
 }
 lwowek = { 
 	4608 2814 825 
+}
+swinoujscie = { 
+	1858 890 892 891 4875 
+}
+kalina = { 
+	4675 4674 4672 4673 220 
+}
+staszyce = { 
+	4676 4677 4549 
+}
+piaseczno_polnoc = { 
+	304 4896 468 
+}
+piaseczno_wschod = { 
+	1994 4897 1212 
+}
+piaseczno_zachod = { 
+	4680 4901 4900 
+}
+piaseczno_poludnie = { 
+	4899 4898 4206 
+}
+rzochow = { 
+	4873 2779 4874 
+}
+wojslaw = { 
+	4872 4763 4053 
 }

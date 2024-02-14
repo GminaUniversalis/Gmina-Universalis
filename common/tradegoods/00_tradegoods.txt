@@ -127,19 +127,19 @@ fish = {
 			factor = 0
 			NOT = { has_port = yes }
 		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				region = carribeans_region
-				region = malaya_region
-				region = moluccas_region
-				region = indonesia_region
-			}
-		}
-		modifier = {
-			factor = 15
-			area = newfoundland_area
-		}
+		# modifier = {
+		# 	factor = 0.65
+		# 	OR = {
+		# 		region = carribeans_region
+		# 		region = malaya_region
+		# 		region = moluccas_region
+		# 		region = indonesia_region
+		# 	}
+		# }
+		# modifier = {
+		# 	factor = 15
+		# 	area = newfoundland_area
+		# }
 		modifier = {
 			factor = 1.1
 			OR = {

@@ -44,7 +44,7 @@ disabled_rebels_from_seized_land_for_estate = {
 has_exempt_from_seize_land_for_estate_nobles = {
 	OR = {
 		has_estate_privilege = estate_nobles_levies
-		has_estate_privilege = estate_nobles_golden_liberty
+		# has_estate_privilege = estate_nobles_golden_liberty
 		#Jolof's starting privileges
 		# has_estate_privilege = estate_nobles_decentralized_tribe
 		# has_estate_privilege = estate_nobles_tribe_unification
@@ -58,7 +58,7 @@ has_exempt_from_seize_land_for_estate_nobles = {
 	}
 }
 has_exempt_from_seize_land_for_estate_brahmins = {
-	has_estate_privilege = estate_brahmins_administrative_privileges
+	# has_estate_privilege = estate_brahmins_administrative_privileges
 }
 has_exempt_from_seize_land_for_estate_burghers = {
 	has_estate_privilege = estate_burghers_land_trade_rights
@@ -76,45 +76,45 @@ has_exempt_from_seize_land_for_estate_church = {
 	}
 }
 has_exempt_from_seize_land_for_estate_cossacks = {
-	has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+	# has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
 }
 has_exempt_from_seize_land_for_estate_dhimmi = {
-	has_estate_privilege = estate_dhimmi_administrative_privileges
+	# has_estate_privilege = estate_dhimmi_administrative_privileges
 }
 has_exempt_from_seize_land_for_estate_jains = {
-	has_estate_privilege = estate_jains_land_trade_rights
+	# has_estate_privilege = estate_jains_land_trade_rights
 }
-has_exempt_from_seize_land_for_estate_maratha = {
-	OR = {
-		has_estate_privilege = estate_maratha_levies
-		has_estate_privilege = estate_maratha_special_privilege
-	}
-}
+# has_exempt_from_seize_land_for_estate_maratha = {
+# 	OR = {
+# 		has_estate_privilege = estate_maratha_levies
+# 		has_estate_privilege = estate_maratha_special_privilege
+# 	}
+# }
 has_exempt_from_seize_land_for_estate_nomadic_tribes = {
 	#has_estate_privilege = estate_nomadic_tribes_autonomy_of_the_tribes
-	always = no
+	# always = no
 }
 has_exempt_from_seize_land_for_estate_rajput = {
-	has_estate_privilege = estate_rajput_rajput_regiments
+	# has_estate_privilege = estate_rajput_rajput_regiments
 }
 has_exempt_from_seize_land_for_estate_vaisyas = {
-	has_estate_privilege = estate_vaisyas_land_trade_rights
+	# has_estate_privilege = estate_vaisyas_land_trade_rights
 }
 has_exempt_from_seize_land_for_estate_janissaries = {
-	has_estate_privilege = estate_janissary_recruited_by_merit
+	# has_estate_privilege = estate_janissary_recruited_by_merit
 }
 has_exempt_from_seize_land_for_estate_eunuchs = {
-	OR = {
-		has_estate_privilege = estate_eunuchs_land_rights_privilege
-		has_estate_privilege = estate_eunuchs_allow_personal_fortunes_privilege
-		has_estate_privilege = estate_eunuchs_single_whip_law_privilege
-	}
+	# OR = {
+	# 	has_estate_privilege = estate_eunuchs_land_rights_privilege
+	# 	has_estate_privilege = estate_eunuchs_allow_personal_fortunes_privilege
+	# 	has_estate_privilege = estate_eunuchs_single_whip_law_privilege
+	# }
 }
 has_exempt_from_seize_land_for_estate_qizilbash = {
-	has_estate_privilege = estate_qizilbash_supremacy_over_the_aristocracy
+	# has_estate_privilege = estate_qizilbash_supremacy_over_the_aristocracy
 }
 has_exempt_from_seize_land_for_estate_ghulams = {
-	always = no
+	# always = no
 }
 
 estate_has_exempt_from_seize_land_privilege = {

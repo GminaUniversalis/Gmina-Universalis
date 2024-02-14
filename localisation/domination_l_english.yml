@@ -1202,9 +1202,9 @@
  #Estates
  estate_eunuchs:0 "Eunuchs"
  estate_eunuchs_desc:0 "The Eunuchs are a powerful Estate within the Empire of China. At times their influence is curbed by powerful heads of state who rein them in with an iron fist. However, should the reigning monarch be deemed weak or incapable, they are quick to turn even the Emperor himself into an elaborate puppet."
- eunuchs_influence_modifier:0 "Eunuchs Influence"
- eunuchs_loyalty_modifier:0 "Eunuchs Loyalty Equilibrium"
- eunuchs_privilege_slots:0 "Eunuchs Max Privileges"
+ ##eunuchs_influence_modifier:0 "Eunuchs Influence"
+ ##eunuchs_loyalty_modifier:0 "Eunuchs Loyalty Equilibrium"
+ #eunuchs_privilege_slots:0 "Eunuchs Max Privileges"
  EST_INCAPABLE_ADM_RULER:1 "Administratively Incapable Ruler: §Y+10%§!"
  EST_INCAPABLE_DIP_RULER:1 "Diplomatically Incapable Ruler: §Y+10%§!"
  EST_INCAPABLE_MIL_RULER:1 "Militarily Incapable Ruler: §Y+10%§!"
@@ -3527,9 +3527,9 @@
  EST_VAL_JANISSARY_PERCENTAGE_LOY:0 "Under Reliance of Janissaries: §R$VAL$§!"
  country_estate_janissaries_name:0 "[This.GetJanissariesName]"
  ###MODIFIERS###
- janissaries_loyalty_modifier:0 "Janissary Loyalty Equilibrium"
- janissaries_influence_modifier:0 "Janissary Influence"
- janissaries_privilege_slots:0 "Janissary Max Privileges"
+ ###janissaries_loyalty_modifier:0 "Janissary Loyalty Equilibrium"
+ #janissaries_influence_modifier:0 "Janissary Influence"
+ #janissaries_privilege_slots:0 "Janissary Max Privileges"
  ###SUBJECT TYPES###
  eyalet_modifier:0 "Is Eyalet"
  eyalet:0 "Eyalet"

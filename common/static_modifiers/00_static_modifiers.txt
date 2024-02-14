@@ -1110,17 +1110,17 @@ prestige = {
 	nobles_loyalty_modifier = 0.05
 	burghers_loyalty_modifier = 0.05
 	nomadic_tribes_loyalty_modifier = 0.05
-	estate_retirees_loyalty_modifier = 0.05
-	estate_families_loyalty_modifier = 0.05
-	estate_army_loyalty_modifier = 0.05
-	estate_farmers_loyalty_modifier = 0.05
-	estate_middle_class_loyalty_modifier = 0.05
-	estate_banks_loyalty_modifier = 0.05
-	estate_ub_loyalty_modifier = 0.05
-	estate_intellectuals_loyalty_modifier = 0.05
-	estate_investors_loyalty_modifier = 0.05
-	estate_preists_loyalty_modifier = 0.05
-	estate_miners_loyalty_modifier = 0.05
+	retirees_loyalty_modifier = 0.05
+	families_loyalty_modifier = 0.05
+	army_loyalty_modifier = 0.05
+	farmers_loyalty_modifier = 0.05
+	middle_class_loyalty_modifier = 0.05
+	banks_loyalty_modifier = 0.05
+	ub_loyalty_modifier = 0.05
+	intellectuals_loyalty_modifier = 0.05
+	investors_loyalty_modifier = 0.05
+	priests_loyalty_modifier = 0.05
+	miners_loyalty_modifier = 0.05
 
 }
 
