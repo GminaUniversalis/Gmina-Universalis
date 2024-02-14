@@ -30,6 +30,8 @@ class GminaPainter:
         "Isthmus": "isthmus",
         "River Tributary": "river tributary",
         "River Estruary": "river estruary",
+        "Satellite City": "satellite city",
+        "Training Area": "training area",
     }
     TRADE_GOOD_REPLACEMENTS = {
         'Grain': 'gu_wheat',
