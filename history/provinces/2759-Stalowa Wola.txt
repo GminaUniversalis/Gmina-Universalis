@@ -1,10 +1,10 @@
 #Stalowa Wola
 culture = lachowska
 religion = communism_pzpr
-base_tax = 10
-base_production = 17
-trade_goods = iron
-base_manpower = 10
+base_tax = 1
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
 capital = "Stalowa Wola"
 is_city = yes
 discovered_by = western
