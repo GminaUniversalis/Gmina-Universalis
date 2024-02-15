@@ -1,10 +1,10 @@
 #Siedlce Srodmiescie
 culture = podlaska
 religion = communism_pzpr
-base_tax = 3
-base_production = 3
+base_tax = 6
+base_production = 4
 trade_goods = unknown
-base_manpower = 2
+base_manpower = 4
 capital = "Siedlce - Srodmiescie"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = G41
 controller = G41
 discovered_by = ottoman
 add_core = G41
+center_of_trade = 1

@@ -13,3 +13,7 @@ owner = X05
 controller = X05
 add_core = X05
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = local_airport_modifier
+	duration = -1
+}

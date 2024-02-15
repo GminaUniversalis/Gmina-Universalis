@@ -4,7 +4,7 @@ religion = communism_sd
 hre = yes
 base_tax = 2
 base_production = 3
-trade_goods = unknown
+trade_goods =  
 base_manpower = 2
 capital = "Bielsko - Mikuszowice"
 is_city = yes
@@ -14,3 +14,4 @@ owner = L40
 controller = L40
 discovered_by = ottoman
 add_core = L40
+

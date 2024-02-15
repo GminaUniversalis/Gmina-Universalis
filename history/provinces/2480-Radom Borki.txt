@@ -1,9 +1,9 @@
 #Radom Borki
 culture = radomska
 religion = communism_zsl
-base_tax = 5
+base_tax = 6
 base_production = 5
-trade_goods = unknown
+trade_goods = gu_apiculture
 base_manpower = 5
 capital = "Radom - Borki"
 is_city = yes

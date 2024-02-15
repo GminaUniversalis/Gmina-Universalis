@@ -13,3 +13,7 @@ owner = U14
 controller = U14
 add_core = U14
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = local_airport_modifier
+	duration = -1
+}

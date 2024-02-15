@@ -4,8 +4,8 @@ religion = communism_zsl
 hre = yes
 base_tax = 3
 base_production = 3
-trade_goods = unknown
-base_manpower = 2
+trade_goods = gu_apiculture
+base_manpower = 3
 capital = "Czestochowa - Grabowka"
 is_city = yes
 discovered_by = western
@@ -14,3 +14,4 @@ owner = L37
 controller = L37
 discovered_by = ottoman
 add_core = L37
+

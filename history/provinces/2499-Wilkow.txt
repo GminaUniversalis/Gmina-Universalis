@@ -2,9 +2,9 @@
 culture = opolska
 religion = communism_pzpr
 base_tax = 1
-base_production = 1
+base_production = 3
 trade_goods = gu_pigs
-base_manpower = 1
+base_manpower = 3
 capital = "Wilkow"
 is_city = yes
 discovered_by = western

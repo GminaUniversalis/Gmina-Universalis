@@ -2,9 +2,9 @@
 culture = zachodnio-krakowska
 religion = communism_zsl
 hre = yes
-base_tax = 3
+base_tax = 2
 base_production = 3
-trade_goods = unknown
+trade_goods = gu_wheat
 base_manpower = 2
 capital = "Czestochowa - Polnoc"
 is_city = yes
@@ -14,3 +14,4 @@ owner = L37
 controller = L37
 discovered_by = ottoman
 add_core = L37
+

@@ -1,10 +1,10 @@
 #Rzeszow Srodmiescie
 culture = lachowska
 religion = communism_pzpr
-base_tax = 2
-base_production = 3
-trade_goods = unknown
-base_manpower = 2
+base_tax = 5
+base_production = 4
+trade_goods = gu_tourists
+base_manpower = 3
 capital = "Rzeszow - Srodmiescie"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,5 @@ owner = I22
 controller = I22
 discovered_by = ottoman
 add_core = I22
+
+center_of_trade = 2

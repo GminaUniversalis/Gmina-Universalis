@@ -2,7 +2,7 @@
 culture = centralna
 religion = communism_pzpr
 base_tax = 4
-base_production = 3
+base_production = 2
 trade_goods = gu_chemicals
 base_manpower = 4
 capital = "Radogosz"
@@ -13,3 +13,4 @@ owner = Q22
 controller = Q22
 discovered_by = ottoman
 add_core = Q22
+

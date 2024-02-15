@@ -3,8 +3,8 @@ culture = kujawska
 religion = communism_zsl
 base_tax = 3
 base_production = 3
-trade_goods = unknown
-base_manpower = 3
+trade_goods = copper
+base_manpower = 4
 capital = "Wypaleniska"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = B20
 controller = B20
 discovered_by = ottoman
 add_core = B20
+

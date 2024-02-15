@@ -1,9 +1,9 @@
 #Ostroleka Kaczyny
 culture = kurpiowska
 religion = communism_pzpr
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods = gu_consumer_goods
 base_manpower = 1
 capital = "Ostroleka - Kaczyny"
 is_city = yes
@@ -13,3 +13,4 @@ owner = G42
 controller = G42
 discovered_by = ottoman
 add_core = G42
+

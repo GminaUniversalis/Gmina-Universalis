@@ -2,8 +2,8 @@
 culture = kujawska
 religion = communism_zsl
 base_tax = 3
-base_production = 3
-trade_goods = unknown
+base_production = 4
+trade_goods = gu_metalworking
 base_manpower = 3
 capital = "Rynkowo"
 is_city = yes
@@ -13,3 +13,4 @@ owner = B20
 controller = B20
 discovered_by = ottoman
 add_core = B20
+

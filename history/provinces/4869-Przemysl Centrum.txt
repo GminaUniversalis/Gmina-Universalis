@@ -1,13 +1,13 @@
 #Przemysl Centrum
 culture = kresowa
 religion = communism_pzpr
-base_tax = 1
+base_tax = 3
 base_production = 1
 trade_goods = gu_lumber
 discovered_by = western
 discovered_by = eastern
 discovered_by = ottoman
-base_manpower = 2
+base_manpower = 1
 capital = "Przemysl - Centrum"
 is_city = yes
 owner = I15

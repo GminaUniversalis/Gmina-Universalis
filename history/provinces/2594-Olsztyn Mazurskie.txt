@@ -1,9 +1,9 @@
 #Olsztyn Mazurskie
 culture = warminska
 religion = communism_pzpr
-base_tax = 2
-base_production = 3
-trade_goods = unknown
+base_tax = 3
+base_production = 4
+trade_goods = gu_stone
 base_manpower = 2
 capital = "Olsztyn - Mazurskie"
 is_city = yes
@@ -13,3 +13,5 @@ owner = N21
 controller = N21
 discovered_by = ottoman
 add_core = N21
+
+

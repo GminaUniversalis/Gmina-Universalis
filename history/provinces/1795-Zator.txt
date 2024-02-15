@@ -9,3 +9,7 @@ owner = X11
 controller = X11
 add_core = X11
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = river_tributary_modifier
+	duration = -1
+}

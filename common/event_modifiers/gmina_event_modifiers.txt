@@ -10,23 +10,11 @@ moonshiners_problem = {
 	local_unrest = 3
 }
 
-training_area_modifier = {
-	regiment_recruit_speed = -0.40
-	local_regiment_cost = -0.25
-	picture = "training_area_icon"
-}
-
-satellite_city_modifier = {
-	local_manpower_modifier = 0.4
-	land_forcelimit = 0.5
-	picture = "satellite_city_icon"
-}
-
-border_crossing_modifier = {
-	province_trade_power_value = 5
-	local_defensiveness = 0.1
-	local_tax_modifier = 0.05
-	picture = "border_crossing_icon"
+local_airport_modifier = {
+	province_trade_power_value = 4
+	local_friendly_movement_speed = 0.3
+	local_tax_modifier = 0.10
+	picture = "airport_icon"
 }
 
 airport_modifier = {
@@ -36,9 +24,43 @@ airport_modifier = {
 	picture = "airport_icon"
 }
 
-local_airport_modifier = {
-	province_trade_power_value = 4
-	local_friendly_movement_speed = 0.3
-	local_tax_modifier = 0.10
-	picture = "airport_icon"
+border_crossing_modifier = {
+	province_trade_power_value = 5
+	local_defensiveness = 0.1
+	local_tax_modifier = 0.05
+	picture = "border_crossing_icon"
+}
+
+mountain_pass_modifier = {
+	province_trade_power_value = 6
+	local_defender_dice_roll_bonus = 1
+	picture = "mountain_pass_icon"
+}
+
+isthmus_modifier = {
+	province_trade_power_value = 3
+	local_defender_dice_roll_bonus = 1
+	picture = "isthmus_icon"
+}
+
+river_tributary_modifier = {
+	province_trade_power_value = 5
+	picture = "river_tributary_icon"
+}
+
+river_estruary_modifier = {
+	province_trade_power_value = 5
+	picture = "river_estruary_icon"
+}
+
+satellite_city_modifier = {
+	local_manpower_modifier = 0.4
+	land_forcelimit = 0.5
+	picture = "satellite_city_icon"
+}
+
+training_area_modifier = {
+	regiment_recruit_speed = -0.40
+	local_regiment_cost = -0.25
+	picture = "training_area_icon"
 }

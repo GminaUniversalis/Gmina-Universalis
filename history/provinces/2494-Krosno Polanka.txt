@@ -2,8 +2,8 @@
 culture = podgorzanska
 religion = communism_zsl
 base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_production = 2
+trade_goods = gu_lumber
 base_manpower = 1
 capital = "Krosno - Polanka"
 is_city = yes
@@ -13,3 +13,4 @@ owner = I20
 controller = I20
 add_core = I20
 discovered_by = ottoman
+latent_trade_goods = { gu_woodworking }

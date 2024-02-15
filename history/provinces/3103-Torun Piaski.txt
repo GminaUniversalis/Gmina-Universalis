@@ -3,7 +3,7 @@ culture = kujawska
 religion = communism_zsl
 base_tax = 1
 base_production = 1
-trade_goods = unknown
+trade_goods =  
 base_manpower = 1
 capital = "Piaski"
 is_city = yes
@@ -13,3 +13,4 @@ owner = B21
 controller = B21
 discovered_by = ottoman
 add_core = B21
+

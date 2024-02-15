@@ -2,8 +2,8 @@
 culture = zaglebiowska
 religion = communism_pzpr
 hre = yes
-base_tax = 2
-base_production = 3
+base_tax = 1
+base_production = 1
 trade_goods = unknown
 base_manpower = 1
 capital = "Ozarowice"
@@ -14,3 +14,7 @@ owner = L08
 controller = L08
 add_core = L08
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = local_airport_modifier
+	duration = -1
+}

@@ -1,7 +1,7 @@
 estate_investors = {
-    icon = 7
+    icon = 6
     trigger = {
-		always = no
+		always = yes
         NOT = { 
 			religion_group = communism_group
 		}
@@ -39,7 +39,7 @@ estate_investors = {
 	}
     base_influence = 10
     contributes_to_curia_treasury = no
-    color = { 40 40 180 }
+    color = { 10 70 100 }
     privileges = {
 
      }

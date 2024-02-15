@@ -1,9 +1,9 @@
 #Krosno Zawodzie
 culture = podgorzanska
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_tax = 2
+base_production = 3
+trade_goods = paper
 base_manpower = 1
 capital = "Krosno - Zawodzie"
 is_city = yes
@@ -13,3 +13,4 @@ owner = I20
 controller = I20
 add_core = I20
 discovered_by = ottoman
+

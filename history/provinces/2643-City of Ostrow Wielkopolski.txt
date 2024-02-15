@@ -1,10 +1,10 @@
 #City of Ostrow Wielkopolski
 culture = wielunska
 religion = communism_sd
-base_tax = 1
-base_production = 1
+base_tax = 11
+base_production = 16
 trade_goods = unknown
-base_manpower = 1
+base_manpower = 13
 capital = "City of Ostrow Wielkopolski"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = R05
 controller = R05
 add_core = R05
 discovered_by = ottoman
+center_of_trade = 1

@@ -4,7 +4,7 @@ religion = communism_pzpr
 hre = yes
 base_tax = 2
 base_production = 2
-trade_goods = unknown
+trade_goods = gu_metalworking
 base_manpower = 2
 capital = "Kleszczowka"
 is_city = yes
@@ -14,3 +14,4 @@ owner = L23
 controller = L23
 discovered_by = ottoman
 add_core = L23
+

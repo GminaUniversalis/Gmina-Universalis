@@ -2,7 +2,7 @@
 culture = centralna
 religion = communism_pzpr
 base_tax = 7
-base_production = 8
+base_production = 7
 trade_goods = cloth
 base_manpower = 8
 capital = "Baluty Centrum"
@@ -13,3 +13,4 @@ owner = Q22
 controller = Q22
 discovered_by = ottoman
 add_core = Q22
+

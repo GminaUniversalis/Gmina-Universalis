@@ -2,8 +2,8 @@
 culture = wschodnio-krakowska
 religion = communism_pzpr
 base_tax = 3
-base_production = 4
-trade_goods = unknown
+base_production = 3
+trade_goods = copper
 base_manpower = 2
 capital = "Tarnow - Krzyz"
 is_city = yes
@@ -13,3 +13,4 @@ owner = X21
 controller = X21
 discovered_by = ottoman
 add_core = X21
+

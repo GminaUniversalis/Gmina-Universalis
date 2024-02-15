@@ -3,7 +3,7 @@ culture = chelminska
 religion = communism_zsl
 base_tax = 2
 base_production = 1
-trade_goods = unknown
+trade_goods =  
 base_manpower = 1
 capital = "Grudziadz - Mniszek"
 is_city = yes
@@ -13,3 +13,4 @@ owner = B22
 controller = B22
 discovered_by = ottoman
 add_core = B22
+

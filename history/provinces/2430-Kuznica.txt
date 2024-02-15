@@ -13,3 +13,7 @@ owner = J11
 controller = J11
 add_core = J11
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = border_crossing_modifier
+	duration = -1
+}

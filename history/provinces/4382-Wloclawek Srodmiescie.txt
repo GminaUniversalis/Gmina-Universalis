@@ -13,3 +13,7 @@ owner = B10
 controller = B10
 add_core = B10
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = local_airport_modifier
+	duration = -1
+}

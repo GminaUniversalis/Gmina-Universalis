@@ -2,6 +2,7 @@
 # Author: Wojciech "Shogun" Adamiec
 
 HEADER = """
+Author: Wojciech "Shogun" Adamiec
   ________          .__                 __________         .__           __                   
  /  _____/   _____  |__|  ____  _____   \______   \_____   |__|  ____  _/  |_   ____  _______  
 /   \  ___  /     \ |  | /    \ \__  \   |     ___/\__  \  |  | /    \ \   __\_/ __ \ \_  __ \ 
@@ -23,14 +24,27 @@ class GminaPainter:
         "Prov": "prov",
         "trade good ": "trade good",
         "Center of Trade": "cot",
-        "Local Airport": "local airport",
-        "Airport": "airport",
-        "Border Crossing": "border crossing",
-        "Mountain Pass": "mountain pass",
-        "Isthmus": "isthmus",
-        "River Tributary": "river tributary",
-        "River Estruary": "river estruary",
+        "Local Airport": "local_airport_modifier",
+        "Airport": "airport_modifier",
+        "Border Crossing": "border_crossing_modifier",
+        "Mountain Pass": "mountain_pass_modifier",
+        "Isthmus": "isthmus_modifier",
+        "River Tributary": "river_tributary_modifier",
+        "River Estruary": "river_estruary_modifier",
+        "Satellite City": "satellite_city_modifier",
+        "Training Area": "training_area_modifier",
     }
+    MODIFIERS = [
+        "local_airport_modifier",
+        "airport_modifier",
+        "border_crossing_modifier",
+        "mountain_pass_modifier",
+        "isthmus_modifier",
+        "river_tributary_modifier",
+        "river_estruary_modifier",
+        "satellite_city_modifier",
+        "training_area_modifier",
+    ]
     TRADE_GOOD_REPLACEMENTS = {
         'Grain': 'gu_wheat',
         'Fish': 'fish',
@@ -122,6 +136,7 @@ class GminaPainter:
         'floodplains': [],
         'crossing': [],
     }
+    PROPER_TRADE_GOODS = set(TRADE_GOOD_REPLACEMENTS.values())
 
     def __init__(self, filepath) -> None:
         self.data = None
@@ -140,7 +155,6 @@ class GminaPainter:
         self.data['latent trade good'] = self.data['latent trade good'].map(self.TRADE_GOOD_REPLACEMENTS).fillna(self.data['latent trade good'])
         self.data['terrain'] = self.data['terrain'].map(self.TERRAIN_REPLACEMENTS).fillna(self.data['terrain'])
 
-
     def _data_to_dict(self):
         self.provinces = self.data.to_dict(orient='records')
 
@@ -152,12 +166,14 @@ class GminaPainter:
 
             self._handle_trade_goods_exceptions(province)
             self._handle_dev_and_terrain_corner_cases(province)
+            self._handle_cots(province)
+            self._handle_modifiers(province)
 
     def _handle_trade_goods_exceptions(self, province):
         if type(province['trade good']) != str:
             province['trade good'] = None
-            
-        if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown':
+
+        if type(province['latent trade good']) != str or province['latent trade good'] == 'unknown' or province['latent trade good'] not in GminaPainter.PROPER_TRADE_GOODS:
             province['latent trade good'] = None
 
     def _handle_dev_and_terrain_corner_cases(self, province):
@@ -169,6 +185,19 @@ class GminaPainter:
             province['manpower'] = int(province['manpower'])
         if not province['terrain'] or province['terrain'] == "0":
             province['terrain'] = None
+    
+    def _handle_cots(self, province):
+        if province['cot'] in ["1", "2", "3", 1, 2, 3]:
+            province['cot'] = int(province['cot'])
+        else:
+            province['cot'] = 0
+
+    def _handle_modifiers(self, province):
+        for modifier_name in GminaPainter.MODIFIERS:
+            if province[modifier_name] in ["1", 1]:
+                province[modifier_name] = 1
+            else:
+                province[modifier_name] = 0
 
     def _find_file(self, id):
         parent_path = os.listdir("history/provinces")
@@ -218,6 +247,76 @@ class GminaPainter:
             with open(f"history/provinces/{file}", 'w') as f:
                 f.writelines(data)
     
+    def modify_center_of_trades(self):
+        for province in self.provinces:
+            id = province['id']
+            file = self._find_file(id)
+
+            cot_level = province['cot']
+            to_remove = not bool(cot_level)
+            to_add = bool(cot_level)
+
+            if not file:
+                continue
+            
+            with open(f"history/provinces/{file}", 'r') as f:
+                data = f.readlines()
+
+            if to_remove:
+                for line, content in enumerate(data):
+                    if content.startswith('center_of_trade ='):
+                        data[line] = f"\n" 
+                        break
+            
+            if to_add:
+                for line, content in enumerate(data):
+                    if content.startswith('center_of_trade ='):
+                        data[line] = f"center_of_trade = {cot_level}\n" 
+                        break
+                else:
+                    if f"\n" not in data[-1]:
+                        data[-1] = data[-1] + "\n"
+                    data.append(f"center_of_trade = {cot_level}\n")
+                
+            with open(f"history/provinces/{file}", 'w') as f:
+                f.writelines(data)
+
+    def modify_province_modifiers(self):
+        for province in self.provinces:
+            for modifier_name in GminaPainter.MODIFIERS:
+                id = province['id']
+                file = self._find_file(id)
+                if not file:
+                    continue
+
+                modifier = province[modifier_name]
+            
+                with open(f"history/provinces/{file}", 'r') as f:
+                    data = f.readlines()
+
+                if modifier:
+                    for line, content in enumerate(data):
+                        if f"name = {modifier_name}" in content:
+                            break
+                    else:
+                        if f"\n" not in data[-1]:
+                            data[-1] = data[-1] + "\n"
+                        data.append("add_permanent_province_modifier = {\n")
+                        data.append(f"\tname = {modifier_name}\n")
+                        data.append(f"\tduration = -1\n")
+                        data.append("}\n")
+                else:
+                    for line, content in enumerate(data):
+                        if f"name = {modifier_name}" in content:
+                            data[line - 1] = f"\n"
+                            data[line] = f"\n"
+                            data[line + 1] = f"\n"
+                            data[line + 2] = f"\n"
+                            break
+
+                with open(f"history/provinces/{file}", 'w') as f:
+                    f.writelines(data)
+    
     def modify_latent_trade_goods(self):
         for province in self.provinces:
             id = province['id']
@@ -232,11 +331,17 @@ class GminaPainter:
             with open(f"history/provinces/{file}", 'r') as f:
                 data = f.readlines()
 
-            for line, content in enumerate(data):
-                if content.startswith('latent_trade_goods = ') and latent_trade_goods:
-                    has_latent_trade_goods = True
-                    data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
-                    break
+            if latent_trade_goods:
+                for line, content in enumerate(data):
+                    if content.startswith('latent_trade_goods = '):
+                        has_latent_trade_goods = True
+                        data[line] = f"latent_trade_goods = {{ {latent_trade_goods} }}\n"
+                        break
+            else:
+                for line, content in enumerate(data):
+                    if content.startswith('latent_trade_goods = '):
+                        data[line] = f"\n"
+                        break
             
             if latent_trade_goods and not has_latent_trade_goods:
                 if f"\n" not in data[-1]:
@@ -247,7 +352,6 @@ class GminaPainter:
                 f.writelines(data)
 
     def modify_terrains(self):
-        
         for province in self.provinces:
             id = province['id']
             terrain = province['terrain']
@@ -278,8 +382,10 @@ def main(
         trade_goods: Annotated[bool, typer.Option("--goods", "-g", help="Update trade goods.")] = False,
         latent_trade_goods: Annotated[bool, typer.Option("--latent", "-l", help="Update latent trade goods.")] = False,
         terrains: Annotated[bool, typer.Option("--terrains", "-t", help="Update terrains types.")] = False,
+        center_of_trades: Annotated[bool, typer.Option("--centers", "-c", help="Update center of trades.")] = False,
+        modifiers: Annotated[bool, typer.Option("--modifiers", "-m", help="Update permanent province modifiers.")] = False,
     ):
-    gmina_painter = GminaPainter('Trade Goods.csv')
+    gmina_painter = GminaPainter('scripts/Trade Goods.csv')
     
     if all or dev:
         print(f"OVERWRITING DEV")
@@ -296,6 +402,14 @@ def main(
     if all or terrains:
         print(f"OVERWRITING TERRAINS")
         gmina_painter.modify_terrains()
+    
+    if all or center_of_trades:
+        print(f"OVERWRITING CENTER OF TRADES")
+        gmina_painter.modify_center_of_trades()
+    
+    if all or modifiers:
+        print(f"OVERWRITING PROVINCE MODIFIERS")
+        gmina_painter.modify_province_modifiers()
         
 
 if __name__ == "__main__":

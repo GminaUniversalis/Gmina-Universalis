@@ -14,3 +14,4 @@ controller = H06
 add_core = H06
 hre = yes
 discovered_by = ottoman
+center_of_trade = 1

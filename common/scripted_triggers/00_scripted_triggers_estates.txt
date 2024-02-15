@@ -427,6 +427,10 @@ has_estate_agenda_of_estate_ub = {
 has_estate_agenda_of_estate_banks = {
 	OR = {
 		has_active_estate_agenda = estate_banks_hire_advisor 
+		has_active_estate_agenda = estate_banks_pay_off_loans
+		has_active_estate_agenda = estate_banks_restore_currency
+		has_active_estate_agenda = estate_banks_get_cash
+		has_active_estate_agenda = estate_banks_reduce_corruption
 }
 }
 has_estate_agenda_of_estate_miners = {

@@ -7,10 +7,13 @@ trade_goods = gu_ceramics
 base_manpower = 2
 capital = "Zlocieniec"
 is_city = yes
-center_of_trade = 1
 discovered_by = western
 discovered_by = eastern
 owner = P08
 controller = P08
 add_core = P08
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = isthmus_modifier
+	duration = -1
+}
