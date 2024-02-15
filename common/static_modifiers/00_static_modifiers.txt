@@ -2216,10 +2216,6 @@ diplomatic_reputation = {
 }
 
 tolerance_own = {
-	retirees_loyalty_modifier = 0.025
-	families_loyalty_modifier = 0.025
-	priests_loyalty_modifier = 0.025
-
 }
 
 tolerance_heretic = {
