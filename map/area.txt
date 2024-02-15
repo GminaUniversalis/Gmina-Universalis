@@ -551,7 +551,7 @@ torun_rubinkowo = {
 	3282 3314 3396 3257 
 }
 poznan_grunwald = { 
-	4837 2813 4836 4835 
+	4837 4836 4835 
 }
 poznan_jezyce = { 
 	4838 4834 3445 4839 
@@ -995,7 +995,7 @@ chojna = {
 	2981 104 2992 1875 481 
 }
 puszczykowo = { 
-	4610 4602 500 4611 832 
+	500 4611 832 
 }
 rokietnica = { 
 	4599 499 497 
@@ -2442,4 +2442,7 @@ leszno_zachod = {
 }
 leszno_wschodnie = { 
 	4519 4577 4518 
+}
+komorniki = { 
+	4602 4610 2813 
 }
