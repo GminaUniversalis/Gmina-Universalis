@@ -1,5 +1,5 @@
 estate_banks = {
-    icon = 1
+    icon = 7
     trigger = {
         always = yes
     }
@@ -63,6 +63,10 @@ estate_banks = {
 	}
      agendas = {
 		estate_banks_hire_advisor 
+		estate_banks_pay_off_loans
+		estate_banks_restore_currency
+		estate_banks_get_cash
+		estate_banks_reduce_corruption
      }
      influence_from_dev_modifier = 1.0
 	}
