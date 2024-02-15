@@ -2583,7 +2583,6 @@ socialism_group = {
 }
 
 populism_group = {
-
 	populism_samoobrona = {
 		color = { 101 57 130 }
 		icon = 49
@@ -2633,6 +2632,7 @@ populism_group = {
 		heretic = {  }
 
 		personal_deity = yes
+		date = 1507.1.1
 	}
 }
 
