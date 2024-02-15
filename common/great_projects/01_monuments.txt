@@ -11973,7 +11973,7 @@ cpk = {
 
 #//////////////////////////// OPOLSKIE XDD
 
-moszna_catle = { 
+moszna_castle = { 
 	# province it starts in
 	start = 2993
 	
@@ -17453,7 +17453,7 @@ gliwice_palmhouse = {
 	}
 }
 
-kopalnia_guido = {
+guido_mine = {
 	start = 2551
 	date = 1427.01.09
 	time = { months = 0	}
@@ -17914,7 +17914,7 @@ jestem_hardcorem = {
 	}
 }
 
-dab_bartek = {
+oak_bartek = {
 	start = 2243
 	date = 1000.01.01
 	time = { months = 0	}
@@ -20255,7 +20255,6 @@ poznan_market_square = {
 	}
 }
 
-
 fara_temple = {
 	# province it starts in
 	start = 501
@@ -20428,9 +20427,7 @@ fara_temple = {
 		}
 	}
 }
-
 #//////////////////////// ZACHODNIOPOMORSKIE
-
 #/// Szczecin
 #Szczecin to horda
 pomeranian_dukes_castle = {
