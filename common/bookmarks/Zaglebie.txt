@@ -1,0 +1,21 @@
+bookmark =
+{
+	name = "zaglebie_bookmark"
+	desc = "zaglebie_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 1318
+	default = no
+	
+	country = L35 #DG
+	country = L36 #Gliwice
+	country = L20 #Zywiecki
+	country = L32 #Zabrze
+	country = L33 #Jaworzno
+	country = L31 #Bytom
+ 
+	
+	easy_country = L14 #Katowice
+	easy_country = L21 #Rybnik
+	easy_country = L40 #Bielsko Biala
+}

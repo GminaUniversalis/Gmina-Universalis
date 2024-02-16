@@ -2,7 +2,7 @@
 religion = communism_zsl
 base_tax = 2
 base_production = 1
-trade_goods =  
+trade_goods = unknown
 base_manpower = 1
 capital = "Walbrzych - Glinik"
 is_city = yes

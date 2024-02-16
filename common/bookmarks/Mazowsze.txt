@@ -1,0 +1,22 @@
+bookmark =
+{
+	name = "Mazowsze_bookmark"
+	desc = "Mazowsze_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 257
+	default = no
+	
+	country = G14 #Pruszkow
+	country = G41 #Siedlce
+	country = J15 #Lomza
+	country = G37 #Pultusk
+	country = G25 #Otwock
+	country = G05 #Sochaczew
+	country = G11 #Wolomin
+ 
+	
+	easy_country = G12 #Warszawa
+	easy_country = G40 #Plock
+	easy_country = Q24 #Skierniewice
+	easy_country = G42 #Ostroleka

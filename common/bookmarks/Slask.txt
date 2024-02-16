@@ -1,0 +1,26 @@
+bookmark =
+{
+	name = "Slask_bookmark"
+	desc = "Slask_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 3190
+	default = no
+	
+	country = A29 #Jelenia Gora
+	country = A12 #Zgorzelec
+	country = A06 #Klodzko
+	country = A09 #Glogow
+	country = A26 #Lubin
+	country = A11 #Boleslawiec
+	country = H07 #Nyski
+	country = L10 #Raciborz
+	country = L12 #Gliwice
+	country = H01 #Kedzierzyn - Kozle
+ 
+	
+	easy_country = A27 #Wroclaw
+	easy_country = A28 #Legnica
+	easy_country = A30 #Walbrzych
+	easy_country = H20 #Opole
+}

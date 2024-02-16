@@ -1,0 +1,27 @@
+bookmark =
+{
+	name = "Malopolska_bookmark"
+	desc = "Malopolska_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 262
+	default = no
+	
+	country = X15 #Krakowski
+	country = X01 #Zakopane
+	country = L37 #Czestochowa
+	country = L05 #Zawiercie
+	country = X14 #Wadowice
+	country = X02 #Wieliczka
+	country = X11 #Oswiecim
+	country = X17 #Limanowa
+	country = X03 #Chrzanow
+	country = X06 #Tarnowski
+ 
+	
+	easy_country = X20 #Krakow
+	easy_country = X21 #Tarnow
+	easy_country = I22 #Rzeszow
+	easy_country = I24 #Tarnobrzeg
+	easy_country = X05 #Nowy Sacz
+}

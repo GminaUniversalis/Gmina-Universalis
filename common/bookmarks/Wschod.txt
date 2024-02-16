@@ -1,0 +1,25 @@
+bookmark =
+{
+	name = "Wschod_bookmark"
+	desc = "Wschod_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 1086
+	default = no
+	
+	country = I18 #Bieszczady
+	country = U23 #Chelm
+	country = U24 #Bielsko Biala
+	country = N23 #Suwalki
+	country = J11 #Sokolka
+	country = J02 #Hajnowka
+	country = U09 #Bialski
+	country = U08 #Wlodawa
+ 
+	
+	easy_country = I23 #Przemysl
+	easy_country = I22 #Rzeszow
+	easy_country = U22 #Zamosc
+	easy_country = U21 #Lublin
+	easy_country = J14 #Bialystok
+}

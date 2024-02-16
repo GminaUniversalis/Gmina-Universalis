@@ -1,11 +1,11 @@
 bookmark =
 {
-	name = "GMINA_DAWN"
-	desc = "GMINA_DAWN_DESC"
+	name = "wojewodztwa_bookmark"
+	desc = "wojewodztwa_bookmark_desc"
 	date = 1444.11.11
 	
 	center = 257
-	default = yes
+	default = no
 	
 	country = A27 #Wroclaw
 	country = B20 #Bydgoszcz

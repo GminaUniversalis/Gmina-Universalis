@@ -1,6 +1,13 @@
 ﻿l_english:
  urban:0 "Urban"
+ urban_desc:0 "Urban terrain represents dense areas of towns."
  high_urban:0 "High Urban"
+ high_urban_desc:0 "High urban terrain represents high density areas of bustling cities."
  floodplains:0 "Floodplains"
+ floodplains_desc:0 "Floodplains terrain represents wet areas subject to flooding."
  crossing:0 "Crossing"
+ crossing_desc:0 "Crossing terrain represents chokepoints allowing for crossing a river."
  tooltip_has_urban_or_high_urban_terrain:0 "Has urban or high urban terrain category."
+
+
+
