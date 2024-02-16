@@ -116,7 +116,41 @@ has_exempt_from_seize_land_for_estate_qizilbash = {
 has_exempt_from_seize_land_for_estate_ghulams = {
 	# always = no
 }
-
+############################################################################GMINA##########################################################################
+has_exempt_from_seize_land_for_estate_retirees = {
+	 always = no
+}
+has_exempt_from_seize_land_for_estate_families = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_army = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_farmers = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_middle_class = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_banks = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_ub = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_intellectuals = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_investors = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_priests = {
+	always = no
+}
+has_exempt_from_seize_land_for_estate_miners = {
+	always = no
+}
+###########################################################################################################################################################
 estate_has_exempt_from_seize_land_privilege = {
 	has_estate = $estate$
 	has_exempt_from_seize_land_for_$estate$ = yes
