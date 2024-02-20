@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 3
+technology_group = western
+government = monarchy
+primary_culture = wroclawska
+capital = 3190 #Wroclaw - Stare Miasto
+fixed_capital = 3190 #Wroclaw - Stare Miasto
+add_accepted_culture = dolnoslaska
+add_accepted_culture = ukrainska
+add_accepted_culture = opolska

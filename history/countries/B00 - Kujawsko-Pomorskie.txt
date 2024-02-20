@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = autocracy_reform
-government_rank = 2
+government_rank = 3
 technology_group = western
-religion = communism_pzpr
-capital = 969
-primary_culture = lubelska
+capital = 72
+fixed_capital = 72
+primary_culture = kujawska
