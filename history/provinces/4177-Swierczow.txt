@@ -1,10 +1,11 @@
 culture = opolska
 religion = communism_pzpr
 is_city = no
-discovered_by = western
 trade_goods = gu_vegetables
 owner = H05
 controller = H05
 add_core = H05
 hre = yes
 discovered_by = ottoman
+discovered_by = western
+discovered_by = eastern
