@@ -5,7 +5,6 @@ bookmark =
 	date = 1444.11.11
 	
 	center = 257
-	default = no
 	
 	country = G14 #Pruszkow
 	country = G41 #Siedlce
@@ -20,3 +19,4 @@ bookmark =
 	easy_country = G40 #Plock
 	easy_country = Q24 #Skierniewice
 	easy_country = G42 #Ostroleka
+}

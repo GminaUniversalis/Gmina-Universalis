@@ -307,7 +307,7 @@ age_of_reformation = {
 		
 		ab_sell_public_property = {
 			allow = {
-				NOT = { religion_group = communism} 
+				NOT = { religion_group = communism_group} 
 			}
 			effect = {
 				add_treasury = 1000	

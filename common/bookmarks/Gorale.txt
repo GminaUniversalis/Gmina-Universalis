@@ -5,8 +5,7 @@ bookmark =
 	date = 1444.11.11
 	
 	center = 1180
-	default = no
-	
+		
 	country = X01 #Zakopane
 	country = X16 #Nowy Targ
 	country = L20 #Zywiecki
