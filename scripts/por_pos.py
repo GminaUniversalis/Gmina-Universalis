@@ -75,13 +75,13 @@ def main():
 
     print(f"Wszystkie prowincje {total_ids}")
     print(f"Ilość ignorowanych prov: {ignored_count}")
-    print(f"Niezmienione prov: {unchanged_ids}")
+    print(f"Prowincje bez prov morskich/wastelandów: {total_effective_ids}\n")
     print(f"Ilość zrobionych prowincji: {changed_ids}")
-    print(f"Prowincje bez prov morskich/wastelandów: {total_effective_ids}")
-    print(f"Zrobione procentowo (bez ignorowanych): {percentage_changed:.2f}%")
-    print(f"Zrobione procentowo (z ignorowanymi): {percentage_changed_including_ignored:.2f}%")
+    print(f"Pozostało do zrobienia: {unchanged_ids}\n")
+    print(f"Zrobione procentowo (zredukowane): {percentage_changed:.2f}%")
+    print(f"Zrobione procentowo (całość): {percentage_changed_including_ignored:.2f}%\n")
     print(f"Zapisano do: {output_path}")
-    print(f"Zapisano zmienione do: {changed_positions_output_path}")
+    print(f"Zapisano zmienione do: {changed_positions_output_path}\n")
 
 if __name__ == "__main__":
     main()
