@@ -6777,7 +6777,7 @@ manufaktura = {
 	}
 }
 
-piotrkowksa_street = {
+piotrkowska_street = {
 	start = 2461
 	date = 1250.01.01
 	time = { months = 0	}
