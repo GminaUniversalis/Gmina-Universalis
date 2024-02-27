@@ -5800,7 +5800,7 @@ steel_spider = {
 
 #////////////////////////////// ŁÓDZKIE
 #Placeholder do każdej kurwa możliwej większej Fabryki
-lowicz_preserves_facotry= {
+lowicz_preserves_factory= {
 	# province it starts in
 	start = 427
 	
@@ -11906,7 +11906,7 @@ cpk = {
 			local_build_time = -0.05
 		}
 		country_modifiers = {	
-			technology_cost = -0.5
+			technology_cost = -0.05
 			monthly_splendor = 0.5	
 			movement_speed = 0.05	
 		}
