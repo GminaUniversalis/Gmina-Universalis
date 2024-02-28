@@ -1,8 +1,14 @@
-# Lake Titicaca
+# Hańcza
 lake = {
-	triangle_strip = {}
-	height = 38
-	#height = 8
+	triangle_strip = {
+		3806 1864
+		3813 1860
+		3803 1855
+		3809 1848
+		3802 1845
+			
+	}
+	height = 22
 }
 
 #Lake Poopo
