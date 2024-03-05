@@ -1,4 +1,26 @@
 # This file contains all triggers which are are needed for dynamic effects, but have more than 512 characters in total.
+poland_formable_decision_check = {
+	region = dolnoslaskie_region
+	region = kujawsko_pomorskie_region
+	region = lodzkie_region
+	region = lubelskie_region
+	region = lubuskie_region
+	region = malopolska_region
+	region = mazowieckie_region
+	region = opolskie_region
+	region = podkarpackie_region
+	region = podlasie_region
+	region = pomorskie_region
+	region = slaskie_region
+	region = swietokrzyskie_region
+	region = warminsko_mazurskie_region
+	region = wielkopolska_region
+	region = zachodnio_pomorskie_region	
+}
+
+
+
+
 tur_al_andalus_eyalet_limit_a = {
 	# OR = {
 	# 	any_subject_country = {

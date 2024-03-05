@@ -1,6 +1,6 @@
 ﻿l_english:
-#Syf który nie wiem gdzie wpierdolić 
- #Na przyszłość jak nie będziesz wiedział gdzie czegoś wpierdolić, to użyj mózgu
+#Syf który nie wiem gdzie wpierdoli¾ 
+ #Na przysz³oœ¾ jak nie b²dziesz wiedzia³ gdzie czegoœ wpierdoli¾, to użyj mózgu
 #Army
  estate_army:0 "Army"
  estate_army_influence_modifier:0 "Army Influence"
@@ -120,7 +120,7 @@
  estate_banks_get_cash_desc:0 "Banks want us to create a financial reserve for unexpected expenses"
  estate_banks_reduce_corruption:0 "To Control Corruption"
  estate_banks_reduce_corruption_desc:0 "The banks are not pleased with the extent of corruption in our country"
-#Gorniki (Tak pisze się górnicy)
+#Gorniki (Tak pisze si² górnicy)
  estate_miners:0 "Miners"
  estate_miners_influence_modifier:0 "Miners Influence"
  estate_miners_privilege_slots:0 "Miners Max Privileges"
@@ -168,7 +168,7 @@
  estate_families_land_rights:0 "Families Rights"
  estate_families_land_rights_desc:0 "Family rights encompass legal and social protections granted to families, ensuring their well-being and integrity"
  estate_families_pp:0 "500+"
- estate_families_pp_desc:0 "500+" in Poland refers to the social assistance program ,introduced to support families. It provides financial assistance, specifically 500 złoty per  month for each child"
+ estate_families_pp_desc:0 "500+" in Poland refers to the social assistance program ,introduced to support families. It provides financial assistance, specifically 500 z³oty per  month for each child"
  estate_families_hfs:0 "Healthy Food in Schools"
  estate_families_hfs_desc:0 ""Healthy Food in Schools" focus on promoting nutritious food options within school settings. These programs aim to provide students with balanced  meals that contribute to their overall well-being and support healthy eating habits"
  estate_families_ofm:0 "Old Family Model"
