@@ -23,7 +23,7 @@ lubelskie_region = {
 	areas = { 
 		lukow biala_podlaska janow_podlaski powiat_bialski miedzyrzec_podlaski stoczek_lukowski radzyn_podlaski powiat_rycki powiat_lukowski borki
 		jeziorzany baranow pulawy wilkow opole_lubelskie lubartow markuszow annopol konopnica modliborzyce
-		krasnik janow_lubelski lublin_zachod Lublin lublin_poludnie lublin_wschod niemce terespol rossosz parczew
+		krasnik janow_lubelski lublin_zachod lublin lublin_poludnie lublin_wschod niemce terespol rossosz parczew
 		ostrow_lubelski sosnowica urszulin wlodawa powiat_leczynski glusk wysokie powiat_swidnicki rejowiec chelm_lubelski
 		chelm kamien krasnystaw bialopole rudnik bilgoraj ksiazopol tereszpol szczebrzeszyn zamosc
 		zwierzyniec grabowiec powiat_zamojski jarczow laszczow mircze tomaszow_lubelski hrubieszow 
@@ -149,7 +149,7 @@ lodzkie_region = {
 	areas = { 
 		skierniewice krosniewice kutno zychlin kiernozia lowicz skierniewice_grabina skierniewice_centrum powiat_brzezinski gluchow
 		powiat_rawski czerniewice tomaszow_mazowiecki piotrkow_trybunalski czarnocin rzgow powiat_zdunskowolski grabow leczyca ozorkow
-		piatek domaniewice glowno andrespol pabianice dlutow ujazd Lodz_srodmiescie lodz_widzew lodz_gorna
+		piatek domaniewice glowno andrespol pabianice dlutow ujazd lodz_srodmiescie lodz_widzew lodz_gorna
 		lodz_polesie lutomiersk zgierz lodz_baluty powiat_poddebnicki sieradz warta brzezno czarnozyly wielun
 		boleslawiec wieruszow wierzchlas powiat_laski belchatow szczercow sulmierzyce siemkowice pajeczno radomsko
 		rozprza dobryszyce zytno maslowice sulejow opoczno paradyz 

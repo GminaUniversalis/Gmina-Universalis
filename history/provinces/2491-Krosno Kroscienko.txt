@@ -9,8 +9,7 @@ capital = "Krosno - Kroscienko"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = I20
-controller = I20
-add_core = I20
+owner = I25
+controller = I25
 discovered_by = ottoman
-
+add_core = I25

@@ -1,6 +1,4 @@
 #Mombasa
-culture = podgorzanska
-religion = communism_zsl
 base_tax = 1
 base_production = 1
 trade_goods = unknown
@@ -9,7 +7,4 @@ capital = "Mombasa"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = I10
-controller = I10
-add_core = I10
 discovered_by = ottoman
