@@ -124,9 +124,9 @@ NDiplomacy = {
 	RIVAL_PEACE_COST_REDUCTION = -0.33,
 	MAX_PEACE_TREATY_COST = 200,					-- in diplo power
 	DESIRED_NUM_OF_ELECTORS = 8,
-	MAX_FREE_CITIES = 12,
+	MAX_FREE_CITIES = 16,
 	MIN_NUM_ELECTORS_FOR_REMOVE_ELECTORATE = 2,		-- Limit is inclusive.
-	HRE_PRINCE_AUTHORITY_THRESHOLD = 25,			-- Threshold below which you lose IA, and above which you gain it
+	HRE_PRINCE_AUTHORITY_THRESHOLD = 10,			-- Threshold below which you lose IA, and above which you gain it
 	IMPERIAL_AUTHORITY_FROM_PRINCES = 0.075,			-- Scales to threshold
 	HRE_FOREIGN_CONTROL_PENALTY = -0.005,			-- Each foreign-controlled province in the empire (owned or vassalised) lowers IA by this amount
 	HRE_HERETIC_PENALTY = -0.01,					-- Per heretic prince (halved by Peace of Westphalia)
@@ -139,12 +139,12 @@ NDiplomacy = {
 	CELESTIAL_EMPIRE_REFORM_MIN_VALUE = 80,		-- Minimum value of Mandate above which new reforms can be enacted.
 	DEFENDER_OF_FAITH_COST = 500, 					-- _DDEF_DEFENDER_OF_FAITH_COST_
 	DEFENDER_OF_FAITH_MONTHS = 24, 					-- _DDEF_DEFENDER_OF_FAITH_MONTHS_ (Minimum months before it can be taken from another country with less prestige)
-	AMOUNT_OF_ACTIVE_CARDINALS = 7, 				-- Number of active Cardinals
+	AMOUNT_OF_ACTIVE_CARDINALS = 10, 				-- Number of active Cardinals
 	AMOUNT_OF_FUTURE_CARDINALS = 5, 				-- Number of future Cardinals
 	EXCOMMUNICATE_ACTION_MONTHS = 36, 				-- Excommunication "cooldown" (months)
 	CRUSADE_TIMEOUT_YEARS = 30, 					-- Crusade timeout (years)
 	WE_IMPACT_ON_ANNEX_INTEGRATE = -0.05,			-- multiplied with current WE
-	EMPEROR_VOTE_DAYS = 60,	 						-- _DDEF_EMPEROR_VOTE_DAYS_; "Cooldown" until Electors can change their vote again.
+	EMPEROR_VOTE_DAYS = 30,	 						-- _DDEF_EMPEROR_VOTE_DAYS_; "Cooldown" until Electors can change their vote again.
 	EMPEROR_REVOKE_AUTHORITY_COST = 50.0,			-- Cost for the emperor to revoke a reform
 	EMPEROR_REVOKE_MODIFIER_DAYS = 1800,			-- How long the temporary modifier applied after revoking will last
 	TRUCE_YEARS = 5, 								-- _DDEF_TRUCE_YEARS_; Years of Truce
@@ -350,7 +350,7 @@ NDiplomacy = {
 
 	DIPLOMAT_SPEED = 20.0,							-- DIPLOMAT_SPEED
 	DIPLOMAT_COOLDOWN_TIME = 1,						-- DIPLOMATIC ACTION COOLDOWN IN MONTHS
-	MIN_RELATIONS_TO_ALLY = -25,						-- Alliances not possible if either country has an opinion of the other lower than this
+	MIN_RELATIONS_TO_ALLY = -199,						-- Alliances not possible if either country has an opinion of the other lower than this
 	MIN_RELATIONS_TO_SUPPORT_INDEPENDENCE = -25,	-- Support Independence not possible if either country has an opinion of the other lower than this
 
 	ELECTIVE_VICTORY_PRESTIGE = 25,				-- Prestige for getting a heir from your country onto the throne of an elective nation
@@ -385,9 +385,9 @@ NDiplomacy = {
 
 	REMOVE_ELECTORATE_INFLUENCE_COST = 10,			-- The amount of IA Remove Electorate costs.
 	GRANT_ELECTORATE_INFLUENCE = 0,					-- The amount of AI Grant Electorate gives.
-	GRANT_FREECITY_INFLUENCE = 0,					-- The amount of IA Grant Free Gity gives.
+	GRANT_FREECITY_INFLUENCE = 5,					-- The amount of IA Grant Free Gity gives.
 	REMOVE_FREECITY_INFLUENCE_COST = 5,				-- The amount of IA Grant Free Gity costs.
-	IMPERIAL_CITY_IA = 0.005,						-- Monthly per imperial free city
+	IMPERIAL_CITY_IA = 0.01,						-- Monthly per imperial free city
 
 	AGITATE_FOR_LIBERTY_DESIRE = 25,				-- Liberty Desire gained due to ongoing agitation.
 	AGITATE_FOR_LIBERTY_RATE = 1,					-- Monthly rate at which Liberty Desire rises towards the maximum during agitation, or otherwise falls towards zero.
@@ -413,7 +413,7 @@ NDiplomacy = {
 
 	PAY_SUBJECT_DEBT_LIBERTY_DESIRE_REDUCTION = 5,	-- Amount of liberty desire the subject loses per paid loan
 
-	NUM_OF_GREAT_POWERS = 8,						-- The number of ordinary (i.e. non-leaving) Great Powers if RightsOfManDLC is enabled.
+	NUM_OF_GREAT_POWERS = 10,						-- The number of ordinary (i.e. non-leaving) Great Powers if RightsOfManDLC is enabled.
 	LEAVING_GREAT_POWER_YEARS = 5,					-- The number of years a Great Power can remain after being removed from the top (8).
 	GREAT_POWER_SUBJECT_CONTRIBUTION = 0.5,			-- Share of subjects' development that will count towards overlord's Great Power score.
 
@@ -2433,7 +2433,7 @@ NGui = {
 },
 
 NEngine = {
-	EVENT_PROCESS_OFFSET = 20, 						-- Events are checked every X day per character or province (1 is ideal, but CPU heavy)
+	EVENT_PROCESS_OFFSET = 25, 						-- Events are checked every X day per character or province (1 is ideal, but CPU heavy)
 	TRIGGER_PROFILING_SAMPLING_RATE = 1000,			-- Sampling rate for trigger profiling (Every nth call is recorded)
 },
 
@@ -2471,25 +2471,25 @@ NMacroBuildColors = {
 },
 
 NFrontend = {
-	CAMERA_LOOKAT_X = 2958.0, 						-- Rotation point in main menu
+	CAMERA_LOOKAT_X = 3469.66, 						-- Rotation point in main menu
 	CAMERA_LOOKAT_Y = 0.0,
-	CAMERA_LOOKAT_Z = 1519.0,
-	CAMERA_LOOKAT_SETTINGS_X = 2958.0, 				-- Rotation point in settings
+	CAMERA_LOOKAT_Z = 1168.62,
+	CAMERA_LOOKAT_SETTINGS_X = 3240.0, 				-- Rotation point in settings
 	CAMERA_LOOKAT_SETTINGS_Y = 0.0,					-- Y is height
-	CAMERA_LOOKAT_SETTINGS_Z = 1519.0,
-	CAMERA_START_X = 2958.0,						-- Initial position in main menu
-	CAMERA_START_Y = 800,							-- Y is height
-	CAMERA_START_Z = 1400.0,
-	CAMERA_END_X = 2958.0,							-- Move to position in main menu
-	CAMERA_END_Y = 900.0,
-	CAMERA_END_Z = 1400.0,
-	CAMERA_MIN_DIST_FOR_ROTATE = 800.0, 			-- Controlls when rotation starts. When camera is close enought it starts
-	CAMERA_MIN_HEIGHT = 50.0,						-- Minimum camera height
-	CAMERA_MAX_HEIGHT = 3000.0,						-- Maximum camera height
-	TIME_FROZEN = 1.0,  							-- Time before initial animation starts (some deylay here so it should NOT be 0, then the animation starts before you can see it)
-	TIME_UNTIL_ROTATE = 1.5, 						-- Time when rotation start (from begining of time)
-	CAMERA_SPEED_START = 0.04,  					-- Initial animation speed
-	CAMERA_SPEED_ROTATE = 0.04,						-- Rotation speed
+	CAMERA_LOOKAT_SETTINGS_Z = 320.0,
+	CAMERA_START_X = 3462.0,						-- Initial position in main menu
+	CAMERA_START_Y = 33,							-- Y is height
+	CAMERA_START_Z = 1095.0,
+	CAMERA_END_X = 3000.0,							-- Move to position in main menu
+	CAMERA_END_Y = 2600.0,
+	CAMERA_END_Z = 1060.0,
+	CAMERA_MIN_DIST_FOR_ROTATE = 1000.0, 			-- Controlls when rotation starts. When camera is close enought it starts
+	CAMERA_MIN_HEIGHT = 33.0,						-- Minimum camera height
+	CAMERA_MAX_HEIGHT = 3820.0,						-- Maximum camera height
+	TIME_FROZEN = 2.5,  							-- Time before initial animation starts (some deylay here so it should NOT be 0, then the animation starts before you can see it)
+	TIME_UNTIL_ROTATE = 1, 						-- Time when rotation start (from begining of time)
+	CAMERA_SPEED_START = 0.02,  					-- Initial animation speed
+	CAMERA_SPEED_ROTATE = 0.02,						-- Rotation speed
 	GUI_MOVE_SPEED = 300,							-- How fast sliding gui objects move ( pixels/s )
 
 	FADE_IN_DONE_TIME = 2.2,
@@ -2498,26 +2498,26 @@ NFrontend = {
 
 	CAMERA_SPEED_IN_MENUS = 0.1,
 
-	FRONTEND_POS_X = 2958.0,
-	FRONTEND_POS_Y = 900.0,
-	FRONTEND_POS_Z = 1500.0,
-	FRONTEND_LOOK_X = 2958.0,
+	FRONTEND_POS_X = 3000.0,
+	FRONTEND_POS_Y = 2600.0,
+	FRONTEND_POS_Z = 1060.0,
+	FRONTEND_LOOK_X = 3000.0,
 	FRONTEND_LOOK_Y = 0.0,
-	FRONTEND_LOOK_Z = 1519.0,
+	FRONTEND_LOOK_Z = 1080.0,
 
-	SETTINGS_POS_X = 2958.0,
-	SETTINGS_POS_Y = 551.0,
-	SETTINGS_POS_Z = 978.0,
-	SETTINGS_LOOK_X = 2998.0,
+	SETTINGS_POS_X = 3240.0,
+	SETTINGS_POS_Y = 200.0,
+	SETTINGS_POS_Z = 335.0,
+	SETTINGS_LOOK_X = 3240.0,
 	SETTINGS_LOOK_Y = 0.0,
-	SETTINGS_LOOK_Z = 1364.0,
+	SETTINGS_LOOK_Z = 335.0,
 
-	MP_OPTIONS_POS_X = 2958.0,
-	MP_OPTIONS_POS_Y = 922.0,
-	MP_OPTIONS_POS_Z = 1048.0,
-	MP_OPTIONS_LOOK_X = 2958.0,
+	MP_OPTIONS_POS_X = 3239.0,
+	MP_OPTIONS_POS_Y = 250.0,
+	MP_OPTIONS_POS_Z = 658.0,
+	MP_OPTIONS_LOOK_X = 3259.0,
 	MP_OPTIONS_LOOK_Y = 0.0,
-	MP_OPTIONS_LOOK_Z = 1159.0,
+	MP_OPTIONS_LOOK_Z = 310.0,
 
 	TUTORIAL_POS_X = 2894.0,
 	TUTORIAL_POS_Y = 124.0,
@@ -2526,19 +2526,19 @@ NFrontend = {
 	TUTORIAL_LOOK_Y = 21.0,
 	TUTORIAL_LOOK_Z = 1463.0,
 
-	CONTENT_POS_X = 2958.0,
-	CONTENT_POS_Y = 922.0,
-	CONTENT_POS_Z = 1308.0,
+	CONTENT_POS_X = 3468.0,
+	CONTENT_POS_Y = 191.0,
+	CONTENT_POS_Z = 1096.0,
 	CONTENT_LOOK_X = 2958.0,
 	CONTENT_LOOK_Y = 0.0,
 	CONTENT_LOOK_Z = 1519.0,
 
-	CREDITS_POS_X = 3077.0,
-	CREDITS_POS_Y = 231.0,
-	CREDITS_POS_Z = 1508.0,
-	CREDITS_LOOK_X = 3080.0,
+	CREDITS_POS_X = 2945.0,
+	CREDITS_POS_Y = 345.0,
+	CREDITS_POS_Z = 1700.0,
+	CREDITS_LOOK_X = 2945.0,
 	CREDITS_LOOK_Y = 19.0,
-	CREDITS_LOOK_Z = 1720.0,
+	CREDITS_LOOK_Z = 1860.0,
 },
 
 NReligion = {
@@ -2655,7 +2655,7 @@ NReligion = {
 
 NNationDesigner = {
 
-	POINTS_AVAILABLE = 200,
+	POINTS_AVAILABLE = 20000,
 	RULER_BASE_AGE = 30,					-- Creating a ruler with this age is free.
 	RULER_MIN_AGE = 20,						--
 	RULER_MAX_AGE = 40,

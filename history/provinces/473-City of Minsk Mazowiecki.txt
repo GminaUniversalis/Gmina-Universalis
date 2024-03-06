@@ -13,3 +13,4 @@ owner = G27
 controller = G27
 add_core = G27
 discovered_by = ottoman
+center_of_trade = 1

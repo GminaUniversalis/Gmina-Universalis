@@ -3,7 +3,7 @@ culture = kaszubska
 religion = communism_pzpr
 base_tax = 1
 base_production = 1
-trade_goods = gu_tourists
+trade_goods = salt
 base_manpower = 1
 capital = "Jastarnia"
 is_city = yes
@@ -13,3 +13,7 @@ owner = Y12
 controller = Y12
 add_core = Y12
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = local_airport_modifier
+	duration = -1
+}

@@ -65,7 +65,7 @@ province;red;green;blue;x;x
 64;9;32;255;Ustron;x
 65;137;34;0;Lisewo;x
 66;9;36;64;Koscielec;x
-67;137;38;128;Jastrebie-Zdroj;x
+67;137;38;128;Centrum - Jastrebie-Zdroj;x
 68;9;40;192;Strzelno;x
 69;137;42;255;Bobrowniki;x
 70;10;44;0;Dabrowa Chelminska;x
@@ -134,7 +134,7 @@ province;red;green;blue;x;x
 135;147;46;0;Chybie;x
 136;19;48;64;Brzeszcze;x
 137;147;50;128;Miedzna;x
-138;19;52;192;Gliwice;x
+138;19;52;192;Gliwice - Centrum;x
 139;147;54;255;Pszczyna;x
 140;20;56;0;Tychy;x
 141;148;58;64;Wozniki;x
@@ -151,7 +151,7 @@ province;red;green;blue;x;x
 152;21;80;128;Goczalkowice-Zdroj;x
 154;22;84;255;Myslowice;x
 155;150;86;0;Pabianice;x
-156;22;88;64;Zabrze;x
+156;22;88;64;Centrum - Zabrze;x
 157;150;90;128;CZeladz;x
 158;22;92;192;Starcza;x
 159;150;94;255;Miasteczko Slaskie;x
@@ -531,7 +531,7 @@ province;red;green;blue;x;x
 544;77;96;255;Stary Brus;x
 545;205;98;0;Krasnystaw;x
 546;78;100;64;Gorzkow;x
-547;206;102;128;City of Zamosc;x
+547;206;102;128;Centrum - Zamosc;x
 548;78;104;192;Sieniawa;x
 549;206;106;255;Krasniczyn;x
 551;206;110;64;Tuczna;x
@@ -702,7 +702,7 @@ province;red;green;blue;x;x
 966;18;40;32;Zaleszany;x
 967;147;42;79;Janowiec;x
 968;19;44;126;Garbow;x
-969;147;46;173;Lublin Stare Miasto;x
+969;147;46;173;Lublin - Stare Miasto;x
 971;147;50;79;Dubienka;x
 973;147;54;173;Dabrowa Biskupia;x
 974;20;56;32;Nieszawa;x
@@ -809,7 +809,7 @@ province;red;green;blue;x;x
 1083;163;146;79;Kowale Oleckie;x
 1084;35;148;126;Fredropol;x
 1085;163;150;173;Orly;x
-1086;36;152;32;City Of Przemysl;x
+1086;36;152;32;Centrum - Przemysl;x
 1087;164;154;79;Zurawica;x
 1088;36;156;126;Mircze;x
 1089;164;158;173;Horniec-Zdroj;x
@@ -953,7 +953,7 @@ province;red;green;blue;x;x
 1230;56;56;32;Pacanow;x
 1232;56;60;126;Kazmierza Wielkia;x
 1233;185;62;173;Slaboszow;x
-1234;57;164;32;Klimantow;x
+1234;57;164;32;Klimontow;x
 1239;185;74;79;City Of Tomaszow Lubelski;x
 1240;58;76;126;Piastow;x
 1241;186;78;173;Raszyn;x
@@ -1806,7 +1806,7 @@ province;red;green;blue;x;x
 2240;120;137;132;Miedziana Gora;x
 2241;200;111;182;Konopiska;x
 2242;240;69;110;Blachowina;x
-2243;80;135;107;Zagansk;x
+2243;80;135;107;Zagnansk;x
 2244;160;139;157;Maslow;x
 2245;240;113;207;Nowiny;x
 2246;40;115;232;Kleszczow;x
@@ -1987,7 +1987,7 @@ province;red;green;blue;x;x
 2458;249;249;145;Bedkow;x
 2459;21;1;95;Rzgow;x
 2460;147;151;46;Tuszyn;x
-2461;84;131;246;Lodz Centrum;x
+2461;84;131;246;Lodz - Centrum;x
 2462;210;11;196;City of Pabianice;x
 2463;42;12;145;Nowosolna;x
 2464;168;151;95;Lutomiersk;x
@@ -2032,7 +2032,7 @@ province;red;green;blue;x;x
 2644;125;31;46;Przygodzice;x
 2645;251;188;246;Raszkow;x
 2646;3;31;196;Gizalki;x
-2647;129;31;145;CZermin;x
+2647;129;31;145;Czermin;x
 2648;66;13;95;Powidz;x
 2649;192;201;46;Janikowo;x
 2650;25;31;246;Kozmin Wielkopolski;x
@@ -2057,7 +2057,7 @@ province;red;green;blue;x;x
 2727;255;141;71;Kamienica;x
 2728;93;107;37;Pcim;x
 2729;255;102;79;Tokarnia;x
-2730;38;104;109;klaj;x
+2730;38;104;109;Klaj;x
 2731;53;255;77;Siepraw;x
 2732;45;107;40;Swiatniki Gorne;x
 2733;255;101;63;Mogilany;x
@@ -2131,7 +2131,7 @@ province;red;green;blue;x;x
 2807;31;196;124;Altagracia;x
 2808;212;203;165;Siedlec;x
 2809;193;104;146;Zbaszyn;x
-2811;196;122;203;SwiSciechowa;x
+2811;196;122;203;Swisciechowa;x
 2812;39;189;75;Wielichowo;x
 2813;68;93;174;Lubon;x
 2814;66;225;110;Kuslin;x
@@ -2278,7 +2278,7 @@ province;red;green;blue;x;x
 2960;61;201;123;Zbojno;x
 2961;241;249;20;Szczutowo;x
 2962;208;213;71;Ostroda;x
-2963;85;232;161;City of Grudziadz;x
+2963;85;232;161;Centrum - Grudziadz;x
 2964;75;169;217;Branice;x
 2965;52;253;37;Kornowac;x
 2966;243;1;69;Kulesze Koscielne;x
@@ -2289,7 +2289,7 @@ province;red;green;blue;x;x
 2972;249;240;1;Koronowo;x
 2973;255;162;53;Fabianki;x
 2974;248;19;19;City of Chelmno;x
-2975;42;231;108;City of Wloclawek;x
+2975;42;231;108;Centrum - Wloclawek;x
 2976;205;23;23;Chociwel;x
 2977;248;231;136;Kolbaskowo;x
 2979;192;219;10;Banie;x
@@ -2638,7 +2638,7 @@ province;red;green;blue;x;x
 4332;112;120;148;Bielawy;x
 4334;224;12;72;Kiernozia;x
 4335;236;112;20;Wiskitki;x
-4336;215;155;85;Godzinaow;x
+4336;215;155;85;Godzianow;x
 4337;73;158;166;City of Sieradz;x
 4338;201;70;30;Dobron;x
 4339;208;71;200;Burzenin;x
@@ -2725,7 +2725,7 @@ province;red;green;blue;x;x
 4453;219;144;64;City of Przeworsk;x
 4454;181;86;133;Markowa;x
 4455;185;186;60;Tryncza;x
-4456;159;60;34;Lanut;x
+4456;159;60;34;Lancut;x
 4457;145;120;59;Chmielnik;x
 4458;83;131;220;Jawornik Polski;x
 4459;175;215;67;Batorz;x
@@ -3183,7 +3183,7 @@ province;red;green;blue;x;x
 3268;219;32;78;Blonie;
 3184;207;140;133;Lotnisko;
 3124;207;110;73;Glinki;
-2991;243;21;172;Bydgoszcz Centrum;x
+2991;243;21;172;Bydgoszcz - Centrum;x
 3103;207;110;52;Piaski;
 3090;207;110;39;Starotorunskie Przedmiescie;
 3049;207;110;248;Podgórz;
@@ -3783,7 +3783,6 @@ province;red;green;blue;x;x
 1237;185;70;173;Wieprz;x
 1238;57;172;32;Wieprz;x
 1245;186;86;173;Wieprz;x
-4653;117;192;171;Pilica;x
 4652;140;69;200;Pilica;
 4644;121;69;225;Pilica;x
 1734;102;203;253;Pilica;x
@@ -4055,3 +4054,65 @@ province;red;green;blue;x;x
 4671;55;94;80;Górne;x
 4670;1;153;63;Gładyszewo;x
 4669;137;60;168;Koszyce;x
+4653;117;192;171;Podrochale;x
+4577;202;14;175;Julinek;x
+4554;146;111;28;Lugo;x
+4519;68;108;100;Zabrówek;x
+4518;61;145;123;Debły;x
+4517;52;169;90;Rozwadów;x
+4515;86;55;145;Huta Stalowa Wola;x
+4514;219;157;116;Wrótnia Góra;x
+4490;174;36;95;Wrotna Góra;x
+4489;171;132;97;Nowe Parcele;x
+4488;123;80;42;Osiedle Bajkowe;x
+4487;148;81;21;Stare Kamienice;x
+4486;171;177;19;Prusin;x
+4485;193;52;118;Wenecja;x
+939;143;114;79;Rega;x
+1443;66;201;251;Prosna;x
+1517;12;252;252;Prosna;x
+1689;56;253;253;Prosna;x
+1716;83;223;253;Prosna;x
+1919;36;0;236;Prosna;x
+2135;118;130;80;Prosna;x
+2143;190;53;53;Prosna;x
+2181;93;216;64;Prosna;x
+2748;80;32;128;Prosna;x
+3069;207;110;18;Prosna;
+3070;207;110;19;Prosna;
+3071;207;110;20;Prosna;
+3072;207;110;21;Prosna;
+3074;207;110;23;Prosna;
+3075;207;110;24;Prosna;
+3076;207;110;25;Prosna;
+3077;207;110;26;Prosna;
+3078;207;110;27;Prosna;
+3079;207;110;28;Prosna;
+3080;207;110;29;Prosna;
+3081;207;110;30;Prosna;
+3082;207;110;31;Prosna;
+3084;207;110;33;Prosna;
+3085;207;110;34;Prosna;
+3086;207;110;35;Drawa;
+3087;207;110;36;Drawa;
+3088;207;110;37;Drawa;
+3092;207;110;41;Drawa;
+3093;207;110;42;Drawa;
+3094;207;110;43;Drawa;
+3096;207;110;45;Drawa;
+3097;207;110;46;Drawa;
+3101;207;110;50;Drawa;
+3102;207;110;51;Drawa;
+3104;207;110;53;Drawa;
+3107;207;110;56;Drawa;
+3108;207;110;57;Drawa;
+3109;207;110;58;Drawa;
+3110;207;110;59;Drawa;
+3111;207;110;60;Drawa;
+3112;207;110;61;Drawa;
+3115;207;110;64;Jezioro Ślesińskie;
+3116;207;110;65;Kanał Ślesiński;
+3412;219;32;222;Jezioro Gopło;
+3633;100;10;133;Jezioro Gopło;
+3117;207;110;66;Pilica;
+3999;100;13;199;Wieprz;

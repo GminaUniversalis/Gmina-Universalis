@@ -47,3 +47,316 @@ estate_banks_hire_advisor = {
 	}
 	}
 }
+estate_banks_pay_off_loans = {
+	can_select = {
+		num_of_loans = 5
+		is_bankrupt = no
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 15
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 20
+		}
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_banks
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_banks
+			}
+		}
+		else = {
+			NOT = { num_of_loans = 1 }
+			hidden_trigger = {
+				is_bankrupt = no
+			}
+		}
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_banks
+		}
+		add_estate_loyalty = {
+			estate = estate_banks
+			loyalty = 10
+		}
+		generate_scaled_advisor_of_type_and_religion_effect = {
+			type = master_of_mint
+			religion = root
+			discount = yes
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_banks
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+estate_banks_restore_currency = {
+	can_select = {
+		inflation = 10
+		NOT = {
+			inflation = 30
+		}
+		NOT = { has_country_modifier = boom_economy }
+	}
+	selection_weight = {
+		factor = 2.5
+		modifier = {
+			factor = 2
+			inflation = 20
+		}
+	}
+	fail_if = {
+		inflation = 35
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_banks
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_banks
+			}
+		}
+		else = {
+			NOT = { inflation = 5 }
+		}
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_banks
+		}
+		add_estate_loyalty = {
+			estate = estate_banks
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = boom_economy
+			duration = 5475
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_banks
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+estate_banks_get_cash = {
+	can_select = {
+		NOT = { years_of_income = 0.5 }
+		NOT = { num_of_loans = 1 }
+		is_at_war = no
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_banks
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_banks
+			}
+		}
+		else = {
+			years_of_income = 2.5
+			NOT = { num_of_loans = 1 }
+		}
+	}
+	fail_if = {
+		num_of_loans = 1
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_banks
+		}
+		if = {
+			limit = {
+				inflation = 5
+			}
+			add_estate_loyalty = {
+				estate = estate_banks
+				loyalty = 10
+			}
+			generate_scaled_advisor_of_type_and_religion_effect = {
+				type = master_of_mint
+				religion = root
+				discount = yes
+			}
+		}
+		else = {
+			add_estate_loyalty = {
+				estate = estate_banks
+				loyalty = 10
+			}
+			add_country_modifier = {
+				name = growing_economy
+				duration = 5475
+			}
+		}
+	}
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_banks
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+estate_banks_reduce_corruption = {
+	can_select = {
+		corruption = 5
+		is_bankrupt = no
+		NOT = { has_country_modifier = freedom_from_corruption }
+	}
+	selection_weight = {
+		factor = 1.5
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			corruption = 10
+		}
+		modifier = {
+			factor = 1.5
+			corruption = 15
+		}
+		modifier = {
+			factor = 1.5
+			corruption = 20
+		}
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_banks_reduce_corruption_var
+			value = 0
+		}
+		if = {
+			limit = {
+				NOT = {
+					corruption = 10
+				}
+			}
+			set_variable = {
+				which = estate_banks_reduce_corruption_var
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					corruption = 15
+				}
+			}
+			set_variable = {
+				which = estate_banks_reduce_corruption_var
+				value = 2
+			}
+		}
+		else = {
+			set_variable = {
+				which = estate_banks_reduce_corruption_var
+				value = 3
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_banks
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_banks
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_banks_reduce_corruption_var
+						value = 3
+					}
+				}
+				NOT = { corruption = 10 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_banks_reduce_corruption_var
+						value = 2
+					}
+				}
+				NOT = { corruption = 5 }
+			}
+			else = {
+				NOT = { corruption = 1 }
+			}
+		}
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_banks
+		}
+		add_estate_loyalty = {
+			estate = estate_banks
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = freedom_from_corruption
+			duration = 5475
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_banks
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}

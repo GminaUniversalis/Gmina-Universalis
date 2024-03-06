@@ -164,6 +164,9 @@ estate_retirees_13 = {
 	land_share = 5
 	max_absolutism = -5
 	loyalty = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 		add_years_of_income = -0.1
 	}
@@ -180,6 +183,9 @@ estate_retirees_obietnice = {
 	max_absolutism = -5
 	loyalty = 0.1
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 	
 	}
@@ -196,6 +202,9 @@ estate_retirees_klub_seniora = {
 	max_absolutism = -5
 	loyalty = 0.15
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 		if = {
 			limit = { prestige = 50 }
@@ -236,6 +245,9 @@ estate_retirees_rada ={
 	max_absolutism = -5
 	loyalty = 0.15
 	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 	if = {
 		limit = { legitimacy = 50 }
@@ -270,6 +282,9 @@ estate_retirees_wiek = {
 	max_absolutism = 0
 	loyalty = -0.1
 	influence = -0.15
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {		
 	}
 	penalties = {
@@ -289,6 +304,9 @@ estate_retirees_at ={
 	max_absolutism = -5
 	loyalty = 0
 	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}	
 	on_granted = {
 	}
 	penalties = {
@@ -305,6 +323,9 @@ estate_retirees_ac ={
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.15
+	ai_will_do = {
+		factor = 5
+	}	
 	on_granted = {
 	}
 	penalties = {
@@ -385,5 +406,8 @@ estate_retirees_scl ={
 	}
 	benefits ={
 	}
+	ai_will_do = {
+		factor = 1
+	}	
 }
 

@@ -4,7 +4,7 @@ religion = communism_pzpr
 hre = yes
 base_tax = 1
 base_production = 1
-trade_goods = gu_metalworking
+trade_goods = gu_horses
 base_manpower = 1
 capital = "Jaworzno - Ciezkowice"
 is_city = yes
@@ -15,3 +15,4 @@ controller = L34
 add_core = L06
 discovered_by = ottoman
 add_core = L34
+

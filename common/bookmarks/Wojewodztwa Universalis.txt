@@ -1,0 +1,35 @@
+bookmark =
+{
+	name = "wojewodztwa_bookmark"
+	desc = "wojewodztwa_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 257
+	
+	country = A27 #Wroclaw
+	country = B20 #Bydgoszcz
+	country = B21 #Torun
+	country = U21 #Lublin
+	country = W14 #Gorzow Wielkopolski
+	country = W11 #Zielona Gora
+	country = Q22 #Lodz
+	country = X20 #Krakow
+	country = G12 #Warszawa
+	country = H20 #Opole
+	country = I22 #Rzeszow
+	country = J14 #Bialystok
+	country = Y19 #Gdansk
+	country = L14 #Katowice
+	country = M14 #Kielce
+	country = N21 #Olsztyn
+	country = R32 #Poznan
+	country = P17 #Szczecin
+	
+	easy_country = A27 #Wroclaw
+	easy_country = Q22 #Lodz
+	easy_country = X20 #Krakow
+	easy_country = G12 #Warszawa
+	easy_country = Y19 #Gdansk
+	easy_country = R32 #Poznan
+	easy_country = P17 #Szczecin
+}

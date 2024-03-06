@@ -1,0 +1,24 @@
+bookmark =
+{
+	name = "Centrum_bookmark"
+	desc = "Centrum_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 4799
+	
+	country = Q23 #Piotrkow Trybunalski
+	country = I24 #Tarnobrzeg
+	country = Q09 #Sieradz
+	country = Q12 #Belchatow
+	country = MO4 #Kielecki
+	country = M03 #Konskie
+	country = M01 #Jedrzejow
+	country = Q24 #Skierniewice
+	country = Q07 #Kutno
+ 
+	
+	easy_country = Q22 #Lodz 	
+	easy_country = M14 #Kielce
+	easy_country = L37 #Czestochowa
+	easy_country = G39 #Radom
+}

@@ -1,15 +1,16 @@
 #Nowy Sacz Centrum
 culture = lachska
 religion = communism_zsl
-base_tax = 3
-base_production = 4
-trade_goods = unknown
-base_manpower = 2
+base_tax = 6
+base_production = 6
+trade_goods = gu_consumer_goods
+base_manpower = 3
 capital = "Nowy Sacz - Centrum"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = X05
-controller = X05
-add_core = X05
+owner = X22
+controller = X22
 discovered_by = ottoman
+center_of_trade = 2
+add_core = X22

@@ -13,3 +13,7 @@ owner = W09
 controller = W09
 add_core = W09
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = border_crossing_modifier
+	duration = -1
+}

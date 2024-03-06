@@ -4,7 +4,7 @@ religion = communism_sd
 hre = yes
 base_tax = 2
 base_production = 3
-trade_goods = iron
+trade_goods = unknown
 base_manpower = 2
 capital = "Bielsko - Centrum"
 is_city = yes
@@ -14,4 +14,5 @@ owner = L40
 controller = L40
 discovered_by = ottoman
 add_core = L40
-center_of_trade = 2
+
+

@@ -11,13 +11,13 @@ on_startup = {
 	}
 	events = {
 		muslim_school_events.20 #Pick School
-		flavor_got.1 #Event for Gotland to select their mission tree
-		flavor_mng.42 #Event for the starting situation of the Ming 
+		#flavor_got.1 #Event for Gotland to select their mission tree
+		#flavor_mng.42 #Event for the starting situation of the Ming 
 		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
-		flavor_mos.1 #Event regarding the Tatar Yoke
-		flavor_fra.206 # Setup the general for missions
-		flavor_geo.1 # Disaster info
-		flavor_mam.111 # Mamluks-Syria relations
+		#flavor_mos.1 #Event regarding the Tatar Yoke
+		#flavor_fra.206 # Setup the general for missions
+		#flavor_geo.1 # Disaster info
+		#flavor_mam.111 # Mamluks-Syria relations
 	}
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes

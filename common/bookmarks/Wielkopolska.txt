@@ -1,0 +1,23 @@
+bookmark =
+{
+	name = "Wielkopolska_bookmark"
+	desc = "Wielkopolska_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 501
+	
+	country = W15 #Kostrzy nad Odra
+	country = W14 #Gorzow Wielkopolski
+	country = R33 #Kalisz
+	country = R34 #Konin
+	country = R28 #Pila
+	country = R25 #Gniezno
+	country = R04 #Krotoszyn
+	country = R05 #Ostrow
+ 
+	
+	easy_country = R32 #Poznan
+	easy_country = R23 #Poznanski
+	easy_country = W11 #Zielona Gora
+	easy_country = R35 #Leszno
+}

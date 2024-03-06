@@ -1,0 +1,26 @@
+bookmark =
+{
+	name = "Kujawy_bookmark"
+	desc = "Kujawy_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 262
+	
+	country = B13 #Chelminski
+	country = R28 #Pilski
+	country = R26 #Wagrowiecki
+	country = N02 #Ilawa
+	country = B07 #Inowroclaw
+	country = B19 #Znin
+	country = Y06 #Tczew
+	country = B03 #Sepolno
+	country = B14 #Brodnicki
+	country = B04 #Nakielski
+ 
+	
+	easy_country = B20 #Bydgoszcz
+	easy_country = B21 #Torun
+	easy_country = B22 #Grudziadz
+	easy_country = B23 #Wloclawek	
+	easy_country = X05 #Nowy Sacz
+}

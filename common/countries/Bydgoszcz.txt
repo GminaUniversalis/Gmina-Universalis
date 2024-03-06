@@ -4,8 +4,7 @@ color = {
 	128 64 64 
 }
 revolutionary_colors = { 0 10 15 }
-historical_idea_groups = { 
-}
+
 historical_units = { 
 	bardiche_infantry
 	eastern_knights

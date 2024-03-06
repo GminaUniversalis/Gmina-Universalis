@@ -2,8 +2,7 @@
 graphical_culture = westerngfx
 color = { 198 55 2 }
 revolutionary_colors = { 3 3 8 }
-historical_idea_groups = { 
-}
+
 historical_units = { 
 	bardiche_infantry
 	eastern_knights

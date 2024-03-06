@@ -4,16 +4,20 @@ bookmark =
 	desc = "Pomorze_bookmark_desc"
 	date = 1444.11.11
 	
-	center = 1
-	default = yes
+	center = 43
 	
-	country = P17 #Szczecin
-	country = P15 #Swinioujscie
-	country = Y19 #Gdansk
-	country = Y09 #Gdanski
-
+	country = P12 #Puck
+	country = Y16 #Malbork
+	country = P15 #Swinoujscie
+	country = Y21 #Gdynia
+	country = Y06 #Tczew
+	country = Y22 #Slupsk
+	country = P21 #Koszalin
+	country = Y03 #Kartuski
+	country = Y08 #Kwidzyn
+ 
 	
-	easy_country = Y02 #Slupsk
+	easy_country = Y19 #Gdansk
 	easy_country = P03 #Szczecinecki
-	easy_country = A27 #Wroc³a
+	easy_country = P17 #Szczecin
 }

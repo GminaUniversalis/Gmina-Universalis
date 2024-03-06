@@ -1,0 +1,21 @@
+bookmark =
+{
+	name = "Pojezierza_bookmark"
+	desc = "Pojezierza_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 910
+	
+	country = N14 #Gizycko
+	country = N08 #Mragow
+	country = N10 #Elk
+	country = N13 #Goldap
+	country = J10 #Sejna
+	country = N20 #Ostroda
+ 
+	
+	easy_country = N22 #Elblag
+	easy_country = N21 #Olsztyn
+	easy_country = N23 #Suwalki
+	easy_country = N07 #Szczytno
+}

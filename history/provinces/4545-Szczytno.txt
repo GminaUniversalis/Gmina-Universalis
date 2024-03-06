@@ -13,3 +13,7 @@ owner = N07
 controller = N07
 add_core = N07
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = airport_modifier
+	duration = -1
+}

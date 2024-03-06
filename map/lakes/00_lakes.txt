@@ -1,34 +1,336 @@
-# Lake Titicaca
+#Jezioro Hańcza
 lake = {
-	triangle_strip = {}
-	height = 38
-	#height = 8
+	triangle_strip = {
+		3806 1864
+		3813 1860
+		3803 1855
+		3809 1848
+		3802 1845
+		3806 1845
+	}
+	height = 22
 }
 
-#Lake Poopo
+#Jezioro Wigry
 lake = {
-	triangle_strip = {}
-	height = 37
-	#height = 7
+	triangle_strip = {
+		3864 1794
+		3872 1794
+		3863 1778
+		3870 1782
+		3872 1775
+		3877 1781
+		3885 1768
+		3874 1769
+		3871 1781
+		3870 1764
+		3864 1774
+		3856 1764
+		3850 1772
+		3846 1765
+		3845 1772
+	}
+	height = 20
 }
 
-#Great Salt Lake
+#Jezioro Dargin
 lake = {
-	triangle_strip = {}
-	height = 26
-	#height = 6
+	triangle_strip = {
+		3551 1787
+		3570 1796
+		3556 1769
+		3596 1802
+		3581 1760	
+		3602 1762
+}
+	height = 20
 }
 
-#Siling Lake
+#Jezioro Gizycko
 lake = {
-	triangle_strip = {}
-	height = 43
-	#height = 3
+	triangle_strip = {
+		3589 1758
+		3603 1762
+		3591 1747
+		3612 1744
+		3587 1737		
+		3601 1735
+		3578 1716
+		3595 1716
+
+}
+	height = 20
 }
 
-#Qinghai Lake
+#Jezioro Sniardwy
 lake = {
-	triangle_strip = {}
-	height = 33
-	#height = 3
+	triangle_strip = {
+		3553 1732
+		3560 1724
+		3545 1725
+		3545 1717
+		3538 1717
+		3544 1714
+		3539 1710
+		3546 1710
+		3545 1699
+		3555 1701
+		3553 1691
+		3561 1689
+		3557 1681
+		3571 1693
+		3564 1671
+		3589 1682
+		3572 1660
+		3612 1684
+		3579 1650
+		3624 1683
+		3587 1643
+		3616 1660
+		3597 1639
+		3627 1659
+		3605 1634
+		3631 1652
+		3609 1629
+		3640 1644
+		3630 1630
+		3646 1638
+		3646 1630
+}
+	height = 20
+}
+#Jeziora Beldany
+lake = {
+	triangle_strip = {
+	3564 1671
+	3569 1664
+	3555 1658
+	3564 1655
+	3559 1648
+	3565 1640
+	3558 1631
+	3572 1637
+	3563 1627
+	3575 1627
+	3560 1624
+	3562 1620
+	3551 1623
+	3557 1615
+	3551 1612
+	3560 1609
+	3548 1603
+	3572 1602
+	3552 1598
+	3570 1598
+	3564 1590
+	3576 1596
+	3582 1590
+	3579 1602
+	3586 1606
+	3583 1612
+	3592 1609
+	3590 1616
+	3595 1612
+	3598 1622
+	3598 1612
+	3604 1614
+	3594 1605
+	3607 1606
+	3594 1595
+	3607 1595
+}
+	height = 20
+}
+#Jeziora Ukiel
+lake = {
+	triangle_strip = {
+	3310 1666
+	3323 1678
+	3329 1653
+	3335 1661
+}
+	height = 20
+}
+#Jezioro Rudnickie
+lake = {
+	triangle_strip = {
+		2983 1539
+		2971 1543
+		2978 1550
+		2986 1544
+}
+	height = 19
+}
+#Jezioro Wierzchowo
+lake = {
+	triangle_strip = {
+		2540 1705
+		2557 1705		
+		2540 1694
+		2557 1694
+}
+	height = 20
+}
+#Jezioro Wielimie
+lake = {
+	triangle_strip = {
+		2550 1675
+		2577 1675		
+		2554 1650
+		2579 1656
+}
+	height = 20
+}
+#Jeziora Szczecinek
+lake = {
+	triangle_strip = {
+		2541 1632
+		2541 1657
+		2567 1634
+}
+	height = 20
+}
+#Goplo
+lake = {
+	triangle_strip = {
+		2889 1276
+		2906 1272
+		2884 1232
+		2899 1230
+}
+	height = 19
+}
+#Jeziora Konin
+lake = {
+	triangle_strip = {
+	2891 1190
+	2897 1183
+	2881 1169
+	2886 1155
+	2858 1149
+	2896 1149
+	2860 1141
+	2889 1139
+	2878 1134
+	2884 1134
+}
+	height = 19
+}
+#Jeziorsko
+lake = {
+	triangle_strip = {
+		2963 1001
+		2980 998
+		2946 950
+		2968 947
+}
+	height = 20
+}
+#Zalew Sulejowski
+lake = {
+	triangle_strip = {
+	3248 866
+	3256 857
+	3235 856
+	3240 843
+	3225 846
+	3226 834
+	3212 838
+	3220 829
+	3212 825
+	3219 823
+}
+	height = 21	
+}
+#Zalew Włocławski
+lake = {
+	triangle_strip = {
+		3055 1267
+		3061 1277
+		3081 1261
+		3103 1267
+		3126 1248
+		3158 1244
+		3168 1231
+		3172 1240
+}
+	height = 19
+}
+#Zalew Zemborzycki
+lake = {
+	triangle_strip = {
+		3801 785
+		3810 781
+		3795 772
+		3802 769
+}
+	height = 21
+}#Pogoria
+lake = {
+	triangle_strip = {
+		3068 487
+		3079 486
+		3068 462
+		3088 462
+}
+	height = 22
+}
+#Jezioro Goczałkowickie
+lake = {
+	triangle_strip = {
+		2983 332
+		3015 332		
+		2983 310
+		3015 310
+}
+	height = 22
+}
+#Jezioro Nyskie
+lake = {
+	triangle_strip = {
+		2657 516
+		2657 503
+		2633 516
+		2633 503
+}
+	height = 21
+}
+#Jezioro Otmuchowskie
+lake = {
+	triangle_strip = {
+		2622 523
+		2622 506
+		2601 523
+		2601 506
+}
+	height = 21
+}
+#Zalew Pączkowski
+lake = {
+	triangle_strip = {
+		2588 526
+		2588 515
+		2570 526
+		2570 515
+}
+	height = 22
+}
+#Jezioro Turawskie
+lake = {
+	triangle_strip = {
+		2851 608
+		2853 592
+		2826 608
+		2826 592
+}
+	height = 21
+}
+#Jezioro Tarnobrzeskie
+lake = {
+	triangle_strip = {
+		3617 557
+		3627 543
+		3608 538
+}
+	height = 20
 }

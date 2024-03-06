@@ -1,9 +1,9 @@
 #Opole Bierkowice
 culture = opolska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_tax = 2
+base_production = 3
+trade_goods = gu_fruits
 base_manpower = 1
 capital = "Opole - Bierkowice"
 is_city = yes
@@ -14,3 +14,4 @@ controller = H20
 hre = yes
 discovered_by = ottoman
 add_core = H20
+latent_trade_goods = { gu_processed_food }

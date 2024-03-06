@@ -3,7 +3,7 @@ estate_burghers = {
 
 	# If true, country will get estate
 	trigger = {	
-always = yes
+always = no
 		NOT = { has_government_attribute = disables_estate_burghers }
 		NOT = { has_disabled_estate = { estate = estate_burghers } }
 		OR = {

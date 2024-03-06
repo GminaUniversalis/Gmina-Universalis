@@ -1,0 +1,20 @@
+bookmark =
+{
+	name = "Gorale_bookmark"
+	desc = "Gorale_bookmark_desc"
+	date = 1444.11.11
+	
+	center = 1180
+		
+	country = X01 #Zakopane
+	country = X16 #Nowy Targ
+	country = L20 #Zywiecki
+	country = X18 #Suski
+	country = I18 #Bieszczadzki
+	country = I20 #Krosno
+ 
+	
+	easy_country = X16 #Nowy Targ
+	easy_country = L20 #Zywiec
+	easy_country = I20 #Krosno
+}

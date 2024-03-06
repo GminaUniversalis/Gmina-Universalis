@@ -1,15 +1,15 @@
 #Krosno Bialobrzegi
 culture = podgorzanska
 religion = communism_zsl
-base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_tax = 2
+base_production = 3
+trade_goods = glass
 base_manpower = 1
 capital = "Krosno - Bialobrzegi"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = I20
-controller = I20
-add_core = I20
+owner = I25
+controller = I25
 discovered_by = ottoman
+add_core = I25

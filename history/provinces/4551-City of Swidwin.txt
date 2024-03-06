@@ -9,8 +9,9 @@ capital = "City of Swidwin"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-center_of_trade = 2
+
 owner = P07
 controller = P07
 add_core = P07
 discovered_by = ottoman
+center_of_trade = 2

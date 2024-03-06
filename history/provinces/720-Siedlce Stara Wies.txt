@@ -1,10 +1,10 @@
 #Siedlce Stara Wies
 culture = podlaska
 religion = communism_pzpr
-base_tax = 3
-base_production = 3
-trade_goods = unknown
-base_manpower = 2
+base_tax = 4
+base_production = 8
+trade_goods = gu_metalworking
+base_manpower = 3
 capital = "Siedlce - Stara Wies"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = G41
 controller = G41
 discovered_by = ottoman
 add_core = G41
+latent_trade_goods = { gu_vehicles }

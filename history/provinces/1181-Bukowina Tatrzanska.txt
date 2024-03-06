@@ -13,3 +13,7 @@ owner = X01
 controller = X01
 add_core = X01
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = border_crossing_modifier
+	duration = -1
+}

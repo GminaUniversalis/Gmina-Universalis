@@ -128,7 +128,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "++"
 				buttonFont = "Main_14_black"
-				shortcut = "f"
+				shortcut = "t"
 		}
 
 		guiButtonType = 
@@ -426,7 +426,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "Mapmode"
 			buttonFont = "vic_18"
-			shortcut = "t"
+			shortcut = "b"
 		}
 	}
 

@@ -1,9 +1,9 @@
 #Opole Polwies
 culture = opolska
 religion = communism_pzpr
-base_tax = 1
-base_production = 1
-trade_goods = unknown
+base_tax = 2
+base_production = 2
+trade_goods = cloth
 base_manpower = 1
 capital = "Opole - Polwies"
 is_city = yes
@@ -14,3 +14,4 @@ controller = H20
 hre = yes
 discovered_by = ottoman
 add_core = H20
+

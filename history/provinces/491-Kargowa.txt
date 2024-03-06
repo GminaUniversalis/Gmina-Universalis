@@ -13,3 +13,7 @@ owner = W04
 controller = W04
 add_core = W04
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = isthmus_modifier
+	duration = -1
+}

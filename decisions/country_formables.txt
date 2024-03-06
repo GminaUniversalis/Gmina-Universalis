@@ -1,0 +1,359 @@
+country_decision = {
+	poland_formation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { 
+				OR = { 
+					has_country_flag = formed_pol_flag
+					has_country_flag = formed_silesia_flag
+					has_country_flag = formed_germany_flag
+					# has_country_flag = formed_lubuskie_flag
+					# has_country_flag = formed_lodzkie_flag
+					# has_country_flag = formed_malopolskie_flag
+					# has_country_flag = formed_mazowieckie_flag
+					# has_country_flag = formed_opolskie_flag
+					# has_country_flag = formed_podkarpackie_flag
+					# has_country_flag = formed_podlaskie_flag
+					# has_country_flag = formed_pomorskie_flag
+					# has_country_flag = formed_slaskie_flag
+					# has_country_flag = formed_swietokrzyskie_flag
+					# has_country_flag = formed_warminsko_mazurskie_flag
+					# has_country_flag = formed_wielkopolskie_flag
+					# has_country_flag = formed_zachodniopomorskie_flag
+				}
+
+				has_reform = celestial_empire 
+				exists = POL
+			}
+		}
+
+		provinces_to_highlight = {
+			continent = europe
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			NOT = { exists = POL }
+			adm_tech = 20
+
+			num_of_owned_provinces_with = {
+				custom_trigger_tooltip = {
+					tooltip = poland_formable_decision_check_tooltip
+					poland_formable_decision_check = yes
+				}
+				value = 1500
+			}
+			is_at_war = no
+		}
+		effect = {
+			257 = {
+				move_capital_effect = yes
+			}
+			change_tag = POL
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			custom_tooltip = polish_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = ROOT
+					}
+					change_culture = polish
+				}
+			}
+			change_primary_culture = polish
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_dlc = "Emperor" }
+						NOT = { hre_size = 1 }
+					}
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = POL_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+
+			europe = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = POL
+			}
+
+			set_country_flag = formed_poland_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 1000
+	}
+	silesia_formation = {
+		major = yes
+		potential = {
+			primary_culture = slonska
+			normal_or_historical_nations = yes
+			NOT = { 
+				OR = { 
+					has_country_flag = formed_pol_flag
+					has_country_flag = formed_silesia_flag
+					has_country_flag = formed_germany_flag
+					# has_country_flag = formed_lubuskie_flag
+					# has_country_flag = formed_lodzkie_flag
+					# has_country_flag = formed_malopolskie_flag
+					# has_country_flag = formed_mazowieckie_flag
+					# has_country_flag = formed_opolskie_flag
+					# has_country_flag = formed_podkarpackie_flag
+					# has_country_flag = formed_podlaskie_flag
+					# has_country_flag = formed_pomorskie_flag
+					# has_country_flag = formed_slaskie_flag
+					# has_country_flag = formed_swietokrzyskie_flag
+					# has_country_flag = formed_warminsko_mazurskie_flag
+					# has_country_flag = formed_wielkopolskie_flag
+					# has_country_flag = formed_zachodniopomorskie_flag
+				}
+
+				has_reform = celestial_empire 
+				exists = SIL
+			}
+		}
+
+		provinces_to_highlight = {
+			region = dolnoslaskie_region
+			region = opolskie_region
+			region = slaskie_region
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			NOT = { exists = SIL }
+			adm_tech = 20
+
+			num_of_owned_provinces_with = {
+				region = dolnoslaskie_region
+				region = opolskie_region
+				region = slaskie_region
+				value = 1000
+			}
+			is_at_war = no
+		}
+		effect = {
+			# 257 = {
+			# 	move_capital_effect = yes
+			# }
+			change_tag = SIL
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			custom_tooltip = slonska_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = ROOT
+					}
+					change_culture = slonska
+				}
+			}
+			change_primary_culture = slonska
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_dlc = "Emperor" }
+						NOT = { hre_size = 1 }
+					}
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = SIL_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+
+
+			if = {
+				limit = {
+					region = dolnoslaskie_region
+					region = opolskie_region
+					region = slaskie_region
+
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SIL
+			}
+
+		
+			set_country_flag = formed_silesia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 1000
+	}
+	germany_formation = {
+		major = yes
+		potential = {
+			primary_culture = niemiecka
+			normal_or_historical_nations = yes
+			NOT = { 
+				OR = { 
+					has_country_flag = formed_pol_flag
+					has_country_flag = formed_silesia_flag
+					has_country_flag = formed_germany_flag
+					# has_country_flag = formed_lubuskie_flag
+					# has_country_flag = formed_lodzkie_flag
+					# has_country_flag = formed_malopolskie_flag
+					# has_country_flag = formed_mazowieckie_flag
+					# has_country_flag = formed_opolskie_flag
+					# has_country_flag = formed_podkarpackie_flag
+					# has_country_flag = formed_podlaskie_flag
+					# has_country_flag = formed_pomorskie_flag
+					# has_country_flag = formed_slaskie_flag
+					# has_country_flag = formed_swietokrzyskie_flag
+					# has_country_flag = formed_warminsko_mazurskie_flag
+					# has_country_flag = formed_wielkopolskie_flag
+					# has_country_flag = formed_zachodniopomorskie_flag
+				}
+
+				has_reform = celestial_empire 
+				exists = GER
+			}
+		}
+
+		provinces_to_highlight = {
+			region = dolnoslaskie_region
+			region = opolskie_region
+			region = slaskie_region
+			region = lubuskie_region
+			region = zachodnio_pomorskie_region
+			region = warminsko_mazurskie_region
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			NOT = { exists = GER }
+			adm_tech = 20
+
+			num_of_owned_provinces_with = {
+				OR = {
+					AND = {
+						region = dolnoslaskie_region
+						region = opolskie_region
+						region = slaskie_region
+					}
+					AND = {
+						region = lubuskie_region
+						region = zachodnio_pomorskie_region
+						region = warminsko_mazurskie_region
+					}
+				}
+
+				value = 1000
+			}
+			is_at_war = no
+		}
+		effect = {
+			# 257 = {
+			# 	move_capital_effect = yes
+			# }
+			change_tag = GER
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			custom_tooltip = slonska_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = ROOT
+					}
+					change_culture = niemiecka
+				}
+			}
+			change_primary_culture = niemiecka
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_dlc = "Emperor" }
+						NOT = { hre_size = 1 }
+					}
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = GER_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+
+
+			if = {
+				limit = {
+					region = dolnoslaskie_region
+					region = opolskie_region
+					region = slaskie_region
+					region = lubuskie_region
+					region = zachodnio_pomorskie_region
+					region = warminsko_mazurskie_region
+
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GER
+			}
+
+		
+			set_country_flag = formed_germany_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 1000
+	}
+
+}

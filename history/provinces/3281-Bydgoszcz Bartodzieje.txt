@@ -1,10 +1,10 @@
 #Bydgoszcz Bartodzieje
 culture = kujawska
 religion = communism_zsl
-base_tax = 3
-base_production = 3
-trade_goods = unknown
-base_manpower = 3
+base_tax = 4
+base_production = 5
+trade_goods = gu_consumer_goods
+base_manpower = 4
 capital = "Bartodzieje"
 is_city = yes
 discovered_by = western
@@ -13,3 +13,4 @@ owner = B20
 controller = B20
 discovered_by = ottoman
 add_core = B20
+latent_trade_goods = { gu_finances }

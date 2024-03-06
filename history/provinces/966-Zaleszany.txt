@@ -13,3 +13,7 @@ owner = I04
 controller = I04
 add_core = I04
 discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = airport_modifier
+	duration = -1
+}

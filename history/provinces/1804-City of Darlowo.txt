@@ -4,7 +4,7 @@ is_city = no
 discovered_by = western
 discovered_by = eastern
 trade_goods = gu_consumer_goods
-center_of_trade = 1
+
 owner = P01
 controller = P01
 add_core = P01
