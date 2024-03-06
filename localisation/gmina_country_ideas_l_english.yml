@@ -122,7 +122,7 @@
  Post-Soviet_Barracks:0 "Post-Soviet Barracks"
  Post-Soviet_Barracks_desc:0 "For three previous centuries, Szczecinek was a military town. Once, units of the Prussian army and later the German army were stationed here. In the 1930s, the construction of fortifications of the Pomeranian Wall and artillery units at S³owiaªska Street began. These barracks were occupied by the Russians after the war. The Soviet garrison only left Szczecinek in 1991."
  Citizen_Wlapko:0 "Citizen Wlapko"
- Citizen_Wlapko_desc:0 "Citizen Wlapko is the name of a 1.10 meter-high sculpture symbolizing a corrupt official.[1] The satirical figure shows a naked boy with the head of a mature man wearing glasses with a mustache and beard. His right forefinger pointing to his left palm indicates a request for money. There is a bomb next to his left foot, which symbolizes the explosive nature of the request, and the nudity symbolizes the whole, "naked" truth."
+ Citizen_Wlapko_desc:0 "Citizen Wlapko is the name of a 1.10 meter-high sculpture symbolizing a corrupt official. The satirical figure shows a naked boy with the head of a mature man wearing glasses with a mustache and beard. His right forefinger pointing to his left palm indicates a request for money. There is a bomb next to his left foot, which symbolizes the explosive nature of the request, and the nudity symbolizes the whole, 'naked' truth."
  P15_ideas:0 "Œwinioujscie ideas"
  P15_ideas_start:0 "Œwinioujscie traditions"
  P15_ideas_bonus:0 "Œwinioujscie ambition"
@@ -620,8 +620,7 @@
  Western_Connector:0 "Western Connector"
  Western_Connector_desc:0 "A well-connected region is conducive to trading, this patch of Lusatia is famous for its great roads"
  Armored_Cavalry:0 "Heart of the Armored Cavalry "
- Armored_Cavalry_desc:0 "The 11th Lubushian Armored Cavalry Division is stationed in ¯
-agaª. They're are proud of the region"
+ Armored_Cavalry_desc:0 "The 11th Lubushian Armored Cavalry Division is stationed in ¯agaª. They are proud of the region"
  Palaces_and_Princesses:0 "Palaces and Princesses"
  Palaces_and_Princesses_desc:0 "They shine and remind you of breathtaking stories. Some of their walls are decorated with devilish faces!"
  Command_has_its_reasons:0 "Command has its reasons"
