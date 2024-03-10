@@ -1,25 +1,17 @@
-estate_dhimmi_disaster = {
+estate_army_disaster = {
 	potential = {
-		has_estate = estate_dhimmi
+		has_estate = estate_army
 		estate_influence = {
-			estate = estate_dhimmi
+			estate = estate_army
 			influence = 80
 		}
-		OR = {
-			NOT = { has_country_flag = dhimmi_estate_triggered }
-			had_country_flag = {
-				flag = dhimmi_estate_triggered
-				days = 365
-			}
-		}
-		NOT = { has_disaster = tur_disaster_ottoman_power_struggle }
 	}
 
 
 	can_start = {
 		has_any_disaster = no
 		estate_influence = {
-			estate = estate_dhimmi
+			estate = estate_army
 			influence = 100
 		}
 		is_at_war = no
@@ -30,7 +22,7 @@ estate_dhimmi_disaster = {
 			has_any_disaster = yes
 			NOT = {
 				estate_influence = {
-					estate = estate_dhimmi
+					estate = estate_army
 					influence = 100
 				}		
 			}
@@ -43,7 +35,7 @@ estate_dhimmi_disaster = {
 			factor = 1
 			NOT = {
 				estate_influence = {
-					estate = estate_dhimmi
+					estate = estate_army
 					influence = 100
 				}
 			}
@@ -55,7 +47,7 @@ estate_dhimmi_disaster = {
 			factor = 0.5
 			NOT = {
 				estate_loyalty = {
-					estate = estate_dhimmi
+					estate = estate_army
 					loyalty = 60
 				}
 			}
@@ -65,7 +57,7 @@ estate_dhimmi_disaster = {
 			factor = 0.5
 			NOT = {
 				estate_loyalty = {
-					estate = estate_dhimmi
+					estate = estate_army
 					loyalty = 50
 				}
 			}
@@ -75,7 +67,7 @@ estate_dhimmi_disaster = {
 			factor = 0.5
 			NOT = {
 				estate_loyalty = {
-					estate = estate_dhimmi
+					estate = estate_army
 					loyalty = 40
 				}
 			}
@@ -85,7 +77,7 @@ estate_dhimmi_disaster = {
 			factor = 1
 			NOT = {
 				estate_loyalty = {
-					estate = estate_dhimmi
+					estate = estate_army
 					loyalty = 30
 				}
 			}
@@ -95,31 +87,34 @@ estate_dhimmi_disaster = {
 			factor = 1
 			NOT = {
 				estate_loyalty = {
-					estate = estate_dhimmi
+					estate = estate_army
 					loyalty = 20
 				}
 			}
 			is_at_war = no
-		}	
+		}
 	}
 	
 	can_end = {
-		always = yes
+		custom_trigger_tooltip = {
+			tooltip = EST_CRUSHED_ARMY
+			OR = {
+				NOT = { has_country_flag = estate_army_in_power }
+				# has_country_flag = estate_nobles_in_power
+				# has_country_flag = estate_church_in_power
+			}						
+		}
+	}
+	
+	modifier = {	
+		interest = 5
+		inflation_reduction = 0.5
+		production_efficiency = -0.2
+		trade_efficiency = -0.2
 	}
 
-	on_start = estate_disasters.9
-	
-	on_start_effect = {
-		if = {
-			limit = {
-				has_dlc = "The Cossacks"
-			}
-			custom_tooltip = estate_dhimmi_disaster_tooltip_cossacks
-		}
-		else = {
-			custom_tooltip = estate_dhimmi_disaster_tooltip
-		}
-	}
+	on_start = gmina_estate_disasters.5
+	on_end = gmina_estate_disasters.6
 	
 	on_monthly = {
 	}

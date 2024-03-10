@@ -1,7 +1,7 @@
 estate_priests = {
     icon = 1
     trigger = {
-		always = no
+		always = yes
 		NOT = { 
 			religion_group = communism_group
 		}
@@ -39,17 +39,15 @@ estate_priests = {
 	}
 	
     land_ownership_modifier = {
-		kler_loyalty_modifier = 0.3
+		priests_loyalty_modifier = 0.3
 	}
     base_influence = 10
     contributes_to_curia_treasury = no
     color = { 255 255 0 }
     privileges = {
-
-     }
-	 privileges = {
-
-	 }
+		estate_priests_land_rights
+		estate_priests_obietnice
+	}
      agendas = {
 		estate_priests_hire_advisor
      }

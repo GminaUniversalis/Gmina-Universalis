@@ -1,7 +1,7 @@
 estate_middle_class = {
     icon = 1
     trigger = {
-        always = no
+        always = yes
     }
     country_modifier_happy = {
 		production_efficiency = 0.4
@@ -40,10 +40,8 @@ estate_middle_class = {
     contributes_to_curia_treasury = no
     color = { 180 10 10 }
     privileges = {
-		estate_retirees_land_rights
-     }
-	 privileges = {
-		estate_retirees_13
+		estate_middle_class_land_rights
+		estate_middle_class_obietnice
 	 }
      agendas = {
 		estate_middle_class_hire_advisor

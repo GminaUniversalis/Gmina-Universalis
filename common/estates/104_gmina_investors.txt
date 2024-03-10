@@ -40,11 +40,9 @@ estate_investors = {
     base_influence = 10
     contributes_to_curia_treasury = no
     color = { 10 70 100 }
-    privileges = {
-
-     }
-	 privileges = {
-
+     privileges = {
+		estate_investors_land_rights
+		estate_investors_obietnice
 	 }
      agendas = {
 		estate_investors_hire_advisor

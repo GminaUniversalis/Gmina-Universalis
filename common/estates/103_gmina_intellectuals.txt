@@ -39,11 +39,9 @@ estate_intellectuals = {
     base_influence = 10
     contributes_to_curia_treasury = no
     color = { 25 50 75 }
-    privileges = {
-
-     }
-	 privileges = {
-
+     privileges = {
+		estate_intellectuals_land_rights
+		estate_intellectuals_obietnice
 	 }
      agendas = {
 		estate_intellectuals_hire_advisor

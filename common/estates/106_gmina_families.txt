@@ -1,7 +1,7 @@
 estate_families = {
     icon = 3
     trigger = {
-        always=yes
+        always = yes
     }
     country_modifier_happy = {
 		global_tax_modifier = 0.4
@@ -42,20 +42,10 @@ estate_families = {
     color = { 90 80 90 }
 	 privileges = {
 		estate_families_obietnice
-	 }
-	 privileges = {
 		estate_families_land_rights
-	 }
-	 privileges = {
 		estate_families_pp
-	 }
-	 privileges = {
 		estate_families_hfs
-	 }
-	 privileges = {
 		estate_families_ofm 
-	 }
-	 privileges = {
 		estate_families_nfm
 	 }
      agendas = {

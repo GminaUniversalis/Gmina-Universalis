@@ -1,8 +1,8 @@
 estate_ub = {
     icon = 4
     trigger = {
-		always = no
-			religion_group = communism_group
+		always = yes
+		religion_group = communism_group
     }
     country_modifier_happy = {
 		global_spy_defence = 0.4
@@ -30,11 +30,9 @@ estate_ub = {
     contributes_to_curia_treasury = no
     color = { 10 110 110 }
     privileges = {
-		estate_retirees_land_rights
-     }
-	 privileges = {
-		estate_retirees_13
-	 }
+		estate_ub_land_rights
+		estate_ub_obietnice
+	}
 	 agendas = {
 		estate_ub_hire_advisor
 	 }

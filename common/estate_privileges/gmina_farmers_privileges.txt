@@ -2,6 +2,7 @@ estate_farmers_obietnice = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -182,6 +183,7 @@ estate_farmers_datki = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -202,6 +204,7 @@ estate_farmers_odc = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = -0.05
 	influence = 0.1
 	ai_will_do = {

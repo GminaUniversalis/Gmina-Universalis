@@ -217,21 +217,21 @@ estate_investors = {
 estate_priests = {
 	modifier_definition = {
 		type = loyalty
-		key = kler_loyalty_modifier
+		key = priests_loyalty_modifier
 		trigger = {
 			has_estate = estate_priests
 		}
 	}
 	modifier_definition = {
 		type = influence
-		key = kler_influence_modifier
+		key = priests_influence_modifier
 		trigger = {
 			has_estate = estate_priests
 		}
 	}	
 	modifier_definition = {
 		type = privileges
-		key = kler_privilege_slots
+		key = priests_privilege_slots
 		trigger = {
 			has_estate = estate_priests
 	}	

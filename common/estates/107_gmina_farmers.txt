@@ -1,7 +1,14 @@
 estate_farmers = {
     icon = 4
     trigger = {
-        always=no
+        always = yes
+		OR = {
+			farmlands = 5
+			grasslands = 10
+		}
+		NOT = { 
+			religion_group = communism_group
+		}
     }
     country_modifier_happy = {
 		improve_relation_modifier = 0.2
@@ -36,26 +43,12 @@ estate_farmers = {
 
 	 privileges = {
 		estate_farmers_obietnice
-	 }
-	 privileges = {
 		estate_farmers_land_rights
-	 }
-	 privileges = {
 		estate_farmers_datki
-	 }
-	 privileges = {
 		estate_farmers_odc
-	 }
-	 privileges = {
 		estate_farmers_eud
-	 }
-	 privileges = {
 		estate_farmers_eua
-	 }
-	 privileges = {
 		estate_farmers_gmoa
-	 }
-	 privileges = {
 		estate_farmers_gmod
 	 }
      agendas = {

@@ -1,7 +1,7 @@
 estate_army = {
     icon = 5
     trigger = {
-        always=yes
+        always = yes
     }
     country_modifier_happy = {
 		army_tradition_decay = -0.01
@@ -35,26 +35,12 @@ estate_army = {
     color = { 40 100 50 }
 	 privileges = {
 		estate_army_old_doc
-	 }
-	 privileges = {
 		estate_army_new_doc
-	 }
-	 privileges = {
 		estate_army_wt
-	 }
-	 privileges = {
 		estate_army_fire
-	 }
-	 privileges = {
 		estate_army_blitz
-	 }
-	 privileges = {
 		estate_army_gp
-	 }
-	 privileges = {
 		estate_army_obietnice
-	 }
-	 privileges = {
 		estate_army_land_rights
 	 }
      agendas = {

@@ -1,0 +1,4 @@
+traitors_of_rwpg = {
+	opinion = -25
+	yearly_decay = 2.5
+}

@@ -1,7 +1,7 @@
 estate_retirees = {
     icon = 1
     trigger = {
-        always=yes
+        always = yes
     }
     country_modifier_happy = {
 		global_tax_modifier = 0.2
@@ -42,29 +42,13 @@ estate_retirees = {
     color = { 60 60 90 }
     privileges = {
 		estate_retirees_land_rights
-     }
-	 privileges = {
 		estate_retirees_13
-	 }
-	 privileges = {
 		estate_retirees_klub_seniora
-	 }
-	 privileges = {
 		estate_retirees_obietnice
-	 }
-	 privileges = {
 		estate_retirees_rada
-	 }
-	 privileges = {
 		estate_retirees_wiek
-	 }
-	 privileges = {
 		estate_retirees_at
-	 }
-	 privileges = {
 		estate_retirees_ac
-	 }
-	 privileges = {
 		estate_retirees_scl
 	 }
 	 agendas = {

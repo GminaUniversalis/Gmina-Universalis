@@ -1,7 +1,7 @@
 estate_miners = {
     icon = 2
     trigger = {
-		always = no
+		always = yes
 		gu_coal = 3
     }
     country_modifier_happy = {
@@ -36,11 +36,9 @@ estate_miners = {
     base_influence = 5
     contributes_to_curia_treasury = no
     color = { 200 250 150 }
-    privileges = {
-		
-     }
-	 privileges = {
-	
+     privileges = {
+		estate_miners_land_rights
+		estate_miners_obietnice
 	 }
      agendas = {
 		estate_miners_hire_advisor
