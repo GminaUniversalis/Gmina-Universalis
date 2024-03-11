@@ -1,25 +1,25 @@
-country_decision = {
+country_decisions = {
 	poland_formation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-
-			has_country_flag = formed_dolnoslaskie_flag
-			has_country_flag = formed_kujawsko_pomorskie_flag
-			has_country_flag = formed_lubelskie_flag
-			has_country_flag = formed_lubuskie_flag
-			has_country_flag = formed_lodzkie_flag
-			has_country_flag = formed_malopolskie_flag
-			has_country_flag = formed_mazowieckie_flag
-			has_country_flag = formed_opolskie_flag
-			has_country_flag = formed_podkarpackie_flag
-			has_country_flag = formed_podlaskie_flag
-			has_country_flag = formed_pomorskie_flag
-			has_country_flag = formed_slaskie_flag
-			has_country_flag = formed_swietokrzyskie_flag
-			has_country_flag = formed_warminsko_mazurskie_flag
-			has_country_flag = formed_wielkopolskie_flag
-			has_country_flag = formed_zachodniopomorskie_flag
+			OR = {
+				has_country_flag = formed_dolnoslaskie_flag
+				has_country_flag = formed_kujawsko_pomorskie_flag
+				has_country_flag = formed_lubelskie_flag
+				has_country_flag = formed_lubuskie_flag
+				has_country_flag = formed_lodzkie_flag
+				has_country_flag = formed_malopolskie_flag
+				has_country_flag = formed_mazowieckie_flag
+				has_country_flag = formed_opolskie_flag
+				has_country_flag = formed_podkarpackie_flag
+				has_country_flag = formed_podlaskie_flag
+				has_country_flag = formed_pomorskie_flag
+				has_country_flag = formed_slaskie_flag
+				has_country_flag = formed_swietokrzyskie_flag
+				has_country_flag = formed_warminsko_mazurskie_flag
+				has_country_flag = formed_wielkopolskie_flag
+				has_country_flag = formed_zachodniopomorskie_flag
+			}
 			
 			NOT = { 
 				OR = { 
@@ -47,16 +47,13 @@ country_decision = {
 		}
 
 		provinces_to_highlight = {
-			continent = europe
-			NOT = {
-				OR = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
-			}
+			poland_formable_decision_check = yes
+			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			NOT = { exists = POL }
+			own_core = 257
+			NOT = { religion_group = communism_group }
+			OR = { NOT = { exists = POL exists = PRL } }
 			adm_tech = 20
 
 			num_of_owned_provinces_with = {
@@ -129,7 +126,6 @@ country_decision = {
 		major = yes
 		potential = {
 			primary_culture = slonska
-			normal_or_historical_nations = yes
 			NOT = { 
 				OR = { 
 					has_country_flag = formed_pol_flag
@@ -245,7 +241,6 @@ country_decision = {
 		major = yes
 		potential = {
 			primary_culture = niemiecka
-			normal_or_historical_nations = yes
 			NOT = { 
 				OR = { 
 					has_country_flag = formed_pol_flag
@@ -377,7 +372,25 @@ country_decision = {
 		major = yes
 		potential = {
 			religion_group = communism_group
-			normal_or_historical_nations = yes
+
+			OR = {
+				has_country_flag = formed_dolnoslaskie_flag
+				has_country_flag = formed_kujawsko_pomorskie_flag
+				has_country_flag = formed_lubelskie_flag
+				has_country_flag = formed_lubuskie_flag
+				has_country_flag = formed_lodzkie_flag
+				has_country_flag = formed_malopolskie_flag
+				has_country_flag = formed_mazowieckie_flag
+				has_country_flag = formed_opolskie_flag
+				has_country_flag = formed_podkarpackie_flag
+				has_country_flag = formed_podlaskie_flag
+				has_country_flag = formed_pomorskie_flag
+				has_country_flag = formed_slaskie_flag
+				has_country_flag = formed_swietokrzyskie_flag
+				has_country_flag = formed_warminsko_mazurskie_flag
+				has_country_flag = formed_wielkopolskie_flag
+				has_country_flag = formed_zachodniopomorskie_flag
+			}
 			NOT = { 
 				OR = { 
 					has_country_flag = formed_pol_flag
@@ -404,17 +417,13 @@ country_decision = {
 		}
 
 		provinces_to_highlight = {
-			continent = europe
-			NOT = {
-				OR = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
-			}
+			poland_formable_decision_check = yes
+			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			own_core = 257
 			religion_group = communism_group
-			NOT = { exists = PRL }
+			OR = { NOT = { exists = POL exists = PRL } }
 			adm_tech = 20
 
 			num_of_owned_provinces_with = {
@@ -487,7 +496,6 @@ country_decision = {
 		major = yes
 		potential = {
 			region = pomorskie_region
-			normal_or_historical_nations = yes
 			NOT = { 
 				OR = { 
 					has_country_flag = formed_pol_flag

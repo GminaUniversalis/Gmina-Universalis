@@ -1584,12 +1584,12 @@ country_decisions = {
 			}
 		}
 		allow = {
-			owns_core_province = 591
+			owns_core_province = 501
 			NOT = { exists = R00 }
 			adm_tech = 10
 
 			num_of_owned_provinces_with = {
-				region = warminsko_mazurskie_region
+				region = wielkopolska_region
 				value = 141
 			}
 			is_at_war = no

@@ -2,6 +2,7 @@ estate_investors = {
     icon = 6
     trigger = {
 		always = yes
+		production_income_percentage = 0.5
         NOT = { 
 			religion_group = communism_group
 		}
@@ -10,6 +11,8 @@ estate_investors = {
 		build_cost = -0.2
 		build_time = -0.4
 		center_of_trade_upgrade_cost = -0.1
+		great_project_upgrade_cost = -0.2
+		great_project_upgrade_time = -0.2
 	}
     country_modifier_neutral = {
 		build_cost = -0.1

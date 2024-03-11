@@ -2,19 +2,21 @@ estate_intellectuals = {
     icon = 8
     trigger = {
 		always = yes
+		innovativeness = 50
 		NOT = { 
 			religion_group = communism_group
 		}
     }
     country_modifier_happy = {
-		reform_progress_growth = 0.4
-		innovativeness_gain = 0.4
+		reform_progress_growth = 0.5
+		innovativeness_gain = 0.5
 	}
     country_modifier_neutral = {
 		reform_progress_growth = 0.2
+		innovativness_gain = 0.1
 	}
     country_modifier_angry = {
-		reform_progress_growth = -0.2
+		reform_progress_growth = -0.4
 		innovativeness_gain = -0.5
 		global_unrest = 3
 	}

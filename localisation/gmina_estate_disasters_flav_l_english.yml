@@ -1,0 +1,111 @@
+﻿l_english:
+ estate_retirees_disaster:0 "Retirees overthrow government"
+#Retirees start
+ gmina_estate_disasters.1.t:0 "Retirees take power"
+ gmina_estate_disasters.1.d:0 "Retirees sralnik"
+ gmina_estate_disasters.1.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.1.a.tt:0 "Hajto nie wiedzial"
+#Retirees end
+ gmina_estate_disasters.2.t:0 "Retirees crushed"
+ gmina_estate_disasters.2.d:0 "Retirees do gazu"
+ gmina_estate_disasters.2.a:0 "Stare baby jebac pradem"
+ estate_families_disaster:0 "Families overthrow government"
+#Families start
+ gmina_estate_disasters.3.t:0 "Families take power"
+ gmina_estate_disasters.3.d:0 "Families sralnik"
+ gmina_estate_disasters.3.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.3.a.tt:0 "Biedron nie wiedzial"
+#Families end
+ gmina_estate_disasters.4.t:0 "Families crushed"
+ gmina_estate_disasters.4.d:0 "Families do gazu"
+ gmina_estate_disasters.4.a:0 "Biedronia jebac pradem"
+ estate_army_disaster:0 "Army overthrow government"
+#Army start
+ gmina_estate_disasters.5.t:0 "Army take power"
+ gmina_estate_disasters.5.d:0 "Army sralnik"
+ gmina_estate_disasters.5.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.5.a.tt:0 "Wojownik nie wiedzial"
+#Army end
+ gmina_estate_disasters.6.t:0 "Army crushed"
+ gmina_estate_disasters.6.d:0 "Army do gazu"
+ gmina_estate_disasters.6.a:0 "Biedronia jebac pradem"
+ estate_farmers_disaster:0 "Farmers overthrow government"
+#Farmers start
+ gmina_estate_disasters.7.t:0 "Farmers take power"
+ gmina_estate_disasters.7.d:0 "Farmers sralnik"
+ gmina_estate_disasters.7.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.7.a.tt:0 "Farmer nie wiedzial"
+#Farmers end
+ gmina_estate_disasters.8.t:0 "Farmers crushed"
+ gmina_estate_disasters.8.d:0 "Farmers do gazu"
+ gmina_estate_disasters.8.a:0 "Krowy jebac pradem"
+ estate_banks_disaster:0 "Banks overthrow government"
+#Banks start
+ gmina_estate_disasters.9.t:0 "Banks take power"
+ gmina_estate_disasters.9.d:0 "Banks sralnik"
+ gmina_estate_disasters.9.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.9.a.tt:0 "Bank nie wiedzial"
+#Banks end
+ gmina_estate_disasters.10.t:0 "Banks crushed"
+ gmina_estate_disasters.10.d:0 "Banks do gazu"
+ gmina_estate_disasters.10.a:0 "Morawieckiego jebac pradem"
+ estate_middle_class_disaster:0 "Middle class overthrow government"
+#Middle class start
+ gmina_estate_disasters.11.t:0 "Middle class take power"
+ gmina_estate_disasters.11.d:0 "Middle class sralnik"
+ gmina_estate_disasters.11.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.11.a.tt:0 "Middle class nie wiedzial"
+#Middle class end
+ gmina_estate_disasters.12.t:0 "Middle class crushed"
+ gmina_estate_disasters.12.d:0 "Middle class do gazu"
+ gmina_estate_disasters.12.a:0 "Robotnikow jebac pradem"
+ estate_ubs_disaster:0 "Ubs overthrow government"
+#Ub start
+ gmina_estate_disasters.13.t:0 "Ub take power"
+ gmina_estate_disasters.13.d:0 "Ub sralnik"
+ gmina_estate_disasters.13.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.13.a.tt:0 "Ub nie wiedzial"
+#Ub end
+ gmina_estate_disasters.14.t:0 "Ub crushed"
+ gmina_estate_disasters.14.d:0 "Ub do gazu"
+ gmina_estate_disasters.14.a:0 "Ub jebac pradem"
+ estate_intellectuals_disaster:0 "Intellectuals overthrow government"
+#Intellectuals start
+ gmina_estate_disasters.15.t:0 "Intellectuals take power"
+ gmina_estate_disasters.15.d:0 "Intellectuals sralnik"
+ gmina_estate_disasters.15.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.15.a.tt:0 "Intellectuals nie wiedzial"
+#Intellectuals end
+ gmina_estate_disasters.16.t:0 "Intellectuals crushed"
+ gmina_estate_disasters.16.d:0 "Intellectuals do gazu"
+ gmina_estate_disasters.16.a:0 "Hawkingów jebac pradem"
+ estate_investors_disaster:0 "Investors overthrow government"
+#Investors start
+ gmina_estate_disasters.17.t:0 "Investors take power"
+ gmina_estate_disasters.17.d:0 "Investors sralnik"
+ gmina_estate_disasters.17.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.17.a.tt:0 "Investors nie wiedzial"
+#Investors end
+ gmina_estate_disasters.18.t:0 "Investors crushed"
+ gmina_estate_disasters.18.d:0 "Investors do gazu"
+ gmina_estate_disasters.18.a:0 "Obajtkow jebac pradem"
+ estate_priests_disaster:0 "Priests overthrow government"
+#Priests start
+ gmina_estate_disasters.19.t:0 "Priests take power"
+ gmina_estate_disasters.19.d:0 "Priests sralnik"
+ gmina_estate_disasters.19.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.19.a.tt:0 "Priests nie wiedzial"
+#Priests end
+ gmina_estate_disasters.20.t:0 "Priests crushed"
+ gmina_estate_disasters.20.d:0 "Priests do gazu"
+ gmina_estate_disasters.20.a:0 "Papieza jebac pradem"
+ estate_miners_disaster:0 "Miners overthrow government"
+#Miners start
+ gmina_estate_disasters.21.t:0 "Miners take power"
+ gmina_estate_disasters.21.d:0 "Miners sralnik"
+ gmina_estate_disasters.21.a:0 "Wszyscy zginiemy"
+ gmina_estate_disasters.21.a.tt:0 "Miners nie wiedzial"
+#Miners end
+ gmina_estate_disasters.22.t:0 "Miners crushed"
+ gmina_estate_disasters.22.d:0 "Miners do gazu"
+ gmina_estate_disasters.22.a:0 "Górników jebac pradem"

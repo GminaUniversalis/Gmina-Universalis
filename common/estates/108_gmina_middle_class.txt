@@ -2,6 +2,9 @@ estate_middle_class = {
     icon = 1
     trigger = {
         always = yes
+		NOT = { 
+			religion_group = communism_group
+		}
     }
     country_modifier_happy = {
 		production_efficiency = 0.4

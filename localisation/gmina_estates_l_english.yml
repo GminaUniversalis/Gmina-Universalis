@@ -43,17 +43,17 @@
  estate_army_develop_x:0 "Develop Militray Structures"
  estate_army_develop_x_desc:0 "Army demand to develop militray structures"
  #Event
-  estate_privileges_and_agendas_events.3.a:1 "The Proposal of the Army"
-  estate_privileges_and_agendas_events.3.b:1 "The Proposal of the Farmers"
-  estate_privileges_and_agendas_events.3.c:1 "The Proposal of the Families"
-  estate_privileges_and_agendas_events.3.d:1 "The Proposal of the Retirees"
-  estate_privileges_and_agendas_events.3.e:1 "The Proposal of the Security Office"
-  estate_privileges_and_agendas_events.3.f:1 "The Proposal of the Middle Class"
-  estate_privileges_and_agendas_events.3.g:1 "The Proposal of the Clergy"
-  estate_privileges_and_agendas_events.3.h:1 "The Proposal of the Investors"
-  estate_privileges_and_agendas_events.3.i:1 "The Proposal of the Intellectuals"
-  estate_privileges_and_agendas_events.3.j:1 "The Proposal of the Miners"
-  estate_privileges_and_agendas_events.3.k:1 "The Proposal of the Banks"
+ estate_privileges_and_agendas_events.3.a:1 "The Proposal of the Army"
+ estate_privileges_and_agendas_events.3.b:1 "The Proposal of the Farmers"
+ estate_privileges_and_agendas_events.3.c:1 "The Proposal of the Families"
+ estate_privileges_and_agendas_events.3.d:1 "The Proposal of the Retirees"
+ estate_privileges_and_agendas_events.3.e:1 "The Proposal of the Repression Apparatus"
+ estate_privileges_and_agendas_events.3.f:1 "The Proposal of the Middle Class"
+ estate_privileges_and_agendas_events.3.g:1 "The Proposal of the Clergy"
+ estate_privileges_and_agendas_events.3.h:1 "The Proposal of the Investors"
+ estate_privileges_and_agendas_events.3.i:1 "The Proposal of the Intellectuals"
+ estate_privileges_and_agendas_events.3.j:1 "The Proposal of the Miners"
+ estate_privileges_and_agendas_events.3.k:1 "The Proposal of the Banks"
 #Emeryci
  estate_retirees:0 "Retirees"
  estate_retirees_influence_modifier:0 "Retirees Influence"
@@ -189,21 +189,21 @@
  estate_families_develop_x_production_desc:0 "Families have noticed that our production development in the region is insufficient"
  estate_families_recover_stability:0 "Families Demand Stability"
  estate_families_recover_stability_desc:0 "Families have recognized that our country is not sufficiently stable"
- #Farmers
+#Farmers
  estate_farmers:0 "Farmers"
  estate_farmers_influence_modifier:0 "Farmers Influence"
  estate_farmers_privilege_slots:0 "Farmers Max Privileges"
  estate_farmers_loyalty_modifier:0 "Farmers Loyalty Equilibrium"
  estate_farmers_ownership:0 "Farmers Ownership"
  estate_farmers_desc:0 "Farmers represent's rular people of Poland. The foodbringers"
- #Middle class
+#Middle class
  estate_middle_class:0 "Middle Class"
  estate_middle_class_influence_modifier:0 "Middle Class Influence"
  estate_middle_class_privilege_slots:0 "Middle Class Max Privileges"
  estate_middle_class_loyalty_modifier:0 "Middle Class Loyalty Equilibrium"
  estate_middle_class_ownership:0 "Middle Class Ownership"
  estate_middle_class_desc:0 "Middle Class represents the avereage people of Poland with stable income and access to basic social services such as healthcare and education which allows them to live condifently in comfort and invest in their personal development"
- #UB
+#UB
  estate_ub:0 "Repression Apparatus"
  estate_ub_influence_modifier:0 "Repression Apparatus Influence"
  estate_ub_privilege_slots:0 "Repression Apparatus Max Privileges"
