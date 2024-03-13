@@ -54,6 +54,7 @@
  estate_privileges_and_agendas_events.3.i:1 "The Proposal of the Intellectuals"
  estate_privileges_and_agendas_events.3.j:1 "The Proposal of the Miners"
  estate_privileges_and_agendas_events.3.k:1 "The Proposal of the Banks"
+ EST_VAL_army_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Emeryci
  estate_retirees:0 "Retirees"
  estate_retirees_influence_modifier:0 "Retirees Influence"
@@ -87,6 +88,7 @@
  estate_retirees_prestige_desc:0 "Retirees think we are not prestigious enough."
  estate_retirees_legitimacy:0 "Increase Legitimacy"
  estate_retirees_legitimacy_desc:0 "Retirees think we lack sufficient legitimacy"
+ EST_VAL_retirees_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Banki
  estate_banks:0 "Banks"
  estate_banks_influence_modifier:0 "Banks Influence"
@@ -120,6 +122,7 @@
  estate_banks_get_cash_desc:0 "Banks want us to create a financial reserve for unexpected expenses"
  estate_banks_reduce_corruption:0 "To Control Corruption"
  estate_banks_reduce_corruption_desc:0 "The banks are not pleased with the extent of corruption in our country"
+ EST_VAL_banks_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Gorniki (Tak pisze si² górnicy)
  estate_miners:0 "Miners"
  estate_miners_influence_modifier:0 "Miners Influence"
@@ -129,6 +132,7 @@
  estate_miners_desc:0 "The group of miners in Poland is a community of workers involved in extracting raw materials, primarily coal. They play a significant role in the economy,  and their trade unions advocate for workers' rights and safety in mines"
  estate_miners_hire_advisor:0 "Hire Advisor For Miners"
  estate_miners_hire_advisor_desc:0 "Miners desire the [Root.Monarch.GetTitle] to hire a new military advisor."
+ EST_VAL_miners_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Intellectuals
  estate_intellectuals:0 "Intellectuals"
  estate_intellectuals_influence_modifier:0 "Intellectuals Influence"
@@ -138,6 +142,7 @@
  estate_intellectuals_desc:0 "Intellectuals in Poland are a group of individuals engaged in scholarly, cultural, and creative pursuits. They contribute to shaping public discourse"
  estate_intellectuals_hire_advisor:0 "Hire Advisor For Intellectuals"
  estate_intellectuals_hire_advisor_desc:0 "Intellectuals desire the [Root.Monarch.GetTitle] to hire a new diplomatic advisor."
+ EST_VAL_intellectuals_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Inwestorzy
  estate_investors:0 "Investors"
  estate_investors_influence_modifier:0 "Investors Influence"
@@ -147,6 +152,7 @@
  estate_investors_desc:0 "Investors allocate funds to different assets or projects to generate returns, seeking profits or value appreciation"
  estate_investors_hire_advisor:0 "Hire Advisor For Investors"
  estate_investors_hire_advisor_desc:0 "Investors desire the [Root.Monarch.GetTitle] to hire a new diplomatic advisor."
+ EST_VAL_investors_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Kler
  estate_priests:0 "Clergy"
  estate_clergy_influence_modifier:0 "Clergy Influence"
@@ -156,6 +162,7 @@
  estate_priests_desc:0 "Clergy in Poland includes ordained individuals serving in religious roles, such as priests and ministers. They play a central role in guiding spiritual  practices and providing moral support within the country's religious communities."
  estate_priests_hire_advisor:0 "Hire Advisor For Clergy"
  estate_priests_hire_advisor_desc:0 "Clergy desire the [Root.Monarch.GetTitle] to hire a new administrative advisor"
+ EST_VAL_priests_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Rodziny
  estate_families:0 "Families"
  estate_families_influence_modifier:0 "Families Influence"
@@ -181,7 +188,7 @@
  estate_families_build_temple_in_y_desc:0 "Families have recognized that there are too few temples in our country"
  estate_families_build_port_building_in_y:0 "Families Demand More Docks"
  estate_families_build_port_building_in_y_desc:0 "Families have recognized that there are too few docks in our country"
- estate_families_build_production_building_in_y :0 "Families Demand More Workshops"
+ estate_families_build_production_building_in_y:0 "Families Demand More Workshops"
  estate_families_build_production_building_in_y_desc:0 "Families have recognized that there are too few workshops in our country"
  estate_families_develop_x_manpower:0 "Families Demand To Develop Security"
  estate_families_develop_x_manpower_desc:0 "Families have noticed that our security development in the region is insufficient"
@@ -189,6 +196,7 @@
  estate_families_develop_x_production_desc:0 "Families have noticed that our production development in the region is insufficient"
  estate_families_recover_stability:0 "Families Demand Stability"
  estate_families_recover_stability_desc:0 "Families have recognized that our country is not sufficiently stable"
+ EST_VAL_families_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Farmers
  estate_farmers:0 "Farmers"
  estate_farmers_influence_modifier:0 "Farmers Influence"
@@ -196,6 +204,7 @@
  estate_farmers_loyalty_modifier:0 "Farmers Loyalty Equilibrium"
  estate_farmers_ownership:0 "Farmers Ownership"
  estate_farmers_desc:0 "Farmers represent's rular people of Poland. The foodbringers"
+ EST_VAL_farmers_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #Middle class
  estate_middle_class:0 "Middle Class"
  estate_middle_class_influence_modifier:0 "Middle Class Influence"
@@ -203,6 +212,7 @@
  estate_middle_class_loyalty_modifier:0 "Middle Class Loyalty Equilibrium"
  estate_middle_class_ownership:0 "Middle Class Ownership"
  estate_middle_class_desc:0 "Middle Class represents the avereage people of Poland with stable income and access to basic social services such as healthcare and education which allows them to live condifently in comfort and invest in their personal development"
+ EST_VAL_middle_class_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 #UB
  estate_ub:0 "Repression Apparatus"
  estate_ub_influence_modifier:0 "Repression Apparatus Influence"
@@ -210,6 +220,7 @@
  estate_ub_loyalty_modifier:0 "Repression Apparatus Loyalty Equilibrium"
  estate_ub_ownership:0 "Repression Apparatus Ownership"
  estate_ub_desc:0 "Repression Apparatus represents communist grasp upon Polish population. It was made up of specially selected communist officers who decied on the fate, sometimes life and death, of thousands of Poles"
+ EST_VAL_ub_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
 
 
 

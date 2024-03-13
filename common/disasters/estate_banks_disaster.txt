@@ -3,7 +3,7 @@ estate_banks_disaster = {
 		has_estate = estate_banks
 		estate_influence = {
 			estate = estate_banks
-			influence = 80
+			influence = 60
 		}
 	}
 

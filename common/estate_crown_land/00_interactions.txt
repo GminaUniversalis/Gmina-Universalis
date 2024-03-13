@@ -17,19 +17,19 @@ interaction = {
 			}
 			if = {
 				limit = { current_age = age_of_discovery }
-				add_years_of_estate_land_income = 2.5
+				add_years_of_estate_land_income = 1.0
 			}
 			else_if = {
 				limit = { current_age = age_of_reformation }
-				add_years_of_estate_land_income = 2.0
-			}
-			else_if = {
-				limit = { current_age = age_of_absolutism }
 				add_years_of_estate_land_income = 1.5
 			}
 			else_if = {
+				limit = { current_age = age_of_absolutism }
+				add_years_of_estate_land_income = 2.0
+			}
+			else_if = {
 				limit = { current_age = age_of_revolutions }
-				add_years_of_estate_land_income = 1.0
+				add_years_of_estate_land_income = 2.5
 			}
 		}
 		else = {

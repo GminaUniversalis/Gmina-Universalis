@@ -1,3 +1,5 @@
+namespace = gmina_estate_disasters
+
 #Retirees start
 country_event = {
 	id = gmina_estate_disasters.1
