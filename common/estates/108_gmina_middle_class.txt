@@ -1,5 +1,5 @@
 estate_middle_class = {
-    icon = 1
+    icon = 9
     trigger = {
         always = yes
 		NOT = { 

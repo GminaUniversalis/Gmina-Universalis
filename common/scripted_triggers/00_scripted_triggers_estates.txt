@@ -43,7 +43,7 @@ disabled_rebels_from_seized_land_for_estate = {
 
 has_exempt_from_seize_land_for_estate_nobles = {
 	OR = {
-		has_estate_privilege = estate_nobles_levies
+		# has_estate_privilege = estate_nobles_levies
 		# has_estate_privilege = estate_nobles_golden_liberty
 		#Jolof's starting privileges
 		# has_estate_privilege = estate_nobles_decentralized_tribe
@@ -61,12 +61,12 @@ has_exempt_from_seize_land_for_estate_brahmins = {
 	# has_estate_privilege = estate_brahmins_administrative_privileges
 }
 has_exempt_from_seize_land_for_estate_burghers = {
-	has_estate_privilege = estate_burghers_land_trade_rights
+	# has_estate_privilege = estate_burghers_land_trade_rights
 }
 has_exempt_from_seize_land_for_estate_church = {
 	OR = {
-		has_estate_privilege = estate_church_inwards_perfection
-		has_estate_privilege = estate_church_administrative_privileges
+		# has_estate_privilege = estate_church_inwards_perfection
+		# has_estate_privilege = estate_church_administrative_privileges
 		#Livonian Order's starting privileges
 		# has_estate_privilege = estate_church_lands_of_riga
 		# has_estate_privilege = estate_church_bishopric_of_dorpat

@@ -1,5 +1,5 @@
 estate_farmers = {
-    icon = 4
+    icon = 8
     trigger = {
         always = yes
 		OR = {

@@ -1,4 +1,4 @@
-XXX_rebels = {
+conservatism_pis_rebels = {
 	color = { 170 95 25 }
 
 	area = nation 					# Stays within the nation
@@ -36,7 +36,7 @@ XXX_rebels = {
 		modifier = {
 			factor = 5
 			owner = {
-				has_disaster = estate_XXX_disaster
+				has_disaster = estate_conservatism_pis_disaster
 			}
 		}
 		modifier = {
@@ -112,7 +112,7 @@ XXX_rebels = {
 				limit = {
 					NOT = { religion = conservatism_pis }
 					is_reformation_center = no
-					NOT = { owner = { religion = XXXn } }
+					NOT = { owner = { religion = conservatism_pisn } }
 				}
 				change_religion = conservatism_pis
 				add_province_modifier = {
@@ -137,7 +137,7 @@ XXX_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = XXX_rebels_demands
+	demands_description = conservatism_pis_rebels_demands
 	
 	# Country Scope	
 	demands_enforced_effect = {

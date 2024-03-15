@@ -1,0 +1,14 @@
+namespace = gmina_estates
+
+province_event = {
+	id = gmina_estates.1
+	title = gmina_estates.1.title
+	desc = gmina_estates.1.desc
+	picture = MARCHING_PEASANTS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gmina_estates.1.a #Ok.
+	}
+}

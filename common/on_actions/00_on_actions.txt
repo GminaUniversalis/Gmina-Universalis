@@ -4073,7 +4073,7 @@ on_revoke_estate_land = {
 			type = retirees_rebels
 			size = 1
 		}
-		province_event = { id = church_estate_events.11 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4088,10 +4088,10 @@ on_revoke_estate_land = {
 			}
 		}
 		spawn_rebels = {
-			type = famiies_rebels
+			type = families_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4106,10 +4106,10 @@ on_revoke_estate_land = {
 			}
 		}
 		spawn_rebels = {
-			type = particularist_rebels
+			type = army_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4127,7 +4127,7 @@ on_revoke_estate_land = {
 			type = farmer_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4145,7 +4145,7 @@ on_revoke_estate_land = {
 			type = middle_class_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4163,7 +4163,7 @@ on_revoke_estate_land = {
 			type = banks_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4181,7 +4181,7 @@ on_revoke_estate_land = {
 			type = ub_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4199,7 +4199,7 @@ on_revoke_estate_land = {
 			type = intellectuals_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4217,7 +4217,7 @@ on_revoke_estate_land = {
 			type = investors_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4235,7 +4235,7 @@ on_revoke_estate_land = {
 			type = priests_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 	if = {
 		limit = {
@@ -4253,7 +4253,7 @@ on_revoke_estate_land = {
 			type = miners_rebels
 			size = 1
 		}
-		province_event = { id = burghers_estate_events.16 }
+		province_event = { id = gmina_estates.1 }
 	}
 }
 
@@ -5235,10 +5235,10 @@ on_country_released = {
 			change_religion = FROM
 		}
 	}
-	if = {
-		limit = { NOT = { is_year = 1445 } }
-		set_country_flag = released_in_1444
-	}
+	# if = {
+	# 	limit = { NOT = { is_year = 1445 } }
+	# 	set_country_flag = released_in_1444
+	# }
 }
 
 # ROOT = province, FROM = country
@@ -5335,17 +5335,17 @@ on_post_mil_advisor_fired = {
 
 # this = new client state, from = parent country
 on_create_client_state = {
-	if = { 
-		limit = { 
-			FROM = { mission_completed = fra_grande_armee }
-		}
-		FROM = {
-			add_power_projection = {
-				type = mission_rewards_power_projection
-				amount = 10
-			}
-		}
-	}
+	# if = { 
+	# 	limit = { 
+	# 		FROM = { mission_completed = fra_grande_armee }
+	# 	}
+	# 	FROM = {
+	# 		add_power_projection = {
+	# 			type = mission_rewards_power_projection
+	# 			amount = 10
+	# 		}
+	# 	}
+	# }
 }
 
 # this = new target, from = previous target (both can be non-existent tag)
@@ -5425,25 +5425,25 @@ on_conquest = {
 }
 
 on_country_creation = {
-	if = {
-		limit = {
-			tag = PAP
-			OR = {
-				NOT = {
-					religion = catholic
-				}
-				NOT = {
-					has_reform = papacy_reform
-				}
-				NOT = {
-					government = theocracy
-				}
-			}
-		}
-		change_religion = catholic
-		change_government = theocracy
-		add_government_reform = papacy_reform
-	}
+	# if = {
+	# 	limit = {
+	# 		tag = PAP
+	# 		OR = {
+	# 			NOT = {
+	# 				religion = catholic
+	# 			}
+	# 			NOT = {
+	# 				has_reform = papacy_reform
+	# 			}
+	# 			NOT = {
+	# 				government = theocracy
+	# 			}
+	# 		}
+	# 	}
+	# 	change_religion = catholic
+	# 	change_government = theocracy
+	# 	add_government_reform = papacy_reform
+	# }
 }
 
 on_federation_leader_change = {
@@ -5471,28 +5471,28 @@ on_colonial_type_change = {
 }
 
 on_estate_led_regency = {
-	if = {
-		limit = {
-			has_government_attribute = improved_nobles_regency
-			OR = {
-				has_estate = estate_nobles
-				AND = {
-					NOT = { has_estate = estate_nobles }
-					# OR = {
-					# 	has_estate = estate_maratha
-					# 	has_estate = estate_rajput
-					# }
-				}
-			}
-		}
-		add_ruler_modifier = {
-			name = empowered_regency_modifier
-			duration = -1
-		}
-		change_adm = 1
-		change_dip = 1
-		change_mil = 1
-	}
+	# if = {
+	# 	limit = {
+	# 		has_government_attribute = improved_nobles_regency
+	# 		OR = {
+	# 			has_estate = estate_nobles
+	# 			AND = {
+	# 				NOT = { has_estate = estate_nobles }
+	# 				# OR = {
+	# 				# 	has_estate = estate_maratha
+	# 				# 	has_estate = estate_rajput
+	# 				# }
+	# 			}
+	# 		}
+	# 	}
+	# 	add_ruler_modifier = {
+	# 		name = empowered_regency_modifier
+	# 		duration = -1
+	# 	}
+	# 	change_adm = 1
+	# 	change_dip = 1
+	# 	change_mil = 1
+	# }
 	# if = { 
 	# 	limit = { 
 	# 		has_country_flag = jap_regency_ga_flag 

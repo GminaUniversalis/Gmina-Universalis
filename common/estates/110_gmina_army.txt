@@ -1,5 +1,5 @@
 estate_army = {
-    icon = 5
+    icon = 11
     trigger = {
         always = yes
     }

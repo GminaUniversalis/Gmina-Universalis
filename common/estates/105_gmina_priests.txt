@@ -1,5 +1,5 @@
 estate_priests = {
-    icon = 1
+    icon = 6
     trigger = {
 		always = yes
 		NOT = { 

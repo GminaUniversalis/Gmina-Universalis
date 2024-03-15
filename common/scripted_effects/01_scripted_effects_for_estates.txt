@@ -3504,7 +3504,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = church_rebels
+					type = retirees_rebels
 					size = $size$
 					estate = estate_retirees
 					as_if_faction = yes
@@ -3524,7 +3524,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = families_rebels
 					size = $size$
 					estate = estate_families
 					as_if_faction = yes
@@ -3544,7 +3544,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = army_rebels
 					size = $size$
 					estate = estate_army
 					as_if_faction = yes
@@ -3564,9 +3564,9 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = farmers_rebels
 					size = $size$
-					estate = estate_families
+					estate = estate_farmers
 					as_if_faction = yes
 				}
 			}
@@ -3584,7 +3584,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = middle_class_rebels
 					size = $size$
 					estate = estate_middle_class
 					as_if_faction = yes
@@ -3604,7 +3604,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = banks_rebels
 					size = $size$
 					estate = estate_banks
 					as_if_faction = yes
@@ -3624,7 +3624,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = ub_rebels
 					size = $size$
 					estate = estate_ub
 					as_if_faction = yes
@@ -3644,7 +3644,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = intellectuals_rebels
 					size = $size$
 					estate = estate_intellectuals
 					as_if_faction = yes
@@ -3665,7 +3665,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = investors_rebels
 					size = $size$
 					estate = estate_investors
 					as_if_faction = yes
@@ -3685,7 +3685,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = church_rebels
+					type = priests_rebels
 					size = $size$
 					estate = estate_priests
 					as_if_faction = yes
@@ -3705,7 +3705,7 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 				spawn_rebels = {
-					type = particularist_rebels
+					type = miners_rebels
 					size = $size$
 					estate = estate_miners
 					as_if_faction = yes

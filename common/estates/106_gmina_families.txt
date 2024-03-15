@@ -1,5 +1,5 @@
 estate_families = {
-    icon = 3
+    icon = 7
     trigger = {
         always = yes
     }

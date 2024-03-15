@@ -1,5 +1,5 @@
 estate_miners = {
-    icon = 2
+    icon = 3
     trigger = {
 		always = yes
 		OR = {

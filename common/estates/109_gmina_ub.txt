@@ -1,5 +1,5 @@
 estate_ub = {
-    icon = 4
+    icon = 10
     trigger = {
 		always = yes
 		religion_group = communism_group
