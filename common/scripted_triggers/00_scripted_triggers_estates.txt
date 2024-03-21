@@ -20,7 +20,7 @@ has_any_estates = {
 			has_estate = estate_farmers
 			has_estate = estate_banks
 			has_estate = estate_miners
-			has_estate = estate_intellectuals
+			has_estate = estate_scientists
 			has_estate = estate_investors
 			has_estate = estate_priests
 			has_estate = estate_middle_class
@@ -43,7 +43,7 @@ disabled_rebels_from_seized_land_for_estate = {
 
 has_exempt_from_seize_land_for_estate_nobles = {
 	OR = {
-		has_estate_privilege = estate_nobles_levies
+		# has_estate_privilege = estate_nobles_levies
 		# has_estate_privilege = estate_nobles_golden_liberty
 		#Jolof's starting privileges
 		# has_estate_privilege = estate_nobles_decentralized_tribe
@@ -61,12 +61,12 @@ has_exempt_from_seize_land_for_estate_brahmins = {
 	# has_estate_privilege = estate_brahmins_administrative_privileges
 }
 has_exempt_from_seize_land_for_estate_burghers = {
-	has_estate_privilege = estate_burghers_land_trade_rights
+	# has_estate_privilege = estate_burghers_land_trade_rights
 }
 has_exempt_from_seize_land_for_estate_church = {
 	OR = {
-		has_estate_privilege = estate_church_inwards_perfection
-		has_estate_privilege = estate_church_administrative_privileges
+		# has_estate_privilege = estate_church_inwards_perfection
+		# has_estate_privilege = estate_church_administrative_privileges
 		#Livonian Order's starting privileges
 		# has_estate_privilege = estate_church_lands_of_riga
 		# has_estate_privilege = estate_church_bishopric_of_dorpat
@@ -138,7 +138,7 @@ has_exempt_from_seize_land_for_estate_banks = {
 has_exempt_from_seize_land_for_estate_ub = {
 	always = no
 }
-has_exempt_from_seize_land_for_estate_intellectuals = {
+has_exempt_from_seize_land_for_estate_scientists = {
 	always = no
 }
 has_exempt_from_seize_land_for_estate_investors = {
@@ -184,7 +184,7 @@ any_estate_influence = {
 		if = { limit = { has_estate = estate_retirees }			estate_influence = { estate =  estate_retirees			influence = $influence$ } }
 		if = { limit = { has_estate = estate_banks }			estate_influence = { estate = estate_banks				influence = $influence$ } }
 		if = { limit = { has_estate = estate_miners }			estate_influence = { estate = estate_miners			influence = $influence$ } }
-		if = { limit = { has_estate = estate_intellectuals }	estate_influence = { estate = estate_intellectuals		influence = $influence$ } }
+		if = { limit = { has_estate = estate_scientists }	estate_influence = { estate = estate_scientists		influence = $influence$ } }
 		if = { limit = { has_estate = estate_investors }		estate_influence = { estate = estate_investors			influence = $influence$ } }
 		if = { limit = { has_estate = estate_priests }				estate_influence = { estate = estate_priests 				influence = $influence$ } }
 		if = { limit = { has_estate = estate_families }			estate_influence = { estate = estate_families			influence = $influence$ } }
@@ -203,7 +203,7 @@ any_estate_loyalty = {
 		if = { limit = { has_estate = estate_retirees }			estate_loyalty = { estate =  estate_retirees			loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_banks }			estate_loyalty = { estate = estate_banks		loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_miners }			estate_loyalty = { estate = estate_miners		loyalty = $loyalty$ } }
-		if = { limit = { has_estate = estate_intellectuals }	estate_loyalty = { estate = estate_intellectuals		loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_scientists }	estate_loyalty = { estate = estate_scientists		loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_investors }		estate_loyalty = { estate = estate_investors		loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_priests }				estate_loyalty = { estate = estate_priests 		loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_families }			estate_loyalty = { estate = estate_families		loyalty = $loyalty$ } }
@@ -433,9 +433,9 @@ has_estate_agenda_of_estate_retirees = {
 		has_active_estate_agenda = estate_retirees_prestige
 }
 }
-has_estate_agenda_of_estate_intellectuals = {
+has_estate_agenda_of_estate_scientists = {
 	OR = {
-		has_active_estate_agenda = estate_intellectuals_hire_advisor
+		has_active_estate_agenda = estate_scientists_hire_advisor
 }
 }
 has_estate_agenda_of_estate_investors = {

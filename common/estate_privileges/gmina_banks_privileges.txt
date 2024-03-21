@@ -39,6 +39,7 @@ estate_banks_obietnice = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -196,8 +197,8 @@ estate_banks_promote_trade = {
 }
 estate_banks_value_control = {
 	icon = privilege_recruit_minister
-	max_absolutism = -25
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	max_absolutism = -20
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 10 } }
 	influence = 0.2
 	loyalty = 0
 	penalties = {	
@@ -217,8 +218,8 @@ estate_banks_value_control = {
 estate_banki_hire_merchants = {
 	icon = privilege_recruit_minister
 	land_share = 5
-	max_absolutism = -15
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 5 } }
 	influence = 0.15
 	loyalty = 0.1
 	penalties = {	
@@ -236,8 +237,8 @@ estate_banki_hire_merchants = {
 }
 estate_banks_economy_focus = {
 	icon = privilege_recruit_minister
-	max_absolutism = -25
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	max_absolutism = -20
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 10 } }
 	influence = 0.05
 	loyalty = 0.20
 	penalties = {	
@@ -250,7 +251,6 @@ estate_banks_economy_focus = {
 		
 	}
 	benefits = {
-		trade
 		trade_steering = 0.1
 		trade_range_modifier = 0.5
 		global_prov_trade_power_modifier = 0.1

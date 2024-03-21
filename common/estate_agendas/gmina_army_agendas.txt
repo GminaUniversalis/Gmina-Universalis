@@ -28,52 +28,56 @@ estate_army_increase_army_professionalism = {
         }
     }
 }
+
 estate_army_hire_advisor = {
 	can_select = { 
-	NOT = {
-		employed_advisor = {
-			category = MIL
+		NOT = {
+			employed_advisor = {
+				category = MIL
+			}
 		}
-	}}
+	}
+
 	selection_weight = {
-	factor = 1
+		factor = 1
 	}
 	task_requirements = {
-	if = {
-		limit = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_army
+				}
+			}
 			has_estate_agenda_auto_completion = {
 				estate = estate_army
 			}
 		}
-		has_estate_agenda_auto_completion = {
+		else = {
+			employed_advisor = {
+				category = MIL
+			}
+			is_in_deficit = no
+		}
+	}
+
+	task_completed_effect = {
+		on_completed_agenda_effect = {
 			estate = estate_army
 		}
-	}
-	else = {
-		employed_advisor = {
-			category = MIL
+		add_estate_loyalty = {
+			estate = estate_army
+			loyalty = 10
 		}
-		is_in_deficit = no
-	}
-	}
-	task_completed_effect = {
-	on_completed_agenda_effect = {
-		estate = estate_army
-	}
-	add_estate_loyalty = {
-		estate = estate_army
-		loyalty = 10
-	}
 	}
 	failing_effect = {
-	on_failed_agenda_effect = yes
-	clr_auto_complete_flag = yes
-	add_estate_loyalty_modifier = {
-		estate = estate_army
-		desc = EST_VAL_AGENDA_DENIED
-		loyalty = -5
-		duration = 7300
-	}
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		add_estate_loyalty_modifier = {
+			estate = estate_army
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+		}
 	}	
 }
 estate_army_get_allies = {
@@ -85,6 +89,7 @@ estate_army_get_allies = {
 		NOT = { has_country_modifier = foreign_contacts }
 		is_free_or_tributary_trigger = yes
 	}
+
 	selection_weight = {
 		factor = 1
 		modifier = {
@@ -93,11 +98,13 @@ estate_army_get_allies = {
 			NOT = { num_of_subjects = 1 }
 		}
 	}
+
 	pre_effect = {
 		set_variable = {
 			which = estate_army_get_allies_variable
 			value = 0
 		}
+
 		if = {
 			limit = {
 				OR = {
@@ -124,9 +131,11 @@ estate_army_get_allies = {
 			}
 		}
 	}
+
 	fail_if = {
 		is_subject_other_than_tributary_trigger = yes 
 	}
+
 	task_requirements = {
 		if = {
 			limit = {
@@ -153,6 +162,7 @@ estate_army_get_allies = {
 			}
 		}
 	}
+
     task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_army
@@ -166,6 +176,7 @@ estate_army_get_allies = {
 			duration = 3650
 		}
 	}
+
     failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
@@ -177,6 +188,7 @@ estate_army_get_allies = {
         }
     }
 }
+
 estate_army_befriend_rival_of_rival = {
 	can_select = {
 		any_rival_country = {
@@ -200,6 +212,7 @@ estate_army_befriend_rival_of_rival = {
 			}
 		}
 	}
+
 	selection_weight = {
 		factor = 2
 		modifier = {
@@ -225,11 +238,13 @@ estate_army_befriend_rival_of_rival = {
 				}
 			}
 		}
+
 		modifier = {
 			factor = 0.5
 			NOT = { num_of_free_diplomatic_relations = 1 }
 		}
 	}
+
 	pre_effect = {
 		random_rival_country = {
 			limit = {
@@ -318,6 +333,7 @@ estate_army_befriend_rival_of_rival = {
 			}
 		}
 	}
+
 	fail_if = {
 		event_target:agenda_country = {
 			OR = {
@@ -327,9 +343,11 @@ estate_army_befriend_rival_of_rival = {
 			}
 		}
 	}
+
 	provinces_to_highlight = {
 		is_capital_of = event_target:agenda_country
 	}
+
 	task_requirements = {
 		if = {
 			limit = {
@@ -341,6 +359,7 @@ estate_army_befriend_rival_of_rival = {
 				estate = estate_army
 			}
 		}
+
 		else = {
 			event_target:agenda_country = {
 				has_opinion = {
@@ -350,6 +369,7 @@ estate_army_befriend_rival_of_rival = {
 			}
 		}
 	}
+
     task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_army
@@ -364,6 +384,7 @@ estate_army_befriend_rival_of_rival = {
 			discount = yes
 		}
 	}
+
     failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
@@ -375,6 +396,7 @@ estate_army_befriend_rival_of_rival = {
         }
     }
 }
+
 estate_army_break_coalition = {
 	can_select = {
 		any_country = {
@@ -504,6 +526,7 @@ estate_army_break_coalition = {
     }
 }
 estate_army_build_an_army = {
+
 	can_select = {
 		NOT = { has_country_modifier = thriving_arms_industry }
 		NOT = { army_size_percentage = 0.5 }
@@ -514,6 +537,7 @@ estate_army_build_an_army = {
 			NOT = { army_size_percentage = 0.35 }
 		}
 	}
+
 	selection_weight = {
 		factor = 5
 		modifier = {
@@ -545,6 +569,7 @@ estate_army_build_an_army = {
 			is_emperor = yes
 		}
 	}
+
 	task_requirements = {
 		if = {
 			limit = {
@@ -568,6 +593,7 @@ estate_army_build_an_army = {
 			}
 		}
 	}
+
     task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_army
@@ -580,6 +606,7 @@ estate_army_build_an_army = {
 			tradition = 60
 		}
 	}
+
     failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
@@ -591,6 +618,7 @@ estate_army_build_an_army = {
         }
     }
 }
+
 estate_army_bigger_army_than_rival = {
 	can_select = {
 		NOT = { has_country_modifier = thriving_arms_industry }
@@ -610,9 +638,11 @@ estate_army_bigger_army_than_rival = {
 			}
 		}
 	}
+
 	selection_weight = {
 		factor = 5
 	}
+
 	pre_effect = {
 		random_rival_country = {
 			limit = {
@@ -632,9 +662,11 @@ estate_army_bigger_army_than_rival = {
 			save_event_target_as = agenda_country
 		}
 	}
+
 	provinces_to_highlight = {
 		is_capital_of = event_target:agenda_country
 	}
+
 	task_requirements = {
 		if = {
 			limit = {
@@ -646,6 +678,7 @@ estate_army_bigger_army_than_rival = {
 				estate = estate_army
 			}
 		}
+
 		else = {
 			if = {
 				limit = { event_target:agenda_country = { num_of_cities = 1 } }
@@ -656,6 +689,7 @@ estate_army_bigger_army_than_rival = {
 			}
 		}
 	}
+
     task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_army
@@ -669,6 +703,7 @@ estate_army_bigger_army_than_rival = {
 			duration = 3650
 		}
 	}
+
     failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
@@ -680,11 +715,14 @@ estate_army_bigger_army_than_rival = {
         }
     }
 }
+
 estate_army_build_up_manpower_reserves = {
+
 	can_select = {
 		is_at_war = no
 		NOT = { manpower_percentage = 0.40 }
 	}
+
 	selection_weight = {
 		factor = 5
 		modifier = {
@@ -708,55 +746,67 @@ estate_army_build_up_manpower_reserves = {
 			NOT = { manpower_percentage = 0.15 }
 		}
 	}
+
 	pre_effect = {
 		set_variable = {
 			which = estate_army_build_up_manpower_reserves_variable
 			value = 0
 		}
+
 		if = {
 			limit = {
 				NOT = {
 					manpower_percentage = 0.1
 				}
 			}
+
 			set_variable = {
 				which = estate_army_build_up_manpower_reserves_variable
 				value = 1
 			}
 		}
+
 		else_if = {
 			limit = {
 				NOT = {
 					manpower_percentage = 0.3
 				}
 			}
+
 			set_variable = {
 				which = estate_army_build_up_manpower_reserves_variable
 				value = 2
 			}
 		}
+
 		else = {
 			set_variable = {
 				which = estate_army_build_up_manpower_reserves_variable
 				value = 3
 			}
 		}
+
 		pick_type_of_military_advisor = yes
 	}
+
 	fail_if = {
 		is_at_war = yes
 	}
+
 	task_requirements = {
+
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
 					estate = estate_army
 				}
 			}
+
 			has_estate_agenda_auto_completion = {
 				estate = estate_army
 			}
 		}
+
 		else = {
 			if = {
 				limit = {
@@ -767,6 +817,7 @@ estate_army_build_up_manpower_reserves = {
 				}
 				manpower_percentage = 0.9
 			}
+
 			else_if = {
 				limit = {
 					check_variable = {
@@ -776,11 +827,13 @@ estate_army_build_up_manpower_reserves = {
 				}
 				manpower_percentage = 0.75
 			}
+			
 			else = {
 				manpower_percentage = 0.5
 			}
 		}
 	}
+	
     task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_army

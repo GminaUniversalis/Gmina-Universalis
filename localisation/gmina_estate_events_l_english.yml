@@ -1,0 +1,4 @@
+﻿l_english:
+ gmina_estates.1.title:0 "Revolt of the [Root.GetName] $ESTATE$"
+ gmina_estates.1.desc:0 "Appalled at the loss of their privileges the $ESTATE$ of the [Root.GetName] province have taken up arms against us!"
+ gmina_estates.1.a:0 "Ok."

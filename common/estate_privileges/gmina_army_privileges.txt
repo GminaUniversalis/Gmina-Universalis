@@ -66,7 +66,7 @@ estate_army_wt = {
 	}
 	benefits = {
 		defensiveness = 0.2
-		hostile_attrition = 0.5
+		hostile_attrition = 1
 	}
 }
 estate_army_blitz = {
@@ -147,6 +147,7 @@ estate_army_obietnice = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -319,7 +320,7 @@ estate_army_land_rights = {
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_intellectuals_land_rights
+			has_estate_privilege = estate_scientists_land_rights
 		}
 	}
 }

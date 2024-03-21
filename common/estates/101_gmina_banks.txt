@@ -1,7 +1,10 @@
 estate_banks = {
-    icon = 7
+    icon = 2
     trigger = {
         always = yes
+		NOT = { 
+			religion_group = communism_group
+		}
     }
     country_modifier_happy = {
 		interest = -1
@@ -9,11 +12,13 @@ estate_banks = {
 		trade_efficiency = 0.2
 	}
     country_modifier_neutral = {
-		trade_efficiency = 0.2
+		interest = -0.5
+		trade_efficiency = 0.1
 	}
     country_modifier_angry = {
 		trade_efficiency = -0.4
 		interest = 3
+		global_unrest = 4
 	}
   province_independence_weight = {
 		factor = 1
@@ -34,31 +39,17 @@ estate_banks = {
     land_ownership_modifier = {
 		banks_loyalty_modifier = 0.7
 	}
-    base_influence = 15
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 40 40 180 }
+    color = { 255 215 0 }
     privileges = {
-		
-     }
-	 privileges = {
-		estate_banks_indebted_to_banks
-	 }
-	 privileges = {
-		estate_banks_obietnice
-	 }
-	 privileges = {
 		estate_banks_land_rights
-	 }
-	privileges = {
+		estate_banks_obietnice
+		estate_banks_indebted_to_banks
+		estate_banks_commercial_board_of_advice
 		estate_banks_promote_trade
-	}
-	privileges = {
 		estate_banks_value_control
-	}
-	privileges = {
 		estate_banki_hire_merchants
-	}
-	privileges = {
 		estate_banks_economy_focus
 	}
      agendas = {

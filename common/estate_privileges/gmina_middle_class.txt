@@ -1,0 +1,57 @@
+estate_middle_class_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	modifier_by_land_ownership = {
+		
+	}
+	penalties = {
+	}
+	conditional_modifier = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+	}
+}
+estate_middle_class_obietnice = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
+	on_granted = {
+	
+	}
+	penalties = {
+	
+	}
+	benefits = {
+	
+	}
+}

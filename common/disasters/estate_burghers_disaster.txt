@@ -3,7 +3,7 @@ estate_burghers_disaster = {
 		has_estate = estate_burghers
 		estate_influence = {
 			estate = estate_burghers
-			influence = 80
+			influence = 60
 		}
 		NOT = { has_disaster = tur_disaster_ottoman_power_struggle }
 	}

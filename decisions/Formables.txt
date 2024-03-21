@@ -1,6 +1,5 @@
 country_decisions = {
 	silesian_conurbation_forming = {
-		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_metropolis_gzm_flag }
@@ -33,6 +32,26 @@ country_decisions = {
 				AND = {
 					is_former_colonial_nation = yes
 					ai = no
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = formed_dolnoslaskie_flag
+					has_country_flag = formed_kujawsko_pomorskie_flag
+					has_country_flag = formed_lubelskie_flag
+					has_country_flag = formed_lubuskie_flag
+					has_country_flag = formed_lodzkie_flag
+					has_country_flag = formed_malopolskie_flag
+					has_country_flag = formed_mazowieckie_flag
+					has_country_flag = formed_opolskie_flag
+					has_country_flag = formed_podkarpackie_flag
+					has_country_flag = formed_podlaskie_flag
+					has_country_flag = formed_pomorskie_flag
+					has_country_flag = formed_slaskie_flag
+					has_country_flag = formed_swietokrzyskie_flag
+					has_country_flag = formed_warminsko_mazurskie_flag
+					has_country_flag = formed_wielkopolskie_flag
+					has_country_flag = formed_zachodniopomorskie_flag
 				}
 			}
 		}
@@ -119,7 +138,6 @@ country_decisions = {
 	}
 
     rybnik_coal_area_forming = {
-		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
@@ -153,7 +171,28 @@ country_decisions = {
 					ai = no
 				}
 			}
+			NOT = {
+				OR = {
+					has_country_flag = formed_dolnoslaskie_flag
+					has_country_flag = formed_kujawsko_pomorskie_flag
+					has_country_flag = formed_lubelskie_flag
+					has_country_flag = formed_lubuskie_flag
+					has_country_flag = formed_lodzkie_flag
+					has_country_flag = formed_malopolskie_flag
+					has_country_flag = formed_mazowieckie_flag
+					has_country_flag = formed_opolskie_flag
+					has_country_flag = formed_podkarpackie_flag
+					has_country_flag = formed_podlaskie_flag
+					has_country_flag = formed_pomorskie_flag
+					has_country_flag = formed_slaskie_flag
+					has_country_flag = formed_swietokrzyskie_flag
+					has_country_flag = formed_warminsko_mazurskie_flag
+					has_country_flag = formed_wielkopolskie_flag
+					has_country_flag = formed_zachodniopomorskie_flag
+				}
+			}
 		}
+
 		provinces_to_highlight = {
 			OR = {
 				area = rybnik_poludnie

@@ -10,7 +10,6 @@ internal_conflicts = {
 		NOT = { has_disaster = tur_disaster_ottoman_power_struggle }
 	}
 
-
 	can_start = {
 		has_any_disaster = no
 		unrest = 1

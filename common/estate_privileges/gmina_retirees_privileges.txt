@@ -155,7 +155,7 @@ estate_retirees_land_rights = {
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_intellectuals_land_rights
+			has_estate_privilege = estate_scientists_land_rights
 		}
 	}
 }
@@ -163,6 +163,7 @@ estate_retirees_13 = {
 	icon = privilege_admin_power
 	land_share = 5
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	ai_will_do = {
 		factor = 1
@@ -181,6 +182,7 @@ estate_retirees_obietnice = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -200,6 +202,7 @@ estate_retirees_klub_seniora = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.15
 	influence = 0.1
 	ai_will_do = {
@@ -207,23 +210,23 @@ estate_retirees_klub_seniora = {
 	}	
 	on_granted = {
 		if = {
-			limit = { prestige = 50 }
+			limit = { NOT = { prestige = 50 } }
 			add_prestige = 10
 		}
 		else_if = {
-			limit = { prestige = 0 }
+			limit = { NOT = { prestige = 30 } }
 			add_prestige = 20
 		}
 		else_if = {
-			limit = { prestige = -20 }
+			limit = { NOT = { prestige = 10 } }
 			add_prestige = 30
 		}
 		else_if = {
-			limit = { prestige = -40 }
+			limit = { NOT = { prestige = -10 } }
 			add_prestige = 40
 		}
 		else_if = {
-			limit = { prestige = -100 }
+			limit = { NOT = { prestige = -30 } } 
 			add_prestige = 50
 		}
 		else = {
@@ -238,11 +241,11 @@ estate_retirees_klub_seniora = {
 		prestige = 1
 	}
 }
-
-estate_retirees_rada ={
+estate_retirees_rada = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.15
 	influence = 0.1
 	ai_will_do = {
@@ -250,23 +253,43 @@ estate_retirees_rada ={
 	}	
 	on_granted = {
 	if = {
-		limit = { legitimacy = 50 }
-		add_legitimacy = 10
+		limit = { NOT = { legitimacy_equivalent = 100 } legitimacy_equivalent = 80 }
+		add_legitimacy_equivalent = {
+			amount = 10
+			republican_tradition = 10
+			devotion = 10
+		}
 	}
 	else_if = {
-		limit = { legitimacy = 0 }
-		add_legitimacy = 20
+		limit = { NOT = { legitimacy_equivalent = 80 } legitimacy_equivalent = 70 }
+		add_legitimacy_equivalent = {
+			amount = 20
+			republican_tradition = 20
+			devotion = 20
+		}
 	}
 	else_if = {
-		limit = { legitimacy = -20 }
-		add_legitimacy = 30
+		limit = { NOT = { legitimacy_equivalent = 60 } legitimacy_equivalent = 50 }
+		add_legitimacy_equivalent = {
+			amount = 30
+			republican_tradition = 30
+			devotion = 30
+		}
 	}
 	else_if = {
-		limit = { legitimacy = -40 }
-		add_legitimacy = 40
+		limit = { NOT = { legitimacy_equivalent = 40 } legitimacy_equivalent = 30 }
+		add_legitimacy_equivalent = {
+			amount = 40
+			republican_tradition = 40
+			devotion = 40
+		}
 	}
 	else = {
-		add_legitimacy = 50
+		add_legitimacy_equivalent = {
+			amount = 50
+			republican_tradition = 50
+			devotion = 50
+		}
 		}
 	}
 	penalties = {
@@ -298,10 +321,11 @@ estate_retirees_wiek = {
 	}
 }
 
-estate_retirees_at ={
+estate_retirees_at = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
@@ -317,10 +341,11 @@ estate_retirees_at ={
 		diplomatic_reputation = 1
 	}
 }
-estate_retirees_ac ={
+estate_retirees_ac = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.15
 	ai_will_do = {
@@ -335,16 +360,16 @@ estate_retirees_ac ={
 	}
 }
 
-estate_retirees_scl ={
+estate_retirees_scl = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0
 	influence = 0.1
 	loyalty_scaled_conditional_modifier = {
 	trigger = {	
-		limit = { estate_loyalty = 
-					{
+		limit = { estate_loyalty = {
 					estate = estate_retirees
 					loyalty = 100
 					} 
@@ -353,13 +378,11 @@ estate_retirees_scl ={
 	}
 	modifier = {
 		idea_cost = 0.15
-		diplomatic_reputation = -1 
+		diplomatic_reputation = 1 
 	}
 	loyalty_scaled_conditional_modifier = {
-	trigger = 
-			{	
-		limit = { estate_loyalty = 
-					{
+	trigger = {	
+		limit = { estate_loyalty = {
 					estate = estate_retirees
 					loyalty = 60
 					} 
@@ -368,14 +391,11 @@ estate_retirees_scl ={
 	}
 	modifier = {
 		idea_cost = 0.1
-		diplomatic_reputation = -0.5
+		diplomatic_reputation = 0.5
 	}
-	loyalty_scaled_conditional_modifier =
-	 {
-	trigger = 
-			{	
-		limit = { estate_loyalty = 
-					{
+	loyalty_scaled_conditional_modifier = {
+	trigger = {	
+		limit = { estate_loyalty = {
 					estate = estate_retirees
 					loyalty = 20
 					} 
@@ -384,14 +404,11 @@ estate_retirees_scl ={
 	}
 	modifier = {
 		idea_cost = -0.1
-		diplomatic_reputation = 0.5
+		diplomatic_reputation = -0.5
 	}
-	loyalty_scaled_conditional_modifier =
-	 {
-	trigger = 
-			{	
-		limit = { estate_loyalty = 
-					{
+	loyalty_scaled_conditional_modifier = {
+	trigger = {	
+		limit = { estate_loyalty = {
 					estate = estate_retirees
 					loyalty = 0
 					} 
@@ -400,7 +417,7 @@ estate_retirees_scl ={
 	}
 	modifier = {
 		idea_cost = -0.15
-		diplomatic_reputation = 1 
+		diplomatic_reputation = -1 
 	}
 	penalties = {
 	}

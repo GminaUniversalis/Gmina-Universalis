@@ -1,20 +1,22 @@
-estate_intellectuals = {
-    icon = 8
+estate_scientists = {
+    icon = 4
     trigger = {
 		always = yes
+		innovativeness = 50
 		NOT = { 
 			religion_group = communism_group
 		}
     }
     country_modifier_happy = {
-		reform_progress_growth = 0.4
-		innovativeness_gain = 0.4
+		reform_progress_growth = 0.5
+		innovativeness_gain = 0.5
 	}
     country_modifier_neutral = {
 		reform_progress_growth = 0.2
+		innovativness_gain = 0.1
 	}
     country_modifier_angry = {
-		reform_progress_growth = -0.2
+		reform_progress_growth = -0.4
 		innovativeness_gain = -0.5
 		global_unrest = 3
 	}
@@ -34,19 +36,17 @@ estate_intellectuals = {
 		}
 	}
     land_ownership_modifier = {
-		intellectuals_loyalty_modifier = 0.5
+		scientists_loyalty_modifier = 0.5
 	}
-    base_influence = 10
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 25 50 75 }
-    privileges = {
-
-     }
-	 privileges = {
-
+    color = { 34 245 249 }
+     privileges = {
+		estate_scientists_land_rights
+		estate_scientists_obietnice
 	 }
      agendas = {
-		estate_intellectuals_hire_advisor
+		estate_scientists_hire_advisor
      }
      influence_from_dev_modifier = 1.0     
 }

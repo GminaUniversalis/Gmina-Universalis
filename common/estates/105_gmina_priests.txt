@@ -1,7 +1,7 @@
 estate_priests = {
-    icon = 1
+    icon = 6
     trigger = {
-		always = no
+		always = yes
 		NOT = { 
 			religion_group = communism_group
 		}
@@ -14,9 +14,9 @@ estate_priests = {
 		tolerance_own = 1
 	}
     country_modifier_angry = {
-		global_unrest = 1
 		tolerance_own = -3
 		prestige = -1
+		global_unrest = 4
 	}
   province_independence_weight = {
 		factor = 1
@@ -39,17 +39,15 @@ estate_priests = {
 	}
 	
     land_ownership_modifier = {
-		kler_loyalty_modifier = 0.3
+		priests_loyalty_modifier = 0.3
 	}
-    base_influence = 10
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 255 255 0 }
+    color = { 207 179 33 }
     privileges = {
-
-     }
-	 privileges = {
-
-	 }
+		estate_priests_land_rights
+		estate_priests_obietnice
+	}
      agendas = {
 		estate_priests_hire_advisor
      }

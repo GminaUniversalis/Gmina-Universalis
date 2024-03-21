@@ -1,0 +1,475 @@
+namespace = gmina_estate_disasters
+
+#Retirees start
+country_event = {
+	id = gmina_estate_disasters.1
+	title = gmina_estate_disasters.1.t
+	desc = gmina_estate_disasters.1.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_retirees_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.1.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.1.a.tt
+	}
+}
+#Retirees end
+country_event = {
+	id = gmina_estate_disasters.2
+	title = gmina_estate_disasters.2.t
+	desc = gmina_estate_disasters.2.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.2.a
+	}
+}
+#Families start
+country_event = {
+	id = gmina_estate_disasters.3
+	title = gmina_estate_disasters.3.t
+	desc = gmina_estate_disasters.3.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_families_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.3.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.3.a.tt
+	}
+}
+#Famielies end
+country_event = {
+	id = gmina_estate_disasters.4
+	title = gmina_estate_disasters.4.t
+	desc = gmina_estate_disasters.4.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.4.a
+	}
+}
+#Army start
+country_event = {
+	id = gmina_estate_disasters.5
+	title = gmina_estate_disasters.5.t
+	desc = gmina_estate_disasters.5.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_army_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.5.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.5.a.tt
+	}
+}
+#Army end
+country_event = {
+	id = gmina_estate_disasters.6
+	title = gmina_estate_disasters.6.t
+	desc = gmina_estate_disasters.6.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.6.a
+	}
+}
+#Farmers start
+country_event = {
+	id = gmina_estate_disasters.7
+	title = gmina_estate_disasters.7.t
+	desc = gmina_estate_disasters.7.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_farmers_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.7.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.7.a.tt
+	}
+}
+#Farmers end
+country_event = {
+	id = gmina_estate_disasters.7
+	title = gmina_estate_disasters.7.t
+	desc = gmina_estate_disasters.7.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.7.a
+	}
+}
+#Banks start
+country_event = {
+	id = gmina_estate_disasters.8
+	title = gmina_estate_disasters.8.t
+	desc = gmina_estate_disasters.8.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_banks_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.8.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.8.a.tt
+	}
+}
+#Banks end
+country_event = {
+	id = gmina_estate_disasters.9
+	title = gmina_estate_disasters.9.t
+	desc = gmina_estate_disasters.9.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.9.a
+	}
+}
+#Middle class start
+country_event = {
+	id = gmina_estate_disasters.10
+	title = gmina_estate_disasters.10.t
+	desc = gmina_estate_disasters.10.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_middle_class_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.10.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.10.a.tt
+	}
+}
+#Middle class end
+country_event = {
+	id = gmina_estate_disasters.11
+	title = gmina_estate_disasters.11.t
+	desc = gmina_estate_disasters.11.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.11.a
+	}
+}
+#Ub start
+country_event = {
+	id = gmina_estate_disasters.12
+	title = gmina_estate_disasters.12.t
+	desc = gmina_estate_disasters.12.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_ub_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.12.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.12.a.tt
+	}
+}
+#Ub end
+country_event = {
+	id = gmina_estate_disasters.13
+	title = gmina_estate_disasters.13.t
+	desc = gmina_estate_disasters.13.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.13.a
+	}
+}
+#scientists start
+country_event = {
+	id = gmina_estate_disasters.14
+	title = gmina_estate_disasters.14.t
+	desc = gmina_estate_disasters.14.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_scientists_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.14.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.14.a.tt
+	}
+}
+#scientists end
+country_event = {
+	id = gmina_estate_disasters.15
+	title = gmina_estate_disasters.15.t
+	desc = gmina_estate_disasters.15.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.15.a
+	}
+}
+#Investors start
+country_event = {
+	id = gmina_estate_disasters.16
+	title = gmina_estate_disasters.16.t
+	desc = gmina_estate_disasters.16.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_investors_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.16.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.16.a.tt
+	}
+}
+#Investors end
+country_event = {
+	id = gmina_estate_disasters.17
+	title = gmina_estate_disasters.17.t
+	desc = gmina_estate_disasters.17.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.17.a
+	}
+}
+#Priests start
+country_event = {
+	id = gmina_estate_disasters.18
+	title = gmina_estate_disasters.18.t
+	desc = gmina_estate_disasters.18.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_priests_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.18.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.18.a.tt
+	}
+}
+#Priests end
+country_event = {
+	id = gmina_estate_disasters.19
+	title = gmina_estate_disasters.19.t
+	desc = gmina_estate_disasters.19.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.19.a
+	}
+}
+#Miners start
+country_event = {
+	id = gmina_estate_disasters.20
+	title = gmina_estate_disasters.20.t
+	desc = gmina_estate_disasters.20.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_miners_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.20.a	
+		add_stability = -1
+		custom_tooltip = gmina_estate_disasters.20.a.tt
+	}
+}
+#Miners end
+country_event = {
+	id = gmina_estate_disasters.21
+	title = gmina_estate_disasters.21.t
+	desc = gmina_estate_disasters.21.d
+	picture = GMINA_ESTATE_estate_event_picture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = gmina_estate_disasters.21.a
+	}
+}
