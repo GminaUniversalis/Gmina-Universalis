@@ -2,15 +2,22 @@ estate_investors = {
     icon = 5
     trigger = {
 		always = yes
-		production_income_percentage = 0.5
-        NOT = { 
-			religion_group = communism_group
+		OR = {
+			colony = 1
+			trade_goods = gu_finances
+       		NOT = { 
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
+				religion_group = communism_group
+			}
 		}
     }
     country_modifier_happy = {
 		build_cost = -0.2
 		build_time = -0.4
-		center_of_trade_upgrade_cost = -0.1
+		center_of_trade_upgrade_cost = -0.2
 		great_project_upgrade_cost = -0.2
 		great_project_upgrade_time = -0.2
 	}
@@ -20,6 +27,7 @@ estate_investors = {
     country_modifier_angry = {
 		build_cost = 0.4
 		build_time = 1
+		global_unrest = 4
 	}
   province_independence_weight = {
 		factor = 1
@@ -40,9 +48,9 @@ estate_investors = {
     land_ownership_modifier = {
 		investors_loyalty_modifier = 0.4
 	}
-    base_influence = 10
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 10 70 100 }
+    color = { 230 137 38 }
      privileges = {
 		estate_investors_land_rights
 		estate_investors_obietnice

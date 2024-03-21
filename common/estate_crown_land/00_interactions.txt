@@ -445,7 +445,7 @@ interaction = {
 					has_disaster = estate_banks_disaster
 					has_disaster = estate_families_disaster
 					has_disaster = estate_farmers_disaster
-					has_disaster = estate_intellectuals_disaster
+					has_disaster = estate_scientists_disaster
 					has_disaster = estate_investors_disaster
 					has_disaster = estate_middle_class_disaster
 					has_disaster = estate_miners_disaster
@@ -487,7 +487,7 @@ interaction = {
 					has_disaster = estate_banks_disaster
 					has_disaster = estate_families_disaster
 					has_disaster = estate_farmers_disaster
-					has_disaster = estate_intellectuals_disaster
+					has_disaster = estate_scientists_disaster
 					has_disaster = estate_investors_disaster
 					has_disaster = estate_middle_class_disaster
 					has_disaster = estate_miners_disaster
@@ -512,7 +512,7 @@ interaction = {
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_intellectuals_disaster
+						disaster = estate_scientists_disaster
 						value = 5
 					}
 					has_disaster_progress = {
@@ -599,7 +599,7 @@ interaction = {
 				has_disaster = estate_banks_disaster
 				has_disaster = estate_families_disaster
 				has_disaster = estate_farmers_disaster
-				has_disaster = estate_intellectuals_disaster
+				has_disaster = estate_scientists_disaster
 				has_disaster = estate_investors_disaster
 				has_disaster = estate_middle_class_disaster
 				has_disaster = estate_miners_disaster
@@ -624,7 +624,7 @@ interaction = {
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_intellectuals_disaster
+					disaster = estate_scientists_disaster
 					value = 5
 				}
 				has_disaster_progress = {

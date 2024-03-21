@@ -1,6 +1,5 @@
 country_decisions = {
 	silesian_conurbation_forming = {
-		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_metropolis_gzm_flag }
@@ -139,7 +138,6 @@ country_decisions = {
 	}
 
     rybnik_coal_area_forming = {
-		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }

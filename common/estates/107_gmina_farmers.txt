@@ -54,9 +54,9 @@ estate_farmers = {
     land_ownership_modifier = {
 		farmers_loyalty_modifier = 0.5
 	}
-    base_influence = 5
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 100 50 100 }
+    color = { 32 213 110 }
 
 	 privileges = {
 		estate_farmers_obietnice

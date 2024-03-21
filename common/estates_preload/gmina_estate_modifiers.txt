@@ -166,27 +166,27 @@ estate_ub = {
 		}
 	}
 }
-estate_intellectuals = {
+estate_scientists = {
 	modifier_definition = {
 		type = loyalty
-		key = intellectuals_loyalty_modifier
+		key = scientists_loyalty_modifier
 		trigger = {
-			has_estate = estate_intellectuals
+			has_estate = estate_scientists
 		}
 	}
 	modifier_definition = {
 		type = influence
-		key = intellectuals_influence_modifier
+		key = scientists_influence_modifier
 		trigger = {
-			has_estate = estate_intellectuals
+			has_estate = estate_scientists
 		}
 	}
 	
 	modifier_definition = {
 		type = privileges
-		key = intellectuals_privilege_slots
+		key = scientists_privilege_slots
 		trigger = {
-			has_estate = estate_intellectuals
+			has_estate = estate_scientists
 		}
 	}
 }

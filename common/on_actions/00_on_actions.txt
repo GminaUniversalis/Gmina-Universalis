@@ -4185,18 +4185,18 @@ on_revoke_estate_land = {
 	}
 	if = {
 		limit = {
-			has_estate = estate_intellectuals
+			has_estate = estate_scientists
 			owner = {
 				NOT = {
 					estate_loyalty = {
-						estate = estate_intellectuals
+						estate = estate_scientists
 						loyalty = 40
 					}
 				}
 			}
 		}
 		spawn_rebels = {
-			type = intellectuals_rebels
+			type = scientists_rebels
 			size = 1
 		}
 		province_event = { id = gmina_estates.1 }

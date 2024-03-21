@@ -18,6 +18,7 @@ estate_banks = {
     country_modifier_angry = {
 		trade_efficiency = -0.4
 		interest = 3
+		global_unrest = 4
 	}
   province_independence_weight = {
 		factor = 1
@@ -38,9 +39,9 @@ estate_banks = {
     land_ownership_modifier = {
 		banks_loyalty_modifier = 0.7
 	}
-    base_influence = 10
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 40 40 180 }
+    color = { 255 215 0 }
     privileges = {
 		estate_banks_land_rights
 		estate_banks_obietnice

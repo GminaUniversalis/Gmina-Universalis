@@ -66,7 +66,7 @@ estate_army_wt = {
 	}
 	benefits = {
 		defensiveness = 0.2
-		hostile_attrition = 0.5
+		hostile_attrition = 1
 	}
 }
 estate_army_blitz = {
@@ -320,7 +320,7 @@ estate_army_land_rights = {
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_intellectuals_land_rights
+			has_estate_privilege = estate_scientists_land_rights
 		}
 	}
 }

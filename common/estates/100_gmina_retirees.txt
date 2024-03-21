@@ -4,7 +4,7 @@ estate_retirees = {
         always = yes
     }
     country_modifier_happy = {
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.5
 		global_unrest = -2
 		stability_cost_modifier = -0.2
 	}
@@ -12,6 +12,7 @@ estate_retirees = {
 		global_tax_modifier = 0.2
 	}
     country_modifier_angry = {
+		global_tax_modifier = -0.3
 		stability_cost_modifier = 0.2
 		global_unrest = 4
 	}
@@ -37,9 +38,9 @@ estate_retirees = {
     land_ownership_modifier = {
 		retirees_loyalty_modifier = 0.2
 	}
-    base_influence = 5
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 60 60 90 }
+    color = { 200 100 200 }
     privileges = {
 		estate_retirees_land_rights
 		estate_retirees_13

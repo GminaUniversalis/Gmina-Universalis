@@ -232,7 +232,7 @@ country_event = {
 		clr_country_flag = estate_banks_present_agenda
 		clr_country_flag = estate_retirees_present_agenda
 		clr_country_flag = estate_miners_present_agenda
-		clr_country_flag = estate_intellectuals_present_agenda
+		clr_country_flag = estate_scientists_present_agenda
 		clr_country_flag = estate_investors_present_agenda
 		clr_country_flag = estate_priests_present_agenda
 		clr_country_flag = estate_middle_class_present_agenda
@@ -472,9 +472,9 @@ country_event = {
 	}
 	option = {
 		name = estate_privileges_and_agendas_events.3.i
-		trigger = { has_country_flag = estate_intellectuals_present_agenda }
-		start_estate_agenda = estate_intellectuals
-		goto = estate_intellectuals
+		trigger = { has_country_flag = estate_scientists_present_agenda }
+		start_estate_agenda = estate_scientists
+		goto = estate_scientists
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -482,7 +482,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 30
-						estate = estate_intellectuals
+						estate = estate_scientists
 					}
 				}
 			}
@@ -491,7 +491,7 @@ country_event = {
 				NOT = {
 					estate_loyalty = {
 						loyalty = 20
-						estate = estate_intellectuals
+						estate = estate_scientists
 					}
 				}
 			}
@@ -499,18 +499,18 @@ country_event = {
 				factor = 1.5
 				estate_influence = {
 					influence = 70
-					estate = estate_intellectuals
+					estate = estate_scientists
 				}
 			}
 			modifier = {
 				factor = 2
 				is_absolutism_active = yes
 				num_of_estate_privileges = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					value = 1
 				}
 				estate_loyalty = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					higher_than_influence = no
 				}
 			}

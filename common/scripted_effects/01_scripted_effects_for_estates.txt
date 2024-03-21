@@ -72,13 +72,13 @@ each_estate_effect = {
 	}
 	if = {
 		limit = {
-			has_estate = estate_intellectuals
+			has_estate = estate_scientists
 		}
 		[[effect]
 			$effect$
 		]
-		[[intellectuals_effect]
-			$intellectuals_effect$
+		[[scientists_effect]
+			$scientists_effect$
 		]
 	}
 	if = {
@@ -195,25 +195,25 @@ reduce_estate_priests_loyalty_effect = {
 		}
 	}
 }
-#Intellectuals
-add_estate_intellectuals_loyalty_effect = {
+#scientists
+add_estate_scientists_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_intellectuals
+			has_estate = estate_scientists
 		}
 		add_estate_loyalty = {
-			estate = estate_intellectuals
+			estate = estate_scientists
 			loyalty = 10
 		}
 	}
 }
-reduce_estate_intellectuals_loyalty_effect = {
+reduce_estate_scientists_loyalty_effect = {
 	if = {
 		limit = {
-			has_estate = estate_intellectuals
+			has_estate = estate_scientists
 		}
 		add_estate_loyalty = {
-			estate = estate_intellectuals
+			estate = estate_scientists
 			loyalty = -10
 		}
 	}
@@ -2925,12 +2925,12 @@ scaled_estate_ub = {
 	scaled_estate_land_share_reduce_effect = { estate = estate_ub }
 }
 
-scaled_estate_intellectuals_land_share_effect = {
-	scaled_estate_land_share_add_effect = { estate = estate_intellectuals }
+scaled_estate_scientists_land_share_effect = {
+	scaled_estate_land_share_add_effect = { estate = estate_scientists }
 }
 
-scaled_estate_intellectuals = {
-	scaled_estate_land_share_reduce_effect = { estate = estate_intellectuals }
+scaled_estate_scientists = {
+	scaled_estate_land_share_reduce_effect = { estate = estate_scientists }
 }
 
 scaled_estate_investors_land_share_effect = {
@@ -3633,20 +3633,20 @@ spawn_rebels_from_unhappy_estate = {
 			1 = {
 				trigger = {
 					owner = {
-						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_intellectuals } }
-						has_estate = estate_intellectuals
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_scientists } }
+						has_estate = estate_scientists
 						NOT = {
 							estate_loyalty = {
-								estate = estate_intellectuals
+								estate = estate_scientists
 								loyalty = 30
 							}
 						}
 					}
 				}
 				spawn_rebels = {
-					type = intellectuals_rebels
+					type = scientists_rebels
 					size = $size$
-					estate = estate_intellectuals
+					estate = estate_scientists
 					as_if_faction = yes
 				}
 			}
@@ -3930,12 +3930,12 @@ pick_random_estate_if_present = {
 		}
 		1 = {
 			trigger = {
-				has_estate = estate_intellectuals
-				NOT = { has_country_flag = estate_intellectuals_$flag$ }
+				has_estate = estate_scientists
+				NOT = { has_country_flag = estate_scientists_$flag$ }
 			}
-			set_country_flag = estate_intellectuals_$flag$
+			set_country_flag = estate_scientists_$flag$
 			[[estate_action]
-			$estate_action$ = estate_intellectuals
+			$estate_action$ = estate_scientists
 			]
 		}
 		1 = {
@@ -4177,7 +4177,7 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_middle_class } }			add_estate_loyalty = { estate = estate_middle_class			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_banks } }			add_estate_loyalty = { estate = estate_banks			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ub } }			add_estate_loyalty = { estate = estate_ub			 loyalty = 15 } }
-			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_intellectuals } }			add_estate_loyalty = { estate = estate_intellectuals			 loyalty = 15 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_scientists } }			add_estate_loyalty = { estate = estate_scientists			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_investors } }			add_estate_loyalty = { estate = estate_investors		 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_priests} }			add_estate_loyalty = { estate = estate_priests			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_miners } }			add_estate_loyalty = { estate = estate_miners			 loyalty = 15 } }
@@ -4206,7 +4206,7 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_middle_class } }			add_estate_loyalty = { estate = estate_middle_class			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_banks } }			add_estate_loyalty = { estate = estate_banks			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ub } }			add_estate_loyalty = { estate = estate_ub			 loyalty = 20 } }
-			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_intellectuals } }			add_estate_loyalty = { estate = estate_intellectuals			 loyalty = 20 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_scientists } }			add_estate_loyalty = { estate = estate_scientists			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_investors } }			add_estate_loyalty = { estate = estate_investors		 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_priests} }			add_estate_loyalty = { estate = estate_priests			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_miners } }			add_estate_loyalty = { estate = estate_miners			 loyalty = 20 } }
@@ -4726,7 +4726,7 @@ clr_auto_complete_flag = {
 		clr_country_flag = auto_complete_estate_agenda_estate_banks
 		clr_country_flag = auto_complete_estate_agenda_estate_retirees
 		clr_country_flag = auto_complete_estate_agenda_estate_miners
-		clr_country_flag = auto_complete_estate_agenda_estate_intellectuals
+		clr_country_flag = auto_complete_estate_agenda_estate_scientists
 		clr_country_flag = auto_complete_estate_agenda_estate_investors
 		clr_country_flag = auto_complete_estate_agenda_estate_priests
 		clr_country_flag = auto_complete_estate_agenda_estate_families
@@ -4940,9 +4940,9 @@ add_estate_loyalty_by_class_dip = {
 		}
 	}
 	if = {
-		limit = { has_estate = estate_intellectuals }
+		limit = { has_estate = estate_scientists }
 		add_estate_loyalty = {
-			estate = estate_intellectuals
+			estate = estate_scientists
 			loyalty = $loyalty$
 		}
 	}

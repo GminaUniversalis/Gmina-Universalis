@@ -175,7 +175,7 @@ estate_farmers_land_rights = {
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_intellectuals_land_rights
+			has_estate_privilege = estate_scientists_land_rights
 		}
 	}
 }

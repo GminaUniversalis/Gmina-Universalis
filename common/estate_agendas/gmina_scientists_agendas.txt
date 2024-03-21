@@ -1,4 +1,4 @@
-estate_intellectuals_hire_advisor = {
+estate_scientists_hire_advisor = {
 	can_select = { 
 		NOT = {
 			employed_advisor = {
@@ -15,11 +15,11 @@ estate_intellectuals_hire_advisor = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_intellectuals
+				estate = estate_scientists
 			}
 		}
 		else = {
@@ -31,10 +31,10 @@ estate_intellectuals_hire_advisor = {
 	}
 	task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_intellectuals
+			estate = estate_scientists
 	}
 	add_estate_loyalty = {
-		estate = estate_intellectuals
+		estate = estate_scientists
 		loyalty = 10
 	}
 	}
@@ -42,7 +42,7 @@ estate_intellectuals_hire_advisor = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
 		add_estate_loyalty_modifier = {
-			estate = estate_intellectuals
+			estate = estate_scientists
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300

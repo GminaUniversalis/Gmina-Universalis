@@ -1,4 +1,4 @@
-intellectuals_rebels = {
+scientists_rebels = {
 	color = { 170 95 25 }
 
 	area = nation 					# Stays within the nation
@@ -36,7 +36,7 @@ intellectuals_rebels = {
 		modifier = {
 			factor = 5
 			owner = {
-				has_disaster = estate_intellectuals_disaster
+				has_disaster = estate_scientists_disaster
 			}
 		}
 		modifier = {
@@ -89,7 +89,7 @@ intellectuals_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = intellectuals_rebels_demands
+	demands_description = scientists_rebels_demands
 	
 	# Country Scope	
 	demands_enforced_effect = {
@@ -102,17 +102,17 @@ intellectuals_rebels = {
 		}
 		if = {
 			limit = {
-				has_estate = estate_intellectuals
+				has_estate = estate_scientists
 				NOT = {
 					has_estate_influence_modifier = {
 						estate = estate_janissaries
-						modifier = EST_VAL_intellectuals_EXTORTED_RIGHTS
+						modifier = EST_VAL_scientists_EXTORTED_RIGHTS
 					}
 				}
 			}
 			add_estate_influence_modifier = {
-				estate = estate_intellectuals
-				desc = EST_VAL_intellectuals_EXTORTED_RIGHTS
+				estate = estate_scientists
+				desc = EST_VAL_scientists_EXTORTED_RIGHTS
 				influence = 15
 				duration = 5475
 			}
@@ -129,9 +129,9 @@ intellectuals_rebels = {
 		add_devotion = -20
 		add_republican_tradition = -10
 		if = {
-			limit = { has_estate = estate_intellectuals }
+			limit = { has_estate = estate_scientists }
 			change_estate_land_share = {
-				estate = estate_intellectuals
+				estate = estate_scientists
 				share = 100
 			}
 		}

@@ -69,15 +69,15 @@
  gmina_estate_disasters.14.t:0 "Ub crushed"
  gmina_estate_disasters.14.d:0 "Ub do gazu"
  gmina_estate_disasters.14.a:0 "Ub jebac pradem"
- estate_intellectuals_disaster:0 "Intellectuals overthrow government"
-#Intellectuals start
- gmina_estate_disasters.15.t:0 "Intellectuals take power"
- gmina_estate_disasters.15.d:0 "Intellectuals sralnik"
+ estate_Scientists_disaster:0 "Scientists overthrow government"
+#Scientists start
+ gmina_estate_disasters.15.t:0 "Scientists take power"
+ gmina_estate_disasters.15.d:0 "Scientists sralnik"
  gmina_estate_disasters.15.a:0 "Wszyscy zginiemy"
- gmina_estate_disasters.15.a.tt:0 "Intellectuals nie wiedzial"
-#Intellectuals end
- gmina_estate_disasters.16.t:0 "Intellectuals crushed"
- gmina_estate_disasters.16.d:0 "Intellectuals do gazu"
+ gmina_estate_disasters.15.a.tt:0 "Scientists nie wiedzial"
+#Scientists end
+ gmina_estate_disasters.16.t:0 "Scientists crushed"
+ gmina_estate_disasters.16.d:0 "Scientists do gazu"
  gmina_estate_disasters.16.a:0 "Hawkingów jebac pradem"
  estate_investors_disaster:0 "Investors overthrow government"
 #Investors start

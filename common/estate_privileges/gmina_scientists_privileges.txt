@@ -1,4 +1,4 @@
-estate_intellectuals_land_rights = {
+estate_scientists_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
@@ -35,7 +35,7 @@ estate_intellectuals_land_rights = {
 		}
 	}
 }
-estate_intellectuals_obietnice = {
+estate_scientists_obietnice = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5

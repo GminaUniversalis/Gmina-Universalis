@@ -4113,7 +4113,7 @@ defined_text = {
 	text = { localisation_key = estate_middle_class_disaster					trigger = { has_disaster = estate_middle_class_disaster } }
 	text = { localisation_key = estate_banks_disaster					trigger = { has_disaster = estate_banks_disaster } }
 	text = { localisation_key = estate_ub_disaster					trigger = { has_disaster = estate_ub_disaster } }
-	text = { localisation_key = estate_intellectuals_disaster					trigger = { has_disaster = estate_intellectuals_disaster } }
+	text = { localisation_key = estate_scientists_disaster					trigger = { has_disaster = estate_scientists_disaster } }
 	text = { localisation_key = estate_investors_disaster					trigger = { has_disaster = estate_investors_disaster } }
 	text = { localisation_key = estate_priests_disaster					trigger = { has_disaster = estate_priests_disaster } }
 	text = { localisation_key = estate_miners_disaster					trigger = { has_disaster = estate_miners_disaster } }

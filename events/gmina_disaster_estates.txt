@@ -301,7 +301,7 @@ country_event = {
 		name = gmina_estate_disasters.13.a
 	}
 }
-#Intellectuals start
+#scientists start
 country_event = {
 	id = gmina_estate_disasters.14
 	title = gmina_estate_disasters.14.t
@@ -313,7 +313,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = estate_intellectuals_in_power
+			set_country_flag = estate_scientists_in_power
 			set_country_flag = has_estate_disaster_flag
 		}
 	}
@@ -324,7 +324,7 @@ country_event = {
 		custom_tooltip = gmina_estate_disasters.14.a.tt
 	}
 }
-#Intellectuals end
+#scientists end
 country_event = {
 	id = gmina_estate_disasters.15
 	title = gmina_estate_disasters.15.t

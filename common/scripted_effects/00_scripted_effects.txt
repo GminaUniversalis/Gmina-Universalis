@@ -2622,7 +2622,7 @@ spawn_country_religious_rebels = {
 			banks =             	  { PREV = { spawn_rebels = { type = banks_rebels size = $size$ } } }
 			middle_class =            { PREV = { spawn_rebels = { type = middle_class_rebels size = $size$ } } }
 			ub =             		  { PREV = { spawn_rebels = { type = ub_rebels size = $size$ } } }
-			intellectuals =           { PREV = { spawn_rebels = { type = intellectuals_rebels size = $size$ } } }
+			scientists =           { PREV = { spawn_rebels = { type = scientists_rebels size = $size$ } } }
 			investors =               { PREV = { spawn_rebels = { type = investors_rebels size = $size$ } } }
 			priests =                 { PREV = { spawn_rebels = { type = priests_rebels size = $size$ } } }
 			miners =             	  { PREV = { spawn_rebels = { type = miners_rebels size = $size$ } } }
@@ -2633,35 +2633,35 @@ spawn_country_religious_rebels = {
 #Province effect
 spawn_province_religious_rebels = {
 	trigger_switch = {
-		on_trigger = religion
-		anglican =              { spawn_rebels = { type = anglican_rebels size = $size$ } }
-		hussite =               { spawn_rebels = { type = hussite_rebels size = $size$ } }
-		animism =               { spawn_rebels = { type = animism_rebels size = $size$ } }
-		buddhism =              { spawn_rebels = { type = buddhism_rebels size = $size$ } }
-		catholic =              { spawn_rebels = { type = catholic_rebels size = $size$ } }
-		confucianism =          { spawn_rebels = { type = confucianism_rebels size = $size$ } }
-		coptic =                { spawn_rebels = { type = coptic_rebels size = $size$ } }
-		hinduism =              { spawn_rebels = { type = hinduism_rebels size = $size$ } }
-		ibadi =                 { spawn_rebels = { type = ibadi_rebels size = $size$ } }
-		inti =                  { spawn_rebels = { type = inti_rebels size = $size$ } }
-		jewish =                { spawn_rebels = { type = jewish_rebels size = $size$ } }
-		mahayana =              { spawn_rebels = { type = mahayana_rebels size = $size$ } }
-		mesoamerican_religion = { spawn_rebels = { type = maya_rebels size = $size$ } }
-		nahuatl =               { spawn_rebels = { type = nahuatl_rebels size = $size$ } }
-		norse_pagan_reformed =  { spawn_rebels = { type = norse_pagan_reformed_rebels size = $size$ } }
-		orthodox =              { spawn_rebels = { type = orthodox_rebels size = $size$ } }
-		protestant =            { spawn_rebels = { type = protestant_rebels size = $size$ } }
-		reformed =              { spawn_rebels = { type = reformed_rebels size = $size$ } }
-		shamanism =             { spawn_rebels = { type = shamanism_rebels size = $size$ } }
-		shiite =                { spawn_rebels = { type = shiite_rebels size = $size$ } }
-		shinto =                { spawn_rebels = { type = shinto_rebels size = $size$ } }
-		sikhism =               { spawn_rebels = { type = sikhism_rebels size = $size$ } }
-		sunni =                 { spawn_rebels = { type = sunni_rebels size = $size$ } }
-		tengri_pagan_reformed = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ } }
-		totemism =              { spawn_rebels = { type = totemism_rebels size = $size$ } }
-		vajrayana =             { spawn_rebels = { type = vajrayana_rebels size = $size$ } }
-		zoroastrian =           { spawn_rebels = { type = zoroastrian_rebels size = $size$ } }
-		dreamtime =             { spawn_rebels = { type = dreamtime_rebels size = $size$ } }
+		 on_trigger = religion
+		# anglican =              { spawn_rebels = { type = anglican_rebels size = $size$ } }
+		# hussite =               { spawn_rebels = { type = hussite_rebels size = $size$ } }
+		# animism =               { spawn_rebels = { type = animism_rebels size = $size$ } }
+		# buddhism =              { spawn_rebels = { type = buddhism_rebels size = $size$ } }
+		# catholic =              { spawn_rebels = { type = catholic_rebels size = $size$ } }
+		# confucianism =          { spawn_rebels = { type = confucianism_rebels size = $size$ } }
+		# coptic =                { spawn_rebels = { type = coptic_rebels size = $size$ } }
+		# hinduism =              { spawn_rebels = { type = hinduism_rebels size = $size$ } }
+		# ibadi =                 { spawn_rebels = { type = ibadi_rebels size = $size$ } }
+		# inti =                  { spawn_rebels = { type = inti_rebels size = $size$ } }
+		# jewish =                { spawn_rebels = { type = jewish_rebels size = $size$ } }
+		# mahayana =              { spawn_rebels = { type = mahayana_rebels size = $size$ } }
+		# mesoamerican_religion = { spawn_rebels = { type = maya_rebels size = $size$ } }
+		# nahuatl =               { spawn_rebels = { type = nahuatl_rebels size = $size$ } }
+		# norse_pagan_reformed =  { spawn_rebels = { type = norse_pagan_reformed_rebels size = $size$ } }
+		# orthodox =              { spawn_rebels = { type = orthodox_rebels size = $size$ } }
+		# protestant =            { spawn_rebels = { type = protestant_rebels size = $size$ } }
+		# reformed =              { spawn_rebels = { type = reformed_rebels size = $size$ } }
+		# shamanism =             { spawn_rebels = { type = shamanism_rebels size = $size$ } }
+		# shiite =                { spawn_rebels = { type = shiite_rebels size = $size$ } }
+		# shinto =                { spawn_rebels = { type = shinto_rebels size = $size$ } }
+		# sikhism =               { spawn_rebels = { type = sikhism_rebels size = $size$ } }
+		# sunni =                 { spawn_rebels = { type = sunni_rebels size = $size$ } }
+		# tengri_pagan_reformed = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ } }
+		# totemism =              { spawn_rebels = { type = totemism_rebels size = $size$ } }
+		# vajrayana =             { spawn_rebels = { type = vajrayana_rebels size = $size$ } }
+		# zoroastrian =           { spawn_rebels = { type = zoroastrian_rebels size = $size$ } }
+		# dreamtime =             { spawn_rebels = { type = dreamtime_rebels size = $size$ } }
 		retirees =             	{ spawn_rebels = { type = retirees_rebels size = $size$ } } 
 		families =             	{ spawn_rebels = { type = families_rebels size = $size$ } } 
 		army =             		{ spawn_rebels = { type = army_rebels size = $size$ } } 
@@ -2669,7 +2669,7 @@ spawn_province_religious_rebels = {
 		banks =             	{ spawn_rebels = { type = banks_rebels size = $size$ } } 
 		middle_class =          { spawn_rebels = { type = middle_class_rebels size = $size$ } } 
 		ub =             		{ spawn_rebels = { type = ub_rebels size = $size$ } } 
-		intellectuals =         { spawn_rebels = { type = intellectuals_rebels size = $size$ } } 
+		scientists =         { spawn_rebels = { type = scientists_rebels size = $size$ } } 
 		investors =             { spawn_rebels = { type = investors_rebels size = $size$ } } 
 		priests =               { spawn_rebels = { type = priests_rebels size = $size$ } } 
 		miners =             	{ spawn_rebels = { type = miners_rebels size = $size$ } } 
@@ -4858,7 +4858,7 @@ set_likely_rebels_flag = {
 		if = { limit = { likely_rebels = banks_rebels }						set_province_flag = likely_spawns_banks_rebels }
 		if = { limit = { likely_rebels = middle_class_rebels }				set_province_flag = likely_spawns_middle_class_rebels }
 		if = { limit = { likely_rebels = ub_rebels }						set_province_flag = likely_spawns_ub_rebels }
-		if = { limit = { likely_rebels = intellectuals_rebels }				set_province_flag = likely_spawns_intellectuals_rebels}
+		if = { limit = { likely_rebels = scientists_rebels }				set_province_flag = likely_spawns_scientists_rebels}
 		if = { limit = { likely_rebels = investors_rebels }					set_province_flag = likely_spawns_investors_rebels }
 		if = { limit = { likely_rebels = priests_rebels }					set_province_flag = likely_spawns_priests_rebels }
 		if = { limit = { likely_rebels = miners_rebels }					set_province_flag = likely_spawns_miners_rebels }
@@ -4921,7 +4921,7 @@ spawn_likely_rebels = {
 		likely_spawns_banks_rebels = {					spawn_rebels = { type =	banks_rebels size = $size$ } }	
 		likely_spawns_middle_class_rebels = {			spawn_rebels = { type =	middle_class_rebels size = $size$ } }				
 		likely_spawns_ub_rebels = {						spawn_rebels = { type =	ub_rebels size = $size$ } }
-		likely_spawns_intellectuals_rebels= {			spawn_rebels = { type =	intellectuals_rebels size = $size$ } }				
+		likely_spawns_scientists_rebels= {			spawn_rebels = { type =	scientists_rebels size = $size$ } }				
 		likely_spawns_investors_rebels = {				spawn_rebels = { type =	investors_rebels size = $size$ } }		
 		likely_spawns_priests_rebels = {				spawn_rebels = { type =	priests_rebels size = $size$ } }	
 		likely_spawns_miners_rebels = {					spawn_rebels = { type =	miners_rebels size = $size$ } }	
@@ -4983,7 +4983,7 @@ spawn_likely_rebels = {
 		clr_province_flag = likely_spawns_banks_rebels 
 		clr_province_flag = likely_spawns_middle_class_rebels 
 		clr_province_flag = likely_spawns_ub_rebels 
-		clr_province_flag = likely_spawns_intellectuals_rebels
+		clr_province_flag = likely_spawns_scientists_rebels
 		clr_province_flag = likely_spawns_investors_rebels 
 		clr_province_flag = likely_spawns_priests_rebels 
 		clr_province_flag = likely_spawns_miners_rebels 

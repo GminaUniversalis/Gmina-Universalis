@@ -1,4 +1,4 @@
-estate_intellectuals = {
+estate_scientists = {
     icon = 4
     trigger = {
 		always = yes
@@ -36,17 +36,17 @@ estate_intellectuals = {
 		}
 	}
     land_ownership_modifier = {
-		intellectuals_loyalty_modifier = 0.5
+		scientists_loyalty_modifier = 0.5
 	}
-    base_influence = 10
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 25 50 75 }
+    color = { 34 245 249 }
      privileges = {
-		estate_intellectuals_land_rights
-		estate_intellectuals_obietnice
+		estate_scientists_land_rights
+		estate_scientists_obietnice
 	 }
      agendas = {
-		estate_intellectuals_hire_advisor
+		estate_scientists_hire_advisor
      }
      influence_from_dev_modifier = 1.0     
 }

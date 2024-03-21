@@ -4,16 +4,19 @@ estate_army = {
         always = yes
     }
     country_modifier_happy = {
-		army_tradition_decay = -0.01
-		recover_army_morale_speed = 0.1
-		yearly_army_professionalism = 0.001
+		army_tradition_decay = -1
+		recover_army_morale_speed = 0.2
+		yearly_army_professionalism = 0.005
 	}
     country_modifier_neutral = {
-		army_tradition_decay = -0.005
+		army_tradition_decay = -0.5
+		recover_army_morale_speed = 0.1
 	}
     country_modifier_angry = {
-		discipline = -0.1
-		morale_damage_received = 0.2
+		army_tradition_decay = 1
+		yearly_army_professionalism = -0.01
+		recover_army_morale_speed = -0.2
+		global_unrest = 6
 	}
   	province_independence_weight = {
 		factor = 1
@@ -30,10 +33,10 @@ estate_army = {
     land_ownership_modifier = {
 		army_loyalty_modifier = 0.5
 	}
-    base_influence = 15
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 40 100 50 }
-	 privileges = {
+    color = { 28 133 30 }
+	privileges = {
 		estate_army_old_doc
 		estate_army_new_doc
 		estate_army_wt
@@ -42,8 +45,8 @@ estate_army = {
 		estate_army_gp
 		estate_army_obietnice
 		estate_army_land_rights
-	 }
-     agendas = {
+		}
+   	agendas = {
 		estate_army_increase_army_professionalism
 		estate_army_hire_advisor
 		estate_army_get_allies
@@ -53,7 +56,7 @@ estate_army = {
 		estate_army_bigger_army_than_rival
 		estate_army_build_up_manpower_reserves
 		estate_army_develop_x
-     }
+   	}
      influence_from_dev_modifier = 1.0
             
 }

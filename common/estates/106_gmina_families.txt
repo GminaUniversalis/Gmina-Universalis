@@ -15,7 +15,7 @@ estate_families = {
     country_modifier_angry = {
 		global_tax_modifier = -0.4
 		global_unrest = 4
-		manpower_recovery_speed = -0.4
+		manpower_recovery_speed = -0.5
 	}
   province_independence_weight = {
 		factor = 1
@@ -39,9 +39,9 @@ estate_families = {
     land_ownership_modifier = {
 		families_loyalty_modifier = 0.3
 	}
-    base_influence = 5
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 90 80 90 }
+    color = { 65 176 227 }
 	 privileges = {
 		estate_families_obietnice
 		estate_families_land_rights

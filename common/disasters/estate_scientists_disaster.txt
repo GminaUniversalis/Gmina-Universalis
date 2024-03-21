@@ -1,8 +1,8 @@
-estate_intellectuals_disaster = {
+estate_scientists_disaster = {
 	potential = {
-		has_estate = estate_intellectuals
+		has_estate = estate_scientists
 		estate_influence = {
-			estate = estate_intellectuals
+			estate = estate_scientists
 			influence = 60
 		}
 	}
@@ -11,7 +11,7 @@ estate_intellectuals_disaster = {
 	can_start = {
 		has_any_disaster = no
 		estate_influence = {
-			estate = estate_intellectuals
+			estate = estate_scientists
 			influence = 100
 		}
 		is_at_war = no
@@ -22,7 +22,7 @@ estate_intellectuals_disaster = {
 			has_any_disaster = yes
 			NOT = {
 				estate_influence = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					influence = 100
 				}		
 			}
@@ -35,7 +35,7 @@ estate_intellectuals_disaster = {
 			factor = 1
 			NOT = {
 				estate_influence = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					influence = 100
 				}
 			}
@@ -47,7 +47,7 @@ estate_intellectuals_disaster = {
 			factor = 0.5
 			NOT = {
 				estate_loyalty = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					loyalty = 60
 				}
 			}
@@ -57,7 +57,7 @@ estate_intellectuals_disaster = {
 			factor = 0.5
 			NOT = {
 				estate_loyalty = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					loyalty = 50
 				}
 			}
@@ -67,7 +67,7 @@ estate_intellectuals_disaster = {
 			factor = 0.5
 			NOT = {
 				estate_loyalty = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					loyalty = 40
 				}
 			}
@@ -77,7 +77,7 @@ estate_intellectuals_disaster = {
 			factor = 1
 			NOT = {
 				estate_loyalty = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					loyalty = 30
 				}
 			}
@@ -87,7 +87,7 @@ estate_intellectuals_disaster = {
 			factor = 1
 			NOT = {
 				estate_loyalty = {
-					estate = estate_intellectuals
+					estate = estate_scientists
 					loyalty = 20
 				}
 			}
@@ -97,9 +97,9 @@ estate_intellectuals_disaster = {
 	
 	can_end = {
 		custom_trigger_tooltip = {
-			tooltip = EST_CRUSHED_INTELLECTUALS
+			tooltip = EST_CRUSHED_scientists
 			OR = {
-				NOT = { has_country_flag = estate_intellectuals_in_power }
+				NOT = { has_country_flag = estate_scientists_in_power }
 				# has_country_flag = estate_nobles_in_power
 				# has_country_flag = estate_church_in_power
 			}						

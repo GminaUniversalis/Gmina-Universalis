@@ -5,7 +5,7 @@ estate_ub = {
 		religion_group = communism_group
     }
     country_modifier_happy = {
-		global_spy_defence = 0.4
+		global_spy_defence = 0.5
 		fabricate_claims_cost = -0.2
 	}
     country_modifier_neutral = {
@@ -13,7 +13,7 @@ estate_ub = {
 	}
     country_modifier_angry = {
 		spy_action_cost_modifier = 0.6
-		global_unrest = 4
+		global_unrest = 2
 	}
   province_independence_weight = {
 		factor = 1
@@ -26,9 +26,9 @@ estate_ub = {
     land_ownership_modifier = {
 		ub_loyalty_modifier = 0.2
 	}
-    base_influence = 20
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 10 110 110 }
+    color = { 201 22 22 }
     privileges = {
 		estate_ub_land_rights
 		estate_ub_obietnice

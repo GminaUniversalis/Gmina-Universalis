@@ -55,13 +55,15 @@ country_decisions = {
 			NOT = { religion_group = communism_group }
 			OR = { NOT = { exists = POL exists = PRL } }
 			adm_tech = 20
-
-			num_of_owned_provinces_with = {
-				custom_trigger_tooltip = {
-					tooltip = poland_formable_decision_check_tooltip
-					poland_formable_decision_check = yes
+			OR = {
+				development = 5000
+				num_of_owned_provinces_with = {
+					custom_trigger_tooltip = {
+						tooltip = poland_formable_decision_check_tooltip
+						poland_formable_decision_check = yes
+					}
+					value = 1000
 				}
-				value = 1000
 			}
 			is_at_war = no
 		}
