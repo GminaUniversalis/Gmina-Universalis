@@ -3582,7 +3582,7 @@ biskupin_settlment = {
 
 pesa_rolling_stock_factory = {
 	# province it starts in
-	start = 3512 #Bydgoszcz Rynkowo
+	start = 3515 #Bydgoszcz Rynkowo
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1545.01.01 #Date the silver mine started to be exploited
@@ -4243,7 +4243,7 @@ dryport_malaszewicze = {
 #pałacyk 
 jablonna_palace = {
 	# province it starts in
-	start = 464
+	start = 4465
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1400.01.01
@@ -5800,7 +5800,7 @@ steel_spider = {
 
 #////////////////////////////// ŁÓDZKIE
 #Placeholder do każdej kurwa możliwej większej Fabryki
-lowicz_preserves_facotry= {
+lowicz_preserves_factory= {
 	# province it starts in
 	start = 427
 	
@@ -6777,7 +6777,7 @@ manufaktura = {
 	}
 }
 
-piotrkowksa_street = {
+piotrkowska_street = {
 	start = 2461
 	date = 1250.01.01
 	time = { months = 0	}
@@ -11739,7 +11739,7 @@ ranczo_recording_site= {
 }
 
 plock_oil_rafinery = {
-	start = 972 #plock
+	start = 579 #plock
 	date = 1000.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -11906,7 +11906,7 @@ cpk = {
 			local_build_time = -0.05
 		}
 		country_modifiers = {	
-			technology_cost = -0.5
+			technology_cost = -0.05
 			monthly_splendor = 0.5	
 			movement_speed = 0.05	
 		}
@@ -11973,7 +11973,7 @@ cpk = {
 
 #//////////////////////////// OPOLSKIE XDD
 
-moszna_catle = { 
+moszna_castle = { 
 	# province it starts in
 	start = 2993
 	
@@ -15400,7 +15400,7 @@ slowinski_sand_dunes = {
 }
 
 gniew_castle = {
-	start = 369 #chyba
+	start = 1866
 	date = 1300.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -17453,7 +17453,7 @@ gliwice_palmhouse = {
 	}
 }
 
-kopalnia_guido = {
+guido_mine = {
 	start = 2551
 	date = 1427.01.09
 	time = { months = 0	}
@@ -17914,7 +17914,7 @@ jestem_hardcorem = {
 	}
 }
 
-dab_bartek = {
+oak_bartek = {
 	start = 2243
 	date = 1000.01.01
 	time = { months = 0	}
@@ -18455,7 +18455,7 @@ star_manufactory = {
 
 kielce_marketplace = {
 	# province it starts in
-	start = 4568
+	start = 1120
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1050.01.01 #Almoravid Period
@@ -18628,7 +18628,7 @@ kielce_marketplace = {
 }
  
 kielecki_monument = {
-	start = 4568
+	start = 1120
 	date = 1000.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -19872,7 +19872,7 @@ solaris_bus_manufactory = {
 }
 
 romet_manufactory = {
-	start = 346 #Jelcz-Laskowice
+	start = 225
 	date = 1444.01.01 #1460.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -20255,7 +20255,6 @@ poznan_market_square = {
 	}
 }
 
-
 fara_temple = {
 	# province it starts in
 	start = 501
@@ -20428,9 +20427,7 @@ fara_temple = {
 		}
 	}
 }
-
 #//////////////////////// ZACHODNIOPOMORSKIE
-
 #/// Szczecin
 #Szczecin to horda
 pomeranian_dukes_castle = {
