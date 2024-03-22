@@ -2343,7 +2343,7 @@ czocha_castle = {
 	}
 }
 
-kghm_headquaters = {
+kghm_headquarters = {
 	start = 2893 #Lubin
 	date = 1000.01.01
 	time = { months = 0	}
@@ -3760,7 +3760,7 @@ pesa_rolling_stock_factory = {
 	}
 }
 
-radio_maryja_headquaters = {
+radio_maryja_headquarters = {
 	# province it starts in
 	start = 3808
 	date = 500.01.01

@@ -122,8 +122,8 @@ spriteTypes = {
 	}	
 
 	spriteType = {
-		name = "GFX_great_project_kghm_headquaters"	
-		texturefile = "gfx//interface//great_projects//great_project_kghm_headquaters.dds"
+		name = "GFX_great_project_kghm_headquarters"	
+		texturefile = "gfx//interface//great_projects//great_project_kghm_headquarters.dds"
 	}
 	#kujpom
 	spriteType = {
@@ -152,8 +152,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_great_project_radio_maryja_headquaters"	
-		texturefile = "gfx//interface//great_projects//great_project_radio_maryja_headquaters.dds"
+		name = "GFX_great_project_radio_maryja_headquarters"	
+		texturefile = "gfx//interface//great_projects//great_project_radio_maryja_headquarters.dds"
 	}
 
 	spriteType = {
