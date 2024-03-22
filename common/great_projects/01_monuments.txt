@@ -4424,7 +4424,7 @@ jablonna_palace = {
 	}
 }
 
-pulawy_nitrogen_plant= {
+pulawy_nitrogen_plant = {
 	# province it starts in
 	start = 386 
 	
@@ -5445,7 +5445,7 @@ muskauer_park = {
 	}
 }
 
-planaca_styrta= {
+planaca_styrta = {
 	# province it starts in
 	start = 746
 	
@@ -8726,7 +8726,7 @@ pieskowa_skala_castle = {
 	}
 }
 
-stone_forrest = {
+stone_forest = {
 	start = 356
 	date = 1300.01.01
 	time = { months = 0	}
@@ -9011,7 +9011,7 @@ chabowka_railyard = {
 	}
 }
 
-wolbrom_FFT = {
+wolbrom_FTT = {
 	start = 2449
 	date = 1000.01.01
 	time = { months = 0	}
