@@ -35,7 +35,7 @@ estate_ub_land_rights = {
 		}
 	}
 }
-estate_ub_obietnice = {
+estate_ub_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5

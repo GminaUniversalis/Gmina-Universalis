@@ -68,3 +68,15 @@ training_area_modifier = {
 structural_reform = {
 	local_development_cost_modifier = -0.25
 }
+
+working_man = {
+	trade_goods_size_modifier = 0.5
+	production_efficiency = 0.1
+	all_power_cost = 0.1
+}
+
+emancipated_woman = {
+	female_advisor_chance = 0.5
+	all_power_cost = -0.05
+	may_recruit_female_generals = yes
+}

@@ -44,7 +44,7 @@ estate_middle_class = {
     color = { 255 172 248 }
     privileges = {
 		estate_middle_class_land_rights
-		estate_middle_class_obietnice
+		estate_middle_class_empty_promises
 	 }
      agendas = {
 		estate_middle_class_hire_advisor

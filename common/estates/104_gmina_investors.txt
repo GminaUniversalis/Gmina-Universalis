@@ -53,7 +53,7 @@ estate_investors = {
     color = { 230 137 38 }
      privileges = {
 		estate_investors_land_rights
-		estate_investors_obietnice
+		estate_investors_empty_promises
 	 }
      agendas = {
 		estate_investors_hire_advisor

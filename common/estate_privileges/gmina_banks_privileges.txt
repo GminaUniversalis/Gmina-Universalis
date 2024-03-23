@@ -23,9 +23,10 @@ estate_banks_free_banks = {
 		}
 	}
 	on_granted = {
-		remove_estate_privilege = estate_banks_mixed
-		remove_estate_privilege = estate_banks_state_controlled
+		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
+			remove_estate_privilege = estate_banks_mixed
+			remove_estate_privilege = estate_banks_state_controlled
 			clr_country_flag = picked_banks_definer
 			set_country_flag = picked_banks_definer
 			clr_country_flag = picked_free_banks
@@ -33,7 +34,7 @@ estate_banks_free_banks = {
 		}
 	}
 	on_revoked = { 
-	
+		add_stability = -2
 	}
 
 	can_revoke = {
@@ -78,9 +79,10 @@ estate_banks_mixed = {
 		}
 	}
 	on_granted = {
-		remove_estate_privilege = estate_banks_free_banks
-		remove_estate_privilege = estate_banks_state_controlled
+		custom_tooltip = estate_banks_mixed_definer_tooltip
 		hidden_effect = {
+			remove_estate_privilege = estate_banks_free_banks
+			remove_estate_privilege = estate_banks_state_controlled
 			clr_country_flag = picked_banks_definer
 			set_country_flag = picked_banks_definer
 			clr_country_flag = picked_mixed_banks
@@ -88,7 +90,7 @@ estate_banks_mixed = {
 		}
 	}
 	on_revoked = { 
-	
+		add_stability = -2
 	}
 
 	can_revoke = {
@@ -130,9 +132,10 @@ estate_banks_state_controlled = {
 		}
 	}
 	on_granted = {
-		remove_estate_privilege = estate_banks_mixed
-		remove_estate_privilege = estate_banks_free_banks
+		custom_tooltip = estate_banks_state_controlled_definer_tooltip
 		hidden_effect = {
+			remove_estate_privilege = estate_banks_mixed
+			remove_estate_privilege = estate_banks_free_banks
 			clr_country_flag = picked_banks_definer
 			set_country_flag = picked_banks_definer
 			clr_country_flag = picked_state_controlled_banks
@@ -140,7 +143,7 @@ estate_banks_state_controlled = {
 		}
 	}
 	on_revoked = { 
-	
+		add_stability = -2
 	}
 
 	can_revoke = {
@@ -274,7 +277,7 @@ estate_banks_market_trading_focus = {
 		ship_trade_power_modifier = 0.15
 	}
 }
-estate_banki_hire_regional_director = {
+estate_banks_hire_regional_director = {
 	icon = privilege_recruit_minister
 	land_share = 0
 	max_absolutism = 0

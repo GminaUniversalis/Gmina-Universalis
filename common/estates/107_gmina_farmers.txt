@@ -59,7 +59,7 @@ estate_farmers = {
     color = { 32 213 110 }
 
 	 privileges = {
-		estate_farmers_obietnice
+		estate_farmers_empty_promises
 		estate_farmers_land_rights
 		estate_farmers_datki
 		estate_farmers_odc

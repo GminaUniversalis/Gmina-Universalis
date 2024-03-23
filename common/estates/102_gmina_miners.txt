@@ -47,7 +47,7 @@ estate_miners = {
     color = { 0 60 145 }
      privileges = {
 		estate_miners_land_rights
-		estate_miners_obietnice
+		estate_miners_empty_promises
 	 }
      agendas = {
 		estate_miners_hire_advisor

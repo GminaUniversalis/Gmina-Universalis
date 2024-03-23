@@ -31,7 +31,7 @@ estate_ub = {
     color = { 201 22 22 }
     privileges = {
 		estate_ub_land_rights
-		estate_ub_obietnice
+		estate_ub_empty_promises
 	}
 	 agendas = {
 		estate_ub_hire_advisor

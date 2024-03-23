@@ -35,7 +35,7 @@ estate_miners_land_rights = {
 		}
 	}
 }
-estate_miners_obietnice = {
+estate_miners_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5

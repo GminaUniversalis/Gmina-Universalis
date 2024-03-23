@@ -22,6 +22,8 @@ XXX = {
 	}
 	benefits = {
 	}
+	on_invalid = {
+	}
 	conditional_modifier = {
 		trigger = {
 
@@ -37,9 +39,7 @@ XXX = {
 	mechanics = {
 
 	}
-	cooldown_years = {
-
-	}
+	cooldown_years = 0
 	on_cooldown_expires = {
 
 	}

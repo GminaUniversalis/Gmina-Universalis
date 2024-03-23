@@ -178,7 +178,7 @@ estate_retirees_13 = {
 		global_unrest = -2
 	}
 }
-estate_retirees_obietnice = {
+estate_retirees_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5

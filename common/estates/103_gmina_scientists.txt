@@ -43,7 +43,7 @@ estate_scientists = {
     color = { 34 245 249 }
      privileges = {
 		estate_scientists_land_rights
-		estate_scientists_obietnice
+		estate_scientists_empty_promises
 	 }
      agendas = {
 		estate_scientists_hire_advisor

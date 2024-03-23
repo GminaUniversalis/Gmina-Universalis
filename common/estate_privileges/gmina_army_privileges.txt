@@ -11,7 +11,7 @@ estate_army_old_doctrine = {
 		custom_trigger_tooltip = {
 			tooltip = estate_army_definer_tooltip
 			OR = {
-				NOT = { has_country_flag = picked_army_definer}
+				NOT = { has_country_flag = picked_army_definer }
 				had_country_flag = {
 					flag = picked_army_definer
 					days = 9125
@@ -20,16 +20,17 @@ estate_army_old_doctrine = {
 		}
 	}
 	on_granted = {
-		remove_estate_privilege = estate_army_new_doctrine
-		remove_estate_privilege = estate_army_underfunded_army
-		remove_estate_privilege = estate_army_martial_law
+		custom_tooltip = estate_army_old_doctrine_definer_tooltip
 		hidden_effect = {
+			remove_estate_privilege = estate_army_new_doctrine
+			remove_estate_privilege = estate_army_underfunded_army
+			remove_estate_privilege = estate_army_martial_law
 			clr_country_flag = picked_army_definer
 			set_country_flag = picked_army_definer
 		}
 	}
 	on_revoked = { 
-	
+		add_stability = -2
 	}
 	can_revoke = {
 		OR = {
@@ -71,16 +72,17 @@ estate_army_new_doctrine = {
 		}
 	}
 	on_granted = {
-		remove_estate_privilege = estate_army_old_doctrine
-		remove_estate_privilege = estate_army_underfunded_army
-		remove_estate_privilege = estate_army_martial_law
+		custom_tooltip = estate_army_new_doctrine_definer_tooltip
 		hidden_effect = {
+			remove_estate_privilege = estate_army_old_doctrine
+			remove_estate_privilege = estate_army_underfunded_army
+			remove_estate_privilege = estate_army_martial_law
 			clr_country_flag = picked_army_definer
 			set_country_flag = picked_army_definer
 		}
 	}
 	on_revoked = { 
-	
+		add_stability = -2
 	}
 	can_revoke = {
 		OR = {
@@ -122,16 +124,17 @@ estate_army_underfunded_army = {
 		}
 	}
 	on_granted = {
-		remove_estate_privilege = estate_army_old_doctrine
-		remove_estate_privilege = estate_army_new_doctrine
-		remove_estate_privilege = estate_army_martial_law
+		custom_tooltip = estate_army_underfunded_army_definer_tooltip
 		hidden_effect = {
+			remove_estate_privilege = estate_army_old_doctrine
+			remove_estate_privilege = estate_army_new_doctrine
+			remove_estate_privilege = estate_army_martial_law
 			clr_country_flag = picked_army_definer
 			set_country_flag = picked_army_definer
 		}
 	}
 	on_revoked = { 
-	
+		add_stability = -2
 	}
 	can_revoke = {
 		OR = {
@@ -174,10 +177,11 @@ estate_army_martial_law = {
 		}
 	}
 	on_granted = {
-		remove_estate_privilege = estate_army_old_doctrine
-		remove_estate_privilege = estate_army_new_doctrine
-		remove_estate_privilege = estate_army_underfunded_army
+		custom_tooltip = estate_army_martial_law_definer_tooltip
 		hidden_effect = {
+			remove_estate_privilege = estate_army_old_doctrine
+			remove_estate_privilege = estate_army_new_doctrine
+			remove_estate_privilege = estate_army_underfunded_army
 			clr_country_flag = picked_army_definer
 			set_country_flag = picked_army_definer
 			set_country_flag = solidarnosc_rebels
@@ -185,8 +189,9 @@ estate_army_martial_law = {
 	}
 	on_revoked = { 
 		clr_country_flag = solidarnosc_rebels
+		add_stability = -2
 	}
-	on_invlaid = {
+	on_invalid = {
 		clr_country_flag = solidarnosc_rebels
 	}
 	penalties = {
@@ -222,6 +227,7 @@ estate_army_territorial_forces = {
 	benefits = {
 		defensiveness = 0.2
 		hostile_attrition = 1
+		attack_bonus_in_capital_terrain = 1
 	}
 }
 estate_army_blitzkrieg = {
@@ -302,7 +308,7 @@ estate_army_curfew = {
 	}
 	on_revoked = { 
 	}
-	on_invlaid = {
+	on_invalid = {
 	}
 	penalties = {
 	}

@@ -46,7 +46,7 @@ estate_priests = {
     color = { 207 179 33 }
     privileges = {
 		estate_priests_land_rights
-		estate_priests_obietnice
+		estate_priests_empty_promises
 	}
      agendas = {
 		estate_priests_hire_advisor

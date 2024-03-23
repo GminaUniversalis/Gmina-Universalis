@@ -1,4 +1,4 @@
-estate_farmers_obietnice = {
+estate_farmers_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5

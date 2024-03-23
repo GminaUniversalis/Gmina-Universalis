@@ -35,7 +35,7 @@ estate_investors_land_rights = {
 		}
 	}
 }
-estate_investors_obietnice = {
+estate_investors_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5

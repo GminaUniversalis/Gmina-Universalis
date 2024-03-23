@@ -35,7 +35,7 @@ estate_middle_class_land_rights = {
 		}
 	}
 }
-estate_middle_class_obietnice = {
+estate_middle_class_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
