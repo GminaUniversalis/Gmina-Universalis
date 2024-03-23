@@ -1,15 +1,5 @@
 ### MONUMENTY SĄ NA STAN Z 01.01.1975 ROKU AKA ZAPAŚĆ GIERKOWSKA
 
-#Posortowane względem Excela z podziałem na województwa, w przypadku dużych aglomeracji które zostały podzielone 
-#zostanie zadysponowana osobna kategoria (podobno jakiś czarnuch z excela ma zrobić tabelkę do tego)
-
-#ZAKAZ WRZUCANIA WIĘCEJ NIŻ 6 MONUMENTÓW W MIASTO (balans?)
-
-#Województwa bez monumentów: none
-#Miasta bez monumentów: Lublin, Rzeszów, i w sumie inne mniejsze gówno idk w DLC się dorobi
-
-#PS W przyszłości jak będzie klarowniejsza sytuacja nawrzucać blokady pokroju "can_build_in_age_of_communism = no"
-
 #////////////////////////////////// DOLNOŚLĄSKIE
 #///WROCŁAW
 sky_tower = {
@@ -1086,7 +1076,6 @@ wroclaw_gnomes = {
 		}
 	}
 }
-#///
 
 boleslawiec_chinaware_manufactory = {
 	# province it starts in
@@ -3091,7 +3080,6 @@ pawel_jumper_site = {
 		}
 	}
 }
-#Kurwa zamek Krzyżacki
 golubdobrzyn_teutonic_castle = {
 	# province it starts in
 	start = 255
@@ -4239,8 +4227,7 @@ dryport_malaszewicze = {
 		on_upgraded = {	
 		}
 	}
-}
-#pałacyk 
+} 
 jablonna_palace = {
 	# province it starts in
 	start = 4465
@@ -4616,7 +4603,6 @@ pulawy_nitrogen_plant = {
 		
 	}
 }
-#ruiny
 kazimierz_dolny_castle = {
 	# province it starts in
 	start = 397
@@ -4975,7 +4961,6 @@ zamosc_old_city = {
 }
 
 #//////////////////////////////// LUBUSKIE
-#Twierdza wzór
 kostrzyn_fortress = {
 	# province it starts in
 	start = 808
@@ -5622,7 +5607,6 @@ planaca_styrta = {
 		}
 	}
 }
-#Jakiś monument nawiązujący do winnic z regionu w przyszłości
 steel_spider = {
 	# province it starts in
 	start = 1006
@@ -5799,7 +5783,6 @@ steel_spider = {
 }
 
 #////////////////////////////// ŁÓDZKIE
-#Placeholder do każdej kurwa możliwej większej Fabryki
 lowicz_preserves_factory= {
 	# province it starts in
 	start = 427
@@ -6995,7 +6978,7 @@ knights_mill = {
 		}
 	}
 }
-#///////////////////////////// MAŁOPOLSKIE (Idę płakać)
+#///////////////////////////// MAŁOPOLSKIE
 #///KRAKÓW
 krakow_cloth_hall = {
 	start = 262 #Krakow
@@ -9011,7 +8994,7 @@ chabowka_railyard = {
 	}
 }
 
-wolbrom_FTT = {
+wolbrom_FFT = {
 	start = 2449
 	date = 1000.01.01
 	time = { months = 0	}
@@ -11452,8 +11435,8 @@ jarmark_europa = {
 		}
 	}
 }
-#///
-warsaw_radio_mast = {
+
+warsaw_radio_maszt = {
 	start = 4330 #Gąbiń
 	date = 1444.01.01 #1460.01.01
 	time = { months = 0	}
@@ -11971,7 +11954,7 @@ cpk = {
 	}
 }
 
-#//////////////////////////// OPOLSKIE XDD
+#//////////////////////////// OPOLSKIE
 
 moszna_castle = { 
 	# province it starts in
@@ -15520,7 +15503,7 @@ gniew_castle = {
 	}
 }
 
-#////////////////////////// ŚLĄSKIE (Więcej miast nie było?)
+#////////////////////////// ŚLĄSKIE
 
 bedzin_castle = {
 	start = 4757
@@ -19288,7 +19271,7 @@ wolfs_lair= {
 	}
 }
 
-mazuria_lakes = {
+masuria_lakes = {
 	start = 307
 	date = 1000.01.01
 	time = { months = 0	}
@@ -19506,7 +19489,7 @@ gniezno_cathedral = {
 	}
 }
 
-lichen_sanktuary = {
+lichen_sanctuary = {
 	start = 99
 	date = 1379.01.01	#Cathedral was able to be used for praying
 	time = { months = 0	}
@@ -21002,8 +20985,7 @@ red_town_hall = {
 		}
 	}
 }
-#///
-crocked_forrest = {
+crooked_forest = {
 	start = 111
 	date = 1000.01.01
 	time = { months = 0	}
@@ -21110,7 +21092,6 @@ crocked_forrest = {
 		}
 	}
 }
-#Template dla każdego zjebanego pomnika (nwm jak paprykarz, ziemniak, majonez)
 potato_monument = {
 	start = 4371
 	date = 1000.01.01
@@ -21612,5 +21593,3 @@ swinoujscie_container_harbour = {
 	}
 }
 
-
-#MONUMENTY WERSJA V0.0.1
