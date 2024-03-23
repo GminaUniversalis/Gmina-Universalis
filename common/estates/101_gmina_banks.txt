@@ -43,14 +43,18 @@ estate_banks = {
     contributes_to_curia_treasury = no
     color = { 255 215 0 }
     privileges = {
+		estate_banks_indebted_to_free_banks
+		estate_banks_indebted_to_mixed
+		estate_banks_indebted_to_state_controlled
 		estate_banks_land_rights
-		estate_banks_obietnice
-		estate_banks_indebted_to_banks
-		estate_banks_commercial_board_of_advice
-		estate_banks_promote_trade
-		estate_banks_value_control
-		estate_banki_hire_merchants
-		estate_banks_economy_focus
+		estate_banks_empty_promises
+		estate_banks_promote_mortgages
+		estate_banks_market_trading_focus
+		estate_banki_hire_regional_director
+		estate_banks_free_banks
+		estate_banks_mixed
+		estate_banks_state_controlled
+
 	}
      agendas = {
 		estate_banks_hire_advisor 

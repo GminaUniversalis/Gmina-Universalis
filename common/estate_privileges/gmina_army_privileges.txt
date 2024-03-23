@@ -31,8 +31,14 @@ estate_army_old_doctrine = {
 	on_revoked = { 
 	
 	}
-	on_invlaid = {
-
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_army_definer}
+			had_country_flag = {
+				flag = picked_army_definer
+				days = 9125
+			}
+		}
 	}
 	penalties = {
 		land_morale = -0.1
@@ -76,8 +82,14 @@ estate_army_new_doctrine = {
 	on_revoked = { 
 	
 	}
-	on_invlaid = {
-
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_army_definer}
+			had_country_flag = {
+				flag = picked_army_definer
+				days = 9125
+			}
+		}
 	}
 	penalties = {
 		land_forcelimit_modifier = -0.5
@@ -121,8 +133,14 @@ estate_army_underfunded_army = {
 	on_revoked = { 
 	
 	}
-	on_invlaid = {
-
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_army_definer}
+			had_country_flag = {
+				flag = picked_army_definer
+				days = 9125
+			}
+		}
 	}
 	penalties = {
 		land_forcelimit_modifier = -0.2
@@ -174,6 +192,15 @@ estate_army_martial_law = {
 	penalties = {
 
 	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_army_definer}
+			had_country_flag = {
+				flag = picked_army_definer
+				days = 9125
+			}
+		}
+	}
 	benefits = {
 		land_forcelimit_modifier = 0.2
 		land_morale = 0.05
@@ -216,9 +243,7 @@ estate_army_blitzkrieg = {
 	on_revoked = { 
 	
 	}
-	on_invlaid = {
 
-	}
 	penalties = {
 		morale_damage_received = 0.1
 		recover_army_morale_speed = -0.1
@@ -248,9 +273,7 @@ estate_army_fire_supremacy = {
 	on_revoked = { 
 	
 	}
-	on_invlaid = {
 
-	}
 	penalties = {
 		defensiveness = -0.15
 		production_efficiency = -0.1

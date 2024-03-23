@@ -1,3 +1,165 @@
+estate_banks_free_banks = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		NOT = { current_age = age_of_discovery }
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_banks_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_banks_definer}
+				had_country_flag = {
+					flag = picked_banks_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		remove_estate_privilege = estate_banks_mixed
+		remove_estate_privilege = estate_banks_state_controlled
+		hidden_effect = {
+			clr_country_flag = picked_banks_definer
+			set_country_flag = picked_banks_definer
+			clr_country_flag = picked_free_banks
+			set_country_flag = picked_free_banks
+		}
+	}
+	on_revoked = { 
+	
+	}
+
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_banks_definer}
+			had_country_flag = {
+				flag = picked_banks_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		interest = 2
+		inflation_reduction = -0.05
+		may_not_reduce_inflation = yes
+	}
+	benefits = {
+	}
+}
+estate_banks_mixed = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.05
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		NOT = { current_age = age_of_discovery }
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_banks_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_banks_definer}
+				had_country_flag = {
+					flag = picked_banks_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		remove_estate_privilege = estate_banks_free_banks
+		remove_estate_privilege = estate_banks_state_controlled
+		hidden_effect = {
+			clr_country_flag = picked_banks_definer
+			set_country_flag = picked_banks_definer
+			clr_country_flag = picked_mixed_banks
+			set_country_flag = picked_mixed_banks
+		}
+	}
+	on_revoked = { 
+	
+	}
+
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_banks_definer}
+			had_country_flag = {
+				flag = picked_banks_definer
+				days = 9125
+			}
+		}
+	}
+
+	penalties = {
+		interest = 1
+	}
+	benefits = {
+		inflation_reduction = 0.05
+	}
+}
+estate_banks_state_controlled = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.2
+	influence = -0.2
+	ai_will_do = {
+		factor = 1
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_banks_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_banks_definer}
+				had_country_flag = {
+					flag = picked_banks_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		remove_estate_privilege = estate_banks_mixed
+		remove_estate_privilege = estate_banks_free_banks
+		hidden_effect = {
+			clr_country_flag = picked_banks_definer
+			set_country_flag = picked_banks_definer
+			clr_country_flag = picked_state_controlled_banks
+			set_country_flag = picked_state_controlled_banks
+		}
+	}
+	on_revoked = { 
+	
+	}
+
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_banks_definer}
+			had_country_flag = {
+				flag = picked_banks_definer
+				days = 9125
+			}
+		}
+	}
+
+	penalties = {
+		inflation_reduction = -0.1
+		inflation_action_cost = 0.5
+	}
+	benefits = {
+	}
+}
 estate_banks_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
@@ -35,7 +197,7 @@ estate_banks_land_rights = {
 		}
 	}
 }
-estate_banks_obietnice = {
+estate_banks_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = -5
@@ -55,25 +217,238 @@ estate_banks_obietnice = {
 	
 	}
 }
-estate_banks_indebted_to_banks = {
+estate_banks_promote_mortgages = {
+	icon = privilege_recruit_minister
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	loyalty = 0.1
+	penalties = {
+		global_tax_modifier = -0.2
+	}
+	benefits = {
+		trade_efficiency = 0.15
+		development_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+estate_banks_market_trading_focus = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.2
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	can_select = {
+		OR = {
+			NOT = { has_country_flag = picked_market_trading_focus}
+			had_country_flag = {
+				flag = picked_market_trading_focus
+				days = 7300
+			}
+		}
+	}
+	on_granted = {
+		hidden_effect = {
+			clr_country_flag = picked_market_trading_focus
+			set_country_flag = picked_market_trading_focus
+		}
+	}
+	on_revoked = { 
+	}
+	penalties = {
+		discipline = -0.05
+		manpower_recovery_speed = -0.25
+		stability_cost_to_declare_war = 2
+	}
+	benefits = {
+		trade_steering = 0.1
+		trade_range_modifier = 0.5
+		global_prov_trade_power_modifier = 0.1
+		trade_efficiency = 0.1
+		trade_goods_size_modifier = 0.1
+		ship_trade_power_modifier = 0.15
+	}
+}
+estate_banki_hire_regional_director = {
+	icon = privilege_recruit_minister
+	land_share = 0
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 5 } }
+	influence = 0.15
+	loyalty = 0.1
+	penalties = {	
+		
+	}
+	on_granted = {
+		add_years_of_income = -0.5
+	}
+	benefits = {
+		merchants = 1
+	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+estate_banks_indebted_to_free_banks = {
 	icon = privilege_give_money
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
+	is_valid = {
+		has_country_flag = picked_free_banks
+	}
 	on_granted = {
+		custom_tooltip = estate_banks_indebted_to_free_banks_effect_tooltip
+
 		if = {
 			limit = {
-				has_country_flag = BYZ_buff_burgher_loans_flag
+				NOT = { has_government_attribute = no_mercantilism_loss_from_privilege }
+				NOT = { has_country_flag = no_mercantilism_loss_estate_privilege_flag }
+			}
+			add_mercantilism = -1
+		}
+		tooltip = {
+			add_inflation = 0.5
+		}
+		hidden_effect = {
+			add_loan = {
+				fixed_interest = 3
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 3
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 3
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 3
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 3
+				duration = 60
+				estate_loan = yes
 			}
 		}
-		else = {
-			custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
-		}
+	}
+	penalties = {
+		trade_efficiency = -0.05
+	}
+	benefits = {
+	}
+	can_select = {
 		if = {
 			limit = {
-				NOT = { has_government_attribute = no_mercantilism_loss_from_privilege } 
-				NOT = { mission_completed = BYZ_economic_independence }
+				has_estate_privilege = estate_banks_indebted_to_free_banks
+			}
+			has_estate_loan = yes
+		}
+	}
+	can_revoke = {
+		has_estate_loan = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_banks_indebted_to_mixed = {
+	icon = privilege_give_money
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = picked_mixed_banks
+	}
+	on_granted = {
+		custom_tooltip = estate_banks_indebted_to_mixed_effect_tooltip
+
+		if = {
+			limit = {
+				NOT = { has_government_attribute = no_mercantilism_loss_from_privilege }
+				NOT = { has_country_flag = no_mercantilism_loss_estate_privilege_flag }
+			}
+			add_mercantilism = -1
+		}
+		tooltip = {
+			add_inflation = 0.5
+		}
+		hidden_effect = {
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+		}
+	}
+	penalties = {
+		trade_efficiency = -0.05
+	}
+	benefits = {
+	}
+	can_select = {
+		if = {
+			limit = {
+				has_estate_privilege = estate_banks_indebted_to_mixed
+			}
+			has_estate_loan = yes
+		}
+	}
+	can_revoke = {
+		has_estate_loan = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_banks_indebted_to_state_controlled = {
+	icon = privilege_give_money
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = picked_state_controlled_banks
+	}
+	on_granted = {
+		custom_tooltip = estate_banks_indebted_to_state_controlled_effect_tooltip
+
+		if = {
+			limit = {
+				NOT = { has_government_attribute = no_mercantilism_loss_from_privilege }
 				NOT = { has_country_flag = no_mercantilism_loss_estate_privilege_flag }
 			}
 			add_mercantilism = -1
@@ -107,20 +482,30 @@ estate_banks_indebted_to_banks = {
 				duration = 60
 				estate_loan = yes
 			}
-			if = {
-				limit = {
-					has_country_flag = BYZ_buff_burgher_loans_flag
-				}
-				add_loan = {
-					fixed_interest = 1
-					duration = 60
-					estate_loan = yes
-				}
-				add_loan = {
-					fixed_interest = 1
-					duration = 60
-					estate_loan = yes
-				}
+			add_loan = {
+				fixed_interest = 1
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 1
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 1
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 1
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 1
+				duration = 60
+				estate_loan = yes
 			}
 		}
 	}
@@ -130,10 +515,9 @@ estate_banks_indebted_to_banks = {
 	benefits = {
 	}
 	can_select = {
-		not = { has_estate_privilege = estate_burghers_reliance_on_republics }
 		if = {
 			limit = {
-				has_estate_privilege = estate_banks_indebted_to_banks
+				has_estate_privilege = estate_banks_indebted_to_state_controlled
 			}
 			has_estate_loan = yes
 		}
@@ -141,125 +525,7 @@ estate_banks_indebted_to_banks = {
 	can_revoke = {
 		has_estate_loan = no
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
-}
-estate_banks_commercial_board_of_advice = {
-	icon = privilege_recruit_minister
-	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	influence = 0.05
-	loyalty = 0.05
-	penalties = {
-		stability_cost_modifier = 0.1
-	}
-	benefits = {
-		dip_advisor_cost = -0.15
-	}
-	ai_will_do = {
-		factor = 9
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 3
-			uses_meritocracy = yes
-		}
-	}
-}
-estate_banks_promote_trade = {
-	icon = privilege_recruit_minister
-	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	influence = 0.1
-	loyalty = 0.1
-	penalties = {
-		global_tax_modifier = -0.2
-	}
-	benefits = {
-		trade_efficiency = 0.15
-		trade_goods_size_modifier = 0.1
-	}
-	ai_will_do = {
-		factor = 2
-	}
-	
-}
-estate_banks_value_control = {
-	icon = privilege_recruit_minister
-	max_absolutism = -20
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 10 } }
-	influence = 0.2
-	loyalty = 0
-	penalties = {	
-	
-	}
-	on_granted = {
-		add_years_of_income = 1.5
-	}
-	benefits = {
-		interest = -3
-	}
-	ai_will_do = {
-		factor = 2
-	}
-	cooldown_years = 25
-}
-estate_banki_hire_merchants = {
-	icon = privilege_recruit_minister
-	land_share = 5
-	max_absolutism = -10
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 5 } }
-	influence = 0.15
-	loyalty = 0.1
-	penalties = {	
-		
-	}
-	on_granted = {
-		add_years_of_income = -0.5
-	}
-	benefits = {
-		merchants = 1
-	}
-	ai_will_do = {
-		factor = 2
-	}
-}
-estate_banks_economy_focus = {
-	icon = privilege_recruit_minister
-	max_absolutism = -20
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 10 } }
-	influence = 0.05
-	loyalty = 0.20
-	penalties = {	
-		land_morale = -0.2
-		discipline = -0.05
-		manpower_recovery_speed = -0.25
-		stability_cost_to_declare_war = 6
-	}
-	on_granted = {
-		
-	}
-	benefits = {
-		trade_steering = 0.1
-		trade_range_modifier = 0.5
-		global_prov_trade_power_modifier = 0.1
-		trade_efficiency = 0.1
-		trade_goods_size_modifier = 0.1
-		ship_trade_power_modifier = 0.15
-	}
-	ai_will_do = {
-		factor = 2
-	}
-	cooldown_years = 20
 }
