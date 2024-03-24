@@ -61,12 +61,16 @@ estate_farmers = {
 	 privileges = {
 		estate_farmers_empty_promises
 		estate_farmers_land_rights
-		estate_farmers_datki
-		estate_farmers_odc
-		estate_farmers_eud
-		estate_farmers_eua
-		estate_farmers_gmoa
-		estate_farmers_gmod
+		EU_funding
+		national_funding
+		accept_EU_regulations
+		reject_EU_regulations
+		support_for_exporters
+		promoting_rural_life
+		fertilizers_from_east
+		vaccinating_animals
+		estate_farmers_new_way_GMO
+		estate_farmers_natural_farming
 	 }
      agendas = {
         estate_farmers_hire_advisor

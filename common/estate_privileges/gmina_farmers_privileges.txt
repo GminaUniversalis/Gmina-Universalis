@@ -1,26 +1,239 @@
-estate_farmers_empty_promises = {
+estate_farmers_new_way_GMO = {
 	icon = privilege_admin_power
-	land_share = 0
-	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	loyalty = 0.1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
 	influence = 0.1
 	ai_will_do = {
 		factor = 1
-	}	
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_farmers_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_farmers_definer }
+				had_country_flag = {
+					flag = picked_farmers_definer
+					days = 9125
+				}
+			}
+		}
+	}
 	on_granted = {
-	
+		custom_tooltip = estate_farmers_new_way_GMO_definer_tooltip
+		set_country_flag = GMO_farming
+		hidden_effect = {
+			remove_estate_privilege = estate_farmers_natural_farming
+			clr_country_flag = picked_farmers_definer
+			set_country_flag = picked_farmers_definer
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}		
+			add_province_modifier = { 
+				name = GMO_farming_modifier
+				duration = -1  
+				desc = GMO_farming_modifier_desc
+			}
+		}		
+	}
+	on_revoked = { 
+		add_stability = -2
+		clr_country_flag = GMO_farming
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			remove_province_modifier = GMO_farming_modifier
+		}
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_farmers_definer}
+			had_country_flag = {
+				flag = picked_farmers_definer
+				days = 9125
+			}
+		}
 	}
 	penalties = {
-	
+		global_tax_modifier = -0.2
+		production_efficiency = -0.1
+		development_cost_modifier = 0.1
 	}
 	benefits = {
 	}
+	on_invalid = {
+		clr_country_flag = GMO_farming
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			remove_province_modifier = GMO_farming_modifier
+		}
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
 }
+estate_farmers_natural_farming = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = -0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_farmers_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_farmers_definer }
+				had_country_flag = {
+					flag = picked_farmers_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_farmers_natural_farming_definer_tooltip
+		set_country_flag = natural_farming
+		hidden_effect = {
+			remove_estate_privilege = estate_farmers_new_way_GMO
+			clr_country_flag = picked_farmers_definer
+			set_country_flag = picked_farmers_definer
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}		
+			add_province_modifier = { 
+				name = natural_farming_modifier
+				duration = -1  
+				desc = natural_farming_modifier_desc
+			}
+		}		
+	}
+	on_revoked = { 
+		add_stability = -2
+		clr_country_flag = natural_farming
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			remove_province_modifier = natural_farming_modifier
+		}
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_farmers_definer}
+			had_country_flag = {
+				flag = picked_farmers_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		trade_efficiency = -0.1
+		development_cost = 0.1
+	}
+	benefits = {
+	}
+	on_invalid = {
+		clr_country_flag = natural_farming
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			remove_province_modifier = natural_farming_modifier
+		}
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+
+
+
 estate_farmers_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
@@ -179,10 +392,10 @@ estate_farmers_land_rights = {
 		}
 	}
 }
-estate_farmers_datki = {
+estate_farmers_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
-	max_absolutism = -5
+	max_absolutism = 
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
@@ -193,131 +406,550 @@ estate_farmers_datki = {
 	
 	}
 	penalties = {
-		global_tax_modifier = -0.15
+	
 	}
 	benefits = {
-		global_trade_goods_size_modifier = 0.05
-		global_unrest = -1
 	}
 }
-estate_farmers_odc = {
+
+EU_funding = {
 	icon = privilege_admin_power
-	land_share = 0
-	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	loyalty = -0.05
-	influence = 0.1
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = -0.1
 	ai_will_do = {
 		factor = 1
-	}	
+	}
+	is_valid = {
+	}
+	can_select = {
+		NOT = { has_estate_privilege = reject_EU_regulations }
+	}
 	on_granted = {
-	
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
 	}
 	penalties = {
 	}
 	benefits = {
-		global_prosperity_growth = 0.1
-		global_monthly_devastation = -0.04
+		production_efficiency = 0.1
+	}
+	on_invalid = {
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
 	}
 }
-estate_farmers_eud = {
+national_funding = {
 	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		production_efficiency = 0.05
+	}
+	on_invalid = {
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+accept_EU_regulations = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		NOT = { has_estate_privilege = reject_EU_regulations }
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+		production_efficiency = -0.1
+	}
+	benefits = {
+		trade_efficiency = 0.1
+	}
+	on_invalid = {
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+reject_EU_regulations = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		NOT = { has_estate_privilege = accept_EU_regulations }
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+		trade_efficiency = -0.1
+	}
+	benefits = {
+
+		production_efficiency = 0.1		
+	}
+	on_invalid = {
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+support_for_exporters = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		improve_relation_modifier = 0.1
+		caravan_power = 0.2
+		trade_steering = 0.2
+		global_ship_trade_power = 0.2
+		trade_range_modifier = 0.25
+	}
+	on_invalid = {
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+promoting_rural_life = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -10
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	is_valid = {
-		NOT = {
-			has_country_flag = farmers_eua
-		}
+	}
+	can_select = {
 	}
 	on_granted = {
-		set_country_flag = farmers_eud
+		custom_tooltip = promoting_rural_life_tooltip
+		set_country_flag = promote_rural_life
 	}
-	on_revoked = { clr_country_flag = farmers_eud }
-	penalties = {
-		trade_efficiency = -0.05
-	}
-	benefits = {
-		production_efficiency = 0.1
-	}
-}
-estate_farmers_eua = {
-	icon = privilege_admin_power
-	land_share = 0
-	max_absolutism = 0
-	loyalty = 0.05
-	influence = 0.1
-	ai_will_do = {
-		factor = 1
-	}	
-	is_valid = {
-		NOT = {
-			has_country_flag = farmers_eud
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}		
+			add_province_modifier = { 
+				name = rural_life
+				duration = -1  
+				desc = rural_life_desc
+			}
+		}		
+		if = {
+			limit = {
+					OR = {
+						has_terrain = urban
+						has_terrain = high_urban
+					}
+			}		
+			add_province_modifier = { 
+				name = city_life
+				duration = -1  
+				desc = city_life_desc
+			}
 		}
 	}
-	on_granted = {
-		set_country_flag = farmers_eua
+	on_revoked = { 
+		clr_country_flag = promote_rural_life
 	}
-	on_revoked = { clr_country_flag = farmers_eua }
-	penalties = {
-		production_efficiency = -0.05
-	}
-	benefits = {
-		trade_efficiency = 0.1
-	}
-}
-estate_farmers_gmoa = {
-	icon = privilege_admin_power
-	land_share = 0
-	max_absolutism = 0
-	loyalty = 0.05
-	influence = 0.1
-	ai_will_do = {
-		factor = 1
-	}	
-	is_valid = {
-		NOT = {
-			has_country_flag = farmers_gmod
+	on_revoked_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			remove_province_modifier = rural_life
+		}
+		if = {
+			limit = {
+				OR = {
+					has_terrain = urban
+					has_terrain = high_urban
+				}
+			}	
+			remove_province_modifier = city_life
 		}
 	}
-	on_granted = {
-		set_country_flag = farmers_gmoa
+	can_revoke = {
 	}
-	on_revoked = { clr_country_flag = farmers_gmoa }
 	penalties = {
-		monarch_lifespan = -0.1
-		global_unrest = 1
+
 	}
 	benefits = {
-		trade_efficiency = 0.1
-		production_efficiency = 0.1
+
+	}
+	on_invalid = {
+		clr_country_flag = promote_rural_life
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			remove_province_modifier = rural_life
+		}
+		if = {
+			limit = {
+				OR = {
+					has_terrain = urban
+					has_terrain = high_urban
+				}
+			}	
+			remove_province_modifier = city_life
+		}
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 10
+	on_cooldown_expires = {
+		clr_country_flag = promote_rural_life
 	}
 }
-estate_farmers_gmod = {
+fertilizers_from_east = {
 	icon = privilege_admin_power
-	land_share = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -10
 	max_absolutism = 0
 	loyalty = 0.1
-	influence = 0
+	influence = 0.05
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	is_valid = {
-		NOT = {
-			has_country_flag = farmers_gmoa
-		}
+	}
+	can_select = {
 	}
 	on_granted = {
-		set_country_flag = farmers_gmod
+		custom_tooltip = fertilizers_from_east_tooltip
+		set_country_flag = fertilizers_from_east
 	}
-	on_revoked = { clr_country_flag = farmers_gmod }
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}	
+			add_province_modifier = { 
+				name = devastated_by_fertilizers
+				duration = -1  
+				desc = devastated_by_fertilizers_desc
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_vegetables
+					trade_goods = gu_wheat
+					trade_goods = gu_triticale
+					trade_goods = gu_barley
+					trade_goods = gu_maize
+				}
+			}	
+			add_province_modifier = { 
+				name = fertilizers_from_east_modifier
+				duration = -1  
+				desc = fertilizers_from_east_modifier_desc
+			}
+				
+		}
+	}
+	on_revoked = { 
+		clr_country_flag = fertilizers_from_east
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}	
+			remove_province_modifier = devastated_by_fertilizers
+			
+		}
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_vegetables
+					trade_goods = gu_wheat
+					trade_goods = gu_triticale
+					trade_goods = gu_barley
+					trade_goods = gu_maize
+				}
+			}	
+			remove_province_modifier = fertilizers_from_east_modifier
+			
+		}
+	}
+	can_revoke = {
+	}
+	penalties = {
+
+	}
+	benefits = {
+
+	}
+	on_invalid = {
+		clr_country_flag = fertilizers_from_east
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			remove_province_modifier = devastated_by_fertilizers
+			
+		}
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_vegetables
+					trade_goods = gu_wheat
+					trade_goods = gu_triticale
+					trade_goods = gu_barley
+					trade_goods = gu_maize
+				}
+			}	
+			remove_province_modifier = fertilizers_from_east_modifier
+			
+		}
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 10
+	on_cooldown_expires = {
+		clr_country_flag = fertilizers_from_east
+	}
+}
+vaccinating_animals = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -0.1
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = -0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		add_years_of_income = -0.25
+		custom_tooltip = vaccinating_animals_tooltip
+		set_country_flag = vaccinating_animals
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_cattle
+					trade_goods = gu_pigs
+					trade_goods = gu_poultry
+					trade_goods = gu_horses
+				}
+			}
+			add_province_modifier = { 
+				name = vaccinated_animals_modifier
+				duration = -1  
+				desc = vaccinated_animals_modifier_desc
+			}
+		}
+	}
+	on_revoked = { 
+		clr_country_flag = vaccinating_animals
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_cattle
+					trade_goods = gu_pigs
+					trade_goods = gu_poultry
+					trade_goods = gu_horses
+				}
+			}
+			remove_province_modifier = vaccinated_animals_modifier
+		}
+	}
+	can_revoke = {
+	}
 	penalties = {
 	}
 	benefits = {
-		global_unrest = -1
+	}
+	on_invalid = {
+		clr_country_flag = vaccinating_animals
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_cattle
+					trade_goods = gu_pigs
+					trade_goods = gu_poultry
+					trade_goods = gu_horses
+				}
+			}
+			remove_province_modifier = vaccinated_animals_modifier
+		}
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 10
+	on_cooldown_expires = {
+		clr_country_flag = vaccinating_animals
 	}
 }
+
+
+
+

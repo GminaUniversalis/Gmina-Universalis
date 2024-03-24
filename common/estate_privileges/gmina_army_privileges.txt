@@ -239,6 +239,11 @@ estate_army_blitzkrieg = {
 	ai_will_do = {
 		factor = 1
 	}	
+
+	can_select = {
+		NOT = { has_estate_privilege = estate_army_fire_supremacy }
+	}
+
 	on_granted = {
 		remove_estate_privilege = estate_army_fire_supremacy
 		hidden_effect = {
@@ -269,6 +274,10 @@ estate_army_fire_supremacy = {
 	ai_will_do = {
 		factor = 1
 	}	
+	can_select = {
+		NOT = { has_estate_privilege = estate_army_blitzkrieg }
+	}
+
 	on_granted = {
 		remove_estate_privilege = estate_army_blitzkrieg
 		hidden_effect = {

@@ -24,6 +24,15 @@ XXX = {
 	}
 	on_invalid = {
 	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
 	conditional_modifier = {
 		trigger = {
 

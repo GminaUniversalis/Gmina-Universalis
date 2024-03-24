@@ -80,3 +80,35 @@ emancipated_woman = {
 	all_power_cost = -0.05
 	may_recruit_female_generals = yes
 }
+
+rural_life = {
+	local_unrest = -2
+	development_cost = -0.1
+
+}
+
+city_life = {
+	development_cost = 0.1
+	local_unrest = 2
+}
+
+fertilizers_from_east_modifier = {
+	trade_goods_size = 0.5
+}
+
+devastated_by_fertilizers = {
+	local_monthly_devastation = 0.05
+}
+
+vaccinated_animals_modifier = {
+	trade_goods_size = 0.5
+}
+
+GMO_farming_modifier = {
+	trade_goods_size = 1
+	local_monthly_devastation = 0.1
+}
+
+natural_farming_modifier = {
+	trade_goods_size = 0.5
+}

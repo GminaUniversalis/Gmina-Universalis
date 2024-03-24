@@ -140,7 +140,7 @@ estate_families_new_model = {
 
 	}
 	cooldown_years = 0
-	
+
 	on_cooldown_expires = {
 
 	}
@@ -435,7 +435,7 @@ estate_families_support_private_schools = {
 		advisor_cost = 0.3
 	}
 	benefits = {
-		all_power_cost = 0.05
+		all_power_cost = -0.05
 	}
 	on_invalid = {
 	}

@@ -20,8 +20,20 @@
  desc_satellite_city_modifier:0 "Satellite city is a smaller municipality that serves as a regional population and employment center."
  training_area_modifier:0 "Training Area"
  desc_training_area_modifier:0 "A military training area is land set aside specifically to enable military forces to train and exercise for combat."
-
+ 
  working_man:0 "Working Man"
  working_man_desc:0 "In Soviet republic's, the working man is above the rest of society"
  emancipated_woman:0 "Emancipation of Woman"
  emancipated_woman_desc:0 "After the fall of communism, women of the young republic of Poland finally had a choice: to be either a worker or a mother."
+ rural_life:0 "Rural Life"
+ rural_life_desc:0 "Rural Life TBD"
+ city_life:0 "City Life"
+ city_life_desc:0 "City Life TBD"
+ fertilizers_from_east_modifier:0 "Fertilizers from East"
+ fertilizers_from_east_modifier_desc:0 "Fertilizers from East TBD"
+ devastated_by_fertilizers:0 "Devastated land"
+ devastated_by_fertilizers_desc:0 "Devastated land TBD"
+ GMO_farming_modifier:0 'GMO Farming'
+ GMO_farming_modifier_desc:0 "GMO Farming TBD"
+ natural_farming_modifier:0 "Natural Farming"
+ natural_farming_modifier_desc:0 "Natural Farming TBD"
