@@ -4,12 +4,12 @@ guiTypes = {
 		backGround="papacy_bg"
 		position = { x=-274 y= -346 }
 		size = { x=548 y=691 }
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
 		Orientation = "CENTER"
-		moveable = 0
 
 		upsound = papacy
 		downsound = ""

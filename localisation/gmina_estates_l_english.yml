@@ -263,7 +263,7 @@
  estate_farmers_new_way_GMO_definer_tooltip:0 "This is a §Vdefiner§! privilege, you can only have one of them\n\nEvery owned province with Grasslands or Farmlands terrain gains:\nLocal Trade Goods Produced: §G+1§!\nLocal monthly devastation: §R+0.1§!"
  estate_farmers_natural_farming:0 "Natural Farming"
  estate_farmers_natural_farming_desc:0 "Natural Farming TBD"
- estate_farmers_natural_farming_definer_tooltip:0 "This is a §Vdefiner§! privilege, you can only have one of them\n\nEvery owned province with Grasslands or Farmlands terrain gains:\nLocal Trade Goods Produced: §G+0.5§!\"
+ estate_farmers_natural_farming_definer_tooltip:0 "This is a §Vdefiner§! privilege, you can only have one of them\n\nEvery owned province with Grasslands or Farmlands terrain gains:\nLocal Trade Goods Produced: §G+0.5§!"
  estate_farmers_empty_promises:0 "Empty Promises for Farmers"
  estate_farmers_empty_promises_desc:0 "Empty Promises TBD"
  estate_farmers_land_rights:0 "Farmers Land Rights"
