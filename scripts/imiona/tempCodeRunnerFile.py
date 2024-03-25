@@ -1,0 +1,1 @@
+C:\Users\oskar\OneDrive\Documents\Paradox Interactive\Europa Universalis IV\mod\Gmina Universalis\scripts\imiona
