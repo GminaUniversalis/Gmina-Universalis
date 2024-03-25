@@ -416,6 +416,65 @@ country_event = {
 	}
 }
 
+# IKEA
+country_event = {
+	id = prices.6
+	title = prices.6.t
+	desc = prices.6.d
+	picture = price_event_ikea
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			has_terrain = high_urban
+			has_terrain = urban}
+		current_age = age_of_reformation
+		is_year = 1510
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.6.a
+		change_price = {
+			trade_goods = gu_lumber
+			key = IKEA
+			value = 0.25
+			duration = -1}
+		change_price = {
+			trade_goods = gu_woodworking
+			key = IKEA
+			value = 0.50
+			duration = -1
+				
+		}
+		every_owned_province = {
+			limit = {
+				trade_goods = gu_lumber
+			}
+			add_base_production = 1
+		}	
+		
+		if = {
+			limit = {
+				gu_woodworking = 1
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = gu_woodworking
+				}
+				add_base_production = 4
+			}
+		}
+	}
+
+	immediate = {}
+}
 
 # New Draperies
 country_event = {
