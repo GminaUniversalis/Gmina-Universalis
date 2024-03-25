@@ -2356,16 +2356,6 @@ guiTypes = {
 				###
 
 				guiButtonType = {
-					name = "random_new_world_button"
-					position = { x = -241 y = -139 }
-					quadTextureSprite ="GFX_frontend_random_world"
-					buttonText = "RANDOM_WORLD_START"
-					buttonFont = "vic_18"
-					Orientation = "LOWER_RIGHT"
-					clicksound = click
-				}
-
-				guiButtonType = {
 					name = "enable_custom_nation_button"
 					position = { x = -275 y = -107 }
 					quadTextureSprite ="GFX_checkbox_gold_32"
@@ -2655,13 +2645,13 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		#		iconType =
-		#		{
-		#			name ="out_of_sync_icon02"
-		#			spriteType = "GFX_icon_out_of_sync"
-		#			position = { x= -16 y = -4 }
-		#			Orientation = "UPPER_LEFT"
-		#		}
+				iconType =
+				{
+					name ="out_of_sync_icon02"
+					spriteType = "GFX_icon_out_of_sync"
+					position = { x= -16 y = -4 }
+					Orientation = "UPPER_LEFT"
+				}
 
 		iconType =
 		{
@@ -2731,13 +2721,13 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		#		iconType =
-		#		{
-		#			name ="out_of_sync_icon02"
-		#			spriteType = "GFX_icon_out_of_sync"
-		#			position = { x= -16 y = -4 }
-		#			Orientation = "UPPER_LEFT"
-		#		}
+				iconType =
+				{
+					name ="out_of_sync_icon02"
+					spriteType = "GFX_icon_out_of_sync"
+					position = { x= -16 y = -4 }
+					Orientation = "UPPER_LEFT"
+				}
 
 		iconType =
 		{
