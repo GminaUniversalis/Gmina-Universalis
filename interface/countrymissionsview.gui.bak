@@ -17,8 +17,8 @@ guiTypes = {
 
 	windowType = {
 		name = "countrymissionsview"
+		position = { x=0 y=140 }
 		#position = { x=0 y=140 }
-		position = { x=0 y=140 }	
 		show_position = { x=0 y =140 }
 		hide_position = { x=-600 y =140 }
 		animation_type = "decelerated"
@@ -46,8 +46,8 @@ guiTypes = {
 			clicksound = close_window
 		}
 
-#First Batch
-guiButtonType = {
+		#First Batch
+		guiButtonType = {
 			name = "select_current_branch_batch_1_missions"
 			position = { x = 545 y = 80 }
 			quadTextureSprite ="GFX_select_current_missions_button"
@@ -472,7 +472,7 @@ guiButtonType = {
 		iconType = {
 			name = "country_higlight"
 			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_small_shield_overlay_great_power"
+			quadTextureSprite = "GFX_small_shield_overlay_great_power_transparent"
 		}
 	}
 }
