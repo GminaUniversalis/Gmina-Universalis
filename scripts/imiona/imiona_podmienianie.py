@@ -1,82 +1,108 @@
 import os
 import re
 
-# Ścieżki
-base_script_path = r"C:\Users\oskar\OneDrive\Documents\Paradox Interactive\Europa Universalis IV\mod\Gmina Universalis\scripts\imiona"
-base_countries_config_path = r"C:\Users\oskar\OneDrive\Documents\Paradox Interactive\Europa Universalis IV\mod\Gmina Universalis\common\countries"
-gmina_countries_file = os.path.join(base_script_path, "00_gmina_countries.txt")
+# Ścieżka do folderu z plikami konfiguracyjnymi krajów
+config_folder = "C:\\Users\\oskar\\OneDrive\\Documents\\Paradox Interactive\\Europa Universalis IV\\mod\\Gmina Universalis\\common\\countries"
 
-# Wczytaj plik z mapowaniem gmin
-print("Wczytywanie mapowania gmin...")
-gmina_map = {}
-with open(gmina_countries_file, 'r', encoding='utf-8') as file:
-    for line in file:
-        match = re.match(r"([A-Z])\d\d = \"countries/(.*?)\.txt\"", line)
-        if match:
-            letter, path = match.groups()
-            wojewodztwo_name = path.split('/')[-1].replace('.txt', '')
-            gmina_map[wojewodztwo_name] = letter
-            print(f"Dodano mapowanie: {letter} -> {wojewodztwo_name}")
+# Ścieżka do folderu z listami imion
+names_folder = os.path.dirname(os.path.abspath(__file__))
 
-# Pobierz listę wszystkich plików ze skryptami
-script_files = [file.split('.')[0] for file in os.listdir(base_script_path) if file.endswith('.py')]
-print("Lista plików ze skryptami:", script_files)
+# Funkcja do odczytywania listy imion z pliku
+def read_names_list(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        names = file.readlines()
+    # Usunięcie białych znaków i pustych linii
+    names = [name.strip() for name in names if name.strip()]
+    return names
 
-def get_script_content(wojewodztwo):
-    script_path = os.path.join(base_script_path, f"{wojewodztwo}.py")
-    if not os.path.exists(script_path):
-        print(f"Brak pliku skryptu dla: {wojewodztwo}")
-        return None
 
-    with open(script_path, 'r', encoding='utf-8') as script_file:
-        return script_file.read()
+# Funkcja do aktualizowania pliku konfiguracyjnego kraju
+def update_country_config(file_path, names_list):
+    with open(file_path, "r", encoding="utf-8") as file:
+        content = file.read()
 
-def update_country_configs(letter, wojewodztwo):
-    script_content = get_script_content(wojewodztwo)
-    if script_content is None:
-        return
+    # Znajdź sekcje z imionami w pliku konfiguracyjnym
+    monarch_names_section = re.search(r"monarch_names\s*=\s*\{.*?\}", content, re.DOTALL)
+    leader_names_section = re.search(r"leader_names\s*=\s*\{.*?\}", content, re.DOTALL)
 
-    updated = False  # Flaga wskazująca, czy plik został zaktualizowany
+    if monarch_names_section:
+        # Zastąp istniejące imiona nową listą
+        updated_monarch_names = 'monarch_names = {\n' + '\n'.join(names_list) + '\n}'
+        content = re.sub(monarch_names_section.group(0), updated_monarch_names, content)
 
-    for root, dirs, files in os.walk(base_countries_config_path):
-        for file_name in files:
-            # Sprawdź, czy nazwa pliku zawiera nazwę województwa
-            if wojewodztwo in file_name:
-                config_path = os.path.join(root, file_name)
-                print(f"Aktualizacja pliku: {config_path}")
-                with open(config_path, 'r+', encoding='utf-8') as config_file:
-                    content = config_file.read()
+    if leader_names_section:
+        # Zastąp istniejące imiona nową listą
+        updated_leader_names = 'leader_names = {\n' + '\n'.join(names_list) + '\n}'
+        content = re.sub(leader_names_section.group(0), updated_leader_names, content)
 
-                    # Zaktualizuj lub dodaj monarch_names
-                    if "monarch_names = {" in content:
-                        content = re.sub(r"monarch_names = \{[^\}]*\}", f"monarch_names = {{\n{script_content}\n}}", content, flags=re.DOTALL)
-                    else:
-                        content += f"\nmonarch_names = {{\n{script_content}\n}}\n"
+    # Zapisz zaktualizowany plik
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.write(content)
 
-                    # Zaktualizuj lub dodaj leader_names
-                    if "leader_names = {" in content:
-                        content = re.sub(r"leader_names = \{[^\}]*\}", f"leader_names = {{\n{script_content}\n}}", content, flags=re.DOTALL)
-                    else:
-                        content += f"\nleader_names = {{\n{script_content}\n}}\n"
+# Funkcja do odczytywania tagów województw z pliku 00_gmina_countries.txt
+def read_region_tags(file_path):
+    region_tags = {}
+    with open(file_path, "r", encoding="utf-8") as file:
+        for line in file:
+            if "=" in line:
+                tag, region = line.split("=")
+                tag = tag.strip()
+                region = region.strip().replace('"', '')  # Usunięcie cudzysłowów
+                region_tags[tag] = region
+    return region_tags
 
-                    config_file.seek(0)
-                    config_file.write(content)
-                    config_file.truncate()
+# Ścieżka do pliku 00_gmina_countries.txt
+file_path = "00_gmina_countries.txt"
 
-                    updated = True  # Plik został zaktualizowany
+# Wczytaj tagi województw
+region_tags = read_region_tags(file_path)
 
-    if not updated:
-        print(f"Nie zmieniono pliku dla: {wojewodztwo}")
+# Wydrukuj region_tags
+print(region_tags)
 
-# Dodatkowa funkcja do śledzenia niezmodyfikowanych plików
-def track_unmodified_files(script_files, gmina_map):
-    for wojewodztwo, letter in gmina_map.items():
-        if wojewodztwo in script_files:
-            update_country_configs(letter, wojewodztwo)
-            script_files.remove(wojewodztwo)  # Usuń przetworzony plik ze śledzenia
-    for unmodified_file in script_files:
-        print(f"Nie zmieniono pliku skryptu dla: {unmodified_file}")
 
-track_unmodified_files(script_files, gmina_map)
+# Pobierz tagi województw
+region_tags = read_region_tags("00_gmina_countries.txt")
 
-print("Zakończono aktualizację plików konfiguracyjnych.")
+# Liczniki
+total_files = 0
+modified_files = 0
+
+# Przetwarzanie każdego kraju
+for filename in os.listdir(config_folder):
+    if filename.endswith(".txt"):
+        total_files += 1
+        country_file_path = os.path.join(config_folder, filename)
+        # Pobierz tag kraju z nazwy pliku
+        country_tag = filename.split(".")[0]
+        # Sprawdź, czy istnieje plik konfiguracyjny dla tego kraju
+        if os.path.exists(country_file_path):
+            # Sprawdź, czy dla tego kraju istnieje przypisane województwo
+            if country_tag[:3] in region_tags:
+                region_file = os.path.join(names_folder, region_tags[country_tag[:3]] + ".py")
+                # Sprawdź, czy istnieje plik z listą imion dla tego województwa
+                if os.path.exists(region_file):
+                    # Wczytaj listę imion dla danego województwa
+                    names_list = read_names_list(region_file)
+                    # Zaktualizuj plik konfiguracyjny kraju
+                    update_country_config(country_file_path, names_list)
+                    modified_files += 1
+                    print(f"Aktualizacja pliku konfiguracyjnego dla {filename} zakończona.")
+                else:
+                    print(f"Brak pliku z listą imion dla województwa przypisanego do {filename}.")
+            else:
+                print(f"Brak przypisanego województwa dla {filename}.")
+        else:
+            print(f"Plik konfiguracyjny dla {filename} nie istnieje.")
+
+# Podsumowanie
+print(f"\nPodsumowanie:")
+print(f"Liczba plików do modyfikacji: {total_files}")
+print(f"Liczba zmodyfikowanych plików: {modified_files}")
+print(f"Liczba pozostałych do modyfikacji: {total_files - modified_files}")
+
+
+
+
+# print(f"Regiontag: {region_tags}")
+print(f"Regiontag: {names_list}")
