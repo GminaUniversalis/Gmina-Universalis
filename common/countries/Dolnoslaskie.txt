@@ -32,7 +32,7 @@ monarch_names = {
     "Nela" = -132
     "Mia" = -128
     "Anna" = -116
-    "Łucja" = -113
+    "µucja" = -113
     "Nadia" = -110
     "Lilianna" = -109
     "Jagoda" = -107
@@ -43,7 +43,7 @@ monarch_names = {
     "Kaja" = -88
     "Blanka" = -88
     "Nina" = -86
-    "Róża" = -80
+    "Ró¿a" = -80
     "Karolina" = -71
     "Weronika" = -71
     "Matylda" = -66
@@ -57,7 +57,7 @@ monarch_names = {
     "Liwia" = -55
     "Gaja" = -54
     "Martyna" = -53
-    "Jaśmina" = -49
+    "Jaœmina" = -49
     "Wanda" = -47
     "Magdalena" = -47
     "Eliza" = -46
@@ -79,7 +79,7 @@ monarch_names = {
     "Lidia" = -30
     "Ida" = -29
     "Emma" = -28
-    "Małgorzata" = -28
+    "Ma³gorzata" = -28
     "Joanna" = -28
     "Olivia" = -28
     "Daria" = -26
@@ -119,7 +119,7 @@ monarch_names = {
     "Teresa" = -13
     "Kamila" = -12
     "Marika" = -12
-    "Elżbieta" = -12
+    "El¿bieta" = -12
     "Inga" = -12
     "Celina" = -12
     "Krystyna" = -12
@@ -202,7 +202,7 @@ monarch_names = {
     "Yelyzaveta" = -5
     "Zoe" = -5
     "Gloria" = -4
-    "Miłosława" = -4
+    "Mi³os³awa" = -4
     "Ameliia" = -4
     "Lily" = -4
     "Idalia" = -4
@@ -324,7 +324,7 @@ monarch_names = {
     "Faustyna" = -2
     "Vivienne" = -2
     "Leyla" = -2
-    "Stanisława" = -2
+    "Stanis³awa" = -2
     "Afina" = -2
     "Amanda" = -2
     "Lina" = -2
@@ -336,7 +336,7 @@ monarch_names = {
     "Daryna" = -2
     "Ivanna" = -2
     "Wanessa" = -2
-    "Bożena" = -2
+    "Bo¿ena" = -2
     "Veronica" = -2
     "Isadora" = -2
     "Zoya" = -2
@@ -356,10 +356,10 @@ monarch_names = {
     "Aleksander" = 334
     "Jakub" = 333
     "Franciszek" = 300
-    "Mikołaj" = 283
+    "Miko³aj" = 283
     "Ignacy" = 282
     "Filip" = 274
-    "Stanisław" = 245
+    "Stanis³aw" = 245
     "Szymon" = 213
     "Wojciech" = 201
     "Adam" = 181
@@ -369,10 +369,10 @@ monarch_names = {
     "Tymon" = 160
     "Kacper" = 154
     "Wiktor" = 149
-    "Michał" = 143
+    "Micha³" = 143
     "Julian" = 142
     "Tymoteusz" = 137
-    "Miłosz" = 127
+    "Mi³osz" = 127
     "Piotr" = 124
     "Igor" = 111
     "Oskar" = 109
@@ -406,7 +406,7 @@ monarch_names = {
     "Feliks" = 37
     "Ksawery" = 37
     "Kazimierz" = 37
-    "Paweł" = 36
+    "Pawe³" = 36
     "Artem" = 35
     "Kornel" = 35
     "Stefan" = 34
@@ -421,7 +421,7 @@ monarch_names = {
     "Leonard" = 28
     "Jerzy" = 28
     "Tobiasz" = 27
-    "Bartłomiej" = 26
+    "Bart³omiej" = 26
     "David" = 26
     "Adrian" = 25
     "Eryk" = 24
@@ -438,7 +438,7 @@ monarch_names = {
     "Krystian" = 20
     "Matvii" = 20
     "Sebastian" = 20
-    "Radosław" = 19
+    "Rados³aw" = 19
     "Marcin" = 19
     "Kordian" = 19
     "Aleks" = 19
@@ -451,14 +451,14 @@ monarch_names = {
     "Samuel" = 17
     "Florian" = 17
     "Robert" = 17
-    "Błażej" = 16
+    "B³a¿ej" = 16
     "Ernest" = 16
     "Hugo" = 16
     "Andrzej" = 16
     "Beniamin" = 16
-    "Przemysław" = 15
+    "Przemys³aw" = 15
     "Bogdan" = 15
-    "Łukasz" = 14
+    "µukasz" = 14
     "Dorian" = 14
     "Makar" = 14
     "Damir" = 13
@@ -475,7 +475,7 @@ monarch_names = {
     "Brajan" = 11
     "Bohdan" = 11
     "Dmytro" = 11
-    "Rafał" = 11
+    "Rafa³" = 11
     "Maurycy" = 11
     "Denis" = 11
     "Nazar" = 11
@@ -498,7 +498,7 @@ monarch_names = {
     "Vladyslav" = 9
     "Lev" = 9
     "Dariusz" = 8
-    "Jędrzej" = 8
+    "J²drzej" = 8
     "Arkadiusz" = 8
     "Oliwer" = 8
     "Fryderyk" = 8
@@ -510,7 +510,7 @@ monarch_names = {
     "Lew" = 7
     "Orest" = 7
     "Nathan" = 7
-    "Władysław" = 7
+    "W³adys³aw" = 7
     "Sviatoslav" = 7
     "Teo" = 6
     "Benjamin" = 6
@@ -570,7 +570,7 @@ monarch_names = {
     "Omar" = 3
     "Felix" = 3
     "Platon" = 3
-    "Ambroży" = 3
+    "Ambro¿y" = 3
     "Olgierd" = 3
     "Mykyta" = 3
     "Luca" = 3
@@ -580,7 +580,7 @@ monarch_names = {
     "Anthony" = 3
     "Klemens" = 3
     "Mateo" = 3
-    "Mirosław" = 3
+    "Miros³aw" = 3
     "Theodore" = 3
     "Vadym" = 3
     "Nico" = 3
@@ -616,7 +616,7 @@ monarch_names = {
     "Mariusz" = 2
     "Markus" = 2
     "Miran" = 2
-    "Mieczysław" = 2
+    "Mieczys³aw" = 2
     "Lukas" = 2
     "Danil" = 2
     "Danyil" = 2
@@ -626,7 +626,7 @@ monarch_names = {
     "Krzesimir" = 2
     "Erik" = 2
     "Manuel" = 2
-    "Jarosław" = 2
+    "Jaros³aw" = 2
     "Kilian" = 2
     "Makary" = 2
     "Ksawier" = 2
@@ -659,7 +659,7 @@ monarch_names = {
     "Kyrylo" = 2
     "Oktawiusz" = 2
     "Wojtek" = 2
-    "Czesław" = 2
+    "Czes³aw" = 2
     "Jonatan" = 2
     "Nathaniel" = 2
     "Lionel" = 2
@@ -669,16 +669,16 @@ monarch_names = {
 leader_names = {
  Nowak
  Kowalski
- Wiśniewski
+ Wiœniewski
  Wójcik
  Kowalczyk
- Kamiński
+ Kamiªski
  Lewandowski
- Zieliński
- Woźniak
- Szymański
- Dąbrowski
- Kozłowski
+ Zieliªski
+ WoŸniak
+ Szymaªski
+ D¹browski
+ Koz³owski
  Mazur
  Jankowski
  Kwiatkowski
@@ -687,19 +687,19 @@ leader_names = {
  Kaczmarek
  Piotrowski
  Grabowski
- Zając
- Pawłowski
+ Zaj¹c
+ Paw³owski
  Król
  Michalski
  Wróbel
  Wieczorek
- Jabłoński
+ Jab³oªski
  Nowakowski
  Majewski
  Olszewski
  Dudek
  Jaworski
- Stępień
+ St²pieª
  Malinowski
  Adamczyk
  Górski
@@ -717,19 +717,19 @@ leader_names = {
  Zalewski
  Wróblewski
  Pietrzak
- Jasiński
+ Jasiªski
  Duda
  Marciniak
  Sadowski
- Bąk
+ B¹k
  Zawadzki
  Jakubowski
  Wilk
  Chmielewski
  Borkowski
- Włodarczyk
- Sokołowski
- Szczepański
+ W³odarczyk
+ Soko³owski
+ Szczepaªski
  Sawicki
  Lis
  Kucharski
@@ -738,14 +738,14 @@ leader_names = {
  Mazurek
  Kubiak
  Maciejewski
- Kołodziej
- Kaźmierczak
+ Ko³odziej
+ KaŸmierczak
  Czarnecki
  Konieczny
  Sobczak
  Krupa
- Głowacki
- Urbański
+ G³owacki
+ Urbaªski
  Mróz
  Kozak
  Zakrzewski
@@ -753,12 +753,12 @@ leader_names = {
  Krajewski
  Laskowski
  Sikorski
- Ziółkowski
+ Zió³kowski
  Gajewski
  Szulc
  Makowski
  Kaczmarczyk
- Brzeziński
+ Brzeziªski
  Baranowski
  Przybylski
  Kania
@@ -766,34 +766,34 @@ leader_names = {
  Janik
  Borowski
  Adamski
- Błaszczyk
+ B³aszczyk
  Górecki
  Szczepaniak
  Chojnacki
- Kozioł
+ Kozio³
  Mucha
- Leszczyński
- Lipiński
+ Leszczyªski
+ Lipiªski
  Andrzejewski
  Kowalewski
- Czerwiński
- Wesołowski
- Mikołajczyk
- Zięba
+ Czerwiªski
+ Weso³owski
+ Miko³ajczyk
+ Zi²ba
  Jarosz
- Cieślak
+ Cieœlak
  Kowalik
  Markowski
- Musiał
- Kołodziejczyk
- Kopeć
+ Musia³
+ Ko³odziejczyk
+ Kope¾
  Brzozowski
  Nowacki
- Piątek
- Żak
- Domański
+ Pi¹tek
+ ¯ak
+ Domaªski
  Pawlik
- Orłowski
+ Or³owski
  Kurek
  Kot
  Wójtowicz
@@ -807,13 +807,13 @@ leader_names = {
  Markiewicz
  Sowa
  Stasiak
- Jastrzębski
- Karpiński
+ Jastrz²bski
+ Karpiªski
  Stankiewicz
  Urbaniak
  Klimek
  Piasecki
- Łuczak
+ µuczak
  Czajkowski
  Wierzbicki
  Nawrocki
@@ -821,40 +821,40 @@ leader_names = {
  Dziedzic
  Bielecki
  Bednarek
- Stefański
+ Stefaªski
  Madej
  Milewski
  Janicki
  Sosnowski
  Kowal
  Skiba
- Leśniak
+ Leœniak
  Maj
- Jóźwiak
+ JóŸwiak
  Urban
  Majchrzak
  Socha
- Śliwiński
- Małecki
+ Œliwiªski
+ Ma³ecki
  Marek
  Bednarczyk
- Domagała
+ Domaga³a
  Kasprzak
  Dobrowolski
  Wrona
- Pająk
+ Paj¹k
  Michalik
  Matuszewski
  Ratajczak
  Olejniczak
- Świątek
+ Œwi¹tek
  Orzechowski
- Wilczyński
+ Wilczyªski
  Romanowski
  Kurowski
  Olejnik
  Rybak
- Łukasik
+ µukasik
  Rogowski
  Bukowski
  Mazurkiewicz
@@ -862,93 +862,93 @@ leader_names = {
  Sroka
  Owczarek
  Sobolewski
- Kosiński
- Kędzierski
- Barański
+ Kosiªski
+ K²dzierski
+ Baraªski
  Zych
  Bednarz
- Marszałek
+ Marsza³ek
  Sobczyk
  Matusiak
- Skowroński
+ Skowroªski
  Marcinkowski
  Chrzanowski
- Świderski
+ Œwiderski
  Lisowski
- Kozieł
+ Kozie³
  Kasprzyk
  Bednarski
- Białek
+ Bia³ek
  Pluta
- Kwiecień
+ Kwiecieª
  Witek
  Grzybowski
- Kuczyński
+ Kuczyªski
  Paluch
  Chmiel
  Czajka
  Turek
- Jędrzejewski
+ J²drzejewski
  Janiszewski
- Muszyński
+ Muszyªski
  Marczak
  Morawski
- Małek
+ Ma³ek
  Marzec
  Czaja
- Śliwa
- Żukowski
+ Œliwa
+ ¯ukowski
  Kaczor
  Kubicki
  Piekarski
  Rak
  Czech
  Przybysz
- Szczęsny
- Osiński
- Krzemiński
- Gołębiewski
+ Szcz²sny
+ Osiªski
+ Krzemiªski
+ Go³²biewski
  Stefaniak
  Janowski
  Kulesza
  Biernacki
  Lech
- Szydłowski
- Smoliński
+ Szyd³owski
+ Smoliªski
  Banach
  Serafin
  Kujawa
- Michałowski
+ Micha³owski
  Góra
  Lewicki
  Staniszewski
  Kacprzak
- Cieślik
+ Cieœlik
  Murawski
  Rudnicki
- Popławski
+ Pop³awski
  Stachowiak
- Dębski
+ D²bski
  Pietrzyk
  Drozd
- Żurek
- Piątkowski
+ ¯urek
+ Pi¹tkowski
  Górka
  Niemiec
- Banaś
+ Banaœ
  Zawada
  Górny
  Karczewski
  Matysiak
- Żurawski
+ ¯urawski
  Podgórski
- Sowiński
+ Sowiªski
  Klimczak
- Gołębiowski
- Czyż
- Rosiński
+ Go³²biowski
+ Czy¿
+ Rosiªski
  Bieniek
- Kuś
+ Kuœ
  Godlewski
  Gruszka
  Augustyniak
@@ -958,46 +958,46 @@ leader_names = {
  Ptak
  Panek
  Gil
- Przybyła
- Różański
+ Przyby³a
+ Ró¿aªski
  Konopka
  Kulik
  Winiarski
  Komorowski
- Słowik
+ S³owik
  Siwek
  Zaremba
  Cybulski
- Leśniewski
+ Leœniewski
  Szczepanik
  Grzyb
- Kłos
- Krzyżanowski
+ K³os
+ Krzy¿anowski
  Mielczarek
- Cichoń
+ Cichoª
  Tokarski
  Zarzycki
  Graczyk
- Młynarczyk
- Kaczyński
- Mikołajczak
+ M³ynarczyk
+ Kaczyªski
+ Miko³ajczak
  Buczek
- Stańczyk
+ Staªczyk
  Szostak
- Węgrzyn
+ W²grzyn
  Biernat
  Szymczyk
  Cichocki
  Strzelecki
  Jurek
- Szczygieł
+ Szczygie³
  Skowron
  Bartkowiak
- Maćkowiak
+ Ma¾kowiak
  Bogusz
- Gąsior
+ G¹sior
  Janus
- Cieśla
+ Cieœla
  Gawron
  Filipiak
  Melnyk
@@ -1008,24 +1008,24 @@ leader_names = {
  Kula
  Janiak
  Kubik
- Książek
+ Ksi¹¿ek
  Rakowski
  Rzepka
  Sienkiewicz
- Bagiński
- Pałka
+ Bagiªski
+ Pa³ka
  Gawlik
- Różycki
+ Ró¿ycki
  Antczak
- Zaręba
- Frączek
+ Zar²ba
+ Fr¹czek
  Bartczak
  Malec
- Trzciński
- Żebrowski
+ Trzciªski
+ ¯ebrowski
  Rogalski
  Banasiak
- Długosz
+ D³ugosz
  Mikulski
  Królikowski
  Hajduk
@@ -1036,14 +1036,14 @@ leader_names = {
  Kisiel
  Grzegorczyk
  Borek
- Gawroński
+ Gawroªski
  Dobosz
  Stec
  Trojanowski
  Maliszewski
- Wąsik
+ W¹sik
  Rybicki
- Ślusarczyk
+ Œlusarczyk
  Radomski
  Witczak
  Wolny
@@ -1052,13 +1052,13 @@ leader_names = {
  Zaborowski
  Kmiecik
  Walkowiak
- Białas
+ Bia³as
  Grzesiak
  Pawelec
- Gałązka
+ Ga³¹zka
  Kaczorowski
- Frąckowiak
- Sokół
+ Fr¹ckowiak
+ Sokó³
  Bogucki
  Karwowski
  Wnuk
@@ -1066,89 +1066,89 @@ leader_names = {
  Frankowski
  Cichy
  Zygmunt
- Żmuda
- Kwaśniewski
+ ¯muda
+ Kwaœniewski
  Pasternak
  Nawrot
- Więckowski
+ Wi²ckowski
  Juszczak
  Wójcicki
- Dudziński
- Gaweł
+ Dudziªski
+ Gawe³
  Mroczek
  Pietras
  Janas
  Lasota
  Rosiak
  Misiak
- Fijałkowski
+ Fija³kowski
  Skrzypek
- Karaś
- Łapiński
+ Karaœ
+ µapiªski
  Wojtczak
- Wroński
+ Wroªski
  Bujak
  Piórkowski
- Jędrzejczyk
+ J²drzejczyk
  Krysiak
- Kołodziejski
+ Ko³odziejski
  Kubacki
- Dąbek
- Czyżewski
- Gruszczyński
+ D¹bek
+ Czy¿ewski
+ Gruszczyªski
  Piwowarczyk
- Burzyński
+ Burzyªski
  Gutowski
- Sołtys
+ So³tys
  Borowiec
- Łukaszewski
- Szafrański
- Masłowski
+ µukaszewski
+ Szafraªski
+ Mas³owski
  Stelmach
- Jagodziński
+ Jagodziªski
  Tarnowski
- Jagiełło
+ Jagie³³o
  Zielonka
- Zajączkowski
+ Zaj¹czkowski
  Cebula
- Kałużny
+ Ka³u¿ny
  Bober
  Cygan
  Krakowiak
  Bielawski
- Łukasiewicz
+ µukasiewicz
  Dziuba
  Skoczylas
  Lisiecki
  Wilczek
- Woźny
+ WoŸny
  Pilarski
- Kałuża
+ Ka³u¿a
  Falkowski
  Filipek
- Pakuła
+ Paku³a
  Jurkiewicz
- Szcześniak
+ Szczeœniak
  Drzewiecki
- Skibiński
+ Skibiªski
  Jakubiak
- Jędrzejczak
- Kędziora
+ J²drzejczak
+ K²dziora
  Sobieraj
- Gąsiorowski
- Dębowski
+ G¹siorowski
+ D²bowski
  Strzelczyk
  Flis
- Raczyński
+ Raczyªski
  Twardowski
  Stanek
  Kulig
- Gołąb
+ Go³¹b
  Wasiak
  Guzik
  Kubica
  Mierzejewski
- Więcek
+ Wi²cek
  Góral
  Górniak
  Rusin
@@ -1170,48 +1170,48 @@ leader_names = {
  Pytel
  Czapla
  Kaszuba
- Krupiński
+ Krupiªski
  Stolarczyk
- Urbańczyk
+ Urbaªczyk
  Paczkowski
- Kopczyński
+ Kopczyªski
  Prokop
  Partyka
  Bielak
- Michałek
- Jaśkiewicz
+ Micha³ek
+ Jaœkiewicz
  Zagórski
  Misztal
- Gwóźdź
+ GwóŸdŸ
  Dubiel
  Kuc
  Malicki
  Kapusta
  Staszewski
- Ruciński
- Bożek
- Biały
+ Ruciªski
+ Bo¿ek
+ Bia³y
  Kovalchuk
  Siedlecki
  Jankowiak
- Świerczyński
+ Œwierczyªski
  Modzelewski
  Andrzejczak
  Kuchta
- Kępa
+ K²pa
  Ciszewski
  Skóra
- Płonka
+ P³onka
  Janusz
- Gałka
- Słowiński
- Bieńkowski
+ Ga³ka
+ S³owiªski
+ Bieªkowski
  Jurkowski
  Kaczmarski
- Zwoliński
+ Zwoliªski
  Sieradzki
  Milczarek
- Sławiński
+ S³awiªski
  Stachura
  Szczerba
  Pawlikowski
@@ -1219,21 +1219,21 @@ leader_names = {
  Sitek
  Sochacki
  Jezierski
- Stępniak
+ St²pniak
  Rosa
  Kolasa
  Jackowski
- Woś
+ Woœ
  Broda
  Dudzik
  Lipka
  Mroczkowski
  Chmura
  Olczak
- Iwański
- Kwieciński
+ Iwaªski
+ Kwieciªski
  Dec
- Maślanka
+ Maœlanka
  Noga
  Knapik
  Skalski
@@ -1241,39 +1241,39 @@ leader_names = {
  Kogut
  Salamon
  Chojnowski
- Mańkowski
+ Maªkowski
  Szatkowski
  Tokarz
  Trzeciak
  Koza
  Kita
  Florczak
- Wyszyński
+ Wyszyªski
  Dudziak
  Kowalczuk
- Dobrzyński
- Stanisławski
- Kołakowski
+ Dobrzyªski
+ Stanis³awski
+ Ko³akowski
  Lenart
  Mrozek
  Kobus
- Buczyński
+ Buczyªski
  Paszkowski
  Molenda
  Skowronek
  Zdunek
  Kruszewski
  Michalczyk
- Włodarski
+ W³odarski
  Kos
  Kotowski
  Puchalski
  Januszewski
- Kiełbasa
+ Kie³basa
  Kawa
  Chudy
- Żuk
- Warchoł
+ ¯uk
+ Warcho³
  Dominiak
  Czechowski
  Grzesik
@@ -1285,107 +1285,107 @@ leader_names = {
  Adamczak
  Piechota
  Prus
- Wiącek
- Kłosowski
- Ryś
- Maciąg
+ Wi¹cek
+ K³osowski
+ Ryœ
+ Maci¹g
  Adamek
  Chudzik
  Jagielski
- Głogowski
+ G³ogowski
  Stolarski
  Rudnik
- Bąkowski
- Przybył
+ B¹kowski
+ Przyby³
  Jurczak
  Surma
  Koper
- Rudziński
+ Rudziªski
  Filipowicz
- Jarząbek
- Niedźwiecki
+ Jarz¹bek
+ NiedŸwiecki
  Banasik
  Kalisz
- Żyła
+ ¯y³a
  Malik
  Tomala
  Marchewka
  Moskal
- Dąbkowski
- Kuźma
+ D¹bkowski
+ KuŸma
  Kasperek
- Porębski
+ Por²bski
  Boiko
- Budzyński
+ Budzyªski
  Oleksy
- Stańczak
+ Staªczak
  Kopacz
  Moroz
  Gorczyca
- Piłat
+ Pi³at
  Kaniewski
- Sołtysiak
+ So³tysiak
  Gadomski
  Niemczyk
  Furman
  Tracz
  Wypych
  Buczkowski
- Ziętek
+ Zi²tek
  Ivanov
  Jaros
- Miśkiewicz
+ Miœkiewicz
  Roman
- Szeląg
+ Szel¹g
  Bartnik
  Golec
  Szymkowiak
  Drabik
  Korzeniowski
- Kuciński
+ Kuciªski
  Sojka
  Kruczek
- Woliński
+ Woliªski
  Stachurski
  Balcerzak
  Trela
  Piotrowicz
- Zabłocki
+ Zab³ocki
  Stachowicz
  Kujawski
  Rybarczyk
- Błaszczak
+ B³aszczak
  Magiera
  Radecki
  Warzecha
  Ossowski
  Adamiak
  Pelc
- Głąb
- Ślęzak
- Budziński
- Sęk
- Frątczak
+ G³¹b
+ Œl²zak
+ Budziªski
+ S²k
+ Fr¹tczak
  Szuba
  Pietruszka
  Jurczyk
- Dróżdż
+ Dró¿d¿
  Rudzki
  Lesiak
  Bielski
  Kozik
- Białkowski
- Kuliński
- Kmieć
+ Bia³kowski
+ Kuliªski
+ Kmie¾
  Niedzielski
  Panasiuk
  Krakowski
  Mierzwa
- Woźnica
+ WoŸnica
  Zimny
  Kostecki
- Świder
- Bieliński
+ Œwider
+ Bieliªski
  Tomasik
  Herman
  Miller
@@ -1394,21 +1394,21 @@ leader_names = {
  Gut
  Adamowicz
  Banaszek
- Pełka
+ Pe³ka
  Olczyk
  Pawlicki
- Polański
+ Polaªski
  Skorupa
  Stawicki
- Wołoszyn
- Grześkowiak
+ Wo³oszyn
+ Grzeœkowiak
  Wojtasik
- Grudzień
- Sobański
+ Grudzieª
+ Sobaªski
  Pogorzelski
  Urbanek
- Sekuła
- Śmigielski
+ Seku³a
+ Œmigielski
  Czekaj
  Piwowarski
  Kawecki
@@ -1418,52 +1418,52 @@ leader_names = {
  Liszka
  Litwin
  Lorenc
- Piętka
+ Pi²tka
  Wojtkowiak
- Kędzior
- Żuchowski
+ K²dzior
+ ¯uchowski
  Urbanowicz
  Czerniak
  Juszczyk
  Szwarc
  Kovalenko
  Gacek
- Świątkowski
+ Œwi¹tkowski
  Biskup
  Knap
  Bondarenko
  Nguyen
  Makuch
  Szarek
- Wiśniowski
+ Wiœniowski
  Szot
- Grudziński
+ Grudziªski
  Krasowski
  Shevchuk
- Napierała
+ Napiera³a
  Ratajczyk
  Roszkowski
  Izdebski
  Kukla
- Studziński
+ Studziªski
  Karcz
  Kwiatek
  Kawka
  Krukowski
  Mackiewicz
  Rybka
- Śledź
+ ŒledŸ
  Siwiec
  Jakubczyk
  Kusiak
- Jóźwik
- Mańka
+ JóŸwik
+ Maªka
  Roszak
  Paprocki
  Maziarz
- Łukaszewicz
- Duszyński
- Rożek
+ µukaszewicz
+ Duszyªski
+ Ro¿ek
  Bobrowski
  Aleksandrowicz
  Reszka
@@ -1481,31 +1481,31 @@ leader_names = {
  Werner
  Korczak
  Turowski
- Smoleń
- Małkowski
+ Smoleª
+ Ma³kowski
  Mielcarek
  Hoffmann
  Rusek
- Śpiewak
+ Œpiewak
  Grodzki
  Szeliga
- Drożdż
- Wrzesiński
- Kępka
+ Dro¿d¿
+ Wrzesiªski
+ K²pka
  Królak
  Niedziela
  Szczurek
  Wajda
  Staszak
  Korzeniewski
- Pękala
+ P²kala
  Piech
- Kruszyński
+ Kruszyªski
  Szopa
  Kulpa
  Olech
  Grabarczyk
- Gąsiorek
+ G¹siorek
  Plichta
  Majkowski
  Szymanek
@@ -1513,7 +1513,7 @@ leader_names = {
  Suski
  Rzepecki
  Schmidt
- Lewiński
+ Lewiªski
  Kosmala
  Perkowski
  Gola
@@ -1521,24 +1521,24 @@ leader_names = {
  Tkachenko
  Skonieczny
  Bartoszek
- Kapuściński
+ Kapuœciªski
  Rodak
- Bogdański
+ Bogdaªski
  Radziszewski
  Jakubiec
  Lange
  Kupiec
- Rogoziński
+ Rogoziªski
  Wojtowicz
  Kokoszka
- Orzeł
+ Orze³
  Kurzawa
  Olszak
  Piszczek
  Wasielewski
  Pisarek
  Szpak
- Sułkowski
+ Su³kowski
  Raczkowski
  Wrzosek
  Suchecki
@@ -1547,26 +1547,26 @@ leader_names = {
  Dymek
  Paszkiewicz
  Wielgus
- Kaźmierski
- Ożóg
+ KaŸmierski
+ O¿óg
  Kawalec
  Róg
- Goliński
+ Goliªski
  Janczak
  Kozakiewicz
  Biela
- Gołąbek
+ Go³¹bek
  Kokot
- Gładysz
- Zapała
+ G³adysz
+ Zapa³a
  Osowski
  Wyrzykowski
- Białecki
+ Bia³ecki
  Burda
  Wojtaszek
  Adamiec
  Chrobak
- Stokłosa
+ Stok³osa
  Banaszak
  Bugaj
  Koprowski
@@ -1575,11 +1575,11 @@ leader_names = {
  Potocki
  Brzeski
  Gruca
- Świerczek
- Sudoł
+ Œwierczek
+ Sudo³
  Barszcz
  Plewa
- Romański
+ Romaªski
  Konarski
  Garbacz
  Lasek
@@ -1587,48 +1587,48 @@ leader_names = {
  Bojarski
  Matusik
  Szymanowski
- Pierzchała
+ Pierzcha³a
  Smolarek
  Lorek
- Kaliński
+ Kaliªski
  Karolak
- Mączka
+ M¹czka
  Oliinyk
  Jamróz
  Kostka
- Nowiński
- Kochański
+ Nowiªski
+ Kochaªski
  Surowiec
  Balicki
- Płatek
+ P³atek
  Szczygielski
  Waszkiewicz
- Biliński
+ Biliªski
  Czarnota
- Gabryś
+ Gabryœ
  Ambroziak
  Piskorz
- Łach
+ µach
  Piechocki
  Paszek
- Puchała
+ Pucha³a
  Bernat
  Martyniuk
  Sala
- Świtała
+ Œwita³a
  Biel
  Traczyk
  Wójciak
  Wagner
- Włoch
+ W³och
  Dzikowski
- Kolasiński
+ Kolasiªski
  Walczyk
  Pasek
- Mądry
+ M¹dry
  Wdowiak
  Baron
- Błoński
+ B³oªski
  Kempa
  Zborowski
  Burek
@@ -1638,9 +1638,9 @@ leader_names = {
  Weber
  Tkachuk
  Krauze
- Pięta
+ Pi²ta
  Dolata
- Okoń
+ Okoª
  Bator
  Grela
  Skwarek
@@ -1649,7 +1649,7 @@ leader_names = {
  Bogdan
  Kozyra
  Ogórek
- Oleś
+ Oleœ
  Stachowski
  Adamczewski
  Cichosz
@@ -1657,12 +1657,12 @@ leader_names = {
  Franczak
  Jaroszewski
  Ferenc
- Zarębski
+ Zar²bski
  Dziura
  Jedynak
  Figura
- Wąsowski
- Doliński
+ W¹sowski
+ Doliªski
  Modrzejewski
  Kapica
  Waligóra
@@ -1671,92 +1671,92 @@ leader_names = {
  Mularczyk
  Góralczyk
  Mieczkowski
- Miś
- Stępniewski
- Drąg
- Kościelniak
+ Miœ
+ St²pniewski
+ Dr¹g
+ Koœcielniak
  Paradowski
  Dutkiewicz
  Kravchenko
  Jaskólski
- Ciołek
+ Cio³ek
  Grabski
  Grobelny
  Lachowicz
  Majda
  Zawisza
- Łoś
+ µoœ
  Mrowiec
- Myśliwiec
+ Myœliwiec
  Kulas
  Grygiel
  Nadolny
- Lemański
- Brożek
- Ćwik
- Ławniczak
- Półtorak
+ Lemaªski
+ Bro¿ek
+ ¶wik
+ µawniczak
+ Pó³torak
  Klimas
  Bartnicki
  Kraska
- Kwaśny
- Wnęk
+ Kwaœny
+ Wn²k
  Komar
  Kozera
- Gałecki
- Kołodziejczak
+ Ga³ecki
+ Ko³odziejczak
  Kulikowski
  Mirek
  Bernacki
- Boroń
+ Boroª
  Gaj
  Kochanowski
  Kozicki
- Młynarski
+ M³ynarski
  Kreft
  Nadolski
  Nalepa
  Stopa
  Ryba
- Bień
+ Bieª
  Sitko
  Smyk
  Antoniak
  Szadkowski
  Szweda
  Winnicki
- Galiński
- Soboń
- Ćwikliński
+ Galiªski
+ Soboª
+ ¶wikliªski
  Kostrzewski
  Tabor
- Kąkol
- Spychała
- Czapliński
+ K¹kol
+ Spycha³a
+ Czapliªski
  Przybyszewski
  Szczepanek
  Czuba
  Skorupski
- Poręba
+ Por²ba
  Wydra
  Filipczak
  Szafran
- Błażejewski
+ B³a¿ejewski
  Bartosiewicz
  Figiel
  Niezgoda
- Błaszkiewicz
- Węglarz
+ B³aszkiewicz
+ W²glarz
  Kluska
  Pastuszka
  Turski
  Flak
- Gliński
+ Gliªski
  Singh
  Janeczek
  Pajor
  Bartkowski
- Tymiński
+ Tymiªski
  Gajek
  Nosal
  Polishchuk
@@ -1766,37 +1766,37 @@ leader_names = {
  Klimaszewski
  Wiszniewski
  Sarnowski
- Dobrzański
+ Dobrzaªski
  Machnik
  Królik
  Morawiec
- Śliwka
- Wcisło
+ Œliwka
+ Wcis³o
  Budny
- Ługowski
+ µugowski
  Guz
  Rychlik
  Galas
- Sobociński
+ Sobociªski
  Zasada
- Świercz
+ Œwiercz
  Giza
  Iwanowski
  Krause
- Rybiński
- Zawiślak
- Łakomy
- Słomiński
+ Rybiªski
+ Zawiœlak
+ µakomy
+ S³omiªski
  Seweryn
- Gołaszewski
- Mikuła
+ Go³aszewski
+ Miku³a
  Kazimierczak
- Rumiński
+ Rumiªski
  Wierzchowski
  Chojecki
  Czapiewski
  Rybacki
- Bryła
+ Bry³a
  Mizera
  Furtak
  Iwanicki
@@ -1804,16 +1804,16 @@ leader_names = {
  Wilczewski
  Ziomek
  Marcinkiewicz
- Musioł
+ Musio³
  Klonowski
  Marczewski
- Tuszyński
+ Tuszyªski
  Kasperski
  Golonka
  Szczotka
- Gałuszka
+ Ga³uszka
  Szostek
- Słomka
+ S³omka
  Makarewicz
  Nguyễn
  Miszczak
@@ -1821,17 +1821,17 @@ leader_names = {
  Rokita
  Matczak
  Bojanowski
- Pieńkowski
+ Pieªkowski
  Olender
  Truszkowski
  Kalbarczyk
  Radzikowski
  Szubert
- Jończyk
- Podsiadło
+ Joªczyk
+ Podsiad³o
  Góralski
  Bondar
- Kłosiński
+ K³osiªski
  Borowiak
  Waszak
  Daniel
@@ -1839,23 +1839,23 @@ leader_names = {
  Piekarz
  Topolski
  Kornacki
- Rączka
+ R¹czka
  Tarasiuk
- Kołacz
+ Ko³acz
  Pilarczyk
  Babiarz
- Gąska
+ G¹ska
  Wachowski
- Bączek
- Sobczyński
- Chyliński
+ B¹czek
+ Sobczyªski
+ Chyliªski
  Iwan
  Lewczuk
  Napiórkowski
- Strzałkowski
+ Strza³kowski
  Krzak
  Domagalski
- Radwański
+ Radwaªski
  Frankiewicz
  Ludwiczak
 }
