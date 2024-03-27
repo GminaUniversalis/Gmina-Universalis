@@ -431,400 +431,1195 @@ monarch_names = {
 }
 
 leader_names = {
-    "HANNA" = -303
-    "LAURA" = -302
-    "ZUZANNA" = -283
-    "MAJA" = -262
-    "JULIA" = -260
-    "ZOFIA" = -228
-    "EMILIA" = -224
-    "OLIWIA" = -219
-    "POLA" = -204
-    "LENA" = -194
-    "WIKTORIA" = -182
-    "IGA" = -176
-    "LILIANA" = -171
-    "ALICJA" = -167
-    "KLARA" = -165
-    "AMELIA" = -144
-    "MARIA" = -142
-    "ALEKSANDRA" = -141
-    "ANTONINA" = -137
-    "MILENA" = -131
-    "MICHALINA" = -129
-    "BLANKA" = -114
-    "NELA" = -114
-    "NADIA" = -111
-    "KORNELIA" = -101
-    "MARCELINA" = -98
-    "ANIELA" = -93
-    "JAGODA" = -88
-    "HELENA" = -88
-    "ANNA" = -84
-    "LILIANNA" = -75
-    "KAJA" = -75
-    "NATALIA" = -73
-    "ROZALIA" = -72
-    "NIKOLA" = -71
-    "GABRIELA" = -69
-    "WERONIKA" = -69
-    "ŁUCJA" = -67
-    "AURELIA" = -66
-    "RÓŻA" = -61
-    "SARA" = -57
-    "ELIZA" = -56
-    "MIA" = -55
-    "MELANIA" = -51
-    "MARTYNA" = -50
-    "KAROLINA" = -48
-    "NINA" = -46
-    "IZABELA" = -44
-    "ADRIANNA" = -42
-    "LIWIA" = -40
-    "ANASTAZJA" = -40
-    "GAJA" = -36
-    "KINGA" = -35
-    "MAGDALENA" = -35
-    "MATYLDA" = -32
-    "DIANA" = -31
-    "MALWINA" = -31
-    "KATARZYNA" = -28
-    "RITA" = -25
-    "LILIA" = -22
-    "JAŚMINA" = -21
-    "BARBARA" = -21
-    "PATRYCJA" = -20
-    "JOANNA" = -20
-    "LUIZA" = -19
-    "APOLONIA" = -18
-    "WANDA" = -18
-    "KAMILA" = -18
-    "OLIVIA" = -18
-    "KLAUDIA" = -17
-    "ELENA" = -16
-    "DOMINIKA" = -16
-    "KALINA" = -15
-    "EWA" = -15
-    "AGATA" = -15
-    "LEA" = -15
-    "MARIANNA" = -15
-    "SOFIA" = -14
-    "LIDIA" = -13
-    "NEL" = -13
-    "MAŁGORZATA" = -13
-    "BIANKA" = -13
-    "FELICJA" = -13
-    "DARIA" = -13
-    "ADELA" = -13
-    "MARLENA" = -13
-    "FAUSTYNA" = -12
-    "ZOJA" = -12
-    "URSZULA" = -12
-    "SANDRA" = -11
-    "IDA" = -11
-    "MARTA" = -11
-    "STEFANIA" = -11
-    "LARA" = -10
-    "JAGNA" = -9
-    "MAYA" = -9
-    "JULITA" = -9
-    "JUSTYNA" = -9
-    "LILA" = -9
-    "GLORIA" = -8
-    "JADWIGA" = -8
-    "EMMA" = -8
-    "OLGA" = -8
-    "MARIKA" = -7
-    "ADA" = -7
-    "MILA" = -7
-    "ESTERA" = -7
-    "DAGMARA" = -7
-    "PAULINA" = -7
-    "ROKSANA" = -7
-    "SONIA" = -7
-    "AGNIESZKA" = -6
-    "MIRIAM" = -6
-    "VANESSA" = -6
-    "MELISA" = -6
-    "EWELINA" = -5
-    "OTYLIA" = -5
-    "AMANDA" = -5
-    "LILY" = -5
-    "VERONIKA" = -5
-    "ELŻBIETA" = -5
-    "MONIKA" = -5
-    "HIACYNTA" = -5
-    "SOFIIA" = -4
-    "MIRELLA" = -4
-    "NELIA" = -4
-    "EMILY" = -4
-    "AURORA" = -4
-    "ARIA" = -4
-    "CELINA" = -4
-    "CARMEN" = -4
-    "IZABELLA" = -4
-    "ALINA" = -4
-    "VICTORIA" = -4
-    "CHARLOTTE" = -4
-    "MILANA" = -4
-    "TOLA" = -4
-    "JOWITA" = -4
-    "KONSTANCJA" = -4
-    "ANITA" = -4
-    "KRYSTYNA" = -3
-    "SYLWIA" = -3
-    "NADZIEJA" = -3
-    "MIRA" = -3
-    "ROMA" = -3
-    "ZOE" = -3
-    "FRANCISZKA" = -3
-    "HALINA" = -3
-    "JULIANNA" = -3
-    "KARINA" = -3
-    "OKTAWIA" = -3
-    "EVA" = -3
-    "NICOLA" = -3
-    "TERESA" = -3
-    "MARCELA" = -3
-    "ARIANA" = -3
-    "JUDYTA" = -3
-    "VIKTORIA" = -3
-    "KIRA" = -3
-    "ELIZABETH" = -2
-    "FLORENTYNA" = -2
-    "NATASZA" = -2
-    "NOEMI" = -2
-    "PAULA" = -2
-    "DOBROMIŁA" = -2
-    "INKA" = -2
-    "NICOLE" = -2
-    "LARYSA" = -2
-    "GAIA" = -2
-    "BOGNA" = -2
-    "DOROTA" = -2
-    "ADELINA" = -2
-    "ARIADNA" = -2
-    "VIKTORIIA" = -2
-    "LAILA" = -2
-    "MARGARITA" = -2
-    "BOGUMIŁA" = -2
-    "ANTONIA" = -2
-    "KAYLA" = -2
-    "JÓZEFINA" = -2
-    "ALEXANDRA" = -2
-    "IRMINA" = -2
-    "HANNAH" = -2
-    "LILLA" = -2
-    "GRACE" = -2
-    "FRANCESCA" = -2
-    "STELLA" = -2
-    "LILLY" = -2
-    "SABINA" = -2
-    "HANA" = -2
-    "SUZANNE" = -2
-    "INEZ" = -2
-    "MATILDA" = -2
-    "ALICIA" = -2
-    "ISABELLA" = -2
-    "NIKODEM" = 432
-    "ANTONI" = 348
-    "ALEKSANDER" = 341
-    "FRANCISZEK" = 328
-    "JAKUB" = 307
-    "JAN" = 300
-    "MIKOŁAJ" = 262
-    "SZYMON" = 261
-    "IGNACY" = 260
-    "LEON" = 236
-    "FILIP" = 210
-    "TYMON" = 201
-    "MAKSYMILIAN" = 192
-    "KACPER" = 188
-    "OLIWIER" = 162
-    "ADAM" = 153
-    "STANISŁAW" = 153
-    "MIŁOSZ" = 148
-    "MICHAŁ" = 145
-    "WIKTOR" = 137
-    "WOJCIECH" = 135
-    "GABRIEL" = 133
-    "MARCEL" = 131
-    "JULIAN" = 123
-    "IGOR" = 122
-    "OSKAR" = 99
-    "TYMOTEUSZ" = 91
-    "DAWID" = 88
-    "KAROL" = 86
-    "PIOTR" = 82
-    "HUBERT" = 72
-    "ALAN" = 66
-    "KSAWERY" = 61
-    "DOMINIK" = 59
-    "FABIAN" = 56
-    "NATAN" = 54
-    "MATEUSZ" = 53
-    "KRZYSZTOF" = 52
-    "BARTOSZ" = 49
-    "BARTŁOMIEJ" = 49
-    "CEZARY" = 49
-    "MILAN" = 48
-    "PATRYK" = 48
-    "BRUNO" = 47
-    "ARTUR" = 44
-    "TOMASZ" = 44
-    "PAWEŁ" = 35
-    "LEO" = 35
-    "ADRIAN" = 34
-    "KAMIL" = 34
-    "EMIL" = 33
-    "KORNEL" = 32
-    "KRYSTIAN" = 30
-    "MACIEJ" = 30
-    "HENRYK" = 28
-    "ERYK" = 28
-    "KUBA" = 27
-    "SEBASTIAN" = 27
-    "TADEUSZ" = 26
-    "JÓZEF" = 24
-    "TOBIASZ" = 23
-    "KAJETAN" = 23
-    "DANIEL" = 23
-    "BORYS" = 22
-    "MIESZKO" = 22
-    "REMIGIUSZ" = 21
-    "OLAF" = 20
-    "TEODOR" = 19
-    "KAZIMIERZ" = 19
-    "ROBERT" = 18
-    "FLORIAN" = 18
-    "LEONARD" = 17
-    "JEREMI" = 17
-    "NATANIEL" = 16
-    "FELIKS" = 16
-    "GRZEGORZ" = 15
-    "KONRAD" = 14
-    "OLIVIER" = 14
-    "BŁAŻEJ" = 14
-    "WITOLD" = 14
-    "RADOSŁAW" = 14
-    "ŁUKASZ" = 13
-    "STEFAN" = 13
-    "ALEX" = 13
-    "HUGO" = 13
-    "SAMUEL" = 13
-    "ALEXANDER" = 12
-    "LIAM" = 11
-    "OLIVER" = 11
-    "RAFAŁ" = 11
-    "PRZEMYSŁAW" = 11
-    "ALBERT" = 10
-    "KONSTANTY" = 10
-    "GRACJAN" = 10
-    "ANDRZEJ" = 9
-    "GUSTAW" = 9
-    "SZCZEPAN" = 9
-    "DORIAN" = 9
-    "ERNEST" = 9
-    "ALEKS" = 8
-    "MAKSYM" = 8
-    "MARCIN" = 8
-    "RYSZARD" = 8
-    "ARTEM" = 7
-    "ARKADIUSZ" = 7
-    "KORDIAN" = 7
-    "ARON" = 7
-    "SEWERYN" = 7
-    "MAURYCY" = 7
-    "JULIUSZ" = 6
-    "BRAJAN" = 6
-    "BENIAMIN" = 6
-    "MATVII" = 6
-    "LUDWIK" = 6
-    "IWO" = 5
-    "NATHAN" = 5
-    "JEREMIASZ" = 5
-    "CYPRIAN" = 5
-    "EMILIAN" = 5
-    "DARIUSZ" = 5
-    "JĘDRZEJ" = 5
-    "FRYDERYK" = 5
-    "NOAH" = 5
-    "LUCJAN" = 4
-    "ALEKSY" = 4
-    "MARCELI" = 4
-    "NIKOLAS" = 4
-    "DAMIAN" = 4
-    "JOACHIM" = 4
-    "EDMUND" = 4
-    "JERZY" = 4
-    "SYLWESTER" = 4
-    "OSCAR" = 4
-    "JACEK" = 4
-    "OLGIERD" = 4
-    "NORBERT" = 4
-    "ROMAN" = 4
-    "NAZAR" = 3
-    "BENJAMIN" = 3
-    "MIKOLAJ" = 3
-    "MAX" = 3
-    "THEO" = 3
-    "AUGUSTYN" = 3
-    "ARSEN" = 3
-    "MAKS" = 3
-    "NOEL" = 3
-    "DAVID" = 3
-    "KASPIAN" = 3
-    "BOHDAN" = 3
-    "PATRICK" = 3
-    "DMYTRO" = 3
-    "ZACHARY" = 3
-    "VINCENT" = 3
-    "LEONARDO" = 3
-    "DENIS" = 3
-    "TEO" = 3
-    "VIKTOR" = 3
-    "OKTAWIAN" = 3
-    "MAREK" = 3
-    "MICHAEL" = 3
-    "VICTOR" = 3
-    "BRUNON" = 3
-    "MATTEO" = 3
-    "KSAWIER" = 3
-    "JONASZ" = 3
-    "MARK" = 3
-    "BERNARD" = 2
-    "MATTHEW" = 2
-    "WINCENTY" = 2
-    "MIROSŁAW" = 2
-    "IVAN" = 2
-    "ANDRII" = 2
-    "MAKAR" = 2
-    "OLIWER" = 2
-    "CHARLIE" = 2
-    "HARRY" = 2
-    "WŁADYSŁAW" = 2
-    "NOE" = 2
-    "BOGUMIŁ" = 2
-    "LIUBOMYR" = 2
-    "ZBIGNIEW" = 2
-    "DOBROMIR" = 2
-    "LUKA" = 2
-    "JANUSZ" = 2
-    "DANYLO" = 2
-    "TYTUS" = 2
-    "HENRY" = 2
-    "AARON" = 2
-    "ERWIN" = 2
-    "WINCENT" = 2
-    "WŁODZIMIERZ" = 2
-    "HIERONIM" = 2
-    "TYMOFII" = 2
-    "FELIPE" = 2
-    "MYKOLA" = 2
-    "MAXYMILIAN" = 2
-    "FELICJAN" = 2
-    "NICO" = 2
-    "FRANEK" = 2
-    "AMADEUSZ" = 2
-    "LÉON" = 2
+ Nowak
+ Kowalski
+ Wiśniewski
+ Wójcik
+ Kowalczyk
+ Kamiński
+ Lewandowski
+ Zieliński
+ Woźniak
+ Szymański
+ Dąbrowski
+ Kozłowski
+ Mazur
+ Jankowski
+ Kwiatkowski
+ Wojciechowski
+ Krawczyk
+ Kaczmarek
+ Piotrowski
+ Grabowski
+ Zając
+ Pawłowski
+ Król
+ Michalski
+ Wróbel
+ Wieczorek
+ Jabłoński
+ Nowakowski
+ Majewski
+ Olszewski
+ Dudek
+ Jaworski
+ Stępień
+ Malinowski
+ Adamczyk
+ Górski
+ Pawlak
+ Sikora
+ Nowicki
+ Witkowski
+ Rutkowski
+ Walczak
+ Baran
+ Michalak
+ Ostrowski
+ Szewczyk
+ Tomaszewski
+ Zalewski
+ Wróblewski
+ Pietrzak
+ Jasiński
+ Duda
+ Marciniak
+ Sadowski
+ Bąk
+ Zawadzki
+ Jakubowski
+ Wilk
+ Chmielewski
+ Borkowski
+ Włodarczyk
+ Sokołowski
+ Szczepański
+ Sawicki
+ Lis
+ Kucharski
+ Kalinowski
+ Wysocki
+ Mazurek
+ Kubiak
+ Maciejewski
+ Kołodziej
+ Kaźmierczak
+ Czarnecki
+ Konieczny
+ Sobczak
+ Krupa
+ Głowacki
+ Urbański
+ Mróz
+ Kozak
+ Zakrzewski
+ Wasilewski
+ Krajewski
+ Laskowski
+ Sikorski
+ Ziółkowski
+ Gajewski
+ Szulc
+ Makowski
+ Kaczmarczyk
+ Brzeziński
+ Baranowski
+ Przybylski
+ Kania
+ Szymczak
+ Janik
+ Borowski
+ Adamski
+ Błaszczyk
+ Górecki
+ Szczepaniak
+ Chojnacki
+ Kozioł
+ Mucha
+ Leszczyński
+ Lipiński
+ Andrzejewski
+ Kowalewski
+ Czerwiński
+ Wesołowski
+ Mikołajczyk
+ Zięba
+ Jarosz
+ Cieślak
+ Kowalik
+ Markowski
+ Musiał
+ Kołodziejczyk
+ Kopeć
+ Brzozowski
+ Nowacki
+ Piątek
+ Żak
+ Domański
+ Pawlik
+ Orłowski
+ Kurek
+ Kot
+ Wójtowicz
+ Ciesielski
+ Tomczyk
+ Tomczak
+ Kruk
+ Wawrzyniak
+ Polak
+ Wolski
+ Markiewicz
+ Sowa
+ Stasiak
+ Jastrzębski
+ Karpiński
+ Stankiewicz
+ Urbaniak
+ Klimek
+ Piasecki
+ Łuczak
+ Czajkowski
+ Wierzbicki
+ Nawrocki
+ Gajda
+ Dziedzic
+ Bielecki
+ Bednarek
+ Stefański
+ Madej
+ Milewski
+ Janicki
+ Sosnowski
+ Kowal
+ Skiba
+ Leśniak
+ Maj
+ Jóźwiak
+ Urban
+ Majchrzak
+ Socha
+ Śliwiński
+ Małecki
+ Marek
+ Bednarczyk
+ Domagała
+ Kasprzak
+ Dobrowolski
+ Wrona
+ Pająk
+ Michalik
+ Matuszewski
+ Ratajczak
+ Olejniczak
+ Świątek
+ Orzechowski
+ Wilczyński
+ Romanowski
+ Kurowski
+ Olejnik
+ Rybak
+ Łukasik
+ Rogowski
+ Bukowski
+ Mazurkiewicz
+ Grzelak
+ Sroka
+ Owczarek
+ Sobolewski
+ Kosiński
+ Kędzierski
+ Barański
+ Zych
+ Bednarz
+ Marszałek
+ Sobczyk
+ Matusiak
+ Skowroński
+ Marcinkowski
+ Chrzanowski
+ Świderski
+ Lisowski
+ Kozieł
+ Kasprzyk
+ Bednarski
+ Białek
+ Pluta
+ Kwiecień
+ Witek
+ Grzybowski
+ Kuczyński
+ Paluch
+ Chmiel
+ Czajka
+ Turek
+ Jędrzejewski
+ Janiszewski
+ Muszyński
+ Marczak
+ Morawski
+ Małek
+ Marzec
+ Czaja
+ Śliwa
+ Żukowski
+ Kaczor
+ Kubicki
+ Piekarski
+ Rak
+ Czech
+ Przybysz
+ Szczęsny
+ Osiński
+ Krzemiński
+ Gołębiewski
+ Stefaniak
+ Janowski
+ Kulesza
+ Biernacki
+ Lech
+ Szydłowski
+ Smoliński
+ Banach
+ Serafin
+ Kujawa
+ Michałowski
+ Góra
+ Lewicki
+ Staniszewski
+ Kacprzak
+ Cieślik
+ Murawski
+ Rudnicki
+ Popławski
+ Stachowiak
+ Dębski
+ Pietrzyk
+ Drozd
+ Żurek
+ Piątkowski
+ Górka
+ Niemiec
+ Banaś
+ Zawada
+ Górny
+ Karczewski
+ Matysiak
+ Żurawski
+ Podgórski
+ Sowiński
+ Klimczak
+ Gołębiowski
+ Czyż
+ Rosiński
+ Bieniek
+ Kuś
+ Godlewski
+ Gruszka
+ Augustyniak
+ Krawiec
+ Skrzypczak
+ Grochowski
+ Ptak
+ Panek
+ Gil
+ Przybyła
+ Różański
+ Konopka
+ Kulik
+ Winiarski
+ Komorowski
+ Słowik
+ Siwek
+ Zaremba
+ Cybulski
+ Leśniewski
+ Szczepanik
+ Grzyb
+ Kłos
+ Krzyżanowski
+ Mielczarek
+ Cichoń
+ Tokarski
+ Zarzycki
+ Graczyk
+ Młynarczyk
+ Kaczyński
+ Mikołajczak
+ Buczek
+ Stańczyk
+ Szostak
+ Węgrzyn
+ Biernat
+ Szymczyk
+ Cichocki
+ Strzelecki
+ Jurek
+ Szczygieł
+ Skowron
+ Bartkowiak
+ Maćkowiak
+ Bogusz
+ Gąsior
+ Janus
+ Cieśla
+ Gawron
+ Filipiak
+ Melnyk
+ Kucharczyk
+ Kaleta
+ Niewiadomski
+ Kostrzewa
+ Kula
+ Janiak
+ Kubik
+ Książek
+ Rakowski
+ Rzepka
+ Sienkiewicz
+ Bagiński
+ Pałka
+ Gawlik
+ Różycki
+ Antczak
+ Zaręba
+ Frączek
+ Bartczak
+ Malec
+ Trzciński
+ Żebrowski
+ Rogalski
+ Banasiak
+ Długosz
+ Mikulski
+ Królikowski
+ Hajduk
+ Rogala
+ Rojek
+ Tkaczyk
+ Lach
+ Kisiel
+ Grzegorczyk
+ Borek
+ Gawroński
+ Dobosz
+ Stec
+ Trojanowski
+ Maliszewski
+ Wąsik
+ Rybicki
+ Ślusarczyk
+ Radomski
+ Witczak
+ Wolny
+ Mika
+ Lipski
+ Zaborowski
+ Kmiecik
+ Walkowiak
+ Białas
+ Grzesiak
+ Pawelec
+ Gałązka
+ Kaczorowski
+ Frąckowiak
+ Sokół
+ Bogucki
+ Karwowski
+ Wnuk
+ Bochenek
+ Frankowski
+ Cichy
+ Zygmunt
+ Żmuda
+ Kwaśniewski
+ Pasternak
+ Nawrot
+ Więckowski
+ Juszczak
+ Wójcicki
+ Dudziński
+ Gaweł
+ Mroczek
+ Pietras
+ Janas
+ Lasota
+ Rosiak
+ Misiak
+ Fijałkowski
+ Skrzypek
+ Karaś
+ Łapiński
+ Wojtczak
+ Wroński
+ Bujak
+ Piórkowski
+ Jędrzejczyk
+ Krysiak
+ Kołodziejski
+ Kubacki
+ Dąbek
+ Czyżewski
+ Gruszczyński
+ Piwowarczyk
+ Burzyński
+ Gutowski
+ Sołtys
+ Borowiec
+ Łukaszewski
+ Szafrański
+ Masłowski
+ Stelmach
+ Jagodziński
+ Tarnowski
+ Jagiełło
+ Zielonka
+ Zajączkowski
+ Cebula
+ Kałużny
+ Bober
+ Cygan
+ Krakowiak
+ Bielawski
+ Łukasiewicz
+ Dziuba
+ Skoczylas
+ Lisiecki
+ Wilczek
+ Woźny
+ Pilarski
+ Kałuża
+ Falkowski
+ Filipek
+ Pakuła
+ Jurkiewicz
+ Szcześniak
+ Drzewiecki
+ Skibiński
+ Jakubiak
+ Jędrzejczak
+ Kędziora
+ Sobieraj
+ Gąsiorowski
+ Dębowski
+ Strzelczyk
+ Flis
+ Raczyński
+ Twardowski
+ Stanek
+ Kulig
+ Gołąb
+ Wasiak
+ Guzik
+ Kubica
+ Mierzejewski
+ Więcek
+ Góral
+ Górniak
+ Rusin
+ Majcher
+ Bartosik
+ Matuszak
+ Motyka
+ Wolak
+ Grzywacz
+ Romaniuk
+ Bury
+ Bilski
+ Szwed
+ Drozdowski
+ Florek
+ Wojtas
+ Nowaczyk
+ Cholewa
+ Pytel
+ Czapla
+ Kaszuba
+ Krupiński
+ Stolarczyk
+ Urbańczyk
+ Paczkowski
+ Kopczyński
+ Prokop
+ Partyka
+ Bielak
+ Michałek
+ Jaśkiewicz
+ Zagórski
+ Misztal
+ Gwóźdź
+ Dubiel
+ Kuc
+ Malicki
+ Kapusta
+ Staszewski
+ Ruciński
+ Bożek
+ Biały
+ Kovalchuk
+ Siedlecki
+ Jankowiak
+ Świerczyński
+ Modzelewski
+ Andrzejczak
+ Kuchta
+ Kępa
+ Ciszewski
+ Skóra
+ Płonka
+ Janusz
+ Gałka
+ Słowiński
+ Bieńkowski
+ Jurkowski
+ Kaczmarski
+ Zwoliński
+ Sieradzki
+ Milczarek
+ Sławiński
+ Stachura
+ Szczerba
+ Pawlikowski
+ Szyszka
+ Sitek
+ Sochacki
+ Jezierski
+ Stępniak
+ Rosa
+ Kolasa
+ Jackowski
+ Woś
+ Broda
+ Dudzik
+ Lipka
+ Mroczkowski
+ Chmura
+ Olczak
+ Iwański
+ Kwieciński
+ Dec
+ Maślanka
+ Noga
+ Knapik
+ Skalski
+ Majka
+ Kogut
+ Salamon
+ Chojnowski
+ Mańkowski
+ Szatkowski
+ Tokarz
+ Trzeciak
+ Koza
+ Kita
+ Florczak
+ Wyszyński
+ Dudziak
+ Kowalczuk
+ Dobrzyński
+ Stanisławski
+ Kołakowski
+ Lenart
+ Mrozek
+ Kobus
+ Buczyński
+ Paszkowski
+ Molenda
+ Skowronek
+ Zdunek
+ Kruszewski
+ Michalczyk
+ Włodarski
+ Kos
+ Kotowski
+ Puchalski
+ Januszewski
+ Kiełbasa
+ Kawa
+ Chudy
+ Żuk
+ Warchoł
+ Dominiak
+ Czechowski
+ Grzesik
+ Shevchenko
+ Robak
+ Augustyn
+ Pilch
+ Adamus
+ Adamczak
+ Piechota
+ Prus
+ Wiącek
+ Kłosowski
+ Ryś
+ Maciąg
+ Adamek
+ Chudzik
+ Jagielski
+ Głogowski
+ Stolarski
+ Rudnik
+ Bąkowski
+ Przybył
+ Jurczak
+ Surma
+ Koper
+ Rudziński
+ Filipowicz
+ Jarząbek
+ Niedźwiecki
+ Banasik
+ Kalisz
+ Żyła
+ Malik
+ Tomala
+ Marchewka
+ Moskal
+ Dąbkowski
+ Kuźma
+ Kasperek
+ Porębski
+ Boiko
+ Budzyński
+ Oleksy
+ Stańczak
+ Kopacz
+ Moroz
+ Gorczyca
+ Piłat
+ Kaniewski
+ Sołtysiak
+ Gadomski
+ Niemczyk
+ Furman
+ Tracz
+ Wypych
+ Buczkowski
+ Ziętek
+ Ivanov
+ Jaros
+ Miśkiewicz
+ Roman
+ Szeląg
+ Bartnik
+ Golec
+ Szymkowiak
+ Drabik
+ Korzeniowski
+ Kuciński
+ Sojka
+ Kruczek
+ Woliński
+ Stachurski
+ Balcerzak
+ Trela
+ Piotrowicz
+ Zabłocki
+ Stachowicz
+ Kujawski
+ Rybarczyk
+ Błaszczak
+ Magiera
+ Radecki
+ Warzecha
+ Ossowski
+ Adamiak
+ Pelc
+ Głąb
+ Ślęzak
+ Budziński
+ Sęk
+ Frątczak
+ Szuba
+ Pietruszka
+ Jurczyk
+ Dróżdż
+ Rudzki
+ Lesiak
+ Bielski
+ Kozik
+ Białkowski
+ Kuliński
+ Kmieć
+ Niedzielski
+ Panasiuk
+ Krakowski
+ Mierzwa
+ Woźnica
+ Zimny
+ Kostecki
+ Świder
+ Bieliński
+ Tomasik
+ Herman
+ Miller
+ Sobota
+ Kosowski
+ Gut
+ Adamowicz
+ Banaszek
+ Pełka
+ Olczyk
+ Pawlicki
+ Polański
+ Skorupa
+ Stawicki
+ Wołoszyn
+ Grześkowiak
+ Wojtasik
+ Grudzień
+ Sobański
+ Pogorzelski
+ Urbanek
+ Sekuła
+ Śmigielski
+ Czekaj
+ Piwowarski
+ Kawecki
+ Tokarczyk
+ Bogacz
+ Borys
+ Liszka
+ Litwin
+ Lorenc
+ Piętka
+ Wojtkowiak
+ Kędzior
+ Żuchowski
+ Urbanowicz
+ Czerniak
+ Juszczyk
+ Szwarc
+ Kovalenko
+ Gacek
+ Świątkowski
+ Biskup
+ Knap
+ Bondarenko
+ Nguyen
+ Makuch
+ Szarek
+ Wiśniowski
+ Szot
+ Grudziński
+ Krasowski
+ Shevchuk
+ Napierała
+ Ratajczyk
+ Roszkowski
+ Izdebski
+ Kukla
+ Studziński
+ Karcz
+ Kwiatek
+ Kawka
+ Krukowski
+ Mackiewicz
+ Rybka
+ Śledź
+ Siwiec
+ Jakubczyk
+ Kusiak
+ Jóźwik
+ Mańka
+ Roszak
+ Paprocki
+ Maziarz
+ Łukaszewicz
+ Duszyński
+ Rożek
+ Bobrowski
+ Aleksandrowicz
+ Reszka
+ Koval
+ Filip
+ Jeziorski
+ Grzybek
+ Kraszewski
+ Szkudlarek
+ Wojda
+ Semeniuk
+ Sidor
+ Wach
+ Tkacz
+ Werner
+ Korczak
+ Turowski
+ Smoleń
+ Małkowski
+ Mielcarek
+ Hoffmann
+ Rusek
+ Śpiewak
+ Grodzki
+ Szeliga
+ Drożdż
+ Wrzesiński
+ Kępka
+ Królak
+ Niedziela
+ Szczurek
+ Wajda
+ Staszak
+ Korzeniewski
+ Pękala
+ Piech
+ Kruszyński
+ Szopa
+ Kulpa
+ Olech
+ Grabarczyk
+ Gąsiorek
+ Plichta
+ Majkowski
+ Szymanek
+ Bugajski
+ Suski
+ Rzepecki
+ Schmidt
+ Lewiński
+ Kosmala
+ Perkowski
+ Gola
+ Lipiec
+ Tkachenko
+ Skonieczny
+ Bartoszek
+ Kapuściński
+ Rodak
+ Bogdański
+ Radziszewski
+ Jakubiec
+ Lange
+ Kupiec
+ Rogoziński
+ Wojtowicz
+ Kokoszka
+ Orzeł
+ Kurzawa
+ Olszak
+ Piszczek
+ Wasielewski
+ Pisarek
+ Szpak
+ Sułkowski
+ Raczkowski
+ Wrzosek
+ Suchecki
+ Jaskulski
+ Rokicki
+ Dymek
+ Paszkiewicz
+ Wielgus
+ Kaźmierski
+ Ożóg
+ Kawalec
+ Róg
+ Goliński
+ Janczak
+ Kozakiewicz
+ Biela
+ Gołąbek
+ Kokot
+ Gładysz
+ Zapała
+ Osowski
+ Wyrzykowski
+ Białecki
+ Burda
+ Wojtaszek
+ Adamiec
+ Chrobak
+ Stokłosa
+ Banaszak
+ Bugaj
+ Koprowski
+ Mach
+ Brodowski
+ Potocki
+ Brzeski
+ Gruca
+ Świerczek
+ Sudoł
+ Barszcz
+ Plewa
+ Romański
+ Konarski
+ Garbacz
+ Lasek
+ Solecki
+ Bojarski
+ Matusik
+ Szymanowski
+ Pierzchała
+ Smolarek
+ Lorek
+ Kaliński
+ Karolak
+ Mączka
+ Oliinyk
+ Jamróz
+ Kostka
+ Nowiński
+ Kochański
+ Surowiec
+ Balicki
+ Płatek
+ Szczygielski
+ Waszkiewicz
+ Biliński
+ Czarnota
+ Gabryś
+ Ambroziak
+ Piskorz
+ Łach
+ Piechocki
+ Paszek
+ Puchała
+ Bernat
+ Martyniuk
+ Sala
+ Świtała
+ Biel
+ Traczyk
+ Wójciak
+ Wagner
+ Włoch
+ Dzikowski
+ Kolasiński
+ Walczyk
+ Pasek
+ Mądry
+ Wdowiak
+ Baron
+ Błoński
+ Kempa
+ Zborowski
+ Burek
+ Stencel
+ Szymaniak
+ Zawistowski
+ Weber
+ Tkachuk
+ Krauze
+ Pięta
+ Dolata
+ Okoń
+ Bator
+ Grela
+ Skwarek
+ Osuch
+ Wachowiak
+ Bogdan
+ Kozyra
+ Ogórek
+ Oleś
+ Stachowski
+ Adamczewski
+ Cichosz
+ Gazda
+ Franczak
+ Jaroszewski
+ Ferenc
+ Zarębski
+ Dziura
+ Jedynak
+ Figura
+ Wąsowski
+ Doliński
+ Modrzejewski
+ Kapica
+ Waligóra
+ Wielgosz
+ Ozga
+ Mularczyk
+ Góralczyk
+ Mieczkowski
+ Miś
+ Stępniewski
+ Drąg
+ Kościelniak
+ Paradowski
+ Dutkiewicz
+ Kravchenko
+ Jaskólski
+ Ciołek
+ Grabski
+ Grobelny
+ Lachowicz
+ Majda
+ Zawisza
+ Łoś
+ Mrowiec
+ Myśliwiec
+ Kulas
+ Grygiel
+ Nadolny
+ Lemański
+ Brożek
+ Ćwik
+ Ławniczak
+ Półtorak
+ Klimas
+ Bartnicki
+ Kraska
+ Kwaśny
+ Wnęk
+ Komar
+ Kozera
+ Gałecki
+ Kołodziejczak
+ Kulikowski
+ Mirek
+ Bernacki
+ Boroń
+ Gaj
+ Kochanowski
+ Kozicki
+ Młynarski
+ Kreft
+ Nadolski
+ Nalepa
+ Stopa
+ Ryba
+ Bień
+ Sitko
+ Smyk
+ Antoniak
+ Szadkowski
+ Szweda
+ Winnicki
+ Galiński
+ Soboń
+ Ćwikliński
+ Kostrzewski
+ Tabor
+ Kąkol
+ Spychała
+ Czapliński
+ Przybyszewski
+ Szczepanek
+ Czuba
+ Skorupski
+ Poręba
+ Wydra
+ Filipczak
+ Szafran
+ Błażejewski
+ Bartosiewicz
+ Figiel
+ Niezgoda
+ Błaszkiewicz
+ Węglarz
+ Kluska
+ Pastuszka
+ Turski
+ Flak
+ Gliński
+ Singh
+ Janeczek
+ Pajor
+ Bartkowski
+ Tymiński
+ Gajek
+ Nosal
+ Polishchuk
+ Buda
+ Walas
+ Pietrzykowski
+ Klimaszewski
+ Wiszniewski
+ Sarnowski
+ Dobrzański
+ Machnik
+ Królik
+ Morawiec
+ Śliwka
+ Wcisło
+ Budny
+ Ługowski
+ Guz
+ Rychlik
+ Galas
+ Sobociński
+ Zasada
+ Świercz
+ Giza
+ Iwanowski
+ Krause
+ Rybiński
+ Zawiślak
+ Łakomy
+ Słomiński
+ Seweryn
+ Gołaszewski
+ Mikuła
+ Kazimierczak
+ Rumiński
+ Wierzchowski
+ Chojecki
+ Czapiewski
+ Rybacki
+ Bryła
+ Mizera
+ Furtak
+ Iwanicki
+ Kalita
+ Wilczewski
+ Ziomek
+ Marcinkiewicz
+ Musioł
+ Klonowski
+ Marczewski
+ Tuszyński
+ Kasperski
+ Golonka
+ Szczotka
+ Gałuszka
+ Szostek
+ Słomka
+ Makarewicz
+ Nguyễn
+ Miszczak
+ Jackiewicz
+ Rokita
+ Matczak
+ Bojanowski
+ Pieńkowski
+ Olender
+ Truszkowski
+ Kalbarczyk
+ Radzikowski
+ Szubert
+ Jończyk
+ Podsiadło
+ Góralski
+ Bondar
+ Kłosiński
+ Borowiak
+ Waszak
+ Daniel
+ Dusza
+ Piekarz
+ Topolski
+ Kornacki
+ Rączka
+ Tarasiuk
+ Kołacz
+ Pilarczyk
+ Babiarz
+ Gąska
+ Wachowski
+ Bączek
+ Sobczyński
+ Chyliński
+ Iwan
+ Lewczuk
+ Napiórkowski
+ Strzałkowski
+ Krzak
+ Domagalski
+ Radwański
+ Frankiewicz
+ Ludwiczak
 }

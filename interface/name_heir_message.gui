@@ -76,7 +76,7 @@ guiTypes = {
 		{
 			name = "Line3"
 			font = "vic_22_name_heir"
-			position = { x= 140 y= 205 }
+			position = { x= 140 y= 260 }
 			borderSize = { x = 0 y = 3 }	
 			text = ""
 			size = { x=307 y=20 }
@@ -121,14 +121,14 @@ guiTypes = {
 		{
 			name ="LeftShield"
 			spriteType = "standarddialogshield"
-			position = { x= 247 y = 25 }
+			position = { x= 255 y = 25 }
 		}
 		
 		shieldtype = 
 		{
 			name ="RightShield"
 			spriteType = "standarddialogshield"
-			position = { x= 247 y = 25 }
+			position = { x= 255 y = 25 }
 		}
 		
 		
