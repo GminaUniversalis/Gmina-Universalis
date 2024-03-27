@@ -1,37 +1,31 @@
 import os
+import re
 
-# Ścieżka do folderu z plikami (tutaj bieżący folder)
-folder_path = '.'
+# Funkcja do przekształcenia nazwisk
+def transform_name(name):
+    return name.capitalize()
 
-# Wczytaj zawartość pliku nazwiska.txt
-try:
-    with open(os.path.join(folder_path, 'nazwiska.txt'), 'r', encoding='utf-8') as file:
-        nazwiska_lines = file.readlines()
-except FileNotFoundError:
-    print("Plik nazwiska.txt nie został znaleziony.")
-    exit()
+# Szukana nazwa zmiennej
+target_variable = "monarch_names"
 
-# Przygotuj zawartość do wstawienia - każde nazwisko zmodyfikowane, w nowej linii, poprzedzone spacją
-nazwiska_content = "\n".join(" " + line.strip().capitalize() for line in nazwiska_lines if line.strip())
+# Pobranie ścieżki do bieżącego katalogu
+current_directory = os.getcwd()
 
-# Przejście przez wszystkie pliki .txt w folderze, oprócz nazwiska.txt
-for filename in os.listdir(folder_path):
-    if filename.endswith('.txt') and filename != 'nazwiska.txt':
-        file_path = os.path.join(folder_path, filename)
-        with open(file_path, 'r+', encoding='utf-8') as file:
-            content = file.read()
+# Lista plików w bieżącym folderze
+files = [os.path.join(current_directory, f) for f in os.listdir(current_directory) if os.path.isfile(os.path.join(current_directory, f)) and not f.endswith('.py')]
 
-            # Sprawdź, czy w pliku znajduje się słownik leader_names
-            if 'leader_names = {' in content:
-                # Wyszukaj i zastąp istniejący słownik nową zawartością
-                start_index = content.find('leader_names = {') + len('leader_names = {')
-                end_index = content.find('}', start_index)
-                updated_content = content[:start_index] + "\n" + nazwiska_content + "\n" + content[end_index:]
-            else:
-                # Dodaj słownik leader_names na końcu pliku, jeśli nie istnieje
-                updated_content = content.strip() + f'\nleader_names = {{\n{nazwiska_content}\n}}'
-            
-            # Zapisz zmodyfikowaną zawartość do pliku
+# Przeszukiwanie plików
+for file_name in files:
+    with open(file_name, 'r+', encoding='utf-8') as file:
+        content = file.read()
+        pattern = re.compile(rf"{target_variable}\s*=\s*{{([^}}]+)}}", re.DOTALL)
+        matches = pattern.findall(content)
+        if matches:
+            for match in matches:
+                replaced_match = re.sub(r'"([^"]+)"', lambda x: f'"{transform_name(x.group(1))}"', match)
+                new_content = content.replace(match, replaced_match)
             file.seek(0)
-            file.write(updated_content)
+            file.write(new_content)
             file.truncate()
+
+print("Zakończono przetwarzanie plików.")
