@@ -118,6 +118,12 @@ spriteTypes = {
 		texturefile = "gfx\event_pictures\event_pictures_tradegoods\price_event_ikea.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "price_event_orlen"
+		texturefile = "gfx\event_pictures\event_pictures_tradegoods\orlen_price_event.dds"
+		alwaystransparent = yes
+	}
 	
 	spriteType = {
 		name = "DECEMBER_MASSACRESPicture"

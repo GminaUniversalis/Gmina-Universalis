@@ -5,9 +5,10 @@
  better_workspace:0 "Better Workspace"
  rebuild_Gdansk:0 "Rebuilding Danzig"
  structural_reform:0 "Structural Reform"
-
  local_airport_modifier:0 "Local Airport"
  desc_local_airport_modifier:0 "Planes can land and depart here."
+ orlen_head:0 "Orlen Headquarter"
+ desc_orlen_head:0 "From this building, one can hear a multitude of vulgarities with dirty slurs..."
  airport_modifier:0 "Airport"
  desc_airport_modifier:0 "Planes can land and depart here."
  border_crossing_modifier:0 "Border Crossing"
@@ -20,7 +21,6 @@
  desc_satellite_city_modifier:0 "Satellite city is a smaller municipality that serves as a regional population and employment center."
  training_area_modifier:0 "Training Area"
  desc_training_area_modifier:0 "A military training area is land set aside specifically to enable military forces to train and exercise for combat."
- 
  working_man:0 "Working Man"
  working_man_desc:0 "In Soviet republic's, the working man is above the rest of society"
  emancipated_woman:0 "Emancipation of Woman"
