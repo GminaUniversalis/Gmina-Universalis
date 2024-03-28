@@ -2,3 +2,1582 @@ graphical_culture = westerngfx
 color = { 
 	255 255 0 
 }
+
+
+
+# Lista imion z pliku: Lubelskie.txt
+monarch_names = {
+    "Hanna" = -270
+    "Laura" = -269
+    "Alicja" = -240
+    "Zofia" = -228
+    "Zuzanna" = -228
+    "Julia" = -225
+    "Maja" = -218
+    "Oliwia" = -194
+    "Pola" = -178
+    "Antonina" = -170
+    "Lena" = -151
+    "Wiktoria" = -147
+    "Marcelina" = -145
+    "Maria" = -139
+    "Amelia" = -137
+    "Klara" = -133
+    "Aleksandra" = -127
+    "Michalina" = -127
+    "Iga" = -122
+    "Emilia" = -111
+    "µucja" = -102
+    "Gabriela" = -100
+    "Helena" = -99
+    "Kornelia" = -99
+    "Liliana" = -96
+    "Natalia" = -87
+    "Jagoda" = -83
+    "Nela" = -77
+    "Ró¿a" = -71
+    "Anna" = -68
+    "Blanka" = -66
+    "Nadia" = -66
+    "Nikola" = -63
+    "Kaja" = -60
+    "Aniela" = -59
+    "Lilianna" = -54
+    "Rozalia" = -54
+    "Anastazja" = -51
+    "Weronika" = -50
+    "Milena" = -49
+    "Sara" = -45
+    "Karolina" = -43
+    "Martyna" = -40
+    "Mia" = -40
+    "Nina" = -39
+    "Adrianna" = -38
+    "Liwia" = -38
+    "Barbara" = -37
+    "Aurelia" = -32
+    "Matylda" = -29
+    "Izabela" = -25
+    "Ma³gorzata" = -24
+    "Lidia" = -24
+    "Klaudia" = -23
+    "Diana" = -22
+    "Apolonia" = -22
+    "Joanna" = -22
+    "Marianna" = -21
+    "Magdalena" = -21
+    "Malwina" = -21
+    "Daria" = -20
+    "Agata" = -20
+    "Kinga" = -20
+    "Eliza" = -19
+    "Katarzyna" = -18
+    "Jaœmina" = -17
+    "Wanda" = -17
+    "Melania" = -16
+    "Elena" = -15
+    "Ada" = -14
+    "Kamila" = -14
+    "Nel" = -14
+    "Dominika" = -14
+    "Paulina" = -13
+    "Ewa" = -13
+    "Stefania" = -13
+    "Sandra" = -12
+    "Ida" = -11
+    "Marta" = -11
+    "Kalina" = -11
+    "Felicja" = -10
+    "Rita" = -10
+    "Urszula" = -10
+    "Lila" = -9
+    "Jagna" = -9
+    "Luiza" = -9
+    "Olivia" = -9
+    "Sofia" = -9
+    "Celina" = -9
+    "Bianka" = -9
+    "Emma" = -8
+    "Sofiia" = -8
+    "Lara" = -8
+    "Zoja" = -8
+    "Lilia" = -8
+    "Olga" = -8
+    "Adela" = -8
+    "Victoria" = -7
+    "Marika" = -7
+    "Dagmara" = -7
+    "Justyna" = -7
+    "Dorota" = -7
+    "Noemi" = -7
+    "Lea" = -6
+    "Gaja" = -6
+    "Jadwiga" = -6
+    "Karina" = -6
+    "Marlena" = -6
+    "Tola" = -6
+    "Franciszka" = -5
+    "Adelina" = -5
+    "Lili" = -5
+    "Amanda" = -5
+    "Patrycja" = -5
+    "Julita" = -5
+    "Krystyna" = -5
+    "Ewelina" = -5
+    "Sophie" = -4
+    "Mila" = -4
+    "Konstancja" = -4
+    "Inga" = -4
+    "Otylia" = -4
+    "Estera" = -4
+    "Milana" = -4
+    "El¿bieta" = -4
+    "Anita" = -4
+    "Hannah" = -4
+    "Alina" = -4
+    "Idalia" = -3
+    "Sabina" = -3
+    "Alisa" = -3
+    "Magda" = -3
+    "Ines" = -3
+    "Zlata" = -3
+    "Eva" = -3
+    "Amira" = -3
+    "Teresa" = -3
+    "Carmen" = -3
+    "Janina" = -3
+    "Polina" = -3
+    "Judyta" = -3
+    "Miriam" = -3
+    "Inka" = -3
+    "Jowita" = -3
+    "Aurora" = -2
+    "Letycja" = -2
+    "Jessica" = -2
+    "Mariia" = -2
+    "Gloria" = -2
+    "Lia" = -2
+    "Sylwia" = -2
+    "Kira" = -2
+    "Leyla" = -2
+    "Kaya" = -2
+    "Halszka" = -2
+    "Evelina" = -2
+    "Lilla" = -2
+    "Miya" = -2
+    "Laila" = -2
+    "Beata" = -2
+    "Eugenia" = -2
+    "Viktoriia" = -2
+    "Ola" = -2
+    "Blanca" = -2
+    "Julianna" = -2
+    "Solomija" = -2
+    "Agnieszka" = -2
+    "Honorata" = -2
+    "Angelina" = -2
+    "Livia" = -2
+    "Monika" = -2
+    "Dana" = -2
+    "Jasmina" = -2
+    "Patricia" = -2
+    "Maya" = -2
+    "Mi³os³awa" = -2
+    "Bogumi³a" = -2
+    "S³awa" = -2
+    "Hiacynta" = -2
+    "Eliana" = -2
+    "Leonia" = -2
+    "Mira" = -2
+    "Maryla" = -2
+    "Naomi" = -2
+    "Chloé" = -2
+    "Zuza" = -2
+    "Ofelia" = -2
+    "Amina" = -2
+    "Dalia" = -2
+    "Vivien" = -2
+    "Nikodem" = 371
+    "Aleksander" = 336
+    "Antoni" = 321
+    "Jan" = 266
+    "Franciszek" = 266
+    "Jakub" = 245
+    "Miko³aj" = 224
+    "Ignacy" = 193
+    "Leon" = 191
+    "Szymon" = 191
+    "Filip" = 181
+    "Marcel" = 176
+    "Stanis³aw" = 163
+    "Wojciech" = 149
+    "Tymon" = 136
+    "Wiktor" = 132
+    "Kacper" = 131
+    "Oliwier" = 122
+    "Micha³" = 122
+    "Adam" = 120
+    "Gabriel" = 120
+    "Mi³osz" = 112
+    "Oskar" = 104
+    "Maksymilian" = 96
+    "Igor" = 95
+    "Tymoteusz" = 84
+    "Dawid" = 77
+    "Julian" = 72
+    "Piotr" = 71
+    "Dominik" = 60
+    "Krzysztof" = 51
+    "Natan" = 50
+    "Hubert" = 49
+    "Bartosz" = 47
+    "Maciej" = 46
+    "Karol" = 45
+    "Alan" = 44
+    "Fabian" = 43
+    "Mateusz" = 40
+    "Tomasz" = 40
+    "Pawe³" = 39
+    "Kajetan" = 37
+    "Cezary" = 36
+    "Kuba" = 36
+    "Bart³omiej" = 36
+    "Milan" = 35
+    "Bruno" = 32
+    "Kornel" = 32
+    "Tadeusz" = 30
+    "Kazimierz" = 30
+    "Henryk" = 28
+    "Ksawery" = 27
+    "Witold" = 26
+    "Teodor" = 25
+    "Stefan" = 24
+    "Artur" = 23
+    "Józef" = 23
+    "Patryk" = 21
+    "Kamil" = 21
+    "Krystian" = 20
+    "Leo" = 19
+    "Rafa³" = 18
+    "Daniel" = 18
+    "Tobiasz" = 17
+    "Olivier" = 16
+    "Emil" = 16
+    "Borys" = 15
+    "Leonard" = 15
+    "Sebastian" = 14
+    "µukasz" = 14
+    "Eryk" = 14
+    "Olaf" = 14
+    "Damian" = 13
+    "Remigiusz" = 13
+    "Adrian" = 12
+    "Nataniel" = 12
+    "Przemys³aw" = 12
+    "Konstanty" = 11
+    "Marcin" = 11
+    "Gustaw" = 11
+    "Edward" = 10
+    "Ryszard" = 10
+    "Oliver" = 9
+    "Florian" = 9
+    "Aleks" = 9
+    "Feliks" = 9
+    "Robert" = 9
+    "Szczepan" = 8
+    "Mieszko" = 8
+    "Grzegorz" = 8
+    "Jeremi" = 8
+    "Alexander" = 8
+    "Maurycy" = 8
+    "Juliusz" = 8
+    "Kordian" = 8
+    "Mark" = 8
+    "B³a¿ej" = 7
+    "Maksym" = 7
+    "Ernest" = 7
+    "Aleksy" = 7
+    "Liam" = 7
+    "Dorian" = 7
+    "Olgierd" = 7
+    "Marek" = 7
+    "Konrad" = 6
+    "Jerzy" = 6
+    "Alex" = 5
+    "Samuel" = 5
+    "Sylwester" = 5
+    "Seweryn" = 5
+    "Albert" = 5
+    "Denis" = 5
+    "W³adys³aw" = 5
+    "Ludwik" = 5
+    "Oleksandr" = 4
+    "Olek" = 4
+    "Maks" = 4
+    "Lucjan" = 4
+    "Amadeusz" = 4
+    "Oscar" = 4
+    "Rados³aw" = 4
+    "David" = 4
+    "Vincent" = 4
+    "Thomas" = 3
+    "Beniamin" = 3
+    "Lew" = 3
+    "Mykhailo" = 3
+    "Jeremiasz" = 3
+    "Artem" = 3
+    "Matvii" = 3
+    "Andrzej" = 3
+    "Roman" = 3
+    "Cyprian" = 3
+    "Iwo" = 3
+    "Aron" = 3
+    "Max" = 3
+    "Jacek" = 3
+    "Wincenty" = 3
+    "Norbert" = 3
+    "Anthony" = 3
+    "Demian" = 3
+    "Victor" = 3
+    "Eliasz" = 3
+    "Dmytro" = 3
+    "Ryan" = 3
+    "Bogus³aw" = 2
+    "Korneliusz" = 2
+    "Marko" = 2
+    "Benjamin" = 2
+    "Kaspian" = 2
+    "Krzesimir" = 2
+    "Jonatan" = 2
+    "Bernard" = 2
+    "Henry" = 2
+    "Amir" = 2
+    "Bogdan" = 2
+    "Orest" = 2
+    "Ivan" = 2
+    "Iwan" = 2
+    "Hugo" = 2
+    "Emir" = 2
+    "Nicolas" = 2
+    "Ian" = 2
+    "Wit" = 2
+    "Teo" = 2
+    "Ksawier" = 2
+    "Ivo" = 2
+    "Viktor" = 2
+    "Hektor" = 2
+    "Louis" = 2
+    "Dajan" = 2
+    "Luka" = 2
+    "Fryderyk" = 2
+    "J²drzej" = 2
+    "Miron" = 2
+    "Jaros³aw" = 2
+    "Tymofii" = 2
+    "Kasjan" = 2
+    "Leonardo" = 2
+    "Lukas" = 2
+    "Ziemowit" = 2
+    "Brajan" = 2
+    "Boles³aw" = 2
+    "Wincent" = 2
+    "Miros³aw" = 2
+    "Ruben" = 2
+    "Timur" = 2
+    "Marceli" = 2
+    "Makar" = 2
+}
+
+leader_names = {
+ Nowak
+ Kowalski
+ Wiœniewski
+ Wójcik
+ Kowalczyk
+ Kamiªski
+ Lewandowski
+ Zieliªski
+ WoŸniak
+ Szymaªski
+ D¹browski
+ Koz³owski
+ Mazur
+ Jankowski
+ Kwiatkowski
+ Wojciechowski
+ Krawczyk
+ Kaczmarek
+ Piotrowski
+ Grabowski
+ Zaj¹c
+ Paw³owski
+ Król
+ Michalski
+ Wróbel
+ Wieczorek
+ Jab³oªski
+ Nowakowski
+ Majewski
+ Olszewski
+ Dudek
+ Jaworski
+ St²pieª
+ Malinowski
+ Adamczyk
+ Górski
+ Pawlak
+ Sikora
+ Nowicki
+ Witkowski
+ Rutkowski
+ Walczak
+ Baran
+ Michalak
+ Ostrowski
+ Szewczyk
+ Tomaszewski
+ Zalewski
+ Wróblewski
+ Pietrzak
+ Jasiªski
+ Duda
+ Marciniak
+ Sadowski
+ B¹k
+ Zawadzki
+ Jakubowski
+ Wilk
+ Chmielewski
+ Borkowski
+ W³odarczyk
+ Soko³owski
+ Szczepaªski
+ Sawicki
+ Lis
+ Kucharski
+ Kalinowski
+ Wysocki
+ Mazurek
+ Kubiak
+ Maciejewski
+ Ko³odziej
+ KaŸmierczak
+ Czarnecki
+ Konieczny
+ Sobczak
+ Krupa
+ G³owacki
+ Urbaªski
+ Mróz
+ Kozak
+ Zakrzewski
+ Wasilewski
+ Krajewski
+ Laskowski
+ Sikorski
+ Zió³kowski
+ Gajewski
+ Szulc
+ Makowski
+ Kaczmarczyk
+ Brzeziªski
+ Baranowski
+ Przybylski
+ Kania
+ Szymczak
+ Janik
+ Borowski
+ Adamski
+ B³aszczyk
+ Górecki
+ Szczepaniak
+ Chojnacki
+ Kozio³
+ Mucha
+ Leszczyªski
+ Lipiªski
+ Andrzejewski
+ Kowalewski
+ Czerwiªski
+ Weso³owski
+ Miko³ajczyk
+ Zi²ba
+ Jarosz
+ Cieœlak
+ Kowalik
+ Markowski
+ Musia³
+ Ko³odziejczyk
+ Kope¾
+ Brzozowski
+ Nowacki
+ Pi¹tek
+ ¯ak
+ Domaªski
+ Pawlik
+ Or³owski
+ Kurek
+ Kot
+ Wójtowicz
+ Ciesielski
+ Tomczyk
+ Tomczak
+ Kruk
+ Wawrzyniak
+ Polak
+ Wolski
+ Markiewicz
+ Sowa
+ Stasiak
+ Jastrz²bski
+ Karpiªski
+ Stankiewicz
+ Urbaniak
+ Klimek
+ Piasecki
+ µuczak
+ Czajkowski
+ Wierzbicki
+ Nawrocki
+ Gajda
+ Dziedzic
+ Bielecki
+ Bednarek
+ Stefaªski
+ Madej
+ Milewski
+ Janicki
+ Sosnowski
+ Kowal
+ Skiba
+ Leœniak
+ Maj
+ JóŸwiak
+ Urban
+ Majchrzak
+ Socha
+ Œliwiªski
+ Ma³ecki
+ Marek
+ Bednarczyk
+ Domaga³a
+ Kasprzak
+ Dobrowolski
+ Wrona
+ Paj¹k
+ Michalik
+ Matuszewski
+ Ratajczak
+ Olejniczak
+ Œwi¹tek
+ Orzechowski
+ Wilczyªski
+ Romanowski
+ Kurowski
+ Olejnik
+ Rybak
+ µukasik
+ Rogowski
+ Bukowski
+ Mazurkiewicz
+ Grzelak
+ Sroka
+ Owczarek
+ Sobolewski
+ Kosiªski
+ K²dzierski
+ Baraªski
+ Zych
+ Bednarz
+ Marsza³ek
+ Sobczyk
+ Matusiak
+ Skowroªski
+ Marcinkowski
+ Chrzanowski
+ Œwiderski
+ Lisowski
+ Kozie³
+ Kasprzyk
+ Bednarski
+ Bia³ek
+ Pluta
+ Kwiecieª
+ Witek
+ Grzybowski
+ Kuczyªski
+ Paluch
+ Chmiel
+ Czajka
+ Turek
+ J²drzejewski
+ Janiszewski
+ Muszyªski
+ Marczak
+ Morawski
+ Ma³ek
+ Marzec
+ Czaja
+ Œliwa
+ ¯ukowski
+ Kaczor
+ Kubicki
+ Piekarski
+ Rak
+ Czech
+ Przybysz
+ Szcz²sny
+ Osiªski
+ Krzemiªski
+ Go³²biewski
+ Stefaniak
+ Janowski
+ Kulesza
+ Biernacki
+ Lech
+ Szyd³owski
+ Smoliªski
+ Banach
+ Serafin
+ Kujawa
+ Micha³owski
+ Góra
+ Lewicki
+ Staniszewski
+ Kacprzak
+ Cieœlik
+ Murawski
+ Rudnicki
+ Pop³awski
+ Stachowiak
+ D²bski
+ Pietrzyk
+ Drozd
+ ¯urek
+ Pi¹tkowski
+ Górka
+ Niemiec
+ Banaœ
+ Zawada
+ Górny
+ Karczewski
+ Matysiak
+ ¯urawski
+ Podgórski
+ Sowiªski
+ Klimczak
+ Go³²biowski
+ Czy¿
+ Rosiªski
+ Bieniek
+ Kuœ
+ Godlewski
+ Gruszka
+ Augustyniak
+ Krawiec
+ Skrzypczak
+ Grochowski
+ Ptak
+ Panek
+ Gil
+ Przyby³a
+ Ró¿aªski
+ Konopka
+ Kulik
+ Winiarski
+ Komorowski
+ S³owik
+ Siwek
+ Zaremba
+ Cybulski
+ Leœniewski
+ Szczepanik
+ Grzyb
+ K³os
+ Krzy¿anowski
+ Mielczarek
+ Cichoª
+ Tokarski
+ Zarzycki
+ Graczyk
+ M³ynarczyk
+ Kaczyªski
+ Miko³ajczak
+ Buczek
+ Staªczyk
+ Szostak
+ W²grzyn
+ Biernat
+ Szymczyk
+ Cichocki
+ Strzelecki
+ Jurek
+ Szczygie³
+ Skowron
+ Bartkowiak
+ Ma¾kowiak
+ Bogusz
+ G¹sior
+ Janus
+ Cieœla
+ Gawron
+ Filipiak
+ Melnyk
+ Kucharczyk
+ Kaleta
+ Niewiadomski
+ Kostrzewa
+ Kula
+ Janiak
+ Kubik
+ Ksi¹¿ek
+ Rakowski
+ Rzepka
+ Sienkiewicz
+ Bagiªski
+ Pa³ka
+ Gawlik
+ Ró¿ycki
+ Antczak
+ Zar²ba
+ Fr¹czek
+ Bartczak
+ Malec
+ Trzciªski
+ ¯ebrowski
+ Rogalski
+ Banasiak
+ D³ugosz
+ Mikulski
+ Królikowski
+ Hajduk
+ Rogala
+ Rojek
+ Tkaczyk
+ Lach
+ Kisiel
+ Grzegorczyk
+ Borek
+ Gawroªski
+ Dobosz
+ Stec
+ Trojanowski
+ Maliszewski
+ W¹sik
+ Rybicki
+ Œlusarczyk
+ Radomski
+ Witczak
+ Wolny
+ Mika
+ Lipski
+ Zaborowski
+ Kmiecik
+ Walkowiak
+ Bia³as
+ Grzesiak
+ Pawelec
+ Ga³¹zka
+ Kaczorowski
+ Fr¹ckowiak
+ Sokó³
+ Bogucki
+ Karwowski
+ Wnuk
+ Bochenek
+ Frankowski
+ Cichy
+ Zygmunt
+ ¯muda
+ Kwaœniewski
+ Pasternak
+ Nawrot
+ Wi²ckowski
+ Juszczak
+ Wójcicki
+ Dudziªski
+ Gawe³
+ Mroczek
+ Pietras
+ Janas
+ Lasota
+ Rosiak
+ Misiak
+ Fija³kowski
+ Skrzypek
+ Karaœ
+ µapiªski
+ Wojtczak
+ Wroªski
+ Bujak
+ Piórkowski
+ J²drzejczyk
+ Krysiak
+ Ko³odziejski
+ Kubacki
+ D¹bek
+ Czy¿ewski
+ Gruszczyªski
+ Piwowarczyk
+ Burzyªski
+ Gutowski
+ So³tys
+ Borowiec
+ µukaszewski
+ Szafraªski
+ Mas³owski
+ Stelmach
+ Jagodziªski
+ Tarnowski
+ Jagie³³o
+ Zielonka
+ Zaj¹czkowski
+ Cebula
+ Ka³u¿ny
+ Bober
+ Cygan
+ Krakowiak
+ Bielawski
+ µukasiewicz
+ Dziuba
+ Skoczylas
+ Lisiecki
+ Wilczek
+ WoŸny
+ Pilarski
+ Ka³u¿a
+ Falkowski
+ Filipek
+ Paku³a
+ Jurkiewicz
+ Szczeœniak
+ Drzewiecki
+ Skibiªski
+ Jakubiak
+ J²drzejczak
+ K²dziora
+ Sobieraj
+ G¹siorowski
+ D²bowski
+ Strzelczyk
+ Flis
+ Raczyªski
+ Twardowski
+ Stanek
+ Kulig
+ Go³¹b
+ Wasiak
+ Guzik
+ Kubica
+ Mierzejewski
+ Wi²cek
+ Góral
+ Górniak
+ Rusin
+ Majcher
+ Bartosik
+ Matuszak
+ Motyka
+ Wolak
+ Grzywacz
+ Romaniuk
+ Bury
+ Bilski
+ Szwed
+ Drozdowski
+ Florek
+ Wojtas
+ Nowaczyk
+ Cholewa
+ Pytel
+ Czapla
+ Kaszuba
+ Krupiªski
+ Stolarczyk
+ Urbaªczyk
+ Paczkowski
+ Kopczyªski
+ Prokop
+ Partyka
+ Bielak
+ Micha³ek
+ Jaœkiewicz
+ Zagórski
+ Misztal
+ GwóŸdŸ
+ Dubiel
+ Kuc
+ Malicki
+ Kapusta
+ Staszewski
+ Ruciªski
+ Bo¿ek
+ Bia³y
+ Kovalchuk
+ Siedlecki
+ Jankowiak
+ Œwierczyªski
+ Modzelewski
+ Andrzejczak
+ Kuchta
+ K²pa
+ Ciszewski
+ Skóra
+ P³onka
+ Janusz
+ Ga³ka
+ S³owiªski
+ Bieªkowski
+ Jurkowski
+ Kaczmarski
+ Zwoliªski
+ Sieradzki
+ Milczarek
+ S³awiªski
+ Stachura
+ Szczerba
+ Pawlikowski
+ Szyszka
+ Sitek
+ Sochacki
+ Jezierski
+ St²pniak
+ Rosa
+ Kolasa
+ Jackowski
+ Woœ
+ Broda
+ Dudzik
+ Lipka
+ Mroczkowski
+ Chmura
+ Olczak
+ Iwaªski
+ Kwieciªski
+ Dec
+ Maœlanka
+ Noga
+ Knapik
+ Skalski
+ Majka
+ Kogut
+ Salamon
+ Chojnowski
+ Maªkowski
+ Szatkowski
+ Tokarz
+ Trzeciak
+ Koza
+ Kita
+ Florczak
+ Wyszyªski
+ Dudziak
+ Kowalczuk
+ Dobrzyªski
+ Stanis³awski
+ Ko³akowski
+ Lenart
+ Mrozek
+ Kobus
+ Buczyªski
+ Paszkowski
+ Molenda
+ Skowronek
+ Zdunek
+ Kruszewski
+ Michalczyk
+ W³odarski
+ Kos
+ Kotowski
+ Puchalski
+ Januszewski
+ Kie³basa
+ Kawa
+ Chudy
+ ¯uk
+ Warcho³
+ Dominiak
+ Czechowski
+ Grzesik
+ Shevchenko
+ Robak
+ Augustyn
+ Pilch
+ Adamus
+ Adamczak
+ Piechota
+ Prus
+ Wi¹cek
+ K³osowski
+ Ryœ
+ Maci¹g
+ Adamek
+ Chudzik
+ Jagielski
+ G³ogowski
+ Stolarski
+ Rudnik
+ B¹kowski
+ Przyby³
+ Jurczak
+ Surma
+ Koper
+ Rudziªski
+ Filipowicz
+ Jarz¹bek
+ NiedŸwiecki
+ Banasik
+ Kalisz
+ ¯y³a
+ Malik
+ Tomala
+ Marchewka
+ Moskal
+ D¹bkowski
+ KuŸma
+ Kasperek
+ Por²bski
+ Boiko
+ Budzyªski
+ Oleksy
+ Staªczak
+ Kopacz
+ Moroz
+ Gorczyca
+ Pi³at
+ Kaniewski
+ So³tysiak
+ Gadomski
+ Niemczyk
+ Furman
+ Tracz
+ Wypych
+ Buczkowski
+ Zi²tek
+ Ivanov
+ Jaros
+ Miœkiewicz
+ Roman
+ Szel¹g
+ Bartnik
+ Golec
+ Szymkowiak
+ Drabik
+ Korzeniowski
+ Kuciªski
+ Sojka
+ Kruczek
+ Woliªski
+ Stachurski
+ Balcerzak
+ Trela
+ Piotrowicz
+ Zab³ocki
+ Stachowicz
+ Kujawski
+ Rybarczyk
+ B³aszczak
+ Magiera
+ Radecki
+ Warzecha
+ Ossowski
+ Adamiak
+ Pelc
+ G³¹b
+ Œl²zak
+ Budziªski
+ S²k
+ Fr¹tczak
+ Szuba
+ Pietruszka
+ Jurczyk
+ Dró¿d¿
+ Rudzki
+ Lesiak
+ Bielski
+ Kozik
+ Bia³kowski
+ Kuliªski
+ Kmie¾
+ Niedzielski
+ Panasiuk
+ Krakowski
+ Mierzwa
+ WoŸnica
+ Zimny
+ Kostecki
+ Œwider
+ Bieliªski
+ Tomasik
+ Herman
+ Miller
+ Sobota
+ Kosowski
+ Gut
+ Adamowicz
+ Banaszek
+ Pe³ka
+ Olczyk
+ Pawlicki
+ Polaªski
+ Skorupa
+ Stawicki
+ Wo³oszyn
+ Grzeœkowiak
+ Wojtasik
+ Grudzieª
+ Sobaªski
+ Pogorzelski
+ Urbanek
+ Seku³a
+ Œmigielski
+ Czekaj
+ Piwowarski
+ Kawecki
+ Tokarczyk
+ Bogacz
+ Borys
+ Liszka
+ Litwin
+ Lorenc
+ Pi²tka
+ Wojtkowiak
+ K²dzior
+ ¯uchowski
+ Urbanowicz
+ Czerniak
+ Juszczyk
+ Szwarc
+ Kovalenko
+ Gacek
+ Œwi¹tkowski
+ Biskup
+ Knap
+ Bondarenko
+ Nguyen
+ Makuch
+ Szarek
+ Wiœniowski
+ Szot
+ Grudziªski
+ Krasowski
+ Shevchuk
+ Napiera³a
+ Ratajczyk
+ Roszkowski
+ Izdebski
+ Kukla
+ Studziªski
+ Karcz
+ Kwiatek
+ Kawka
+ Krukowski
+ Mackiewicz
+ Rybka
+ ŒledŸ
+ Siwiec
+ Jakubczyk
+ Kusiak
+ JóŸwik
+ Maªka
+ Roszak
+ Paprocki
+ Maziarz
+ µukaszewicz
+ Duszyªski
+ Ro¿ek
+ Bobrowski
+ Aleksandrowicz
+ Reszka
+ Koval
+ Filip
+ Jeziorski
+ Grzybek
+ Kraszewski
+ Szkudlarek
+ Wojda
+ Semeniuk
+ Sidor
+ Wach
+ Tkacz
+ Werner
+ Korczak
+ Turowski
+ Smoleª
+ Ma³kowski
+ Mielcarek
+ Hoffmann
+ Rusek
+ Œpiewak
+ Grodzki
+ Szeliga
+ Dro¿d¿
+ Wrzesiªski
+ K²pka
+ Królak
+ Niedziela
+ Szczurek
+ Wajda
+ Staszak
+ Korzeniewski
+ P²kala
+ Piech
+ Kruszyªski
+ Szopa
+ Kulpa
+ Olech
+ Grabarczyk
+ G¹siorek
+ Plichta
+ Majkowski
+ Szymanek
+ Bugajski
+ Suski
+ Rzepecki
+ Schmidt
+ Lewiªski
+ Kosmala
+ Perkowski
+ Gola
+ Lipiec
+ Tkachenko
+ Skonieczny
+ Bartoszek
+ Kapuœciªski
+ Rodak
+ Bogdaªski
+ Radziszewski
+ Jakubiec
+ Lange
+ Kupiec
+ Rogoziªski
+ Wojtowicz
+ Kokoszka
+ Orze³
+ Kurzawa
+ Olszak
+ Piszczek
+ Wasielewski
+ Pisarek
+ Szpak
+ Su³kowski
+ Raczkowski
+ Wrzosek
+ Suchecki
+ Jaskulski
+ Rokicki
+ Dymek
+ Paszkiewicz
+ Wielgus
+ KaŸmierski
+ O¿óg
+ Kawalec
+ Róg
+ Goliªski
+ Janczak
+ Kozakiewicz
+ Biela
+ Go³¹bek
+ Kokot
+ G³adysz
+ Zapa³a
+ Osowski
+ Wyrzykowski
+ Bia³ecki
+ Burda
+ Wojtaszek
+ Adamiec
+ Chrobak
+ Stok³osa
+ Banaszak
+ Bugaj
+ Koprowski
+ Mach
+ Brodowski
+ Potocki
+ Brzeski
+ Gruca
+ Œwierczek
+ Sudo³
+ Barszcz
+ Plewa
+ Romaªski
+ Konarski
+ Garbacz
+ Lasek
+ Solecki
+ Bojarski
+ Matusik
+ Szymanowski
+ Pierzcha³a
+ Smolarek
+ Lorek
+ Kaliªski
+ Karolak
+ M¹czka
+ Oliinyk
+ Jamróz
+ Kostka
+ Nowiªski
+ Kochaªski
+ Surowiec
+ Balicki
+ P³atek
+ Szczygielski
+ Waszkiewicz
+ Biliªski
+ Czarnota
+ Gabryœ
+ Ambroziak
+ Piskorz
+ µach
+ Piechocki
+ Paszek
+ Pucha³a
+ Bernat
+ Martyniuk
+ Sala
+ Œwita³a
+ Biel
+ Traczyk
+ Wójciak
+ Wagner
+ W³och
+ Dzikowski
+ Kolasiªski
+ Walczyk
+ Pasek
+ M¹dry
+ Wdowiak
+ Baron
+ B³oªski
+ Kempa
+ Zborowski
+ Burek
+ Stencel
+ Szymaniak
+ Zawistowski
+ Weber
+ Tkachuk
+ Krauze
+ Pi²ta
+ Dolata
+ Okoª
+ Bator
+ Grela
+ Skwarek
+ Osuch
+ Wachowiak
+ Bogdan
+ Kozyra
+ Ogórek
+ Oleœ
+ Stachowski
+ Adamczewski
+ Cichosz
+ Gazda
+ Franczak
+ Jaroszewski
+ Ferenc
+ Zar²bski
+ Dziura
+ Jedynak
+ Figura
+ W¹sowski
+ Doliªski
+ Modrzejewski
+ Kapica
+ Waligóra
+ Wielgosz
+ Ozga
+ Mularczyk
+ Góralczyk
+ Mieczkowski
+ Miœ
+ St²pniewski
+ Dr¹g
+ Koœcielniak
+ Paradowski
+ Dutkiewicz
+ Kravchenko
+ Jaskólski
+ Cio³ek
+ Grabski
+ Grobelny
+ Lachowicz
+ Majda
+ Zawisza
+ µoœ
+ Mrowiec
+ Myœliwiec
+ Kulas
+ Grygiel
+ Nadolny
+ Lemaªski
+ Bro¿ek
+ ¶wik
+ µawniczak
+ Pó³torak
+ Klimas
+ Bartnicki
+ Kraska
+ Kwaœny
+ Wn²k
+ Komar
+ Kozera
+ Ga³ecki
+ Ko³odziejczak
+ Kulikowski
+ Mirek
+ Bernacki
+ Boroª
+ Gaj
+ Kochanowski
+ Kozicki
+ M³ynarski
+ Kreft
+ Nadolski
+ Nalepa
+ Stopa
+ Ryba
+ Bieª
+ Sitko
+ Smyk
+ Antoniak
+ Szadkowski
+ Szweda
+ Winnicki
+ Galiªski
+ Soboª
+ ¶wikliªski
+ Kostrzewski
+ Tabor
+ K¹kol
+ Spycha³a
+ Czapliªski
+ Przybyszewski
+ Szczepanek
+ Czuba
+ Skorupski
+ Por²ba
+ Wydra
+ Filipczak
+ Szafran
+ B³a¿ejewski
+ Bartosiewicz
+ Figiel
+ Niezgoda
+ B³aszkiewicz
+ W²glarz
+ Kluska
+ Pastuszka
+ Turski
+ Flak
+ Gliªski
+ Singh
+ Janeczek
+ Pajor
+ Bartkowski
+ Tymiªski
+ Gajek
+ Nosal
+ Polishchuk
+ Buda
+ Walas
+ Pietrzykowski
+ Klimaszewski
+ Wiszniewski
+ Sarnowski
+ Dobrzaªski
+ Machnik
+ Królik
+ Morawiec
+ Œliwka
+ Wcis³o
+ Budny
+ µugowski
+ Guz
+ Rychlik
+ Galas
+ Sobociªski
+ Zasada
+ Œwiercz
+ Giza
+ Iwanowski
+ Krause
+ Rybiªski
+ Zawiœlak
+ µakomy
+ S³omiªski
+ Seweryn
+ Go³aszewski
+ Miku³a
+ Kazimierczak
+ Rumiªski
+ Wierzchowski
+ Chojecki
+ Czapiewski
+ Rybacki
+ Bry³a
+ Mizera
+ Furtak
+ Iwanicki
+ Kalita
+ Wilczewski
+ Ziomek
+ Marcinkiewicz
+ Musio³
+ Klonowski
+ Marczewski
+ Tuszyªski
+ Kasperski
+ Golonka
+ Szczotka
+ Ga³uszka
+ Szostek
+ S³omka
+ Makarewicz
+ Nguyễn
+ Miszczak
+ Jackiewicz
+ Rokita
+ Matczak
+ Bojanowski
+ Pieªkowski
+ Olender
+ Truszkowski
+ Kalbarczyk
+ Radzikowski
+ Szubert
+ Joªczyk
+ Podsiad³o
+ Góralski
+ Bondar
+ K³osiªski
+ Borowiak
+ Waszak
+ Daniel
+ Dusza
+ Piekarz
+ Topolski
+ Kornacki
+ R¹czka
+ Tarasiuk
+ Ko³acz
+ Pilarczyk
+ Babiarz
+ G¹ska
+ Wachowski
+ B¹czek
+ Sobczyªski
+ Chyliªski
+ Iwan
+ Lewczuk
+ Napiórkowski
+ Strza³kowski
+ Krzak
+ Domagalski
+ Radwaªski
+ Frankiewicz
+ Ludwiczak
+}
