@@ -1,3 +1,233 @@
+estate_investors_support_foreign_corporations = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -0.1
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_investors_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_investors_definer}
+				had_country_flag = {
+					flag = picked_investors_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_investors_support_foreign_coroporations_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_investors_support_local_corporations
+			remove_estate_privilege = estate_investors_support_state_owned_corporations
+			clr_country_flag = picked_investors_definer
+			set_country_flag = picked_investors_definer
+			clr_country_flag = picked_support_foreign_corporations
+			set_country_flag = picked_support_foreign_corporations
+		}
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_investors_definer}
+			had_country_flag = {
+				flag = picked_investors_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		global_manpower_modifier = -0.1
+	}
+	benefits = {
+		dip_tech_cost_modifier = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_investors_support_local_corporations = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -0.15
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = -0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_investors_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_investors_definer}
+				had_country_flag = {
+					flag = picked_investors_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_investors_support_local_coroporations_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_investors_support_foreign_corporations
+			remove_estate_privilege = estate_investors_support_state_owned_corporations
+			clr_country_flag = picked_investors_definer
+			set_country_flag = picked_investors_definer
+			clr_country_flag = picked_support_local_corporations
+			set_country_flag = picked_support_local_corporations
+		}
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_investors_definer}
+			had_country_flag = {
+				flag = picked_investors_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		global_manpower_modifier = -0.25
+	}
+	benefits = {
+		development_cost_modifier = -0.05
+		technology_cost = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_investors_support_state_owned_corporations = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.2
+	influence = -0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_investors_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_state_owned_definer}
+				had_country_flag = {
+					flag = picked_state_owned_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_investors_support_state_owned_coroporations_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_investors_support_foreign_corporations
+			remove_estate_privilege = estate_investors_support_local_corporations
+			clr_country_flag = picked_investors_definer
+			set_country_flag = picked_investors_definer
+			clr_country_flag = picked_support_state_owned_corporations
+			set_country_flag = picked_support_state_owned_corporations
+		}
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_investors_definer}
+			had_country_flag = {
+				flag = picked_investors_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		global_manpower_modifier = -0.25
+	}
+	benefits = {
+		development_cost_modifier = -0.05
+		technology_cost = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
 estate_investors_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
@@ -53,5 +283,529 @@ estate_investors_empty_promises = {
 	}
 	benefits = {
 	
+	}
+}
+estate_investors_minimal_taxation = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.15
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_investors_taxation_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_investors_taxation}
+				had_country_flag = {
+					flag = picked_investors_taxation
+					days = 1825
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_minimal_taxation_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_investors_basic_taxation
+			remove_estate_privilege = estate_investors_high_taxation
+			clr_country_flag = picked_investors_taxation
+			set_country_flag = picked_investors_taxation
+			clr_country_flag = picked_minimal_taxation
+			set_country_flag = picked_minimal_taxation
+		}
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_investors_taxation}
+			had_country_flag = {
+				flag = picked_investors_taxation
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		development_cost = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_investors_basic_taxation = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_investors_taxation_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_investors_taxation}
+				had_country_flag = {
+					flag = picked_investors_taxation
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_basic_taxation_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_investors_minimal_taxation
+			remove_estate_privilege = estate_investors_high_taxation
+			clr_country_flag = picked_investors_taxation
+			set_country_flag = picked_investors_taxation
+			clr_country_flag = picked_basic_taxation
+			set_country_flag = picked_basic_taxation
+		}
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_investors_taxation}
+			had_country_flag = {
+				flag = picked_investors_taxation
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		global_tax_modifier = 0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_investors_high_taxation = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.05
+	influence = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_investors_taxation_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_investors_taxation}
+				had_country_flag = {
+					flag = picked_investors_taxation
+					days = 1825
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_basic_taxation_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_investors_basic_taxation
+			remove_estate_privilege = estate_investors_minimal_taxation
+			clr_country_flag = picked_investors_taxation
+			set_country_flag = picked_investors_taxation
+			clr_country_flag = picked_high_taxation
+			set_country_flag = picked_high_taxation
+		}
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_investors_taxation}
+			had_country_flag = {
+				flag = picked_investors_taxation
+				days = 1825
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		all_power_cost = -0.025
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_investors_lobbists = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		advisor_cost = -0.1
+		free_concentrate_development = yes
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_investors_rapid_modernisation = {
+	icon = privilege_give_money
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		is_at_war = no
+		if = {
+			limit = {
+				has_estate_privilege = estate_investors_rapid_modernisation
+			}
+			has_estate_loan = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = estate_investors_modernisation
+			OR = {
+				NOT = { has_country_flag = picked_investors_modernisation}
+				had_country_flag = {
+					flag = picked_investors_modernisation
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_investors_modernisation_tooltip
+
+		add_stability = -2
+
+		if = {
+			limit = {
+				NOT = { has_government_attribute = no_mercantilism_loss_from_privilege }
+				NOT = { has_country_flag = no_mercantilism_loss_estate_privilege_flag }
+			}
+			add_mercantilism = -1
+		}
+		hidden_effect = {
+			clr_country_flag = picked_investors_modernisation
+			set_country_flag = picked_investors_modernisation
+		}
+		tooltip = {
+			add_inflation = 0.5
+		}
+		hidden_effect = {
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+				estate_loan = yes
+			}
+		}
+	}
+	on_revoked = { 
+		add_stability = 2
+	}
+	can_revoke = {
+		OR = {
+			has_estate_loan = no
+			NOT = { has_country_flag = picked_investors_modernisation}
+			had_country_flag = {
+				flag = picked_investors_modernisation
+				days = 3650
+			}
+		}
+	}
+	penalties = {
+		can_not_declare_war = yes
+		unrest = 3
+		inflation_reduction = -0.1
+		stability_cost_modifier = 0.5
+	}
+	benefits = {
+		build_cost = -0.2
+		build_time = -0.2
+		development_cost = -0.2
+
+	}
+	on_invalid = {
+		add_stability = 2
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 10
+	on_cooldown_expires = {
+		add_stability = 2
+	}
+}
+estate_investors_adm_support = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -0.1
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		administrative_efficiency = 0.05
+		development_cost_modifier = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_investors_high_influence = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -0.1
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		set_country_flag = high_influence_of_corporations
+	}
+	on_revoked = { 
+		clr_country_flag = high_influence_of_corporations
+	}
+	can_revoke = {
+	}
+	penalties = {
+		yearly_corruption = 0.25
+	}
+	benefits = {
+	}
+	on_invalid = {
+		clr_country_flag = high_influence_of_corporations
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
 	}
 }

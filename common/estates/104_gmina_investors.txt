@@ -53,7 +53,17 @@ estate_investors = {
     color = { 230 137 38 }
      privileges = {
 		estate_investors_land_rights
+		estate_investors_rapid_modernisation
 		estate_investors_empty_promises
+		estate_investors_minimal_taxation
+		estate_investors_basic_taxation
+		estate_investors_high_taxation
+		estate_investors_lobbists
+		estate_investors_adm_support
+		estate_investors_high_influence
+		estate_investors_support_foreign_corporations
+		estate_investors_support_local_corporations
+		estate_investors_support_state_owned_corporations
 	 }
      agendas = {
 		estate_investors_hire_advisor
