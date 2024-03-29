@@ -528,9 +528,7 @@ country_event = {
 		}
 	}
 
-	immediate = {
-		
-	}
+	immediate = {}
 }
 
 # New Draperies
@@ -664,6 +662,49 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = prices.8
+	title = prices.8.t
+	desc = prices.8.d
+	picture = price_event_paprykarz
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		current_age = age_of_reformation
+		is_year = 1575
+		NOT = {
+			navy_size = 5
+		}
+		num_of_ports = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = prices.8.a
+		change_price = {
+			trade_goods = fish
+			key = Paprykarz
+			value = -0.40
+			duration = -1
+		}
+	
+		add_country_modifier = {
+			name = shipbuilding_problem
+			duration = 5473
+		}
+			
+		
+	}
+
+	immediate = {}
+	
+}
 
 # # Felt Hats
 # country_event = {
