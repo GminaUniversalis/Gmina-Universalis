@@ -95,6 +95,7 @@ estate_army_new_doctrine = {
 	}
 	penalties = {
 		land_forcelimit_modifier = -0.5
+		capped_by_forcelimit = yes
 	}
 	benefits = {
 		land_morale = 0.2
