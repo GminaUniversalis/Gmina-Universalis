@@ -698,6 +698,7 @@ country_event = {
 			name = shipbuilding_problem
 			duration = 5473
 		}
+	
 			
 		
 	}
@@ -705,6 +706,185 @@ country_event = {
 	immediate = {}
 	
 }
+
+country_event = {
+	id = prices.9
+	title = prices.9.t
+	desc = prices.9.d
+	picture = price_event_nightgarden
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1620
+		NOT = {
+			heir_age = 8
+		}
+		OR = {
+			has_consort_regency	= yes
+			has_regency	= yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = prices.9.a
+		change_price = {
+			trade_goods = gu_stone
+			key = makapaka
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = natural_scientist
+			name = "Makka Pakka"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+
+		}
+		extend_regency = 7
+    }
+	option = {
+		name = prices.9.b
+		change_price = {
+			trade_goods = cloth
+			key = igglepiggle
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = statesman
+			name = "Iggle Piggle"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+		}
+		extend_regency = 7
+	}
+	option = {
+		name = prices.9.c
+		change_price = {
+			trade_goods = gu_confectionery
+			key = upsydaisy
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = quartermaster
+			name = "Upsy Daisy"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+			female = yes
+		}
+		extend_regency = 7
+	}
+	option = {
+		name = prices.9.e
+	}
+	immediate = {}
+	
+}
+
+#Telefonia analogowa
+
+country_event = {
+	id = prices.10
+	title = prices.10.t
+	desc = prices.10.d
+	picture = price_event_tel_1
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		NOT = {
+			current_age = age_of_discovery
+		}
+		is_year = 1510
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = prices.10.a
+		change_price = {
+			trade_goods = paper
+			key = tel_1
+			value = -0.10
+			duration = -1
+		}
+		change_innovativeness = 5
+	}
+}
+
+	immediate = {
+		set_global_flag = tel_analogowa
+	}
+
+#Nowoczesna telefonia cyfrowa
+
+country_event = {
+	id = prices.12
+	title = prices.12.t
+	desc = prices.12.d
+	picture = price_event_tel_2
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1550
+		every_country = {
+			gu_electronics = 1
+		}
+		has_global_flag = tel_analogowa
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.12.a
+		change_price = {
+			trade_goods = paper
+			key = tel_2
+			value = -0.40
+			duration = -1
+		}
+		change_price = {
+			trade_goods = gu_electronics
+			key = tel_2
+			value = 0.40
+			duration = -1
+		}
+		change_innovativeness = 7
+	}
+}
+
+	immediate = {}
+	
+
 
 # # Felt Hats
 # country_event = {
