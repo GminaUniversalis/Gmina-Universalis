@@ -833,12 +833,13 @@ country_event = {
 			duration = -1
 		}
 		change_innovativeness = 5
-	}
-}
-
-	immediate = {
+		custom_tooltip = prices.10.a.t
 		set_global_flag = tel_analogowa
+
 	}
+
+	immediate = {}
+}
 
 #Nowoczesna telefonia cyfrowa
 
@@ -876,15 +877,14 @@ country_event = {
 			trade_goods = gu_electronics
 			key = tel_2
 			value = 0.40
-			duration = -1
+			duration = -1  
+			
 		}
 		change_innovativeness = 7
 	}
-}
 
 	immediate = {}
-	
-
+}
 
 # # Felt Hats
 # country_event = {
