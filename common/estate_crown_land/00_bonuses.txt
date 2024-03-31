@@ -67,7 +67,7 @@ bonus = {
     range_to = 60.0
     modifier = {
         max_absolutism = 5
-        reform_progress_growth = 0.2
+        reform_progress_growth = 0.3
     }
 }
 
@@ -77,7 +77,7 @@ bonus = {
     range_to = 70.0
     modifier = {
         max_absolutism = 10
-        reform_progress_growth = 0.4
+        reform_progress_growth = 0.5
     }
 }
 
@@ -88,7 +88,7 @@ bonus = {
     modifier = {
         max_absolutism = 15
         yearly_absolutism = 1
-        reform_progress_growth = 0.6
+        reform_progress_growth = 0.7
         global_autonomy = -0.01
     }
 }
@@ -100,7 +100,7 @@ bonus = {
     modifier = {
         max_absolutism = 15
         yearly_absolutism = 1
-        reform_progress_growth = 0.7
+        reform_progress_growth = 0.8
         global_autonomy = -0.02
     }
 }
@@ -112,19 +112,19 @@ bonus = {
     modifier = {
         max_absolutism = 15
         yearly_absolutism = 1
-        reform_progress_growth = 0.8
+        reform_progress_growth = 1
         global_autonomy = -0.025
     }
 }
 
 bonus = {
     key = crown_land_level_10
-    range_from = 100.0
-    range_to = 9001.0
+    range_from = 95.0
+    range_to = 101.0
     modifier = {
         max_absolutism = 15
         yearly_absolutism = 1
-        reform_progress_growth = 1
+        reform_progress_growth = 2
         global_autonomy = -0.05
     }
 }
