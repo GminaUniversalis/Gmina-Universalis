@@ -48,6 +48,14 @@ estate_miners = {
      privileges = {
 		estate_miners_land_rights
 		estate_miners_empty_promises
+		estate_miners_work_leaders
+		estate_miners_barburka
+		estate_miners_privatized_industry
+		estate_miners_state_owned_industry
+		estate_miners_golden_age_mines
+		estate_miners_unprofitable_mines
+		estate_miners_silver_age_mines
+		estate_miners_EU_mining_regulations
 	 }
      agendas = {
 		estate_miners_hire_advisor

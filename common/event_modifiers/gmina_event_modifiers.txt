@@ -112,3 +112,32 @@ GMO_farming_modifier = {
 natural_farming_modifier = {
 	trade_goods_size = 0.5
 }
+
+effective_management = {
+	trade_goods_size = 0.5
+}
+
+unlimited_workforce = {
+	production_efficiency = 0.1
+}
+
+unprofitable_mines = {
+	trade_goods_size = -0.5
+}
+
+golden_age_of_mines = {
+	production_efficiency = 0.2
+	local_monthly_devastation = 0.03
+}
+
+silver_age_of_mines = {
+	trade_goods_size_modifier = 0.1
+}
+
+barburka = {
+	local_unrest = -1
+}
+
+barburkant = {
+	local_unrest = 3
+}
