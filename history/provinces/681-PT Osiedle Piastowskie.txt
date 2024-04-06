@@ -14,3 +14,5 @@ controller = Q23
 discovered_by = ottoman
 add_core = Q23
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_iron_trade_good

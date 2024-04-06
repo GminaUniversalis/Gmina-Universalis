@@ -13,3 +13,5 @@ owner = W02
 controller = W02
 add_core = W02
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_mushrooms_trade_good

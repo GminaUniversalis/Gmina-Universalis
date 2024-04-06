@@ -13,3 +13,5 @@ owner = J05
 controller = J05
 add_core = J05
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_fur_trade_good

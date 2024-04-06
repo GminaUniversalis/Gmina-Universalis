@@ -16,3 +16,5 @@ owner = A27
 controller = A27
 
 center_of_trade = 1
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_horses_trade_good

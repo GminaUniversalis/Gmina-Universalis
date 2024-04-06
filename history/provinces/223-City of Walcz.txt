@@ -14,3 +14,5 @@ owner = P09
 controller = P09
 add_core = P09
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_iron_trade_good

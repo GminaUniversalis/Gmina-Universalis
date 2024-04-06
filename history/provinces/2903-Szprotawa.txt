@@ -13,3 +13,5 @@ owner = W03
 controller = W03
 add_core = W03
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_iron_trade_good

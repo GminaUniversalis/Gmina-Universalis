@@ -13,3 +13,5 @@ owner = P13
 controller = P13
 add_core = P13
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_fish_trade_good

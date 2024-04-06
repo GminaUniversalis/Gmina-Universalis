@@ -14,3 +14,5 @@ controller = B17
 add_core = B17
 discovered_by = ottoman
 add_core = B21
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_vegetables_trade_good

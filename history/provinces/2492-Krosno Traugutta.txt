@@ -13,3 +13,5 @@ owner = I25
 controller = I25
 discovered_by = ottoman
 add_core = I25
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_ceramics_trade_good

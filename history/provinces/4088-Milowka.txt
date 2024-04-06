@@ -14,3 +14,5 @@ owner = L20
 controller = L20
 add_core = L20
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_lumber_trade_good

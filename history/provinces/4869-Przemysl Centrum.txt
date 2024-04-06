@@ -13,3 +13,5 @@ is_city = yes
 owner = I15
 controller = I15
 add_core = I15
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_lumber_trade_good

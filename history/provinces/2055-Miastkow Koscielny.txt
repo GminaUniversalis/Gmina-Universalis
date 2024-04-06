@@ -13,3 +13,5 @@ owner = G26
 controller = G26
 add_core = G26
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_cattle_trade_good

@@ -13,3 +13,5 @@ owner = I14
 controller = I14
 add_core = I14
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_barley_trade_good

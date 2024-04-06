@@ -9,3 +9,5 @@ controller = W05
 add_core = W05
 discovered_by = ottoman
 center_of_trade = 1
+set_province_flag = has_static_trade_good
+set_province_flag = has_iron_trade_good

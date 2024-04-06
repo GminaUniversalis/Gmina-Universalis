@@ -13,3 +13,5 @@ owner = I11
 controller = I11
 add_core = I11
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_triticale_trade_good

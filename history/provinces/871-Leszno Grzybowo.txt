@@ -14,3 +14,5 @@ controller = R35
 discovered_by = ottoman
 add_core = R35
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_mushrooms_trade_good

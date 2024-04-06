@@ -16,3 +16,5 @@ owner = A27
 controller = A27
 
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_consumer_goods_trade_good

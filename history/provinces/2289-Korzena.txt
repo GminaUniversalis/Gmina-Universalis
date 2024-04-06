@@ -13,3 +13,5 @@ owner = X05
 controller = X05
 add_core = X05
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_cattle_trade_good

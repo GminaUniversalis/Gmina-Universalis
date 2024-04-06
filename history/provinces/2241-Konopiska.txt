@@ -14,3 +14,5 @@ owner = L03
 controller = L03
 add_core = L03
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_hemp_trade_good

@@ -13,3 +13,5 @@ owner = M08
 controller = M08
 add_core = M08
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_sulfur_trade_good

@@ -13,3 +13,5 @@ owner = B19
 controller = B19
 add_core = B19
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_sugar_trade_good

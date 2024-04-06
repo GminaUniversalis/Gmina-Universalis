@@ -13,3 +13,5 @@ owner = W06
 controller = W06
 add_core = W06
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_wine_trade_good

@@ -14,3 +14,5 @@ controller = N20
 add_core = N20
 discovered_by = ottoman
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_fish_trade_good

@@ -13,3 +13,5 @@ owner = P18
 controller = P18
 add_core = P18
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_consumer_goods_trade_good

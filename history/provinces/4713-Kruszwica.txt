@@ -13,3 +13,5 @@ owner = B07
 controller = B07
 add_core = B07
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_oil_trade_good

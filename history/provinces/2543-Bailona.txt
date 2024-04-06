@@ -15,3 +15,5 @@ controller = L36
 discovered_by = ottoman
 add_core = L36
 latent_trade_goods = { gu_woodworking }
+set_province_flag = has_static_trade_good
+set_province_flag = has_{ gu_woodworking }_trade_good

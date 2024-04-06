@@ -14,3 +14,5 @@ controller = A06
 add_core = A06
 hre = yes
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_glass_trade_good

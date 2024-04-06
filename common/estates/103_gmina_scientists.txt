@@ -44,6 +44,12 @@ estate_scientists = {
      privileges = {
 		estate_scientists_land_rights
 		estate_scientists_empty_promises
+		estate_scientists_panstwowa_akademia_nauk
+		estate_scientists_research_grant
+		estate_scientists_invest_university
+		estate_scientist_polish_thought
+		estate_scientist_international_initiatives
+		estate_scientist_in_government
 	 }
      agendas = {
 		estate_scientists_hire_advisor

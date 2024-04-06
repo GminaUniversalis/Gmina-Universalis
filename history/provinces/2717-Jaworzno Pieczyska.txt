@@ -16,3 +16,5 @@ add_core = L06
 discovered_by = ottoman
 add_core = L34
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_stone_trade_good

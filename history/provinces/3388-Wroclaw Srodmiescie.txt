@@ -16,3 +16,5 @@ owner = A27
 controller = A27
 center_of_trade = 2
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_tourists_trade_good

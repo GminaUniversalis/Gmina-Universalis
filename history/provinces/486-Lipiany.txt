@@ -14,3 +14,5 @@ controller = P18
 add_core = P18
 discovered_by = ottoman
 latent_trade_goods = { gu_electronics }
+set_province_flag = has_static_trade_good
+set_province_flag = has_{ gu_electronics }_trade_good

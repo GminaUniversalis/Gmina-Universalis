@@ -14,3 +14,5 @@ controller = J06
 add_core = J06
 discovered_by = ottoman
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_fur_trade_good

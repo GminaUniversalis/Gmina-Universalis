@@ -77,7 +77,7 @@ guiTypes = {
 
 		iconType = {
 			name = "dlc_icon_bg"
-			spriteType = "GFX_dlc_icon_even_bg_flip"
+			spriteType = "GFX_empty_interaction"
 			position = { x = -30 y = 0 }
 			alwaystransparent = yes
 		}
@@ -1243,19 +1243,11 @@ guiTypes = {
 				}
 
 				listboxType = {
-					name = "enabled_dlc_list_1"
-					position = { x = 400 y = 60 }
-					size = { x = 50 y = 500 }
-					orientation = "UPPER_LEFT"
-					horizontal = 0
-					scrollbartype = "standardlistbox_slider"
-				}
-
-				listboxType = {
-					name = "enabled_dlc_list_0"
-					position = { x = 391 y = 40 }
-					size = { x = 40 y = 500 }
-					orientation = "UPPER_LEFT"
+					name ="enabled_dlc_list"
+					position = { x = 291 y = 40 }
+					backGround=""
+					size = { x=50 y =500 }
+					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					scrollbartype = "standardlistbox_slider"
 				}
@@ -1347,7 +1339,7 @@ guiTypes = {
 					name ="bookmarks_list"
 						position = { x = 66 y = 100 }
 					backGround=""
-						size = { x=354 y =647 }
+						size = { x=270 y =647 }
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					spacing = 0
@@ -1947,17 +1939,6 @@ guiTypes = {
 					fullscreen=no
 					Orientation = "UPPER_RIGHT"
 
-					instantTextBoxType = {
-						name = "diplomacy_banner_label"
-						position = { x = -75 y = 402 }
-						font = "vic_18"
-						borderSize = {x = 4 y = 4}
-						text = "HEADER_DIPLOMACY"
-						maxWidth = 160
-						format = left
-						maxHeight = 32
-					}
-
 					iconType =
 					{
 						name ="techgroup_icon"
@@ -2306,10 +2287,21 @@ guiTypes = {
 						fixedsize = yes
 					}
 
+					instantTextBoxType = {
+						name = "diplomacy_banner_label"
+						position = { x = -5 y = 505 }
+						font = "vic_18"
+						borderSize = {x = 4 y = 4}
+						text = "HEADER_DIPLOMACY"
+						maxWidth = 160
+						format = left
+						maxHeight = 32
+					}
+					
 					listboxType = {
 						name = "diplomatic_listbox"
 						backGround = ""
-						position = { x=-140 y=432 }
+						position = { x=-140 y=530 }
 						size = { x= 320 y= 380 }
 						Orientation = "UPPER_LEFT"
 						horizontal = 0
@@ -2320,12 +2312,12 @@ guiTypes = {
 
 					listboxType = {
 						name ="suggested_dlc_list"
-						position = { x = -190 y = 40 }
+						position = { x = -190 y = 250 }
 						backGround=""
 						size = { x=50 y =500 }
 						Orientation = "UPPER_LEFT"
 						horizontal = 0
-						spacing = 0
+						spacing = 60
 						scrollbartype = "standardlistbox_slider"
 						borderSize = {x = 0 y = 0}
 					}
@@ -2901,7 +2893,7 @@ guiTypes = {
 		name = "bookmark_entry"
 		backGround=""
 		position = { x=0 y=0 }
-		size = { x=320 y= 41 }
+		size = { x=320 y= 121 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -2910,7 +2902,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "bookmark"
-			quadTextureSprite = "GFX_lobby_list_entry"
+			quadTextureSprite = "GFX_gu_lobby_list_entry"
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -2919,13 +2911,13 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 20 y = 5 }
+			position = { x = 14 y = 46 }
 
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "FE_BOOKMARK_TITLE"
 			maxWidth = 225
-			maxHeight = 20
+			maxHeight = 80
 			fixedsize = yes
 			alwaystransparent = yes
 			Orientation = "UPPER_LEFT"
@@ -2933,7 +2925,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "date"
-			position = { x = 21 y = 22 }
+			position = { x = -300 y = 22 }
 
 			font = "Arial12"
 			borderSize = {x = 0 y = 0}
@@ -2949,13 +2941,20 @@ guiTypes = {
 
 	### DLC entry
 	windowType = {
-		name = "enabled_dlc_entry_0"
-		size = { x = 50 y = 40 }
+		name = "enabled_dlc_entry_odd"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=50 y= 25 }
 		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
 
 		iconType = {
 			name = "dlc_icon_bg"
 			spriteType = "GFX_dlc_icon_bg"
+			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
 
@@ -2973,9 +2972,15 @@ guiTypes = {
 	}
 
 	windowType = {
-		name = "enabled_dlc_entry_1"
-		size = { x = 50 y = 40 }
+		name = "enabled_dlc_entry_even"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=50 y= 25 }
 		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
 
 		iconType = {
 			name = "dlc_icon_bg"

@@ -14,3 +14,5 @@ controller = U23
 discovered_by = ottoman
 add_core = U23
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_tourists_trade_good

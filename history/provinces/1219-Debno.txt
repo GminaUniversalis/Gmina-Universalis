@@ -13,3 +13,5 @@ owner = X07
 controller = X07
 add_core = X07
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_lumber_trade_good

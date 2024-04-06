@@ -13,3 +13,5 @@ owner = M04
 controller = M04
 add_core = M04
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_tourists_trade_good

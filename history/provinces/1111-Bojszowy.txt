@@ -14,3 +14,5 @@ owner = L15
 controller = L15
 add_core = L15
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_maize_trade_good

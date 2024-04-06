@@ -14,3 +14,5 @@ controller = H08
 add_core = H08
 hre = yes
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_barley_trade_good

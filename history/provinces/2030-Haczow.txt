@@ -13,3 +13,5 @@ owner = I21
 controller = I21
 discovered_by = ottoman
 add_core = I21
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_barley_trade_good

@@ -13,3 +13,5 @@ owner = G39
 controller = G39
 discovered_by = ottoman
 add_core = G39
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_apiculture_trade_good

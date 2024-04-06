@@ -14,3 +14,5 @@ controller = X22
 discovered_by = ottoman
 latent_trade_goods = { gu_electronics }
 add_core = X22
+set_province_flag = has_static_trade_good
+set_province_flag = has_{ gu_electronics }_trade_good

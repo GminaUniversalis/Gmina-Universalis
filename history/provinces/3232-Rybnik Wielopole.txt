@@ -16,3 +16,5 @@ discovered_by = ottoman
 add_core = L21
 latent_trade_goods = { gu_vehicles }
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_{ gu_vehicles }_trade_good

@@ -13,3 +13,5 @@ owner = B12
 controller = B12
 add_core = B12
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_poultry_trade_good

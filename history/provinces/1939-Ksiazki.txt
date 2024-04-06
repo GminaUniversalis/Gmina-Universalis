@@ -13,3 +13,5 @@ owner = B15
 controller = B15
 add_core = B15
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_wheat_trade_good

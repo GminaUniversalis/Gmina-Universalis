@@ -14,3 +14,5 @@ controller = R33
 discovered_by = ottoman
 add_core = R33
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_horses_trade_good

@@ -141,3 +141,8 @@ barburka = {
 barburkant = {
 	local_unrest = 3
 }
+
+panstwowa_akademia_nauk = {
+	institution_growth = 0.5
+
+}

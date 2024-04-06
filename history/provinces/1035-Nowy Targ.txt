@@ -13,3 +13,5 @@ owner = X16
 controller = X16
 add_core = X16
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_fur_trade_good

@@ -54,3 +54,438 @@ estate_scientists_empty_promises = {
 	
 	}
 }
+estate_scientist_polish_thought = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.2
+	influence = 0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_scientists_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_scientists_definer }
+				had_country_flag = {
+					flag = picked_scientists_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_scientists_polish_thought_definer_tooltip
+		set_country_flag = polish_thought
+		hidden_effect = {
+			remove_estate_privilege = estate_scientists_international_initiatives
+			remove_estate_privilege = estate_scientists_in_government
+			clr_country_flag = picked_scientists_definer
+			set_country_flag = picked_scientists_definer
+		}
+	}
+	on_granted_province = {	
+	}
+	on_revoked = { 
+		add_stability = -2
+		clr_country_flag = polish_thought
+	}
+	on_revoked_province = {
+
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_scientists_definer}
+			had_country_flag = {
+				flag = picked_scientists_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		global_institution_spread = -0.5
+	}
+	benefits = {
+		idea_cost = -0.2
+	}
+	on_invalid = {
+		clr_country_flag = polish_thought
+	}
+	on_invalid_province = {
+
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_scientist_international_initiatives = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = -0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_scientists_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_scientists_definer }
+				had_country_flag = {
+					flag = picked_scientists_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_scientists_polish_thought_definer_tooltip
+		set_country_flag = international_initiatives
+		hidden_effect = {
+			remove_estate_privilege = estate_scientists_polish_thought
+			remove_estate_privilege = estate_scientists_in_government
+			clr_country_flag = picked_scientists_definer
+			set_country_flag = picked_scientists_definer
+		}
+	}
+	on_granted_province = {	
+	}
+	on_revoked = { 
+		add_stability = -2
+		clr_country_flag = international_initiatives
+	}
+	on_revoked_province = {
+
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_scientists_definer}
+			had_country_flag = {
+				flag = picked_scientists_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		technology_cost = -0.2
+	}
+	on_invalid = {
+		clr_country_flag = international_initiatives
+	}
+	on_invalid_province = {
+
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_scientist_in_government = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.2
+	influence = 0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_scientists_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_scientists_definer }
+				had_country_flag = {
+					flag = picked_scientists_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_scientists_polish_thought_definer_tooltip
+		set_country_flag = scientists_in_government	
+		hidden_effect = {
+			remove_estate_privilege = estate_scientists_polish_thought
+			remove_estate_privilege = estate_scientists_international_initiatives
+			clr_country_flag = picked_scientists_definer
+			set_country_flag = picked_scientists_definer
+		}
+	}
+	on_granted_province = {	
+	}
+	on_revoked = { 
+		add_stability = -2
+		clr_country_flag = scientists_in_government
+	}
+	on_revoked_province = {
+
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_scientists_definer}
+			had_country_flag = {
+				flag = picked_scientists_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+
+	}
+	benefits = {
+		all_power_cost = -0.05
+		expand_infrastructure_cost_modifier = 0.5
+	}
+	on_invalid = {
+		clr_country_flag = scientists_in_government
+	}
+	on_invalid_province = {
+
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_scientists_panstwowa_akademia_nauk = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 10
+	max_absolutism = 0
+	loyalty = 0.15
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		embracement_cost = -0.15
+		
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+		capital_scope = {
+			add_province_modifier = {
+				name = panstwowa_akademia_nauk
+				duration = -1
+			}
+		}
+
+	}
+	on_revoked_province = {
+		remove_province_modifier = panstwowa_akademia_nauk
+
+	}
+	on_invalid_province = {
+		remove_province_modifier = panstwowa_akademia_nauk
+	}
+	conditional_modifier = {
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_scientists_research_grant = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		add_years_of_income = -0.2
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+		global_tax_modifier = -0.1
+	}
+	benefits = {
+		innovativeness_gain = 0.25
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 1
+	on_cooldown_expires = {
+		change_innovativeness = 2
+	}
+}
+estate_scientists_invest_university = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+
+	}
+	can_select = {
+		capital_scope = {
+			NOT = { has_building = university }
+		}
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				is_capital = yes
+				NOT = { has_building = university }
+				num_free_building_slots = 1 	
+			}
+				add_building_construction = {
+					building = university
+					speed = 2
+					cost = 2
+				}
+		}
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 10
+	on_cooldown_expires = {
+
+	}
+}

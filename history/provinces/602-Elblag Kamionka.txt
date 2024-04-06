@@ -13,3 +13,5 @@ owner = N22
 controller = N22
 discovered_by = ottoman
 add_core = N22
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_barley_trade_good

@@ -14,3 +14,5 @@ owner = L18
 controller = L18
 add_core = L18
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_triticale_trade_good

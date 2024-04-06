@@ -15,3 +15,5 @@ controller = L30
 discovered_by = ottoman
 add_core = L30
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_wheat_trade_good

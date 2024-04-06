@@ -13,3 +13,5 @@ owner = P02
 controller = P02
 add_core = P02
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_cattle_trade_good

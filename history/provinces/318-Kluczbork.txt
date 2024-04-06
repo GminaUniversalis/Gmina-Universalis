@@ -15,3 +15,5 @@ add_core = H04
 hre = yes
 discovered_by = ottoman
 center_of_trade = 1
+set_province_flag = has_static_trade_good
+set_province_flag = has_iron_trade_good

@@ -13,3 +13,5 @@ owner = M09
 controller = M09
 add_core = M09
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_cloth_trade_good

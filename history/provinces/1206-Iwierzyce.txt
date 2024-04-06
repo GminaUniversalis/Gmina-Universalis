@@ -13,3 +13,5 @@ owner = I09
 controller = I09
 add_core = I09
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_horses_trade_good

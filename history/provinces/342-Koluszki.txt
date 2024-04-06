@@ -14,3 +14,5 @@ controller = Q14
 add_core = Q14
 discovered_by = ottoman
 add_core = Q22
+set_province_flag = has_static_trade_good
+set_province_flag = has_copper_trade_good

@@ -13,3 +13,5 @@ owner = N07
 controller = N07
 add_core = N07
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_ceramics_trade_good

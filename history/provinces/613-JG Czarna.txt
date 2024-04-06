@@ -15,3 +15,5 @@ hre = yes
 discovered_by = ottoman
 add_core = A29
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_stone_trade_good

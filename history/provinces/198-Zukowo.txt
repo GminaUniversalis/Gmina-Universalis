@@ -13,3 +13,5 @@ owner = Y03
 controller = Y03
 add_core = Y03
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_paper_trade_good

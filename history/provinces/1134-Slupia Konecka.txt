@@ -13,3 +13,5 @@ owner = M03
 controller = M03
 add_core = M03
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_cattle_trade_good

@@ -17,3 +17,5 @@ controller = Y19
 fort_15th = yes
 
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_tourists_trade_good

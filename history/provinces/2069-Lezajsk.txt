@@ -13,3 +13,5 @@ owner = I07
 controller = I07
 add_core = I07
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_wheat_trade_good
