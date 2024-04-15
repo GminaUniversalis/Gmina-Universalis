@@ -4,7 +4,11 @@ estate_investors = {
 		has_country_flag = estate_picked_investors
 		OR = {
 			colony = 1
-			trade_goods = gu_finances
+			AND = {
+				gu_finances = 1
+				NOT = {	current_age = age_of_discovery }
+			}
+
        		NOT = { 
 				OR = {
 					current_age = age_of_discovery
