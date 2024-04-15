@@ -114,6 +114,41 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "price_event_nightgarden"
+		texturefile = "gfx\event_pictures\event_pictures_tradegoods\price_event_nightgarden.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+			name = "price_event_paprykarz"
+			texturefile = "gfx\event_pictures\event_pictures_tradegoods\Paprykarz_trade_goods.dds"
+			alwaystransparent = yes
+
+	spriteType = {
+		name = "price_event_ikea"
+		texturefile = "gfx\event_pictures\event_pictures_tradegoods\price_event_ikea.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "price_event_orlen"
+		texturefile = "gfx\event_pictures\event_pictures_tradegoods\orlen_price_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "price_event_tel_1"
+		texturefile = "gfx\event_pictures\event_pictures_tradegoods\price_event_tel_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "price_event_tel_2"
+		texturefile = "gfx\event_pictures\event_pictures_tradegoods\price_event_tel_2.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
 		name = "DECEMBER_MASSACRESPicture"
 		texturefile = "gfx/event_pictures/event_pictures_tradegoods/DECEMBER_MASSACRESPicture.dds"
 		alwaystransparent = yes

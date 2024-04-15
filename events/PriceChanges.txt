@@ -416,13 +416,127 @@ country_event = {
 	}
 }
 
+# IKEA
+country_event = {
+	id = prices.6
+	title = prices.6.t
+	desc = prices.6.d
+	picture = price_event_ikea
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			has_terrain = high_urban
+			has_terrain = urban}
+		current_age = age_of_reformation
+		is_year = 1510
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.6.a
+		change_price = {
+			trade_goods = gu_lumber
+			key = IKEA
+			value = 0.25
+			duration = -1}
+		change_price = {
+			trade_goods = gu_woodworking
+			key = IKEA
+			value = 0.50
+			duration = -1
+				
+		}
+		every_owned_province = {
+			limit = {
+				trade_goods = gu_lumber
+			}
+			add_base_production = 1
+		}	
+		
+		if = {
+			limit = {
+				gu_woodworking = 1
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = gu_woodworking
+				}
+				add_base_production = 4
+			}
+		}
+	}
+
+	immediate = {}
+}
+# ORLEN
+
+country_event = {
+	id = prices.7
+	title = prices.7.t
+	desc = prices.7.d
+	picture = price_event_orlen
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		current_age = age_of_reformation
+		is_year = 1565
+		OR = {
+			religion = conservatism_aws
+			religion = liberalism_uw}
+		any_owned_province = {
+			AND = {
+				trade_goods = gu_chemicals
+				base_production = 10
+			} 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.7.a
+		change_price = {
+			trade_goods = gu_chemicals
+			key = ORLEN
+			value = 0.25
+			duration = -1
+		}
+		random_owned_province = {
+			limit = {
+				AND = {
+				trade_goods = gu_chemicals
+				base_production = 10
+				}
+			}
+			add_province_modifier = {
+				name = orlen_head
+				duration = -1
+			}
+			add_base_production = 2
+		}
+	}
+
+	immediate = {}
+}
 
 # New Draperies
 country_event = {
 	id = prices.13
 	title = prices.13.t
 	desc = prices.13.d
-	picture = TRADEGOODS_eventPicture
+	picture = price_event_rwpg
 
 	fire_only_once = yes
 	
@@ -531,7 +645,7 @@ country_event = {
 					NOT = {
 						OR = {
 							trade_goods = gu_coal
-							trade_goods = gu_sulphur
+							trade_goods = gu_sulfur
 							trade_goods = iron
 							trade_goods = copper
 							trade_goods = naval_supplies
@@ -548,6 +662,229 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = prices.8
+	title = prices.8.t
+	desc = prices.8.d
+	picture = price_event_paprykarz
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		current_age = age_of_reformation
+		is_year = 1575
+		NOT = {
+			navy_size = 5
+		}
+		num_of_ports = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = prices.8.a
+		change_price = {
+			trade_goods = fish
+			key = Paprykarz
+			value = -0.40
+			duration = -1
+		}
+	
+		add_country_modifier = {
+			name = shipbuilding_problem
+			duration = 5473
+		}
+	
+			
+		
+	}
+
+	immediate = {}
+	
+}
+
+country_event = {
+	id = prices.9
+	title = prices.9.t
+	desc = prices.9.d
+	picture = price_event_nightgarden
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1620
+		NOT = {
+			heir_age = 8
+		}
+		OR = {
+			has_consort_regency	= yes
+			has_regency	= yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = prices.9.a
+		change_price = {
+			trade_goods = gu_stone
+			key = makapaka
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = natural_scientist
+			name = "Makka Pakka"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+
+		}
+		extend_regency = 7
+    }
+	option = {
+		name = prices.9.b
+		change_price = {
+			trade_goods = cloth
+			key = igglepiggle
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = statesman
+			name = "Iggle Piggle"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+		}
+		extend_regency = 7
+	}
+	option = {
+		name = prices.9.c
+		change_price = {
+			trade_goods = gu_confectionery
+			key = upsydaisy
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = quartermaster
+			name = "Upsy Daisy"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+			female = yes
+		}
+		extend_regency = 7
+	}
+	option = {
+		name = prices.9.e
+	}
+	immediate = {}
+	
+}
+
+#Telefonia analogowa
+
+country_event = {
+	id = prices.10
+	title = prices.10.t
+	desc = prices.10.d
+	picture = price_event_tel_1
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		NOT = {
+			current_age = age_of_discovery
+		}
+		is_year = 1510
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = prices.10.a
+		change_price = {
+			trade_goods = paper
+			key = tel_1
+			value = -0.10
+			duration = -1
+		}
+		change_innovativeness = 5
+		custom_tooltip = prices.10.a.t
+		set_global_flag = tel_analogowa
+
+	}
+
+	immediate = {}
+}
+
+#Nowoczesna telefonia cyfrowa
+
+country_event = {
+	id = prices.12
+	title = prices.12.t
+	desc = prices.12.d
+	picture = price_event_tel_2
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1550
+		every_country = {
+			gu_electronics = 1
+		}
+		has_global_flag = tel_analogowa
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.12.a
+		change_price = {
+			trade_goods = paper
+			key = tel_2
+			value = -0.40
+			duration = -1
+		}
+		change_price = {
+			trade_goods = gu_electronics
+			key = tel_2
+			value = 0.40
+			duration = -1  
+			
+		}
+		change_innovativeness = 7
+	}
+
+	immediate = {}
+}
 
 # # Felt Hats
 # country_event = {

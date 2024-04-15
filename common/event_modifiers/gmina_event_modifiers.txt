@@ -6,6 +6,15 @@ stonka_attack = {
 	local_unrest = 3
 }
 
+orlen_head = {
+	prestige = 0.1
+	trade_goods_size_modifier = 0.25
+}
+
+shipbuilding_problem = {
+	global_ship_cost = 0.15
+}
+
 moonshiners_problem = {
 	local_unrest = 3
 }
