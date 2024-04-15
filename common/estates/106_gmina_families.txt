@@ -43,8 +43,6 @@ estate_families = {
     contributes_to_curia_treasury = no
     color = { 65 176 227 }
 	 privileges = {
-		estate_families_old_model
-		estate_families_new_model
 		estate_families_empty_promises
 		estate_families_land_rights
 		estate_families_pp
@@ -52,6 +50,8 @@ estate_families = {
 		estate_families_subsidies_for_kindergartens
 		estate_families_support_private_schools
 		estate_families_support_highschools
+		estate_families_old_model
+		estate_families_new_model
 	 }
      agendas = {
         estate_families_hire_advisor

@@ -23,7 +23,7 @@ local_airport_modifier = {
 	province_trade_power_value = 4
 	local_friendly_movement_speed = 0.3
 	local_tax_modifier = 0.10
-	picture = "airport_icon"
+	picture = "local_airport_icon"
 }
 
 airport_modifier = {
@@ -143,11 +143,11 @@ silver_age_of_mines = {
 	trade_goods_size_modifier = 0.1
 }
 
-barburka = {
+barborka = {
 	local_unrest = -1
 }
 
-barburkant = {
+barborkant = {
 	local_unrest = 3
 }
 

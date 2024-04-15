@@ -104,7 +104,7 @@ estate_miners_work_leaders = {
 
 	}
 }
-estate_miners_barburka = {
+estate_miners_barborka = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
@@ -118,35 +118,35 @@ estate_miners_barburka = {
 	}
 	can_select = {
 		OR = {
-			NOT = { has_country_flag = barburka_privilege}
+			NOT = { has_country_flag = barborka_privilege}
 			had_country_flag = {
-				flag = barburka_privilege
+				flag = barborka_privilege
 				days = 1825
 			}
 		}
 	}
 	on_granted = {
 		if = {
-			has_province_modifier = barburkant
-			remove_province_modifier = barburkant
+			has_province_modifier = barborkant
+			remove_province_modifier = barborkant
 		}
 
 		add_years_of_income = 0.5
 		hidden = {
 			
-			clr_country_flag = barburka_privilege
-			set_country_flag = barburka_privilege
+			clr_country_flag = barborka_privilege
+			set_country_flag = barborka_privilege
 		}
 
 	}
 	on_revoked = { 
-		clr_country_flag = barburka_privilege
+		clr_country_flag = barborka_privilege
 	}
 	can_revoke = {
 		OR = {
-			NOT = { has_country_flag = barburka_privilege}
+			NOT = { has_country_flag = barborka_privilege}
 			had_country_flag = {
-				flag = barburka_privilege
+				flag = barborka_privilege
 				days = 365
 			}
 		}
@@ -157,7 +157,7 @@ estate_miners_barburka = {
 	benefits = {
 	}
 	on_invalid = {
-		clr_country_flag = barburka_privilege
+		clr_country_flag = barborka_privilege
 	}
 	on_granted_province = {
 		if = {
@@ -167,9 +167,9 @@ estate_miners_barburka = {
 				}
 			}	
 			add_province_modifier = { 
-				name = barburka
+				name = barborka
 				duration = -1  
-				desc = barburka_modifier_desc
+				desc = barborka_modifier_desc
 			}
 				
 		}
@@ -182,9 +182,9 @@ estate_miners_barburka = {
 				}
 			}	
 			add_province_modifier = { 
-				name = barburkant
+				name = barborkant
 				duration = -1  
-				desc = barburkant_modifier_desc
+				desc = barborkant_modifier_desc
 			}
 				
 		}
@@ -197,9 +197,9 @@ estate_miners_barburka = {
 				}
 			}	
 			add_province_modifier = { 
-				name = barburkant
+				name = barborkant
 				duration = -1  
-				desc = barburkant_modifier_desc
+				desc = barborkant_modifier_desc
 			}
 				
 		}
@@ -319,7 +319,7 @@ estate_miners_state_owned_industry = {
 		}
 	}
 	on_granted = {
-		custom_tooltip = estate_miners_privatized_industry_definer_tooltip
+		custom_tooltip = estate_miners_state_owned_industry_definer_tooltip
 		hidden_effect = {
 			remove_estate_privilege = estate_miners_privatised_industry
 			remove_estate_privilege = estate_miners_privatised_industry

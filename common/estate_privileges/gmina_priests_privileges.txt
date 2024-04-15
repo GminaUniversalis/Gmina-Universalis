@@ -311,9 +311,9 @@ estate_priests_reject_the_concordat = {
 		NOT = { has_country_flag = picked_bishops_in_government }
 	}
 	on_granted = {
-		custom_tooltip = estate_priests_reject_concordat
+		custom_tooltip = estate_priests_reject_the_concordat
 		hidden_effect = {
-			remove_estate_privilege = estate_priests_ratify_the_concordat
+			remove_estate_privilege = estate_priests_reject_the_concordat
 			clr_country_flag = picked_concordat
 			set_country_flag = picked_concordat
 			clr_country_flag = reject_the_concordat
@@ -709,7 +709,7 @@ estate_priests_ratify_the_concordat = {
 		}
 	}
 	on_granted = {
-		custom_tooltip = estate_priests_ratify_concordat
+		custom_tooltip = estate_priests_ratify_the_concordat
 		hidden_effect = {
 			remove_estate_privilege = estate_priests_reject_the_concordat
 			clr_country_flag = picked_concordat

@@ -473,7 +473,7 @@ country_event = {
 	}
 	option = {
 		name = gmina_estates.2.e
-		custom_tooltip = gmina_estates.1.e.tt
+		custom_tooltip = gmina_estates.2.e.tt
 	}
 }
 
