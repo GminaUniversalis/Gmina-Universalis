@@ -1,7 +1,7 @@
 estate_investors = {
     icon = 5
     trigger = {
-		always = yes
+		has_country_flag = estate_picked_investors
 		OR = {
 			colony = 1
 			trade_goods = gu_finances

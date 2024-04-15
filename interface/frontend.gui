@@ -2289,7 +2289,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "diplomacy_banner_label"
-						position = { x = -5 y = 505 }
+						position = { x = -5 y = 402 }
 						font = "vic_18"
 						borderSize = {x = 4 y = 4}
 						text = "HEADER_DIPLOMACY"

@@ -12,3 +12,558 @@ province_event = {
 		name = gmina_estates.1.a #Ok.
 	}
 }
+country_event = {
+	id = gmina_estates.2
+	title = gmina_estates.2.title
+	desc = gmina_estates.2.desc
+	picture = MARCHING_PEASANTS_eventPicture
+	
+	is_triggered_only = yes
+	
+	#Miners can
+	option = {
+		name = gmina_estates.2.a1
+		custom_tooltip = gmina_estates.2.a1.tt
+
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = has_estate_picked_flag }
+					had_country_flag = {
+						flag = has_estate_picked_flag
+						days = 9125
+					}
+			}
+			AND = {
+				OR = {
+					gu_coal = 5
+					capital_scope = {
+						OR = {
+							region = dolnoslaskie_region
+							region = opolskie_region
+							region = slaskie_region
+						}
+					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			clr_country_flag = has_estate_picked_flag
+			clr_country_flag = estate_picked_miners
+			clr_country_flag = estate_picked_scientists
+			clr_country_flag = estate_picked_farmers
+			clr_country_flag = estate_picked_investors
+
+			set_country_flag = estate_picked_miners
+			set_country_flag = has_estate_picked_flag
+		}
+
+		hidden_effect = { country_event = { id = gmina_estates.2137 } }
+	}
+	#Miners can't
+	option = {
+		name = gmina_estates.2.a2
+		custom_tooltip = gmina_estates.2.a2.tt
+		trigger = {
+
+			OR = {
+
+				NOT = { 
+					had_country_flag = {
+						flag = has_estate_picked_flag
+						days = 9125
+					}
+				}
+
+				has_country_flag = has_estate_picked_flag 
+
+			}
+			OR = {
+				AND = {
+					NOT = { gu_coal = 5 }
+					capital_scope = {
+						OR = {
+							region = dolnoslaskie_region
+							region = opolskie_region
+							region = slaskie_region
+						}
+					}
+				}
+				AND = {
+					NOT = { gu_coal = 5 }
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = dolnoslaskie_region
+								region = opolskie_region
+								region = slaskie_region
+							}
+						}
+					}
+				}
+			
+				has_country_flag = estate_picked_scientists
+				has_country_flag = estate_picked_miners
+				has_country_flag = estate_picked_farmers
+				has_country_flag = estate_picked_investors
+		
+			}
+
+		}
+
+		hidden_effect = { country_event = { id = gmina_estates.2137 } }
+		
+	}
+	#Scientists can
+	option = {
+		name = gmina_estates.2.b1
+		custom_tooltip = gmina_estates.2.b1.tt
+
+		trigger = {
+			AND = {
+				innovativeness = 50
+				NOT = { 
+					religion_group = communism_group
+				}
+			}
+			OR = {
+				NOT = { has_country_flag = has_estate_picked_flag }
+				had_country_flag = {
+					flag = has_estate_picked_flag
+					days = 9125
+				
+				}
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = has_estate_picked_flag
+			clr_country_flag = estate_picked_miners
+			clr_country_flag = estate_picked_scientists
+			clr_country_flag = estate_picked_farmers
+			clr_country_flag = estate_picked_investors
+
+			set_country_flag = estate_picked_scientists
+			set_country_flag = has_estate_picked_flag
+		}
+
+		hidden_effect = { country_event = { id = gmina_estates.2137 } }
+	}
+	#Scientists can't
+	option = {
+		name = gmina_estates.2.b2
+		custom_tooltip = gmina_estates.2.b2.tt
+
+		trigger = {
+			OR = {
+
+				NOT = { 
+					had_country_flag = {
+						flag = has_estate_picked_flag
+						days = 9125
+					}
+				}
+	
+				has_country_flag = has_estate_picked_flag 
+	
+			}
+
+			OR = {
+				AND = {
+					NOT = { innovativeness = 50 }
+					religion_group = communism_group
+				}
+				AND = {
+					NOT = { innovativeness = 50 }
+					NOT = { religion_group = communism_group }
+				}
+				AND = {
+					innovativeness = 50 
+					religion_group = communism_group
+				}
+
+				has_country_flag = estate_picked_scientists
+				has_country_flag = estate_picked_miners
+				has_country_flag = estate_picked_farmers
+				has_country_flag = estate_picked_investors
+			}
+
+
+		}
+
+		hidden_effect = { country_event = { id = gmina_estates.2137 } }
+	}
+	#Farmers can
+	option = {
+		name = gmina_estates.2.c1
+		custom_tooltip = gmina_estates.2.c1.tt
+
+		trigger = {
+
+			OR = {
+				AND = {
+					any_owned_province = {
+						farmlands = 5 
+					}
+					NOT = { religion_group = communism_group }
+				}
+				AND = {
+					any_owned_province = {
+						grasslands = 10
+				   }
+				   NOT = { religion_group = communism_group }
+				}
+
+				capital_scope = {
+					OR = {
+						region = lubelskie_region
+						region = wielkopolska_region
+						region = kujawsko_pomorskie_region
+					}
+				}
+			}
+
+			OR = {
+				NOT = { has_country_flag = has_estate_picked_flag }
+				had_country_flag = {
+					flag = has_estate_picked_flag
+					days = 9125
+				
+				}
+			}
+		}
+
+		hidden_effect = {
+			clr_country_flag = has_estate_picked_flag
+			clr_country_flag = estate_picked_miners
+			clr_country_flag = estate_picked_scientists
+			clr_country_flag = estate_picked_farmers
+			clr_country_flag = estate_picked_investors
+
+			set_country_flag = estate_picked_farmers
+			set_country_flag = has_estate_picked_flag
+		}
+
+		hidden_effect = { country_event = { id = gmina_estates.2137 } }
+	}
+	#Farmers can't
+	option = {
+		name = gmina_estates.2.c2
+		custom_tooltip = gmina_estates.2.c2.tt
+
+		trigger = {
+			OR = {
+
+				NOT = { 
+					had_country_flag = {
+						flag = has_estate_picked_flag
+						days = 9125
+					}
+				}
+
+				has_country_flag = has_estate_picked_flag 
+
+			}
+			OR = {
+				AND = {
+					any_owned_province = {
+						farmlands = 5 
+					}
+					religion_group = communism_group
+				}
+				AND = {
+					NOT = {
+						any_owned_province = {
+							farmlands = 5
+						}
+					}
+					NOT = { religion_group = communism_group }
+				}
+				AND = {
+					any_owned_province = {
+						 grasslands = 10
+					}
+					religion_group = communism_group
+				}
+				AND = {
+					NOT = {
+						any_owned_province = {
+							grasslands = 10
+						}
+					}
+					NOT = { religion_group = communism_group }
+				}
+				
+				AND = {
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = lubelskie_region
+								region = wielkopolska_region
+								region = kujawsko_pomorskie_region
+							}
+						}
+					
+						OR = {
+							any_owned_province = {
+								grasslands = 10
+							}
+							any_owned_province = {
+								farmlands = 5
+							}
+						}
+					
+					}	
+				}
+				AND = {
+
+					capital_scope = {
+						OR = {
+							region = lubelskie_region
+							region = wielkopolska_region
+							region = kujawsko_pomorskie_region
+						}
+					}
+
+						NOT = {
+							OR = {
+								any_owned_province = {
+									grasslands = 10
+								}
+								any_owned_province = {
+									farmlands = 5
+								}
+
+								religion_group = communism_group
+							}
+						
+						}	
+				}
+
+				has_country_flag = estate_picked_scientists
+				has_country_flag = estate_picked_miners
+				has_country_flag = estate_picked_farmers
+				has_country_flag = estate_picked_investors
+			}
+		}
+
+		hidden_effect = { country_event = { id = gmina_estates.2137 } }
+	}
+	#Investors can
+	option = {
+		name = gmina_estates.2.d1
+		custom_tooltip = gmina_estates.2.d1.tt
+
+		trigger = {
+
+			OR = {
+				NOT = { has_country_flag = has_estate_picked_flag }
+				had_country_flag = {
+					flag = has_estate_picked_flag
+					days = 9125
+				
+				}
+			}
+
+			NOT = { religion_group = communism_group }
+			
+			OR = {
+
+				colony = 1
+				
+				AND = {
+					gu_finances = 1
+					NOT = { current_age = age_of_discovery }
+				}
+	
+				NOT = { 
+					OR = {
+						current_age = age_of_discovery
+						current_age = age_of_reformation
+					}
+				}
+	
+			}
+		}
+
+		hidden_effect = {
+			clr_country_flag = has_estate_picked_flag
+			clr_country_flag = estate_picked_miners
+			clr_country_flag = estate_picked_scientists
+			clr_country_flag = estate_picked_farmers
+			clr_country_flag = estate_picked_investors
+			
+			set_country_flag = estate_picked_investors
+			set_country_flag = has_estate_picked_flag
+		}
+
+		hidden_effect = { country_event = { id = gmina_estates.2137 } }
+	}
+	#Investors can't
+	option = {
+		name = gmina_estates.2.d2
+		custom_tooltip = gmina_estates.2.d2.tt
+
+		trigger = {
+			
+			OR = {
+	
+				NOT = { 
+					had_country_flag = {
+						flag = has_estate_picked_flag
+						days = 9125
+					}
+				}
+	
+				has_country_flag = has_estate_picked_flag 
+	
+			}
+
+			OR = {
+
+				OR = {
+					AND = {
+						NOT = { gu_finances = 1 }
+						current_age = age_of_discovery 
+					}
+					AND = {
+						NOT = { gu_finances = 1 }
+						NOT = { current_age = age_of_discovery }
+					}
+					AND = {
+						gu_finances = 1
+						current_age = age_of_discovery 
+					}
+
+					AND = {
+						NOT = { colony = 1 }
+						NOT = { gu_finances = 1 }
+					}
+					AND = {
+						NOT = { gu_finances = 1 }
+						NOT = { colony = 1 }
+						OR = {
+							current_age = age_of_discovery 
+							current_age = age_of_reformation 
+							current_age = age_of_absolutism
+							current_age = age_of_revolutions
+						}
+					}
+
+					OR = {
+						current_age = age_of_discovery 
+						AND = {
+							current_age = age_of_reformation 
+							NOT = { gu_finances = 1 }
+						}
+
+					}
+					
+				}
+
+				religion_group = communism_group
+	
+				has_country_flag = estate_picked_scientists
+				has_country_flag = estate_picked_miners
+				has_country_flag = estate_picked_farmers
+				has_country_flag = estate_picked_investors
+			}
+		}
+
+		hidden_effect = { country_event = { id = gmina_estates.2137 } }
+	}
+	option = {
+		name = gmina_estates.2.e
+		custom_tooltip = gmina_estates.1.e.tt
+	}
+}
+
+country_event = {
+	id = gmina_estates.3
+	title = gmina_estates.3.title
+	desc = gmina_estates.3.desc
+	picture = MARCHING_PEASANTS_eventPicture
+	
+	is_triggered_only = yes
+	
+	#Retirees
+	option = {
+		name = gmina_estates.3.a
+		custom_tooltip = gmina_estates.3.a.tt
+	}
+	#Banks
+	option = {
+		name = gmina_estates.3.b
+		custom_tooltip = gmina_estates.3.b.tt
+	}
+	#Miners
+	option = {
+		name = gmina_estates.3.c
+		custom_tooltip = gmina_estates.3.c.tt
+	}
+	#Scientists
+	option = {
+		name = gmina_estates.3.d
+		custom_tooltip = gmina_estates.3.d.tt
+	}	
+	#Investors
+	option = {
+		name = gmina_estates.3.e
+		custom_tooltip = gmina_estates.3.e.tt
+	}
+	#Priests
+	option = {
+		name = gmina_estates.3.f
+		custom_tooltip = gmina_estates.3.f.tt
+	}
+	#Families	
+	option = {
+		name = gmina_estates.3.g
+		custom_tooltip = gmina_estates.3.g.tt
+	}
+	#Farmers
+	option = {
+		name = gmina_estates.3.h
+		custom_tooltip = gmina_estates.3.h.tt
+	}
+	#Middle Class
+	option = {
+		name = gmina_estates.3.i
+		custom_tooltip = gmina_estates.3.i.tt
+	}
+	#Repression Apparatus
+	option = {
+		name = gmina_estates.3.j
+		custom_tooltip = gmina_estates.3.j.tt
+	}
+	#Army
+	option = {
+		name = gmina_estates.3.k
+		custom_tooltip = gmina_estates.3.k.tt
+	}
+	#Unemployed
+	option = {
+		name = gmina_estates.3.l
+		custom_tooltip = gmina_estates.3.l.tt
+	}
+	#Exit
+	option = {
+		name = gmina_estates.3.m
+	}
+}
+
+
+#Refresh window
+country_event = {
+	id = gmina_estates.2137
+	title = gmina_estates.2137.t
+	desc = gmina_estates.2137.d
+	picture = MARCHING_PEASANTS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = gmina_estates.2137.a
+		country_event = { id = gmina_estates.2 }
+	}	
+}

@@ -1,0 +1,748 @@
+#Miners
+defined_text = {
+	name = GetMinersAvailability
+
+	text = {
+		localisation_key = string_available_miners
+
+		trigger = {
+			OR = {
+				gu_coal = 5
+				capital_scope = {
+					OR = {
+						region = dolnoslaskie_region
+						region = opolskie_region
+						region = slaskie_region
+					}
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_NOT_available_miners
+
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { gu_coal = 5 }
+					capital_scope = {
+						OR = {
+							region = dolnoslaskie_region
+							region = opolskie_region
+							region = slaskie_region
+						}
+					}
+				}
+				
+				AND = {
+					NOT = { gu_coal = 5 }
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = dolnoslaskie_region
+								region = opolskie_region
+								region = slaskie_region
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#Scientists
+defined_text = {
+	name = GetScientistsAvailability
+
+	text = {
+		localisation_key = string_available_scientists
+
+		trigger = {
+
+			innovativeness = 50
+			NOT = { religion_group = communism_group }
+		}
+	}
+
+	text = {
+		localisation_key = string_NOT_available_scientists
+
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { innovativeness = 50 }
+					religion_group = communism_group
+				}
+				AND = {
+					NOT = { innovativeness = 50 }
+					NOT = { religion_group = communism_group }
+				}
+				AND = {
+					innovativeness = 50 
+					religion_group = communism_group
+				}
+			}
+
+			
+		}
+	}
+}
+#Investors
+defined_text = {
+	name = GetInvestorsAvailability
+
+	text = {
+		localisation_key = string_available_investors
+
+		trigger = {
+
+			NOT = { religion_group = communism_group }
+			
+			OR = {
+
+				colony = 1
+				
+				AND = {
+					gu_finances = 1
+					NOT = { current_age = age_of_discovery }
+				}
+	
+				NOT = { 
+					OR = {
+						current_age = age_of_discovery
+						current_age = age_of_reformation
+					}
+				}
+	
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_NOT_available_investors
+
+		trigger = {
+
+			OR = {
+
+				OR = {
+					AND = {
+						NOT = { gu_finances = 1 }
+						current_age = age_of_discovery 
+					}
+					AND = {
+						NOT = { gu_finances = 1 }
+						NOT = { current_age = age_of_discovery }
+					}
+					AND = {
+						gu_finances = 1
+						current_age = age_of_discovery 
+					}
+
+					AND = {
+						NOT = { colony = 1 }
+						NOT = { gu_finances = 1 }
+					}
+					AND = {
+						NOT = { gu_finances = 1 }
+						NOT = { colony = 1 }
+						OR = {
+							current_age = age_of_discovery 
+							current_age = age_of_reformation 
+							current_age = age_of_absolutism
+							current_age = age_of_revolutions
+						}
+					}
+
+					OR = {
+						current_age = age_of_discovery 
+						AND = {
+							current_age = age_of_reformation 
+							NOT = { gu_finances = 1 }
+						}
+
+					}
+					
+				}
+
+				religion_group = communism_group
+	
+			}
+		}
+	}
+}
+#Farmers
+defined_text = {
+	name = GetFarmersAvailability
+
+	text = {
+		localisation_key = string_available_farmers
+
+		trigger = {
+			
+			OR = {
+				AND = {
+					num_of_owned_provinces_with = {
+						value = 5
+						has_terrain = farmlands
+					}
+					NOT = { religion_group = communism_group }
+				}
+				AND = {
+					num_of_owned_provinces_with = {
+						value = 10
+						has_terrain = grasslands
+					}
+				   NOT = { religion_group = communism_group }
+				}
+
+				capital_scope = {
+					OR = {
+						region = lubelskie_region
+						region = wielkopolska_region
+						region = kujawsko_pomorskie_region
+					}
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_NOT_available_farmers
+
+		trigger = {
+
+			OR = {
+				AND = {
+					any_owned_province = {
+						farmlands = 5 
+					}
+					religion_group = communism_group
+				}
+				AND = {
+					NOT = {
+						any_owned_province = {
+							farmlands = 5
+						}
+					}
+					NOT = { religion_group = communism_group }
+				}
+				AND = {
+					any_owned_province = {
+						 grasslands = 10
+					}
+					religion_group = communism_group
+				}
+				AND = {
+					NOT = {
+						any_owned_province = {
+							grasslands = 10
+						}
+					}
+					NOT = { religion_group = communism_group }
+				}
+				
+				AND = {
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = lubelskie_region
+								region = wielkopolska_region
+								region = kujawsko_pomorskie_region
+							}
+						}
+					
+						OR = {
+							any_owned_province = {
+								grasslands = 10
+							}
+							any_owned_province = {
+								farmlands = 5
+							}
+						}
+					
+					}	
+				}
+				AND = {
+
+					capital_scope = {
+						OR = {
+							region = lubelskie_region
+							region = wielkopolska_region
+							region = kujawsko_pomorskie_region
+						}
+					}
+
+						NOT = {
+							OR = {
+								any_owned_province = {
+									grasslands = 10
+								}
+								any_owned_province = {
+									farmlands = 5
+								}
+
+								religion_group = communism_group
+							}
+						
+						}	
+				}
+
+			}
+
+		}
+	}
+}
+#Retirees
+defined_text = {
+	name = GetRetireesAvailability
+
+	text = {
+		localisation_key = string_available_retirees
+
+		trigger = {
+			always = yes
+		}
+	}
+					############### Placeholdery ################
+	text = {
+		localisation_key = string_NOT_available_retirees
+
+		trigger = {
+			always = no
+		}
+	}
+}
+#Banks
+defined_text = {
+	name = GetBanksAvailability
+
+	text = {
+		localisation_key = string_available_banks
+
+		trigger = {
+			always = yes
+		}
+	}
+					############### Placeholdery ################
+	text = {
+		localisation_key = string_NOT_available_banks
+
+		trigger = {
+			always = no
+		}
+	}
+}
+#Priests
+defined_text = {
+	name = GetPriestsAvailability
+
+	text = {
+		localisation_key = string_available_priests
+
+		trigger = {
+			NOT = { 
+				religion_group = communism_group
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_NOT_available_priests
+
+		trigger = {
+			religion_group = communism_group
+		}
+	}
+}
+#Families
+defined_text = {
+	name = GetFamiliesAvailability
+
+	text = {
+		localisation_key = string_available_families
+
+		trigger = {
+			always = yes
+		}
+	}
+					############### Placeholdery ################
+	text = {
+		localisation_key = string_NOT_available_families
+
+		trigger = {
+			always = no
+		}
+	}
+}
+#Middle Class
+defined_text = {
+	name = GetMiddleClassAvailability
+
+	text = {
+		localisation_key = string_available_middle_class
+
+		trigger = {
+			NOT = { 
+				religion_group = communism_group
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_NOT_available_middle_class
+
+		trigger = {
+				religion_group = communism_group
+		}
+	}
+}
+#UB
+defined_text = {
+	name = GetUBAvailability
+
+	text = {
+		localisation_key = string_available_ub
+
+		trigger = {
+				religion_group = communism_group
+		}
+	}
+					############### Placeholdery ################
+	text = {
+		localisation_key = string_NOT_available_ub
+
+		trigger = {
+			NOT = { 
+				religion_group = communism_group
+			}
+		}
+	}
+}
+#Army
+defined_text = {
+	name = GetArmyAvailability
+
+	text = {
+		localisation_key = string_available_army
+
+		trigger = {
+			always = yes
+		}
+	}
+					############### Placeholdery ################
+	text = {
+		localisation_key = string_NOT_available_army
+
+		trigger = {
+			always = no
+		}
+	}
+}
+#Unemployed
+defined_text = {
+	name = GetUnemployedAvailability
+
+	text = {
+		localisation_key = string_available_unemployed
+
+		trigger = {
+			always = no
+		}
+	}
+					############### Placeholdery ################
+	text = {
+		localisation_key = string_NOT_available_unemployed
+
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+#Triggers for decision
+
+#Coal
+defined_text = {
+	name = GetEstateDecisionCoal
+
+	text = {
+		localisation_key = string_estate_decision_coal
+
+		trigger = {
+			gu_coal = 5
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_coal_not
+
+		trigger = {
+			NOT = { gu_coal = 5 }
+		}
+	}
+}
+#Miners Capital
+defined_text = {
+	name = GetEstateDecisionMinersCapital
+
+	text = {
+		localisation_key = string_estate_decision_miners_capital
+
+		trigger = {
+			capital_scope = {
+				OR = {
+					region = dolnoslaskie_region
+					region = opolskie_region
+					region = slaskie_region
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_miners_capital_not
+
+		trigger = {
+			NOT = { 					
+				capital_scope = {
+					OR = {
+						region = dolnoslaskie_region
+						region = opolskie_region
+						region = slaskie_region
+					}
+				}
+		 	}
+		}
+	}
+}
+#Innovativness
+defined_text = {
+	name = GetEstateDecisionInnovativeness
+
+	text = {
+		localisation_key = string_estate_decision_innovativeness
+
+		trigger = {
+			innovativeness = 50
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_innovativeness_not
+
+		trigger = {
+			NOT = { innovativeness = 50 }
+		}
+	}
+}
+#Is not in communist party
+defined_text = {
+	name = GetEstateDecisionIsCommunist
+
+	text = {
+		localisation_key = string_estate_decision_is_communist
+
+		trigger = {
+			NOT = { religion_group = communism_group }
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_is_communist_not
+
+		trigger = {
+			religion_group = communism_group
+		}
+	}
+}
+#Own 5 farmlands
+defined_text = {
+	name = GetEstateDecisionOwnFarmlands
+
+	text = {
+		localisation_key = string_estate_decision_own_farmlands
+
+		trigger = {
+			any_owned_province = {
+				farmlands = 5 
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_own_farmlands_not
+
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					farmlands = 5 
+				}
+			}
+		}
+	}
+}
+#Own 10 grasslands
+defined_text = {
+	name = GetEstateDecisionOwnGrasslands
+
+	text = {
+		localisation_key = string_estate_decision_own_grasslands
+
+		trigger = {
+			any_owned_province = {
+				grasslands = 10
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_own_grasslands_not
+
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					grasslands = 10
+				}
+			}
+		}
+	}
+}
+#Farmers Capital
+defined_text = {
+	name = GetEstateDecisionFarmersCapital
+
+	text = {
+		localisation_key = string_estate_decision_farmers_capital
+
+		trigger = {
+			capital_scope = {
+				OR = {
+					region = lubelskie_region
+					region = wielkopolska_region
+					region = kujawsko_pomorskie_region
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_farmers_capital_not
+
+		trigger = {
+			NOT = { 					
+				capital_scope = {
+					OR = {
+						region = lubelskie_region
+						region = wielkopolska_region
+						region = kujawsko_pomorskie_region
+					}
+				}
+		 	}
+		}
+	}
+}
+#Colony
+defined_text = {
+	name = GetEstateDecisionOwnColony
+
+	text = {
+		localisation_key = string_estate_decision_colony
+
+		trigger = {
+			colony = 1
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_colony_not
+
+		trigger = {
+			NOT = { colony = 1 }
+		}
+	}
+}
+#Finances + communism
+defined_text = {
+	name = GetEstateDecisionOwnFinances
+
+	text = {
+		localisation_key = string_estate_decision_finances
+
+		trigger = {
+			gu_finances = 1
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_finances_not
+
+		trigger = {
+			NOT = { gu_finances = 1 }
+		}
+	}
+}
+#current age
+defined_text = {
+	name = GetEstateDecisionCurrentAge
+
+	text = {
+		localisation_key = string_estate_decision_current_age
+
+		trigger = {
+			NOT = { 
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
+				religion_group = communism_group
+			}
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_current_age_not
+
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						current_age = age_of_discovery
+						current_age = age_of_reformation
+					}
+					religion_group = communism_group
+				}
+				AND = {
+					OR = {
+						current_age = age_of_discovery
+						current_age = age_of_reformation
+					}
+					NOT = { religion_group = communism_group }
+				}
+			}
+
+
+		}
+	}
+}
+#Is in communist party
+defined_text = {
+	name = GetEstateDecisionCommunist
+
+	text = {
+		localisation_key = string_estate_decision_communist
+
+		trigger = {
+			religion_group = communism_group
+		}
+	}
+
+	text = {
+		localisation_key = string_estate_decision_communist_not
+
+		trigger = {
+			NOT = { religion_group = communism_group }
+		}
+	}
+}

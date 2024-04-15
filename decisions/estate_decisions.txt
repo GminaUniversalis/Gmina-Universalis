@@ -1,0 +1,122 @@
+country_decisions = {
+
+	estate_picker_decision = {
+		color = { 182 50 218 }
+		potential = {
+			OR = {
+				OR = {
+					gu_coal = 5
+
+					capital_scope = {
+						OR = {
+							region = dolnoslaskie_region
+							region = opolskie_region
+							region = slaskie_region
+						}
+					}
+				}
+				AND = {
+					innovativeness = 50
+					NOT = { 
+						religion_group = communism_group
+					}
+				}
+				OR = {
+					colony = 1
+					gu_finances = 1
+					NOT = { 
+						OR = {
+							current_age = age_of_discovery
+							current_age = age_of_reformation
+						}
+						religion_group = communism_group
+					}
+				}
+				AND = {
+					OR = {
+						any_owned_province = {
+							farmlands = 5 
+						}
+						any_owned_province = {
+							grasslands = 10
+					   }
+					   
+					   capital_scope = {
+							OR = {
+								region = lubelskie_region
+								region = wielkopolska_region
+								region = kujawsko_pomorskie_region
+							}
+						}
+					}
+					NOT = { 
+						religion_group = communism_group
+					}
+				}
+			}
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = estate_picker_decision_tooltip
+				always = yes
+			}
+		}
+		
+		effect = {
+			custom_tooltip = estate_picker_decision_effect_tooltip
+			
+			hidden_effect = { country_event = { id = gmina_estates.2 } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	estate_possible_decision = {
+		color = { 182 50 218 }
+		potential = {
+			always = yes
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = estate_possible_decision_tooltip
+				always = yes
+			}
+		}
+		
+		effect = {
+			custom_tooltip = estate_possible_decision_effect_tooltip
+			hidden_effect = { country_event = { id = gmina_estates.3 } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	clock_in_decision = {
+		color = { 50 50 200 }
+		
+		potential = {
+			always = yes
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = clock_in_decision_tooltip
+				always = yes
+			}
+		}
+
+		effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

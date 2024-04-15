@@ -1,7 +1,7 @@
 estate_scientists = {
     icon = 4
     trigger = {
-		always = yes
+		has_country_flag = estate_picked_scientists
 		innovativeness = 50
 		NOT = { 
 			religion_group = communism_group

@@ -1,7 +1,7 @@
 estate_farmers = {
     icon = 8
     trigger = {
-        always = yes
+        has_country_flag = estate_picked_farmers
 		OR = {
 			any_owned_province = {
 				has_terrain = farmlands 

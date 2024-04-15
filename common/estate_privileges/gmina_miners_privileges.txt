@@ -305,7 +305,6 @@ estate_miners_state_owned_industry = {
 		factor = 1
 	}
 	is_valid = {
-		NOT = { current_age = age_of_discovery }
 	}
 	can_select = {
 		custom_trigger_tooltip = {

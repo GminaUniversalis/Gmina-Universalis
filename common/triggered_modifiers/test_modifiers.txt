@@ -1,0 +1,289 @@
+# miners_can_activate = {
+# 	potential = {
+# 		always = yes
+
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			NOT = { has_country_flag = has_estate_picked_flag }
+# 				had_country_flag = {
+# 					flag = has_estate_picked_flag
+# 					days = 9125
+# 				}
+# 		}
+# 		AND = {
+# 			OR = {
+# 				gu_coal = 5
+# 				capital_scope = {
+# 					OR = {
+# 						region = dolnoslaskie_region
+# 						region = opolskie_region
+# 						region = slaskie_region
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+# miners_cant_activate = {
+# 	potential = {
+# 		always = yes
+# 	}
+
+# 	trigger = {
+
+# 		OR = {
+# 			NOT = { 
+# 				had_country_flag = {
+# 					flag = has_estate_picked_flag
+# 					days = 9125
+# 				}
+# 			}
+# 			has_country_flag = has_estate_picked_flag 
+# 		}
+# 		OR = {
+# 			AND = {
+# 				NOT = { gu_coal = 5 }
+# 				capital_scope = {
+# 					OR = {
+# 						region = dolnoslaskie_region
+# 						region = opolskie_region
+# 						region = slaskie_region
+# 					}
+# 				}
+# 			}
+			
+# 			AND = {
+# 				NOT = { gu_coal = 5 }
+# 				NOT = {
+# 					capital_scope = {
+# 						OR = {
+# 							region = dolnoslaskie_region
+# 							region = opolskie_region
+# 							region = slaskie_region
+# 						}
+# 					}
+# 				}
+# 			}
+		
+# 			has_country_flag = estate_picked_miners
+# 		}
+# 	}
+# }
+
+# scientists_can_activate = {
+# 	potential = {
+# 		always = yes
+# 	}
+
+# 	trigger = {
+
+# 		innovativeness = 50
+# 		NOT = { 
+# 			religion_group = communism_group
+# 		}
+		
+# 	}
+# }
+# scientists_cant_activate = {
+# 	potential = {
+# 		always = yes
+# 	}
+
+# 	trigger = {
+
+# 		OR = {
+# 			NOT = { innovativeness = 50 }
+# 			religion_group = communism_group
+# 		}
+
+# 	}
+# }
+# farmers_can_activate = {
+# 	potential = {
+# 		always = yes
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			NOT = { has_country_flag = has_estate_picked_flag }
+# 			had_country_flag = {
+# 				flag = has_estate_picked_flag
+# 				days = 9125
+			
+# 			}
+# 		}
+# 		OR = {
+# 			num_of_owned_provinces_with = {
+# 				value = 5
+# 				has_terrain = farmlands
+# 			}
+# 			num_of_owned_provinces_with = {
+# 				value = 10
+# 				has_terrain = grasslands
+# 			}
+
+# 		}
+# 		NOT = { 
+# 			religion_group = communism_group
+# 		}
+
+# 	}
+# }
+# farmers_cant_activate = {
+# 	potential = {
+# 		always = yes
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			has_country_flag = has_estate_picked_flag
+# 			NOT = {
+# 				had_country_flag = {
+# 					flag = has_estate_picked_flag
+# 					days = 9125
+# 				}
+# 			}
+# 		}
+# 		OR = {
+# 			AND = {
+# 				num_of_owned_provinces_with = {
+# 					value = 5
+# 					has_terrain = farmlands
+# 				}
+# 				religion_group = communism_group
+# 			}
+# 			AND = {
+# 				NOT = {
+# 					num_of_owned_provinces_with = {
+# 						value = 5
+# 						has_terrain = farmlands
+# 					}
+# 				}
+# 				NOT = { religion_group = communism_group }
+# 			}
+# 			AND = {
+# 				num_of_owned_provinces_with = {
+# 					value = 10
+# 					has_terrain = grasslands
+# 				}
+# 				religion_group = communism_group
+# 			}
+# 			AND = {
+# 				NOT = {
+# 					num_of_owned_provinces_with = {
+# 						value = 10
+# 						has_terrain = grasslands
+# 					}
+# 				}
+# 				NOT = { religion_group = communism_group }
+# 			}
+
+# 			has_country_flag = estate_picked_farmers
+# 		}
+# 	}
+# }
+# investors_can_activate = {
+# 	potential = {
+# 		always = yes
+# 	}
+
+
+# 	trigger = {
+
+# 		NOT = { religion_group = communism_group }
+		
+# 		OR = {
+			
+# 			colony = 1
+			
+# 			AND = {
+# 				gu_finances = 1
+# 				NOT = { current_age = age_of_discovery }
+
+# 			}
+		
+
+# 			NOT = { 
+# 				OR = {
+# 					current_age = age_of_discovery
+# 					current_age = age_of_reformation
+# 				}
+# 			}
+# 		}
+		
+# 	}
+# }
+# investors_cant_activate = {
+# 	potential = {
+# 		always = yes
+# 	}
+
+# 	trigger = {
+			
+# 		OR = {
+
+# 			NOT = { 
+# 				had_country_flag = {
+# 					flag = has_estate_picked_flag
+# 					days = 9125
+# 				}
+# 			}
+
+# 			has_country_flag = has_estate_picked_flag 
+
+# 		}
+
+# 		OR = {
+
+# 			OR = {
+# 				AND = {
+# 					NOT = { gu_finances = 1 }
+# 					current_age = age_of_discovery 
+# 				}
+# 				AND = {
+# 					NOT = { gu_finances = 1 }
+# 					NOT = { current_age = age_of_discovery }
+# 				}
+# 				AND = {
+# 					gu_finances = 1
+# 					current_age = age_of_discovery 
+# 				}
+
+# 				AND = {
+# 					NOT = { colony = 1 }
+# 					NOT = { gu_finances = 1 }
+# 				}
+# 				AND = {
+# 					NOT = { gu_finances = 1 }
+# 					NOT = { colony = 1 }
+# 					OR = {
+# 						current_age = age_of_discovery 
+# 						current_age = age_of_reformation 
+# 						current_age = age_of_absolutism
+# 						current_age = age_of_revolutions
+# 					}
+# 				}
+
+# 				OR = {
+# 					current_age = age_of_discovery 
+# 					AND = {
+# 						current_age = age_of_reformation 
+# 						NOT = { gu_finances = 1 }
+# 					}
+
+# 				}
+				
+# 			}
+
+# 			religion_group = communism_group
+
+# 			has_country_flag = estate_picked_scientists
+# 			has_country_flag = estate_picked_miners
+# 			has_country_flag = estate_picked_farmers
+# 			has_country_flag = estate_picked_investors
+# 		}
+# 	}
+# }

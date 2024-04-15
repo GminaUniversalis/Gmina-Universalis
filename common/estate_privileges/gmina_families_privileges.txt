@@ -86,7 +86,7 @@ estate_families_new_model = {
 		custom_trigger_tooltip = {
 			tooltip = estate_families_definer_tooltip
 			OR = {
-				NOT = { has_country_flag = picked_families_definer}
+				NOT = { has_country_flag = picked_families_definer }
 				had_country_flag = {
 					flag = picked_families_definer
 					days = 9125

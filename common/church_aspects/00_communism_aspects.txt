@@ -2,7 +2,7 @@ women_in_party = {
 	cost = 100
 	modifier = {
 		advisor_cost = -0.1
-		female_advisor_chance = 0.4
+		may_recruit_female_generals = yes
 	}
 }
 

@@ -15,3 +15,26 @@ has_border_crossing_trigger = {
 		}
 	}
 }
+
+cant_miners_activate = {
+	if = {
+		limit = {
+
+		}
+	}
+	else_if = {
+		limit = {
+
+		}
+	}
+	else_if = {
+		limit = {
+
+		}
+	}
+	else_if = {
+		limit = {
+
+		}
+	}
+}
