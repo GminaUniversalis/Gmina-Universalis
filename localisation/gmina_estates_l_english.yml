@@ -59,7 +59,7 @@
  string_estate_decision_communist_not:0 "£no£"
 
  gmina_estates.2.title:0 "Choose your estate of interest"
- gmina_estates.2.desc:0 "You are presented with available options, to enable or change your current most favorable estate.\nYou can change them once 25 years.\nEach event option will tell you what's goning to happen or what you need to enable your desired estate"
+ gmina_estates.2.desc:0 "\n\n\n\n\n\n\nYou are presented with available options, to enable or change your current most favorable estate.\nYou can change them once 25 years.\nEach event option will tell you what's goning to happen or what you need to enable your desired estate"
  gmina_estates.2.a1:0 "You §GCAN§! enable Miners Estate!"
  gmina_estates.2.a1.tt:0 "Selecting this option will enable Miners Estate (after 1 day) for 25 years, after which you will be able to change it again"
  gmina_estates.2.a2:0 "You §RCAN'T§! enable Miners Estate!"
@@ -409,8 +409,8 @@
  EST_VAL_priests_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
  estate_priests_empty_promises:0 "Empty Promises for Church"
  estate_priests_empty_promises_desc:0 "These are just empty words meant to appease the church and buy their trust."
- estate_priests_land_right:0 "Priests Rights"
- estate_priests_land_right_desc:0 "Priests Rights TBD"
+ estate_priests_land_rights:0 "Priests Rights"
+ estate_priests_land_rights_desc:0 "Priests Rights TBD"
 #Families
  picked_families_definer:0 "Picked Families Definer"
  estate_families_definer_tooltip:0 "You already choosen another definer"

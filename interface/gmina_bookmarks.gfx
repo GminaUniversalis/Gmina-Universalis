@@ -7,7 +7,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_bookmark_gmina_dawn"
-		texturefile = "gfx/interface/bookmarks/bookmark_template.dds"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_dawn.dds"
 	}
 	
 	spriteType = {
@@ -52,17 +52,17 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_bookmark_gmina_zaglebie"
-		texturefile = "gfx/interface/bookmarks/bookmark_template.dds"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_zaglebie.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_bookmark_gmina_kujawy"
-		texturefile = "gfx/interface/bookmarks/bookmark_template.dds"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_kujawy.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_bookmark_gmina_wojewodztwa"
-		texturefile = "gfx/interface/bookmarks/bookmark_template.dds"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_wojewodztwa.dds"
 	}
 
 	spriteType = {
@@ -85,5 +85,11 @@ spriteTypes = {
 		name = "GFX_lobby_shield"
 		texturefile = "gfx/interface/bookmarks/lobby_shield.dds"
 	}
+
+	spriteType = {
+		name = "GFX_empty_interaction"
+		texturefile = "gfx/interface/estate_interface/empty_interaction.dds"
+	}
+	
 	
 }	

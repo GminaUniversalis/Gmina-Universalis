@@ -8709,7 +8709,7 @@ pieskowa_skala_castle = {
 	}
 }
 
-stone_forest = {
+stone_forrest = {
 	start = 356
 	date = 1300.01.01
 	time = { months = 0	}
@@ -8994,7 +8994,7 @@ chabowka_railyard = {
 	}
 }
 
-wolbrom_FFT = {
+wolbrom_FTT = {
 	start = 2449
 	date = 1000.01.01
 	time = { months = 0	}
@@ -11436,7 +11436,7 @@ jarmark_europa = {
 	}
 }
 
-warsaw_radio_maszt = {
+warsaw_radio_mast = {
 	start = 4330 #Gąbiń
 	date = 1444.01.01 #1460.01.01
 	time = { months = 0	}

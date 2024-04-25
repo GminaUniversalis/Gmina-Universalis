@@ -102,13 +102,13 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {	
-		name = "GFX_anb_lobby_right_secondary_bg"
-		texturefile = "gfx/interface/bookmarks/anb_lobby_right_secondary_bg.dds"
+		name = "GFX_gu_lobby_right_secondary_bg"
+		texturefile = "gfx/interface/bookmarks/gu_lobby_right_secondary_bg.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {	
-		name = "GFX_anb_lobby_chat_bg"
-		texturefile = "gfx/interface/bookmarks/anb_lobby_chat_bg.dds"
+		name = "GFX_gu_lobby_chat_bg"
+		texturefile = "gfx/interface/bookmarks/gu_lobby_chat_bg.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {

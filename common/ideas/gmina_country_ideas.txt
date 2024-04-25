@@ -1652,3 +1652,601 @@ L39_ideas = {
 		global_manpower_modifier = 0.25
 	}
 }
+G34_ideas = {
+	start = {
+		land_morale = 0.1
+		advisor_cost = -0.1
+	}
+
+	bonus = {
+		attack_bonus_in_capital_terrain = 1
+	}
+	
+	trigger = {
+		tag = G34
+	}
+	free = yes
+
+	G34_1 = {
+		garrison_size = 0.15
+	}
+	G34_2 = {
+		global_tax_modifier = 0.1
+	}
+	G34_3 = {
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	}
+	G34_4 = {
+		tolerance_own = 2
+	}
+	G34_5 = {
+		development_cost = -0.1
+	}
+	G34_6 = {
+		prestige = 1
+	}
+	G34_7 = {
+		diplomatic_reputation = 2
+	}
+}
+U16_ideas = {
+	start = {
+		global_monthly_devastation = -0.1
+		garrison_size = 0.2
+	}
+
+	bonus = {
+		land_morale = 0.1
+	}
+	
+	trigger = {
+		tag = U16
+	}
+	free = yes
+
+	U16_1 = {
+		war_exhaustion_cost = -0.20
+	}
+	U16_2 = {
+		cavalry_power = 0.15
+	}
+	U16_3 = {
+		leader_land_shock = 1
+	}
+	U16_4 = {
+		trade_steering = 0.15
+	}
+	U16_5 = {
+		cavalry_cost = -0.1
+		global_trade_power = 0.1
+	}
+	U16_6 = {
+		production_efficiency = 0.1
+	}
+	U16_7 = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+	}
+}
+U22_ideas = {
+	start = {
+		ae_impact = -0.1
+		global_manpower_modifier = 0.15
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		tag = U22
+	}
+	free = yes
+
+	U22_1 = {
+		prestige_decay = -0.01
+		global_prosperity_growth = -0.1
+	}
+	U22_2 = {
+		cavalry_cost = -0.1
+	}
+	U22_3 = {
+		land_forcelimit_modifier = 0.2
+	}
+	U22_4 = {
+		galley_power = 0.1
+	}
+	U22_5 = {
+		production_efficiency = 0.1
+	}
+	U22_6 = {
+		morale_damage_received = -0.1
+	}
+	U22_7 = {
+		tolerance_own = 1
+	}
+}
+L28_ideas = {
+	start = {
+		prestige = 1
+		diplomatic_upkeep = 1
+	}
+
+	bonus = {
+		artillery_power = 0.1
+	}
+	
+	trigger = {
+		tag = L28
+	}
+	free = yes
+
+	L28_1 = {
+		discipline = 0.05
+	}
+	L28_2 = {
+		global_trade_goods_size_modifier = 0.05
+	}
+	L28_3 = {
+		global_missionary_strength = 0.03
+	}
+	L28_4 = {
+		build_cost = -0.15
+	}
+	L28_5 = {
+		global_prosperity_growth = 0.1
+	}
+	L28_6 = {
+		army_tradition = 0.5
+	}
+	L28_7 = {
+		technology_cost = -0.1
+	}
+}
+L35_ideas = {
+	start = {
+		advisor_pool = 1
+		province_warscore_cost = -0.1
+	}
+
+	bonus = {
+		global_supply_limit_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = L35
+	}
+	free = yes
+
+	L35_1 = {
+		prestige_decay = -0.01
+	}
+	L35_2 = {
+		artillery_cost = -0.1
+	}
+	L35_3 = {
+		trade_steering = 0.1
+	}
+	L35_4 = {
+		production_efficiency = 0.1
+	}
+	L35_5 = {
+		stability_cost_modifier = -0.1
+	}
+	L35_6 = {
+		diplomatic_annexation_cost = -0.1
+	}
+	L35_7 = {
+		max_hostile_attrition = 1
+	}
+}
+Y01_ideas = {
+	start = {
+		defensiveness = 0.1
+		trade_range_modifier = 0.33
+	}
+
+	bonus = {
+		global_supply_limit_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = Y01
+	}
+	free = yes
+
+	Y01_1 = {
+		fort_maintenance_modifier = -0.1
+	}
+	Y01_2 = {
+		 global_regiment_cost = -0.15
+	}
+	Y01_3 = {
+		envoy_travel_travel = -0.33
+	}
+	Y01_4 = {
+		unjustified_demands = -0.15
+	}
+	Y01_5 = {
+		interest = -0.5
+	}
+	Y01_6 = {
+		embracement_cost = -0.25
+	}
+	Y01_7 = {
+		heir_chance = 0.5
+	}
+}
+Y03_ideas = {
+	start = {
+		core_creation = -0.1
+		trade_steering = 0.1
+	}
+
+	bonus = {
+		culture_conversion_cost = -0.15
+	}
+	
+	trigger = {
+		tag = Y03
+	}
+	free = yes
+
+	Y03_1 = {
+		same_culture_advisor_cost = -0.1
+	}
+	Y03_2 = {
+		 governing_cost = -0.1
+	}
+	Y03_3 = {
+		province_warscore_cost = -0.05
+	}
+	Y03_4 = {
+		stability_cost_modifier = -0.15
+	}
+	Y03_5 = {
+		prestige = 1
+	}
+	Y03_6 = {
+		enemy_core_creation = 0.25
+	}
+	Y03_7 = {
+		idea_cost = -0.1
+	}
+}
+Y04_ideas = {
+	start = {
+		build_time = -0.15
+		trade_steering = 0.1
+	}
+
+	bonus = {
+		culture_conversion_cost = -0.15
+	}
+	
+	trigger = {
+		tag = Y04
+	}
+	free = yes
+
+	Y04_1 = {
+		same_culture_advisor_cost = -0.1
+	}
+	Y04_2 = {
+		 governing_cost = -0.1
+	}
+	Y04_3 = {
+		province_warscore_cost = -0.05
+	}
+	Y04_4 = {
+		stability_cost_modifier = -0.15
+	}
+	Y04_5 = {
+		prestige = 1
+	}
+	Y04_6 = {
+		enemy_core_creation = 0.25
+	}
+	Y04_7 = {
+		idea_cost = -0.1
+	}
+}
+Y05_ideas = {
+	start = {
+		global_regiment_cost = -0.1
+		global_tax_modifier = 0.1
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = Y05
+	}
+	free = yes
+
+	Y05_1 = {
+		religious_unity = 0.33
+	}
+	Y05_2 = {
+		 fort_maintenance_modifier = -0.15
+	}
+	Y05_3 = {
+		trade_range_modifier = 0.1
+	}
+	Y05_4 = {
+		development_cost = -0.05
+	}
+	Y05_5 = {
+		prestige_decay = -0.01
+	}
+	Y05_6 = {
+		stability_cost_modifier = -0.25
+	}
+	Y05_7 = {
+		technology_cost = -0.05
+	}
+}
+Y07_ideas = {
+	start = {
+		army_tradition_decay = -0.01
+		reinforce_cost_modifier = -0.25
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = Y07
+	}
+	free = yes
+
+	Y07_1 = {
+		artillery_barrage_cost = -0.15
+	}
+	Y07_2 = {
+		loot_amount = 0.2
+	}
+	Y07_3 = {
+		envoy_travel_time = -0.25
+	}
+	Y07_4 = {
+		development_cost_in_primary_culture = -0.1
+	}
+	Y07_5 = {
+		innovativeness_gain = 0.33
+	}
+	Y07_6 = {
+		possible_policy = 1
+	}
+	Y07_7 = {
+		block_introduce_heir = yes
+	}
+}
+Y09_ideas = {
+	start = {
+		enemy_core_creation = 0.33
+		defensiveness = 0.15
+	}
+
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		tag = Y09
+	}
+	free = yes
+
+	Y09_1 = {
+		infantry_power = 0.1
+	}
+	Y09_2 = {
+		attack_bonus_in_capital_terrain = 1
+	}
+	Y09_3 = {
+		may_recruit_female_generals = yes
+	}
+	Y09_4 = {
+		development_cost_in_primary_culture = -0.1
+	}
+	Y09_5 = {
+		general_cost = -0.25
+	}
+	Y09_6 = {
+		years_of_nationalism = -5
+	}
+	Y09_7 = {
+		global_autonomy = -0.1
+	}
+}
+Y13_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.1
+		defensiveness = 0.1
+	}
+
+	bonus = {
+		envoy_travel_time = -0.25
+	}
+	
+	trigger = {
+		tag = Y13
+	}
+	free = yes
+
+	Y13_1 = {
+		cavalry_cost = -0.2
+	}
+	Y13_2 = {
+		improve_relation_modifier = 0.15
+	}
+	Y13_3 = {
+		free_leader_pool = 1
+	}
+	Y13_4 = {
+		allow_mercenaries_to_split = yes
+	}
+	Y13_5 = {
+		trade_steering = 0.1
+	}
+	Y13_6 = {
+		global_tax_modifier = 0.1
+	}
+	Y13_7 = {
+		female_advisor_chance = 0.25
+	}
+}
+Y14_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		mercenary_cost = -0.25
+	}
+
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = Y14
+	}
+	free = yes
+
+	Y14_1 = {
+		placed_merchant_power_modifier = 0.4
+	}
+	Y14_2 = {
+		embargo_efficiency = 0.33
+	}
+	Y14_3 = {
+		movement_speed = 0.1 
+	}
+	Y14_4 = {
+		reduced_trade_penalty_on_non_main_tradenode = 0.33
+	}
+	Y14_5 = {
+		mercenary_manpower = 0.15
+	}
+	Y14_6 = {
+		mercenary_discipline = 0.05
+	}
+	Y14_7 = {
+		global_regiment_cost = -0.1
+	}
+}
+Y15_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		mercenary_cost = -0.25
+	}
+
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = Y15
+	}
+	free = yes
+
+	Y15_1 = {
+		placed_merchant_power_modifier = 0.4
+	}
+	Y15_2 = {
+		embargo_efficiency = 0.33
+	}
+	Y15_3 = {
+		movement_speed = 0.1 
+	}
+	Y15_4 = {
+		reduced_trade_penalty_on_non_main_tradenode = 0.33
+	}
+	Y15_5 = {
+		mercenary_manpower = 0.15
+	}
+	Y15_6 = {
+		mercenary_discipline = 0.05
+	}
+	Y15_7 = {
+		global_regiment_cost = -0.1
+	}
+}
+Y16_ideas = {
+	start = {
+		defensiveness = 0.25
+		infantry_cost = -0.15
+	}
+
+	bonus = {
+		fort_maintenance_modifier = -0.15
+	}
+	
+	trigger = {
+		tag = Y16
+	}
+	free = yes
+
+	Y16_1 = {
+		infantry_power = 0.1
+	}
+	Y16_2 = {
+		global_supply_limit_modifier = 0.1
+	}
+	Y16_3 = {
+		envoy_travel_time = -0.3
+	}
+	Y16_4 = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+	Y16_5 = {
+		mercenary_cost = -0.1
+	}
+	Y16_6 = {
+		war_exhaustion_cost = -0.2
+	}
+	Y16_7 = {
+		tolerance_own = 2
+	}
+}
+Y18_ideas = {
+	start = {
+		development_cost = -0.1
+		trade_range_modifier = 0.2
+	}
+
+	bonus = {
+		global_trade_goods_size_modifier = 0.05
+	}
+	
+	trigger = {
+		tag = Y18
+	}
+	free = yes
+
+	Y18_1 = {
+		light_ship_power = 0.25
+	}
+	Y18_2 = {
+		global_ship_cost = -0.1	
+	}
+	Y18_3 = {
+		build_cost = -0.15
+		build_time = 0.25
+	}
+	Y18_4 = {
+		stability_cost_modifier = -0.1
+	}
+	Y18_5 = {
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	Y18_6 = {
+		governing_cost = -0.1
+	}
+	Y18_7 = { = 
+		advisor_pool = 1
+	}
+}

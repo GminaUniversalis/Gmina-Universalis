@@ -16,7 +16,7 @@ country_event = {
 	id = gmina_estates.2
 	title = gmina_estates.2.title
 	desc = gmina_estates.2.desc
-	picture = MARCHING_PEASANTS_eventPicture
+	picture = ESTATEPICKERPicture
 	
 	is_triggered_only = yes
 	

@@ -59,7 +59,7 @@ podlasie_region = {
 		kolno stawiski jedwabne bialystok_centrum bialystok_wschod bialystok_zachod bialystok_poludnie czarna_bialostocka kryszyn monki
 		powiat_grajewski filipow powiat_suwalski powiat_sejnenski suwalki_poludnie suwalki_polnoc augustow powiat_augustowski powiat_sokolski sokolka
 		michalowo nowogrod powiat_lomzynski lomza choroszcz powiat_zambrowski wysokie_mazowieckie klukowo siematycze bransk
-		milejczyce kleszczele hajnowka narew bielsk_podlaski lapy 
+		milejczyce kleszczele hajnowka narew_area bielsk_podlaski lapy 
 	}
 }
 zachodnio_pomorskie_region = { 
@@ -137,7 +137,7 @@ slaskie_region = {
 		kruszyna krzepice pietrowice_wielkie raciborz radlin powiat_rybnicki rybnik_polnoc wodzislaw_slaski zory_rowien zory_centrum
 		rybnik_poludnie jastrzebie_polodnie gorzyce jastrzebie_polnoc cieszyn skoczow powiat_pszczynski jasienica szczyrk bielsko_biala_polnoc
 		bielsko_biala_poludnie bielsko_biala_centrum bielsko_biala_wschod sucha_beskidzka zywiec lipowa milowka koszarawa gilowice wilamowice
-		wisla myslowice_poludnie katowice_zachod knurow gliwice_wschod gliwice_bojkow zabrze_zaborze powiat_mikolowski katowice_poludnie tychy_stare
+		wisla_area myslowice_poludnie katowice_zachod knurow gliwice_wschod gliwice_bojkow zabrze_zaborze powiat_mikolowski katowice_poludnie tychy_stare
 		powiat_bierunsko-ledzinski jaworzno_poludnie jaworzno_centrum sosnowiec_bobrek myslowice_srodmiescie siemanowice katowice_srodmiescie chorzow swietochlowice ruda_polnoc
 		ruda_poludnie zabrze_centrum zabrze_polnoc pyskowice gliwice_labedy gliwice_srodmiescie bytom_polnoc piekary powiat_bytom tychy_polnoc
 		sosnowiec_centrum sosnowiec_pogon powiat_bedzinski sosnowiec_zagorze dabrowa_gornicza_strzemieszyce siewierz bedzin dabrowa_gornicza_bledow jaworzno_polnoc szczekociny
@@ -150,7 +150,7 @@ lodzkie_region = {
 		skierniewice krosniewice kutno zychlin kiernozia lowicz skierniewice_grabina skierniewice_centrum powiat_brzezinski gluchow
 		powiat_rawski czerniewice tomaszow_mazowiecki piotrkow_trybunalski czarnocin rzgow powiat_zdunskowolski grabow leczyca ozorkow
 		piatek domaniewice glowno andrespol pabianice dlutow ujazd lodz_srodmiescie lodz_widzew lodz_gorna
-		lodz_polesie lutomiersk zgierz lodz_baluty powiat_poddebnicki sieradz warta brzezno czarnozyly wielun
+		lodz_polesie lutomiersk zgierz lodz_baluty powiat_poddebnicki sieradz warta_area brzezno czarnozyly wielun
 		boleslawiec wieruszow wierzchlas powiat_laski belchatow szczercow sulmierzyce siemkowice pajeczno radomsko
 		rozprza dobryszyce zytno maslowice sulejow opoczno paradyz 
 	}
