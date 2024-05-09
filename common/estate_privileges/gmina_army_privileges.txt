@@ -196,7 +196,7 @@ estate_army_martial_law = {
 		clr_country_flag = solidarnosc_rebels
 	}
 	penalties = {
-
+		global_unrest = 5
 	}
 	can_revoke = {
 		OR = {
@@ -211,7 +211,7 @@ estate_army_martial_law = {
 		land_forcelimit_modifier = 0.2
 		land_morale = 0.05
 		discipline = 0.05
-		global_unrest = -5
+
 	}
 }
 estate_army_territorial_forces = {

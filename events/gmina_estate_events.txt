@@ -33,9 +33,23 @@ country_event = {
 						days = 9125
 					}
 			}
-			AND = {
-				OR = {
+			OR = {
+				AND = {
 					gu_coal = 5
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = dolnoslaskie_region
+								region = opolskie_region
+								region = slaskie_region
+							}
+						}
+					}
+				}
+				AND = {
+					NOT = {
+						gu_coal = 5
+					}
 					capital_scope = {
 						OR = {
 							region = dolnoslaskie_region
@@ -79,16 +93,16 @@ country_event = {
 
 			}
 			OR = {
-				AND = {
-					NOT = { gu_coal = 5 }
-					capital_scope = {
-						OR = {
-							region = dolnoslaskie_region
-							region = opolskie_region
-							region = slaskie_region
-						}
-					}
-				}
+				# AND = {
+				# 	NOT = { gu_coal = 5 }
+				# 	capital_scope = {
+				# 		OR = {
+				# 			region = dolnoslaskie_region
+				# 			region = opolskie_region
+				# 			region = slaskie_region
+				# 		}
+				# 	}
+				# }
 				AND = {
 					NOT = { gu_coal = 5 }
 					NOT = {

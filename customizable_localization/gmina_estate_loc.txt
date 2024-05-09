@@ -672,6 +672,7 @@ defined_text = {
 
 		trigger = {
 			gu_finances = 1
+			NOT = { current_age = age_of_discovery }
 		}
 	}
 
@@ -679,7 +680,17 @@ defined_text = {
 		localisation_key = string_estate_decision_finances_not
 
 		trigger = {
-			NOT = { gu_finances = 1 }
+			OR = {
+				AND = {
+					NOT = { gu_finances = 1 }
+					current_age = age_of_discovery
+				}
+				AND = {
+					gu_finances = 1
+					current_age = age_of_discovery
+				}
+			}
+
 		}
 	}
 }

@@ -113,8 +113,8 @@ estate_priests_disaster = {
 		trade_efficiency = -0.2
 	}
 
-	on_start = gmina_estate_disasters.18
-	on_end = gmina_estate_disasters.19
+	on_start = gmina_estate_disasters.19
+	on_end = gmina_estate_disasters.20
 	
 	on_monthly = {
 	}

@@ -110,6 +110,10 @@
  clock_in_decision_title:0 "Show Current Time"
  clock_in_decision_desc:0 "It shows our convetred time! Conversion rate is around 6 EU years to 1 IRL year so that way we avoid thrashing entire date system"
  clock_in_decision_tooltip:0 "If nothing happens, that means that it doesn't work, which is good, because I haven't coded that yet"
+
+ gmina_setup.0.title:0 "Welcome to Gmina Universalis"
+ gmina_setup.0.desc:0 "First of all, I'm happy to see you here!\nThis mod is everything, everywhere, all at once about Poland.\nTime setting is mostly arbitrary in here, you will find things that did not exist at the same time and that's great! My main premise for creating that mod was to just put "everything" in here, for anybody to find something familliar.\nIf you want to add or change something, or found a bug, please report it on Discord, I'm not able to catch everything alone :P\n\nAlso this event acts as setup for some stuff\n\n§RYOU HAVE TO CLICK ME FIRST§!\n\nEnjoy your pain! :D"
+ gmina_setup.0.a:0 "Let's get started!"
 #Army
  picked_army_definer:0 "Picked Army Definer"
  estate_army_definer_tooltip:0 "You already choosen another definer"
@@ -161,6 +165,8 @@
  estate_army_build_up_manpower_reserves_desc:0 "The army states that we need to rebuild the reserves of soldiers"
  estate_army_develop_x:0 "Develop Militray Structures"
  estate_army_develop_x_desc:0 "Army demand to develop militray structures"
+ curtail_estate_army_title:0 "Curtail Army"
+ curtail_estate_army_desc:0 "Curtail the army to a minimum level"
 #Event
  estate_privileges_and_agendas_events.3.a:1 "The Proposal of the Army"
  estate_privileges_and_agendas_events.3.b:1 "The Proposal of the Farmers"
@@ -210,6 +216,8 @@
  estate_retirees_legitimacy:0 "Increase Legitimacy"
  estate_retirees_legitimacy_desc:0 "Retirees think we lack sufficient legitimacy"
  EST_VAL_retirees_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
+ curtail_estate_retirees_title:0 "Curtail Retirees"
+ curtail_estate_retirees_desc:0 "Curtail Retirees (TBD)"
 #Banks
  picked_banks_definer:0 "Picked Banks Definer"
  estate_banks_definer_tooltip:0 "You already choosen another definer"
@@ -264,6 +272,8 @@
  estate_banks_reduce_corruption:0 "To Control Corruption"
  estate_banks_reduce_corruption_desc:0 "The banks are not pleased with the extent of corruption in our country"
  EST_VAL_banks_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
+ curtail_estate_banks_title:0 "Curtail Banks"
+ curtail_estate_banks_desc:0 "Curtail Banks (TBD)"
 #Gorniki (Tak pisze si² górnicy)
  picked_miners_definer:0 "Picked Miners Definer"
  estate_miners_definer_tooltip:0 "You already choosen another definer"
@@ -298,6 +308,8 @@
  estate_miners_hire_advisor:0 "Hire Advisor For Miners"
  estate_miners_hire_advisor_desc:0 "Miners desire the [Root.Monarch.GetTitle] to hire a new military advisor."
  EST_VAL_miners_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
+ curtail_estate_miners_title:0 "Curtail Miners"
+ curtail_estate_miners_desc:0 "Curtail Miners (TBD)"
 #Scientists
  picked_scientists_definer:0 "Picked Scientists Definer"
  estate_scientists_definer_tooltip:0 "You already choosen another definer"
@@ -310,6 +322,8 @@
  estate_scientists_hire_advisor:0 "Hire Advisor For Scientists"
  estate_scientists_hire_advisor_desc:0 "Scientists desire the [Root.Monarch.GetTitle] to hire a new diplomatic advisor."
  EST_VAL_scientists_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
+ curtail_estate_scientists_title:0 "Curtail Scientists"
+ curtail_estate_scientists_desc:0 "Curtail Scientists (TBD)"
 #Investors
  picked_investors_definer:0 "Picked Investors Definer"
  estate_investors_definer_tooltip:0 "You already choosen another definer"
@@ -352,6 +366,8 @@
  estate_investors_support_local_coroporations_definer_tooltip:0 "This is a §Vdefiner§! privilege, you can only have one of them"
  estate_investors_support_state_owned_coroporations_definer_tooltip:0 "This is a §Vdefiner§! privilege, you can only have one of them"
  EST_VAL_investors_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
+ curtail_estate_investors_title:0 "Curtail Investors"
+ curtail_estate_investors_desc:0 "Curtail Investors (TBD)"
 #Kler
  picked_priests_definer:0 "Picked Priests Definer"
  estate_priests_definer_tooltip:0 "You already choosen another definer"
@@ -411,11 +427,13 @@
  estate_priests_empty_promises_desc:0 "These are just empty words meant to appease the church and buy their trust."
  estate_priests_land_rights:0 "Priests Rights"
  estate_priests_land_rights_desc:0 "Priests Rights TBD"
+ curtail_estate_priests_title:0 "Curtail Priests"
+ curtail_estate_priests_desc:0 "Curtail Priests TBD"
 #Families
  picked_families_definer:0 "Picked Families Definer"
  estate_families_definer_tooltip:0 "You already choosen another definer"
  estate_families:0 "Families"
- influence_modifier:0 "Families Influence"
+ families_influence_modifier:0 "Families Influence"
  estate_families_privilege_slots:0 "Families Max Privileges"
  families_loyalty_modifier:0 "Families Loyalty Equilibrium"
  estate_families_ownership:0 "Families Ownership"
@@ -455,6 +473,8 @@
  estate_families_recover_stability:0 "Families Demand Stability"
  estate_families_recover_stability_desc:0 "Families have recognized that our country is not sufficiently stable"
  EST_VAL_families_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
+ curtail_estate_families_title:0 "Curtail Families"
+ curtail_estate_families_desc:0 "Curtail Families (TBD)"
 #Farmers
  picked_farmers_definer:0 "Picked Farmers Definer"
  estate_farmers_definer_tooltip:0 "You already choosen another definer"
@@ -494,6 +514,8 @@
  vaccinating_animals_desc:0 "Vaccinating Animal TBD"
  vaccinating_animals_tooltip:0 "Every owned province with animal trade good gains:\nLocal Trade Goods Produced: §G+0.5§!"
  EST_VAL_farmers_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
+ curtail_estate_farmers_title:0 "Curtail Farmers"
+ curtail_estate_farmers_desc:0 "Curtail Farmers TBD"
 #Middle class
  picked_middle_class_definer:0 "Picked Middle Class Definer"
  estate_middle_class_definer_tooltip:0 "You already choosen another definer"
@@ -531,15 +553,21 @@
  estate_middle_class_land_rights:0 "Middle Class Rights"
  estate_middle_class_empty_promises:0 "Empty Promises for Middle Classes"
  estate_middle_class_hire_advisor:0 "Hire Advisor For Middle Class"
+ curtail_estate_middle_class_title:0 "Curtail Middle Class"
+ curtail_estate_middle_class_desc:0 "Curtail Middle Class TBD"
 #UB
  picked_ub_definer:0 "Picked UB Definer"
  estate_ub_definer_tooltip:0 "You already choosen another definer"
  estate_ub:0 "Repression Apparatus"
- estate_ub_influence_modifier:0 "Repression Apparatus Influence"
+ ub_influence_modifier:0 "Repression Apparatus Influence"
  estate_ub_privilege_slots:0 "Repression Apparatus Max Privileges"
  ub_loyalty_modifier:0 "Repression Apparatus Loyalty Equilibrium"
  estate_ub_ownership:0 "Repression Apparatus Ownership"
  estate_ub_desc:0 "Repression Apparatus represents communist grasp upon Polish population. It was made up of specially selected communist officers who decied on the fate, sometimes life and death, of thousands of Poles"
+ estate_ub_land_rights:0 "Repression Apparatus Land Rights"
+ estate_ub_land_rights_desc:0 "Repression Apparatus Land Rights TBD"
+ estate_ub_empty_promises:0 "Empty Promises for Repression Apparatus"
+ estate_ub_empty_promises_desc:0 "Empty Promises for Repression Apparatus TBD"
  estate_ub_grasp_over_police:0 "Grasp Over Police"
  estate_ub_grasp_over_police_desc:0 "Grasp Over Police TBD"
  estate_ub_grasp_over_politics:0 "Grasp Over Politics"
@@ -553,6 +581,8 @@
  estate_ub_iron_propaganda:0 "Iron Propaganda"
  estate_ub_iron_propaganda_desc:0 "Iron Propaganda TBD"
  EST_VAL_ub_EXTORTED_RIGHTS:0 "Extorted Further Rights: §Y$VAL$%§!"
+ curtail_estate_ub_title:0 "Curtail UB"
+ curtail_estate_ub_desc:0 "Curtail UB TBD"
 
 
 

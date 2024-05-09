@@ -113,8 +113,8 @@ estate_middle_class_disaster = {
 		trade_efficiency = -0.2
 	}
 
-	on_start = gmina_estate_disasters.10
-	on_end = gmina_estate_disasters.11
+	on_start = gmina_estate_disasters.11
+	on_end = gmina_estate_disasters.12
 	
 	on_monthly = {
 	}
