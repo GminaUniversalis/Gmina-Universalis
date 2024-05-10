@@ -55,6 +55,14 @@ country_event = {
 				estate = estate_army
 				share = 50
 			}
+			add_estate_loyalty = {
+				estate = estate_ub
+				loyalty = 20
+			}
+			add_estate_loyalty = {
+				estate = estate_army
+				loyalty = 20
+			}
 		}
 
 	#Most of this stuff is just redundancy
@@ -90,6 +98,7 @@ country_event = {
 			}
 
 			set_country_flag = estate_picked_farmers
+			set_country_flag = has_estate_picked_flag
 		}
 	#Investors
 		else_if = {
@@ -123,6 +132,7 @@ country_event = {
 			}
 
 			set_country_flag = estate_picked_investors
+			set_country_flag = has_estate_picked_flag
 		}
 	#Miners
 		else_if = {
@@ -164,6 +174,7 @@ country_event = {
 			}
 
 			set_country_flag = estate_picked_miners
+			set_country_flag = has_estate_picked_flag
 		}
 	#Scientists
 		else_if = {
@@ -187,6 +198,7 @@ country_event = {
 			}
 
 			set_country_flag = estate_picked_scientists
+			set_country_flag = has_estate_picked_flag
 		}
 		hidden_effect = { country_event = { id = gmina_setup.1 } }
 	}
