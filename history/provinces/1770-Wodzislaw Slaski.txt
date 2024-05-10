@@ -14,3 +14,5 @@ owner = L11
 controller = L11
 add_core = L11
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_fruits_trade_good

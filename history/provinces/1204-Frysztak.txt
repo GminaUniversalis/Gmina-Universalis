@@ -13,3 +13,5 @@ owner = I19
 controller = I19
 add_core = I19
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_ceramics_trade_good

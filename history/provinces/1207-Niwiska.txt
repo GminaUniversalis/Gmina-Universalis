@@ -13,3 +13,5 @@ owner = I06
 controller = I06
 add_core = I06
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_lumber_trade_good

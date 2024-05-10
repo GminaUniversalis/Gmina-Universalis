@@ -1,0 +1,95 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_bookmark_separator"
+		texturefile = "gfx/interface/bookmarks/bookmark_separator.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_dawn"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_dawn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_gorale"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_gorale.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_malopolska"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_malopolska.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_mazowieckie"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_mazowieckie.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_pojezierza"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_pojezierza.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_pomorze"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_pomorze.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_slask"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_slask.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_wielkopolska"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_wielkopolska.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_wschod"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_wschod.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_zaglebie"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_zaglebie.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_kujawy"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_kujawy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_gmina_wojewodztwa"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_wojewodztwa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bookmark_gmina_centrum"
+		texturefile = "gfx/interface/bookmarks/bookmark_gmina_centrum.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bookmark_banner"
+		texturefile = "gfx/interface/bookmarks/bookmark_banner.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dlc_button_empty"
+		texturefile = "gfx/interface/bookmarks/dlc_button_empty.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_lobby_shield"
+		texturefile = "gfx/interface/bookmarks/lobby_shield.dds"
+	}
+
+	spriteType = {
+		name = "GFX_empty_interaction"
+		texturefile = "gfx/interface/estate_interface/empty_interaction.dds"
+	}
+	
+	
+}	

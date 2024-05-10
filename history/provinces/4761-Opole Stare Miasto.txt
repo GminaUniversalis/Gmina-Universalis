@@ -17,3 +17,5 @@ add_core = H20
 
 
 center_of_trade = 3
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_tourists_trade_good

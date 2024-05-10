@@ -13,3 +13,5 @@ owner = R08
 controller = R08
 add_core = R08
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_poultry_trade_good

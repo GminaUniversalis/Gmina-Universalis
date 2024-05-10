@@ -14,3 +14,5 @@ controller = A23
 add_core = A23
 hre = yes
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_wine_trade_good

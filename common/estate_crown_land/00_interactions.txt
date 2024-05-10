@@ -17,19 +17,19 @@ interaction = {
 			}
 			if = {
 				limit = { current_age = age_of_discovery }
-				add_years_of_estate_land_income = 2.5
+				add_years_of_estate_land_income = 1.0
 			}
 			else_if = {
 				limit = { current_age = age_of_reformation }
-				add_years_of_estate_land_income = 2.0
-			}
-			else_if = {
-				limit = { current_age = age_of_absolutism }
 				add_years_of_estate_land_income = 1.5
 			}
 			else_if = {
+				limit = { current_age = age_of_absolutism }
+				add_years_of_estate_land_income = 2.0
+			}
+			else_if = {
 				limit = { current_age = age_of_revolutions }
-				add_years_of_estate_land_income = 1.0
+				add_years_of_estate_land_income = 2.5
 			}
 		}
 		else = {
@@ -274,51 +274,14 @@ interaction = {
 		if = {
 			limit = {
 				OR = {
-					has_estate_privilege = estate_brahmins_statutory_rights
+					has_estate_privilege = estate_ub_statutory_rights
 					AND = {
-						religion = hinduism
-						has_estate = estate_brahmins
-					}
-				}
-				has_estate = estate_brahmins
-			}
-			NOT = { has_estate_privilege = estate_brahmins_statutory_rights }
-		}
-		else_if = {
-			limit = {
-				OR = {
-					has_estate_privilege = estate_nobles_statutory_rights
-					AND = {
-						has_estate = estate_nobles
+						has_estate = estate_ub
 						government = monarchy
 					}
 				}
 			}
-			NOT = { has_estate_privilege = estate_nobles_statutory_rights }
-		}
-		else_if = {
-			limit = {
-				OR = {
-					has_estate_privilege = estate_burghers_statutory_rights
-					AND = {
-						has_estate = estate_burghers
-						government = republic
-					}
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_statutory_rights }
-		}
-		else_if = {
-			limit = {
-				OR = {
-					has_estate_privilege = estate_church_statutory_rights
-					AND = {
-						has_estate = estate_church
-						government = theocracy
-					}
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_statutory_rights }
+			NOT = { has_estate_privilege = estate_ub_statutory_rights }
 		}
         is_at_war = no
 		if = {
@@ -478,17 +441,18 @@ interaction = {
 			has_any_disaster = yes
 			NOT = { #sorry, scripted triggers glitched out
 				OR = {
-					has_disaster = estate_brahmins_disaster
-					has_disaster = estate_burghers_disaster
-					has_disaster = estate_church_disaster
-					has_disaster = estate_cossacks_disaster
-					has_disaster = estate_dhimmi_disaster
-					has_disaster = estate_jains_disaster
-					has_disaster = estate_maratha_disaster
-					has_disaster = estate_nobility_disaster
+					has_disaster = estate_army_disaster
+					has_disaster = estate_banks_disaster
+					has_disaster = estate_families_disaster
+					has_disaster = estate_farmers_disaster
+					has_disaster = estate_scientists_disaster
+					has_disaster = estate_investors_disaster
+					has_disaster = estate_middle_class_disaster
+					has_disaster = estate_miners_disaster
 					has_disaster = estate_nomadic_tribes_disaster
-					has_disaster = estate_rajput_disaster
-					has_disaster = estate_vaisyas_disaster
+					has_disaster = estate_priests_disaster
+					has_disaster = estate_retirees_disaster
+					has_disaster = estate_ub_disaster
 				}
 			}
 		}
@@ -519,47 +483,48 @@ interaction = {
 			NOT = { army_size = 100 }
 			NOT = { #sorry, scripted triggers glitched out
 				OR = {
-					has_disaster = estate_brahmins_disaster
-					has_disaster = estate_burghers_disaster
-					has_disaster = estate_church_disaster
-					has_disaster = estate_cossacks_disaster
-					has_disaster = estate_dhimmi_disaster
-					has_disaster = estate_jains_disaster
-					has_disaster = estate_maratha_disaster
-					has_disaster = estate_nobility_disaster
+					has_disaster = estate_army_disaster
+					has_disaster = estate_banks_disaster
+					has_disaster = estate_families_disaster
+					has_disaster = estate_farmers_disaster
+					has_disaster = estate_scientists_disaster
+					has_disaster = estate_investors_disaster
+					has_disaster = estate_middle_class_disaster
+					has_disaster = estate_miners_disaster
 					has_disaster = estate_nomadic_tribes_disaster
-					has_disaster = estate_rajput_disaster
-					has_disaster = estate_vaisyas_disaster
+					has_disaster = estate_priests_disaster
+					has_disaster = estate_retirees_disaster
+					has_disaster = estate_ub_disaster
 					has_disaster_progress = {
-						disaster = estate_brahmins_disaster
+						disaster = estate_army_disaster
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_burghers_disaster
+						disaster = estate_banks_disaster
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_church_disaster
+						disaster = estate_families_disaster
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_cossacks_disaster
+						disaster = estate_farmers_disaster
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_dhimmi_disaster
+						disaster = estate_scientists_disaster
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_jains_disaster
+						disaster = estate_investors_disaster
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_maratha_disaster
+						disaster = estate_middle_class_disaster
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_nobility_disaster
+						disaster = estate_miners_disaster
 						value = 5
 					}
 					has_disaster_progress = {
@@ -567,11 +532,15 @@ interaction = {
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_rajput_disaster
+						disaster = estate_priests_disaster
 						value = 5
 					}
 					has_disaster_progress = {
-						disaster = estate_vaisyas_disaster
+						disaster = estate_retirees_disaster
+						value = 5
+					}
+					has_disaster_progress = {
+						disaster = estate_ub_disaster
 						value = 5
 					}
 				}
@@ -626,47 +595,48 @@ interaction = {
 		modifier = {
 			factor = 10
 			OR = {
-				has_disaster = estate_brahmins_disaster
-				has_disaster = estate_burghers_disaster
-				has_disaster = estate_church_disaster
-				has_disaster = estate_cossacks_disaster
-				has_disaster = estate_dhimmi_disaster
-				has_disaster = estate_jains_disaster
-				has_disaster = estate_maratha_disaster
-				has_disaster = estate_nobility_disaster
+				has_disaster = estate_army_disaster
+				has_disaster = estate_banks_disaster
+				has_disaster = estate_families_disaster
+				has_disaster = estate_farmers_disaster
+				has_disaster = estate_scientists_disaster
+				has_disaster = estate_investors_disaster
+				has_disaster = estate_middle_class_disaster
+				has_disaster = estate_miners_disaster
 				has_disaster = estate_nomadic_tribes_disaster
-				has_disaster = estate_rajput_disaster
-				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_priests_disaster
+				has_disaster = estate_retirees_disaster
+				has_disaster = estate_ub_disaster
 				has_disaster_progress = {
-					disaster = estate_brahmins_disaster
+					disaster = estate_army_disaster
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_burghers_disaster
+					disaster = estate_banks_disaster
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_church_disaster
+					disaster = estate_families_disaster
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_cossacks_disaster
+					disaster = estate_farmers_disaster
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_dhimmi_disaster
+					disaster = estate_scientists_disaster
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_jains_disaster
+					disaster = estate_investors_disaster
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_maratha_disaster
+					disaster = estate_middle_class_disaster
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_nobility_disaster
+					disaster = estate_miners_disaster
 					value = 5
 				}
 				has_disaster_progress = {
@@ -674,11 +644,15 @@ interaction = {
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_rajput_disaster
+					disaster = estate_priests_disaster
 					value = 5
 				}
 				has_disaster_progress = {
-					disaster = estate_vaisyas_disaster
+					disaster = estate_retirees_disaster
+					value = 5
+				}
+				has_disaster_progress = {
+					disaster = estate_ub_disaster
 					value = 5
 				}
 			}

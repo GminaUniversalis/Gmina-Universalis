@@ -13,3 +13,5 @@ owner = R20
 controller = R20
 add_core = R20
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_beer_trade_good

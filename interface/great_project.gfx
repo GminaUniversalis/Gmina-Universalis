@@ -1,39 +1,23 @@
+#Program python zapisuje nazwę wpisanego monumentu i tworzy zbiorczą listę na komputerze monumenty_gfx.txt do przeklejenia
+# import os
+# def main():
+#     file_name = "monumenty_gfx.txt"
+    
+#     if not os.path.exists(file_name):
+#         with open(file_name, "w"):
+#             pass
+#     with open(file_name, "a") as file:
+#         while True:
+#             user_input = input("podaj nazwe monumentu: ")        
+#             if user_input.lower() == "q":
+#                 break      
+#             file.write("spriteType = {\nname = \"GFX_great_project_"+(user_input)+"\"\ntexturefile = \"gfx//interface//great_projects//great_project_"+(user_input)+".dds\"\n}\n\n")          
+#     print("zapisano do", file_name)
+# if __name__ == "__main__":
+#     main()
+
+
 spriteTypes = {
-
-	spriteType = {
-		name = "GFX_great_project_place_holder"	
-		texturefile = "gfx//interface//great_projects//great_project_place_holder.dds"
-	}
-
-	spriteType = {
-		name = "GFX_great_project_sky_tower"	
-		texturefile = "gfx//interface//great_projects//great_project_sky_tower.dds"
-	}
-
-	spriteType = {
-		name = "GFX_great_project_centennial_hall"	
-		texturefile = "gfx//interface//great_projects//great_project_centennial_hall.dds"
-	}
-
-	spriteType = {
-		name = "GFX_great_project_ostrow_tumski"	
-		texturefile = "gfx//interface//great_projects//great_project_ostrow_tumski.dds"
-	}
-
-	spriteType = {
-		name = "GFX_great_project_japanese_garden"	
-		texturefile = "gfx//interface//great_projects//great_project_japanese_garden.dds"
-	}
-
-	spriteType = {
-		name = "GFX_great_project_wroclaw_market_square"	
-		texturefile = "gfx//interface//great_projects//great_project_wroclaw_market_square.dds"
-	}
-
-	spriteType = {
-		name = "GFX_great_project_wroclaw_gnomes"	
-		texturefile = "gfx//interface//great_projects//great_project_wroclaw_gnomes.dds"
-	}
 
 	spriteType = {
 		name = "GFX_great_project_hagia_sophia"	

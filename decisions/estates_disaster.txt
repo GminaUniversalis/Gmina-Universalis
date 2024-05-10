@@ -1,0 +1,327 @@
+country_decisions = {
+	curtail_estate_miners = {
+		major = yes
+		potential = {
+			has_country_flag = estate_miners_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_miners
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_miners_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_scientists = {
+		major = yes
+		potential = {
+			has_country_flag = estate_scientists_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_scientists
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_scientists_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_investors = {
+		major = yes
+		potential = {
+			has_country_flag = estate_investors_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_investors
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_investors_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_farmers = {
+		major = yes
+		potential = {
+			has_country_flag = estate_farmers_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_farmers
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_farmers_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_retirees = {
+		major = yes
+		potential = {
+			has_country_flag = estate_retirees_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_retirees
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_retirees_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_banks = {
+		major = yes
+		potential = {
+			has_country_flag = estate_banks_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_banks
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_banks_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_priests = {
+		major = yes
+		potential = {
+			has_country_flag = estate_priests_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_priests
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_priests_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_families = {
+		major = yes
+		potential = {
+			has_country_flag = estate_families_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_families
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_families_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_middle_class = {
+		major = yes
+		potential = {
+			has_country_flag = estate_middle_class_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_middle_class
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_middle_class_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_ub = {
+		major = yes
+		potential = {
+			has_country_flag = estate_ub_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_ub
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_ub_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	curtail_estate_army = {
+		major = yes
+		potential = {
+			has_country_flag = estate_army_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_army
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			remove_estate_privilege = estate_army_old_doctrine
+			remove_estate_privilege = estate_army_new_doctrine
+			remove_estate_privilege = estate_army_martial_law
+
+			set_estate_privilege = estate_army_underfunded_army
+			
+			add_stability = -3
+			add_piety = -0.5
+			add_karma = -25
+			add_patriarch_authority = -0.25
+			add_fervor = -25
+			add_church_power = -100
+			clr_country_flag = estate_army_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

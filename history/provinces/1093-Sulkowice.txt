@@ -14,3 +14,5 @@ controller = X12
 add_core = X12
 discovered_by = ottoman
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_copper_trade_good

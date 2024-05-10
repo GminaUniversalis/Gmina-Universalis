@@ -20,3 +20,5 @@ add_core = X20
 fort_15th = yes
 center_of_trade = 3
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_confectionery_trade_good

@@ -14,3 +14,5 @@ controller = U15
 add_core = U15
 discovered_by = ottoman
 center_of_trade = 1
+set_province_flag = has_static_trade_good
+set_province_flag = has_sugar_trade_good

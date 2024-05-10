@@ -13,3 +13,5 @@ owner = Y16
 controller = Y16
 add_core = Y16
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_vegetables_trade_good

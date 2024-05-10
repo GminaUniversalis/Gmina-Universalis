@@ -13,3 +13,5 @@ owner = I05
 controller = I05
 add_core = I05
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_wool_trade_good

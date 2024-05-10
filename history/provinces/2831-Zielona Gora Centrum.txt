@@ -15,3 +15,5 @@ discovered_by = ottoman
 add_core = W11
 
 center_of_trade = 3
+set_province_flag = has_static_trade_good
+set_province_flag = has_copper_trade_good

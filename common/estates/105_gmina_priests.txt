@@ -1,7 +1,7 @@
 estate_priests = {
-    icon = 1
+    icon = 6
     trigger = {
-		always = no
+		always = yes
 		NOT = { 
 			religion_group = communism_group
 		}
@@ -14,9 +14,9 @@ estate_priests = {
 		tolerance_own = 1
 	}
     country_modifier_angry = {
-		global_unrest = 1
 		tolerance_own = -3
 		prestige = -1
+		global_unrest = 4
 	}
   province_independence_weight = {
 		factor = 1
@@ -39,17 +39,34 @@ estate_priests = {
 	}
 	
     land_ownership_modifier = {
-		kler_loyalty_modifier = 0.3
+		priests_loyalty_modifier = 0.3
 	}
-    base_influence = 10
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 255 255 0 }
+    color = { 207 179 33 }
     privileges = {
-
-     }
-	 privileges = {
-
-	 }
+		estate_priests_land_rights
+		estate_priests_empty_promises
+		estate_priests_ratify_the_concordat
+		estate_priests_religion_schools
+		estate_priests_sacred_marriage
+		estate_priests_tend_to_sites
+		estate_priests_social_participation
+		estate_priests_ecclesiastical_tax
+		estate_priests_pastoral_care
+		estate_priests_family_protection
+		estate_priests_canon_law
+		estate_priests_reject_the_concordat
+		estate_priests_tax_the_blacks
+		estate_priests_disparity_toward_justice
+		estate_priests_protection_of_heritage
+		estate_priests_belief_neutrality
+		estate_priests_secular_education
+		estate_priests_psychological_help
+		estate_priests_separation_from_state
+		estate_priests_subsidies_from_state
+		estate_priests_bishops_in_government
+	}
      agendas = {
 		estate_priests_hire_advisor
      }

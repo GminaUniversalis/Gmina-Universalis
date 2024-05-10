@@ -13,3 +13,5 @@ owner = U16
 controller = U16
 add_core = U16
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_triticale_trade_good

@@ -13,3 +13,5 @@ owner = N18
 controller = N18
 add_core = N18
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_cloth_trade_good

@@ -13,3 +13,5 @@ owner = U11
 controller = U11
 add_core = U11
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_barley_trade_good

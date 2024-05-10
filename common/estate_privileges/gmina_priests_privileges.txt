@@ -1,0 +1,1180 @@
+estate_priests_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	modifier_by_land_ownership = {
+		
+	}
+	penalties = {
+	}
+	conditional_modifier = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+	}
+}
+estate_priests_empty_promises = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
+	on_granted = {
+	
+	}
+	penalties = {
+	
+	}
+	benefits = {
+	
+	}
+}
+#Definers
+estate_priests_separation_from_state = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.2
+	influence = -0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_priests_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_priests_definer}
+				had_country_flag = {
+					flag = picked_priests_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_priests_separation_from_state_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_priests
+			remove_estate_privilege = estate_priests
+			clr_country_flag = picked_priests_definer
+			set_country_flag = picked_priests_definer
+			clr_country_flag = picked_separation_from_state
+			set_country_flag = picked_separation_from_state
+		}
+	}
+	on_revoked = { 
+		add_stability = -2
+	}
+
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_priests_definer}
+			had_country_flag = {
+				flag = picked_priests_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		global_missionary_strength = -0.02
+	}
+	benefits = {
+		global_religious_conversion_resistance = 0.5
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_subsidies_from_state = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.2
+	influence = 0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_priests_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_priests_definer}
+				had_country_flag = {
+					flag = picked_priests_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_priests_subsidies_from_state_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_priests
+			remove_estate_privilege = estate_priests
+			clr_country_flag = picked_priests_definer
+			set_country_flag = picked_priests_definer
+			clr_country_flag = picked_subsidies_from_state
+			set_country_flag = picked_subsidies_from_state
+		}
+	}
+	on_revoked = { 
+		add_stability = -2
+	}
+
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_priests_definer}
+			had_country_flag = {
+				flag = picked_priests_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		global_tax_modifier = -0.3
+	}
+	benefits = {
+		global_missionary_strength = 0.03
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_bishops_in_government = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.2
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_priests_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_priests_definer}
+				had_country_flag = {
+					flag = picked_priests_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_priests_bishops_in_government_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_priests_separation_from_state
+			remove_estate_privilege = estate_priests_subsidies_from_state
+			clr_country_flag = picked_priests_definer
+			set_country_flag = picked_priests_definer
+			clr_country_flag = picked_bishops_in_government
+			set_country_flag = picked_bishops_in_government
+		}
+	}
+	on_revoked = { 
+		add_stability = -2
+	}
+
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_priests_definer}
+			had_country_flag = {
+				flag = picked_priests_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		global_tax_modifier = -0.5
+	}
+	benefits = {
+		global_missionary_strength = 0.05	
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+#Reject concordat privileges
+estate_priests_reject_the_concordat = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.2
+	influence = 0
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		NOT = { has_country_flag = picked_bishops_in_government }
+	}
+	can_select = {
+		NOT = { has_country_flag = picked_bishops_in_government }
+	}
+	on_granted = {
+		custom_tooltip = estate_priests_reject_the_concordat
+		hidden_effect = {
+			remove_estate_privilege = estate_priests_reject_the_concordat
+			clr_country_flag = picked_concordat
+			set_country_flag = picked_concordat
+			clr_country_flag = reject_the_concordat
+			set_country_flag = reject_the_concordat
+		}
+	}
+	on_revoked = { 
+		add_stability = -2
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_concordat}
+			had_country_flag = {
+				flag = picked_concordat
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 25
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_tax_the_blacks = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 1
+	max_absolutism = 0
+	loyalty = 0
+	influence = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = reject_the_concordat
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_priests_bishops_in_government }
+		has_country_flag = reject_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		global_tax_modifier = 0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_disparity_toward_justice = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 1
+	max_absolutism = 0
+	loyalty = 0
+	influence = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = reject_the_concordat
+	}
+	can_select = {
+		has_country_flag = reject_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		global_unrest = -1
+		religious_unity = 0.2
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_protection_of_heritage = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 1
+	max_absolutism = 0
+	loyalty = 0
+	influence = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = reject_the_concordat
+	}
+	can_select = {
+		has_country_flag = reject_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		monthly_splendor = 2
+		enemy_core_creation = 0.2
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_belief_neutrality = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 1
+	max_absolutism = 0
+	loyalty = 0
+	influence = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = reject_the_concordat
+	}
+	can_select = {
+		has_country_flag = reject_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		prestige_decay = -0.01
+		legitimacy = 1
+		republican_tradition = 3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_secular_education = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 1
+	max_absolutism = 0
+	loyalty = 0
+	influence = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = reject_the_concordat
+	}
+	can_select = {
+		has_country_flag = reject_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		free_policy = 1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_psychological_help = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 1
+	max_absolutism = 0
+	loyalty = 0
+	influence = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = reject_the_concordat
+	}
+	can_select = {
+		has_country_flag = reject_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		reelection_cost = -0.1
+		monarch_lifespan = 0.5
+		no_stability_loss_on_monarch_death = yes
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+#Ratify concordat privileges
+estate_priests_ratify_the_concordat = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.2
+	influence = 0
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_priests_concordat_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_concordat}
+				had_country_flag = {
+					flag = picked_concordat
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_priests_ratify_the_concordat
+		hidden_effect = {
+			remove_estate_privilege = estate_priests_reject_the_concordat
+			clr_country_flag = picked_concordat
+			set_country_flag = picked_concordat
+			clr_country_flag = ratify_the_concordat
+			set_country_flag = ratify_the_concordat
+		}
+	}
+	on_revoked = { 
+		add_stability = -2
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_concordat}
+			had_country_flag = {
+				flag = picked_concordat
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 25
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_religion_schools = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = ratify_the_concordat
+	}
+	can_select = {
+		has_country_flag = ratify_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+		global_tax_modifier = 0.05
+	}
+	benefits = {
+		global_missionary_strength = 1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_sacred_marriage = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = ratify_the_concordat
+	}
+	can_select = {
+		has_country_flag = ratify_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		morale_damage_received = -0.025
+		manpower_recovery_speed = 0.05
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_tend_to_sites = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = ratify_the_concordat
+	}
+	can_select = {
+		has_country_flag = ratify_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		development_cost_in_primary_culture = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_social_participation = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = ratify_the_concordat
+	}
+	can_select = {
+		has_country_flag = ratify_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		idea_cost = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_ecclesiastical_tax = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = ratify_the_concordat
+	}
+	can_select = {
+		has_country_flag = ratify_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		country_admin_power = 1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_pastoral_care = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = ratify_the_concordat
+	}
+	can_select = {
+		has_country_flag = ratify_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		same_religion_advisor_cost = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_family_protection = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = ratify_the_concordat
+	}
+	can_select = {
+		has_country_flag = ratify_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		heir_chance = 0.5
+		relation_with_same_culture_group = 25
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_priests_canon_law = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+		has_country_flag = ratify_the_concordat
+	}
+	can_select = {
+		has_country_flag = ratify_the_concordat
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		global_autonomy = -0.05
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}

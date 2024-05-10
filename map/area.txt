@@ -1054,7 +1054,7 @@ bransk = {
 bielsk_podlaski = { 
 	456 2361 440 476 
 }
-narew = { 
+narew_area = { 
 	4692 479 2353 
 }
 hajnowka = { 
@@ -2062,7 +2062,7 @@ dlutow = {
 sieradz = { 
 	4294 414 4337 
 }
-warta = { 
+warta_area = { 
 	406 2314 2207 
 }
 brzezno = { 
@@ -2266,7 +2266,7 @@ gorzyce = {
 cieszyn = { 
 	4707 76 4708 2955 
 }
-wisla = { 
+wisla_area = { 
 	64 1757 4084 2957 
 }
 skoczow = { 

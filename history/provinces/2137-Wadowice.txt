@@ -12,3 +12,5 @@ discovered_by = eastern
 owner = X14
 controller = X14
 add_core = X14
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_confectionery_trade_good

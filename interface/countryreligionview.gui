@@ -728,12 +728,12 @@ guiTypes = {
 		
 	windowType = {
 		name = "countryreligionview"
-		#position = { x=0 y=140 }	
-		position = { x=-600 y=140 }	
+		position = { x=0 y=140 }	
+		#position = { x=-600 y=140 }	
 		show_position = { x=0 y =140 }
 		hide_position = { x=-600 y =140 }	
 		animation_type = "decelerated"
-		animation_time = 300
+		animation_time = 10
 		size = { x=1024 y=600 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
@@ -1420,7 +1420,7 @@ guiTypes = {
 				name ="holy_site_icon_1"
 				spriteType = "GFX_icon_religion_small"
 				position = { x = 35 y = 266 }
-#				scale = 0.75
+				#scale = 0.75
 			}
 			
 			instantTextBoxType = {
@@ -1441,7 +1441,7 @@ guiTypes = {
 				spriteType = "GFX_icon_religion_small"
 				position = { x = 35 y = 296 }
 				frame = 14
-#				scale = 0.75
+				#scale = 0.75
 			}
 			
 			instantTextBoxType = {
@@ -1462,7 +1462,7 @@ guiTypes = {
 				spriteType = "GFX_icon_religion_small"
 				position = { x = 195 y = 236 }
 				frame = 14
-#				scale = 0.75
+				#scale = 0.75
 			}
 			
 			instantTextBoxType = {
@@ -1483,7 +1483,7 @@ guiTypes = {
 				spriteType = "GFX_icon_religion_small"
 				position = { x = 195 y = 266 }
 				frame = 14
-#				scale = 0.75
+				#scale = 0.75
 			}
 			
 			instantTextBoxType = {
@@ -1504,7 +1504,7 @@ guiTypes = {
 				spriteType = "GFX_icon_religion_small"
 				position = { x = 195 y = 296 }
 				frame = 14
-#				scale = 0.75
+				#scale = 0.75
 			}
 			
 			instantTextBoxType = {
@@ -1890,7 +1890,7 @@ guiTypes = {
 					maxHeight = 18
 					Orientation = "UPPER_LEFT"
 					format = left
-					fixedsize = yes
+					#fixedsize = yes
 				}
 			}
 
@@ -2590,8 +2590,6 @@ guiTypes = {
 			}
 			quadTextureSprite ="GFX_checkbox_gold_32"
 		}
-
-
 		instantTextBoxType={
 			name = "show_subjects_title"
 			if_resolution = {
@@ -2728,8 +2726,7 @@ guiTypes = {
 			format = left
 			
 		}
-		
-		###Defender of the Faith
+				###Defender of the Faith
 
         iconType = {
 			name ="defender_of_the_faith_tier"
@@ -2801,7 +2798,7 @@ guiTypes = {
 # Needs txt linking	
 		instantTextBoxType = {
 				name = "defender_title"
-				position = { x = 350 y = 235 }
+				position = { x = 360 y = 235 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 4}	
@@ -2862,7 +2859,7 @@ guiTypes = {
 				name = "religions_listbox"
 				backGround = ""
 				position = { x=-30 y =180 }
-				size = { x=555 y =340 }
+				size = { x=555 y =667 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 2
@@ -2872,7 +2869,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "back_button"
-				position = {  x=240 y =531}
+				position = {  x=240 y =858}
 				quadTextureSprite ="GFX_standard_button_71"	
 				tooltip = ""
 				tooltipText =""
@@ -2906,7 +2903,7 @@ guiTypes = {
 				name ="deity_listbox"
 				position = { x=56 y = -55}
 				backGround=""
-				size = { x=319 y =300}
+				size = { x=319 y =552}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1
@@ -2916,7 +2913,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "cancel"
-				position = { x=190 y = 230 }
+				position = { x=190 y = 558 }
 				quadTextureSprite ="GFX_standard_button_71"
 				buttonText = "BACK"
 				buttonFont = "vic_18"
@@ -2947,7 +2944,7 @@ guiTypes = {
 				name ="icon_listbox"
 				position = { x=56 y = -64}
 				backGround=""
-				size = { x=398 y =300}
+				size = { x=398 y =612}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1
@@ -2957,7 +2954,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "cancel"
-				position = { x=190 y = 234 }
+				position = { x=190 y = 562 }
 				quadTextureSprite ="GFX_standard_button_71"
 				buttonText = "BACK"
 				buttonFont = "vic_18"
@@ -2988,7 +2985,7 @@ guiTypes = {
 				name ="listbox"
 				position = { x=56 y = -60}
 				backGround=""
-				size = { x=398 y =290}
+				size = { x=398 y =552}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1
@@ -2998,7 +2995,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "cancel"
-				position = { x=190 y = 234 }
+				position = { x=190 y = 562 }
 				quadTextureSprite ="GFX_standard_button_71"
 				buttonText = "BACK"
 				buttonFont = "vic_18"
@@ -3026,9 +3023,9 @@ guiTypes = {
 			listboxType = 
 			{
 				name ="cult_listbox"
-				position = { x=16 y = -55}
+				position = { x=56 y = -53}
 				backGround=""
-				size = { x=452 y=290 }
+				size = { x=398 y =560}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1
@@ -3038,7 +3035,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "cancel"
-				position = { x=190 y = 230 }
+				position = { x=190 y = 558 }
 				quadTextureSprite ="GFX_standard_button_71"
 				buttonText = "BACK"
 				buttonFont = "vic_18"
@@ -3082,7 +3079,7 @@ guiTypes = {
 				name ="aspect_listbox"
 				position = { x=56 y = -53}
 				backGround=""
-				size = { x=398 y =280}
+				size = { x=398 y =560}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1
@@ -3092,7 +3089,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "cancel"
-				position = { x=190 y = 230 }
+				position = { x=190 y = 558 }
 				quadTextureSprite ="GFX_standard_button_71"
 				buttonText = "BACK"
 				buttonFont = "vic_18"
@@ -3282,56 +3279,15 @@ guiTypes = {
 		name = "fetishist_cult_item"
 		backGround =""
 		position = { x=10 y=-20 }	
-		size = { x=50 y=54 }
+		size = { x=50 y=46 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
 		Orientation = "UPPER_LEFT"
 				
-		iconType =
-		{
-			name ="cult_item_icon"
-			spriteType = "GFX_fetishists_strip"
-			position = { x= 107 y = 5 }
-		}
-		
-		instantTextBoxType = {
-			name = "cult_item_name"
-			position = { x= 0 y = 16 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			text = "CultName"
-			maxWidth = 128
-			maxHeight = 24
-			Orientation = "UPPER_LEFT"
-			format = left
-		}
-		
-		instantTextBoxType = {
-			name = "cult_item_effect"
-			position = { x = 156 y = -2 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			text = "CultEffect"	
-			maxWidth = 208
-			maxHeight = 54
-			Orientation = "UPPER_LEFT"
-			format = left
-			fixedsize = yes
-		}
-		
-		guiButtonType = {
-			name = "pick_cult"
-			position = { x=362 y = 10}
-			quadTextureSprite ="GFX_standard_button_71"
-			buttonText = "SELECT"
-			buttonFont = "vic_18"
-			Orientation = "LEFT"
-		}
-
 		instantTextBoxType = {
 			name = "cult_description_helper"
-			position = { x= 0 y = -3 }
+			position = { x= -42 y = -3 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "CULT_HELP_DESC"
@@ -3340,6 +3296,47 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
+		iconType =
+		{
+			name ="cult_item_icon"
+			spriteType = "GFX_fetishists_strip"
+			position = { x= 45 y = -3 }
+		}
+		
+		instantTextBoxType = {
+			name = "cult_item_name"
+			position = { x= -42 y = -2}
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectName"
+			maxWidth = 102
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "cult_item_effect"
+			position = { x = 98 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectEffect"
+			maxWidth = 206
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+			#fixedsize = yes
+		}
+		
+		guiButtonType = {
+			name = "pick_cult"
+			position = { x=301 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+
 	}
 	
 	################################################################################################
@@ -3559,7 +3556,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 300
+			maxWidth = 330
 			maxHeight = 24
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -3567,7 +3564,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "pick_aspect"
-			position = { x=316 y = 6}
+			position = { x=332 y = 6}
 			quadTextureSprite ="GFX_standard_button_71"
 			buttonText = "SELECT"
 			buttonFont = "vic_18"
@@ -3917,7 +3914,7 @@ guiTypes = {
 			name ="list"
 			position = { x=-15 y = 21}
 			backGround=""
-			size = { x=294 y =235}
+			size = { x=594 y =535}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0

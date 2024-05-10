@@ -13,3 +13,5 @@ owner = N11
 controller = N11
 add_core = N11
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_fish_trade_good

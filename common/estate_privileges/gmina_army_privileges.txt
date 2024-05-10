@@ -1,59 +1,220 @@
-estate_army_old_doc = {
+estate_army_old_doctrine = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.1
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_army_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_army_definer }
+				had_country_flag = {
+					flag = picked_army_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_army_old_doctrine_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_army_new_doctrine
+			remove_estate_privilege = estate_army_underfunded_army
+			remove_estate_privilege = estate_army_martial_law
+			clr_country_flag = picked_army_definer
+			set_country_flag = picked_army_definer
+		}
+	}
+	on_revoked = { 
+		add_stability = -2
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_army_definer}
+			had_country_flag = {
+				flag = picked_army_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		land_morale = -0.1
+		discipline = -0.05
+		reinforce_cost_modifier = 0.2
+	}
+	benefits = {
+		land_forcelimit_modifier = 0.5
+	}
+}
+estate_army_new_doctrine = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
-	influence = 0.15
+	influence = -0.1
 	ai_will_do = {
 		factor = 1
 	}	
-	is_valid = {
-		NOT = {
-			has_country_flag = army_new_doc
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_army_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_army_definer }
+				had_country_flag = {
+					flag = picked_army_definer
+					days = 9125
+				}
+			}
 		}
 	}
 	on_granted = {
-		set_country_flag = army_old_doc 
+		custom_tooltip = estate_army_new_doctrine_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_army_old_doctrine
+			remove_estate_privilege = estate_army_underfunded_army
+			remove_estate_privilege = estate_army_martial_law
+			clr_country_flag = picked_army_definer
+			set_country_flag = picked_army_definer
+		}
 	}
-	on_revoked = { clr_country_flag = army_old_doc }
+	on_revoked = { 
+		add_stability = -2
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_army_definer}
+			had_country_flag = {
+				flag = picked_army_definer
+				days = 9125
+			}
+		}
+	}
 	penalties = {
-		shock_damage_received = 0.05
+		land_forcelimit_modifier = -0.5
+		capped_by_forcelimit = yes
 	}
 	benefits = {
-		land_forcelimit_modifier = 0.2
-		manpower_recovery_speed = 0.15
+		land_morale = 0.2
+		discipline = 0.1
+		reinforce_cost_modifier = -0.2
+	}
+}
+estate_army_underfunded_army = {
+	icon = privilege_admin_power
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.2
+	influence = -0.2
+	ai_will_do = {
+		factor = 1
+	}	
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_army_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_army_definer}
+				had_country_flag = {
+					flag = picked_army_definer
+					days = 9125
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_army_underfunded_army_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_army_old_doctrine
+			remove_estate_privilege = estate_army_new_doctrine
+			remove_estate_privilege = estate_army_martial_law
+			clr_country_flag = picked_army_definer
+			set_country_flag = picked_army_definer
+		}
+	}
+	on_revoked = { 
+		add_stability = -2
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_army_definer}
+			had_country_flag = {
+				flag = picked_army_definer
+				days = 9125
+			}
+		}
+	}
+	penalties = {
+		land_forcelimit_modifier = -0.2
+		land_morale = -0.2
+		discipline = -0.1
+		reinforce_cost_modifier = 0.2
+	}
+	benefits = {
 
 	}
 }
-estate_army_new_doc = {
+estate_army_martial_law = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = 0
-	loyalty = 0.1
-	influence = 0.15
+	loyalty = 0.5
+	influence = 0.5
 	ai_will_do = {
 		factor = 1
 	}	
-	is_valid = {
-		NOT = {
-			has_country_flag = army_old_doc
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_army_definer_tooltip
+			OR = {
+				NOT = { has_country_flag = picked_army_definer}
+				had_country_flag = {
+					flag = picked_army_definer
+					days = 9125
+				}
+			}
 		}
 	}
 	on_granted = {
-		set_country_flag = army_new_doc 
+		custom_tooltip = estate_army_martial_law_definer_tooltip
+		hidden_effect = {
+			remove_estate_privilege = estate_army_old_doctrine
+			remove_estate_privilege = estate_army_new_doctrine
+			remove_estate_privilege = estate_army_underfunded_army
+			clr_country_flag = picked_army_definer
+			set_country_flag = picked_army_definer
+			set_country_flag = solidarnosc_rebels
+		}
 	}
-	on_revoked = { clr_country_flag = army_new_doc }
+	on_revoked = { 
+		clr_country_flag = solidarnosc_rebels
+		add_stability = -2
+	}
+	on_invalid = {
+		clr_country_flag = solidarnosc_rebels
+	}
 	penalties = {
-		manpower_recovery_speed = -0.2
-		land_forcelimit_modifier = -0.15
+		global_unrest = 5
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_flag = picked_army_definer}
+			had_country_flag = {
+				flag = picked_army_definer
+				days = 9125
+			}
+		}
 	}
 	benefits = {
-		shock_damage_received = -0.1
-		fire_damage_received = -0.1
-		discipline = 0.025
+		land_forcelimit_modifier = 0.2
+		land_morale = 0.05
+		discipline = 0.05
+
 	}
 }
-estate_army_wt = {
+estate_army_territorial_forces = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = 0
@@ -66,10 +227,11 @@ estate_army_wt = {
 	}
 	benefits = {
 		defensiveness = 0.2
-		hostile_attrition = 0.5
+		hostile_attrition = 1
+		attack_bonus_in_capital_terrain = 1
 	}
 }
-estate_army_blitz = {
+estate_army_blitzkrieg = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = 0
@@ -78,15 +240,22 @@ estate_army_blitz = {
 	ai_will_do = {
 		factor = 1
 	}	
-	is_valid = {
-		NOT = {
-			has_country_flag = army_fire
+
+	can_select = {
+		NOT = { has_estate_privilege = estate_army_fire_supremacy }
+	}
+
+	on_granted = {
+		remove_estate_privilege = estate_army_fire_supremacy
+		hidden_effect = {
+			clr_country_flag = picked_army_privilege
+			set_country_flag = picked_army_privilege
 		}
 	}
-	on_granted = {
-		set_country_flag = army_blitz
+	on_revoked = { 
+	
 	}
-	on_revoked = { clr_country_flag = army_blitz }
+
 	penalties = {
 		morale_damage_received = 0.1
 		recover_army_morale_speed = -0.1
@@ -97,7 +266,7 @@ estate_army_blitz = {
 		leader_land_manuever = 1
 	}
 }
-estate_army_fire = {
+estate_army_fire_supremacy = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = 0
@@ -106,15 +275,21 @@ estate_army_fire = {
 	ai_will_do = {
 		factor = 1
 	}	
-	is_valid = {
-		NOT = {
-			has_country_flag = army_blitz
+	can_select = {
+		NOT = { has_estate_privilege = estate_army_blitzkrieg }
+	}
+
+	on_granted = {
+		remove_estate_privilege = estate_army_blitzkrieg
+		hidden_effect = {
+			clr_country_flag = picked_army_privilege
+			set_country_flag = picked_army_privilege
 		}
 	}
-	on_granted = {
-		set_country_flag = army_fire
+	on_revoked = { 
+	
 	}
-	on_revoked = { clr_country_flag = army_fire }
+
 	penalties = {
 		defensiveness = -0.15
 		production_efficiency = -0.1
@@ -125,7 +300,7 @@ estate_army_fire = {
 
 	}
 }
-estate_army_gp = {
+estate_army_curfew = {
 	icon = privilege_admin_power
 	land_share = 0
 	max_absolutism = 0
@@ -137,16 +312,25 @@ estate_army_gp = {
 	is_valid = {
 		religion_group = communism_group
 	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	on_invalid = {
+	}
 	penalties = {
 	}
 	benefits = {
 		global_unrest = -1
 	}
 }
-estate_army_obietnice = {
+estate_army_empty_promises = {
 	icon = privilege_admin_power
 	land_share = 0
-	max_absolutism = -5
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -319,7 +503,7 @@ estate_army_land_rights = {
 		}
 		modifier = {
 			factor = 0.75
-			has_estate_privilege = estate_intellectuals_land_rights
+			has_estate_privilege = estate_scientists_land_rights
 		}
 	}
 }

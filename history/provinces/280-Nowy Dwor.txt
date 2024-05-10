@@ -13,3 +13,5 @@ owner = J11
 controller = J11
 add_core = J11
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_maize_trade_good

@@ -1,11 +1,11 @@
 estate_ub = {
-    icon = 4
+    icon = 10
     trigger = {
-		always = no
-			religion_group = communism_group
+		always = yes
+		religion_group = communism_group
     }
     country_modifier_happy = {
-		global_spy_defence = 0.4
+		global_spy_defence = 0.5
 		fabricate_claims_cost = -0.2
 	}
     country_modifier_neutral = {
@@ -13,7 +13,7 @@ estate_ub = {
 	}
     country_modifier_angry = {
 		spy_action_cost_modifier = 0.6
-		global_unrest = 4
+		global_unrest = 2
 	}
   province_independence_weight = {
 		factor = 1
@@ -26,15 +26,19 @@ estate_ub = {
     land_ownership_modifier = {
 		ub_loyalty_modifier = 0.2
 	}
-    base_influence = 20
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 10 110 110 }
+    color = { 201 22 22 }
     privileges = {
-		estate_retirees_land_rights
-     }
-	 privileges = {
-		estate_retirees_13
-	 }
+		estate_ub_land_rights
+		estate_ub_empty_promises
+		estate_ub_grasp_over_police
+		estate_ub_grasp_over_politics
+		estate_ub_grasp_over_economy
+		estate_ub_classes_opression
+		estate_ub_sad_gentelmens
+		estate_ub_iron_propaganda
+	}
 	 agendas = {
 		estate_ub_hire_advisor
 	 }

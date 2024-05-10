@@ -8,3 +8,5 @@ owner = X11
 controller = X11
 add_core = X11
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_tourists_trade_good

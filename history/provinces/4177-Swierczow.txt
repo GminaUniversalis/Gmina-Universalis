@@ -9,3 +9,5 @@ hre = yes
 discovered_by = ottoman
 discovered_by = western
 discovered_by = eastern
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_vegetables_trade_good

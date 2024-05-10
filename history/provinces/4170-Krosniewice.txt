@@ -9,3 +9,5 @@ owner = Q07
 controller = Q07
 add_core = Q07
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_pigs_trade_good

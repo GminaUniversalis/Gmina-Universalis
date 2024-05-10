@@ -15,3 +15,5 @@ controller = L24
 discovered_by = ottoman
 add_core = L24
 latent_trade_goods = { gu_processed_food }
+set_province_flag = has_static_trade_good
+set_province_flag = has_{ gu_processed_food }_trade_good

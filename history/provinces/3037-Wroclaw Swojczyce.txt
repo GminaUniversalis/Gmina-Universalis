@@ -15,3 +15,5 @@ add_core = A27
 owner = A27
 controller = A27
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_wheat_trade_good

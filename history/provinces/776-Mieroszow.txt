@@ -14,3 +14,5 @@ controller = A20
 add_core = A20
 hre = yes
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_wool_trade_good

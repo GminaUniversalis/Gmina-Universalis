@@ -1,15 +1,33 @@
-country_decision = {
+country_decisions = {
 	poland_formation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
+			OR = {
+				has_country_flag = formed_dolnoslaskie_flag
+				has_country_flag = formed_kujawsko_pomorskie_flag
+				has_country_flag = formed_lubelskie_flag
+				has_country_flag = formed_lubuskie_flag
+				has_country_flag = formed_lodzkie_flag
+				has_country_flag = formed_malopolskie_flag
+				has_country_flag = formed_mazowieckie_flag
+				has_country_flag = formed_opolskie_flag
+				has_country_flag = formed_podkarpackie_flag
+				has_country_flag = formed_podlaskie_flag
+				has_country_flag = formed_pomorskie_flag
+				has_country_flag = formed_slaskie_flag
+				has_country_flag = formed_swietokrzyskie_flag
+				has_country_flag = formed_warminsko_mazurskie_flag
+				has_country_flag = formed_wielkopolskie_flag
+				has_country_flag = formed_zachodniopomorskie_flag
+			}
+			
 			NOT = { 
 				OR = { 
 					has_country_flag = formed_pol_flag
 					has_country_flag = formed_silesia_flag
 					has_country_flag = formed_germany_flag
-					# has_country_flag = formed_lubuskie_flag
-					# has_country_flag = formed_lodzkie_flag
+					has_country_flag = formed_prl_flag
+					has_country_flag = formed_kashubia_flag
 					# has_country_flag = formed_malopolskie_flag
 					# has_country_flag = formed_mazowieckie_flag
 					# has_country_flag = formed_opolskie_flag
@@ -29,24 +47,23 @@ country_decision = {
 		}
 
 		provinces_to_highlight = {
-			continent = europe
-			NOT = {
-				OR = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
-			}
+			poland_formable_decision_check = yes
+			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			NOT = { exists = POL }
+			own_core = 257
+			NOT = { religion_group = communism_group }
+			OR = { NOT = { exists = POL exists = PRL } }
 			adm_tech = 20
-
-			num_of_owned_provinces_with = {
-				custom_trigger_tooltip = {
-					tooltip = poland_formable_decision_check_tooltip
-					poland_formable_decision_check = yes
+			OR = {
+				development = 5000
+				num_of_owned_provinces_with = {
+					custom_trigger_tooltip = {
+						tooltip = poland_formable_decision_check_tooltip
+						poland_formable_decision_check = yes
+					}
+					value = 1000
 				}
-				value = 1500
 			}
 			is_at_war = no
 		}
@@ -111,14 +128,13 @@ country_decision = {
 		major = yes
 		potential = {
 			primary_culture = slonska
-			normal_or_historical_nations = yes
 			NOT = { 
 				OR = { 
 					has_country_flag = formed_pol_flag
 					has_country_flag = formed_silesia_flag
 					has_country_flag = formed_germany_flag
-					# has_country_flag = formed_lubuskie_flag
-					# has_country_flag = formed_lodzkie_flag
+					has_country_flag = formed_prl_flag
+					has_country_flag = formed_kashubia_flag
 					# has_country_flag = formed_malopolskie_flag
 					# has_country_flag = formed_mazowieckie_flag
 					# has_country_flag = formed_opolskie_flag
@@ -227,14 +243,13 @@ country_decision = {
 		major = yes
 		potential = {
 			primary_culture = niemiecka
-			normal_or_historical_nations = yes
 			NOT = { 
 				OR = { 
 					has_country_flag = formed_pol_flag
 					has_country_flag = formed_silesia_flag
 					has_country_flag = formed_germany_flag
-					# has_country_flag = formed_lubuskie_flag
-					# has_country_flag = formed_lodzkie_flag
+					has_country_flag = formed_prl_flag
+					has_country_flag = formed_kashubia_flag
 					# has_country_flag = formed_malopolskie_flag
 					# has_country_flag = formed_mazowieckie_flag
 					# has_country_flag = formed_opolskie_flag
@@ -355,5 +370,233 @@ country_decision = {
 
 		ai_importance = 1000
 	}
+	prl_formation = {
+		major = yes
+		potential = {
+			religion_group = communism_group
 
+			OR = {
+				has_country_flag = formed_dolnoslaskie_flag
+				has_country_flag = formed_kujawsko_pomorskie_flag
+				has_country_flag = formed_lubelskie_flag
+				has_country_flag = formed_lubuskie_flag
+				has_country_flag = formed_lodzkie_flag
+				has_country_flag = formed_malopolskie_flag
+				has_country_flag = formed_mazowieckie_flag
+				has_country_flag = formed_opolskie_flag
+				has_country_flag = formed_podkarpackie_flag
+				has_country_flag = formed_podlaskie_flag
+				has_country_flag = formed_pomorskie_flag
+				has_country_flag = formed_slaskie_flag
+				has_country_flag = formed_swietokrzyskie_flag
+				has_country_flag = formed_warminsko_mazurskie_flag
+				has_country_flag = formed_wielkopolskie_flag
+				has_country_flag = formed_zachodniopomorskie_flag
+			}
+			NOT = { 
+				OR = { 
+					has_country_flag = formed_pol_flag
+					has_country_flag = formed_silesia_flag
+					has_country_flag = formed_germany_flag
+					has_country_flag = formed_prl_flag
+					has_country_flag = formed_kashubia_flag
+					# has_country_flag = formed_malopolskie_flag
+					# has_country_flag = formed_mazowieckie_flag
+					# has_country_flag = formed_opolskie_flag
+					# has_country_flag = formed_podkarpackie_flag
+					# has_country_flag = formed_podlaskie_flag
+					# has_country_flag = formed_pomorskie_flag
+					# has_country_flag = formed_slaskie_flag
+					# has_country_flag = formed_swietokrzyskie_flag
+					# has_country_flag = formed_warminsko_mazurskie_flag
+					# has_country_flag = formed_wielkopolskie_flag
+					# has_country_flag = formed_zachodniopomorskie_flag
+				}
+
+				has_reform = celestial_empire 
+				exists = PRL
+			}
+		}
+
+		provinces_to_highlight = {
+			poland_formable_decision_check = yes
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			own_core = 257
+			religion_group = communism_group
+			OR = { NOT = { exists = POL exists = PRL } }
+			adm_tech = 20
+
+			num_of_owned_provinces_with = {
+				custom_trigger_tooltip = {
+					tooltip = poland_formable_decision_check_tooltip
+					poland_formable_decision_check = yes
+				}
+				value = 1000
+			}
+			is_at_war = no
+		}
+		effect = {
+			257 = {
+				move_capital_effect = yes
+			}
+			change_tag = PRL
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			custom_tooltip = polish_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = ROOT
+					}
+					change_culture = polish
+				}
+			}
+			change_primary_culture = polish
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_dlc = "Emperor" }
+						NOT = { hre_size = 1 }
+					}
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = PRL_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+
+			europe = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRL
+			}
+
+			set_country_flag = formed_prl_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 1000
+	}
+	kashubia_formation = {
+		major = yes
+		potential = {
+			region = pomorskie_region
+			NOT = { 
+				OR = { 
+					has_country_flag = formed_pol_flag
+					has_country_flag = formed_silesia_flag
+					has_country_flag = formed_germany_flag
+					has_country_flag = formed_prl_flag
+					has_country_flag = formed_kashubia_flag
+					# has_country_flag = formed_malopolskie_flag
+					# has_country_flag = formed_mazowieckie_flag
+					# has_country_flag = formed_opolskie_flag
+					# has_country_flag = formed_podkarpackie_flag
+					# has_country_flag = formed_podlaskie_flag
+					# has_country_flag = formed_pomorskie_flag
+					# has_country_flag = formed_slaskie_flag
+					# has_country_flag = formed_swietokrzyskie_flag
+					# has_country_flag = formed_warminsko_mazurskie_flag
+					# has_country_flag = formed_wielkopolskie_flag
+					# has_country_flag = formed_zachodniopomorskie_flag
+				}
+
+				has_reform = celestial_empire 
+				exists = KSH
+			}
+		}
+
+		provinces_to_highlight = {
+			region = pomorskie_region
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			NOT = { exists = KSH }
+			adm_tech = 20
+
+			num_of_owned_provinces_with = {
+				region = pomorskie_region
+				value = 1500
+			}
+			is_at_war = no
+		}
+		effect = {
+			257 = {
+				move_capital_effect = yes
+			}
+			change_tag = KSH
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			custom_tooltip = kashubian_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = ROOT
+					}
+					change_culture = kaszubska
+				}
+			}
+			change_primary_culture = kaszubska
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_dlc = "Emperor" }
+						NOT = { hre_size = 1 }
+					}
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = KSH_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+
+			pomorskie_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = KSH
+			}
+
+			set_country_flag = formed_kashubia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 1000
+	}
 }

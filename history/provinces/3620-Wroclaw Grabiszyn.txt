@@ -16,3 +16,5 @@ owner = A27
 controller = A27
 latent_trade_goods = { gu_electronics }
 center_of_trade = 1
+set_province_flag = has_static_trade_good
+set_province_flag = has_{ gu_electronics }_trade_good

@@ -13,3 +13,5 @@ owner = W08
 controller = W08
 add_core = W08
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_beer_trade_good

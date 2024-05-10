@@ -1142,7 +1142,7 @@ estate_nobles_strong_duchies = {
 # 				}
 # 			}
 # 		}
-# 		stability = 3
+# 		add_stability = 3
 # 		has_regency = no
 # 	}
 # 	on_revoked = {
@@ -1486,7 +1486,7 @@ estate_nobles_neighbor_raids = {
 # 		}
 # 		modifier = {
 # 			factor = 4
-# 			NOT = { stability = 0 }
+# 			NOT = { add_stability = 0 }
 # 		}
 # 		modifier = {
 # 			factor = 0.5
@@ -2023,7 +2023,7 @@ estate_nobles_neighbor_raids = {
 # 			estate = estate_nobles
 # 			loyalty = 70
 # 		}
-# 		stability = 2
+# 		add_stability = 2
 # 	}
 # 	modifier_by_land_ownership = {
 # 		nobles_loyalty_modifier = 0.1
@@ -2081,7 +2081,7 @@ estate_nobles_neighbor_raids = {
 # 			estate = estate_nobles
 # 			loyalty = 80
 # 		}
-# 		stability = 2
+# 		add_stability = 2
 # 	}
 # 	on_granted = {
 # 		tooltip = {
@@ -2122,7 +2122,7 @@ estate_nobles_neighbor_raids = {
 # 		has_estate_privilege = estate_nobles_danish_nobility
 # 	}
 # 	can_revoke = {
-# 		stability = 1
+# 		add_stability = 1
 # 		NOT = { num_of_rebel_controlled_provinces = 1 }
 # 		NOT = { num_of_rebel_armies = 1 }
 # 	}
@@ -2163,7 +2163,7 @@ estate_nobles_neighbor_raids = {
 # 		has_estate_privilege = estate_nobles_nobles_instead_of_royal_court
 # 	}
 # 	can_revoke = {
-# 		stability = 1
+# 		add_stability = 1
 # 		NOT = { num_of_rebel_controlled_provinces = 1 }
 # 		NOT = { num_of_rebel_armies = 1 }
 # 	}
@@ -2345,7 +2345,7 @@ estate_nobles_neighbor_raids = {
 # 	can_revoke = {
 # 		if = {
 # 			limit = { OR = { ai = no was_player = yes } }
-# 			stability = 1
+# 			add_stability = 1
 # 			legitimacy = 90
 # 		}
 # 		else = {

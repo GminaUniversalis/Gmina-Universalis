@@ -13,3 +13,5 @@ owner = Q08
 controller = Q08
 add_core = Q08
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_poultry_trade_good

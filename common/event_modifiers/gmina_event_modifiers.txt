@@ -6,6 +6,15 @@ stonka_attack = {
 	local_unrest = 3
 }
 
+orlen_head = {
+	prestige = 0.1
+	trade_goods_size_modifier = 0.25
+}
+
+shipbuilding_problem = {
+	global_ship_cost = 0.15
+}
+
 moonshiners_problem = {
 	local_unrest = 3
 }
@@ -14,7 +23,7 @@ local_airport_modifier = {
 	province_trade_power_value = 4
 	local_friendly_movement_speed = 0.3
 	local_tax_modifier = 0.10
-	picture = "airport_icon"
+	picture = "local_airport_icon"
 }
 
 airport_modifier = {
@@ -63,4 +72,86 @@ training_area_modifier = {
 	regiment_recruit_speed = -0.40
 	local_regiment_cost = -0.25
 	picture = "training_area_icon"
+}
+
+structural_reform = {
+	local_development_cost_modifier = -0.25
+}
+
+working_man = {
+	trade_goods_size_modifier = 0.5
+	production_efficiency = 0.1
+	all_power_cost = 0.1
+}
+
+emancipated_woman = {
+	female_advisor_chance = 0.5
+	all_power_cost = -0.05
+	may_recruit_female_generals = yes
+}
+
+rural_life = {
+	local_unrest = -2
+	development_cost = -0.1
+
+}
+
+city_life = {
+	development_cost = 0.1
+	local_unrest = 2
+}
+
+fertilizers_from_east_modifier = {
+	trade_goods_size = 0.5
+}
+
+devastated_by_fertilizers = {
+	local_monthly_devastation = 0.05
+}
+
+vaccinated_animals_modifier = {
+	trade_goods_size = 0.5
+}
+
+GMO_farming_modifier = {
+	trade_goods_size = 1
+	local_monthly_devastation = 0.1
+}
+
+natural_farming_modifier = {
+	trade_goods_size = 0.5
+}
+
+effective_management = {
+	trade_goods_size = 0.5
+}
+
+unlimited_workforce = {
+	production_efficiency = 0.1
+}
+
+unprofitable_mines = {
+	trade_goods_size = -0.5
+}
+
+golden_age_of_mines = {
+	production_efficiency = 0.2
+	local_monthly_devastation = 0.03
+}
+
+silver_age_of_mines = {
+	trade_goods_size_modifier = 0.1
+}
+
+barborka = {
+	local_unrest = -1
+}
+
+barborkant = {
+	local_unrest = 3
+}
+
+panstwowa_akademia_nauk = {
+	institution_growth = 0.5
+
 }

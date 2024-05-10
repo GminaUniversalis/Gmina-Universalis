@@ -13,3 +13,5 @@ owner = Q16
 controller = Q16
 add_core = Q16
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_tourists_trade_good

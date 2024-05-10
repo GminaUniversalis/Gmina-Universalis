@@ -14,3 +14,5 @@ controller = A05
 add_core = A05
 hre = yes
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_horses_trade_good

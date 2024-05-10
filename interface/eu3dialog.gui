@@ -17,8 +17,8 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "DefaultDialog"
 		backGround="Background"
-		position = { x=-225 y=-160 }
-		size = { x=500 y=320 }
+		position = { x=-275 y=-310 }
+		size = { x=500 y=420 }
 		orientation="CENTER"
 		moveable = 1
 		dontRender = ""
@@ -59,7 +59,7 @@ guiTypes = {
 				borderSize = {x = 0 y = 0}
 				text = "Long text here!"	
 				maxWidth = 380
-				maxHeight = 170
+				maxHeight = 270
 				format = centre
 				scrollbartype = "standardtext_slider"
 			}
@@ -68,7 +68,7 @@ guiTypes = {
 		{
 			name ="LeftShield"
 			spriteType = "standarddialogshield"
-			position = { x = 5 y = 10 }
+			position = { x= -1 y = 10 }
 		}
 		iconType =
 		{
@@ -81,7 +81,7 @@ guiTypes = {
 		{
 			name ="RightShield"
 			spriteType = "standarddialogshield"
-			position = { x= 413 y = 10 }
+			position = { x= 407 y = 10 }
 		}
 		
 
@@ -94,7 +94,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=77 y =270}
+			position = { x=77 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
@@ -103,7 +103,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=274 y =270}
+			position = { x=274 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -114,7 +114,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "popup"
-			position = { x= 453 y = 274 }
+			position = { x= 225 y = 0 }
 			quadTextureSprite = "GFX_alert_popup_choice_icon"
 		}		
 	}
@@ -124,7 +124,7 @@ guiTypes = {
 		name = "DefaultDialogResizeable"
 		backGround="Background"
 		position = { x=-225 y=-160 }
-		size = { x=500 y=320 }
+		size = { x=500 y=420 }
 		orientation="CENTER"
 		moveable = 1
 		dontRender = ""
@@ -199,7 +199,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=77 y =270}
+			position = { x=77 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
@@ -208,7 +208,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=274 y =270}
+			position = { x=274 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -228,10 +228,10 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "DefaultConfirm"
 		backGround="Background"
-		position = { x=-250 y=-160 }	
-		size = { x=500 y=320 }
+		position = { x=-275 y=-310 }	
+		size = { x=500 y=420 }
 		orientation="CENTER"
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -270,7 +270,7 @@ guiTypes = {
 				borderSize = {x = 0 y = 0}
 				text = "Long text here!"	
 				maxWidth = 380
-				maxHeight = 180
+				maxHeight = 280
 				format = centre
 				scrollbartype = "standardtext_slider"
 			}
@@ -279,7 +279,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=77 y =270}
+			position = { x=77 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
@@ -288,7 +288,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=274 y =270}
+			position = { x=274 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -303,10 +303,10 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "DefaultInfoDialog"
 		backGround="Background"
-		position = { x=-225 y=-160 }
-		size = { x=500 y=320 }
+		position = { x=-275 y=-310 }
+		size = { x=500 y=420 }
 		orientation="CENTER"
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -352,7 +352,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=175 y =270}
+			position = { x=175 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -368,8 +368,8 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "ShieldedInformationDialog"
 		backGround="Background"
-		position = { x=-225 y=-160 }
-		size = { x=500 y=320 }
+		position = { x=-275 y=-310 }
+		size = { x=500 y=420 }
 		orientation="CENTER"
 		moveable = 1
 		dontRender = ""
@@ -418,20 +418,20 @@ guiTypes = {
 		{
 			name ="LeftShield"
 			spriteType = "standarddialogshield"
-			position = { x = 5 y = 10 }
+			position = { x= -1 y = 10 }
 		}
 		
 		shieldtype = 
 		{
 			name ="RightShield"
 			spriteType = "standarddialogshield"
-			position = { x= 413 y = 10 }
+			position = { x= 407 y = 10 }
 		}
 		
 		
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=175 y =270}
+			position = { x=175 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -447,8 +447,8 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "DefaultPopup"
 		backGround="Background"
-		position = { x=-225 y=-160 }
-		size = { x=500 y=320 }
+		position = { x=-275 y=-310 }
+		size = { x=500 y=520 }
 		orientation="CENTER"
 		moveable = 1
 		dontRender = ""
@@ -510,7 +510,7 @@ guiTypes = {
 			
 		instantTextBoxType = {
 			name = "Line2"
-			position = { x = 75 y = 60 }
+			position = { x = 79 y = 60 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -572,20 +572,20 @@ guiTypes = {
 		{
 			name ="LeftShield"
 			spriteType = "standarddialogshield"
-			position = { x= 5 y = 19 }
+			position = { x= -1 y = 19 }
 		}
 		
 		shieldtype = 
 		{
 			name ="RightShield"
 			spriteType = "standarddialogshield"
-			position = { x= 413 y = 19 }
+			position = { x= 407 y = 19 }
 		}
 		
 		
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=77 y =270}
+			position = { x=77 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
@@ -594,7 +594,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=274 y =270}
+			position = { x=274 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -605,7 +605,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "CenterOK"
-			position = { x=175 y =270}
+			position = { x=175 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -626,10 +626,10 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "ConfirmAndNameLeaderDialog"
 		backGround="Background"
-		position = { x=-250 y=-160 }	
-		size = { x=500 y=320 }
+		position = { x=-250 y=-310 }	
+		size = { x=500 y=420 }
 		orientation="CENTER"
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -698,7 +698,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=77 y =270}
+			position = { x=77 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
@@ -707,7 +707,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=274 y =270}
+			position = { x=274 y =370}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -722,10 +722,10 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "ConfirmAndNameTeamDialog"
 		backGround="Background"
-		position = { x=-250 y=-160 }	
-		size = { x=500 y=320 }
+		position = { x=-275 y=-310 }	
+		size = { x=500 y=420 }
 		orientation="CENTER"
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -804,10 +804,10 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "ConfirmRemoveTeamDialog"
 		backGround="Background"
-		position = { x=-250 y=-160 }	
-		size = { x=500 y=320 }
+		position = { x=-275 y=-310 }	
+		size = { x=500 y=420 }
 		orientation="CENTER"
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -870,8 +870,8 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "NewColonyDialog"
 		backGround="Background"
-		position = { x=-225 y=-280 }	
-		size = { x=450 y=280 }
+		position = { x=-275 y=-310 }	
+		size = { x=500 y=420 }
 		orientation="CENTER"
 		moveable = 1
 		dontRender = ""
@@ -1411,8 +1411,8 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "NewColonyForeignDialog"
 		backGround="Background"
-		position = { x=-225 y=-280 }	
-		size = { x=450 y=280 }
+		position = { x=-275 y=-310 }	
+		size = { x=500 y=420 }
 		orientation="CENTER"
 		moveable = 1
 		dontRender = ""
@@ -1942,7 +1942,7 @@ guiTypes = {
 		backGround=""
 		position = { x=300 y=0 }	
 		size = { x=520 y=476 }
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -2000,19 +2000,19 @@ guiTypes = {
 		{
 			name ="LeftShield"
 			spriteType = "standarddialogshield"
-			position = { x= 38 y = 120 }
+			position = { x= 32 y = 120 }
 		}
 		
 		shieldtype = 
 		{
 			name ="RightShield"
 			spriteType = "standarddialogshield"
-			position = { x= 432 y = 120 }
+			position = { x= 426 y = 120 }
 		}
 			
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855} #was y=525
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2027,7 +2027,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855} #was y=525
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2048,7 +2048,7 @@ guiTypes = {
 		backGround=""
 		position = { x=300 y=0 }	
 		size = { x=520 y=476 }
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -2078,7 +2078,7 @@ guiTypes = {
 			}
 				
 		instantTextBoxType={
-				position = {x = 32 y = 390 }
+				position = {x = 32 y = 720 } #was y=390
 				name = "info_text"
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}	
@@ -2094,7 +2094,7 @@ guiTypes = {
 			name ="provincelist"
 			position = { x = 180 y = 180 }
 			backGround=""
-			size = { x=210 y =185}
+			size = { x=210 y =528} #was y=185
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -2106,7 +2106,7 @@ guiTypes = {
 		{
 			name ="LeftShield"
 			spriteType = "standarddialogshield"
-			position = { x= 38 y = 126 }
+			position = { x= 32 y = 120 }
 		}
 		
 		shieldtype = 
@@ -2118,7 +2118,7 @@ guiTypes = {
 			
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			position = { x=280 y =855} #was y=525
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2133,7 +2133,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			position = { x=50 y =855} #was y=525
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2173,7 +2173,7 @@ guiTypes = {
 			name = "info_text"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 150
+					maxWidth = 210
 			maxHeight = 16
 			text = ""	
 			orientation = "UPPER_LEFT"
@@ -2208,7 +2208,7 @@ guiTypes = {
 		position = { x=-250 y=-160 }	
 		size = { x=500 y=320 }
 		orientation="CENTER"
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -2272,7 +2272,7 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "ImperialIncidentPopup"
 		backGround="Background"
-		position = { x=0 y=0 }
+		position = { x=-320 y=-430 }	
 		size = { x=500 y=320 }
 		orientation="CENTER"
 		moveable = 1
@@ -2374,7 +2374,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=77 y =270}
+			position = { x=77 y =440}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
@@ -2383,7 +2383,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=274 y =270}
+			position = { x=274 y =440}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -2394,7 +2394,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "CenterOK"
-			position = { x=220 y =270}
+			position = { x=220 y =440}
 			quadTextureSprite ="largefloaterbutton"
 			buttonText = "OK"
 			buttonFont = "vic_18"
@@ -2407,7 +2407,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "Settings"	
 			quadTextureSprite ="MessageSettingsButton"
-			position = { x=96 y=32 }
+			position = { x=96 y=40 }
 		}
 	}
 }

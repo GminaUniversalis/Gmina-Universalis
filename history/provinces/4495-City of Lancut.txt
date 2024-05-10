@@ -13,3 +13,5 @@ owner = I08
 controller = I08
 add_core = I08
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_paper_trade_good

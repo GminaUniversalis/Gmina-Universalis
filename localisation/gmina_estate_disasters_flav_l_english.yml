@@ -1,0 +1,122 @@
+﻿l_english:
+#Retirees start
+ estate_retirees_disaster:0 "The Gerontocracy Crisis"
+ gmina_estate_disasters.1.t:0 "The Silver Rebellion"
+ gmina_estate_disasters.1.d:0 "A sudden surge in the influence of retirees has brought our nation to a unique crossroads. With their demands for increased pensions and better healthcare, the state coffers are beginning to bleed, crippling our economy and stirring unrest among the younger population."
+ gmina_estate_disasters.1.a:0 "We must address their concerns, but at what cost?"
+ gmina_estate_disasters.1.a.tt:0 "This will start the 'The Gerontocracy Crisis' disaster, leading to increased TBD costs and potential unrest."
+#Retirees end
+ gmina_estate_disasters.2.t:0 "The Silver Accord"
+ gmina_estate_disasters.2.d:0 "After months of negotiations and social turbulence, a compromise has been reached with the retirees. The promises of sustainable pensions and improved healthcare have finally restored calm, but at a significant financial burden."
+ gmina_estate_disasters.2.a:0 "Let us heal and rebuild."
+ gmina_estate_disasters.2.a.tt:0 "Ends the 'The Gerontocracy Crisis' disaster, restoring economic stability but at increased future costs."
+#Families start
+ estate_families_disaster:0 "The Familial Dominion"
+ gmina_estate_disasters.3.t:0 "The Family Compact"
+ gmina_estate_disasters.3.d:0 "Families have become the central pivot of our political landscape, turning our administration into a nepotistic web. This alarming development threatens to undermine meritocracy and stifle innovation."
+ gmina_estate_disasters.3.a:0 "We must navigate this familial maze carefully."
+ gmina_estate_disasters.3.a.tt:0 "This will start the 'The Familial Dominion' disaster, increasing corruption and decreasing administrative efficiency."
+#Families end
+ gmina_estate_disasters.4.t:0 "Restoration of Meritocracy"
+ gmina_estate_disasters.4.d:0 "After considerable efforts to dismantle nepotistic networks, we have successfully reinstated merit-based principles in our administration. While familial influences linger, their grip on power has been significantly weakened."
+ gmina_estate_disasters.4.a:0 "Merit shall lead our way forward."
+ gmina_estate_disasters.4.a.tt:0 "Ends the 'The Familial Dominion' disaster, reducing corruption and restoring administrative integrity."
+#Army start
+ estate_army_disaster:0 "Coup d'État"
+ gmina_estate_disasters.5.t:0 "The March of Boots"
+ gmina_estate_disasters.5.d:0 "The army has seized unprecedented control over the government, citing a need to restore order and discipline in a time of rampant corruption and inefficiency. The nation reels under martial law, with freedoms suspended and the civil society pushed to the margins."
+ gmina_estate_disasters.5.a:0 "We are under martial rule now."
+ gmina_estate_disasters.5.a.tt:0 "This will initiate the 'Coup d'État' disaster, increasing military spending and reducing civilian liberties."
+#Army end
+ gmina_estate_disasters.6.t:0 "Return to Civilian Rule"
+ gmina_estate_disasters.6.d:0 "After years of military rule, pressure from both international allies and internal protests has led to negotiations for a transition back to civilian governance. The generals have agreed to relinquish power, though the army's influence remains strong within the political landscape."
+ gmina_estate_disasters.6.a:0 "A delicate balance of power."
+ gmina_estate_disasters.6.a.tt:0 "Ends the 'Coup d'État' disaster, restores some political freedoms but the military remains a powerful political actor."
+#Farmers start
+ estate_farmers_disaster:0 "Agrarian Overrule"
+ gmina_estate_disasters.7.t:0 "Fields Command"
+ gmina_estate_disasters.7.d:0 "The farmers, long feeling neglected, have organized and seized control of local governments, advocating for agrarian-focused policies at the expense of urban development and industrial progress. This shift threatens to derail our economic balance."
+ gmina_estate_disasters.7.a:0 "The countryside dictates."
+ gmina_estate_disasters.7.a.tt:0 "This will start the 'Agrarian Overrule' disaster, leading to decreased urban productivity and increased subsidies to agriculture."
+#Farmers end
+ gmina_estate_disasters.8.t:0 "Rebalancing the Scales"
+ gmina_estate_disasters.8.d:0 "With the cities languishing and the economy suffering, a coalition of urban interests and moderate rural representatives has finally forged a policy that promises a more balanced approach to development."
+ gmina_estate_disasters.8.a:0 "Urban and rural harmony."
+ gmina_estate_disasters.8.a.tt:0 "Ends the 'Agrarian Overrule' disaster, stabilizing the economy but requiring continued investment in both urban and rural areas."
+#Banks start
+ estate_banks_disaster:0 "Financial Takeover"
+ gmina_estate_disasters.9.t:0 "The Bankers' Grip"
+ gmina_estate_disasters.9.d:0 "The financial sector has grown too powerful, manipulating economic policies and diverting funds to secure their interests. The nation's economy is now at the mercy of a few top bankers, leading to social unrest and economic instability."
+ gmina_estate_disasters.9.a:0 "Rule by the ledger."
+ gmina_estate_disasters.9.a.tt:0 "This will initiate the 'Financial Takeover' disaster, leading to higher debt levels and increased influence of financial institutions."
+#Banks end
+ gmina_estate_disasters.10.t:0 "Restoring Economic Sovereignty"
+ gmina_estate_disasters.10.d:0 "After a period of intense public backlash and government intervention, control over economic policy has been wrested back from the banks. Regulations have been tightened to ensure that this financial dominance does not recur."
+ gmina_estate_disasters.10.a:0 "Economic reins in our hands."
+ gmina_estate_disasters.10.a.tt:0 "Ends the 'Financial Takeover' disaster, reducing the influence of banks but increasing regulatory oversight."
+#Middle class start
+ estate_middle_class_disaster:0 "Bourgeois Uprising"
+ gmina_estate_disasters.11.t:0 "Rise of the Burghers"
+ gmina_estate_disasters.11.d:0 "The middle class, feeling marginalized and oppressed by the ruling elite, has risen in rebellion, demanding greater political representation and economic equality. Their mobilization threatens to upend the traditional power structures."
+ gmina_estate_disasters.11.a:0 "The bourgeoisie demands recognition."
+ gmina_estate_disasters.11.a.tt:0 "This will start the 'Bourgeois Uprising' disaster, leading to increased unrest and demands for political reforms."
+#Middle class end
+ gmina_estate_disasters.12.t:0 "Compromise with the Bourgeoisie"
+ gmina_estate_disasters.12.d:0 "After prolonged negotiations and concessions, a compromise has been reached with the middle class. While their demands for political representation have been partially met, the ruling elite retains significant power."
+ gmina_estate_disasters.12.a:0 "A new era of cooperation."
+ gmina_estate_disasters.12.a.tt:0 "Ends the 'Bourgeois Uprising' disaster, granting some political reforms but preserving the status quo"
+#Ub start
+ estate_ub_disaster:0 "Authoritarian Ascendancy"
+ gmina_estate_disasters.13.t:0 "The Iron Fist Tightens"
+ gmina_estate_disasters.13.d:0 "The repressive apparatus of the state, under the guise of maintaining order and stability, has seized unprecedented control over all aspects of society. Dissent is ruthlessly suppressed, and civil liberties are crushed underfoot."
+ gmina_estate_disasters.13.a:0 "Society under surveillance."
+ gmina_estate_disasters.13.a.tt:0 "This will initiate the 'Authoritarian Ascendancy' disaster, increasing stability but at the cost of decreased freedoms and increased unrest. "
+#Ub end
+ gmina_estate_disasters.14.t:0 "Easing the Grip"
+ gmina_estate_disasters.14.d:0 "International pressure and internal resistance movements have forced the repressive apparatus to loosen its grip on society. While freedoms are still restricted, there are faint glimmers of hope for a more open and democratic future."
+ gmina_estate_disasters.14.a:0 "A cautious opening."
+ gmina_estate_disasters.14.a.tt:0 "Ends the 'Authoritarian Ascendancy' disaster, restoring some civil liberties but retaining a strong authoritarian presence."
+#Scientists start
+ estate_scientists_disaster:0 "Intellectual Supremacy"
+ gmina_estate_disasters.15.t:0 "The Rise of the Learned"
+ gmina_estate_disasters.15.d:0 "The scientific community, feeling undervalued and constrained by conservative forces, has taken control of the government, prioritizing research and innovation above all else. While promising progress, this shift risks alienating traditional power bases."
+ gmina_estate_disasters.15.a:0 "The era of enlightenment begins."
+ gmina_estate_disasters.15.a.tt:0 "This will start the 'Intellectual Supremacy' disaster, increasing technology cost but providing bonuses to innovativness and all power cost."
+#Scientists end
+ gmina_estate_disasters.16.t:0 "A Return to Pragmatism"
+ gmina_estate_disasters.16.d:0 "After a period of remarkable scientific advancement and societal upheaval, pragmatism has prevailed over idealism. While the importance of science is acknowledged, a more balanced approach to governance has been restored."
+ gmina_estate_disasters.16.a:0 "A blend of tradition and innovation."
+ gmina_estate_disasters.16.a.tt:0 "Ends the 'Intellectual Supremacy' disaster, reducing technology costs and stabilizing society."
+#Investors start
+ estate_investors_disaster:0 "Capitalist Oligarchy"
+ gmina_estate_disasters.17.t:0 "The Wealthy Cabal"
+ gmina_estate_disasters.17.d:0 "A small group of powerful investors, driven by profit motives, has monopolized economic decision-making, dictating policies that favor their interests at the expense of the common populace. Economic inequality widens as the gap between the rich and the poor reaches alarming levels."
+ gmina_estate_disasters.17.a:0 "Profit over people."
+ gmina_estate_disasters.17.a.tt:0 "This will initiate the 'Capitalist Oligarchy' disaster, increasing income inequality and reducing social mobility."
+#Investors end
+ gmina_estate_disasters.18.t:0 "Reforming Economic Structures"
+ gmina_estate_disasters.18.d:0 "Public outcry and internal dissent have forced the government to implement reforms aimed at curbing the influence of the capitalist oligarchy. While significant challenges remain, these reforms mark a step towards a more equitable economic system."
+ gmina_estate_disasters.18.a:0 "A fairer distribution of wealth."
+ gmina_estate_disasters.18.a.tt:0 "Ends the 'Capitalist Oligarchy' disaster, reducing income inequality but risking investor confidence."
+#Priests start
+ estate_priests_disaster:0 "Theocratic Rule"
+ gmina_estate_disasters.19.t:0 "Divine Mandate"
+ gmina_estate_disasters.19.d:0 "The clergy, emboldened by religious fervor and wielding significant influence over the masses, has seized control of the state, establishing a theocratic regime where religious law reigns supreme. Dissent is branded as heresy, and those who oppose the clergy face severe consequences."
+ gmina_estate_disasters.19.a:0 "Theocracy over democracy."
+ gmina_estate_disasters.19.a.tt:0 "This will start the 'Theocratic Rule' disaster, increasing stability but severely limiting freedoms and potentially sparking religious conflict."
+#Priests end
+ gmina_estate_disasters.20.t:0 "Secular Reforms"
+ gmina_estate_disasters.20.d:0 "Internal dissent and external pressure have compelled the government to enact secular reforms, separating church and state and guaranteeing religious freedom for all citizens. While the clergy retains significant influence, their power is now checked by the rule of law."
+ gmina_estate_disasters.20.a:0 "A modern state for all faiths."
+ gmina_estate_disasters.20.a.tt:0 "Ends the 'Theocratic Rule' disaster, restoring some civil liberties but risking religious unrest."
+#Miners start
+ estate_miners_disaster:0 "Mining Monopoly"
+ gmina_estate_disasters.21.t:0 "Coalition of the Depths"
+ gmina_estate_disasters.21.d:0 "The mining guilds, wielding immense economic power, have formed a cartel that monopolizes the extraction and trade of precious minerals. This stranglehold on the economy threatens to stifle innovation and perpetuate economic dependency on mining."
+ gmina_estate_disasters.21.a:0 "Profits from the earth."
+ gmina_estate_disasters.21.a.tt:0 "This will initiate the 'Mining Monopoly' disaster, increasing income from mining but stifling economic diversification."
+#Miners end
+ gmina_estate_disasters.22.t:0 "Diversifying Economic Foundations"
+ gmina_estate_disasters.22.d:0 "In response to growing concerns over economic dependence on mining, the government has implemented policies aimed at diversifying the economy. While the mining guilds resist these changes, progress towards a more balanced economic structure is slowly made."
+ gmina_estate_disasters.22.a:0 "Beyond the depths."
+ gmina_estate_disasters.22.a.tt:0 "Ends the 'Mining Monopoly' disaster, promoting economic diversification but potentially angering mining interests."

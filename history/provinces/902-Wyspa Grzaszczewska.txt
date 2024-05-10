@@ -3,3 +3,6 @@ discovered_by = eastern
 discovered_by = ottoman
 religion = communism_pzpr
 is_city = no
+add_core = P14
+owner = P14
+controller = P14

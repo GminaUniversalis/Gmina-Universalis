@@ -15,3 +15,5 @@ controller = L26
 discovered_by = ottoman
 add_core = L26
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_consumer_goods_trade_good

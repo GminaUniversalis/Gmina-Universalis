@@ -14,3 +14,5 @@ controller = Q22
 discovered_by = ottoman
 add_core = Q22
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_wheat_trade_good

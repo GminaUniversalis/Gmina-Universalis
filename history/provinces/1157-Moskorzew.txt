@@ -13,3 +13,5 @@ owner = M02
 controller = M02
 add_core = M02
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_vodka_trade_good

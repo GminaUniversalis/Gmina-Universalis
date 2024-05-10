@@ -13,3 +13,5 @@ owner = G28
 controller = G28
 add_core = G28
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_triticale_trade_good

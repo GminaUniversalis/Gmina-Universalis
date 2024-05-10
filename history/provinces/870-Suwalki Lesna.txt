@@ -14,3 +14,5 @@ controller = N23
 discovered_by = ottoman
 add_core = N23
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_consumer_goods_trade_good

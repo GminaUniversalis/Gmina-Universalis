@@ -1,0 +1,570 @@
+namespace = gmina_setup
+
+country_event = {
+	id = gmina_setup.0
+	title = gmina_setup.0.title
+	desc = gmina_setup.0.desc
+	picture = MARCHING_PEASANTS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			ai = no
+			ai = yes
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = gmina_setup.0.a 
+
+		hidden_effect = {
+			#Another redundancy
+			country_event = {
+				id = gmina_setup.1
+				days = 2
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_estate_land_share = {
+				estate = estate_retirees
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_families
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_ub
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_army
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_ub
+				share = 50
+			}
+			change_estate_land_share = {
+				estate = estate_army
+				share = 50
+			}
+			add_estate_loyalty = {
+				estate = estate_ub
+				loyalty = 20
+			}
+			add_estate_loyalty = {
+				estate = estate_army
+				loyalty = 20
+			}
+		}
+
+	#Most of this stuff is just redundancy
+	#Farmers
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = estate_picked_farmers
+				}
+
+				OR = {
+					AND = {
+						any_owned_province = {
+							farmlands = 5 
+						}
+						NOT = { religion_group = communism_group }
+					}
+					AND = {
+						any_owned_province = {
+							grasslands = 10
+					   }
+					   NOT = { religion_group = communism_group }
+					}
+	
+					capital_scope = {
+						OR = {
+							region = lubelskie_region
+							region = wielkopolska_region
+							region = kujawsko_pomorskie_region
+						}
+					}
+				}
+			}
+
+			set_country_flag = estate_picked_farmers
+			set_country_flag = has_estate_picked_flag
+		}
+	#Investors
+		else_if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_country_flag = estate_picked_investors
+						has_country_flag = estate_picked_farmers
+					}
+				}
+
+				NOT = { religion_group = communism_group }
+			
+				OR = {
+	
+					colony = 1
+					
+					AND = {
+						gu_finances = 1
+						NOT = { current_age = age_of_discovery }
+					}
+		
+					NOT = { 
+						OR = {
+							current_age = age_of_discovery
+							current_age = age_of_reformation
+						}
+					}
+		
+				}
+			}
+
+			set_country_flag = estate_picked_investors
+			set_country_flag = has_estate_picked_flag
+		}
+	#Miners
+		else_if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_country_flag = estate_picked_miners
+						has_country_flag = estate_picked_investors
+						has_country_flag = estate_picked_farmers
+					}
+				}
+
+				OR = {
+					AND = {
+						gu_coal = 5
+						NOT = {
+							capital_scope = {
+								OR = {
+									region = dolnoslaskie_region
+									region = opolskie_region
+									region = slaskie_region
+								}
+							}
+						}
+					}
+					AND = {
+						NOT = {
+							gu_coal = 5
+						}
+						capital_scope = {
+							OR = {
+								region = dolnoslaskie_region
+								region = opolskie_region
+								region = slaskie_region
+							}
+						}
+					}
+				}
+			}
+
+			set_country_flag = estate_picked_miners
+			set_country_flag = has_estate_picked_flag
+		}
+	#Scientists
+		else_if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_country_flag = estate_picked_scientists
+						has_country_flag = estate_picked_miners
+						has_country_flag = estate_picked_investors
+						has_country_flag = estate_picked_farmers
+					}
+				}
+
+				AND = {
+					innovativeness = 50
+					NOT = { 
+						religion_group = communism_group
+					}
+				}
+
+			}
+
+			set_country_flag = estate_picked_scientists
+			set_country_flag = has_estate_picked_flag
+		}
+		hidden_effect = { country_event = { id = gmina_setup.1 } }
+	}
+}
+
+country_event = {
+	id = gmina_setup.1
+	title = gmina_setup.1.title
+	desc = gmina_setup.1.desc
+	picture = MARCHING_PEASANTS_eventPicture
+
+	#fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	# trigger = {
+	# 	OR = {
+	# 		ai = no
+	# 		ai = yes
+	# 	}
+	# }
+
+	#Estates setup
+	option = {
+		name = gmina_setup.1.a
+
+#Miners
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_miners_definer
+					}
+					has_estate = estate_miners
+				}
+			}
+
+			if = {
+				limit = { current_age = age_of_discovery }
+
+				set_estate_privilege = estate_miners_state_owned_industry
+			}
+
+			else_if = {
+				limit = { NOT = { current_age = age_of_discovery } }
+
+				set_estate_privilege = privatized_industry
+			}
+
+			set_country_flag = picked_miners_definer
+
+		}
+#Scientists
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_scientists_definer
+					}
+					has_estate = estate_scientists
+				}
+
+			}
+
+			if = {
+				limit = { current_age = age_of_discovery }
+				#Dummy 
+			}
+			
+			else_if = {
+				limit = { 
+					NOT = { 
+						current_age = age_of_discovery 
+					} 
+					innovativness = 50
+				}
+				set_estate_privilege = estate_scientists_polish_thought
+			}
+			
+			set_country_flag = picked_scientists_definer
+
+		}
+		
+#Investors
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_investors_definer
+					}
+					has_estate = estate_inverstors
+				}
+
+			}
+			if = {
+				limit = { current_age = age_of_discovery }
+				#Dummy
+			}
+			else_if = {
+				limit = {
+					OR = {
+						colony = 1
+						AND = {
+							gu_finances = 1
+							NOT = {	current_age = age_of_discovery }
+						}
+			
+						   NOT = { 
+							OR = {
+								current_age = age_of_discovery
+								current_age = age_of_reformation
+							}
+							religion_group = communism_group
+						}
+					}
+				}
+				set_estate_privilege = estate_investors_support_local_corporations
+			}
+			
+			set_country_flag = picked_investors_definer
+
+		}
+#Farmers
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_farmers_definer
+					}
+					has_estate = estate_farmers
+				}
+
+			}
+			if = {
+				limit = {
+					OR = {
+						any_owned_province = {
+							has_terrain = farmlands 
+							value = 5
+						}
+						any_owned_province = {
+							has_terrain = grasslands
+							value = 10
+						}
+			
+					}
+					NOT = { 
+						religion_group = communism_group
+					}
+				}
+				
+				set_estate_privilege = estate_farmers_natural_farming
+			}
+			
+			set_country_flag = picked_farmers_definer
+
+		}
+#Retirees
+		if = {
+			limit  = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_retirees_definer
+				   }	
+				   has_estate = estate_reitrees
+				}
+
+			}
+			if = {
+				limit = {
+					#Dummy
+				}
+				#Dummy
+			}
+			else_if = {
+				limit = {
+					#Dummy
+				}
+				#Dummy
+			}
+			#TBD
+			#set_country_flag = picked_retirees_definer
+
+		}
+#Banks
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_banks_definer
+					}
+					has_estate = estate_banks
+				}
+			}
+			if = {
+				limit = {
+					NOT = { 
+						religion_group = communism_group
+					}
+				}
+
+				set_estate_privilege = estate_banks_free_banks
+			}
+			else_if = { 
+				limit = {
+					religion_group = communism_group
+				}
+				#For later use
+				set_estate_privilege = estate_banks_state_controlled
+			}
+
+			set_country_flag = picked_banks_definer
+
+		}
+#Priests		
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_priests_definer
+					}
+					has_estate = estate_priests
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						religion_group = communism_group
+					}
+				}
+
+				set_estate_privilege = estate_priests_subsidies_from_state
+			}
+			else_if = {
+				limit = {
+					religion_group = communism_group
+				}
+				#For later use / Dummy
+				set_estate_privilege = separation_from_state
+
+			}
+
+			set_country_flag = picked_priests_definer
+
+		}
+#Families
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_families_definer
+					}
+					has_estate = estate_families
+				}
+			}
+			if = {
+				limit = {
+					current_age = age_of_discovery
+				}
+				set_estate_privilege = estate_families_old_model
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						current_age = age_of_discovery
+					}
+				}
+			}
+
+			set_country_flag = picked_families_definer
+
+		}
+#Middle Class
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_middle_class_definer
+					}
+					has_estate = estate_middle_class
+				}
+			}
+			if = {
+				limit = {
+					NOT = { 
+						religion_group = communism_group
+					}
+				}
+				set_estate_privilege = estate_middle_early_polish_model
+			}
+			else_if = {
+				limit = {
+					religion_group = communism_group
+				}
+				set_estate_privilege = estate_middle_class_soviet_model
+			}
+			
+			set_country_flag = picked_middle_class_definer
+
+		}
+#Repression Apparatus
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_ub_definer
+					}
+					has_estate = estate_ub
+				}
+			}
+				if = {
+					limit = {
+						religion_group = communism_group
+					}
+
+					set_estate_privilege = estate_ub_grasp_over_police
+					set_estate_privilege = estate_ub_grasp_over_politics
+					set_estate_privilege = estate_ub_grasp_over_economy
+					set_estate_privilege = estate_ub_classes_opression
+				}
+				else_if = {
+					limit = {
+						religion_group = communism_group
+						NOT = {
+							current_age = age_of_discovery
+						}
+					}
+					
+					set_estate_privilege = estate_ub_iron_propaganda
+				}
+			
+			#TBD
+			#set_country_flag = picked_ub_definer
+
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_country_flag = picked_army_definer
+					}
+					has_estate = estate_army
+				}
+			}
+
+			if = {
+				limit = {
+					religion_group = communism_group
+				}
+				
+				set_estate_privilege = estate_army_old_doctrine
+			}
+
+			else_if = {
+				limit = {
+					NOT = {
+						religion_group = communism_group
+					}
+					set_estate_privilege = estate_army_new_doctrine
+				}
+			}
+			
+			set_country_flag = picked_army_definer
+		}
+			
+		
+	}
+
+}

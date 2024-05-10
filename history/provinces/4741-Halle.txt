@@ -14,3 +14,5 @@ controller = H09
 add_core = H09
 hre = yes
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_glass_trade_good

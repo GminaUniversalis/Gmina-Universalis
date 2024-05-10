@@ -13,3 +13,5 @@ owner = I01
 controller = I01
 add_core = I01
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_sulfur_trade_good

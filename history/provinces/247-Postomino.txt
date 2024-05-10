@@ -13,3 +13,5 @@ owner = P01
 controller = P01
 add_core = P01
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_tourists_trade_good

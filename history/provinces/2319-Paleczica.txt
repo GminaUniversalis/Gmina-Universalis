@@ -13,3 +13,5 @@ owner = X09
 controller = X09
 add_core = X09
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_barley_trade_good

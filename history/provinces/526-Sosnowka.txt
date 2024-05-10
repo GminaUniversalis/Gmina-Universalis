@@ -13,3 +13,5 @@ owner = U09
 controller = U09
 add_core = U09
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_mushrooms_trade_good

@@ -13,3 +13,5 @@ owner = P05
 controller = P05
 add_core = P05
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_lumber_trade_good

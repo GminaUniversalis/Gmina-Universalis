@@ -16,3 +16,5 @@ owner = Y21
 controller = Y21
 fort_15th = yes
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_paper_trade_good

@@ -13,3 +13,5 @@ owner = U13
 controller = U13
 add_core = U13
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_maize_trade_good

@@ -8,6 +8,7 @@ country_event = {
 	picture = SYNTHETICS_eventPicture
 	
 	trigger = {
+		ai = no
 		NOT = { tag = SYN }
 		any_province = {
 			owned_by = SYN

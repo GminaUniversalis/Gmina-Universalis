@@ -14,3 +14,5 @@ controller = J13
 add_core = J13
 discovered_by = ottoman
 add_core = J14
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_dairy_trade_good

@@ -15,3 +15,5 @@ discovered_by = ottoman
 add_core = N21
 
 
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_beer_trade_good

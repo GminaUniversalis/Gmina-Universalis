@@ -4,6 +4,7 @@
 
 #Base resources
 grain = {
+	is_latent = yes
 	color = { 0 0 0 }
 	modifier = {
 		land_forcelimit_modifier = 0.20
@@ -722,6 +723,7 @@ tropical_wood = {
 
 livestock = {
 	color = { 0 0 0 }
+	is_latent = yes
 	modifier = {
 		cavalry_cost = -0.1
 	}
@@ -820,47 +822,20 @@ gems = {
 }
 
 coal = {
-	color = { 0.0 1.0 1.0 }
+	color = { 0.0 9.0 5.0 }
 	is_latent = yes
 	is_valuable = yes
 
 	rnw_latent_chance = 7 # Kind of on average how many provinces we want to spawn with it
 	
 	trigger = {
-		OR = {
-			development_discounting_tribal = 20
-			owner = { innovativeness = 20 }
-		}
-		if = {
-			limit = {
-				owner = {
-					NOT = { has_country_flag = earlier_coal_available }
-				}
-			}
-			provincial_institution_progress = {
-				which = enlightenment
-				value = 100
-			}
-			owner = { has_institution = enlightenment }
-		}
-		else = {
-			provincial_institution_progress = {
-				which = manufactories
-				value = 100
-			}
-			owner = {
-				has_institution = manufactories
-				adm_tech = 23
-			}
-		}
+
 	}
 	
 	modifier = {
-		global_trade_goods_size_modifier = 0.1
 	}
 	
 	province = {
-		local_state_maintenance_modifier = -0.2
 	}
 
 	chance = {
@@ -887,7 +862,7 @@ gu_coal = {
 		artillery_cost = -0.10
 	}
 	province = {
-		local_state_maintenance_modifier = -0.20
+		infantry_cost = -0.01
 	}
 	chance = {
 		factor = 3

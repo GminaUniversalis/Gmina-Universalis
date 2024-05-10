@@ -13,3 +13,5 @@ owner = U06
 controller = U06
 add_core = U06
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_confectionery_trade_good

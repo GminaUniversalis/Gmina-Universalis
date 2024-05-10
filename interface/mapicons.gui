@@ -958,7 +958,7 @@ guiTypes = {
 		
 		iconType = {
 			name ="mothball"
-			spriteType = "GFX_unitpanel_mothball"
+			spriteType = "GFX_unitpanel_mothball_map"
 			position = { x= 76 y = 35 }
 		}
 		

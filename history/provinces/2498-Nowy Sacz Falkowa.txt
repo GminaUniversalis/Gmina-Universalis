@@ -13,3 +13,5 @@ owner = X22
 controller = X22
 discovered_by = ottoman
 add_core = X22
+set_province_flag = has_static_trade_good
+set_province_flag = has_fur_trade_good

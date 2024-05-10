@@ -13,3 +13,5 @@ owner = J08
 controller = J08
 add_core = J08
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_fish_trade_good

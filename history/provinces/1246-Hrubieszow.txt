@@ -13,3 +13,5 @@ owner = U15
 controller = U15
 add_core = U15
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_hemp_trade_good

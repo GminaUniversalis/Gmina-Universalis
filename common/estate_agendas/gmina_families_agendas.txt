@@ -29,23 +29,23 @@ estate_families_hire_advisor = {
 	}
 	}
 	task_completed_effect = {
-	on_completed_agenda_effect = {
-		estate = estate_families
-	}
+		on_completed_agenda_effect = {
+			estate = estate_families
+		}
 	add_estate_loyalty = {
 		estate = estate_families
 		loyalty = 10
 	}
 	}
 	failing_effect = {
-	on_failed_agenda_effect = yes
-	clr_auto_complete_flag = yes
-	add_estate_loyalty_modifier = {
-		estate = estate_families
-		desc = EST_VAL_AGENDA_DENIED
-		loyalty = -5
-		duration = 7300
-	}
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		add_estate_loyalty_modifier = {
+			estate = estate_families
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+		}
 	}
 }
 estate_families_build_temple_in_y = {

@@ -14,3 +14,5 @@ controller = A16
 add_core = A16
 hre = yes
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_cloth_trade_good

@@ -14,3 +14,5 @@ controller = U12
 add_core = U12
 discovered_by = ottoman
 add_core = U21
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_triticale_trade_good

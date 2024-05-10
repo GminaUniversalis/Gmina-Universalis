@@ -1,7 +1,10 @@
 estate_middle_class = {
-    icon = 1
+    icon = 9
     trigger = {
-        always = no
+        always = yes
+		NOT = { 
+			religion_group = communism_group
+		}
     }
     country_modifier_happy = {
 		production_efficiency = 0.4
@@ -36,15 +39,24 @@ estate_middle_class = {
     land_ownership_modifier = {
 		middle_class_loyalty_modifier = 0.5
 	}
-    base_influence = 15
+    base_influence = 40
     contributes_to_curia_treasury = no
-    color = { 180 10 10 }
+    color = { 255 172 248 }
     privileges = {
-		estate_retirees_land_rights
-     }
-	 privileges = {
-		estate_retirees_13
-	 }
+		estate_middle_class_land_rights
+		estate_middle_class_empty_promises
+		estate_middle_class_low_taxes
+		estate_middle_class_high_taxes
+		estate_middle_class_very_high_taxes
+		estate_middle_class_allow_exclusive_goods
+		estate_middle_class_accept_aspirations
+		estate_middle_class_american_model
+		estate_middle_early_polish_model
+		estate_middle_class_european_model
+		estate_middle_class_soviet_model
+		estate_middle_class_japan_model
+
+	}
      agendas = {
 		estate_middle_class_hire_advisor
      }

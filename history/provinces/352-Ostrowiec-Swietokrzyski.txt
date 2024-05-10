@@ -14,3 +14,5 @@ controller = M11
 add_core = M11
 discovered_by = ottoman
 center_of_trade = 1
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_metalworking_trade_good

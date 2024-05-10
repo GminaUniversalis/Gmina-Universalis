@@ -15,3 +15,5 @@ controller = L32
 discovered_by = ottoman
 add_core = L32
 latent_trade_goods = { gu_finances }
+set_province_flag = has_static_trade_good
+set_province_flag = has_{ gu_finances }_trade_good

@@ -7,3 +7,5 @@ trade_goods = gu_vehicles
 discovered_by = western
 discovered_by = eastern
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_vehicles_trade_good

@@ -13,3 +13,5 @@ owner = Q09
 controller = Q09
 add_core = Q09
 discovered_by = ottoman
+set_province_flag = has_static_trade_good
+set_province_flag = has_gu_metalworking_trade_good
