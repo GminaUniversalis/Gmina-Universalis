@@ -179,6 +179,15 @@ initialize_schools_effect = { #Used in on_startup on_action
 on_new_monarch_effect = {
 	if = {
 		limit = {
+			has_government_attribute = orangist_cause
+		}
+		set_variable = {
+			which = NEDOrangistCauseVar
+			value = 0
+		}
+	}
+	if = {
+		limit = {
 			has_consort_regency = no
 			any_owned_province = {
 				has_province_modifier = domain_of_spouses_family
@@ -1364,6 +1373,34 @@ on_province_owner_change_government_effect = {
 	}
 	if = {
 		limit = {
+			trade_goods = paper
+			owner = {
+				has_government_attribute = GER_buff_paper_provinces
+			}
+		}
+		add_province_modifier = { 
+			name = GER_paper_provinces_franconian
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+				trade_goods = gold
+			}
+			owner = {
+				has_government_attribute = GER_buff_mining_provinces
+			}
+		}
+		add_province_modifier = { 
+			name = GER_mining_provinces_saxon
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
 			has_province_modifier = grain_vodka_bonus_prod
 			FROM = { has_government_attribute = extra_trade_goods_from_grain }
 			NOT = { owner = { has_government_attribute = extra_trade_goods_from_grain } }
@@ -1529,6 +1566,13 @@ on_province_owner_change_government_effect = {
 			name = gov_coastal_government
 			duration = -1
 		}
+	}
+	if = {
+		limit = {
+			has_owner_culture = yes
+			owner = { has_government_attribute = can_recruit_banners_from_primary_culture_provinces }
+		}
+		add_province_modifier = { name = mongol_banners_location duration = -1 hidden = yes }
 	}
 }
 
@@ -1722,6 +1766,48 @@ on_trade_good_changed_government_effect = {
 		remove_province_modifier = grain_bonus_prod
 	}
 	if = {
+		limit = {
+			owner = {
+				has_government_attribute = GER_buff_paper_provinces
+			}
+		}
+		if = {
+			limit = {
+				trade_goods = paper
+			}
+			add_province_modifier = { 
+				name = GER_paper_provinces_franconian
+				duration = -1
+			}
+		}
+		else = {
+			remove_province_modifier = GER_paper_provinces_franconian
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = GER_buff_mining_provinces
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+					trade_goods = gold
+				}
+			}
+			add_province_modifier = { 
+				name = GER_mining_provinces_saxon
+				duration = -1
+			}
+		}
+		else = {
+			remove_province_modifier = GER_mining_provinces_saxon
+		}
+	}
+	if = {
 		limit = { owner = { has_government_attribute = extra_trade_goods_from_grain } }
 		if = {
 			limit = { trade_goods = grain }
@@ -1783,6 +1869,61 @@ on_trade_good_changed_government_effect = {
 }
 
 on_battle_won_unit_effect = {
+	if = {
+		limit = {
+			unit_owner = {
+				has_government_mechanic = divine_authority_mechanic
+			}
+			is_ruler_commanding_unit = yes
+		}
+		unit_owner = {
+			set_variable = {
+				which = monarch_kill
+				which = land_units_killed
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = monarch_kill
+						value = 100
+					}
+				}
+				change_variable = {
+					which = monarch_kill
+					value = -100
+				}
+				add_government_power = { 
+					mechanic_type = divine_authority_mechanic 
+					power_type = divine_authority
+					value = 0.01
+				}
+			}
+		}
+	}
+	if = {
+        limit = {
+            unit_owner = {
+                has_government_attribute = orangist_cause
+				is_orangists_in_power = yes
+            }
+            is_ruler_commanding_unit = yes
+        }
+        unit_owner = {
+			change_variable = {
+				which = NEDOrangistCauseVar
+				value = 1
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = NEDOrangistCauseVar
+						value = 25
+					}
+				}
+				add_ruler_personality = orangist_stadholder_personality
+			}
+        }
+	}
 	if = {
 		limit = {
 			unit_owner = {
@@ -1862,6 +2003,46 @@ on_battle_won_unit_effect = {
 }
 
 on_battle_lost_unit_effect = {
+	if = {
+		limit = {
+			unit_owner = {
+				has_government_mechanic = divine_authority_mechanic
+			}
+			is_ruler_commanding_unit = yes
+		}
+		unit_owner = {
+			set_variable = {
+				which = monarch_kill
+				which = land_units_killed
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = monarch_kill
+						value = 100
+					}
+				}
+				change_variable = {
+					which = monarch_kill
+					value = -100
+				}
+				add_government_power = { 
+					mechanic_type = divine_authority_mechanic 
+					power_type = divine_authority
+					value = 0.01
+				}
+			}
+		}
+	}
+	if = {
+        limit = {
+            unit_owner = {
+                has_government_attribute = orangist_cause
+				is_orangists_in_power = yes
+            }
+            is_ruler_commanding_unit = yes
+        }
+	}
 	if = {
 		limit = {
 			unit_owner = {
@@ -2256,81 +2437,88 @@ judaism_on_religion_change_effect = {
 	}
 }
 
-on_culture_demoted_effect_free_slot_removal = {
-	if = { 
-		limit = { 
-			has_country_modifier = free_slot_for_$culture$ 
-			NOT = { accepted_culture = $culture$ } 
-			NOT = { primary_culture = $culture$ } 
-		} 
-		remove_country_modifier = free_slot_for_$culture$ 
-	}
-}
-
-on_culture_demoted_effect_remove_all_free_slots = {
-	on_culture_demoted_effect_free_slot_removal = { culture = armenian }
-	on_culture_demoted_effect_free_slot_removal = { culture = georgian }
-	on_culture_demoted_effect_free_slot_removal = { culture = turkish }
-	on_culture_demoted_effect_free_slot_removal = { culture = al_iraqiya_arabic }
-	on_culture_demoted_effect_free_slot_removal = { culture = al_suryah_arabic }
-}
+#on_culture_demoted_effect_free_slot_removal = {
+#	if = { 
+#		limit = { 
+#			has_country_modifier = free_slot_for_$culture$ 
+#			NOT = { accepted_culture = $culture$ } 
+#			NOT = { primary_culture = $culture$ } 
+#		} 
+#		remove_country_modifier = free_slot_for_$culture$ 
+#	}
+#}
+#
+#on_culture_demoted_effect_remove_all_free_slots = {
+#	on_culture_demoted_effect_free_slot_removal = { culture = armenian }
+#	on_culture_demoted_effect_free_slot_removal = { culture = georgian }
+#	on_culture_demoted_effect_free_slot_removal = { culture = turkish }
+#	on_culture_demoted_effect_free_slot_removal = { culture = al_iraqiya_arabic }
+#	on_culture_demoted_effect_free_slot_removal = { culture = al_suryah_arabic }
+#	on_culture_demoted_effect_free_slot_removal = { culture = occitain }
+#}
 
 #Country effect
 on_culture_demoted_effect = {
-	if = {
-		limit = {
-			has_country_modifier = plc_polish_lithuanian_union
-			OR = {
-				AND = {
-					primary_culture = polish
-					NOT = { accepted_culture = lithuanian }
-				}
-				AND = {
-					primary_culture = lithuanian
-					NOT = { accepted_culture = polish }
-				}
-				AND = {
-					OR = {
-						NOT = { accepted_culture = lithuanian }
-						NOT = { accepted_culture = polish }
-					}
-					NOT = { primary_culture = polish }
-					NOT = { primary_culture = lithuanian }
-				}
-			}
-		}
-		remove_country_modifier = plc_polish_lithuanian_union
-	}
-	if = {
-		limit = {
-			has_country_modifier = teu_pru_integration_of_the_poles
-			NOT = { accepted_culture = polish }
-			NOT = { primary_culture = polish }
-		}
-		remove_country_modifier = teu_pru_integration_of_the_poles
-	}
-	if = {
-		limit = {
-			has_country_modifier = teu_pru_integration_of_the_ruthenians
-			NOT = { accepted_culture = polish }
-			NOT = { primary_culture = polish }
-		}
-		remove_country_modifier = teu_pru_integration_of_the_ruthenians
-	}	
-	if = {
-		limit = {
-			has_country_modifier = dan_estonian_culture_accepted
-			NOT = { accepted_culture = estonian }
-			NOT = { primary_culture = estonian }
-		}
-		remove_country_modifier = dan_estonian_culture_accepted
-		every_owned_province = {
-			limit = {
-				has_province_modifier = dan_estonian_support
-			}
-			remove_province_modifier = dan_estonian_support
-		}
-	}
+	#if = {
+	#	limit = {
+	#		has_country_flag = boh_czechoslovak_brotherhood_flag
+	#		NOT = {
+	#			accepted_culture = slovak
+	#		}
+	#		has_country_modifier = boh_czechoslovak_brotherhood
+	#	}
+	#	remove_country_modifier = boh_czechoslovak_brotherhood
+	#}
+	#if = {
+	#	limit = {
+	#		has_country_flag = hun_polish_culture_bonus
+	#		NOT = {
+	#			accepted_culture = polish
+	#		}
+	#		has_country_modifier = hun_polish_brotherhood
+	#	}
+	#	remove_country_modifier = hun_polish_brotherhood
+	#}
+	#if = {
+	#	limit = {
+	#		has_country_modifier = plc_polish_lithuanian_union
+	#		OR = {
+	#			AND = {
+	#				primary_culture = polish
+	#				NOT = { accepted_culture = lithuanian }
+	#			}
+	#			AND = {
+	#				primary_culture = lithuanian
+	#				NOT = { accepted_culture = polish }
+	#			}
+	#			AND = {
+	#				OR = {
+	#					NOT = { accepted_culture = lithuanian }
+	#					NOT = { accepted_culture = polish }
+	#				}
+	#				NOT = { primary_culture = polish }
+	#				NOT = { primary_culture = lithuanian }
+	#			}
+	#		}
+	#	}
+	#	remove_country_modifier = plc_polish_lithuanian_union
+	#}
+	#if = {
+	#	limit = {
+	#		has_country_modifier = teu_pru_integration_of_the_poles
+	#		NOT = { accepted_culture = polish }
+	#		NOT = { primary_culture = polish }
+	#	}
+	#	remove_country_modifier = teu_pru_integration_of_the_poles
+	#}
+	#if = {
+	#	limit = {
+	#		has_country_modifier = teu_pru_integration_of_the_ruthenians
+	#		NOT = { accepted_culture = polish }
+	#		NOT = { primary_culture = polish }
+	#	}
+	#	remove_country_modifier = teu_pru_integration_of_the_ruthenians
+	#}	
 	if = {
 		limit = {
 			has_country_modifier = tur_legitimate_roman_empire_modifier
@@ -2457,6 +2645,35 @@ on_culture_demoted_effect = {
 		}
 		remove_country_modifier = turkmen_turkic_union
 	}
+	if = {
+		limit = {
+			has_country_modifier = feo_russian_tolerance
+			NOT = {
+				accepted_culture = russian
+				accepted_culture = novgorodian
+				accepted_culture = ryazanian
+				accepted_culture = byelorussian
+				accepted_culture = ruthenian
+			}
+		}
+		remove_country_modifier = feo_russian_tolerance
+	}
+	if = {
+		limit = {
+			has_government_attribute = negate_unaccepted_levantine_culture
+		}
+		every_owned_province = {
+			limit = {
+				culture_group = turko_semitic
+				has_owner_accepted_culture = no
+				NOT = { has_province_modifier = hsn_ayyubid_tolerance }
+			}
+			add_province_modifier = {
+				name = hsn_ayyubid_tolerance
+				duration = -1
+			}
+		}
+	}
 }
 
 #Country effect
@@ -2499,6 +2716,19 @@ judaism_on_culture_country_effect = {
 			}
 		}
 	}
+	if = {
+        limit = {
+            has_government_attribute = negate_unaccepted_levantine_culture
+        }
+        every_owned_province = {
+            limit = {
+                culture_group = turko_semitic
+                has_owner_accepted_culture = yes
+                has_province_modifier = hsn_ayyubid_tolerance
+            }
+            remove_province_modifier = hsn_ayyubid_tolerance
+        }
+    }
 }
 
 #Province effect
@@ -2779,18 +3009,46 @@ remove_all_age_of_discovery_modifiers = {
 		limit = {
 			NOT = { current_age = age_of_discovery }
 		}
-		# if = {
-		# 	limit = { has_country_modifier = eng_a_house_united }
-		# 	remove_country_modifier = eng_a_house_united
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = eng_jousting_tournaments }
-		# 	remove_country_modifier = eng_jousting_tournaments
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = YEM_rise_of_yemen }
-		# 	remove_country_modifier = YEM_rise_of_yemen
-		# }
+		if = {
+			limit = { has_country_modifier = eng_a_house_united }
+			remove_country_modifier = eng_a_house_united
+		}
+		if = {
+			limit = { has_country_modifier = eng_jousting_tournaments }
+			remove_country_modifier = eng_jousting_tournaments
+		}
+		if = {
+			limit = { has_country_modifier = YEM_rise_of_yemen }
+			remove_country_modifier = YEM_rise_of_yemen
+		}
+		if = {
+			limit = { has_country_modifier = INC_bowmen_from_the_jungle }
+			remove_country_modifier = INC_bowmen_from_the_jungle
+		}
+		if = {
+			limit = { has_country_modifier = MAY_religion_reformed }
+			remove_country_modifier = MAY_religion_reformed
+		}
+		if = {
+			limit = { has_country_modifier = MAY_mayan_canoes }
+			remove_country_modifier = MAY_mayan_canoes
+		}
+		if = {
+			limit = { has_country_modifier = MUG_gunpowder_pioneers }
+			remove_country_modifier = MUG_gunpowder_pioneers
+		}
+		if = {
+			limit = { has_country_modifier = MUG_heir_of_timur }
+			remove_country_modifier = MUG_heir_of_timur
+		}
+		if = {
+			limit = { has_country_modifier = TIM_timurid_empire_modifier }
+			remove_country_modifier = TIM_timurid_empire_modifier
+		}
+		if = {
+			limit = { has_country_modifier = hab_onwards_for_glory }
+			remove_country_modifier = hab_onwards_for_glory
+		}
 	}
 }
 remove_all_age_of_reformation_modifiers = {
@@ -2798,51 +3056,107 @@ remove_all_age_of_reformation_modifiers = {
 		limit = {
 			NOT = { current_age = age_of_reformation }
 		}
-		# if = {
-		# 	limit = { has_country_modifier = eng_the_age_of_reformation }
-		# 	remove_country_modifier = eng_the_age_of_reformation
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = eng_reformer_ruler }
-		# 	remove_country_modifier = eng_reformer_ruler
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = eng_catholic_ruler }
-		# 	remove_country_modifier = eng_catholic_ruler
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = eng_tolerant_ruler }
-		# 	remove_country_modifier = eng_tolerant_ruler
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = eng_reformer_ruler_for_catholic_gb }
-		# 	remove_country_modifier = eng_reformer_ruler_for_catholic_gb
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = eng_catholic_ruler_for_reformed_gb }
-		# 	remove_country_modifier = eng_catholic_ruler_for_reformed_gb
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = BYZ_ceasarean_conquests }
-		# 	remove_country_modifier = BYZ_ceasarean_conquests
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = BYZ_economic_intimidation }
-		# 	remove_country_modifier = BYZ_economic_intimidation
-		# }
-		# if = {
-		# 	limit = { has_country_modifier = BYZ_roman_vigour }
-		# 	remove_country_modifier = BYZ_roman_vigour
-		# }
+		if = {
+			limit = { has_country_modifier = eng_the_age_of_reformation }
+			remove_country_modifier = eng_the_age_of_reformation
+		}
+		if = {
+			limit = { has_country_modifier = eng_reformer_ruler }
+			remove_country_modifier = eng_reformer_ruler
+		}
+		if = {
+			limit = { has_country_modifier = eng_catholic_ruler }
+			remove_country_modifier = eng_catholic_ruler
+		}
+		if = {
+			limit = { has_country_modifier = eng_tolerant_ruler }
+			remove_country_modifier = eng_tolerant_ruler
+		}
+		if = {
+			limit = { has_country_modifier = eng_reformer_ruler_for_catholic_gb }
+			remove_country_modifier = eng_reformer_ruler_for_catholic_gb
+		}
+		if = {
+			limit = { has_country_modifier = eng_catholic_ruler_for_reformed_gb }
+			remove_country_modifier = eng_catholic_ruler_for_reformed_gb
+		}
+		if = {
+			limit = { has_country_modifier = BYZ_ceasarean_conquests }
+			remove_country_modifier = BYZ_ceasarean_conquests
+		}
+		if = {
+			limit = { has_country_modifier = BYZ_economic_intimidation }
+			remove_country_modifier = BYZ_economic_intimidation
+		}
+		if = {
+			limit = { has_country_modifier = BYZ_roman_vigour }
+			remove_country_modifier = BYZ_roman_vigour
+		}
+		if = {
+			limit = { has_country_modifier = ITA_latin_tiara }
+			remove_country_modifier = ITA_latin_tiara
+		}
+		if = {
+			limit = { has_country_modifier = ITA_triumph_for_hispaniae }
+			remove_country_modifier = ITA_triumph_for_hispaniae
+		}
+		if = {
+			limit = { has_country_modifier = ITA_new_renaissance }
+			remove_country_modifier = ITA_new_renaissance
+		}
+		if = {
+			limit = { has_country_modifier = ITA_diplomatic_revolution }
+			remove_country_modifier = ITA_diplomatic_revolution
+			add_country_modifier = {
+				name = ITA_diplomatic_revolution_weaker
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_country_modifier = MUG_industrial_powerhouse }
+			remove_country_modifier = MUG_industrial_powerhouse
+		}
+		if = {
+			limit = { has_country_modifier = MUG_gunpowder_mastery }
+			remove_country_modifier = MUG_gunpowder_mastery
+		}
+		if = {
+			limit = { has_country_modifier = TIM_golden_horde }
+			remove_country_modifier = TIM_golden_horde
+		}
+		if = {
+			limit = { has_country_modifier = TIM_persian_economic_hegemon }
+			remove_country_modifier = TIM_persian_economic_hegemon
+		}
+		if = {
+			limit = { has_country_modifier = hordes_fall_of_china }
+			remove_country_modifier = hordes_fall_of_china
+		}
+		if = {
+            limit = { has_country_modifier = ITA_new_renaissance_non_dlc }
+            remove_country_modifier = ITA_new_renaissance_non_dlc
+        }
 	}
 }
 remove_all_age_of_absolutism_modifiers = {
-	#if = {
-	#	limit = {
-	#		NOT = { current_age = age_of_absolutism }
-	#	}
-	#}
-	#Empty as there are no modifiers specific for this age
+	if = {
+		limit = {
+			NOT = { current_age = age_of_absolutism }
+		}
+		if = {
+			limit = { has_country_modifier = ITA_conquest_of_britain }
+			remove_country_modifier = ITA_conquest_of_britain
+		}
+	}
+	if = {
+		limit = {
+			NOT = { current_age = age_of_absolutism }
+		}
+		if = {
+			limit = { has_country_modifier = GER_economic_influence }
+			remove_country_modifier = GER_economic_influence
+		}
+	}
 }
 remove_all_age_of_revolution_modifiers = {
 	#if = {
@@ -2952,6 +3266,25 @@ on_harmonized_effect = {
 	}
 }
 
+on_primary_culture_changed_effect = {
+	if = {
+		limit = { has_government_attribute = can_recruit_banners_from_primary_culture_provinces }
+		every_owned_province = {
+			if = {
+				limit = {
+					has_province_modifier = mongol_banners_location
+					has_owner_culture = no
+				}
+				remove_province_modifier = mongol_banners_location
+			}
+			if = {
+				limit = { has_owner_culture = yes }
+				add_province_modifier = { name = mongol_banners_location duration = -1 hidden = yes }
+			}
+		}
+	}
+}
+
 on_province_culture_change_effect = {
 	if = {
 		limit = { has_province_modifier = tur_competent_pashas }
@@ -2982,6 +3315,58 @@ on_province_culture_change_effect = {
 			limit = { owned_by = owner NOT = { culture_group = owner } }
 			add_province_modifier = { name = the_provincial_system duration = -1 hidden = yes }
 		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = negate_unaccepted_levantine_culture
+			}
+		}
+		if = {
+			limit = {
+				culture_group = turko_semitic
+				NOT = { has_owner_accepted_culture = yes }
+				NOT = { has_province_modifier = hsn_ayyubid_tolerance }
+			}
+			add_province_modifier = {
+				name = hsn_ayyubid_tolerance
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { culture_group = turko_semitic }
+					has_owner_accepted_culture = yes
+				}
+				has_province_modifier = hsn_ayyubid_tolerance
+			}
+			remove_province_modifier = hsn_ayyubid_tolerance
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = increase_nobles_loyalty_per_culture_conversion
+			}
+		}
+		owner = {
+			add_estate_loyalty = {
+				estate = all
+				loyalty = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_owner_culture = yes
+			owner = { has_government_attribute = can_recruit_banners_from_primary_culture_provinces }
+		}
+		add_province_modifier = { name = mongol_banners_location duration = -1 hidden = yes }
+	}
+	else_if = {
+		limit = { has_province_modifier = mongol_banners_location }
+		remove_province_modifier = mongol_banners_location
 	}
 }
 
@@ -3196,10 +3581,32 @@ on_alliance_broken_effect = {
 
 on_adm_development_effect = {
 	if = {
+        limit = { owner = { has_country_modifier = tre_revitalization } }
+        add_local_autonomy = -5
+    }
+	if = { 
+		limit = { owner = { has_government_attribute = developing_manufactories_extra_dev_chance } has_manufactory_trigger = yes }
+		random_list = { 10 = { add_base_tax = 1 } 90 = { } }
+	}
+	if = {
+		limit = { owner = { has_country_flag = hun_bonus_dev_budapest } province_id = 153 }
+		random_list = { 20 = { add_base_tax = 1 }  80 = {  }  }
+	}
+	if = {
 		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = { 20 = { add_base_tax = 1 } 80 = { } }
+	}
+	if = {
+		limit = { owner = { has_country_modifier = lit_increased_dev_modifier } }
+		add_base_tax = 1 
+	}
+	if = { 
+		limit = { has_state_edict = chinese_industrialization } 
 		random_list = {
-			20 = { add_base_tax = 1 }
-			80 = { }
+			10 = { add_base_tax = 1 } 
+			10 = { add_prosperity = 1 } 
+			10 = { add_province_modifier = { name = qng_center_of_industrialization_modifier duration = 3650 } }
+			70 = {  } 
 		}
 	}
 	# if = {
@@ -3209,147 +3616,165 @@ on_adm_development_effect = {
 	# 	add_base_tax = 1 
 	# }
 	if = { 
-	# 	limit = { has_state_edict = chinese_industrialization } 
-	# 	random_list = {
-	# 		10 = { add_base_tax = 1 } 
-	# 		10 = { add_prosperity = 1 } 
-	# 		10 = { add_province_modifier = { name = qng_center_of_industrialization_modifier duration = 3650 } }
-	# 		70 = {  } 
-	# 	}
-	# }
-	# if = {
-	# 	limit = { owner = { has_country_modifier = JAP_cadastral_surveys has_dlc = "Domination" } }
-	# 	change_estate_land_share = {
-	# 		estate = all 
-	# 		share = -0.2
-	# 	}
-	# }
-	
-	# if = {
-	# 	limit = { owner = { has_country_modifier = jap_20_years_devving_tax_yields_twice_bonus_1_burgher_loyalt_modifier } }
-	# 	add_base_tax = 1 
-	# 	add_estate_loyalty = {
-	# 		estate = estate_burghers 
-	# 		loyalty = 1 
-	# 	}
-	# }
-
-	#if = {
-	#	limit = {
-	#		OR = {
-	#			region = british_isles_region
-	#			region = france_region
-	#		}
-	#		owner = { has_country_modifier = eng_empire_of_the_island }
-	#	}
-	#	random_list = {
-	#		4 = { add_base_tax = 1 }
-	#		6 = {}
-	#	}
-	#}
+		limit = { owner = { has_country_modifier = JAP_cadastral_surveys has_dlc = "Domination" } }
+		owner = { change_estate_land_share = { estate = all share = -0.2 } }
+	}	
+	if = {
+		limit = { owner = { has_country_modifier = jap_20_years_devving_tax_yields_twice_bonus_1_burgher_loyalt_modifier } }
+		add_base_tax = 1 
+		owner = { add_estate_loyalty = { estate = estate_burghers loyalty = 1 } }
+	}	
+	if = {
+		limit = { religion = ROOT owner = { has_country_flag = geo_orthodox_dev } }
+		random_list = { 10 = { add_base_tax = 1 } 90 = { } }
+	}
+	if = {
+		limit = { OR = { trade_goods = cloth trade_goods = silk } owner = { has_country_modifier = turkoman_expanding_industry } }
+		random_list = { 20 = { add_base_tax = 1 } 80 = {  } }
+	}
 }
 on_dip_development_effect = {
 	if = {
+        limit = { owner = { has_country_modifier = tre_revitalization } }
+        add_local_autonomy = -5
+    }
+	if = { 
+		limit = { owner = { has_country_modifier = boh_early_industrialization } has_production_building_trigger = yes }
+		random_list = { 20 = { add_base_production = 1 } 80 = { } }
+	}
+	if = { 
+		limit = { owner = { has_government_attribute = developing_manufactories_extra_dev_chance } has_manufactory_trigger = yes }
+		random_list = { 10 = { add_base_production = 1 } 90 = { } }
+	}
+	if = {
+		limit = { owner = { has_country_flag = hun_bonus_dev_budapest } province_id = 153 }
+		random_list = { 20 = { add_base_production = 1 }  80 = {  }  }
+	}
+	if = {
 		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = { 20 = { add_base_production = 1 } 80 = { } }
+	}
+	if = {
+		limit = { owner = { has_country_modifier = lit_increased_dev_modifier } }
+		add_base_production = 1 
+	}
+	if = { 
+		limit = { has_state_edict = chinese_industrialization } 
 		random_list = {
-			20 = { add_base_production = 1 }
-			80 = { }
+			10 = { add_base_production = 1 } 
+			10 = { add_prosperity = 1 } 
+			10 = { add_province_modifier = { name = qng_center_of_industrialization_modifier duration = 3650 } }
+			70 = {  } 
 		}
 	}
-	# if = {
-	# 	limit = { 
-	# 		owner = { has_country_modifier = lit_increased_dev_modifier }
-	# 	}
-	# 	add_base_production = 1 
-	# }
-	# if = { 
-	# 	limit = { has_state_edict = chinese_industrialization } 
-	# 	random_list = {
-	# 		10 = { add_base_production = 1 } 
-	# 		10 = { add_prosperity = 1 } 
-	# 		10 = { add_province_modifier = { name = qng_center_of_industrialization_modifier duration = 3650 } }
-	# 		70 = {  } 
-	# 	}
-	# }
-
-	#if = {
-	#	limit = {
-	#		OR = {
-	#			region = british_isles_region
-	#			region = france_region
-	#		}
-	#		owner = { has_country_modifier = eng_empire_of_the_island }
-	#	}
-	#	random_list = {
-	#		4 = { add_base_production = 1 }
-	#		6 = {}
-	#	}
-	#}
+	if = {
+		limit = { religion = ROOT owner = { has_country_flag = geo_orthodox_dev } }
+		random_list = { 10 = { add_base_production = 1 } 90 = { } }
+	}
+	if = {
+		limit = { OR = { trade_goods = cloth trade_goods = silk } owner = { has_country_modifier = turkoman_expanding_industry } }
+		random_list = { 20 = { add_base_production = 1 } 80 = {  } }
+	}
 }
 on_mil_development_effect = {
 	if = {
+        limit = { owner = { has_country_modifier = tre_revitalization } }
+        add_local_autonomy = -5
+    }
+	if = { 
+		limit = {  owner = { has_government_attribute = developing_manufactories_extra_dev_chance } has_manufactory_trigger = yes }
+		random_list = { 10 = { add_base_manpower = 1 } 90 = { } }
+	}
+	if = {
+		limit = { owner = { has_country_flag = hun_bonus_dev_budapest } province_id = 153 }
+		random_list = { 20 = { add_base_manpower = 1 }  80 = {  }  }
+	}
+	if = {
 		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = { 20 = { add_base_manpower = 1 } 80 = { } }
+	}
+	if = {
+		limit = { owner = { has_country_modifier = lit_increased_dev_modifier } }
+		add_base_manpower = 1 
+	}
+	if = { 
+		limit = { has_state_edict = chinese_industrialization } 
 		random_list = {
-			20 = { add_base_manpower = 1 }
-			80 = { }
+			10 = { add_base_manpower = 1 } 
+			10 = { add_prosperity = 1 } 
+			10 = { add_province_modifier = { name = qng_center_of_industrialization_modifier duration = 3650 } }
+			70 = {  } 
 		}
 	}
-	# if = {
-	# 	limit = { 
-	# 		owner = { has_country_modifier = lit_increased_dev_modifier }
-	# 	}
-	# 	add_base_manpower = 1 
-	# }
-	# if = { 
-	# 	limit = { has_state_edict = chinese_industrialization } 
-	# 	random_list = {
-	# 		10 = { add_base_manpower = 1 } 
-	# 		10 = { add_prosperity = 1 } 
-	# 		10 = { add_province_modifier = { name = qng_center_of_industrialization_modifier duration = 3650 } }
-	# 		70 = {  } 
-	# 	}
-	# }
-
-	#if = {
-	#	limit = {
-	#		OR = {
-	#			region = british_isles_region
-	#			region = france_region
-	#		}
-	#		owner = { has_country_modifier = eng_empire_of_the_island }
-	#	}
-	#	random_list = {
-	#		4 = { add_base_manpower = 1 }
-	#		6 = {}
-	#	}
-	#}
+	if = {
+		limit = { religion = ROOT owner = { has_country_flag = geo_orthodox_dev } }
+		random_list = { 10 = { add_base_manpower = 1 } 90 = { } }
+	}
+	if = {
+		limit = { OR = { trade_goods = cloth trade_goods = silk } owner = { has_country_modifier = turkoman_expanding_industry } }
+		random_list = { 20 = { add_base_manpower = 1 } 80 = {  } }
+	}
 }
 on_development_effect = {
-	owner = {
-		change_variable = {
-			which = num_of_times_developed
-			value = 1
+	owner = { change_variable = { which = num_of_times_developed value = 1 } }
+	if = {
+		limit = { owner = { has_mission = ARB_the_harsh_desert } has_climate = arid }
+		owner = { change_variable = { which = num_of_times_developed_arid value = 1 } }
 		}
+	if = {
+		limit = { owner = { is_andean_society_trigger = yes } OR = { has_terrain = mountain has_terrain = highlands has_terrain = hills } }
+		owner = { change_variable = { which = num_of_times_developed_mountains value = 1 } }
 	}
-	
-	# if = {
-	# 	limit = {
-	# 		owner = {
-	# 			has_mission = ARB_the_harsh_desert
-	# 		}
-	# 		has_climate = arid
-	# 	}
-	# 	owner = {
-	# 		change_variable = {
-	# 			which = num_of_times_developed_arid
-	# 			value = 1
-	# 		}
-	# 	}
-	# }
+	if = {
+		limit = { has_terrain = jungle }
+		owner = { change_variable = { which = num_of_times_developed_jungles value = 1 } }
+	}	
+	if = {
+		limit = { owner = { has_reform = german_cultural_disunity_reform  } GER_has_matching_culture = yes }
+		owner = { add_government_power = { mechanic_type = cultural_unity_mechanic power_type = cultural_unity value = 1.5 } }
+	}
+	FROM = { change_variable = { which = num_of_times_developed_var value = 1 } }
+	if = {
+		limit = { owner = { has_country_flag = ned_unlock_dutch_urbanization_flag } region = low_countries_region development = 25 }
+		add_province_modifier = { name = ned_dutch_urbanization duration = -1 }
+	}
+	if = {
+		limit = { owner = { has_country_flag = ned_unlock_flemish_urbanization_flag } region = low_countries_region development = 25 }
+		add_province_modifier = { name = ned_flemish_urbanization duration = -1 }
+	}
+    if = {
+        limit = {
+            owner = { has_estate_privilege = estate_burghers_hungarian_royal_cities }
+            NOT = { has_province_modifier = estate_burghers_hungarian_royal_city_modifier }
+            development = 20
+            region = carpathia_region
+            province_has_center_of_trade_of_level = 1
+        }
+        add_province_modifier = { name = estate_burghers_hungarian_royal_city_modifier duration = -1 }
+    }
+	if = { 
+		limit = { owner = { has_country_modifier = pru_victory_lower_saxony_modifier } OR = { culture = saxon culture = lower_saxon } }
+		add_nationalism = -3
+		add_local_autonomy = -5
+		add_prosperity = 1
+	}
+	on_$type$_development_effect = yes
 }
 
 # THIS = Province, FROM = Country, ROOT = Merc Unit
 on_mercenary_recruited_effect = {
+	if = {
+		limit = {
+            FROM = { 
+                has_country_flag = hun_no_prof_black_army
+            }
+            OR = {
+                ROOT = { mercenary_company = merc_black_army }
+                ROOT = { mercenary_company = merc_black_army_2 }
+            }
+        }
+        FROM = { add_army_professionalism = 0.01 }
+    }
 	if = {
 		limit = {
 			FROM = { has_not_free_mercs_trait = yes }
@@ -3968,14 +4393,75 @@ on_built_tax_building_effect = {
 }
 
 on_capital_moved_effect = {
+	owner = {
+        if = {
+            limit = {
+                has_estate_privilege = estate_burghers_hungarian_royal_cities
+            }
+            carpathia_region = {
+                limit = {
+                    owned_by = ROOT
+                    development = 20
+                    NOT = { has_province_modifier = estate_burghers_hungarian_royal_city_modifier }
+                    province_has_center_of_trade_of_level = 1
+                }
+                add_province_modifier = {
+                    name = estate_burghers_hungarian_royal_city_modifier
+                    duration = -1
+                }
+            }
+            capital_scope = {
+                remove_province_modifier = estate_burghers_hungarian_royal_city_modifier
+            }
+        }
+		if = {
+			limit = {
+				check_variable = {
+					which = inca_amount_of_mummies
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = inca_amount_of_mummies
+				value = 1
+			}
+		}
+    }
+	if = {
+		limit = { 
+			owner = { has_reform = great_mongol_state_reform }
+		}
+		FROM = { remove_province_modifier = allow_banners_capital_modifier }
+		ROOT = {
+			add_province_modifier = {
+				name = allow_banners_capital_modifier
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
 }
 
 on_government_change_effect = {
+	if = {
+		limit = { 
+			has_country_modifier = ven_ten_restrained
+		}
+		remove_country_modifier = ven_ten_restrained
+	}
+	if = {
+		limit = {
+			any_owned_province = { has_province_modifier = hsn_ayyubid_tolerance }
+		}
+		every_owned_province = {
+			limit = { has_province_modifier = hsn_ayyubid_tolerance }
+			remove_province_modifier = hsn_ayyubid_tolerance
+		}
+	}
 	clr_country_flag = pirate_mutineer_council
 	clr_country_flag = caretaker_revolutionary_government
 	if = {
 		limit = {
-			NOT = { government = monarchy }
 			any_owned_province = { has_province_modifier = domain_of_spouses_family }
 		}
 		random_owned_province = {
@@ -3985,7 +4471,6 @@ on_government_change_effect = {
 	}
 	if = {
 		limit = {
-			NOT = { government = monarchy }
 			any_owned_province = { has_province_modifier = home_of_consort }
 		}
 		random_owned_province = {
@@ -4031,6 +4516,46 @@ on_government_change_effect = {
 			}
 		}
 		country_event = { id = persian_influence_events.3000 }
+	}
+	if = {
+		limit = {
+			has_country_flag = GER_unlocked_saxon_reform
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = GER_mining_provinces_saxon
+			}
+			remove_province_modifier = GER_mining_provinces_saxon
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = GER_unlocked_franconian_reform
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = GER_paper_provinces_franconian
+			}
+			remove_province_modifier = GER_paper_provinces_franconian
+		}
+	}
+}
+
+on_native_government_change_effect = {
+	hidden_effect = {
+		every_owned_province = {
+			if = { limit = { has_building = native_palisade } set_province_flag = native_palisade_flag }
+			if = { limit = { has_building = native_fortified_house } set_province_flag = native_fortified_house_flag }
+			if = { limit = { has_building = native_ceremonial_fire_pit } set_province_flag = native_ceremonial_fire_pit_flag }
+			if = { limit = { has_building = native_storehouse } set_province_flag = native_storehouse_flag }
+			if = { limit = { has_building = native_longhouse } set_province_flag = native_longhouse_flag }
+			if = { limit = { has_building = native_sweat_lodge } set_province_flag = native_sweat_lodge_flag }
+			if = { limit = { has_building = native_great_trail } set_province_flag = native_great_trail_flag }
+		}
+		country_event = {
+			id = native_americans.999
+			days = 35
+		}
 	}
 }
 
@@ -4131,6 +4656,29 @@ on_dependency_gained_effect = {
 		overlord = ROOT
 		subject = FROM
 	}
+	FROM = {
+		if = {
+			limit = {
+				OR = {
+					is_subject_of_type = personal_union
+					is_subject_of_type = integrated_personal_union
+				}
+				has_reform = stadthalter_monarchy_reform
+			}
+			remove_government_reform = stadthalter_monarchy_reform
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = hun_ladislaus_postumus_king
+					has_country_flag = hun_ladislaus_postumus_heir
+				}
+				is_lesser_in_union = yes
+			}
+			clr_country_flag = hun_ladislaus_postumus_king
+			clr_country_flag = hun_ladislaus_postumus_heir
+		}
+	} 
 	if = {
 		limit = {
 			FROM = {
@@ -4242,7 +4790,6 @@ on_monarch_death_effect = {
 		limit = { has_government_attribute = no_stability_loss_on_monarch_death }
 		add_stability = 1
 	}
-	
 	if = {
 		limit = {
 			is_subject_of_type = pronoia_subject_type

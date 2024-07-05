@@ -36,6 +36,5 @@ replace_path="decisions"
 replace_path="map"
 replace_path="missions"
 replace_path="tutorial"
-
 supported_version="1.37.*"
 remote_file_id="3119311190"
