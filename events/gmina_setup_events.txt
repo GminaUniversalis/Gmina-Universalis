@@ -260,13 +260,12 @@ country_event = {
 					NOT = {
 						has_country_flag = picked_miners_definer
 					}
-					has_estate = estate_miners
 					AND = {
 						has_country_flag = estate_picked_miners
 						has_country_flag = has_estate_picked_flag
 					}
-
 				}
+				has_estate = estate_miners
 			}
 
 			if = {
@@ -291,13 +290,12 @@ country_event = {
 					NOT = {
 						has_country_flag = picked_scientists_definer
 					}
-					has_estate = estate_scientists
 					AND = {
 						has_country_flag = estate_picked_scientists
 						has_country_flag = has_estate_picked_flag
 					}
 				}
-
+				has_estate = estate_scientists
 			}
 
 			if = {
@@ -326,13 +324,12 @@ country_event = {
 					NOT = {
 						has_country_flag = picked_investors_definer
 					}
-					has_estate = estate_investors
 					AND = {
 						has_country_flag = estate_picked_investors
 						has_country_flag = has_estate_picked_flag
 					}
 				}
-
+				has_estate = estate_investors
 			}
 			if = {
 				limit = { current_age = age_of_discovery }
@@ -369,13 +366,12 @@ country_event = {
 					NOT = {
 						has_country_flag = picked_farmers_definer
 					}
-					has_estate = estate_farmers
 					AND = {
 						has_country_flag = estate_picked_farmers
 						has_country_flag = has_estate_picked_flag
 					}
 				}
-
+				has_estate = estate_farmers
 			}
 			if = {
 				limit = {
