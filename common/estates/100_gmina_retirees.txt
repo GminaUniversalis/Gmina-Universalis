@@ -42,6 +42,7 @@ estate_retirees = {
     contributes_to_curia_treasury = no
     color = { 200 100 200 }
     privileges = {
+		estate_retirees_religious_state
 		estate_retirees_land_rights
 		estate_retirees_13
 		estate_retirees_klub_seniora

@@ -37,6 +37,7 @@ estate_army = {
     contributes_to_curia_treasury = no
     color = { 28 133 30 }
 	privileges = {
+		estate_army_military_primacy
 		estate_army_territorial_forces
 		estate_army_blitzkrieg
 		estate_army_fire_supremacy

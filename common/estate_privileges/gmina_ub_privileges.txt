@@ -63,7 +63,7 @@ estate_ub_grasp_over_police = {
 	loyalty = 0.05
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 	is_valid = {
 	}
@@ -113,7 +113,7 @@ estate_ub_grasp_over_politics = {
 	loyalty = 0.05
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 	is_valid = {
 	}
@@ -164,7 +164,7 @@ estate_ub_grasp_over_economy = {
 	loyalty = 0.05
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 	is_valid = {
 	}
@@ -213,7 +213,7 @@ estate_ub_classes_opression = {
 	loyalty = 0.2
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 	is_valid = {
 	}
@@ -226,7 +226,7 @@ estate_ub_classes_opression = {
 	can_revoke = {
 	}
 	penalties = {
-		all_estate_loyalty_equilibrium = -0.2
+		#all_estate_loyalty_equilibrium = -0.2
 	}
 	benefits = {
 		all_estate_influence_modifier = -0.2
@@ -263,7 +263,7 @@ estate_ub_sad_gentelmens = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 	is_valid = {
 	}
@@ -313,7 +313,7 @@ estate_ub_iron_propaganda = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 	is_valid = {
 	}
