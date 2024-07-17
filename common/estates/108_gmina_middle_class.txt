@@ -59,6 +59,14 @@ estate_middle_class = {
 	}
      agendas = {
 		estate_middle_class_hire_advisor
+		estate_church_develop_x
+		estate_nobles_develop_x
+		estate_burghers_develop_x
+		estate_church_reduce_war_exhaustion
+		estate_church_recover_stability
+		estate_church_increase_stability
+		estate_church_reduce_overextension
+		estate_nobles_recover_abysmal_prestige
      }
      influence_from_dev_modifier = 1.0
 	 custom_name = {
