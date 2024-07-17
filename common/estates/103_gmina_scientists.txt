@@ -57,6 +57,8 @@ estate_scientists = {
 		estate_nobles_develop_x
 		estate_burghers_develop_x
 		estate_nobles_recover_abysmal_prestige
+		estate_burghers_hire_advisor
+		estate_burghers_fire_advisor
      }
      influence_from_dev_modifier = 1.0     
 }

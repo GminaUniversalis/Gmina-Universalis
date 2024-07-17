@@ -80,6 +80,9 @@ estate_families = {
 		estate_nobles_protect_our_culture
 		estate_nobles_build_an_army
 		estate_nobles_recover_abysmal_prestige
+		estate_burghers_restore_currency
+		estate_burghers_recovery_from_hyperinflation
+		estate_burghers_reduce_corruption
      }
      influence_from_dev_modifier = 1.0
             

@@ -81,6 +81,14 @@ estate_banks = {
 		estate_church_reduce_overextension
 		estate_nobles_break_coalition
 		estate_nobles_recover_abysmal_prestige
+		estate_burghers_hire_advisor
+		estate_burghers_fire_advisor
+		estate_burghers_pay_off_loans
+		estate_burghers_restore_currency
+		estate_burghers_recovery_from_hyperinflation
+		estate_burghers_increase_trade_power_in_X
+		estate_burghers_get_cash
+		estate_burghers_reduce_corruption
      }
      influence_from_dev_modifier = 1.0
 	}

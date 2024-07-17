@@ -81,6 +81,12 @@ estate_investors = {
 		estate_nobles_break_coalition
 		estate_nobles_crush_revolts
 		estate_nobles_recover_abysmal_prestige
+		estate_nobles_improve_prestige
+		estate_burghers_hire_advisor
+		estate_burghers_fire_advisor
+		estate_burghers_improve_dip_rep
+		estate_burghers_expand_trade_company
+		estate_burghers_reduce_corruption
      }
      influence_from_dev_modifier = 1.0
 }

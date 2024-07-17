@@ -67,6 +67,10 @@ estate_middle_class = {
 		estate_church_increase_stability
 		estate_church_reduce_overextension
 		estate_nobles_recover_abysmal_prestige
+		estate_nobles_improve_prestige
+		estate_burghers_hire_advisor
+		estate_burghers_fire_advisor
+		estate_burghers_reduce_corruption
      }
      influence_from_dev_modifier = 1.0
 	 custom_name = {
