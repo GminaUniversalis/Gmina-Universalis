@@ -20,3 +20,171 @@ swap_federation_idea_group = {
 		country_event = { id = ideagroups.1 } #Swap Ideas
 	}
 }
+
+#Supports the following trade goods		Base prices
+# grain									2.5
+# wine									2.5
+# wool									2.5
+# cloth									3
+# fish									2.5
+# fur									2
+# salt									3
+# naval_supplies						2
+# copper								3
+# gold									10	#Technically 0, but let us calculate with 10
+# iron									3
+# slaves								2
+# ivory									4
+# tea									3
+# chinaware								3
+# spices								3
+# coffee								3
+# cotton								3
+# sugar									3
+# tobacco								3
+# cocoa									4
+# silk									4
+# dyes									4
+# tropical_wood							2
+# livestock								2
+# incense								2.5
+# glass									3
+# paper									3.5
+# gems									4
+# coal									10
+# cloves								8
+# unknown								0	#Special and should not count
+determine_value_of_trade_goods_unknown = {
+	set_variable = {
+		which = base_value_unknown
+		value = 0
+	}
+}
+
+# The design behind it is the following:
+# 1. You colonize a province
+# 2. A pop-up event appears which gives you the choice to select the trade good for the province
+# 3. Every trade good has an own base price assigned to them. This base price should be their base value * 5 Ducats.
+# 4. Trade goods above 3 value also cost ADM power.
+# 5. Every time you select a certain trade good, the price increases
+# 6. The new price is calculated with this formula: (1 + (times you upgraded it)) * 5 (base trade good price)
+# 7. ADM costs are calculated as follows: (base trade good pirce - 2.5) * 25 * (times YOU upgraded it) as long (base trade good pirce - 2.5) => 0
+# 7. Gold will be counted as having a trade value of 10 Ducats so not all of the whole new world becomes one huge gold cluster
+
+calculate_trade_goods_price = {
+	owner = {
+		determine_value_of_trade_goods_$trade_goods$ = yes
+		set_variable = {
+			which = final_ducat_price_$trade_goods$
+			value = 1
+		}
+		set_variable = {
+			which = final_adm_cost_$trade_goods$
+			which = base_value_$trade_goods$
+		}
+		subtract_variable = {
+			which = final_adm_cost_$trade_goods$
+			value = 2.5
+		}
+		multiply_variable = {
+			which = final_adm_cost_$trade_goods$
+			value = 5
+		}
+		#Determine price increase on your own
+		if = {
+			limit = { has_country_flag = ever_selected_$trade_goods$ }
+			change_variable = {
+				which = final_ducat_price_$trade_goods$
+				which = ducat_cost_$trade_goods$_own_counter
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = final_adm_cost_$trade_goods$
+						value = 1
+					}
+				}
+				multiply_variable = {
+					which = final_adm_cost_$trade_goods$
+					which = ducat_cost_$trade_goods$_own_counter
+				}
+			}
+		}
+		multiply_variable = {
+			which = final_ducat_price_$trade_goods$
+			value = 10
+		}
+		multiply_variable = {
+			which = final_ducat_price_$trade_goods$
+			which = base_value_$trade_goods$
+		}
+	}
+}
+
+purchase_trade_goods = {
+	custom_tooltip = ducat_price_for_$trade_goods$_tt
+	if = {
+		limit = {
+			owner = {
+				check_variable = {
+					which = final_adm_cost_$trade_goods$
+					value = 1
+				}
+			}
+		}
+		custom_tooltip = adm_price_for_$trade_goods$_tt
+	}
+	hidden_effect = {
+		owner = {
+			if = {
+				limit = { NOT = { has_country_flag = ever_selected_$trade_goods$ } }
+				set_country_flag = ever_selected_$trade_goods$
+				set_variable = {
+					which = ducat_cost_$trade_goods$_own_counter
+					value = 1
+				}
+			}
+			else = {
+				change_variable = {
+					which = ducat_cost_$trade_goods$_own_counter
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = final_ducat_price_$trade_goods$
+						value = 1
+					}
+				}
+				add_treasury = -1
+				subtract_variable = {
+					which = final_ducat_price_$trade_goods$
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = final_adm_cost_$trade_goods$
+						value = 1
+					}
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = final_adm_cost_$trade_goods$
+							value = 1
+						}
+					}
+					add_adm_power = -1
+					subtract_variable = {
+						which = final_adm_cost_$trade_goods$
+						value = 1
+					}
+				}
+			}
+		}
+	}
+	change_trade_goods = $trade_goods$
+}

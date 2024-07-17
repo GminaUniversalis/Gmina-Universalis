@@ -327,6 +327,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_disaster_estate_retirees_disaster"
+		texturefile = "gfx//interface//disasters//estate_retirees_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
 		name = "GFX_disaster_estate_banks_disaster"
 		texturefile = "gfx//interface//disasters//estate_banks_disaster.dds"
 		noOfFrames = 3

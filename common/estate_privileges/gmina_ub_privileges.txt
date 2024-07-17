@@ -232,7 +232,7 @@ estate_ub_classes_opression = {
 	}
 	benefits = {
 		all_estate_influence_modifier = -0.2
-		allow_free_estate_privilege_revocation = yes
+		#allow_free_estate_privilege_revocation = yes
 	}
 	on_invalid = {
 	}
@@ -370,7 +370,7 @@ estate_ub_better_payments = {
 	is_valid = {
 	}
 	can_select = {
-		religion_group = communist
+		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
 	}
 	on_granted = {
@@ -421,7 +421,7 @@ estate_ub_better_housing = {
 	is_valid = {
 	}
 	can_select = {
-		religion_group = communist
+		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
 	}
 	on_granted = {
@@ -472,7 +472,7 @@ estate_ub_better_healthcare = {
 	is_valid = {
 	}
 	can_select = {
-		religion_group = communist
+		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
 	}
 	on_granted = {
@@ -523,7 +523,7 @@ estate_ub_quick_promotions = {
 	is_valid = {
 	}
 	can_select = {
-		religion_group = communist
+		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
 	}
 	on_granted = {
@@ -577,7 +577,7 @@ estate_ub_special_shops = {
 	is_valid = {
 	}
 	can_select = {
-		religion_group = communist
+		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
 	}
 	on_granted = {
@@ -628,7 +628,7 @@ estate_ub_immunity = {
 	is_valid = {
 	}
 	can_select = {
-		religion_group = communist
+		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
 	}
 	on_granted = {
@@ -679,7 +679,7 @@ estate_ub_black_wolga = {
 	is_valid = {
 	}
 	can_select = {
-		religion_group = communist
+		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
 	}
 	on_granted = {

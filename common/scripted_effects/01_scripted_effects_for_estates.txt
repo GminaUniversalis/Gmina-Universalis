@@ -2594,13 +2594,6 @@ on_loan_repaid_estate_privileges_effect = {
 		}
 		remove_estate_privilege = estate_banks_indebted_to_banks
 	}
-	# if = {
-	# 	limit = {
-	# 		has_estate_privilege = estate_jains_indebted_to_jains
-	# 		has_estate_loan = no
-	# 	}
-	# 	remove_estate_privilege = estate_jains_indebted_to_jains
-	# }
 }
 
 
@@ -2771,61 +2764,9 @@ scaled_estate_burghers_negative_land_share_effect = {
 	scaled_estate_land_share_reduce_effect = { estate = estate_burghers }
 }
 
-# scaled_estate_rajput_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_rajput }
-# }
-
-# scaled_estate_rajput_negative_land_share_effect = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_rajput }
-# }
-
-# scaled_estate_maratha_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_maratha }
-# }
-
-# scaled_estate_maratha_negative_land_share_effect = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_maratha }
-# }
-
-# scaled_estate_brahmins_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_brahmins }
-# }
-
-# scaled_estate_brahmins_negative_land_share_effect = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_brahmins }
-# }
-
-# scaled_estate_vaisyas_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_vaisyas }
-# }
-
-# scaled_estate_vaisyas_negative_land_share_effect = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_vaisyas }
-# }
-
-# scaled_estate_dhimmi_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_dhimmi }
-# }
-
-# scaled_estate_dhimmi_negative_land_share_effect = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_dhimmi }
-# }
-
-# scaled_estate_cossacks_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_cossacks }
-# }
-
-# scaled_estate_cossacks = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_cossacks }
-# }
-
-# scaled_estate_jains_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_jains }
-# }
-
-# scaled_estate_jains = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_jains }
-# }
+#scaled_estate_rajput_land_share_effect = {
+#	scaled_estate_land_share_add_effect = { estate = estate_rajput }
+#}
 
 scaled_estate_nomadic_tribes_land_share_effect = {
 	scaled_estate_land_share_add_effect = { estate = estate_nomadic_tribes }
@@ -2835,37 +2776,9 @@ scaled_estate_nomadic_tribes = {
 	scaled_estate_land_share_reduce_effect = { estate = estate_nomadic_tribes }
 }
 
-# scaled_estate_janissaries_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_janissaries }
-# }
-
-# scaled_estate_janissaries = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_janissaries }
-# }
-
-# scaled_estate_eunuchs_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_eunuchs }
-# }
-
-# scaled_estate_eunuchs = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_eunuchs }
-# }
-
-# scaled_estate_qizilbash_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_qizilbash }
-# }
-
-# scaled_estate_qizilbash = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_qizilbash }
-# }
-
-# scaled_estate_ghulams_land_share_effect = {
-# 	scaled_estate_land_share_add_effect = { estate = estate_ghulams }
-# }
-
-# scaled_estate_ghulams = {
-# 	scaled_estate_land_share_reduce_effect = { estate = estate_ghulams }
-# }
+#scaled_estate_maratha_land_share_effect = {
+#	scaled_estate_land_share_add_effect = { estate = estate_maratha }
+#}
 
 					##################### GMINA ######################
 
@@ -3230,46 +3143,6 @@ spawn_rebels_from_unhappy_estate = {
 					}
 				}
 			}
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_rajput } }
-			# 			has_estate = estate_rajput
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_rajput
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = noble_rebels
-			# 		size = $size$
-			# 		estate = estate_rajput
-			# 		as_if_faction = yes
-			# 	}
-			# }
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_maratha } }
-			# 			has_estate = estate_maratha
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_maratha
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = noble_rebels
-			# 		size = $size$
-			# 		estate = estate_maratha
-			# 		as_if_faction = yes
-			# 	}
-			# }
 			1 = {
 				trigger = {
 					owner = {
@@ -3290,106 +3163,6 @@ spawn_rebels_from_unhappy_estate = {
 					as_if_faction = yes
 				}
 			}
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_jains } }
-			# 			has_estate = estate_jains
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_jains
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = particularist_rebels
-			# 		size = $size$
-			# 		estate = estate_jains
-			# 		as_if_faction = yes
-			# 	}
-			# }
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_vaisyas } }
-			# 			has_estate = estate_vaisyas
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_vaisyas
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = particularist_rebels
-			# 		size = $size$
-			# 		estate = estate_vaisyas
-			# 		as_if_faction = yes
-			# 	}
-			# }
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_dhimmi } }
-			# 			has_estate = estate_dhimmi
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_dhimmi
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = particularist_rebels
-			# 		size = $size$
-			# 		estate = estate_dhimmi
-			# 		as_if_faction = yes
-			# 	}
-			# }
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_brahmins } }
-			# 			has_estate = estate_brahmins
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_brahmins
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = hinduism_rebels
-			# 		size = $size$
-			# 		estate = estate_brahmins
-			# 		as_if_faction = yes
-			# 	}
-			# }
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_cossacks } }
-			# 			has_estate = estate_cossacks
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_cossacks
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = cossack_rebels
-			# 		size = $size$
-			# 		estate = estate_cossacks
-			# 		as_if_faction = yes
-			# 	}
-			# }
 			1 = {
 				trigger = {
 					owner = {
@@ -3410,86 +3183,6 @@ spawn_rebels_from_unhappy_estate = {
 					as_if_faction = yes
 				}
 			}
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_janissaries } }
-			# 			has_estate = estate_janissaries
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_janissaries
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = janissary_rebels
-			# 		size = $size$
-			# 		estate = estate_janissaries
-			# 		as_if_faction = yes
-			# 	}
-			# }
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_eunuchs } }
-			# 			has_estate = estate_eunuchs
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_eunuchs
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = eunuch_rebels
-			# 		size = $size$
-			# 		estate = estate_eunuchs
-			# 		as_if_faction = yes
-			# 	}
-			# }
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_qizilbash } }
-			# 			has_estate = estate_qizilbash
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_qizilbash
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = qizilbash_rebels
-			# 		size = $size$
-			# 		estate = estate_qizilbash
-			# 		as_if_faction = yes
-			# 	}
-			# }
-			# 1 = {
-			# 	trigger = {
-			# 		owner = {
-			# 			NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_ghulams } }
-			# 			has_estate = estate_ghulams
-			# 			NOT = {
-			# 				estate_loyalty = {
-			# 					estate = estate_ghulams
-			# 					loyalty = 30
-			# 				}
-			# 			}
-			# 		}
-			# 	}
-			# 	spawn_rebels = {
-			# 		type = ghulams_rebels
-			# 		size = $size$
-			# 		estate = estate_ghulams
-			# 		as_if_faction = yes
-			# 	}
-			# }
 			1 = {
 				trigger = {
 					owner = {
@@ -3661,7 +3354,6 @@ spawn_rebels_from_unhappy_estate = {
 								loyalty = 30
 							}
 						}
-						
 					}
 				}
 				spawn_rebels = {
@@ -3717,16 +3409,6 @@ spawn_rebels_from_unhappy_estate = {
 
 pick_random_estate_if_present = {
 	random_list = {
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_brahmins
-		# 		NOT = { has_country_flag = estate_brahmins_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_brahmins_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_brahmins
-		# 	]
-		# }
 		1 = { 
 			trigger = {
 				has_estate = estate_church
@@ -3737,16 +3419,6 @@ pick_random_estate_if_present = {
 			$estate_action$ = estate_church
 			]
 		}
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_maratha
-		# 		NOT = { has_country_flag = estate_maratha_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_maratha_$flag$ 
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_maratha
-		# 	]
-		# }
 		1 = { 
 			trigger = {
 				has_estate = estate_nobles
@@ -3767,26 +3439,6 @@ pick_random_estate_if_present = {
 			$estate_action$ = estate_burghers
 			]
 		}
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_vaisyas
-		# 		NOT = { has_country_flag = estate_vaisyas_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_vaisyas_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_vaisyas
-		# 	]
-		# }
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_cossacks
-		# 		NOT = { has_country_flag = estate_cossacks_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_cossacks_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_cossacks
-		# 	]
-		# }
 		1 = { 
 			trigger = {
 				has_estate = estate_nomadic_tribes
@@ -3797,77 +3449,6 @@ pick_random_estate_if_present = {
 			$estate_action$ = estate_nomadic_tribes
 			]
 		}
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_dhimmi
-		# 		NOT = { has_country_flag = estate_dhimmi_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_dhimmi_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_dhimmi
-		# 	]
-		# }
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_jains
-		# 		NOT = { has_country_flag = estate_jains_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_jains_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_jains
-		# 	]
-		# }
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_rajput
-		# 		NOT = { has_country_flag = estate_rajput_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_rajput_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_rajput
-		# 	]
-		# }
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_janissaries
-		# 		NOT = { has_country_flag = estate_janissaries_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_janissaries_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_janissaries
-		# 	]
-		# }
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_eunuchs
-		# 		NOT = { has_country_flag = estate_eunuchs_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_eunuchs_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_eunuchs
-		# 	]
-		# }
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_qizilbash
-		# 		NOT = { has_country_flag = estate_qizilbash_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_qizilbash_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_qizilbash
-		# 	]
-		# }
-		# 1 = { 
-		# 	trigger = {
-		# 		has_estate = estate_ghulams
-		# 		NOT = { has_country_flag = estate_ghulams_$flag$ }
-		# 	}
-		# 	set_country_flag = estate_ghulams_$flag$
-		# 	[[estate_action]
-		# 	$estate_action$ = estate_ghulams
-		# 	]
-		# }
-				###################### GMINA #######################
 		1 = { 
 			trigger = {
 				has_estate = estate_army
@@ -4871,27 +4452,6 @@ add_estate_loyalty_by_class_adm = {
 			loyalty = $loyalty$
 		}
 	}
-	# if = {
-	# 	limit = { has_estate = estate_dhimmi }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_dhimmi
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
-	# if = {
-	# 	limit = { has_estate = estate_brahmins }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_brahmins
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
-	# if = {
-	# 	limit = { has_estate = estate_eunuchs }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_eunuchs
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
 	if = {
 		limit = { has_estate = estate_retirees }
 		add_estate_loyalty = {
@@ -4913,6 +4473,8 @@ add_estate_loyalty_by_class_adm = {
 			loyalty = $loyalty$
 		}
 	}
+}
+add_estate_loyalty_by_class_dip = {
 	if = {
 		limit = { has_estate = estate_middle_class }
 		add_estate_loyalty = {
@@ -4927,8 +4489,6 @@ add_estate_loyalty_by_class_adm = {
 			loyalty = $loyalty$
 		}
 	}
-}
-add_estate_loyalty_by_class_dip = {
 	if = {
 		limit = { has_estate = estate_burghers }
 		add_estate_loyalty = {
@@ -4936,20 +4496,8 @@ add_estate_loyalty_by_class_dip = {
 			loyalty = $loyalty$
 		}
 	}
-	# if = {
-	# 	limit = { has_estate = estate_jains }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_jains
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
-	# if = {
-	# 	limit = { has_estate = estate_vaisyas }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_vaisyas
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
+}
+add_estate_loyalty_by_class_mil = {
 	if = {
 		limit = { has_estate = estate_banks }
 		add_estate_loyalty = {
@@ -4978,8 +4526,6 @@ add_estate_loyalty_by_class_dip = {
 			loyalty = $loyalty$
 		}
 	}
-}
-add_estate_loyalty_by_class_mil = {
 	if = {
 		limit = { has_estate = estate_nobles }
 		add_estate_loyalty = {
@@ -4987,13 +4533,6 @@ add_estate_loyalty_by_class_mil = {
 			loyalty = $loyalty$
 		}
 	}
-	# if = {
-	# 	limit = { has_estate = estate_cossacks }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_cossacks
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
 	if = {
 		limit = { has_estate = estate_nomadic_tribes }
 		add_estate_loyalty = {
@@ -5001,41 +4540,6 @@ add_estate_loyalty_by_class_mil = {
 			loyalty = $loyalty$
 		}
 	}
-	# if = {
-	# 	limit = { has_estate = estate_maratha }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_maratha
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
-	# if = {
-	# 	limit = { has_estate = estate_rajput }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_rajput
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
-	# if = {
-	# 	limit = { has_estate = estate_janissaries }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_janissaries
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
-	# if = {
-	# 	limit = { has_estate = estate_qizilbash }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_qizilbash
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
-	# if = {
-	# 	limit = { has_estate = estate_ghulams }
-	# 	add_estate_loyalty = {
-	# 		estate = estate_ghulams
-	# 		loyalty = $loyalty$
-	# 	}
-	# }
 	if = {
 		limit = { has_estate = estate_army }
 		add_estate_loyalty = {

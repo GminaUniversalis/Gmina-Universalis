@@ -2039,17 +2039,17 @@ spawn_country_religious_rebels = {
 			# vajrayana =             { PREV = { spawn_rebels = { type = vajrayana_rebels size = $size$ } } }
 			# zoroastrian =           { PREV = { spawn_rebels = { type = zoroastrian_rebels size = $size$ } } }
 			# dreamtime =             { PREV = { spawn_rebels = { type = dreamtime_rebels size = $size$ } } }
-			retirees =             	  { PREV = { spawn_rebels = { type = retirees_rebels size = $size$ } } }
-			families =             	  { PREV = { spawn_rebels = { type = families_rebels size = $size$ } } }
-			army =             		  { PREV = { spawn_rebels = { type = army_rebels size = $size$ } } }
-			farmers =             	  { PREV = { spawn_rebels = { type = farmers_rebels size = $size$ } } }
-			banks =             	  { PREV = { spawn_rebels = { type = banks_rebels size = $size$ } } }
-			middle_class =            { PREV = { spawn_rebels = { type = middle_class_rebels size = $size$ } } }
-			ub =             		  { PREV = { spawn_rebels = { type = ub_rebels size = $size$ } } }
-			scientists =           { PREV = { spawn_rebels = { type = scientists_rebels size = $size$ } } }
-			investors =               { PREV = { spawn_rebels = { type = investors_rebels size = $size$ } } }
-			priests =                 { PREV = { spawn_rebels = { type = priests_rebels size = $size$ } } }
-			miners =             	  { PREV = { spawn_rebels = { type = miners_rebels size = $size$ } } }
+			# retirees =             	  { PREV = { spawn_rebels = { type = retirees_rebels size = $size$ } } }
+			# families =             	  { PREV = { spawn_rebels = { type = families_rebels size = $size$ } } }
+			# army =             		  { PREV = { spawn_rebels = { type = army_rebels size = $size$ } } }
+			# farmers =             	  { PREV = { spawn_rebels = { type = farmers_rebels size = $size$ } } }
+			# banks =             	  { PREV = { spawn_rebels = { type = banks_rebels size = $size$ } } }
+			# middle_class =            { PREV = { spawn_rebels = { type = middle_class_rebels size = $size$ } } }
+			# ub =             		  { PREV = { spawn_rebels = { type = ub_rebels size = $size$ } } }
+			# scientists =           { PREV = { spawn_rebels = { type = scientists_rebels size = $size$ } } }
+			# investors =               { PREV = { spawn_rebels = { type = investors_rebels size = $size$ } } }
+			# priests =                 { PREV = { spawn_rebels = { type = priests_rebels size = $size$ } } }
+			# miners =             	  { PREV = { spawn_rebels = { type = miners_rebels size = $size$ } } }
 		}
 	}
 }
@@ -2086,17 +2086,17 @@ spawn_province_religious_rebels = {
 		# vajrayana =             { spawn_rebels = { type = vajrayana_rebels size = $size$ } }
 		# zoroastrian =           { spawn_rebels = { type = zoroastrian_rebels size = $size$ } }
 		# dreamtime =             { spawn_rebels = { type = dreamtime_rebels size = $size$ } }
-		retirees =             	{ spawn_rebels = { type = retirees_rebels size = $size$ } } 
-		families =             	{ spawn_rebels = { type = families_rebels size = $size$ } } 
-		army =             		{ spawn_rebels = { type = army_rebels size = $size$ } } 
-		farmers =             	{ spawn_rebels = { type = farmers_rebels size = $size$ } } 
-		banks =             	{ spawn_rebels = { type = banks_rebels size = $size$ } } 
-		middle_class =          { spawn_rebels = { type = middle_class_rebels size = $size$ } } 
-		ub =             		{ spawn_rebels = { type = ub_rebels size = $size$ } } 
-		scientists =         { spawn_rebels = { type = scientists_rebels size = $size$ } } 
-		investors =             { spawn_rebels = { type = investors_rebels size = $size$ } } 
-		priests =               { spawn_rebels = { type = priests_rebels size = $size$ } } 
-		miners =             	{ spawn_rebels = { type = miners_rebels size = $size$ } } 
+		# retirees =             	{ spawn_rebels = { type = retirees_rebels size = $size$ } } 
+		# families =             	{ spawn_rebels = { type = families_rebels size = $size$ } } 
+		# army =             		{ spawn_rebels = { type = army_rebels size = $size$ } } 
+		# farmers =             	{ spawn_rebels = { type = farmers_rebels size = $size$ } } 
+		# banks =             	{ spawn_rebels = { type = banks_rebels size = $size$ } } 
+		# middle_class =          { spawn_rebels = { type = middle_class_rebels size = $size$ } } 
+		# ub =             		{ spawn_rebels = { type = ub_rebels size = $size$ } } 
+		# scientists =         { spawn_rebels = { type = scientists_rebels size = $size$ } } 
+		# investors =             { spawn_rebels = { type = investors_rebels size = $size$ } } 
+		# priests =               { spawn_rebels = { type = priests_rebels size = $size$ } } 
+		# miners =             	{ spawn_rebels = { type = miners_rebels size = $size$ } } 
 	}
 }
 
@@ -2985,121 +2985,6 @@ select_biggest_country_of_scope_type = {
 		}
 	}
 }
-
-#Country effect
-# mal_mansa_musa_visit_effect = {
-# 	trigger_switch = {
-# 		on_trigger = has_country_flag
-# 		mal_journey_to_maghreb = { 			every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = maghreb_region } }		add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_iberia = { 			every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = #iberia_region } }			add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_france = { 			every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = france_region } }			add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_italy = { 			every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = italy_region } }			add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_south_germany = { 	every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = south_german_region } }	add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_balkans = { 			every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = #balkan_region } }			add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_anatolia = { 		every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = #anatolia_region } }		add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_mashriq = { 			every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = mashriq_region } }		add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_egypt = { 			every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = egypt_region } }			add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_arabia = { 			every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = arabia_region } }			add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 		mal_journey_to_horn_of_africa = { 	every_country = { limit = { NOT = { tag = ROOT } NOT = { has_country_flag = mal_is_already_getting_visit } capital_scope = { region = horn_of_africa_region } }	add_country_modifier = { name = mal_the_gold_inflation duration = 1825 } } }
-# 	}
-# }
-
-#Country effect
-# mal_invest_in_own_provinces_effect = {
-# 	trigger_switch = {
-# 		on_trigger = has_country_flag
-# 		mal_journey_to_maghreb = { 			custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = maghreb_region } }		add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_iberia = { 			custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = #iberia_region } }			add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_france = { 			custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = france_region } }			add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_italy = { 			custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = italy_region } }			add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_south_germany = { 	custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = south_german_region } }	add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_balkans = { 			custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = #balkan_region } }			add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_anatolia = { 		custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = #anatolia_region } }		add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_mashriq = { 			custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = mashriq_region } }		add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_egypt = { 			custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = egypt_region } }			add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_arabia = { 			custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = arabia_region } }			add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 		mal_journey_to_horn_of_africa = { 	custom_tooltip = mal_invest_in_region_tt	hidden_effect = { every_owned_province = { limit = { region = horn_of_africa_region } }	add_province_modifier = { name = mal_investing_in_own_provinces duration = 1825 }} }
-# 	}
-# }
-
-#Country effect
-# mal_travel_to_next_area = {
-# 	if = {
-# 		limit = { has_country_flag = mal_journey_to_maghreb }
-# 		clr_country_flag = mal_journey_to_maghreb
-# 		set_country_flag = mal_journey_to_iberia
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_iberia }
-# 		clr_country_flag = mal_journey_to_iberia
-# 		set_country_flag = mal_journey_to_france
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_france }
-# 		clr_country_flag = mal_journey_to_france
-# 		set_country_flag = mal_journey_to_italy
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_italy }
-# 		clr_country_flag = mal_journey_to_italy
-# 		set_country_flag = mal_journey_to_south_germany
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_south_germany }
-# 		clr_country_flag = mal_journey_to_south_germany
-# 		set_country_flag = mal_journey_to_balkans
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_balkans }
-# 		clr_country_flag = mal_journey_to_balkans
-# 		set_country_flag = mal_journey_to_anatolia
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_anatolia }
-# 		clr_country_flag = mal_journey_to_anatolia
-# 		set_country_flag = mal_journey_to_mashriq
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_mashriq }
-# 		clr_country_flag = mal_journey_to_mashriq
-# 		set_country_flag = mal_journey_to_egypt
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_egypt }
-# 		clr_country_flag = mal_journey_to_egypt
-# 		set_country_flag = mal_journey_to_arabia
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_arabia }
-# 		clr_country_flag = mal_journey_to_arabia
-# 		set_country_flag = mal_journey_to_horn_of_africa
-# 	}
-# 	else_if = {
-# 		limit = { has_country_flag = mal_journey_to_horn_of_africa }
-# 		clr_country_flag = mal_journey_to_horn_of_africa
-# 		set_country_flag = mal_journey_to_home
-# 	}
-# 	clr_country_flag = mal_has_just_arrived
-# 	clr_country_flag = mal_visit_foreign_capital
-# }
-
-#Country effect
-# mal_select_country_for_region = {
-# 	trigger_switch = {
-# 		on_trigger = has_country_flag
-# 		mal_journey_to_maghreb = { 			maghreb_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = maghreb_region } }
-# 		mal_journey_to_iberia = { 			#iberia_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = #iberia_region } }
-# 		mal_journey_to_france = { 			france_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = france_region } }
-# 		mal_journey_to_italy = { 			italy_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = italy_region } }
-# 		mal_journey_to_south_germany = { 	south_german_region = {		discover_country = ROOT } select_biggest_country_of_region = { region = south_german_region } }
-# 		mal_journey_to_balkans = { 			#balkan_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = #balkan_region } }
-# 		mal_journey_to_anatolia = { 		#anatolia_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = #anatolia_region } }
-# 		mal_journey_to_mashriq = { 			mashriq_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = mashriq_region } }
-# 		mal_journey_to_egypt = { 			egypt_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = egypt_region } }
-# 		mal_journey_to_arabia = { 			arabia_region = {			discover_country = ROOT } select_biggest_country_of_region = { region = arabia_region } }
-# 		mal_journey_to_horn_of_africa = { 	horn_of_africa_region = {	discover_country = ROOT } select_biggest_country_of_region = { region = horn_of_africa_region } }
-# 	}
-# }
 
 clr_protestant_aspects_buffs = {
 	if = {

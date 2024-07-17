@@ -226,6 +226,7 @@ country_event = {
 		
 		hidden_effect = { 
 			country_event = { 
+				days = 1
 				id = gmina_setup.1 
 			} 
 		}
