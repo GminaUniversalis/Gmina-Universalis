@@ -1,8 +1,7 @@
-government = republic
-add_government_reform = parliamentary_republic_reform
+government = monarchy
+add_government_reform = stadthalter_monarchy_reform
 government_rank = 3
 technology_group = western
-government = republic
 primary_culture = wroclawska
 capital = 3190 #Wroclaw - Stare Miasto
 fixed_capital = 3190 #Wroclaw - Stare Miasto

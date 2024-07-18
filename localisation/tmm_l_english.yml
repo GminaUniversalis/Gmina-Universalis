@@ -1570,7 +1570,7 @@
  CANNOT_CONSOLIDATE_FULL_STRENGTH:0 "All armies are at full strength."
  REORGANIZE_WRONG_NUMBER_OF_UNITS:0 "You need to select two armies."
  DIPLO_ENEMY_ALLIES:0 "$WHO$ is allied to $COUNTRY_ADJ$ enemy $ENEMY$: "
- EMPEROR_INELIGIBLE_NO_HEIR:0 "$COUNTRY$ do not have an Heir."
+ EMPEROR_INELIGIBLE_NO_HEIR:0 "$COUNTRY$ can't be President of Silesian Empire twice in a row"
  SECEDE_SUBJ_TRIBAL_LAND:0 "$WHO$ will cede $WHAT$ Tribal Land to $TO$, changing Liberty Desire by $LD|-$."
  SECEDE_TRIBAL_LAND:0 "$WHO$ will cede $WHAT$ Tribal Land to $TO$."
  DIPLO_LOAN_TOTAL_INTEREST_TOO_MUCH:0 "Total interest of $INTEREST|Y$¤ exceeds $PERCENT|Y%$ of the loan amount: "
