@@ -51,12 +51,12 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			own_core = 257
+			owns_core_province = 257
 			NOT = { religion_group = communism_group }
-			OR = { NOT = { exists = POL exists = PRL } }
+			NOT = { OR = { exists = POL exists = PRL } }
 			adm_tech = 20
 			OR = {
-				development = 5000
+				total_development = 5000
 				num_of_owned_provinces_with = {
 					custom_trigger_tooltip = {
 						tooltip = poland_formable_decision_check_tooltip
@@ -288,12 +288,12 @@ country_decisions = {
 
 			num_of_owned_provinces_with = {
 				OR = {
-					AND = {
+					OR = {
 						region = dolnoslaskie_region
 						region = opolskie_region
 						region = slaskie_region
 					}
-					AND = {
+					OR = {
 						region = lubuskie_region
 						region = zachodnio_pomorskie_region
 						region = warminsko_mazurskie_region
@@ -349,12 +349,14 @@ country_decisions = {
 
 			if = {
 				limit = {
-					region = dolnoslaskie_region
-					region = opolskie_region
-					region = slaskie_region
-					region = lubuskie_region
-					region = zachodnio_pomorskie_region
-					region = warminsko_mazurskie_region
+					OR = {
+						region = dolnoslaskie_region
+						region = opolskie_region
+						region = slaskie_region
+						region = lubuskie_region
+						region = zachodnio_pomorskie_region
+						region = warminsko_mazurskie_region
+					}
 
 					NOT = { owned_by = ROOT }
 				}
@@ -423,17 +425,20 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			own_core = 257
+			owns_core_province = 257
 			religion_group = communism_group
 			OR = { NOT = { exists = POL exists = PRL } }
 			adm_tech = 20
 
-			num_of_owned_provinces_with = {
-				custom_trigger_tooltip = {
-					tooltip = poland_formable_decision_check_tooltip
-					poland_formable_decision_check = yes
+			OR = {
+				total_development = 5000
+				num_of_owned_provinces_with = {
+					custom_trigger_tooltip = {
+						tooltip = poland_formable_decision_check_tooltip
+						poland_formable_decision_check = yes
+					}
+					value = 1000
 				}
-				value = 1000
 			}
 			is_at_war = no
 		}

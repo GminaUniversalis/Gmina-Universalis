@@ -2,12 +2,8 @@ country_decisions = {
 #Malopolska
 	krakow_reformation = {
 		potential = {
-
-			own_province = 262
+			
 			OR = {
-				capital_scope = {
-					region = malopolskie_region
-				}
 				primary_culture = krakowska
 				primary_culture = zachodnio-krakowska
 				primary_culture = wschodnio-krakowska
@@ -37,14 +33,32 @@ country_decisions = {
 
 		}
 		provinces_to_highlight = {
-			area = krakow_centrum
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 262
+	
+						area = krakow_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 262
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 262
+			capital = 262
 			krakow_centrum = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -112,15 +126,9 @@ country_decisions = {
 	tarnow_reformation = {
 		potential = {
 
-			own_province = 4063
-
-			OR = {
-				capital_scope = {
-					region = malopolskie_region
-				}
-				primary_culture = wschodnio-krakowska
-			}
-
+	
+			primary_culture = wschodnio-krakowska
+			
 			NOT = { exists = X21 }
 			NOT = { tag = X21 }
 
@@ -145,17 +153,32 @@ country_decisions = {
 
 		}
 		provinces_to_highlight = {
-			OR = {
-				area = tarnow_wschod
-			}
 
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 4063
+	
+						area = tarnow_wschod
+					}
+
+				}
+				
+				AND = {
+					province_id = 4063
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 4063
+			capital = 4063
 			tarnow_wschod = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -200,14 +223,10 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 4042
+			
 
-			OR = {
-				capital_scope = {	
-					region = malopolskie_region
-				}
-				primary_culture = lachowska
-			}
+			primary_culture = lachowska
+			
 
 			NOT = { exists = X22 }
 			NOT = { tag = X22 }
@@ -235,17 +254,33 @@ country_decisions = {
 
 		provinces_to_highlight = {
 
-			area = nowy_sacz
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 4042
+	
+						area = nowy_sacz
+					}
+
+				}
+				
+				AND = {
+					province_id = 4042
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 4042
+			capital = 4042
 
 			nowy_sacz = {
 				is_core = ROOT
@@ -292,13 +327,11 @@ country_decisions = {
 #Slaskie
 	bielsko_biala_reformation = {
 		potential = {
-			TAG = L19
-			own_province = 265
+
 			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
+				primary_culture = zachodnio-krakowska
 				primary_culture = goralska
+				TAG = L19
 			}
 
 			NOT = { exists = L40 }
@@ -326,15 +359,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = bielsko_biala_centrum
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 265
+	
+						area = bielsko_biala_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 265
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 265
+			capital = 265
 			bielsko_biala_centrum = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -346,45 +395,45 @@ country_decisions = {
 		}
 		effect = {
 
-		change_tag = L40
-		on_change_tag_effect = yes
-		restore_country_name = yes
-		swap_non_generic_missions = yes
-		if = {
-			limit = { NOT = { government_rank = 2 } }
-			set_government_rank = 2
-		}
-
-		add_country_modifier = {
-			name = "centralization_modifier"
-			duration = 7300
-		}
-
-		if = {
-			limit = { has_custom_ideas = no }
-			country_event = { id = ideagroups.1 } #Swap Ideas
-		}
-
-		bielsko_biala_poludnie = {
-			limit = {
-				NOT = { owned_by = ROOT }
+			change_tag = L40
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
 			}
-			add_permanent_claim = L40
-		}
-		bielsko_biala_polnoc = {
-			limit = {
-				NOT = { owned_by = ROOT }
-			}
-			add_permanent_claim = L40
-		}
-		bielsko_biala_wschod = {
-			limit = {
-				NOT = { owned_by = ROOT }
-			}
-			add_permanent_claim = L40
-		}
 
-		set_country_flag = formed_miasto_bielsko_biala_flag
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			bielsko_biala_poludnie = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = L40
+			}
+			bielsko_biala_polnoc = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = L40
+			}
+			bielsko_biala_wschod = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = L40
+			}
+
+			set_country_flag = formed_miasto_bielsko_biala_flag
 
 		}
 		ai_will_do = {
@@ -394,15 +443,14 @@ country_decisions = {
 	}
 
 	jastrzebie_zdroj_reformation = {
+
 		potential = {
+
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
-			own_province = 67
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = gornoslaska
-			}
+
+
+			primary_culture = gornoslaska
+			
 
 			NOT = { exists = L22 }
 			NOT = { tag = L22 }
@@ -429,15 +477,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = jastrzebie_poludnie
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 67
+	
+						area = jastrzebie_poludnie
+					}
+
+				}
+				
+				AND = {
+					province_id = 67
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 67
+			capital = 67
 			jastrzebie_poludnie = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -449,33 +513,33 @@ country_decisions = {
 		}
 		effect = {
 
-		change_tag = L22
-		on_change_tag_effect = yes
-		restore_country_name = yes
-		swap_non_generic_missions = yes
-		if = {
-			limit = { NOT = { government_rank = 2 } }
-			set_government_rank = 2
-		}
-
-		add_country_modifier = {
-			name = "centralization_modifier"
-			duration = 7300
-		}
-
-		if = {
-			limit = { has_custom_ideas = no }
-			country_event = { id = ideagroups.1 } #Swap Ideas
-		}
-
-		jastrzebie_polnoc = {
-			limit = {
-				NOT = { owned_by = ROOT }
+			change_tag = L22
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
 			}
-			add_permanent_claim = l22
-		}
 
-		set_country_flag = formed_miasto_jastrzebie_zdroj_flag
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			jastrzebie_polnoc = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = l22
+			}
+
+			set_country_flag = formed_miasto_jastrzebie_zdroj_flag
 
 		}
 		ai_will_do = {
@@ -486,14 +550,12 @@ country_decisions = {
 
 	zory_reformation = {
 		potential = {
+
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
-			own_province = 4756
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = gornoslaska
-			}
+
+
+			primary_culture = gornoslaska
+			
 
 			NOT = { exists = L23 }
 			NOT = { tag = L23 }
@@ -520,20 +582,37 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = zory_centrum
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 4756
+	
+						area = zory_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 4756
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 4756
+			capital = 4756
 			zory_centrum = {
 				is_core = ROOT
 				owned_by = ROOT
 				type = all
 			}
+			highlight = 4756
 			NOT = { exists = L23 }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -563,7 +642,7 @@ country_decisions = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = l23
+			add_permanent_claim = L23
 		}
 
 		set_country_flag = formed_miasto_zory_flag
@@ -577,13 +656,11 @@ country_decisions = {
 
 	rybnik_reformation = {
 		potential = {
-			TAG = L16
+
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
-			own_province = 4751
+
 			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
+				TAG = L16
 				primary_culture = slonska
 			}
 
@@ -612,15 +689,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = rybnik_poludnie
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 4751
+	
+						area = rybnik_poludnie
+					}
+
+				}
+				
+				AND = {
+					province_id = 4751
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 4751
+			capital = 4751
 			rybnik_poludnie = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -669,13 +762,9 @@ country_decisions = {
 
 	tychy_reformation = {
 		potential = {
-			own_province = 140
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = gornoslaska
-			}
+
+			primary_culture = gornoslaska
+
 
 			NOT = { exists = L24 }
 			NOT = { tag = L24 }
@@ -702,15 +791,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = tychy_stare
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 140
+	
+						area = tychy_stare
+					}
+
+				}
+				
+				AND = {
+					province_id = 140
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 140
+			capital = 140
 			tychy_stare = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -759,13 +864,9 @@ country_decisions = {
 
 	myslowice_reformation = {
 		potential = {
-			own_province = 154
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = gornoslaska
-			}
+
+			primary_culture = gornoslaska
+			
 
 			NOT = { exists = L25 }
 			NOT = { tag = L25 }
@@ -792,15 +893,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = myslowice_srodmiescie
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 154
+	
+						area = myslowice_srodmiescie
+					}
+
+				}
+				
+				AND = {
+					province_id = 154
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 154
+			capital = 154
 			myslowice_srodmiescie = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -849,13 +966,9 @@ country_decisions = {
 
 	jaworzno_reformation = {
 		potential = {
-			own_province = 4080
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = zachodnio_krakowska
-			}
+
+			primary_culture = zachodnio_krakowska
+			
 
 			NOT = { exists = L34 }
 			NOT = { tag = L34 }
@@ -882,15 +995,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = jaworzno_centrum
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 154
+	
+						area = jaworzno_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 154
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 154
+			capital = 154
 			jaworzno_centrum = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -945,13 +1074,9 @@ country_decisions = {
 
 	sosnowiec_reformation = {
 		potential = {
-			own_province = 153
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = zaglebiowska
-			}
+
+			primary_culture = zaglebiowska
+			
 
 			NOT = { exists = L33 }
 			NOT = { tag = L33 }
@@ -978,15 +1103,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = sosnowiec_centrum
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 153
+	
+						area = sosnowiec_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 153
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 153
+			capital = 153
 			sosnowiec_centrum = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1047,13 +1188,9 @@ country_decisions = {
 
 	dabrowa_gornicza_reformation = {
 		potential = {
-			own_province = 1155
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = zaglebiowska
-			}
+
+			primary_culture = zaglebiowska
+			
 
 			NOT = { exists = L35 }
 			NOT = { tag = L35 }
@@ -1080,15 +1217,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = dabrowa_gornicza_srodmiescie
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 1155
+	
+						area = dabrowa_gornicza_srodmiescie
+					}
+
+				}
+				
+				AND = {
+					province_id = 1155
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 1155
+			capital = 1155
 			dabrowa_gornicza_srodmiescie = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1149,13 +1302,9 @@ country_decisions = {
 
 	piekary_slaskie_reformation = {
 		potential = {
-			own_province = 160
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = slonska
-			}
+
+			primary_culture = slonska
+			
 
 			NOT = { exists = L30 }
 			NOT = { tag = L30 }
@@ -1182,15 +1331,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = piekary
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 160
+	
+						area = piekary
+					}
+
+				}
+				
+				AND = {
+					province_id = 160
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 160
+			capital = 160
 			piekary = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1232,13 +1397,9 @@ country_decisions = {
 
 	bytom_reformation = {
 		potential = {
-			own_province = 4128
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = gornoslaska
-			}
+
+			primary_culture = gornoslaska
+			
 
 			NOT = { exists = L31 }
 			NOT = { tag = L31 }
@@ -1265,15 +1426,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = powiat_bytom
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 4128
+	
+						area = powiat_bytom
+					}
+
+				}
+				
+				AND = {
+					province_id = 4128
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 4128
+			capital = 4128
 			powiat_bytom = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1322,13 +1499,9 @@ country_decisions = {
 
 	chorzow_reformation = {
 		potential = {
-			own_province = 1827
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = slonska
-			}
+
+			primary_culture = slonska
+			
 
 			NOT = { exists = L28 }
 			NOT = { tag = L28 }
@@ -1355,16 +1528,32 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = chorzow
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 1827
+	
+						area = chorzow
+					}
+
+				}
+				
+				AND = {
+					province_id = 1827
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 1827
-			powiat_bytom = {
+			capital = 1827
+			chorzow = {
 				is_core = ROOT
 				owned_by = ROOT
 				type = all
@@ -1405,13 +1594,9 @@ country_decisions = {
 
 	swietochlowice_reformation = {
 		potential = {
-			own_province = 3000
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = slonska
-			}
+
+			primary_culture = slonska
+			
 
 			NOT = { exists = L27 }
 			NOT = { tag = L27 }
@@ -1438,15 +1623,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = swietochlowice
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 4128
+	
+						area = swietochlowice
+					}
+
+				}
+				
+				AND = {
+					province_id = 4128
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 4128
+			capital = 4128
 			swietochlowice = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1495,13 +1696,9 @@ country_decisions = {
 
 	ruda_slaska_reformation = {
 		potential = {
-			own_province = 1951
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = slonska
-			}
+
+			primary_culture = slonska
+			
 
 			NOT = { exists = L26 }
 			NOT = { tag = L26 }
@@ -1528,15 +1725,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = ruda_polnoc
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 1951
+	
+						area = ruda_polnoc
+					}
+
+				}
+				
+				AND = {
+					province_id = 1951
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 1951
+			capital = 1951
 			ruda_polnoc = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1585,13 +1798,9 @@ country_decisions = {
 
 	zabrze_reformation = {
 		potential = {
-			own_province = 156
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = gornoslaska
-			}
+
+			primary_culture = gornoslaska
+			
 
 			NOT = { exists = L32 }
 			NOT = { tag = L32 }
@@ -1618,15 +1827,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = zabrze_centrum
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 156
+	
+						area = zabrze_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 156
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 156
+			capital = 156
 			zabrze_centrum = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1682,13 +1907,9 @@ country_decisions = {
 
 	gliwice_reformation = {
 		potential = {
-			own_province = 138
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = gornoslaska
-			}
+
+			primary_culture = gornoslaska
+			
 
 			NOT = { exists = L36 }
 			NOT = { tag = L36 }
@@ -1715,15 +1936,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = gliwice_srodmiescie
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 138
+	
+						area = gliwice_srodmiescie
+					}
+
+				}
+				
+				AND = {
+					province_id = 138
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 138
+			capital = 138
 			gliwice_srodmiescie = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1786,13 +2023,9 @@ country_decisions = {
 
 	czestochowa_reformation = {
 		potential = {
-			own_province = 441
-			OR = {
-				capital_scope = {
-					region = slaskie_region
-				}
-				primary_culture = zachodnio-krakowska
-			}
+
+			primary_culture = zachodnio-krakowska
+			
 
 			NOT = { exists = L37 }
 			NOT = { tag = L37 }
@@ -1819,15 +2052,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 
-				area = czestochowa_centrum
-
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 441
+	
+						area = czestochowa_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 441
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 		allow = {
-			owns_core_province = 441
+			capital = 441
 			czestochowa_centrum = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -1894,14 +2143,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 4761
-
-			OR = {
-				capital_scope = {
-					region = opolskie_region
-				}
-				primary_culture = opolska
-			}
+			primary_culture = opolska
+			
 
 			NOT = { exists = H20 }
 			NOT = { tag = H20 }
@@ -1931,18 +2174,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = opole_centrum
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 4761
+	
+						area = opole_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 4761
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 4761
+			capital = 4761
 
 			opole_centrum = {
 				is_core = ROOT
@@ -2030,14 +2289,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 3190
-
-			OR = {
-				capital_scope = {
-					region = dolnoslaskie_region
-				}
-				primary_culture = wroclawska
-			}
+			primary_culture = wroclawska
+			
 
 			NOT = { exists = A27 }
 			NOT = { tag = A27 }
@@ -2067,20 +2320,36 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = wroclaw_srodmiescie
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 3190
+	
+						area = wroclaw_srodmiescie
+					}
+
+				}
+				
+				AND = {
+					province_id = 3190
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 3190
+			capital = 3190
 
-			opole_centrum = {
+			wroclaw_srodmiescie = {
 				is_core = ROOT
 				owned_by = ROOT
 				type = all
@@ -2157,14 +2426,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 2879
-
-			OR = {
-				capital_scope = {
-					region = dolnoslaskie_region
-				}
-				primary_culture = dolnoslaska
-			}
+			primary_culture = dolnoslaska
+			
 
 			NOT = { exists = A30 }
 			NOT = { tag = A30 }
@@ -2194,18 +2457,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = walbrzych_poludnie
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2879
+	
+						area = walbrzych_poludnie
+					}
+
+				}
+				
+				AND = {
+					province_id = 2879
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2879
+			capital = 2879
 
 			walbrzych_poludnie = {
 				is_core = ROOT
@@ -2263,14 +2542,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 2921
-
-			OR = {
-				capital_scope = {
-					region = dolnoslaskie_region
-				}
-				primary_culture = dolnoslaska
-			}
+			primary_culture = dolnoslaska
+			
 
 			NOT = { exists = A29 }
 			NOT = { tag = A29 }
@@ -2300,18 +2573,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = jelenia_gora_centrum
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2921
+	
+						area = jelenia_gora_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 2921
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2921
+			capital = 2921
 
 			jelenia_gora_centrum = {
 				is_core = ROOT
@@ -2376,14 +2665,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 2906
-
-			OR = {
-				capital_scope = {
-					region = dolnoslaskie_region
-				}
-				primary_culture = dolnoslaska
-			}
+			primary_culture = dolnoslaska
+			
 
 			NOT = { exists = A28 }
 			NOT = { tag = A28 }
@@ -2413,18 +2696,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = legnica
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 3190
+	
+						area = legnica
+					}
+
+				}
+				
+				AND = {
+					province_id = 3190
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 3190
+			capital = 3190
 
 			legnica = {
 				is_core = ROOT
@@ -2478,18 +2777,14 @@ country_decisions = {
 		ai_importance = 400 
 	}
 
+#Lubuskie
+
 	zielona_gora_reformation = {
 
 		potential = {
 
-			own_province = 2831
-
-			OR = {
-				capital_scope = {
-					region = lubuskie_region
-				}
-				primary_culture = dolnoslaska
-			}
+			primary_culture = dolnoslaska
+			
 
 			NOT = { exists = W11 }
 			NOT = { tag = W11 }
@@ -2519,18 +2814,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = zielona_gora_centrum
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2831
+	
+						area = zielona_gora_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 2831
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2831
+			capital = 2831
 
 			zielona_gora_centrum = {
 				is_core = ROOT
@@ -2616,14 +2927,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 1006
-
-			OR = {
-				capital_scope = {
-					region = lubuskie_region
-				}
-				primary_culture = lubuska
-			}
+			primary_culture = lubuska
+			
 
 			NOT = { exists = W14 }
 			NOT = { tag = W14 }
@@ -2653,18 +2958,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = gorzow_wielkopolski_centrum
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2831
+	
+						area = gorzow_wielkopolski_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 2831
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2831
+			capital = 2831
 
 			gorzow_wielkopolski_centrum = {
 				is_core = ROOT
@@ -2718,20 +3039,131 @@ country_decisions = {
 		ai_importance = 400 
 	}
 
+	kostrzyn_nad_odra_reformation = {
+
+		potential = {
+
+			primary_culture = lubuska
+			
+
+			NOT = { exists = W15 }
+			NOT = { tag = W15 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 808
+	
+						area = Kostrzyn_nad_odra
+					}
+
+				}
+				
+				AND = {
+					province_id = 808
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 808
+
+			Kostrzyn_nad_odra = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = W15 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = W15
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			Kostrzyn_nad_odra = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = W15
+			}
+
+			set_country_flag = formed_miasto_kostrzyn_nad_odra_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
 #Wielkopolska
 
 	poznan_reformation = {
 
 		potential = {
 
-			own_province = 501
 
-			OR = {
-				capital_scope = {
-					region = wielkopolska_region
-				}
-				primary_culture = poznanska
-			}
+			primary_culture = poznanska
+			
 
 			NOT = { exists = R32 }
 			NOT = { tag = R32 }
@@ -2761,18 +3193,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = poznan_stare_miasto
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 501
+	
+						area = poznan_stare_miasto
+					}
+
+				}
+				
+				AND = {
+					province_id = 501
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 501
+			capital = 501
 
 			poznan_stare_miasto = {
 				is_core = ROOT
@@ -2851,14 +3299,9 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 2810
 
-			OR = {
-				capital_scope = {
-					region = wielkopolska_region
-				}
-				primary_culture = poznanska
-			}
+			primary_culture = poznanska
+			
 
 			NOT = { exists = R35 }
 			NOT = { tag = R35 }
@@ -2888,18 +3331,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = leszno_centrum
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2810
+	
+						area = leszno_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 2810
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2810
+			capital = 2810
 
 			leszno_centrum = {
 				is_core = ROOT
@@ -2957,14 +3416,9 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 2971
 
-			OR = {
-				capital_scope = {
-					region = wielkopolska_region
-				}
-				primary_culture = kaliska
-			}
+			primary_culture = kaliska
+			
 
 			NOT = { exists = R34 }
 			NOT = { tag = R34 }
@@ -2994,18 +3448,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = konin_zachod
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2831
+	
+						area = konin_zachod
+					}
+
+				}
+				
+				AND = {
+					province_id = 2831
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2831
+			capital = 2831
 
 			konin_zachod = {
 				is_core = ROOT
@@ -3070,14 +3540,9 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 407
 
-			OR = {
-				capital_scope = {
-					region = wielkopolska_region
-				}
-				primary_culture = kaliska
-			}
+			primary_culture = kaliska
+			
 
 			NOT = { exists = R33 }
 			NOT = { tag = R33 }
@@ -3107,18 +3572,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = kalisz_centrum
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2831
+	
+						area = kalisz_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 2831
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2831
+			capital = 2831
 
 			kalisz_centrum = {
 				is_core = ROOT
@@ -3185,14 +3666,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 2461
-
-			OR = {
-				capital_scope = {
-					region = lodzkie_region
-				}
-				primary_culture = lodzka
-			}
+			primary_culture = lodzka
+			
 
 			NOT = { exists = Q22 }
 			NOT = { tag = Q22 }
@@ -3222,18 +3697,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = lodz_srodmiescie
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2461
+	
+						area = lodz_srodmiescie
+					}
+
+				}
+				
+				AND = {
+					province_id = 2461
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2461
+			capital = 2461
 
 			lodz_srodmiescie = {
 				is_core = ROOT
@@ -3312,14 +3803,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 368
-
-			OR = {
-				capital_scope = {
-					region = lodzkie_region
-				}
-				primary_culture = sieradzka
-			}
+			primary_culture = sieradzka
+			
 
 			NOT = { exists = Q23 }
 			NOT = { tag = Q23 }
@@ -3349,18 +3834,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = piotrkow_trybunalski
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 368
+	
+						area = piotrkow_trybunalski
+					}
+
+				}
+				
+				AND = {
+					province_id = 368
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 368
+			capital = 368
 
 			piotrkow_trybunalski = {
 				is_core = ROOT
@@ -3418,14 +3919,9 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 4325
 
-			OR = {
-				capital_scope = {
-					region = lodzkie_region
-				}
-				primary_culture = mazowiecka
-			}
+			primary_culture = mazowiecka
+			
 
 			NOT = { exists = Q24 }
 			NOT = { tag = Q24 }
@@ -3455,18 +3951,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = skierniewice_centrum
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2831
+	
+						area = skierniewice_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 2831
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2831
+			capital = 2831
 
 			skierniewice_centrum = {
 				is_core = ROOT
@@ -3526,14 +4038,9 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 1120
 
-			OR = {
-				capital_scope = {
-					region = swietokrzyskie_region
-				}
-				primary_culture = kielecka
-			}
+			primary_culture = kielecka
+			
 
 			NOT = { exists = M14 }
 			NOT = { tag = M14 }
@@ -3563,18 +4070,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = kielce_centrum
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 1120
+	
+						area = kielce_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 1120
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2831
+			capital = 1120
 
 			kielce_centrum = {
 				is_core = ROOT
@@ -3641,14 +4164,8 @@ country_decisions = {
 
 		potential = {
 
-			own_province = 2053
-
-			OR = {
-				capital_scope = {
-					region = podkarpackie_region
-				}
-				primary_culture = lasowiecka
-			}
+			primary_culture = lasowiecka
+			
 
 			NOT = { exists = I24 }
 			NOT = { tag = I24 }
@@ -3678,18 +4195,34 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-		
-			area = tarnobrzeg_poludnie
-		
+
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2831
+	
+						area = tarnobrzeg_poludnie
+					}
+
+				}
+				
+				AND = {
+					province_id = 2831
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
 		}
 
 		allow = {
 
-			owns_core_province = 2831
+			capital = 2831
 
 			tarnobrzeg_poludnie = {
 				is_core = ROOT
@@ -3743,5 +4276,3275 @@ country_decisions = {
 		ai_importance = 400 
 	}
 
+	rzeszow_reformation = {
+
+		potential = {
+
+			primary_culture = lasowiecka
+			
+
+			NOT = { exists = I22 }
+			NOT = { tag = I22 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2788
 	
+						area = rzeszow_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 2788
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 2788
+
+			rzeszow_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = I22 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = I22 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			rzeszow_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = I22
+			}
+
+			set_country_flag = formed_miasto_rzeszow_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	krosno_reformation = {
+
+		potential = {
+
+			primary_culture = podgorzanska
+			
+
+			NOT = { exists = I25 }
+			NOT = { tag = I25 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 1098
+	
+						area = krosno_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 1098
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 1098
+
+			krosno_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = I25 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = I25 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			krosno_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = I25
+			}
+
+			set_country_flag = formed_miasto_krosno_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	przemysl_reformation = {
+
+		potential = {
+
+			primary_culture = kresowa
+			
+
+			NOT = { exists = I23 }
+			NOT = { tag = I23 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 1086
+	
+						area = przemysl_centrum
+					}
+
+				}
+				
+				AND = {
+					province_id = 1086
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 1086
+
+			przemysl_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = I23 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = I23 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			przemysl_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = I23
+			}
+
+			set_country_flag = formed_miasto_przemysl_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+#Lubelskie
+	lublin_reformation = {
+
+	potential = {
+
+		primary_culture = lubelska
+		
+
+		NOT = { exists = U21 }
+		NOT = { tag = U21 }
+
+		OR = {
+			ai = no
+			is_playing_custom_nation = no
+		}
+
+		OR = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+		}
+
+		is_colonial_nation = no
+
+		OR = {
+
+			is_former_colonial_nation = no
+
+			AND = {
+				is_former_colonial_nation = yes
+				ai = no
+			}
+		}
+
+	}
+
+	provinces_to_highlight = {
+
+		OR = {
+			AND = {
+				OR = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				
+				OR = {
+					province_id = 969
+
+					area = lublin
+				}
+
+			}
+			
+			AND = {
+				province_id = 969
+				is_core = ROOT
+				owned_by = ROOT
+				is_capital = no
+			}
+		}
+	}
+
+	allow = {
+
+		capital = 969
+
+		lublin = {
+			is_core = ROOT
+			owned_by = ROOT
+			type = all
+		}
+
+		NOT = { exists = U21 }
+
+		is_at_war = no
+		is_free_or_tributary_trigger = yes
+	}
+
+	effect = {
+	
+		change_tag = U21 
+		on_change_tag_effect = yes
+		restore_country_name = yes
+		swap_non_generic_missions = yes
+
+		if = {
+			limit = { NOT = { government_rank = 2 } }
+			set_government_rank = 2
+		}
+
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+
+		lublin = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = U21
+		}
+
+		set_country_flag = formed_miasto_lublin_flag
+
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	ai_importance = 400 
+	}
+
+	zamosc_reformation = {
+
+		potential = {
+	
+			primary_culture = kresowa
+			
+	
+			NOT = { exists = U22 }
+			NOT = { tag = U22 }
+	
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+	
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+	
+			is_colonial_nation = no
+	
+			OR = {
+	
+				is_former_colonial_nation = no
+	
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+	
+		}
+	
+		provinces_to_highlight = {
+	
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 547
+	
+						area = zamosc
+					}
+	
+				}
+				
+				AND = {
+					province_id = 547
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+	
+		allow = {
+	
+			capital = 547
+	
+			zamosc = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+	
+			NOT = { exists = U22 }
+	
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+	
+		effect = {
+		
+			change_tag = U22 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+	
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+	
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+	
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+	
+			zamosc = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = U22
+			}
+	
+			set_country_flag = formed_miasto_zamosc_flag
+	
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		ai_importance = 400 
+	}
+
+	chelm_reformation = {
+
+		potential = {
+	
+			primary_culture = kresowa
+			
+	
+			NOT = { exists = U23 }
+			NOT = { tag = U23 }
+	
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+	
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+	
+			is_colonial_nation = no
+	
+			OR = {
+	
+				is_former_colonial_nation = no
+	
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+	
+		}
+	
+		provinces_to_highlight = {
+	
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 4419
+	
+						area = chelm_lubelski
+					}
+	
+				}
+				
+				AND = {
+					province_id = 4419
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+	
+		allow = {
+	
+			capital = 4419
+	
+			chelm_lubelski = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+	
+			NOT = { exists = U23 }
+	
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+	
+		effect = {
+		
+			change_tag = U23 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+	
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+	
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+	
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+	
+			chelm_lubelski = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = U23
+			}
+	
+			set_country_flag = formed_miasto_chelm_flag
+	
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		ai_importance = 400 
+	}
+
+	biala_podlaska_reformation = {
+
+		potential = {
+	
+			primary_culture = poleska
+			
+	
+			NOT = { exists = U24 }
+			NOT = { tag = U24 }
+	
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+	
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+	
+			is_colonial_nation = no
+	
+			OR = {
+	
+				is_former_colonial_nation = no
+	
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+	
+		}
+	
+		provinces_to_highlight = {
+	
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 4511
+	
+						area = biala_podlaska
+					}
+	
+				}
+				
+				AND = {
+					province_id = 4511
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+	
+		allow = {
+	
+			capital = 4511
+	
+			biala_podlaska = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+	
+			NOT = { exists = U24 }
+	
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+	
+		effect = {
+		
+			change_tag = U24 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+	
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+	
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+	
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+	
+			biala_podlaska = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = U24
+			}
+	
+			set_country_flag = formed_miasto_biala_podlaska_flag
+	
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		ai_importance = 400 
+	}
+
+#Mazowieckie
+
+	warszawa_reformation = {
+
+	potential = {
+
+		primary_culture = warszawska
+		
+
+		NOT = { exists = G12 }
+		NOT = { tag = G12 }
+
+		OR = {
+			ai = no
+			is_playing_custom_nation = no
+		}
+
+		OR = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+		}
+
+		is_colonial_nation = no
+
+		OR = {
+
+			is_former_colonial_nation = no
+
+			AND = {
+				is_former_colonial_nation = yes
+				ai = no
+			}
+		}
+
+	}
+
+	provinces_to_highlight = {
+
+		OR = {
+			AND = {
+				OR = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				
+				OR = {
+					province_id = 257
+
+					area = warszawa_srodmiescie
+				}
+
+			}
+			
+			AND = {
+				province_id = 257
+				is_core = ROOT
+				owned_by = ROOT
+				is_capital = no
+			}
+		}
+	}
+
+	allow = {
+
+		capital = 257
+
+		warszawa_srodmiescie = {
+			is_core = ROOT
+			owned_by = ROOT
+			type = all
+		}
+
+		NOT = { exists = G12 }
+
+		is_at_war = no
+		is_free_or_tributary_trigger = yes
+	}
+
+	effect = {
+	
+		change_tag = G12 
+		on_change_tag_effect = yes
+		restore_country_name = yes
+		swap_non_generic_missions = yes
+
+		if = {
+			limit = { NOT = { government_rank = 2 } }
+			set_government_rank = 2
+		}
+
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+
+		warszawa_srodmiescie = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = G12
+		}
+
+		set_country_flag = formed_miasto_warszawa_flag
+
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	ai_importance = 400 
+	}
+
+	radom_reformation = {
+
+		potential = {
+
+			primary_culture = radomska
+
+
+			NOT = { exists = G39 }
+			NOT = { tag = G39 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 2330
+
+						area = radom_centrum
+					}
+
+				}
+
+				AND = {
+					province_id = 2330
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 2330
+
+			radom_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = G39 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = G39 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			radom_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = G39
+			}
+
+			set_country_flag = formed_miasto_radom_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	plock_reformation = {
+
+		potential = {
+
+			primary_culture = plocka
+
+
+			NOT = { exists = G40 }
+			NOT = { tag = G40 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 972
+
+						area = plock_centrum
+					}
+
+				}
+
+				AND = {
+					province_id = 972
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 972
+
+			plock_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = G40 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = G40 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			plock_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = G40
+			}
+
+			set_country_flag = formed_miasto_plock_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	siedlce_reformation = {
+
+		potential = {
+
+			primary_culture = podlaska
+
+
+			NOT = { exists = G41 }
+			NOT = { tag = G41 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 739
+
+						area = siedlce
+					}
+
+				}
+
+				AND = {
+					province_id = 739
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 739
+
+			siedlce = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = G41 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = G41 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			siedlce = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = G41
+			}
+
+			set_country_flag = formed_miasto_siedlce_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	ostroleka_reformation = {
+
+		potential = {
+
+			primary_culture = kurpiowska
+
+
+			NOT = { exists = G42 }
+			NOT = { tag = G42 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 739
+
+						area = ostroleka
+					}
+
+				}
+
+				AND = {
+					province_id = 739
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 739
+
+			ostroleka = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = G42 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = G42 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			ostroleka = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = G42
+			}
+
+			set_country_flag = formed_miasto_ostroleka_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+#Kujawsko-Pomorskie
+	
+	bydgoszcz_reformation = {
+
+		potential = {
+
+			primary_culture = kujawska
+
+
+			NOT = { exists = B20 }
+			NOT = { tag = B20 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 2991
+
+						area = Bydgoszcz_dolny_taras
+					}
+
+				}
+
+				AND = {
+					province_id = 2991
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 2991
+
+			Bydgoszcz_dolny_taras = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = B20 }
+
+			NOT = { tag = B21 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = B20 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			Bydgoszcz_dolny_taras = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = B20
+			}
+
+			set_country_flag = formed_miasto_bydgoszcz_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+	
+	torun_reformation = {
+
+		potential = {
+
+			primary_culture = kujawska
+
+
+			NOT = { exists = B21 }
+			NOT = { tag = B21 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 72
+
+						area = Torun_centrum
+					}
+
+				}
+
+				AND = {
+					province_id = 72
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 72
+
+			Torun_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = B21 }
+			NOT = { tag = B20}
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = B21 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			Torun_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = B21
+			}
+
+			set_country_flag = formed_miasto_torun_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	grudziadz_reformation = {
+
+		potential = {
+
+			primary_culture = chelminska
+
+
+			NOT = { exists = B22 }
+			NOT = { tag = B22 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 2963
+
+						area = grudziadz_poludnie
+					}
+
+				}
+
+				AND = {
+					province_id = 2963
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 2963
+
+			grudziadz_poludnie = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = B22 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = B22 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			grudziadz_poludnie = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = B22
+			}
+
+			set_country_flag = formed_miasto_grudziadz_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	wloclawek_reformation = {
+
+		potential = {
+
+			primary_culture = kujawska
+
+
+			NOT = { exists = B23 }
+			NOT = { tag = B23 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 2975
+
+						area = wloclawek_centrum
+					}
+
+				}
+
+				AND = {
+					province_id = 2975
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 2975
+
+			wloclawek_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = B23 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = B23 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			wloclawek_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = B23
+			}
+
+			set_country_flag = formed_miasto_wloclawek_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+#Poddlasie
+	
+	bialystok_reformation = {
+
+		potential = {
+
+			primary_culture = podlaska
+
+
+			NOT = { exists = J14 }
+			NOT = { tag = J14 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 1065
+
+						area = bialystok_centrum
+					}
+
+				}
+
+				AND = {
+					province_id = 1065
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 1065
+
+			bialystok_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = J14 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = J14 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			bialystok_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = J14
+			}
+
+			set_country_flag = formed_miasto_bialystok_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	lomza_reformation = {
+
+		potential = {
+
+			primary_culture = mazowiecka
+
+
+			NOT = { exists = J15 }
+			NOT = { tag = J15 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 1058
+
+						area = lomza
+					}
+
+				}
+
+				AND = {
+					province_id = 1058
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 1058
+
+			lomza = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = J15 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = J15 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			lomza = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = J15
+			}
+
+			set_country_flag = formed_miasto_lomza_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	suwalki_reformation = {
+
+		potential = {
+
+			primary_culture = suwalska
+
+
+			NOT = { exists = J17 }
+			NOT = { tag = J17 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 1058
+
+						area = suwalki_polnoc
+					}
+
+				}
+
+				AND = {
+					province_id = 1058
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 1058
+
+			suwalki_polnoc = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = J17 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = J17 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			suwalki_polnoc = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = J17
+			}
+
+			set_country_flag = formed_miasto_suwalki_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+#Warminsko-Mazurskie
+
+	olsztyn_reformation = {
+
+		potential = {
+
+			primary_culture = warminska
+
+
+			NOT = { exists = N21 }
+			NOT = { tag = N21 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 292
+
+						area = olsztyn_centrum
+					}
+
+				}
+
+				AND = {
+					province_id = 292
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 292
+
+			olsztyn_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = N21 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = N21 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			olsztyn_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = N21
+			}
+
+			set_country_flag = formed_miasto_olsztyn_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	elblag_reformation = {
+
+		potential = {
+
+			primary_culture = warminska
+
+
+			NOT = { exists = N22 }
+			NOT = { tag = N22 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 4745
+
+						area = elblag_centrum
+					}
+
+				}
+
+				AND = {
+					province_id = 4745
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 4745
+
+			elblag_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = N22 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = N22 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			elblag_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = N22
+			}
+
+			set_country_flag = formed_miasto_elblag_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+#Pomorskie
+	
+	gdansk_reformation = {
+
+		potential = {
+
+			primary_culture = trojmiasto
+
+
+			NOT = { exists = Y19 }
+			NOT = { tag = Y19 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 43
+
+						area = gdansk_centralny
+					}
+
+				}
+
+				AND = {
+					province_id = 43
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 43
+
+			gdansk_centralny = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = Y19 }
+
+			NOT = { tag = Y20 }
+			NOT = { tag = Y21 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = Y19 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			gdansk_centralny = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Y19
+			}
+
+			set_country_flag = formed_miasto_gdansk_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	sopot_reformation = {
+
+		potential = {
+
+			primary_culture = trojmiasto
+
+
+			NOT = { exists = Y20 }
+			NOT = { tag = Y20 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 1776
+
+						area = gdynia_poludnie
+					}
+
+				}
+
+				AND = {
+					province_id = 1776
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 1776
+
+			gdynia_poludnie = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = Y20 }
+
+			NOT = { tag = Y19 }
+			NOT = { tag = Y21 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = Y20 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			gdynia_poludnie = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Y20
+			}
+
+			set_country_flag = formed_miasto_sopot_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	gdynia_reformation = {
+
+		potential = {
+
+			primary_culture = trojmiasto
+
+
+			NOT = { exists = Y21 }
+			NOT = { tag = Y21 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 1777
+
+						area = gdynia_polnoc
+					}
+
+				}
+
+				AND = {
+					province_id = 1777
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 1777
+
+			gdynia_polnoc = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = Y21 }
+
+			NOT = { tag = Y19 }
+			NOT = { tag = Y20 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = Y21 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			gdynia_polnoc = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Y21
+			}
+
+			set_country_flag = formed_miasto_gdynia_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	slupsk_reformation = {
+
+		potential = {
+
+			primary_culture = srodkowopomorska
+
+
+			NOT = { exists = Y22 }
+			NOT = { tag = Y22 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 4119
+
+						area = slupsk_zachod
+					}
+
+				}
+
+				AND = {
+					province_id = 4119
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 4119
+
+			slupsk_zachod = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = Y22 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = Y22 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			slupsk_zachod = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = Y22
+			}
+
+			set_country_flag = formed_miasto_slupsk_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+#Zachodnio-Pomorskie
+
+	swinoujscie_reformation = {
+
+		potential = {
+
+			primary_culture = zachodniopomorska
+
+
+			NOT = { exists = P15 }
+			NOT = { tag = P15 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 1858
+
+						area = swinoujscie
+					}
+
+				}
+
+				AND = {
+					province_id = 1858
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 1858
+
+			swinoujscie = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = P15 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = P15 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			swinoujscie = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = P15
+			}
+
+			set_country_flag = formed_miasto_swinoujscie_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	szczecin_reformation = {
+
+		potential = {
+
+			primary_culture = zachodniopomorska
+
+
+			NOT = { exists = P17 }
+			NOT = { tag = P17 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 2978
+
+						area = szczecin_srodmiescie	
+					}
+
+				}
+
+				AND = {
+					province_id = 2978
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 2978
+
+			szczecin_srodmiescie = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = P17 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = P17 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			szczecin_srodmiescie = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = P17
+			}
+
+			set_country_flag = formed_miasto_szczecin_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
+
+	koszalin_reformation = {
+
+		potential = {
+
+			primary_culture = srodkowopomorska
+
+
+			NOT = { exists = P21 }
+			NOT = { tag = P21 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+
+			OR = {
+
+				is_former_colonial_nation = no
+
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+
+					OR = {
+						province_id = 4370
+
+						area = koszalin_centrum	
+					}
+
+				}
+
+				AND = {
+					province_id = 4370
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+
+		allow = {
+
+			capital = 4370
+
+			koszalin_centrum = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+
+			NOT = { exists = P21 }
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+
+		effect = {
+		
+			change_tag = P21 
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			koszalin_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = P21
+			}
+
+			set_country_flag = formed_miasto_koszalin_flag
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		ai_importance = 400 
+	}
 }

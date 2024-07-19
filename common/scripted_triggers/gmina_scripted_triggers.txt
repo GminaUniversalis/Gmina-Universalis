@@ -2,7 +2,10 @@ has_airport_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = has_airport_tooltip
 		OR = {
-			has_province_modifier = airport
+			any_owned_province = {
+				has_province_modifier = airport
+			}
+
 		}
 	}
 }
@@ -11,30 +14,29 @@ has_border_crossing_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = has_border_crossing_tooltip
 		OR = {
-			has_province_modifier = border_crossing
+			any_owned_province = {
+				has_province_modifier = border_crossing
+			}
+
 		}
 	}
 }
 
-cant_miners_activate = {
-	if = {
-		limit = {
-
-		}
-	}
-	else_if = {
-		limit = {
-
-		}
-	}
-	else_if = {
-		limit = {
-
-		}
-	}
-	else_if = {
-		limit = {
-
-		}
-	}
+poland_formable_decision_check = {
+	region = dolnoslaskie_region
+	region = kujawsko_pomorskie_region
+	region = lodzkie_region
+	region = lubelskie_region
+	region = lubuskie_region
+	region = malopolska_region
+	region = mazowieckie_region
+	region = opolskie_region
+	region = podkarpackie_region
+	region = podlasie_region
+	region = pomorskie_region
+	region = slaskie_region
+	region = swietokrzyskie_region
+	region = warminsko_mazurskie_region
+	region = wielkopolska_region
+	region = zachodnio_pomorskie_region	
 }

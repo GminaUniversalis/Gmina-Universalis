@@ -127,12 +127,20 @@ estate_miners_barborka = {
 	}
 	on_granted = {
 		if = {
-			has_province_modifier = barborkant
-			remove_province_modifier = barborkant
+			limit = {
+				any_owned_province = {
+					has_province_modifier = barborkant
+				}
+
+			}
+			any_owned_province = {
+				remove_province_modifier = barborkant
+			}
+
 		}
 
 		add_years_of_income = 0.5
-		hidden = {
+		hidden_effect = {
 			
 			clr_country_flag = barborka_privilege
 			set_country_flag = barborka_privilege
@@ -258,8 +266,6 @@ estate_miners_privatized_industry = {
 		if = {
 			limit = {
 				OR = {
-					trade_goods = copper
-					trade_goods = iron
 					trade_goods = gu_coal
 					trade_goods = gu_sulfur
 					trade_goods = gu_oil

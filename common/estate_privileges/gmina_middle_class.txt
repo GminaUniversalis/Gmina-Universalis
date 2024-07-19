@@ -550,14 +550,20 @@ estate_middle_class_european_model = {
 	}
 	is_valid = {
 		NOT = { 
-			current_age = age_of_discovery 
-			current_age = age_of_reformation 
+			OR = {
+				current_age = age_of_discovery 
+				current_age = age_of_reformation 
+			}
+
 		}
 	}
 	can_select = {
 		NOT = { 
-			current_age = age_of_discovery 
-			current_age = age_of_reformation 
+			OR = {
+				current_age = age_of_discovery 
+				current_age = age_of_reformation 
+			}
+
 		}
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_definer_tooltip
@@ -724,14 +730,20 @@ estate_middle_class_japan_model = {
 	}
 	is_valid = {
 		NOT = { 
-			current_age = age_of_discovery 
-			current_age = age_of_reformation
+			OR = {
+				current_age = age_of_discovery 
+				current_age = age_of_reformation 
+			}
+
 		}
 	}
 	can_select = {
 		NOT = { 
-			current_age = age_of_discovery 
-			current_age = age_of_reformation
+			OR = {
+				current_age = age_of_discovery 
+				current_age = age_of_reformation 
+			}
+
 		}
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_definer_tooltip

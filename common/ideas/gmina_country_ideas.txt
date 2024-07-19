@@ -1247,7 +1247,7 @@ H01_ideas = {
 	Szlagier_Maszyna = {
 		monthly_splendor = 1
 	}
-	Zak³ady_Azotowe = {
+	Zaklady_Azotowe = {
 		global_trade_goods_size_modifier = 0.05
 	}
 	Unification = {
