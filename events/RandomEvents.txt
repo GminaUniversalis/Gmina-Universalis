@@ -1731,7 +1731,7 @@ country_event = {
 			religion = orthodox
 			religion_group = muslim
 		}
-		NOT = { tag = X15 }
+		NOT = { tag = PAP }
 	}
 
 	mean_time_to_happen = {
@@ -2757,7 +2757,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB5061"		# Their actions have shown us the true path
 		ai_chance = { factor = 45 }
-		trigger = { NOT = { tag = X15 } }
+		trigger = { NOT = { tag = PAP } }
 		add_papal_influence = 20
 	}
 	option = {
@@ -2955,7 +2955,7 @@ country_event = {
 	trigger = {
 		religion = catholic
 		NOT = { has_country_modifier = church_functions }
-		NOT = { tag = X15 }
+		NOT = { tag = PAP }
 		has_estate = estate_nobles
 		has_estate = estate_church
 		estate_territory = {
@@ -4160,9 +4160,9 @@ country_event = {
 		reduce_estate_church_loyalty_effect = yes
 		if = {
 			limit = {
-				exists = X15
+				exists = PAP
 			}
-			X15 = {
+			PAP = {
 				add_opinion = {
 					who = root
 					modifier = opinion_heretical_philosopher
@@ -4179,9 +4179,9 @@ country_event = {
 		reduce_estate_church_loyalty_effect = yes
 		if = {
 			limit = {
-				exists = X15
+				exists = PAP
 			}
-			X15 = {
+			PAP = {
 				add_opinion = {
 					who = root
 					modifier = opinion_heretical_philosopher
@@ -5461,6 +5461,7 @@ country_event = {
 			}
 			add_republican_tradition = 5
 			add_corruption = -2
+			add_years_of_income = -0.3
 		}
 		if = {
 			limit = {
@@ -7874,6 +7875,7 @@ country_event = {
 		NOT = {
 			has_country_modifier = warriors_do_not_read_books
 		}
+		NOT = { has_country_flag = warriors_can_read_books }
 	}
 	
 	mean_time_to_happen = {
@@ -8414,7 +8416,7 @@ country_event = {
 	
 	trigger = {
 		religion = catholic
-		NOT = { tag = X15 }
+		NOT = { tag = PAP }
 	}
 	
 	mean_time_to_happen = {
@@ -8870,7 +8872,7 @@ country_event = {
 	trigger = {
 		religion = catholic
 		government = monarchy
-		exists = X15
+		exists = PAP
 		capital_scope = {
 			continent = europe
 		}
@@ -8933,7 +8935,7 @@ country_event = {
 				}
 			}
 		}
-		reverse_add_opinion = { who = X15 modifier = opinion_upset_pope }
+		reverse_add_opinion = { who = PAP modifier = opinion_upset_pope }
 		reduce_estate_church_loyalty_effect = yes
 		add_estate_nobles_loyalty_effect = yes
 	}
@@ -10013,7 +10015,7 @@ country_event = {
 	}
 }
 
-### Scripted by Sara Wendel-�rtqvist ###
+### Scripted by Sara Wendel-Örtqvist ###
 
 namespace = random_event
 
@@ -10248,6 +10250,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10269,6 +10272,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10361,6 +10365,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 			}
@@ -10380,6 +10385,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 			}
@@ -10517,6 +10523,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 				}
@@ -10533,6 +10540,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 					save_event_target_as = quebecois_province
@@ -10554,6 +10562,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 				}
@@ -10569,6 +10578,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 					save_event_target_as = louisianans_province
@@ -10816,6 +10826,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10838,6 +10849,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 				change_culture = quebecois
@@ -10860,6 +10872,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 			ai = no
@@ -10886,6 +10899,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10931,6 +10945,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 			ai = no
@@ -11275,7 +11290,7 @@ country_event = {
 	
 	trigger = {
 		religion = catholic
-		NOT = { tag = X15 }
+		NOT = { tag = PAP }
 		OR = {
 			advisor = natural_scientist
 			advisor = philosopher
@@ -12007,9 +12022,9 @@ province_event = {
 			add_reform_desire = -0.005
 			if = {
 				limit = {
-					exists = X15
+					exists = PAP
 				}
-				X15 = {
+				PAP = {
 					add_opinion = { who = ROOT modifier = opinion_grateful }
 				}
 			}
@@ -12073,9 +12088,9 @@ province_event = {
 			add_reform_desire = 0.015
 			if = {
 				limit = {
-					exists = X15
+					exists = PAP
 				}
-				X15 = {
+				PAP = {
 					add_opinion = { who = ROOT modifier = opinion_angry }
 				}
 			}
@@ -12420,7 +12435,7 @@ country_event = {
 		name = "random_event.EVTOPTA25" # Send guards to stop these vandals!
 		ai_chance = { factor = 30 }
 		add_prestige = 10
-		X15 = {
+		PAP = {
 			add_opinion = { who = ROOT modifier = "stopped_iconoclastic_fury" }
 		}
 		add_mil_power = -50
@@ -12451,7 +12466,7 @@ country_event = {
 	}
 	option = {
 		name = "random_event.EVTOPTC25" # Time to take the lead and break Papal stranglehold!
-		trigger = { NOT = { tag = X15 } }
+		trigger = { NOT = { tag = PAP } }
 		goto = target_province
 		ai_chance = {
 			factor = 50
@@ -12461,7 +12476,7 @@ country_event = {
 			}
 		}
 		add_stability = -1
-		X15 = {
+		PAP = {
 			add_opinion = { who = ROOT modifier = "allowed_iconoclastic_fury" }
 		}
 		event_target:target_province = {
@@ -12876,8 +12891,43 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6428"
+		if = {
+			limit = {
+				has_dlc = "Leviathan"
+				any_owned_province = {
+					has_great_project = {
+						type = golden_kremnica
+						tier = 2
+					}
+				}
+				NOT = {
+					any_owned_province = {
+						has_great_project = {
+							type = golden_kremnica
+							tier = 3
+						}
+					}
+				}
+			}
+			add_years_of_income = 1.5
+			add_inflation = 1
+		}
+		else_if = {
+			limit = {
+				any_owned_province = {
+					has_great_project = {
+						type = golden_kremnica
+						tier = 3
+					}
+				}
+			}
+			add_years_of_income = 2
+			add_inflation = 1
+		}
+		else = {
 		add_years_of_income = 1.0
 		add_inflation = 1
+		}
 	}
 }
 

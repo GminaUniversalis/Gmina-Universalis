@@ -17,7 +17,9 @@ country_event = {
 			is_colonial_nation = yes
 			is_at_war = no
 			ai = yes
+			NOT = { is_subject_of_type = european_colony } 
 			any_neighbor_country = {
+				NOT = { is_subject_of_type = european_colony } 
 				is_colonial_nation_of = root
 				is_at_war = no
 				ai = yes
@@ -36,7 +38,9 @@ country_event = {
 				is_colonial_nation = yes
 				is_at_war = no
 				ai = yes
+				NOT = { is_subject_of_type = european_colony } 
 				any_neighbor_country = {
+					NOT = { is_subject_of_type = european_colony } 
 					is_colonial_nation_of = root
 					is_at_war = no
 					ai = yes

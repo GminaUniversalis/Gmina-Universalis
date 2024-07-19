@@ -165,7 +165,7 @@ country_event = {
 		name = "EVTOPTB3023" # Let them chose their own faith
 		ai_chance = { factor = 40 }
 		add_dip_power = -50
-		reverse_add_opinion = { who = X15 modifier = opinion_pope_religious_tolerance }
+		reverse_add_opinion = { who = PAP modifier = opinion_pope_religious_tolerance }
 		add_papal_influence = -10
 		add_devotion = -25
 		if = {

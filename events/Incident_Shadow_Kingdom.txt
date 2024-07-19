@@ -416,46 +416,47 @@ namespace = shadow_kingdom
 # 		add_prestige = -10
 # 		add_imperial_influence = -20
 # 		set_global_flag = italians_leave_hre
-# 		hidden_effect = {
-# 			every_country = {
-# 				limit = {
-# 					is_shadow_kingdom_eligible_trigger = yes
-# 					OR = {
-# 						is_subject = no
-# 						AND = {
-# 							is_subject = yes
-# 							overlord = { # overlord chooses for their vassals if eligible to leave themselves
-# 								NOT = {
-# 									is_part_of_hre = yes
-# 									capital_scope = { region = italy_region }
-# 								}
-# 							}
-# 						}
-# 					}							
-# 				}
-# 				country_event = { id = shadow_kingdom.4 }
-# 			}
-# 		}
-# 		every_province = {
-# 			limit = {
-# 				is_part_of_hre = yes
-# 				region = italy_region
-# 				owner = {
-# 					is_part_of_hre = no
-# 				}
-# 			}
-# 			set_in_empire = no
-# 		}
-# 	}
-# 	option = {
-# 		trigger = {
-# 			NOT = { has_dlc = "Emperor" }
-# 		}
-# 		ai_chance = {
-# 			factor = 0
-# 		}
-# 		name = shadow_kingdom.2.b
-# 		set_global_flag = emperor_trying_to_avert_shadow_kingdom
-# 		custom_tooltip = shadow_kingdom_incident_tt
-# 	}
-# }
+#		custom_tooltip = shadow_kingdom_incident_penalty_tt
+#		hidden_effect = {
+#			every_country = {
+#				limit = {
+#					is_shadow_kingdom_eligible_trigger = yes
+#					OR = {
+#						is_subject = no
+#						AND = {
+#							is_subject = yes
+#							overlord = { # overlord chooses for their vassals if eligible to leave themselves
+#								NOT = {
+#									is_part_of_hre = yes
+#									capital_scope = { region = italy_region }
+#								}
+#							}
+#						}
+#					}							
+#				}
+#				country_event = { id = shadow_kingdom.4 }
+#			}
+#		}
+#		every_province = {
+#			limit = {
+#				is_part_of_hre = yes
+#				region = italy_region
+#				owner = {
+#					is_part_of_hre = no
+#				}
+#			}
+#			set_in_empire = no
+#		}
+#	}
+#	option = {
+#		trigger = {
+#			NOT = { has_dlc = "Emperor" }
+#		}
+#		ai_chance = {
+#			factor = 0
+#		}
+#		name = shadow_kingdom.2.b
+#		set_global_flag = emperor_trying_to_avert_shadow_kingdom
+#		custom_tooltip = shadow_kingdom_incident_tt
+#	}
+#}

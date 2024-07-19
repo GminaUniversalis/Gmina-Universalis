@@ -963,7 +963,12 @@ country_event = {
 			}
 		}
 		remove_government_reform = colonial_government
-		#set_legacy_government = administrative_republic
+		if = {
+            limit = {
+                NOT = { government = republic }
+            }
+            change_government = republic
+        } 
 		kill_ruler = yes
 	}
 }
@@ -5063,7 +5068,7 @@ province_event = {
 	
 	option = { #we must inform the pope immediately!
 		name = colonial_nation.191.b 
-		trigger = { owner = { NOT = { tag = X15 } } }
+		trigger = { owner = { NOT = { tag = PAP } } }
 		owner = {
 			add_papal_influence = 10
 		}

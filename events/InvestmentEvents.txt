@@ -187,6 +187,7 @@ country_event = {
 				random_neighbor_province = {
 					limit = {
 						owner = {
+							NOT = { tag = ROOT }
 							OR = {
 								technology_group = western
 								technology_group = eastern

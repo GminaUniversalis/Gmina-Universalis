@@ -368,73 +368,73 @@ province_event = {
 	# }
 # }
 
-# province_event = {
-# 	id =  colonial.20
-# 	title = "EVTNAME1423"
-# 	desc = "colonial.EVTDESC20"
-# 	picture = STREET_SPEECH_eventPicture
-# 	goto = ROOT
+province_event = {
+	id =  colonial.20
+	title = "EVTNAME1423"
+	desc = "colonial.EVTDESC20"
+	picture = STREET_SPEECH_eventPicture
+	goto = ROOT
 	
-# 	is_triggered_only = yes
-	
-# 	trigger = {
-# 		is_colony = yes
-# 		colonysize = 600
-# 		NOT = { has_province_modifier = religious_migration }
-# 		OR = {
-# 			continent = north_america
-# 			continent = south_america
-# 			continent = new_world
-# 		}
-# 		owner = {
-# 			is_colonial_nation = yes
-# 			colonial_parent = {
-# 				religion = PREV
-# 				any_owned_province = {
-# 					is_overseas = no
-# 					religion_group = ROOT
-# 					NOT = { religion = ROOT }
-# 				}
-# 			}
-# 		}
-# 	}
-	
-# 	immediate = {
-# 		hidden_effect = {
-# 			owner = {
-# 				colonial_parent = {
-# 					random_owned_province = {
-# 						limit = {
-# 							is_overseas = no
-# 							religion_group = ROOT
-# 							NOT = { religion = ROOT }
-# 						}
-# 						save_event_target_as = heretics_from_here
-# 					}
-# 				}
-# 			}
-# 		}
-# 	}
+	is_triggered_only = yes
 
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+	trigger = {
+		is_colony = yes
+		colonysize = 600
+		NOT = { has_province_modifier = religious_migration }
+		OR = {
+			continent = north_america
+			continent = south_america
+			continent = new_world
+		}
+		owner = {
+			is_colonial_nation = yes
+			colonial_parent = {
+				religion = PREV
+				any_owned_province = {
+					is_overseas = no
+					religion_group = ROOT
+					NOT = { religion = ROOT }
+				}
+			}
+		}
+	}
 
-# 	option = {
-# 		name = "EVTOPTA1423"
-# 		change_religion = event_target:heretics_from_here
-# 		change_culture = owner
-# 		add_colonysize = 400
-# 		add_province_modifier = {
-# 			name = "religious_migration"
-# 			duration = 8760
-# 		}
-# 	}
-# 	option = {
-# 		name = "colonial.5.b"
-# 		add_colonysize = -50
-# 	}
-# }
+	immediate = {
+		hidden_effect = {
+			owner = {
+				colonial_parent = {
+					random_owned_province = {
+						limit = {
+							is_overseas = no
+							religion_group = ROOT
+							NOT = { religion = ROOT }
+						}
+						save_event_target_as = heretics_from_here
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA1423"
+		change_religion = event_target:heretics_from_here
+		change_culture = owner
+		add_colonysize = 400
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 8760
+		}
+	}
+	option = {
+		name = "colonial.5.b"
+		add_colonysize = -50
+	}
+}
 
 # province_event = {
 	# id =  colonial.21
@@ -683,277 +683,277 @@ province_event = {
 }
 
 # The Call of the Hunt
-# province_event = {
-# 	id = colonial.12
-# 	title = "colonial.EVTNAME12"
-# 	desc = "colonial.EVTDESC12"
-# 	picture = NATIVES_eventPicture
-# 	goto = ROOT
+province_event = {
+	id = colonial.12
+	title = "colonial.EVTNAME12"
+	desc = "colonial.EVTDESC12"
+	picture = NATIVES_eventPicture
+	goto = ROOT
 	
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 	
-# 	trigger = {
-# 		any_neighbor_province = {
-# 			NOT = { trade_goods = fur }
-# 			owner = {
-# 				OR = {
-# 					culture_group = eskaleut
-# 					culture_group = central_algonquian
-# 					culture_group = eastern_algonquian
-# 					culture_group = iroquoian
-# 					culture_group = siouan
-# 					culture_group = muskogean
-# 					culture_group = sonoran
-# 				}
-# 				OR = {
-# 					government = tribal
-# 					government = native
-# 				}
-# 			}
-# 		}
-# 	}
+	trigger = {
+		any_neighbor_province = {
+			NOT = { trade_goods = fur }
+			owner = {
+				OR = {
+					culture_group = eskaleut
+					culture_group = central_algonquian
+					culture_group = eastern_algonquian
+					culture_group = iroquoian
+					culture_group = siouan
+					culture_group = muskogean
+					culture_group = sonoran
+				}
+				OR = {
+					government = tribal
+					government = native
+				}
+			}
+		}
+	}
 	
-# 	immediate = {
-# 		hidden_effect = {
-# 			random_neighbor_province = {
-# 				limit = {
-# 					NOT = { trade_goods = fur }
-# 					owner = {
-# 						OR = {
-# 							culture_group = eskaleut
-# 							culture_group = central_algonquian
-# 							culture_group = eastern_algonquian
-# 							culture_group = iroquoian
-# 							culture_group = siouan
-# 							culture_group = muskogean
-# 							culture_group = sonoran
-# 						}
-# 						OR = {
-# 							government = tribal
-# 							government = native
-# 						}
-# 					}
-# 				}
-# 				save_event_target_as = hunter_province_target
-# 			}
-# 		}
-# 	}
+	immediate = {
+		hidden_effect = {
+			random_neighbor_province = {
+				limit = {
+					NOT = { trade_goods = fur }
+					owner = {
+						OR = {
+							culture_group = eskaleut
+							culture_group = central_algonquian
+							culture_group = eastern_algonquian
+							culture_group = iroquoian
+							culture_group = siouan
+							culture_group = muskogean
+							culture_group = sonoran
+						}
+						OR = {
+							government = tribal
+							government = native
+						}
+					}
+				}
+				save_event_target_as = hunter_province_target
+			}
+		}
+	}
 	
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	
-# 	option = {
-# 		name = "colonial.EVTOPTA12"
-# 		add_base_manpower = 2
-# 	}
-# 	option = {
-# 		name = "colonial.EVTOPTB12"
-# 		create_advisor = colonial_governor
-# 	}
-# 	option = {
-# 		name = "colonial.EVTOPTC12"
-# 		change_trade_goods = fur
-# 		trigger = {
-# 			NOT = {
-# 				trade_goods = fur
-# 			}
-# 		}
-# 	}
-# }
+	option = {
+		name = "colonial.EVTOPTA12"
+		add_base_manpower = 2
+	}
+	option = {
+		name = "colonial.EVTOPTB12"
+		create_advisor = colonial_governor
+	}
+	option = {
+		name = "colonial.EVTOPTC12"
+		change_trade_goods = fur
+		trigger = {
+			NOT = {
+				trade_goods = fur
+			}
+		}
+	}
+}
 
 # Fur Trade Dwindles
-# province_event = {
-# 	id = colonial.13
-# 	title = "colonial.EVTNAME13"
-# 	desc = "colonial.EVTDESC13"
-# 	picture = MERCHANTS_TALKING_eventPicture
-# 	goto = ROOT
-	
-# 	is_triggered_only = yes
-	
-# 	trigger = {
-# 		trade_goods = fur
-# 		OR = {
-# 			NOT = { has_province_flag = received_trade_goods }
-# 			had_province_flag = { flag = received_trade_goods days = 3650 }
-# 		}
-# 		NOT = {
-# 			any_neighbor_province = {
-# 				OR = {
-# 					culture_group = eskaleut
-# 					culture_group = central_algonquian
-# 					culture_group = eastern_algonquian
-# 					culture_group = iroquoian
-# 					culture_group = siouan
-# 					culture_group = muskogean
-# 					culture_group = sonoran
-# 				}
-# 			}
-# 		}
-# 		NOT = { has_empty_adjacent_province = yes }
-# 		NOT = {
-# 			any_neighbor_province = {
-# 				owner = {
-# 					has_reform = steppe_horde
-# 				}
-# 				controller = {
-# 					has_reform = steppe_horde
-# 				}
-# 			}
-# 		}
-# 	}
+province_event = {
+	id = colonial.13
+	title = "colonial.EVTNAME13"
+	desc = "colonial.EVTDESC13"
+	picture = MERCHANTS_TALKING_eventPicture
+	goto = ROOT
 
-# 	immediate = {
-# 		hidden_effect = {
-# 			clr_province_flag = received_trade_goods
-# 			set_province_flag = received_trade_goods
-# 		}
-# 	}
+	is_triggered_only = yes
 	
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+	trigger = {
+		trade_goods = fur
+		OR = {
+			NOT = { has_province_flag = received_trade_goods }
+			had_province_flag = { flag = received_trade_goods days = 3650 }
+		}
+		NOT = {
+			any_neighbor_province = {
+				OR = {
+					culture_group = eskaleut
+					culture_group = central_algonquian
+					culture_group = eastern_algonquian
+					culture_group = iroquoian
+					culture_group = siouan
+					culture_group = muskogean
+					culture_group = sonoran
+				}
+			}
+		}
+		NOT = { has_empty_adjacent_province = yes }
+		NOT = {
+			any_neighbor_province = {
+				owner = {
+					has_reform = steppe_horde
+				}
+				controller = {
+					has_reform = steppe_horde
+				}
+			}
+		}
+	}
 	
-# 	option = {
-# 		name = "colonial.EVTOPTA13"
-# 		change_trade_goods = naval_supplies
-# 	}
-# 	option = {
-# 		name = "colonial.EVTOPTC13"
-# 		change_trade_goods = grain
-# 	}
-# }
+	immediate = {
+		hidden_effect = {
+			clr_province_flag = received_trade_goods
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "colonial.EVTOPTA13"
+		change_trade_goods = naval_supplies
+	}
+	option = {
+		name = "colonial.EVTOPTC13"
+		change_trade_goods = grain
+	}
+}
 
 # Jesuit mission founded
-# province_event = {
-# 	id = colonial.14
-# 	title = "colonial.EVTNAME14"
-# 	desc = "colonial.EVTDESC14"
-# 	picture = RELIGION_eventPicture
-# 	goto = ROOT
+province_event = {
+	id = colonial.14
+	title = "colonial.EVTNAME14"
+	desc = "colonial.EVTDESC14"
+	picture = RELIGION_eventPicture
+	goto = ROOT
 	
-# 	is_triggered_only = yes
-	
-# 	trigger = {
-# 		is_colony = yes
-# 		OR = {
-# 			continent = north_america
-# 			continent = south_america
-# 		}
-# 		owner = {
-# 			has_country_modifier = the_societas_jesu
-# 			religion = catholic
-# 		}
-# 		is_religion_enabled = protestant
-# 		current_age = age_of_reformation
-# 		NOT = {
-# 			has_province_modifier = jesuit_mission
-# 		}
-# 	}
-	
-# 	mean_time_to_happen = {
-# 		days = 1
+	is_triggered_only = yes
 		
-# 		modifier = {
-# 			factor = 1.5
-# 			owner = {
-# 				has_country_modifier = counter_reformation
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.75
-# 			owner = {
-# 				culture_group = iberian
-# 			}
-# 		}
-# 	}
+	trigger = {
+		is_colony = yes
+		OR = {
+			continent = north_america
+			continent = south_america
+		}
+		owner = {
+			has_country_modifier = the_societas_jesu
+			religion = catholic
+		}
+		is_religion_enabled = protestant
+		current_age = age_of_reformation
+		NOT = {
+			has_province_modifier = jesuit_mission
+		}
+	}
 	
-# 	option = {
-# 		name = "colonial.EVTOPTA14"
-# 		add_province_modifier = {
-# 			name = jesuit_mission
-# 			duration = -1
-# 		}
-# 	}
-# }
+	mean_time_to_happen = {
+		days = 1
+		
+		modifier = {
+			factor = 1.5
+			owner = {
+				has_country_modifier = counter_reformation
+			}
+		}
+		modifier = {
+			factor = 1.75
+			owner = {
+				culture_group = iberian
+			}
+		}
+	}
+	
+	option = {
+		name = "colonial.EVTOPTA14"
+		add_province_modifier = {
+			name = jesuit_mission
+			duration = -1
+		}
+	}
+}
 
 # Our colony has been struck by Roman Fever!
-# province_event = {
-# 	id = colonial.15
-# 	title = "colonial.EVTNAME15"
-# 	desc = "colonial.EVTDESC15"
-# 	picture = PLAGUE_eventPicture
-# 	goto = ROOT
+province_event = {
+	id = colonial.15
+	title = "colonial.EVTNAME15"
+	desc = "colonial.EVTDESC15"
+	picture = PLAGUE_eventPicture
+	goto = ROOT
 	
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 	
-# 	trigger = {
-# 		is_colony = yes
-# 		OR = {
-# 			continent = asia
-# 			continent = africa
-# 			continent = south_america
-# 			continent = oceania
-# 		}
-# 		NOT = {
-# 			owner = {
-# 				has_country_modifier = roman_fever_timer
-# 			}
-# 		}
-# 	}
+	trigger = {
+		is_colony = yes
+		OR = {
+			continent = asia
+			continent = africa
+			continent = south_america
+			continent = oceania
+		}
+		NOT = {
+			owner = {
+				has_country_modifier = roman_fever_timer
+			}
+		}
+	}
 	
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	
-# 	immediate = {
-# 		hidden_effect = {
-# 			owner = {
-# 				add_country_modifier = {
-# 					name = roman_fever_timer
-# 					duration = 5475
-# 					hidden = yes
-# 				}
-# 			}
-# 		}
-# 	}
+	immediate = {
+		hidden_effect = {
+			owner = {
+				add_country_modifier = {
+					name = roman_fever_timer
+					duration = 5475
+					hidden = yes
+				}
+			}
+		}
+	}
 	
-# 	option = {
-# 		name = "colonial.EVTOPTA15"
-# 		owner = { add_adm_power = -25 }
-# 		add_province_modifier = {
-# 			name = organised_colony
-# 			duration = 1825
-# 		}
-# 	}
-# 	option = {
-# 		name = "colonial.EVTOPTB15"
-# 		add_province_modifier = {
-# 			name = quarantine_colony
-# 			duration = 1825
-# 		}
-# 	}
-# 	option = {
-# 		name = "colonial.EVTOPTC15"
-# 		add_province_modifier = {
-# 			name = roman_fever_colony
-# 			duration = 1825
-# 		}
-# 		random_neighbor_province = {
-# 			limit = {
-# 				is_colony = yes
-# 				owner = {
-# 					tag = ROOT
-# 				}
-# 			}
-# 			add_province_modifier = {
-# 				name = roman_fever_colony
-# 				duration = 1825
-# 			}
-# 		}
-# 	}
-# }
+	option = {
+		name = "colonial.EVTOPTA15"
+		owner = { add_adm_power = -25 }
+		add_province_modifier = {
+			name = organised_colony
+			duration = 1825
+		}
+	}
+	option = {
+		name = "colonial.EVTOPTB15"
+		add_province_modifier = {
+			name = quarantine_colony
+			duration = 1825
+		}
+	}
+	option = {
+		name = "colonial.EVTOPTC15"
+		add_province_modifier = {
+			name = roman_fever_colony
+			duration = 1825
+		}
+		random_neighbor_province = {
+			limit = {
+				is_colony = yes
+				owner = {
+					tag = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = roman_fever_colony
+				duration = 1825
+			}
+		}
+	}
+}
 
 # Colonial Expansion
 province_event = {
@@ -1072,150 +1072,150 @@ province_event = {
 }
 
 # New World Coffee
-# province_event = {
-# 	id = colonial.18
-# 	title = "colonial.EVTNAME18"
-# 	desc = "colonial.EVTDESC18"
-# 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+province_event = {
+	id = colonial.18
+	title = "colonial.EVTNAME18"
+	desc = "colonial.EVTDESC18"
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 	
-# 	is_triggered_only = yes
-	
-# 	trigger = {
-# 		current_age = age_of_absolutism
-# 		OR = {
-# 			NOT = { has_province_flag = received_trade_goods }
-# 			had_province_flag = { flag = received_trade_goods days = 3650 }
-# 		}
-# 		OR = {
-# 			region = peru_region
-# 			region = carribeans_region
-# 			region = central_america_region
-# 			region = mexico_region
-# 			region = colombia_region
-# 			area = amapa_area
-# 			area = amazon_area
-# 			area = grao_para_area
-# 			area = sao_francisco_area
-# 			area = bahia_area
-# 			area = pernambuco_area
-# 			area = ceara_area
-# 		}
-# 		OR = {
-# 			trade_goods = grain
-# 			trade_goods = fish
-# 			trade_goods = wool
-# 			trade_goods = naval_supplies
-# 			trade_goods = salt
-# 			trade_goods = fur
-# 		}
-# 		NOT = { has_empty_adjacent_province = yes }
-# 	}
-	
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+	is_triggered_only = yes
 
-# 	immediate = {
-# 		hidden_effect = {
-# 			clr_province_flag = received_trade_goods
-# 			set_province_flag = received_trade_goods
-# 		}
-# 	}
+	trigger = {
+		current_age = age_of_absolutism
+		OR = {
+			NOT = { has_province_flag = received_trade_goods }
+			had_province_flag = { flag = received_trade_goods days = 3650 }
+		}
+		OR = {
+			region = peru_region
+			region = carribeans_region
+			region = central_america_region
+			region = mexico_region
+			region = colombia_region
+			area = amapa_area
+			area = amazon_area
+			area = grao_para_area
+			area = sao_francisco_area
+			area = bahia_area
+			area = pernambuco_area
+			area = ceara_area
+		}
+		OR = {
+			trade_goods = grain
+			trade_goods = fish
+			trade_goods = wool
+			trade_goods = naval_supplies
+			trade_goods = salt
+			trade_goods = fur
+		}
+		NOT = { has_empty_adjacent_province = yes }
+	}
 	
-# 	option = {
-# 		name = "colonial.EVTOPTA18"
-# 		ai_chance = { factor = 90 }
-# 		change_trade_goods = coffee
-# 	}
-# 	option = {
-# 		name = "colonial.EVTOPTC18"
-# 		ai_chance = { factor = 10 }
-# 	}
-# }
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_province_flag = received_trade_goods
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "colonial.EVTOPTA18"
+		ai_chance = { factor = 90 }
+		change_trade_goods = coffee
+	}
+	option = {
+		name = "colonial.EVTOPTC18"
+		ai_chance = { factor = 10 }
+	}
+}
 
 #Growth of Natural Port into CoT
-# province_event = {
-# 	id = colonial.19
-# 	title = "colonial.19.t"
-# 	desc = "colonial.19.d"
-# 	picture = CITY_DEVELOPMENT_eventPicture
+province_event = {
+	id = colonial.19
+	title = "colonial.19.t"
+	desc = "colonial.19.d"
+	picture = CITY_DEVELOPMENT_eventPicture
 	
-# 	trigger = {
-# 		province_has_center_of_trade_of_level = 1
-# 		has_port = yes
-# 		NOT = { province_has_center_of_trade_of_level = 2 }
-# 		OR = {
-# 			development = 15
-# 			has_building = marketplace
-# 			feudalism = 100
-# 		}
-# 		owner = {
-# 			stability = 1
-# 			has_institution = feudalism
-# 		}
-# 		OR = {
-# 			continent = new_world
-# 			continent = north_america
-# 			continent = south_america
-# 		}
-# 	}
-	
-# 	mean_time_to_happen = {
-# 		months = 300
+	trigger = {
+		province_has_center_of_trade_of_level = 1
+		has_port = yes
+		NOT = { province_has_center_of_trade_of_level = 2 }
+		OR = {
+			development = 15
+			has_building = marketplace
+			feudalism = 100
+		}
+		owner = {
+			stability = 1
+			has_institution = feudalism
+		}
+		OR = {
+			continent = new_world
+			continent = north_america
+			continent = south_america
+		}
+	}
 		
-# 		modifier = {
-# 			factor = 0.9
-# 			owner = { full_idea_group = trade_ideas }
-# 		}
-# 		modifier = {
-# 			factor = 0.9
-# 			owner = { stability = 3 }
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = { has_institution = global_trade }
-# 		}
-# 		modifier = {
-# 			factor = 0.8
-# 			development = 20
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			has_building = trade_depot
-# 		}
-# 		modifier = {
-# 			factor = 0.9
-# 			has_building = dock
-# 		}
-# 		modifier = {
-# 			factor = 0.5
-# 			development = 30
-# 		}
-# 		modifier = {
-# 			factor = 0.95
-# 			current_age = age_of_reformation
-# 		}
-# 		modifier = {
-# 			factor = 0.9
-# 			current_age = age_of_absolutism
-# 		}
-# 		modifier = {
-# 			factor = 0.85
-# 			current_age = age_of_revolutions
-# 		}
-# 	}
+	mean_time_to_happen = {
+		months = 300
 	
-# 	option = {
-# 		name = "colonial.19.a"
+		modifier = {
+			factor = 0.9
+			owner = { full_idea_group = trade_ideas }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { has_institution = global_trade }
+		}
+		modifier = {
+			factor = 0.8
+			development = 20
+		}
+		modifier = {
+			factor = 0.7
+			has_building = trade_depot
+		}
+		modifier = {
+			factor = 0.9
+			has_building = dock
+		}
+		modifier = {
+			factor = 0.5
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 0.9
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.85
+			current_age = age_of_revolutions
+		}
+	}
 
-# 		if = {
-# 			limit = {
-# 				NOT = { province_has_center_of_trade_of_level = 2 }
-# 			}
-# 			add_center_of_trade_level = 1
-# 		}
-# 		else = {
-# 			add_base_production = 2
-# 		}
-# 	}
-# }
+	option = {
+		name = "colonial.19.a"
+
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 2 }
+			}
+			add_center_of_trade_level = 1
+		}
+		else = {
+			add_base_production = 2
+		}
+	}
+}

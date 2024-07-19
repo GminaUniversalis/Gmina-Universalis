@@ -768,7 +768,7 @@ namespace = papacy_events
 #	
 #	trigger = {
 #		has_dlc = "Common Sense"
-#		tag = X15
+#		tag = PAP
 #		NOT = { has_country_flag = pap_condemned_slavery }
 #		any_known_country = {
 #			religion = catholic 
@@ -836,7 +836,7 @@ namespace = papacy_events
 #			name = pap_condemn_slavery
 #			duration = 3650
 #		}
-#		X15 = {
+#		PAP = {
 #			add_opinion = {
 #				who = ROOT
 #				modifier = opinion_condemn_slavery
@@ -851,7 +851,7 @@ namespace = papacy_events
 #	option = {
 #		name = papacy_events.19.b #Refuse and Continue the practice
 #		add_papal_influence = -5
-#		X15 = {
+#		PAP = {
 #			add_opinion = {
 #				who = ROOT
 #				modifier = opinion_allows_slavery

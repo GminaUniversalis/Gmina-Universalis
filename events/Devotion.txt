@@ -1474,12 +1474,12 @@ country_event = {
 		if = {
 			limit = {
 				religion = catholic
-				exists = X15
-				X15 = {
+				exists = PAP
+				PAP = {
 					religion = catholic
 				}
 			}
-			X15 = {
+			PAP = {
 				country_event = {
 					id = devotion_events.108
 				}
@@ -1542,7 +1542,7 @@ country_event = {
 			has_country_flag = dev_jubilee_bad_flag
 		}
 		tooltip = {
-			X15 = {
+			PAP = {
 				add_opinion = {
 					who = ROOT
 					modifier = opinion_jubilee_bad
@@ -1558,7 +1558,7 @@ country_event = {
 		}
 		clr_country_flag = dev_jubilee_good_flag
 		tooltip = {
-			X15 = {
+			PAP = {
 				add_opinion = {
 					who = ROOT
 					modifier = opinion_jubilee_good

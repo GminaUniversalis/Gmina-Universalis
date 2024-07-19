@@ -272,7 +272,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { TAG = X15 }
+				NOT = { TAG = PAP }
 			}
 			random = {
 				chance = 30

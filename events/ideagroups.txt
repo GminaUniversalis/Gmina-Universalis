@@ -1068,7 +1068,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.217.a
-		#add_estate_dhimmi_loyalty_effect = yes
+		add_estate_dhimmi_loyalty_effect = yes
 		add_country_modifier = {
 			name = "tolerance_for_all"
 			duration = 3650
@@ -2704,7 +2704,7 @@ country_event = {
 		name = ideagroups.604.b
 		trigger = {
 			religion = catholic
-			NOT = { tag = X15 }
+			NOT = { tag = PAP }
 		}
 		add_papal_influence = 20
 	}
@@ -3049,7 +3049,7 @@ country_event = {
 	}
 }
 
-# Our Army's �lan strikes fear into the enemy
+# Our Army's ï¿½lan strikes fear into the enemy
 country_event = {
 	id = ideagroups.707
 	title = "EVTNAME6312"
@@ -3262,7 +3262,7 @@ country_event = {
 # Defensive Ideas
 #######################################
 
-# Aristocrats don�t want to serve
+# Aristocrats donï¿½t want to serve
 country_event = {
 	id = ideagroups.800   
 	title = "EVTNAME833"
@@ -7202,7 +7202,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = influence_ideas
+		has_idea_group = spy_ideas
 		NOT = { has_country_modifier = "just_causes" }
 	}
 
@@ -7738,7 +7738,7 @@ country_event = {
 	option = {
 		name = ideagroups.1906.a
 		add_piety = 0.05
-		#add_estate_dhimmi_loyalty_effect = yes
+		add_estate_dhimmi_loyalty_effect = yes
 		random_owned_province = {
 			limit = {
 				has_owner_religion = no
@@ -7928,7 +7928,7 @@ country_event = {
 	option = {
 		name = "ideagroups.1908.a"
 		# Christian
-		#add_estate_dhimmi_loyalty_effect = yes
+		add_estate_dhimmi_loyalty_effect = yes
 		if = {
 			limit = {
 				has_country_flag = protestant_heresy
@@ -8694,7 +8694,7 @@ country_event = {
 	}
 }
 
-# T�uferreich von M�nster / extra event
+# Täuferreich von Münster / extra event
 country_event = {
 	id = ideagroups.1921
 	title = ideagroups.1921.t
@@ -8704,7 +8704,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = theocracy_gov_ideas
-		owns = 86 #M�nster
+		owns = 86 #Münster
 		is_year = 1533
 		NOT = { is_year = 1536 }
 		NOT = { has_country_modifier = "le_prophete" }	
