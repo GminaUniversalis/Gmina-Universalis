@@ -408,7 +408,7 @@ estate_farmers_empty_promises = {
 	benefits = {
 	}
 }
-EU_funding = {
+estate_farmers_EU_funding = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
@@ -421,7 +421,7 @@ EU_funding = {
 	is_valid = {
 	}
 	can_select = {
-		NOT = { has_estate_privilege = reject_EU_regulations }
+		NOT = { has_estate_privilege = estate_farmers_reject_EU_regulations }
 	}
 	on_granted = {
 	}
@@ -449,7 +449,7 @@ EU_funding = {
 
 	}
 }
-national_funding = {
+estate_farmers_national_funding = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
@@ -489,7 +489,7 @@ national_funding = {
 
 	}
 }
-accept_EU_regulations = {
+estate_farmers_accept_EU_regulations = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
@@ -502,7 +502,7 @@ accept_EU_regulations = {
 	is_valid = {
 	}
 	can_select = {
-		NOT = { has_estate_privilege = reject_EU_regulations }
+		NOT = { has_estate_privilege = estate_farmers_reject_EU_regulations }
 	}
 	on_granted = {
 	}
@@ -531,7 +531,7 @@ accept_EU_regulations = {
 
 	}
 }
-reject_EU_regulations = {
+estate_farmers_reject_EU_regulations = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
@@ -544,7 +544,7 @@ reject_EU_regulations = {
 	is_valid = {
 	}
 	can_select = {
-		NOT = { has_estate_privilege = accept_EU_regulations }
+		NOT = { has_estate_privilege = estate_farmers_accept_EU_regulations }
 	}
 	on_granted = {
 	}
@@ -574,7 +574,7 @@ reject_EU_regulations = {
 
 	}
 }
-support_for_exporters = {
+estate_farmers_support_for_exporters = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
@@ -618,7 +618,7 @@ support_for_exporters = {
 
 	}
 }
-promoting_rural_life = {
+estate_farmers_promoting_rural_life = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = -10
@@ -633,7 +633,7 @@ promoting_rural_life = {
 	can_select = {
 	}
 	on_granted = {
-		custom_tooltip = promoting_rural_life_tooltip
+		custom_tooltip = estate_farmers_promoting_rural_life_tooltip
 		set_country_flag = promote_rural_life
 	}
 	on_granted_province = {
@@ -731,7 +731,7 @@ promoting_rural_life = {
 		clr_country_flag = promote_rural_life
 	}
 }
-fertilizers_from_east = {
+estate_farmers_fertilizers_from_east = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = -10
@@ -746,8 +746,8 @@ fertilizers_from_east = {
 	can_select = {
 	}
 	on_granted = {
-		custom_tooltip = fertilizers_from_east_tooltip
-		set_country_flag = fertilizers_from_east
+		custom_tooltip = estate_farmers_fertilizers_from_east_tooltip
+		set_country_flag = estate_farmers_fertilizers_from_east
 	}
 	on_granted_province = {
 		if = {
@@ -774,15 +774,15 @@ fertilizers_from_east = {
 				}
 			}	
 			add_province_modifier = { 
-				name = fertilizers_from_east_modifier
+				name = estate_farmers_fertilizers_from_east_modifier
 				duration = -1  
-				desc = fertilizers_from_east_modifier_desc
+				desc = estate_farmers_fertilizers_from_east_modifier_desc
 			}
 				
 		}
 	}
 	on_revoked = { 
-		clr_country_flag = fertilizers_from_east
+		clr_country_flag = estate_farmers_fertilizers_from_east
 	}
 	on_revoked_province = {
 		if = {
@@ -805,7 +805,7 @@ fertilizers_from_east = {
 					trade_goods = gu_maize
 				}
 			}	
-			remove_province_modifier = fertilizers_from_east_modifier
+			remove_province_modifier = estate_farmers_fertilizers_from_east_modifier
 			
 		}
 	}
@@ -818,7 +818,7 @@ fertilizers_from_east = {
 
 	}
 	on_invalid = {
-		clr_country_flag = fertilizers_from_east
+		clr_country_flag = estate_farmers_fertilizers_from_east
 	}
 	on_invalid_province = {
 		if = {
@@ -841,7 +841,7 @@ fertilizers_from_east = {
 					trade_goods = gu_maize
 				}
 			}	
-			remove_province_modifier = fertilizers_from_east_modifier
+			remove_province_modifier = estate_farmers_fertilizers_from_east_modifier
 			
 		}
 	}
@@ -855,10 +855,10 @@ fertilizers_from_east = {
 	}
 	cooldown_years = 10
 	on_cooldown_expires = {
-		clr_country_flag = fertilizers_from_east
+		clr_country_flag = estate_farmers_fertilizers_from_east
 	}
 }
-vaccinating_animals = {
+estate_farmers_vaccinating_animals = {
 	icon = privilege_admin_power
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = -0.1
@@ -874,8 +874,8 @@ vaccinating_animals = {
 	}
 	on_granted = {
 		add_years_of_income = -0.25
-		custom_tooltip = vaccinating_animals_tooltip
-		set_country_flag = vaccinating_animals
+		custom_tooltip = estate_farmers_vaccinating_animals_tooltip
+		set_country_flag = estate_farmers_vaccinating_animals
 	}
 	on_granted_province = {
 		if = {
@@ -895,7 +895,7 @@ vaccinating_animals = {
 		}
 	}
 	on_revoked = { 
-		clr_country_flag = vaccinating_animals
+		clr_country_flag = estate_farmers_vaccinating_animals
 	}
 	on_revoked_province = {
 		if = {
@@ -917,7 +917,7 @@ vaccinating_animals = {
 	benefits = {
 	}
 	on_invalid = {
-		clr_country_flag = vaccinating_animals
+		clr_country_flag = estate_farmers_vaccinating_animals
 	}
 	on_invalid_province = {
 		if = {
@@ -942,10 +942,212 @@ vaccinating_animals = {
 	}
 	cooldown_years = 10
 	on_cooldown_expires = {
-		clr_country_flag = vaccinating_animals
+		clr_country_flag = estate_farmers_vaccinating_animals
 	}
 }
+estate_farmers_local_farms = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		relation_with_same_culture = 25
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
 
+	}
+	on_revoked_province = {
 
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+		trigger = {
 
+		}
+		modifier = {
+
+		}
+		is_bad = yes/no
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_farmers_small_scale_farming = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = -5
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.05
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+		global_trade_goods_size_modifier = -0.25
+	}
+	benefits = {
+		development_cost_in_primary_culture = -0.1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	conditional_modifier = {
+		trigger = {
+
+		}
+		modifier = {
+
+		}
+		is_bad = yes/no
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
+estate_farmers_wood_export_focus = {
+	icon = privilege_admin_power
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		set_country_flag = promote_woodworking
+	}
+	on_revoked = { 
+		clr_country_flag = promote_woodworking
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	on_invalid = {
+		clr_country_flag = promote_woodworking
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_lumber
+					trade_goods = gu_woodworking
+					
+				}
+			}		
+			add_province_modifier = { 
+				name = wood_abundance
+				duration = -1  
+				desc = wood_abundance_desc
+			}
+		}	
+
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_lumber
+					trade_goods = gu_woodworking
+					
+				}
+			}		
+			remove_province_modifier = wood_abundance
+		}	
+
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				OR = {
+					trade_goods = gu_lumber
+					trade_goods = gu_woodworking
+					
+				}
+			}		
+			remove_province_modifier = wood_abundance
+		}	
+		
+	}
+	conditional_modifier = {
+		trigger = {
+
+		}
+		modifier = {
+
+		}
+		is_bad = yes/no
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}
 

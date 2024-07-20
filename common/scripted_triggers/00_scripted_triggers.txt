@@ -636,6 +636,10 @@ has_manufactory_no_custom_tooltip_trigger = { #Province Scope
 			OR = {
 				trade_goods = copper
 				trade_goods = iron
+				trade_goods = gu_sulfur
+				trade_goods = gu_oil
+				trade_goods = gu_metalworking
+				trade_goods = gu_chemicals
 			}
 		}
 		has_building = weapons
@@ -645,8 +649,7 @@ has_manufactory_no_custom_tooltip_trigger = { #Province Scope
 			OR = {
 				trade_goods = wool
 				trade_goods = cloth
-				trade_goods = silk
-				trade_goods = dyes
+				trade_goods = gu_hemp
 			}
 		}
 		has_building = textile
@@ -654,12 +657,15 @@ has_manufactory_no_custom_tooltip_trigger = { #Province Scope
 	else_if = {
 		limit = {
 			OR = {
-				trade_goods = ivory
-				trade_goods = slaves
-				trade_goods = spices
-				trade_goods = cloves
+				trade_goods = gu_tourists
+				trade_goods = gu_consumer_goods
+				trade_goods = gu_confectionery
+				trade_goods = gu_software
 				trade_goods = fur
-				trade_goods = incense
+				trade_goods = gu_finances
+				trade_goods = gu_electronics
+				trade_goods = gu_processed_food
+				trade_goods = gu_vehicles
 			}
 		}
 		has_building = tradecompany
@@ -667,9 +673,23 @@ has_manufactory_no_custom_tooltip_trigger = { #Province Scope
 	else_if = {
 		limit = {
 			OR = {
-				trade_goods = grain
-				trade_goods = livestock
+				trade_goods = gu_mushrooms
+				trade_goods = gu_fruits
 				trade_goods = wine
+				trade_goods = gu_vegetables
+				trade_goods = gu_dairy
+				trade_goods = gu_oscypek
+				trade_goods = gu_apiculture
+				trade_goods = gu_horses
+				trade_goods = gu_beer
+				trade_goods = gu_vodka
+				trade_goods = gu_wheat
+				trade_goods = gu_triticale
+				trade_goods = gu_barley
+				trade_goods = gu_maize
+				trade_goods = gu_poultry
+				trade_goods = gu_pigs
+				trade_goods = gu_cattle
 			}
 		}
 		has_building = farm_estate
@@ -678,17 +698,20 @@ has_manufactory_no_custom_tooltip_trigger = { #Province Scope
 		limit = {
 			OR = {
 				trade_goods = paper
-				trade_goods = gems
-				trade_goods = tropical_wood
+				trade_goods = gu_lumber
+				trade_goods = gu_stone
 				trade_goods = glass
-				trade_goods = chinaware
+				trade_goods = gu_amber
+				trade_goods = gu_ceramics
+				trade_goods = gu_woodworking
 			}
 		}
 		has_building = mills
 	}
 	else_if = {
 		limit = {
-			trade_goods = coal
+			trade_goods = gu_coal
+			trade_goods = gu_euro
 		}
 		has_building = furnace
 	}
@@ -786,81 +809,6 @@ root_can_build_manufactory_here_trigger = {
 			ROOT = { adm_tech = 21 }
 		}
 	}
-}
-
-has_nobles_trade_good_trigger = {
-	OR = {
-		trade_goods = copper
-		trade_goods = iron
-		trade_goods = livestock
-		trade_goods = grain
-		trade_goods = gems
-		AND = {
-			trade_goods = slaves
-			ROOT = { NOT = { religion = nahuatl } }
-		}
-	}
-}
-
-has_burghers_trade_good_trigger = {
-	OR = {
-		trade_goods = naval_supplies
-		trade_goods = salt
-		trade_goods = coffee
-		trade_goods = cotton
-		trade_goods = sugar
-		trade_goods = tobacco
-		trade_goods = tea
-		trade_goods = cocoa
-		trade_goods = cloth
-		trade_goods = silk
-		trade_goods = dyes
-		trade_goods = coal
-		trade_goods = spices
-		trade_goods = cloves
-		trade_goods = tropical_wood
-		trade_goods = glass
-		trade_goods = chinaware
-		trade_goods = paper
-		trade_goods = ivory
-		AND = {
-			trade_goods = fish
-			ROOT = { NOT = { religion_group = christian } }
-		}
-	}
-}
-
-has_church_trade_good_trigger = {
-	OR = {
-		trade_goods = wool
-		trade_goods = fur
-			trade_goods = wine
-			trade_goods = slaves
-		trade_goods = incense
-			trade_goods = fish
-	}
-}
-
-has_dharma_elephants_trigger = {
-	# OR = {
-	# 	has_dlc = "Dharma"
-	# 	has_dlc = "Dharma - Indian Sultanate Pack"
-	# 	has_dlc = "Dharma - Hindu Unit Pack"
-	# }
-	# OR = {
-	# 	culture_group = hindusthani
-	# 	culture_group = eastern_aryan
-	# 	culture_group = western_aryan
-	# 	culture_group = dravidian
-	# 	culture_group = central_indic
-	# 	culture_group = southeastasian_group
-	# 	culture_group = burman
-	# 	primary_culture = cham
-	# 	primary_culture = sumatran
-	# 	primary_culture = javanese
-	# 	primary_culture = malayan
-	# 	tag = CDL #Dali
-	# }
 }
 
 # This is for when we want to award government reform progress and need to check if that's useful to the player based on dlc ownership

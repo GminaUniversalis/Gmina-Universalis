@@ -96,12 +96,16 @@ rural_life = {
 
 }
 
+wood_abundance = {
+	trade_goods_size = 0.5
+}
+
 city_life = {
 	development_cost = 0.1
 	local_unrest = 2
 }
 
-fertilizers_from_east_modifier = {
+estate_farmers_fertilizers_from_east_modifier = {
 	trade_goods_size = 0.5
 }
 

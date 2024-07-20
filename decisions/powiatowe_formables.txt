@@ -2,6 +2,8 @@ country_decisions = {
 #Malopolska
 	krakow_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 			
 			OR = {
 				primary_culture = krakowska
@@ -58,6 +60,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 262
 			krakow_centrum = {
 				is_core = ROOT
@@ -125,6 +128,8 @@ country_decisions = {
 
 	tarnow_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 	
 			primary_culture = wschodnio-krakowska
@@ -178,6 +183,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 4063
 			tarnow_wschod = {
 				is_core = ROOT
@@ -222,6 +228,8 @@ country_decisions = {
 	nowy_sacz_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			
 
@@ -279,6 +287,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 4042
 
@@ -327,6 +336,8 @@ country_decisions = {
 #Slaskie
 	bielsko_biala_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			OR = {
 				primary_culture = zachodnio-krakowska
@@ -383,6 +394,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 265
 			bielsko_biala_centrum = {
 				is_core = ROOT
@@ -445,6 +457,8 @@ country_decisions = {
 	jastrzebie_zdroj_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
@@ -501,6 +515,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 67
 			jastrzebie_poludnie = {
 				is_core = ROOT
@@ -550,6 +565,8 @@ country_decisions = {
 
 	zory_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
@@ -606,6 +623,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 4756
 			zory_centrum = {
 				is_core = ROOT
@@ -655,6 +673,8 @@ country_decisions = {
 
 	rybnik_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
@@ -712,6 +732,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 4751
 			rybnik_poludnie = {
 				is_core = ROOT
@@ -761,6 +782,8 @@ country_decisions = {
 
 	tychy_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = gornoslaska
 
@@ -814,6 +837,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 140
 			tychy_stare = {
 				is_core = ROOT
@@ -863,6 +887,8 @@ country_decisions = {
 
 	myslowice_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = gornoslaska
 			
@@ -916,6 +942,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 154
 			myslowice_srodmiescie = {
 				is_core = ROOT
@@ -965,6 +992,8 @@ country_decisions = {
 
 	jaworzno_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = zachodnio_krakowska
 			
@@ -1018,6 +1047,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 154
 			jaworzno_centrum = {
 				is_core = ROOT
@@ -1073,6 +1103,8 @@ country_decisions = {
 
 	sosnowiec_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = zaglebiowska
 			
@@ -1126,6 +1158,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 153
 			sosnowiec_centrum = {
 				is_core = ROOT
@@ -1187,6 +1220,8 @@ country_decisions = {
 
 	dabrowa_gornicza_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = zaglebiowska
 			
@@ -1240,6 +1275,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 1155
 			dabrowa_gornicza_srodmiescie = {
 				is_core = ROOT
@@ -1301,6 +1337,8 @@ country_decisions = {
 
 	piekary_slaskie_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = slonska
 			
@@ -1354,6 +1392,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 160
 			piekary = {
 				is_core = ROOT
@@ -1396,6 +1435,8 @@ country_decisions = {
 
 	bytom_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = gornoslaska
 			
@@ -1449,6 +1490,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 4128
 			powiat_bytom = {
 				is_core = ROOT
@@ -1498,6 +1540,8 @@ country_decisions = {
 
 	chorzow_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = slonska
 			
@@ -1551,6 +1595,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 1827
 			chorzow = {
 				is_core = ROOT
@@ -1593,6 +1638,8 @@ country_decisions = {
 
 	swietochlowice_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = slonska
 			
@@ -1646,6 +1693,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 4128
 			swietochlowice = {
 				is_core = ROOT
@@ -1695,6 +1743,8 @@ country_decisions = {
 
 	ruda_slaska_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = slonska
 			
@@ -1748,6 +1798,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 1951
 			ruda_polnoc = {
 				is_core = ROOT
@@ -1797,6 +1848,8 @@ country_decisions = {
 
 	zabrze_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = gornoslaska
 			
@@ -1850,6 +1903,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 156
 			zabrze_centrum = {
 				is_core = ROOT
@@ -1906,6 +1960,8 @@ country_decisions = {
 
 	gliwice_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = gornoslaska
 			
@@ -1959,6 +2015,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 138
 			gliwice_srodmiescie = {
 				is_core = ROOT
@@ -2022,6 +2079,8 @@ country_decisions = {
 
 	czestochowa_reformation = {
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = zachodnio-krakowska
 			
@@ -2075,6 +2134,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			poland_powiatowe_formed_check = yes
 			capital = 441
 			czestochowa_centrum = {
 				is_core = ROOT
@@ -2141,6 +2201,8 @@ country_decisions = {
 	opole_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = opolska
 			
@@ -2199,6 +2261,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 4761
 
@@ -2287,6 +2350,8 @@ country_decisions = {
 	wroclaw_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = wroclawska
 			
@@ -2345,6 +2410,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 3190
 
@@ -2424,6 +2490,8 @@ country_decisions = {
 	walbrzych_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = dolnoslaska
 			
@@ -2482,6 +2550,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2879
 
@@ -2540,6 +2609,8 @@ country_decisions = {
 	jelenia_gora_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = dolnoslaska
 			
@@ -2598,6 +2669,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2921
 
@@ -2663,6 +2735,8 @@ country_decisions = {
 	legnica_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = dolnoslaska
 			
@@ -2721,6 +2795,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 3190
 
@@ -2781,6 +2856,8 @@ country_decisions = {
 	zielona_gora_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = dolnoslaska
 			
@@ -2839,6 +2916,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2831
 
@@ -2925,6 +3003,8 @@ country_decisions = {
 	gorzow_wielkopolska_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = lubuska
 			
@@ -2983,6 +3063,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2831
 
@@ -3041,6 +3122,8 @@ country_decisions = {
 	kostrzyn_nad_odra_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = lubuska
 			
@@ -3099,6 +3182,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 808
 
@@ -3159,6 +3243,8 @@ country_decisions = {
 	poznan_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 
 			primary_culture = poznanska
@@ -3218,6 +3304,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 501
 
@@ -3297,6 +3384,8 @@ country_decisions = {
 	leszno_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 
 			primary_culture = poznanska
@@ -3356,6 +3445,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2810
 
@@ -3414,6 +3504,8 @@ country_decisions = {
 	konin_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 
 			primary_culture = kaliska
@@ -3473,6 +3565,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2831
 
@@ -3538,6 +3631,8 @@ country_decisions = {
 	kalisz_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 
 			primary_culture = kaliska
@@ -3597,6 +3692,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2831
 
@@ -3664,6 +3760,8 @@ country_decisions = {
 	lodz_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = lodzka
 			
@@ -3722,6 +3820,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2461
 
@@ -3801,6 +3900,8 @@ country_decisions = {
 	piotrkow_trybunalski_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = sieradzka
 			
@@ -3859,6 +3960,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 368
 
@@ -3917,6 +4019,8 @@ country_decisions = {
 	skierniewice_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 
 			primary_culture = mazowiecka
@@ -3976,6 +4080,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2831
 
@@ -4036,6 +4141,8 @@ country_decisions = {
 	kielce_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 
 			primary_culture = kielecka
@@ -4095,6 +4202,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1120
 
@@ -4162,6 +4270,8 @@ country_decisions = {
 	tarnobrzeg_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = lasowiecka
 			
@@ -4220,6 +4330,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2831
 
@@ -4278,6 +4389,8 @@ country_decisions = {
 	rzeszow_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = lasowiecka
 			
@@ -4336,6 +4449,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2788
 
@@ -4394,6 +4508,8 @@ country_decisions = {
 	krosno_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = podgorzanska
 			
@@ -4452,6 +4568,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1098
 
@@ -4510,6 +4627,8 @@ country_decisions = {
 	przemysl_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = kresowa
 			
@@ -4568,6 +4687,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1086
 
@@ -4743,6 +4863,8 @@ country_decisions = {
 	zamosc_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 	
 			primary_culture = kresowa
 			
@@ -4801,6 +4923,7 @@ country_decisions = {
 		}
 	
 		allow = {
+			poland_powiatowe_formed_check = yes
 	
 			capital = 547
 	
@@ -4859,6 +4982,8 @@ country_decisions = {
 	chelm_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 	
 			primary_culture = kresowa
 			
@@ -4917,6 +5042,7 @@ country_decisions = {
 		}
 	
 		allow = {
+			poland_powiatowe_formed_check = yes
 	
 			capital = 4419
 	
@@ -4975,6 +5101,8 @@ country_decisions = {
 	biala_podlaska_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 	
 			primary_culture = poleska
 			
@@ -5033,6 +5161,7 @@ country_decisions = {
 		}
 	
 		allow = {
+			poland_powiatowe_formed_check = yes
 	
 			capital = 4511
 	
@@ -5209,6 +5338,8 @@ country_decisions = {
 	radom_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = radomska
 
@@ -5267,6 +5398,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2330
 
@@ -5325,6 +5457,8 @@ country_decisions = {
 	plock_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = plocka
 
@@ -5383,6 +5517,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 972
 
@@ -5441,6 +5576,8 @@ country_decisions = {
 	siedlce_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = podlaska
 
@@ -5499,6 +5636,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 739
 
@@ -5557,6 +5695,8 @@ country_decisions = {
 	ostroleka_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = kurpiowska
 
@@ -5615,6 +5755,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 739
 
@@ -5674,6 +5815,8 @@ country_decisions = {
 	bydgoszcz_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = kujawska
 
@@ -5732,6 +5875,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2991
 
@@ -5792,6 +5936,8 @@ country_decisions = {
 	torun_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = kujawska
 
@@ -5850,6 +5996,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 72
 
@@ -5909,6 +6056,8 @@ country_decisions = {
 	grudziadz_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = chelminska
 
@@ -5967,6 +6116,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2963
 
@@ -6025,6 +6175,8 @@ country_decisions = {
 	wloclawek_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = kujawska
 
@@ -6083,6 +6235,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2975
 
@@ -6143,6 +6296,8 @@ country_decisions = {
 	bialystok_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = podlaska
 
@@ -6201,6 +6356,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1065
 
@@ -6259,6 +6415,8 @@ country_decisions = {
 	lomza_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = mazowiecka
 
@@ -6317,6 +6475,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1058
 
@@ -6375,6 +6534,8 @@ country_decisions = {
 	suwalki_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = suwalska
 
@@ -6433,6 +6594,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1058
 
@@ -6493,6 +6655,8 @@ country_decisions = {
 	olsztyn_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = warminska
 
@@ -6551,6 +6715,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 292
 
@@ -6609,6 +6774,8 @@ country_decisions = {
 	elblag_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = warminska
 
@@ -6667,6 +6834,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 4745
 
@@ -6727,6 +6895,8 @@ country_decisions = {
 	gdansk_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = trojmiasto
 
@@ -6785,6 +6955,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 43
 
@@ -6846,6 +7017,8 @@ country_decisions = {
 	sopot_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = trojmiasto
 
@@ -6904,6 +7077,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1776
 
@@ -6965,6 +7139,8 @@ country_decisions = {
 	gdynia_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = trojmiasto
 
@@ -7023,6 +7199,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1777
 
@@ -7084,6 +7261,8 @@ country_decisions = {
 	slupsk_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = srodkowopomorska
 
@@ -7142,6 +7321,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 4119
 
@@ -7202,6 +7382,8 @@ country_decisions = {
 	swinoujscie_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = zachodniopomorska
 
@@ -7260,6 +7442,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 1858
 
@@ -7318,6 +7501,8 @@ country_decisions = {
 	szczecin_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = zachodniopomorska
 
@@ -7376,6 +7561,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 2978
 
@@ -7434,6 +7620,8 @@ country_decisions = {
 	koszalin_reformation = {
 
 		potential = {
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
 
 			primary_culture = srodkowopomorska
 
@@ -7492,6 +7680,7 @@ country_decisions = {
 		}
 
 		allow = {
+			poland_powiatowe_formed_check = yes
 
 			capital = 4370
 
