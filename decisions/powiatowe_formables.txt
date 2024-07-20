@@ -612,7 +612,6 @@ country_decisions = {
 				owned_by = ROOT
 				type = all
 			}
-			highlight = 4756
 			NOT = { exists = L23 }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -2397,14 +2396,14 @@ country_decisions = {
 				add_permanent_claim = A27
 			}
 
-			krzyki = {
+			Krzyki = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = A27
 			}
 
-			fabryczna = {
+			Fabryczna = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

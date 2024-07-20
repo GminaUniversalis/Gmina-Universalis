@@ -29,6 +29,7 @@ replace_path="common/estate_privileges"
 replace_path="common/estates_preload"
 replace_path="common/event_modifiers"
 replace_path="common/achievements.txt"
+replace_path="common/triggered_modifiers.txt"
 
 replace_path="history/provinces"
 replace_path="history/countries"

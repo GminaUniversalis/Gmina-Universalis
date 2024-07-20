@@ -46,12 +46,18 @@ country_event = {
 
 		modifier = {
 			factor = 0.8
-			has_center_of_trade_of_level = 2
+			any_owned_province = {
+				has_center_of_trade_of_level = 2
+			}
+
 		}
 
 		modifier = {
 			factor = 0.8
-			has_center_of_trade_of_level = 3
+			any_owned_province = {
+				has_center_of_trade_of_level = 3
+			}
+
 		}
 
 		modifier = {

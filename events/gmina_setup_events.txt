@@ -169,7 +169,10 @@ country_event = {
 
 				OR = {
 					AND = {
-						gu_coal = 5
+						num_of_owned_provinces_with = {
+							value = 5
+							trade_goods = gu_coal
+						}
 						NOT = {
 							capital_scope = {
 								OR = {
@@ -182,7 +185,10 @@ country_event = {
 					}
 					AND = {
 						NOT = {
-							gu_coal = 5
+							num_of_owned_provinces_with = {
+								value = 5
+								trade_goods = gu_coal
+							}
 						}
 						capital_scope = {
 							OR = {

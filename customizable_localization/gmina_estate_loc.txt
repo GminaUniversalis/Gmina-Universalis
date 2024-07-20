@@ -6,26 +6,58 @@ defined_text = {
 		localisation_key = string_available_miners
 
 		trigger = {
+			
 			OR = {
-				gu_coal = 5
-				capital_scope = {
-					OR = {
-						region = dolnoslaskie_region
-						region = opolskie_region
-						region = slaskie_region
-					}
+
+				NOT = { has_country_flag = has_estate_picked_flag }
+				had_country_flag = {
+					flag = has_estate_picked_flag
+					days = 9125
+				}
+			}
+
+			num_of_owned_provinces_with = {
+				value = 5
+				trade_goods = gu_coal
+			}
+
+			capital_scope = {
+				OR = {
+					region = dolnoslaskie_region
+					region = opolskie_region
+					region = slaskie_region
 				}
 			}
 		}
 	}
+
 
 	text = {
 		localisation_key = string_NOT_available_miners
 
 		trigger = {
 			OR = {
+
+				OR = {
+
+					NOT = { 
+						had_country_flag = {
+							flag = has_estate_picked_flag
+							days = 9125
+						}
+					}
+	
+					has_country_flag = has_estate_picked_flag 
+	
+				}
+
 				AND = {
-					NOT = { gu_coal = 5 }
+					NOT = { 				
+						num_of_owned_provinces_with = {
+							value = 5
+							trade_goods = gu_coal
+						} 
+					}
 					capital_scope = {
 						OR = {
 							region = dolnoslaskie_region
@@ -36,7 +68,12 @@ defined_text = {
 				}
 				
 				AND = {
-					NOT = { gu_coal = 5 }
+					NOT = { 
+						num_of_owned_provinces_with = {
+							value = 5
+							trade_goods = gu_coal
+						}
+					}
 					NOT = {
 						capital_scope = {
 							OR = {
@@ -215,29 +252,33 @@ defined_text = {
 
 			OR = {
 				AND = {
-					any_owned_province = {
-						farmlands = 5 
+					num_of_owned_provinces_with = {
+						value = 5
+						has_terrain = farmlands
 					}
 					religion_group = communism_group
 				}
 				AND = {
 					NOT = {
-						any_owned_province = {
-							farmlands = 5
+						num_of_owned_provinces_with = {
+							value = 5
+							has_terrain = farmlands
 						}
 					}
 					NOT = { religion_group = communism_group }
 				}
 				AND = {
-					any_owned_province = {
-						 grasslands = 10
+					num_of_owned_provinces_with = {
+						value = 10
+						has_terrain = grasslands
 					}
 					religion_group = communism_group
 				}
 				AND = {
 					NOT = {
-						any_owned_province = {
-							grasslands = 10
+						num_of_owned_provinces_with = {
+							value = 10
+							has_terrain = grasslands
 						}
 					}
 					NOT = { religion_group = communism_group }
@@ -254,11 +295,13 @@ defined_text = {
 						}
 					
 						OR = {
-							any_owned_province = {
-								grasslands = 10
+							num_of_owned_provinces_with = {
+								value = 10
+								has_terrain = grasslands
 							}
-							any_owned_province = {
-								farmlands = 5
+							num_of_owned_provinces_with = {
+								value = 5
+								has_terrain = farmlands
 							}
 						}
 					
@@ -276,11 +319,13 @@ defined_text = {
 
 						NOT = {
 							OR = {
-								any_owned_province = {
-									grasslands = 10
+								num_of_owned_provinces_with = {
+									value = 10
+									has_terrain = grasslands
 								}
-								any_owned_province = {
-									farmlands = 5
+								num_of_owned_provinces_with = {
+									value = 5
+									has_terrain = farmlands
 								}
 
 								religion_group = communism_group
@@ -471,7 +516,10 @@ defined_text = {
 		localisation_key = string_estate_decision_coal
 
 		trigger = {
-			gu_coal = 5
+			num_of_owned_provinces_with = {
+				value = 5
+				trade_goods = gu_coal
+			}
 		}
 	}
 
@@ -479,7 +527,12 @@ defined_text = {
 		localisation_key = string_estate_decision_coal_not
 
 		trigger = {
-			NOT = { gu_coal = 5 }
+			NOT = { 
+				num_of_owned_provinces_with = {
+					value = 5
+					trade_goods = gu_coal
+				}
+			}
 		}
 	}
 }
@@ -565,8 +618,9 @@ defined_text = {
 		localisation_key = string_estate_decision_own_farmlands
 
 		trigger = {
-			any_owned_province = {
-				farmlands = 5 
+			num_of_owned_provinces_with = {
+				value = 5
+				has_terrain = farmlands
 			}
 		}
 	}
@@ -576,8 +630,9 @@ defined_text = {
 
 		trigger = {
 			NOT = {
-				any_owned_province = {
-					farmlands = 5 
+				num_of_owned_provinces_with = {
+					value = 5
+					has_terrain = farmlands
 				}
 			}
 		}
@@ -591,8 +646,9 @@ defined_text = {
 		localisation_key = string_estate_decision_own_grasslands
 
 		trigger = {
-			any_owned_province = {
-				grasslands = 10
+			num_of_owned_provinces_with = {
+				value = 10
+				has_terrain = grasslands
 			}
 		}
 	}
@@ -602,8 +658,9 @@ defined_text = {
 
 		trigger = {
 			NOT = {
-				any_owned_province = {
-					grasslands = 10
+				num_of_owned_provinces_with = {
+					value = 10
+					has_terrain = grasslands
 				}
 			}
 		}
