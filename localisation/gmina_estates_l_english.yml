@@ -1,6 +1,6 @@
 ﻿l_english:
 #Syf który nie wiem gdzie wpierdoli¾ 
- #Na przysz³oœ¾ jak nie b²dziesz wiedzia³ gdzie czegoœ wpierdoli¾, to użyj mózgu
+ #Na przysz³oœ¾ jak nie b²dziesz wiedzia³ gdzie czegoœ wpierdoli¾, to u¿yj mózgu
 #General
  estate_picker_decision_title:0 "Change Your Estate Focus"
  estate_picker_decision_desc:0 "Decide on which estate you want to focus on. You can only have one of them at the time"
@@ -63,7 +63,7 @@
  gmina_estates.2.a1:0 "You §GCAN§! enable Miners Estate!"
  gmina_estates.2.a1.tt:0 "Selecting this option will enable Miners Estate (after 1 day) for 25 years, after which you will be able to change it again"
  gmina_estates.2.a2:0 "You §RCAN'T§! enable Miners Estate!"
- gmina_estates.2.a2.tt:0 "To enable Miners Estate you have to either:\n[Root.GetEstateDecisionCoal] Own 5 §YCoal§! producing provinces\n[Root.GetEstateDecisionMinersCapital] Have your capital in §YDolnośląskie§!,§YOpolskie§!, §YŚląskie§! region"
+ gmina_estates.2.a2.tt:0 "To enable Miners Estate you have to either:\n[Root.GetEstateDecisionCoal] Own 5 §YCoal§! producing provinces\n[Root.GetEstateDecisionMinersCapital] Have your capital in §YDolnoœl¹skie§!,§YOpolskie§!, §YŒl¹skie§! region"
  gmina_estates.2.b1:0 "YYou §GCAN§! enable Scientists Estate!"
  gmina_estates.2.b1.tt:0 "Selecting this option will enable Scientists Estate (after 1 day) for 25 years, after which you will be able to change it again"
  gmina_estates.2.b2:0 "You §RCAN'T§! enable Scientists Estate!"
@@ -86,7 +86,7 @@
  gmina_estates.3.b:0 "Banks"
  gmina_estates.3.b.tt:0 "To enable Banks Estate you have to:\n[Root.GetEstateDecisionIsCommunist] Do §RNOT§! belong to §RCommunist§! political party!"
  gmina_estates.3.c:0 "Miners"
- gmina_estates.3.c.tt:0 "To enable Miners Estate you have to either:\n[Root.GetEstateDecisionCoal] Own 5 §YCoal§! producing provinces\n[Root.GetEstateDecisionMinersCapital] Have your capital in §YDolnośląskie§!,§YOpolskie§!, §YŚląskie§! region"
+ gmina_estates.3.c.tt:0 "To enable Miners Estate you have to either:\n[Root.GetEstateDecisionCoal] Own 5 §YCoal§! producing provinces\n[Root.GetEstateDecisionMinersCapital] Have your capital in §YDolnoœl¹skie§!,§YOpolskie§!, §YŒl¹skie§! region"
  gmina_estates.3.d:0 "Scientists"
  gmina_estates.3.d.tt:0 "To enable Scientists Estate you have to:\n[Root.GetEstateDecisionInnovativeness] Have at least §G50§! §YInnovativeness§!\n[Root.GetEstateDecisionIsCommunist] Do §RNOT§! belong to §RCommunist§! political party!"
  gmina_estates.3.e:0 "Investors"

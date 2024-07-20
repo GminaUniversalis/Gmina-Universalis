@@ -165,7 +165,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA9076"
-		HLR = {
+		SIL = {
 			inherit = ROOT
 		}
 	}

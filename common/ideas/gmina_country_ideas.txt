@@ -1,507 +1,218 @@
-X15_ideas = {
-	start = {
-		
-		trade_efficiency = 0.15
-		improve_relation_modifier = 0.2
-		
-	}
-	
-	bonus = {
-		global_ship_trade_power = 0.2
-	}	
+#Dolnoslaskie -A
 
+A06_ideas = { #Powiat Klodzki
+	start ={
+		prestige_decay = -0.001
+		diplomatic_reputation = 1
+	}
 	trigger = {
-		tag = X15
+		tag = A06
 	}
-	free = yes
-	
-	Cracovian_Metro = {
-		movement_speed = 0.15
-	}
-	Old_City = {
+	free=yes
+
+	Little_Prague = {
 		prestige = 1
 	}
-	City_of_Trade = {
-		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.1
-	}
-	Cracovian_Churches = {
-		tolerance_own = 2
-	}
-	Wawel = {
-		defensiveness = 0.2
-		hostile_attrition = 0.5
-	}
-	Kombinat = {
-		production_efficiency = 0.2
-	}
-	Cracovian_Machetes = {
-		infantry_power = 0.20
-	}
-}
-P03_ideas = {
-	start = {
-		idea_cost = -0.1
-		discipline = 0.05
-	}
-
-	bonus = {
-		fire_damage_received = -0.10
-	}
-	
-	trigger = {
-		tag = P03
-	}
-	free = yes
-
-	Pomeranian_Wall_Museum = {
-		defensiveness = 0.15
-	}
-	Pomeranian_Dukes_Castle = {
-		legitimacy = 1
-	}
-	Church_of_Mary = {
-		tolerance_own = 2
-	}
-	Bismarck_Tower = {
-		culture_conversion_cost = -0.15
-	}
-	Kaulfuss_Monument = {
-		technology_cost = -0.1
-	}
-	Post-Soviet_Barracks = {
-		land_forcelimit_modifier = 0.15
-	}
-	Citizen_Wlapko = {
-		global_unrest = -2
-	}
-}
-		G20_ideas ={
-			start = {
-				stability_cost_modifier = -0.1
-				global_manpower_modifier = 0.075
-			}
-			trigger = {
-				tag = G20
-			}
-			free = yes
-
-			bonus = {
-				global_foreign_trade_power = 0.15
-			}
-
-			Radomski_czerwiec = {
-				land_morale = 0.1
-			}
-			WSHR = {
-				caravan_power = 0.1
-			}
-			Ryenk_Radomski = {
-				development_cost = -0.1
-			}
-			Old_capital = {
-				prestige_decay = -0.005
-			}
-			TPS_ZDR = {
-				diplomatic_reputation = 1
-			}
-			Ilza_castle = {
-				papal_influence = 1
-			}
-			Military_infrastructure = {
-				artillery_power = 0.15
-			}
-
-		}
-		X10_ideas ={
-			start = {
-				land_maintenance_modifier = -0.15
-				hostile_attrition = 1
-			}
-			trigger = {
-				tag = X10
-			}
-			free = yes
-			Wolbromian_cross = {
-				global_missionary_strength = 0.02
-			}
-			Olkuszian_aficionados = {
-				infantry_power = 0.1
-			}
-			Zalew = {
-				global_tax_modifier = 0.1 
-			}
-			Oriental_cuisine = {
-				num_accepted_cultures = 2
-			}
-			Land_of_factories = {
-				global_trade_goods_size_modifier = 0.1
-			}
-			Workers_strong_together = {
-				discipline = 0.05
-			}
-			Rubber_paradise = {
-				trade_efficiency = 0.1
-			}
-			bonus = {
-				build_cost = -0.1
-			}
-		}
-		A22_ideas = {
-			start = {
-				caravan_power = 0.2
-				global_tax_modifier = 0.1	
-			}
-		
-			bonus = {
-				merchants = 1
-			}
-			
-			trigger = {
-				tag = A22
-			}
-			free = yes
-		
-			Wroclawski_throne_for_king = {
-				ae_impact = -0.15	
-			}
-			Wroclawski_sleza_mountain = {
-				tolerance_own = 2
-			}
-			Wroclawski_silesian_black_soils = {
-				global_trade_goods_size_modifier = 0.1	
-			}
-			Wroclawski_road_junctions = {
-				global_trade_power = 0.1
-			}
-			Wroclawski_korean_minority = {
-				num_accepted_cultures = 2	
-			}
-			Wroclawski_pearl_of_mannerism = {
-				global_missionary_strength = 0.02	
-			}
-			Wroclawski_nation_of_palaces = {
-				horde_unity = 1
-				legitimacy = 1
-				republican_tradition = 0.3
-				devotion = 1
-			}
-		}
-		
-		R05_ideas ={
-			start ={
-				religious_unity = 0.2
-				army_tradition_decay = -0.01
-			}
-			trigger = {
-				tag = R05
-			}
-			free = yes
-			Central_Park = {
-				culture_conversion_cost = -0.25
-			}
-			Railroad_Center = {
-				movement_speed = 0.1
-			}
-			Rivalry_with_Kalisz = {
-				defensiveness = 0.15
-			}
-			Konkatedra = {
-				tolerance_own = 1
-			}
-			Zombies_were_born_here = {
-				production_efficiency = 0.1
-			}
-			Republic_of_Ostrow = {
-				land_morale = 0.1
-			}
-			Piaski_Szczygliczka = {
-				improve_relation_modifier = 0.15
-			}
-			City_of_Sport = {
-				land_attrition = -0.05
-				infantry_power = 0.05
-			}
-			bonus = {
-				global_trade_goods_size_modifier = 0.1
-			}
-		}
-		A15_ideas = {
-			start={
-				manpower_recovery_speed= 0.2
-				defensiveness=0.15
-			}
-			trigger = {
-				tag = A15
-			}
-			free = yes
-			30_plan = {
-				build_cost = -0.1
-				build_time = -0.15
-			}
-
-			Consumer_capital_of_the_lowersilesia = {
-				land_morale = 0.15
-			}
-			Freshly_renovated_Square = {
-				prestige = 1
-				movement_speed = 0.1
-			}
-			Derby_of_Lower_Silesia = {
-				leader_land_shock = 1
-			}
-			Great_Copper_Smelter = {
-				global_trade_goods_size_modifier = 0.15
-			}
-			Dziury_na_Zlotryjska = {
-				hostile_attrition = 1
-			}
-			Grandpa_on_the_throne = {
-				monarch_lifespan = 0.15
-			}
-
-			bonus = {
-				global_tax_modifier = 0.2
-			}
-		}
-		A06_ideas = {
-			start ={
-				prestige_decay = -0.001
-				diplomatic_reputation = 1
-			}
-			trigger = {
-				tag = A06
-			}
-			free=yes
-		
-			Little_Prague = {
-				prestige = 1
-			}
-			Plurinational_Legacy = {
-				num_accepted_cultures = 2
-			}
-			Important_Trade_Hub = {
-				caravan_power = 0.25
-			}
-			Twierdza_Klodzko = {
-				defensiveness = 0.2
-			}
-			Legacy_of_Czerwona_Szkola = {
-				global_trade_goods_size_modifier = 0.1
-			}
-			PKS_w_Klodzku = {
-				movement_speed = 0.1
-			}
-			Osiedle_Leona_Kruczkowskiego = {
-				development_cost = -0.1
-			}
-			bonus = {
-				global_garrison_growth = 0.25
-			}
-		}
-
-		P17_ideas = {
-			start = {
-			cav_to_inf_ratio = 0.25
-			horde_unity = 1
-			legitimacy = 1
-			republican_tradition = 0.3
-			devotion = 1
-			}
-			
-			bonus = {
-				land_forcelimit_modifier = 0.15
-			}	
-		
-			trigger = {
-				tag = P17
-			}
-			free = yes
-			
-			Wild_East = {
-				cavalry_power = 0.15
-			}
-			Dukes_of_Pomerania = {
-				prestige = 1
-			}
-			Multicultural_City = {
-				years_of_nationalism = -5
-			}
-			Legacy_of_Stocznia = {
-				naval_morale = 0.1
-				ship_durability = 0.05
-			}
-			Our_new_face = {
-				global_tax_modifier = 0.15
-			}
-			Forever_in_development = {
-				development_cost = -0.1
-			}
-			Bigger_than_you_think = {
-				governing_capacity_modifier = 0.1
-				core_creation = -0.15
-			}
-		}
-Y02_ideas = {
-	start = {
-		
-		fire_damage = 0.1
-		build_cost = -0.1
-		
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}	
-
-	trigger = {
-		tag = Y02
-	}
-	free = yes
-	
-	CH_Jantar = {
-		global_tax_modifier = 0.15
-	}
-	Blucher_bunkers = {
-		fort_maintenance_modifier = -0.15
-	}
-	Police_School = {
-		global_unrest = -1
-	}
-	Witkacy_museum = {
+	Plurinational_Legacy = {
 		num_accepted_cultures = 2
 	}
-	Hotel_Grand_Lubicz = {
-		manpower_recovery_speed = 0.10
+	Important_Trade_Hub = {
+		caravan_power = 0.25
 	}
-	Baszta_Czarownic = {
-		tolerance_own = 1
+	Twierdza_Klodzko = {
+		defensiveness = 0.2
 	}
-	University_Of_Pomerania = {
-		technology_cost = -0.1
+	Legacy_of_Czerwona_Szkola = {
+		global_trade_goods_size_modifier = 0.1
 	}
-}
-G17_ideas = {
-	start = {
-		
-		reform_progress_growth = 0.1
-		improve_relation_modifier = 0.1
-		
-	}
-	
-	bonus = {
-		manpower_recovery_speed = 0.15
-	}	
-
-	trigger = {
-		tag = G17
-	}
-	free = yes
-	
-	Orchards_of_Grojec = {
-		global_trade_goods_size_modifier = 0.10
-	}
-	Skarga_Birthplace = {
-		religious_unity = 0.25
-		tolerance_own = 1
-	}
-	Browar_Warka = {
-		global_unrest = -1
-	}
-	Wysocki_Spirit = {
-		years_of_nationalism = -5
-	}
-	Suski_Domain = {
-		spy_offence = 0.25
-	}
-	Pulaski_Cavalry = {
-		cavalry_power = 0.1
-		cav_to_inf_ratio = 0.25
-	}
-	Old_Railway = {
-		province_trade_power_modifier = 0.1
-	}
-}
-Y11_ideas = {
-	start = {
-		
-		ae_impact = -0.1
-		years_of_nationalism = -5
-		
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}	
-
-	trigger = {
-		tag = Y11
-	}
-	free = yes
-	
-	Gdynia_bedroom = {
-		manpower_recovery_speed = 0.1
-	}
-	The_capital_of_Kashubia = {
-		province_warscore_cost = -0.15
-	}
-	Reda_Aquapark = {
-		development_cost = -0.05
-	}
-	Arka_Rumia_Rugby_Club = {
-		shock_damage = 0.10
-	}
-	SKM_Trains = {
+	PKS_w_Klodzku = {
 		movement_speed = 0.1
 	}
-	Kashubian_Folk_College = {
-		technology_cost = -0.1
+	Osiedle_Leona_Kruczkowskiego = {
+		development_cost = -0.1
 	}
-	Wejherowo_Cultural_Centre = {
-		global_unrest = -1
+	bonus = {
+		global_garrison_growth = 0.25
 	}
 }
-Y08_ideas = {
+A15_ideas = { #Powiat Legnicki
+	start={
+		manpower_recovery_speed= 0.2
+		defensiveness=0.15
+	}
+	trigger = {
+		tag = A15
+	}
+	free = yes
+	30_plan = {
+		build_cost = -0.1
+		build_time = -0.15
+	}
+
+	Consumer_capital_of_the_lowersilesia = {
+		land_morale = 0.15
+	}
+	Freshly_renovated_Square = {
+		prestige = 1
+		movement_speed = 0.1
+	}
+	Derby_of_Lower_Silesia = {
+		leader_land_shock = 1
+	}
+	Great_Copper_Smelter = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	Dziury_na_Zlotryjska = {
+		hostile_attrition = 1
+	}
+	Grandpa_on_the_throne = {
+		monarch_lifespan = 0.15
+	}
+
+	bonus = {
+		global_tax_modifier = 0.2
+	}
+}
+A22_ideas = { #Powiat Wroclawski
+	start = {
+		caravan_power = 0.2
+		global_tax_modifier = 0.1	
+	}
+
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = A22
+	}
+	free = yes
+
+	Wroclawski_throne_for_king = {
+		ae_impact = -0.15	
+	}
+	Wroclawski_sleza_mountain = {
+		tolerance_own = 2
+	}
+	Wroclawski_silesian_black_soils = {
+		global_trade_goods_size_modifier = 0.1	
+	}
+	Wroclawski_road_junctions = {
+		global_trade_power = 0.1
+	}
+	Wroclawski_korean_minority = {
+		num_accepted_cultures = 2	
+	}
+	Wroclawski_pearl_of_mannerism = {
+		global_missionary_strength = 0.02	
+	}
+	Wroclawski_nation_of_palaces = {
+		horde_unity = 1
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+	}
+}
+A27_ideas = { #Wroclaw
+	start = {
+		advisor_cost = -0.2
+		culture_conversion_cost = -0.2
+	}
+
+	bonus = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	
+	trigger = {
+		tag = A27
+	}
+	free = yes
+
+	Wroclaw_rat_undercity = {
+		spy_offence = 0.4
+	}
+	Wroclaw_city_of_bridges = {
+		trade_efficiency = 0.1
+	}
+	Wroclaw_city_of_gnomes = {
+		administrative_efficiency = 0.05
+	}
+	Wroclaw_festung_breslau = {
+		siege_ability = 0.2
+	}
+	Wroclaw_polish_twink_town = {
+		tolerance_heathen = 3
+	}
+	Wroclaw_MPK = {
+		hostile_attrition = 2
+	}
+	Wroclaw_memory_of_our_flood = {
+		discipline = 0.05
+	}
+}
+
+#Kujawsko-Pomorskie -B
+
+B00_ideas = { #Powiat Wloclawski
 	start = {
 		
-		culture_conversion_cost = -0.25
-		diplomats = 1
+		diplomatic_upkeep = 2
+		garrison_size = 0.25
 		
 	}
 	
 	bonus = {
-		development_cost = -0.05
+		all_estate_loyalty_equilibrium = 0.1
 	}	
 
 	trigger = {
-		tag = Y08
+		tag = B00
 	}
 	free = yes
 	
-	Teutonic_tradition = {
-		tolerance_own = 1
+	Neither_Kuyavia_neither_Pomerania = {
+		devotion = 2
+		legitimacy = 2
+		republican_tradition = 0.5
+		horde_unity = 2
+		meritocracy = 2
 	}
-	Biggest_toilet_in_the_World = {
-		monthly_splendor = 2
+	Black_but_efficient = {
+		estate_farmers_loyalty_modifier = 0.1
+		global_tax_modifier = 0.15
+		manpower_recovery_speed = 0.15
 	}
-	Giant_of_Prabuty = {
-		land_morale = 0.1
+	Down_here_salt_is_a_way_of_life = {
+		estate_miners_loyalty_modifier = 0.1
+		global_trade_goods_size_modifier = 0.1
 	}
-	Town_of_Roundabouts = {
-		caravan_power = 0.2
+	Bydgoszcz_NATO_base = {
+		estate_army_loyalty_modifier = 0.1
+		leader_land_fire = 1
+		leader_land_manuever = 1
+		leader_land_shock = 1
 	}
-	Cellulose_stench = {
-		hostile_attrition = 1
-		max_hostile_attrition = 1
+	Vistulan_magazines = {
+		estate_investors_loyalty_modifier = 0.1
+		trade_efficiency = 0.15
+		trade_steering = 0.25
 	}
-	Sadlinki = {
-		production_efficiency = 0.1
+	Scientist_of_gingerbread = {
+		estate_scientists_loyalty_modifier = 0.1
+		technology_cost = -0.1
+		global_institution_spread = 0.2
 	}
-	Prabuty_forrest_beatings = {
-		global_unrest = -1
+	Nein_I_am_not_German = {
+		cavalry_power = 0.2
+		land_morale = 0.10
 	}
 }
-B10_ideas = {
+
+B10_ideas = { #Powiat Wloclawski
 	start = {
 		
 		monthly_splendor = 2
@@ -544,86 +255,171 @@ B10_ideas = {
 		center_of_trade_upgrade_cost = -0.1
 	}
 }
-Y12_ideas = {
+
+B12_ideas = { #Powiat Grudziadzki
 	start = {
 		
-		heavy_ship_power = 0.1
-		ae_impact = 0.15
+		shock_damage_received = -0.1
+		drill_gain_modifier = 0.25
 		
 	}
 	
 	bonus = {
-		discipline = 0.05
+		leader_land_siege = 1
 	}	
 
 	trigger = {
-		tag = Y12
+		tag = B12
 	}
 	free = yes
 	
-	King_of_Amber = {
-		caravan_power = 0.33
+	Teutonic_Rulers = {
+		manpower_in_true_faith_provinces= 0.10
+		institution_spread_from_true_faith = 0.1
 	}
-	Wedding_with_the_sea = {
-		naval_forcelimit_modifier = 0.25
+	Monastic_knighthood = {
+		garrison_size = 0.3
 	}
-	Zarnowiec_Hydroelectric_Plant = {
-		development_cost = -0.05
+	Growing_bourgeoisie = {
+		global_tax_modifier = 0.1
 	}
-	Hel_Coastal_defence = {
-		garrison_size = 0.25
+	Konieczka_Theater = {
+		advisor_pool = 1
 	}
-	Tought_Hull = {
-		ship_durability = 0.1
+	Planetarium_and_Astronomical_Observatory = {
+		spy_offence = 0.2
 	}
-	Golden_age_of_Baltic_Hanza = {
+	Seat_of_the_Komturia = {
+		governing_capacity_modifier = 0.1
+	}
+	Prussian_population = {
+		liberty_desire = -10
+	}
+}
+
+B16_ideas = { #Powiat Rypinski
+	start = {
+		embargo_efficiency = 0.2
+		reinforce_cost_modifier = -0.15
+	}
+
+	bonus = {
 		global_prosperity_growth = 0.1
 	}
-	Northern_post_of_Kashubian_identity = {
-		province_warscore_cost = -0.15
+	
+	trigger = {
+		tag = B16
+	}
+	free = yes
+
+	Hostile_borderland  = {
+		global_monthly_devastation = -0.05
+	}
+	better_place = {
+		defensiveness = 0.1
+	}
+	Nobleman_from_under_Rypin = {
+		power_projection_from_insults = 1
+	}
+	Last_Supper = {
+		monthly_splendor = 1
+		prestige_decay = -0.01
+	}
+	Crater_on_Mars = {
+		free_adm_policy = 1
+	}
+	Mill_Gallery = {
+		land_maintenance_modifier = -0.1
+		infantry_cost = -0.1
+	}
+	Museum_of_Dobrinland = {
+		reelection_cost = -0.2
 	}
 }
-Y13_ideas = {
+
+B17_ideas = { #Powiat Torunski
 	start = {
 		
-		movement_speed = -0.1
-		state_maintenance_modifier = -0.20
+		power_projection_from_insults = 1
+		female_advisor_chance = 0.2
 		
 	}
 	
 	bonus = {
-		no_religion_penalty = yes
+		reform_progress_growth = 0.15
 	}	
 
 	trigger = {
-		tag = Y13
+		tag = B17
 	}
 	free = yes
 	
-	Tourist_trap = {
-		development_cost = -0.1
+	Akademia_Nauk_Stosowanych = {
+		idea_cost = -0.1
 	}
-	Kashubian_pride  = {
-		manpower_in_own_culture_provinces = 0.25
+	Trade_Roots  = {
+		caravan_power = 0.2
 	}
-	Historical_trade_route = {
-		caravan_power = 0.15
+	Eksperyment_Sadeck = {
+		global_prosperity_growth = 0.1
 	}
-	Templar_castle = {
-		defensiveness = 0.15
+	The_Jews_of_Galicia = {
+		interest = -0.5
 	}
-	Church_ruins = {
-		religious_unity = 0.15
+	Nowy_Sacz_Castle = {
+		prestige_decay = -0.01
 	}
-	Legacy_of_the_Lebian_flood = {
-		siege_blockade_progress = 1
+	Sadecki_Ethnographic_Park = {
+		stability_cost_modifier = -0.15
 	}
-	Jewish_neighbourhoods = {
-		num_accepted_cultures = 1
-		build_cost = -0.1
+	Grybow_Brewery = {
+		global_unrest = -1
 	}
-}
-Q14_ideas = {
+}	
+
+B21_ideas = { #Torun
+	start = {
+		
+		power_projection_from_insults = 1
+		female_advisor_chance = 0.2
+		
+	}
+	
+	bonus = {
+		reform_progress_growth = 0.15
+	}	
+
+	trigger = {
+		tag = B21
+	}
+	free = yes
+	
+	Akademia_Nauk_Stosowanych = {
+		idea_cost = -0.1
+	}
+	Trade_Roots  = {
+		caravan_power = 0.2
+	}
+	Eksperyment_Sadeck = {
+		global_prosperity_growth = 0.1
+	}
+	The_Jews_of_Galicia = {
+		interest = -0.5
+	}
+	Nowy_Sacz_Castle = {
+		prestige_decay = -0.01
+	}
+	Sadecki_Ethnographic_Park = {
+		stability_cost_modifier = -0.15
+	}
+	Grybow_Brewery = {
+		global_unrest = -1
+	}
+}	
+
+#Lodzkie -Q
+
+Q14_ideas = { #Powiat Lodzki
 	start = {
 		
 		production_efficiency = 0.1
@@ -662,48 +458,453 @@ Q14_ideas = {
 		merchants = 1
 	}
 }
-X18_ideas = {
+
+Q22_ideas = { #Lodz
 	start = {
 		
-		hostile_attrition = 2
-		stability_cost_modifier = -0.2
+		production_efficiency = 0.1
+		land_maintenance_modifier = -0.1
 		
 	}
 	
 	bonus = {
-		can_bypass_forts = yes
+		religious_unity = 0.3
 	}	
 
 	trigger = {
-		tag = X18
+		tag = Q22
 	}
 	free = yes
 	
-	Stryszawskie_Zboje = {
-		mercenary_cost = -0.2
-		merc_maintenance_modifier = -0.2
+	Ziemia_Obiecana = {
+		development_cost = -0.1
 	}
-	Elaborate_Wooden_Architecture  = {
-		prestige = 1
+	Balucki_Folklor  = {
+		land_morale = 0.1
 	}
-	Sidzinskie_zadupia = {
-		build_cost = -0.1
+	Miasto_kultur = {
+		num_accepted_cultures = 4
 	}
-	Zawoja_Mountaineers = {
-		defensiveness = 0.25
+	Rzymianscy_przemyslowcy = {
+		global_trade_goods_size_modifier = 0.1
 	}
-	ma_rady = {
-		diplomatic_reputation = 1
+	LODZ_KURWA = {
+		heavy_ship_power = 0.2
 	}
-	Osielec_and_Zembrzyce_War_bands = {
-		mercenary_discipline = 0.05
-		mercenary_manpower = 0.5
+	Morda_Limanka = {
+		shock_damage_received = -0.15
 	}
-	Promote_the_Electrotechnical_Enterprises = {
-		production_efficiency = 0.1
+	Polski_Manchester = {
+		merchants = 1
 	}
 }
-X17_ideas = {
+
+#Lubelskie -U
+
+U16_ideas = { #Powiat Lukowski
+	start = {
+		global_monthly_devastation = -0.1
+		garrison_size = 0.2
+	}
+
+	bonus = {
+		land_morale = 0.1
+	}
+	
+	trigger = {
+		tag = U16
+	}
+	free = yes
+
+	U16_1 = {
+		war_exhaustion_cost = -0.20
+	}
+	U16_2 = {
+		cavalry_power = 0.15
+	}
+	U16_3 = {
+		leader_land_shock = 1
+	}
+	U16_4 = {
+		trade_steering = 0.15
+	}
+	U16_5 = {
+		cavalry_cost = -0.1
+		global_trade_power = 0.1
+	}
+	U16_6 = {
+		production_efficiency = 0.1
+	}
+	U16_7 = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+	}
+}
+
+U22_ideas = { #Zamosc
+	start = {
+		ae_impact = -0.1
+		global_manpower_modifier = 0.15
+	}
+
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		tag = U22
+	}
+	free = yes
+
+	U22_1 = {
+		prestige_decay = -0.01
+		global_prosperity_growth = -0.1
+	}
+	U22_2 = {
+		cavalry_cost = -0.1
+	}
+	U22_3 = {
+		land_forcelimit_modifier = 0.2
+	}
+	U22_4 = {
+		galley_power = 0.1
+	}
+	U22_5 = {
+		production_efficiency = 0.1
+	}
+	U22_6 = {
+		morale_damage_received = -0.1
+	}
+	U22_7 = {
+		tolerance_own = 1
+	}
+}
+
+#Lubuskie -W
+
+W00_ideas = { #Wojewodztwo Lubuskie
+	start = {
+		land_morale = 0.15
+		fort_maintenance_modifier = -0.15
+	}
+
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = W00
+	}
+	free = yes
+
+	the_forests_of_the_lubusz_voivodeship = {
+		estate_army_loyalty_modifier = 0.1
+		hostile_attrition = 2
+	}
+	The_Shattered_Region = {
+		state_maintenance_modifier = -0.5
+	}
+	Cistercians_of_Paradyz = {
+		estate_priests_loyalty_modifier = 0.1
+		idea_cost = -0.1
+	}
+	Rivers_of_Trade = {
+		estate_investors_loyalty_modifier = 0.1
+		global_trade_power = 0.2
+	}
+	Speedway_in_my_mind = {
+		cavalry_cost = -0.25
+	}
+	Von_der_Osten = {
+		spy_offence = 0.5
+	}
+	Double_Capitals = {
+		possible_policy = 2
+	}
+}
+
+W03_ideas = { #Zagan
+	start = {
+		stability_cost_modifier = -0.1
+		cavalry_cost = -0.10
+	}
+
+	bonus = {
+		cav_to_inf_ratio = 0.10
+	}
+	
+	trigger = {
+		tag = W03
+	}
+	free = yes
+
+	Great_Escape = {
+		spy_offence = 0.5
+	}
+	Western_Connector = {
+		trade_steering = 0.1
+	}
+	Armored_Cavalry = {
+		cavalry_power = 0.15
+	}
+	Palaces_and_Princesses = {
+		diplomatic_reputation = 1
+	}
+	Command_has_its_reasons = {
+		prestige_from_land = 0.25
+	}
+	Military_Hand = {
+		global_autonomy = -0.05
+	}
+	Dynamic_development = {
+		merchants = 1
+	}
+}
+
+W08_ideas = { # Powiat Gorzowski
+	start = {
+		improve_relation_modifier = 0.33
+		global_manpower_modifier = 0.15
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.1
+	}
+	
+	trigger = {
+		tag = W08
+	}
+	free = yes
+
+	Never_Ending_War = {
+		discipline = 0.05
+	}
+	Polish_Romani = {
+		years_of_nationalism = -5
+	}
+	City_of_Speedway = {
+		religious_unity = 0.15
+	}
+	Between_Metropolises = {
+		trade_steering = 0.2
+	}
+	German_Fortifications = {
+		fort_maintenance_modifier = -0.2
+	}
+	Voivode_Headquarters = {
+		max_absolutism = 15
+	}
+	So_much_space = {
+		development_cost = -0.1
+	}
+}
+
+W14_ideas = { # Gorzow
+	start = {
+		improve_relation_modifier = 0.33
+		global_manpower_modifier = 0.15
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.1
+	}
+	
+	trigger = {
+		tag = W14
+	}
+	free = yes
+
+	Never_Ending_War = {
+		discipline = 0.05
+	}
+	Polish_Romani = {
+		years_of_nationalism = -5
+	}
+	City_of_Speedway = {
+		religious_unity = 0.15
+	}
+	Between_Metropolises = {
+		trade_steering = 0.2
+	}
+	German_Fortifications = {
+		fort_maintenance_modifier = -0.2
+	}
+	Voivode_Headquarters = {
+		max_absolutism = 15
+	}
+	So_much_space = {
+		development_cost = -0.1
+	}
+}
+
+#Malopolskie -X
+
+X00_ideas = { #Powiat Nowosadecki
+	start = {
+		
+		diplomats = 1
+		improve_relation_modifier = 0.3
+		
+	}
+	
+	bonus = {
+		diplomatic_upkeep = 2
+	}	
+
+	trigger = {
+		tag = X00
+	}
+	free = yes
+	
+	Alcohol_must_flow = {
+		idea_cost = -0.1
+		global_trade_goods_size = 0.5
+	}
+	Ciupaska_soldiers = {
+		estate_army_loyalty_modifier = 0.1
+		global_manpower_modifier = 0.25
+		manpower_recovery_speed = 0.2
+	}
+	UwU_Lesserpoland = {
+		ae_impact = -0.2
+		reduced_liberty_desire_on_same_continent = 10
+	}
+	The_Wislica_Statutes = {
+		stability_cost_modifier = -0.25
+	}
+	Poland_is_where_your_heart_is = {
+		prestige = 1.5
+		enemy_core_creation = 0.25
+	}
+	The_monument_of_the_Pope_in_every_backyard = {
+		estate_priests_loyalty_modifier = 0.1
+		global_unrest = -2
+	}
+	Bergitka_Roma = {
+		cavalry_power = 0.2
+		leader_land_manuever = 1
+	}
+}
+
+X05_ideas = { #Powiat Nowosadecki
+	start = {
+		
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.2
+		
+	}
+	
+	bonus = {
+		burghers_loyalty_modifier = 0.1
+	}	
+
+	trigger = {
+		tag = X05
+	}
+	free = yes
+	
+	Akademia_Nauk_Stosowanych = {
+		idea_cost = -0.1
+	}
+	Trade_Roots  = {
+		caravan_power = 0.2
+	}
+	Eksperyment_Sadeck = {
+		global_prosperity_growth = 0.1
+	}
+	The_Jews_of_Galicia = {
+		interest = -0.5
+	}
+	Nowy_Sacz_Castle = {
+		prestige_decay = -0.01
+	}
+	Sadecki_Ethnographic_Park = {
+		stability_cost_modifier = -0.15
+	}
+	Grybow_Brewery = {
+		global_unrest = -1
+	}
+}
+
+X10_ideas ={ #Powiat Olkuski
+	start = {
+		land_maintenance_modifier = -0.15
+		hostile_attrition = 1
+	}
+	trigger = {
+		tag = X10
+	}
+	free = yes
+	Wolbromian_cross = {
+		global_missionary_strength = 0.02
+	}
+	Olkuszian_aficionados = {
+		infantry_power = 0.1
+	}
+	Zalew = {
+		global_tax_modifier = 0.1 
+	}
+	Oriental_cuisine = {
+		num_accepted_cultures = 2
+	}
+	Land_of_factories = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	Workers_strong_together = {
+		discipline = 0.05
+	}
+	Rubber_paradise = {
+		trade_efficiency = 0.1
+	}
+	bonus = {
+		build_cost = -0.1
+	}
+}
+
+X15_ideas = { #Powiat Krakowski
+	start = {
+		
+		trade_efficiency = 0.15
+		improve_relation_modifier = 0.2
+		
+	}
+	
+	bonus = {
+		global_ship_trade_power = 0.2
+	}	
+
+	trigger = {
+		tag = X15
+	}
+	free = yes
+	
+	Cracovian_Metro = {
+		movement_speed = 0.15
+	}
+	Old_City = {
+		prestige = 1
+	}
+	City_of_Trade = {
+		global_trade_power = 0.1
+		burghers_loyalty_modifier = 0.1
+	}
+	Cracovian_Churches = {
+		tolerance_own = 2
+	}
+	Wawel = {
+		defensiveness = 0.2
+		hostile_attrition = 0.5
+	}
+	Kombinat = {
+		production_efficiency = 0.2
+	}
+	Cracovian_Machetes = {
+		infantry_power = 0.20
+	}
+}
+
+X17_ideas = { #Powiat Limanowski
 	start = {
 		
 		infantry_power = 0.1
@@ -743,8 +944,93 @@ X17_ideas = {
 	The_Roots_of_Conspiracy = {
 		spy_offence = 0.2
 	}
-}	
-X05_ideas = {
+}
+
+X18_ideas = { #Powiat Suski
+	start = {
+		
+		hostile_attrition = 2
+		stability_cost_modifier = -0.2
+		
+	}
+	
+	bonus = {
+		can_bypass_forts = yes
+	}	
+
+	trigger = {
+		tag = X18
+	}
+	free = yes
+	
+	Stryszawskie_Zboje = {
+		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.2
+	}
+	Elaborate_Wooden_Architecture = {
+		prestige = 1
+	}
+	Sidzinskie_zadupia = {
+		build_cost = -0.1
+	}
+	Zawoja_Mountaineers = {
+		defensiveness = 0.25
+	}
+	ma_rady = {
+		diplomatic_reputation = 1
+	}
+	Osielec_and_Zembrzyce_War_bands = {
+		mercenary_discipline = 0.05
+		mercenary_manpower = 0.5
+	}
+	Promote_the_Electrotechnical_Enterprises = {
+		production_efficiency = 0.1
+	}
+}
+
+X20_ideas = { #Krakow
+	start = {
+		
+		trade_efficiency = 0.15
+		improve_relation_modifier = 0.2
+		
+	}
+	
+	bonus = {
+		global_ship_trade_power = 0.2
+	}	
+
+	trigger = {
+		tag = X20
+	}
+	free = yes
+	
+	Cracovian_Metro = {
+		movement_speed = 0.15
+	}
+	Old_City = {
+		prestige = 1
+	}
+	City_of_Trade = {
+		global_trade_power = 0.1
+		burghers_loyalty_modifier = 0.1
+	}
+	Cracovian_Churches = {
+		tolerance_own = 2
+	}
+	Wawel = {
+		defensiveness = 0.2
+		hostile_attrition = 0.5
+	}
+	Kombinat = {
+		production_efficiency = 0.2
+	}
+	Cracovian_Machetes = {
+		infantry_power = 0.20
+	}
+}
+
+X22_ideas = { #Nowy Sacz
 	start = {
 		
 		diplomatic_upkeep = 1
@@ -757,7 +1043,7 @@ X05_ideas = {
 	}	
 
 	trigger = {
-		tag = X05
+		tag = X22
 	}
 	free = yes
 	
@@ -782,86 +1068,688 @@ X05_ideas = {
 	Grybow_Brewery = {
 		global_unrest = -1
 	}
-}	
-B17_ideas = {
+}
+
+#Mazowieckie -G
+
+G13_ideas = { #Powiat Zyrardow
+	start = {
+		
+		production_efficiency = 0.1
+		num_accepted_cultures = 2
+		
+	}
+	
+	bonus = {
+		hostile_attrition = 1
+	}	
+
+	trigger = {
+		tag = G13
+	}
+	free = yes
+	
+	Diversified_diplomacy = {
+		diplomatic_reputation = 1
+	}
+	Mszczonow_Geothermal_Energy = {
+		state_maintenance_modifier = -0.15
+	}
+	Miedniewice_sanctuary = {
+		global_missionary_strength = 0.02
+	}
+	Warsaw_Vienna_railway_line = {
+		leader_land_manuever = 1
+	}
+	Artillery_polygon = {
+		artillery_power = 0.1
+	}
+	Souffrage_movement = {
+		may_recruit_female_generals = yes
+		female_advisor_chance = 0.5
+	}
+	Red_bricks = {
+		build_cost = -0.15
+	}
+}
+
+G17_ideas = { #Powiat Grojecki
+	start = {
+		
+		reform_progress_growth = 0.1
+		improve_relation_modifier = 0.1
+		
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}	
+
+	trigger = {
+		tag = G17
+	}
+	free = yes
+	
+	Orchards_of_Grojec = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	Skarga_Birthplace = {
+		religious_unity = 0.25
+		tolerance_own = 1
+	}
+	Browar_Warka = {
+		global_unrest = -1
+	}
+	Wysocki_Spirit = {
+		years_of_nationalism = -5
+	}
+	Suski_Domain = {
+		spy_offence = 0.25
+	}
+	Pulaski_Cavalry = {
+		cavalry_power = 0.1
+		cav_to_inf_ratio = 0.25
+	}
+	Old_Railway = {
+		province_trade_power_modifier = 0.1
+	}
+}
+
+G20_ideas ={ #Powiat Radomski
+	start = {
+		stability_cost_modifier = -0.1
+		global_manpower_modifier = 0.075
+	}
+	trigger = {
+		tag = G20
+	}
+	free = yes
+
+	bonus = {
+		global_foreign_trade_power = 0.15
+	}
+
+	Radomski_czerwiec = {
+		land_morale = 0.1
+	}
+	WSHR = {
+		caravan_power = 0.1
+	}
+	Ryenk_Radomski = {
+		development_cost = -0.1
+	}
+	Old_capital = {
+		prestige_decay = -0.005
+	}
+	TPS_ZDR = {
+		diplomatic_reputation = 1
+	}
+	Ilza_castle = {
+		papal_influence = 1
+	}
+	Military_infrastructure = {
+		artillery_power = 0.15
+	}
+
+}
+
+G34_ideas = { #Powiat Gostyninski
+	start = {
+		land_morale = 0.1
+		advisor_cost = -0.1
+	}
+
+	bonus = {
+		attack_bonus_in_capital_terrain = 1
+	}
+	
+	trigger = {
+		tag = G34
+	}
+	free = yes
+
+	G34_1 = {
+		garrison_size = 0.15
+	}
+	G34_2 = {
+		global_tax_modifier = 0.1
+	}
+	G34_3 = {
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	}
+	G34_4 = {
+		tolerance_own = 2
+	}
+	G34_5 = {
+		development_cost = -0.1
+	}
+	G34_6 = {
+		prestige = 1
+	}
+	G34_7 = {
+		diplomatic_reputation = 2
+	}
+}
+
+G39_ideas ={ #Radom
+	start = {
+		stability_cost_modifier = -0.1
+		global_manpower_modifier = 0.075
+	}
+	trigger = {
+		tag = G39
+	}
+	free = yes
+
+	bonus = {
+		global_foreign_trade_power = 0.15
+	}
+
+	Radomski_czerwiec = {
+		land_morale = 0.1
+	}
+	WSHR = {
+		caravan_power = 0.1
+	}
+	Ryenk_Radomski = {
+		development_cost = -0.1
+	}
+	Old_capital = {
+		prestige_decay = -0.005
+	}
+	TPS_ZDR = {
+		diplomatic_reputation = 1
+	}
+	Ilza_castle = {
+		papal_influence = 1
+	}
+	Military_infrastructure = {
+		artillery_power = 0.15
+	}
+
+}
+
+#Opolskie -H
+
+H01_ideas = { #Powiat Kedzierzynsko-Kozielski
+	start = {
+		
+		defensiveness = 0.15
+		naval_forcelimit_modifier = 0.3
+		
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.1
+	}	
+
+	trigger = {
+		tag = H01
+	}
+	free = yes
+	
+	Szlagier_Maszyna = {
+		monthly_splendor = 1
+	}
+	Zaklady_Azotowe = {
+		global_trade_goods_size_modifier = 0.05
+	}
+	Unification = {
+		stability_cost_modifier = -0.1
+	}
+	the_Gypsies = {
+		num_accepted_cultures = 1
+	}
+	Artillery_Unit = {
+		artillery_power = 0.05
+	}
+	Inland_Sailing = {
+		trade_efficiency = 0.15
+	}
+	Atrycja_died = {
+		hostile_attrition = 1
+	}
+}
+
+#Podkarpackie -I
+
+I18_ideas = { #Powiat Bieszczadzki
+	start = {
+		
+		defensiveness = 0.15
+		naval_forcelimit_modifier = 0.3
+		
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.1
+	}	
+
+	trigger = {
+		tag = I18
+	}
+	free = yes
+	
+	Szlagier_Maszyna = {
+		monthly_splendor = 1
+	}
+	Zak³ady_Azotowe = {
+		global_trade_goods_size_modifier = 0.05
+	}
+	Unification = {
+		stability_cost_modifier = -0.1
+	}
+	the_Gypsies = {
+		num_accepted_cultures = 1
+	}
+	Artillery_Unit = {
+		artillery_power = 0.05
+	}
+	Inland_Sailing = {
+		trade_efficiency = 0.15
+	}
+	Atrycja_died = {
+		hostile_attrition = 1
+	}
+}
+
+#Podlaskie -J
+
+J12_ideas = { #Powiat Moniecki
 	start = {
 		
 		power_projection_from_insults = 1
-		female_advisor_chance = 0.2
+		shock_damage = 0.1
 		
 	}
 	
 	bonus = {
-		reform_progress_growth = 0.15
+		attack_bonus_in_capital_terrain = 1
 	}	
 
 	trigger = {
-		tag = B17
+		tag = J12
 	}
 	free = yes
 	
-	Akademia_Nauk_Stosowanych = {
-		idea_cost = -0.1
+	Biebrza_National_Park = {
+		prestige = 1
 	}
-	Trade_Roots  = {
-		caravan_power = 0.2
+	Tsar_Road = {
+		movement_speed = -0.05
+		hostile_attrition = 2
 	}
-	Eksperyment_Sadeck = {
-		global_prosperity_growth = 0.1
+	Dead_Men = {
+		morale_damage = 0.2
 	}
-	The_Jews_of_Galicia = {
-		interest = -0.5
-	}
-	Nowy_Sacz_Castle = {
+	Last_Jagiellonian = {
 		prestige_decay = -0.01
+		legitimacy = 1
 	}
-	Sadecki_Ethnographic_Park = {
-		stability_cost_modifier = -0.15
-	}
-	Grybow_Brewery = {
-		global_unrest = -1
-	}
-}	
-P12_ideas = {
-	start = {
-		
-		improve_relation_modifier = 0.1
-		religious_unity = 0.05
-		
-	}
-	
-	bonus = {
-		global_missionary_strength = 0.02
-	}	
-
-	trigger = {
-		tag = P12
-	}
-	free = yes
-	
-	Hansa_reborn = {
+	Art_in_Osowiec = {
 		trade_efficiency = 0.1
 	}
-	City_walls  = {
-		defensiveness = 0.15
+	Military_material = {
+		reinforce_cost_modifier = -0.25
 	}
-	Rebuild_the_Starowka = {
+	Rural_community = {
+		max_absolutism = 10
+	}
+}
+
+#Pomorskie -Y
+
+Y01_ideas = { #Powiat Bytowski
+	start = {
+		defensiveness = 0.1
+		trade_range_modifier = 0.33
+	}
+
+	bonus = {
+		global_supply_limit_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = Y01
+	}
+	free = yes
+
+	Y01_1 = {
+		fort_maintenance_modifier = -0.1
+	}
+	Y01_2 = {
+		 global_regiment_cost = -0.15
+	}
+	Y01_3 = {
+		envoy_travel_travel = -0.33
+	}
+	Y01_4 = {
+		unjustified_demands = -0.15
+	}
+	Y01_5 = {
+		interest = -0.5
+	}
+	Y01_6 = {
+		embracement_cost = -0.25
+	}
+	Y01_7 = {
+		heir_chance = 0.5
+	}
+}
+
+Y02_ideas = { #Powiat Slupski
+	start = {
+		
+		fire_damage = 0.1
+		build_cost = -0.1
+		
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}	
+
+	trigger = {
+		tag = Y02
+	}
+	free = yes
+	
+	CH_Jantar = {
+		global_tax_modifier = 0.15
+	}
+	Blucher_bunkers = {
+		fort_maintenance_modifier = -0.15
+	}
+	Police_School = {
+		global_unrest = -1
+	}
+	Witkacy_museum = {
+		num_accepted_cultures = 2
+	}
+	Hotel_Grand_Lubicz = {
+		manpower_recovery_speed = 0.10
+	}
+	Baszta_Czarownic = {
+		tolerance_own = 1
+	}
+	University_Of_Pomerania = {
+		technology_cost = -0.1
+	}
+}
+
+Y03_ideas = { #Powiat Kartuski
+	start = {
+		core_creation = -0.1
+		trade_steering = 0.1
+	}
+
+	bonus = {
+		culture_conversion_cost = -0.15
+	}
+	
+	trigger = {
+		tag = Y03
+	}
+	free = yes
+
+	Y03_1 = {
+		same_culture_advisor_cost = -0.1
+	}
+	Y03_2 = {
+		 governing_cost = -0.1
+	}
+	Y03_3 = {
+		province_warscore_cost = -0.05
+	}
+	Y03_4 = {
+		stability_cost_modifier = -0.15
+	}
+	Y03_5 = {
+		prestige = 1
+	}
+	Y03_6 = {
+		enemy_core_creation = 0.25
+	}
+	Y03_7 = {
+		idea_cost = -0.1
+	}
+}
+
+Y04_ideas = { #Powiat Koscierki
+	start = {
+		build_time = -0.15
+		trade_steering = 0.1
+	}
+
+	bonus = {
+		culture_conversion_cost = -0.15
+	}
+	
+	trigger = {
+		tag = Y04
+	}
+	free = yes
+
+	Y04_1 = {
+		same_culture_advisor_cost = -0.1
+	}
+	Y04_2 = {
+		 governing_cost = -0.1
+	}
+	Y04_3 = {
+		province_warscore_cost = -0.05
+	}
+	Y04_4 = {
+		stability_cost_modifier = -0.15
+	}
+	Y04_5 = {
+		prestige = 1
+	}
+	Y04_6 = {
+		enemy_core_creation = 0.25
+	}
+	Y04_7 = {
+		idea_cost = -0.1
+	}
+}
+
+Y05_ideas = { #Powiat Starogardzki
+	start = {
+		global_regiment_cost = -0.1
+		global_tax_modifier = 0.1
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = Y05
+	}
+	free = yes
+
+	Y05_1 = {
+		religious_unity = 0.33
+	}
+	Y05_2 = {
+		 fort_maintenance_modifier = -0.15
+	}
+	Y05_3 = {
+		trade_range_modifier = 0.1
+	}
+	Y05_4 = {
+		development_cost = -0.05
+	}
+	Y05_5 = {
 		prestige_decay = -0.01
 	}
-	Sugar_Rafinery = {
-		production_efficiency = 0.1
+	Y05_6 = {
+		stability_cost_modifier = -0.25
 	}
-	Revange_against_Stettin = {
-		infantry_power = 0.1
+	Y05_7 = {
+		technology_cost = -0.05
 	}
-	Special_economic_zone = {
-		trade_range_modifier = 0.25
+}
+
+Y06_ideas = { #Powiat Tczewski
+	start = {
+		
+		global_own_trade_power = 0.15
+		state_maintenance_modifier = -0.2
+		
 	}
-	Old_Town = {
-		diplomatic_upkeep = 1
+	
+	bonus = {
+		leader_land_fire = 1
+	}	
+
+	trigger = {
+		tag = Y06
+	}
+	free = yes
+	
+	Vistula_gateway = {
+		global_foreign_trade_power = 0.2
+	}
+	Kociewie_northern_post = {
+		tolerance_own = 1
+	}
+	Danzig_rule = {
+		diplomatic_reputation = 3
+	}
+	Amber_road = {
+		caravan_power = 0.25
+	}
+	Greatly_advanced_administration = {
+		expand_administration_cost = -1
+	}
+	Vistula_crossings = {
+		global_tax_modifier = 0.1
+	}
+	Danzigian_dragons = {
+		fire_damage = 0.2
 	}
 }	
-Y10_ideas = {
+
+Y07_ideas = { #Powiat Sztumski
+	start = {
+		army_tradition_decay = -0.01
+		reinforce_cost_modifier = -0.25
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = Y07
+	}
+	free = yes
+
+	Y07_1 = {
+		artillery_barrage_cost = -0.15
+	}
+	Y07_2 = {
+		loot_amount = 0.2
+	}
+	Y07_3 = {
+		envoy_travel_time = -0.25
+	}
+	Y07_4 = {
+		development_cost_in_primary_culture = -0.1
+	}
+	Y07_5 = {
+		innovativeness_gain = 0.33
+	}
+	Y07_6 = {
+		possible_policy = 1
+	}
+	Y07_7 = {
+		block_introduce_heir = yes
+	}
+}
+
+Y08_ideas = { #Powiat Kwidzynski
+	start = {
+		
+		culture_conversion_cost = -0.25
+		diplomats = 1
+		
+	}
+	
+	bonus = {
+		development_cost = -0.05
+	}	
+
+	trigger = {
+		tag = Y08
+	}
+	free = yes
+	
+	Teutonic_tradition = {
+		tolerance_own = 1
+	}
+	Biggest_toilet_in_the_World = {
+		monthly_splendor = 2
+	}
+	Giant_of_Prabuty = {
+		land_morale = 0.1
+	}
+	Town_of_Roundabouts = {
+		caravan_power = 0.2
+	}
+	Cellulose_stench = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	Sadlinki = {
+		production_efficiency = 0.1
+	}
+	Prabuty_forrest_beatings = {
+		global_unrest = -1
+	}
+}
+
+Y09_ideas = { #Powiat Gdanski
+	start = {
+		enemy_core_creation = 0.33
+		defensiveness = 0.15
+	}
+
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		tag = Y09
+	}
+	free = yes
+
+	Y09_1 = {
+		infantry_power = 0.1
+	}
+	Y09_2 = {
+		attack_bonus_in_capital_terrain = 1
+	}
+	Y09_3 = {
+		may_recruit_female_generals = yes
+	}
+	Y09_4 = {
+		development_cost_in_primary_culture = -0.1
+	}
+	Y09_5 = {
+		general_cost = -0.25
+	}
+	Y09_6 = {
+		years_of_nationalism = -5
+	}
+	Y09_7 = {
+		global_autonomy = -0.1
+	}
+}
+
+Y10_ideas = { #Powiat Trojmiasto
 	start = {
 		
 		core_creation = -0.25
@@ -902,7 +1790,320 @@ Y10_ideas = {
 		artillery_fire = 1
 	}
 }	
-Y19_ideas = {
+
+Y11_ideas = { #Powiat Wejherowski
+	start = {
+		
+		ae_impact = -0.1
+		years_of_nationalism = -5
+		
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}	
+
+	trigger = {
+		tag = Y11
+	}
+	free = yes
+	
+	Gdynia_bedroom = {
+		manpower_recovery_speed = 0.1
+	}
+	The_capital_of_Kashubia = {
+		province_warscore_cost = -0.15
+	}
+	Reda_Aquapark = {
+		development_cost = -0.05
+	}
+	Arka_Rumia_Rugby_Club = {
+		shock_damage = 0.10
+	}
+	SKM_Trains = {
+		movement_speed = 0.1
+	}
+	Kashubian_Folk_College = {
+		technology_cost = -0.1
+	}
+	Wejherowo_Cultural_Centre = {
+		global_unrest = -1
+	}
+}
+
+Y12_ideas = { #Powiat Pucki
+	start = {
+		
+		heavy_ship_power = 0.1
+		ae_impact = 0.15
+		
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}	
+
+	trigger = {
+		tag = Y12
+	}
+	free = yes
+	
+	King_of_Amber = {
+		caravan_power = 0.33
+	}
+	Wedding_with_the_sea = {
+		naval_forcelimit_modifier = 0.25
+	}
+	Zarnowiec_Hydroelectric_Plant = {
+		development_cost = -0.05
+	}
+	Hel_Coastal_defence = {
+		garrison_size = 0.25
+	}
+	Tought_Hull = {
+		ship_durability = 0.1
+	}
+	Golden_age_of_Baltic_Hanza = {
+		global_prosperity_growth = 0.1
+	}
+	Northern_post_of_Kashubian_identity = {
+		province_warscore_cost = -0.15
+	}
+}
+
+Y13_ideas = { #Powiat Leborski
+	start = {
+		
+		movement_speed = -0.1
+		state_maintenance_modifier = -0.20
+		
+	}
+	
+	bonus = {
+		no_religion_penalty = yes
+	}	
+
+	trigger = {
+		tag = Y13
+	}
+	free = yes
+	
+	Tourist_trap = {
+		development_cost = -0.1
+	}
+	Kashubian_pride  = {
+		manpower_in_own_culture_provinces = 0.25
+	}
+	Historical_trade_route = {
+		caravan_power = 0.15
+	}
+	Templar_castle = {
+		defensiveness = 0.15
+	}
+	Church_ruins = {
+		religious_unity = 0.15
+	}
+	Legacy_of_the_Lebian_flood = {
+		siege_blockade_progress = 1
+	}
+	Jewish_neighbourhoods = {
+		num_accepted_cultures = 1
+		build_cost = -0.1
+	}
+}
+#O chuj chodzi
+# Y13_ideas = { #Powiat Leborski
+# 	start = {
+# 		fort_maintenance_modifier = -0.1
+# 		defensiveness = 0.1
+# 	}
+
+# 	bonus = {
+# 		envoy_travel_time = -0.25
+# 	}
+	
+# 	trigger = {
+# 		tag = Y13
+# 	}
+# 	free = yes
+
+# 	Y13_1 = {
+# 		cavalry_cost = -0.2
+# 	}
+# 	Y13_2 = {
+# 		improve_relation_modifier = 0.15
+# 	}
+# 	Y13_3 = {
+# 		free_leader_pool = 1
+# 	}
+# 	Y13_4 = {
+# 		allow_mercenaries_to_split = yes
+# 	}
+# 	Y13_5 = {
+# 		trade_steering = 0.1
+# 	}
+# 	Y13_6 = {
+# 		global_tax_modifier = 0.1
+# 	}
+# 	Y13_7 = {
+# 		female_advisor_chance = 0.25
+# 	}
+# }
+
+Y14_ideas = { #Powiat Chojnicki
+	start = {
+		trade_efficiency = 0.1
+		mercenary_cost = -0.25
+	}
+
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = Y14
+	}
+	free = yes
+
+	Y14_1 = {
+		placed_merchant_power_modifier = 0.4
+	}
+	Y14_2 = {
+		embargo_efficiency = 0.33
+	}
+	Y14_3 = {
+		movement_speed = 0.1 
+	}
+	Y14_4 = {
+		reduced_trade_penalty_on_non_main_tradenode = 0.33
+	}
+	Y14_5 = {
+		mercenary_manpower = 0.15
+	}
+	Y14_6 = {
+		mercenary_discipline = 0.05
+	}
+	Y14_7 = {
+		global_regiment_cost = -0.1
+	}
+}
+
+Y15_ideas = { #Powiat Czluchowski
+	start = {
+		trade_efficiency = 0.1
+		mercenary_cost = -0.25
+	}
+
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = Y15
+	}
+	free = yes
+
+	Y15_1 = {
+		placed_merchant_power_modifier = 0.4
+	}
+	Y15_2 = {
+		embargo_efficiency = 0.33
+	}
+	Y15_3 = {
+		movement_speed = 0.1 
+	}
+	Y15_4 = {
+		reduced_trade_penalty_on_non_main_tradenode = 0.33
+	}
+	Y15_5 = {
+		mercenary_manpower = 0.15
+	}
+	Y15_6 = {
+		mercenary_discipline = 0.05
+	}
+	Y15_7 = {
+		global_regiment_cost = -0.1
+	}
+}
+
+Y16_ideas = { #Powiat Malborski
+	start = {
+		defensiveness = 0.25
+		infantry_cost = -0.15
+	}
+
+	bonus = {
+		fort_maintenance_modifier = -0.15
+	}
+	
+	trigger = {
+		tag = Y16
+	}
+	free = yes
+
+	Y16_1 = {
+		infantry_power = 0.1
+	}
+	Y16_2 = {
+		global_supply_limit_modifier = 0.1
+	}
+	Y16_3 = {
+		envoy_travel_time = -0.3
+	}
+	Y16_4 = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+	Y16_5 = {
+		mercenary_cost = -0.1
+	}
+	Y16_6 = {
+		war_exhaustion_cost = -0.2
+	}
+	Y16_7 = {
+		tolerance_own = 2
+	}
+}
+
+Y18_ideas = { #Powiat Nowodworski (Pomorskie)
+	start = {
+		development_cost = -0.1
+		trade_range_modifier = 0.2
+	}
+
+	bonus = {
+		global_trade_goods_size_modifier = 0.05
+	}
+	
+	trigger = {
+		tag = Y18
+	}
+	free = yes
+
+	Y18_1 = {
+		light_ship_power = 0.25
+	}
+	Y18_2 = {
+		global_ship_cost = -0.1	
+	}
+	Y18_3 = {
+		build_cost = -0.15
+		build_time = 0.25
+	}
+	Y18_4 = {
+		stability_cost_modifier = -0.1
+	}
+	Y18_5 = {
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	Y18_6 = {
+		governing_cost = -0.1
+	}
+	Y18_7 = { = 
+		advisor_pool = 1
+	}
+}
+
+Y19_ideas = { #Gdansk
 	start = {
 		
 		infantry_power = 0.1
@@ -946,7 +2147,8 @@ Y19_ideas = {
 		legitimacy = 1
 	}
 }
-Y20_ideas = {
+
+Y20_ideas = { #Sopot
 	start = {
 		
 		improve_relation_modifier = 0.5
@@ -986,7 +2188,8 @@ Y20_ideas = {
 		prestige = 1
 	}
 }
-Y21_ideas = {
+
+Y21_ideas = { #Gdynia
 	start = {
 		
 		core_creation = -0.25
@@ -1026,8 +2229,289 @@ Y21_ideas = {
 		artillery_power = 0.1
 		artillery_fire = 1
 	}
-}		
-P02_ideas = {
+}
+
+#Slaskie -L
+
+L20_ideas = {
+    start = {
+        land_morale = 0.10
+        improve_relation_modifier = 0.3
+    }
+
+    bonus = {
+        heir_chance = 0.50
+    }
+
+    trigger = {
+        tag = L20
+    }
+    free = yes    
+
+    Dziedzictwo_habsburgow = {
+        imperial_authority = 0.1
+        diplomatic_annexation_cost = -0.15
+    }
+    Gorale = {
+        discipline = 0.05
+    }
+    Hajduki = {
+        hostile_attrition = 1
+    }
+    Zywiec_Memes = {
+        diplomatic_reputation = 2
+    }
+    Browar = {
+        production_efficiency = 0.15
+    }
+    Pickusie = {
+        diplomatic_upkeep = 1
+    }
+    TGZ = {
+        reinforce_speed = 0.3
+    }
+}
+
+L28_ideas = { #Chorzow
+	start = {
+		prestige = 1
+		diplomatic_upkeep = 1
+	}
+
+	bonus = {
+		artillery_power = 0.1
+	}
+	
+	trigger = {
+		tag = L28
+	}
+	free = yes
+
+	L28_1 = {
+		discipline = 0.05
+	}
+	L28_2 = {
+		global_trade_goods_size_modifier = 0.05
+	}
+	L28_3 = {
+		global_missionary_strength = 0.03
+	}
+	L28_4 = {
+		build_cost = -0.15
+	}
+	L28_5 = {
+		global_prosperity_growth = 0.1
+	}
+	L28_6 = {
+		army_tradition = 0.5
+	}
+	L28_7 = {
+		technology_cost = -0.1
+	}
+}
+
+L35_ideas = { #Dabrowa Gornicza
+	start = {
+		advisor_pool = 1
+		province_warscore_cost = -0.1
+	}
+
+	bonus = {
+		global_supply_limit_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = L35
+	}
+	free = yes
+
+	L35_1 = {
+		prestige_decay = -0.01
+	}
+	L35_2 = {
+		artillery_cost = -0.1
+	}
+	L35_3 = {
+		trade_steering = 0.1
+	}
+	L35_4 = {
+		production_efficiency = 0.1
+	}
+	L35_5 = {
+		stability_cost_modifier = -0.1
+	}
+	L35_6 = {
+		diplomatic_annexation_cost = -0.1
+	}
+	L35_7 = {
+		max_hostile_attrition = 1
+	}
+}
+
+L38_ideas = { #Metropolis GZM
+	start = {
+		global_manpower_modifier = 0.20
+		fire_damage = 0.10
+	}
+
+	bonus = {
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = L38
+	}
+	free = yes
+
+	L38_1 = {
+		global_trade_goods_size_modifier = 0.20
+	}
+	L38_2 = {
+		production_efficiency = 0.15
+	}
+	L38_3 = {
+		relation_with_accepted_culture = 15
+	}
+	L38_4 = {
+		prestige = 1
+	}
+	L38_5 = {
+		build_cost = -0.15
+	}
+	L38_6 = {
+		diplomats = 1
+		imperial_authority = 0.2
+	}
+	L38_7 = {
+		technology_cost = -0.10
+	}
+}
+
+L39_ideas = { #Rybnik Coal Area
+	start = {
+		accept_vassalization_reasons = 25
+		ae_impact = -0.15
+	}
+
+	bonus = {
+		vassal_manpower_bonus = 0.30
+	}
+	
+	trigger = {
+		tag = L39
+	}
+	free = yes
+
+	L39_1 = {
+		global_trade_goods_size_modifier = 0.30
+		monarch_lifespan = -0.10
+	}
+	L39_2 = {
+		state_maintenance_modifier = -0.20
+	}
+	L39_3 = {
+		production_efficiency = 0.15
+	}
+	L39_4 = {
+		morale_damage_received = -0.20	
+	}
+	L39_5 = {
+		diplomatic_reputation = 2
+	}
+	L39_6 = {
+		idea_cost = -0.10
+	}
+	L39_7 = {
+		global_manpower_modifier = 0.25
+	}
+}
+
+#Swietokrzyskie -M
+
+#Warminsko-Mazurskie -N
+
+#Wielkopolskie -R
+
+R05_ideas = { #Powiat Ostrowski (Wielkopolska)
+	start ={
+		religious_unity = 0.2
+		army_tradition_decay = -0.01
+	}
+	trigger = {
+		tag = R05
+	}
+	free = yes
+	Central_Park = {
+		culture_conversion_cost = -0.25
+	}
+	Railroad_Center = {
+		movement_speed = 0.1
+	}
+	Rivalry_with_Kalisz = {
+		defensiveness = 0.15
+	}
+	Konkatedra = {
+		tolerance_own = 1
+	}
+	Zombies_were_born_here = {
+		production_efficiency = 0.1
+	}
+	Republic_of_Ostrow = {
+		land_morale = 0.1
+	}
+	Piaski_Szczygliczka = {
+		improve_relation_modifier = 0.15
+	}
+	City_of_Sport = {
+		land_attrition = -0.05
+		infantry_power = 0.05
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+R28_ideas = { #Powiat Pilski
+	start = {
+		prestige = 1
+		advisor_cost = -0.1
+	}
+
+	bonus = {
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		tag = R28
+	}
+	free = yes
+
+	Speedway_and_Sausages = {
+		global_unrest = -1
+	}
+	Sanctuaries = {
+		missionaries = 1
+	}
+	Ujscie_River_Port = {
+		trade_efficiency = 0.1
+	}
+	Lost_voivodeship = {
+		ae_impact = -0.1
+	}
+	City_of_Staszic = {
+		idea_cost = -0.05
+	}
+	Smilowo = {
+		trade_range_modifier = 0.2
+	}
+	Grave_of_Drzymala = {
+		enemy_core_creation = 0.5
+	}
+}
+
+#Zachodnio-Pomorskie -P
+
+P02_ideas = { #Powiat Koszalinski
 	start = {
 		
 		global_tax_modifier = 0.1
@@ -1067,440 +2551,86 @@ P02_ideas = {
 		global_regiment_cost = -0.10
 	}
 }	
-B12_ideas = {
+
+P03_ideas = { #Powiat Szczecinecki
 	start = {
-		
-		shock_damage_received = -0.1
-		drill_gain_modifier = 0.25
-		
-	}
-	
-	bonus = {
-		leader_land_siege = 1
-	}	
-
-	trigger = {
-		tag = B12
-	}
-	free = yes
-	
-	Teutonic_Rulers = {
-		manpower_in_true_faith_provinces= 0.10
-		institution_spread_from_true_faith = 0.1
-	}
-	Monastic_knighthood = {
-		garrison_size = 0.3
-	}
-	Growing_bourgeoisie = {
-		global_tax_modifier = 0.1
-	}
-	Konieczka_Theater = {
-		advisor_pool = 1
-	}
-	Planetarium_and_Astronomical_Observatory = {
-		spy_offence = 0.2
-	}
-	Seat_of_the_Komturia = {
-		governing_capacity_modifier = 0.1
-	}
-	Prussian_population = {
-		liberty_desire = -10
-	}
-}	
-G13_ideas = {
-	start = {
-		
-		production_efficiency = 0.1
-		num_accepted_cultures = 2
-		
-	}
-	
-	bonus = {
-		hostile_attrition = 1
-	}	
-
-	trigger = {
-		tag = G13
-	}
-	free = yes
-	
-	Diversified_diplomacy = {
-		diplomatic_reputation = 1
-	}
-	Mszczonow_Geothermal_Energy = {
-		state_maintenance_modifier = -0.15
-	}
-	Miedniewice_sanctuary = {
-		global_missionary_strength = 0.02
-	}
-	Warsaw_Vienna_railway_line = {
-		leader_land_manuever = 1
-	}
-	Artillery_polygon = {
-		artillery_power = 0.1
-	}
-	Souffrage_movement = {
-		may_recruit_female_generals = yes
-		female_advisor_chance = 0.5
-	}
-	Red_bricks = {
-		build_cost = -0.15
-	}
-}	
-J12_ideas = {
-	start = {
-		
-		power_projection_from_insults = 1
-		shock_damage = 0.1
-		
-	}
-	
-	bonus = {
-		attack_bonus_in_capital_terrain = 1
-	}	
-
-	trigger = {
-		tag = J12
-	}
-	free = yes
-	
-	Biebrza_National_Park = {
-		prestige = 1
-	}
-	Tsar_Road = {
-		movement_speed = -0.05
-		hostile_attrition = 2
-	}
-	Dead_Men = {
-		morale_damage = 0.2
-	}
-	Last_Jagiellonian = {
-		prestige_decay = -0.01
-		legitimacy = 1
-	}
-	Art_in_Osowiec = {
-		trade_efficiency = 0.1
-	}
-	Military_material = {
-		reinforce_cost_modifier = -0.25
-	}
-	Rural_community = {
-		max_absolutism = 10
-	}
-}	
-Y06_ideas = {
-	start = {
-		
-		global_own_trade_power = 0.15
-		state_maintenance_modifier = -0.2
-		
-	}
-	
-	bonus = {
-		leader_land_fire = 1
-	}	
-
-	trigger = {
-		tag = Y06
-	}
-	free = yes
-	
-	Vistula_gateway = {
-		global_foreign_trade_power = 0.2
-	}
-	Kociewie_northern_post = {
-		tolerance_own = 1
-	}
-	Danzig_rule = {
-		diplomatic_reputation = 3
-	}
-	Amber_road = {
-		caravan_power = 0.25
-	}
-	Greatly_advanced_administration = {
-		expand_administration_cost = -1
-	}
-	Vistula_crossings = {
-		global_tax_modifier = 0.1
-	}
-	Danzigian_dragons = {
-		fire_damage = 0.2
-	}
-}	
-H01_ideas = {
-	start = {
-		
-		defensiveness = 0.15
-		naval_forcelimit_modifier = 0.3
-		
-	}
-	
-	bonus = {
-		land_maintenance_modifier = -0.1
-	}	
-
-	trigger = {
-		tag = H01
-	}
-	free = yes
-	
-	Szlagier_Maszyna = {
-		monthly_splendor = 1
-	}
-	Zaklady_Azotowe = {
-		global_trade_goods_size_modifier = 0.05
-	}
-	Unification = {
-		stability_cost_modifier = -0.1
-	}
-	the_Gypsies = {
-		num_accepted_cultures = 1
-	}
-	Artillery_Unit = {
-		artillery_power = 0.05
-	}
-	Inland_Sailing = {
-		trade_efficiency = 0.15
-	}
-	Atrycja_died = {
-		hostile_attrition = 1
-	}
-}	
-I18_ideas = {
-	start = {
-		
-		defensiveness = 0.15
-		naval_forcelimit_modifier = 0.3
-		
-	}
-	
-	bonus = {
-		land_maintenance_modifier = -0.1
-	}	
-
-	trigger = {
-		tag = I18
-	}
-	free = yes
-	
-	Szlagier_Maszyna = {
-		monthly_splendor = 1
-	}
-	Zak³ady_Azotowe = {
-		global_trade_goods_size_modifier = 0.05
-	}
-	Unification = {
-		stability_cost_modifier = -0.1
-	}
-	the_Gypsies = {
-		num_accepted_cultures = 1
-	}
-	Artillery_Unit = {
-		artillery_power = 0.05
-	}
-	Inland_Sailing = {
-		trade_efficiency = 0.15
-	}
-	Atrycja_died = {
-		hostile_attrition = 1
-	}
-}	
-X20_ideas = {
-	start = {
-		
-		trade_efficiency = 0.15
-		improve_relation_modifier = 0.2
-		
-	}
-	
-	bonus = {
-		global_ship_trade_power = 0.2
-	}	
-
-	trigger = {
-		tag = X20
-	}
-	free = yes
-	
-	Cracovian_Metro = {
-		movement_speed = 0.15
-	}
-	Old_City = {
-		prestige = 1
-	}
-	City_of_Trade = {
-		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.1
-	}
-	Cracovian_Churches = {
-		tolerance_own = 2
-	}
-	Wawel = {
-		defensiveness = 0.2
-		hostile_attrition = 0.5
-	}
-	Kombinat = {
-		production_efficiency = 0.2
-	}
-	Cracovian_Machetes = {
-		infantry_power = 0.20
-	}
-}
-A27_ideas = {
-	start = {
-		advisor_cost = -0.2
-		culture_conversion_cost = -0.2
-	}
-
-	bonus = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-	}
-	
-	trigger = {
-		tag = A27
-	}
-	free = yes
-
-	Wroclaw_rat_undercity = {
-		spy_offence = 0.4
-	}
-	Wroclaw_city_of_bridges = {
-		trade_efficiency = 0.1
-	}
-	Wroclaw_city_of_gnomes = {
-		administrative_efficiency = 0.05
-	}
-	Wroclaw_festung_breslau = {
-		siege_ability = 0.2
-	}
-	Wroclaw_polish_twink_town = {
-		tolerance_heathen = 3
-	}
-	Wroclaw_MPK = {
-		hostile_attrition = 2
-	}
-	Wroclaw_memory_of_our_flood = {
+		idea_cost = -0.1
 		discipline = 0.05
 	}
-}
-W03_ideas = {
-	start = {
-		stability_cost_modifier = -0.1
-		cavalry_cost = -0.10
-	}
 
 	bonus = {
-		cav_to_inf_ratio = 0.10
+		fire_damage_received = -0.10
 	}
 	
 	trigger = {
-		tag = W03
+		tag = P03
 	}
 	free = yes
 
-	Great_Escape = {
-		spy_offence = 0.5
+	Pomeranian_Wall_Museum = {
+		defensiveness = 0.15
 	}
-	Western_Connector = {
-		trade_steering = 0.1
+	Pomeranian_Dukes_Castle = {
+		legitimacy = 1
 	}
-	Armored_Cavalry = {
-		cavalry_power = 0.15
+	Church_of_Mary = {
+		tolerance_own = 2
 	}
-	Palaces_and_Princesses = {
-		diplomatic_reputation = 1
+	Bismarck_Tower = {
+		culture_conversion_cost = -0.15
 	}
-	Command_has_its_reasons = {
-		prestige_from_land = 0.25
+	Kaulfuss_Monument = {
+		technology_cost = -0.1
 	}
-	Military_Hand = {
-		global_autonomy = -0.05
+	Post-Soviet_Barracks = {
+		land_forcelimit_modifier = 0.15
 	}
-	Dynamic_development = {
-		merchants = 1
+	Citizen_Wlapko = {
+		global_unrest = -2
 	}
 }
-B16_ideas = {
-	start = {
-		embargo_efficiency = 0.2
-		reinforce_cost_modifier = -0.15
-	}
 
-	bonus = {
-		global_prosperity_growth = 0.1
+P12_ideas = { #Powiat Stargardzki
+	start = {
+		
+		improve_relation_modifier = 0.1
+		religious_unity = 0.05
+		
 	}
 	
-	trigger = {
-		tag = B16
-	}
-	free = yes
-
-	Hostile_borderland  = {
-		global_monthly_devastation = -0.05
-	}
-	better_place = {
-		defensiveness = 0.1
-	}
-	Nobleman_from_under_Rypin = {
-		power_projection_from_insults = 1
-	}
-	Last_Supper = {
-		monthly_splendor = 1
-		prestige_decay = -0.01
-	}
-	Crater_on_Mars = {
-		free_adm_policy = 1
-	}
-	Mill_Gallery = {
-		land_maintenance_modifier = -0.1
-		infantry_cost = -0.1
-	}
-	Museum_of_Dobrinland = {
-		reelection_cost = -0.2
-	}
-}
-R28_ideas = {
-	start = {
-		prestige = 1
-		advisor_cost = -0.1
-	}
-
 	bonus = {
-		diplomatic_reputation = 1
-	}
-	
+		global_missionary_strength = 0.02
+	}	
+
 	trigger = {
-		tag = R28
+		tag = P12
 	}
 	free = yes
-
-	Speedway_and_Sausages  = {
-		global_unrest = -1
-	}
-	Sanctuaries = {
-		missionaries = 1
-	}
-	Ujscie_River_Port = {
+	
+	Hansa_reborn = {
 		trade_efficiency = 0.1
 	}
-	Lost_voivodeship = {
-		ae_impact = -0.1
+	City_walls  = {
+		defensiveness = 0.15
 	}
-	City_of_Staszic = {
-		idea_cost = -0.05
+	Rebuild_the_Starowka = {
+		prestige_decay = -0.01
 	}
-	Smilowo = {
-		trade_range_modifier = 0.2
+	Sugar_Rafinery = {
+		production_efficiency = 0.1
 	}
-	Grave_of_Drzymala = {
-		enemy_core_creation = 0.5
+	Revange_against_Stettin = {
+		infantry_power = 0.1
+	}
+	Special_economic_zone = {
+		trade_range_modifier = 0.25
+	}
+	Old_Town = {
+		diplomatic_upkeep = 1
 	}
 }
-P15_ideas = {
+
+P15_ideas = { #Swinoujscie
 	start = {
 		merchants = 1
 		diplomatic_reputation = 1
@@ -1537,716 +2667,67 @@ P15_ideas = {
 		discipline = 0.05
 	}
 }
-W08_ideas = {
-	start = {
-		improve_relation_modifier = 0.33
-		global_manpower_modifier = 0.15
-	}
 
-	bonus = {
-		manpower_recovery_speed = 0.1
+P17_ideas = { #Szczecin
+	start = {
+	cav_to_inf_ratio = 0.25
+	horde_unity = 1
+	legitimacy = 1
+	republican_tradition = 0.3
+	devotion = 1
 	}
 	
-	trigger = {
-		tag = W08
-	}
-	free = yes
-
-	Never_Ending_War = {
-		discipline = 0.05
-	}
-	Polish_Romani = {
-		years_of_nationalism = -5
-	}
-	City_of_Speedway = {
-		religious_unity = 0.15
-	}
-	Between_Metropolises = {
-		trade_steering = 0.2
-	}
-	German_Fortifications = {
-		fort_maintenance_modifier = -0.2
-	}
-	Voivode_Headquarters = {
-		max_absolutism = 15
-	}
-	So_much_space = {
-		development_cost = -0.1
-	}
-}
-
-L38_ideas = {
-	start = {
-		global_manpower_modifier = 0.20
-		fire_damage = 0.10
-	}
-
 	bonus = {
-		fire_damage_received = -0.10
-	}
-	
+		land_forcelimit_modifier = 0.15
+	}	
+
 	trigger = {
-		tag = L38
+		tag = P17
 	}
 	free = yes
-
-	L38_1 = {
-		global_trade_goods_size_modifier = 0.20
-	}
-	L38_2 = {
-		production_efficiency = 0.15
-	}
-	L38_3 = {
-		relation_with_accepted_culture = 15
-	}
-	L38_4 = {
-		prestige = 1
-	}
-	L38_5 = {
-		build_cost = -0.15
-	}
-	L38_6 = {
-		diplomats = 1
-		imperial_authority = 0.2
-	}
-	L38_7 = {
-		technology_cost = -0.10
-	}
-}
-
-L39_ideas = {
-	start = {
-		accept_vassalization_reasons = 25
-		ae_impact = -0.15
-	}
-
-	bonus = {
-		vassal_manpower_bonus = 0.30
-	}
 	
-	trigger = {
-		tag = L39
-	}
-	free = yes
-
-	L39_1 = {
-		global_trade_goods_size_modifier = 0.30
-		monarch_lifespan = -0.10
-	}
-	L39_2 = {
-		state_maintenance_modifier = -0.20
-	}
-	L39_3 = {
-		production_efficiency = 0.15
-	}
-	L39_4 = {
-		morale_damage_received = -0.20	
-	}
-	L39_5 = {
-		diplomatic_reputation = 2
-	}
-	L39_6 = {
-		idea_cost = -0.10
-	}
-	L39_7 = {
-		global_manpower_modifier = 0.25
-	}
-}
-G34_ideas = {
-	start = {
-		land_morale = 0.1
-		advisor_cost = -0.1
-	}
-
-	bonus = {
-		attack_bonus_in_capital_terrain = 1
-	}
-	
-	trigger = {
-		tag = G34
-	}
-	free = yes
-
-	G34_1 = {
-		garrison_size = 0.15
-	}
-	G34_2 = {
-		global_tax_modifier = 0.1
-	}
-	G34_3 = {
-		tolerance_heathen = 1
-		tolerance_heretic = 1
-	}
-	G34_4 = {
-		tolerance_own = 2
-	}
-	G34_5 = {
-		development_cost = -0.1
-	}
-	G34_6 = {
-		prestige = 1
-	}
-	G34_7 = {
-		diplomatic_reputation = 2
-	}
-}
-U16_ideas = {
-	start = {
-		global_monthly_devastation = -0.1
-		garrison_size = 0.2
-	}
-
-	bonus = {
-		land_morale = 0.1
-	}
-	
-	trigger = {
-		tag = U16
-	}
-	free = yes
-
-	U16_1 = {
-		war_exhaustion_cost = -0.20
-	}
-	U16_2 = {
+	Wild_East = {
 		cavalry_power = 0.15
 	}
-	U16_3 = {
-		leader_land_shock = 1
-	}
-	U16_4 = {
-		trade_steering = 0.15
-	}
-	U16_5 = {
-		cavalry_cost = -0.1
-		global_trade_power = 0.1
-	}
-	U16_6 = {
-		production_efficiency = 0.1
-	}
-	U16_7 = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-	}
-}
-U22_ideas = {
-	start = {
-		ae_impact = -0.1
-		global_manpower_modifier = 0.15
-	}
-
-	bonus = {
-		core_creation = -0.1
-	}
-	
-	trigger = {
-		tag = U22
-	}
-	free = yes
-
-	U22_1 = {
-		prestige_decay = -0.01
-		global_prosperity_growth = -0.1
-	}
-	U22_2 = {
-		cavalry_cost = -0.1
-	}
-	U22_3 = {
-		land_forcelimit_modifier = 0.2
-	}
-	U22_4 = {
-		galley_power = 0.1
-	}
-	U22_5 = {
-		production_efficiency = 0.1
-	}
-	U22_6 = {
-		morale_damage_received = -0.1
-	}
-	U22_7 = {
-		tolerance_own = 1
-	}
-}
-L28_ideas = {
-	start = {
-		prestige = 1
-		diplomatic_upkeep = 1
-	}
-
-	bonus = {
-		artillery_power = 0.1
-	}
-	
-	trigger = {
-		tag = L28
-	}
-	free = yes
-
-	L28_1 = {
-		discipline = 0.05
-	}
-	L28_2 = {
-		global_trade_goods_size_modifier = 0.05
-	}
-	L28_3 = {
-		global_missionary_strength = 0.03
-	}
-	L28_4 = {
-		build_cost = -0.15
-	}
-	L28_5 = {
-		global_prosperity_growth = 0.1
-	}
-	L28_6 = {
-		army_tradition = 0.5
-	}
-	L28_7 = {
-		technology_cost = -0.1
-	}
-}
-L35_ideas = {
-	start = {
-		advisor_pool = 1
-		province_warscore_cost = -0.1
-	}
-
-	bonus = {
-		global_supply_limit_modifier = 0.2
-	}
-	
-	trigger = {
-		tag = L35
-	}
-	free = yes
-
-	L35_1 = {
-		prestige_decay = -0.01
-	}
-	L35_2 = {
-		artillery_cost = -0.1
-	}
-	L35_3 = {
-		trade_steering = 0.1
-	}
-	L35_4 = {
-		production_efficiency = 0.1
-	}
-	L35_5 = {
-		stability_cost_modifier = -0.1
-	}
-	L35_6 = {
-		diplomatic_annexation_cost = -0.1
-	}
-	L35_7 = {
-		max_hostile_attrition = 1
-	}
-}
-Y01_ideas = {
-	start = {
-		defensiveness = 0.1
-		trade_range_modifier = 0.33
-	}
-
-	bonus = {
-		global_supply_limit_modifier = 0.2
-	}
-	
-	trigger = {
-		tag = Y01
-	}
-	free = yes
-
-	Y01_1 = {
-		fort_maintenance_modifier = -0.1
-	}
-	Y01_2 = {
-		 global_regiment_cost = -0.15
-	}
-	Y01_3 = {
-		envoy_travel_travel = -0.33
-	}
-	Y01_4 = {
-		unjustified_demands = -0.15
-	}
-	Y01_5 = {
-		interest = -0.5
-	}
-	Y01_6 = {
-		embracement_cost = -0.25
-	}
-	Y01_7 = {
-		heir_chance = 0.5
-	}
-}
-Y03_ideas = {
-	start = {
-		core_creation = -0.1
-		trade_steering = 0.1
-	}
-
-	bonus = {
-		culture_conversion_cost = -0.15
-	}
-	
-	trigger = {
-		tag = Y03
-	}
-	free = yes
-
-	Y03_1 = {
-		same_culture_advisor_cost = -0.1
-	}
-	Y03_2 = {
-		 governing_cost = -0.1
-	}
-	Y03_3 = {
-		province_warscore_cost = -0.05
-	}
-	Y03_4 = {
-		stability_cost_modifier = -0.15
-	}
-	Y03_5 = {
+	Dukes_of_Pomerania = {
 		prestige = 1
 	}
-	Y03_6 = {
-		enemy_core_creation = 0.25
-	}
-	Y03_7 = {
-		idea_cost = -0.1
-	}
-}
-Y04_ideas = {
-	start = {
-		build_time = -0.15
-		trade_steering = 0.1
-	}
-
-	bonus = {
-		culture_conversion_cost = -0.15
-	}
-	
-	trigger = {
-		tag = Y04
-	}
-	free = yes
-
-	Y04_1 = {
-		same_culture_advisor_cost = -0.1
-	}
-	Y04_2 = {
-		 governing_cost = -0.1
-	}
-	Y04_3 = {
-		province_warscore_cost = -0.05
-	}
-	Y04_4 = {
-		stability_cost_modifier = -0.15
-	}
-	Y04_5 = {
-		prestige = 1
-	}
-	Y04_6 = {
-		enemy_core_creation = 0.25
-	}
-	Y04_7 = {
-		idea_cost = -0.1
-	}
-}
-Y05_ideas = {
-	start = {
-		global_regiment_cost = -0.1
-		global_tax_modifier = 0.1
-	}
-
-	bonus = {
-		global_manpower_modifier = 0.15
-	}
-	
-	trigger = {
-		tag = Y05
-	}
-	free = yes
-
-	Y05_1 = {
-		religious_unity = 0.33
-	}
-	Y05_2 = {
-		 fort_maintenance_modifier = -0.15
-	}
-	Y05_3 = {
-		trade_range_modifier = 0.1
-	}
-	Y05_4 = {
-		development_cost = -0.05
-	}
-	Y05_5 = {
-		prestige_decay = -0.01
-	}
-	Y05_6 = {
-		stability_cost_modifier = -0.25
-	}
-	Y05_7 = {
-		technology_cost = -0.05
-	}
-}
-Y07_ideas = {
-	start = {
-		army_tradition_decay = -0.01
-		reinforce_cost_modifier = -0.25
-	}
-
-	bonus = {
-		discipline = 0.05
-	}
-	
-	trigger = {
-		tag = Y07
-	}
-	free = yes
-
-	Y07_1 = {
-		artillery_barrage_cost = -0.15
-	}
-	Y07_2 = {
-		loot_amount = 0.2
-	}
-	Y07_3 = {
-		envoy_travel_time = -0.25
-	}
-	Y07_4 = {
-		development_cost_in_primary_culture = -0.1
-	}
-	Y07_5 = {
-		innovativeness_gain = 0.33
-	}
-	Y07_6 = {
-		possible_policy = 1
-	}
-	Y07_7 = {
-		block_introduce_heir = yes
-	}
-}
-Y09_ideas = {
-	start = {
-		enemy_core_creation = 0.33
-		defensiveness = 0.15
-	}
-
-	bonus = {
-		diplomatic_upkeep = 1
-	}
-	
-	trigger = {
-		tag = Y09
-	}
-	free = yes
-
-	Y09_1 = {
-		infantry_power = 0.1
-	}
-	Y09_2 = {
-		attack_bonus_in_capital_terrain = 1
-	}
-	Y09_3 = {
-		may_recruit_female_generals = yes
-	}
-	Y09_4 = {
-		development_cost_in_primary_culture = -0.1
-	}
-	Y09_5 = {
-		general_cost = -0.25
-	}
-	Y09_6 = {
+	Multicultural_City = {
 		years_of_nationalism = -5
 	}
-	Y09_7 = {
-		global_autonomy = -0.1
+	Legacy_of_Stocznia = {
+		naval_morale = 0.1
+		ship_durability = 0.05
 	}
-}
-Y13_ideas = {
-	start = {
-		fort_maintenance_modifier = -0.1
-		defensiveness = 0.1
+	Our_new_face = {
+		global_tax_modifier = 0.15
 	}
-
-	bonus = {
-		envoy_travel_time = -0.25
-	}
-	
-	trigger = {
-		tag = Y13
-	}
-	free = yes
-
-	Y13_1 = {
-		cavalry_cost = -0.2
-	}
-	Y13_2 = {
-		improve_relation_modifier = 0.15
-	}
-	Y13_3 = {
-		free_leader_pool = 1
-	}
-	Y13_4 = {
-		allow_mercenaries_to_split = yes
-	}
-	Y13_5 = {
-		trade_steering = 0.1
-	}
-	Y13_6 = {
-		global_tax_modifier = 0.1
-	}
-	Y13_7 = {
-		female_advisor_chance = 0.25
-	}
-}
-Y14_ideas = {
-	start = {
-		trade_efficiency = 0.1
-		mercenary_cost = -0.25
-	}
-
-	bonus = {
-		merchants = 1
-	}
-	
-	trigger = {
-		tag = Y14
-	}
-	free = yes
-
-	Y14_1 = {
-		placed_merchant_power_modifier = 0.4
-	}
-	Y14_2 = {
-		embargo_efficiency = 0.33
-	}
-	Y14_3 = {
-		movement_speed = 0.1 
-	}
-	Y14_4 = {
-		reduced_trade_penalty_on_non_main_tradenode = 0.33
-	}
-	Y14_5 = {
-		mercenary_manpower = 0.15
-	}
-	Y14_6 = {
-		mercenary_discipline = 0.05
-	}
-	Y14_7 = {
-		global_regiment_cost = -0.1
-	}
-}
-Y15_ideas = {
-	start = {
-		trade_efficiency = 0.1
-		mercenary_cost = -0.25
-	}
-
-	bonus = {
-		merchants = 1
-	}
-	
-	trigger = {
-		tag = Y15
-	}
-	free = yes
-
-	Y15_1 = {
-		placed_merchant_power_modifier = 0.4
-	}
-	Y15_2 = {
-		embargo_efficiency = 0.33
-	}
-	Y15_3 = {
-		movement_speed = 0.1 
-	}
-	Y15_4 = {
-		reduced_trade_penalty_on_non_main_tradenode = 0.33
-	}
-	Y15_5 = {
-		mercenary_manpower = 0.15
-	}
-	Y15_6 = {
-		mercenary_discipline = 0.05
-	}
-	Y15_7 = {
-		global_regiment_cost = -0.1
-	}
-}
-Y16_ideas = {
-	start = {
-		defensiveness = 0.25
-		infantry_cost = -0.15
-	}
-
-	bonus = {
-		fort_maintenance_modifier = -0.15
-	}
-	
-	trigger = {
-		tag = Y16
-	}
-	free = yes
-
-	Y16_1 = {
-		infantry_power = 0.1
-	}
-	Y16_2 = {
-		global_supply_limit_modifier = 0.1
-	}
-	Y16_3 = {
-		envoy_travel_time = -0.3
-	}
-	Y16_4 = {
-		warscore_cost_vs_other_religion = -0.1
-	}
-	Y16_5 = {
-		mercenary_cost = -0.1
-	}
-	Y16_6 = {
-		war_exhaustion_cost = -0.2
-	}
-	Y16_7 = {
-		tolerance_own = 2
-	}
-}
-Y18_ideas = {
-	start = {
+	Forever_in_development = {
 		development_cost = -0.1
-		trade_range_modifier = 0.2
 	}
-
-	bonus = {
-		global_trade_goods_size_modifier = 0.05
-	}
-	
-	trigger = {
-		tag = Y18
-	}
-	free = yes
-
-	Y18_1 = {
-		light_ship_power = 0.25
-	}
-	Y18_2 = {
-		global_ship_cost = -0.1	
-	}
-	Y18_3 = {
-		build_cost = -0.15
-		build_time = 0.25
-	}
-	Y18_4 = {
-		stability_cost_modifier = -0.1
-	}
-	Y18_5 = {
-		all_estate_loyalty_equilibrium = 0.05
-	}
-	Y18_6 = {
-		governing_cost = -0.1
-	}
-	Y18_7 = { = 
-		advisor_pool = 1
+	Bigger_than_you_think = {
+		governing_capacity_modifier = 0.1
+		core_creation = -0.15
 	}
 }
+
+#Other
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
