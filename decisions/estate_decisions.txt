@@ -102,26 +102,4 @@ country_decisions = {
 		}
 	}
 
-	clock_in_decision = {
-		color = { 50 50 200 }
-		
-		potential = {
-			always = yes
-		}
-
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = clock_in_decision_tooltip
-				always = yes
-			}
-		}
-
-		effect = {
-			
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
 }

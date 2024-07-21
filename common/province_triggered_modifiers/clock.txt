@@ -1,0 +1,1774 @@
+clock_ptm_1 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 0
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_2 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 1
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+    on_deactivation = {
+
+	}
+}
+clock_ptm_3 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 2
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_4 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 3
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+                
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_5 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 4
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_6 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 5
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_7 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 6
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_8 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 7
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_9 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 8
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_10 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 9
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_11 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 10
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}
+clock_ptm_12 = {
+
+    potential = {
+        always = yes
+    }
+
+    trigger = {
+
+        OR = {
+            is_month = 11
+        }
+
+    }
+
+    on_activation = {
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 1056
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_year
+                    days = 2184
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.1
+                }
+
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        ai = no 
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 88
+                }
+                NOT = { is_year = 1500}
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+        else_if = {
+            limit = {
+                had_global_flag = {
+                    flag = clock_init_month
+                    days = 182
+                }
+                is_year = 1500
+            }
+
+            random_country = {
+                limit = { 
+                    ai = no 
+                }
+                
+                country_event = {
+                    id = clock.3
+                }
+
+            }
+        }
+    }
+
+    on_deactivation = {
+
+
+	}
+}

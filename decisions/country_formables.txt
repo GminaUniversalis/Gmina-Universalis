@@ -269,13 +269,16 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-			region = dolnoslaskie_region
-			region = opolskie_region
-			region = slaskie_region
-			region = lubuskie_region
-			region = zachodnio_pomorskie_region
-			region = warminsko_mazurskie_region
-			NOT = {
+			OR = {
+			
+				region = dolnoslaskie_region
+				region = opolskie_region
+				region = slaskie_region
+				region = lubuskie_region
+				region = zachodnio_pomorskie_region
+				region = warminsko_mazurskie_region
+			}
+			NOT = {X`
 				OR = {
 					owned_by = ROOT
 					is_core = ROOT

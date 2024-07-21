@@ -116,10 +116,6 @@
  gmina_estates.3.l.tt:0 "To enable Unemployed Estate you have to:\n£no£ Always disabled... for now"
  gmina_estates.3.m:0 "Exit"
 
- clock_in_decision_title:0 "Show Current Time"
- clock_in_decision_desc:0 "It shows our convetred time! Conversion rate is around 6 EU years to 1 IRL year so that way we avoid thrashing entire date system"
- clock_in_decision_tooltip:0 "If nothing happens, that means that it doesn't work, which is good, because I haven't coded that yet"
-
  gmina_setup.0.title:0 "Welcome to Gmina Universalis"
  gmina_setup.0.desc:0 "First of all, I'm happy to see you here!\nThis mod is everything, everywhere, all at once about Poland.\nTime setting is mostly arbitrary in here, you will find things that did not exist at the same time and that's great! My main premise for creating that mod was to just put "everything" in here, for anybody to find something familliar.\nIf you want to add or change something, or found a bug, please report it on Discord, I'm not able to catch everything alone :P\n\nAlso this event acts as setup for some stuff\n\n§RYOU HAVE TO CLICK ME FIRST§!\n\nEnjoy your pain! :D"
  gmina_setup.0.a:0 "Let's get started!"

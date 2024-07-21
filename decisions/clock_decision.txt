@@ -1,0 +1,53 @@
+country_decisions = {
+	clock_in_decision = {
+		color = { 50 50 200 }
+		
+		potential = {
+			always = yes
+			is_ai = no
+		}
+	
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = clock_in_decision_tooltip
+				always = yes
+			}
+
+			#debug
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_year = 1500}
+			# 	}
+
+
+			# 	had_global_flag = {
+			# 		flag = clock_init_year
+			# 		days = 1059
+			# 	}
+				
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		is_year = 1500
+			# 	}
+
+
+			# 	had_global_flag = {
+			# 		flag = clock_init_year
+			# 		days = 2190
+			# 	}
+				
+			# }
+
+
+		}
+	
+        effect = {
+            custom_tooltip = show_year_loc
+        }
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -6,36 +6,36 @@
 ###########################################
 # Discovery of the East Indian trade route.
 ###########################################
-east_indian_trade_route = {
-	potential = {
-		num_of_ports = 1
-		NOT = {
-			capital_scope = {
-				continent = asia
-			}
-		}
-		NOT = {
-			capital_scope = {
-				continent = oceania
-			}
-		}
+# east_indian_trade_route = {
+# 	potential = {
+# 		num_of_ports = 1
+# 		NOT = {
+# 			capital_scope = {
+# 				continent = asia
+# 			}
+# 		}
+# 		NOT = {
+# 			capital_scope = {
+# 				continent = oceania
+# 			}
+# 		}
 		
-	}
+# 	}
 
-	trigger = {
-		has_discovered = 1460 # Cape of Good Hope
-		num_of_ports = 4
-		has_idea = quest_for_the_new_world
-		OR = {
-			1361 = { has_merchant = ROOT } #Straits of Johor
-			1343 = { has_merchant = ROOT } #Ganges Delta
-			504 = { has_merchant = ROOT } #Sind
-			1340 = { has_merchant = ROOT } #Comorin Cape
-		}
-	}
+# 	trigger = {
+# 		has_discovered = 1460 # Cape of Good Hope
+# 		num_of_ports = 4
+# 		has_idea = quest_for_the_new_world
+# 		OR = {
+# 			1361 = { has_merchant = ROOT } #Straits of Johor
+# 			1343 = { has_merchant = ROOT } #Ganges Delta
+# 			504 = { has_merchant = ROOT } #Sind
+# 			1340 = { has_merchant = ROOT } #Comorin Cape
+# 		}
+# 	}
 
-	trade_efficiency = 0.05	
-}
+# 	trade_efficiency = 0.05	
+# }
 
 #########################################################
 # Coptic control of Alexandria.
@@ -247,23 +247,23 @@ east_indian_trade_route = {
 ######################################
 # Custodian of the Two Holy Mosques
 ######################################
-custodian_of_the_two_holy_mosques = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_discovered = 385	# Mecca
-		has_discovered = 384	# Medina
-		religion_group = muslim
-	}
+# custodian_of_the_two_holy_mosques = {
+# 	potential = {
+# 		normal_or_historical_nations = yes
+# 		has_discovered = 385	# Mecca
+# 		has_discovered = 384	# Medina
+# 		religion_group = muslim
+# 	}
 
-	trigger = {
-		is_free_or_tributary_trigger = yes
-		owns_or_vassal_of = 385
-		owns_or_vassal_of = 384
-	}
+# 	trigger = {
+# 		is_free_or_tributary_trigger = yes
+# 		owns_or_vassal_of = 385
+# 		owns_or_vassal_of = 384
+# 	}
 
-	legitimacy = 0.5
-	missionaries = 1
-}
+# 	legitimacy = 0.5
+# 	missionaries = 1
+# }
 ###########################################
 # Jerusalem held by Abrahamic Faiths
 ###########################################
@@ -915,32 +915,32 @@ defense_of_the_empire_modifier = {
 # Judaism Defensive Aspect
 ######################################
 
-judaism_yom_kippur_aspect_war_modifier = {
-	potential = {
-		religion = jewish
-		has_church_aspect = judaism_yom_kippur_aspect
-	}
-	trigger = {
-		is_at_war = yes
-	}
-	manpower_recovery_speed = 0.20
-	church_power_modifier = 0.25
-}
+# judaism_yom_kippur_aspect_war_modifier = {
+# 	potential = {
+# 		religion = jewish
+# 		has_church_aspect = judaism_yom_kippur_aspect
+# 	}
+# 	trigger = {
+# 		is_at_war = yes
+# 	}
+# 	manpower_recovery_speed = 0.20
+# 	church_power_modifier = 0.25
+# }
 
-judaism_yom_kippur_aspect_defensive_war_modifier = {
-	potential = {
-		religion = jewish
-		has_church_aspect = judaism_yom_kippur_aspect
-	}
-	trigger = {
-		is_at_war = yes
-		is_in_war = {
-			defenders = ROOT
-		}
-	}
-	manpower_recovery_speed = 0.20
-	church_power_modifier = 0.25
-}
+# judaism_yom_kippur_aspect_defensive_war_modifier = {
+# 	potential = {
+# 		religion = jewish
+# 		has_church_aspect = judaism_yom_kippur_aspect
+# 	}
+# 	trigger = {
+# 		is_at_war = yes
+# 		is_in_war = {
+# 			defenders = ROOT
+# 		}
+# 	}
+# 	manpower_recovery_speed = 0.20
+# 	church_power_modifier = 0.25
+# }
 
 ######################################
 # Government Reform Specific

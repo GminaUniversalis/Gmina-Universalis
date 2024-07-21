@@ -1,9 +1,15 @@
 on_startup = {
-	events = {
-			
+
+	random_country = {
+		limit = {
+			ai = no
+		}
+		country_event = { id = clock.2 }
+	}
+
+	events = {	
 		gmina_setup.0
 		#gmina_setup.1
-		
 	}
 }
 

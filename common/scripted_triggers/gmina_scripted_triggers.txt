@@ -23,22 +23,24 @@ has_border_crossing_trigger = {
 }
 
 poland_formable_decision_check = {
-	region = dolnoslaskie_region
-	region = kujawsko_pomorskie_region
-	region = lodzkie_region
-	region = lubelskie_region
-	region = lubuskie_region
-	region = malopolska_region
-	region = mazowieckie_region
-	region = opolskie_region
-	region = podkarpackie_region
-	region = podlasie_region
-	region = pomorskie_region
-	region = slaskie_region
-	region = swietokrzyskie_region
-	region = warminsko_mazurskie_region
-	region = wielkopolska_region
-	region = zachodnio_pomorskie_region	
+	OR = {
+		region = dolnoslaskie_region
+		region = kujawsko_pomorskie_region
+		region = lodzkie_region
+		region = lubelskie_region
+		region = lubuskie_region
+		region = malopolska_region
+		region = mazowieckie_region
+		region = opolskie_region
+		region = podkarpackie_region
+		region = podlasie_region
+		region = pomorskie_region
+		region = slaskie_region
+		region = swietokrzyskie_region
+		region = warminsko_mazurskie_region
+		region = wielkopolska_region
+		region = zachodnio_pomorskie_region	
+	}
 }
 
 poland_powiatowe_formed_check = {
@@ -59,7 +61,6 @@ poland_powiatowe_formed_check = {
 				has_country_flag = formed_miasto_sosnowiec_flag
 				has_country_flag = formed_miasto_dabrowa_gornicza_flag
 				has_country_flag = formed_miasto_piekary_slaskie_flag
-				has_country_flag = formed_miasto_bytom_flag
 				has_country_flag = formed_miasto_chorzow_flag
 				has_country_flag = formed_miasto_bytom_flag
 				has_country_flag = formed_miasto_ruda_slaska_flag
