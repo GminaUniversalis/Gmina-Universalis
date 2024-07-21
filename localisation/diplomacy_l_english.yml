@@ -735,7 +735,7 @@
  GRANTELECTORATEDESC:0 "Granting electorate allows them to vote on who should be the emperor in the Empire."
  REMOVE_ELECTORATE_TITLE:0 "Remove Electorate"
  REMOVE_ELECTORATE_DESC:0 "Removing their electorate forbids them from voting who should be the emperor of the Empire."
- REMOVE_ELECTORATE_ADDITIONAL_EFFECTS:0 "Furthermore, it would change other electors' opinion of us by $SAME$ if same religion as the removed elector, $OTHER$ if otherwise.\n\nIt will cost us §Y$IA$§! Imperial Authority."
+ REMOVE_ELECTORATE_ADDITIONAL_EFFECTS:0 "Furthermore, it would change other electors' opinion of us by $SAME$ if same religion as the removed elector, $OTHER$ if otherwise.\n\nIt will cost us §Y$IA$§! Silesian Cohesion."
  OPINION_WOULDCHANGEBY:0 "It would change their opinion of us by $AMOUNT$."
  DEMANDUNLAWFULTERRITORYTITLE:0 "Demand Unlawful Territory"
  DEMANDUNLAWFULTERRITORYDESC:0 "Demand the return of an unlawful territory to the Empire."

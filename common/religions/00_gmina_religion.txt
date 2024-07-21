@@ -2629,5 +2629,7 @@ populism_group = {
 		heretic = {  }
 
 		personal_deity = yes
+
+		date = 1503.1.1
 	}
 }

@@ -562,8 +562,8 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { tag = SIL }
 				NOT = { was_tag = GER }
 				NOT = { tag = GER }
-				NOT = { was_tag = CEP }
-				NOT = { tag = CEP }
+				NOT = { was_tag = HCE }
+				NOT = { tag = HCE }
 				NOT = { was_tag = PRL }
 				NOT = { tag = PRL }
 

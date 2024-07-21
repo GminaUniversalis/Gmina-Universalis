@@ -1,73 +1,73 @@
-# country_decisions = {
-# 	shadow_kingdom_decision = {
-# 		major = yes
-# 		potential = {
-# 			is_emperor = yes
-# 			NOT = { has_global_flag = italians_leave_hre }
-# 			NOT = { is_year = 1500 }
-# 		}
-# 		provinces_to_highlight = {
-# 			owner = {
-# 				is_shadow_kingdom_eligible_trigger = yes
-# 				will_leave_for_shadow_kingdom_trigger = yes
-# 			}
-# 		}
-# 		allow = {
-# 			custom_trigger_tooltip = {
-# 				tooltip = emperor_trying_to_avert_shadow_kingdom_tt
-# 				has_global_flag = emperor_trying_to_avert_shadow_kingdom
-# 			}			
-# 			custom_trigger_tooltip = {
-# 				tooltip = has_reined_in_all_italians_early
-# 				NOT = {
-# 					any_country = {
-# 						will_leave_for_shadow_kingdom_trigger = yes
-# 						is_shadow_kingdom_eligible_trigger = yes
-# 						OR = {
-# 							is_subject = no
-# 							AND = {
-# 								is_subject = yes
-# 								overlord = { # overlord chooses for their vassals if eligible to leave themselves
-# 									NOT = {
-# 										is_part_of_hre = yes
-# 										capital_scope = { region = italy_region }
-# 									}
-# 								}
-# 							}
-# 						}
-# 					}
-# 				}
-# 			}
-# 		}
-# 		effect = {
-# 			set_country_flag = shadow_kingdom_early_success
-# 			every_country = {
-# 				limit = {
-# 					is_shadow_kingdom_eligible_trigger = yes
-# 					will_leave_for_shadow_kingdom_trigger = yes
-# 					OR = {
-# 						is_subject = no
-# 						AND = {
-# 							is_subject = yes
-# 							overlord = { # overlord chooses for their vassals if eligible to leave themselves
-# 								NOT = {
-# 									is_part_of_hre = yes
-# 									capital_scope = { region = italy_region }
-# 								}
-# 							}
-# 						}
-# 					}
-# 				}
-# 				custom_tooltip = shadow_kingdom_will_leave_info_decision_tt
-# 			}
-# 			country_event = {
-# 				id = shadow_kingdom.3
-# 			}
-# 		}
-# 		ai_will_do = {
-# 			factor = 1
-# 		}
-# 	}
+country_decisions = {
+	shadow_kingdom_decision = {
+		major = yes
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = italians_leave_hre }
+			NOT = { is_year = 1500 }
+		}
+		provinces_to_highlight = {
+			owner = {
+				is_shadow_kingdom_eligible_trigger = yes
+				will_leave_for_shadow_kingdom_trigger = yes
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = emperor_trying_to_avert_shadow_kingdom_tt
+				has_global_flag = emperor_trying_to_avert_shadow_kingdom
+			}			
+			custom_trigger_tooltip = {
+				tooltip = has_reined_in_all_italians_early
+				NOT = {
+					any_country = {
+						will_leave_for_shadow_kingdom_trigger = yes
+						is_shadow_kingdom_eligible_trigger = yes
+						OR = {
+							is_subject = no
+							AND = {
+								is_subject = yes
+								overlord = { # overlord chooses for their vassals if eligible to leave themselves
+									NOT = {
+										is_part_of_hre = yes
+										capital_scope = { region = dolnoslaskie_region }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = shadow_kingdom_early_success
+			every_country = {
+				limit = {
+					is_shadow_kingdom_eligible_trigger = yes
+					will_leave_for_shadow_kingdom_trigger = yes
+					OR = {
+						is_subject = no
+						AND = {
+							is_subject = yes
+							overlord = { # overlord chooses for their vassals if eligible to leave themselves
+								NOT = {
+									is_part_of_hre = yes
+									capital_scope = { region = dolnoslaskie_region }
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = shadow_kingdom_will_leave_info_decision_tt
+			}
+			country_event = {
+				id = shadow_kingdom.3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 # 	great_peasants_war_emperor_decision = {
 # 		major = yes
 # 		potential = {
@@ -127,4 +127,4 @@
 # 			factor = 1
 # 		}
 # 	}
-# }
+}

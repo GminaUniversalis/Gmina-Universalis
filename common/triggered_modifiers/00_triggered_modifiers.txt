@@ -155,7 +155,7 @@
 ######################################
 #inti_lima = {
 #	potential = {
-#		normal_or_historical_nations = yes
+#		normal_or_historical_nations = yesz
 #		has_discovered = 809 # Lima
 #		religion = inti
 #	}
@@ -372,28 +372,27 @@
 ######################################
 # Italian - Submission to Emperor
 ######################################
-# submission_to_emperor = {
-# 	potential = {
-# 		# AI will avoid joining HRE when this modifier is potential:
+submission_to_emperor = {
+	potential = {
+		# AI will avoid joining HRE when this modifier is potential:
 
-# 		has_global_flag = italians_leave_hre
-# 		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
-# 		is_emperor = no
-# 		NOT = { is_year = 1550 }
-# 		culture_group = latin
-# 	}
+		has_global_flag = italians_leave_hre
+		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
+		is_emperor = no
+		NOT = { is_year = 1600 }
+		culture_group = dolnoslaska_cg
+	}
 
-# 	trigger = {
-# 		is_part_of_hre = yes
-# 		NOT = { tag = ITA }
-# 		NOT = { emperor = { alliance_with = ROOT } }
-# 		NOT = { is_year = 1550 } # Duplicating so it shows in tooltip
-# 	}
+	trigger = {
+		is_part_of_hre = yes
+		NOT = { emperor = { alliance_with = ROOT } }
+		NOT = { is_year = 1550 } # Duplicating so it shows in tooltip
+	}
 
-# 	global_unrest = 3
-# 	stability_cost_modifier = 0.1
-# 	prestige = -1
-# }
+	global_unrest = 3
+	stability_cost_modifier = 0.1
+	prestige = -1
+}
 
 
 
@@ -770,15 +769,15 @@ waging_war_for_china = {
 # Robot parts
 ######################################
 
-synthetic_remnants = {
-	potential = {
-		has_global_flag = synthetics_defeated
-	}
-	trigger = {
-		has_global_flag = synthetics_defeated
-	}
-	technology_cost = -0.25
-}
+# synthetic_remnants = {
+# 	potential = {
+# 		has_global_flag = synthetics_defeated
+# 	}
+# 	trigger = {
+# 		has_global_flag = synthetics_defeated
+# 	}
+# 	technology_cost = -0.25
+# }
 
 ######################################
 # The Golden Age of Piracy

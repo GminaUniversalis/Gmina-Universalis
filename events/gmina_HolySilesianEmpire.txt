@@ -723,7 +723,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA9075"
-		change_tag = CEP
+		change_tag = HCE
 		on_change_tag_effect = yes
 		restore_country_name_effect = yes
 		add_country_modifier = {

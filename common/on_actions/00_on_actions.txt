@@ -1277,24 +1277,24 @@ on_successive_emperor = {
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
-	if = {
-		limit = {
-			has_government_attribute = has_ruler_election
-		}
-		set_country_flag = has_internal_election_first
-	}
+	# if = {
+	# 	limit = {
+	# 		has_government_attribute = has_ruler_election
+	# 	}
+	# 	set_country_flag = has_internal_election_first
+	# }
 	events = {
 		900
 	}
-	if = {
-		limit = {
-			emperor = {
-				has_country_flag = hun_imperial_reelection_bonus
-			}
-		}
-		add_prestige = 10
-		add_imperial_influence = 5
-	}
+	# if = {
+	# 	limit = {
+	# 		emperor = {
+	# 			has_country_flag = hun_imperial_reelection_bonus
+	# 		}
+	# 	}
+	# 	add_prestige = 10
+	# 	add_imperial_influence = 5
+	# }
 }
 
 # Called whenever a new emperor is elected
@@ -1418,23 +1418,23 @@ on_hre_province_reconquest = {
 }
 
 on_lock_hre_religion = {
-	events = {
-		religious_leagues.1
-		religious_leagues.8
-	}
+	# events = {
+	# 	religious_leagues.1
+	# 	religious_leagues.8
+	# }
 }
 
 on_change_hre_religion = {
-	events = {
-		religious_leagues.2
-		religious_leagues.3
-	}
+	# events = {
+	# 	religious_leagues.2
+	# 	religious_leagues.3
+	# }
 }
 
 on_hre_religion_white_peace = {
-	events = {
-		religious_leagues.4
-	}
+	# events = {
+	# 	religious_leagues.4
+	# }
 }
 
 # When a non-native changes government type

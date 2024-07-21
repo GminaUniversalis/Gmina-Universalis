@@ -391,7 +391,7 @@ estate_miners_golden_age_mines = {
 		OR = {
 			current_age = age_of_discovery
 			tag = SIL
-			tag = CEP
+			tag = HCE
 		}
 
 	}
@@ -399,7 +399,7 @@ estate_miners_golden_age_mines = {
 		OR = {
 			current_age = age_of_discovery
 			tag = SIL
-			tag = CEP
+			tag = HCE
 		}
 	}
 	on_granted = {
@@ -523,7 +523,7 @@ estate_miners_silver_age_mines = {
 		OR = {
 			NOT = { current_age = age_of_discovery }
 			tag = SIL
-			tag = CEP
+			tag = HCE
 		}
 
 	}
@@ -536,7 +536,7 @@ estate_miners_silver_age_mines = {
 		OR = {
 			NOT = { current_age = age_of_discovery }
 			tag = SIL
-			tag = CEP
+			tag = HCE
 		}
 		innovativeness = 35
 	}
