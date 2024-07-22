@@ -735,11 +735,6 @@ country_event = {
 			every_province = {
 				limit = {
 					is_part_of_hre = yes
-					OR = {
-						owned_by = ROOT
-						owner = { is_neighbor_of = ROOT }
-					}
-					NOT = { is_core = ROOT }
 				}
 				add_core = emperor
 			}
@@ -752,14 +747,14 @@ country_event = {
 					is_emperor = no
 					num_of_cities = 1
 				}
-				country_event = { id = 9076 }
+				country_event = { id = 9078 }
 			}
 		}
 		dismantle_hre = yes
 		set_government_rank = 3
 		if = {
 			limit = { has_dlc = "Domination" }
-			add_government_reform = holy_imperial_monarchy_reform
+			#add_government_reform = holy_imperial_monarchy_reform
 		}
 		add_adm_power = 250
 		if = {
@@ -769,5 +764,21 @@ country_event = {
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = 9078
+	title = "EVTNAME9076"
+	desc = "EVTDESC9076"
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA9076"
+		HCE = {
+			inherit = ROOT
+		}
 	}
 }

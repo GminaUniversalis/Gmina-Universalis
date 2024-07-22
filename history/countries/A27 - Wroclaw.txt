@@ -10,7 +10,7 @@ add_accepted_culture = ukrainska
 add_accepted_culture = opolska
 capital = 3190 #Wroclaw - Stare Miasto
 fixed_capital = 3190 #Wroclaw - Stare Miasto
-elector = yes
+
 1440.1.1 = { 
 	monarch = { 
 		name = "Wojciech"

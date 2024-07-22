@@ -670,7 +670,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "leave_button"
-			position = { x= 53 y = 848}
+			position = { x= 153 y = 848}
 			quadTextureSprite ="button_type_1"
 			buttonText = "HRE_LEAVE"
 			buttonFont = "vic_18"
@@ -678,7 +678,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "join_button"
-			position = { x= 53 y = 848}
+			position = { x= 153 y = 848}
 			quadTextureSprite ="button_type_1"
 			buttonText = "HRE_JOIN"
 			buttonFont = "vic_18"
@@ -686,7 +686,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "add_all_button"
-			position = { x= 202 y = 848}
+			position = { x= 302 y = 848}
 			quadTextureSprite ="button_type_1"
 			buttonText = "HRE_ADD_ALL"
 			buttonFont = "vic_18"

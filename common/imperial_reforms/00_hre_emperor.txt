@@ -230,6 +230,7 @@ emperor_reichskrieg = {
 	on_effect = {
 		enable_imperial_realm_war = yes
 		custom_tooltip = REICHSKRIEG_DEFENSE_OF_REALM_MODIFIER
+		country_event = { id = 9077 tooltip = renovatio_effect }
 	}
 
 	off_effect = {
