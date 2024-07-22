@@ -1,5 +1,5 @@
 estate_banks_free_banks = {
-	icon = privilege_admin_power
+	icon = privilege_government
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.1
@@ -55,7 +55,7 @@ estate_banks_free_banks = {
 	}
 }
 estate_banks_mixed = {
-	icon = privilege_admin_power
+	icon = privilege_government
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.05
@@ -111,7 +111,7 @@ estate_banks_mixed = {
 	}
 }
 estate_banks_state_controlled = {
-	icon = privilege_admin_power
+	icon = privilege_government
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.2
@@ -201,7 +201,7 @@ estate_banks_land_rights = {
 	}
 }
 estate_banks_empty_promises = {
-	icon = privilege_admin_power
+	icon = privilege_comission_merchant_ships_for_war
 	land_share = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -238,7 +238,7 @@ estate_banks_promote_mortgages = {
 	}
 }
 estate_banks_market_trading_focus = {
-	icon = privilege_admin_power
+	icon = estate_burghers_fund_karimi
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.2

@@ -1,5 +1,5 @@
 estate_families_old_model = {
-	icon = privilege_admin_power
+	icon = estate_church_sponsor_waqf_payments
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -70,7 +70,7 @@ estate_families_old_model = {
 	}
 }
 estate_families_new_model = {
-	icon = privilege_admin_power
+	icon = privilege_land_rights
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -146,7 +146,7 @@ estate_families_new_model = {
 	}
 }
 estate_families_empty_promises = {
-	icon = privilege_admin_power
+	icon = estate_burghers_GER_turn_towards_mercantilism
 	land_share = 0
 	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -328,7 +328,7 @@ estate_families_land_rights = {
 	}
 }
 estate_families_pp = {	
-	icon = privilege_admin_power
+	icon = estate_burghers_GER_customs_union
 	land_share = 0
 	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 5 } }
@@ -350,7 +350,7 @@ estate_families_pp = {
 	}
 }
 estate_families_healthy_food = {
-	icon = privilege_admin_power
+	icon = estate_burghers_monopoly_of_coffee
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.05
@@ -369,7 +369,7 @@ estate_families_healthy_food = {
 	}
 }
 estate_families_subsidies_for_kindergartens = {
-	icon = privilege_admin_power
+	icon = privilege_aztec_artisans
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -411,7 +411,7 @@ estate_families_subsidies_for_kindergartens = {
 	}
 }
 estate_families_support_private_schools = {
-	icon = privilege_admin_power
+	icon = privilege_build_jain_temple
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -453,7 +453,7 @@ estate_families_support_private_schools = {
 	}
 }
 estate_families_support_highschools = {
-	icon = privilege_admin_power
+	icon = privilege_aged_paper
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -545,7 +545,7 @@ estate_families_governmental_responsibility = {
 	}
 }
 estate_families_family_welfare_benefits = {
-	icon = privilege_admin_power
+	icon = privilege_loot
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 10
 	max_absolutism = 0
@@ -597,7 +597,7 @@ estate_families_family_welfare_benefits = {
 	}
 }
 estate_families_maternal_leave = {
-	icon = privilege_admin_power
+	icon = privilege_land_rights
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 5
 	max_absolutism = 0
@@ -647,7 +647,7 @@ estate_families_maternal_leave = {
 	}
 }
 estate_families_paternal_leave = {
-	icon = privilege_admin_power
+	icon = privilege_macuahuitl
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 5
 	max_absolutism = 0
@@ -697,7 +697,7 @@ estate_families_paternal_leave = {
 	}
 }
 estate_families_free_housing = {
-	icon = privilege_admin_power
+	icon = privilege_grant_new_world_charter
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 10
 	max_absolutism = 0

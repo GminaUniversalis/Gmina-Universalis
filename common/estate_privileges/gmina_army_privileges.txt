@@ -1,5 +1,5 @@
 estate_army_old_doctrine = {
-	icon = privilege_admin_power
+	icon = privilege_infantry
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.1
@@ -51,7 +51,7 @@ estate_army_old_doctrine = {
 	}
 }
 estate_army_new_doctrine = {
-	icon = privilege_admin_power
+	icon = privilege_carolean_march
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
@@ -104,7 +104,7 @@ estate_army_new_doctrine = {
 	}
 }
 estate_army_underfunded_army = {
-	icon = privilege_admin_power
+	icon = estate_nobles_deteriorating_army
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.2
@@ -160,7 +160,7 @@ estate_army_underfunded_army = {
 	}
 }
 estate_army_martial_law = {
-	icon = privilege_admin_power
+	icon = privilege_supremacy_over_the_emperor
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.5
@@ -221,7 +221,7 @@ estate_army_martial_law = {
 	}
 }
 estate_army_territorial_forces = {
-	icon = privilege_admin_power
+	icon = estate_nobles_ITA_military_governors
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
@@ -281,7 +281,7 @@ estate_army_territorial_forces = {
 	}
 }
 estate_army_blitzkrieg = {
-	icon = privilege_admin_power
+	icon = privilege_morale_damage
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
@@ -316,7 +316,7 @@ estate_army_blitzkrieg = {
 	}
 }
 estate_army_fire_supremacy = {
-	icon = privilege_admin_power
+	icon = privilege_promote_purbias
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
@@ -350,7 +350,7 @@ estate_army_fire_supremacy = {
 	}
 }
 estate_army_curfew = {
-	icon = privilege_admin_power
+	icon = privilege_royal_intrigue_keepers
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.05
@@ -376,7 +376,7 @@ estate_army_curfew = {
 	}
 }
 estate_army_empty_promises = {
-	icon = privilege_admin_power
+	icon = privilege_government
 	land_share = 0
 	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -610,7 +610,7 @@ estate_army_military_primacy = {
 	}
 }
 estate_army_increased_drill = {
-	icon = privilege_admin_power
+	icon = privilege_supply_arms
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -666,7 +666,7 @@ estate_army_increased_drill = {
 	}
 }
 estate_army_officer_schools = {
-	icon = privilege_admin_power
+	icon = privilege_timurid_helmet
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -723,7 +723,7 @@ estate_army_officer_schools = {
 	}
 }
 estate_army_general_advisors = {
-	icon = privilege_admin_power
+	icon = privilege_recruit_minister
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -780,7 +780,7 @@ estate_army_general_advisors = {
 	}
 }
 estate_army_supremacy_over_government = {
-	icon = privilege_admin_power
+	icon = privilege_empty_throne
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
