@@ -73,7 +73,7 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			FROM = {
-				owned_by = X15
+				owned_by = PAP
 				is_capital = yes
 			}
 		}
@@ -124,7 +124,7 @@ country_event = {
 			NOT = {
 				FROM = {
 					is_capital = yes
-					owned_by = X15
+					owned_by = PAP
 				}
 			}
 		}
@@ -173,7 +173,7 @@ country_event = {
 			has_dlc = "Emperor"
 			FROM = {
 				is_capital = yes
-				owned_by = X15
+				owned_by = PAP
 			}
 		}
 		highlight = yes
@@ -262,13 +262,13 @@ province_event = {
 	title = army_professionalism_events.3.t
 	desc = {
 		trigger = {
-			owner = { NOT = { tag = X15 } }
+			owner = { NOT = { tag = PAP } }
 		}
 		desc = army_professionalism_events.3.d
 	}
 	desc = {
 		trigger = {
-			owner = { tag = X15 }
+			owner = { tag = PAP }
 		}
 		desc = army_professionalism_events.3.d2
 	}
@@ -281,7 +281,7 @@ province_event = {
 		name = army_professionalism_events.3.a #Barbarians!
 		trigger = {
 			OR = {
-				owner = { NOT = { tag = X15 } }
+				owner = { NOT = { tag = PAP } }
 				NOT = { has_dlc = "Emperor" }
 			}
 		}
@@ -301,7 +301,7 @@ province_event = {
 	option = {
 		name = army_professionalism_events.3.b
 		trigger = {
-			owner = { tag = X15 }
+			owner = { tag = PAP }
 			has_dlc = "Emperor"
 		}
 		add_devastation = 100

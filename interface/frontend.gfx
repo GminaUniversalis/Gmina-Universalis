@@ -270,7 +270,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	spriteType = { #1.35
+	spriteType = {
 		name = "GFX_Domination"
 		texturefile = "gfx/interface/domination_icon.dds"
 		legacy_lazy_load = no
@@ -278,7 +278,13 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_Kingofkings"
-		texturefile = "gfx/interface/king_of _kings_icon.dds"
+		texturefile = "gfx/interface/king_of_kings_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_WindsOfChange"
+		texturefile = "gfx/interface/winds_of_change_icon.dds"
 		legacy_lazy_load = no
 	}
 
@@ -545,27 +551,27 @@ spriteTypes = {
 		texturefile = "gfx/interface/tiles_transparent.dds"
 	}
 
-	spriteType = { #1.35
+	spriteType = {
 		name = "GFX_start_type_option_bg"
 		texturefile = "gfx/interface/gamesetup/start_type_background.dds"
 		loadType = "FRONTEND"
 		noOfFrames = 2
 	}
 
-	spriteType = { #1.35
+	spriteType = {
 		name = "GFX_start_type_option_icon"
 		texturefile = "gfx/interface/gamesetup/start_type_icons.dds"
 		loadType = "FRONTEND"
 		noOfFrames = 3
 	}
 
-	spriteType = { #1.35
+	spriteType = {
 		name = "GFX_lesson_bg"
 		texturefile = "gfx/interface/gamesetup/lesson_bg.dds"
 		loadType = "FRONTEND"
 	}
 
-	spriteType = { #1.35
+	spriteType = {
 		name = "GFX_lesson_channel_bg"
 		texturefile = "gfx/interface/gamesetup/lesson_channel_bg.dds"
 		loadType = "FRONTEND"

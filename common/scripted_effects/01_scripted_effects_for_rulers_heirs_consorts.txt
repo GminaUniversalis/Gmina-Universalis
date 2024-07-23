@@ -111,7 +111,7 @@ divorce_consort_effect = {
 		}
 	}
 
-	#X20al dispensation
+	#Papal dispensation
 	if = {
 		limit = {
 			religion = catholic 
@@ -275,4 +275,88 @@ change_heir_stat = {
 			}
 		}
     }
+}
+
+add_ruler_personality_ancestor = {
+	# key = personality to test again
+	if = {
+		limit = { 
+			has_dlc = "Leviathan"
+			religion = totemism 
+		}
+		add_ruler_personality = ancestor_$key$_personality
+	}
+	else = {
+		add_ruler_personality = $key$_personality
+	}
+}
+
+add_heir_personality_ancestor = {
+	# key = personality to test again
+	if = {
+		limit = { 
+			has_dlc = "Leviathan"
+			religion = totemism 
+		}
+		add_heir_personality = ancestor_$key$_personality
+	}
+	else = {
+		add_heir_personality = $key$_personality
+	}
+}
+
+add_queen_personality_ancestor = {
+	# key = personality to test again
+	if = {
+		limit = { 
+			has_dlc = "Leviathan"
+			religion = totemism 
+		}
+		add_queen_personality = ancestor_$key$_personality
+	}
+	else = {
+		add_queen_personality = $key$_personality
+	}
+}
+
+remove_ruler_personality_ancestor = {
+	# key = personality to test again
+	if = {
+		limit = { 
+			has_dlc = "Leviathan"
+			religion = totemism 
+		}
+		remove_ruler_personality = ancestor_$key$_personality
+	}
+	else = {
+		remove_ruler_personality = $key$_personality
+	}
+}
+
+remove_heir_personality_ancestor = {
+	# key = personality to test again
+	if = {
+		limit = { 
+			has_dlc = "Leviathan"
+			religion = totemism 
+		}
+		remove_heir_personality = ancestor_$key$_personality
+	}
+	else = {
+		remove_heir_personality = $key$_personality
+	}
+}
+
+remove_queen_personality_ancestor = {
+	# key = personality to test again
+	if = {
+		limit = { 
+			has_dlc = "Leviathan"
+			religion = totemism 
+		}
+		remove_queen_personality = ancestor_$key$_personality
+	}
+	else = {
+		remove_queen_personality = $key$_personality
+	}
 }

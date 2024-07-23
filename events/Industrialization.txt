@@ -2256,7 +2256,7 @@ country_event = {
 	title = "industrialization_events.17.t"
 	desc = "industrialization_events.17.d"
 	picture = RIOTING_workers_eventPicture
-	
+	goto = luddite_province
 	is_triggered_only = yes
 	
 	trigger = {
@@ -2862,8 +2862,8 @@ country_event = {
 			else_if = {
 				limit = {
 					OR = {
-						region = west_s#iberia_region
-						region = east_s#iberia_region
+						region = west_siberia_region
+						region = east_siberia_region
 					}
 				}
 				change_trade_goods = wool

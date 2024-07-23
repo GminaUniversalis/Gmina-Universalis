@@ -1,6 +1,6 @@
 namespace = gmina_setup
 
-country_event = {
+country_event = { #Estate setup
 	id = gmina_setup.0
 	title = gmina_setup.0.title
 	desc = gmina_setup.0.desc
@@ -8,7 +8,9 @@ country_event = {
 
 	is_triggered_only = yes
 
+
 	trigger = {
+		is_year = 1444
 		OR = {
 			ai = no
 			ai = yes
@@ -20,19 +22,32 @@ country_event = {
 	option = {
 		name = gmina_setup.0.a 
 
-		hidden_effect = {
-			#Another redundancy
-			country_event = {
-				id = gmina_setup.1
-				days = 2
-			}
-		}
 	}
 
 	immediate = {
 		hidden_effect = {
 			change_estate_land_share = {
 				estate = estate_retirees
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_banks
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_miners
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_scientists
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_investors
+				share = -100
+			}
+			change_estate_land_share = {
+				estate = estate_priests
 				share = -100
 			}
 			change_estate_land_share = {
@@ -70,7 +85,11 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
+					has_country_flag = has_estate_picked_flag
 					has_country_flag = estate_picked_farmers
+					has_country_flag = estate_picked_investors
+					has_country_flag = estate_picked_miners
+					has_country_flag = estate_picked_scientists
 				}
 
 				OR = {
@@ -105,8 +124,11 @@ country_event = {
 			limit = {
 				NOT = {
 					OR = {
+						has_country_flag = has_estate_picked_flag
 						has_country_flag = estate_picked_investors
 						has_country_flag = estate_picked_farmers
+						has_country_flag = estate_picked_miners
+						has_country_flag = estate_picked_scientists
 					}
 				}
 
@@ -139,15 +161,20 @@ country_event = {
 			limit = {
 				NOT = {
 					OR = {
+						has_country_flag = has_estate_picked_flag
 						has_country_flag = estate_picked_miners
 						has_country_flag = estate_picked_investors
 						has_country_flag = estate_picked_farmers
+						has_country_flag = estate_picked_scientists
 					}
 				}
 
 				OR = {
 					AND = {
-						gu_coal = 5
+						num_of_owned_provinces_with = {
+							value = 5
+							trade_goods = gu_coal
+						}
 						NOT = {
 							capital_scope = {
 								OR = {
@@ -160,7 +187,10 @@ country_event = {
 					}
 					AND = {
 						NOT = {
-							gu_coal = 5
+							num_of_owned_provinces_with = {
+								value = 5
+								trade_goods = gu_coal
+							}
 						}
 						capital_scope = {
 							OR = {
@@ -181,6 +211,7 @@ country_event = {
 			limit = {
 				NOT = {
 					OR = {
+						has_country_flag = has_estate_picked_flag
 						has_country_flag = estate_picked_scientists
 						has_country_flag = estate_picked_miners
 						has_country_flag = estate_picked_investors
@@ -200,7 +231,13 @@ country_event = {
 			set_country_flag = estate_picked_scientists
 			set_country_flag = has_estate_picked_flag
 		}
-		hidden_effect = { country_event = { id = gmina_setup.1 } }
+		
+		hidden_effect = { 
+			country_event = { 
+				days = 1
+				id = gmina_setup.1 
+			} 
+		}
 	}
 }
 
@@ -214,12 +251,12 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 
-	# trigger = {
-	# 	OR = {
-	# 		ai = no
-	# 		ai = yes
-	# 	}
-	# }
+	trigger = {
+		#OR = {
+			#ai = no
+			ai = yes
+		#}
+	}
 
 	#Estates setup
 	option = {
@@ -232,8 +269,12 @@ country_event = {
 					NOT = {
 						has_country_flag = picked_miners_definer
 					}
-					has_estate = estate_miners
+					AND = {
+						has_country_flag = estate_picked_miners
+						has_country_flag = has_estate_picked_flag
+					}
 				}
+				has_estate = estate_miners
 			}
 
 			if = {
@@ -245,7 +286,7 @@ country_event = {
 			else_if = {
 				limit = { NOT = { current_age = age_of_discovery } }
 
-				set_estate_privilege = privatized_industry
+				set_estate_privilege = estate_miners_privatized_industry
 			}
 
 			set_country_flag = picked_miners_definer
@@ -258,9 +299,12 @@ country_event = {
 					NOT = {
 						has_country_flag = picked_scientists_definer
 					}
-					has_estate = estate_scientists
+					AND = {
+						has_country_flag = estate_picked_scientists
+						has_country_flag = has_estate_picked_flag
+					}
 				}
-
+				has_estate = estate_scientists
 			}
 
 			if = {
@@ -275,7 +319,7 @@ country_event = {
 					} 
 					innovativness = 50
 				}
-				set_estate_privilege = estate_scientists_polish_thought
+				set_estate_privilege = estate_scientist_polish_thought
 			}
 			
 			set_country_flag = picked_scientists_definer
@@ -289,9 +333,12 @@ country_event = {
 					NOT = {
 						has_country_flag = picked_investors_definer
 					}
-					has_estate = estate_inverstors
+					AND = {
+						has_country_flag = estate_picked_investors
+						has_country_flag = has_estate_picked_flag
+					}
 				}
-
+				has_estate = estate_investors
 			}
 			if = {
 				limit = { current_age = age_of_discovery }
@@ -306,7 +353,7 @@ country_event = {
 							NOT = {	current_age = age_of_discovery }
 						}
 			
-						   NOT = { 
+						NOT = { 
 							OR = {
 								current_age = age_of_discovery
 								current_age = age_of_reformation
@@ -328,9 +375,12 @@ country_event = {
 					NOT = {
 						has_country_flag = picked_farmers_definer
 					}
-					has_estate = estate_farmers
+					AND = {
+						has_country_flag = estate_picked_farmers
+						has_country_flag = has_estate_picked_flag
+					}
 				}
-
+				has_estate = estate_farmers
 			}
 			if = {
 				limit = {
@@ -358,12 +408,13 @@ country_event = {
 		}
 #Retirees
 		if = {
-			limit  = {
+			limit = {
 				OR = {
 					NOT = {
 						has_country_flag = picked_retirees_definer
 				   }	
 				   has_estate = estate_reitrees
+				   #has_country_flag = estate_picked_retirees
 				}
 
 			}
@@ -391,6 +442,7 @@ country_event = {
 						has_country_flag = picked_banks_definer
 					}
 					has_estate = estate_banks
+					#has_country_flag = estate_picked_banks
 				}
 			}
 			if = {
@@ -421,6 +473,7 @@ country_event = {
 						has_country_flag = picked_priests_definer
 					}
 					has_estate = estate_priests
+					#has_country_flag = estate_picked_priests
 				}
 			}
 			if = {
@@ -452,6 +505,7 @@ country_event = {
 						has_country_flag = picked_families_definer
 					}
 					has_estate = estate_families
+					#has_country_flag = estate_picked_families
 				}
 			}
 			if = {
@@ -479,12 +533,14 @@ country_event = {
 						has_country_flag = picked_middle_class_definer
 					}
 					has_estate = estate_middle_class
+					#has_country_flag = estate_picked_middle_class
 				}
 			}
 			if = {
 				limit = {
 					NOT = { 
 						religion_group = communism_group
+						current_age = age_of_discovery
 					}
 				}
 				set_estate_privilege = estate_middle_early_polish_model
@@ -492,7 +548,11 @@ country_event = {
 			else_if = {
 				limit = {
 					religion_group = communism_group
+					current_age = age_of_discovery
 				}
+				set_estate_privilege = estate_middle_class_soviet_model
+			}
+			else = {
 				set_estate_privilege = estate_middle_class_soviet_model
 			}
 			
@@ -507,6 +567,7 @@ country_event = {
 						has_country_flag = picked_ub_definer
 					}
 					has_estate = estate_ub
+					#has_country_flag = estate_picked_ub
 				}
 			}
 				if = {
@@ -541,6 +602,7 @@ country_event = {
 						has_country_flag = picked_army_definer
 					}
 					has_estate = estate_army
+					#has_country_flag = estate_picked_army
 				}
 			}
 
@@ -563,8 +625,7 @@ country_event = {
 			
 			set_country_flag = picked_army_definer
 		}
-			
-		
+
 	}
 
 }

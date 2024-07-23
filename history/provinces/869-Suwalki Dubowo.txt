@@ -9,10 +9,10 @@ capital = "Suwalki - Dubowo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
-owner = N23
-controller = N23
+owner = J17
+controller = J17
 discovered_by = ottoman
-add_core = N23
+add_core = J17
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_lumber_trade_good

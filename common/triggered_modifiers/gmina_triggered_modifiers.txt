@@ -1,0 +1,12 @@
+# timewalker = {
+# 	potential = {
+# 		any_owned_province = {
+# 			has_province_triggered_modifier = {
+# 				OR = {
+	
+# 				}
+# 			}
+# 		}
+# 		}
+
+# }

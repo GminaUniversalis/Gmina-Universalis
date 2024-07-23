@@ -1,5 +1,5 @@
 estate_banks_free_banks = {
-	icon = privilege_admin_power
+	icon = privilege_government
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.1
@@ -55,7 +55,7 @@ estate_banks_free_banks = {
 	}
 }
 estate_banks_mixed = {
-	icon = privilege_admin_power
+	icon = privilege_government
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.05
@@ -111,7 +111,7 @@ estate_banks_mixed = {
 	}
 }
 estate_banks_state_controlled = {
-	icon = privilege_admin_power
+	icon = privilege_government
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.2
@@ -201,7 +201,7 @@ estate_banks_land_rights = {
 	}
 }
 estate_banks_empty_promises = {
-	icon = privilege_admin_power
+	icon = privilege_comission_merchant_ships_for_war
 	land_share = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -238,7 +238,7 @@ estate_banks_promote_mortgages = {
 	}
 }
 estate_banks_market_trading_focus = {
-	icon = privilege_admin_power
+	icon = estate_burghers_fund_karimi
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.2
@@ -530,5 +530,230 @@ estate_banks_indebted_to_state_controlled = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+}
+estate_banks_appoint_president_of_nationaL_bank = {
+	icon = privilege_gold_mint
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+
+	}
+	can_select = {
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = RECRUIT_MINISTER_BURGHERS
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_BURGHERS
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_BURGHERS
+		}
+	}
+	conditional_modifier = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_banks_economic_stimulation = {
+	icon = privilege_development_efficiency
+	loyalty = 0.05
+	influence = 0.05
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_dlc = "Domination"
+	}
+	on_granted = {
+		custom_tooltip = estate_burghers_development_of_cities_gt  #Do zmiany na potem
+		tooltip = {
+			add_province_modifier = {
+				name = estate_burghers_development_of_cities_mod
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_burghers_development_of_cities_rt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					province_has_center_of_trade_of_level = 1
+					has_river_estuary_trigger = yes
+				}
+			}
+			add_province_modifier = {
+				name = estate_burghers_development_of_cities_mod
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = estate_burghers_development_of_cities_mod }
+			remove_province_modifier = estate_burghers_development_of_cities_mod
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = estate_burghers_development_of_cities_mod }
+			remove_province_modifier = estate_burghers_development_of_cities_mod
+		}
+	}
+
+	mechanics = {
+		no_estate_crownland_loss_from_developing
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_banks_trained_brokers = {
+	icon = privilege_make_generous_donation
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	is_valid = {
+	}
+	influence = 0.05
+	loyalty = 0.05
+	benefits = { 
+		placed_merchant_power = 5 
+		center_of_trade_upgrade_cost = -0.1 
+	}
+	penalties = {
+	}
+	cooldown_years = 5
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_banks_regulate_money_supply = {
+	icon = privilege_monopoly
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.05
+	loyalty = 0.05
+	penalties = {
+		all_power_cost = 0.1
+	}
+	benefits = {
+		inflation_reduction = 0.3
+		interest = -1
+		production_efficiency = 0.05
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			OR = {
+				inflation = 15
+				num_of_loans = 15
+			}
+		}
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+estate_banks_insider_info = {
+	icon = privilege_land_rights
+	land_share = 10
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+	}
+	can_select = {
+	}
+	can_revoke = {
+	}
+	on_granted = {
+	}
+	modifier_by_land_ownership = {
+		global_trade_power = 0.33
+	}
+	penalties = {
+	}
+	benefits = {
+		trade_range_modifier = 0.15
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	cooldown_years = 15
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_banks_advertisement_national_bank = {
+	icon = privilege_build_jain_temple
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	benefits = {
+		
+	}
+	cooldown_years = 5
+	on_granted = {
+		if = {
+			limit = { prestige = 50 }
+			add_prestige = 10
+		}
+		else_if = {
+			limit = { prestige = 0 }
+			add_prestige = 15
+		}
+		else_if = {
+			limit = { prestige = -25 }
+			add_prestige = 20
+		}
+		else_if = {
+			limit = { prestige = -50 }
+			add_prestige = 25
+		}
+		else = {
+			add_prestige = 30
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_banks_commercial_experts = {
+	icon = privilege_recruit_minister
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	loyalty = 0.05
+	penalties = {
+		stability_cost_modifier = 0.3
+	}
+	benefits = {
+		dip_advisor_cost = -0.25
+	}
+	ai_will_do = {
+		factor = 9
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 3
+			uses_meritocracy = yes
+		}
 	}
 }

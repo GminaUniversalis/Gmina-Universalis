@@ -2,7 +2,7 @@
 ###### by Daniel Tolman ######
 
 namespace = pirates
-normal_or_historical_nations = yes
+#normal_or_historical_nations = yes
 
 # # The Pirates of New Providence
 # country_event = {

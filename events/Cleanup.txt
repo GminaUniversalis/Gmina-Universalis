@@ -12,8 +12,8 @@ country_event = {
 	picture = REFORM_eventPicture
 	
 	trigger = {
-		exists = X15
-		NOT = { has_opinion = { who = X15 value = 0 } }
+		exists = PAP
+		NOT = { has_opinion = { who = PAP value = 0 } }
 		religion = catholic
 		has_regency = no
 		government = monarchy
@@ -65,12 +65,12 @@ country_event = {
 		add_prestige = 5
 		add_stability_or_adm_power = yes
 		add_papal_influence = -25
-		add_opinion = { who = X15 modifier = opinion_loyal_to_king }
+		add_opinion = { who = PAP modifier = opinion_loyal_to_king }
 	}
 	option = {
 		name = "EVTOPTB9600" # Let the Clergy keep its authority
 		set_country_flag = submission_of_the_clergy
-		add_opinion = { who = X15 modifier =  opinion_loyal_to_pope }
+		add_opinion = { who = PAP modifier =  opinion_loyal_to_pope }
 		add_papal_influence = 10
 	}
 }

@@ -2,7 +2,10 @@ has_airport_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = has_airport_tooltip
 		OR = {
-			has_province_modifier = airport
+			any_owned_province = {
+				has_province_modifier = airport
+			}
+
 		}
 	}
 }
@@ -11,30 +14,288 @@ has_border_crossing_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = has_border_crossing_tooltip
 		OR = {
-			has_province_modifier = border_crossing
+			any_owned_province = {
+				has_province_modifier = border_crossing
+			}
+
 		}
 	}
 }
 
-cant_miners_activate = {
-	if = {
-		limit = {
-
-		}
+poland_formable_decision_check = {
+	OR = {
+		region = dolnoslaskie_region
+		region = kujawsko_pomorskie_region
+		region = lodzkie_region
+		region = lubelskie_region
+		region = lubuskie_region
+		region = malopolska_region
+		region = mazowieckie_region
+		region = opolskie_region
+		region = podkarpackie_region
+		region = podlasie_region
+		region = pomorskie_region
+		region = slaskie_region
+		region = swietokrzyskie_region
+		region = warminsko_mazurskie_region
+		region = wielkopolska_region
+		region = zachodnio_pomorskie_region	
 	}
-	else_if = {
-		limit = {
+}
 
-		}
+poland_powiatowe_formed_check = {
+	custom_trigger_tooltip = {
+		tooltip = poland_powiatowe_formed_check_tt
+		NOT = {
+			OR = {
+				has_country_flag = formed_miasto_krakow_flag
+				has_country_flag = formed_miasto_tarnow_flag
+				has_country_flag = formed_miasto_nowy_sacz_flag
+				has_country_flag = formed_miasto_bielsko_biala_flag
+				has_country_flag = formed_miasto_jastrzebie_zdroj_flag
+				has_country_flag = formed_miasto_zory_flag
+				has_country_flag = formed_miasto_rybnik_flag
+				has_country_flag = formed_miasto_tychy_flag
+				has_country_flag = formed_miasto_myslowice_flag
+				has_country_flag = formed_miasto_jaworzno_flag
+				has_country_flag = formed_miasto_sosnowiec_flag
+				has_country_flag = formed_miasto_dabrowa_gornicza_flag
+				has_country_flag = formed_miasto_piekary_slaskie_flag
+				has_country_flag = formed_miasto_chorzow_flag
+				has_country_flag = formed_miasto_bytom_flag
+				has_country_flag = formed_miasto_ruda_slaska_flag
+				has_country_flag = formed_miasto_zabrze_flag
+				has_country_flag = formed_miasto_gliwice_flag
+				has_country_flag = formed_miasto_czestochowa_flag
+				has_country_flag = formed_miasto_opole_flag
+				has_country_flag = formed_miasto_wroclaw_flag
+				has_country_flag = formed_miasto_walbrzych_flag
+				has_country_flag = formed_miasto_jelenia_gora_flag
+				has_country_flag = formed_miasto_legnica_flag
+				has_country_flag = formed_miasto_zielona_gora_flag
+				has_country_flag = formed_miasto_gorzow_wielkopolski_flag
+				has_country_flag = formed_miasto_kostrzyn_nad_odra_flag
+				has_country_flag = formed_miasto_poznan_flag
+				has_country_flag = formed_miasto_leszno_flag
+				has_country_flag = formed_miasto_konin_flag
+				has_country_flag = formed_miasto_kalisz_flag
+				has_country_flag = formed_miasto_lodz_flag
+				has_country_flag = formed_miasto_piotrkow_trybunalski_flag
+				has_country_flag = formed_miasto_skierniewice_flag
+				has_country_flag = formed_miasto_kielce_flag
+				has_country_flag = formed_miasto_tarnobrzeg_flag
+				has_country_flag = formed_miasto_rzeszow_flag
+				has_country_flag = formed_miasto_krosno_flag
+				has_country_flag = formed_miasto_przemysl_flag
+				has_country_flag = formed_miasto_lublin_flag
+				has_country_flag = formed_miasto_zamosc_flag
+				has_country_flag = formed_miasto_chelm_flag
+				has_country_flag = formed_miasto_biala_podlaska_flag
+				has_country_flag = formed_miasto_warszawa_flag
+				has_country_flag = formed_miasto_radom_flag
+				has_country_flag = formed_miasto_plock_flag
+				has_country_flag = formed_miasto_siedlce_flag
+				has_country_flag = formed_miasto_ostroleka_flag
+				has_country_flag = formed_miasto_bydgoszcz_flag
+				has_country_flag = formed_miasto_torun_flag
+				has_country_flag = formed_miasto_grudziadz_flag
+				has_country_flag = formed_miasto_wloclawek_flag
+				has_country_flag = formed_miasto_bialystok_flag
+				has_country_flag = formed_miasto_lomza_flag
+				has_country_flag = formed_miasto_suwalki_flag
+				has_country_flag = formed_miasto_olsztyn_flag
+				has_country_flag = formed_miasto_elblag_flag
+				has_country_flag = formed_miasto_gdansk_flag
+				has_country_flag = formed_miasto_sopot_flag
+				has_country_flag = formed_miasto_gdynia_flag
+				has_country_flag = formed_miasto_slupsk_flag
+				has_country_flag = formed_miasto_swinoujscie_flag
+				has_country_flag = formed_miasto_szczecin_flag
+				has_country_flag = formed_miasto_koszalin_flag
+			}
+		 }
 	}
-	else_if = {
-		limit = {
 
-		}
+}
+
+is_or_was_powiatowe_check = {
+	custom_trigger_tooltip = {
+		tooltip = poland_was_is_powiatowe_check_tt
+		NOT = {
+			OR = {
+				tag = X20
+				was_tag = X20
+				tag = X21
+				was_tag = X21
+				tag = X22
+				was_tag = X22
+				tag = L40
+				was_tag = L40
+				tag = L22
+				was_tag = L22
+				tag = L23
+				was_tag = L23
+				tag = L21
+				was_tag = L21
+				tag = L24
+				was_tag = L24
+				tag = L25
+				was_tag = L25
+				tag = L34
+				was_tag = L34
+				tag = L33
+				was_tag = L33
+				tag = L35
+				was_tag = L35
+				tag = L30
+				was_tag = L30
+				tag = L31
+				was_tag = L31
+				tag = L28
+				was_tag = L28
+				tag = L27
+				was_tag = L27
+				tag = L26
+				was_tag = L26
+				tag = L32
+				was_tag = L32
+				tag = L36
+				was_tag = L36
+				tag = L37
+				was_tag = L37
+				tag = H20
+				was_tag = H20
+				tag = A27
+				was_tag = A27
+				tag = A30
+				was_tag = A30
+				tag = A29
+				was_tag = A29
+				tag = A28
+				was_tag = A28
+				tag = W11
+				was_tag = W11
+				tag = W14
+				was_tag = W14
+				tag = W15
+				was_tag = W15
+				tag = R32
+				was_tag = R32
+				tag = R35
+				was_tag = R35
+				tag = R34
+				was_tag = R34
+				tag = R33
+				was_tag = R33
+				tag = Q22
+				was_tag = Q22
+				tag = Q23
+				was_tag = Q23
+				tag = Q24
+				was_tag = Q24
+				tag = M14
+				was_tag = M14
+				tag = I24
+				was_tag = I24
+				tag = I22
+				was_tag = I22 
+				tag = I25
+				was_tag = I25 
+				tag = I23
+				was_tag = I23 
+				tag = U21
+				was_tag = U21
+				tag = U22
+				was_tag = U22
+				tag = U23
+				was_tag = U23
+				tag = U24
+				was_tag = U24
+				tag = G12
+				was_tag = G12
+				tag = G39
+				was_tag = G39
+				tag = G40
+				was_tag = G40 
+				tag = G41
+				was_tag = G41
+				tag = G42
+				was_tag = G42
+				tag = B20
+				was_tag = B20
+				tag = B21
+				was_tag = B21
+				tag = B22
+				was_tag = B22
+				tag = B23
+				was_tag = B23
+				tag = J14
+				was_tag = J14
+				tag = J15
+				was_tag = J15
+				tag = J17
+				was_tag = J17
+				tag = N21
+				was_tag = N21
+				tag = N22
+				was_tag = N22
+				tag = Y19
+				was_tag = Y19
+				tag = Y20
+				was_tag = Y20
+				tag = Y21
+				was_tag = Y21
+				tag = Y22
+				was_tag = Y22
+				tag = P15
+				was_tag = P15
+				tag = P17
+				was_tag = P17
+				tag = P21
+				was_tag = P21
+			}
+		 }
 	}
-	else_if = {
-		limit = {
+}
 
-		}
+is_or_was_wojewodztwo_check = {
+	custom_trigger_tooltip = {
+		tooltip = poland_was_is_wojewodztwo_check_tt
+		NOT = {
+			OR = {
+				tag = A00
+				was_tag = A00
+				tag = B00
+				was_tag = B00 
+				tag = Q00
+				was_tag = Q00
+				tag = U00
+				was_tag = U00
+				tag = W00
+				was_tag = W00
+				tag = X00
+				was_tag = X00
+				tag = G00
+				was_tag = G00
+				tag = H00
+				was_tag = H00
+				tag = I00
+				was_tag = I00
+				tag = J00
+				was_tag = J00
+				tag = Y00
+				was_tag = Y00
+				tag = L00
+				was_tag = L00
+				tag = M00
+				was_tag = M00
+				tag = N00
+				was_tag = N00
+				tag = R00
+				was_tag = R00
+				tag = P00
+				was_tag = P00
+			}
+		 }
 	}
 }

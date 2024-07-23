@@ -1,0 +1,220 @@
+on_startup = {
+
+	random_country = {
+		limit = {
+			ai = no
+		}
+		country_event = { id = clock.2 }
+	}
+
+	events = {	
+		gmina_setup.0
+		#gmina_setup.1
+	}
+}
+
+
+on_revoke_estate_land = {
+	add_province_modifier = {
+		name = revoked_estate_modifier
+		duration = 5475 #15 years
+	}
+	if = {
+		limit = {
+			has_estate = estate_retirees
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_retirees
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = retirees_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_families
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_families
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = families_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_army
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_army
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = army_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_farmers
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_farmers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = farmer_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_middle_class
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_middle_class
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = middle_class_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_banks
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_banks
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = banks_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_ub
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_ub
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = ub_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_scientists
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_scientists
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = scientists_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_investors
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_investors
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = investors_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_priests
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_priests
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = priests_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+	if = {
+		limit = {
+			has_estate = estate_miners
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_miners
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = miners_rebels
+			size = 1
+		}
+		province_event = { id = gmina_estates.1 }
+	}
+}

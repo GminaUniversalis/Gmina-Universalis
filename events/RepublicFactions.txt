@@ -1172,6 +1172,14 @@ country_event = {
 				size = 2
 			}
 		}
+		if = {
+			limit = { has_government_mechanic = council_of_ten }
+			add_government_power = {
+				mechanic_type = council_of_ten
+				power_type = authority_power
+				value = 25
+			}
+		}
 	}
 }
 
@@ -1234,6 +1242,7 @@ country_event = {
 			faction = mr_guilds
 			influence = 80
 		}
+		NOT = { has_government_attribute = lottery_election }
 	}
 
 	mean_time_to_happen = {
@@ -1405,6 +1414,7 @@ country_event = {
 			faction = mr_traders
 			influence = 80
 		}
+		NOT = { has_government_attribute = lottery_election }
 	}
 
 	mean_time_to_happen = {
@@ -1579,6 +1589,7 @@ country_event = {
 			faction = mr_aristocrats
 			influence = 80
 		}
+		NOT = { has_government_attribute = lottery_election }
 	}
 
 	mean_time_to_happen = {

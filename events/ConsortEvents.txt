@@ -3139,7 +3139,7 @@ country_event = {
 
 		set_ruler_flag = divorce_25
 
-		hidden_effect = { X15 = { country_event = { id = consort_events.202 days = 30 } } }
+		hidden_effect = { PAP = { country_event = { id = consort_events.202 days = 30 } } }
 	}
 
 	#50
@@ -3150,7 +3150,7 @@ country_event = {
 		hidden_effect = { add_papal_influence = -50 }
 		set_ruler_flag = divorce_50
 
-		hidden_effect = { X15 = { country_event = { id = consort_events.202 days = 30 } } }
+		hidden_effect = { PAP = { country_event = { id = consort_events.202 days = 30 } } }
 	}
 
 	#75
@@ -3161,7 +3161,7 @@ country_event = {
 		hidden_effect = { add_papal_influence = -75 }
 		set_ruler_flag = divorce_75
 
-		hidden_effect = { X15 = { country_event = { id = consort_events.202 days = 30 } } }
+		hidden_effect = { PAP = { country_event = { id = consort_events.202 days = 30 } } }
 	}
 
 	#100
@@ -3172,7 +3172,7 @@ country_event = {
 		hidden_effect = { add_papal_influence = -100 }
 		set_ruler_flag = divorce_100
 
-		hidden_effect = { X15 = { country_event = { id = consort_events.202 days = 30 } } }
+		hidden_effect = { PAP = { country_event = { id = consort_events.202 days = 30 } } }
 	}
 
 	#Opt out
@@ -5174,7 +5174,7 @@ country_event = {
 		if = {
 			limit = {
 				religion = catholic 
-				exists = X15
+				exists = PAP
 			}
 			set_country_flag = desires_of_flesh_divorce
 		}
@@ -5188,7 +5188,7 @@ country_event = {
 		if = {
 			limit = {
 				religion = catholic 
-				exists = X15
+				exists = PAP
 			}
 			set_country_flag = desires_of_flesh_divorce
 		}

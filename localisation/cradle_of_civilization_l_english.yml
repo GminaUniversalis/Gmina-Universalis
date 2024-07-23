@@ -410,7 +410,7 @@
  compile_x_fiqh_tooltip_part2:0 "Once the project is complete, the modifier will go away and we will receive the benefits:"
  alert_can_use_iqta_ability_instant:0 "§YCan enact a Taxation Policy!§!"
  alert_can_use_iqta_ability_delayed:0 "$POWERS|Y$ can currently be enacted."
- alert_can_use_malmluk_ability_instant:0 "§YCan use a Cultural Interaction!§!"
+ alert_can_use_malmluk_ability_instant:0 "§YCan use a Dialectal Interaction!§!"
  alert_can_use_malmluk_ability_delayed:0 "$POWERS|Y$ can currently be used."
  alert_can_use_feudal_theocracy_ability_instant:0 "§YCan use a Feudal Theocracy Action!§!"
  alert_can_use_feudal_theocracy_ability_delayed:0 "$POWERS|Y$ can currently be used."

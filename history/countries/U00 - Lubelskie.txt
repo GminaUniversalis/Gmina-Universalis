@@ -1,6 +1,6 @@
-government = monarchy
-add_government_reform = autocracy_reform
-government_rank = 3
+government = republic
+add_government_reform = parliamentary_republic_reform
+government_rank = 4
 technology_group = western
 capital = 969
 fixed_capital = 969

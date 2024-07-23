@@ -160,7 +160,7 @@ estate_retirees_land_rights = {
 	}
 }
 estate_retirees_13 = {
-	icon = privilege_admin_power
+	icon = privilege_lighten_dhimmi_tax_burden
 	land_share = 5
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -179,7 +179,7 @@ estate_retirees_13 = {
 	}
 }
 estate_retirees_empty_promises = {
-	icon = privilege_admin_power
+	icon = privilege_janissaries
 	land_share = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -199,7 +199,7 @@ estate_retirees_empty_promises = {
 	}
 }
 estate_retirees_klub_seniora = {
-	icon = privilege_admin_power
+	icon = privilege_manpower_of_true_faith
 	land_share = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -242,7 +242,7 @@ estate_retirees_klub_seniora = {
 	}
 }
 estate_retirees_rada = {
-	icon = privilege_admin_power
+	icon = privilege_new_world_mission
 	land_share = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -300,7 +300,7 @@ estate_retirees_rada = {
 	}
 }
 estate_retirees_wiek = {
-	icon = privilege_admin_power
+	icon = privilege_puppeteer
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.1
@@ -320,9 +320,31 @@ estate_retirees_wiek = {
 
 	}
 }
+estate_retirees_wiek_2 = {
+	icon = privilege_royal_rule
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.1
+	ai_will_do = {
+		factor = 1
+	}	
+	on_granted = {		
+	}
+	penalties = {
+		production_efficiency = -0.15
+		global_tax_modifier = -0.10
+	}
+	benefits = {
+		global_unrest = -1.5
+		yearly_corruption = -0.03
+
+
+	}
+}
 
 estate_retirees_at = {
-	icon = privilege_admin_power
+	icon = privilege_seek_support_of_brahmins
 	land_share = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -342,7 +364,7 @@ estate_retirees_at = {
 	}
 }
 estate_retirees_ac = {
-	icon = privilege_admin_power
+	icon = privilege_singular_cult
 	land_share = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -361,7 +383,7 @@ estate_retirees_ac = {
 }
 
 estate_retirees_scl = {
-	icon = privilege_admin_power
+	icon = privilege_seek_support_of_clergy
 	land_share = 0
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -428,3 +450,145 @@ estate_retirees_scl = {
 	}	
 }
 
+estate_retirees_religious_state = {
+	icon = privilege_admin_power
+	land_share = 10
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = -0.05
+	can_select = {
+		can_select_monarch_power_privilege = {
+			estate = estate_church
+			type = adm
+		}
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		country_admin_power = 1
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 30 }
+				estate_influence = {
+					estate = estate_retirees
+					influence = 95
+				}
+			}
+			NOT = { has_estate_privilege = estate_retirees_religious_state }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 35 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 55 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_retirees_religious_state }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+	}
+}
+estate_retirees_pensioners_union = {
+	icon = privilege_cawa_peacekeeper
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.5
+	influence = 0.5
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		add_legitimacy = 10
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		prestige_decay = 0.5
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 5
+	on_cooldown_expires = {
+
+	}
+}
+estate_retirees_medical_priority = {
+	icon = privilege_reform_progress
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	land_share = 10
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0
+	ai_will_do = {
+		factor = 1
+	}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		add_inflation = 2
+		add_years_of_income = -0.5
+	}
+	on_revoked = { 
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		global_unrest = -2
+		prestige = 1
+	}
+	on_invalid = {
+	}
+	on_granted_province = {
+
+	}
+	on_revoked_province = {
+
+	}
+	on_invalid_province = {
+		
+	}
+	modifier_by_land_ownership = {
+
+	}
+	mechanics = {
+
+	}
+	cooldown_years = 0
+	on_cooldown_expires = {
+
+	}
+}

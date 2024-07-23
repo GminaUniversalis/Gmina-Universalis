@@ -1,0 +1,302 @@
+# Fallback defaults
+# Will pick the first valid one it finds in list
+
+default_monarchy = {
+	rank = {
+		1 = GMINA
+		2 = POWIAT
+		3 = MIASTO_POWIATOWE
+		4 = WOJEWODZTWO
+		5 = COUNTRY
+	}
+
+	ruler_male = {
+		1 = WOJT
+		2 = STAROSTA
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	ruler_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	consort_male = {
+		1 = WOJT_CONSORT
+		2 = STAROSTA_CONSORT
+		3 = PREZYDENT_MIASTA_CONSORT
+		4 = MARSZALEK_WOJEWODZTWA_CONSORT
+		5 = FIRST_GENTELMAN
+	}
+
+	consort_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = FIRST_LADY
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+		4 = HEIR
+		5 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+		4 = HEIR_fem
+		5 = HEIR_fem
+	}
+
+	government_reform = monarchy_mechanic
+
+	trigger = {
+
+		has_reform = monarchy_mechanic
+
+	}
+}
+
+hre_emperor = {
+
+	rank = {
+		5 = COUNTRY
+	}
+
+	ruler_male = {
+		5 = PREZYDENT
+	}
+
+	ruler_female = {
+		5 = PREZYDENT
+	}
+
+	consort_male = {
+		5 = FIRST_GENTELMAN
+	}
+
+	consort_female = {
+		5 = FIRST_LADY
+	}
+
+	heir_male = {
+		5 = HEIR
+	}
+
+	heir_female = {
+		5 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			is_emperor = yes
+			government_rank = 5
+		}
+
+	}
+}
+
+default_republic = {
+	rank = {
+		1 = GMINA
+		2 = POWIAT
+		3 = MIASTO_POWIATOWE
+		4 = WOJEWODZTWO
+		5 = COUNTRY
+	}
+
+	ruler_male = {
+		1 = WOJT
+		2 = STAROSTA
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	ruler_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	consort_male = {
+		1 = WOJT_CONSORT
+		2 = STAROSTA_CONSORT
+		3 = PREZYDENT_MIASTA_CONSORT
+		4 = MARSZALEK_WOJEWODZTWA_CONSORT
+		5 = FIRST_GENTELMAN
+	}
+
+	consort_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = FIRST_LADY
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+		4 = HEIR
+		5 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+		4 = HEIR_fem
+		5 = HEIR_fem
+	}
+	
+	government_reform = republic_mechanic
+
+	trigger = {
+
+		government = republic
+		
+	}
+}
+
+default_theocracy = {
+	rank = {
+		1 = PARAFIA
+		2 = DEKANAT
+		3 = DIECEZJA
+		4 = ARCHIDIECEZJA
+		5 = EPISKOPAT
+	}
+
+	ruler_male = {
+		1 = KSIADZ
+		2 = DZIEKAN
+		3 = BISKUP
+		4 = ARCYBISKUP
+		5 = METROPOLITA
+	}
+
+	ruler_female = {
+		1 = SIOSTRA
+		2 = PRZEORYSZA
+		3 = Provincial_Superior
+		4 = Mother_General
+		5 = HOLY_MOTHER
+	}
+	
+	consort_male = {
+		1 = SEX_SLAVE
+		2 = SEX_SLAVE
+		3 = SEX_SLAVE
+		4 = SEX_SLAVE
+		5 = SEX_SLAVE
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+		4 = CONSORT
+		5 = CONSORT
+	}
+	
+	heir_male = {
+		1 = KLERYK
+		2 = SEMINARZYSTA
+		3 = AKOLITA
+		4 = LEKTOR
+		5 = DIAKON
+	}
+
+	heir_female = {
+		1 = SIOSTRA_JUNIORKA
+		2 = SIOSTRA_JUNIORKA
+		3 = SIOSTRA_JUNIORKA
+		4 = SIOSTRA_JUNIORKA
+		5 = SIOSTRA_JUNIORKA
+	}
+
+	government_reform = theocracy_mechanic
+
+	trigger = {
+		government = theocracy
+	}
+}
+
+default_tribal = {
+	rank = {
+		1 = KIBICOWSKA_KOMUNA
+		2 = ULTRASOWA_ENKLAWA
+		3 = REPUBLIKA_FANATYCZNA
+		4 = FEDERACJA_ULTRASOW
+		5 = KIBICOWSKIE_IMPERIUM
+	}
+	
+	ruler_male = {
+		1 = RECRUIT
+		2 = ACTIVE_MEMBER
+		3 = SECTION_LEADER
+		4 = CAPITAN
+		5 = BOSS
+	}
+	
+	ruler_female = {
+		1 = RECRUIT
+		2 = ACTIVE_MEMBER
+		3 = SECTION_LEADER
+		4 = CAPITAN
+		5 = BOSS
+	}
+	
+	consort_male = {
+		1 = SEX_SLAVE
+		2 = SEX_SLAVE
+		3 = SEX_SLAVE
+		4 = SEX_SLAVE
+		5 = SEX_SLAVE
+
+	}
+
+	consort_female = {
+		1 = SZMULA
+		2 = SWINIA
+		3 = SZMATA
+		4 = ZDZIRA
+		5 = Kamil_Majewski
+	}
+	
+	heir_male = {
+		1 = MLODY
+		2 = MLODY
+		3 = MLODY
+		4 = MLODY
+		5 = MLODY
+	}
+
+	heir_female = {
+		1 = MLODA
+		2 = MLODA
+		3 = MLODA
+		4 = MLODA
+		5 = MLODA
+	}
+
+	government_reform = tribe_mechanic
+
+	trigger = {
+		government = tribal
+	}
+}

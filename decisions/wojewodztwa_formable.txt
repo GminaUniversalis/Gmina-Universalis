@@ -638,7 +638,7 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-			region = malopolskie_region
+			region = malopolska_region
 			NOT = {
 				OR = {
 					owned_by = ROOT
@@ -689,7 +689,7 @@ country_decisions = {
 				duration = 3650
 			}
 
-			malopolskie_region= {
+			malopolska_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

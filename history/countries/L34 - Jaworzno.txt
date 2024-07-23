@@ -1,8 +1,9 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 2
+add_government_reform = stadthalter_monarchy_reform
+government_rank = 3
 technology_group = western
 religion = communism_pzpr
 capital = 4080
 fixed_capital = 4080
 primary_culture = zachodnio-krakowska
+elector = yes

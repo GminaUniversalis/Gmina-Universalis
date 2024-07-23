@@ -1,0 +1,212 @@
+defined_text = {
+    name = clock_month_check
+    random = no
+
+    text = {
+        localisation_key = January
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 1
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 2
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = February
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 2
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 3
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = March
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 3
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 4
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = April
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 4
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 5
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = May
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 5
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 6
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = June
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 6
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 7
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = July
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 7
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 8
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = August
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 8
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 9
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = September
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 9
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 10
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = October
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 10
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 11
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = November
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 11
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 12
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = December
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 12
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 13
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = Something_Went_Wrong
+        trigger = {
+            check_variable = {
+                which = clock_month
+                value = 13
+            }
+            NOT = {
+                check_variable = {
+                    which = clock_month
+                    value = 14
+                }
+            }
+        }
+    }
+}

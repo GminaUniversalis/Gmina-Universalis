@@ -1,0 +1,2102 @@
+theocracy_mechanic = {
+	has_devotion = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	royal_marriage = no
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+	religion = yes
+	heir = yes
+	can_customise_heir = no
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	modifiers = {
+		brahmins_hindu_influence_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.05
+	}
+}
+
+#Leadership
+leading_clergy_reform = {
+	potential = {
+		NOT = { tag = PAP }
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = theocratic_government
+	icon = "religious_leader"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		global_tax_modifier = 0.1
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		custom_attributes = {
+			gain_devotion_from_conversions = yes
+		}
+	}
+	#custom_attributes = {
+	#	gain_monarch_power_from_force_converting = yes
+	#}
+}
+
+monastic_order_reform = {
+	potential = {
+		NOT = { tag = PAP }
+		NOT = { have_had_reform = teutonic_bishopric_reform }
+	}
+	modifiers = {
+		fort_maintenance_modifier = -0.25
+		army_tradition = 0.25
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	icon = "monks"
+	allow_normal_conversion = yes
+	legacy_equivalent = monastic_order_government
+	monastic = yes
+	fixed_rank = 1
+	custom_attributes = {
+		monastic_order = yes
+	}
+}
+
+crusading_kingdom_reform = {
+	icon = "soldiers"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_unlocked_government_reform = { government_reform = crusading_kingdom_reform }
+			have_had_reform = crusading_kingdom_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = catholic
+			is_playing_custom_nation = yes
+		}
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 75
+	modifiers = {
+		global_missionary_strength = 0.01
+		army_tradition_from_battle = 0.25
+		discipline = 0.025
+	}
+	monastic = yes
+	custom_attributes = {
+		monastic_order = yes
+	}
+	fixed_rank = 2
+}
+
+teutonic_bishopric_reform = {
+	icon = "soldiers_2"
+	potential = {
+		NOT = { tag = PAP }
+		OR = {
+			tag = PRU
+			have_had_reform = teutonic_bishopric_reform
+		}
+	}
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		papal_influence = 0.5
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 0.25
+		war_exhaustion = -0.02
+		church_loyalty_modifier = 0.1
+		manpower_in_true_faith_provinces = 0.1
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+}
+
+prussian_theocratic_reform = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				tag = PRU
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = GER
+				NOT = { map_setup = map_setup_random }
+				OR = {
+					has_reform = prussian_monarchy
+					have_had_reform = prussian_monarchy
+					have_had_reform = prussian_monarchy_base
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
+					is_hegemon_of_type = military_hegemon
+					development_in_provinces = {
+						value = 500
+						culture = prussian
+					}
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				OR = {
+					has_reform = prussian_theocratic_reform
+					have_had_reform = prussian_monarchy
+					have_had_reform = prussian_monarchy_base
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
+				}
+			}
+			has_unlocked_government_reform = { government_reform = prussian_theocratic_reform }
+		}
+	}
+	trigger = {
+		OR = {
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = anglican
+			AND = {
+				is_playing_custom_nation = yes
+				OR = {
+					hidden_trigger = {
+						has_reform = prussian_theocratic_reform
+					}
+					have_had_reform = prussian_monarchy
+					have_had_reform = prussian_monarchy_base
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
+				}
+			}
+			has_unlocked_government_reform = { government_reform = prussian_theocratic_reform }
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	
+	modifiers = {
+		war_exhaustion = -0.02
+		monthly_militarized_society = 0.05
+		global_autonomy = -0.075
+		devotion = -0.5
+		max_absolutism = 10
+		manpower_in_true_faith_provinces = 0.15
+		governing_capacity_modifier = -0.5
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+}
+
+militarized_crusader_order_reform = {
+	icon = "religious_permanent_revolution_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_unlocked_government_reform = { government_reform = militarized_crusader_order_reform }
+			have_had_reform = militarized_crusader_order_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = catholic
+			is_playing_custom_nation = yes
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 200
+	
+	modifiers = {
+		global_missionary_strength = 0.02
+		manpower_in_true_faith_provinces = 0.33
+		cb_on_religious_enemies = yes
+		tolerance_own = 2
+		governing_capacity_modifier = -0.5
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	custom_attributes = {
+		monastic_order = yes
+	}
+}
+
+blood_theocracy_reform = {
+	icon = "blood_theocracy_reform"
+	allow_normal_conversion = no
+	potential = {
+		religion = nahuatl
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		monthly_blood = 0.1
+		tolerance_own = 1
+	}
+	effect = {
+		hidden_effect = {
+			remove_country_modifier = the_fifth_sun
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = the_fifth_sun
+		}
+	}
+	
+	government_abilities = {
+		blood_gathering_mechanic
+	}
+}
+
+holy_horde_reform = {
+	allow_normal_conversion = no
+	icon = "holy_horde"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		OR = {
+			has_unlocked_government_reform = { government_reform = holy_horde_reform }
+			have_had_reform = holy_horde_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = catholic
+			is_playing_custom_nation = yes
+		}
+	}
+	modifiers = {
+		cb_on_religious_enemies = yes
+		cavalry_cost = -0.1
+		movement_speed = 0.1
+		missionaries = 1
+		global_missionary_strength = 0.02
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	monastic = yes
+	conditional = {
+		allow = {
+			has_dlc = "The Cossacks"
+		}
+		raze_province = yes
+	}
+	fixed_rank = 3
+	custom_attributes = {
+		enables_horde_idea_group = yes
+		monastic_order = yes
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+merchant_theocracy_reform = {
+	icon = "pope"
+	allow_normal_conversion = yes
+	modifiers = {
+		governing_capacity_modifier = -0.25
+		merchants = 1
+		papal_influence = 2
+		curia_treasury_contribution = 0.25
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		OR = {
+			has_reform = merchant_theocracy_reform
+			have_had_reform = merchant_theocracy_reform
+			has_unlocked_government_reform = { government_reform = merchant_theocracy_reform }
+		}
+	}
+	trigger = {
+		OR = {
+			religion = catholic
+			is_playing_custom_nation = yes
+		}
+	}
+	removed_effect = {
+		if = {
+			limit = {
+				is_playing_custom_nation = no
+				NOT = { religion = catholic }
+				NOT = {
+					has_unlocked_government_reform = { government_reform = reformer_state_reform }
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_rig.11
+				}
+			}
+		}
+	}
+	boost_income = yes
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	custom_attributes = {
+		is_merchant_republic = yes
+		can_sell_indulgences = yes
+		enables_divine_idea_group = no
+		enables_plutocratic_idea_group = yes
+		elections_increase_factions_influence = yes
+	}
+	ai = {
+		factor = 10 #unique
+	}
+}
+
+reformer_state_reform = {
+	potential = {
+		NOT = { tag = PAP }
+		OR = {
+			has_reform = reformer_state_reform
+			have_had_reform = reformer_state_reform
+			has_unlocked_government_reform = { government_reform = reformer_state_reform }
+		}
+	}
+	trigger = {
+		OR = {
+			is_playing_custom_nation = yes
+			religion = hussite
+			religion = protestant
+			religion = reformed
+			religion = anglican
+		}
+	}
+	allow_normal_conversion = yes
+	icon = "reformer"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	modifiers = {
+		governing_capacity_modifier = -0.25
+		development_cost = -0.1
+		enforce_religion_cost = -0.33
+		advisor_pool = 1
+		church_power_modifier = 0.15
+		monthly_fervor_increase = 0.5
+	}
+	boost_income = yes
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	custom_attributes = {
+		is_merchant_republic = yes
+		can_loot_heretic_churches = yes
+		enables_divine_idea_group = no
+		enables_plutocratic_idea_group = yes
+		elections_increase_factions_influence = yes
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Cradle of Civilization"
+		}
+		custom_attributes = {
+			can_spread_the_reformation = yes
+		}
+	}
+}
+
+papacy_reform = {
+	potential = {
+		tag = PAP
+	}
+
+	modifiers = {
+		prestige_per_development_from_conversion = 0.33
+		tolerance_own = 1
+		church_influence_modifier = 0.2
+	}
+	valid_for_nation_designer = no
+	icon = "papacy"
+	allow_normal_conversion = yes
+	legacy_equivalent = papal_government
+	papacy = yes
+	allow_convert = no
+	lock_level_when_selected = yes
+	fixed_rank = 2
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+ikko_ikki_reform = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = PAP }
+		culture_group = japanese_g
+	}
+	trigger = {
+		religion_group = eastern
+		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		culture_group = japanese_g
+		religion_group = eastern
+	}
+	nation_designer_cost = 20
+	modifiers = {
+		yearly_harmony = 0.25
+		yearly_karma_decay = 0.002
+		tolerance_own = 1
+		production_efficiency = 0.1
+		land_morale = 0.05
+		global_missionary_strength = 0.02
+	}
+	effect = {
+		hidden_effect = {
+			set_country_flag = ikko_ikki_peasants_flag
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = ikko_ikki_peasants_flag
+		}
+	}
+	custom_attributes = {
+		can_see_theocratic_heir_stats = yes
+		enables_plutocratic_idea_group = yes
+		enables_divine_idea_group = no
+		disables_estate_nobles = yes
+		is_peasants_republic = yes
+	}
+}
+
+tibetan_dual_government_reform = {
+	icon = "warrior_monks_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = PAP }
+		OR = {
+			primary_culture = tibetan
+			culture_group = tibetan_group
+		}
+	}
+	trigger = {
+		religion_group = eastern
+		OR = {
+			primary_culture = tibetan
+			culture_group = tibetan_group
+		}
+	}
+	nation_designer_trigger = {
+		religion_group = eastern
+		OR = {
+			primary_culture = tibetan
+			culture_group = tibetan_group
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	modifiers = {
+		same_religion_advisor_cost = -0.15
+		yearly_harmony = 0.25
+		yearly_karma_decay = 0.03
+		church_privilege_slots = 1
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		custom_attributes = {
+			buffed_monastic_temples = yes
+			enable_karma_decision = yes	#Allows decision every 20 years to add or remove 10 Karma
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+		states_general_mechanic = {
+			theocrats_statists = {
+				tolerance_own = 2
+				global_missionary_strength = 0.02
+				devotion = 1
+			}
+
+			monarchists = {
+				global_tax_modifier = 0.2
+				hostile_attrition = 1
+				legitimacy = 1
+			}
+		}
+	}
+	royal_marriage = no
+	queen = no
+	custom_attributes = {
+		theocratic_monarchy_mechanic = yes
+		enables_aristocratic_idea_group = yes
+		enables_divine_idea_group = yes
+	}
+}
+
+caliphate_theocracy_reform = {
+	icon = "caliphate"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = caliphate_theocracy_reform
+			have_had_reform = caliphate_theocracy_reform
+			has_unlocked_government_reform = { government_reform = caliphate_reform }
+		}
+	}
+	trigger = {
+		religion_group = muslim
+	}
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+		religion_group = muslim
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	modifiers = {
+		warscore_cost_vs_other_religion = -0.1
+		tolerance_own = 3
+		devotion = 1
+		governing_capacity = 100
+		missionaries = 1
+		global_missionary_strength = 0.02
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			feudal_theocracy_mechanic
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+dutch_theocracy_reform = {
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = dutch_theocracy_reform
+			}
+		}
+		NOT = { tag = PAP }
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	modifiers = {
+		heavy_ship_power = 0.1
+		trade_efficiency = 0.1
+		reduced_liberty_desire_on_other_continent = 10
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
+	}
+
+	removed_effect = {
+		country_event = { id = dutch_republic.33 }
+	}
+	royal_marriage = yes
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_divine_idea_group = no
+		has_dutch_election = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+		queen = no
+		heir = no
+		duration = 4
+		has_term_election = yes
+		is_eligible_for_hre_emperor = no
+		states_general_mechanic = {
+			statists = {
+				naval_forcelimit_modifier = 0.10
+				global_trade_power = 0.05
+				devotion = -0.5
+			}
+
+			orangists = {
+				land_forcelimit_modifier = 0.25
+				stability_cost_modifier = -0.10
+				devotion = 0.5
+			}
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+orthodox_patriarchate_reform = {
+	icon = "patriarch"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = PAP }
+		religion = orthodox
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion = orthodox
+	}
+	nation_designer_cost = 10
+	modifiers = {
+		church_privilege_slots = 1
+		church_loyalty_modifier = 0.1
+		tolerance_own = 1 
+	}
+}
+
+fifth_monarchists_reform = {
+	icon = "fifth_monarchists"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = PAP }
+		has_reform = fifth_monarchists_reform
+	}
+	trigger = {
+		religion_group = christian
+	}
+	lock_level_when_selected = yes
+	nation_designer_cost = 100
+	nation_designer_trigger = {
+		has_dlc = "Domination"
+	}
+	valid_for_nation_designer = yes
+	modifiers = {
+		cb_on_religious_enemies = yes
+		warscore_cost_vs_other_religion = -0.2
+		warscore_from_battles_modifier = 0.5
+		tolerance_heretic = -6
+		tolerance_heathen = -6
+		missionaries = 1
+	}
+	effect = {
+		custom_tooltip = world_crusade_tt
+	}
+	custom_attributes = {
+		has_upgraded_holy_wars = yes
+		locked_government_type = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			end_time_mechanic
+		}
+	}
+	removed_effect = {
+		country_event = {
+			id = flavor_gbr.120
+		}
+	}
+}
+
+millennialistic_theocracy_reform = {
+	icon = "rioting_burning_2"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { tag = PAP }
+		OR = {
+			religion = protestant
+			religion = anglican
+			religion = reformed
+			religion = hussite
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		monthly_church_power = 1
+		monthly_fervor_increase = 0.25
+		enforce_religion_cost = -0.25
+		morale_damage = 0.1
+		devotion = -2
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		custom_attributes = {
+			#gain_monarch_power_from_force_converting = yes
+			gain_devotion_from_force_converting = yes
+		}
+	}
+}
+
+zoroastrian_theocracy_reform = {
+	icon = "zoroastrian_theocracy"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = PAP }
+		religion_group = zoroastrian_group
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion_group = zoroastrian_group
+	}
+	nation_designer_cost = 10
+	modifiers = {
+		church_privilege_slots = 2
+		church_influence_modifier = -0.2
+		manpower_in_accepted_culture_provinces = 0.15
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		government_abilities = {
+			the_three_royal_fires_mechanic
+		}
+	}
+	#post_removed_effect = {
+	#	hidden_effect = {
+	#		if = {
+	#			limit = { NOT = { has_government_mechanic = the_three_royal_fires_mechanic } }
+	#			clr_country_flag = can_place_center_of_reformation
+	#			every_owned_province = {
+	#				limit = {
+	#					is_reformation_center = yes
+	#					religion = root
+	#				}
+	#				remove_reform_center = zoroastrian
+	#			}
+	#		}
+	#	}
+	#}
+}
+
+ajuuraan_theocracy_reform = {
+	icon = "stone_tablet"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = PAP }
+		religion_group = muslim
+		primary_culture = somali
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion_group = muslim
+		primary_culture = somali
+	}
+	nation_designer_cost = 0
+	modifiers = {
+		monarch_diplomatic_power = 1 
+		trade_efficiency = 0.05
+		global_missionary_strength = 0.01
+	}
+	royal_marriage = yes
+	queen = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Winds of Change"
+			}
+		}
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+}
+
+bureaucratic_rule_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { tag = PAP }
+		religion = confucianism
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion = confucianism
+	}
+	nation_designer_cost = 0
+	modifiers = {
+		reform_progress_growth = 0.15
+		core_creation = -0.05
+		yearly_harmony = 0.1
+		harmonization_speed = 0.1
+	}
+}
+
+# Sisterhood of Jeanne d'Arc
+sisterhood_of_jeanne_darc_reform = {
+	allow_normal_conversion = no
+	icon = "sisterhood"
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion_group = christian
+	}
+	potential = {
+		OR = {
+			has_reform = sisterhood_of_jeanne_darc_reform
+			have_had_reform = sisterhood_of_jeanne_darc_reform
+			has_country_modifier = sisters_takeover
+		}
+	}
+	trigger = {
+		religion_group = christian
+	}
+	nation_designer_cost = 100
+	modifiers = {
+		cb_on_religious_enemies = yes
+		monarch_military_power = 1
+		may_recruit_female_generals = yes
+		female_advisor_chance = 1.0
+		fire_damage = 0.1
+		discipline = 0.05
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	custom_attributes = {
+		monastic_order = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+#Internal vs External Mission
+
+internal_mission_reform = {
+	icon = "clergyman"
+	allow_normal_conversion = yes
+	modifiers = {
+		tolerance_own = 2
+	}
+	custom_attributes = {
+		on_church_built_clergy_loyalty = yes
+	}
+}
+
+external_mission_reform = {
+	icon = "soldiers"
+	allow_normal_conversion = yes
+	modifiers = {
+		manpower_recovery_speed = 0.1
+	}
+}
+
+mission_to_civilize_reform = {
+	icon = "mission_to_civilize_reform"
+	allow_normal_conversion = yes
+	trigger = {
+		OR = {
+			num_of_colonists = 1
+			has_idea_group = exploration_ideas
+			has_idea_group = expansion_ideas
+		}
+	}
+	modifiers = {
+		colonist_placement_chance = 0.1
+		native_uprising_chance = -0.5
+	}
+}
+
+mission_to_kill_pirates_reform = {
+	icon = "mission_to_kill_pirates_reform"
+	allow_normal_conversion = yes
+	trigger = {
+		num_of_ports = 1
+	}
+	modifiers = {
+		global_sailors_modifier = 0.2
+		naval_forcelimit_modifier = 0.25
+		capture_ship_chance = 0.33
+		allowed_marine_fraction = 0.1
+	}
+}
+
+balanced_mission_reform = {
+	icon = "generic_people"
+	allow_normal_conversion = yes
+	modifiers = {
+		devotion = 0.5
+		national_focus_years = -10
+	}
+	custom_attributes = {
+		free_expansionist_zealotry = yes
+	}
+}
+
+commercial_mission_reform = {
+	icon = "merchant"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_trade_power = 0.1
+		merchants = 1
+	}
+}
+
+mission_to_protect_reform = {
+	icon = "castle"
+	allow_normal_conversion = yes
+	modifiers = {
+		defensiveness = 0.1
+		missionaries = 1
+		prestige_per_development_from_conversion = 0.2
+	}
+	custom_attributes = {
+		recruiting_generals_increases_church_loyalty = yes
+	}
+}
+
+#Education of the State
+
+kingdom_of_god_reform = {
+	icon = "kingdom_of_god"
+	potential = {
+		has_reform = papacy_reform
+		OR = {
+			has_reform = kingdom_of_god_reform
+			have_had_reform = kingdom_of_god_reform
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = flavor_sca.2
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = sca_administrative_focus
+			remove_country_modifier = sca_diplomatic_focus
+			remove_country_modifier = sca_military_focus
+			remove_country_modifier = sca_administrative_focus_non_heir
+			remove_country_modifier = sca_diplomatic_focus_non_heir
+			remove_country_modifier = sca_military_focus_non_heir
+		}
+	}
+	modifiers = {
+		monarch_admin_power = 2
+		manpower_in_true_faith_provinces = 0.15
+		land_morale = 0.1
+		prestige = 1
+		devotion = 1
+		appoint_cardinal_cost = -0.3
+	}
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	fixed_rank = 3
+	custom_attributes = {
+		education_focus_enabled = yes
+	}
+}
+
+education_of_the_bishop_reform = {
+	icon = "reformer"
+	allow_normal_conversion = yes
+	modifiers = {
+		monarch_lifespan = 0.2
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = flavor_sca.2
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = sca_administrative_focus
+			remove_country_modifier = sca_diplomatic_focus
+			remove_country_modifier = sca_military_focus
+			remove_country_modifier = sca_administrative_focus_non_heir
+			remove_country_modifier = sca_diplomatic_focus_non_heir
+			remove_country_modifier = sca_military_focus_non_heir
+		}
+	}
+	custom_attributes = {
+		education_focus_enabled = yes
+	}
+}
+
+education_of_the_advisors_reform = {
+	icon = "arabic_scripture"
+	allow_normal_conversion = yes
+	modifiers = {
+		advisor_cost = -0.15
+	}
+}
+
+education_of_the_missionaries_reform = {
+	icon = "church"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_missionary_strength = 0.02
+		#power_points_per_development_from_conversion = 0.25	#For 1.36
+		missionary_maintenance_cost = -0.5
+		max_absolutism = 5
+	}
+}
+
+education_of_the_people_reform = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	modifiers = {
+		idea_cost = -0.05
+		institution_spread_from_true_faith = 0.33
+	}
+}
+
+#Clergy in Administration
+
+subservient_administrators_reform = {
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_corruption = -0.1
+		all_estate_influence_modifier = -0.05
+	}
+}
+
+religious_administrators_reform = {
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.1
+		church_loyalty_modifier = 0.1
+		culture_conversion_cost = -0.15
+	}
+}
+
+pious_merchants_reform = {
+	icon = "merchant"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_trade_power = 0.05
+		placed_merchant_power = 5
+		burghers_influence_modifier = 0.1
+		burghers_loyalty_modifier = 0.05
+		vaisyas_loyalty_modifier = 0.05
+		vaisyas_influence_modifier = 0.1
+	}
+}
+
+loyal_nobility_reform = {
+	icon = "nobleman"
+	allow_normal_conversion = yes
+	modifiers = {
+		free_leader_pool = 1
+		army_tradition = 0.25
+		nobles_influence_modifier = 0.1
+		maratha_exclusive_influence_modifier = 0.1
+		rajput_exclusive_influence_modifier = 0.1
+		nobles_loyalty_modifier = 0.05
+		maratha_exclusive_loyalty_modifier = 0.05
+		rajput_exclusive_loyalty_modifier = 0.05
+	}
+}
+
+monastic_breweries_reform = {
+	potential = {
+		OR = {
+			religion = catholic
+			culture_group = gaelic
+			primary_culture = scottish
+		}
+	}
+	trigger = {
+		OR = {
+			religion = catholic
+			culture_group = gaelic
+			primary_culture = scottish
+		}
+		any_owned_province = {
+			OR = {
+				trade_goods = wine
+				trade_goods = grain
+			}
+		}
+	}
+	icon = "monastic_breweries_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	effect = {
+		custom_tooltip = producing_wine_and_grain_tt
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						trade_goods = wine
+					}
+					add_province_modifier = { 
+						name = wine_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+				if = {
+					limit = {
+						trade_goods = grain
+					}
+					add_province_modifier = { 
+						name = grain_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = wine_bonus_prod
+						has_province_modifier = grain_bonus_prod
+					}
+				}
+				remove_province_modifier = wine_bonus_prod
+				remove_province_modifier = grain_bonus_prod
+			}
+		}
+	}
+}
+
+warrior_monks_reform = {
+	potential = {
+		OR = {
+			religion_group = eastern
+			AND = {
+				OR = {
+					culture_group = japanese_g
+					primary_culture = ainu
+				}
+				capital_scope = {
+					region = japan_region
+				}
+			}
+			have_had_reform = warrior_monks_reform
+		}
+	}
+	icon = "warrior_monks_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		discipline = 0.05
+		infantry_power = 0.05
+		mercenary_manpower = 0.1
+	}
+}
+
+guru_advisors_reform = {
+	potential = {
+		religion = sikhism
+	}
+	trigger = {
+		religion = sikhism
+	}
+	icon = "nayankara_system"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_missionary_strength = 0.03
+		global_institution_spread = 0.1
+	}
+}
+
+#Secularization
+
+maintain_religious_head_reform = {
+	icon = "politician"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_absolutism = 1
+		max_absolutism = 10
+	}
+}
+
+partial_secularisation_reform = {
+	icon = "partial_secularisation_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		tolerance_of_heathens_capacity = 1
+		tolerance_of_heretics_capacity = 1
+	}
+}
+
+battle_pope_reform = {
+	icon = "soldiers_6"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = papacy_reform
+	}
+
+	rulers_can_be_generals = yes
+
+	modifiers = {
+		manpower_in_true_faith_provinces = 0.10
+		leader_land_fire = 1
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+conciliarism_reform = {
+	icon = "conciliarism_reform"
+	allow_normal_conversion = yes
+	potential = {
+		tag = PAP
+	}
+	modifiers = {
+		appoint_cardinal_cost = -0.33
+		monthly_favor_modifier = 0.5
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+hereditary_religious_leadership_reform = {
+	potential = {
+		religion_group = muslim
+	}
+	icon = "muslim_highlighted"
+	allow_normal_conversion = yes
+	effect = {
+		set_country_flag = populists_in_government
+		change_government = monarchy
+		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
+		add_government_reform = feudal_theocracy
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+crown_leader_reform = {
+	icon = "crown_highlighted"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = { has_government_attribute_short_desc = locked_government_type }
+		if = {
+			limit = { NOT = { has_government_attribute = theocratic_monarchy_mechanic } }
+			stability = 2
+		}
+	}
+	effect = {
+		set_country_flag = populists_in_government
+		if = {
+			limit = { NOT = { has_government_attribute = theocratic_monarchy_mechanic } }
+			add_stability = -3
+		}
+		change_government = monarchy
+		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+proclaim_republic_reform = {
+	icon = "parliament_highlighted"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = { has_government_attribute_short_desc = locked_government_type }
+		stability = 2
+	}
+	effect = {
+		set_country_flag = populists_in_government
+		add_stability = -3
+		change_government = republic
+		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+#Divine Cause
+
+safeguard_holy_sites_reform = {
+	icon = "church"
+	allow_normal_conversion = yes
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		brahmins_hindu_loyalty_modifier = 0.1
+		brahmins_other_loyalty_modifier = 0.1
+		jains_loyalty_modifier = 0.1
+		defensiveness = 0.15
+	}
+}
+
+combat_heresy_reform = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		land_morale = 0.1
+		shock_damage = 0.05
+	}
+}
+
+expel_heathens_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		development_cost = -0.05
+		culture_conversion_cost = -0.15
+	}
+	#custom_attributes = {
+	#	reduced_building_cost_in_heathen_heretic_provinces = yes	#1.35, -20% Local Construction Cost
+	#}
+}
+
+pursuit_of_knowledge_reform = {
+	icon = "religious_leader"
+	allow_normal_conversion = yes
+	modifiers = {
+		technology_cost = -0.05
+	}
+	custom_attributes = {
+		can_see_theocratic_heir_stats = yes
+	}
+}
+
+#Separation of Powers
+
+clerical_commission_reform = {
+	icon = "clergyman"
+	fixed_rank = 0
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -1
+		diplomatic_upkeep = 1	
+		envoy_travel_time = -0.5
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+divine_guidance_reform = {
+	icon = "divine_guidance_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = 15
+	}
+	
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 20	#High priority for the Papal State so they are always a Kingdom rank country
+			tag = PAP
+		}
+	}
+}
+
+theocratic_democracy_reform = {
+	icon = "ballot_box"
+	fixed_rank = 0
+	modifiers = {
+		global_unrest = -1
+	}
+	
+	potential = {
+		NOT = { 
+			OR = {
+				has_government_attribute = monastic_order
+				tag = KOJ
+			}
+		}
+	}
+	
+	trigger = {
+		NOT = { has_government_attribute = monastic_order }
+		if = {
+			limit = { 
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				crown_stronger_than_estate = { estate = estate_nobles }
+			}
+			is_not_blocked_by_estate_privilege = { estate = estate_nobles }
+		}
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+			disables_estate_nobles = yes
+		}
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = { technology_group = western }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { technology_group = western }
+			NOT = {
+				any_neighbor_country = {
+					technology_group = western
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_reform = mughal_government
+				has_reform = celestial_empire
+				religion = confucianism
+			}
+		}
+	}
+}
+
+constitional_theocracy_reform = {
+	icon = "assembly_hall"
+	allow_normal_conversion = yes
+	fixed_rank = 0
+	modifiers = {
+		years_of_nationalism = -10
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+regionally_elected_commanders = {
+	icon = "regionally_elected_commanders"
+	allow_normal_conversion = yes
+	fixed_rank = 0
+	modifiers = {
+		global_unrest = -1
+	}
+	
+	potential = {
+		OR = {
+			has_government_attribute = monastic_order
+			tag = KOJ
+		}
+	}
+	
+	trigger = {
+		OR = {
+			has_government_attribute = monastic_order
+			tag = KOJ
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				crown_stronger_than_estate = { estate = estate_nobles }
+			}
+			is_not_blocked_by_estate_privilege = { estate = estate_nobles }
+		}
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+			disables_estate_nobles = yes
+		}
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = { technology_group = western }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { technology_group = western }
+			NOT = {
+				any_neighbor_country = {
+					technology_group = western
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_reform = mughal_government
+				has_reform = celestial_empire
+				religion = confucianism
+			}
+		}
+	}
+}
+
+monastic_elections_reform = {
+	icon = "monastic_elections_reform"
+	allow_normal_conversion = yes
+	fixed_rank = 0
+	modifiers = {
+		stability_cost_modifier = -0.15
+	}
+	
+	potential = {
+		NOT = { has_reform = papacy_reform }
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		heir = no
+		election_on_death = yes
+		duration = 4
+		has_term_election = yes
+		is_eligible_for_hre_emperor = no
+		states_general_mechanic = {
+			militarists = {
+				manpower_recovery_speed = 0.2
+				warscore_cost_vs_other_religion = -0.15
+				army_tradition_from_battle = 0.5
+			}
+
+			theocrats = {
+				tolerance_own = 2
+				global_missionary_strength = 0.02
+				devotion = 0.5
+			}
+		}
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+commander_king_reform = {
+	icon = "commander_king_reform"
+	allow_normal_conversion = yes
+	fixed_rank = 0
+	
+	potential = {
+		NOT = { has_reform = papacy_reform }
+	}
+	modifiers = {
+		devotion = 0.25
+		harsh_treatment_cost = -0.2
+		leader_land_fire = 1
+	}
+	custom_attributes = {
+		generals_become_rulers = yes
+	}
+	has_term_election = no
+	queen = yes
+	royal_marriage = yes
+	heir = no
+	ai = {
+		factor = 0.1
+	}
+}
+
+admiral_king_reform = {
+	icon = "admiral_king_reform"
+	allow_normal_conversion = yes
+	fixed_rank = 0
+	
+	potential = {
+		NOT = { has_reform = papacy_reform }
+	}
+	trigger = {
+		num_of_ports = 1
+		#has_reform = mission_to_kill_pirates_reform
+		#OR = {
+		#	full_idea_group = maritime_ideas
+		#	full_idea_group = naval_ideas
+		#}
+	}
+	modifiers = {
+		devotion = 0.25
+		naval_morale = 0.15
+		leader_naval_fire = 1
+	}
+	custom_attributes = {
+		admirals_become_rulers = yes
+	}
+	has_term_election = no
+	queen = yes
+	royal_marriage = yes
+	heir = no
+	ai = {
+		factor = 0.1
+	}
+}
+
+#The Nature of Our Faith
+
+church_and_state_reform = {
+	potential = {
+		NOT = {
+			religion_group = pagan
+		}
+	}
+	icon = "church_and_state_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		free_policy = 1
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+god_and_man_reform = {
+	potential = {
+		NOT = {
+			religion_group = pagan
+		}
+	}
+	icon = "religious_leader"
+	allow_normal_conversion = yes
+	modifiers = {
+		missionaries = 1
+		tolerance_own = 2
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+religious_harmony_reform = {
+	icon = "religious_harmony_reform"
+	allow_normal_conversion = yes
+	potential = {
+		religion = confucianism
+	}
+	trigger = {
+		religion = confucianism
+	}
+	modifiers = {
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+		harmonization_speed = 0.2
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+organising_our_religion_reform = {
+	icon = "organising_our_religion_reform"
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = pagan
+	}
+	trigger = {
+		religion_group = pagan
+	}
+	
+	modifiers = {
+		yearly_absolutism = 1
+		devotion = 1
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+faith_and_power_reform = {
+	icon = "soldiers_5"
+	allow_normal_conversion = yes
+	modifiers = {
+		morale_damage_received = -0.1
+	}
+	custom_attributes = {
+		winning_battles_increases_legitimacy = yes
+	}
+	rulers_can_be_generals = yes
+	ai = {
+		factor = 0
+	}
+}
+
+belief_and_unity_reform = {
+	icon = "strength_of_the_khalsa"
+	allow_normal_conversion = yes
+	modifiers = {
+		religious_unity = 0.5
+		num_accepted_cultures = 2
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+#Culture, Faith and State
+
+religious_culture_reform = {
+	icon = "mission_to_civilize_reform"
+	allow_normal_conversion = yes
+
+	modifiers = {
+		governing_capacity = 250
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+harmonization_of_cultures_reform = {
+	icon = "generic_people"
+	allow_normal_conversion = yes
+
+	modifiers = {
+		promote_culture_cost = -0.5
+		same_culture_advisor_cost = -0.2
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+cultural_safe_haven_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+
+	modifiers = {
+		manpower_in_accepted_culture_provinces = 0.1
+		manpower_in_culture_group_provinces = 0.1
+	}
+	#custom_attributes = {
+	#	unrest_per_accepted_culture = yes	#Reduces Global Unrest by 0.25 per accepted culture	#For 1.35, not implemented yet.
+	#}
+	ai = {
+		factor = 1
+	}
+}
+
+taxation_of_the_foreigners_reform = {
+	icon = "government_for_people_reform"
+	allow_normal_conversion = yes
+
+	modifiers = {
+		global_tax_modifier = 0.5
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		custom_attributes = {
+			may_not_reduce_tax_on_own_exploitation = yes	#25% Chance
+			may_not_reduce_tax_on_foreign_exploitation = yes	#50% Chance
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+#Global Religion
+
+religion_in_one_country_reform = {
+	icon = "rioting_burning_2"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			religion_group = pagan
+		}
+	}
+	trigger = {
+		NOT = {
+			religion_group = pagan
+		}
+	}
+	modifiers = {
+		warscore_cost_vs_other_religion = -0.3
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+religious_permanent_revolution_reform = {
+	icon = "religious_permanent_revolution_reform"
+	allow_normal_conversion = yes
+	force_conversion_gives_global_holy_war_released_modifier = yes
+	potential = {
+		NOT = {
+			religion = confucianism
+			religion_group = pagan
+		}
+	}
+	trigger = {
+		NOT = {
+			religion = confucianism
+			religion_group = pagan
+		}
+	}
+	effect = {
+		custom_tooltip = world_crusade_tt
+	}
+	modifiers = {
+		enforce_religion_cost = -0.5
+	}
+	custom_attributes = {
+		has_upgraded_holy_wars = yes
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+many_fingers_of_god_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		has_idea_group = humanist_ideas
+	}
+	trigger = {
+		full_idea_group = humanist_ideas
+	}
+	modifiers = {
+		tolerance_heretic = 2	
+		tolerance_heathen = 2
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+priestly_autonomy_reform = {
+	icon = "strength_of_the_khalsa"
+	allow_normal_conversion = yes
+	
+	modifiers = {
+		administrative_efficiency = 0.025
+		min_autonomy_in_territories = -0.05
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+state_of_theologians_reform = {
+	icon = "clergyman"
+	allow_normal_conversion = yes
+	modifiers = {
+		advisor_pool = 2
+		advisor_cost = -0.2
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+divinity_through_craftsmanship_reform = {
+	icon = "peasant_republic"
+	allow_normal_conversion = yes
+	modifiers = {
+		development_cost_modifier = -0.025
+		global_trade_goods_size_modifier = 0.1
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+proclaim_religious_head_reform = {
+	icon = "shaman"
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = pagan
+	}
+	trigger = {
+		religion_group = pagan
+		custom_trigger_tooltip = {
+			tooltip = no_other_head_tt
+			NOT = {
+				any_country = {
+					has_reform = proclaim_religious_head_reform
+					religion = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_subject = yes
+			}
+			OR = {
+				is_subject = no
+				overlord = {
+					OR = {
+						NOT = { religion = ROOT }
+						NOT = { government = theocracy }
+					}
+				}
+			}
+		}
+	}
+	modifiers = {
+		warscore_cost_vs_other_religion = -0.25
+		diplomatic_reputation = 1
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+all_under_tengri_reform = {
+	icon = "all_under_tengri_reform"
+	allow_normal_conversion = yes
+	potential = {
+		religion = tengri_pagan_reformed
+	}
+	trigger = {
+		religion = tengri_pagan_reformed
+	}
+	modifiers = {
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 0.25
+	}
+	ai = {
+		factor = 3
+	}
+}

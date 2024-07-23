@@ -5,10 +5,10 @@ bonus = {
     range_from = -100.0
     range_to = 1.0
     modifier = {
-        max_absolutism = -50
-        global_autonomy = 0.4
-        liberty_desire_from_subject_development = 1.5
-        global_tax_modifier = -0.2
+        state_maintenance_modifier = 2
+        all_estate_loyalty_equilibrium = 0.25
+        all_estate_influence_modifier = 0.5
+        inflation_reduction = -0.5
     }
 }
 
@@ -17,10 +17,10 @@ bonus = {
     range_from = 1.0
     range_to = 5.0
     modifier = {
-        max_absolutism = -40
-        global_autonomy = 0.3
-        liberty_desire_from_subject_development = 1.0
-        global_tax_modifier = -0.2
+        state_maintenance_modifier = 1.5
+        all_estate_loyalty_equilibrium = 0.20
+        all_estate_influence_modifier = 0.4
+        inflation_reduction = -0.4
     }
 }
 
@@ -29,10 +29,10 @@ bonus = {
     range_from = 5.0
     range_to = 10.0
     modifier = {
-        max_absolutism = -30
-        global_autonomy = 0.2
-        liberty_desire_from_subject_development = 1.0
-        global_tax_modifier = -0.15
+        state_maintenance_modifier = 1
+        all_estate_loyalty_equilibrium = 0.15
+        all_estate_influence_modifier = 0.3
+        inflation_reduction = -0.3
     }
 }
 
@@ -41,10 +41,10 @@ bonus = {
     range_from = 10.0
     range_to = 20.0
     modifier = {
-        max_absolutism = -15
-        global_autonomy = 0.1
-        liberty_desire_from_subject_development = 0.5
-        global_tax_modifier = -0.15
+        state_maintenance_modifier = 1
+        all_estate_loyalty_equilibrium = 0.10
+        all_estate_influence_modifier = 0.25
+        inflation_reduction = -0.25
     }
 }
 
@@ -53,9 +53,33 @@ bonus = {
     range_from = 20.0
     range_to = 30.0
     modifier = {
-        max_absolutism = -10
-        liberty_desire_from_subject_development = 0.25
-        global_tax_modifier = -0.1
+        state_maintenance_modifier = 0.5
+        all_estate_loyalty_equilibrium = 0.05
+        all_estate_influence_modifier = 0.1
+        inflation_reduction = -0.1
+    }
+}
+
+bonus = {
+    key = crown_land_level_4
+    range_from = 30.0
+    range_to = 40.0
+    modifier = {
+        state_maintenance_modifier = 0.25
+        centralize_state_cost = -0.1
+        expand_infrastructure_cost_modifier = -0.1
+    }
+}
+
+bonus = {
+    key = crown_land_level_4
+    range_from = 40.0
+    range_to = 50.0
+    modifier = {
+        centralize_state_cost = -0.15
+        expand_infrastructure_cost_modifier = -0.15
+        all_estate_loyalty_equilibrium = -0.05
+        all_estate_influence_modifier = -0.1
     }
 }
 
@@ -66,8 +90,11 @@ bonus = {
     range_from = 50.0
     range_to = 60.0
     modifier = {
-        max_absolutism = 5
-        reform_progress_growth = 0.3
+        centralize_state_cost = -0.2
+        expand_infrastructure_cost_modifier = -0.2
+        all_estate_loyalty_equilibrium = -0.1
+        all_estate_influence_modifier = -0.15
+        reform_progress_growth = 0.25
     }
 }
 
@@ -76,7 +103,10 @@ bonus = {
     range_from = 60.0
     range_to = 70.0
     modifier = {
-        max_absolutism = 10
+        centralize_state_cost = -0.25
+        expand_infrastructure_cost_modifier = -0.25
+        all_estate_loyalty_equilibrium = -0.15
+        all_estate_influence_modifier = -0.2
         reform_progress_growth = 0.5
     }
 }
@@ -86,9 +116,11 @@ bonus = {
     range_from = 70.0
     range_to = 80.0
     modifier = {
-        max_absolutism = 15
-        yearly_absolutism = 1
-        reform_progress_growth = 0.7
+        centralize_state_cost = -0.3
+        expand_infrastructure_cost_modifier = -0.3
+        all_estate_loyalty_equilibrium = -0.2
+        all_estate_influence_modifier = -0.25
+        reform_progress_growth = 0.75
         global_autonomy = -0.01
     }
 }
@@ -98,10 +130,12 @@ bonus = {
     range_from = 80.0
     range_to = 90.0
     modifier = {
-        max_absolutism = 15
-        yearly_absolutism = 1
-        reform_progress_growth = 0.8
-        global_autonomy = -0.02
+        centralize_state_cost = -0.33
+        expand_infrastructure_cost_modifier = -0.33
+        all_estate_loyalty_equilibrium = -0.25
+        all_estate_influence_modifier = -0.30
+        reform_progress_growth = 1
+        global_autonomy = -0.015
     }
 }
 
@@ -110,10 +144,12 @@ bonus = {
     range_from = 90.0
     range_to = 100.0
     modifier = {
-        max_absolutism = 15
-        yearly_absolutism = 1
-        reform_progress_growth = 1
-        global_autonomy = -0.025
+        centralize_state_cost = -0.33
+        expand_infrastructure_cost_modifier = -0.33
+        all_estate_loyalty_equilibrium = -0.33
+        all_estate_influence_modifier = -0.33
+        reform_progress_growth = 1.5
+        global_autonomy = -0.02
     }
 }
 
@@ -122,9 +158,11 @@ bonus = {
     range_from = 95.0
     range_to = 101.0
     modifier = {
-        max_absolutism = 15
-        yearly_absolutism = 1
+        centralize_state_cost = -0.5
+        expand_infrastructure_cost_modifier = -0.5
+        all_estate_loyalty_equilibrium = -0.5
+        all_estate_influence_modifier = -0.5
         reform_progress_growth = 2
-        global_autonomy = -0.05
+        global_autonomy = -0.025
     }
 }

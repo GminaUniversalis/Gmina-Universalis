@@ -41,170 +41,170 @@ defined_text = {
 
 #Old Era
 #Ex: "A [Medieval] Manuscript"
-defined_text = {
-    name = GetOldEra
+# defined_text = {
+#     name = GetOldEra
 
-    text = {
-        localisation_key = string_song_era
-        trigger = {
-			capital_scope = {
-				superregion = china_superregion
-			}
-        }
-    }
-	text = {
-        localisation_key = string_goguryeo_era
-        trigger = {
-			capital_scope = {
-				region = korea_region
-			}
-        }
-    }
-    text = {
-        localisation_key = string_middle_ages
-        trigger = {
-			capital_scope = {
-				continent = europe
-			}
-        }
-    }
-	text = {
-        localisation_key = string_classical
-        trigger = {
-			capital_scope = {
-				continent = europe
-			}
-        }
-    }
-	text = {
-        localisation_key = string_pre_islamic
-        trigger = {
-			capital_scope = {
-				religion_group = muslim
-			}
-        }
-	}
-	text = {
-        localisation_key = string_vedic
-        trigger = {
-			capital_scope = {
-				religion_group = dharmic
-			}
-        }
-	}
-	text = {
-        localisation_key = string_ancient_era
-        trigger = {
-				capital_scope = {
-					NOT = { continent = europe }
-					NOT = { superregion = china_superregion }
-					NOT = { region = korea_region }
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = dharmic }
-				}
-        }
-	}
-}
+#     text = {
+#         localisation_key = string_song_era
+#         trigger = {
+# 			capital_scope = {
+# 				superregion = china_superregion
+# 			}
+#         }
+#     }
+# 	text = {
+#         localisation_key = string_goguryeo_era
+#         trigger = {
+# 			capital_scope = {
+# 				region = korea_region
+# 			}
+#         }
+#     }
+#     text = {
+#         localisation_key = string_middle_ages
+#         trigger = {
+# 			capital_scope = {
+# 				continent = europe
+# 			}
+#         }
+#     }
+# 	text = {
+#         localisation_key = string_classical
+#         trigger = {
+# 			capital_scope = {
+# 				continent = europe
+# 			}
+#         }
+#     }
+# 	text = {
+#         localisation_key = string_pre_islamic
+#         trigger = {
+# 			capital_scope = {
+# 				religion_group = muslim
+# 			}
+#         }
+# 	}
+# 	text = {
+#         localisation_key = string_vedic
+#         trigger = {
+# 			capital_scope = {
+# 				religion_group = dharmic
+# 			}
+#         }
+# 	}
+# 	text = {
+#         localisation_key = string_ancient_era
+#         trigger = {
+# 				capital_scope = {
+# 					NOT = { continent = europe }
+# 					NOT = { superregion = china_superregion }
+# 					NOT = { region = korea_region }
+# 					NOT = { religion_group = muslim }
+# 					NOT = { religion_group = dharmic }
+# 				}
+#         }
+# 	}
+# }
 
 #Low Level Official
 #Ex: "A local [Mandarin] immediately reacted to the..."
-defined_text = {
-    name = GetLowLevelOfficialForCountry
+# defined_text = {
+#     name = GetLowLevelOfficialForCountry
 
-    text = {
-        localisation_key = string_mandarin
-        trigger = {
-			culture_group = east_asian #Chinese
-        }
-    }
-    text = {
-        localisation_key = string_zamindar
-        trigger = {
-			religion_group = muslim
-			OR = {
-				culture_group = eastern_aryan
-				culture_group = hindusthani
-				culture_group = western_aryan
-				culture_group = dravidian
-				culture_group = central_indic
-			}
-        }
-    }
-	text = {
-        localisation_key = string_bey
-        trigger = {
-			religion_group = muslim
-			NOT = {
-				culture_group = eastern_aryan
-				culture_group = hindusthani
-				culture_group = western_aryan
-				culture_group = dravidian
-				culture_group = central_indic
-			}
-        }
-	}
-	text = {
-        localisation_key = string_polygar
-        trigger = {
-			NOT = { religion_group = muslim }
-			culture_group = dravidian
-        }
-	}
-	text = {
-        localisation_key = string_thakur
-        trigger = {
-			NOT = { religion_group = muslim }
-			OR = {
-				culture_group = eastern_aryan
-				culture_group = hindusthani
-				culture_group = western_aryan
-				culture_group = central_indic
-			}
-        }
-	}
-	text = {
-		localisation_key = string_zupan
-		trigger = {
-			culture_group = south_slavic
-		}
-	}
-	text = {
-		localisation_key = string_bailif
-		trigger = {
-			OR = {
-				culture_group = british
-				culture = anglois
-				culture_group = french
-				culture_group = germanic
-			}
-		}
-	}
-	text = {
-		localisation_key = string_ispan
-		trigger = {
-			culture_group = carpathian
-		}
-	}
-	text = {
-        localisation_key = string_official
-        trigger = {
-			NOT = { religion_group = muslim }
-			NOT = {
-				culture_group = east_asian
-				culture_group = eastern_aryan
-				culture_group = hindusthani
-				culture_group = western_aryan
-				culture_group = dravidian
-				culture_group = central_indic
-				culture_group = south_slavic
-				culture_group = british
-				culture = anglois
-				culture_group = french
-				culture_group = germanic
-			}
-        }
-	}
-}
+#     text = {
+#         localisation_key = string_mandarin
+#         trigger = {
+# 			culture_group = east_asian #Chinese
+#         }
+#     }
+#     text = {
+#         localisation_key = string_zamindar
+#         trigger = {
+# 			religion_group = muslim
+# 			OR = {
+# 				culture_group = eastern_aryan
+# 				culture_group = hindusthani
+# 				culture_group = western_aryan
+# 				culture_group = dravidian
+# 				culture_group = central_indic
+# 			}
+#         }
+#     }
+# 	text = {
+#         localisation_key = string_bey
+#         trigger = {
+# 			religion_group = muslim
+# 			NOT = {
+# 				culture_group = eastern_aryan
+# 				culture_group = hindusthani
+# 				culture_group = western_aryan
+# 				culture_group = dravidian
+# 				culture_group = central_indic
+# 			}
+#         }
+# 	}
+# 	text = {
+#         localisation_key = string_polygar
+#         trigger = {
+# 			NOT = { religion_group = muslim }
+# 			culture_group = dravidian
+#         }
+# 	}
+# 	text = {
+#         localisation_key = string_thakur
+#         trigger = {
+# 			NOT = { religion_group = muslim }
+# 			OR = {
+# 				culture_group = eastern_aryan
+# 				culture_group = hindusthani
+# 				culture_group = western_aryan
+# 				culture_group = central_indic
+# 			}
+#         }
+# 	}
+# 	text = {
+# 		localisation_key = string_zupan
+# 		trigger = {
+# 			culture_group = south_slavic
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = string_bailif
+# 		trigger = {
+# 			OR = {
+# 				culture_group = british
+# 				culture = anglois
+# 				culture_group = french
+# 				culture_group = germanic
+# 			}
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = string_ispan
+# 		trigger = {
+# 			culture_group = carpathian
+# 		}
+# 	}
+# 	text = {
+#         localisation_key = string_official
+#         trigger = {
+# 			NOT = { religion_group = muslim }
+# 			NOT = {
+# 				culture_group = east_asian
+# 				culture_group = eastern_aryan
+# 				culture_group = hindusthani
+# 				culture_group = western_aryan
+# 				culture_group = dravidian
+# 				culture_group = central_indic
+# 				culture_group = south_slavic
+# 				culture_group = british
+# 				culture = anglois
+# 				culture_group = french
+# 				culture_group = germanic
+# 			}
+#         }
+# 	}
+# }
 
 #A local power structure, such as a court or local parliament
 #Ex: "The [Court] refused our request to hand over the culprits"
@@ -346,53 +346,53 @@ defined_text = {
 }
 #Gets name of the religious scholars you currently have invited. Uses loc for schools.
 #Ex: The Maliki scholars we have invited are making themselves at home. 
-defined_text = {
-	name = GetReligiousScholars
-	random = no
+# defined_text = {
+# 	name = GetReligiousScholars
+# 	random = no
 	
-	text = {
-		localisation_key = ismaili_school
-		trigger = {
-			has_country_modifier = ismaili_scholar_modifier
-		}
-	}
-	text = {
-		localisation_key = zaidi_school
-		trigger = {
-			has_country_modifier = zaidi_scholar_modifier
-		}
-	}
-	text = {
-		localisation_key = jafari_school
-		trigger = {
-			has_country_modifier = jafari_scholar_modifier
-		}
-	}
-	text = {
-		localisation_key = shafii_school
-		trigger = {
-			has_country_modifier = shafii_scholar_modifier
-		}
-	}
-	text = {
-		localisation_key = hanafi_school
-		trigger = {
-			has_country_modifier = hanafi_scholar_modifier
-		}
-	}
-	text = {
-		localisation_key = maliki_school
-		trigger = {
-			has_country_modifier = maliki_scholar_modifier
-		}
-	}
-	text = {
-		localisation_key = hanbali_school
-		trigger = {
-			has_country_modifier = hanbali_scholar_modifier
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = ismaili_school
+# 		trigger = {
+# 			has_country_modifier = ismaili_scholar_modifier
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = zaidi_school
+# 		trigger = {
+# 			has_country_modifier = zaidi_scholar_modifier
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = jafari_school
+# 		trigger = {
+# 			has_country_modifier = jafari_scholar_modifier
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = shafii_school
+# 		trigger = {
+# 			has_country_modifier = shafii_scholar_modifier
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = hanafi_school
+# 		trigger = {
+# 			has_country_modifier = hanafi_scholar_modifier
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = maliki_school
+# 		trigger = {
+# 			has_country_modifier = maliki_scholar_modifier
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = hanbali_school
+# 		trigger = {
+# 			has_country_modifier = hanbali_scholar_modifier
+# 		}
+# 	}
+# }
 
 #Definite Article before name? (ie for country names in plural form)
 defined_text = {
@@ -436,140 +436,140 @@ defined_text = {
 
 
 #Makes the country name usable (grammatically) in normal text. So examples of what comes out are "France", "the Ottoman Sultanate", "the Ming Empire" and "the Iroquoi Tribe" (I am open to suggestions on the last) rather than "France", "Ottomans", "Ming" and "Iroquoi"
-defined_text = {
-	name = GetUsableName
-	random = no
+# defined_text = {
+# 	name = GetUsableName
+# 	random = no
 	
-	text = {
-		localisation_key = plural_country_name
-		trigger = {
-			OR = {
-				#Chinese
-				culture_group = east_asian
-				#All the American tribes
-				technology_group = north_american
-				technology_group = mesoamerican
-				technology_group = south_american
-				technology_group = andean
-				technology_group = high_american
-				#Ottomans, Timurids, Mamluks etc
-				tag_with_plural_name_trigger = yes
-			}
-			NOT = { has_country_flag = is_revolutionary_china_flag }
-			NOT = { has_country_flag = is_china_flag }
-			NOT = { has_country_flag = is_revolutionary_turkey_flag }
-			NOT = { has_country_flag = is_turkey_flag }
-			NOT = { has_country_flag = is_revolutionary_gurkani_flag }
-			NOT = { has_country_flag = is_gurkani_flag }
-			NOT = { has_country_flag = is_revolutionary_iran_flag }
-			NOT = { has_country_flag = is_iran_flag }
-		}
-	}
-	text = {
-		localisation_key = PLC_country_string
-		trigger = {
-			tag = PLC
-		}
-	}
-	text = {
-		localisation_key = already_has_proper_name
-		trigger = {
-			OR = {
-				NOT = {
-					OR = {
-						tag = PLC
-						#Chinese
-						culture_group = east_asian
-						#All the American tribes
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						#Ottomans, Timurids, Mamluks etc
-						tag_with_plural_name_trigger = yes
-					}
-				}
-				has_country_flag = is_revolutionary_china_flag
-				has_country_flag = is_china_flag
-				has_country_flag = is_revolutionary_turkey_flag
-				has_country_flag = is_turkey_flag
-				has_country_flag = is_revolutionary_gurkani_flag
-				has_country_flag = is_gurkani_flag
-				has_country_flag = is_revolutionary_iran_flag
-				has_country_flag = is_iran_flag
-			}
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = plural_country_name
+# 		trigger = {
+# 			OR = {
+# 				#Chinese
+# 				culture_group = east_asian
+# 				#All the American tribes
+# 				technology_group = north_american
+# 				technology_group = mesoamerican
+# 				technology_group = south_american
+# 				technology_group = andean
+# 				technology_group = high_american
+# 				#Ottomans, Timurids, Mamluks etc
+# 				tag_with_plural_name_trigger = yes
+# 			}
+# 			NOT = { has_country_flag = is_revolutionary_china_flag }
+# 			NOT = { has_country_flag = is_china_flag }
+# 			NOT = { has_country_flag = is_revolutionary_turkey_flag }
+# 			NOT = { has_country_flag = is_turkey_flag }
+# 			NOT = { has_country_flag = is_revolutionary_gurkani_flag }
+# 			NOT = { has_country_flag = is_gurkani_flag }
+# 			NOT = { has_country_flag = is_revolutionary_iran_flag }
+# 			NOT = { has_country_flag = is_iran_flag }
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = PLC_country_string
+# 		trigger = {
+# 			tag = PLC
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = already_has_proper_name
+# 		trigger = {
+# 			OR = {
+# 				NOT = {
+# 					OR = {
+# 						tag = PLC
+# 						#Chinese
+# 						culture_group = east_asian
+# 						#All the American tribes
+# 						technology_group = north_american
+# 						technology_group = mesoamerican
+# 						technology_group = south_american
+# 						technology_group = andean
+# 						technology_group = high_american
+# 						#Ottomans, Timurids, Mamluks etc
+# 						tag_with_plural_name_trigger = yes
+# 					}
+# 				}
+# 				has_country_flag = is_revolutionary_china_flag
+# 				has_country_flag = is_china_flag
+# 				has_country_flag = is_revolutionary_turkey_flag
+# 				has_country_flag = is_turkey_flag
+# 				has_country_flag = is_revolutionary_gurkani_flag
+# 				has_country_flag = is_gurkani_flag
+# 				has_country_flag = is_revolutionary_iran_flag
+# 				has_country_flag = is_iran_flag
+# 			}
+# 		}
+# 	}
+# }
 
 #Makes the country name usable (grammatically) in normal text at the start of the sentence. So examples of what comes out are "France", "The Ottoman Sultanate", "The Ming Empire" and "The Iriquoi Tribe" (I am open to suggestions on the last) rather than "France", "Ottomans", "Ming" and "Iriquoi"
-defined_text = {
-	name = GetUsableNameCap
-	random = no
+# defined_text = {
+# 	name = GetUsableNameCap
+# 	random = no
 	
-	text = {
-		localisation_key = plural_country_name_CAP
-		trigger = {
-			OR = {
-				#Chinese
-				culture_group = east_asian
-				#All the American tribes
-				technology_group = north_american
-				technology_group = mesoamerican
-				technology_group = south_american
-				technology_group = andean
-				technology_group = high_american
-				#Ottomans, Timurids, Mamluks etc
-				tag_with_plural_name_trigger = yes
-			}
-			NOT = { has_country_flag = is_revolutionary_china_flag }
-			NOT = { has_country_flag = is_china_flag }
-			NOT = { has_country_flag = is_revolutionary_turkey_flag }
-			NOT = { has_country_flag = is_turkey_flag }
-			NOT = { has_country_flag = is_revolutionary_gurkani_flag }
-			NOT = { has_country_flag = is_gurkani_flag }
-			NOT = { has_country_flag = is_revolutionary_iran_flag }
-			NOT = { has_country_flag = is_iran_flag }
-		}
-	}
-	text = {
-		localisation_key = PLC_country_string_CAP
-		trigger = {
-			tag = PLC
-		}
-	}
-	text = {
-		localisation_key = already_has_proper_name
-		trigger = {
-			OR = {
-				NOT = {
-					OR = {
-						tag = PLC
-						#Chinese
-						culture_group = east_asian
-						#All the American tribes
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						#Ottomans, Timurids, Mamluks etc
-						tag_with_plural_name_trigger = yes
-					}
-				}
-				has_country_flag = is_revolutionary_china_flag
-				has_country_flag = is_china_flag
-				has_country_flag = is_revolutionary_turkey_flag
-				has_country_flag = is_turkey_flag
-				has_country_flag = is_revolutionary_gurkani_flag
-				has_country_flag = is_gurkani_flag
-				has_country_flag = is_revolutionary_iran_flag
-				has_country_flag = is_iran_flag
-			}
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = plural_country_name_CAP
+# 		trigger = {
+# 			OR = {
+# 				#Chinese
+# 				culture_group = east_asian
+# 				#All the American tribes
+# 				technology_group = north_american
+# 				technology_group = mesoamerican
+# 				technology_group = south_american
+# 				technology_group = andean
+# 				technology_group = high_american
+# 				#Ottomans, Timurids, Mamluks etc
+# 				tag_with_plural_name_trigger = yes
+# 			}
+# 			NOT = { has_country_flag = is_revolutionary_china_flag }
+# 			NOT = { has_country_flag = is_china_flag }
+# 			NOT = { has_country_flag = is_revolutionary_turkey_flag }
+# 			NOT = { has_country_flag = is_turkey_flag }
+# 			NOT = { has_country_flag = is_revolutionary_gurkani_flag }
+# 			NOT = { has_country_flag = is_gurkani_flag }
+# 			NOT = { has_country_flag = is_revolutionary_iran_flag }
+# 			NOT = { has_country_flag = is_iran_flag }
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = PLC_country_string_CAP
+# 		trigger = {
+# 			tag = PLC
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = already_has_proper_name
+# 		trigger = {
+# 			OR = {
+# 				NOT = {
+# 					OR = {
+# 						tag = PLC
+# 						#Chinese
+# 						culture_group = east_asian
+# 						#All the American tribes
+# 						technology_group = north_american
+# 						technology_group = mesoamerican
+# 						technology_group = south_american
+# 						technology_group = andean
+# 						technology_group = high_american
+# 						#Ottomans, Timurids, Mamluks etc
+# 						tag_with_plural_name_trigger = yes
+# 					}
+# 				}
+# 				has_country_flag = is_revolutionary_china_flag
+# 				has_country_flag = is_china_flag
+# 				has_country_flag = is_revolutionary_turkey_flag
+# 				has_country_flag = is_turkey_flag
+# 				has_country_flag = is_revolutionary_gurkani_flag
+# 				has_country_flag = is_gurkani_flag
+# 				has_country_flag = is_revolutionary_iran_flag
+# 				has_country_flag = is_iran_flag
+# 			}
+# 		}
+# 	}
+# }
 
 
 #When you need to refer to a ruling social class but cannot be sure you're dealing with a monarchy.
@@ -731,70 +731,70 @@ defined_text = {
 
 
 #For Korean DHE event - didn't fancy writing it out 6 times. Basically prints the relevant estate, except that $ESTATE_NOBLES$ etc does not work.
-defined_text = {
-	name = GetKorDHEEstate1
+# defined_text = {
+# 	name = GetKorDHEEstate1
 
-	text = {
-		localisation_key = string_neoconfucians
-		trigger = {
-			has_country_flag = kor_neoconfucians_strife1
-		}
-	}
-	text = {
-		localisation_key = string_yangban_scholars
-		trigger = {
-			has_country_flag = kor_yangban_scholars_strife1
-		}
-	}
-	text = {
-		localisation_key = string_yangban_admins
-		trigger = {
-			has_country_flag = kor_yangban_admins_strife1
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = string_neoconfucians
+# 		trigger = {
+# 			has_country_flag = kor_neoconfucians_strife1
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = string_yangban_scholars
+# 		trigger = {
+# 			has_country_flag = kor_yangban_scholars_strife1
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = string_yangban_admins
+# 		trigger = {
+# 			has_country_flag = kor_yangban_admins_strife1
+# 		}
+# 	}
+# }
 
 #For Korean DHE event - didn't fancy writing it out 6 times. Basically prints the relevant estate, except that $ESTATE_NOBLES$ etc does not work.
-defined_text = {
-	name = GetKorDHEEstate2
+# defined_text = {
+# 	name = GetKorDHEEstate2
 
-	text = {
-		localisation_key = string_neoconfucians
-		trigger = {
-			has_country_flag = kor_neoconfucians_strife2
-		}
-	}
-	text = {
-		localisation_key = string_yangban_scholars
-		trigger = {
-			has_country_flag = kor_yangban_scholars_strife2
-		}
-	}
-	text = {
-		localisation_key = string_yangban_admins
-		trigger = {
-			has_country_flag = kor_yangban_admins_strife2
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = string_neoconfucians
+# 		trigger = {
+# 			has_country_flag = kor_neoconfucians_strife2
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = string_yangban_scholars
+# 		trigger = {
+# 			has_country_flag = kor_yangban_scholars_strife2
+# 		}
+# 	}
+# 	text = {
+# 		localisation_key = string_yangban_admins
+# 		trigger = {
+# 			has_country_flag = kor_yangban_admins_strife2
+# 		}
+# 	}
+# }
 
 #For Korean DHE event - prints a reason for the struggle. "the respective factions are accusing each other of high treason, apparently after <insert reason> escalated to the point where royal authority"
-defined_text = {
-	name = GetKorFactionReason
+# defined_text = {
+# 	name = GetKorFactionReason
 
-	text = {
-		localisation_key = KOR_faction_reason_1
-	}
-	text = {
-		localisation_key = KOR_faction_reason_2
-	}
-	text = {
-		localisation_key = KOR_faction_reason_3
-	}
-	text = {
-		localisation_key = KOR_faction_reason_4
-	}
-}
+# 	text = {
+# 		localisation_key = KOR_faction_reason_1
+# 	}
+# 	text = {
+# 		localisation_key = KOR_faction_reason_2
+# 	}
+# 	text = {
+# 		localisation_key = KOR_faction_reason_3
+# 	}
+# 	text = {
+# 		localisation_key = KOR_faction_reason_4
+# 	}
+# }
 
 
 #Used to create a dynamic mission title for emp_sax_spread_wettins_title and emp_hab_spread_dynasties_title

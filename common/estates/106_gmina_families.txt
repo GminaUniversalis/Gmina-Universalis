@@ -43,6 +43,8 @@ estate_families = {
     contributes_to_curia_treasury = no
     color = { 65 176 227 }
 	 privileges = {
+		estate_families_governmental_responsibility
+		estate_families_family_welfare_benefits
 		estate_families_empty_promises
 		estate_families_land_rights
 		estate_families_pp
@@ -50,6 +52,9 @@ estate_families = {
 		estate_families_subsidies_for_kindergartens
 		estate_families_support_private_schools
 		estate_families_support_highschools
+		estate_families_maternal_leave
+		estate_families_paternal_leave
+		estate_families_free_housing
 		estate_families_old_model
 		estate_families_new_model
 	 }
@@ -61,6 +66,23 @@ estate_families = {
 		estate_families_develop_x_manpower
 		estate_families_develop_x_production
 		estate_families_recover_stability
+		estate_nobles_build_university_in_y
+		estate_church_develop_x
+		estate_nobles_develop_x
+		estate_burghers_develop_x
+		estate_church_reduce_war_exhaustion
+		estate_church_recover_stability
+		estate_church_increase_stability
+		estate_church_reduce_overextension
+		estate_nobles_restore_legitimacy
+		estate_nobles_crush_revolts
+		estate_nobles_convert_province_culture
+		estate_nobles_protect_our_culture
+		estate_nobles_build_an_army
+		estate_nobles_recover_abysmal_prestige
+		estate_burghers_restore_currency
+		estate_burghers_recovery_from_hyperinflation
+		estate_burghers_reduce_corruption
      }
      influence_from_dev_modifier = 1.0
             

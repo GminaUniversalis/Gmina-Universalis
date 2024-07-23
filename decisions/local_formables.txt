@@ -1,8 +1,10 @@
 country_decisions = {
 	silesian_conurbation_forming = {
 		potential = {
-			normal_or_historical_nations = yes
+
 			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
+
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -108,16 +110,19 @@ country_decisions = {
             owns_or_non_sovereign_subject_of = 157	# Czeladź
 		}
 		effect = {
-			set_country_flag = gzm_chose_pu_flag
+
 			change_tag = L38
 			on_change_tag_effect = yes
-			restore_country_name = yes
+
 			swap_non_generic_missions = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				L38 = { set_government_rank = 2 }
 			}
 			slaskie_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = L38
 			}
 			add_country_modifier = {
@@ -139,8 +144,10 @@ country_decisions = {
 
     rybnik_coal_area_forming = {
 		potential = {
-			normal_or_historical_nations = yes
+
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
+
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -151,13 +158,7 @@ country_decisions = {
 			}
 			NOT = { exists = L39 }
 			NOT = { tag = L39 }
-			OR = {
-				ai = no
-				AND = {
-					NOT = { exists = L39 }
-					num_of_cities = 4
-				}
-			}
+
 			OR = {
 				primary_culture = gornoslaska
 				primary_culture = niemiecka
@@ -195,20 +196,36 @@ country_decisions = {
 
 		provinces_to_highlight = {
 			OR = {
-				area = rybnik_poludnie
-                area = rybnik_polnoc
-                area = powiat_rybnicki
-                area = zory_rowien
-                area = zory_centrum
-                area = jastrzebie_polnoc
-                area = jastrzebie_polodnie
-                area = powiat_wodzislawski
-                area = powiat_raciborski
+				AND = {
+					OR = {
+						area = rybnik_poludnie
+						area = rybnik_polnoc
+						area = powiat_rybnicki
+						area = zory_rowien
+						area = zory_centrum
+						area = jastrzebie_polnoc
+						area = jastrzebie_poludnie
+						area = gorzyce
+						area = raciborz
+						area = pietrowice_wielkie
+						area = wodzislaw_slaski
+						area = radlin
+		
+					}
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+
+				AND = {
+					province_id = 4751
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
+
 		}
 		allow = {
 			NOT = { exists = L39 }
@@ -216,45 +233,31 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
             adm_tech = 10
 
-            rybnik_poludnie = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			capital = 4751
+
+			num_of_owned_provinces_with = {
+				value = 45
+				OR = {
+					area = rybnik_poludnie
+					area = rybnik_polnoc
+					area = powiat_rybnicki
+					area = zory_rowien
+					area = zory_centrum
+					area = jastrzebie_polnoc
+					area = jastrzebie_poludnie
+					area = gorzyce
+					area = raciborz
+					area = pietrowice_wielkie
+					area = wodzislaw_slaski
+					area = radlin
+				}
+				is_core = root
 			}
-            rybnik_polnoc = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            powiat_rybnicki = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            zory_rowien = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            zory_centrum = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            jastrzebie_polnoc = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            jastrzebie_polodnie = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            powiat_wodzislawski = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            powiat_raciborski = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+
+
 		}
 		effect = {
-			set_country_flag = row_chose_pu_flag
+
 			change_tag = L39
 			on_change_tag_effect = yes
 			restore_country_name = yes
@@ -264,6 +267,9 @@ country_decisions = {
 				L39 = { set_government_rank = 2 }
 			}
 			slaskie_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = L39
 			}
 			add_country_modifier = {

@@ -1,3 +1,6 @@
+import os
+os.chdir(os.path.dirname(por_pos.py))
+
 import re
 
 def read_positions(file_path):
@@ -43,9 +46,9 @@ def read_ids_to_ignore(file_path):
     return ids_to_ignore
 
 def main():
-    old_positions_path = 'positions_old.txt'
-    new_positions_path = 'positions.txt'
-    ids_to_ignore_path = 'ids_to_ignore.txt'
+    old_positions_path = 'positions_old.txt'  #Positions before
+    new_positions_path = 'positions.txt' #Positions after
+    ids_to_ignore_path = 'ids_to_ignore.txt' #Aka water provinces
     output_path = 'same_positions.txt'
     changed_positions_output_path = 'changed_positions.txt'
     output_water = "water_positions.txt"

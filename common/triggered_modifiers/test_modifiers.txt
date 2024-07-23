@@ -14,8 +14,13 @@
 # 		}
 # 		AND = {
 # 			OR = {
-# 				gu_coal = 5
-# 				capital_scope = {
+# 				num_of_owned_provinces_with = {
+# 					value = 5
+# 					trade_goods = gu_coal 
+# 				}
+# 				num_of_owned_provinces_with = {
+# 					value = 1
+# 					is_capital = yes
 # 					OR = {
 # 						region = dolnoslaskie_region
 # 						region = opolskie_region
@@ -45,8 +50,15 @@
 # 		}
 # 		OR = {
 # 			AND = {
-# 				NOT = { gu_coal = 5 }
-# 				capital_scope = {
+# 				NOT = { 
+# 					num_of_owned_provinces_with = {
+# 						value = 5
+# 						trade_goods = gu_coal 
+# 					}
+# 				}
+# 				num_of_owned_provinces_with = {
+# 					value = 1
+# 					is_capital = yes
 # 					OR = {
 # 						region = dolnoslaskie_region
 # 						region = opolskie_region
@@ -56,9 +68,16 @@
 # 			}
 			
 # 			AND = {
-# 				NOT = { gu_coal = 5 }
+# 				NOT = { 
+# 					num_of_owned_provinces_with = {
+# 						value = 5
+# 						trade_goods = gu_coal 
+# 					}
+# 				}
 # 				NOT = {
-# 					capital_scope = {
+# 					num_of_owned_provinces_with = {
+# 						value = 1
+# 						is_capital = yes
 # 						OR = {
 # 							region = dolnoslaskie_region
 # 							region = opolskie_region

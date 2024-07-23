@@ -5,7 +5,10 @@ country_decisions = {
 		potential = {
 			OR = {
 				OR = {
-					gu_coal = 5
+					num_of_owned_provinces_with = {
+						trade_goods = gu_coal
+						value = 5
+					}
 
 					capital_scope = {
 						OR = {
@@ -34,12 +37,14 @@ country_decisions = {
 				}
 				AND = {
 					OR = {
-						any_owned_province = {
-							farmlands = 5 
+						num_of_owned_provinces_with = {
+							value = 5
+							has_terrain = farmlands
 						}
-						any_owned_province = {
-							grasslands = 10
-					   }
+						num_of_owned_provinces_with = {
+							value = 10
+							has_terrain = grasslands
+						}
 					   
 					   capital_scope = {
 							OR = {
@@ -97,26 +102,4 @@ country_decisions = {
 		}
 	}
 
-	clock_in_decision = {
-		color = { 50 50 200 }
-		
-		potential = {
-			always = yes
-		}
-
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = clock_in_decision_tooltip
-				always = yes
-			}
-		}
-
-		effect = {
-			
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
 }

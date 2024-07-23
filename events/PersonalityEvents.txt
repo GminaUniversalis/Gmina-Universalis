@@ -87,8 +87,8 @@ country_event = {
 		random_province = { #This part simply does nothing if there is no viable area.
 			limit = {
 				NOT = { region = ural_region }
-				NOT = { region = west_s#iberia_region }
-				NOT = { region = east_s#iberia_region }
+				NOT = { region = west_siberia_region }
+				NOT = { region = east_siberia_region }
 				any_neighbor_province = {
 					is_sea = no
 					has_discovered = ROOT

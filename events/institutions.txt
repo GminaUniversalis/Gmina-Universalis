@@ -60,6 +60,9 @@ country_event = {
 				name = "birthplace_of_the_solidarity"
 				duration = -1
 			}
+			hidden_effect = {
+				save_global_event_target_as = birthplace_of_the_solidarity
+			}
 		}
 		hidden_effect = {
 			every_country = {
@@ -94,6 +97,7 @@ country_event = {
 	
 	is_triggered_only = yes
 
+
 	trigger = {
 		always = yes			#
 	}
@@ -117,6 +121,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+
 	trigger = {
 		always = no			#
 	}

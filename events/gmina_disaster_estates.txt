@@ -154,9 +154,9 @@ country_event = {
 }
 #Farmers end
 country_event = {
-	id = gmina_estate_disasters.7
-	title = gmina_estate_disasters.7.t
-	desc = gmina_estate_disasters.7.d
+	id = gmina_estate_disasters.22
+	title = gmina_estate_disasters.22.t
+	desc = gmina_estate_disasters.22.d
 	picture = GMINA_ESTATE_estate_event_picture
 	
 	major = yes
@@ -169,7 +169,7 @@ country_event = {
 	}
 	
 	option = {
-		name = gmina_estate_disasters.7.a
+		name = gmina_estate_disasters.22.a
 	}
 }
 #Banks start

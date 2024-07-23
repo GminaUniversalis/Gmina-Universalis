@@ -8,7 +8,7 @@ malopolska_region = {
 		ksiaz_wielki oswiecim spytkowice powiat_chrzanowski wadowice tomice powiat_oswiecimski krzeszowice makow_podhalanski jordanow
 		pcim kalwaria_zebrzydowska jablonka powiat_tatrzanski nowy_targ kroscienko_nad_dunajcem gorlice stary_sacz grzybow nowy_sacz
 		krynica_zdroj chelmiec limanowa mszana_dolna powiat_wielicki dobczyce lapanow bochnia powiat_proszowicki powiat_olkuski
-		miechow michalowice zielonki krakow_huta krakow_centrum krakow_polnoc skawina krakow_poludnie sekowa moszczenica
+		miechow michalowice zielonki krakow_huta krakow_centrum krakow_polnoc skawina krakow_poludnie sekowa moszczenica sucha_beskidzka
 		tuchow powiat_dabrowski powiat_tarnowski radlow gnojnik brzesko zakliczyn tarnow_wschod tarnow_zachod myslenice
 	}
 }
@@ -135,8 +135,8 @@ opolskie_region = {
 slaskie_region = { 
 	areas = { 
 		kruszyna krzepice pietrowice_wielkie raciborz radlin powiat_rybnicki rybnik_polnoc wodzislaw_slaski zory_rowien zory_centrum
-		rybnik_poludnie jastrzebie_polodnie gorzyce jastrzebie_polnoc cieszyn skoczow powiat_pszczynski jasienica szczyrk bielsko_biala_polnoc
-		bielsko_biala_poludnie bielsko_biala_centrum bielsko_biala_wschod sucha_beskidzka zywiec lipowa milowka koszarawa gilowice wilamowice
+		rybnik_poludnie jastrzebie_poludnie gorzyce jastrzebie_polnoc cieszyn skoczow powiat_pszczynski jasienica szczyrk bielsko_biala_polnoc
+		bielsko_biala_poludnie bielsko_biala_centrum bielsko_biala_wschod zywiec lipowa milowka koszarawa gilowice wilamowice
 		wisla_area myslowice_poludnie katowice_zachod knurow gliwice_wschod gliwice_bojkow zabrze_zaborze powiat_mikolowski katowice_poludnie tychy_stare
 		powiat_bierunsko-ledzinski jaworzno_poludnie jaworzno_centrum sosnowiec_bobrek myslowice_srodmiescie siemanowice katowice_srodmiescie chorzow swietochlowice ruda_polnoc
 		ruda_poludnie zabrze_centrum zabrze_polnoc pyskowice gliwice_labedy gliwice_srodmiescie bytom_polnoc piekary powiat_bytom tychy_polnoc

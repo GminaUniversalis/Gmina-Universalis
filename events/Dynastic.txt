@@ -656,6 +656,7 @@ country_event = {
 		government = monarchy
 		NOT = { has_reform = mamluk_government }
 		has_regency = no
+		is_lesser_in_union = no
 		any_known_country = {
 			dynasty = ROOT
 			government = monarchy
@@ -753,6 +754,9 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 	
 	trigger = {
+		OR = {
+			has_country_flag = unlock_lux_stella_flag
+			AND = {
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
@@ -766,6 +770,8 @@ country_event = {
 			has_consort = yes
 		}
 		has_government_attribute = heir
+			}
+		}
 	}
 	
 	mean_time_to_happen = {

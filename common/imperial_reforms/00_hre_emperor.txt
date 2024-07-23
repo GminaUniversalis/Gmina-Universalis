@@ -92,9 +92,6 @@ emperor_perpetual_diet = {
 							development = 20
 						}
 						development = 30
-						province_id = 2957 # Regensburg
-						province_id = 1868 # Augsburg
-						province_id = 1872 # Ulm
 					}
 				}
 				province_event = {
@@ -231,11 +228,9 @@ emperor_reichskrieg = {
 		has_dlc = "Emperor"
 	}
 	on_effect = {
-		emperor = {
-			country_event = { id = 9077 tooltip = renovatio_effect }
-		}
 		enable_imperial_realm_war = yes
 		custom_tooltip = REICHSKRIEG_DEFENSE_OF_REALM_MODIFIER
+		country_event = { id = 9077 tooltip = renovatio_effect }
 	}
 
 	off_effect = {

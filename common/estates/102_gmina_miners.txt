@@ -60,6 +60,11 @@ estate_miners = {
 	 }
      agendas = {
 		estate_miners_hire_advisor
+		estate_church_develop_x
+		estate_nobles_develop_x
+		estate_burghers_develop_x
+		estate_church_increase_stability
+		estate_nobles_recover_abysmal_prestige
      }
      influence_from_dev_modifier = 1.0     
 }

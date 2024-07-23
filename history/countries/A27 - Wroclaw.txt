@@ -1,6 +1,6 @@
-government = republic
-add_government_reform = oligarchy_reform
-government_rank = 2
+government = monarchy
+add_government_reform = stadthalter_monarchy_reform
+government_rank = 3
 mercantilism = 25
 technology_group = western
 religion = communism_zsl
@@ -10,7 +10,7 @@ add_accepted_culture = ukrainska
 add_accepted_culture = opolska
 capital = 3190 #Wroclaw - Stare Miasto
 fixed_capital = 3190 #Wroclaw - Stare Miasto
-elector = yes
+
 1440.1.1 = { 
 	monarch = { 
 		name = "Wojciech"
