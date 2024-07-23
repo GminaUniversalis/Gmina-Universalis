@@ -1,5 +1,5 @@
 ﻿l_english:
- show_year_loc:0 "[Root.clock_month_check] [Root.clock_year.GetValue]"
+ show_year_loc:0 "[1500.clock_month_check] [1500.clock_year.GetValue]"
  clock.1.t:0 "I am year clock"
  clock.3.t:0 "I am month clock"
  clock.1.d:0 "§RYou shouldn't be here§!"

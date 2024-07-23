@@ -596,16 +596,16 @@ NCountry = {
 
 	ESTATE_LOYALTY_INFLUENCE_ON_LIBERTY_DESIRE = -0.3, -- Estate loyalty influence on libarty desire of vassals (if it has vassal_liberty_affected_by_loyalty)
 
-	CULTURAL_UNION_MIN_DEV = 1000,				-- Minimum development to get cultural union effect without Common Sense, or if CULTURAL_UNION_MIN_RANK is set to negative value.
+	CULTURAL_UNION_MIN_DEV = 2500,				-- Minimum development to get cultural union effect without Common Sense, or if CULTURAL_UNION_MIN_RANK is set to negative value.
 	CULTURAL_UNION_MIN_RANK = 3,				-- Minimum rank to get cultural union effect with Common Sense.
 	PRIMARY_NATION_BLOCK_CONVERT_CULTURE = 0,	-- Does primary nation of a tag existing block converting culture?
 
-	MIN_DEV_FOR_FREE_CITY = 10,					-- Capital must have at least this much development to be a free city
+	MIN_DEV_FOR_FREE_CITY = 5,					-- Capital must have at least this much development to be a free city
 	MAX_PROVINCES_FOR_FREE_CITY = 1,			-- A free city cannot have more provinces than this
 
-	HRE_RANK = 3,								-- Emperor of the HRE is displayed as this rank (for ruler title only)
-	HRE_MAX_RANK = 1,							-- for members
-	HRE_MAX_RANK_ELECTOR = 2,					-- for electors
+	HRE_RANK = 4,								-- Emperor of the HRE is displayed as this rank (for ruler title only)
+	HRE_MAX_RANK = 2,							-- for members
+	HRE_MAX_RANK_ELECTOR = 3,					-- for electors
 	HRE_INCIDENT_DAYS_ACTIVE = 365,				-- Number of days HRE incidents will be active
 	HRE_INCIDENT_ELECTOR_SUPPORT_IA = 1,	-- How much worth an elector support is in an incident
 	HRE_INCIDENT_MEMBER_SUPPORT_IA = 0.2,	-- How much worth an elector support is in an incident
@@ -622,7 +622,7 @@ NCountry = {
 	PRESTIGE_GAIN_FOR_GOV_RANK_X = 25,					-- Prestige gained on upgrading to government rank above 3
 	MIN_PRESTIGE_FOR_GOV_RANK_X = 75,					-- Required prestige to to upgrade to government above 3
 	ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 500,	-- ADDITIONAL development needed to upgrade to government rank above 3
-	MAX_GOV_RANK = 3,									-- Max possible is 10
+	MAX_GOV_RANK = 5,									-- Max possible is 10
 
 
 	PARLIAMENT_BACKING_PERCENTAGE = 25,			-- average percent of seats backing an issue (0-100)

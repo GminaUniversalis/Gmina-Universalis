@@ -10,9 +10,11 @@ country_event = {
     
     immediate = {
 
-        change_variable = {
-            which = clock_year
-            value = 1
+        1500 = {
+            change_variable = {
+                which = clock_year
+                value = 1
+            }
         }
 
         clr_global_flag = clock_init_year
@@ -37,49 +39,63 @@ country_event = {
         
         if = {
             limit = {
-                check_variable = {
-                    which = clock_month
-                    value = 12
+                1500 = {
+                    check_variable = {
+                        which = clock_month
+                        value = 12
+                    }
                 }
-                NOT = {
+                1500 = {
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 13
+                        }
+                    }
+                }
+            }
+            1500 = {
+                subtract_variable = {
+                    which = clock_month
+                    value = 11
+                }
+            }
+
+        }
+        else_if = { #Redundancy
+            limit = {
+                1500 = {
                     check_variable = {
                         which = clock_month
                         value = 13
                     }
                 }
-            }
-
-            subtract_variable = {
-                which = clock_month
-                value = 11
-            }
-        }
-        else_if = { #Redundancy
-            limit = {
-                check_variable = {
-                    which = clock_month
-                    value = 13
-                }
-
-                NOT = {
-                    check_variable = {
-                        which = clock_month
-                        value = 14
+                1500 = {
+                    NOT = {
+                        check_variable = {
+                            which = clock_month
+                            value = 14
+                        }
                     }
                 }
+
+            }
+            1500 = {
+                subtract_variable = {
+                    which = clock_month
+                    value = 12
+                }
             }
 
-            subtract_variable = {
-                which = clock_month
-                value = 12
-            }
         }
         else = {
-
-            change_variable = {
-                which = clock_month
-                value = 1
+            1500 = {
+                change_variable = {
+                    which = clock_month
+                    value = 1
+                }
             }
+
 
         }
         
@@ -111,18 +127,22 @@ country_event = {
             set_global_flag = clock_init_month
         }
 
-        set_variable = {
-            which = clock_year
-            value = 1969
+        1500 = {
+            set_variable = {
+                which = clock_year
+                value = 1969
+            }
         }
-
-        set_variable = {
-            which = clock_month
-            value = 1
+        
+        1500 = {
+            set_variable = {
+                which = clock_month
+                value = 1
+            }
         }
 
         random_province = {
-            add_province_triggered_modifier = clock_ptm
+            add_province_triggered_modifier = clock_ptm_1
         }
         random_province = {
             add_province_triggered_modifier = clock_ptm_2

@@ -136,7 +136,7 @@ estate_priests_separation_from_state = {
 	}
 }
 estate_priests_subsidies_from_state = {
-	icon = privilege_single_whip_law
+	icon = eunuch_single_whip_law_privilege
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -306,6 +306,7 @@ estate_priests_reject_the_concordat = {
 	}
 	is_valid = {
 		NOT = { has_country_flag = picked_bishops_in_government }
+		NOT = { has_estate_privilege = estate_priests_ratify_the_concordat }
 	}
 	can_select = {
 		NOT = { has_country_flag = picked_bishops_in_government }
@@ -313,7 +314,7 @@ estate_priests_reject_the_concordat = {
 	on_granted = {
 		custom_tooltip = estate_priests_reject_the_concordat
 		hidden_effect = {
-			remove_estate_privilege = estate_priests_reject_the_concordat
+			remove_estate_privilege = estate_priests_ratify_the_concordat
 			clr_country_flag = picked_concordat
 			set_country_flag = picked_concordat
 			clr_country_flag = reject_the_concordat
@@ -337,6 +338,7 @@ estate_priests_reject_the_concordat = {
 	benefits = {
 	}
 	on_invalid = {
+		add_stability = -2
 	}
 	on_granted_province = {
 
@@ -630,7 +632,7 @@ estate_priests_secular_education = {
 	}
 }
 estate_priests_psychological_help = {
-	icon = privilege_allow_personal_fortune
+	icon = estate_eunuchs_allow_personal_fortunes_privilege
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 1
 	max_absolutism = 0
@@ -695,6 +697,7 @@ estate_priests_ratify_the_concordat = {
 		factor = 1
 	}
 	is_valid = {
+		NOT = { has_estate_privilege = estate_priests_reject_the_concordat}
 	}
 	can_select = {
 		custom_trigger_tooltip = {
@@ -735,6 +738,7 @@ estate_priests_ratify_the_concordat = {
 	benefits = {
 	}
 	on_invalid = {
+		add_stability = -2
 	}
 	on_granted_province = {
 
@@ -760,7 +764,7 @@ estate_priests_ratify_the_concordat = {
 	}
 }
 estate_priests_religion_schools = {
-	icon = privilege_royal_intrigue_keepers
+	icon = estate_eunuchs_royal_intrigue_keepers_privilege
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = -5
 	max_absolutism = 0
@@ -1022,7 +1026,7 @@ estate_priests_ecclesiastical_tax = {
 	}
 }
 estate_priests_pastoral_care = {
-	icon = privilege_imperial_council
+	icon = estate_eunuchs_imperial_council_privilege
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = -5
 	max_absolutism = 0

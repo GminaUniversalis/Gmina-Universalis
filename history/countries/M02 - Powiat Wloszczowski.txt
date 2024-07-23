@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = parliamentary_republic_reform
-government_rank = 1
+government_rank = 2
 technology_group = western
 religion = communism_pzpr
 primary_culture = kielecka

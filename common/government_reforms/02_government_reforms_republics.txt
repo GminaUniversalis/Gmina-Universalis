@@ -529,7 +529,7 @@ noble_elite_reform = {
 
 presidential_despot_reform = {
 	allow_normal_conversion = no
-	dictatorship = yes
+	has_meritocracy = yes
 	is_eligible_for_hre_emperor = no
 	lock_level_when_selected = yes
 	icon = "parliament_hall"
@@ -538,7 +538,8 @@ presidential_despot_reform = {
 	}
 	valid_for_nation_designer = no
 	legacy_equivalent = republican_dictatorship
-
+	fixed_rank = 5
+	
 	modifiers = {
 		global_autonomy = -0.075
 		land_morale = 0.1
@@ -550,7 +551,6 @@ presidential_despot_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
-	has_term_election = no
 }
 
 military_dictatorship_reform = {

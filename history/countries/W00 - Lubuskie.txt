@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = parliamentary_republic_reform
-government_rank = 3
+government_rank = 4
 technology_group = western
 capital = 2831
 fixed_capital = 2831

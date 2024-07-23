@@ -505,7 +505,7 @@ estate_investors_high_taxation = {
 	}
 }
 estate_investors_lobbists = {
-	icon = privilege_royal_intrigue_keepers
+	icon = estate_eunuchs_royal_intrigue_keepers_privilege
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0

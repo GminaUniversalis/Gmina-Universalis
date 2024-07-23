@@ -458,7 +458,7 @@ estate_retirees_religious_state = {
 	loyalty = -0.05
 	can_select = {
 		can_select_monarch_power_privilege = {
-			estate = estate_retirees
+			estate = estate_church
 			type = adm
 		}
 	}

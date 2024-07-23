@@ -130,7 +130,7 @@ estate_middle_class_low_taxes = {
 	}
 }
 estate_middle_class_high_taxes = {
-	icon = privilege_western_bureau
+	icon = estate_eunuchs_western_bureau_privilege
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -377,7 +377,7 @@ estate_middle_class_accept_aspirations = {
 }
 #Definers
 estate_middle_class_american_model = {
-	icon = privilege_supremacy_over_the_emperor
+	icon = estate_eunuchs_supremacy_over_crown_privilege
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
@@ -514,6 +514,8 @@ estate_middle_early_polish_model = {
 	benefits = {
 	}
 	on_invalid = {
+		clr_country_flag = picked_early_polish_model
+		clr_country_flag = picked_middle_class_definer
 	}
 	on_granted_province = {
 

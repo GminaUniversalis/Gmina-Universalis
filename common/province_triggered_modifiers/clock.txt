@@ -24,7 +24,7 @@ clock_ptm_1 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -34,21 +34,25 @@ clock_ptm_1 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -68,7 +72,7 @@ clock_ptm_1 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -79,21 +83,25 @@ clock_ptm_1 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -114,7 +122,7 @@ clock_ptm_1 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -134,7 +142,7 @@ clock_ptm_1 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -176,7 +184,7 @@ clock_ptm_2 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -186,21 +194,25 @@ clock_ptm_2 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -220,7 +232,7 @@ clock_ptm_2 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -231,21 +243,25 @@ clock_ptm_2 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -266,7 +282,7 @@ clock_ptm_2 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -286,7 +302,7 @@ clock_ptm_2 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -326,7 +342,7 @@ clock_ptm_3 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -336,21 +352,25 @@ clock_ptm_3 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -370,7 +390,7 @@ clock_ptm_3 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -381,21 +401,25 @@ clock_ptm_3 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -416,7 +440,7 @@ clock_ptm_3 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -436,7 +460,7 @@ clock_ptm_3 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -478,14 +502,41 @@ clock_ptm_4 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
                     id = clock.1
                 }
-                
+            }
 
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
             }
         }
         else_if = {
@@ -499,13 +550,42 @@ clock_ptm_4 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
                     id = clock.1
                 }
 
+            }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
+                        }
+                    }
+                }
+    
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.3
+                    }
+                }
             }
         }
 
@@ -520,7 +600,7 @@ clock_ptm_4 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -540,7 +620,7 @@ clock_ptm_4 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -582,7 +662,7 @@ clock_ptm_5 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -592,21 +672,25 @@ clock_ptm_5 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -626,7 +710,7 @@ clock_ptm_5 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -637,21 +721,25 @@ clock_ptm_5 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -672,7 +760,7 @@ clock_ptm_5 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -692,7 +780,7 @@ clock_ptm_5 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -734,7 +822,7 @@ clock_ptm_6 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -744,21 +832,25 @@ clock_ptm_6 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -778,7 +870,7 @@ clock_ptm_6 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -789,21 +881,25 @@ clock_ptm_6 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -824,7 +920,7 @@ clock_ptm_6 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -844,7 +940,7 @@ clock_ptm_6 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -886,7 +982,7 @@ clock_ptm_7 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -896,21 +992,25 @@ clock_ptm_7 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -930,7 +1030,7 @@ clock_ptm_7 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -941,21 +1041,25 @@ clock_ptm_7 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -976,7 +1080,7 @@ clock_ptm_7 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -996,7 +1100,7 @@ clock_ptm_7 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1038,7 +1142,7 @@ clock_ptm_8 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1048,21 +1152,25 @@ clock_ptm_8 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1082,7 +1190,7 @@ clock_ptm_8 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1093,21 +1201,25 @@ clock_ptm_8 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1128,7 +1240,7 @@ clock_ptm_8 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1148,7 +1260,7 @@ clock_ptm_8 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1190,7 +1302,7 @@ clock_ptm_9 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1200,21 +1312,25 @@ clock_ptm_9 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1234,7 +1350,7 @@ clock_ptm_9 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1245,21 +1361,25 @@ clock_ptm_9 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1280,7 +1400,7 @@ clock_ptm_9 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1300,7 +1420,7 @@ clock_ptm_9 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1342,7 +1462,7 @@ clock_ptm_10 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1352,21 +1472,25 @@ clock_ptm_10 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1386,7 +1510,7 @@ clock_ptm_10 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1397,21 +1521,25 @@ clock_ptm_10 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1432,7 +1560,7 @@ clock_ptm_10 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1452,7 +1580,7 @@ clock_ptm_10 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1494,7 +1622,7 @@ clock_ptm_11 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1504,21 +1632,25 @@ clock_ptm_11 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1538,7 +1670,7 @@ clock_ptm_11 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1549,21 +1681,25 @@ clock_ptm_11 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1584,7 +1720,7 @@ clock_ptm_11 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1604,7 +1740,7 @@ clock_ptm_11 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1646,7 +1782,7 @@ clock_ptm_12 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1656,21 +1792,25 @@ clock_ptm_12 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1690,7 +1830,7 @@ clock_ptm_12 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1701,21 +1841,25 @@ clock_ptm_12 = {
 
             if = {
                 limit = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                    NOT = {
+                    1500 = {
                         check_variable = {
                             which = clock_month
-                            value = 13
+                            value = 12
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 13
+                            }
                         }
                     }
                 }
     
                 random_country = {
                     limit = { 
-                        ai = no 
+                        tag = REB
                     }
                     
                     country_event = {
@@ -1736,7 +1880,7 @@ clock_ptm_12 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {
@@ -1756,7 +1900,7 @@ clock_ptm_12 = {
 
             random_country = {
                 limit = { 
-                    ai = no 
+                    tag = REB
                 }
                 
                 country_event = {

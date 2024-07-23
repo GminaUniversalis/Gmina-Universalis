@@ -1,6 +1,6 @@
 namespace = gmina_setup
 
-country_event = {
+country_event = { #Estate setup
 	id = gmina_setup.0
 	title = gmina_setup.0.title
 	desc = gmina_setup.0.desc
@@ -8,7 +8,9 @@ country_event = {
 
 	is_triggered_only = yes
 
+
 	trigger = {
+		is_year = 1444
 		OR = {
 			ai = no
 			ai = yes
@@ -249,12 +251,12 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 
-	# trigger = {
-	# 	OR = {
-	# 		ai = no
-	# 		ai = yes
-	# 	}
-	# }
+	trigger = {
+		#OR = {
+			#ai = no
+			ai = yes
+		#}
+	}
 
 	#Estates setup
 	option = {
@@ -538,6 +540,7 @@ country_event = {
 				limit = {
 					NOT = { 
 						religion_group = communism_group
+						current_age = age_of_discovery
 					}
 				}
 				set_estate_privilege = estate_middle_early_polish_model
@@ -545,7 +548,11 @@ country_event = {
 			else_if = {
 				limit = {
 					religion_group = communism_group
+					current_age = age_of_discovery
 				}
+				set_estate_privilege = estate_middle_class_soviet_model
+			}
+			else = {
 				set_estate_privilege = estate_middle_class_soviet_model
 			}
 			

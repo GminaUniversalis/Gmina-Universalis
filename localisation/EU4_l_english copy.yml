@@ -1919,7 +1919,7 @@
  CULTURE_VIEW_IS_ACCEPTED_CULTURE:0 "$NAME|Y$ has been promoted to Accepted status, so it gives us no penalties."
  CULTURE_VIEW_ACCEPTED_IS_BROTHER:0 "Since $NAME|Y$ is in the same dialect group as $PRIMARY|Y$, demoting it will only give us reduced penalties."
  CULTURE_VIEW_IS_BROTHER_CULTURE:0 "$NAME|Y$ belongs to the same dialect group as $PRIMARY|Y$, so it gives us reduced penalties."
- CULTURE_VIEW_IS_IN_CULTURAL_UNION:0 "$NAME|Y$ dialect is Accepted because it is part of our Cultural Union based on the $GROUP|Y$ culture group."
+ CULTURE_VIEW_IS_IN_CULTURAL_UNION:0 "$NAME|Y$ dialect is Accepted because it is part of our Dialectal Union based on the $GROUP|Y$ dialect group."
  CULTURE_VIEW_IS_OUR_PRIMARY_CULTURE:0 "$NAME|Y$ is our Primary Dialect. It gives us no penalties, and any dialects in the same dialect group gives us reduced penalties."
  CULTURES_IN_COUNTRY:0 "Dialects in $COUNTRY$"
  HREVOTE_LEGITIMACY:0 "Legitimacy: $VAL$§W\n"

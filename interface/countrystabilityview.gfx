@@ -1,13 +1,6 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_adanos_force_religion_icon"
-		texturefile = "gfx//interface//disasters//adanos_force_religion.dds"
-		noOfFrames = 3
-		loadType = "INGAME"
-	}
-
-	spriteType = {
 		name = "GFX_disaster_icon"
 		texturefile = "gfx/interface/disaster_icon.dds"
 	}
@@ -280,6 +273,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_disaster_estate_ghulams_disaster"
 		texturefile = "gfx//interface//disasters//dlc//king of kings//estate_ghulams_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_disaster_hungarian_revolt"
+		texturefile = "gfx//interface//disasters//hungarian_revolt.dds"
 		noOfFrames = 3
 		loadType = "INGAME"
 	}

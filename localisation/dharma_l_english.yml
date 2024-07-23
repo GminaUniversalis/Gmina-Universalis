@@ -836,7 +836,7 @@
  REQUIREMENTS:0 "§YRequirements:§!\n"
  COUNTRY_POLICIES_EFFECT:0 "Our Policies give us the following bonuses:"
  ASSIMILATED_CULTURES_TOOLTIP_TITLE:0 "§YAssimilated Dialects§!"
- ASSIMILATED_CULTURES_TOOLTIP_DESC:0 "Assimilated dialects counts as accepted dialects in your country. You will receive no penalty on provinces of that dialects and after it been assimilated it is permanent. A dialect will become assimilated when you have conquered every single province with that dialect present. However you no longer have Cultural Union on Empire tier with this government form."
+ ASSIMILATED_CULTURES_TOOLTIP_DESC:0 "Assimilated dialects counts as accepted dialects in your country. You will receive no penalty on provinces of that dialects and after it been assimilated it is permanent. A dialect will become assimilated when you have conquered every single province with that dialect present. However you no longer have Dialectal Union on Empire tier with this government form."
  ASSIMILATED_CULTURE_GROUPS_TOOLTIP_TITLE:0 "§YAssimilated Dialect Groups§!"
  ASSIMILATED_CULTURE_GROUPS_TOOLTIP_DESC:0 "Assimilated dialect groups will give you various different benefits. A group becomes assimilated when you own all provinces that has a dialect that belongs to that group. If you do not hold all those provinces you will lose the modifier."
  ADOPT_GOVERNMENT_PROGRESS:0 "$TO|Y$ gains Government Reform Progress spent on current Reforms by $FROM|Y$.\n"

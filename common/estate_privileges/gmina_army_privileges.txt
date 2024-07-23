@@ -160,7 +160,7 @@ estate_army_underfunded_army = {
 	}
 }
 estate_army_martial_law = {
-	icon = privilege_supremacy_over_the_emperor
+	icon = estate_eunuchs_supremacy_over_crown_privilege
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.5
@@ -350,7 +350,7 @@ estate_army_fire_supremacy = {
 	}
 }
 estate_army_curfew = {
-	icon = privilege_royal_intrigue_keepers
+	icon = estate_eunuchs_royal_intrigue_keepers_privilege
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.05

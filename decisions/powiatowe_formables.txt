@@ -60,6 +60,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 262
 			krakow_centrum = {
@@ -183,6 +184,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 4063
 			tarnow_wschod = {
@@ -287,6 +289,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 4042
@@ -394,6 +397,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 265
 			bielsko_biala_centrum = {
@@ -515,6 +519,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 67
 			jastrzebie_poludnie = {
@@ -623,6 +628,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 4756
 			zory_centrum = {
@@ -732,6 +738,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 4751
 			rybnik_poludnie = {
@@ -837,6 +844,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 140
 			tychy_stare = {
@@ -942,6 +950,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 154
 			myslowice_srodmiescie = {
@@ -1047,6 +1056,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 154
 			jaworzno_centrum = {
@@ -1158,6 +1168,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 153
 			sosnowiec_centrum = {
@@ -1275,6 +1286,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 1155
 			dabrowa_gornicza_srodmiescie = {
@@ -1392,6 +1404,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 160
 			piekary = {
@@ -1490,6 +1503,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 4128
 			powiat_bytom = {
@@ -1595,6 +1609,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 1827
 			chorzow = {
@@ -1693,6 +1708,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 4128
 			swietochlowice = {
@@ -1798,6 +1814,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 1951
 			ruda_polnoc = {
@@ -1903,6 +1920,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 156
 			zabrze_centrum = {
@@ -2015,6 +2033,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 138
 			gliwice_srodmiescie = {
@@ -2134,6 +2153,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 			capital = 441
 			czestochowa_centrum = {
@@ -2261,6 +2281,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 4761
@@ -2410,6 +2431,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 3190
@@ -2550,6 +2572,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2879
@@ -2669,6 +2692,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2921
@@ -2795,6 +2819,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 3190
@@ -2916,6 +2941,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2831
@@ -3063,6 +3089,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2831
@@ -3182,6 +3209,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 808
@@ -3304,6 +3332,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 501
@@ -3445,6 +3474,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2810
@@ -3565,6 +3595,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2831
@@ -3692,6 +3723,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2831
@@ -3820,6 +3852,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2461
@@ -3960,6 +3993,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 368
@@ -4080,6 +4114,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2831
@@ -4202,6 +4237,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1120
@@ -4330,6 +4366,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2831
@@ -4449,6 +4486,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2788
@@ -4568,6 +4606,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1098
@@ -4687,6 +4726,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1086
@@ -4923,6 +4963,7 @@ country_decisions = {
 		}
 	
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 	
 			capital = 547
@@ -5042,6 +5083,7 @@ country_decisions = {
 		}
 	
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 	
 			capital = 4419
@@ -5161,6 +5203,7 @@ country_decisions = {
 		}
 	
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 	
 			capital = 4511
@@ -5398,6 +5441,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2330
@@ -5517,6 +5561,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 972
@@ -5636,6 +5681,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 739
@@ -5755,6 +5801,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 739
@@ -5875,6 +5922,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2991
@@ -5996,6 +6044,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 72
@@ -6116,6 +6165,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2963
@@ -6235,6 +6285,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2975
@@ -6356,6 +6407,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1065
@@ -6475,6 +6527,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1058
@@ -6594,6 +6647,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1058
@@ -6715,6 +6769,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 292
@@ -6834,6 +6889,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 4745
@@ -6955,6 +7011,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 43
@@ -7077,6 +7134,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1776
@@ -7199,6 +7257,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1777
@@ -7321,6 +7380,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 4119
@@ -7442,6 +7502,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 1858
@@ -7561,6 +7622,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2978
@@ -7680,6 +7742,7 @@ country_decisions = {
 		}
 
 		allow = {
+			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 4370
