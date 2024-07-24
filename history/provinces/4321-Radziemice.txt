@@ -10,3 +10,6 @@ add_core = X09
 discovered_by = ottoman
 set_province_flag = has_static_trade_good
 set_province_flag = has_salt_trade_good
+base_tax = 1
+base_production = 1
+base_manpower = 1

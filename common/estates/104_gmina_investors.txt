@@ -68,6 +68,7 @@ estate_investors = {
 		estate_investors_support_foreign_corporations
 		estate_investors_support_local_corporations
 		estate_investors_support_state_owned_corporations
+		estate_investors_free_market_ideals
 	 }
      agendas = {
 		estate_investors_hire_advisor

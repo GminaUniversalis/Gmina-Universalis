@@ -49,13 +49,13 @@ estate_middle_class = {
 		estate_middle_class_high_taxes
 		estate_middle_class_very_high_taxes
 		estate_middle_class_allow_exclusive_goods
+		estate_middle_class_party_appreciation
 		estate_middle_class_accept_aspirations
 		estate_middle_class_american_model
 		estate_middle_early_polish_model
 		estate_middle_class_european_model
 		estate_middle_class_soviet_model
 		estate_middle_class_japan_model
-
 	}
      agendas = {
 		estate_middle_class_hire_advisor

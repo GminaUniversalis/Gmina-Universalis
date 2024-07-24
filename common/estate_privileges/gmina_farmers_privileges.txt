@@ -6,8 +6,34 @@ estate_farmers_new_way_GMO = {
 	loyalty = -0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = no
+		}
+		
+	}	
 	is_valid = {
 	}
 	can_select = {
@@ -121,8 +147,33 @@ estate_farmers_natural_farming = {
 	loyalty = 0.1
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 30
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 15
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			is_in_deficit = yes
+		}
+	}	
 	is_valid = {
 	}
 	can_select = {
@@ -397,7 +448,16 @@ estate_farmers_empty_promises = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.1
+
+			estate_influence = {
+				estate = estate_farmers
+				influence = 80
+			}
+		}
 	}	
 	on_granted = {
 	
@@ -416,12 +476,38 @@ estate_farmers_EU_funding = {
 	loyalty = 0.1
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
+	}	
 	is_valid = {
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_farmers_reject_EU_regulations }
+		current_age = age_of_absolutism
 	}
 	on_granted = {
 	}
@@ -457,8 +543,33 @@ estate_farmers_national_funding = {
 	loyalty = 0.05
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}	
 	is_valid = {
 	}
 	can_select = {
@@ -497,12 +608,43 @@ estate_farmers_accept_EU_regulations = {
 	loyalty = -0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 10
+			crown_land_share = estate_farmers
+		}
+	}	
 	is_valid = {
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_farmers_reject_EU_regulations }
+		current_age = age_of_absolutism
 	}
 	on_granted = {
 	}
@@ -539,12 +681,43 @@ estate_farmers_reject_EU_regulations = {
 	loyalty = -0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = no
+		}
+
+		modifier = {
+			factor = 10
+			NOT = { crown_land_share = estate_farmers }
+		}
+	}	
 	is_valid = {
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_farmers_accept_EU_regulations }
+		current_age = age_of_absolutism
 	}
 	on_granted = {
 	}
@@ -582,7 +755,37 @@ estate_farmers_support_for_exporters = {
 	loyalty = 0
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = no
+		}
+
+		modifier = {
+			factor = 10
+			NOT = { crown_land_share = estate_farmers }
+		}
 	}
 	is_valid = {
 	}
@@ -626,7 +829,32 @@ estate_farmers_promoting_rural_life = {
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 50
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 25
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			NOT = { crown_land_share = estate_farmers }
+		}
 	}
 	is_valid = {
 	}
@@ -739,7 +967,37 @@ estate_farmers_fertilizers_from_east = {
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 10
+			NOT = { crown_land_share = estate_farmers }
+		}
 	}
 	is_valid = {
 	}
@@ -866,7 +1124,37 @@ estate_farmers_vaccinating_animals = {
 	loyalty = -0.1
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 10
+			NOT = { crown_land_share = estate_farmers }
+		}
 	}
 	is_valid = {
 	}
@@ -953,7 +1241,37 @@ estate_farmers_local_farms = {
 	loyalty = 0.05
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = no
+		}
+
+		modifier = {
+			factor = 10
+			NOT = { crown_land_share = estate_farmers }
+		}
 	}
 	is_valid = {
 	}
@@ -1009,7 +1327,37 @@ estate_farmers_small_scale_farming = {
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 10
+			NOT = { crown_land_share = estate_farmers }
+		}
 	}
 	is_valid = {
 	}
@@ -1066,7 +1414,37 @@ estate_farmers_wood_export_focus = {
 	loyalty = 0
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 10
+			NOT = { crown_land_share = estate_farmers }
+		}
 	}
 	is_valid = {
 	}

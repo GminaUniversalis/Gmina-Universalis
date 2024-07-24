@@ -5,7 +5,38 @@ estate_banks_free_banks = {
 	loyalty = -0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			OR = {
+				religion_group = populism_group
+				religion_group = liberalism_group
+				religion_group = conservatism_group
+			}
+
+		}
+
+		modifier = {
+			factor = 0.1
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.5
+			inflation = 2
+			NOT = { full_idea_group = economic_ideas }
+		}
+
+		modifier = {
+			factor = -300
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 2
+			full_idea_group = economic_ideas
+		}
 	}
 	is_valid = {
 		NOT = { current_age = age_of_discovery }
@@ -61,7 +92,38 @@ estate_banks_mixed = {
 	loyalty = -0.05
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 1.5
+			OR = {
+				religion_group = populism_group
+				religion_group = liberalism_group
+				religion_group = conservatism_group
+			}
+
+		}
+
+		modifier = {
+			factor = 2
+			religion_group = socialism_group
+		}
+
+		modifier = {
+			factor = 0.1
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 1.5
+			inflation = 2
+			NOT = { full_idea_group = economic_ideas }
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = trade_ideas
+		}
 	}
 	is_valid = {
 		NOT = { current_age = age_of_discovery }
@@ -117,7 +179,43 @@ estate_banks_state_controlled = {
 	loyalty = 0.2
 	influence = -0.2
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				religion_group = populism_group
+				religion_group = liberalism_group
+				religion_group = conservatism_group
+			}
+
+		}
+
+		modifier = {
+			factor = 1.5
+			religion_group = socialism_group
+		}
+
+		modifier = {
+			factor = 2
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.1
+			inflation = 2
+			NOT = { full_idea_group = economic_ideas }
+		}
+
+		modifier = {
+			factor = 0.1
+			has_idea_group = economic_ideas
+		}
+		
+		modifier = {
+			factor = 50
+			is_in_deficit = yes
+		}
 	}
 	can_select = {
 		custom_trigger_tooltip = {
@@ -208,7 +306,19 @@ estate_banks_empty_promises = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.1
+
+			NOT = {
+				estate_influence = {
+					estate = estate_banks
+					influence = 80
+				}
+			}
+
+		}
 	}	
 	on_granted = {
 	
@@ -234,7 +344,34 @@ estate_banks_promote_mortgages = {
 		development_cost = -0.1
 	}
 	ai_will_do = {
-		factor = 2
+		factor = 10
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = trade_ideas
+		}
+
+		modifier = {
+			factor = 5
+			trade_income_percentage = 0.25
+		}
+
+		modifier = {
+			factor = 200
+			any_owned_province = {
+				NOT = { num_of_times_improved = 100 }
+			}
+		}
+
+		modifier = {
+			factor = 300
+			NOT = { total_development = 5000 }
+		}
 	}
 }
 estate_banks_market_trading_focus = {
@@ -244,7 +381,50 @@ estate_banks_market_trading_focus = {
 	loyalty = 0.2
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			has_idea_group = trade_ideas
+		}
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				trade_income_percentage = 0.25
+			}
+		}
+
+		modifier = {
+			factor = 10
+			any_owned_province = {
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_province = {
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			any_owned_province = {
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+
+		modifier = {
+			factor = 100
+			ROOT = {
+				any_active_trade_node = {
+					highest_value_trade_node = yes
+				}
+			}
+		}
+
 	}
 	can_select = {
 		OR = {
@@ -295,6 +475,32 @@ estate_banks_hire_regional_director = {
 	}
 	ai_will_do = {
 		factor = 2
+
+		modifier = {
+			factor = 10
+			NOT = { num_of_merchants = 4 }
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = trade_ideas
+		}
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				trade_income_percentage = 0.25
+			}
+		}
+
+		modifier = {
+			factor = 100
+			ROOT = {
+				any_active_trade_node = {
+					highest_value_trade_node = yes
+				}
+			}
+		}
 	}
 }
 estate_banks_indebted_to_free_banks = {
@@ -571,7 +777,6 @@ estate_banks_economic_stimulation = {
 	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
-		has_dlc = "Domination"
 	}
 	on_granted = {
 		custom_tooltip = estate_burghers_development_of_cities_gt  #Do zmiany na potem
@@ -616,7 +821,20 @@ estate_banks_economic_stimulation = {
 		no_estate_crownland_loss_from_developing
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 10
+
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				province_has_center_of_trade_of_level = 1
+				NOT = { development = 30}
+			}
+		}
+
+		modifier = {
+			factor = -100
+			NOT = { governing_capacity_percentage = 0.8 }
+		}
 	}
 }
 estate_banks_trained_brokers = {
@@ -635,7 +853,33 @@ estate_banks_trained_brokers = {
 	}
 	cooldown_years = 5
 	ai_will_do = {
-		factor = 0
+		factor = 2
+
+		modifier = {
+			factor = 10
+			num_of_merchants = 4 
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = trade_ideas
+		}
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				trade_income_percentage = 0.25
+			}
+		}
+
+		modifier = {
+			factor = 100
+			ROOT = {
+				any_active_trade_node = {
+					highest_value_trade_node = yes
+				}
+			}
+		}
 	}
 }
 estate_banks_regulate_money_supply = {
@@ -662,8 +906,13 @@ estate_banks_regulate_money_supply = {
 			}
 		}
 		modifier = {
-			factor = 0
+			factor = -10
 			is_absolutism_active = yes
+		}
+
+		modifier = {
+			factor = 5
+			is_in_deficit = yes
 		}
 	}
 }
@@ -695,7 +944,33 @@ estate_banks_insider_info = {
 	}
 	cooldown_years = 15
 	ai_will_do = {
-		factor = 0
+		factor = 2
+
+		modifier = {
+			factor = 10
+			num_of_merchants = 4 
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = trade_ideas
+		}
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				trade_income_percentage = 0.25
+			}
+		}
+
+		modifier = {
+			factor = 100
+			ROOT = {
+				any_active_trade_node = {
+					highest_value_trade_node = yes
+				}
+			}
+		}
 	}
 }
 estate_banks_advertisement_national_bank = {
@@ -730,7 +1005,62 @@ estate_banks_advertisement_national_bank = {
 		}
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 10
+
+		modifier = {
+			factor = 100
+			NOT = { prestige = -50 }
+		}
+
+		modifier = {
+			factor = 90
+			NOT = { prestige = -40 }
+		}
+
+		modifier = {
+			factor = 80
+			NOT = { prestige = -30 }
+		}
+
+		modifier = {
+			factor = 70
+			NOT = { prestige = -20 }
+		}
+
+		modifier = {
+			factor = 60
+			NOT = { prestige = -10 }
+		}
+
+		modifier = {
+			factor = 50
+			prestige = 0 
+		}
+
+		modifier = {
+			factor = 25
+			prestige = 10 
+		}
+
+		modifier = {
+			factor = 15
+			prestige = 20 
+		}
+
+		modifier = {
+			factor = 10
+			prestige = 30 
+		}
+
+		modifier = {
+			factor = 5
+			prestige = 40 
+		}
+
+		modifier = {
+			factor = -100
+			prestige = 50
+		}
 	}
 }
 estate_banks_commercial_experts = {
@@ -746,14 +1076,17 @@ estate_banks_commercial_experts = {
 		dip_advisor_cost = -0.25
 	}
 	ai_will_do = {
-		factor = 9
+		factor = 10
+
 		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
+			factor = 0.1
+
+			stability = 0
 		}
+
 		modifier = {
-			factor = 3
-			uses_meritocracy = yes
+			factor = 2
+			dip = 2
 		}
 	}
 }

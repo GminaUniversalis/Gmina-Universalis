@@ -6,7 +6,33 @@ estate_investors_support_foreign_corporations = {
 	loyalty = -0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
 	}
 	is_valid = {
 	}
@@ -82,7 +108,33 @@ estate_investors_support_local_corporations = {
 	loyalty = 0.1
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
 	}
 	is_valid = {
 	}
@@ -159,7 +211,33 @@ estate_investors_support_state_owned_corporations = {
 	loyalty = 0.2
 	influence = -0.2
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
 	}
 	is_valid = {
 	}
@@ -273,7 +351,15 @@ estate_investors_empty_promises = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			estate_influence = {
+				estate = estate_investors
+				influence = 80
+			}
+		}
 	}	
 	on_granted = {
 	
@@ -293,7 +379,33 @@ estate_investors_minimal_taxation = {
 	loyalty = 0.15
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = no
+		}
+
 	}
 	is_valid = {
 	}
@@ -366,7 +478,33 @@ estate_investors_basic_taxation = {
 	loyalty = 0.05
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = no
+		}
+
 	}
 	is_valid = {
 	}
@@ -439,7 +577,33 @@ estate_investors_high_taxation = {
 	loyalty = -0.05
 	influence = -0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
 	}
 	is_valid = {
 	}
@@ -512,7 +676,33 @@ estate_investors_lobbists = {
 	loyalty = -0.1
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
+
 	}
 	is_valid = {
 	}
@@ -562,7 +752,33 @@ estate_investors_rapid_modernisation = {
 	loyalty = -0.1
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = -100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 200
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
 	}
 	is_valid = {
 	}
@@ -715,7 +931,33 @@ estate_investors_adm_support = {
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+
 	}
 	is_valid = {
 	}
@@ -765,11 +1007,13 @@ estate_investors_high_influence = {
 	loyalty = -0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}
 	is_valid = {
+		always = no
 	}
 	can_select = {
+		always = no
 	}
 	on_granted = {
 		set_country_flag = high_influence_of_corporations
@@ -807,5 +1051,62 @@ estate_investors_high_influence = {
 	cooldown_years = 0
 	on_cooldown_expires = {
 
+	}
+}
+estate_investors_free_market_ideals = { #Political Party
+	icon = privilege_recruit_minister
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.10
+
+	on_granted = {
+
+		custom_tooltip = has_no_effects_on_granted
+		
+	}
+
+	can_select = {
+		OR = {
+			religion_group = populism_group
+			religion_group = liberalism_group
+		}
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_ub_strenghten_communist_thought
+				has_estate_privilege = estate_families_political_commitment
+				has_estate_privilege = estate_middle_class_party_appreciation
+			}
+
+		}
+	}
+
+	conditional_modifier = {
+		trigger = {
+			#religion_group = populism_group
+			religion = populism_samoobrona 
+		 		
+		}
+
+		modifier = {
+			missionary_maintenance_cost = -0.5
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0.01
+
+			religion_group = liberalism_group
+			
+			num_of_aspects = 3
+		}
 	}
 }

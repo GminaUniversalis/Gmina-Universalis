@@ -43,7 +43,15 @@ estate_ub_empty_promises = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			estate_influence = {
+				estate = estate_ub
+				influence = 80
+			}
+		}
 	}	
 	on_granted = {
 	
@@ -55,6 +63,7 @@ estate_ub_empty_promises = {
 	
 	}
 }
+#Negative ----------------------------------------------------------------
 estate_ub_grasp_over_police = {
 	icon = privilege_better_integration
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -63,7 +72,7 @@ estate_ub_grasp_over_police = {
 	loyalty = 0.05
 	influence = 0.2
 	ai_will_do = {
-		factor = 0
+		factor = -1000
 	}
 	is_valid = {
 	}
@@ -113,7 +122,7 @@ estate_ub_grasp_over_politics = {
 	loyalty = 0.05
 	influence = 0.2
 	ai_will_do = {
-		factor = 0
+		factor = -1000
 	}
 	is_valid = {
 	}
@@ -127,11 +136,11 @@ estate_ub_grasp_over_politics = {
 	}
 	penalties = {
 		relation_with_same_culture_group = -25
-		relation_with_other_culture = -25
+		relation_with_other_culture = -50
 		loyalty_change_on_revoked = 0.2
 	}
 	benefits = {
-		election_cycle = -2
+		election_cycle = 2
 	}
 	on_invalid = {
 	}
@@ -357,6 +366,7 @@ estate_ub_iron_propaganda = {
 
 	}
 }
+#Negative end ----------------------------------------------------------------
 estate_ub_better_payments = {
 	icon = privilege_loot
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
@@ -365,7 +375,27 @@ estate_ub_better_payments = {
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			has_estate_privilege = estate_army_old_doctrine
+		}
 	}
 	is_valid = {
 	}
@@ -416,7 +446,27 @@ estate_ub_better_housing = {
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			has_estate_privilege = estate_army_old_doctrine
+		}
 	}
 	is_valid = {
 	}
@@ -467,7 +517,27 @@ estate_ub_better_healthcare = {
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			has_estate_privilege = estate_army_old_doctrine
+		}
 	}
 	is_valid = {
 	}
@@ -518,7 +588,27 @@ estate_ub_quick_promotions = {
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			has_estate_privilege = estate_army_old_doctrine
+		}
 	}
 	is_valid = {
 	}
@@ -572,7 +662,27 @@ estate_ub_special_shops = {
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			has_estate_privilege = estate_army_old_doctrine
+		}
 	}
 	is_valid = {
 	}
@@ -623,7 +733,27 @@ estate_ub_immunity = {
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			has_estate_privilege = estate_army_old_doctrine
+		}
 	}
 	is_valid = {
 	}
@@ -674,7 +804,27 @@ estate_ub_black_wolga = {
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			has_estate_privilege = estate_army_old_doctrine
+		}
 	}
 	is_valid = {
 	}
@@ -716,5 +866,57 @@ estate_ub_black_wolga = {
 	cooldown_years = 0
 	on_cooldown_expires = {
 
+	}
+}
+estate_ub_strenghten_communist_thought = { #Political Party
+	icon = privilege_recruit_minister
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.10
+	on_granted = {
+
+		custom_tooltip = has_no_effects_on_granted
+		
+	}
+
+	can_select = {
+
+		religion_group = communism_group
+
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_investors_free_market_ideals
+				has_estate_privilege = estate_families_political_commitment
+				has_estate_privilege = estate_middle_class_party_appreciation				
+			}
+
+		}
+	}
+
+	conditional_modifier = {
+		trigger = {
+			religion_group = communism_group
+		}
+		modifier = {
+			church_power_modifier = 0.2
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0.01
+
+			religion_group = communism_group
+			
+			num_of_aspects = 3
+		}
 	}
 }

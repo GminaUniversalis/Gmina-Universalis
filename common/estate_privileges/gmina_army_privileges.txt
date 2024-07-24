@@ -5,8 +5,42 @@ estate_army_old_doctrine = {
 	loyalty = -0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+
+		factor = 10
+
+		modifier = {
+			factor = 10
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.5
+			NOT = { current_age = age_of_discovery }
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				OR = {
+					current_age = age_of_discovery 
+					current_age = age_of_reformation
+				}
+			}
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			infantry_fraction = 0.9
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = quantity_ideas
+		}
 	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_army_definer_tooltip
@@ -56,9 +90,43 @@ estate_army_new_doctrine = {
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = -0.1
+
 	ai_will_do = {
-		factor = 1
-	}	
+
+		factor = 10
+
+		modifier = {
+			factor = 10
+			NOT = { religion_group = communism_group }
+		}
+
+		modifier = {
+			factor = 0.5
+			NOT = { current_age = age_of_reformation}
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.5
+
+			OR = {
+				current_age = age_of_discovery 
+				current_age = age_of_reformation
+			}
+			
+		}
+
+		modifier = {
+			factor = 10
+			infantry_fraction = 0.2
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = quality_ideas
+		}
+	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_army_definer_tooltip
@@ -166,8 +234,19 @@ estate_army_martial_law = {
 	loyalty = 0.5
 	influence = 0.5
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			has_disaster = estate_army_disaster
+		}
+
+		modifier = {
+			factor = 0.01
+			NOT = { has_disaster = estate_army_disaster }
+		}
 	}
+
 	is_valid = {
 		always = no
 	}
@@ -227,7 +306,60 @@ estate_army_territorial_forces = {
 	loyalty = 0
 	influence = 0.15
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			
+			any_owned_province = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_15th
+				}
+			}
+
+		}
+
+		modifier = {
+			factor = 10
+
+			any_owned_province = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_15th
+				}
+				has_building = ramparts
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_idea_group = defensive_ideas
+		}
+
+		modifier = {
+			factor = 1.5
+			any_rival_country = {
+				army_strength = {
+					who = root
+					value = 1.5
+				}
+			}
+		}
+
+		modifier = {
+			factor = 5
+			is_at_war = yes
+		}
+
+		modifier = {
+			factor = 10
+			is_in_important_war = yes
+		}
 	}	
 	penalties = {
 	}
@@ -287,7 +419,28 @@ estate_army_blitzkrieg = {
 	loyalty = 0.1
 	influence = 0.15
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 5
+			is_at_war = yes
+		}
+
+		modifier = {
+			factor = 10
+			is_in_important_war = yes
+		}
+
+		modifier = {
+			factor = 5 
+			num_of_regiments_at_full_drill = 50
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = offensive_ideas
+		}
+		
 	}	
 
 	can_select = {
@@ -322,7 +475,26 @@ estate_army_fire_supremacy = {
 	loyalty = 0.1
 	influence = 0.15
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 10
+			is_in_important_war = yes
+		}
+
+		modifier = {
+			factor = 10
+			artillery_fraction = 0.2
+		}
+
+		modifier = {
+			factor = 2
+			has_idea_group = offensive_ideas
+		}
 	}	
 	can_select = {
 		NOT = { has_estate_privilege = estate_army_blitzkrieg }
@@ -340,13 +512,14 @@ estate_army_fire_supremacy = {
 	}
 
 	penalties = {
-		defensiveness = -0.15
-		production_efficiency = -0.1
+		defensiveness = -0.2
+		production_efficiency = -0.25
 	}
 	benefits = {
 		leader_land_fire = 1
 		leader_land_shock = 1
-
+		artillery_fire = 1
+		artillery_power = 0.1
 	}
 }
 estate_army_curfew = {
@@ -356,7 +529,27 @@ estate_army_curfew = {
 	loyalty = 0.05
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			average_unrest = 2
+		}
+
+		modifier = {
+			factor = 0.1
+			estate_loyalty = {
+				estate = estate_families
+				loyalty = 20
+			}
+		}
+
+		modifier = {
+			factor = 100
+			NOT = { average_autonomy = 15 }
+			dominant_religion = ROOT
+			dominant_culture = ROOT
+		}
 	}	
 	is_valid = {
 		religion_group = communism_group
@@ -373,6 +566,7 @@ estate_army_curfew = {
 	}
 	benefits = {
 		global_unrest = -1
+		global_autonomy = -0.05
 	}
 }
 estate_army_empty_promises = {
@@ -383,7 +577,19 @@ estate_army_empty_promises = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.1
+
+			NOT = {
+				estate_influence = {
+					estate = estate_army
+					influence = 80
+				}
+			}
+
+		}
 	}	
 	on_granted = {
 	
@@ -617,7 +823,16 @@ estate_army_increased_drill = {
 	loyalty = 0
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 5 
+			
+			NOT = {
+				num_of_regiments_at_full_drill = 50
+			}
+
+		}
 	}
 	is_valid = {
 	}
@@ -673,7 +888,21 @@ estate_army_officer_schools = {
 	loyalty = 0.05
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2 
+			NOT = {
+				mil_power = 300
+			}
+		}
+
+		modifier = {
+			factor = 3
+			NOT = {
+				army_tradition = 50
+			}
+		}
 	}
 	is_valid = {
 	}
@@ -730,7 +959,18 @@ estate_army_general_advisors = {
 	loyalty = 0.05
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.5
+
+			stability = 0
+		}
+
+		modifier = {
+			factor = 2
+			mil = 2
+		}
 	}
 	is_valid = {
 	}
@@ -788,6 +1028,15 @@ estate_army_supremacy_over_government = {
 	influence = 0
 	ai_will_do = {
 		factor = 10
+
+		modifier = {
+			factor = 0.5
+
+			estate_influence = {
+				estate = estate_ub
+				influence = 80
+			}
+		}
 	}
 	is_valid = {
 	}
@@ -844,7 +1093,19 @@ estate_army_recruit_general = {
 	loyalty = 0
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 2
+			NOT = {
+				has_leaders = {
+					value = 2
+						type = general
+					include_monarch = no
+					include_heir = no
+				}
+			}
+		}
 	}
 	is_valid = {
 	}

@@ -43,7 +43,15 @@ estate_miners_empty_promises = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			estate_influence = {
+				estate = estate_miners
+				influence = 80
+			}
+		}
 	}	
 	on_granted = {
 	
@@ -63,7 +71,29 @@ estate_miners_work_leaders = {
 	loyalty = 0.05
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			ROOT = {
+				gu_coal = 5
+			}
+
+		}
+
+		modifier = {
+			factor = 10
+
+			trading_part = {
+				trade_goods = gu_coal
+				value = 0.05
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			NOT = { production_income_percentage = 0.10 }
+		}
 	}
 	is_valid = {
 	}
@@ -112,7 +142,7 @@ estate_miners_barborka = {
 	loyalty = 0.1
 	influence = 0.15
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}
 	is_valid = {
 	}
@@ -126,18 +156,7 @@ estate_miners_barborka = {
 		}
 	}
 	on_granted = {
-		if = {
-			limit = {
-				any_owned_province = {
-					has_province_modifier = barborkant
-				}
 
-			}
-			any_owned_province = {
-				remove_province_modifier = barborkant
-			}
-
-		}
 
 		add_years_of_income = 0.5
 		hidden_effect = {
@@ -168,11 +187,20 @@ estate_miners_barborka = {
 		clr_country_flag = barborka_privilege
 	}
 	on_granted_province = {
+
 		if = {
 			limit = {
-				OR = {
-					trade_goods = gu_coal
-				}
+				has_province_modifier = barborkant
+				trade_goods = gu_coal
+
+			}
+			remove_province_modifier = barborkant
+			
+		}
+
+		if = {
+			limit = {
+				trade_goods = gu_coal
 			}	
 			add_province_modifier = { 
 				name = barborka
@@ -185,9 +213,7 @@ estate_miners_barborka = {
 	on_revoked_province = {
 		if = {
 			limit = {
-				OR = {
-					trade_goods = gu_coal
-				}
+				trade_goods = gu_coal
 			}	
 			add_province_modifier = { 
 				name = barborkant
@@ -196,8 +222,28 @@ estate_miners_barborka = {
 			}
 				
 		}
+
+		if = {
+			limit = {
+				has_province_modifier = barborka
+				trade_goods = gu_coal
+
+			}
+			remove_province_modifier = barborka
+			
+		}
 	}
 	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = barborka
+				trade_goods = gu_coal
+
+			}
+			remove_province_modifier = barborka
+			
+		}
+
 		if = {
 			limit = {
 				OR = {
@@ -234,8 +280,33 @@ estate_miners_privatized_industry = {
 	loyalty = -0.1
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
+	}	
 	is_valid = {
 		NOT = { current_age = age_of_discovery }
 	}
@@ -308,8 +379,33 @@ estate_miners_state_owned_industry = {
 	loyalty = -0.1
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 50
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 25
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
+	}	
 	is_valid = {
 	}
 	can_select = {
@@ -385,8 +481,29 @@ estate_miners_golden_age_mines = {
 	loyalty = 0.15
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 50
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 25
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+	}	
 	is_valid = {
 		OR = {
 			current_age = age_of_discovery
@@ -431,9 +548,23 @@ estate_miners_golden_age_mines = {
 		}
 	}
 	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = golden_age_of_mines
+			}
+
+			remove_province_modifier = golden_age_of_mines
+		}
 
 	}
 	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = golden_age_of_mines
+			}
+
+			remove_province_modifier = golden_age_of_mines
+		}
 		
 	}
 	conditional_modifier = {
@@ -454,22 +585,39 @@ estate_miners_unprofitable_mines = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	land_share = 0
 	max_absolutism = 0
-	loyalty = 0.1
-	influence = 0.15
+	loyalty = 0
+	influence = 0
 	ai_will_do = {
 		factor = 1
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 0.01
+			is_in_deficit = no
+		}
 	}
 	is_valid = {
+		NOT = { gu_coal = 0}
 	}
 	can_select = {
+		always = no
 	}
 	on_granted = {
 	}
 	on_revoked = { 
 	}
 	can_revoke = {
+		OR = {
+			NOT = { current_age = age_of_reformation }
+		}
 	}
 	penalties = {
+		estate_miners_loyalty_modifier = -0.25
+		estate_miners_influence_modifier = -0.25
 	}
 	benefits = {
 	}
@@ -491,9 +639,23 @@ estate_miners_unprofitable_mines = {
 		}
 	}
 	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = unprofitable_mines
+			}
+
+			remove_province_modifier = unprofitable_mines
+		}
 
 	}
 	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = unprofitable_mines
+			}
+
+			remove_province_modifier = unprofitable_mines
+		}
 		
 	}
 	conditional_modifier = {
@@ -517,8 +679,29 @@ estate_miners_silver_age_mines = {
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 50
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 25
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+	}	
 	is_valid = {
 		OR = {
 			NOT = { current_age = age_of_discovery }
@@ -569,9 +752,23 @@ estate_miners_silver_age_mines = {
 		}
 	}
 	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = golden_age_of_mines
+			}
+
+			remove_province_modifier = golden_age_of_mines
+		}
 
 	}
 	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = golden_age_of_mines
+			}
+
+			remove_province_modifier = golden_age_of_mines
+		}
 		
 	}
 	conditional_modifier = {
@@ -596,11 +793,37 @@ estate_miners_EU_mining_regulations = {
 	loyalty = 0.05
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 15
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 25
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
 	}
 	is_valid = {
 	}
 	can_select = {
+		current_age = age_of_absolutism
 	}
 	on_granted = {
 	}

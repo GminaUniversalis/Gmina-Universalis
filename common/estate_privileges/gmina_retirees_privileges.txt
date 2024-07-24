@@ -166,8 +166,33 @@ estate_retirees_13 = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	ai_will_do = {
-		factor = 1
-	}	
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}		
 	on_granted = {
 		add_years_of_income = -0.1
 	}
@@ -186,7 +211,16 @@ estate_retirees_empty_promises = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			estate_influence = {
+				estate = estate_retirees
+				influence = 80
+			}
+
+		}
 	}	
 	on_granted = {
 	
@@ -206,8 +240,39 @@ estate_retirees_klub_seniora = {
 	loyalty = 0.15
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}	
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
+	}
 	on_granted = {
 		if = {
 			limit = { NOT = { prestige = 50 } }
@@ -249,8 +314,33 @@ estate_retirees_rada = {
 	loyalty = 0.15
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}	
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}		
 	on_granted = {
 	if = {
 		limit = { NOT = { legitimacy_equivalent = 100 } legitimacy_equivalent = 80 }
@@ -306,7 +396,32 @@ estate_retirees_wiek = {
 	loyalty = -0.1
 	influence = -0.15
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
 	}	
 	on_granted = {		
 	}
@@ -327,8 +442,33 @@ estate_retirees_wiek_2 = {
 	loyalty = 0.05
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}	
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}		
 	on_granted = {		
 	}
 	penalties = {
@@ -351,7 +491,32 @@ estate_retirees_at = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
 	}	
 	on_granted = {
 	}
@@ -371,8 +536,33 @@ estate_retirees_ac = {
 	loyalty = 0.05
 	influence = 0.15
 	ai_will_do = {
-		factor = 5
-	}	
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}		
 	on_granted = {
 	}
 	penalties = {
@@ -446,7 +636,7 @@ estate_retirees_scl = {
 	benefits ={
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}	
 }
 
@@ -511,8 +701,33 @@ estate_retirees_pensioners_union = {
 	loyalty = 0.5
 	influence = 0.5
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 1
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}	
 	is_valid = {
 	}
 	can_select = {
@@ -550,8 +765,33 @@ estate_retirees_medical_priority = {
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}	
 	is_valid = {
 	}
 	can_select = {

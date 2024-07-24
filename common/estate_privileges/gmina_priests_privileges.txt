@@ -43,7 +43,15 @@ estate_priests_empty_promises = {
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.1
+			estate_influence = {
+				estate = estate_priests
+				influence = 80
+			}
+		}
 	}	
 	on_granted = {
 	
@@ -64,7 +72,28 @@ estate_priests_separation_from_state = {
 	loyalty = -0.2
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = -100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 50
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
 	}
 	is_valid = {
 	}
@@ -143,7 +172,28 @@ estate_priests_subsidies_from_state = {
 	loyalty = 0.2
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = -100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 50
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 40
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
 	}
 	is_valid = {
 	}
@@ -222,7 +272,38 @@ estate_priests_bishops_in_government = {
 	loyalty = -0.1
 	influence = 0.2
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 10
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 	}
@@ -302,7 +383,38 @@ estate_priests_reject_the_concordat = {
 	loyalty = -0.2
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		NOT = { has_country_flag = picked_bishops_in_government }
@@ -371,7 +483,38 @@ estate_priests_tax_the_blacks = {
 	loyalty = 0
 	influence = -0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = reject_the_concordat
@@ -424,7 +567,38 @@ estate_priests_disparity_toward_justice = {
 	loyalty = 0
 	influence = -0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = reject_the_concordat
@@ -477,7 +651,38 @@ estate_priests_protection_of_heritage = {
 	loyalty = 0
 	influence = -0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = reject_the_concordat
@@ -530,7 +735,38 @@ estate_priests_belief_neutrality = {
 	loyalty = 0
 	influence = -0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = reject_the_concordat
@@ -587,7 +823,38 @@ estate_priests_secular_education = {
 	loyalty = 0
 	influence = -0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = reject_the_concordat
@@ -639,7 +906,38 @@ estate_priests_psychological_help = {
 	loyalty = 0
 	influence = -0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = reject_the_concordat
@@ -694,7 +992,38 @@ estate_priests_ratify_the_concordat = {
 	loyalty = 0.2
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		NOT = { has_estate_privilege = estate_priests_reject_the_concordat}
@@ -771,7 +1100,38 @@ estate_priests_religion_schools = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = ratify_the_concordat
@@ -824,7 +1184,38 @@ estate_priests_sacred_marriage = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = ratify_the_concordat
@@ -877,7 +1268,38 @@ estate_priests_tend_to_sites = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = ratify_the_concordat
@@ -929,7 +1351,38 @@ estate_priests_social_participation = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = ratify_the_concordat
@@ -981,7 +1434,38 @@ estate_priests_ecclesiastical_tax = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = ratify_the_concordat
@@ -1033,7 +1517,38 @@ estate_priests_pastoral_care = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = ratify_the_concordat
@@ -1085,7 +1600,38 @@ estate_priests_family_protection = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = ratify_the_concordat
@@ -1138,7 +1684,38 @@ estate_priests_canon_law = {
 	loyalty = 0
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 		has_country_flag = ratify_the_concordat
@@ -1190,7 +1767,38 @@ estate_priests_educated_curates = {
 	loyalty = 0.05
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 	}
@@ -1247,7 +1855,38 @@ estate_priests_international_recognition = {
 	loyalty = 0.05
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 	}
@@ -1304,7 +1943,38 @@ estate_priests_holy_money_from_abroad = {
 	loyalty = 0.05
 	influence = 0.15
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
 	}
 	is_valid = {
 	}

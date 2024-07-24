@@ -1,9 +1,14 @@
 ﻿l_english:
  communism_group:0 "Communism"
+ WAR_WITH_COUNTER_REVISIONISM:0 "War with Revisionism"
  liberalism_group:0 "Liberalism"
+ WAR_WITH_FASCISM:0 "War with Fascism"
  conservatism_group:0 "Conservatism"
+ WAR_WITH_COMMUNISM:0 "War with Communism"
  socialism_group:0 "Socialism"
+ WAR_WITH_FASCISM:0 "War with Fascism"
  populism_group:0 "Populism"
+ WAR_FOR_FREE_MARKET:0 "War for Free Market"
  REVISIONIST:0 "Revisionist"
  # Communism
  communism_pzpr:0 "PZPR"

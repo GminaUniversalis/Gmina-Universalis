@@ -119,3 +119,5 @@ NDefines.NNationDesigner.GOVERNMENT_RANK_COST_5 = 50
 NDefines.NNationDesigner.MANDATE_SUBCONTINENT_NAME = "mazowieckie_superregion"
 
 NDefines.NDiplomacy.AUTODIPLO_TARGET_COALITION_IMPROVECAP = 60
+
+NDefines.NAI.PRESS_THEM_FURTHER = 1
