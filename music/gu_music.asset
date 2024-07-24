@@ -1,0 +1,8 @@
+music = {
+	name = "MAIN_THEME"
+	file = "Dota2_Startup_2014.ogg"
+}
+music = {   #Yes, I stole that from Volvo
+	name = "maintheme"
+	file = "Dota2_Startup_2014.ogg"
+}

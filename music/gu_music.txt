@@ -1,0 +1,19 @@
+song = {
+	name = "maintheme"
+	
+	chance = {
+		modifier = {
+			factor = 0			#only played in mainscreen.
+		}		
+	}
+}
+song = {
+	name = "MAIN_THEME"
+
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
