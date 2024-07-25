@@ -1,0 +1,11 @@
+#anbennar - used for the secondary spawnable button (in case a tag has more than one spawnable)
+spawnable_no_bis_bis = {
+	reason = {
+		tooltip_desc = "spawnable_no_desc"
+		tooltip_reason = ""
+		weight = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

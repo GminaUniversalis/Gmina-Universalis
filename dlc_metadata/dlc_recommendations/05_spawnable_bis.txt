@@ -1,0 +1,10 @@
+spawnable_no_bis = {
+	reason = {
+		tooltip_desc = "spawnable_no_desc"
+		tooltip_reason = ""
+		weight = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

@@ -13,7 +13,7 @@
  CONSORT_DIP_EFFECT:0 "§YEffects from consort's diplomatic skill:§W"
  CONSORT_MIL_EFFECT:0 "§YEffects from consort's military skill:§W"
  PAPAL_INFLUENCE_EFFECT:0 "§YEffects from Papal Influence:§W"
- CHURCH_POWER_EFFECT:0 "§YEffects from Church Power:§W"
+ CHURCH_POWER_EFFECT:0 "§YEffects from Political Power:§W"
  FERVOR_VALUE_EFFECT:0 "§YEffects from Fervor:§W"
  KARMA_EFFECT:0 "§YEffects from Karma:§W"
  NEGATIVE_KARMA_EFFECT:0 "§YEffects from negative Karma:§W"
