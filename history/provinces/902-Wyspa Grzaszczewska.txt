@@ -6,3 +6,10 @@ is_city = no
 add_core = P14
 owner = P14
 controller = P14
+
+1444.11.13 = {
+remove_core = P14
+add_core = P00
+owner = P00
+controller = P00
+}

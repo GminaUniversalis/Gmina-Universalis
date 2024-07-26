@@ -17,3 +17,10 @@ add_core = Y22
 
 center_of_trade = 2
 
+
+1444.11.13 = {
+remove_core = Y22
+add_core = Y00
+owner = Y00
+controller = Y00
+}

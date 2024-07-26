@@ -18,3 +18,10 @@ add_core = A30
 center_of_trade = 2
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_coal_trade_good
+
+1444.11.13 = {
+remove_core = A30
+add_core = A00
+owner = A00
+controller = A00
+}

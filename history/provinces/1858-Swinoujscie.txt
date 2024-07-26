@@ -13,3 +13,10 @@ controller = P15
 center_of_trade = 3
 is_city = yes
 
+
+1444.11.13 = {
+remove_core = P15
+add_core = P00
+owner = P00
+controller = P00
+}

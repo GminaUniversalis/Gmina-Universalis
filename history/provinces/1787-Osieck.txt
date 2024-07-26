@@ -10,3 +10,10 @@ controller = G25
 add_core = G25
 discovered_by = ottoman
 
+
+1444.11.13 = {
+remove_core = G25
+add_core = G00
+owner = G00
+controller = G00
+}

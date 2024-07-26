@@ -15,3 +15,10 @@ add_core = J06
 discovered_by = ottoman
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_sulfur_trade_good
+
+1444.11.13 = {
+remove_core = J06
+add_core = J00
+owner = J00
+controller = J00
+}

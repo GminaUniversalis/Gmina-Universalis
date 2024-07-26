@@ -16,3 +16,10 @@ discovered_by = ottoman
 add_core = U21
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_hemp_trade_good
+
+1444.11.13 = {
+remove_core = U12
+add_core = U00
+owner = U00
+controller = U00
+}

@@ -16,3 +16,10 @@ add_core = L02
 discovered_by = ottoman
 
 
+
+1444.11.13 = {
+remove_core = L02
+add_core = L00
+owner = L00
+controller = L00
+}

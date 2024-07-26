@@ -19,3 +19,10 @@ latent_trade_goods = { gu_software }
 center_of_trade = 3
 set_province_flag = has_static_trade_good
 set_province_flag = has_{ gu_software }_trade_good
+
+1444.11.13 = {
+remove_core = L14
+add_core = L00
+owner = L00
+controller = L00
+}

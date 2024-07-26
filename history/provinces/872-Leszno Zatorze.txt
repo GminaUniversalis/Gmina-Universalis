@@ -16,3 +16,10 @@ add_core = R35
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_metalworking_trade_good
+
+1444.11.13 = {
+remove_core = R35
+add_core = R00
+owner = R00
+controller = R00
+}

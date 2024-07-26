@@ -17,3 +17,10 @@ add_core = L32
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_coal_trade_good
+
+1444.11.13 = {
+remove_core = L32
+add_core = L00
+owner = L00
+controller = L00
+}

@@ -16,3 +16,10 @@ add_core = L18
 discovered_by = ottoman
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_triticale_trade_good
+
+1444.11.13 = {
+remove_core = L18
+add_core = L00
+owner = L00
+controller = L00
+}

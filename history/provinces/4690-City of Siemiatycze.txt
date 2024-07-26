@@ -16,3 +16,10 @@ discovered_by = ottoman
 center_of_trade = 1
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_vegetables_trade_good
+
+1444.11.13 = {
+remove_core = J01
+add_core = J00
+owner = J00
+controller = J00
+}

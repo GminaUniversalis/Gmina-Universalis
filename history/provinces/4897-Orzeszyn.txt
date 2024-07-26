@@ -7,3 +7,10 @@ culture = mazowiecka
 religion = communism_pzpr
 controller = G16
 is_city = no
+
+1444.11.13 = {
+remove_core = G16
+add_core = G00
+owner = G00
+controller = G00
+}

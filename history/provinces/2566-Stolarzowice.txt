@@ -18,3 +18,10 @@ add_core = L31
 latent_trade_goods = { gu_woodworking }
 set_province_flag = has_static_trade_good
 set_province_flag = has_{ gu_woodworking }_trade_good
+
+1444.11.13 = {
+remove_core = L31
+add_core = L00
+owner = L00
+controller = L00
+}

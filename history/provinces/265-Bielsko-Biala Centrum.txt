@@ -17,3 +17,10 @@ add_core = L40
 
 
 
+
+1444.11.13 = {
+remove_core = L40
+add_core = L00
+owner = L00
+controller = L00
+}

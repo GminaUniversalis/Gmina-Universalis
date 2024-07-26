@@ -17,3 +17,10 @@ controller = X20
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_triticale_trade_good
+
+1444.11.13 = {
+remove_core = X20
+add_core = X00
+owner = X00
+controller = X00
+}

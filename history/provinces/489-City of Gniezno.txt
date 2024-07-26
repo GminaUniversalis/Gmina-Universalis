@@ -16,3 +16,10 @@ discovered_by = ottoman
 center_of_trade = 2
 set_province_flag = has_static_trade_good
 set_province_flag = has_glass_trade_good
+
+1444.11.13 = {
+remove_core = R25
+add_core = R00
+owner = R00
+controller = R00
+}

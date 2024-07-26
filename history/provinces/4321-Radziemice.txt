@@ -13,3 +13,9 @@ set_province_flag = has_salt_trade_good
 base_tax = 1
 base_production = 1
 base_manpower = 1
+1444.11.13 = {
+remove_core = X09
+add_core = X00
+owner = X00
+controller = X00
+}

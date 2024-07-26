@@ -16,3 +16,10 @@ add_core = M14
 latent_trade_goods = { gu_vehicles }
 set_province_flag = has_static_trade_good
 set_province_flag = has_{ gu_vehicles }_trade_good
+
+1444.11.13 = {
+remove_core = M14
+add_core = M00
+owner = M00
+controller = M00
+}

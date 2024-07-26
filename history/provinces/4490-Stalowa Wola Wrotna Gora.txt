@@ -12,3 +12,10 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = ottoman
 
+
+1444.11.13 = {
+remove_core = I04
+add_core = I00
+owner = I00
+controller = I00
+}

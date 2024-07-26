@@ -15,3 +15,10 @@ add_core = B11
 discovered_by = ottoman
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_barley_trade_good
+
+1444.11.13 = {
+remove_core = B11
+add_core = B00
+owner = B00
+controller = B00
+}

@@ -17,3 +17,10 @@ add_core = H20
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_pigs_trade_good
+
+1444.11.13 = {
+remove_core = H20
+add_core = H00
+owner = H00
+controller = H00
+}
