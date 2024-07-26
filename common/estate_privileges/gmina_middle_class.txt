@@ -1085,8 +1085,7 @@ estate_middle_class_party_appreciation = { #Political Party
 		trigger = {
 
 			religion = populism_samoobrona 
-		 		
-
+		 	
 		}
 		
 		modifier = {
@@ -1099,6 +1098,14 @@ estate_middle_class_party_appreciation = { #Political Party
 		}
 		modifier = {
 			monthly_fervor_increase = 0.5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			religion_group = liberalism_group
+		}
+		modifier = {
+			church_power_modifier = 0.7
 		}
 	}
 	conditional_modifier = {

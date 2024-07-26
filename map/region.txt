@@ -155,3 +155,218 @@ lodzkie_region = {
 		rozprza dobryszyce zytno maslowice sulejow opoczno paradyz 
 	}
 }
+
+wisla_region = {
+	areas = {
+		wisla_area
+	}
+}
+
+nida_region = {
+	areas = {
+		nida_area
+	}
+}
+
+czarna_nida_region = {
+	areas = {
+		czarna_nida_area
+	}
+}
+
+bobrza_region = {
+	areas = {
+		bobrza_area
+	}
+}
+
+raba_region = {
+	areas = {
+		raba_area
+	}
+}
+
+dunajec_region = {
+	areas = {
+		dunajec_area
+	}
+}
+
+wislok_region = {
+	areas = {
+		wislok_area
+	}
+}
+
+wisloka_region = {
+	areas = {
+		wisloka_area
+	}
+}
+
+san_region = {
+	areas = {
+		san_area
+	}
+}
+wieprz_region = {
+	areas = {
+		wieprz_area
+	}
+}
+
+pilica_region = {
+	areas = {
+		pilica_area
+	}
+}
+
+czarna_region = {
+	areas = {
+		czarna_area
+	}
+}
+
+bug_region = {
+	areas = {
+		bug_area
+	}
+}
+
+wkra_region = {
+	areas = {
+		wkra_area
+	}
+}
+
+obra_region = {
+	areas = {
+		obra_area
+	}
+}
+
+warta_region = {
+	areas = {
+		warta_area
+	}
+}
+narew_region = {
+	areas = {
+		narew_area
+	}
+}
+
+biebrza_region = {
+	areas = {
+		biebrza_area
+	}
+}
+
+netta_region = {
+	areas = {
+		netta_area
+	}
+}
+
+kanal_augustowski_region = {
+	areas = {
+		kanal_augustowski_area
+	}
+}
+czarna_hancza_region = {
+	areas = {
+		czarna_hancza_area
+	}
+}
+
+pisa_region = {
+	areas = {
+		pisa_area
+	}
+}
+
+bzura_region = {
+	areas = {
+		bzura_area
+	}
+}
+rega_region = {
+	areas = {
+		rega_area
+	}
+}
+
+parseta_region = {
+	areas = {
+		parseta_area
+	}
+}
+slupia_region = {
+	areas = {
+		slupia_area
+	}
+}
+
+gwda_region = {
+	areas = {
+		gwda_area
+	}
+}
+
+drawa_region = {
+	areas = {
+		drawa_area
+	}
+}
+
+notec_region = {
+	areas = {
+		notec_area
+	}
+}
+
+odra_region = {
+	areas = {
+		odra_area
+	}
+}
+
+barycz_region = {
+	areas = {
+		barycz_area
+	}
+}
+
+bobr_region = {
+	areas = {
+		bobr_area
+	}
+}
+
+nysa_klodzka_region = {
+	areas = {
+		nysa_klodzka_area
+	}
+}
+
+mala_panew_region = {
+	areas = {
+		mala_panew_area
+	}
+}
+
+nysa_luzycka_region = {
+	areas = {
+		nysa_luzycka_area
+	}
+}
+
+# ALL_RIVERS_region = {
+# 	areas = {
+# 		gwda_area mala_panew_area nysa_klodzka_area bobr_area barycz_area odra_area notec_area
+# 		drawa_area gwda_area slupia_area parseta_area rega_area bzura_area pisa_area czarna_hancza_area
+# 		kanal_augustowski_area netta_area biebrza_area narew_area warta_area obra_area wkra_area bug_area
+# 		czarna_area pilica_area wieprz_area san_area wisloka_area wislok_area dunajec_area raba_area
+# 		bobrza_area czarna_nida_area nida_area wisla_area
+# 	}
+# }

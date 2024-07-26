@@ -1146,6 +1146,20 @@ estate_families_political_commitment = { #Political Party
 			church_power_modifier = 0.5
 		}
 	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				religion = conservatism_kpn
+				religion = conservatism_zchn
+				religion = conservatism_pc
+				religion = conservatism_aws
+				religion = conservatism_psl
+			}
+		}
+		modifier = {
+			yearly_patriarch_authority = 1
+		}
+	}
 	penalties = {
 	}
 	benefits = {

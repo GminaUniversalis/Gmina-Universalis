@@ -157,7 +157,52 @@ guiTypes = {
 			maxValue =1
 			minValue =0
 			stepSize =0.01
-			startValue = 0
+			startValue = 1
+			horizontal = 0
+
+
+			guiButtonType = {
+				name = "listboxSliderButton"	
+				quadTextureSprite = "GFX_scroll_drager"
+				position = { x=0 y =0}
+			}
+
+			guiButtonType = {
+				name = "listboxTrackButton"
+				quadTextureSprite = "GFX_scroll_track"
+				position = { x=12 y =12}		
+
+			}	
+
+			guiButtonType = {
+				parent = "listboxSliderButton"
+				name = "upButton"
+				quadTextureSprite = "GFX_scroll_up"
+				position = { x=0 y =0}	
+			}
+			
+			guiButtonType = {
+				parent = "listboxSliderButton"
+				name = "downButton"
+				quadTextureSprite = "GFX_scroll_down"
+				position = { x=0 y =120}
+			}
+	}
+
+	scrollbarType = {
+		name = "WARSCREEN_slider"	
+		slider = "listboxSliderButton"
+		track= "listboxTrackButton"
+		leftbutton = "downButton"
+		rightbutton = "upButton"
+		size = {x =12 y =12 }
+		position = {x= 0 y =0}
+		priority = 100
+		borderSize = {x = 12 y = 12}
+		maxValue =100
+		minValue =0
+		stepSize =1.10
+		startValue = 100
 		horizontal = 0
 
 
@@ -336,4 +381,49 @@ guiTypes = {
 			position = { x=0 y =120}	
 		}
 	}	
+
+	scrollbarType = {
+		name = "AGES_slider"	
+		slider = "SliderButton"
+		track= "TrackButton"
+		leftbutton = "upButton"
+		rightbutton = "downButton"
+		size = {x =640 y =60 }
+		position = {x= -584 y = 4}
+				
+		borderSize = {x =12 y = 12}	
+		maxValue = 1
+		minValue = 0
+		stepSize =2
+		startValue = 1
+		horizontal = 1
+		scroll_speed = 1
+
+		guiButtonType = {
+			name = "SliderButton"	
+			quadTextureSprite = "GFX_scroll_drager"
+			position = { x=0 y =130}
+		}
+
+		guiButtonType = {
+			name = "TrackButton"
+			quadTextureSprite = "GFX_ages_scroll_bg"
+			position = { x=0 y =0}
+
+		}	
+
+		guiButtonType = {
+			parent = "SliderButton"
+			name = "upButton"
+			quadTextureSprite = "GFX_scroll_left_ages"
+			position = { x=0 y =0}	
+		}
+		
+		guiButtonType = {
+			parent = "SliderButton"
+			name = "downButton"
+			quadTextureSprite = "GFX_scroll_right_ages"
+			position = { x=0 y =0}	
+		}
+	}
 }
