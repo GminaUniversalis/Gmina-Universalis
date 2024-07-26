@@ -12,6 +12,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_crownland_bonus_bg"
+		texturefile = "gfx/interface/estate_interface/crownland_bonus_bg.dds"
+	}
+
+	spriteType = {
 		name = "GFX_country_estates_view_bg_large"
 		texturefile = "gfx/interface/estate_interface/country_estates_view_bg_large.dds"
 	}
