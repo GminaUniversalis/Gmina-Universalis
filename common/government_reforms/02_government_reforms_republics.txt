@@ -893,7 +893,7 @@ kongsi_federation = {
 	nation_designer_cost = 20
 	nation_designer_trigger = {
 		primary_culture = hakka
-		technology_group = chinese
+		# technology_group = chinese
 	}
 	modifiers = {
 		production_efficiency = 0.1

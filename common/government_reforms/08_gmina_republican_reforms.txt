@@ -1,0 +1,263 @@
+#Tier 1
+
+gmina_government_reform = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = gmina_government_reform
+			have_had_reform = gmina_government_reform
+		}
+		government_rank = 1
+		NOT = {government_rank = 2}
+	}
+
+	trigger = {
+		government_rank = 1
+		NOT = {government_rank = 2}
+	}
+
+	lock_level_when_selected = no
+	valid_for_new_country = yes
+	nation_designer_cost = 5
+	valid_for_nation_designer = yes
+	modifiers = {
+		development_cost_in_primary_culture = -0.1
+		global_allowed_num_of_manufactories = 1
+		global_allowed_num_of_buildings = 1
+		enemy_core_creation = 0.1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+	duration = 5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		cannot_become_dictatorship = yes
+	}
+}
+
+powiat_government_reform = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = powiat_government_reform
+			have_had_reform = powiat_government_reform
+		}
+		government_rank = 2
+		NOT = {government_rank = 3}
+	}
+
+	trigger = {
+		government_rank = 2
+		NOT = {government_rank = 3}
+	}
+	
+	lock_level_when_selected = no
+	valid_for_new_country = no
+	nation_designer_cost = 10
+	valid_for_nation_designer = yes
+	modifiers = {
+		monthly_reform_progress_modifier = 0.25
+		relation_with_same_culture_group = 25
+		relation_with_other_culture = -50
+		num_of_parliament_issues = 1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+	duration = 5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		cannot_become_dictatorship = yes
+	}
+}
+
+miasto_powiatowe_government_reform = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = miasto_powiatowe_government_reform
+			have_had_reform = miasto_powiatowe_government_reform
+		}
+		government_rank = 3
+		NOT = {government_rank = 4}
+	}
+
+	trigger = {
+		government_rank = 3
+		NOT = {government_rank = 4}
+	}
+	
+	lock_level_when_selected = no
+	valid_for_new_country = no
+	nation_designer_cost = 15
+	valid_for_nation_designer = yes
+	modifiers = {
+
+		parliament_backing_chance = 0.25
+		advisor_pool = 2
+		state_governing_cost = -0.20
+		num_of_parliament_issues = 3
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+	duration = 5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		cannot_become_dictatorship = yes
+	}
+}
+
+wojewodztwo_government_reform = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = wojewodztwo_government_reform
+			have_had_reform = wojewodztwo_government_reform
+		}
+		government_rank = 4
+		NOT = {government_rank = 5}
+	}
+
+	trigger = {
+		government_rank = 5
+		NOT = {government_rank = 5}
+	}
+	
+	lock_level_when_selected = no
+	valid_for_new_country = no
+	nation_designer_cost = 20
+	valid_for_nation_designer = yes
+
+	modifiers = {
+
+		global_allowed_num_of_buildings = 1
+		parliament_backing_chance = 0.2
+		advisor_pool = 3
+		num_of_parliament_issues = 5
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+	duration = 5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		cannot_become_dictatorship = yes
+	}
+}
+
+kraj_government_reform = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = kraj_government_reform
+			have_had_reform = kraj_government_reform
+		}
+		government_rank = 5
+	}
+
+	trigger = {
+		government_rank = 5
+	}
+	
+	lock_level_when_selected = no
+	valid_for_new_country = no
+	nation_designer_cost = 25
+	valid_for_nation_designer = yes
+	modifiers = {
+		
+		global_tax_modifier = 2
+		global_allowed_num_of_buildings = 1
+		parliament_backing_chance = 0.15
+		advisor_pool = 5
+		num_of_parliament_issues = 10
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+	duration = 5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		cannot_become_dictatorship = yes
+	}
+}

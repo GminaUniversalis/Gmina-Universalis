@@ -218,3 +218,11 @@ on_revoke_estate_land = {
 		province_event = { id = gmina_estates.1 }
 	}
 }
+
+on_five_year_pulse = {
+	random_events = {
+
+		100 = gmina_common_flavor.1
+		
+	}
+}

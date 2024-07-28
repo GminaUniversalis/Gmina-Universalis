@@ -195,7 +195,7 @@ permanent_marathas_council_reform = {
 	potential = {
 		has_dlc = "Dharma"
 		has_estate = estate_maratha
-		technology_group = indian
+		#technology_group = indian
 	}
 	modifiers = {
 		leader_land_shock = 1
@@ -224,7 +224,7 @@ governmental_purbias_register_reform = {
 	potential = {
 		has_dlc = "Dharma"
 		has_estate = estate_rajput
-		technology_group = indian
+		#technology_group = indian
 	}
 	modifiers = {
 		recover_army_morale_speed = 0.05

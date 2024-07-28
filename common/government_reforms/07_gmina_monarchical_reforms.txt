@@ -1,0 +1,79 @@
+#Tier 1
+silesian_autonomy_reform = {
+	icon = "peasant_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_playing_custom_nation = yes
+			have_had_reform = silesian_autonomy_reform
+		}
+		
+	}
+
+	trigger = {
+		is_part_of_hre = yes
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	is_eligible_for_hre_emperor = yes
+	queen = no
+	heir = no
+
+	modifiers = {
+		relation_with_same_culture_group = 50
+		enemy_core_creation = 0.25
+		reasons_to_elect = 25
+		no_stability_loss_on_monarch_death = yes
+	}
+
+	# removed_effect = {
+	# 	if = {
+	# 		limit = { is_lesser_in_union = no }
+	# 		country_event = { id = dutch_republic.33 }
+	# 	}
+	# }
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	conditional = {
+		allow = {
+			or = {
+				has_dlc = "Res Publica"
+				has_dlc = "Winds of Change"
+			}
+		}
+
+		duration = 5
+		has_term_election = yes
+
+		states_general_mechanic = {
+
+			unionists = {
+				global_unrest = 2
+				estate_miners_loyalty_modifier = -0.1
+				legitimacy = -1
+			}
+
+			separationists = {
+				global_unrest = -2
+				estate_miners_loyalty_modifier = 0.1
+				legitimacy = 1
+			}
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1
+	}
+}

@@ -1,5 +1,5 @@
 government = republic
-add_government_reform = parliamentary_republic_reform
+add_government_reform = wojewodztwo_government_reform
 government_rank = 4
 technology_group = western
 capital = 72

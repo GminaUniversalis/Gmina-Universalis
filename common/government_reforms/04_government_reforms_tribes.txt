@@ -272,13 +272,13 @@ gond_kingdom = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Dharma"
-		technology_group = indian
+		#technology_group = indian
 		primary_culture = gondi
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	nation_designer_trigger = {
-		technology_group = indian
+		#technology_group = indian
 		primary_culture = gondi
 	}
 	legacy_equivalent = tribal_kingdom_legacy

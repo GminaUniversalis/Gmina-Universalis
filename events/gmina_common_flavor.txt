@@ -1,0 +1,37 @@
+namespace = gmina_common_flavor
+
+country_event = {
+	id = gmina_common_flavor.1
+	title = gmina_common_flavor.1.t
+	desc = gmina_common_flavor.1.d
+	picture = ROYAL_STRESS_eventPicture
+
+	trigger = {
+		ROOT = {
+			any_owned_province = {
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+				}
+			}
+		}
+	}
+	option = {
+		name = gmina_common_flavor.1.a
+		custom_tooltip = gmina_common_flavor.1.tt
+		add_manpower = -0.001
+
+	}
+
+	immediate = {
+
+		hidden_effect = {
+			change_variable = {
+				which = boar_counter
+				value = 1
+
+			}
+		}
+		
+	}
+}

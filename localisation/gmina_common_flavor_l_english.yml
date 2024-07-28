@@ -1,0 +1,5 @@
+﻿l_english:
+ gmina_common_flavor.1.t: "Gravely mistake"
+ gmina_common_flavor.1.d: "A hunter accidentally shot and killed a person during a recent hunting trip, mistakenly identifying them as a wild boar. The tragic incident occurred when the hunter fired at what he believed was game in the dense underbrush. Upon approaching the scene, he realized that the victim was actually a human. The hunter immediately contacted emergency services, but the individual was pronounced dead at the scene. Authorities are investigating the circumstances to determine how the misidentification happened and to assess any potential safety violations."
+ gmina_common_flavor.1.a: "Let's pray that doesn't happen again"
+ gmina_common_flavor.1.tt: "Boars not killed: §G[ROOT.boar_counter.GetValue]§!"

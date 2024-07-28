@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = stadthalter_monarchy_reform
+add_government_reform = silesian_autonomy_reform
 government_rank = 4
 technology_group = eastern
 religion = communism_zsl

@@ -1389,7 +1389,7 @@ estate_nobles_neighbor_raids = {
 		NOT = { has_country_modifier = the_abolish_slavery_act }
 		has_dlc = "Origins"
 		OR = {
-			technology_group = east_african
+			# technology_group = east_african
 			technology_group = central_african
 			technology_group = sub_saharan
 			has_reform = steppe_horde

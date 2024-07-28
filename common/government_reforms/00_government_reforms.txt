@@ -1846,7 +1846,7 @@ celestial_empire_legacy = {
 	start_territory_to_estates = 0.9
 	nation_designer_trigger = {
 		culture_group = east_asian
-		technology_group = chinese
+		# technology_group = chinese
 		capital_scope = {
 			OR = {
 				region = north_china_region
@@ -2012,7 +2012,7 @@ daimyo_legacy = {
 	nation_designer_cost = 0
 	nation_designer_trigger = {
 		culture_group = japanese_g
-		technology_group = chinese
+		# technology_group = chinese
 		capital_scope = { region = japan_region }
 	}
 
@@ -2086,7 +2086,7 @@ shogunate_legacy = {
 	nation_designer_cost = 50
 	nation_designer_trigger = {
 		culture_group = japanese_g
-		technology_group = chinese
+		# technology_group = chinese
 		capital_scope = { region = japan_region }
 		owns = 1020
 	}
@@ -2128,7 +2128,7 @@ indep_daimyo_legacy = {
 	nation_designer_cost = 0
 	nation_designer_trigger = {
 		culture_group = japanese_g
-		technology_group = chinese
+		# technology_group = chinese
 		capital_scope = { region = japan_region }
 	}
 
