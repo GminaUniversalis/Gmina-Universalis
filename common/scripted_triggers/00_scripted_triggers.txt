@@ -767,9 +767,9 @@ root_can_build_manufactory_here_trigger = {
 		AND = {
             OR = {
                 trade_goods = gu_mushrooms
-                trade_goods = cotton
+                trade_goods = gu_hemp
                 trade_goods = sugar
-                trade_goods = tobacco
+                trade_goods = gu_oscypek
                 trade_goods = gu_vodka
                 trade_goods = gu_beer
             }
@@ -2564,9 +2564,9 @@ has_textile_trade_goods = {
 has_plantation_trade_goods = {
 	OR = {
 		trade_goods = gu_mushrooms
-		trade_goods = cotton
+		trade_goods = gu_hemp
 		trade_goods = sugar
-		trade_goods = tobacco
+		trade_goods = gu_oscypek
 		trade_goods = gu_vodka
 		trade_goods = gu_beer
 	}
@@ -2607,6 +2607,7 @@ has_mills_trade_goods = {
 #For special gold trade goods
 has_valuable_resource = {
 	trade_goods = gold
+		trade_goods = gu_euro
 }
 
 #country scope
@@ -2983,65 +2984,65 @@ is_allowed_to_recruit_mercenaries = {
 }
 
 has_no_religion_specific_government_available = {
-	NOT = { religion = jewish }
-	NOT = { religion = zoroastrian }
-	NOT = { religion = hinduism }
-	NOT = { religion = sikhism }
-	NOT = { religion_group = muslim }
-	NOT = { religion_group = christian }
-	NOT = { religion_group = eastern }
-	NOT = { religion = tengri_pagan_reformed }
-	NOT = { religion = shamanism }
-	NOT = { religion = norse_pagan_reformed }
+	# NOT = { religion = jewish }
+	# NOT = { religion = zoroastrian }
+	# NOT = { religion = hinduism }
+	# NOT = { religion = sikhism }
+	# NOT = { religion_group = muslim }
+	# NOT = { religion_group = christian }
+	# NOT = { religion_group = eastern }
+	# NOT = { religion = tengri_pagan_reformed }
+	# NOT = { religion = shamanism }
+	# NOT = { religion = norse_pagan_reformed }
 }
 
 #Province scope
 is_flatland = {
 	custom_trigger_tooltip = {
 		tooltip = is_flatland_tt
-		OR = {
-			has_terrain = farmlands
-			has_terrain = grasslands
-			has_terrain = steppe
-			has_terrain = savannah
-			has_terrain = drylands
-			has_terrain = coastal_desert
-			has_terrain = desert
-			has_terrain = coastline
-		}
+		# OR = {
+		# 	has_terrain = farmlands
+		# 	has_terrain = grasslands
+		# 	has_terrain = steppe
+		# 	has_terrain = savannah
+		# 	has_terrain = drylands
+		# 	has_terrain = coastal_desert
+		# 	has_terrain = desert
+		# 	has_terrain = coastline
+		# }
 	}
 }
 
 is_yellow_river_province_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = is_yellow_river_province_trigger_tt
-		OR = { 
-			province_id = 4196 
-			province_id = 2142
-			province_id = 2141
-			province_id = 2176
-			province_id = 688
-			province_id = 1836
-			province_id = 694
-			province_id = 700
-		}
+		# OR = { 
+		# 	province_id = 4196 
+		# 	province_id = 2142
+		# 	province_id = 2141
+		# 	province_id = 2176
+		# 	province_id = 688
+		# 	province_id = 1836
+		# 	province_id = 694
+		# 	province_id = 700
+		# }
 	}
 }
 
 is_yangtze_river_province_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = is_yangtze_river_province_trigger_tt
-		OR = { 
-			province_id = 2145
-			province_id = 1821
-			province_id = 1838
-			province_id = 686
-			province_id = 683
-			province_id = 4197
-			province_id = 682
-			province_id = 2172
-			province_id = 681
-		}
+		# OR = { 
+		# 	province_id = 2145
+		# 	province_id = 1821
+		# 	province_id = 1838
+		# 	province_id = 686
+		# 	province_id = 683
+		# 	province_id = 4197
+		# 	province_id = 682
+		# 	province_id = 2172
+		# 	province_id = 681
+		# }
 	}
 }
 
@@ -3058,44 +3059,44 @@ is_eyalet_trigger = {
 has_strong_mil_national_ideas = {
 	custom_trigger_tooltip = {
 		tooltip = has_strong_mil_national_ideas_tt
-		OR = { 
-			tag = FRA
-			tag = PRU
-			tag = SPA 
-			tag = TUR
-			tag = JAP
-			tag = RUS
-			tag = MOS
-			tag = TEU
-			tag = POL
-			tag = PLC
-			tag = ITA
-			tag = GER
-			tag = QNG
-			tag = SWE
-			tag = SCA
-			tag = GBR
-			tag = NED
-			tag = RUM
-			tag = MAM
-			tag = ZIM
-			tag = ZUL
-			tag = ODA
-			tag = SMZ
-			tag = MCH
-			tag = MLC
-			tag = MJZ
-			tag = BNG
-			tag = NPL
-			tag = PUN
-			tag = BHA
-			tag = RJP
-			tag = HSA
-			tag = SMO
-			tag = MAS
-			tag = JMN
-			tag = SYN
-		}
+		# OR = { 
+		# 	tag = FRA
+		# 	tag = PRU
+		# 	tag = SPA 
+		# 	tag = TUR
+		# 	tag = JAP
+		# 	tag = RUS
+		# 	tag = MOS
+		# 	tag = TEU
+		# 	tag = POL
+		# 	tag = PLC
+		# 	tag = ITA
+		# 	tag = GER
+		# 	tag = QNG
+		# 	tag = SWE
+		# 	tag = SCA
+		# 	tag = GBR
+		# 	tag = NED
+		# 	tag = RUM
+		# 	tag = MAM
+		# 	tag = ZIM
+		# 	tag = ZUL
+		# 	tag = ODA
+		# 	tag = SMZ
+		# 	tag = MCH
+		# 	tag = MLC
+		# 	tag = MJZ
+		# 	tag = BNG
+		# 	tag = NPL
+		# 	tag = PUN
+		# 	tag = BHA
+		# 	tag = RJP
+		# 	tag = HSA
+		# 	tag = SMO
+		# 	tag = MAS
+		# 	tag = JMN
+		# 	tag = SYN
+		# }
 	}
 }
 
@@ -4177,55 +4178,55 @@ has_unified_islam = {
 }
 
 has_completed_all_persian_missions = {
-	custom_trigger_tooltip = {
-		tooltip = has_completed_all_persian_missions_tt
-		mission_completed = per_reform_our_defenses
-		mission_completed = per_master_of_india
-		mission_completed = per_create_the_tupchi
-		OR = {
-			AND = {
-				mission_completed = per_a_new_eranshahr
-				mission_completed = per_an_asha_empire
-			}
-			AND = {
-				OR = {
-					mission_completed = per_unify_islam
-					mission_completed = per_great_shia_empire
-				}
-				mission_completed = per_indomitable_lion
-				mission_completed = per_language_of_poetry
-			}
-		}
-		OR = {
-			AND = {
-				has_mission = per_tab_legacy_of_eranshahr
-				mission_completed = per_tab_legacy_of_eranshahr
-			}
-			AND = {
-				has_mission = per_qqq_legacy_of_the_seljuk
-				mission_completed = per_qqq_legacy_of_the_seljuk
-			}
-			AND = {
-				has_mission = per_tim_legacy_of_timur
-				mission_completed = per_tim_legacy_of_timur
-			}
-			AND = {
-				has_mission = per_arl_legacy_of_the_safavid
-				mission_completed = per_arl_legacy_of_the_safavid
-			}
-			AND = {
-				NOT = { has_mission = per_tab_legacy_of_eranshahr }
-				NOT = { has_mission = per_qqq_legacy_of_the_seljuk }
-				NOT = { has_mission = per_tim_legacy_of_timur }
-				NOT = { has_mission = per_arl_legacy_of_the_safavid }
-			}
-		}
-		mission_completed = per_riches_of_asia
-		mission_completed = per_enlightened_rule
-		mission_completed = per_the_tofangchi
-		mission_completed = per_balance_of_power
-		mission_completed = per_establish_the_qurchi
-	}
+	# custom_trigger_tooltip = {
+	# 	tooltip = has_completed_all_persian_missions_tt
+	# 	mission_completed = per_reform_our_defenses
+	# 	mission_completed = per_master_of_india
+	# 	mission_completed = per_create_the_tupchi
+	# 	OR = {
+	# 		AND = {
+	# 			mission_completed = per_a_new_eranshahr
+	# 			mission_completed = per_an_asha_empire
+	# 		}
+	# 		AND = {
+	# 			OR = {
+	# 				mission_completed = per_unify_islam
+	# 				mission_completed = per_great_shia_empire
+	# 			}
+	# 			mission_completed = per_indomitable_lion
+	# 			mission_completed = per_language_of_poetry
+	# 		}
+	# 	}
+	# 	OR = {
+	# 		AND = {
+	# 			has_mission = per_tab_legacy_of_eranshahr
+	# 			mission_completed = per_tab_legacy_of_eranshahr
+	# 		}
+	# 		AND = {
+	# 			has_mission = per_qqq_legacy_of_the_seljuk
+	# 			mission_completed = per_qqq_legacy_of_the_seljuk
+	# 		}
+	# 		AND = {
+	# 			has_mission = per_tim_legacy_of_timur
+	# 			mission_completed = per_tim_legacy_of_timur
+	# 		}
+	# 		AND = {
+	# 			has_mission = per_arl_legacy_of_the_safavid
+	# 			mission_completed = per_arl_legacy_of_the_safavid
+	# 		}
+	# 		AND = {
+	# 			NOT = { has_mission = per_tab_legacy_of_eranshahr }
+	# 			NOT = { has_mission = per_qqq_legacy_of_the_seljuk }
+	# 			NOT = { has_mission = per_tim_legacy_of_timur }
+	# 			NOT = { has_mission = per_arl_legacy_of_the_safavid }
+	# 		}
+	# 	}
+	# 	mission_completed = per_riches_of_asia
+	# 	mission_completed = per_enlightened_rule
+	# 	mission_completed = per_the_tofangchi
+	# 	mission_completed = per_balance_of_power
+	# 	mission_completed = per_establish_the_qurchi
+	# }
 }
 
 has_any_ongoing_construction = {

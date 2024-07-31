@@ -1419,9 +1419,9 @@ manufactories = {
 			potential = {
 				OR = {
 					trade_goods = gu_mushrooms
-					trade_goods = cotton
+					trade_goods = gu_hemp
 					trade_goods = sugar
-					trade_goods = tobacco
+					trade_goods = gu_oscypek
 					trade_goods = gu_vodka
 					trade_goods = gu_beer
 				}
@@ -1532,9 +1532,9 @@ manufactories = {
 			potential = {
 				OR = {
 					trade_goods = gu_mushrooms
-					trade_goods = cotton
+					trade_goods = gu_hemp
 					trade_goods = sugar
-					trade_goods = tobacco
+					trade_goods = gu_oscypek
 					trade_goods = gu_vodka
 					trade_goods = gu_beer
 				}
@@ -2375,9 +2375,9 @@ industrialization = {
 			potential = {
 				OR = {
 					trade_goods = gu_mushrooms
-					trade_goods = cotton
+					trade_goods = gu_hemp
 					trade_goods = sugar
-					trade_goods = tobacco
+					trade_goods = gu_oscypek
 					trade_goods = gu_vodka
 					trade_goods = gu_beer
 				}
@@ -2488,9 +2488,9 @@ industrialization = {
 			potential = {
 				OR = {
 					trade_goods = gu_mushrooms
-					trade_goods = cotton
+					trade_goods = gu_hemp
 					trade_goods = sugar
-					trade_goods = tobacco
+					trade_goods = gu_oscypek
 					trade_goods = gu_vodka
 					trade_goods = gu_beer
 				}

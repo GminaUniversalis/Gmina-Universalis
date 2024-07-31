@@ -136,7 +136,7 @@
  estate_burghers_tropical_revoke_effect_tooltip:0 "Every owned province with Tropical climate loses:\nLocal Development Cost: §G-5%§!\nLocal Settler Increase: §G+10%§!"
  estate_church_lao_animism:0 "Tolerance of Folk Religions"
  estate_church_lao_animism_desc:0 "Though it is not in keeping with our faith, we accept that many in our nation continue to follow ancient folk religions."
- estate_church_lao_animism_effect_tooltip:0 "Every owned province of the §YAnimist§! faith gains:\nLocal Missionary Strength: §R-100§!\nLocal Religious Unity Contribution: §G-100%§!"
+ estate_church_lao_animism_effect_tooltip:0 "Every owned province of the §YAnimist§! faith gains:\nLocal Political Strength: §R-100§!\nLocal Religious Unity Contribution: §G-100%§!"
  estate_church_lao_animism_revoke_effect_tooltip:1 "The modifier §Y'Tolerance of Folk Religions'§! is removed from all owned §YAnimist§! provinces."
  estate_church_lao_animism_mod:0 "Toleration of Folk Religions"
  desc_estate_church_lao_animism_mod:0 "Though it is not in keeping with our faith, we accept that many in our nation continue to follow ancient folk religions."

@@ -55,12 +55,16 @@ silesian_autonomy_reform = {
 				global_unrest = 2
 				estate_miners_loyalty_modifier = -0.1
 				legitimacy = -1
+				diplomatic_reputation = 2
+				development_cost_modifier = -0.1
 			}
 
 			separationists = {
 				global_unrest = -2
 				estate_miners_loyalty_modifier = 0.1
 				legitimacy = 1
+				reduced_stab_impacts = yes
+				ae_impact = -0.25
 			}
 		}
 	}

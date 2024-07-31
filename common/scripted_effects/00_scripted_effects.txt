@@ -419,10 +419,10 @@ enact_revolution_effect = {
 	}
 	set_country_flag = revolutionary_republic_flag
 	
-	if = { 
-		limit = { tag = FRA has_dlc = "Domination" } 
-		swap_non_generic_missions = yes
-	}
+	# if = { 
+	# 	limit = { tag = FRA has_dlc = "Domination" } 
+	# 	swap_non_generic_missions = yes
+	# }
 }
 
 #province scope

@@ -4,6 +4,8 @@ monarchy = {
 		feudalism_vs_autocracy = {
 			reforms = {
 				silesian_autonomy_reform
+				feudalism_reform
+				autocracy_reform
 			}
 		}
 		hereditary_vs_nobility = {

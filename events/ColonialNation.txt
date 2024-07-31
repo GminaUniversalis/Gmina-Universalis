@@ -2451,7 +2451,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = cotton
+				trade_goods = gu_hemp
 			}
 		}
 	}
@@ -2487,7 +2487,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = cotton
+					trade_goods = gu_hemp
 				}
 			}
 			tooltip = {
@@ -2633,7 +2633,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = tobacco
+				trade_goods = gu_oscypek
 			}
 		}
 	}
@@ -2669,7 +2669,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = tobacco
+					trade_goods = gu_oscypek
 				}
 			}
 			tooltip = {
@@ -4118,7 +4118,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_cotton }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = cotton
+			trade_goods = gu_hemp
 		}
 	}
 	
@@ -4292,7 +4292,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_tobacco }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = tobacco
+			trade_goods = gu_oscypek
 		}
 	}
 	

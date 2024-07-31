@@ -3019,75 +3019,75 @@ compagnie_dordonnance_reform = {
 	
 	ai = {
 		factor = 500
-		modifier = {
-			factor = -1000
-			mission_completed = fra_musketeers
-		}
+		# modifier = {
+		# 	factor = -1000
+		# 	mission_completed = fra_musketeers
+		# }
 	}
 }
 
-musketeers_reform = {
-	icon = "musketeers_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		tag = FRA 
-	}
-	trigger = {
-		NOT = { current_age = age_of_discovery }
-		NOT = { current_age = age_of_reformation }
-		mission_completed = fra_musketeers
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = musketeers_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		has_musketeer = yes
-		allowed_musketeer_fraction = 0.2
-		#nobles_influence_modifier = -0.1
-	}
+# musketeers_reform = {
+# 	icon = "musketeers_reform"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		has_dlc = "Domination"
+# 		#tag = FRA 
+# 	}
+# 	trigger = {
+# 		NOT = { current_age = age_of_discovery }
+# 		NOT = { current_age = age_of_reformation }
+# 		mission_completed = fra_musketeers
+# 		if = {
+# 			limit = { has_modifier_locking_military_tier = yes }
+# 			OR = {
+# 				has_reform = musketeers_reform
+# 				has_not_modifier_locking_military_tier = yes
+# 			}
+# 		}
+# 	}
+# 	modifiers = {
+# 		has_musketeer = yes
+# 		allowed_musketeer_fraction = 0.2
+# 		#nobles_influence_modifier = -0.1
+# 	}
 	
-	ai = {
-		factor = 1000
-	}
-}
+# 	ai = {
+# 		factor = 1000
+# 	}
+# }
 
-gendarmes_reform = {
-	icon = "gendarmes_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination" 
-		culture_group = french 
-	}
-	trigger = {
-		OR = {
-			has_reform = gendarmes_reform 
-			custom_trigger_tooltip = {
-				tooltip = has_unlocked_this_reform_tt
-				has_country_flag = fra_unlock_gendarmes
-			}
-		}
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = gendarmes_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		cavalry_power = 0.1 
-		nobles_loyalty_modifier = 0.05
-		morale_damage = 0.05
-	}
-	ai = {
-		factor = 1
-	}
-}
+# gendarmes_reform = {
+# 	icon = "gendarmes_reform"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		has_dlc = "Domination" 
+# 		culture_group = french 
+# 	}
+# 	trigger = {
+# 		OR = {
+# 			has_reform = gendarmes_reform 
+# 			custom_trigger_tooltip = {
+# 				tooltip = has_unlocked_this_reform_tt
+# 				has_country_flag = fra_unlock_gendarmes
+# 			}
+# 		}
+# 		if = {
+# 			limit = { has_modifier_locking_military_tier = yes }
+# 			OR = {
+# 				has_reform = gendarmes_reform
+# 				has_not_modifier_locking_military_tier = yes
+# 			}
+# 		}
+# 	}
+# 	modifiers = {
+# 		cavalry_power = 0.1 
+# 		nobles_loyalty_modifier = 0.05
+# 		morale_damage = 0.05
+# 	}
+# 	ai = {
+# 		factor = 1
+# 	}
+# }
 
 #Saxon/Prussian
 general_war_commissariat_reform = {
@@ -4046,156 +4046,156 @@ laesio_enormis_reform = {
 	}
 }
 
-jap_gokaido_reform = {
-	icon = "jap_gokaido_reform"
-	allow_normal_conversion = no
-	potential = {
-		culture_group = japanese_g
-	}
-	trigger = {
-		OR = {
-			have_had_reform = jap_gokaido_reform
-			has_reform = jap_gokaido_reform
-			mission_completed = jap_expand_gokaido
-		}
-	}
-	modifiers = {
-		merchants = 1 
-	}
-	effect = {
-		every_owned_province = {
-			limit = { 
-				region = japan_region 
-				NOT = { has_province_modifier = jap_gokaido_modifier }
-			}
-			add_province_modifier = {
-				name = jap_gokaido_modifier
-				duration = -1 
-				hidden = yes
-			}
-		}
-	}
-	removed_effect = {
-		every_owned_province = {
-			limit = { 
-				region = japan_region 
-				has_province_modifier = jap_gokaido_modifier
-			}	
-			remove_province_modifier = jap_gokaido_modifier
-		}
-	}
-	custom_attributes = { benefits_for_japan = yes } 
-	ai = {
-		factor = 100
-	}
-}
+# jap_gokaido_reform = {
+# 	icon = "jap_gokaido_reform"
+# 	allow_normal_conversion = no
+# 	potential = {
+# 		culture_group = japanese_g
+# 	}
+# 	trigger = {
+# 		OR = {
+# 			have_had_reform = jap_gokaido_reform
+# 			has_reform = jap_gokaido_reform
+# 			mission_completed = jap_expand_gokaido
+# 		}
+# 	}
+# 	modifiers = {
+# 		merchants = 1 
+# 	}
+# 	effect = {
+# 		every_owned_province = {
+# 			limit = { 
+# 				region = japan_region 
+# 				NOT = { has_province_modifier = jap_gokaido_modifier }
+# 			}
+# 			add_province_modifier = {
+# 				name = jap_gokaido_modifier
+# 				duration = -1 
+# 				hidden = yes
+# 			}
+# 		}
+# 	}
+# 	removed_effect = {
+# 		every_owned_province = {
+# 			limit = { 
+# 				region = japan_region 
+# 				has_province_modifier = jap_gokaido_modifier
+# 			}	
+# 			remove_province_modifier = jap_gokaido_modifier
+# 		}
+# 	}
+# 	custom_attributes = { benefits_for_japan = yes } 
+# 	ai = {
+# 		factor = 100
+# 	}
+# }
 
-reform_the_samurai_reform = {
-	icon = "reform_the_samurai_reform"
-	allow_normal_conversion = yes
-	potential = {
-		culture_group = japanese_g 
-		tag = JAP 
-		OR = {
-			have_had_reform = reform_the_samurai_reform
-			has_reform = reform_the_samurai_reform
-		}
-		NOT = { has_country_modifier = jap_domineering_naval_focus_modifier }
-		NOT = { has_country_modifier = jap_naval_academy_of_japan_modifier }
-	}
-	modifiers = {
-		drill_gain_modifier = 0.5
-		army_tradition = 0.5
-		allowed_samurai_fraction = 0.05
-	}
-	effect = {
-		custom_tooltip = jap_samurai_get_fire_damage_tt
-		hidden_effect = {
-			add_country_modifier = {
-				name = jap_reformed_samurai_modifier
-				duration = -1 
-				hidden = yes 
-			}
-		}
-	}
-	removed_effect = {
-		remove_country_modifier = jap_reformed_samurai_modifier
-	}
-	ai = {
-		factor = 1.5
-	}
-}
+# reform_the_samurai_reform = {
+# 	icon = "reform_the_samurai_reform"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		culture_group = japanese_g 
+# 		tag = JAP 
+# 		OR = {
+# 			have_had_reform = reform_the_samurai_reform
+# 			has_reform = reform_the_samurai_reform
+# 		}
+# 		NOT = { has_country_modifier = jap_domineering_naval_focus_modifier }
+# 		NOT = { has_country_modifier = jap_naval_academy_of_japan_modifier }
+# 	}
+# 	modifiers = {
+# 		drill_gain_modifier = 0.5
+# 		army_tradition = 0.5
+# 		allowed_samurai_fraction = 0.05
+# 	}
+# 	effect = {
+# 		custom_tooltip = jap_samurai_get_fire_damage_tt
+# 		hidden_effect = {
+# 			add_country_modifier = {
+# 				name = jap_reformed_samurai_modifier
+# 				duration = -1 
+# 				hidden = yes 
+# 			}
+# 		}
+# 	}
+# 	removed_effect = {
+# 		remove_country_modifier = jap_reformed_samurai_modifier
+# 	}
+# 	ai = {
+# 		factor = 1.5
+# 	}
+# }
 
-tercios_reform = {
-	icon = "tercios_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination" 
-		OR = {
-			AND = {
-				is_or_was_tag = { tag = ARA }
-				OR = {
-					total_development = 500 
-					is_great_power = yes 
-				}
-			}
-			mission_completed = spa_tercios_system
-			custom_trigger_tooltip = {
-				tooltip = has_unlocked_this_reform_tt
-				has_country_flag = enable_tercios_reform_flag
-			}
-			has_reform = tercios_reform
-		}
-		NOT = { religion_group = muslim } 
-	}
-	modifiers = {
-		has_tercio = yes
-		allowed_tercio_fraction = 0.15
-		army_tradition = 0.5
-		yearly_army_professionalism = 0.0025
-	}
+# tercios_reform = {
+# 	icon = "tercios_reform"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		has_dlc = "Domination" 
+# 		OR = {
+# 			AND = {
+# 				is_or_was_tag = { tag = ARA }
+# 				OR = {
+# 					total_development = 500 
+# 					is_great_power = yes 
+# 				}
+# 			}
+# 			mission_completed = spa_tercios_system
+# 			custom_trigger_tooltip = {
+# 				tooltip = has_unlocked_this_reform_tt
+# 				has_country_flag = enable_tercios_reform_flag
+# 			}
+# 			has_reform = tercios_reform
+# 		}
+# 		NOT = { religion_group = muslim } 
+# 	}
+# 	modifiers = {
+# 		has_tercio = yes
+# 		allowed_tercio_fraction = 0.15
+# 		army_tradition = 0.5
+# 		yearly_army_professionalism = 0.0025
+# 	}
 	
-	ai = {
-		factor = 1
-	}
-}
+# 	ai = {
+# 		factor = 1
+# 	}
+# }
 
-consulate_of_the_sea = {
-	icon = "consulate_of_the_sea"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination" 
-		OR = {
-			tag = ARA
-			was_tag = ARA 
-			has_reform = consulate_of_the_sea 
-		}
-	}
-	trigger = {
-		OR = {
-			mission_completed = gc_ara_consultate_of_the_sea2
-			has_reform = consulate_of_the_sea 
-		}
-	}
-	modifiers = {
-		trade_efficiency = 0.1
-		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.05
+# consulate_of_the_sea = {
+# 	icon = "consulate_of_the_sea"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		has_dlc = "Domination" 
+# 		OR = {
+# 			tag = ARA
+# 			was_tag = ARA 
+# 			has_reform = consulate_of_the_sea 
+# 		}
+# 	}
+# 	trigger = {
+# 		OR = {
+# 			mission_completed = gc_ara_consultate_of_the_sea2
+# 			has_reform = consulate_of_the_sea 
+# 		}
+# 	}
+# 	modifiers = {
+# 		trade_efficiency = 0.1
+# 		global_trade_power = 0.1
+# 		burghers_loyalty_modifier = 0.05
 		
-	}
+# 	}
 	
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			has_dlc = "Mare Nostrum"
-		}
-		can_use_trade_post = yes
-	}
+# 	conditional = {
+# 		allow = {
+# 			has_dlc = "Res Publica"
+# 			has_dlc = "Mare Nostrum"
+# 		}
+# 		can_use_trade_post = yes
+# 	}
 	
-	ai = {
-		factor = 10
-	}
-}
+# 	ai = {
+# 		factor = 10
+# 	}
+# }
 
 restore_the_master_of_offices_reform = {
 	icon = "restore_the_master_of_offices_reform"

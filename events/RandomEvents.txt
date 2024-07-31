@@ -7046,10 +7046,10 @@ country_event = {
 						trade_goods = paper					
 						trade_goods = gu_ceramics	
 						trade_goods = gu_pigs
-						trade_goods = tobacco
+						trade_goods = gu_oscypek
 						trade_goods = wine
 						trade_goods = salt
-						trade_goods = cotton
+						trade_goods = gu_hemp
 						trade_goods = gu_vodka
 						trade_goods = gu_oil
 						trade_goods = gu_beer
@@ -7078,10 +7078,10 @@ country_event = {
 					trade_goods = paper					
 					trade_goods = gu_ceramics
 					trade_goods = gu_pigs
-					trade_goods = tobacco
+					trade_goods = gu_oscypek
 					trade_goods = wine
 					trade_goods = salt
-					trade_goods = cotton
+					trade_goods = gu_hemp
 					trade_goods = gu_vodka
 					trade_goods = gu_oil
 					trade_goods = gu_beer
@@ -7136,10 +7136,10 @@ country_event = {
 						trade_goods = paper					
 						trade_goods = gu_ceramics
 						trade_goods = gu_pigs
-						trade_goods = tobacco
+						trade_goods = gu_oscypek
 						trade_goods = wine
 						trade_goods = salt
-						trade_goods = cotton
+						trade_goods = gu_hemp
 						trade_goods = gu_vodka
 						trade_goods = gu_oil
 						trade_goods = gu_beer
@@ -9399,62 +9399,62 @@ country_event = {
 }
 
 # Merchant Expedition
-country_event = {
-	id = 881
-	title = "EVTNAME881"
-	desc = "EVTDESC881"
-	picture = EXPLORERS_eventPicture
-	goto = explorer_port
+# country_event = {
+# 	id = 881
+# 	title = "EVTNAME881"
+# 	desc = "EVTDESC881"
+# 	picture = EXPLORERS_eventPicture
+# 	goto = explorer_port
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-		has_idea = quest_for_the_new_world
-		num_of_ports = 1
-		num_of_merchants = 2
-		any_active_trade_node = {
-			is_sea = yes
-		}
-		capital_scope = { continent = europe }
-		carribeans_region = {
-			NOT = { has_discovered = ROOT }
-		}
-	}
+# 	trigger = {
+# 		has_idea = quest_for_the_new_world
+# 		num_of_ports = 1
+# 		num_of_merchants = 2
+# 		any_active_trade_node = {
+# 			is_sea = yes
+# 		}
+# 		capital_scope = { continent = europe }
+# 		carribeans_region = {
+# 			NOT = { has_discovered = ROOT }
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = { has_port = yes }
-				save_event_target_as = explorer_port
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_owned_province = {
+# 				limit = { has_port = yes }
+# 				save_event_target_as = explorer_port
+# 			}
+# 		}
+# 	}
 	
-	option = {
-		name = "EVTOPTA881"
-		event_target:explorer_port = {
-			heavy_ship = ROOT
-		}
-		create_explorer = {
-			tradition = 20
-		}
-	}
-	option = {
-		name = "personality_options.881.a"
-		highlight = yes
-		trigger = { ruler_has_personality_ancestor = { key = navigator } }
-		event_target:explorer_port = {
-			heavy_ship = ROOT
-		}
-		create_explorer = {
-			tradition = 50
-		}
-	}
-}
+# 	option = {
+# 		name = "EVTOPTA881"
+# 		event_target:explorer_port = {
+# 			heavy_ship = ROOT
+# 		}
+# 		create_explorer = {
+# 			tradition = 20
+# 		}
+# 	}
+# 	option = {
+# 		name = "personality_options.881.a"
+# 		highlight = yes
+# 		trigger = { ruler_has_personality_ancestor = { key = navigator } }
+# 		event_target:explorer_port = {
+# 			heavy_ship = ROOT
+# 		}
+# 		create_explorer = {
+# 			tradition = 50
+# 		}
+# 	}
+# }
 
 #Renaissance Prince
 country_event = {

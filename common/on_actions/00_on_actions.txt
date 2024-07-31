@@ -1698,11 +1698,11 @@ on_embrace_revolution = {
 		}
 		set_revolution_target = ROOT
 		add_government_reform = revolutionary_republic_reform
-		if = { 
-			limit = { tag = FRA has_dlc = "Domination" } 
-			swap_non_generic_missions = yes
-			country_event = { id = ideagroups.1 } #Swap Ideas
-		}
+		# if = { 
+		# 	limit = { tag = FRA has_dlc = "Domination" } 
+		# 	swap_non_generic_missions = yes
+		# 	country_event = { id = ideagroups.1 } #Swap Ideas
+		# }
 		if = {
 			limit = {
 				any_country = {
@@ -1728,12 +1728,12 @@ on_embrace_revolution = {
 	set_country_flag = revolutionary_republic_flag
 	set_country_flag = had_revolution
 	
-	if = { 
-		limit = { 
-			tag = FRA 
-		}
-		swap_non_generic_missions = yes 
-	}
+	# if = { 
+	# 	limit = { 
+	# 		tag = FRA 
+	# 	}
+	# 	swap_non_generic_missions = yes 
+	# }
 }
 
 # THIS = Revolutionary country being beaten, FROM = Country enforcing the peace treaty
@@ -4793,24 +4793,24 @@ on_trade_good_changed = {
 			}
 			add_base_production = -1 
 		}
-		if = {
-			limit = {
-				has_province_modifier = INC_gold_debuff
-				NOT = { trade_goods = gold }
-			}
-			remove_province_modifier = INC_gold_debuff
-		}
-		else_if = {
-			limit = {
-				from = { has_estate_privilege = estate_church_INC_idol_making }
-				NOT = { has_province_modifier = INC_gold_debuff }
-				trade_goods = gold
-			}
-			add_province_modifier = {
-				name = INC_gold_debuff
-				duration = -1
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		has_province_modifier = INC_gold_debuff
+		# 		NOT = { trade_goods = gold }
+		# 	}
+		# 	remove_province_modifier = INC_gold_debuff
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		from = { has_estate_privilege = estate_church_INC_idol_making }
+		# 		NOT = { has_province_modifier = INC_gold_debuff }
+		# 		trade_goods = gold
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = INC_gold_debuff
+		# 		duration = -1
+		# 	}
+		# }
 	}
 }
 

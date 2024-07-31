@@ -138,7 +138,7 @@
  REVOKE_PRIVILEGE_SHORT:0 "$PRIVILEGE|Y$ will be revoked from $ESTATE|Y$ which does the following:"
  PRIVILEGE_EFFECTS:0 "§YEffects:§!"
  PRIVILEGE_TO_REVOKE:0 "§YRevoke conditions:§!"
- IMPERIAL_INCIDENT_STARTED_LOG:0 "An imperial incident started in the Holy Roman Empire."
+ IMPERIAL_INCIDENT_STARTED_LOG:0 "An imperial incident started in Silesian Autonomy."
  has_slacken_on_instant:0 "§YYou are Slackening Recruiting Standards§!"
  has_slacken_on_delayed:0 ""
  GOVERNMENT_POWER_FROZEN:0 "We don't gain any $NAME|Y$ each month, due to it being frozen. It would change by $GAIN$ otherwise."

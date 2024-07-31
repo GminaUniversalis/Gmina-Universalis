@@ -311,35 +311,35 @@ daimyo = {
 	}
 }
 
-feudal_france_reform = {
-	icon = "feudal_france_reform"
-	allow_normal_conversion = no
-	potential = {
-		has_dlc = "Domination" 
-		OR = {
-			tag = FRA
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = feudal_france_reform
-			}
-		}
-	}
-	fixed_rank = 2
-	lock_level_when_selected = yes
+# feudal_france_reform = {
+# 	icon = "feudal_france_reform"
+# 	allow_normal_conversion = no
+# 	potential = {
+# 		has_dlc = "Domination" 
+# 		OR = {
+# 			#tag = FRA
+# 			AND = {
+# 				is_playing_custom_nation = yes
+# 				have_had_reform = feudal_france_reform
+# 			}
+# 		}
+# 	}
+# 	fixed_rank = 2
+# 	lock_level_when_selected = yes
 
-	modifiers = {
-		#nobles_influence_modifier = 0.1
-		vassal_income = 0.2
-		max_absolutism = -50
-	}
+# 	modifiers = {
+# 		#nobles_influence_modifier = 0.1
+# 		vassal_income = 0.2
+# 		max_absolutism = -50
+# 	}
 
-	custom_attributes = {
-		locked_government_type = yes
-		has_appanages = yes
-		#need_crownland_to_annex = yes
-		nobility_loyalty_hit_on_integration = yes
-	}
-}
+# 	custom_attributes = {
+# 		locked_government_type = yes
+# 		has_appanages = yes
+# 		#need_crownland_to_annex = yes
+# 		nobility_loyalty_hit_on_integration = yes
+# 	}
+# }
 
 appanage_reform = {
 	icon = "nobleman"
@@ -362,61 +362,61 @@ appanage_reform = {
 	}
 }
 
-absolutist_france_reform = {
-	icon = "absolutist_france_reform"
-	allow_normal_conversion = no
-	potential = {
-		has_dlc = "Domination" 
-		OR = {
-			AND = { 
-				tag = FRA 
-				OR = {
-					has_reform = absolutist_france_reform
-					have_had_reform = absolutist_france_reform
-					has_unlocked_government_reform = { government_reform = absolutist_france_reform }
-				}
-			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = absolutist_france_reform
-			}
-			mission_completed = fra_movement_centralization
-		}
-	}
-	trigger = {
-		OR = {
-			AND = { 
-				tag = FRA 
-				OR = {
-					has_reform = absolutist_france_reform
-					have_had_reform = absolutist_france_reform
-				}
-			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = absolutist_france_reform
-			}
-		}
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
-	nation_designer_trigger = {
-		culture_group = french
-		technology_group = western
-		capital_scope = { region = france_region }
-	}
-	lock_level_when_selected = yes
+# absolutist_france_reform = {
+# 	icon = "absolutist_france_reform"
+# 	allow_normal_conversion = no
+# 	potential = {
+# 		has_dlc = "Domination" 
+# 		OR = {
+# 			AND = { 
+# 				#tag = FRA 
+# 				OR = {
+# 					has_reform = absolutist_france_reform
+# 					have_had_reform = absolutist_france_reform
+# 					has_unlocked_government_reform = { government_reform = absolutist_france_reform }
+# 				}
+# 			}
+# 			AND = {
+# 				is_playing_custom_nation = yes
+# 				have_had_reform = absolutist_france_reform
+# 			}
+# 			mission_completed = fra_movement_centralization
+# 		}
+# 	}
+# 	trigger = {
+# 		OR = {
+# 			AND = { 
+# 				#tag = FRA 
+# 				OR = {
+# 					has_reform = absolutist_france_reform
+# 					have_had_reform = absolutist_france_reform
+# 				}
+# 			}
+# 			AND = {
+# 				is_playing_custom_nation = yes
+# 				have_had_reform = absolutist_france_reform
+# 			}
+# 		}
+# 	}
+# 	valid_for_nation_designer = yes
+# 	nation_designer_cost = 50
+# 	nation_designer_trigger = {
+# 		culture_group = french
+# 		technology_group = western
+# 		capital_scope = { region = france_region }
+# 	}
+# 	lock_level_when_selected = yes
 
-	modifiers = {
-		all_estate_influence_modifier = -0.1
-		max_absolutism = 10
+# 	modifiers = {
+# 		all_estate_influence_modifier = -0.1
+# 		max_absolutism = 10
 		
-	}
+# 	}
 
-	custom_attributes = {
-		centralize_state_development = yes 
-	}
-}
+# 	custom_attributes = {
+# 		centralize_state_development = yes 
+# 	}
+# }
 
 indep_daimyo = {
 	icon = "samurai"
@@ -1749,6 +1749,7 @@ stadthalter_monarchy_reform = {
 	icon = "dutch_republic"
 	allow_normal_conversion = yes
 	potential = {
+		always = no
 			OR = {
 				is_playing_custom_nation = yes
 				have_had_reform = stadthalter_monarchy_reform
@@ -1756,6 +1757,7 @@ stadthalter_monarchy_reform = {
 		
 	}
 	trigger = {
+		always = no
 		is_lesser_in_union = no
 	}
 	valid_for_nation_designer = yes
@@ -3804,10 +3806,10 @@ lithuanian_grand_empire = {
 				have_had_reform = lithuanian_grand_empire
 			}
 			has_reform = lithuanian_grand_empire
-			AND = {
-				mission_completed = sca_mission_lit_polish_union
-				total_development = 1000 
-			}
+			# AND = {
+			# 	mission_completed = sca_mission_lit_polish_union
+			# 	total_development = 1000 
+			# }
 		}
 	}
 	legacy_equivalent = despotic_monarchy
@@ -6698,10 +6700,10 @@ letat_cest_moi_reform = {
 	}
 	ai = {
 		factor = 1.5
-		modifier = {
-			factor = 2
-			tag = FRA
-		}
+		# modifier = {
+		# 	factor = 2
+		# 	#tag = FRA
+		# }
 	}
 }
 
@@ -6766,10 +6768,10 @@ political_absolutism_reform = {
 	}
 	ai = {
 		factor = 1.5
-		modifier = {
-			factor = 2
-			tag = FRA
-		}
+		# modifier = {
+		# 	factor = 2
+		# 	#tag = FRA
+		# }
 	}
 }
 
@@ -6974,256 +6976,256 @@ nizam_i_cedid_reform = {
 	}
 }
 
-mng_seal_of_the_emperor_reform = {
-	icon = "mng_seal_of_the_emperor_reform"
-	allow_normal_conversion = yes
-	potential = {
-		OR = { 
-			has_reform = mng_seal_of_the_emperor_reform
-			mission_completed = mng_crisis_ming_dynasty
-		}
-	}
-	trigger = {
-		OR = { 
-			has_reform = mng_seal_of_the_emperor_reform
-			mission_completed = mng_crisis_ming_dynasty
-		}
-	}
-	modifiers = {
-		allow_free_estate_privilege_revocation = yes 
-		governing_capacity = 200 
-		max_absolutism = 10 
-	}
-	ai = {
-		factor = 10
-	}
-}
+# mng_seal_of_the_emperor_reform = {
+# 	icon = "mng_seal_of_the_emperor_reform"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		OR = { 
+# 			has_reform = mng_seal_of_the_emperor_reform
+# 			mission_completed = mng_crisis_ming_dynasty
+# 		}
+# 	}
+# 	trigger = {
+# 		OR = { 
+# 			has_reform = mng_seal_of_the_emperor_reform
+# 			mission_completed = mng_crisis_ming_dynasty
+# 		}
+# 	}
+# 	modifiers = {
+# 		allow_free_estate_privilege_revocation = yes 
+# 		governing_capacity = 200 
+# 		max_absolutism = 10 
+# 	}
+# 	ai = {
+# 		factor = 10
+# 	}
+# }
 
-qng_grand_council_reform = {
-	icon = "royal_court"
-	allow_normal_conversion = no
-	potential = {
-		OR = { 
-			mission_completed = qng_junji_chu
-			has_reform = qng_grand_council_reform
-		}
-	}
+# qng_grand_council_reform = {
+# 	icon = "royal_court"
+# 	allow_normal_conversion = no
+# 	potential = {
+# 		OR = { 
+# 			mission_completed = qng_junji_chu
+# 			has_reform = qng_grand_council_reform
+# 		}
+# 	}
 	
-	modifiers = {
-		all_estate_loyalty_equilibrium = 0.1
-		governing_capacity_modifier = 0.1
-		meritocracy = 0.25	
-	}
-}
+# 	modifiers = {
+# 		all_estate_loyalty_equilibrium = 0.1
+# 		governing_capacity_modifier = 0.1
+# 		meritocracy = 0.25	
+# 	}
+# }
 
-absolute_shogunate_reform = {
-	icon = "absolute_shogunate_reform"
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	potential = {
-		OR = {
-			AND = {
-				is_playing_custom_nation = yes
-				has_reform = absolute_shogunate_reform
-			}
-			have_had_reform = absolute_shogunate_reform
-			mission_completed = jap_restoration
-		}
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 100
-	nation_designer_trigger = {
-		capital_scope = { region = japan_region } 
-	}
-	fixed_rank = 3
-	maintain_dynasty = yes
-	modifiers = {
-		can_transfer_vassal_wargoal = yes
-		administrative_efficiency = 0.05
-		monarch_military_power = 1
-		allowed_samurai_fraction = 0.1
-	}
-}
+# absolute_shogunate_reform = {
+# 	icon = "absolute_shogunate_reform"
+# 	allow_normal_conversion = no
+# 	lock_level_when_selected = yes
+# 	potential = {
+# 		OR = {
+# 			AND = {
+# 				is_playing_custom_nation = yes
+# 				has_reform = absolute_shogunate_reform
+# 			}
+# 			have_had_reform = absolute_shogunate_reform
+# 			mission_completed = jap_restoration
+# 		}
+# 	}
+# 	valid_for_nation_designer = yes
+# 	nation_designer_cost = 100
+# 	nation_designer_trigger = {
+# 		capital_scope = { region = japan_region } 
+# 	}
+# 	fixed_rank = 3
+# 	maintain_dynasty = yes
+# 	modifiers = {
+# 		can_transfer_vassal_wargoal = yes
+# 		administrative_efficiency = 0.05
+# 		monarch_military_power = 1
+# 		allowed_samurai_fraction = 0.1
+# 	}
+# }
 
-japanese_divine_empire = {
-	icon = "japanese_divine_empire"
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	potential = {
-		OR = { 
-			AND = {
-				is_playing_custom_nation = yes
-				has_reform = japanese_divine_empire
-			}
-			has_country_flag = JPE_gov_flag
-			have_had_reform = japanese_divine_empire
-			mission_completed = jap_restoration
-		}
-		NOT = { has_reform = absolute_shogunate_reform }
-	}
-	#trigger = {
-	#	if = { 
-	#		limit = { has_estate = estate_nobles }
-	#		num_of_estate_privileges = {
-	#			estate = estate_nobles 
-	#			value = 6 
-	#		}
-	#	}
-	#	if = { 
-	#		limit = { has_estate = estate_burghers }
-	#		num_of_estate_privileges = {
-	#			estate = estate_burghers 
-	#			value = 6 
-	#		}
-	#	}
-	#	if = { 
-	#		limit = { has_estate = estate_church }
-	#		num_of_estate_privileges = {
-	#			estate = estate_church 
-	#			value = 6 
-	#		}
-	#	}
-	#}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 100
-	nation_designer_trigger = {
-		capital_scope = { region = japan_region } 
-	}
-	fixed_rank = 3
-	maintain_dynasty = yes
-	modifiers = {
-		all_estate_possible_privileges = 1
-		no_stability_loss_on_monarch_death = yes 
-		all_estate_loyalty_equilibrium = 0.1
-		tolerance_own = 3 
-		allowed_samurai_fraction = 0.1
-	}
-}
+# japanese_divine_empire = {
+# 	icon = "japanese_divine_empire"
+# 	allow_normal_conversion = no
+# 	lock_level_when_selected = yes
+# 	potential = {
+# 		OR = { 
+# 			AND = {
+# 				is_playing_custom_nation = yes
+# 				has_reform = japanese_divine_empire
+# 			}
+# 			has_country_flag = JPE_gov_flag
+# 			have_had_reform = japanese_divine_empire
+# 			mission_completed = jap_restoration
+# 		}
+# 		NOT = { has_reform = absolute_shogunate_reform }
+# 	}
+# 	#trigger = {
+# 	#	if = { 
+# 	#		limit = { has_estate = estate_nobles }
+# 	#		num_of_estate_privileges = {
+# 	#			estate = estate_nobles 
+# 	#			value = 6 
+# 	#		}
+# 	#	}
+# 	#	if = { 
+# 	#		limit = { has_estate = estate_burghers }
+# 	#		num_of_estate_privileges = {
+# 	#			estate = estate_burghers 
+# 	#			value = 6 
+# 	#		}
+# 	#	}
+# 	#	if = { 
+# 	#		limit = { has_estate = estate_church }
+# 	#		num_of_estate_privileges = {
+# 	#			estate = estate_church 
+# 	#			value = 6 
+# 	#		}
+# 	#	}
+# 	#}
+# 	valid_for_nation_designer = yes
+# 	nation_designer_cost = 100
+# 	nation_designer_trigger = {
+# 		capital_scope = { region = japan_region } 
+# 	}
+# 	fixed_rank = 3
+# 	maintain_dynasty = yes
+# 	modifiers = {
+# 		all_estate_possible_privileges = 1
+# 		no_stability_loss_on_monarch_death = yes 
+# 		all_estate_loyalty_equilibrium = 0.1
+# 		tolerance_own = 3 
+# 		allowed_samurai_fraction = 0.1
+# 	}
+# }
 
-land_christian_sun_reform = {
-	icon = "land_christian_sun_reform"
-	allow_normal_conversion = no
-	potential = {
-		OR = { 
-			AND = {
-				has_reform = land_christian_sun_reform
-				is_playing_custom_nation = yes
-			}
-			have_had_reform = land_christian_sun_reform
-			mission_completed = jap_spread_the_christian_faith
-			has_reform = land_christian_sun_reform
-		}
-	}
-	# trigger = {
-		# OR = {
-			# have_had_reform = land_christian_sun_reform
-			# mission_completed = jap_spread_the_christian_faith
-			# AND = {
-				# have_had_reform = land_christian_sun_reform
-				# is_playing_custom_nation = yes
-			# }
-		# }
-	# }
-	valid_for_nation_designer = yes
-	nation_designer_cost = 150
-	nation_designer_trigger = {
-		capital_scope = { region = japan_region } 
-	}
-	heir = no
-	fixed_rank = 3
-	modifiers = {
-		manpower_recovery_speed = 0.15
-		cb_on_religious_enemies = yes 
-		army_tradition = 1 
-		allowed_samurai_fraction = 0.1
-	}
+# land_christian_sun_reform = {
+# 	icon = "land_christian_sun_reform"
+# 	allow_normal_conversion = no
+# 	potential = {
+# 		OR = { 
+# 			AND = {
+# 				has_reform = land_christian_sun_reform
+# 				is_playing_custom_nation = yes
+# 			}
+# 			have_had_reform = land_christian_sun_reform
+# 			mission_completed = jap_spread_the_christian_faith
+# 			has_reform = land_christian_sun_reform
+# 		}
+# 	}
+# 	# trigger = {
+# 		# OR = {
+# 			# have_had_reform = land_christian_sun_reform
+# 			# mission_completed = jap_spread_the_christian_faith
+# 			# AND = {
+# 				# have_had_reform = land_christian_sun_reform
+# 				# is_playing_custom_nation = yes
+# 			# }
+# 		# }
+# 	# }
+# 	valid_for_nation_designer = yes
+# 	nation_designer_cost = 150
+# 	nation_designer_trigger = {
+# 		capital_scope = { region = japan_region } 
+# 	}
+# 	heir = no
+# 	fixed_rank = 3
+# 	modifiers = {
+# 		manpower_recovery_speed = 0.15
+# 		cb_on_religious_enemies = yes 
+# 		army_tradition = 1 
+# 		allowed_samurai_fraction = 0.1
+# 	}
 	
-	custom_attributes = {
-		generals_become_rulers = yes 
-	}
+# 	custom_attributes = {
+# 		generals_become_rulers = yes 
+# 	}
 	
-	government_abilities = {
-		land_of_the_christian_sun_mechanic
-	}
-}
+# 	government_abilities = {
+# 		land_of_the_christian_sun_mechanic
+# 	}
+# }
 
-strengthen_bakuhan_system_reform = {
-	icon = "strengthen_bakuhan_system_reform"
-	allow_normal_conversion = no
-	potential = {
-		OR = { 
-			have_had_reform = strengthen_bakuhan_system_reform
-			mission_completed = jap_strengthen_bakuhan_system
-		}
-	}
-	trigger = {
-		OR = {
-			have_had_reform = strengthen_bakuhan_system_reform
-			mission_completed = jap_strengthen_bakuhan_system
-		}
-	}
-	modifiers = {
-		max_absolutism_effect = 0.2
-		max_absolutism = 5
-	}
-}
+# strengthen_bakuhan_system_reform = {
+# 	icon = "strengthen_bakuhan_system_reform"
+# 	allow_normal_conversion = no
+# 	potential = {
+# 		OR = { 
+# 			have_had_reform = strengthen_bakuhan_system_reform
+# 			mission_completed = jap_strengthen_bakuhan_system
+# 		}
+# 	}
+# 	trigger = {
+# 		OR = {
+# 			have_had_reform = strengthen_bakuhan_system_reform
+# 			mission_completed = jap_strengthen_bakuhan_system
+# 		}
+# 	}
+# 	modifiers = {
+# 		max_absolutism_effect = 0.2
+# 		max_absolutism = 5
+# 	}
+# }
 
-system_of_councils_reform = {
-	icon = "hispanic_monarchy"
-	allow_normal_conversion = no
-	potential = {
-		OR = { 
-			has_reform = system_of_councils_reform
-			mission_completed = spa_system_councils
-			AND = { 
-				religion_group = christian 
-				culture_group = iberian 
-			}
-		}
-	}
-	trigger = {
-		OR = { 
-			has_reform = system_of_councils_reform
-			mission_completed = spa_system_councils
-		}
-	}
-	government_abilities = {
-		system_of_councils_mechanic
-	}
-	modifiers = {
-		allow_free_estate_privilege_revocation = yes 
-		diplomatic_upkeep = 2
-		monarch_admin_power = 1 
-	}
-}
+# system_of_councils_reform = {
+# 	icon = "hispanic_monarchy"
+# 	allow_normal_conversion = no
+# 	potential = {
+# 		OR = { 
+# 			has_reform = system_of_councils_reform
+# 			mission_completed = spa_system_councils
+# 			AND = { 
+# 				religion_group = christian 
+# 				culture_group = iberian 
+# 			}
+# 		}
+# 	}
+# 	trigger = {
+# 		OR = { 
+# 			has_reform = system_of_councils_reform
+# 			mission_completed = spa_system_councils
+# 		}
+# 	}
+# 	government_abilities = {
+# 		system_of_councils_mechanic
+# 	}
+# 	modifiers = {
+# 		allow_free_estate_privilege_revocation = yes 
+# 		diplomatic_upkeep = 2
+# 		monarch_admin_power = 1 
+# 	}
+# }
 
-courts_of_navarra = {
-	icon = "parliament_hall"
-	allow_normal_conversion = yes
-	potential = {
-		OR = { 
-			primary_culture = basque 
-			tag = NAV 
-		}
-	}
-	modifiers = {
-		same_culture_advisor_cost = -0.2
-		diplomats = 1
-		global_unrest = -2
-		max_absolutism = -30
-		#nobles_influence_modifier = -0.1
-	}
+# courts_of_navarra = {
+# 	icon = "parliament_hall"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		OR = { 
+# 			primary_culture = basque 
+# 			tag = NAV 
+# 		}
+# 	}
+# 	modifiers = {
+# 		same_culture_advisor_cost = -0.2
+# 		diplomats = 1
+# 		global_unrest = -2
+# 		max_absolutism = -30
+# 		#nobles_influence_modifier = -0.1
+# 	}
 
-	conditional = {
-		allow = {
-			OR = {
-				has_dlc = "Domination"
-				has_dlc = "Common Sense"
-			}
-		}
-		has_parliament = yes
-	}
-}
+# 	conditional = {
+# 		allow = {
+# 			OR = {
+# 				has_dlc = "Domination"
+# 				has_dlc = "Common Sense"
+# 			}
+# 		}
+# 		has_parliament = yes
+# 	}
+# }
 
 cawa_auxiliary_forces = {
 	icon = "cawa_auxiliary_forces"

@@ -24,15 +24,7 @@ kiel_canal = {
 
 	#can we build it?
 	build_trigger = {
-		FROM = {
-			owns_or_vassal_of = 1775
-			owns_or_vassal_of = 4141
-			is_subject = no			
-			OR = { 
-				mission_completed = emp_brapru_kiel_canal
-				adm_tech = 22
-			}
-		}
+		always = no
 	}
 	
 	#what to do when it's built
@@ -206,15 +198,7 @@ suez_canal = {
 
 	#can we build it?
 	build_trigger = {
-		FROM = {
-			owns_or_vassal_of = 4316
-			owns_or_vassal_of = 2315
-			is_subject = no
-			OR = {
-				adm_tech = 22
-				mission_completed = mam_highway_empire
-			}
-		}
+		always = no
 	}
 
 	#what to do when it's built
@@ -388,11 +372,7 @@ panama_canal = {
 
 	#can we build it?
 	build_trigger = {
-		FROM = {
-			owns_or_vassal_of = 835
-			is_subject = no
-			adm_tech = 22
-		}
+		always = no
 	}
 
 	#what to do when it's built

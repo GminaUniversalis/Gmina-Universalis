@@ -85,6 +85,12 @@ estate_priests_separation_from_state = {
 	}
 
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_priests_subsidies_from_state
+				has_estate_privilege = estate_priests_bishops_in_government
+			}
+		}
 		custom_trigger_tooltip = {
 			tooltip = estate_priests_definer_tooltip
 			OR = {
@@ -99,8 +105,6 @@ estate_priests_separation_from_state = {
 	on_granted = {
 		custom_tooltip = estate_priests_separation_from_state_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_priests
-			remove_estate_privilege = estate_priests
 			clr_country_flag = picked_priests_definer
 			set_country_flag = picked_priests_definer
 			clr_country_flag = picked_separation_from_state
@@ -109,6 +113,12 @@ estate_priests_separation_from_state = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_priests_definer
+		clr_country_flag = picked_separation_from_state
+	}
+	on_invalid = {
+		clr_country_flag = picked_priests_definer
+		clr_country_flag = picked_separation_from_state
 	}
 
 	can_revoke = {
@@ -168,6 +178,12 @@ estate_priests_subsidies_from_state = {
 	}
 
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_priests_separation_from_state
+				has_estate_privilege = estate_priests_bishops_in_government
+			}
+		}
 		custom_trigger_tooltip = {
 			tooltip = estate_priests_definer_tooltip
 			OR = {
@@ -182,8 +198,6 @@ estate_priests_subsidies_from_state = {
 	on_granted = {
 		custom_tooltip = estate_priests_subsidies_from_state_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_priests
-			remove_estate_privilege = estate_priests
 			clr_country_flag = picked_priests_definer
 			set_country_flag = picked_priests_definer
 			clr_country_flag = picked_subsidies_from_state
@@ -192,8 +206,14 @@ estate_priests_subsidies_from_state = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_priests_definer
+		clr_country_flag = picked_subsidies_from_state
 	}
 
+	on_invalid = {
+		clr_country_flag = picked_priests_definer
+		clr_country_flag = picked_subsidies_from_state
+	}
 	can_revoke = {
 		OR = {
 			NOT = { has_country_flag = picked_priests_definer}
@@ -261,6 +281,12 @@ estate_priests_bishops_in_government = {
 	}
 
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_priests_separation_from_state
+				has_estate_privilege = estate_priests_subsidies_from_state
+			}
+		}
 		custom_trigger_tooltip = {
 			tooltip = estate_priests_definer_tooltip
 			OR = {
@@ -275,8 +301,6 @@ estate_priests_bishops_in_government = {
 	on_granted = {
 		custom_tooltip = estate_priests_bishops_in_government_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_priests_separation_from_state
-			remove_estate_privilege = estate_priests_subsidies_from_state
 			clr_country_flag = picked_priests_definer
 			set_country_flag = picked_priests_definer
 			clr_country_flag = picked_bishops_in_government
@@ -285,8 +309,14 @@ estate_priests_bishops_in_government = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_priests_definer
+		clr_country_flag = picked_bishops_in_government
 	}
 
+	on_invalid = {
+		clr_country_flag = picked_priests_definer
+		clr_country_flag = picked_bishops_in_government
+	}
 	can_revoke = {
 		OR = {
 			NOT = { has_country_flag = picked_priests_definer}

@@ -482,6 +482,14 @@ estate_middle_class_american_model = {
 		NOT = { current_age = age_of_discovery }
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_early_polish_model
+				has_estate_privilege = estate_middle_class_european_model
+				has_estate_privilege = estate_middle_class_soviet_model
+				has_estate_privilege = estate_middle_class_japan_model
+			}
+		}
 		has_estate = estate_investors
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_definer_tooltip
@@ -497,10 +505,6 @@ estate_middle_class_american_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_japan_model
-			remove_estate_privilege = estate_middle_class_european_model
-			remove_estate_privilege = estate_middle_class_early_polish_model
-			remove_estate_privilege = estate_middle_class_soviet_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_american_model
@@ -509,6 +513,13 @@ estate_middle_class_american_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_american_model
+		clr_country_flag = picked_middle_class_definer
+	}
+
+	on_invalid = {
+		clr_country_flag = picked_american_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -565,6 +576,14 @@ estate_middle_early_polish_model = {
 		NOT = { current_age = age_of_discovery }
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_class_american_model
+				has_estate_privilege = estate_middle_class_european_model
+				has_estate_privilege = estate_middle_class_soviet_model
+				has_estate_privilege = estate_middle_class_japan_model
+			}
+		}
 		NOT = { current_age = age_of_discovery }
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_definer_tooltip
@@ -580,10 +599,6 @@ estate_middle_early_polish_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_japan_model
-			remove_estate_privilege = estate_middle_class_european_model
-			remove_estate_privilege = estate_middle_class_soviet_model
-			remove_estate_privilege = estate_middle_class_american_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_early_polish_model
@@ -592,6 +607,8 @@ estate_middle_early_polish_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_early_polish_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -657,6 +674,14 @@ estate_middle_class_european_model = {
 		}
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_class_american_model
+				has_estate_privilege = estate_middle_early_polish_model
+				has_estate_privilege = estate_middle_class_soviet_model
+				has_estate_privilege = estate_middle_class_japan_model
+			}
+		}
 		NOT = { 
 			OR = {
 				current_age = age_of_discovery 
@@ -678,10 +703,6 @@ estate_middle_class_european_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_japan_model
-			remove_estate_privilege = estate_middle_class_soviet_model
-			remove_estate_privilege = estate_middle_class_early_polish_model
-			remove_estate_privilege = estate_middle_class_american_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_european_model
@@ -690,6 +711,8 @@ estate_middle_class_european_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_european_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -703,7 +726,10 @@ estate_middle_class_european_model = {
 	}
 
 
-
+	on_invalid = {
+		clr_country_flag = picked_european_model
+		clr_country_flag = picked_middle_class_definer
+	}
 
 
 
@@ -753,6 +779,14 @@ estate_middle_class_soviet_model = {
 		}
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_class_american_model
+				has_estate_privilege = estate_middle_early_polish_model
+				has_estate_privilege = estate_middle_class_european_model
+				has_estate_privilege = estate_middle_class_japan_model
+			}
+		}
 		OR = {
 			religion_group = communism_group
 			current_age = age_of_discovery 
@@ -771,10 +805,6 @@ estate_middle_class_soviet_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_japan_model
-			remove_estate_privilege = estate_middle_class_european_model
-			remove_estate_privilege = estate_middle_class_early_polish_model
-			remove_estate_privilege = estate_middle_class_american_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_soviet_model
@@ -783,6 +813,8 @@ estate_middle_class_soviet_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_soviet_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -795,7 +827,10 @@ estate_middle_class_soviet_model = {
 		}
 	}
 
-
+	on_invalid = {
+		clr_country_flag = picked_soviet_model
+		clr_country_flag = picked_middle_class_definer
+	}
 
 
 
@@ -845,6 +880,14 @@ estate_middle_class_japan_model = {
 		}
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_class_american_model
+				has_estate_privilege = estate_middle_early_polish_model
+				has_estate_privilege = estate_middle_class_european_model
+				has_estate_privilege = estate_middle_class_soviet_model
+			}
+		}
 		NOT = { 
 			OR = {
 				current_age = age_of_discovery 
@@ -866,10 +909,6 @@ estate_middle_class_japan_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_soviet_model
-			remove_estate_privilege = estate_middle_class_european_model
-			remove_estate_privilege = estate_middle_class_early_polish_model
-			remove_estate_privilege = estate_middle_class_american_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_japan_model
@@ -878,6 +917,8 @@ estate_middle_class_japan_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_japan_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -892,7 +933,10 @@ estate_middle_class_japan_model = {
 
 
 
-
+	on_invalid = {
+		clr_country_flag = picked_japan_model
+		clr_country_flag = picked_middle_class_definer
+	}
 
 
 

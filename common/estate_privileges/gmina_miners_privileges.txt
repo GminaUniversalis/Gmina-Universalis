@@ -305,6 +305,12 @@ estate_miners_privatized_industry = {
 		NOT = { current_age = age_of_discovery }
 	}
 	can_select = {
+		NOT = {
+			#OR = {
+				has_estate_privilege = estate_miners_state_owned_industry
+				#has_estate_privilege = estate_miners_privatised_industry
+			#}
+		}
 		custom_trigger_tooltip = {
 			tooltip = estate_miners_definer_tooltip
 			OR = {
@@ -319,8 +325,6 @@ estate_miners_privatized_industry = {
 	on_granted = {
 		custom_tooltip = estate_miners_privatized_industry_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_miners_state_owned_industry
-			remove_estate_privilege = estate_miners_state_owned_industry
 			clr_country_flag = picked_miners_definer
 			set_country_flag = picked_miners_definer
 			clr_country_flag = picked_privatized_industry
@@ -347,6 +351,8 @@ estate_miners_privatized_industry = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_miners_definer
+		clr_country_flag = picked_privatized_industry
 	}
 
 	can_revoke = {
@@ -358,6 +364,12 @@ estate_miners_privatized_industry = {
 			}
 		}
 	}
+
+	on_invalid = {
+		clr_country_flag = picked_miners_definer
+		clr_country_flag = picked_privatized_industry
+	}
+
 	penalties = {
 		interest = 2
 		inflation_reduction = -0.05
@@ -401,6 +413,12 @@ estate_miners_state_owned_industry = {
 	}	
 
 	can_select = {
+		NOT = {
+			#OR = {
+				has_estate_privilege = estate_miners_privatised_industry
+				#has_estate_privilege = estate_miners_privatised_industry
+			#}
+		}
 		custom_trigger_tooltip = {
 			tooltip = estate_miners_definer_tooltip
 			OR = {
@@ -415,8 +433,6 @@ estate_miners_state_owned_industry = {
 	on_granted = {
 		custom_tooltip = estate_miners_state_owned_industry_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_miners_privatised_industry
-			remove_estate_privilege = estate_miners_privatised_industry
 			clr_country_flag = picked_miners_definer
 			set_country_flag = picked_miners_definer
 			clr_country_flag = picked_state_owned_industry
@@ -445,6 +461,8 @@ estate_miners_state_owned_industry = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_miners_definer
+		clr_country_flag = picked_state_owned_industry
 	}
 
 	can_revoke = {
@@ -456,6 +474,12 @@ estate_miners_state_owned_industry = {
 			}
 		}
 	}
+
+	on_invalid = {
+		clr_country_flag = picked_miners_definer
+		clr_country_flag = picked_state_owned_industry
+	}
+
 	penalties = {
 		interest = 2
 		inflation_reduction = -0.05

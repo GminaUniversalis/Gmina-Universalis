@@ -382,7 +382,7 @@
 # 			OR = {
 # 				trade_goods = cloth
 # 				trade_goods = wool
-# 				trade_goods = cotton
+# 				trade_goods = gu_hemp
 # 				trade_goods = gu_vehicles
 # 			}
 # 		}
@@ -399,7 +399,7 @@
 # 					OR = {
 # 						trade_goods = cloth
 # 						trade_goods = wool
-# 						trade_goods = cotton
+# 						trade_goods = gu_hemp
 # 						trade_goods = gu_vehicles
 # 					}
 # 				}
@@ -454,7 +454,7 @@
 # 			OR = {
 # 				trade_goods = cloth
 # 				trade_goods = wool
-# 				trade_goods = cotton
+# 				trade_goods = gu_hemp
 # 				trade_goods = gu_vehicles
 # 			}
 # 		}
@@ -471,7 +471,7 @@
 # 					OR = {
 # 						trade_goods = cloth
 # 						trade_goods = wool
-# 						trade_goods = cotton
+# 						trade_goods = gu_hemp
 # 						trade_goods = gu_vehicles
 # 					}
 # 				}
@@ -537,7 +537,7 @@
 # 					OR = {
 # 						trade_goods = cloth
 # 						trade_goods = wool
-# 						trade_goods = cotton
+# 						trade_goods = gu_hemp
 # 						trade_goods = gu_vehicles
 # 					}
 # 				}
@@ -594,7 +594,7 @@
 # 							OR = {
 # 								trade_goods = cloth
 # 								trade_goods = wool
-# 								trade_goods = cotton
+# 								trade_goods = gu_hemp
 # 								trade_goods = gu_vehicles
 # 							}
 # 						}
@@ -896,7 +896,7 @@
 # 					OR = {
 # 						trade_goods = cloth
 # 						trade_goods = wool
-# 						trade_goods = cotton
+# 						trade_goods = gu_hemp
 # 						trade_goods = gu_vehicles
 # 					}
 # 				}
@@ -958,7 +958,7 @@
 # 							OR = {
 # 								trade_goods = cloth
 # 								trade_goods = wool
-# 								trade_goods = cotton
+# 								trade_goods = gu_hemp
 # 								trade_goods = gu_vehicles
 # 							}
 # 						}
@@ -1137,7 +1137,7 @@
 # 			province_viable_for_industrialization_events_trigger = yes
 # 			OR = {
 # 				trade_goods = wool
-# 				trade_goods = cotton
+# 				trade_goods = gu_hemp
 # 			}
 # 			NOT = { has_latent_trade_goods = coal }
 # 			province_without_special_goods_produced_trigger = yes
@@ -1153,7 +1153,7 @@
 # 					province_viable_for_industrialization_events_trigger = yes
 # 					OR = {
 # 						trade_goods = wool
-# 						trade_goods = cotton
+# 						trade_goods = gu_hemp
 # 					}
 # 					NOT = { has_latent_trade_goods = coal }
 # 					has_building = textile
@@ -1270,7 +1270,7 @@
 # 		any_owned_province = {
 # 			province_viable_for_industrialization_events_trigger = yes
 # 			OR = {
-# 				trade_goods = cotton #Lump
+# 				trade_goods = gu_hemp #Lump
 # 				trade_goods = naval_supplies #Hemp
 # 				trade_goods = wool #Lump
 # 			}
@@ -1291,7 +1291,7 @@
 # 					enlightenment = 100
 # 					is_state = yes
 # 					OR = {
-# 						trade_goods = cotton #Lump
+# 						trade_goods = gu_hemp #Lump
 # 						trade_goods = naval_supplies #Hemp
 # 						trade_goods = wool #Lump
 # 					}
@@ -1400,7 +1400,7 @@
 # 				has_building = counting_house
 # 			}
 # 			OR = {
-# 				trade_goods = cotton
+# 				trade_goods = gu_hemp
 # 				trade_goods = naval_supplies
 # 				trade_goods = wool
 # 			}
@@ -1416,7 +1416,7 @@
 # 					province_viable_for_industrialization_events_trigger = yes
 # 					base_manpower = 2
 # 					OR = {
-# 						trade_goods = cotton #Lump
+# 						trade_goods = gu_hemp #Lump
 # 						trade_goods = naval_supplies #Hemp
 # 						trade_goods = wool #Lump
 # 					}
@@ -2869,7 +2869,7 @@
 # 				change_trade_goods = wool
 # 			}
 # 			else = {
-# 				change_trade_goods = cotton
+# 				change_trade_goods = gu_hemp
 # 			}
 # 			add_base_production = -1
 # 		}

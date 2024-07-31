@@ -87,6 +87,12 @@ estate_scientist_polish_thought = {
 	}	
 
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_scientists_international_initiatives
+				has_estate_privilege = estate_scientists_in_government
+			}
+		}
 		custom_trigger_tooltip = {
 			tooltip = estate_scientists_definer_tooltip
 			OR = {
@@ -100,18 +106,18 @@ estate_scientist_polish_thought = {
 	}
 	on_granted = {
 		custom_tooltip = estate_scientists_polish_thought_definer_tooltip
-		set_country_flag = polish_thought
 		hidden_effect = {
-			remove_estate_privilege = estate_scientists_international_initiatives
-			remove_estate_privilege = estate_scientists_in_government
 			clr_country_flag = picked_scientists_definer
 			set_country_flag = picked_scientists_definer
+			clr_country_flag = polish_thought
+			set_country_flag = polish_thought
 		}
 	}
 
 	on_revoked = { 
 		add_stability = -2
 		clr_country_flag = polish_thought
+		clr_country_flag = picked_scientists_definer
 	}
 
 	can_revoke = {
@@ -131,6 +137,7 @@ estate_scientist_polish_thought = {
 	}
 	on_invalid = {
 		clr_country_flag = polish_thought
+		clr_country_flag = picked_scientists_definer
 	}
 
 
@@ -174,6 +181,12 @@ estate_scientist_international_initiatives = {
 	}	
 
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_scientists_polish_thought
+				has_estate_privilege = estate_scientists_in_government
+			}
+		}
 		custom_trigger_tooltip = {
 			tooltip = estate_scientists_definer_tooltip
 			OR = {
@@ -187,18 +200,19 @@ estate_scientist_international_initiatives = {
 	}
 	on_granted = {
 		custom_tooltip = estate_scientists_polish_thought_definer_tooltip
-		set_country_flag = international_initiatives
+
 		hidden_effect = {
-			remove_estate_privilege = estate_scientists_polish_thought
-			remove_estate_privilege = estate_scientists_in_government
 			clr_country_flag = picked_scientists_definer
 			set_country_flag = picked_scientists_definer
+			clr_country_flag = international_initiatives
+			set_country_flag = international_initiatives
 		}
 	}
 
 	on_revoked = { 
 		add_stability = -2
 		clr_country_flag = international_initiatives
+		clr_country_flag = picked_scientists_definer
 	}
 
 	can_revoke = {
@@ -216,15 +230,8 @@ estate_scientist_international_initiatives = {
 	}
 	on_invalid = {
 		clr_country_flag = international_initiatives
+		clr_country_flag = picked_scientists_definer
 	}
-
-
-
-
-
-
-
-
 }
 estate_scientist_in_government = {
 	icon = estate_burghers_GER_turn_towards_mercantilism
@@ -259,6 +266,12 @@ estate_scientist_in_government = {
 	}	
 
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_scientists_polish_thought
+				has_estate_privilege = estate_scientists_international_initiatives
+			}
+		}
 		custom_trigger_tooltip = {
 			tooltip = estate_scientists_definer_tooltip
 			OR = {
@@ -272,18 +285,19 @@ estate_scientist_in_government = {
 	}
 	on_granted = {
 		custom_tooltip = estate_scientists_polish_thought_definer_tooltip
-		set_country_flag = scientists_in_government	
+
 		hidden_effect = {
-			remove_estate_privilege = estate_scientists_polish_thought
-			remove_estate_privilege = estate_scientists_international_initiatives
 			clr_country_flag = picked_scientists_definer
 			set_country_flag = picked_scientists_definer
+			clr_country_flag = scientists_in_government
+			set_country_flag = scientists_in_government	
 		}
 	}
 
 	on_revoked = { 
 		add_stability = -2
 		clr_country_flag = scientists_in_government
+		clr_country_flag = picked_scientists_definer
 	}
 
 	can_revoke = {
@@ -302,6 +316,7 @@ estate_scientist_in_government = {
 	}
 	on_invalid = {
 		clr_country_flag = scientists_in_government
+		clr_country_flag = picked_scientists_definer
 	}
 
 
@@ -498,13 +513,6 @@ estate_scientists_invest_university = {
 		}
 	}
 
-
-
-
-	benefits = {
-		
-	}
-
 	on_granted_province = {
 		if = {
 			limit = {
@@ -520,10 +528,6 @@ estate_scientists_invest_university = {
 		}
 
 	}
-
-
-
-
 
 	cooldown_years = 10
 	on_cooldown_expires = {

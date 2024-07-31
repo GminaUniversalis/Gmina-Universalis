@@ -53,7 +53,7 @@ country_event = {
 		NOT = { has_reform = military_dictatorship_reform }
 		NOT = { has_reform = admiralty_reform }
 		NOT = { has_reform = prussian_republic_reform }
-		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
+		# NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 		if = {
 			limit = {
 				has_country_flag = caretaker_revolutionary_government
@@ -503,7 +503,7 @@ country_event = {
 		NOT = { has_reform = military_dictatorship_reform }
 		NOT = { has_reform = admiralty_reform }
 		NOT = { has_reform = prussian_republic_reform }
-		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
+		# NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 		NOT = { has_country_modifier = just_had_revolution_bringing_someone_to_power_timer }
 		if = {
 			limit = {
@@ -952,28 +952,27 @@ country_event = {
 			} 
 		}
 		name = elections.720.c
+		# if = {
+		# 	limit = {
+		# 		has_reform = feuillant_reform
+		# 		tag = FRA
+		# 	}
+		# 	define_ruler = {
+		# 		dynasty = "Bonaparte"
+		# 	}
+		# }
 		if = {
-			limit = {
+		 	limit = {
 				has_reform = feuillant_reform
-				tag = FRA
+		 	}
+		 	define_ruler = {
+	 		}
+		 }
+		 else = {
+		 	define_ruler = {
+		 		dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
 			}
-			define_ruler = {
-				dynasty = "Bonaparte"
-			}
-		}
-		else_if = {
-			limit = {
-				has_reform = feuillant_reform
-				NOT = { tag = FRA }
-			}
-			define_ruler = {
-			}
-		}
-		else = {
-			define_ruler = {
-				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
-			}
-		}
+		 }
 		if = {
 			limit = {
 				has_reform = feuillant_reform
@@ -1137,25 +1136,24 @@ country_event = {
 			} 
 		}
 		name = elections.720.c
+		# if = {
+		# 	limit = {
+		# 		has_reform = feuillant_reform
+		# 		tag = FRA
+		# 	}
+		# 	define_ruler = {
+		# 		dynasty = "Bonaparte"
+		# 	}
+		# }
 		if = {
-			limit = {
-				has_reform = feuillant_reform
-				tag = FRA
-			}
-			define_ruler = {
-				dynasty = "Bonaparte"
-			}
-		}
-		else_if = {
-			limit = {
-				has_reform = feuillant_reform
-				NOT = { tag = FRA }
-			}
-			define_ruler = {
-			}
+		 	limit = {
+		 		has_reform = feuillant_reform
+		 	}
+		 	define_ruler = {
+		 	}
 		}
 		else = {
-			define_ruler = {
+		 	define_ruler = {
 				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
 			}
 		}
@@ -1199,7 +1197,7 @@ country_event = {
 	
 	trigger = {
 		has_government_attribute = lottery_election
-		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
+		# NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 	}
 	
 	immediate = {

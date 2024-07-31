@@ -368,7 +368,7 @@
  coptic_flavor.30.t:0 "In Search of the Soul"
  coptic_flavor.30.d:0 "A few religious conversations here, some impressive arguments about morality of man there, and one of our most learned noblemen has decided to take up a monastic life. 'I shall follow in the footsteps of Saint Shenoute the Archimandrite – one day I might even found a monastery of my own!' he exclaims passionately.\nNot everyone would agree with the nobleman's decision, however, and even though he has already started giving away his belongings, there might still be time to talk the man out of going."
  coptic_flavor.30.a:0 "We could use that passion in some of our provinces..."
- coptic_flavor.30.a.tt:0 "The nobleman becomes a missionary, a sacred duty to the [Root.Monarch.GetTitle] beyond that of a monk."
+ coptic_flavor.30.a.tt:0 "The nobleman becomes a Political Agitator, a sacred duty to the [Root.Monarch.GetTitle] beyond that of a monk."
  coptic_flavor.30.b:0 "Wait! We have use of scholars at court!"
  coptic_flavor.30.b.tt:0 "The nobleman becomes our entrusted advisor."
  coptic_flavor.30.c:0 "He must be allowed to find God."

@@ -1845,9 +1845,9 @@ defined_text = {
 		trigger = {
 			OR = {
 				trade_goods = gu_mushrooms
-				trade_goods = cotton
+				trade_goods = gu_hemp
 				trade_goods = sugar
-				trade_goods = tobacco
+				trade_goods = gu_oscypek
 				trade_goods = gu_vodka
 				trade_goods = gu_beer
 			}
@@ -4060,15 +4060,15 @@ defined_text = {
 defined_text = {
 	name = GetActiveDisaster
 	text = { localisation_key = disaster								trigger = { has_any_disaster = no } }
-	text = { localisation_key = ambrosian_republic_disaster				trigger = { has_disaster = ambrosian_republic_disaster } }
-	text = { localisation_key = bonfire_of_the_vanities_disaster		trigger = { has_disaster = bonfire_of_the_vanities_disaster } }
-	text = { localisation_key = castilian_civil_war						trigger = { has_disaster = castilian_civil_war } }
+	# text = { localisation_key = ambrosian_republic_disaster				trigger = { has_disaster = ambrosian_republic_disaster } }
+	# text = { localisation_key = bonfire_of_the_vanities_disaster		trigger = { has_disaster = bonfire_of_the_vanities_disaster } }
+	# text = { localisation_key = castilian_civil_war						trigger = { has_disaster = castilian_civil_war } }
 	text = { localisation_key = civil_war								trigger = { has_disaster = civil_war } }
 	text = { localisation_key = court_and_country						trigger = { has_disaster = court_and_country } }
 	text = { localisation_key = coup_attempt_disaster					trigger = { has_disaster = coup_attempt_disaster } }
-	text = { localisation_key = dark_age_of_cambodia					trigger = { has_disaster = dark_age_of_cambodia } }
+	# text = { localisation_key = dark_age_of_cambodia					trigger = { has_disaster = dark_age_of_cambodia } }
 	# text = { localisation_key = decline_of_mali							trigger = { has_disaster = decline_of_mali } }
-	text = { localisation_key = dutch_revolt_disaster					trigger = { has_disaster = dutch_revolt_disaster } }
+	# text = { localisation_key = dutch_revolt_disaster					trigger = { has_disaster = dutch_revolt_disaster } }
 	text = { localisation_key = empire_of_china_in_name					trigger = { has_disaster = empire_of_china_in_name } }
 	text = { localisation_key = empire_of_china_nomadic_border			trigger = { has_disaster = empire_of_china_nomadic_border } }
 	# text = { localisation_key = english_civil_war						trigger = { has_disaster = english_civil_war } }

@@ -1376,55 +1376,55 @@ country_event = {
 }
 
 # Charitable work of the Haseki Sultan
-province_event = {
-	id = harem_events.19
-	title = harem_events.19.t
-	desc = harem_events.19.d
-	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+# province_event = {
+# 	id = harem_events.19
+# 	title = harem_events.19.t
+# 	desc = harem_events.19.d
+# 	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
 	
-	trigger = {
-		OR = {
-			has_dlc = "Rights of Man"
-			has_dlc = "Domination"
-		}
-		is_capital = no
-		is_state = yes
-		owner = {
-			has_government_attribute = has_harem_events
-			has_heir = yes
-			has_consort = yes
-			OR = {
-				consort_mil = 4
-				consort_dip = 4
-				consort_adm = 4
-			}
-		}
+# 	trigger = {
+# 		OR = {
+# 			has_dlc = "Rights of Man"
+# 			has_dlc = "Domination"
+# 		}
+# 		is_capital = no
+# 		is_state = yes
+# 		owner = {
+# 			has_government_attribute = has_harem_events
+# 			has_heir = yes
+# 			has_consort = yes
+# 			OR = {
+# 				consort_mil = 4
+# 				consort_dip = 4
+# 				consort_adm = 4
+# 			}
+# 		}
 		
-		NOT = { has_province_modifier = charitable_work_of_haseki }
-		owner = { NOT = { has_disaster = tur_disaster_plot_of_the_harem } }
-	}
+# 		NOT = { has_province_modifier = charitable_work_of_haseki }
+# 		owner = { NOT = { has_disaster = tur_disaster_plot_of_the_harem } }
+# 	}
 	
-	mean_time_to_happen = {
-		months = 400
-	}
+# 	mean_time_to_happen = {
+# 		months = 400
+# 	}
 	
-	is_mtth_scaled_to_size = 1
+# 	is_mtth_scaled_to_size = 1
 	 
-	option = {
-		name = harem_events.19.a
-		area = {
-			limit = {
-				owned_by = ROOT
-				is_capital = no
-				NOT = { has_province_modifier = charitable_work_of_haseki }
-			}
-			add_province_modifier = {
-				name = "charitable_work_of_haseki"
-				duration = 3650
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = harem_events.19.a
+# 		area = {
+# 			limit = {
+# 				owned_by = ROOT
+# 				is_capital = no
+# 				NOT = { has_province_modifier = charitable_work_of_haseki }
+# 			}
+# 			add_province_modifier = {
+# 				name = "charitable_work_of_haseki"
+# 				duration = 3650
+# 			}
+# 		}
+# 	}
+# }
 
 # Haseki Sultan Challenged
 country_event = {
@@ -1534,10 +1534,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 400
-		modifier = {
-			owner = { has_disaster = tur_disaster_plot_of_the_harem }
-			factor = 0.5
-		}
+		# modifier = {
+		# 	owner = { has_disaster = tur_disaster_plot_of_the_harem }
+		# 	factor = 0.5
+		# }
 	}
 	
 	is_mtth_scaled_to_size = 1
@@ -1602,10 +1602,10 @@ country_event = {
 	 
 	mean_time_to_happen = {
 		months = 400
-		modifier = {
-			has_disaster = tur_disaster_plot_of_the_harem
-			factor = 0.5
-		}
+		# modifier = {
+		# 	has_disaster = tur_disaster_plot_of_the_harem
+		# 	factor = 0.5
+		# }
 	}
 	
 

@@ -505,113 +505,113 @@ province_event = {
 }
 
 # Huguenots Gather in La Rochelle
-country_event = {
-	id = tyw_events.11
-	title = "tyw_events.11.t"
-	desc = "tyw_events.11.d"
-	picture = REVOLT_HUGUENOTS_eventPicture
+# country_event = {
+# 	id = tyw_events.11
+# 	title = "tyw_events.11.t"
+# 	desc = "tyw_events.11.d"
+# 	picture = REVOLT_HUGUENOTS_eventPicture
 
-	trigger = {
-		has_dlc = "Art of War"
-		tag = FRA
-		has_country_flag = FRA_wars_of_religion_ended
-		NOT = { has_country_flag = huguenots_la_rochelle }
-		NOT = { has_country_flag = FRA_had_event_3128 }
-		NOT = { religious_unity = 1.0 }
-		religion = catholic
-		owns = 4111
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		tag = FRA
+# 		has_country_flag = FRA_wars_of_religion_ended
+# 		NOT = { has_country_flag = huguenots_la_rochelle }
+# 		NOT = { has_country_flag = FRA_had_event_3128 }
+# 		NOT = { religious_unity = 1.0 }
+# 		religion = catholic
+# 		owns = 4111
+# 	}
 
-	mean_time_to_happen = {
-		months = 300
-	}
+# 	mean_time_to_happen = {
+# 		months = 300
+# 	}
 
-	option = {
-		name = "tyw_events.11.a"
-		set_country_flag = huguenots_la_rochelle
-		4111 = {
-			change_religion = reformed
-			add_province_modifier = {
-				name = "huguenot_stronghold"
-				duration = 3650
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = "tyw_events.11.a"
+# 		set_country_flag = huguenots_la_rochelle
+# 		4111 = {
+# 			change_religion = reformed
+# 			add_province_modifier = {
+# 				name = "huguenot_stronghold"
+# 				duration = 3650
+# 			}
+# 		}
+# 	}
+# }
 
 # Huguenots Rebels Need Our Help
-country_event = {
-	id = tyw_events.12
-	title = "tyw_events.12.t"
-	desc = "tyw_events.12.d"
-	picture = REVOLT_HUGUENOTS_eventPicture
+# country_event = {
+# 	id = tyw_events.12
+# 	title = "tyw_events.12.t"
+# 	desc = "tyw_events.12.d"
+# 	picture = REVOLT_HUGUENOTS_eventPicture
 
-	trigger = {
-		has_dlc = "Art of War"
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-		OR = {
-			religion = protestant
-			religion = reformed
-		}
-		NOT = { has_country_flag = support_huguenots_decision }
-		FRA = {
-			NOT = { has_country_flag = FRA_had_event_3128 }
-			owns = 4111
-		}
-		4111 = {
-			religion = reformed
-			has_province_modifier = huguenot_stronghold
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Art of War"
+# 		OR = {
+# 			tag = ENG
+# 			tag = GBR
+# 		}
+# 		OR = {
+# 			religion = protestant
+# 			religion = reformed
+# 		}
+# 		NOT = { has_country_flag = support_huguenots_decision }
+# 		FRA = {
+# 			NOT = { has_country_flag = FRA_had_event_3128 }
+# 			owns = 4111
+# 		}
+# 		4111 = {
+# 			religion = reformed
+# 			has_province_modifier = huguenot_stronghold
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 80
-	}
+# 	mean_time_to_happen = {
+# 		months = 80
+# 	}
 
-	immediate = {
-		hidden_effect = {
-			set_country_flag = support_huguenots_decision
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			set_country_flag = support_huguenots_decision
+# 		}
+# 	}
 	
-	option = {
-		name = "tyw_events.12.a"
-		tooltip = {
-			4111 = {
-				spawn_rebels = {
-					type = religious_rebels
-					size = 2
-					friend = ROOT
-				}
-				add_claim = ROOT
-			}
-		}
-		FRA = {
-			add_opinion = {
-				who = ROOT
-				modifier = supported_huguenots
-			}
-			tooltip = {
-				add_casus_belli = {
-					target = ROOT
-					type = cb_insult
-					months = 24
-				}
-			}
-			hidden_effect = {
-				country_event = { id = tyw_events.13 days = 7 }
-			}
-		}
-	}
+# 	option = {
+# 		name = "tyw_events.12.a"
+# 		tooltip = {
+# 			4111 = {
+# 				spawn_rebels = {
+# 					type = religious_rebels
+# 					size = 2
+# 					friend = ROOT
+# 				}
+# 				add_claim = ROOT
+# 			}
+# 		}
+# 		FRA = {
+# 			add_opinion = {
+# 				who = ROOT
+# 				modifier = supported_huguenots
+# 			}
+# 			tooltip = {
+# 				add_casus_belli = {
+# 					target = ROOT
+# 					type = cb_insult
+# 					months = 24
+# 				}
+# 			}
+# 			hidden_effect = {
+# 				country_event = { id = tyw_events.13 days = 7 }
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = "tyw_events.12.b"
-		add_prestige = -10
-	}
-}
+# 	option = {
+# 		name = "tyw_events.12.b"
+# 		add_prestige = -10
+# 	}
+# }
 
 # English Intervention Rouses Huguenots
 country_event = {

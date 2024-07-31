@@ -349,9 +349,9 @@ province_event = {
 			trade_goods = wine
 			trade_goods = wool
 			trade_goods = gu_mushrooms
-			trade_goods = cotton
+			trade_goods = gu_hemp
 			trade_goods = sugar
-			trade_goods = tobacco
+			trade_goods = gu_oscypek
 			trade_goods = gu_beer
 		}
 		owner = {
@@ -402,7 +402,7 @@ province_event = {
 	trigger = {
 		has_dlc = "Conquest of Paradise"
 		is_colony = no
-		trade_goods = tobacco
+		trade_goods = gu_oscypek
 		owner = {
 			NOT = { has_country_flag = banned_tobacco_planting }
 			is_colonial_nation = yes

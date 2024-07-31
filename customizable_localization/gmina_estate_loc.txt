@@ -251,20 +251,41 @@ defined_text = {
 								region = kujawsko_pomorskie_region
 							}
 						}
-					}
-					
-					OR = {
+
 						num_of_owned_provinces_with = {
 							value = 10
 							has_terrain = grasslands
 						}
+
+					}
+
+					num_of_owned_provinces_with = {
+						value = 5
+						has_terrain = farmlands
+					}
+						
+				}
+
+				AND = {
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = lubelskie_region
+								region = wielkopolska_region
+								region = kujawsko_pomorskie_region
+							}
+						}
+
 						num_of_owned_provinces_with = {
 							value = 5
 							has_terrain = farmlands
 						}
 					}
-					
-						
+
+					num_of_owned_provinces_with = {
+						value = 10
+						has_terrain = grasslands
+					}
 				}
 
 			}
@@ -310,29 +331,29 @@ defined_text = {
 					NOT = { religion_group = communism_group }
 				}
 				
-				# AND = {
-				# 	NOT = {
-				# 		capital_scope = {
-				# 			OR = {
-				# 				region = lubelskie_region
-				# 				region = wielkopolska_region
-				# 				region = kujawsko_pomorskie_region
-				# 			}
-				# 		}
+				AND = {
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = lubelskie_region
+								region = wielkopolska_region
+								region = kujawsko_pomorskie_region
+							}
+						}
 					
-				# 		OR = {
-				# 			num_of_owned_provinces_with = {
-				# 				value = 10
-				# 				has_terrain = grasslands
-				# 			}
-				# 			num_of_owned_provinces_with = {
-				# 				value = 5
-				# 				has_terrain = farmlands
-				# 			}
-				# 		}
+						OR = {
+							num_of_owned_provinces_with = {
+								value = 10
+								has_terrain = grasslands
+							}
+							num_of_owned_provinces_with = {
+								value = 5
+								has_terrain = farmlands
+							}
+						}
 					
-				# 	}	
-				# }
+					}	
+				}
 				AND = {
 
 					religion_group = communism_group
