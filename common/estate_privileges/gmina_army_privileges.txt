@@ -223,9 +223,7 @@ estate_army_underfunded_army = {
 		discipline = -0.1
 		reinforce_cost_modifier = 0.2
 	}
-	benefits = {
 
-	}
 }
 estate_army_martial_law = {
 	icon = estate_eunuchs_supremacy_over_crown_privilege
@@ -361,8 +359,7 @@ estate_army_territorial_forces = {
 			is_in_important_war = yes
 		}
 	}	
-	penalties = {
-	}
+
 	benefits = {
 		defensiveness = 0.2
 		hostile_attrition = 1
@@ -454,9 +451,7 @@ estate_army_blitzkrieg = {
 			set_country_flag = picked_army_privilege
 		}
 	}
-	on_revoked = { 
-	
-	}
+
 
 	penalties = {
 		morale_damage_received = 0.1
@@ -507,9 +502,7 @@ estate_army_fire_supremacy = {
 			set_country_flag = picked_army_privilege
 		}
 	}
-	on_revoked = { 
-	
-	}
+
 
 	penalties = {
 		defensiveness = -0.2
@@ -554,16 +547,11 @@ estate_army_curfew = {
 	is_valid = {
 		religion_group = communism_group
 	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	on_invalid = {
-	}
-	penalties = {
-	}
+
+
+
+
+
 	benefits = {
 		global_unrest = -1
 		global_autonomy = -0.05
@@ -591,15 +579,9 @@ estate_army_empty_promises = {
 
 		}
 	}	
-	on_granted = {
-	
-	}
-	penalties = {
-	
-	}
-	benefits = {
-	
-	}
+
+
+
 }
 estate_army_land_rights = {
 	icon = privilege_grant_autonomy
@@ -608,17 +590,11 @@ estate_army_land_rights = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	}
-	on_granted = {
-	}
-	modifier_by_land_ownership = {
-		
-	}
-	penalties = {
-	}
-	conditional_modifier = {
-	}
+
+
+
+
+
 	benefits = {
 		governing_capacity = 100
 	}
@@ -774,10 +750,8 @@ estate_army_military_primacy = {
 			type = mil
 		}
 	}
-	on_granted = {
-	}
-	penalties = {
-	}
+
+
 	benefits = {
 		country_military_power = 1
 	}
@@ -834,51 +808,24 @@ estate_army_increased_drill = {
 
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
+
+
+
 	benefits = {
 		drill_gain_modifier = 0.10
 		drill_decay_modifier = -0.10
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-		trigger = {
 
-		}
-		modifier = {
 
-		}
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
 }
 estate_army_officer_schools = {
 	icon = privilege_timurid_helmet
@@ -904,52 +851,24 @@ estate_army_officer_schools = {
 			}
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
+
+
+
 	benefits = {
 		army_tradition_decay = -0.005
 		general_cost = -0.1
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-		trigger = {
 
-		}
-		modifier = {
 
-		}
-		is_bad = yes/no
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
 }
 estate_army_general_advisors = {
 	icon = privilege_recruit_minister
@@ -972,52 +891,25 @@ estate_army_general_advisors = {
 			mil = 2
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
+
+
+
+
+
 	penalties = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
 		mil_advisor_cost = -0.15
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-		trigger = {
 
-		}
-		modifier = {
 
-		}
-		is_bad = yes/no
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
 }
 estate_army_supremacy_over_government = {
 	icon = privilege_empty_throne
@@ -1038,16 +930,11 @@ estate_army_supremacy_over_government = {
 			}
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
+
+
+
+
+
 	penalties = {
 		all_estate_influence_modifier = 0.1
 	}
@@ -1055,35 +942,16 @@ estate_army_supremacy_over_government = {
 		all_estate_loyalty_equilibrium = 0.1
 
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-		trigger = {
 
-		}
-		modifier = {
 
-		}
-	}
-	modifier_by_land_ownership = {
 
-	}
+
 	mechanics = {
 		can_give_agendas_without_interaction
 	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
 }
 estate_army_recruit_general = {
 	icon = privilege_admin_power
@@ -1107,10 +975,8 @@ estate_army_recruit_general = {
 			}
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
+
+
 	on_granted = {
 		enable_estate_action = {
 			estate_action = GRANT_GENERALSHIP_NOBLES
@@ -1121,43 +987,19 @@ estate_army_recruit_general = {
 			estate_action = GRANT_GENERALSHIP_NOBLES
 		}
 	}
-	can_revoke = {
-	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
+
 	on_invalid = {
 		disable_estate_action = {
 			estate_action = GRANT_GENERALSHIP_NOBLES
 		}
 	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-		trigger = {
 
-		}
-		modifier = {
 
-		}
-		is_bad = yes/no
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
 }

@@ -6830,7 +6830,7 @@ mal_fan_of_the_ulema = {
 #Country modifier
 mal_fan_of_the_dhimmi = {
 	tolerance_of_heathens_capacity = 2
-	#dhimmi_loyalty_modifier = 0.15
+	##dhimmi_loyalty_modifier = 0.15
 }
 
 #Country modifier
@@ -6907,7 +6907,7 @@ son_embrace_legalism = {
 
 #Country modifier
 son_embrace_mysticism = {
-	#dhimmi_loyalty_modifier = 0.25
+	##dhimmi_loyalty_modifier = 0.25
 	monthly_piety = -0.0025
 }
 
@@ -8228,12 +8228,12 @@ tur_janissary_example = {
 }
 
 tur_janissary_loyalty = {
-	#janissaries_loyalty_modifier = 0.1
+	##janissaries_loyalty_modifier = 0.1
 	special_unit_forcelimit = 0.1
 }
 
 tur_respected_the_patriarchate = {
-	#dhimmi_loyalty_modifier = 0.1
+	##dhimmi_loyalty_modifier = 0.1
 	tolerance_of_heathens_capacity = 1
 	tolerance_heathen = 1
 }
@@ -8317,7 +8317,7 @@ tur_embraced_legalism_modifier = {
 }
 
 tur_embraced_mysticism_modifier = {
-	#dhimmi_loyalty_modifier = 0.1
+	##dhimmi_loyalty_modifier = 0.1
 	monthly_piety = -0.01
 }
 
@@ -8416,13 +8416,13 @@ tur_tatar_vanguard_modifier = {
 }
 
 tur_allowed_tatars_in_sipahi_modifier = { 
-	#janissaries_loyalty_modifier = -0.1
+	##janissaries_loyalty_modifier = -0.1
 	cavalry_power = 0.1
 	cavalry_cost = -0.15
 }
 
 tur_safeguarded_jan_privileges_modifier = {
-	#janissaries_loyalty_modifier = 0.1
+	##janissaries_loyalty_modifier = 0.1
 }
 
 tur_one_faith_empire_mod = {
@@ -11464,7 +11464,7 @@ estate_qizilbash_regimental_discipline_disloyal = {
 }
 estate_qizilbash_regimental_discipline_tooltip = {
 	#qizilbash_loyalty_modifier = 0.05
-	#qizilbash_influence_modifier = 0.1
+	##qizilbash_influence_modifier = 0.1
 	max_absolutism = -10
 }
 estate_qizilbash_regimental_discipline_qizilbash = {
@@ -11512,20 +11512,20 @@ estate_nobles_qurchi_service_tooltip = {
 estate_nobles_qurchi_service_scaling = {
 	monarch_lifespan = 0.5
 	nobles_influence_modifier = 0.5
-	#qizilbash_influence_modifier = -0.5
-	#ghulams_influence_modifier = -0.5
+	##qizilbash_influence_modifier = -0.5
+	##ghulams_influence_modifier = -0.5
 }
 estate_qizilbash_qurchi_service_scaling = {
 	monarch_lifespan = 0.5
 	nobles_influence_modifier = -0.5
-	#qizilbash_influence_modifier = 0.5
-	#ghulams_influence_modifier = -0.5
+	##qizilbash_influence_modifier = 0.5
+	##ghulams_influence_modifier = -0.5
 }
 estate_ghulams_qurchi_service_scaling = {
 	monarch_lifespan = 0.5
 	nobles_influence_modifier = -0.5
-	#qizilbash_influence_modifier = -0.5
-	#ghulams_influence_modifier = 0.5
+	##qizilbash_influence_modifier = -0.5
+	##ghulams_influence_modifier = 0.5
 }
 
 #Permanent, province
@@ -13067,7 +13067,7 @@ hun_support_of_bohemian_estates = {
 }
 
 hun_integrate_the_cossacks = {
-	cossacks_loyalty_modifier = 0.1
+	#cossacks_loyalty_modifier = 0.1
 	cavalry_power = 0.1
 }
 
@@ -14553,7 +14553,7 @@ MUG_peacock_throne = {
 }
 
 MUG_rajput_loyalty = {
-	rajput_loyalty_modifier = 0.05
+	#rajput_loyalty_modifier = 0.05
 }
 
 MUG_integrating_garjati_vassals = {

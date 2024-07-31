@@ -10,8 +10,7 @@ XXX = {
 	}
 	is_valid = {
 	}
-	can_select = {
-	}
+
 	on_granted = {
 	}
 	on_revoked = { 
@@ -24,9 +23,7 @@ XXX = {
 	}
 	on_invalid = {
 	}
-	on_granted_province = {
 
-	}
 	on_revoked_province = {
 
 	}
@@ -40,7 +37,7 @@ XXX = {
 		modifier = {
 
 		}
-		is_bad = yes/no
+		#is_bad = yes/no
 	}
 	modifier_by_land_ownership = {
 

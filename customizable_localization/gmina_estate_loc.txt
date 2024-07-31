@@ -218,20 +218,20 @@ defined_text = {
 
 		trigger = {
 			
+			NOT = { religion_group = communism_group }
 			OR = {
 				AND = {
 					num_of_owned_provinces_with = {
 						value = 5
 						has_terrain = farmlands
 					}
-					NOT = { religion_group = communism_group }
 				}
 				AND = {
 					num_of_owned_provinces_with = {
 						value = 10
 						has_terrain = grasslands
 					}
-				   NOT = { religion_group = communism_group }
+
 				}
 
 				capital_scope = {
@@ -241,6 +241,32 @@ defined_text = {
 						region = kujawsko_pomorskie_region
 					}
 				}
+
+				AND = {
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = lubelskie_region
+								region = wielkopolska_region
+								region = kujawsko_pomorskie_region
+							}
+						}
+					}
+					
+					OR = {
+						num_of_owned_provinces_with = {
+							value = 10
+							has_terrain = grasslands
+						}
+						num_of_owned_provinces_with = {
+							value = 5
+							has_terrain = farmlands
+						}
+					}
+					
+						
+				}
+
 			}
 		}
 	}
@@ -284,16 +310,42 @@ defined_text = {
 					NOT = { religion_group = communism_group }
 				}
 				
-				AND = {
-					NOT = {
-						capital_scope = {
-							OR = {
-								region = lubelskie_region
-								region = wielkopolska_region
-								region = kujawsko_pomorskie_region
-							}
-						}
+				# AND = {
+				# 	NOT = {
+				# 		capital_scope = {
+				# 			OR = {
+				# 				region = lubelskie_region
+				# 				region = wielkopolska_region
+				# 				region = kujawsko_pomorskie_region
+				# 			}
+				# 		}
 					
+				# 		OR = {
+				# 			num_of_owned_provinces_with = {
+				# 				value = 10
+				# 				has_terrain = grasslands
+				# 			}
+				# 			num_of_owned_provinces_with = {
+				# 				value = 5
+				# 				has_terrain = farmlands
+				# 			}
+				# 		}
+					
+				# 	}	
+				# }
+				AND = {
+
+					religion_group = communism_group
+
+					capital_scope = {
+						OR = {
+							region = lubelskie_region
+							region = wielkopolska_region
+							region = kujawsko_pomorskie_region
+						}
+					}
+
+					NOT = {
 						OR = {
 							num_of_owned_provinces_with = {
 								value = 10
@@ -304,34 +356,8 @@ defined_text = {
 								has_terrain = farmlands
 							}
 						}
-					
+											
 					}	
-				}
-				AND = {
-
-					capital_scope = {
-						OR = {
-							region = lubelskie_region
-							region = wielkopolska_region
-							region = kujawsko_pomorskie_region
-						}
-					}
-
-						NOT = {
-							OR = {
-								num_of_owned_provinces_with = {
-									value = 10
-									has_terrain = grasslands
-								}
-								num_of_owned_provinces_with = {
-									value = 5
-									has_terrain = farmlands
-								}
-
-								religion_group = communism_group
-							}
-						
-						}	
 				}
 
 			}

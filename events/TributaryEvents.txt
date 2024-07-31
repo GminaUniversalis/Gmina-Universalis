@@ -812,7 +812,7 @@ country_event = {
 						NOT = { trade_goods = copper } #Luxery related to Copper would high dev province
 						NOT = { trade_goods = naval_supplies } #Luxery related to Copper would high dev province
 						NOT = { trade_goods = fish } #Luxery related to Copper would high dev province
-						NOT = { trade_goods = grain } #Luxery related to Copper would high dev province
+						NOT = { trade_goods = gu_wheat } #Luxery related to Copper would high dev province
 					}
 				}
 			}
@@ -838,7 +838,7 @@ country_event = {
 								NOT = { trade_goods = copper } #Luxery related to Copper would high dev province
 								NOT = { trade_goods = naval_supplies } #Luxery related to Copper would high dev province
 								NOT = { trade_goods = fish } #Luxery related to Copper would high dev province
-								NOT = { trade_goods = grain } #Luxery related to Copper would high dev province
+								NOT = { trade_goods = gu_wheat } #Luxery related to Copper would high dev province
 							}
 						}
 					}
@@ -1072,13 +1072,13 @@ country_event = {
 				clr_country_flag = eunuch_admiral
 			}
 		}
-		if = {
-			limit = { has_estate = estate_eunuchs }
-			add_estate_loyalty = {
-				estate = estate_eunuchs
-				loyalty = 20
-			}
-		}
+		# if = {
+		# 	limit = { has_estate = estate_eunuchs }
+		# 	add_estate_loyalty = {
+		# 		estate = estate_eunuchs
+		# 		loyalty = 20
+		# 	}
+		# }
 	}
 }
 

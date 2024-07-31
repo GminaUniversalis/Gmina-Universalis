@@ -211,41 +211,41 @@ guiTypes = {
 
 		iconType ={
 			name = "dlc_browser_bg"
-			spriteType = "GFX_anb_lobby_right_secondary_bg"
+			spriteType = "GFX_gu_lobby_right_secondary_bg"
 			position = { x=-377 y=448 }
 		}
 
 		iconType ={
 			name = "dlc_header_image"
 			spriteType = "GFX_empty_interaction"
-			position = { x=-305 y=453 }		#anbennar
-			scale = 0.1					#anbennar
+			position = { x=-305 y=453 }		
+			scale = 0.1					
 		}
 
         instantTextBoxType = {
             name = "dlc_title"
-            position = { x=-305 y=465 }		#anbennar
+            position = { x=-305 y=465 }		
             font = "vic_22"
             borderSize = { x=4 y=4 }
             text = "STATISTICS"
-            maxWidth = 214	#anbennar
+            maxWidth = 214	
             maxHeight = 25
             format = center
         }
 
         instantTextBoxType = {
             name = "dlc_desc"
-            position = { x=-305 y=495 }		#anbennar
+            position = { x=-305 y=495 }		
             font = "standard_font"
-            maxWidth = 214	#anbennar
+            maxWidth = 214	
             maxHeight = 330
         }
 
 		instantTextBoxType = {
             name = "dlc_flavor"
-            position = { x=-305 y=545 }		#anbennar
+            position = { x=-305 y=545 }		
             font = "standard_font"
-            maxWidth = 214		#anbennar
+            maxWidth = 214		
             maxHeight = 330
         }
 
@@ -291,8 +291,8 @@ guiTypes = {
 		guiButtonType = {
 			name = "close_button"
 			quadTextureSprite = "button_type_1"
-			position = { x=-290 y=830 }		#anbennar
-			buttonText = "BACK"			#anbennar
+			position = { x=-290 y=830 }		
+			buttonText = "BACK"			
 			buttonFont = "vic_18"
 			shortcut = "ESCAPE"
 		}

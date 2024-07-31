@@ -1938,7 +1938,7 @@ conservatism_group = {
 			tolerance_own = 2
 		}
 		country_as_secondary = {
-			manpower_percentage = 0.1
+			global_manpower_modifier = 0.1
 		}
 		province = {
 			local_years_of_nationalism = 15

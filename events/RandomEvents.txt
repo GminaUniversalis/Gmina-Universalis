@@ -1855,10 +1855,10 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			OR = {
+			#OR = {
 				has_estate = estate_burghers
-				has_estate = estate_vaisyas
-			}
+				#has_estate = estate_vaisyas
+			#}
 		}
 		desc = event.5051.desc
 	}
@@ -7034,27 +7034,27 @@ country_event = {
 				any_owned_province = {
 					is_core = root
 					OR = {
-						trade_goods = gems
-						trade_goods = incense
-						trade_goods = spices
-						trade_goods = silk
+						trade_goods = gu_amber
+						trade_goods = gu_sulfur
+						trade_goods = gu_fruits
+						trade_goods = gu_vehicles
 						trade_goods = cloth
-						trade_goods = ivory
-						trade_goods = tropical_wood
+						trade_goods = gu_stone
+						trade_goods = gu_lumber
 						trade_goods = gold
 						trade_goods = glass					
 						trade_goods = paper					
-						trade_goods = chinaware	
-						trade_goods = slaves
+						trade_goods = gu_ceramics	
+						trade_goods = gu_pigs
 						trade_goods = tobacco
 						trade_goods = wine
 						trade_goods = salt
 						trade_goods = cotton
-						trade_goods = tea
-						trade_goods = dyes
-						trade_goods = cocoa
+						trade_goods = gu_vodka
+						trade_goods = gu_oil
+						trade_goods = gu_beer
 						trade_goods = sugar
-						trade_goods = coffee
+						trade_goods = gu_mushrooms
 					}
 				}
 			}
@@ -7066,27 +7066,27 @@ country_event = {
 			any_owned_province = {
 				is_core = root
 				OR = {
-					trade_goods = gems
-					trade_goods = incense
-					trade_goods = spices
-					trade_goods = silk
+					trade_goods = gu_amber
+					trade_goods = gu_sulfur
+					trade_goods = gu_fruits
+					trade_goods = gu_vehicles
 					trade_goods = cloth
-					trade_goods = ivory
-					trade_goods = tropical_wood
+					trade_goods = gu_stone
+					trade_goods = gu_lumber
 					trade_goods = gold
 					trade_goods = glass					
 					trade_goods = paper					
-					trade_goods = chinaware
-					trade_goods = slaves
+					trade_goods = gu_ceramics
+					trade_goods = gu_pigs
 					trade_goods = tobacco
 					trade_goods = wine
 					trade_goods = salt
 					trade_goods = cotton
-					trade_goods = tea
-					trade_goods = dyes
-					trade_goods = cocoa
+					trade_goods = gu_vodka
+					trade_goods = gu_oil
+					trade_goods = gu_beer
 					trade_goods = sugar
-					trade_goods = coffee
+					trade_goods = gu_mushrooms
 				}
 			}
 		}
@@ -7124,27 +7124,27 @@ country_event = {
 				limit = {
 					is_core = root
 					OR = {
-						trade_goods = gems
-						trade_goods = incense
-						trade_goods = spices
-						trade_goods = silk
+						trade_goods = gu_amber
+						trade_goods = gu_sulfur
+						trade_goods = gu_fruits
+						trade_goods = gu_vehicles
 						trade_goods = cloth
-						trade_goods = ivory
-						trade_goods = tropical_wood
+						trade_goods = gu_stone
+						trade_goods = gu_lumber
 						trade_goods = gold
 						trade_goods = glass					
 						trade_goods = paper					
-						trade_goods = chinaware
-						trade_goods = slaves
+						trade_goods = gu_ceramics
+						trade_goods = gu_pigs
 						trade_goods = tobacco
 						trade_goods = wine
 						trade_goods = salt
 						trade_goods = cotton
-						trade_goods = tea
-						trade_goods = dyes
-						trade_goods = cocoa
+						trade_goods = gu_vodka
+						trade_goods = gu_oil
+						trade_goods = gu_beer
 						trade_goods = sugar
-						trade_goods = coffee
+						trade_goods = gu_mushrooms
 					}
 				}
 				save_event_target_as = trade_province
@@ -12993,7 +12993,7 @@ country_event = {
 
 	trigger = {
 		any_owned_province = {
-			trade_goods = tea 
+			trade_goods = gu_vodka 
 			is_overseas = yes
 			is_city = yes
 		}
@@ -13008,7 +13008,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					trade_goods = tea 
+					trade_goods = gu_vodka 
 					is_overseas = yes
 					is_city = yes
 				}
@@ -13048,7 +13048,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					trade_goods = chinaware
+					trade_goods = gu_ceramics
 				}
 				save_event_target_as = chinaware_province
 			}
@@ -13078,7 +13078,7 @@ country_event = {
 	trigger = {
 		spices = 1
 		any_owned_province = {
-			trade_goods = spices
+			trade_goods = gu_fruits
 			NOT = { has_province_modifier = harvest_fails }
 		}
 	}
@@ -13087,7 +13087,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					trade_goods = spices
+					trade_goods = gu_fruits
 					NOT = { has_province_modifier = harvest_fails }
 				}
 				save_event_target_as = spice_province
@@ -13292,7 +13292,7 @@ country_event = {
 		grain = 1
 		num_of_cities = 2
 		any_owned_province = {
-			trade_goods = grain
+			trade_goods = gu_wheat
 			is_capital = no
 		}
 	}
@@ -13301,7 +13301,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					trade_goods = grain
+					trade_goods = gu_wheat
 					is_capital = no
 				}
 				save_event_target_as = plague_province
@@ -13363,7 +13363,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					trade_goods = grain
+					trade_goods = gu_wheat
 				}		
 				save_event_target_as = province_in_question
 			}

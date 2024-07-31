@@ -6,16 +6,12 @@ estate_retirees_land_rights = {
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
-	}
-	on_granted = {
-	}
-	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
-	conditional_modifier = {
-	}
+
+
+
+
 	benefits = {
 		governing_capacity = 100
 	}
@@ -222,15 +218,9 @@ estate_retirees_empty_promises = {
 
 		}
 	}	
-	on_granted = {
-	
-	}
-	penalties = {
-	
-	}
-	benefits = {
-	
-	}
+
+
+
 }
 estate_retirees_klub_seniora = {
 	icon = privilege_manpower_of_true_faith
@@ -348,6 +338,7 @@ estate_retirees_rada = {
 			amount = 10
 			republican_tradition = 10
 			devotion = 10
+			meritocracy = 10
 		}
 	}
 	else_if = {
@@ -356,6 +347,7 @@ estate_retirees_rada = {
 			amount = 20
 			republican_tradition = 20
 			devotion = 20
+			meritocracy = 20
 		}
 	}
 	else_if = {
@@ -364,6 +356,7 @@ estate_retirees_rada = {
 			amount = 30
 			republican_tradition = 30
 			devotion = 30
+			meritocracy = 30
 		}
 	}
 	else_if = {
@@ -372,6 +365,7 @@ estate_retirees_rada = {
 			amount = 40
 			republican_tradition = 40
 			devotion = 40
+			meritocracy = 40
 		}
 	}
 	else = {
@@ -379,6 +373,7 @@ estate_retirees_rada = {
 			amount = 50
 			republican_tradition = 50
 			devotion = 50
+			meritocracy = 50
 		}
 		}
 	}
@@ -387,6 +382,9 @@ estate_retirees_rada = {
 	}
 	benefits = {
 		legitimacy = 1
+		republican_tradition = 0.5
+		devotion = 1
+		meritocracy = 1
 	}
 }
 estate_retirees_wiek = {
@@ -423,6 +421,9 @@ estate_retirees_wiek = {
 			is_in_deficit = yes
 		}
 	}	
+	can_select = {
+		NOT = {has_estate_privilege = estate_retirees_wiek_2}
+	}
 	on_granted = {		
 	}
 	penalties = {
@@ -469,6 +470,9 @@ estate_retirees_wiek_2 = {
 			is_in_deficit = yes
 		}
 	}		
+	can_select = {
+		NOT = {has_estate_privilege = estate_retirees_wiek}
+	}
 	on_granted = {		
 	}
 	penalties = {
@@ -518,10 +522,13 @@ estate_retirees_at = {
 			is_in_deficit = yes
 		}
 	}	
-	on_granted = {
-	}
+
 	penalties = {
 		legitimacy = -0.5
+		republican_tradition = -0.25
+		devotion = -0.5
+		meritocracy = -0.5
+
 		prestige = -0.5
 	}
 	benefits = {
@@ -563,10 +570,8 @@ estate_retirees_ac = {
 			is_in_deficit = yes
 		}
 	}		
-	on_granted = {
-	}
-	penalties = {
-	}
+
+
 	benefits = {
 		adm_advisor_cost = -0.15
 	}
@@ -580,61 +585,69 @@ estate_retirees_scl = {
 	loyalty = 0
 	influence = 0.1
 	loyalty_scaled_conditional_modifier = {
-	trigger = {	
-		limit = { estate_loyalty = {
-					estate = estate_retirees
-					loyalty = 100
-					} 
-				}
-			}
+		trigger = {	
+
+			estate_loyalty = {
+				estate = estate_retirees
+				loyalty = 100
+			} 
+			
+		}
+
+		modifier = {
+			idea_cost = 0.15
+			diplomatic_reputation = 1 
+		}
 	}
-	modifier = {
-		idea_cost = 0.15
-		diplomatic_reputation = 1 
-	}
+
 	loyalty_scaled_conditional_modifier = {
-	trigger = {	
-		limit = { estate_loyalty = {
+		trigger = {	
+
+			estate_loyalty = {
 					estate = estate_retirees
 					loyalty = 60
-					} 
-				}
-			}
+			} 
+			
+		}
+
+		modifier = {
+			idea_cost = 0.1
+			diplomatic_reputation = 0.5
+		}
 	}
-	modifier = {
-		idea_cost = 0.1
-		diplomatic_reputation = 0.5
-	}
+
 	loyalty_scaled_conditional_modifier = {
-	trigger = {	
-		limit = { estate_loyalty = {
+		trigger = {	
+
+			estate_loyalty = {
 					estate = estate_retirees
 					loyalty = 20
-					} 
-				}
-			}
+			} 
+			
+		}
+
+		modifier = {
+			idea_cost = -0.1
+			diplomatic_reputation = -0.5
+		}
 	}
-	modifier = {
-		idea_cost = -0.1
-		diplomatic_reputation = -0.5
-	}
+
 	loyalty_scaled_conditional_modifier = {
-	trigger = {	
-		limit = { estate_loyalty = {
+		trigger = {	
+
+			estate_loyalty = {
 					estate = estate_retirees
 					loyalty = 0
-					} 
-				}
-			}
+			} 
+
+		}
+
+		modifier = {
+			idea_cost = -0.15
+			diplomatic_reputation = -1 
+		}
 	}
-	modifier = {
-		idea_cost = -0.15
-		diplomatic_reputation = -1 
-	}
-	penalties = {
-	}
-	benefits ={
-	}
+
 	ai_will_do = {
 		factor = 10
 	}	
@@ -652,10 +665,8 @@ estate_retirees_religious_state = {
 			type = adm
 		}
 	}
-	on_granted = {
-	}
-	penalties = {
-	}
+
+
 	benefits = {
 		country_admin_power = 1
 	}
@@ -728,30 +739,20 @@ estate_retirees_pensioners_union = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
-	can_select = {
-	}
+
+
 	on_granted = {
 		add_legitimacy = 10
 	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
 	benefits = {
 		prestige_decay = 0.5
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	mechanics = {
 
-	}
+
 	cooldown_years = 5
 	on_cooldown_expires = {
 
@@ -792,43 +793,24 @@ estate_retirees_medical_priority = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
-	can_select = {
-	}
+
+
 	on_granted = {
 		add_inflation = 2
 		add_years_of_income = -0.5
 	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
 	benefits = {
 		global_unrest = -2
 		prestige = 1
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }

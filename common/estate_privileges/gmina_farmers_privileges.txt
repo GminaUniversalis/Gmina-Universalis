@@ -34,8 +34,7 @@ estate_farmers_new_way_GMO = {
 		}
 		
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_farmers_definer_tooltip
@@ -101,8 +100,7 @@ estate_farmers_new_way_GMO = {
 		production_efficiency = -0.1
 		development_cost_modifier = 0.1
 	}
-	benefits = {
-	}
+
 	on_invalid = {
 		clr_country_flag = GMO_farming
 	}
@@ -117,27 +115,13 @@ estate_farmers_new_way_GMO = {
 			remove_province_modifier = GMO_farming_modifier
 		}
 	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_farmers_natural_farming = {
 	icon = estate_burghers_arb_oasis_development
@@ -174,8 +158,7 @@ estate_farmers_natural_farming = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_farmers_definer_tooltip
@@ -240,8 +223,7 @@ estate_farmers_natural_farming = {
 		trade_efficiency = -0.1
 		development_cost = 0.1
 	}
-	benefits = {
-	}
+
 	on_invalid = {
 		clr_country_flag = natural_farming
 	}
@@ -256,27 +238,13 @@ estate_farmers_natural_farming = {
 			remove_province_modifier = natural_farming_modifier
 		}
 	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_farmers_land_rights = {
 	icon = privilege_grant_autonomy
@@ -286,17 +254,11 @@ estate_farmers_land_rights = {
 	loyalty = 0.05
 	influence = 0.05
 
-	can_select = {
-	}
-	on_granted = {
-	}
-	modifier_by_land_ownership = {
-		
-	}
-	penalties = {
-	}
-	conditional_modifier = {
-	}
+
+
+
+
+
 	benefits = {
 		governing_capacity = 100
 	}
@@ -443,7 +405,7 @@ estate_farmers_land_rights = {
 estate_farmers_empty_promises = {
 	icon = estate_burghers_BYZ_single_market
 	land_share = 0
-	max_absolutism = 
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
@@ -459,14 +421,9 @@ estate_farmers_empty_promises = {
 			}
 		}
 	}	
-	on_granted = {
-	
-	}
-	penalties = {
-	
-	}
-	benefits = {
-	}
+
+
+
 }
 estate_farmers_EU_funding = {
 	icon = privilege_aged_paper
@@ -503,37 +460,23 @@ estate_farmers_EU_funding = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		NOT = { has_estate_privilege = estate_farmers_reject_EU_regulations }
 		current_age = age_of_absolutism
 	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
+
 	benefits = {
 		production_efficiency = 0.1
 	}
-	on_invalid = {
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_farmers_national_funding = {
 	icon = estate_burghers_GER_customs_union
@@ -570,35 +513,20 @@ estate_farmers_national_funding = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
+
+
+
 	benefits = {
 		production_efficiency = 0.05
 	}
-	on_invalid = {
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_farmers_accept_EU_regulations = {
 	icon = estate_burghers_fugger_family
@@ -640,38 +568,25 @@ estate_farmers_accept_EU_regulations = {
 			crown_land_share = estate_farmers
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		NOT = { has_estate_privilege = estate_farmers_reject_EU_regulations }
 		current_age = age_of_absolutism
 	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
+
+
+
 	penalties = {
 		production_efficiency = -0.1
 	}
 	benefits = {
 		trade_efficiency = 0.1
 	}
-	on_invalid = {
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_farmers_reject_EU_regulations = {
 	icon = estate_burghers_exkousseiai_for_latins
@@ -713,18 +628,14 @@ estate_farmers_reject_EU_regulations = {
 			NOT = { crown_land_share = estate_farmers }
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		NOT = { has_estate_privilege = estate_farmers_accept_EU_regulations }
 		current_age = age_of_absolutism
 	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
+
+
+
 	penalties = {
 		trade_efficiency = -0.1
 	}
@@ -732,20 +643,11 @@ estate_farmers_reject_EU_regulations = {
 
 		production_efficiency = 0.1		
 	}
-	on_invalid = {
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_farmers_support_for_exporters = {
 	icon = estate_eunuchs_outwards_perfection_privilege
@@ -787,18 +689,12 @@ estate_farmers_support_for_exporters = {
 			NOT = { crown_land_share = estate_farmers }
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
+
+
+
 	benefits = {
 		improve_relation_modifier = 0.1
 		caravan_power = 0.2
@@ -806,20 +702,11 @@ estate_farmers_support_for_exporters = {
 		global_ship_trade_power = 0.2
 		trade_range_modifier = 0.25
 	}
-	on_invalid = {
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_farmers_promoting_rural_life = {
 	icon = privilege_jungle_adaptation
@@ -856,10 +743,8 @@ estate_farmers_promoting_rural_life = {
 			NOT = { crown_land_share = estate_farmers }
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
+
+
 	on_granted = {
 		custom_tooltip = estate_farmers_promoting_rural_life_tooltip
 		set_country_flag = promote_rural_life
@@ -915,14 +800,9 @@ estate_farmers_promoting_rural_life = {
 			remove_province_modifier = city_life
 		}
 	}
-	can_revoke = {
-	}
-	penalties = {
 
-	}
-	benefits = {
 
-	}
+
 	on_invalid = {
 		clr_country_flag = promote_rural_life
 	}
@@ -946,14 +826,9 @@ estate_farmers_promoting_rural_life = {
 			remove_province_modifier = city_life
 		}
 	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
+
 	cooldown_years = 10
 	on_cooldown_expires = {
 		clr_country_flag = promote_rural_life
@@ -999,10 +874,8 @@ estate_farmers_fertilizers_from_east = {
 			NOT = { crown_land_share = estate_farmers }
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
+
+
 	on_granted = {
 		custom_tooltip = estate_farmers_fertilizers_from_east_tooltip
 		set_country_flag = estate_farmers_fertilizers_from_east
@@ -1067,14 +940,9 @@ estate_farmers_fertilizers_from_east = {
 			
 		}
 	}
-	can_revoke = {
-	}
-	penalties = {
 
-	}
-	benefits = {
 
-	}
+
 	on_invalid = {
 		clr_country_flag = estate_farmers_fertilizers_from_east
 	}
@@ -1103,14 +971,9 @@ estate_farmers_fertilizers_from_east = {
 			
 		}
 	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
+
 	cooldown_years = 10
 	on_cooldown_expires = {
 		clr_country_flag = estate_farmers_fertilizers_from_east
@@ -1156,10 +1019,8 @@ estate_farmers_vaccinating_animals = {
 			NOT = { crown_land_share = estate_farmers }
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
+
+
 	on_granted = {
 		add_years_of_income = -0.25
 		custom_tooltip = estate_farmers_vaccinating_animals_tooltip
@@ -1198,12 +1059,9 @@ estate_farmers_vaccinating_animals = {
 			remove_province_modifier = vaccinated_animals_modifier
 		}
 	}
-	can_revoke = {
-	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
+
 	on_invalid = {
 		clr_country_flag = estate_farmers_vaccinating_animals
 	}
@@ -1220,14 +1078,9 @@ estate_farmers_vaccinating_animals = {
 			remove_province_modifier = vaccinated_animals_modifier
 		}
 	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
+
 	cooldown_years = 10
 	on_cooldown_expires = {
 		clr_country_flag = estate_farmers_vaccinating_animals
@@ -1273,51 +1126,23 @@ estate_farmers_local_farms = {
 			NOT = { crown_land_share = estate_farmers }
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
+
+
+
 	benefits = {
 		relation_with_same_culture = 25
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-		trigger = {
 
-		}
-		modifier = {
 
-		}
-		is_bad = yes/no
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
 }
 estate_farmers_small_scale_farming = {
 	icon = privilege_caravans
@@ -1359,52 +1184,25 @@ estate_farmers_small_scale_farming = {
 			NOT = { crown_land_share = estate_farmers }
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
+
+
+
+
+
 	penalties = {
 		global_trade_goods_size_modifier = -0.25
 	}
 	benefits = {
 		development_cost_in_primary_culture = -0.1
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-		trigger = {
 
-		}
-		modifier = {
 
-		}
-		is_bad = yes/no
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
 }
 estate_farmers_wood_export_focus = {
 	icon = privilege_mayan_canoes
@@ -1446,22 +1244,17 @@ estate_farmers_wood_export_focus = {
 			NOT = { crown_land_share = estate_farmers }
 		}
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
+
+
 	on_granted = {
 		set_country_flag = promote_woodworking
 	}
 	on_revoked = { 
 		clr_country_flag = promote_woodworking
 	}
-	can_revoke = {
-	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
+
 	on_invalid = {
 		clr_country_flag = promote_woodworking
 	}
@@ -1508,24 +1301,9 @@ estate_farmers_wood_export_focus = {
 		}	
 		
 	}
-	conditional_modifier = {
-		trigger = {
 
-		}
-		modifier = {
 
-		}
-		is_bad = yes/no
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
-
-	}
 }
 

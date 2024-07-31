@@ -22,15 +22,7 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
-ship_names = {
-    "Comte de Smet de Nayer"
-}
-army_names = {
-	"Placeholder $PROVINCE$"
-}
-fleet_names = {
-	"Placeholder_Fleet1"
-}
+
 # Lista imion z pliku: Dolnoslaskie.txt
 monarch_names = {
     "Zuzanna" = -381
@@ -1884,4 +1876,34 @@ leader_names = {
  Radwaªski
  Frankiewicz
  Ludwiczak
+}
+
+ship_names = { 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
+}
+army_names = { 
+	"$PROVINCE$ army" 
+}
+fleet_names = { 
+	"$PROVINCE$ fleet" 
 }

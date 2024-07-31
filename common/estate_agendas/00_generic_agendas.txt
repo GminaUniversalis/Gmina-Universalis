@@ -156,12 +156,12 @@ estate_church_build_temple_in_y = {
     task_requirements = {
 		if = {
 			limit = {
-				has_estate_agenda_auto_completion = {
-					estate = estate_church
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_investors
+			}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_church
+				estate = estate_priests
 			}
 		}
 		else = {
@@ -188,10 +188,10 @@ estate_church_build_temple_in_y = {
     }
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_church
+			estate = estate_priests
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 		if = {
@@ -828,7 +828,7 @@ estate_nobles_build_army_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3083,7 +3083,7 @@ estate_nobles_build_fort_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -5985,7 +5985,7 @@ estate_burghers_build_trade_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -6309,7 +6309,7 @@ estate_burghers_build_port_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -6610,7 +6610,7 @@ estate_burghers_build_production_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -8602,7 +8602,7 @@ estate_nobles_build_manufactory_in_y = {
 		any_owned_province = {
 			is_state_core = root
 			root_can_build_manufactory_here_trigger = yes
-			has_nobles_trade_good_trigger = yes
+			#has_nobles_trade_good_trigger = yes
 		}
 		monthly_income = 30
 	}
@@ -8634,7 +8634,7 @@ estate_nobles_build_manufactory_in_y = {
 			limit = {
 				is_state_core = root
 				root_can_build_manufactory_here_trigger = yes
-				has_nobles_trade_good_trigger = yes
+				#has_nobles_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -8643,7 +8643,7 @@ estate_nobles_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 5
 				root_can_build_manufactory_here_trigger = yes
-				has_nobles_trade_good_trigger = yes
+				#has_nobles_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -8652,7 +8652,7 @@ estate_nobles_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 10
 				root_can_build_manufactory_here_trigger = yes
-				has_nobles_trade_good_trigger = yes
+				#has_nobles_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -8673,7 +8673,7 @@ estate_nobles_build_manufactory_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -8705,8 +8705,8 @@ estate_nobles_build_manufactory_in_y = {
 								OR = {
 									trade_goods = wool
 									trade_goods = cloth
-									trade_goods = silk
-									trade_goods = dyes
+									trade_goods = gu_vehicles
+									trade_goods = gu_oil
 								}
 							}
 							has_building = textile
@@ -8714,12 +8714,12 @@ estate_nobles_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = ivory
-									trade_goods = slaves
-									trade_goods = spices
+									trade_goods = gu_stone
+									trade_goods = gu_pigs
+									trade_goods = gu_fruits
 									trade_goods = cloves
 									trade_goods = fur
-									trade_goods = incense
+									trade_goods = gu_sulfur
 								}
 							}
 							has_building = tradecompany
@@ -8727,8 +8727,8 @@ estate_nobles_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = grain
-									trade_goods = livestock
+									trade_goods = gu_wheat
+									trade_goods = gu_cattle
 									trade_goods = wine
 								}
 							}
@@ -8738,17 +8738,17 @@ estate_nobles_build_manufactory_in_y = {
 							limit = {
 								OR = {
 									trade_goods = paper
-									trade_goods = gems
-									trade_goods = tropical_wood
+									trade_goods = gu_amber
+									trade_goods = gu_lumber
 									trade_goods = glass
-									trade_goods = chinaware
+									trade_goods = gu_ceramics
 								}
 							}
 							has_building = mills
 						}
 						else_if = {
 							limit = {
-								trade_goods = coal
+								trade_goods = gu_coal
 							}
 							has_building = furnace
 						}
@@ -8909,8 +8909,8 @@ estate_nobles_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -8918,9 +8918,9 @@ estate_nobles_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -8931,8 +8931,8 @@ estate_nobles_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -8942,8 +8942,8 @@ estate_nobles_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -8952,7 +8952,7 @@ estate_nobles_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -9113,8 +9113,8 @@ estate_nobles_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -9122,9 +9122,9 @@ estate_nobles_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -9135,8 +9135,8 @@ estate_nobles_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -9146,8 +9146,8 @@ estate_nobles_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -9156,7 +9156,7 @@ estate_nobles_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -9215,7 +9215,7 @@ estate_burghers_build_manufactory_in_y = {
 		any_owned_province = {
 			is_state_core = root
 			root_can_build_manufactory_here_trigger = yes
-			has_burghers_trade_good_trigger = yes
+			#has_burghers_trade_good_trigger = yes
 		}
 		monthly_income = 30
 	}
@@ -9247,7 +9247,7 @@ estate_burghers_build_manufactory_in_y = {
 			limit = {
 				is_state_core = root
 				root_can_build_manufactory_here_trigger = yes
-				has_burghers_trade_good_trigger = yes
+				#has_burghers_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9256,7 +9256,7 @@ estate_burghers_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 5
 				root_can_build_manufactory_here_trigger = yes
-				has_burghers_trade_good_trigger = yes
+				#has_burghers_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9265,7 +9265,7 @@ estate_burghers_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 10
 				root_can_build_manufactory_here_trigger = yes
-				has_burghers_trade_good_trigger = yes
+				#has_burghers_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9286,7 +9286,7 @@ estate_burghers_build_manufactory_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -9318,8 +9318,8 @@ estate_burghers_build_manufactory_in_y = {
 								OR = {
 									trade_goods = wool
 									trade_goods = cloth
-									trade_goods = silk
-									trade_goods = dyes
+									trade_goods = gu_vehicles
+									trade_goods = gu_oil
 								}
 							}
 							has_building = textile
@@ -9327,12 +9327,12 @@ estate_burghers_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = ivory
-									trade_goods = slaves
-									trade_goods = spices
+									trade_goods = gu_stone
+									trade_goods = gu_pigs
+									trade_goods = gu_fruits
 									trade_goods = cloves
 									trade_goods = fur
-									trade_goods = incense
+									trade_goods = gu_sulfur
 								}
 							}
 							has_building = tradecompany
@@ -9340,8 +9340,8 @@ estate_burghers_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = grain
-									trade_goods = livestock
+									trade_goods = gu_wheat
+									trade_goods = gu_cattle
 									trade_goods = wine
 								}
 							}
@@ -9351,17 +9351,17 @@ estate_burghers_build_manufactory_in_y = {
 							limit = {
 								OR = {
 									trade_goods = paper
-									trade_goods = gems
-									trade_goods = tropical_wood
+									trade_goods = gu_amber
+									trade_goods = gu_lumber
 									trade_goods = glass
-									trade_goods = chinaware
+									trade_goods = gu_ceramics
 								}
 							}
 							has_building = mills
 						}
 						else_if = {
 							limit = {
-								trade_goods = coal
+								trade_goods = gu_coal
 							}
 							has_building = furnace
 						}
@@ -9522,8 +9522,8 @@ estate_burghers_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -9531,9 +9531,9 @@ estate_burghers_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -9544,8 +9544,8 @@ estate_burghers_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -9555,8 +9555,8 @@ estate_burghers_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -9565,7 +9565,7 @@ estate_burghers_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -9726,8 +9726,8 @@ estate_burghers_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -9735,9 +9735,9 @@ estate_burghers_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -9748,8 +9748,8 @@ estate_burghers_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -9759,8 +9759,8 @@ estate_burghers_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -9769,7 +9769,7 @@ estate_burghers_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -9827,7 +9827,7 @@ estate_church_build_manufactory_in_y = {
 		any_owned_province = {
 			is_state_core = root
 			root_can_build_manufactory_here_trigger = yes
-			has_church_trade_good_trigger = yes
+			#has_church_trade_good_trigger = yes
 		}
 		monthly_income = 30
 	}
@@ -9863,7 +9863,7 @@ estate_church_build_manufactory_in_y = {
 			limit = {
 				is_state_core = root
 				root_can_build_manufactory_here_trigger = yes
-				has_church_trade_good_trigger = yes
+				#has_church_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9872,7 +9872,7 @@ estate_church_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 5
 				root_can_build_manufactory_here_trigger = yes
-				has_church_trade_good_trigger = yes
+				#has_church_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9881,7 +9881,7 @@ estate_church_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 10
 				root_can_build_manufactory_here_trigger = yes
-				has_church_trade_good_trigger = yes
+				#has_church_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9897,12 +9897,12 @@ estate_church_build_manufactory_in_y = {
     task_requirements = {
 		if = {
 			limit = {
-				has_estate_agenda_auto_completion = {
-					estate = estate_church
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_priests
+			}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_church
+				estate = estate_priests
 			}
 		}
 		else = {
@@ -9934,8 +9934,8 @@ estate_church_build_manufactory_in_y = {
 								OR = {
 									trade_goods = wool
 									trade_goods = cloth
-									trade_goods = silk
-									trade_goods = dyes
+									trade_goods = gu_vehicles
+									trade_goods = gu_oil
 								}
 							}
 							has_building = textile
@@ -9943,12 +9943,12 @@ estate_church_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = ivory
-									trade_goods = slaves
-									trade_goods = spices
+									trade_goods = gu_stone
+									trade_goods = gu_pigs
+									trade_goods = gu_fruits
 									trade_goods = cloves
 									trade_goods = fur
-									trade_goods = incense
+									trade_goods = gu_sulfur
 								}
 							}
 							has_building = tradecompany
@@ -9956,8 +9956,8 @@ estate_church_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = grain
-									trade_goods = livestock
+									trade_goods = gu_wheat
+									trade_goods = gu_cattle
 									trade_goods = wine
 								}
 							}
@@ -9967,17 +9967,17 @@ estate_church_build_manufactory_in_y = {
 							limit = {
 								OR = {
 									trade_goods = paper
-									trade_goods = gems
-									trade_goods = tropical_wood
+									trade_goods = gu_amber
+									trade_goods = gu_lumber
 									trade_goods = glass
-									trade_goods = chinaware
+									trade_goods = gu_ceramics
 								}
 							}
 							has_building = mills
 						}
 						else_if = {
 							limit = {
-								trade_goods = coal
+								trade_goods = gu_coal
 							}
 							has_building = furnace
 						}
@@ -9995,10 +9995,10 @@ estate_church_build_manufactory_in_y = {
     }
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_church
+			estate = estate_priests
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 		event_target:agenda_province = {
@@ -10022,7 +10022,7 @@ estate_church_build_manufactory_in_y = {
 			}
 		}
         add_estate_loyalty_modifier = {
-            estate = estate_church
+            estate = estate_priests
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -10142,8 +10142,8 @@ estate_church_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -10151,9 +10151,9 @@ estate_church_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -10164,8 +10164,8 @@ estate_church_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -10175,8 +10175,8 @@ estate_church_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -10185,7 +10185,7 @@ estate_church_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -10326,12 +10326,12 @@ estate_church_build_university_in_y = {
     task_requirements = {
 		if = {
 			limit = {
-				has_estate_agenda_auto_completion = {
-					estate = estate_church
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_priests
+			}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_church
+				estate = estate_priests
 			}
 		}
 		else = {
@@ -10342,10 +10342,10 @@ estate_church_build_university_in_y = {
     }
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_church
+			estate = estate_priests
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 		add_adm_power = 35
@@ -10365,7 +10365,7 @@ estate_church_build_university_in_y = {
 			}
 		}
         add_estate_loyalty_modifier = {
-            estate = estate_church
+            estate = estate_priests
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -10594,7 +10594,7 @@ estate_nobles_build_university_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -10987,7 +10987,7 @@ estate_burghers_build_university_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -11398,12 +11398,12 @@ estate_church_develop_x = {
     task_requirements = {
 		if = {
 			limit = {
-				has_estate_agenda_auto_completion = {
-					estate = estate_church
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_priests
+			}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_church
+				estate = estate_priests
 			}
 		}
 		else = {
@@ -11414,10 +11414,10 @@ estate_church_develop_x = {
     }
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_church
+			estate = estate_priests
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 		add_prestige = 10
@@ -11435,7 +11435,7 @@ estate_church_develop_x = {
 			}
 		}
         add_estate_loyalty_modifier = {
-            estate = estate_church
+            estate = estate_priests
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -11732,7 +11732,7 @@ estate_nobles_develop_x = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -12173,7 +12173,7 @@ estate_burghers_develop_x = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {

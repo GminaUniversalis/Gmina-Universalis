@@ -1080,7 +1080,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = grain
+				trade_goods = gu_wheat
 			}
 		}
 		OR = {
@@ -1120,7 +1120,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = grain
+					trade_goods = gu_wheat
 				}
 			}
 			tooltip = {
@@ -1997,7 +1997,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = ivory
+				trade_goods = gu_stone
 			}
 		}
 	}
@@ -2033,7 +2033,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = ivory
+					trade_goods = gu_stone
 				}
 			}
 			tooltip = {
@@ -2088,7 +2088,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = tea
+				trade_goods = gu_vodka
 			}
 		}
 	}
@@ -2124,7 +2124,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = tea
+					trade_goods = gu_vodka
 				}
 			}
 			tooltip = {
@@ -2179,7 +2179,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = chinaware
+				trade_goods = gu_ceramics
 			}
 		}
 	}
@@ -2215,7 +2215,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = chinaware
+					trade_goods = gu_ceramics
 				}
 			}
 			tooltip = {
@@ -2270,7 +2270,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = spices
+				trade_goods = gu_fruits
 			}
 		}
 	}
@@ -2306,7 +2306,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = spices
+					trade_goods = gu_fruits
 				}
 			}
 			tooltip = {
@@ -2361,7 +2361,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = coffee
+				trade_goods = gu_mushrooms
 			}
 		}
 	}
@@ -2372,21 +2372,21 @@ country_event = {
 			factor = 1.25
 			any_subject_country = {
 				is_colonial_nation_of = ROOT
-				coffee = 3
+				gu_mushrooms = 3
 			}
 		}
 		modifier = {
 			factor = 1.25
 			any_subject_country = {
 				is_colonial_nation_of = ROOT
-				coffee = 5
+				gu_mushrooms = 5
 			}
 		}
 		modifier = {
 			factor = 1.25
 			any_subject_country = {
 				is_colonial_nation_of = ROOT
-				coffee = 7
+				gu_mushrooms = 7
 			}
 		}
 	}
@@ -2397,7 +2397,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = coffee
+					trade_goods = gu_mushrooms
 				}
 			}
 			tooltip = {
@@ -2724,7 +2724,7 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			any_owned_province = {
-				trade_goods = cocoa
+				trade_goods = gu_beer
 			}
 		}
 	}
@@ -2760,7 +2760,7 @@ country_event = {
 			limit = {
 				is_colonial_nation_of = ROOT
 				any_owned_province = {
-					trade_goods = cocoa
+					trade_goods = gu_beer
 				}
 			}
 			tooltip = {
@@ -2813,7 +2813,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_grain }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = grain
+			trade_goods = gu_wheat
 		}
 	}
 	
@@ -3683,7 +3683,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_ivory }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = ivory
+			trade_goods = gu_stone
 		}
 	}
 	
@@ -3770,7 +3770,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_tea }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = tea
+			trade_goods = gu_vodka
 		}
 	}
 	
@@ -3857,7 +3857,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_chinaware }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = chinaware
+			trade_goods = gu_ceramics
 		}
 	}
 	
@@ -3944,7 +3944,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_spices }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = spices
+			trade_goods = gu_fruits
 		}
 	}
 	
@@ -4031,7 +4031,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_coffee }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = coffee
+			trade_goods = gu_mushrooms
 		}
 	}
 	
@@ -4039,15 +4039,15 @@ country_event = {
 		days = 1
 		modifier = {
 			factor = 1.25
-			coffee = 3
+			gu_mushrooms = 3
 		}
 		modifier = {
 			factor = 1.25
-			coffee = 5
+			gu_mushrooms = 5
 		}
 		modifier = {
 			factor = 1.25
-			coffee = 7
+			gu_mushrooms = 7
 		}
 	}
 	
@@ -4380,7 +4380,7 @@ country_event = {
 		NOT = { has_country_modifier = smuggling_of_cocoa }
 		tariff_value = 0.01
 		any_owned_province = {
-			trade_goods = cocoa
+			trade_goods = gu_beer
 		}
 	}
 	

@@ -626,11 +626,13 @@ country_event = {
 			set_country_flag = picked_army_definer
 		}
 
-
-		set_variable = {
-			which = boar_counter
-			value = 0
+		ROOT = {
+			set_variable = {
+				which = boar_counter
+				value = 0
+			}
 		}
+
 	}
 
 }

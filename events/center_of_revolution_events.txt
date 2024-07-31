@@ -139,132 +139,132 @@ province_event = {
 			development = 50
 		}
 		#Production-based checks
-		modifier = {
-			factor = 0.8
-			OR = {
-				base_production = 20
-				province_trade_power = 30
-			}
-			owner = {
-				OR = {
-					has_estate = estate_burghers
-					has_estate = estate_jains
-					has_estate = estate_vaisyas
-				}
-				OR = {
-					AND = {
-						NOT = {
-							estate_influence = {
-								estate = estate_burghers
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_jains
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_vaisyas
-								influence = 20
-							}
-						}
-					}
-					AND = {
-						NOT = {
-							estate_loyalty = {
-								estate = estate_burghers
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_jains
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_vaisyas
-								loyalty = 25
-							}
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			owner = {
-				variable_arithmetic_trigger = { #trade and production is 75% of national income
-					export_to_variable = {
-						value = trigger_value:production_income_percentage
-						which = burgher_income_proportion
-					}
-					export_to_variable = {
-						value = trigger_value:trade_income_percentage
-						which = trade_income_proportion
-					}
-					change_variable = {
-						which = burgher_income_proportion
-						which = trade_income_proportion
-					}
-					check_variable = {
-						which = burgher_income_proportion
-						value = 0.75
-					}
-				}
-				OR = {
-					has_estate = estate_burghers
-					has_estate = estate_jains
-					has_estate = estate_vaisyas
-				}
-				OR = {
-					AND = {
-						NOT = {
-							estate_influence = {
-								estate = estate_burghers
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_jains
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_vaisyas
-								influence = 20
-							}
-						}
-					}
-					AND = {
-						NOT = {
-							estate_loyalty = {
-								estate = estate_burghers
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_jains
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_vaisyas
-								loyalty = 25
-							}
-						}
-					}
-				}
-			}
-		}
+		# modifier = {
+		# 	factor = 0.8
+		# 	OR = {
+		# 		base_production = 20
+		# 		province_trade_power = 30
+		# 	}
+		# 	owner = {
+		# 		OR = {
+		# 			has_estate = estate_burghers
+		# 			has_estate = estate_jains
+		# 			has_estate = estate_vaisyas
+		# 		}
+		# 		OR = {
+		# 			AND = {
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_burghers
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_jains
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_vaisyas
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 			}
+		# 			AND = {
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_burghers
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_jains
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_vaisyas
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# modifier = {
+		# 	factor = 0.8
+		# 	owner = {
+		# 		variable_arithmetic_trigger = { #trade and production is 75% of national income
+		# 			export_to_variable = {
+		# 				value = trigger_value:production_income_percentage
+		# 				which = burgher_income_proportion
+		# 			}
+		# 			export_to_variable = {
+		# 				value = trigger_value:trade_income_percentage
+		# 				which = trade_income_proportion
+		# 			}
+		# 			change_variable = {
+		# 				which = burgher_income_proportion
+		# 				which = trade_income_proportion
+		# 			}
+		# 			check_variable = {
+		# 				which = burgher_income_proportion
+		# 				value = 0.75
+		# 			}
+		# 		}
+		# 		OR = {
+		# 			has_estate = estate_burghers
+		# 			has_estate = estate_jains
+		# 			has_estate = estate_vaisyas
+		# 		}
+		# 		OR = {
+		# 			AND = {
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_burghers
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_jains
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_vaisyas
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 			}
+		# 			AND = {
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_burghers
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_jains
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_vaisyas
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		#National Vulnerability factors
 		modifier = {
 			factor = 0.8
@@ -516,132 +516,132 @@ province_event = {
 			development = 50
 		}
 		#Production-based checks
-		modifier = {
-			factor = 0.8
-			OR = {
-				base_production = 20
-				province_trade_power = 30
-			}
-			owner = {
-				OR = {
-					has_estate = estate_burghers
-					has_estate = estate_jains
-					has_estate = estate_vaisyas
-				}
-				OR = {
-					AND = {
-						NOT = {
-							estate_influence = {
-								estate = estate_burghers
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_jains
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_vaisyas
-								influence = 20
-							}
-						}
-					}
-					AND = {
-						NOT = {
-							estate_loyalty = {
-								estate = estate_burghers
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_jains
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_vaisyas
-								loyalty = 25
-							}
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			owner = {
-				variable_arithmetic_trigger = { #trade and production is 75% of national income
-					export_to_variable = {
-						value = trigger_value:production_income_percentage
-						which = burgher_income_proportion
-					}
-					export_to_variable = {
-						value = trigger_value:trade_income_percentage
-						which = trade_income_proportion
-					}
-					change_variable = {
-						which = burgher_income_proportion
-						which = trade_income_proportion
-					}
-					check_variable = {
-						which = burgher_income_proportion
-						value = 0.75
-					}
-				}
-				OR = {
-					has_estate = estate_burghers
-					has_estate = estate_jains
-					has_estate = estate_vaisyas
-				}
-				OR = {
-					AND = {
-						NOT = {
-							estate_influence = {
-								estate = estate_burghers
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_jains
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_vaisyas
-								influence = 20
-							}
-						}
-					}
-					AND = {
-						NOT = {
-							estate_loyalty = {
-								estate = estate_burghers
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_jains
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_vaisyas
-								loyalty = 25
-							}
-						}
-					}
-				}
-			}
-		}
+		# modifier = {
+		# 	factor = 0.8
+		# 	OR = {
+		# 		base_production = 20
+		# 		province_trade_power = 30
+		# 	}
+		# 	owner = {
+		# 		OR = {
+		# 			has_estate = estate_burghers
+		# 			has_estate = estate_jains
+		# 			has_estate = estate_vaisyas
+		# 		}
+		# 		OR = {
+		# 			AND = {
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_burghers
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_jains
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_vaisyas
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 			}
+		# 			AND = {
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_burghers
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_jains
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_vaisyas
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# modifier = {
+		# 	factor = 0.8
+		# 	owner = {
+		# 		variable_arithmetic_trigger = { #trade and production is 75% of national income
+		# 			export_to_variable = {
+		# 				value = trigger_value:production_income_percentage
+		# 				which = burgher_income_proportion
+		# 			}
+		# 			export_to_variable = {
+		# 				value = trigger_value:trade_income_percentage
+		# 				which = trade_income_proportion
+		# 			}
+		# 			change_variable = {
+		# 				which = burgher_income_proportion
+		# 				which = trade_income_proportion
+		# 			}
+		# 			check_variable = {
+		# 				which = burgher_income_proportion
+		# 				value = 0.75
+		# 			}
+		# 		}
+		# 		OR = {
+		# 			has_estate = estate_burghers
+		# 			has_estate = estate_jains
+		# 			has_estate = estate_vaisyas
+		# 		}
+		# 		OR = {
+		# 			AND = {
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_burghers
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_jains
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_influence = {
+		# 						estate = estate_vaisyas
+		# 						influence = 20
+		# 					}
+		# 				}
+		# 			}
+		# 			AND = {
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_burghers
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_jains
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 				NOT = {
+		# 					estate_loyalty = {
+		# 						estate = estate_vaisyas
+		# 						loyalty = 25
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 		#National Vulnerability factors
 		modifier = {
 			factor = 0.8
@@ -847,7 +847,7 @@ country_event = {
 		is_free_or_tributary_trigger = yes
 		num_of_owned_provinces_with = {
 			value = 2
-			trade_goods = grain
+			trade_goods = gu_wheat
 			culture_group = root
 		}
 		any_owned_province = {
@@ -883,7 +883,7 @@ country_event = {
 			}
 			every_owned_province = {
 				limit = {
-					trade_goods = grain
+					trade_goods = gu_wheat
 					culture_group = root
 				}
 				add_province_modifier = {

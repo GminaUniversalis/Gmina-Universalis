@@ -12,8 +12,7 @@ estate_ub_land_rights = {
 	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
+
 	conditional_modifier = {
 	}
 	benefits = {
@@ -74,8 +73,7 @@ estate_ub_grasp_over_police = {
 	ai_will_do = {
 		factor = -1000
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -87,10 +85,8 @@ estate_ub_grasp_over_police = {
 	penalties = {
 		global_unrest = 5
 	}
-	benefits = {
-	}
-	on_invalid = {
-	}
+
+
 	on_granted_province = {
 
 	}
@@ -100,9 +96,7 @@ estate_ub_grasp_over_police = {
 	on_invalid_province = {
 		
 	}
-	conditional_modifier = {
 
-	}
 	modifier_by_land_ownership = {
 
 	}
@@ -124,8 +118,7 @@ estate_ub_grasp_over_politics = {
 	ai_will_do = {
 		factor = -1000
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -142,8 +135,7 @@ estate_ub_grasp_over_politics = {
 	benefits = {
 		election_cycle = 2
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -153,9 +145,7 @@ estate_ub_grasp_over_politics = {
 	on_invalid_province = {
 		
 	}
-	conditional_modifier = {
 
-	}
 	modifier_by_land_ownership = {
 
 	}
@@ -177,8 +167,7 @@ estate_ub_grasp_over_economy = {
 	ai_will_do = {
 		factor = 0
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -187,12 +176,9 @@ estate_ub_grasp_over_economy = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	on_invalid = {
-	}
+
+
+
 	on_granted_province = {
 
 	}
@@ -202,9 +188,7 @@ estate_ub_grasp_over_economy = {
 	on_invalid_province = {
 		
 	}
-	conditional_modifier = {
 
-	}
 	modifier_by_land_ownership = {
 
 	}
@@ -226,8 +210,7 @@ estate_ub_classes_opression = {
 	ai_will_do = {
 		factor = 0
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -243,8 +226,7 @@ estate_ub_classes_opression = {
 		all_estate_influence_modifier = -0.2
 		#allow_free_estate_privilege_revocation = yes
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -254,9 +236,7 @@ estate_ub_classes_opression = {
 	on_invalid_province = {
 		
 	}
-	conditional_modifier = {
 
-	}
 	modifier_by_land_ownership = {
 
 	}
@@ -277,8 +257,7 @@ estate_ub_sad_gentelmens = {
 	ai_will_do = {
 		factor = 0
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -291,10 +270,8 @@ estate_ub_sad_gentelmens = {
 		idea_cost = 0.1
 		global_institution_spread = -0.3
 	}
-	benefits = {
-	}
-	on_invalid = {
-	}
+
+
 	on_granted_province = {
 
 	}
@@ -304,9 +281,7 @@ estate_ub_sad_gentelmens = {
 	on_invalid_province = {
 		
 	}
-	conditional_modifier = {
 
-	}
 	modifier_by_land_ownership = {
 
 	}
@@ -327,8 +302,7 @@ estate_ub_iron_propaganda = {
 	ai_will_do = {
 		factor = 0
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -337,13 +311,11 @@ estate_ub_iron_propaganda = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		local_religious_conversion_resistance = 0.5
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -353,9 +325,7 @@ estate_ub_iron_propaganda = {
 	on_invalid_province = {
 		
 	}
-	conditional_modifier = {
 
-	}
 	modifier_by_land_ownership = {
 
 	}
@@ -397,8 +367,7 @@ estate_ub_better_payments = {
 			has_estate_privilege = estate_army_old_doctrine
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
@@ -415,8 +384,7 @@ estate_ub_better_payments = {
 	benefits = {
 		no_cost_for_reinforcing = yes
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -468,8 +436,7 @@ estate_ub_better_housing = {
 			has_estate_privilege = estate_army_old_doctrine
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
@@ -486,8 +453,7 @@ estate_ub_better_housing = {
 	benefits = {
 		global_supply_limit_modifier = 0.5
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -539,8 +505,7 @@ estate_ub_better_healthcare = {
 			has_estate_privilege = estate_army_old_doctrine
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
@@ -557,8 +522,7 @@ estate_ub_better_healthcare = {
 	benefits = {
 		diplomatic_reputation = 4
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -610,8 +574,7 @@ estate_ub_quick_promotions = {
 			has_estate_privilege = estate_army_old_doctrine
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
@@ -631,8 +594,7 @@ estate_ub_quick_promotions = {
 		advisor_pool = 2
 		advisor_cost = -0.33
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -684,8 +646,7 @@ estate_ub_special_shops = {
 			has_estate_privilege = estate_army_old_doctrine
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
@@ -702,8 +663,7 @@ estate_ub_special_shops = {
 	benefits = {
 		idea_cost = -0.33
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -755,8 +715,7 @@ estate_ub_immunity = {
 			has_estate_privilege = estate_army_old_doctrine
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
@@ -773,8 +732,7 @@ estate_ub_immunity = {
 	benefits = {
 		reelection_cost = -0.5
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -826,8 +784,7 @@ estate_ub_black_wolga = {
 			has_estate_privilege = estate_army_old_doctrine
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		religion_group = communism_group
 		NOT = { current_age = age_of_discovery }
@@ -845,8 +802,7 @@ estate_ub_black_wolga = {
 		legitimacy = 5
 		state_governing_cost = -0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -901,10 +857,8 @@ estate_ub_strenghten_communist_thought = { #Political Party
 			church_power_modifier = 0.2
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	ai_will_do = {
 		factor = 100
 		modifier = {

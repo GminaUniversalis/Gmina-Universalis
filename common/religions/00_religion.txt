@@ -1727,7 +1727,7 @@ christian = {
 # 		country = {
 # 			land_morale = 0.1
 # 			global_unrest = -2
-# 			burghers_influence_modifier = -0.05
+# 			#burghers_influence_modifier = -0.05
 # 		}
 # 		country_as_secondary = {
 # 			land_morale = 0.05

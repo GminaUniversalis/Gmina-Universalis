@@ -821,7 +821,7 @@ province_event = {
 	}
 	option = {
 		name = "colonial.EVTOPTC13"
-		change_trade_goods = grain
+		change_trade_goods = gu_wheat
 	}
 }
 
@@ -1101,7 +1101,7 @@ province_event = {
 			area = ceara_area
 		}
 		OR = {
-			trade_goods = grain
+			trade_goods = gu_wheat
 			trade_goods = fish
 			trade_goods = wool
 			trade_goods = naval_supplies
@@ -1125,7 +1125,7 @@ province_event = {
 	option = {
 		name = "colonial.EVTOPTA18"
 		ai_chance = { factor = 90 }
-		change_trade_goods = coffee
+		change_trade_goods = gu_mushrooms
 	}
 	option = {
 		name = "colonial.EVTOPTC18"

@@ -1590,3 +1590,33 @@ leader_names = {
  Frankiewicz
  Ludwiczak
 }
+
+ship_names = { 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
+}
+army_names = { 
+	"$PROVINCE$ army" 
+}
+fleet_names = { 
+	"$PROVINCE$ fleet" 
+}

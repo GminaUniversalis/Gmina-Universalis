@@ -2414,11 +2414,9 @@ plantations = {
 tradecompany = {
 	manufactory = {
 		ivory
-		slaves
 		spices
 		cloves
 		fur
-		incense
 		gu_mushrooms
 		gu_stone
 		gu_apiculture

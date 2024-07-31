@@ -9,8 +9,7 @@ estate_burghers_land_rights = {
 	}
 	on_granted = {
 	}
-	penalties = {
-	}
+
 	conditional_modifier = {
 		trigger = { has_country_flag = mng_increased_land_rights_flag }
 		modifier = {
@@ -260,8 +259,7 @@ estate_burghers_land_of_commerce = {
 	}
 	on_granted = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		country_diplomatic_power = 1
 	}
@@ -319,8 +317,7 @@ estate_burghers_admirals = {
 	on_granted = {
 		add_navy_tradition = -15
 	}
-	penalties = {
-	}
+
 	benefits = {
 		admiral_cost = -0.25
 		navy_tradition_decay = -0.005
@@ -533,8 +530,7 @@ estate_burghers_indebted_to_burghers = {
 	penalties = {
 		trade_efficiency = -0.05
 	}
-	benefits = {
-	}
+
 	can_select = {
 		not = { has_estate_privilege = estate_burghers_reliance_on_republics }
 		if = {
@@ -566,10 +562,8 @@ estate_burghers_free_enterprise = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.1
 	influence = 0.1
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
@@ -668,8 +662,7 @@ estate_burghers_land_trade_rights = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	can_revoke = {
@@ -679,8 +672,7 @@ estate_burghers_land_trade_rights = {
 	modifier_by_land_ownership = {
 		global_trade_power = 0.33
 	}
-	penalties = {
-	}
+
 	benefits = {
 		trade_range_modifier = 0.1
 	}
@@ -716,7 +708,7 @@ estate_burghers_monopoly_of_textiles = {
 		any_owned_province = {
 			OR = {
 				trade_goods = cloth
-				trade_goods = silk
+				trade_goods = gu_vehicles
 			}
 		}
 	}
@@ -730,13 +722,13 @@ estate_burghers_monopoly_of_textiles = {
 					value = 1
 				}
 			}
-			NOT = { has_disaster = french_revolution }
-			NOT = {
-				has_disaster_progress = {
-					disaster = french_revolution
-					value = 1
-				}
-			}
+						#NOT = { has_disaster = french_revolution }
+			# NOT = {
+			# 	has_disaster_progress = {
+			# 		disaster = french_revolution
+			# 		value = 1
+			# 	}
+			# }
 		}
 	}
 	on_granted = {
@@ -744,7 +736,7 @@ estate_burghers_monopoly_of_textiles = {
 			limit = {
 				OR = {
 					cloth = 1
-					silk = 1
+					gu_vehicles = 1
 				}
 			}
 			add_mercantilism = 1
@@ -754,7 +746,7 @@ estate_burghers_monopoly_of_textiles = {
 			trigger = {
 				OR = {
 					trade_goods = cloth
-					trade_goods = silk
+					trade_goods = gu_vehicles
 				}
 			}
 			custom_tooltip = MONOPOLY_INCOME_CLOTH_SILK_DESC
@@ -766,7 +758,7 @@ estate_burghers_monopoly_of_textiles = {
 			limit = {
 				OR = {
 					trade_goods = cloth
-					trade_goods = silk
+					trade_goods = gu_vehicles
 				}
 			}
 			add_province_modifier = {
@@ -803,10 +795,8 @@ estate_burghers_monopoly_of_textiles = {
 			remove_province_modifier = estate_burghers_monopoly_of_textiles_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	cooldown_years = 10
 	conditional_modifier = {
 		trigger = {
@@ -836,7 +826,7 @@ estate_burghers_monopoly_of_dyes = {
 			has_country_flag = buffed_monopolies
 		}
 		any_owned_province = {
-			trade_goods = dyes
+			trade_goods = gu_oil
 		}
 	}
 	can_select = {
@@ -849,26 +839,26 @@ estate_burghers_monopoly_of_dyes = {
 					value = 1
 				}
 			}
-			NOT = { has_disaster = french_revolution }
-			NOT = {
-				has_disaster_progress = {
-					disaster = french_revolution
-					value = 1
-				}
-			}
+						#NOT = { has_disaster = french_revolution }
+			# NOT = {
+			# 	has_disaster_progress = {
+			# 		disaster = french_revolution
+			# 		value = 1
+			# 	}
+			# }
 		}
 	}
 	on_granted = {
 		if = {
 			limit = {
-				dyes = 1
+				gu_oil = 1
 			}
 			add_mercantilism = 1
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 8
 			trigger = {
-				trade_goods = dyes
+				trade_goods = gu_oil
 			}
 			custom_tooltip = MONOPOLY_INCOME_DYE_DESC
 		}
@@ -877,7 +867,7 @@ estate_burghers_monopoly_of_dyes = {
 	on_granted_province = {
 		if = {
 			limit = {
-				trade_goods = dyes
+				trade_goods = gu_oil
 			}
 			add_province_modifier = {
 				name = estate_burghers_monopoly_of_dyes_mod
@@ -913,10 +903,8 @@ estate_burghers_monopoly_of_dyes = {
 			remove_province_modifier = estate_burghers_monopoly_of_dyes_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 
 	cooldown_years = 10
 	conditional_modifier = {
@@ -960,13 +948,13 @@ estate_burghers_monopoly_of_glass = {
 					value = 1
 				}
 			}
-			NOT = { has_disaster = french_revolution }
-			NOT = {
-				has_disaster_progress = {
-					disaster = french_revolution
-					value = 1
-				}
-			}
+						#NOT = { has_disaster = french_revolution }
+			# NOT = {
+			# 	has_disaster_progress = {
+			# 		disaster = french_revolution
+			# 		value = 1
+			# 	}
+			# }
 		}
 	}
 	on_granted = {
@@ -1024,10 +1012,8 @@ estate_burghers_monopoly_of_glass = {
 			remove_province_modifier = estate_burghers_monopoly_of_glass_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 
 	cooldown_years = 10
 	conditional_modifier = {
@@ -1089,13 +1075,13 @@ estate_burghers_monopoly_of_paper = {
 					value = 1
 				}
 			}
-			NOT = { has_disaster = french_revolution }
-			NOT = {
-				has_disaster_progress = {
-					disaster = french_revolution
-					value = 1
-				}
-			}
+						#NOT = { has_disaster = french_revolution }
+			# NOT = {
+			# 	has_disaster_progress = {
+			# 		disaster = french_revolution
+			# 		value = 1
+			# 	}
+			# }
 		}
 	}
 	on_granted = {
@@ -1153,10 +1139,8 @@ estate_burghers_monopoly_of_paper = {
 			remove_province_modifier = estate_burghers_monopoly_of_paper_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 
 	cooldown_years = 10
 	conditional_modifier = {
@@ -1177,79 +1161,78 @@ estate_burghers_monopoly_of_paper = {
 }
 
 
-estate_burghers_the_great_privilege = {
-	icon = privilege_grant_autonomy
-	max_absolutism = -10
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	is_valid = {
-		has_dlc = "Emperor"
-		has_estate_privilege = estate_burghers_the_great_privilege
-	}
-	on_granted = {
-		every_country = {
-			limit = {
-				capital_scope = {
-					region = low_countries_region
-				}
-				junior_union_with = root
-			}
-			ROOT = { inherit = prev }
-		}
-		add_years_of_income = 2
-		custom_tooltip = estate_burghers_the_great_privilege_effect_tooltip
-	}
-	on_granted_province = {
-		if = {
-			limit = { region = low_countries_region }
-			add_province_modifier = {
-				name = estate_burghers_the_great_privilege_mod
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				has_province_modifier = estate_burghers_the_great_privilege_mod
-			}
-			remove_province_modifier = estate_burghers_the_great_privilege_mod
-		}
-	}
-	on_revoked = {
-		custom_tooltip = estate_burghers_the_great_privilege_revoke_effect_tooltip
-	}
-	on_revoked_province = {
-		if = {
-			limit = {
-				has_province_modifier = estate_burghers_the_great_privilege_mod
-			}
-			remove_province_modifier = estate_burghers_the_great_privilege_mod
-		}
-	}
-	on_invalid = {
-		custom_tooltip = estate_burghers_the_great_privilege_revoke_effect_tooltip
-	}
-	on_invalid_province = {
-		if = {
-			limit = {
-				has_province_modifier = estate_burghers_the_great_privilege_mod
-			}
-			remove_province_modifier = estate_burghers_the_great_privilege_mod
-		}
-	}
-	penalties = {
-	}
-	cooldown_years = 20
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
-	ai_will_do = {
-		factor = 0
-	}
-}
+# estate_burghers_the_great_privilege = {
+# 	icon = privilege_grant_autonomy
+# 	max_absolutism = -10
+# 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+# 	is_valid = {
+# 		has_dlc = "Emperor"
+# 		has_estate_privilege = estate_burghers_the_great_privilege
+# 	}
+# 	on_granted = {
+# 		every_country = {
+# 			limit = {
+# 				capital_scope = {
+# 					region = low_countries_region
+# 				}
+# 				junior_union_with = root
+# 			}
+# 			ROOT = { inherit = prev }
+# 		}
+# 		add_years_of_income = 2
+# 		custom_tooltip = estate_burghers_the_great_privilege_effect_tooltip
+# 	}
+# 	on_granted_province = {
+# 		if = {
+# 			limit = { region = low_countries_region }
+# 			add_province_modifier = {
+# 				name = estate_burghers_the_great_privilege_mod
+# 				duration = -1
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				has_province_modifier = estate_burghers_the_great_privilege_mod
+# 			}
+# 			remove_province_modifier = estate_burghers_the_great_privilege_mod
+# 		}
+# 	}
+# 	on_revoked = {
+# 		custom_tooltip = estate_burghers_the_great_privilege_revoke_effect_tooltip
+# 	}
+# 	on_revoked_province = {
+# 		if = {
+# 			limit = {
+# 				has_province_modifier = estate_burghers_the_great_privilege_mod
+# 			}
+# 			remove_province_modifier = estate_burghers_the_great_privilege_mod
+# 		}
+# 	}
+# 	on_invalid = {
+# 		custom_tooltip = estate_burghers_the_great_privilege_revoke_effect_tooltip
+# 	}
+# 	on_invalid_province = {
+# 		if = {
+# 			limit = {
+# 				has_province_modifier = estate_burghers_the_great_privilege_mod
+# 			}
+# 			remove_province_modifier = estate_burghers_the_great_privilege_mod
+# 		}
+# 	}
+
+# 	cooldown_years = 20
+# 	conditional_modifier = {
+# 		trigger = { has_government_mechanic = russian_modernization_mechanic }
+# 		modifier = { monthly_russian_modernization = -0.03 }
+# 	}
+# 	#conditional_modifier = {
+# 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+# 	#	modifier = { monthly_ottoman_decadence = 0.02 }
+# 	#}
+# 	ai_will_do = {
+# 		factor = 0
+# 	}
+# }
 
 estate_burghers_exclusive_trade_rights = {
 	icon = privilege_make_generous_donation
@@ -1318,10 +1301,8 @@ estate_burghers_exclusive_trade_rights = {
 			remove_province_modifier = estate_burghers_exclusive_trade_rights_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
@@ -1399,8 +1380,7 @@ estate_burghers_private_trade_fleets = {
 		num_of_ports = 1
 		navy_size = 1
 	}
-	penalties = {
-	}
+
 	benefits = {
 		light_ship_cost = -0.2
 	}
@@ -1499,8 +1479,7 @@ estate_burghers_prussian_confederation = {
 	penalties = {
 		min_autonomy = 35
 	}
-	benefits = {
-	}
+
 	ai_will_do = {
 		factor = 7.5
 		modifier = {
@@ -1535,8 +1514,7 @@ estate_burghers_statutory_rights = {
 	penalties = {
 		min_autonomy = 25
 	}
-	benefits = {
-	}
+
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
@@ -1575,7 +1553,7 @@ estate_burghers_khmer_irrigation = {
 	on_granted_province = {
 		if = {
 			limit = {
-				trade_goods = grain
+				trade_goods = gu_wheat
 			}
 			add_province_modifier = {
 				name = estate_burghers_khmer_irrigation_mod
@@ -1611,10 +1589,8 @@ estate_burghers_khmer_irrigation = {
 			remove_province_modifier = estate_burghers_khmer_irrigation_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
@@ -1715,8 +1691,7 @@ estate_burghers_orang_laut_alliances = {
 			region = malaya_region
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 		global_own_trade_power = 0.25
 	}
@@ -1813,10 +1788,8 @@ estate_burghers_hydraulic_rights = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
@@ -1892,8 +1865,7 @@ estate_burghers_control_over_the_mint = {
 			remove_province_modifier = estate_burghers_control_over_gold_mine
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 		monthly_gold_inflation_modifier = -0.75
 		gold_depletion_chance_modifier = -0.75
@@ -1982,10 +1954,8 @@ estate_burghers_forest_expansion = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
@@ -2072,10 +2042,8 @@ estate_burghers_mountain_expansion = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
@@ -2184,8 +2152,7 @@ estate_burghers_orthodox_tolerance = {
 	penalties = {
 		church_loyalty_modifier = -0.1
 	}
-	benefits = {
-	}
+
 	ai_will_do = {
 		factor = 1000
 		modifier = {
@@ -2233,8 +2200,7 @@ estate_burghers_polish_merchant_seal = {
 		placed_merchant_power = 5 
 		center_of_trade_upgrade_cost = -0.1 
 	}
-	penalties = {
-	}
+
 	cooldown_years = 15
 	ai_will_do = {
 		factor = 0
@@ -2258,8 +2224,7 @@ estate_burghers_rise_of_the_burghers = {
 	benefits = {
 		burghers_privilege_slots = 1
 	}
-	penalties = {
-	}
+
 	on_granted = {
 		add_mercantilism = -5
 		set_country_flag = rus_enacted_early_disconnection_flag
@@ -2357,8 +2322,7 @@ estate_burghers_sindicat_remensa_privilege = {
 		nobles_influence_modifier = -0.1
 		development_cost = -0.05
 	}
-	penalties = {
-	}
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -2381,8 +2345,7 @@ estate_burghers_autonomous_trade_companies = {
 		placed_merchant_power = 5 
 		center_of_trade_upgrade_cost = -0.1 
 	}
-	penalties = {
-	}
+
 	cooldown_years = 15
 	ai_will_do = {
 		factor = 0
@@ -2901,8 +2864,7 @@ estate_burghers_great_works_of_iran = {
 			remove_province_modifier = turkoman_privilege_drylands
 		}
 	}
-	on_invalid = {
-	}
+
 	on_invalid_province = {
 		if = {
 			limit = { has_province_modifier = turkoman_privilege_mountains }
@@ -3024,29 +2986,29 @@ estate_burghers_monopoly_of_coffee = {
 					value = 1
 				}
 			}
-			NOT = { has_disaster = french_revolution }
-			NOT = {
-				has_disaster_progress = {
-					disaster = french_revolution
-					value = 1
-				}
-			}
+						#NOT = { has_disaster = french_revolution }
+			# NOT = {
+			# 	has_disaster_progress = {
+			# 		disaster = french_revolution
+			# 		value = 1
+			# 	}
+			# }
 		}
 		any_owned_province = {
-			trade_goods = coffee
+			trade_goods = gu_mushrooms
 		}
 	}
 	on_granted = {
 		if = {
 			limit = {
-				coffee = 1
+				gu_mushrooms = 1
 			}
 			add_mercantilism = 1
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 8
 			trigger = {
-				trade_goods = coffee
+				trade_goods = gu_mushrooms
 			}
 			custom_tooltip = MONOPOLY_INCOME_COFFEE_DESC
 		}
@@ -3055,7 +3017,7 @@ estate_burghers_monopoly_of_coffee = {
 	on_granted_province = {
 		if = {
 			limit = {
-				trade_goods = coffee
+				trade_goods = gu_mushrooms
 			}
 			add_province_modifier = {
 				name = estate_burghers_monopoly_of_coffee_mod
@@ -3095,8 +3057,7 @@ estate_burghers_monopoly_of_coffee = {
 			remove_province_modifier = estate_burghers_monopoly_of_coffee_mod
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 
 	}
@@ -3372,20 +3333,20 @@ estate_burghers_YEM_coffee_monopoly = {
 	is_valid = {
 		mission_completed = YEM_coffee
 		any_owned_province = {
-			trade_goods = coffee
+			trade_goods = gu_mushrooms
 		}
 	}
 	on_granted = {
 		if = {
 			limit = {
-				coffee = 1
+				gu_mushrooms = 1
 			}
 			add_mercantilism = 1
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 15
 			trigger = {
-				trade_goods = coffee
+				trade_goods = gu_mushrooms
 			}
 			custom_tooltip = YEM_MONOPOLY_COFFEE_FROM_COFFEE
 		}
@@ -3394,7 +3355,7 @@ estate_burghers_YEM_coffee_monopoly = {
 	on_granted_province = {
 		if = {
 			limit = {
-				trade_goods = coffee
+				trade_goods = gu_mushrooms
 			}
 			add_province_modifier = {
 				name = estate_burghers_YEM_coffee_monopoly_mod
@@ -3430,10 +3391,8 @@ estate_burghers_YEM_coffee_monopoly = {
 			remove_province_modifier = estate_burghers_YEM_coffee_monopoly_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	cooldown_years = 10
 	conditional_modifier = {
 		trigger = {
@@ -3467,8 +3426,8 @@ estate_burghers_persian_rugs = {
 		any_owned_province = {
 			OR = {
 				trade_goods = cloth
-				trade_goods = silk
-				trade_goods = dyes
+				trade_goods = gu_vehicles
+				trade_goods = gu_oil
 			}
 		}
 	}
@@ -3487,8 +3446,8 @@ estate_burghers_persian_rugs = {
 			limit = {
 				OR = {
 					trade_goods = cloth
-					trade_goods = silk
-					trade_goods = dyes
+					trade_goods = gu_vehicles
+					trade_goods = gu_oil
 				}
 			}
 			add_province_modifier = {
@@ -3506,8 +3465,7 @@ estate_burghers_persian_rugs = {
 			remove_province_modifier = estate_burghers_persian_rugs_modifier
 		}
 	}
-	on_invalid = {
-	}
+
 	on_invalid_province = {
 		if = {
 			limit = { has_province_modifier = estate_burghers_persian_rugs_modifier }

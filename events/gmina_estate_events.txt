@@ -247,6 +247,7 @@ country_event = {
 	}
 	#Scientists can't 2
 	option = {
+		highlight = yes
 		name = gmina_estates.2.b3
 		custom_tooltip = gmina_estates.2.b2.tt
 
@@ -443,6 +444,7 @@ country_event = {
 	}
 	#Farmers can't 2
 	option = {
+		highlight = yes
 		name = gmina_estates.2.c3
 		custom_tooltip = gmina_estates.2.c2.tt
 
@@ -583,6 +585,7 @@ country_event = {
 	}
 	#Investors can't 2
 	option = {
+		highlight = yes
 		name = gmina_estates.2.d2
 		custom_tooltip = gmina_estates.2.d2.tt
 

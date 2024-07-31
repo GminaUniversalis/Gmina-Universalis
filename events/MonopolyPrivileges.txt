@@ -47,7 +47,7 @@ country_event = {
 				limit = {
 					OR = {
 						trade_goods = cloth
-						trade_goods = silk
+						trade_goods = gu_vehicles
 					}
 				}
 				apply_estate_monopoly_modifier = { privilege = estate_burghers_monopoly_of_textiles }
@@ -97,7 +97,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					trade_goods = dyes
+					trade_goods = gu_oil
 				}
 				apply_estate_monopoly_modifier = { privilege = estate_burghers_monopoly_of_dyes }
 				# apply_estate_monopoly_modifier = { privilege = estate_vaisyas_monopoly_of_dyes }
@@ -296,7 +296,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					trade_goods = livestock
+					trade_goods = gu_cattle
 				}
 				apply_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_livestock }
 				# apply_estate_monopoly_modifier = { privilege = estate_rajput_monopoly_of_livestock }
@@ -345,7 +345,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					trade_goods = gems
+					trade_goods = gu_amber
 				}
 				apply_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_gems }
 				# apply_estate_monopoly_modifier = { privilege = estate_rajput_monopoly_of_gems }
@@ -388,7 +388,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					trade_goods = incense
+					trade_goods = gu_sulfur
 				}
 				apply_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_incense }
 				# apply_estate_monopoly_modifier = { privilege = estate_brahmins_monopoly_of_incense }
@@ -440,65 +440,65 @@ country_event = {
 }
 
 # Extension of Wine Monopoly
-country_event = {
-	id = monopoly_privileges.10
-	title = monopoly_privileges.10.t
-	desc = monopoly_privileges.10.d
-	picture = FARMING_eventPicture
+# country_event = {
+# 	id = monopoly_privileges.10
+# 	title = monopoly_privileges.10.t
+# 	desc = monopoly_privileges.10.d
+# 	picture = FARMING_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	immediate = {
-		remove_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_wine }
-	}
+# 	immediate = {
+# 		remove_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_wine }
+# 	}
 	
-	option = {
-		name = monopoly_privileges.1.a
-		reapply_estate_privilege = { privilege = estate_church_monopoly_of_wine }
-	}
-	option = {
-		name = monopoly_privileges.1.b
-		custom_tooltip = monopoly_privileges.10.b.tooltip
+# 	option = {
+# 		name = monopoly_privileges.1.a
+# 		reapply_estate_privilege = { privilege = estate_church_monopoly_of_wine }
+# 	}
+# 	option = {
+# 		name = monopoly_privileges.1.b
+# 		custom_tooltip = monopoly_privileges.10.b.tooltip
 
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					trade_goods = wine
-				}
-				apply_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_wine }
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			every_owned_province = {
+# 				limit = {
+# 					trade_goods = wine
+# 				}
+# 				apply_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_wine }
+# 			}
+# 		}
+# 	}
+# }
 
 # Extension of Slaves Monopoly
-country_event = {
-	id = monopoly_privileges.11
-	title = monopoly_privileges.11.t
-	desc = monopoly_privileges.11.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+# country_event = {
+# 	id = monopoly_privileges.11
+# 	title = monopoly_privileges.11.t
+# 	desc = monopoly_privileges.11.d
+# 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	immediate = {
-		remove_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_slaves }
-	}
+# 	immediate = {
+# 		remove_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_slaves }
+# 	}
 	
-	option = {
-		name = monopoly_privileges.1.a
-		reapply_estate_privilege = { privilege = estate_church_monopoly_of_slaves }
-	}
-	option = {
-		name = monopoly_privileges.1.b
-		custom_tooltip = monopoly_privileges.11.b.tooltip
+# 	option = {
+# 		name = monopoly_privileges.1.a
+# 		reapply_estate_privilege = { privilege = estate_church_monopoly_of_slaves }
+# 	}
+# 	option = {
+# 		name = monopoly_privileges.1.b
+# 		custom_tooltip = monopoly_privileges.11.b.tooltip
 
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					trade_goods = slaves
-				}
-				apply_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_slaves }
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			every_owned_province = {
+# 				limit = {
+# 					trade_goods = gu_pigs
+# 				}
+# 				apply_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_slaves }
+# 			}
+# 		}
+# 	}
+# }

@@ -1368,62 +1368,62 @@ defined_text = {
 
 ###Estate scripted locs: Get current estate name, or if the country lacks one, use the basic one
 
-defined_text = {
-	name = GetNobilityOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetNobilityOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_nobles_name
-		trigger = {
-			has_estate = estate_nobles
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_nobles_name
+# 		trigger = {
+# 			has_estate = estate_nobles
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_nobles
-		trigger = {
-			NOT = { has_estate = estate_nobles }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_nobles
+# 		trigger = {
+# 			NOT = { has_estate = estate_nobles }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetBurghersOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetBurghersOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_burghers_name
-		trigger = {
-			has_estate = estate_burghers
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_burghers_name
+# 		trigger = {
+# 			has_estate = estate_burghers
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_burghers
-		trigger = {
-			NOT = { has_estate = estate_burghers }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_burghers
+# 		trigger = {
+# 			NOT = { has_estate = estate_burghers }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetChurchOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetChurchOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_church_name
-		trigger = {
-			has_estate = estate_church
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_church_name
+# 		trigger = {
+# 			has_estate = estate_church
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_church
-		trigger = {
-			NOT = { has_estate = estate_church }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_church
+# 		trigger = {
+# 			NOT = { has_estate = estate_church }
+# 		}
+# 	}
+# }
 
 defined_text = {
 	name = GetTribesOrFallbackName
@@ -1444,214 +1444,214 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = GetDhimmiOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetDhimmiOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_dhimmi_name
-		trigger = {
-			has_estate = estate_dhimmi
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_dhimmi_name
+# 		trigger = {
+# 			has_estate = estate_dhimmi
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_dhimmi
-		trigger = {
-			NOT = { has_estate = estate_dhimmi }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_dhimmi
+# 		trigger = {
+# 			NOT = { has_estate = estate_dhimmi }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetCossacksOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetCossacksOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_cossacks_name
-		trigger = {
-			has_estate = estate_cossacks
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_cossacks_name
+# 		trigger = {
+# 			has_estate = estate_cossacks
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_cossacks
-		trigger = {
-			NOT = { has_estate = estate_cossacks }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_cossacks
+# 		trigger = {
+# 			NOT = { has_estate = estate_cossacks }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetVaisyasOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetVaisyasOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_vaisyas_name
-		trigger = {
-			has_estate = estate_vaisyas
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_vaisyas_name
+# 		trigger = {
+# 			has_estate = estate_vaisyas
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_vaisyas
-		trigger = {
-			NOT = { has_estate = estate_vaisyas }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_vaisyas
+# 		trigger = {
+# 			NOT = { has_estate = estate_vaisyas }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetBrahminsOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetBrahminsOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_brahmins_name
-		trigger = {
-			has_estate = estate_brahmins
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_brahmins_name
+# 		trigger = {
+# 			has_estate = estate_brahmins
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_brahmins
-		trigger = {
-			NOT = { has_estate = estate_brahmins }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_brahmins
+# 		trigger = {
+# 			NOT = { has_estate = estate_brahmins }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetJainsOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetJainsOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_jains_name
-		trigger = {
-			has_estate = estate_jains
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_jains_name
+# 		trigger = {
+# 			has_estate = estate_jains
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_jains
-		trigger = {
-			NOT = { has_estate = estate_jains }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_jains
+# 		trigger = {
+# 			NOT = { has_estate = estate_jains }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetRajputOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetRajputOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_rajput_name
-		trigger = {
-			has_estate = estate_rajput
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_rajput_name
+# 		trigger = {
+# 			has_estate = estate_rajput
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_rajput
-		trigger = {
-			NOT = { has_estate = estate_rajput }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_rajput
+# 		trigger = {
+# 			NOT = { has_estate = estate_rajput }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetMarathaOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetMarathaOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_maratha_name
-		trigger = {
-			has_estate = estate_maratha
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_maratha_name
+# 		trigger = {
+# 			has_estate = estate_maratha
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_maratha
-		trigger = {
-			NOT = { has_estate = estate_maratha }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_maratha
+# 		trigger = {
+# 			NOT = { has_estate = estate_maratha }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetJanissariesOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetJanissariesOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_janissaries_name
-		trigger = {
-			has_estate = estate_janissaries
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_janissaries_name
+# 		trigger = {
+# 			has_estate = estate_janissaries
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_janissaries
-		trigger = {
-			NOT = { has_estate = estate_janissaries }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_janissaries
+# 		trigger = {
+# 			NOT = { has_estate = estate_janissaries }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetEunuchsOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetEunuchsOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_eunuchs_name
-		trigger = {
-			has_estate = estate_eunuchs
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_eunuchs_name
+# 		trigger = {
+# 			has_estate = estate_eunuchs
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_eunuchs
-		trigger = {
-			NOT = { has_estate = estate_eunuchs }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_eunuchs
+# 		trigger = {
+# 			NOT = { has_estate = estate_eunuchs }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetQizilbashOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetQizilbashOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_qizilbash_name
-		trigger = {
-			has_estate = estate_qizilbash
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_qizilbash_name
+# 		trigger = {
+# 			has_estate = estate_qizilbash
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_qizilbash
-		trigger = {
-			NOT = { has_estate = estate_qizilbash }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_qizilbash
+# 		trigger = {
+# 			NOT = { has_estate = estate_qizilbash }
+# 		}
+# 	}
+# }
 
-defined_text = {
-	name = GetGhulamsOrFallbackName
-	random = no
+# defined_text = {
+# 	name = GetGhulamsOrFallbackName
+# 	random = no
 	
-	text = {
-		localisation_key = country_estate_ghulams_name
-		trigger = {
-			has_estate = estate_ghulams
-		}
-	}
+# 	text = {
+# 		localisation_key = country_estate_ghulams_name
+# 		trigger = {
+# 			has_estate = estate_ghulams
+# 		}
+# 	}
 	
-	text = {
-		localisation_key = estate_ghulams
-		trigger = {
-			NOT = { has_estate = estate_ghulams }
-		}
-	}
-}
+# 	text = {
+# 		localisation_key = estate_ghulams
+# 		trigger = {
+# 			NOT = { has_estate = estate_ghulams }
+# 		}
+# 	}
+# }
 
 defined_text = {
 	name = GetLegitimacyOrMeritocracy
@@ -1835,8 +1835,8 @@ defined_text = {
 			OR = {
 				trade_goods = wool
 				trade_goods = cloth
-				trade_goods = silk
-				trade_goods = dyes
+				trade_goods = gu_vehicles
+				trade_goods = gu_oil
 			}
 		}
 	}
@@ -1844,12 +1844,12 @@ defined_text = {
 		localisation_key = building_plantations
 		trigger = {
 			OR = {
-				trade_goods = coffee
+				trade_goods = gu_mushrooms
 				trade_goods = cotton
 				trade_goods = sugar
 				trade_goods = tobacco
-				trade_goods = tea
-				trade_goods = cocoa
+				trade_goods = gu_vodka
+				trade_goods = gu_beer
 			}
 		}
 	}
@@ -1857,11 +1857,11 @@ defined_text = {
 		localisation_key = building_tradecompany
 		trigger = {
 			OR = {
-				trade_goods = ivory
-				trade_goods = slaves
-				trade_goods = spices
+				trade_goods = gu_stone
+				trade_goods = gu_pigs
+				trade_goods = gu_fruits
 				trade_goods = fur
-				trade_goods = incense
+				trade_goods = gu_sulfur
 			}
 		}
 	}
@@ -1869,8 +1869,8 @@ defined_text = {
 		localisation_key = building_farm_estate
 		trigger = {
 			OR = {
-				trade_goods = grain
-				trade_goods = livestock
+				trade_goods = gu_wheat
+				trade_goods = gu_cattle
 				trade_goods = wine
 			}
 		}
@@ -1880,17 +1880,17 @@ defined_text = {
 		trigger = {
 			OR = {
 				trade_goods = paper
-				trade_goods = gems
-				trade_goods = tropical_wood
+				trade_goods = gu_amber
+				trade_goods = gu_lumber
 				trade_goods = glass
-				trade_goods = chinaware
+				trade_goods = gu_ceramics
 			}
 		}
 	}
 	text = {
 		localisation_key = building_furnace
 		trigger = {
-			trade_goods = coal
+			trade_goods = gu_coal
 		}
 	}
 }
@@ -4275,23 +4275,23 @@ defined_text = {
 			}
 		}
 	}
-	text = {
-		localisation_key = string_vaisyas_this
-		trigger = {
-			AND = {
-				estate_influence = {
-					estate = estate_vaisyas
-					influence = 80
-				}
-				NOT = {
-					estate_loyalty = {
-						estate = estate_vaisyas
-						loyalty = 30
-					}
-				}
-			}
-		}
-	}
+	# text = {
+	# 	localisation_key = string_vaisyas_this
+	# 	trigger = {
+	# 		AND = {
+	# 			estate_influence = {
+	# 				estate = estate_vaisyas
+	# 				influence = 80
+	# 			}
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_vaisyas
+	# 					loyalty = 30
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 	text = {
 		localisation_key = string_cossacks_this
 		trigger = {
@@ -4360,23 +4360,23 @@ defined_text = {
 			}
 		}
 	}
-	text = {
-		localisation_key = estate_eunuchs
-		trigger = {
-			AND = {
-				estate_influence = {
-					estate = estate_eunuchs
-					influence = 80
-				}
-				NOT = {
-					estate_loyalty = {
-						estate = estate_eunuchs
-						loyalty = 30
-					}
-				}
-			}
-		}
-	}
+	# text = {
+	# 	localisation_key = estate_eunuchs
+	# 	trigger = {
+	# 		AND = {
+	# 			estate_influence = {
+	# 				estate = estate_eunuchs
+	# 				influence = 80
+	# 			}
+	# 			NOT = {
+	# 				estate_loyalty = {
+	# 					estate = estate_eunuchs
+	# 					loyalty = 30
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 	text = {
 		localisation_key = estate_janissaries
 		trigger = {

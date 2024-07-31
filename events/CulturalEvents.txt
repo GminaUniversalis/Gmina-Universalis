@@ -379,7 +379,7 @@ country_event = {
 			}
 		}
 		trading_part = {
-			trade_goods = tea
+			trade_goods = gu_vodka
 			value = 0.1
 		}
 	}

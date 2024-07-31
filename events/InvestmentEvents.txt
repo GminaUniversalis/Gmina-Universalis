@@ -261,7 +261,7 @@ country_event = {
 					investor = ROOT
 				}
 			}
-			trade_goods = spices
+			trade_goods = gu_fruits
 		}
 		NOT = {
 			any_owned_province = {
@@ -303,7 +303,7 @@ country_event = {
 							investor = ROOT
 						}
 					}
-					trade_goods = spices
+					trade_goods = gu_fruits
 				}
 				save_event_target_as = opium_province
 			}

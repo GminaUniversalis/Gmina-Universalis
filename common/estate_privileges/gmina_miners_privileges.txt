@@ -12,8 +12,7 @@ estate_miners_land_rights = {
 	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
+
 	conditional_modifier = {
 	}
 	benefits = {
@@ -95,8 +94,7 @@ estate_miners_work_leaders = {
 			NOT = { production_income_percentage = 0.10 }
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -105,13 +103,11 @@ estate_miners_work_leaders = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		production_efficiency = 0.05
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -144,8 +140,7 @@ estate_miners_barborka = {
 	ai_will_do = {
 		factor = 10
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		OR = {
 			NOT = { has_country_flag = barborka_privilege}
@@ -181,8 +176,7 @@ estate_miners_barborka = {
 	penalties = {
 		production_efficiency = 0.05
 	}
-	benefits = {
-	}
+
 	on_invalid = {
 		clr_country_flag = barborka_privilege
 	}
@@ -369,8 +363,7 @@ estate_miners_privatized_industry = {
 		inflation_reduction = -0.05
 		may_not_reduce_inflation = yes
 	}
-	benefits = {
-	}
+
 }
 estate_miners_state_owned_industry = {
 	icon = privilege_goods_produced
@@ -406,8 +399,7 @@ estate_miners_state_owned_industry = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_miners_definer_tooltip
@@ -469,8 +461,7 @@ estate_miners_state_owned_industry = {
 		inflation_reduction = -0.05
 		may_not_reduce_inflation = yes
 	}
-	benefits = {
-	}
+
 }
 #Mines related
 estate_miners_golden_age_mines = {
@@ -525,13 +516,11 @@ estate_miners_golden_age_mines = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		production_efficiency = 0.2
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 		if = {
 			limit = {
@@ -619,10 +608,8 @@ estate_miners_unprofitable_mines = {
 		estate_miners_loyalty_modifier = -0.25
 		estate_miners_influence_modifier = -0.25
 	}
-	benefits = {
-	}
-	on_invalid = {
-	}
+
+
 	on_granted_province = {
 		if = {
 			limit = {
@@ -729,13 +716,11 @@ estate_miners_silver_age_mines = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		production_efficiency = 0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 		if = {
 			limit = {
@@ -820,8 +805,7 @@ estate_miners_EU_mining_regulations = {
 			is_in_deficit = yes
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		current_age = age_of_absolutism
 	}
@@ -835,10 +819,8 @@ estate_miners_EU_mining_regulations = {
 		global_trade_goods_size_modifier = -0.1
 		production_efficiency = -0.1
 	}
-	benefits = {
-	}
-	on_invalid = {
-	}
+
+
 	on_granted_province = {
 
 	}

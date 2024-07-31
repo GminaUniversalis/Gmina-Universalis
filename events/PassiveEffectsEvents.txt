@@ -428,56 +428,56 @@ province_event = {
 	}
 }
 
-# Add the province modifiers for secondary religion changes
-country_event = {
-	id = passive_effects_events.10
-	title = none
-	desc = none
-	picture = none
-	hidden = yes
-	is_triggered_only = yes
+# # Add the province modifiers for secondary religion changes
+# country_event = {
+# 	id = passive_effects_events.10
+# 	title = none
+# 	desc = none
+# 	picture = none
+# 	hidden = yes
+# 	is_triggered_only = yes
 
-	option = {
-		if = {
-			limit = {
-				OR = {
-					has_estate_privilege = estate_church_one_faith_one_culture
-					has_estate_privilege = estate_brahmins_one_faith_one_culture
-				}
-			}
-			every_owned_province = {
-				limit = {
-					has_province_modifier = estate_church_united_faith_and_culture
-					NOT = { religion = ROOT }
-				}
-				remove_province_modifier = estate_church_united_faith_and_culture
-			}
-			every_owned_province = {
-				limit = {				
-					NOT = { has_province_modifier = estate_church_united_faith_and_culture }
-					owner = {
-						OR = {
-							religion = PREV
-							secondary_religion = PREV
-						}
-					}
-					OR = {
-						culture_group = ROOT
-						has_owner_accepted_culture = yes
-					}
-				}
-				add_province_modifier = {
-					name = estate_church_united_faith_and_culture
-					duration = -1
-				}
-			}
-		}
+# 	option = {
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_estate_privilege = estate_church_one_faith_one_culture
+# 					has_estate_privilege = estate_brahmins_one_faith_one_culture
+# 				}
+# 			}
+# 			every_owned_province = {
+# 				limit = {
+# 					has_province_modifier = estate_church_united_faith_and_culture
+# 					NOT = { religion = ROOT }
+# 				}
+# 				remove_province_modifier = estate_church_united_faith_and_culture
+# 			}
+# 			every_owned_province = {
+# 				limit = {				
+# 					NOT = { has_province_modifier = estate_church_united_faith_and_culture }
+# 					owner = {
+# 						OR = {
+# 							religion = PREV
+# 							secondary_religion = PREV
+# 						}
+# 					}
+# 					OR = {
+# 						culture_group = ROOT
+# 						has_owner_accepted_culture = yes
+# 					}
+# 				}
+# 				add_province_modifier = {
+# 					name = estate_church_united_faith_and_culture
+# 					duration = -1
+# 				}
+# 			}
+# 		}
 
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
+# 	}
+# }
 	
 # Increase the opinion of all nations with a specified religion (gets called by add_opinion_of_religion)
 country_event = {

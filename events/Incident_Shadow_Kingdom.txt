@@ -13,8 +13,7 @@ country_event = {
 		is_emperor = yes
 		NOT = {
 			is_year = 1490
-		}
-		normal_or_historical_nations = yes		
+		}	
 	}
 	
 	mean_time_to_happen = {
@@ -40,7 +39,7 @@ country_event = {
 	
 	option = { # we cannot succeed, let them leave
 		ai_chance = {
-			factor = 10000
+			factor = 50
 		}
 		name = shadow_kingdom.2.a
 		add_prestige = -10
@@ -75,7 +74,7 @@ country_event = {
 	
 	option = { # work harder to rein them in
 		ai_chance = {
-			factor = 0
+			factor = 50
 		}
 		name = shadow_kingdom.2.b
 		set_global_flag = emperor_trying_to_avert_shadow_kingdom
@@ -238,7 +237,7 @@ country_event = {
 		every_province = {
 			limit = {
 				is_part_of_hre = yes
-				region = italy_region
+				region = dolnoslaskie_region
 				owner = {
 					is_part_of_hre = no
 				}

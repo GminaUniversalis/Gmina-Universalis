@@ -562,16 +562,16 @@ pirate_republic = {
 		}
 		capital_scope = {
 			has_port = yes
-			OR = {
+			#OR = {
 				province_is_on_an_island = yes
-				region = maghreb_region
-			}
+				#region = maghreb_region
+			#}
 		}
-		NOT = { technology_group = andean }
-		NOT = { technology_group = north_american }
-		NOT = { technology_group = south_american }
-		NOT = { technology_group = aboriginal_tech }
-		NOT = { technology_group = mesoamerican }
+		#NOT = { technology_group = andean }
+		#NOT = { technology_group = north_american }
+		#NOT = { technology_group = south_american }
+		#NOT = { technology_group = aboriginal_tech }
+		#NOT = { technology_group = mesoamerican }
 	}
 	
 	potential = {	
@@ -626,10 +626,10 @@ pirate_kingdom = {
 	nation_designer_trigger = {
 		capital_scope = {
 			has_port = yes
-			OR = {
+			#OR = {
 				province_is_on_an_island = yes
-				region = maghreb_region
-			}
+				#region = maghreb_region
+			#}
 		}
 	}
 	
@@ -721,10 +721,10 @@ black_market_consortium_government = {
 	nation_designer_trigger = {
 		capital_scope = {
 			has_port = yes
-			OR = {
+			#OR = {
 				province_is_on_an_island = yes
-				region = maghreb_region
-			}
+				#region = maghreb_region
+			#}
 		}
 	}
 	
@@ -2674,7 +2674,7 @@ tribal_confederacy_legacy = {
 	nation_designer_cost = 30
 
 	modifiers = {
-		nobles_influence_modifier = 0.15
+		#nobles_influence_modifier = 0.15
 		nobles_loyalty_modifier = 0.1
 		global_unrest = -1
 		max_absolutism = -20
@@ -2690,16 +2690,16 @@ tribal_confederacy_legacy = {
 		}
 	}
 
-	effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					has_dlc = "Origins"
-				}
-				set_estate_privilege = estate_nobles_decentralized_tribe
-			}
-		}
-	}
+	# effect = {
+	# 	hidden_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				has_dlc = "Origins"
+	# 			}
+	# 			set_estate_privilege = estate_nobles_decentralized_tribe
+	# 		}
+	# 	}
+	# }
 }
 
 mossi_federal_kingdom_legacy = {
@@ -2726,7 +2726,7 @@ mossi_federal_kingdom_legacy = {
 	}
 
 	modifiers = {
-		nobles_influence_modifier = 0.15
+		#nobles_influence_modifier = 0.15
 		nobles_loyalty_modifier = 0.1
 		global_unrest = -1
 		max_absolutism = -20

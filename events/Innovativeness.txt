@@ -645,12 +645,12 @@ country_event = {
 			}
 			OR = {
 				any_owned_province = {
-					trade_goods = coffee
+					trade_goods = gu_mushrooms
 				}
 				any_subject_country = {
 					is_colonial_nation = yes
 					any_owned_province = {
-						trade_goods = coffee
+						trade_goods = gu_mushrooms
 					}
 				}
 			}

@@ -730,7 +730,7 @@ country_event = {
 		set_ruler_flag = historical_pirate
 		add_ruler_personality = legendary_pirate_personality
 		set_global_flag = grace_omalley_flag
-		country_event = { id = women_history_events.22 }
+		# country_event = { id = women_history_events.22 }
 	}
 	option = { # François l'Olonnais
 		name = "pirates.1.p"
@@ -1108,11 +1108,10 @@ country_event = {
 		any_active_trade_node = {
 			any_trade_node_member_province = {
 				OR = {
-					trade_goods = slaves
 					trade_goods = sugar
 					trade_goods = cotton
 					trade_goods = tobacco
-					trade_goods = cocoa
+					trade_goods = gu_beer
 				}
 			}
 		}

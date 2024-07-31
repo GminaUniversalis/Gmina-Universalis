@@ -6,7 +6,10 @@ country_event = {
 	desc = gmina_common_flavor.1.d
 	picture = ROYAL_STRESS_eventPicture
 
+	is_triggered_only = yes
+	
 	trigger = {
+		is_ai = no
 		ROOT = {
 			any_owned_province = {
 				OR = {

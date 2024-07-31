@@ -18,7 +18,7 @@ estate_burghers_hire_advisor = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -78,7 +78,7 @@ estate_burghers_fire_advisor = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -156,7 +156,7 @@ estate_burghers_pay_off_loans = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -226,7 +226,7 @@ estate_burghers_restore_republican_tradition = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -285,7 +285,7 @@ estate_burghers_restore_currency = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -333,7 +333,7 @@ estate_burghers_recovery_from_hyperinflation = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -525,7 +525,7 @@ estate_burghers_increase_trade_power_in_X = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -768,7 +768,7 @@ estate_burghers_access_sea = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -888,7 +888,7 @@ estate_burghers_build_a_fleet = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -988,7 +988,7 @@ estate_burghers_bigger_fleet_than_rival = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -1050,7 +1050,7 @@ estate_burghers_improve_dip_rep = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -1098,7 +1098,7 @@ estate_burghers_get_cash = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -1237,7 +1237,7 @@ estate_burghers_discover_X_in_america = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -1429,7 +1429,7 @@ estate_burghers_colonise_X = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -1625,7 +1625,7 @@ estate_burghers_colonise_more_X = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -1790,7 +1790,7 @@ estate_burghers_colonial_nation = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else_if = {
@@ -1924,7 +1924,7 @@ estate_burghers_expand_trade_company = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -2018,8 +2018,8 @@ estate_burghers_trade_post_in_india = {
 	provinces_to_highlight = {
 		superregion = india_superregion
 		OR = {
-			trade_goods = spices
-			trade_goods = silk
+			trade_goods = gu_fruits
+			trade_goods = gu_vehicles
 		}
 		has_port = yes
 	}
@@ -2031,15 +2031,15 @@ estate_burghers_trade_post_in_india = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
 			any_owned_province = {
 				superregion = india_superregion
 				OR = {
-					trade_goods = spices
-					trade_goods = silk
+					trade_goods = gu_fruits
+					trade_goods = gu_vehicles
 				}
 				has_port = yes
 			}
@@ -2059,8 +2059,8 @@ estate_burghers_trade_post_in_india = {
 					any_owned_province = {
 						superregion = india_superregion
 						OR = {
-							trade_goods = spices
-							trade_goods = silk
+							trade_goods = gu_fruits
+							trade_goods = gu_vehicles
 						}
 						has_port = yes
 					}
@@ -2073,8 +2073,8 @@ estate_burghers_trade_post_in_india = {
 				limit = {
 					superregion = india_superregion
 					OR = {
-						trade_goods = spices
-						trade_goods = silk
+						trade_goods = gu_fruits
+						trade_goods = gu_vehicles
 					}
 					has_port = yes
 				}
@@ -2136,7 +2136,7 @@ estate_burghers_trade_post_in_malacca = {
 	provinces_to_highlight = {
 		trade_company_region = trade_company_indonesia
 		OR = {
-			trade_goods = spices
+			trade_goods = gu_fruits
 			trade_goods = cloves
 		}
 		has_port = yes
@@ -2149,14 +2149,14 @@ estate_burghers_trade_post_in_malacca = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
 			any_owned_province = {
 				trade_company_region = trade_company_indonesia
 				OR = {
-					trade_goods = spices
+					trade_goods = gu_fruits
 					trade_goods = cloves
 				}
 				has_port = yes
@@ -2177,7 +2177,7 @@ estate_burghers_trade_post_in_malacca = {
 					any_owned_province = {
 						trade_company_region = trade_company_indonesia
 						OR = {
-							trade_goods = spices
+							trade_goods = gu_fruits
 							trade_goods = cloves
 						}
 						has_port = yes
@@ -2191,7 +2191,7 @@ estate_burghers_trade_post_in_malacca = {
 				limit = {
 					trade_company_region = trade_company_indonesia
 					OR = {
-						trade_goods = spices
+						trade_goods = gu_fruits
 						trade_goods = cloves
 					}
 					has_port = yes
@@ -2255,7 +2255,7 @@ estate_burghers_trade_post_in_china = {
 	}
 	provinces_to_highlight = {
 		superregion = china_superregion
-		trade_goods = chinaware
+		trade_goods = gu_ceramics
 		has_port = yes
 	}
 	task_requirements = {
@@ -2266,13 +2266,13 @@ estate_burghers_trade_post_in_china = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
 			any_owned_province = {
 				superregion = china_superregion
-				trade_goods = chinaware
+				trade_goods = gu_ceramics
 				has_port = yes
 			}
 		}
@@ -2294,7 +2294,7 @@ estate_burghers_trade_post_in_china = {
 				NOT = {
 					any_owned_province = {
 						superregion = china_superregion
-						trade_goods = chinaware
+						trade_goods = gu_ceramics
 						has_port = yes
 					}
 				}
@@ -2305,7 +2305,7 @@ estate_burghers_trade_post_in_china = {
 			random_owned_province = {
 				limit = {
 					superregion = china_superregion
-					trade_goods = chinaware
+					trade_goods = gu_ceramics
 					has_port = yes
 				}
 				add_province_modifier = {
@@ -2341,7 +2341,7 @@ estate_burghers_silk_trade = {
 				superregion = china_superregion
 			}
 		}
-		NOT = { silk = 2 }
+		NOT = { gu_vehicles = 2 }
 	}
 	selection_weight = {
 		factor = 2.5
@@ -2359,7 +2359,7 @@ estate_burghers_silk_trade = {
 		}
 	}
 	provinces_to_highlight = {
-		trade_goods = silk
+		trade_goods = gu_vehicles
 		OR = {
 			has_port = yes
 			any_neighbor_province = {
@@ -2377,11 +2377,11 @@ estate_burghers_silk_trade = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
-			silk = 3
+			gu_vehicles = 3
 		}
 	}
     task_completed_effect = {
@@ -2441,7 +2441,7 @@ estate_burghers_spice_trade = {
 		}
 	}
 	provinces_to_highlight = {
-		trade_goods = spices
+		trade_goods = gu_fruits
 		OR = {
 			has_port = yes
 			any_neighbor_province = {
@@ -2459,7 +2459,7 @@ estate_burghers_spice_trade = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -2526,7 +2526,7 @@ estate_burghers_tea_trade = {
 		}
 	}
 	provinces_to_highlight = {
-		trade_goods = tea
+		trade_goods = gu_vodka
 		OR = {
 			has_port = yes
 			any_neighbor_province = {
@@ -2544,7 +2544,7 @@ estate_burghers_tea_trade = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -2645,7 +2645,7 @@ estate_burghers_reduce_corruption = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -2819,7 +2819,7 @@ estate_burghers_protect_against_piracy = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {

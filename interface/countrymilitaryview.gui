@@ -73,28 +73,28 @@ guiTypes = {
 		##### CODER REMOVE
 		iconType = {
 			name ="leader_fire"
-			spriteType = "GFX_stars_small"
+			spriteType = "GFX_stars_small2"
 			position = { x= 190 y = 8 }
 			Orientation = "UPPER_LEFT"
 		}
 		##### CODER REMOVE
 		iconType = {
 			name ="leader_shock"
-			spriteType = "GFX_stars_small"
+			spriteType = "GFX_stars_small2"
 			position = { x= 211 y = 8 }
 			Orientation = "UPPER_LEFT"
 		}
 		##### CODER REMOVE
 		iconType = {
 			name ="leader_maneuever"
-			spriteType = "GFX_stars_small"
+			spriteType = "GFX_stars_small2"
 			position = { x= 232 y = 8 }
 			Orientation = "UPPER_LEFT"
 		}
 		##### CODER REMOVE
 		iconType = {
 			name ="leader_siege"
-			spriteType = "GFX_stars_small"
+			spriteType = "GFX_stars_small2"
 			position = { x= 253 y = 8 }
 			Orientation = "UPPER_LEFT"
 		}

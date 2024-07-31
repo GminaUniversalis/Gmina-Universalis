@@ -3,7 +3,35 @@ color = {
 	4 4 255 
 }
 
-
+ship_names = { 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
+}
+army_names = { 
+	"$PROVINCE$ army" 
+}
+fleet_names = { 
+	"$PROVINCE$ fleet" 
+}
 
 # Lista imion z pliku: Warminsko Mazurskie.txt
 monarch_names = {

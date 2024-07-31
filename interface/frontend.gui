@@ -2313,6 +2313,16 @@ guiTypes = {
 				###
 
 				guiButtonType = {
+					name = "random_new_world_button"
+					position = { x = -20041 y = -10039 }
+					quadTextureSprite ="GFX_frontend_random_world"
+					buttonText = "RANDOM_WORLD_START"
+					buttonFont = "vic_18"
+					Orientation = "LOWER_RIGHT"
+					clicksound = click
+				}
+
+				guiButtonType = {
 					name = "enable_custom_nation_button"
 					position = { x = -275 y = -107 }
 					quadTextureSprite ="GFX_checkbox_gold_32"

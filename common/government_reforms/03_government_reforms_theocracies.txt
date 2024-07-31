@@ -16,9 +16,9 @@ theocracy_mechanic = {
 	}
 
 	modifiers = {
-		brahmins_hindu_influence_modifier = 0.1
+		#brahmins_hindu_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
-		church_influence_modifier = 0.05
+		#church_influence_modifier = 0.05
 	}
 }
 
@@ -486,7 +486,7 @@ papacy_reform = {
 	modifiers = {
 		prestige_per_development_from_conversion = 0.33
 		tolerance_own = 1
-		church_influence_modifier = 0.2
+		#church_influence_modifier = 0.2
 	}
 	valid_for_nation_designer = no
 	icon = "papacy"
@@ -836,7 +836,7 @@ zoroastrian_theocracy_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		church_privilege_slots = 2
-		church_influence_modifier = -0.2
+		#church_influence_modifier = -0.2
 		manpower_in_accepted_culture_provinces = 0.15
 	}
 	conditional = {
@@ -1167,10 +1167,10 @@ pious_merchants_reform = {
 	modifiers = {
 		global_trade_power = 0.05
 		placed_merchant_power = 5
-		burghers_influence_modifier = 0.1
+		#burghers_influence_modifier = 0.1
 		burghers_loyalty_modifier = 0.05
 		vaisyas_loyalty_modifier = 0.05
-		vaisyas_influence_modifier = 0.1
+		#vaisyas_influence_modifier = 0.1
 	}
 }
 
@@ -1180,12 +1180,12 @@ loyal_nobility_reform = {
 	modifiers = {
 		free_leader_pool = 1
 		army_tradition = 0.25
-		nobles_influence_modifier = 0.1
-		maratha_exclusive_influence_modifier = 0.1
-		rajput_exclusive_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
+		#maratha_exclusive_influence_modifier = 0.1
+		#rajput_exclusive_influence_modifier = 0.1
 		nobles_loyalty_modifier = 0.05
-		maratha_exclusive_loyalty_modifier = 0.05
-		rajput_exclusive_loyalty_modifier = 0.05
+		#maratha_exclusive_loyalty_modifier = 0.05
+		#rajput_exclusive_loyalty_modifier = 0.05
 	}
 }
 
@@ -1206,7 +1206,7 @@ monastic_breweries_reform = {
 		any_owned_province = {
 			OR = {
 				trade_goods = wine
-				trade_goods = grain
+				trade_goods = gu_wheat
 			}
 		}
 	}
@@ -1231,7 +1231,7 @@ monastic_breweries_reform = {
 				}
 				if = {
 					limit = {
-						trade_goods = grain
+						trade_goods = gu_wheat
 					}
 					add_province_modifier = { 
 						name = grain_bonus_prod
@@ -1444,9 +1444,9 @@ safeguard_holy_sites_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		church_loyalty_modifier = 0.1
-		brahmins_hindu_loyalty_modifier = 0.1
-		brahmins_other_loyalty_modifier = 0.1
-		jains_loyalty_modifier = 0.1
+		#brahmins_hindu_loyalty_modifier = 0.1
+		#brahmins_other_loyalty_modifier = 0.1
+		#jains_loyalty_modifier = 0.1
 		defensiveness = 0.15
 	}
 }

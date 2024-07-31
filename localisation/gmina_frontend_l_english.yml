@@ -1,0 +1,9 @@
+﻿l_english:
+DLC_spawnable_ideas_TOOLTIP_INSTANT:0 "Custom ideas are available for this country"
+DLC_missions_yes_TOOLTIP_INSTANT:0 "Custom mission tree is available for this country"
+LANDING_spawnable_ideas_TEXT:0 "Custom ideas are available for this country"
+LANDING_spawnable_ideas_FLAVOR_TEXT:0 "What else do you want here?\n\nGod is dead"
+LANDING_missions_yes_TEXT:0 "Custom mission tree is available for this country"
+LANDING_missions_yes_FLAVOR_TEXT:0 "What else do you want here?\n\nGod is dead"
+ideas_available_desc:0 "I stole that"
+mission_yes_desc:0 "from Anbennar"

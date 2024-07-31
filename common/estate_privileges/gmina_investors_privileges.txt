@@ -34,8 +34,7 @@ estate_investors_support_foreign_corporations = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_investors_definer_tooltip
@@ -76,8 +75,7 @@ estate_investors_support_foreign_corporations = {
 	benefits = {
 		dip_tech_cost_modifier = -0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -136,8 +134,7 @@ estate_investors_support_local_corporations = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_investors_definer_tooltip
@@ -179,8 +176,7 @@ estate_investors_support_local_corporations = {
 		development_cost_modifier = -0.05
 		technology_cost = -0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -239,8 +235,7 @@ estate_investors_support_state_owned_corporations = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_investors_definer_tooltip
@@ -282,8 +277,7 @@ estate_investors_support_state_owned_corporations = {
 		development_cost_modifier = -0.05
 		technology_cost = -0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -320,8 +314,7 @@ estate_investors_land_rights = {
 	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
+
 	conditional_modifier = {
 	}
 	benefits = {
@@ -407,8 +400,7 @@ estate_investors_minimal_taxation = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_investors_taxation_tooltip
@@ -441,13 +433,11 @@ estate_investors_minimal_taxation = {
 			}
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 		development_cost = -0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -506,8 +496,7 @@ estate_investors_basic_taxation = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_investors_taxation_tooltip
@@ -540,13 +529,11 @@ estate_investors_basic_taxation = {
 			}
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 		global_tax_modifier = 0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -605,8 +592,7 @@ estate_investors_high_taxation = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_investors_taxation_tooltip
@@ -639,13 +625,11 @@ estate_investors_high_taxation = {
 			}
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 		all_power_cost = -0.025
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -704,8 +688,7 @@ estate_investors_lobbists = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -714,14 +697,12 @@ estate_investors_lobbists = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		advisor_cost = -0.1
 		free_concentrate_development = yes
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -780,8 +761,7 @@ estate_investors_rapid_modernisation = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		is_at_war = no
 		if = {
@@ -959,8 +939,7 @@ estate_investors_adm_support = {
 		}
 
 	}
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -969,14 +948,12 @@ estate_investors_adm_support = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		administrative_efficiency = 0.05
 		development_cost_modifier = -0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -1026,8 +1003,7 @@ estate_investors_high_influence = {
 	penalties = {
 		yearly_corruption = 0.25
 	}
-	benefits = {
-	}
+
 	on_invalid = {
 		clr_country_flag = high_influence_of_corporations
 	}
@@ -1091,10 +1067,8 @@ estate_investors_free_market_ideals = { #Political Party
 			missionary_maintenance_cost = -0.5
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	ai_will_do = {
 		factor = 100
 		modifier = {

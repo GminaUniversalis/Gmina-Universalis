@@ -160,10 +160,6 @@ country_event = {
 	picture = UDPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.1.a
@@ -352,10 +348,6 @@ country_event = {
 	picture = KLDPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.2.a
@@ -535,10 +527,6 @@ country_event = {
 	picture = KPNPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.3.a
@@ -717,10 +705,6 @@ country_event = {
 	picture = ZCHNPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.4.a
@@ -901,10 +885,6 @@ country_event = {
 	picture = PCPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.5.a
@@ -1083,10 +1063,6 @@ country_event = {
 	picture = PSLPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.6.a
@@ -1251,10 +1227,6 @@ country_event = {
 	picture = SLDPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.7.a
@@ -1612,10 +1584,6 @@ country_event = {
 	picture = PZPR_ENDPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.8.ud
@@ -2183,10 +2151,6 @@ country_event = {
 	picture = SD_DILEMAPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.8.ud
@@ -2567,10 +2531,6 @@ country_event = {
 	picture = UPPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.10.a
@@ -2758,10 +2718,6 @@ country_event = {
 	picture = AWSPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.11.a
@@ -2949,10 +2905,6 @@ country_event = {
 	picture = UWPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.12.a

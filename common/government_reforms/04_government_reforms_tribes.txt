@@ -367,7 +367,7 @@ tribal_confederacy = {
 	}
 
 	modifiers = {
-		nobles_influence_modifier = 0.15
+		#nobles_influence_modifier = 0.15
 		nobles_loyalty_modifier = 0.1
 		global_unrest = -1
 		max_absolutism = -20
@@ -383,16 +383,16 @@ tribal_confederacy = {
 		}
 	}
 
-	effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					has_dlc = "Origins"
-				}
-				set_estate_privilege = estate_nobles_decentralized_tribe
-			}
-		}
-	}
+	# effect = {
+	# 	hidden_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				has_dlc = "Origins"
+	# 			}
+	# 			set_estate_privilege = estate_nobles_decentralized_tribe
+	# 		}
+	# 	}
+	# }
 
 	ai = {
 		factor = 0
@@ -1055,7 +1055,7 @@ tribe_tribal_unity = {
 		yearly_government_power = 1
 		church_loyalty_modifier = 0.05
 		nobles_loyalty_modifier = 0.05
-		dhimmi_loyalty_modifier = 0.05
+		#dhimmi_loyalty_modifier = 0.05
 		burghers_loyalty_modifier = 0.05
 	}
 	ai = {

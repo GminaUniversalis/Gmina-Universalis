@@ -24,9 +24,9 @@ feudalism_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		vassal_income = 0.25
-		nobles_influence_modifier = 0.05
-		maratha_exclusive_influence_modifier = 0.05
-		rajput_exclusive_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
+		#maratha_exclusive_influence_modifier = 0.05
+		#rajput_exclusive_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		buffed_strong_duchies = yes #+5% Loyalty
@@ -94,9 +94,9 @@ plutocratic_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		merchants = 1
-		nobles_influence_modifier = -0.05
-		burghers_influence_modifier = 0.05
-		vaisyas_influence_modifier = 0.05
+		#nobles_influence_modifier = -0.05
+		#burghers_influence_modifier = 0.05
+		#vaisyas_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -155,9 +155,9 @@ austrian_archduchy_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		liberty_desire_from_subject_development = -0.33
-		nobles_influence_modifier = 0.05
-		maratha_exclusive_influence_modifier = 0.05
-		rajput_exclusive_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
+		#maratha_exclusive_influence_modifier = 0.05
+		#rajput_exclusive_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		buffed_strong_duchies = yes #+5% Loyalty
@@ -328,7 +328,7 @@ feudal_france_reform = {
 	lock_level_when_selected = yes
 
 	modifiers = {
-		nobles_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
 		vassal_income = 0.2
 		max_absolutism = -50
 	}
@@ -355,7 +355,7 @@ appanage_reform = {
 	modifiers = {
 		global_manpower_modifier = 0.1
 		nobles_loyalty_modifier = 0.1
-		nobles_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -508,9 +508,9 @@ celestial_empire = {
 
 	modifiers = {
 		prestige = 0.5
-		church_influence_modifier = -0.1
-		nobles_influence_modifier = -0.1
-		burghers_influence_modifier = -0.1
+		#church_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
+		#burghers_influence_modifier = -0.1
 		governing_capacity = 500
 	}
 	
@@ -670,7 +670,7 @@ kalmar_union = {
 	modifiers = {
 		diplomatic_upkeep = 2
 		advisor_pool = 1
-		nobles_influence_modifier = 0.15
+		#nobles_influence_modifier = 0.15
 	}
 	removed_effect = {
 		hidden_effect = {
@@ -708,7 +708,7 @@ danish_archkingdom = {
 		diplomatic_upkeep = 2
 		advisor_pool = 1
 		max_absolutism = 10
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 		years_to_integrate_personal_union = -40
 	}
 	custom_attributes = {
@@ -823,7 +823,7 @@ english_monarchy = {
 		legitimacy = 0.5
 		global_unrest = -1
 		max_absolutism = -30
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 	}
 
 	conditional = {
@@ -1315,7 +1315,7 @@ scottish_monarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 		diplomatic_reputation = 1 
 		defensiveness = 0.1
 	}
@@ -1731,7 +1731,7 @@ bohemian_elective_kingdom_reform = {
 		diplomatic_reputation = 1
 		nobles_loyalty_modifier = 0.1
 		nobles_privilege_slots = 1
-		nobles_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
 	}
 	conditional = {
 		allow = { has_dlc = "Domination" }
@@ -2697,7 +2697,7 @@ mamluk_government = {
 		same_culture_advisor_cost = -0.25
 		promote_culture_cost = -0.5
 		governing_capacity = 50
-		nobles_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
 	}
 
 	conditional = {
@@ -2739,7 +2739,7 @@ feudal_theocracy = {
 		global_missionary_strength = 0.01
 		tolerance_own = 2
 		governing_capacity = 50
-		brahmins_hindu_loyalty_modifier = 0.05
+		#brahmins_hindu_loyalty_modifier = 0.05
 		church_loyalty_modifier = 0.05
 	}
 	maintain_dynasty = yes
@@ -3492,7 +3492,7 @@ mossi_federal_kingdom = {
 	}
 
 	modifiers = {
-		nobles_influence_modifier = 0.15
+		#nobles_influence_modifier = 0.15
 		nobles_loyalty_modifier = 0.1
 		global_unrest = -1
 		max_absolutism = -20
@@ -3674,7 +3674,7 @@ polish_great_sejm = {
 	}
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
-		nobles_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
 		max_absolutism = -20
 		global_unrest = -1 
 		reform_progress_growth = -0.2
@@ -3714,7 +3714,7 @@ polish_elective_monarchy = {
 	modifiers = {
 		global_unrest = -1
 		max_absolutism = -30
-		nobles_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
 		reform_progress_growth = -0.2
 	}
 
@@ -3961,7 +3961,7 @@ livonian_trade_monarchy = {
 		merchants = 1
 		global_ship_trade_power = 0.25
 		global_trade_goods_size_modifier = 0.15
-		burghers_influence_modifier = 0.05
+		#burghers_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -4033,7 +4033,7 @@ livonian_theocratic_monarchy = {
 		papal_influence = 0.5
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 0.25
-		church_influence_modifier = 0.25
+		#church_influence_modifier = 0.25
 		church_loyalty_modifier = 0.05
 		no_stability_loss_on_monarch_death = yes
 	}
@@ -4075,9 +4075,9 @@ livonian_elective_monarchy = {
 		all_estate_loyalty_equilibrium = 0.15
 		stability_cost_modifier = -0.2
 		advisor_pool = 2
-		church_influence_modifier = 0.05
-		nobles_influence_modifier = 0.05
-		burghers_influence_modifier = 0.05
+		#church_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
+		#burghers_influence_modifier = 0.05
 		no_stability_loss_on_monarch_death = yes
 	}
 
@@ -4462,9 +4462,9 @@ livonian_absolute_monarchy = {
 		max_absolutism = 30
 		yearly_absolutism = 3
 		autonomy_change_time = -0.5
-		nobles_influence_modifier = -0.1
-		church_influence_modifier = -0.1
-		burghers_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
+		#church_influence_modifier = -0.1
+		#burghers_influence_modifier = -0.1
 	}
 
 	custom_attributes = {
@@ -4521,7 +4521,7 @@ norwegian_parliamentary_monarchy = {
 		legitimacy = 1
 		global_unrest = -1
 		max_absolutism = -30
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 	}
 
 	conditional = {
@@ -4735,7 +4735,7 @@ divine_kingship_reform = {
 	nation_designer_cost = 60
 	modifiers = {
 		max_absolutism = 5
-		church_influence_modifier = 0.05
+		#church_influence_modifier = 0.05
 		overextension_impact_modifier = -0.1
 		reform_progress_growth = -0.1
 	}
@@ -4758,9 +4758,9 @@ enforce_privileges_reform = {
 	}
 	modifiers = {
 		global_manpower_modifier = 0.1
-		nobles_influence_modifier = 0.1
-		maratha_exclusive_influence_modifier = 0.1
-		rajput_exclusive_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
+		#maratha_exclusive_influence_modifier = 0.1
+		#rajput_exclusive_influence_modifier = 0.1
 	}
 	ai = {
 		factor = 1
@@ -4779,9 +4779,9 @@ quash_noble_power_reform = {
 	}
 	modifiers = {
 		global_tax_modifier = 0.15
-		nobles_influence_modifier = -0.1
-		maratha_exclusive_influence_modifier = -0.1
-		rajput_exclusive_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
+		#maratha_exclusive_influence_modifier = -0.1
+		#rajput_exclusive_influence_modifier = -0.1
 		#parliament_effect_duration = -2
 	}
 	ai = {
@@ -4801,9 +4801,9 @@ grant_noble_castle_rights_reform = {
 	}
 	modifiers = {
 		fort_maintenance_modifier = -0.2
-		nobles_influence_modifier = 0.05
-		maratha_exclusive_influence_modifier = 0.05
-		rajput_exclusive_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
+		#maratha_exclusive_influence_modifier = 0.05
+		#rajput_exclusive_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		on_fort_built_nobles_loyalty = yes	#5 Loyalty
@@ -4857,9 +4857,9 @@ grant_military_command_reform = {
 	modifiers = {
 		army_tradition = 0.25
 		cavalry_cost = -0.1
-		nobles_influence_modifier = 0.05
-		maratha_exclusive_influence_modifier = 0.05
-		rajput_exclusive_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
+		#maratha_exclusive_influence_modifier = 0.05
+		#rajput_exclusive_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		recruiting_generals_increases_nobles_loyalty = yes
@@ -4881,8 +4881,8 @@ grant_nobles_electorate_reform = {
 	}
 	modifiers = {
 		nobles_loyalty_modifier = 0.1
-		maratha_loyalty_modifier = 0.1
-		rajput_loyalty_modifier = 0.1
+		#maratha_loyalty_modifier = 0.1
+		#rajput_loyalty_modifier = 0.1
 		no_stability_loss_on_monarch_death = yes
 	}
 	effect = {
@@ -4946,9 +4946,9 @@ blackmail_nobility_reform = {
 		full_idea_group = spy_ideas
 	}
 	modifiers = {
-		nobles_influence_modifier = -0.1
-		maratha_exclusive_influence_modifier = -0.1
-		rajput_exclusive_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
+		#maratha_exclusive_influence_modifier = -0.1
+		#rajput_exclusive_influence_modifier = -0.1
 		allow_free_estate_privilege_revocation = yes
 	}
 	custom_attributes = {
@@ -5185,9 +5185,9 @@ devshirme_system_reform = {
 	}
 	modifiers = {
 		global_manpower_modifier = 0.1
-		janissaries_influence_modifier = 0.1
-		janissaries_loyalty_modifier = 0.1
-		nobles_influence_modifier = -0.1
+		#janissaries_influence_modifier = 0.1
+		#janissaries_loyalty_modifier = 0.1
+		#nobles_influence_modifier = -0.1
 	}
 
 	conditional = {
@@ -5243,10 +5243,10 @@ separation_of_boyars_from_court_reform = {
 	}
 	modifiers = {
 		yearly_government_power = 1.25
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 		global_tax_modifier = 0.05
-		maratha_exclusive_influence_modifier = -0.1
-		rajput_exclusive_influence_modifier = -0.1
+		#maratha_exclusive_influence_modifier = -0.1
+		#rajput_exclusive_influence_modifier = -0.1
 	}
 	ai = {
 		factor = 10
@@ -5726,7 +5726,7 @@ examination_system_reform = {
 	}
 	modifiers = {
 		advisor_pool = 2
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 	}
 	ai = {
 		factor = 10
@@ -5914,9 +5914,9 @@ clergy_in_administration_reform = {
 	modifiers = {
 		free_adm_policy = 1
 		
-		brahmins_hindu_influence_modifier = 0.1
-		brahmins_hindu_loyalty_modifier = 0.05
-		church_influence_modifier = 0.1
+		#brahmins_hindu_influence_modifier = 0.1
+		#brahmins_hindu_loyalty_modifier = 0.05
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.05
 		tolerance_own = 1
 	}
@@ -5966,12 +5966,12 @@ of_noble_bearing_reform = {
 	}
 	modifiers = {
 		leader_cost = -0.1
-		nobles_influence_modifier = 0.1
-		maratha_exclusive_influence_modifier = 0.1
-		rajput_exclusive_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
+		#maratha_exclusive_influence_modifier = 0.1
+		#rajput_exclusive_influence_modifier = 0.1
 		nobles_loyalty_modifier = 0.05
-		maratha_exclusive_loyalty_modifier = 0.05
-		rajput_exclusive_loyalty_modifier = 0.05
+		#maratha_exclusive_loyalty_modifier = 0.05
+		#rajput_exclusive_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 1
@@ -6012,11 +6012,11 @@ meritocratic_focus_reform = {
 	modifiers = {
 		yearly_corruption = -0.1
 		advisor_cost = -0.1
-		maratha_muslim_influence_modifier = 0.1
-		rajput_muslim_influence_modifier = 0.1
-		burghers_influence_modifier = 0.1
+		#maratha_muslim_influence_modifier = 0.1
+		#rajput_muslim_influence_modifier = 0.1
+		#burghers_influence_modifier = 0.1
 		burghers_loyalty_modifier = 0.05
-		vaisyas_non_muslim_influence_modifier = 0.1
+		#vaisyas_non_muslim_influence_modifier = 0.1
 	}
 	ai = {
 		factor = 1
@@ -6216,36 +6216,36 @@ legacy_of_eranshahr_reform = {
 	}
 }
 
-court_of_art_and_culture_reform = {
-	icon = "court_of_art_and_culture_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "King of Kings"
-		has_unlocked_government_reform = { government_reform = court_of_art_and_culture_reform }
-	}
-	modifiers = {
-		advisor_pool = 1
-		culture_conversion_cost = -0.1
-		prestige_decay = -0.005
-	}
-	conditional = {
-		allow = { has_dlc = "King of Kings" }
-		government_abilities = {
-			persian_influence_mechanic
-		}
-	}
-	custom_attributes = {
-		can_enforce_primary_culture = yes
-	}
-	removed_effect = {
-		country_event = {
-			id = persian_influence_events.3000
-		}
-	}
-	ai = {
-		factor = 5
-	}
-}
+# court_of_art_and_culture_reform = {
+# 	icon = "court_of_art_and_culture_reform"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		has_dlc = "King of Kings"
+# 		has_unlocked_government_reform = { government_reform = court_of_art_and_culture_reform }
+# 	}
+# 	modifiers = {
+# 		advisor_pool = 1
+# 		culture_conversion_cost = -0.1
+# 		prestige_decay = -0.005
+# 	}
+# 	conditional = {
+# 		allow = { has_dlc = "King of Kings" }
+# 		government_abilities = {
+# 			persian_influence_mechanic
+# 		}
+# 	}
+# 	custom_attributes = {
+# 		can_enforce_primary_culture = yes
+# 	}
+# 	removed_effect = {
+# 		country_event = {
+# 			id = persian_influence_events.3000
+# 		}
+# 	}
+# 	ai = {
+# 		factor = 5
+# 	}
+# }
 
 #deliberative_assembly
 
@@ -7211,7 +7211,7 @@ courts_of_navarra = {
 		diplomats = 1
 		global_unrest = -2
 		max_absolutism = -30
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 	}
 
 	conditional = {
@@ -7353,7 +7353,7 @@ crusader_nobility_reform = {
 		reverse_relation_with_heretic_religion = 10
 		warscore_cost_vs_other_religion = -0.1
 		nobles_loyalty_modifier = 0.1
-		nobles_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
 	}
 
 	custom_attributes = {

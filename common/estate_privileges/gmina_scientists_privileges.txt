@@ -5,17 +5,11 @@ estate_scientists_land_rights = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	}
-	on_granted = {
-	}
-	modifier_by_land_ownership = {
-		
-	}
-	penalties = {
-	}
-	conditional_modifier = {
-	}
+
+
+
+
+
 	benefits = {
 		governing_capacity = 100
 	}
@@ -52,15 +46,9 @@ estate_scientists_empty_promises = {
 			}
 		}
 	}	
-	on_granted = {
-	
-	}
-	penalties = {
-	
-	}
-	benefits = {
-	
-	}
+
+
+
 }
 estate_scientist_polish_thought = {
 	icon = privilege_golden_liberty
@@ -97,8 +85,7 @@ estate_scientist_polish_thought = {
 			religion_group = communism_group
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_scientists_definer_tooltip
@@ -121,15 +108,12 @@ estate_scientist_polish_thought = {
 			set_country_flag = picked_scientists_definer
 		}
 	}
-	on_granted_province = {	
-	}
+
 	on_revoked = { 
 		add_stability = -2
 		clr_country_flag = polish_thought
 	}
-	on_revoked_province = {
 
-	}
 	can_revoke = {
 		OR = {
 			NOT = { has_country_flag = picked_scientists_definer}
@@ -148,30 +132,14 @@ estate_scientist_polish_thought = {
 	on_invalid = {
 		clr_country_flag = polish_thought
 	}
-	on_invalid_province = {
 
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_scientist_international_initiatives = {
 	icon = privilege_government
@@ -204,8 +172,7 @@ estate_scientist_international_initiatives = {
 		}
 
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_scientists_definer_tooltip
@@ -228,15 +195,12 @@ estate_scientist_international_initiatives = {
 			set_country_flag = picked_scientists_definer
 		}
 	}
-	on_granted_province = {	
-	}
+
 	on_revoked = { 
 		add_stability = -2
 		clr_country_flag = international_initiatives
 	}
-	on_revoked_province = {
 
-	}
 	can_revoke = {
 		OR = {
 			NOT = { has_country_flag = picked_scientists_definer}
@@ -246,39 +210,21 @@ estate_scientist_international_initiatives = {
 			}
 		}
 	}
-	penalties = {
-		
-	}
+
 	benefits = {
 		technology_cost = -0.2
 	}
 	on_invalid = {
 		clr_country_flag = international_initiatives
 	}
-	on_invalid_province = {
 
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_scientist_in_government = {
 	icon = estate_burghers_GER_turn_towards_mercantilism
@@ -311,8 +257,7 @@ estate_scientist_in_government = {
 		}
 
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_scientists_definer_tooltip
@@ -335,15 +280,12 @@ estate_scientist_in_government = {
 			set_country_flag = picked_scientists_definer
 		}
 	}
-	on_granted_province = {	
-	}
+
 	on_revoked = { 
 		add_stability = -2
 		clr_country_flag = scientists_in_government
 	}
-	on_revoked_province = {
 
-	}
 	can_revoke = {
 		OR = {
 			NOT = { has_country_flag = picked_scientists_definer}
@@ -353,9 +295,7 @@ estate_scientist_in_government = {
 			}
 		}
 	}
-	penalties = {
 
-	}
 	benefits = {
 		all_power_cost = -0.05
 		expand_infrastructure_cost_modifier = 0.5
@@ -363,30 +303,14 @@ estate_scientist_in_government = {
 	on_invalid = {
 		clr_country_flag = scientists_in_government
 	}
-	on_invalid_province = {
 
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
 }
 estate_scientists_panstwowa_akademia_nauk = {
 	icon = estate_burghers_reliance_on_republics
@@ -424,55 +348,39 @@ estate_scientists_panstwowa_akademia_nauk = {
 		}
 
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-	}
+
+
+
+
+
+
 	benefits = {
 		embracement_cost = -0.15
 		
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
-		capital = {
+		capital_scope = {
 			add_province_modifier = {
 				name = panstwowa_akademia_nauk
 				duration = -1
 			}
 		}
-
 	}
 	on_revoked_province = {
-		capital = {
+		capital_scope = {
 			remove_province_modifier = panstwowa_akademia_nauk
 		}
 	}
 	on_invalid_province = {
-		capital = {
+		capital_scope = {
 			remove_province_modifier = panstwowa_akademia_nauk
 		}
 	}
-	conditional_modifier = {
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
 }
 estate_scientists_research_grant = {
 	icon = estate_church_sponsor_waqf_payments
@@ -515,43 +423,26 @@ estate_scientists_research_grant = {
 		}
 
 	}
-	is_valid = {
-	}
-	can_select = {
-	}
+
+
 	on_granted = {
 		add_years_of_income = -0.2
 	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
+
+
 	penalties = {
 		global_tax_modifier = -0.1
 	}
 	benefits = {
 		innovativeness_gain = 0.25
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
 
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
+
+
 	cooldown_years = 1
 	on_cooldown_expires = {
 		change_innovativeness = 2
@@ -606,20 +497,14 @@ estate_scientists_invest_university = {
 			NOT = { has_building = university }
 		}
 	}
-	on_granted = {
-	}
-	on_revoked = { 
-	}
-	can_revoke = {
-	}
-	penalties = {
-		
-	}
+
+
+
+
 	benefits = {
 		
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 		if = {
 			limit = {
@@ -635,21 +520,11 @@ estate_scientists_invest_university = {
 		}
 
 	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
 
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
+
 	cooldown_years = 10
 	on_cooldown_expires = {
 

@@ -48,8 +48,7 @@ estate_families_old_model = {
 			production_income_percentage = 0.35
 		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_families_definer_tooltip
@@ -93,8 +92,7 @@ estate_families_old_model = {
 			}
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 		manpower_recovery_speed = 0.2
 	}
@@ -272,8 +270,7 @@ estate_families_land_rights = {
 	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
+
 	conditional_modifier = {
 	}
 	benefits = {
@@ -567,8 +564,7 @@ estate_families_subsidies_for_kindergartens = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -583,11 +579,8 @@ estate_families_subsidies_for_kindergartens = {
 	benefits = {
 		production_efficiency = 0.1
 	}
-	on_invalid = {
-	}
-	conditional_modifier = {
 
-	}
+
 	modifier_by_land_ownership = {
 
 	}
@@ -634,8 +627,7 @@ estate_families_support_private_schools = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -651,8 +643,7 @@ estate_families_support_private_schools = {
 	benefits = {
 		all_power_cost = -0.05
 	}
-	on_invalid = {
-	}
+
 	conditional_modifier = {
 	}
 	modifier_by_land_ownership = {
@@ -701,8 +692,7 @@ estate_families_support_highschools = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -711,12 +701,9 @@ estate_families_support_highschools = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	on_invalid = {
-	}
+
+
+
 	conditional_modifier = {
 	}
 	modifier_by_land_ownership = {
@@ -744,8 +731,7 @@ estate_families_governmental_responsibility = {
 	}
 	on_granted = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		country_diplomatic_power = 1
 	}
@@ -818,8 +804,7 @@ estate_families_family_welfare_benefits = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -835,8 +820,7 @@ estate_families_family_welfare_benefits = {
 		overextension_impact_modifier = -0.2
 		stability_cost_modifier = -0.2
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -895,8 +879,7 @@ estate_families_maternal_leave = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -913,8 +896,7 @@ estate_families_maternal_leave = {
 		manpower_recovery_speed = 0.1
 		monthly_splendor = 8
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -970,8 +952,7 @@ estate_families_paternal_leave = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -988,8 +969,7 @@ estate_families_paternal_leave = {
 		possible_mil_policy = 1
 		global_prosperity_growth = 0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -1045,8 +1025,7 @@ estate_families_free_housing = {
 			is_in_deficit = yes
 		}
 	}	
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	on_granted = {
@@ -1062,8 +1041,7 @@ estate_families_free_housing = {
 	benefits = {
 		development_cost_in_primary_culture = -0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -1160,10 +1138,8 @@ estate_families_political_commitment = { #Political Party
 			yearly_patriarch_authority = 1
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	ai_will_do = {
 		factor = 100
 		modifier = {

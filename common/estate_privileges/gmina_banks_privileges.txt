@@ -82,8 +82,7 @@ estate_banks_free_banks = {
 		inflation_reduction = -0.05
 		may_not_reduce_inflation = yes
 	}
-	benefits = {
-	}
+
 }
 estate_banks_mixed = {
 	icon = privilege_government
@@ -258,8 +257,7 @@ estate_banks_state_controlled = {
 		inflation_reduction = -0.1
 		inflation_action_cost = 0.5
 	}
-	benefits = {
-	}
+
 }
 estate_banks_land_rights = {
 	icon = privilege_grant_autonomy
@@ -275,8 +273,7 @@ estate_banks_land_rights = {
 	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
+
 	conditional_modifier = {
 	}
 	benefits = {
@@ -556,8 +553,7 @@ estate_banks_indebted_to_free_banks = {
 	penalties = {
 		trade_efficiency = -0.05
 	}
-	benefits = {
-	}
+
 	can_select = {
 		if = {
 			limit = {
@@ -626,8 +622,7 @@ estate_banks_indebted_to_mixed = {
 	penalties = {
 		trade_efficiency = -0.05
 	}
-	benefits = {
-	}
+
 	can_select = {
 		if = {
 			limit = {
@@ -721,8 +716,7 @@ estate_banks_indebted_to_state_controlled = {
 	penalties = {
 		trade_efficiency = -0.05
 	}
-	benefits = {
-	}
+
 	can_select = {
 		if = {
 			limit = {
@@ -776,8 +770,7 @@ estate_banks_economic_stimulation = {
 	influence = 0.05
 	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	is_valid = {
-	}
+
 	on_granted = {
 		custom_tooltip = estate_burghers_development_of_cities_gt  #Do zmiany na potem
 		tooltip = {
@@ -841,16 +834,14 @@ estate_banks_trained_brokers = {
 	icon = privilege_make_generous_donation
 	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	is_valid = {
-	}
+
 	influence = 0.05
 	loyalty = 0.05
 	benefits = { 
 		placed_merchant_power = 5 
 		center_of_trade_upgrade_cost = -0.1 
 	}
-	penalties = {
-	}
+
 	cooldown_years = 5
 	ai_will_do = {
 		factor = 2
@@ -923,8 +914,7 @@ estate_banks_insider_info = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
-	is_valid = {
-	}
+
 	can_select = {
 	}
 	can_revoke = {
@@ -934,8 +924,7 @@ estate_banks_insider_info = {
 	modifier_by_land_ownership = {
 		global_trade_power = 0.33
 	}
-	penalties = {
-	}
+
 	benefits = {
 		trade_range_modifier = 0.15
 	}

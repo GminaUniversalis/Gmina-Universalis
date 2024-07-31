@@ -3128,7 +3128,7 @@ tur_shattered_the_janissaries = {
 	legitimacy = 1
 	republican_tradition = 0.5
 	max_absolutism = 15
-	#janissaries_influence_modifier = -0.5
+	##janissaries_influence_modifier = -0.5
 }
 
 tur_reformation_of_the_ottoman_estates = {
@@ -12845,7 +12845,7 @@ mal_nobles_take_over = {
 
 mal_radical_clergy = {
 	tolerance_heathen = -3
-	###dhimmi_loyalty_modifier = -0.2
+	####dhimmi_loyalty_modifier = -0.2
 }
 
 mal_radical_dhimmi = {

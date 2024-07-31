@@ -258,7 +258,7 @@ abolish_slavery_effect = {
 	hidden_effect = {
 		every_owned_province = {
 			limit = {
-				trade_goods = slaves
+				trade_goods = unknown
 			}
 			change_trade_goods = unknown
 			remove_building = tradecompany
@@ -2726,7 +2726,7 @@ slave_raid_pillage_capital_effect = {
 			}
 			add_yearly_manpower = 1
 			random_owned_province = {
-				limit = { trade_goods = slaves }
+				limit = { trade_goods = gu_pigs }
 				add_base_production = 1
 			}
 		}

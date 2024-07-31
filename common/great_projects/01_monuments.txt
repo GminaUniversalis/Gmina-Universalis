@@ -6047,7 +6047,7 @@ belchatow_powerplant = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			change_trade_goods = coal
+			change_trade_goods = gu_coal
 			add_devastation = 20
 		}
 	}
@@ -6080,7 +6080,7 @@ belchatow_powerplant = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			change_trade_goods = coal
+			change_trade_goods = gu_coal
 			add_prestige = 50
 			add_devastation = 40
 		}
@@ -19671,7 +19671,7 @@ konin_powerplant = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			change_trade_goods = coal
+			change_trade_goods = gu_coal
 			add_devastation = 20
 		}
 	}
@@ -19704,7 +19704,7 @@ konin_powerplant = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			change_trade_goods = coal
+			change_trade_goods = gu_coal
 			add_prestige = 50
 			add_devastation = 40
 		}

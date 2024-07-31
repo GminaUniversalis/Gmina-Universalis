@@ -213,7 +213,7 @@ monarchy = {
 				consulate_of_the_sea
 				#1.36
 				restore_the_master_of_offices_reform
-				court_of_art_and_culture_reform
+				# court_of_art_and_culture_reform
 				integrated_ottoman_officials
 				#1.37
 				seven_provinces_reform

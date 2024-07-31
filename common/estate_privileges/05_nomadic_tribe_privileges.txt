@@ -9,8 +9,7 @@ estate_nomadic_tribes_land_rights = {
 	}
 	on_granted = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		governing_capacity = 100
 	}
@@ -194,8 +193,7 @@ estate_nomadic_tribes_share_of_the_spoils = {
 	penalties = {
 		available_province_loot = -0.1
 	}
-	benefits = {
-	}
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -207,10 +205,8 @@ estate_nomadic_tribes_chieftains_autonomy = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.1
 	influence = 0.1
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -231,8 +227,7 @@ estate_nomadic_tribes_guaranteed_leadgership_in_host = {
 	on_granted = {
 		add_army_tradition = -5
 	}
-	penalties = {
-	}
+
 	benefits = {
 		general_cost = -0.1
 		army_tradition_decay = -0.005
@@ -296,10 +291,8 @@ estate_nomadic_tribes_autonomy_of_the_tribes = {
 	influence = 0
 	loyalty = 0.1
 	land_share = 5
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	mechanics = {
 	}
 	modifier_by_land_ownership = {

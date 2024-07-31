@@ -199,9 +199,9 @@ permanent_marathas_council_reform = {
 	}
 	modifiers = {
 		leader_land_shock = 1
-		maratha_influence_modifier = 0.1
-		maratha_loyalty_modifier = 0.05
-		nobles_influence_modifier = -0.1
+		#maratha_influence_modifier = 0.1
+		#maratha_loyalty_modifier = 0.05
+		#nobles_influence_modifier = -0.1
 		nobles_loyalty_modifier = -0.05
 	}
 	custom_attributes = {
@@ -229,8 +229,8 @@ governmental_purbias_register_reform = {
 	modifiers = {
 		recover_army_morale_speed = 0.05
 		rajput_influence_modifier = 0.1
-		rajput_loyalty_modifier = 0.05
-		nobles_influence_modifier = -0.1
+		#rajput_loyalty_modifier = 0.05
+		#nobles_influence_modifier = -0.1
 		nobles_loyalty_modifier = -0.05
 	}
 	custom_attributes = {
@@ -356,7 +356,7 @@ tysyatsky_reform = {
 	modifiers = {
 		republican_tradition = 0.3
 		leader_cost = -0.1
-		nobles_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
 		nobles_loyalty_modifier = 0.1
 	}
 	custom_attributes = {
@@ -427,7 +427,7 @@ vodka_of_the_crown_reform = {
 			every_owned_province = {
 				if = {
 					limit = {
-						trade_goods = grain
+						trade_goods = gu_wheat
 					}
 					add_province_modifier = { 
 						name = grain_vodka_bonus_prod
@@ -598,7 +598,7 @@ papal_embassy_reform = {
 	modifiers = {
 		papal_influence_from_cardinals = 0.33
 		curia_treasury_contribution = 0.33
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.05
 		curia_powers_cost = -0.1
 	}
@@ -688,7 +688,7 @@ focus_of_the_patriarchy_reform = {
 	}
 	modifiers = {
 		institution_spread_from_true_faith = 0.25
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 	}
 	custom_attributes = {
@@ -713,7 +713,7 @@ lands_for_the_monasteries_reform = {
 		religion = orthodox
 	}
 	modifiers = {
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.15
 		yearly_patriarch_authority = 0.002
 	}
@@ -741,7 +741,7 @@ lands_for_the_monasteries_reform = {
 #	}
 #	modifiers = {
 #		adm_advisor_cost = -0.1
-#		church_influence_modifier = 0.1
+#		#church_influence_modifier = 0.1
 #		church_loyalty_modifier = 0.1
 #	}
 #	conditional = {
@@ -784,7 +784,7 @@ zoroastrian_focus_reform = {
 	}
 	modifiers = {
 		no_religion_penalty = yes
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 	}
 	conditional = {
@@ -826,7 +826,7 @@ power_to_the_synagogoues_reform = {
 		religion_group = jewish_group
 	}
 	modifiers = {
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		idea_cost = -0.05
 		church_power_modifier = 0.1
@@ -858,7 +858,7 @@ head_of_the_reformed_church_reform = {
 		religion_group = christian
 	}
 	modifiers = {
-		church_influence_modifier = -0.05
+		#church_influence_modifier = -0.05
 		global_tax_modifier = 0.15
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 0.25
@@ -898,7 +898,7 @@ confucian_governing_reform = {
 		religion = confucianism
 	}
 	modifiers = {
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		harmonization_speed = 0.1
 		governing_capacity_modifier = 0.05
@@ -931,7 +931,7 @@ empower_buddhist_temples_reform = {
 		}
 	}
 	modifiers = {
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		yearly_karma_decay = 0.05
 		stability_cost_modifier = -0.1
@@ -963,10 +963,10 @@ public_hindu_practices_reform = {
 		religion = hinduism
 	}
 	modifiers = {
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
-		brahmins_hindu_influence_modifier = 0.1
-		brahmins_hindu_loyalty_modifier = 0.1
+		#brahmins_hindu_influence_modifier = 0.1
+		#brahmins_hindu_loyalty_modifier = 0.1
 		tolerance_own = 1
 	}
 	conditional = {
@@ -1044,10 +1044,10 @@ strengthen_the_ulema_reform = {
 		religion_group = muslim
 	}
 	modifiers = {
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		dhimmi_influence_modifier = -0.1
-		dhimmi_loyalty_modifier = -0.1
+		#dhimmi_loyalty_modifier = -0.1
 		global_missionary_strength = 0.015
 	}
 	conditional = {
@@ -1076,8 +1076,8 @@ strengthen_the_dhimmi_reform = {
 	}
 	modifiers = {
 		dhimmi_influence_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
-		church_influence_modifier = -0.1
+		#dhimmi_loyalty_modifier = 0.1
+		#church_influence_modifier = -0.1
 		church_loyalty_modifier = -0.1
 		tolerance_of_heathens_capacity = 1
 	}
@@ -1105,7 +1105,7 @@ legacy_of_the_steppes_reform = {
 	}
 	modifiers = {
 		monarch_military_power = 1
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 	}
 	custom_attributes = {
@@ -1154,7 +1154,7 @@ embedded_norse_government_reform = {
 	}
 	modifiers = {
 		may_perform_slave_raid = yes
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		army_tradition_from_battle = 0.5
 		naval_tradition_from_battle = 0.5
 	}
@@ -1179,7 +1179,7 @@ strengthen_clergy_reform = {
 		has_no_religion_specific_government_available = yes	#This way modders don't have to change this reform explicitly
 	}
 	modifiers = {
-		church_influence_modifier = 0.1
+		#church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		war_exhaustion = -0.03
 	}
@@ -1202,7 +1202,7 @@ curtail_clergy_power_reform = {
 	modifiers = {
 		adm_tech_cost_modifier = -0.1
 		religious_unity = 0.1
-		church_influence_modifier = -0.1
+		#church_influence_modifier = -0.1
 	}
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_church = yes
@@ -1224,7 +1224,7 @@ secure_clergy_power_reform = {
 		}
 	}
 	modifiers = {
-		church_influence_modifier = 0.05
+		#church_influence_modifier = 0.05
 	}
 	effect = {
 		hidden_effect = {
@@ -1467,7 +1467,7 @@ strengthened_the_patriarchy_reform = {
 	}
 	modifiers = {
 		church_privilege_slots = 1
-		church_influence_modifier = -0.15
+		#church_influence_modifier = -0.15
 		church_loyalty_modifier = 0.2
 		tolerance_own = 1
 		yearly_patriarch_authority = 0.005
@@ -1609,7 +1609,7 @@ sufism_decree_reform = {
 	}
 	modifiers = {
 		diplomats = 1
-		dhimmi_loyalty_modifier = 0.1
+		#dhimmi_loyalty_modifier = 0.1
 	}
 	
 	conditional = {
@@ -1693,7 +1693,7 @@ legacy_of_the_safavid_reform = {
 		church_loyalty_modifier = 0.1
 		global_missionary_strength = 0.015
 		church_privilege_slots = 1
-		church_influence_modifier = -0.1
+		#church_influence_modifier = -0.1
 	}
 	effect = {
 	}
@@ -2173,7 +2173,7 @@ janissary_military_reform = {
 		}
 	}
 	modifiers = {
-		janissaries_loyalty_modifier = 0.2
+		#janissaries_loyalty_modifier = 0.2
 		janissaries_privilege_slots = 1
 		special_unit_forcelimit = 0.1
 		janissary_cost_modifier = -0.33
@@ -2514,7 +2514,7 @@ mansabdari_reform = {
 	modifiers = {
 		war_taxes_cost_modifier = -0.5
 		nobles_loyalty_modifier = 0.1
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 		nobles_privilege_slots = 1
 	}
 	custom_attributes = {
@@ -2545,7 +2545,7 @@ rajput_military_leadership_reform = {
 	}
 	modifiers = {
 		can_recruit_rajputs = yes
-		rajput_loyalty_modifier = 0.1
+		#rajput_loyalty_modifier = 0.1
 		rajput_influence_modifier = 0.1
 		rajput_privilege_slots = 1
 		allowed_rajput_fraction = 0.1
@@ -2573,8 +2573,8 @@ the_maratha_army_reform = {
 		}
 	}
 	modifiers = {
-		maratha_loyalty_modifier = 0.1
-		maratha_privilege_slots = 1
+		#maratha_loyalty_modifier = 0.1
+		#maratha_privilege_slots = 1
 		reinforce_speed = 0.2
 	}
 	custom_attributes = {
@@ -3048,7 +3048,7 @@ musketeers_reform = {
 	modifiers = {
 		has_musketeer = yes
 		allowed_musketeer_fraction = 0.2
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 	}
 	
 	ai = {
@@ -3332,7 +3332,7 @@ manrent_reform = {
 	}
 	modifiers = {
 		nobles_loyalty_modifier = 0.05
-		nobles_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
 		global_manpower_modifier = 0.1
 		vassal_forcelimit_bonus = 0.33
 	}
@@ -3527,9 +3527,9 @@ cossacks_registry_reform = {
 	}
 	modifiers = {
 		special_unit_forcelimit = 0.1
-		cossacks_loyalty_modifier = 0.15
-		cossacks_influence_modifier = 0.1
-		cossacks_privilege_slots = 1
+		#cossacks_loyalty_modifier = 0.15
+		#cossacks_influence_modifier = 0.1
+		#cossacks_privilege_slots = 1
 	}
 	
 	ai = {
@@ -3597,7 +3597,7 @@ boyars_army_reform = {
 	}
 	modifiers = {
 		land_maintenance_modifier = -0.05
-		nobles_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
 		nobles_privilege_slots = 1
 	}
 	custom_attributes = {
@@ -3716,11 +3716,11 @@ empower_the_burghers_reform = {
 		global_trade_power = 0.05
 		trade_efficiency = 0.05
 		burghers_loyalty_modifier = 0.05
-		burghers_influence_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.05
-		vaisyas_influence_modifier = 0.1
-		jains_loyalty_modifier = 0.05
-		jains_influence_modifier = 0.1
+		#burghers_influence_modifier = 0.1
+		#vaisyas_loyalty_modifier = 0.05
+		#vaisyas_influence_modifier = 0.1
+		#jains_loyalty_modifier = 0.05
+		#jains_influence_modifier = 0.1
 	}
 	ai = {
 		factor = 1
@@ -3740,7 +3740,7 @@ curtail_the_burghers_reform = {
 	modifiers = {
 		trade_company_governing_cost = -0.1
 		trade_steering = 0.15
-		burghers_influence_modifier = -0.1
+		#burghers_influence_modifier = -0.1
 	}
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_burghers = yes
@@ -4037,7 +4037,7 @@ laesio_enormis_reform = {
 	modifiers = {
 		global_prosperity_growth = 0.5
 		nobles_loyalty_modifier = -0.05
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 		production_efficiency = 0.15
 		global_autonomy = -0.05
 	}
@@ -4253,7 +4253,7 @@ chinampa_farms_reform = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					trade_goods = grain
+					trade_goods = gu_wheat
 				}
 				add_province_modifier = {
 					name = chinampa_farms_modifier
@@ -4292,7 +4292,7 @@ nakharar_title = {
 	}
 	modifiers = {
 		nobles_privilege_slots = 1
-		nobles_influence_modifier = 0.05
+		#nobles_influence_modifier = 0.05
 		nobles_loyalty_modifier = 0.1
 	}
 	
@@ -4385,9 +4385,9 @@ divided_aristocracy_reform = {
 		has_unlocked_government_reform = { government_reform = divided_aristocracy_reform }
 	}
 	modifiers = {
-		nobles_influence_modifier = -0.15
-		qizilbash_influence_modifier = -0.15
-		ghulams_influence_modifier = -0.15
+		#nobles_influence_modifier = -0.15
+		#qizilbash_influence_modifier = -0.15
+		#ghulams_influence_modifier = -0.15
 		max_absolutism = 10
 	}
 	custom_attributes = {
@@ -5130,71 +5130,71 @@ integrated_ottoman_officials = {
 	}
 }
 
-seven_provinces_reform = {
-	icon = "seven_provinces_reform"
-	allow_normal_conversion = yes
+# seven_provinces_reform = {
+# 	icon = "seven_provinces_reform"
+# 	allow_normal_conversion = yes
 
-	potential = {
-		tag = NED
-	}
+# 	potential = {
+# 		tag = NED
+# 	}
 
-	modifiers = {
-		manpower_in_culture_group_provinces = 0.15
-		manpower_in_own_culture_provinces = 0.15
-	}
+# 	modifiers = {
+# 		manpower_in_culture_group_provinces = 0.15
+# 		manpower_in_own_culture_provinces = 0.15
+# 	}
 
-	custom_attributes = {
-		seven_provinces_organization = yes
-	}
+# 	custom_attributes = {
+# 		seven_provinces_organization = yes
+# 	}
 
-	effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					region = low_countries_region
-					culture_group = ROOT
-				}
-				add_province_modifier = {
-					name = ned_seven_provinces_organization_positive_modifier
-					duration = -1
-					hidden = yes
-				}
-			}
-			every_owned_province = {
-				limit = {
-					NOT = { region = low_countries_region }
-					continent = europe
-				}
-				add_province_modifier = {
-					name = ned_seven_provinces_organization_negative_modifier
-					duration = -1
-					hidden = yes
-				}
-			}
-		}
-	}
+# 	effect = {
+# 		hidden_effect = {
+# 			every_owned_province = {
+# 				limit = {
+# 					region = low_countries_region
+# 					culture_group = ROOT
+# 				}
+# 				add_province_modifier = {
+# 					name = ned_seven_provinces_organization_positive_modifier
+# 					duration = -1
+# 					hidden = yes
+# 				}
+# 			}
+# 			every_owned_province = {
+# 				limit = {
+# 					NOT = { region = low_countries_region }
+# 					continent = europe
+# 				}
+# 				add_province_modifier = {
+# 					name = ned_seven_provinces_organization_negative_modifier
+# 					duration = -1
+# 					hidden = yes
+# 				}
+# 			}
+# 		}
+# 	}
 
-	removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_modifier = ned_seven_provinces_organization_positive_modifier
-				}
-				remove_province_modifier = ned_seven_provinces_organization_positive_modifier
-			}
-			every_owned_province = {
-				limit = {
-					has_province_modifier = ned_seven_provinces_organization_negative_modifier
-				}
-				remove_province_modifier = ned_seven_provinces_organization_negative_modifier
-			}
-		}
-	}
+# 	removed_effect = {
+# 		hidden_effect = {
+# 			every_owned_province = {
+# 				limit = {
+# 					has_province_modifier = ned_seven_provinces_organization_positive_modifier
+# 				}
+# 				remove_province_modifier = ned_seven_provinces_organization_positive_modifier
+# 			}
+# 			every_owned_province = {
+# 				limit = {
+# 					has_province_modifier = ned_seven_provinces_organization_negative_modifier
+# 				}
+# 				remove_province_modifier = ned_seven_provinces_organization_negative_modifier
+# 			}
+# 		}
+# 	}
 
-	ai = {
-		factor = 1
-	}
-}
+# 	ai = {
+# 		factor = 1
+# 	}
+# }
 
 modern_economics_reform = {
 	icon = "modern_economics_reform"
@@ -5371,7 +5371,7 @@ extend_the_unio_trium_nationum_reform = {
 	modifiers = {
 		global_unrest = -1
 		nobles_privilege_slots = 1
-		nobles_influence_modifier = 0.1
+		#nobles_influence_modifier = 0.1
 		nobles_loyalty_modifier = 0.1
 	}
 	
