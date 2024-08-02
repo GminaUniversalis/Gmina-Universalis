@@ -98,7 +98,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 				name = "hegemony_label"
-				position = { x = 126 y = 445 }
+				position = { x = 126 y = 479 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 2}
@@ -121,7 +121,7 @@ guiTypes = {
 		
 		guiButtonType = {
 				name = "close_button"
-				position = { x=200 y = 604}
+				position = { x=200 y = 639}
 				quadTextureSprite ="button_type_1"	
 				tooltip = ""
 				tooltipText =""
@@ -228,7 +228,7 @@ guiTypes = {
 		guiButtonType = {
 			name ="shield"
 			quadTextureSprite ="GFX_shield_thin_old"
-			position = { x= 81 y = 6 }
+			position = { x= 81 y = 40 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -240,7 +240,7 @@ guiTypes = {
 		guiButtonType = {
 			name ="button"
 			quadTextureSprite = "GFX_estates_icons"
-			position = { x= 50 y = 0 }
+			position = { x= 50 y = 34 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""

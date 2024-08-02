@@ -478,10 +478,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -495,10 +497,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -520,10 +524,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -557,10 +563,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -582,10 +590,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -598,11 +608,13 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -615,11 +627,13 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -632,11 +646,13 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -671,11 +687,13 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -688,11 +706,13 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -705,11 +725,13 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -783,10 +805,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_zchn
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -800,10 +824,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_zchn
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -825,10 +851,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_zchn
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -861,11 +889,13 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -886,11 +916,13 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -904,10 +936,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_zchn 
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -921,10 +955,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_zchn
 				}
 
 				visible = {
-					always = yes
+					always = no
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -937,11 +973,13 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -976,11 +1014,13 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -993,11 +1033,13 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -1010,11 +1052,13 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -1088,10 +1132,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1105,10 +1151,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1130,10 +1178,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1166,11 +1216,13 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1191,11 +1243,13 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1208,11 +1262,13 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1225,11 +1281,13 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1243,10 +1301,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1282,10 +1342,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1298,11 +1360,13 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1315,11 +1379,13 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1395,10 +1461,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1412,10 +1480,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1437,10 +1507,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1473,11 +1545,13 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				ai_will_do = {
@@ -1499,10 +1573,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1516,10 +1592,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1532,11 +1610,13 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				ai_will_do = {
@@ -1549,11 +1629,13 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				ai_will_do = {
@@ -1588,11 +1670,13 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = yes
+					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
 					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				ai_will_do = {
@@ -1606,10 +1690,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1628,10 +1714,12 @@ conservatism_group = {
 				
 				allow = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
 					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {

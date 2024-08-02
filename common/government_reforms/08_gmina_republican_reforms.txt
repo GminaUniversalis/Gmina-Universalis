@@ -1,15 +1,15 @@
 #Tier 1
 
 gmina_government_reform = {
-	icon = "protectorate_parliament_reform"
-	allow_normal_conversion = no
+	icon = "peasant_republic"
+	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			has_reform = gmina_government_reform
 			have_had_reform = gmina_government_reform
-		}
-		government_rank = 1
-		NOT = {government_rank = 2}
+			government_rank = 1
+		}	
+
 	}
 
 	trigger = {
@@ -53,15 +53,18 @@ gmina_government_reform = {
 }
 
 powiat_government_reform = {
-	icon = "protectorate_parliament_reform"
-	allow_normal_conversion = no
+	icon = "map"
+	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			has_reform = powiat_government_reform
 			have_had_reform = powiat_government_reform
+			AND = {
+				government_rank = 2
+				NOT = {government_rank = 3}
+			}
 		}
-		government_rank = 2
-		NOT = {government_rank = 3}
+
 	}
 
 	trigger = {
@@ -105,15 +108,18 @@ powiat_government_reform = {
 }
 
 miasto_powiatowe_government_reform = {
-	icon = "protectorate_parliament_reform"
-	allow_normal_conversion = no
+	icon = "free_city"
+	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			has_reform = miasto_powiatowe_government_reform
 			have_had_reform = miasto_powiatowe_government_reform
+			AND = {
+				government_rank = 3
+				NOT = {government_rank = 4}
+			}
 		}
-		government_rank = 3
-		NOT = {government_rank = 4}
+
 	}
 
 	trigger = {
@@ -158,19 +164,22 @@ miasto_powiatowe_government_reform = {
 }
 
 wojewodztwo_government_reform = {
-	icon = "protectorate_parliament_reform"
-	allow_normal_conversion = no
+	icon = "landscape"
+	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			has_reform = wojewodztwo_government_reform
 			have_had_reform = wojewodztwo_government_reform
+			AND = {
+				government_rank = 4
+				NOT = {government_rank = 5}
+			}
 		}
-		government_rank = 4
-		NOT = {government_rank = 5}
+
 	}
 
 	trigger = {
-		government_rank = 5
+		government_rank = 4
 		NOT = {government_rank = 5}
 	}
 	
@@ -211,14 +220,15 @@ wojewodztwo_government_reform = {
 }
 
 kraj_government_reform = {
-	icon = "protectorate_parliament_reform"
-	allow_normal_conversion = no
+	icon = "provincial_government"
+	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			has_reform = kraj_government_reform
 			have_had_reform = kraj_government_reform
+			government_rank = 5
 		}
-		government_rank = 5
+
 	}
 
 	trigger = {

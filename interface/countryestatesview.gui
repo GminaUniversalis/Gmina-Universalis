@@ -428,8 +428,17 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "crownland_bonus_bg_1"
+			position = {x=253 y=137 }
+			Orientation = "UPPER_LEFT"
+			scale = 1.019
+			spriteType = "GFX_crownland_bonus_bg"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name = "crown_land_modifier_icon_1"
-			position = { x=260 y=137 }
+			position = { x=253 y=137 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 			quadTextureSprite ="GFX_event_bg_transparency"
@@ -437,7 +446,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "crown_land_modifier_desc_1"
-			position = { x=290 y=137 }
+			position = { x=285 y=137 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x=4 y=4}
@@ -448,8 +457,17 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "crownland_bonus_bg_2"
+			position = {x=253 y=160}
+			Orientation = "UPPER_LEFT"
+			scale = 1.019
+			spriteType = "GFX_crownland_bonus_bg"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name = "crown_land_modifier_icon_2"
-			position = { x=260 y=160 }
+			position = { x=253 y=160 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 			quadTextureSprite ="GFX_event_bg_transparency"
@@ -457,7 +475,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "crown_land_modifier_desc_2"
-			position = { x=290 y=160 }
+			position = { x=285 y=160 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x=4 y=4}
@@ -468,8 +486,17 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "crownland_bonus_bg_3"
+			position = { x=338 y=137 }
+			Orientation = "UPPER_LEFT"
+			scale = 1.019
+			spriteType = "GFX_crownland_bonus_bg"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name = "crown_land_modifier_icon_3"
-			position = { x=345 y=137 }
+			position = { x=338 y=137 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 			quadTextureSprite ="GFX_event_bg_transparency"
@@ -477,7 +504,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "crown_land_modifier_desc_3"
-			position = { x=373 y=137 }
+			position = { x=368 y=137 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x=4 y=4}
@@ -487,9 +514,19 @@ guiTypes = {
 			format = left
 		}
 
+		
+		iconType = {
+			name = "crownland_bonus_bg_4"
+			position = { x=338 y=160 }
+			Orientation = "UPPER_LEFT"
+			scale = 1.019
+			spriteType = "GFX_crownland_bonus_bg"
+			alwaystransparent = yes
+		}
+
 		iconType = {
 			name = "crown_land_modifier_icon_4"
-			position = { x=345 y=160 }
+			position = { x=338 y=160 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 			quadTextureSprite ="GFX_event_bg_transparency"
@@ -497,7 +534,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "crown_land_modifier_desc_4"
-			position = { x=373 y=160 }
+			position = { x=368 y=160 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x=4 y=4}
@@ -508,8 +545,17 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "crownland_bonus_bg_5"
+			position = { x=253 y=183 }
+			Orientation = "UPPER_LEFT"
+			scale = 1.019
+			spriteType = "GFX_crownland_bonus_bg"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name = "crown_land_modifier_icon_5"
-			position = { x=260 y=183 }
+			position = { x=253 y=183 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 			quadTextureSprite ="GFX_event_bg_transparency"
@@ -517,7 +563,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "crown_land_modifier_desc_5"
-			position = { x=290 y=183 }
+			position = { x=285 y=183 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x=4 y=4}
@@ -528,8 +574,17 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "crownland_bonus_bg_6"
+			position = { x=338 y=183 }
+			Orientation = "UPPER_LEFT"
+			scale = 1.019
+			spriteType = "GFX_crownland_bonus_bg"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name = "crown_land_modifier_icon_6"
-			position = { x=345 y=183 }
+			position = { x=338 y=183 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 			quadTextureSprite ="GFX_event_bg_transparency"
@@ -537,7 +592,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "crown_land_modifier_desc_6"
-			position = { x=373 y=183 }
+			position = { x=368 y=183 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x=4 y=4}
@@ -547,7 +602,32 @@ guiTypes = {
 			format = left
 		}
 
+		iconType = {
+			name = "interactions_bg_1"
+			position = { x = 264 y = 204 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+			scale = 1
+			spriteType = "GFX_privilege_blank"
+		}
 
+		iconType = {
+			name = "interactions_bg_2"
+			position = { x = 313 y = 204 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+			scale = 1
+			spriteType = "GFX_privilege_blank"
+		}
+
+		iconType = {
+			name = "interactions_bg_3"
+			position = { x = 361 y = 204 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+			scale = 1
+			spriteType = "GFX_privilege_blank"
+		}
 		gridBoxType = {
 			name = "crown_land_interactions"
 			position = { x = 270 y = 210 }

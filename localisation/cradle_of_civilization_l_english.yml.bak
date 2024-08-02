@@ -176,7 +176,7 @@
  maximize_profits:0 "Maximize Profit"
  hostile_trading:0 "Hostile Trading"
  establish_communities:0 "Establish Communities"
- propagate_religion:0 "Political Propaganda"
+ propagate_religion:0 "Propagate Religion"
  improve_inland_routes:0 "Improve Inland Routes"
  maximize_profit_desc:1 "Your Merchant will tirelessly work to maximize profit in this Node."
  hostile_trading_desc:1 "Your Merchant will gather intelligence from countries active in the same Node."
