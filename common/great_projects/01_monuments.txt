@@ -8709,7 +8709,7 @@ pieskowa_skala_castle = {
 	}
 }
 
-stone_forrest = {
+stone_forest = {
 	start = 356
 	date = 1300.01.01
 	time = { months = 0	}
@@ -18216,7 +18216,7 @@ forecasting_stone= {
 }
 
 ostra_gate = {
-	start = 2344
+	start = 2343
 	date = 1357.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -21592,4 +21592,90 @@ swinoujscie_container_harbour = {
 		}
 	}
 }
+
+Ćwiartki_3_4 = {
+	start = 3190
+	date = 800.01.01
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	tier_1 = {
+		province_modifiers = {
+			local_institution_spread = -0.1
+		}
+		country_modifiers = {
+			culture_conversion_cost = -0.2
+			relation_with_other_culture = -10
+			global_spy_defence = 0.1
+			discovered_relations_impact = -0.1
+		}
+		on_upgraded = {
+			#Border friction cb on neighbours
+		}
+	}
+
+	tier_2 = {
+		province_modifiers = {
+			local_institution_spread = -0.25
+		}
+		country_modifiers = {
+			culture_conversion_cost = -0.3
+			relation_with_other_culture = -20
+			global_spy_defence = 0.25
+			discovered_relations_impact = -0.25
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					gu_beer = 1
+				}
+				every_owned_province = {
+					limit = {
+						trade_goods = gu_beer
+					}
+					add_base_production = 4
+				}
+			}
+			change_price = {
+				trade_goods = gu_beer
+				value = -1
+				duration = 3650
+			}
+		}
+	}
+
+	tier_3 = {
+		province_modifiers = {
+			local_institution_spread = -0.5
+		}
+		country_modifiers = {
+			culture_conversion_cost = -0.5
+			relation_with_other_culture = -30
+			global_spy_defence = 0.5
+			discovered_relations_impact = -0.4
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					gu_vodka = 1
+				}
+				every_owned_province = {
+					limit = {
+						trade_goods = gu_vodka
+					}
+					add_base_production = 4
+				}
+			}
+			change_price = {
+				trade_goods = gu_vodka
+				value = -1
+				duration = 3650
+			}
+		}
+	}
+}
+
 

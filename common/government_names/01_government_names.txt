@@ -1,55 +1,55 @@
 # For specific government types
 # Will pick the first valid one it finds in list
 
-hungarian_kingdom = {
-	rank = {
-		1 = FEJEDELEMSEG
-		2 = KIRALYSAG
-		3 = BIRODALOM
-	}
+# hungarian_kingdom = {
+# 	rank = {
+# 		1 = FEJEDELEMSEG
+# 		2 = KIRALYSAG
+# 		3 = BIRODALOM
+# 	}
 
-	ruler_male = {
-		1 = HERCEG
-		2 = KIRALY
-		3 = CSASZAR
-	}
+# 	ruler_male = {
+# 		1 = HERCEG
+# 		2 = KIRALY
+# 		3 = CSASZAR
+# 	}
 
-	ruler_female = {
-		1 = HERCEGNO
-		2 = KIRALYNO
-		3 = CSASZARNO
-	}
+# 	ruler_female = {
+# 		1 = HERCEGNO
+# 		2 = KIRALYNO
+# 		3 = CSASZARNO
+# 	}
 
-	consort_male = {
-		1 = HERCEG
-		2 = KIRALY
-		3 = CSASZAR
-	}
+# 	consort_male = {
+# 		1 = HERCEG
+# 		2 = KIRALY
+# 		3 = CSASZAR
+# 	}
 
-	consort_female = {
-		1 = HERCEGNO
-		2 = KIRALYNO
-		3 = CSASZARNO
-	}
+# 	consort_female = {
+# 		1 = HERCEGNO
+# 		2 = KIRALYNO
+# 		3 = CSASZARNO
+# 	}
 
-	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
+# 	heir_male = {
+# 		1 = HEIR
+# 		2 = HEIR
+# 		3 = HEIR
+# 	}
 
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
+# 	heir_female = {
+# 		1 = HEIR_fem
+# 		2 = HEIR_fem
+# 		3 = HEIR_fem
+# 	}
 
 
-	trigger = {
-		primary_culture = hungarian
-		government = monarchy
-	}
-}
+# 	trigger = {
+# 		primary_culture = hungarian
+# 		government = monarchy
+# 	}
+# }
 
 gov_steppe_horde = {
 	rank = {
@@ -740,48 +740,48 @@ gov_tribal_democracy = {
 	}
 }
 
-gov_constitutional_republic = {
-	rank = {
-		1 = REPUBLIC
-		2 = GRAND_REPUBLIC
-		3 = FEDERAL_REPUBLIC
-	}
+# gov_constitutional_republic = {
+# 	rank = {
+# 		1 = REPUBLIC
+# 		2 = GRAND_REPUBLIC
+# 		3 = FEDERAL_REPUBLIC
+# 	}
 	
-	ruler_male = {
-		1 = CHANCELOR
-		2 = PRESIDENT
-		3 = PRESIDENT
-	}
+# 	ruler_male = {
+# 		1 = CHANCELOR
+# 		2 = PRESIDENT
+# 		3 = PRESIDENT
+# 	}
 	
-	ruler_female = {
-		1 = CHANCELOR_fem
-		2 = PRESIDENT_fem
-		3 = PRESIDENT_fem
-	}
+# 	ruler_female = {
+# 		1 = CHANCELOR_fem
+# 		2 = PRESIDENT_fem
+# 		3 = PRESIDENT_fem
+# 	}
 	
-	consort_male = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
-	}
+# 	consort_male = {
+# 		1 = CONSORT
+# 		2 = CONSORT
+# 		3 = CONSORT
+# 	}
 
-	consort_female = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
-	}
+# 	consort_female = {
+# 		1 = CONSORT
+# 		2 = CONSORT
+# 		3 = CONSORT
+# 	}
 	
-	trigger = {
-		government = republic
-		OR = {
-			tag = USA
-			has_reform = constitutional_republic
-			has_reform = presidential_reform
-			has_reform = parliamentary_reform
-		}
-		NOT = { has_reform = presidential_despot_reform }
-	}
-}
+# 	trigger = {
+# 		government = republic
+# 		OR = {
+# 			tag = USA
+# 			has_reform = constitutional_republic
+# 			has_reform = presidential_reform
+# 			has_reform = parliamentary_reform
+# 		}
+# 		NOT = { has_reform = presidential_despot_reform }
+# 	}
+# }
 
 hre_county = {
 	rank = {

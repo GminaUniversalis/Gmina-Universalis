@@ -252,8 +252,8 @@ liberalism_group = {
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
-			liberalism_kld
 			liberalism_ud
+			liberalism_uw
 		}
 
 		allowed_center_conversion = {
@@ -327,8 +327,6 @@ liberalism_group = {
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
-			liberalism_kld
-			liberalism_ud
 		}
 
 		allowed_center_conversion = {

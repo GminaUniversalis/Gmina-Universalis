@@ -303,8 +303,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_great_project_stone_forrest"
-		texturefile = "gfx//interface//great_projects//great_project_stone_forrest.dds"
+		name = "GFX_great_project_stone_forest"
+		texturefile = "gfx//interface//great_projects//great_project_stone_forest.dds"
 	}
 	
 	spriteType = {

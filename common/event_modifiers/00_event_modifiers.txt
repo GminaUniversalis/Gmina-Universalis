@@ -8534,18 +8534,6 @@ double_entry_booking = {
 }
 
 #Institution Birthplaces
-birthplace_of_the_solidarity = {
-	local_institution_spread = 0.3	
-}
-
-birthplace_of_the_free_market = {
-	trade_value_modifier = 0.2	
-}
-
-birthplace_of_the_internet = {
-	trade_goods_size_modifier = 0.1	
-}
-
 birthplace_of_the_renaissance = {
 	local_development_cost = -0.05
 }
@@ -10774,42 +10762,6 @@ anglican_innovativeness = {
 	reform_progress_growth = 0.15
 }
 
-support_from_elite = {
-	innovativeness_gain = 0.4
-	advisor_cost = -0.1
-}
-
-disband_military = {
-	administrative_efficiency = 0.08
-}
-
-thin_line = {
-	global_unrest = -3
-}
-
-small_constitution = {
-	reform_progress_growth = 0.4
-}
-
-straight_to_europe = {
-	trade_efficiency = 0.15
-}
-
-liberal_but_conservative = {
-	global_manpower_modifier = 0.15
-	shock_damage_received = -0.1
-}
-
-assimilate_competition = {
-	reduced_liberty_desire = -15
-	years_to_integrate_personal_union = -10
-}
-
-shock_therapy = {
-	global_unrest = 3
-	global_trade_goods_size_modifier = 0.25
-}
-
 expelling_heretics = {
 	religious_unity = 0.1
 	colonist_placement_chance = 0.05
@@ -12253,12 +12205,14 @@ siamese_age_of_openness = {
 	global_spy_defence = -0.15
 }
 
-emerald_kaczka = {
-	prestige = 5
+emerald_buddha = {
+	prestige = 0.5
+	monthly_karma = 0.1
 }
 
-emerald_kaczka_alternate = {
-	prestige = -5
+emerald_buddha_alternate = {
+	prestige = 0.5
+	monthly_karma = -0.1
 }
 
 estate_burghers_tropical_mod = {
@@ -14212,8 +14166,8 @@ used_persian_influece_interaction_19 = { influence_to_vassal_elevation_cost = -3
 used_persian_influece_interaction_20 = { influence_to_vassal_elevation_cost = -400 }
 
 #Permanently Accepted Culture (until demoted)
-free_slot_for_armenian = { num_accepted_cultures = 1 }
-free_slot_for_georgian = { num_accepted_cultures = 1 }
-free_slot_for_turkish = { num_accepted_cultures = 1 }
-free_slot_for_al_iraqiya_arabic = { num_accepted_cultures = 1 }
-free_slot_for_al_suryah_arabic = { num_accepted_cultures = 1 }
+#free_slot_for_armenian = { num_accepted_cultures = 1 }
+#free_slot_for_georgian = { num_accepted_cultures = 1 }
+#free_slot_for_turkish = { num_accepted_cultures = 1 }
+#free_slot_for_al_iraqiya_arabic = { num_accepted_cultures = 1 }
+#free_slot_for_al_suryah_arabic = { num_accepted_cultures = 1 }
