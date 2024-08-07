@@ -271,3 +271,57 @@ kraj_government_reform = {
 		cannot_become_dictatorship = yes
 	}
 }
+
+silesian_autonomy_city = {
+	icon = "free_city"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = free_city
+	}
+	legacy_equivalent = imperial_city
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 25
+	nation_designer_trigger = {
+		capital_scope = { is_part_of_hre = yes }
+	}
+
+	factions = {
+		mining_corporations
+		local_politicians
+		separationists_movement
+	}
+
+	free_city = yes
+	modifiers = {
+		trade_efficiency = 0.1
+		development_cost = -0.2
+		diplomatic_upkeep = 1
+		estate_miners_influence_modifier = 0.1
+	}
+	fixed_rank = 3
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+	duration = 5
+}

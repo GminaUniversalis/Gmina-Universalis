@@ -1,5 +1,14 @@
 government = monarchy
-add_government_reform = silesian_autonomy_reform
+1399.1.1 = {
+	monarch = {
+		name = "Collegium"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+add_government_reform = silesian_autonomy_city
 government_rank = 3
 technology_group = western
 religion = communism_pzpr

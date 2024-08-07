@@ -21600,9 +21600,12 @@ swinoujscie_container_harbour = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 	tier_1 = {
+		cost_to_upgrade = {
+			factor = 1000
+		}
 		province_modifiers = {
 			local_institution_spread = -0.1
 		}
@@ -21618,6 +21621,9 @@ swinoujscie_container_harbour = {
 	}
 
 	tier_2 = {
+		cost_to_upgrade = {
+			factor = 2500
+		}
 		province_modifiers = {
 			local_institution_spread = -0.25
 		}
@@ -21648,6 +21654,9 @@ swinoujscie_container_harbour = {
 	}
 
 	tier_3 = {
+		cost_to_upgrade = {
+			factor = 5000
+		}
 		province_modifiers = {
 			local_institution_spread = -0.5
 		}

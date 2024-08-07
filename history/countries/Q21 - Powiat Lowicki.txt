@@ -1,4 +1,13 @@
 government = republic
+1399.1.1 = {
+	monarch = {
+		name = "Collegium"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
 add_government_reform = powiat_government_reform
 government_rank = 2
 technology_group = western
