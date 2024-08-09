@@ -290,7 +290,6 @@ free_city = { #Silesian Autonomy Powiat City
 		mining_corporations
 		local_politicians
 		separationists_movement
-		enuchs
 	}
 
 	free_city = yes

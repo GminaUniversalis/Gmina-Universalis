@@ -77,7 +77,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2412;1017;sea;1420;-1;-1;-1;-1; Nowy Dwor Mazowiecki - Czosnow
 2412;4180;sea;1419;-1;-1;-1;-1; Czosnow - Zakroczym
 1074;4691;sea;1416;-1;-1;-1;-1; Mlodzieszyn - Wyszogrod
-567;473;sea;1412;-1;-1;-1;-1; Pradolina Wisly - Borowiczki-Imielnica
+567;573;sea;1412;-1;-1;-1;-1; Pradolina Wisly - Borowiczki-Imielnica
 568;972;sea;1412;-1;-1;-1;-1; Radziwie - Plock Centrum
 663;661;sea;1408;-1;-1;-1;-1; Rybnica - Agricola
 660;2975;sea;1408;-1;-1;-1;-1; Centrum Wloclawek - Zawisle
@@ -101,4 +101,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1058;715;sea;1916;-1;-1;-1;-1; Lomza Stare Miasto - Piatnica
 1057;715;sea;1917;-1;-1;-1;-1; Lomza - Piatnica
 723;722;sea;1910;-1;-1;-1;-1; Wojciechowice - Lazek
+880;808;sea;1592;-1;-1;-1;-1; Kostrzyn Stare Miasto - Kostrzyn nad Odra
 -1;-1;;-1;-1;-1;-1;-1;-1;
