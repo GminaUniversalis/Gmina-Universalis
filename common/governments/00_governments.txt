@@ -619,7 +619,7 @@ republic = {
 				civic_republicanism_government
 				pirate_republic_reform
 				noble_elite_reform
-				free_city
+				#free_city
 				trading_city
 				ambrosian_republic
 				veche_republic
@@ -967,7 +967,7 @@ republic = {
 		great_veche_republic
 		great_russian_republic_reform
 		federal_republic
-		free_city
+		#free_city
 		trading_city
 		american_republic
 		revolutionary_republic_reform
@@ -986,11 +986,11 @@ republic = {
 		military_dictatorship_reform
 	}
 	exclusive_reforms = {
-		free_city
+		#free_city
 		administrative_divisions_reform
 	}
 	exclusive_reforms = {
-		free_city
+		#free_city
 		presidential_reform
 	}
 	exclusive_reforms = {

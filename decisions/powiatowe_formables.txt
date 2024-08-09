@@ -2802,7 +2802,7 @@ country_decisions = {
 					}
 					
 					OR = {
-						province_id = 3190
+						province_id = 2906
 	
 						area = legnica
 					}
@@ -2810,7 +2810,7 @@ country_decisions = {
 				}
 				
 				AND = {
-					province_id = 3190
+					province_id = 2906
 					is_core = ROOT
 					owned_by = ROOT
 					is_capital = no
@@ -2822,7 +2822,7 @@ country_decisions = {
 			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
-			capital = 3190
+			capital = 2906
 
 			legnica = {
 				is_core = ROOT

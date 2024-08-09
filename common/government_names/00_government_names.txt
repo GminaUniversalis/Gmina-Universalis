@@ -5830,23 +5830,23 @@ qing_monarchy = {
 
 gov_free_city = {
 	rank = {
-		1 = FREE_CITY
+		3 = FREE_CITY
 	}
 
 	ruler_male = {
-		1 = MAYOR
+		3 = PREZYDENT_MIASTA
 	}
 
 	ruler_female = {
-		1 = MAYORESS
+		3 = PREZYDENT_MIASTA
 	}
 
 	consort_male = {
-		1 = CONSORT
+		3 = PREZYDENT_MIASTA_CONSORT
 	}
 
 	consort_female = {
-		1 = CONSORT
+		3 = PREZYDENT_MIASTA
 	}
 
 	trigger = {

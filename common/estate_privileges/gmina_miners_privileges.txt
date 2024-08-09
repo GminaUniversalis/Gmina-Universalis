@@ -629,8 +629,8 @@ estate_miners_unprofitable_mines = {
 		}
 	}
 	penalties = {
-		estate_miners_loyalty_modifier = -0.25
-		estate_miners_influence_modifier = -0.25
+		miners_loyalty_modifier = -0.25
+		miners_influence_modifier = -0.25
 	}
 
 

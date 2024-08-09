@@ -158,7 +158,7 @@ lodzkie_region = {
 
 wisla_region = {
 	areas = {
-		wisla_area
+		wisla_river_area
 	}
 }
 
@@ -247,12 +247,12 @@ obra_region = {
 
 warta_region = {
 	areas = {
-		warta_area
+		warta_river_area
 	}
 }
 narew_region = {
 	areas = {
-		narew_area
+		narew_river_area
 	}
 }
 

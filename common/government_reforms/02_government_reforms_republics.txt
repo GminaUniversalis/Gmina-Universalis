@@ -909,37 +909,37 @@ kongsi_federation = {
 	duration = 4
 }
 
-free_city = {
-	icon = "free_city"
-	allow_normal_conversion = no
-	potential = {
-		has_reform = free_city
-	}
-	legacy_equivalent = imperial_city
-	valid_for_nation_designer = yes
-	lock_level_when_selected = yes
-	nation_designer_cost = 40
-	nation_designer_trigger = {
-		capital_scope = { is_part_of_hre = yes }
-		NOT = { num_custom_nation_provinces = 2 }
-	}
+# free_city = {
+# 	icon = "free_city"
+# 	allow_normal_conversion = no
+# 	potential = {
+# 		has_reform = free_city
+# 	}
+# 	legacy_equivalent = imperial_city
+# 	valid_for_nation_designer = yes
+# 	lock_level_when_selected = yes
+# 	nation_designer_cost = 40
+# 	nation_designer_trigger = {
+# 		capital_scope = { is_part_of_hre = yes }
+# 		NOT = { num_custom_nation_provinces = 2 }
+# 	}
 
-	free_city = yes
-	modifiers = {
-		trade_efficiency = 0.1
-		development_cost = -0.2
-		diplomatic_upkeep = 1
-		#burghers_influence_modifier = 0.1
-	}
-	fixed_rank = 1
+# 	free_city = yes
+# 	modifiers = {
+# 		trade_efficiency = 0.1
+# 		development_cost = -0.2
+# 		diplomatic_upkeep = 1
+# 		#burghers_influence_modifier = 0.1
+# 	}
+# 	fixed_rank = 1
 
-	custom_attributes = {
-		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
-	duration = 4
-}
+# 	custom_attributes = {
+# 		locked_government_type = yes
+# 		enables_plutocratic_idea_group = yes
+# 		enables_aristocratic_idea_group = no
+# 	}
+# 	duration = 4
+# }
 
 trading_city = {
 	icon = "trading_city"

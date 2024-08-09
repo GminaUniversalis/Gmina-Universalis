@@ -272,7 +272,7 @@ kraj_government_reform = {
 	}
 }
 
-silesian_autonomy_city = {
+free_city = { #Silesian Autonomy Powiat City
 	icon = "free_city"
 	allow_normal_conversion = no
 	potential = {
@@ -290,6 +290,7 @@ silesian_autonomy_city = {
 		mining_corporations
 		local_politicians
 		separationists_movement
+		enuchs
 	}
 
 	free_city = yes
@@ -297,7 +298,7 @@ silesian_autonomy_city = {
 		trade_efficiency = 0.1
 		development_cost = -0.2
 		diplomatic_upkeep = 1
-		estate_miners_influence_modifier = 0.1
+		miners_influence_modifier = 0.1
 	}
 	fixed_rank = 3
 

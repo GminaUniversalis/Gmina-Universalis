@@ -10,7 +10,7 @@ monarchy_mechanic = {
 		enables_aristocratic_idea_group = yes
 	}
 	modifiers = {
-		estate_families_influence_modifier = 0.05
+		families_influence_modifier = 0.05
 	}
 }
 

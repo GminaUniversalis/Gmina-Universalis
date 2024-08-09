@@ -501,6 +501,7 @@ republic = {
 				miasto_powiatowe_government_reform
 				wojewodztwo_government_reform
 				kraj_government_reform
+				free_city
 			}
 		}
 		republican_virtues = {
@@ -813,7 +814,6 @@ republic = {
 		great_veche_republic
 		great_russian_republic_reform
 		federal_republic
-		free_city
 		trading_city
 		american_republic
 		revolutionary_republic_reform
@@ -830,14 +830,6 @@ republic = {
 		military_rulership_reform
 		prussian_republic_reform
 		military_dictatorship_reform
-	}
-	exclusive_reforms = {
-		free_city
-		administrative_divisions_reform
-	}
-	exclusive_reforms = {
-		free_city
-		presidential_reform
 	}
 	exclusive_reforms = {
 		feuillant_reform

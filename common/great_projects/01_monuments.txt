@@ -2611,7 +2611,7 @@ riese_underground_complex = {
 		}
 		country_modifiers = {
 			technology_cost = -0.05
-			estate_army_loyalty_modifier = 0.05
+			army_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -2632,7 +2632,7 @@ riese_underground_complex = {
 		country_modifiers = {
 			technology_cost = -0.05
 			global_spy_defence = 0.05
-			estate_army_loyalty_modifier = 0.1
+			army_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
 		}
@@ -2653,7 +2653,7 @@ riese_underground_complex = {
 		country_modifiers = {
 			technology_cost = -0.05
 			global_spy_defence = 0.1
-			estate_army_loyalty_modifier = 0.15
+			army_loyalty_modifier = 0.15
 		}
 		on_upgraded = {
 			add_mil_tech = 1
@@ -4333,7 +4333,7 @@ jablonna_palace = {
 		country_modifiers = {
 			religious_unity = 0.05
 			tolerance_own = 0.5
-			estate_army_loyalty_modifier = 0.05
+			army_loyalty_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -4364,7 +4364,7 @@ jablonna_palace = {
 		country_modifiers = {
 			religious_unity = 0.10
 			tolerance_own = 1
-			estate_army_loyalty_modifier = 0.1
+			army_loyalty_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -4402,7 +4402,7 @@ jablonna_palace = {
 			religious_unity = 0.15
 			tolerance_own = 1
 			tolerance_heretic = 1
-			estate_army_loyalty_modifier = 0.15
+			army_loyalty_modifier = 0.15
 		}
 
 		#what effects happen when this tier is achieved
@@ -10385,7 +10385,7 @@ niedzica_castle = {
 		country_modifiers = {
 			religious_unity = 0.05
 			tolerance_own = 0.5
-			estate_army_loyalty_modifier = 0.05
+			army_loyalty_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -10416,7 +10416,7 @@ niedzica_castle = {
 		country_modifiers = {
 			religious_unity = 0.10
 			tolerance_own = 1
-			estate_army_loyalty_modifier = 0.1
+			army_loyalty_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -10454,7 +10454,7 @@ niedzica_castle = {
 			religious_unity = 0.15
 			tolerance_own = 1
 			tolerance_heretic = 1
-			estate_army_loyalty_modifier = 0.15
+			army_loyalty_modifier = 0.15
 		}
 
 		#what effects happen when this tier is achieved
@@ -12062,7 +12062,7 @@ moszna_castle = {
 		country_modifiers = {
 			ae_impact = -0.05
 			fabricate_claims_cost = -0.1
-			estate_army_loyalty_modifier = 0.05
+			army_loyalty_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -12094,7 +12094,7 @@ moszna_castle = {
 		country_modifiers = {
 			ae_impact = -0.1
 			fabricate_claims_cost = -0.2
-			estate_army_loyalty_modifier = 0.1
+			army_loyalty_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -12132,7 +12132,7 @@ moszna_castle = {
 			defensiveness = 0.2
 			ae_impact = -0.15
 			fabricate_claims_cost = -0.5
-			estate_army_loyalty_modifier = 0.15
+			army_loyalty_modifier = 0.15
 		}
 
 		#what effects happen when this tier is achieved
@@ -12480,7 +12480,7 @@ lubomirski_and_potocki_castle = {
 		country_modifiers = {
 			religious_unity = 0.05
 			tolerance_own = 0.5
-			estate_army_loyalty_modifier = 0.05
+			army_loyalty_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -12511,7 +12511,7 @@ lubomirski_and_potocki_castle = {
 		country_modifiers = {
 			religious_unity = 0.10
 			tolerance_own = 1
-			estate_army_loyalty_modifier = 0.1
+			army_loyalty_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -12549,7 +12549,7 @@ lubomirski_and_potocki_castle = {
 			religious_unity = 0.15
 			tolerance_own = 1
 			tolerance_heretic = 1
-			estate_army_loyalty_modifier = 0.15
+			army_loyalty_modifier = 0.15
 		}
 
 		#what effects happen when this tier is achieved
@@ -15715,7 +15715,7 @@ wisla_ski_jump = {
 		country_modifiers = {
 			religious_unity = 0.05
 			tolerance_own = 0.5
-			estate_army_loyalty_modifier = 0.05
+			army_loyalty_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -15746,7 +15746,7 @@ wisla_ski_jump = {
 		country_modifiers = {
 			religious_unity = 0.10
 			tolerance_own = 1
-			estate_army_loyalty_modifier = 0.1
+			army_loyalty_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -15784,7 +15784,7 @@ wisla_ski_jump = {
 			religious_unity = 0.25
 			tolerance_own = 1
 			tolerance_heretic = 1
-			estate_army_loyalty_modifier = 0.15
+			army_loyalty_modifier = 0.15
 		}
 
 		#what effects happen when this tier is achieved
