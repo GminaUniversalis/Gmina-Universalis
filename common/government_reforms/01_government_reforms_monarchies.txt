@@ -354,7 +354,7 @@ appanage_reform = {
 	lock_level_when_selected = yes
 	modifiers = {
 		global_manpower_modifier = 0.1
-		nobles_loyalty_modifier = 0.1
+		#nobles_loyalty_modifier = 0.1
 		#nobles_influence_modifier = 0.05
 	}
 	custom_attributes = {
@@ -1237,7 +1237,7 @@ tanistry_reform = {
 	modifiers = {
 		morale_damage = 0.05
 		same_culture_advisor_cost = -0.1
-		nobles_loyalty_modifier = 0.05
+		#nobles_loyalty_modifier = 0.05
 	}
 	conditional = {
 		allow = { has_dlc = "Domination" }
@@ -1729,7 +1729,7 @@ bohemian_elective_kingdom_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		diplomatic_reputation = 1
-		nobles_loyalty_modifier = 0.1
+		#nobles_loyalty_modifier = 0.1
 		nobles_privilege_slots = 1
 		#nobles_influence_modifier = 0.05
 	}
@@ -2300,7 +2300,7 @@ prussian_monarchy = {
 		global_autonomy = -0.075
 		max_absolutism = 10
 		monarch_military_power = 3
-		nobles_loyalty_modifier = 0.1
+		#nobles_loyalty_modifier = 0.1
 		governing_capacity_modifier = -0.5
 	}
 
@@ -2398,7 +2398,7 @@ prussian_monarchy_base = {
 		global_autonomy = -0.075
 		max_absolutism = 10
 		monarch_military_power = 3
-		nobles_loyalty_modifier = 0.1
+		#nobles_loyalty_modifier = 0.1
 		governing_capacity_modifier = -0.5
 	}
 
@@ -3495,7 +3495,7 @@ mossi_federal_kingdom = {
 
 	modifiers = {
 		#nobles_influence_modifier = 0.15
-		nobles_loyalty_modifier = 0.1
+		#nobles_loyalty_modifier = 0.1
 		global_unrest = -1
 		max_absolutism = -20
 	}
@@ -3856,7 +3856,7 @@ livonian_military_monarchy = {
 		war_exhaustion = -0.05
 		development_cost = -0.05
 		monarch_military_power = 2
-		nobles_loyalty_modifier = 0.1
+		#nobles_loyalty_modifier = 0.1
 		governing_capacity_modifier = -0.5
 	}
 
@@ -4882,7 +4882,7 @@ grant_nobles_electorate_reform = {
 		NOT = { has_reform = celestial_empire }
 	}
 	modifiers = {
-		nobles_loyalty_modifier = 0.1
+		#nobles_loyalty_modifier = 0.1
 		#maratha_loyalty_modifier = 0.1
 		#rajput_loyalty_modifier = 0.1
 		no_stability_loss_on_monarch_death = yes
@@ -4954,7 +4954,7 @@ blackmail_nobility_reform = {
 		allow_free_estate_privilege_revocation = yes
 	}
 	custom_attributes = {
-		seizing_land_no_rebels_from_estate_nobles = yes
+		#seizing_land_no_rebels_from_estate_nobles = yes
 	}
 	ai = {
 		factor = 0
@@ -4966,12 +4966,12 @@ enforce_trader_privileges_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		is_reform_available = plutocratic_reform
-		OR = {
+		#OR = {
 			#technology_group = indian
 			# technology_group = muslim
 			# technology_group = chinese
 			# technology_group = east_african
-		}
+		#}
 	}
 	trigger = {
 		has_reform = plutocratic_reform
@@ -5000,8 +5000,8 @@ bengali_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Dharma"
-		primary_culture = bengali
-		religion_group = muslim
+		# primary_culture = bengali
+		# religion_group = muslim
 	}
 	modifiers = {
 		merchants = 1
@@ -5092,21 +5092,21 @@ black_army_reform = {
 	icon = "black_army_reform"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			AND = {
-				is_or_was_tag = {
-					tag = HUN
-				}
-				has_country_flag = black_army_reform_flag
-			}
-			tag = AUH
-		}
+		# OR = {
+		# 	AND = {
+		# 		is_or_was_tag = {
+		# 			tag = HUN
+		# 		}
+		# 		has_country_flag = black_army_reform_flag
+		# 	}
+		# 	tag = AUH
+		# }
 		is_revolutionary = no
 	}
 	modifiers = {
 		merc_maintenance_modifier = -0.15
 		mercenary_discipline = 0.025
-		nobles_loyalty_modifier = -0.1
+		#nobles_loyalty_modifier = -0.1
 	}
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
@@ -5157,8 +5157,8 @@ imperial_nobility_reform = {
 		army_tradition = 0.25
 	}
 	custom_attributes = {
-		enables_estate_nobles = yes
-		seizing_land_no_rebels_from_estate_nobles = yes
+		#enables_estate_nobles = yes
+		#seizing_land_no_rebels_from_estate_nobles = yes
 	}
 	ai = {
 		factor = 2.5
@@ -5314,7 +5314,7 @@ house_of_lords_reform = {
 	modifiers = {
 		reform_progress_growth = 0.1
 		parliament_effect_duration = 5
-		nobles_loyalty_modifier = 0.05
+		#nobles_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 10
@@ -5971,7 +5971,7 @@ of_noble_bearing_reform = {
 		#nobles_influence_modifier = 0.1
 		#maratha_exclusive_influence_modifier = 0.1
 		#rajput_exclusive_influence_modifier = 0.1
-		nobles_loyalty_modifier = 0.05
+		#nobles_loyalty_modifier = 0.05
 		#maratha_exclusive_loyalty_modifier = 0.05
 		#rajput_exclusive_loyalty_modifier = 0.05
 	}
@@ -6489,10 +6489,10 @@ justicia_de_aragon_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		OR = {
-			primary_culture = catalan
-			primary_culture = aragonese
-		}
+		# OR = {
+		# 	primary_culture = catalan
+		# 	primary_culture = aragonese
+		# }
 	}
 	modifiers = {
 		adm_advisor_cost = -0.33
@@ -6505,7 +6505,7 @@ catalan_cortes_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		primary_culture = catalan
+		# primary_culture = catalan
 	}
 	modifiers = {
 		all_estate_loyalty_equilibrium = 0.1
@@ -6519,10 +6519,10 @@ great_council_of_mechelen_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		OR = {
-			primary_culture = burgundian
-			has_country_flag = council_of_mechelen_flag
-		}
+		# OR = {
+		# 	primary_culture = burgundian
+		# 	has_country_flag = council_of_mechelen_flag
+		# }
 	}
 	modifiers = {
 		diplomatic_annexation_cost = -0.1
@@ -6812,16 +6812,16 @@ become_a_republic_reform = {
 		set_country_flag = populists_in_government
 		add_stability = -3
 		change_government = republic
-		if = {
-			limit = {
-				tag = AVE
-			}
-			hidden_effect = {
-				country_event = {
-					id = flavor_gbr.20
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		tag = AVE
+		# 	}
+		# 	hidden_effect = {
+		# 		country_event = {
+		# 			id = flavor_gbr.20
+		# 		}
+		# 	}
+		# }
 	}
 	ai = {
 		factor = 0
@@ -6850,16 +6850,16 @@ install_theocratic_government_reform = {
 			add_stability = -3
 		}
 		change_government = theocracy
-		if = {
-			limit = {
-				tag = AVE
-			}
-			hidden_effect = {
-				country_event = {
-					id = flavor_gbr.20
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		tag = AVE
+		# 	}
+		# 	hidden_effect = {
+		# 		country_event = {
+		# 			id = flavor_gbr.20
+		# 		}
+		# 	}
+		# }
 	}
 	ai = {
 		factor = 0
@@ -6931,16 +6931,16 @@ become_rev_republic_reform = {
 		set_country_flag = populists_in_government
 		hidden_effect = {
 			change_government = republic
-			if = {
-				limit = {
-					tag = AVE
-				}
-				hidden_effect = {
-					country_event = {
-						id = flavor_gbr.20
-					}
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		tag = AVE
+			# 	}
+			# 	hidden_effect = {
+			# 		country_event = {
+			# 			id = flavor_gbr.20
+			# 		}
+			# 	}
+			# }
 		}
 		add_government_reform = revolutionary_republic_reform
 		if = {
@@ -6954,27 +6954,27 @@ become_rev_republic_reform = {
 	}
 }
 
-nizam_i_cedid_reform = {
-	icon = "nizam_i_cedid"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		OR = {
-			tag = TUR
-			tag = RUM
-			has_reform = nizam_i_cedid_reform
-		}
-	}
-	modifiers = {
-		drill_gain_modifier = 0.25
-		movement_speed = 0.05
-		reinforce_speed = 0.15
-		recover_army_morale_speed = 0.1
-	}
-	ai = {
-		factor = 10
-	}
-}
+# nizam_i_cedid_reform = {
+# 	icon = "nizam_i_cedid"
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		has_dlc = "Domination"
+# 		OR = {
+# 			tag = TUR
+# 			tag = RUM
+# 			has_reform = nizam_i_cedid_reform
+# 		}
+# 	}
+# 	modifiers = {
+# 		drill_gain_modifier = 0.25
+# 		movement_speed = 0.05
+# 		reinforce_speed = 0.15
+# 		recover_army_morale_speed = 0.1
+# 	}
+# 	ai = {
+# 		factor = 10
+# 	}
+# }
 
 # mng_seal_of_the_emperor_reform = {
 # 	icon = "mng_seal_of_the_emperor_reform"
@@ -7354,7 +7354,7 @@ crusader_nobility_reform = {
 	modifiers = {
 		reverse_relation_with_heretic_religion = 10
 		warscore_cost_vs_other_religion = -0.1
-		nobles_loyalty_modifier = 0.1
+		#nobles_loyalty_modifier = 0.1
 		#nobles_influence_modifier = 0.1
 	}
 

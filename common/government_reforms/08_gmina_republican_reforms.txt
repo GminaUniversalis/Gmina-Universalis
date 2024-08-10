@@ -325,3 +325,60 @@ free_city = { #Silesian Autonomy Powiat City
 	}
 	duration = 5
 }
+
+republican_army_coup_reform = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				has_estate = estate_army
+				has_disaster = estate_army_disaster
+			}
+			have_had_reform = monarchical_army_coup_reform
+			have_had_reform = republican_army_coup_reform
+		}
+	}
+	trigger = {
+		OR = {
+			OR = {
+				have_had_reform = monarchical_army_coup_reform
+				have_had_reform = republican_army_coup_reform
+				has_disaster = estate_army_disaster
+			}
+
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = republican_army_coup_reform
+			}
+			has_unlocked_government_reform = { government_reform = republican_army_coup_reform }
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	
+	modifiers = {
+		war_exhaustion = -0.02
+		monthly_militarized_society = 0.05
+		global_autonomy = -0.075
+		republican_tradition = -0.5
+		max_absolutism = 30
+		governing_capacity_modifier = -0.5
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			prussian_militarization_mechanic_3
+		}
+	}
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		generals_become_rulers = yes
+		force_general_leader = yes
+	}
+	
+	has_term_election = no
+}

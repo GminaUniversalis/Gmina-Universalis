@@ -4,6 +4,8 @@ monarchy = {
 		feudalism_vs_autocracy = {
 			reforms = {
 				silesian_autonomy_reform
+				monarchical_army_coup_reform
+				familial_rule_reform
 				feudalism_reform
 				autocracy_reform
 			}
@@ -406,6 +408,7 @@ republic = {
 				wojewodztwo_government_reform
 				kraj_government_reform
 				free_city
+				republican_army_coup_reform
 			}
 		}
 		republican_virtues = {

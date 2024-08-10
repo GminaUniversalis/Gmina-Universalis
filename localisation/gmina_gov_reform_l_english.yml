@@ -30,3 +30,6 @@
  wojewodztwo_government_reform_desc:0 "A 'województwo' in Poland is the highest-level administrative division, equivalent to a province or region. It serves as a major regional authority responsible for areas like economic development, transportation, education, and healthcare, and it coordinates the activities of lower administrative units like powiats and gminas. Each województwo is governed by a regional assembly and a voivode (governor) appointed by the central government."
  kraj_government_reform:0 "Kraj Reform"
  kraj_government_reform_desc:0 "'Kraj' in the context of Poland refers to the entire nation as the highest administrative and political unit. It encompasses all the województwa (provinces), which together form the country of Poland. As a sovereign state, the 'kraj' is governed by a central government, responsible for national policies, foreign affairs, defense, and overarching legislation that applies to all lower administrative levels."
+ monarchical_army_coup_reform:0 "Army Coup Reform"
+ republican_army_coup_reform:0 "Army Coup Reform"
+ familial_rule_reform:0 "Familial Rule"

@@ -81,3 +81,106 @@ silesian_autonomy_reform = {
 		factor = 1
 	}
 }
+
+monarchical_army_coup_reform = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				has_estate = estate_army
+				has_disaster = estate_army_disaster
+			}
+			have_had_reform = monarchical_army_coup_reform
+			have_had_reform = republican_army_coup_reform
+		}
+
+	}
+	trigger = {
+		OR = {
+			OR = {
+				have_had_reform = monarchical_army_coup_reform
+				have_had_reform = republican_army_coup_reform
+				has_disaster = estate_army_disaster
+			}
+
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = monarchical_army_coup_reform
+			}
+			has_unlocked_government_reform = { government_reform = monarchical_army_coup_reform }
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	
+	modifiers = {
+		war_exhaustion = -0.02
+		monthly_militarized_society = 0.05
+		global_autonomy = -0.075
+		republican_tradition = -0.5
+		max_absolutism = 30
+		governing_capacity_modifier = -0.5
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			prussian_militarization_mechanic_3
+		}
+	}
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		generals_become_rulers = yes
+		force_general_leader = yes
+	}
+	
+	has_term_election = no
+}
+
+familial_rule_reform = {
+	icon = "russian_principality"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				has_estate = estate_families
+				has_disaster = estate_families_disaster
+			}
+			have_had_reform = familial_rule_reform
+		}
+
+	}
+	trigger = {
+		OR = {
+			OR = {
+				have_had_reform = familial_rule_reform
+				has_disaster = estate_families_disaster
+			}
+
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = familial_rule_reform
+			}
+			has_unlocked_government_reform = { government_reform = familial_rule_reform }
+		}
+	}
+	fixed_rank = 1
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	maintain_dynasty = yes
+
+	custom_attributes = {
+		has_harem_events = yes
+		has_harem = yes
+	}
+
+	modifiers = {
+		global_unrest = -1
+		global_regiment_cost = -0.05
+		governing_capacity = 100
+	}
+}
+
