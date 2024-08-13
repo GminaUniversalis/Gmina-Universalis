@@ -36,6 +36,7 @@ replace_path="common/government_reforms"
 replace_path="history/provinces"
 replace_path="history/countries"
 replace_path="history/wars"
+replace_path="history/advisors"
 
 replace_path="gfx/loadingscreens"
 replace_path="gfx/flags"

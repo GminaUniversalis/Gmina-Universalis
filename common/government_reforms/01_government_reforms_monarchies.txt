@@ -399,7 +399,7 @@ grant_nobles_electorate_reform = {
 		NOT = { has_reform = celestial_empire }
 	}
 	modifiers = {
-		#nobles_loyalty_modifier = 0.1
+		#
 		#maratha_loyalty_modifier = 0.1
 		#rajput_loyalty_modifier = 0.1
 		no_stability_loss_on_monarch_death = yes
@@ -779,116 +779,7 @@ representation_of_the_crown_reform = {
 
 #Tier 4
 
-strengthen_clergy_reform = {
-	icon = "church"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-		has_no_religion_specific_government_available = yes	#This way modders don't have to change this reform explicitly
-	}
-	modifiers = {
-		#church_influence_modifier = 0.1
-		church_loyalty_modifier = 0.1
-		war_exhaustion = -0.03
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-curtail_clergy_power_reform = {
-	icon = "monks"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		adm_tech_cost_modifier = -0.1
-		religious_unity = 0.1
-		#church_influence_modifier = -0.1
-	}
-	custom_attributes = {
-		seizing_land_no_rebels_from_estate_church = yes
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-secure_clergy_power_reform = {
-	icon = "warrior_monks_reform"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		#church_influence_modifier = 0.05
-	}
-	effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_tax_building_trigger = yes
-				}
-				add_province_modifier = {
-					name = gov_expanded_temple_rights_mod
-					duration = -1
-				}
-			}
-		}
-	}
-	post_removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_modifier = gov_expanded_temple_rights_mod
-				}
-				remove_province_modifier = gov_expanded_temple_rights_mod
-			}
-		}
-	}
-	custom_attributes = {
-		temples_modifier = yes
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-maintain_clergy_balance_of_power_reform = {
-	icon = "consolidate_power_in_cities_reform"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		all_estate_loyalty_equilibrium = 0.05
-		diplomats = 1
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
+#Tier 5
 
 #Tier 6
 
@@ -1129,7 +1020,7 @@ clergy_in_administration_reform = {
 	modifiers = {
 		free_adm_policy = 1
 	
-		church_loyalty_modifier = 0.05
+
 		tolerance_own = 1
 	}
 	ai = {
@@ -1182,7 +1073,7 @@ meritocratic_focus_reform = {
 	modifiers = {
 		yearly_corruption = -0.1
 		advisor_cost = -0.1
-		burghers_loyalty_modifier = 0.05
+
 	}
 	ai = {
 		factor = 1
