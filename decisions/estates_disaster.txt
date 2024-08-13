@@ -17,15 +17,16 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+			add_republican_tradition = -25
+			add_legitimacy = -50
+			add_meritocracy = -50
+			add_horde_unity = -50
+			add_devotion = -50
 			clr_country_flag = estate_miners_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_scientists = {
@@ -46,15 +47,13 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+			change_innovativeness = -25
+			change_government_reform_progress = -100
 			clr_country_flag = estate_scientists_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_investors = {
@@ -75,15 +74,17 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+			add_mercantilism = -25
+			add_loan = {
+				interest_modifier = -0.5
+				fixed_interest = 10
+				duration = 3650
+			}
 			clr_country_flag = estate_investors_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_farmers = {
@@ -104,15 +105,12 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+
 			clr_country_flag = estate_farmers_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_retirees = {
@@ -133,15 +131,12 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+
 			clr_country_flag = estate_retirees_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_banks = {
@@ -162,15 +157,12 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+
 			clr_country_flag = estate_banks_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_priests = {
@@ -191,15 +183,12 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+
 			clr_country_flag = estate_priests_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_families = {
@@ -220,15 +209,12 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+
 			clr_country_flag = estate_families_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_middle_class = {
@@ -249,15 +235,12 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+
 			clr_country_flag = estate_middle_class_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_ub = {
@@ -278,15 +261,12 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+
 			clr_country_flag = estate_ub_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	curtail_estate_army = {
@@ -306,22 +286,33 @@ country_decisions = {
 			}
 		}
 		effect = {
-			remove_estate_privilege = estate_army_old_doctrine
-			remove_estate_privilege = estate_army_new_doctrine
-			remove_estate_privilege = estate_army_martial_law
-
-			set_estate_privilege = estate_army_underfunded_army
 			
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_country_flag = access_to_prussian_militarization_flag
+								has_country_flag = enable_third_mil_level_flag
+							}
+							
+						}
+					}
+					remove_estate_privilege = estate_army_old_doctrine
+					remove_estate_privilege = estate_army_new_doctrine
+					remove_estate_privilege = estate_army_martial_law
+		
+					set_estate_privilege = estate_army_underfunded_army
+				}
+			}
+
 			add_stability = -3
-			add_piety = -0.5
-			add_karma = -25
-			add_patriarch_authority = -0.25
-			add_fervor = -25
-			add_church_power = -100
+			add_prestige = -50
+
 			clr_country_flag = estate_army_in_power
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 }

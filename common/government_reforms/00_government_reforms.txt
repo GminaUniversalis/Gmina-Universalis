@@ -519,9 +519,9 @@ signoria = {
 	duration = 12
 	valid_for_new_country = yes
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		culture_group = latin
-	}
+	# nation_designer_trigger = {
+	# 	culture_group = latin
+	# }
 	nation_designer_cost = 0
 	republican_name = yes
 	royal_marriage = yes
@@ -1844,17 +1844,17 @@ celestial_empire_legacy = {
 	valid_for_nation_designer = no
 	allow_convert = no
 	start_territory_to_estates = 0.9
-	nation_designer_trigger = {
-		culture_group = east_asian
-		# technology_group = chinese
-		capital_scope = {
-			OR = {
-				region = north_china_region
-				region = xinan_region
-				region = south_china_region
-			}
-		}
-	}
+	# nation_designer_trigger = {
+	# 	culture_group = east_asian
+	# 	# technology_group = chinese
+	# 	capital_scope = {
+	# 		OR = {
+	# 			region = north_china_region
+	# 			region = xinan_region
+	# 			region = south_china_region
+	# 		}
+	# 	}
+	# }
 	factions = {
 		temples
 		enuchs
@@ -2010,11 +2010,11 @@ daimyo_legacy = {
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		# technology_group = chinese
-		capital_scope = { region = japan_region }
-	}
+	# nation_designer_trigger = {
+	# 	culture_group = japanese_g
+	# 	# technology_group = chinese
+	# 	capital_scope = { region = japan_region }
+	# }
 
     fixed_rank = 1
 	monarchy = yes
@@ -2084,12 +2084,12 @@ shogunate_legacy = {
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		# technology_group = chinese
-		capital_scope = { region = japan_region }
-		owns = 1020
-	}
+	# nation_designer_trigger = {
+	# 	culture_group = japanese_g
+	# 	# technology_group = chinese
+	# 	capital_scope = { region = japan_region }
+	# 	owns = 1020
+	# }
 
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
@@ -2126,11 +2126,11 @@ indep_daimyo_legacy = {
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		# technology_group = chinese
-		capital_scope = { region = japan_region }
-	}
+	# nation_designer_trigger = {
+	# 	culture_group = japanese_g
+	# 	# technology_group = chinese
+	# 	capital_scope = { region = japan_region }
+	# }
 
 	monarchy = yes
 	modifiers = {
@@ -2298,12 +2298,12 @@ veche_republic_legacy = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 
-	nation_designer_trigger = {
-		OR = {
-			culture_group = east_slavic
-			culture_group = slavic
-		}
-	}
+	# nation_designer_trigger = {
+	# 	OR = {
+	# 		culture_group = east_slavic
+	# 		culture_group = slavic
+	# 	}
+	# }
 
 	factions = {
 		mr_aristocrats
@@ -2412,13 +2412,13 @@ principality_legacy = {
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
-	nation_designer_trigger = {
-		OR = {
-			culture_group = east_slavic
-			culture_group = slavic
-		}
-		religion = orthodox
-	}
+	# nation_designer_trigger = {
+	# 	OR = {
+	# 		culture_group = east_slavic
+	# 		culture_group = slavic
+	# 	}
+	# 	religion = orthodox
+	# }
 
     fixed_rank = 1
 	modifiers = {
@@ -2452,13 +2452,13 @@ tsardom_legacy = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 
-	nation_designer_trigger = {
-		OR = {
-			culture_group = east_slavic
-			culture_group = slavic
-		}
-		religion = orthodox
-	}
+	# nation_designer_trigger = {
+	# 	OR = {
+	# 		culture_group = east_slavic
+	# 		culture_group = slavic
+	# 	}
+	# 	religion = orthodox
+	# }
 
     fixed_rank = 3
 	modifiers = {

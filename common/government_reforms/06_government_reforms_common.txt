@@ -1722,269 +1722,7 @@ legacy_of_the_safavid_reform = {
 }
 
 #Military Doctrines
-organized_military_staff_reform = {
-	icon = "organized_military_staff"
-	allow_normal_conversion = yes
-	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = organized_military_staff_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		reinforce_cost_modifier = -0.2
-		reinforce_speed = 0.25
-		global_supply_limit_modifier = 0.2
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
 
-military_engineering_reform = {
-	icon = "military_engineers"
-	allow_normal_conversion = yes
-	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = military_engineering_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		artillery_barrage_cost = -0.25
-		artillery_cost = -0.1
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-defensive_stance_reform = {
-	icon = "castle"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			NOT = { has_dlc = "Domination" }
-			NOT = { culture_group = caucasian }
-			NOT = { primary_culture = georgian_new }
-		}
-	}
-	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = defensive_stance_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-		NOT = { is_subject_of_type = march }
-		NOT = { is_subject_of_type = client_march }
-	}
-	modifiers = {
-		defensiveness = 0.15
-		garrison_size = 0.2
-		max_hostile_attrition = 1
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-sustained_discipline_reform = {
-	icon = "line_infantry"
-	allow_normal_conversion = yes
-	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = sustained_discipline_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		land_attrition = -0.15
-		drill_decay_modifier = -0.33
-		drill_gain_modifier = 0.33
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-cavalry_warfare_reform = {
-	icon = "cavalry"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_unlocked_government_reform = { government_reform = legacy_of_the_seljuk_reform } }
-	}
-	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = cavalry_warfare_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		cav_to_inf_ratio = 0.1
-		cavalry_cost = -0.1
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-amphibious_specialization_reform = {
-	icon = "marine"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			NOT = { has_dlc = "Domination" }
-			AND = { 
-				NOT = { primary_culture = english }
-				NOT = { primary_culture = anglois }
-			}
-		}
-	}
-	trigger = {
-		num_of_ports = 1
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = amphibious_specialization_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		regiment_disembark_speed = 0.25
-		transport_attrition = -0.25
-		allowed_marine_fraction = 0.1
-	}
-	effect = {
-		hidden_effect = {
-			add_country_modifier = {
-				name = amphibious_specialization_reform_modifier
-				duration = -1
-				hidden = yes
-			}
-		}
-	}
-	removed_effect = {
-		hidden_effect = {
-			remove_country_modifier = amphibious_specialization_reform_modifier
-		}
-	}
-	conditional = {
-		allow = {
-			OR = {
-				has_dlc = "Domination"
-				has_dlc = "Golden Century"
-				has_dlc = "Rule Britannia"
-				has_dlc = "Lions of the North"
-			}
-		}
-		custom_attributes = {
-			marine_buff = yes	#Marines -20% Manpower Usage
-		}
-	}
-	
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { max_sailors = 50000 }
-		}
-	}
-}
-
-mercenary_leadership_reform = {
-	icon = "war_economy"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			NOT = { has_dlc = "Domination" }
-			NOT = { full_idea_group = mercenary_ideas }
-			NOT = { primary_culture = swiss }
-		}
-	}
-	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = mercenary_leadership_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		mercenary_cost = -0.1
-		possible_condottieri = 0.5
-	}
-	
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				has_global_modifier_value = {
-					which = mercenary_discipline
-					value = 0.05
-				}
-			}
-		}
-	}
-}
-
-doppelsoldner_reform = {
-	icon = "mercenaries"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		NOT = { primary_culture = swiss }
-	}
-	trigger = {
-		full_idea_group = mercenary_ideas
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = doppelsoldner_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		mercenary_cost = -0.15
-		possible_condottieri = 0.5
-		merc_leader_army_tradition = 0.25
-	}
-	conditional = {
-		allow = { has_dlc = "Domination" }
-		government_abilities = {
-			hessian_militarization_mechanic
-		}
-	}
-	custom_attributes = {
-		mercs_do_not_cost_army_professionalism = yes
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
 
 maritime_military_reform = {
 	icon = "war_ship"
@@ -3283,35 +3021,7 @@ royal_marines_reform = {
 	}
 }
 
-professional_navy_reform = {
-	icon = "war_ship"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		has_unlocked_government_reform = { government_reform = professional_navy_reform }
-	}
-	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = professional_navy_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		navy_tradition_decay = -0.01
-		max_flagships = 2
-		siege_blockade_progress = 2
-		naval_morale = 0.1
-		sailor_maintenance_modifer = -0.1
-		global_sailors_modifier = 0.25
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
+
 
 #Scotish
 manrent_reform = {
@@ -3702,254 +3412,6 @@ new_order_regiments_reform = {
 
 #Economical Matters
 
-empower_the_burghers_reform = {
-	icon = "prussian_monarchy_2"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		global_trade_power = 0.05
-		trade_efficiency = 0.05
-		burghers_loyalty_modifier = 0.05
-		#burghers_influence_modifier = 0.1
-		#vaisyas_loyalty_modifier = 0.05
-		#vaisyas_influence_modifier = 0.1
-		#jains_loyalty_modifier = 0.05
-		#jains_influence_modifier = 0.1
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-curtail_the_burghers_reform = {
-	icon = "assembly_hall"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		trade_company_governing_cost = -0.1
-		trade_steering = 0.15
-		#burghers_influence_modifier = -0.1
-	}
-	custom_attributes = {
-		seizing_land_no_rebels_from_estate_burghers = yes
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-reestablish_the_burgeoisie_reform = {
-	icon = "dutch_republic"
-	allow_normal_conversion = yes
-	potential = {
-		is_revolutionary = yes
-		has_dlc = "Emperor"
-	}
-	modifiers = {
-		global_trade_goods_size_modifier = 0.1
-		max_revolutionary_zeal = -10
-	}
-	custom_attributes = {
-		enables_estate_burghers = yes
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-new_world_exploitation_reform = {
-	icon = "compass"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-			NOT = { colonial_region = colonial_australia }
-		}
-	}
-	trigger = {
-		OR = {
-			full_idea_group = expansion_ideas
-			full_idea_group = exploration_ideas
-		}
-		if = {
-			limit = {
-				is_revolutionary = yes
-				has_dlc = "Emperor"
-				has_government_attribute = enables_estate_burghers
-			}
-			can_swap_out_of_estate_granting_reform = {
-				estate = estate_burghers
-			}
-		}
-	}
-	modifiers = {
-		colonists = 1 
-	}
-	custom_attributes = {
-		extra_trade_goods_for_colonial_subjects = yes
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-mercantilistic_approach_reform = {
-	icon = "paper_with_seal"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-	}
-	trigger = {
-		if = {
-			limit = {
-				is_revolutionary = yes
-				has_dlc = "Emperor"
-				has_government_attribute = enables_estate_burghers
-			}
-			can_swap_out_of_estate_granting_reform = {
-				estate = estate_burghers
-			}
-		}
-	}
-	modifiers = {
-		mercantilism_cost = -0.1
-		global_own_trade_power = 0.15
-		placed_merchant_power = 5
-	}
-	custom_attributes = {
-		no_mercantilism_loss_from_privilege = yes
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-free_trade_reform = {
-	icon = "merchant"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-	}
-	trigger = {
-		if = {
-			limit = {
-				is_revolutionary = yes
-				has_dlc = "Emperor"
-				has_government_attribute = enables_estate_burghers
-			}
-			can_swap_out_of_estate_granting_reform = {
-				estate = estate_burghers
-			}
-		}
-	}
-	modifiers = {
-		global_institution_spread = 0.25
-		global_foreign_trade_power = 0.2
-	}
-	custom_attributes = {
-		monarch_power_on_institutions = yes
-	}
-	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
-		custom_attributes = {
-			free_improve_inland_routes = yes
-		}
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-lockean_proviso_reform = {
-	icon = "paper_money_map"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-	}
-	trigger = {
-		OR = { 
-			full_idea_group = economic_ideas
-			full_idea_group = infrastructure_ideas 
-		}
-		if = {
-			limit = {
-				is_revolutionary = yes
-				has_dlc = "Emperor"
-				has_government_attribute = enables_estate_burghers
-			}
-			can_swap_out_of_estate_granting_reform = {
-				estate = estate_burghers
-			}
-		}
-	}
-	modifiers = {
-		development_cost = -0.05
-		global_trade_goods_size_modifier = 0.05
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-embrace_the_economic_theory_reform = {
-	icon = "dutch_flag"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-	}
-	trigger = {
-		if = {
-			limit = {
-				is_revolutionary = yes
-				has_dlc = "Emperor"
-				has_government_attribute = enables_estate_burghers
-			}
-			can_swap_out_of_estate_granting_reform = {
-				estate = estate_burghers
-			}
-		}
-	}
-	modifiers = {
-		interest = -0.5
-		inflation_reduction = 0.2
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-war_economy_reform = {
-	icon = "war_economy"
-	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-	}
-	trigger = {
-	}
-	modifiers = {
-		war_taxes_cost_modifier = -0.5
-		global_regiment_cost = -0.1
-		global_ship_cost = -0.1
-	}
-	ai = {
-		factor = 1
-	}
-}
 
 thalassocracy_reform = {
 	icon = "admiralty_reform"
@@ -4045,157 +3507,6 @@ laesio_enormis_reform = {
 		factor = 1
 	}
 }
-
-# jap_gokaido_reform = {
-# 	icon = "jap_gokaido_reform"
-# 	allow_normal_conversion = no
-# 	potential = {
-# 		culture_group = japanese_g
-# 	}
-# 	trigger = {
-# 		OR = {
-# 			have_had_reform = jap_gokaido_reform
-# 			has_reform = jap_gokaido_reform
-# 			mission_completed = jap_expand_gokaido
-# 		}
-# 	}
-# 	modifiers = {
-# 		merchants = 1 
-# 	}
-# 	effect = {
-# 		every_owned_province = {
-# 			limit = { 
-# 				region = japan_region 
-# 				NOT = { has_province_modifier = jap_gokaido_modifier }
-# 			}
-# 			add_province_modifier = {
-# 				name = jap_gokaido_modifier
-# 				duration = -1 
-# 				hidden = yes
-# 			}
-# 		}
-# 	}
-# 	removed_effect = {
-# 		every_owned_province = {
-# 			limit = { 
-# 				region = japan_region 
-# 				has_province_modifier = jap_gokaido_modifier
-# 			}	
-# 			remove_province_modifier = jap_gokaido_modifier
-# 		}
-# 	}
-# 	custom_attributes = { benefits_for_japan = yes } 
-# 	ai = {
-# 		factor = 100
-# 	}
-# }
-
-# reform_the_samurai_reform = {
-# 	icon = "reform_the_samurai_reform"
-# 	allow_normal_conversion = yes
-# 	potential = {
-# 		culture_group = japanese_g 
-# 		tag = JAP 
-# 		OR = {
-# 			have_had_reform = reform_the_samurai_reform
-# 			has_reform = reform_the_samurai_reform
-# 		}
-# 		NOT = { has_country_modifier = jap_domineering_naval_focus_modifier }
-# 		NOT = { has_country_modifier = jap_naval_academy_of_japan_modifier }
-# 	}
-# 	modifiers = {
-# 		drill_gain_modifier = 0.5
-# 		army_tradition = 0.5
-# 		allowed_samurai_fraction = 0.05
-# 	}
-# 	effect = {
-# 		custom_tooltip = jap_samurai_get_fire_damage_tt
-# 		hidden_effect = {
-# 			add_country_modifier = {
-# 				name = jap_reformed_samurai_modifier
-# 				duration = -1 
-# 				hidden = yes 
-# 			}
-# 		}
-# 	}
-# 	removed_effect = {
-# 		remove_country_modifier = jap_reformed_samurai_modifier
-# 	}
-# 	ai = {
-# 		factor = 1.5
-# 	}
-# }
-
-# tercios_reform = {
-# 	icon = "tercios_reform"
-# 	allow_normal_conversion = yes
-# 	potential = {
-# 		has_dlc = "Domination" 
-# 		OR = {
-# 			AND = {
-# 				is_or_was_tag = { tag = ARA }
-# 				OR = {
-# 					total_development = 500 
-# 					is_great_power = yes 
-# 				}
-# 			}
-# 			mission_completed = spa_tercios_system
-# 			custom_trigger_tooltip = {
-# 				tooltip = has_unlocked_this_reform_tt
-# 				has_country_flag = enable_tercios_reform_flag
-# 			}
-# 			has_reform = tercios_reform
-# 		}
-# 		NOT = { religion_group = muslim } 
-# 	}
-# 	modifiers = {
-# 		has_tercio = yes
-# 		allowed_tercio_fraction = 0.15
-# 		army_tradition = 0.5
-# 		yearly_army_professionalism = 0.0025
-# 	}
-	
-# 	ai = {
-# 		factor = 1
-# 	}
-# }
-
-# consulate_of_the_sea = {
-# 	icon = "consulate_of_the_sea"
-# 	allow_normal_conversion = yes
-# 	potential = {
-# 		has_dlc = "Domination" 
-# 		OR = {
-# 			tag = ARA
-# 			was_tag = ARA 
-# 			has_reform = consulate_of_the_sea 
-# 		}
-# 	}
-# 	trigger = {
-# 		OR = {
-# 			mission_completed = gc_ara_consultate_of_the_sea2
-# 			has_reform = consulate_of_the_sea 
-# 		}
-# 	}
-# 	modifiers = {
-# 		trade_efficiency = 0.1
-# 		global_trade_power = 0.1
-# 		burghers_loyalty_modifier = 0.05
-		
-# 	}
-	
-# 	conditional = {
-# 		allow = {
-# 			has_dlc = "Res Publica"
-# 			has_dlc = "Mare Nostrum"
-# 		}
-# 		can_use_trade_post = yes
-# 	}
-	
-# 	ai = {
-# 		factor = 10
-# 	}
-# }
 
 restore_the_master_of_offices_reform = {
 	icon = "restore_the_master_of_offices_reform"
@@ -4356,6 +3667,76 @@ turkoman_ottoman_institutions = {
 }
 
 #Court Ideas
+			was_tag = ARM
+		}
+		has_country_flag = arm_unlocked_nakharar
+	}
+	modifiers = {
+		nobles_privilege_slots = 1
+		#nobles_influence_modifier = 0.05
+		nobles_loyalty_modifier = 0.1
+	}
+	
+	custom_attributes = {
+		seizing_land_no_rebels_from_estate_nobles = yes
+	}
+}
+
+sparapet_office = {
+	icon = "sparapet_office"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			tag = MLK
+			tag = ARM
+			was_tag = ARM
+		}
+		has_country_flag = arm_unlocked_sparapet
+	}
+	modifiers = {
+		leader_siege = 1 
+		army_tradition = 0.5
+	}
+	
+	custom_attributes = {
+		recruiting_general_gives_army_tradition = yes
+	}
+}
+
+#Turkomen
+
+turkoman_ottoman_institutions = {
+	icon = "turkoman_ottoman_institutions"
+	allow_normal_conversion = yes
+	potential = {
+		has_country_flag = turkoman_unlock_ottoman_reform
+		religion_group = muslim
+	}
+	modifiers = {
+		years_of_nationalism = -10
+		governing_capacity = 100
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Cradle of Civilization"
+		}
+		has_pashas = yes
+		has_janissaries = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+#Court Ideas
 superiority_of_the_state_reform = {
 	icon = russian_queen	
 	potential = {
@@ -4377,301 +3758,7 @@ superiority_of_the_state_reform = {
 		factor = 1
 	}
 }
-
-#Persia
-divided_aristocracy_reform = {
-	icon = "feudal_theocracy"
-	potential = {
-		has_unlocked_government_reform = { government_reform = divided_aristocracy_reform }
-	}
-	modifiers = {
-		#nobles_influence_modifier = -0.15
-		#qizilbash_influence_modifier = -0.15
-		#ghulams_influence_modifier = -0.15
-		max_absolutism = 10
-	}
-	custom_attributes = {
-		can_sell_crownland_to_single_estates = yes
-		can_seize_crownland_of_single_estates = yes
-		seizing_land_no_rebels = yes
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-#Mamluks
-modernized_furusiyya_reform = {
-	icon = "modernized_furusiyya_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "King of Kings"
-		OR = {
-			have_had_reform = modernized_furusiyya_reform
-			has_unlocked_government_reform = { government_reform = modernized_furusiyya_reform }
-		}
-		
-	}
-	modifiers = {
-		allowed_mamluks_fraction = 0.05
-	}
-
-	custom_attributes = {
-		recruiting_generals_increases_nobles_loyalty = yes
-	}
-
-	effect = {
-		custom_tooltip = mams_disc_tt
-		hidden_effect = {
-			add_country_modifier = {
-				name = mam_disc_troops_modifier
-				duration = -1 
-				hidden = yes 
-			}
-		}
-	}
-
-	removed_effect = {
-		remove_country_modifier = mam_disc_troops_modifier
-	}
-
-	custom_attributes = {
-		advisors_generate_innovativeness = yes
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-karimi_stations_reform = {
-	icon = "karimi_stations_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "King of Kings"
-		OR = {
-			have_had_reform = karimi_stations_reform
-			has_unlocked_government_reform = { government_reform = karimi_stations_reform }
-		}
-		
-	}
-	modifiers = {
-		trade_steering = 0.2
-		global_foreign_trade_power = 0.25
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			has_dlc = "Mare Nostrum"
-		}
-		can_use_trade_post = yes
-	}
-	
-	ai = {
-		factor = 1
-	}
-}
-
-diwan_al_khass_reform = {
-	icon = "diwan_al_khass_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "King of Kings"
-		is_or_was_tag = { tag = MAM }
-		
-	}
-	modifiers = {
-		development_cost = -0.05
-		build_cost = -0.1
-	}
-	
-	ai = {
-		factor = 10
-	}
-}
-
-state_madrasas_reform = {
-	icon = "state_madrasas_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "King of Kings"
-		OR = {
-			have_had_reform = state_madrasas_reform
-			has_unlocked_government_reform = { government_reform = state_madrasas_reform }
-		}
-	}
-	modifiers = {
-		same_religion_advisor_cost = -0.2
-		yearly_government_power = 0.33
-	}
-
-	conditional = {
-		allow = { has_dlc = "Rule Britannia" }
-		custom_attributes = {
-			advisors_generate_innovativeness = yes
-		}
-	}
-	
-	ai = {
-		factor = 10
-	}
-}
-
-integrated_ottoman_officials = {
-	icon = "integrated_ottoman_officials"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "King of Kings"
-		OR = {
-			have_had_reform = integrated_ottoman_officials
-			has_unlocked_government_reform = { government_reform = integrated_ottoman_officials }
-		}
-	}
-	modifiers = {
-		global_autonomy = -0.05
-		tolerance_of_heathens_capacity = 1
-	}
-
-	conditional = {
-		allow = { 
-			has_dlc = "Cradle of Civilization"
-		}
-		has_pashas = yes
-		custom_attributes = { reveal_ruler_skills_for_mamluks = yes }
-	}
-
-	ai = {
-		factor = 10
-	}
-}
-
-russian_mercenary_guard_reform = {
-	icon = russian_mercenary_guard_reform
-	allow_normal_conversion = no
-	potential = {
-		has_country_flag = feo_unlock_russian_mercenary_guard_reform_flag
-	}
-
-	modifiers = {
-		has_streltsy = yes
-		allowed_streltsy_fraction = 0.1
-	}
-	effect = {
-		custom_tooltip = FEO_STRELTSY_BUFF_TT
-		hidden_effect = {
-			add_country_modifier = {
-				name = feo_elite_russian_guard
-				duration = -1 
-				hidden = yes 
-			}
-		}
-	}
-	removed_effect = {
-		remove_country_modifier = feo_elite_russian_guard 
-	}
-
-	ai = {
-		factor = 10
-	}
-}
-
-ayyubid_dynasty = {
-	icon = ayyubid_dynasty
-	allow_convert = no
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
-	legacy_equivalent = iqta_legacy
-	potential = {
-		religion_group = muslim
-		primary_culture = kurdish
-		OR = {
-			tag = HSN
-			was_tag = HSN
-		}
-	}
-	valid_for_nation_designer = no
-	nation_designer_cost = 0
-	modifiers = {
-		advisor_pool = 1
-		state_governing_cost = -0.1
-	}
-	custom_attributes = {
-		negate_unaccepted_levantine_culture = yes
-	}
-	effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					culture_group = turko_semitic
-					NOT = { has_owner_accepted_culture = yes }
-					NOT = { has_province_modifier = hsn_ayyubid_tolerance }
-				}
-				add_province_modifier = {
-					name = hsn_ayyubid_tolerance
-					duration = -1
-				}
-			}
-		}
-	}
-	removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = { has_province_modifier = hsn_ayyubid_tolerance }
-				remove_province_modifier = hsn_ayyubid_tolerance
-			}
-		}
-	}
-	post_removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = { has_province_modifier = hsn_ayyubid_tolerance }
-				remove_province_modifier = hsn_ayyubid_tolerance
-			}
-		}
-	}
-	conditional = {
-		allow = {
-			OR = {
-				has_dlc = "Cradle of Civilization"
-				has_dlc = "Winds of Change"
-			}
-		}
-		government_abilities = {
-			iqta_mechanic
-		}
-	}
-
-}
-
-ayyubid_high_command = {
-	icon = "modernized_furusiyya_reform"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			tag = HSN
-			was_tag = HSN
-		}
-	}
-	modifiers = {
-		max_general_shock = 2
-		general_cost = -0.1
-		free_land_leader_pool = 2
-	}
-	custom_attributes = {
-		army_tradition_for_generals = yes
-	}
-	trigger = {
-		custom_trigger_tooltip = {
-			tooltip = hsn_unlocked_reform_tt
-			has_unlocked_government_reform = { government_reform = ayyubid_high_command }
-		}
-	}
-}
-
-#Germany
-german_cultural_disunity_reform = {
-	icon = "german_cultural_disunity_reform"
+eform"
 	lock_level_when_selected = yes
 	block_cultural_union = yes
 	potential = {

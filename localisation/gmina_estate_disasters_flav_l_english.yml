@@ -28,8 +28,9 @@
  gmina_estate_disasters.5.a:0 "We are under martial rule now."
  gmina_estate_disasters.5.a.tt:0 "This will initiate the 'Coup d'État' disaster, increasing military spending and reducing civilian liberties."
 #Army end
- gmina_estate_disasters.6.t:0 "Return to Civilian Rule"
+ gmina_estate_disasters.6.t:0 "End of terror"
  gmina_estate_disasters.6.d:0 "After years of military rule, pressure from both international allies and internal protests has led to negotiations for a transition back to civilian governance. The generals have agreed to relinquish power, though the army's influence remains strong within the political landscape."
+ gmina_estate_disasters.6.d.2:0 "After years of unrecognized military rule, pressure from both international allies and internal protests has led to a compromise between current form of statehood and populace.\nFailure of previous democratic government in keeping peace had left our [Root.GovernmentName] scarred and wounded, it seems that there is no more room for previous regime in the hearts of our people.\nOur faith and lives are currently in hands of our generals and soldiers.\n\nWhere diplomacy failed, let the guns thunder."
  gmina_estate_disasters.6.a:0 "A delicate balance of power."
  gmina_estate_disasters.6.a.tt:0 "Ends the 'Coup d'État' disaster, restores some political freedoms but the military remains a powerful political actor."
 #Farmers start

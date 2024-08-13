@@ -242,282 +242,282 @@ country_event = {
 }
 
 # Settling the [steppe_province.GetName] Steppe
-country_event = {
-	id = russian_tsardom_events.3
-	title = russian_tsardom_events.3.t
-	desc = russian_tsardom_events.3.d
-	picture = PEASANTS_ON_STEPPES_eventPicture
-	goto = steppe_province
-	trigger = {
-		has_dlc = "Third Rome"
-		has_reform = tsardom
-		religion_group = christian
-		any_owned_province = {
-			has_terrain = steppe
-			NOT = { religion_group = christian }
-			NOT = { has_province_modifier = tolerated_tatar_communities }
-			NOT = { has_province_modifier = settling_russians_in_steppe }
-			NOT = { has_province_modifier = cossack_province }
-		}
-	}
+# country_event = {
+# 	id = russian_tsardom_events.3
+# 	title = russian_tsardom_events.3.t
+# 	desc = russian_tsardom_events.3.d
+# 	picture = PEASANTS_ON_STEPPES_eventPicture
+# 	goto = steppe_province
+# 	trigger = {
+# 		has_dlc = "Third Rome"
+# 		has_reform = tsardom
+# 		religion_group = christian
+# 		any_owned_province = {
+# 			has_terrain = steppe
+# 			NOT = { religion_group = christian }
+# 			NOT = { has_province_modifier = tolerated_tatar_communities }
+# 			NOT = { has_province_modifier = settling_russians_in_steppe }
+# 			NOT = { has_province_modifier = cossack_province }
+# 		}
+# 	}
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					has_terrain = steppe
-					NOT = { religion_group = christian }
-				}
-				save_event_target_as = steppe_province
-			}
-			random_owned_province = {
-				limit = {
-					has_terrain = steppe
-					culture_group = tartar
-				}
-				save_event_target_as = steppe_province
-			}
-			random_owned_province = {
-				limit = {
-					has_terrain = steppe
-					culture_group = tartar
-					religion_group = muslim
-				}
-				save_event_target_as = steppe_province
-			}
-			random_owned_province = {
-				limit = {
-					has_terrain = steppe
-					culture_group = tartar
-					religion_group = muslim
-					continent = europe
-				}
-				save_event_target_as = steppe_province
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_owned_province = {
+# 				limit = {
+# 					has_terrain = steppe
+# 					NOT = { religion_group = christian }
+# 				}
+# 				save_event_target_as = steppe_province
+# 			}
+# 			random_owned_province = {
+# 				limit = {
+# 					has_terrain = steppe
+# 					culture_group = tartar
+# 				}
+# 				save_event_target_as = steppe_province
+# 			}
+# 			random_owned_province = {
+# 				limit = {
+# 					has_terrain = steppe
+# 					culture_group = tartar
+# 					religion_group = muslim
+# 				}
+# 				save_event_target_as = steppe_province
+# 			}
+# 			random_owned_province = {
+# 				limit = {
+# 					has_terrain = steppe
+# 					culture_group = tartar
+# 					religion_group = muslim
+# 					continent = europe
+# 				}
+# 				save_event_target_as = steppe_province
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = russian_tsardom_events.3.a #
-		ai_chance = {
-			factor = 30
-		}
-		event_target:steppe_province = {
-			add_base_manpower = 1
-			add_province_modifier = {
-				name = "tolerated_tatar_communities"
-				duration = 10950
-			}
-		}
-		if = {
-			limit = { has_estate = estate_cossacks }
-			reduce_estate_cossacks_loyalty_effect = yes
-			take_estate_land_share_small = { estate = estate_cossacks }
-		}
-	}
-	option = {
-		name = russian_tsardom_events.3.b #
-		ai_chance = {
-			factor = 60
-		}
-		event_target:steppe_province = {
-			change_culture = owner
-			add_base_production = 1
-			add_province_modifier = {
-				name = "settling_russians_in_steppe"
-				duration = 10950
-			}
-		}
-		if = {
-			limit = { has_estate = estate_cossacks }
-			reduce_estate_cossacks_loyalty_effect = yes
-			take_estate_land_share_small = { estate = estate_cossacks }
-		}
-	}
-	option = {
-		name = russian_tsardom_events.3.c #
-		ai_chance = {
-			factor = 10
-		}
-		event_target:steppe_province = {
-			add_base_tax = 1
-			if = {
-				limit = {
-					OR = {
-						is_state = no
-						NOT = { owner = { has_estate = estate_cossacks } }
-					}
-				}
-				add_province_modifier = {
-					name = "cossack_province"
-					duration = 10950
-				}
-			}
-			else = {
-				give_estate_land_share_small = { estate = estate_cossacks }
-				add_estate_cossacks_loyalty_effect = yes
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = russian_tsardom_events.3.a #
+# 		ai_chance = {
+# 			factor = 30
+# 		}
+# 		event_target:steppe_province = {
+# 			add_base_manpower = 1
+# 			add_province_modifier = {
+# 				name = "tolerated_tatar_communities"
+# 				duration = 10950
+# 			}
+# 		}
+# 		if = {
+# 			limit = { has_estate = estate_cossacks }
+# 			reduce_estate_cossacks_loyalty_effect = yes
+# 			take_estate_land_share_small = { estate = estate_cossacks }
+# 		}
+# 	}
+# 	option = {
+# 		name = russian_tsardom_events.3.b #
+# 		ai_chance = {
+# 			factor = 60
+# 		}
+# 		event_target:steppe_province = {
+# 			change_culture = owner
+# 			add_base_production = 1
+# 			add_province_modifier = {
+# 				name = "settling_russians_in_steppe"
+# 				duration = 10950
+# 			}
+# 		}
+# 		if = {
+# 			limit = { has_estate = estate_cossacks }
+# 			reduce_estate_cossacks_loyalty_effect = yes
+# 			take_estate_land_share_small = { estate = estate_cossacks }
+# 		}
+# 	}
+# 	option = {
+# 		name = russian_tsardom_events.3.c #
+# 		ai_chance = {
+# 			factor = 10
+# 		}
+# 		event_target:steppe_province = {
+# 			add_base_tax = 1
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						is_state = no
+# 						NOT = { owner = { has_estate = estate_cossacks } }
+# 					}
+# 				}
+# 				add_province_modifier = {
+# 					name = "cossack_province"
+# 					duration = 10950
+# 				}
+# 			}
+# 			else = {
+# 				give_estate_land_share_small = { estate = estate_cossacks }
+# 				add_estate_cossacks_loyalty_effect = yes
+# 			}
+# 		}
+# 	}
+# }
 
 #The Gaps in the Abatis Line
-country_event = {
-	id = russian_tsardom_events.4
-	title = russian_tsardom_events.4.t
-	desc = russian_tsardom_events.4.d
-	picture = TRIBUTE_TO_TATARS_eventPicture
+# country_event = {
+# 	id = russian_tsardom_events.4
+# 	title = russian_tsardom_events.4.t
+# 	desc = russian_tsardom_events.4.d
+# 	picture = TRIBUTE_TO_TATARS_eventPicture
 
-	trigger = {
-		has_dlc = "Third Rome"
-		has_reform = tsardom
-		religion_group = christian
-		any_owned_province = {
-			has_influencing_fort = no
-			NOT = { has_province_modifier = tatar_raided_province_modifier }
-			NOT = {
-				any_neighbor_province = {
-					owned_by = ROOT
-					has_influencing_fort = yes
-				}
-			}
-			any_neighbor_province = {
-				has_terrain = steppe
-				owner = {
-					religion_group = muslim
-					NOT = { is_subject_of = ROOT }
-					NOT = { overlord_of = ROOT }
-					NOT = { alliance_with = ROOT }
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Third Rome"
+# 		has_reform = tsardom
+# 		religion_group = christian
+# 		any_owned_province = {
+# 			has_influencing_fort = no
+# 			NOT = { has_province_modifier = tatar_raided_province_modifier }
+# 			NOT = {
+# 				any_neighbor_province = {
+# 					owned_by = ROOT
+# 					has_influencing_fort = yes
+# 				}
+# 			}
+# 			any_neighbor_province = {
+# 				has_terrain = steppe
+# 				owner = {
+# 					religion_group = muslim
+# 					NOT = { is_subject_of = ROOT }
+# 					NOT = { overlord_of = ROOT }
+# 					NOT = { alliance_with = ROOT }
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					has_influencing_fort = no
-					NOT = { has_province_modifier = tatar_raided_province_modifier }
-					NOT = {
-						any_neighbor_province = {
-							owned_by = ROOT
-							has_influencing_fort = yes
-						}
-					}
-					any_neighbor_province = {
-						has_terrain = steppe
-						owner = {
-							religion_group = muslim
-							NOT = { is_subject_of = ROOT }
-							NOT = { overlord_of = ROOT }
-							NOT = { alliance_with = ROOT }
-						}
-					}
-				}
-				save_event_target_as = tatar_raided_province
-				random_neighbor_province = {
-					limit = {
-						has_terrain = steppe
-						owner = {
-							religion_group = muslim
-							NOT = { is_subject_of = ROOT }
-							NOT = { overlord_of = ROOT }
-							NOT = { alliance_with = ROOT }
-						}
-					}
-					owner = { save_event_target_as = tatar_raiders_from_country }
-				}
-				random_list = {
-					75 = { }
-					25 = { owner = { set_country_flag = succesful_raid } }
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_owned_province = {
+# 				limit = {
+# 					has_influencing_fort = no
+# 					NOT = { has_province_modifier = tatar_raided_province_modifier }
+# 					NOT = {
+# 						any_neighbor_province = {
+# 							owned_by = ROOT
+# 							has_influencing_fort = yes
+# 						}
+# 					}
+# 					any_neighbor_province = {
+# 						has_terrain = steppe
+# 						owner = {
+# 							religion_group = muslim
+# 							NOT = { is_subject_of = ROOT }
+# 							NOT = { overlord_of = ROOT }
+# 							NOT = { alliance_with = ROOT }
+# 						}
+# 					}
+# 				}
+# 				save_event_target_as = tatar_raided_province
+# 				random_neighbor_province = {
+# 					limit = {
+# 						has_terrain = steppe
+# 						owner = {
+# 							religion_group = muslim
+# 							NOT = { is_subject_of = ROOT }
+# 							NOT = { overlord_of = ROOT }
+# 							NOT = { alliance_with = ROOT }
+# 						}
+# 					}
+# 					owner = { save_event_target_as = tatar_raiders_from_country }
+# 				}
+# 				random_list = {
+# 					75 = { }
+# 					25 = { owner = { set_country_flag = succesful_raid } }
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = russian_tsardom_events.4.a #We must make the Tatars Pay!
-		add_casus_belli = {
-		   target = event_target:tatar_raiders_from_country
-		   type = cb_border_war
-		   months = 60
-		}
-		event_target:tatar_raided_province = {
-			area = {
-				limit = {
-					owned_by = ROOT
-					has_influencing_fort = no
-					NOT = { has_province_modifier = tatar_raided_province_modifier }
-					NOT = {
-						any_neighbor_province = {
-							owned_by = ROOT
-							has_influencing_fort = yes
-						}
-					}
-				}
-				add_devastation = 15
-				add_province_modifier = {
-					name = tatar_raided_province_modifier
-					duration = 3650
-				}
-				if = {
-					limit = {
-						owner = {
-							has_country_flag = succesful_raid
-						}
-					}
-					random_neighbor_province = {
-						limit = {
-							has_influencing_fort = no
-							owned_by = ROOT
-							NOT = { has_province_modifier = tatar_raided_province_modifier }
-							NOT = {
-								any_neighbor_province = {
-									owned_by = ROOT
-									has_influencing_fort = yes
-								}
-							}
-						}
-						area = {
-							limit = {
-								owned_by = ROOT
-								has_influencing_fort = no
-								NOT = { has_province_modifier = tatar_raided_province_modifier }
-								NOT = {
-									any_neighbor_province = {
-										owned_by = ROOT
-										has_influencing_fort = yes
-									}
-								}
-							}
-							add_devastation = 15
-							add_province_modifier = {
-								name = tatar_raided_province_modifier
-								duration = 3650
-							}
-						}
-					}
-					owner = {
-						clr_country_flag = succesful_raid
-					}
-				}
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = russian_tsardom_events.4.a #We must make the Tatars Pay!
+# 		add_casus_belli = {
+# 		   target = event_target:tatar_raiders_from_country
+# 		   type = cb_border_war
+# 		   months = 60
+# 		}
+# 		event_target:tatar_raided_province = {
+# 			area = {
+# 				limit = {
+# 					owned_by = ROOT
+# 					has_influencing_fort = no
+# 					NOT = { has_province_modifier = tatar_raided_province_modifier }
+# 					NOT = {
+# 						any_neighbor_province = {
+# 							owned_by = ROOT
+# 							has_influencing_fort = yes
+# 						}
+# 					}
+# 				}
+# 				add_devastation = 15
+# 				add_province_modifier = {
+# 					name = tatar_raided_province_modifier
+# 					duration = 3650
+# 				}
+# 				if = {
+# 					limit = {
+# 						owner = {
+# 							has_country_flag = succesful_raid
+# 						}
+# 					}
+# 					random_neighbor_province = {
+# 						limit = {
+# 							has_influencing_fort = no
+# 							owned_by = ROOT
+# 							NOT = { has_province_modifier = tatar_raided_province_modifier }
+# 							NOT = {
+# 								any_neighbor_province = {
+# 									owned_by = ROOT
+# 									has_influencing_fort = yes
+# 								}
+# 							}
+# 						}
+# 						area = {
+# 							limit = {
+# 								owned_by = ROOT
+# 								has_influencing_fort = no
+# 								NOT = { has_province_modifier = tatar_raided_province_modifier }
+# 								NOT = {
+# 									any_neighbor_province = {
+# 										owned_by = ROOT
+# 										has_influencing_fort = yes
+# 									}
+# 								}
+# 							}
+# 							add_devastation = 15
+# 							add_province_modifier = {
+# 								name = tatar_raided_province_modifier
+# 								duration = 3650
+# 							}
+# 						}
+# 					}
+# 					owner = {
+# 						clr_country_flag = succesful_raid
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
 
 # The Sobor of $YEAR$
@@ -788,123 +788,123 @@ country_event = {
 }
 
 # Foreign Officers
-country_event = {
-	id = russian_tsardom_events.9
-	title = russian_tsardom_events.9.t
-	desc = russian_tsardom_events.9.d
-	picture = WESTERN_TZAR_AND_PETERSBURG_eventPicture
+# country_event = {
+# 	id = russian_tsardom_events.9
+# 	title = russian_tsardom_events.9.t
+# 	desc = russian_tsardom_events.9.d
+# 	picture = WESTERN_TZAR_AND_PETERSBURG_eventPicture
 
-	trigger = {
-		has_dlc = "Third Rome"
-		has_reform = tsardom
-		any_neighbor_country = {
-			NOT = { culture_group = east_slavic }
-			NOT = { culture_group = slavic }
-			NOT = { religion = orthodox }
-			institution_difference = { who = root value = 1 }
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Third Rome"
+# 		has_reform = tsardom
+# 		any_neighbor_country = {
+# 			NOT = { culture_group = east_slavic }
+# 			NOT = { culture_group = slavic }
+# 			NOT = { religion = orthodox }
+# 			institution_difference = { who = root value = 1 }
+# 		}
+# 	}
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = { #Hire Them
-		name = russian_tsardom_events.9.a #
-		ai_chance = {
-			factor = 50
-		}
-		add_years_of_income = -0.1
-		add_army_tradition = 10
-		capital_scope = {
-			add_next_institution_embracement = 15
-		}
-	}
-	option = { 
-		name = russian_tsardom_events.9.b #We have no need of them
-		ai_chance = {
-			factor = 50
-		}
-		add_estate_nobles_loyalty_effect = yes
-		add_government_power = {
-			mechanic_type = russian_mechanic
-			power_type = russian_mil_power
-			value = 25
-		}
-	}
-}
+# 	option = { #Hire Them
+# 		name = russian_tsardom_events.9.a #
+# 		ai_chance = {
+# 			factor = 50
+# 		}
+# 		add_years_of_income = -0.1
+# 		add_army_tradition = 10
+# 		capital_scope = {
+# 			add_next_institution_embracement = 15
+# 		}
+# 	}
+# 	option = { 
+# 		name = russian_tsardom_events.9.b #We have no need of them
+# 		ai_chance = {
+# 			factor = 50
+# 		}
+# 		add_estate_nobles_loyalty_effect = yes
+# 		add_government_power = {
+# 			mechanic_type = russian_mechanic
+# 			power_type = russian_mil_power
+# 			value = 25
+# 		}
+# 	}
+# }
 
 
 # Christian Converts
-country_event = {
-	id = russian_tsardom_events.10
-	title = russian_tsardom_events.10.t
-	desc = russian_tsardom_events.10.d
-	picture = TRIBUTE_TO_TATARS_eventPicture
+# country_event = {
+# 	id = russian_tsardom_events.10
+# 	title = russian_tsardom_events.10.t
+# 	desc = russian_tsardom_events.10.d
+# 	picture = TRIBUTE_TO_TATARS_eventPicture
 
-	trigger = {
-		has_dlc = "Third Rome"
-		has_reform = tsardom
-		religion_group = christian
-		any_owned_province = {
-			NOT = { has_province_modifier = fugitive_christian_converts }
-			religion_group = christian
-			NOT = { culture_group = owner }
-			any_neighbor_province = {
-				NOT = { owned_by = ROOT }
-				NOT = { religion_group = christian }
-			}
-		}
-	}
+# 	trigger = {
+# 		has_dlc = "Third Rome"
+# 		has_reform = tsardom
+# 		religion_group = christian
+# 		any_owned_province = {
+# 			NOT = { has_province_modifier = fugitive_christian_converts }
+# 			religion_group = christian
+# 			NOT = { culture_group = owner }
+# 			any_neighbor_province = {
+# 				NOT = { owned_by = ROOT }
+# 				NOT = { religion_group = christian }
+# 			}
+# 		}
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					NOT = { has_province_modifier = fugitive_christian_converts }
-					religion_group = christian
-					NOT = { culture_group = owner }
-					any_neighbor_province = {
-						NOT = { owned_by = ROOT }
-						NOT = { religion_group = christian }
-					}
-				}
-				save_event_target_as = converts_moved_here
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_owned_province = {
+# 				limit = {
+# 					NOT = { has_province_modifier = fugitive_christian_converts }
+# 					religion_group = christian
+# 					NOT = { culture_group = owner }
+# 					any_neighbor_province = {
+# 						NOT = { owned_by = ROOT }
+# 						NOT = { religion_group = christian }
+# 					}
+# 				}
+# 				save_event_target_as = converts_moved_here
+# 			}
+# 		}
+# 	}
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = { 
-		name = russian_tsardom_events.10.a #We will welcome our new brothers in faith!
-		ai_chance = {
-			factor = 80
-		}
-		event_target:converts_moved_here = {
-			add_province_modifier = {
-				name = "fugitive_christian_converts"
-				duration = 3650
-			}
-		}
-		add_estate_church_loyalty_effect = yes
-	}
-	option = { 
-		name = russian_tsardom_events.10.b #Send them back to their old communities.
-		ai_chance = {
-			factor = 20
-		}
-		add_prestige = -5
-		reduce_estate_church_loyalty_effect = yes
-		add_estate_nobles_loyalty_effect = yes
-	}
-}
+# 	option = { 
+# 		name = russian_tsardom_events.10.a #We will welcome our new brothers in faith!
+# 		ai_chance = {
+# 			factor = 80
+# 		}
+# 		event_target:converts_moved_here = {
+# 			add_province_modifier = {
+# 				name = "fugitive_christian_converts"
+# 				duration = 3650
+# 			}
+# 		}
+# 		add_estate_church_loyalty_effect = yes
+# 	}
+# 	option = { 
+# 		name = russian_tsardom_events.10.b #Send them back to their old communities.
+# 		ai_chance = {
+# 			factor = 20
+# 		}
+# 		add_prestige = -5
+# 		reduce_estate_church_loyalty_effect = yes
+# 		add_estate_nobles_loyalty_effect = yes
+# 	}
+# }
 
 # Corrupt Governor
 country_event = {

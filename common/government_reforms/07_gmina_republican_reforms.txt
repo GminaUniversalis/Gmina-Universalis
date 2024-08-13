@@ -359,11 +359,12 @@ republican_army_coup_reform = {
 	
 	modifiers = {
 		war_exhaustion = -0.02
-		monthly_militarized_society = 0.05
+		monthly_prussian_militarized_society_3 = 0.05
 		global_autonomy = -0.075
 		republican_tradition = -0.5
 		max_absolutism = 30
 		governing_capacity_modifier = -0.5
+		army_influence_modifier = 0.15		
 	}
 	
 	conditional = {
@@ -377,8 +378,41 @@ republican_army_coup_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		generals_become_rulers = yes
-		force_general_leader = yes
+		#force_general_leader = yes
 	}
 	
 	has_term_election = no
+}
+
+capital_city_reform_republic = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	potential = {
+
+		is_emperor_of_china = yes
+		NOT = { has_global_flag = empire_of_china_dismantled }
+	}
+
+	#maintain_dynasty = yes
+	allow_force_tributary = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+
+	fixed_rank = 5
+
+	modifiers = {
+		prestige = 0.5
+		governing_capacity = 500
+	}
+	
+	ai = {
+		factor = 1000 # should always be picked if available
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
 }

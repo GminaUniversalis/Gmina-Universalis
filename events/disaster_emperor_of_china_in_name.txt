@@ -18,21 +18,21 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = had_empire_of_china_culture_disaster
-			random_owned_province = {
-				limit = {
-					NOT = { has_owner_culture = yes }
-					culture_group = east_asian
-				}
-				set_province_flag = revolt_by_separatists
-			}
-			random_owned_province = {
-				limit = {
-					NOT = { has_owner_culture = yes }
-					culture_group = east_asian
-					NOT = { has_province_flag = revolt_by_separatists }
-				}
-				set_province_flag = revolt_by_separatists
-			}
+			# random_owned_province = {
+			# 	limit = {
+			# 		NOT = { has_owner_culture = yes }
+			# 		culture_group = east_asian
+			# 	}
+			# 	set_province_flag = revolt_by_separatists
+			# }
+			# random_owned_province = {
+			# 	limit = {
+			# 		NOT = { has_owner_culture = yes }
+			# 		culture_group = east_asian
+			# 		NOT = { has_province_flag = revolt_by_separatists }
+			# 	}
+			# 	set_province_flag = revolt_by_separatists
+			# }
 		}
 	}
 	

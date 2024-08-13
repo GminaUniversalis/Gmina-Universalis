@@ -683,147 +683,147 @@ province_event = {
 }
 
 # The Call of the Hunt
-province_event = {
-	id = colonial.12
-	title = "colonial.EVTNAME12"
-	desc = "colonial.EVTDESC12"
-	picture = NATIVES_eventPicture
-	goto = ROOT
+# province_event = {
+# 	id = colonial.12
+# 	title = "colonial.EVTNAME12"
+# 	desc = "colonial.EVTDESC12"
+# 	picture = NATIVES_eventPicture
+# 	goto = ROOT
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-		any_neighbor_province = {
-			NOT = { trade_goods = fur }
-			owner = {
-				OR = {
-					culture_group = eskaleut
-					culture_group = central_algonquian
-					culture_group = eastern_algonquian
-					culture_group = iroquoian
-					culture_group = siouan
-					culture_group = muskogean
-					culture_group = sonoran
-				}
-				OR = {
-					government = tribal
-					government = native
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		any_neighbor_province = {
+# 			NOT = { trade_goods = fur }
+# 			owner = {
+# 				OR = {
+# 					culture_group = eskaleut
+# 					culture_group = central_algonquian
+# 					culture_group = eastern_algonquian
+# 					culture_group = iroquoian
+# 					culture_group = siouan
+# 					culture_group = muskogean
+# 					culture_group = sonoran
+# 				}
+# 				OR = {
+# 					government = tribal
+# 					government = native
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			random_neighbor_province = {
-				limit = {
-					NOT = { trade_goods = fur }
-					owner = {
-						OR = {
-							culture_group = eskaleut
-							culture_group = central_algonquian
-							culture_group = eastern_algonquian
-							culture_group = iroquoian
-							culture_group = siouan
-							culture_group = muskogean
-							culture_group = sonoran
-						}
-						OR = {
-							government = tribal
-							government = native
-						}
-					}
-				}
-				save_event_target_as = hunter_province_target
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_neighbor_province = {
+# 				limit = {
+# 					NOT = { trade_goods = fur }
+# 					owner = {
+# 						OR = {
+# 							culture_group = eskaleut
+# 							culture_group = central_algonquian
+# 							culture_group = eastern_algonquian
+# 							culture_group = iroquoian
+# 							culture_group = siouan
+# 							culture_group = muskogean
+# 							culture_group = sonoran
+# 						}
+# 						OR = {
+# 							government = tribal
+# 							government = native
+# 						}
+# 					}
+# 				}
+# 				save_event_target_as = hunter_province_target
+# 			}
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 	
-	option = {
-		name = "colonial.EVTOPTA12"
-		add_base_manpower = 2
-	}
-	option = {
-		name = "colonial.EVTOPTB12"
-		create_advisor = colonial_governor
-	}
-	option = {
-		name = "colonial.EVTOPTC12"
-		change_trade_goods = fur
-		trigger = {
-			NOT = {
-				trade_goods = fur
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = "colonial.EVTOPTA12"
+# 		add_base_manpower = 2
+# 	}
+# 	option = {
+# 		name = "colonial.EVTOPTB12"
+# 		create_advisor = colonial_governor
+# 	}
+# 	option = {
+# 		name = "colonial.EVTOPTC12"
+# 		change_trade_goods = fur
+# 		trigger = {
+# 			NOT = {
+# 				trade_goods = fur
+# 			}
+# 		}
+# 	}
+# }
 
 # Fur Trade Dwindles
-province_event = {
-	id = colonial.13
-	title = "colonial.EVTNAME13"
-	desc = "colonial.EVTDESC13"
-	picture = MERCHANTS_TALKING_eventPicture
-	goto = ROOT
+# province_event = {
+# 	id = colonial.13
+# 	title = "colonial.EVTNAME13"
+# 	desc = "colonial.EVTDESC13"
+# 	picture = MERCHANTS_TALKING_eventPicture
+# 	goto = ROOT
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-		trade_goods = fur
-		OR = {
-			NOT = { has_province_flag = received_trade_goods }
-			had_province_flag = { flag = received_trade_goods days = 3650 }
-		}
-		NOT = {
-			any_neighbor_province = {
-				OR = {
-					culture_group = eskaleut
-					culture_group = central_algonquian
-					culture_group = eastern_algonquian
-					culture_group = iroquoian
-					culture_group = siouan
-					culture_group = muskogean
-					culture_group = sonoran
-				}
-			}
-		}
-		NOT = { has_empty_adjacent_province = yes }
-		NOT = {
-			any_neighbor_province = {
-				owner = {
-					has_reform = steppe_horde
-				}
-				controller = {
-					has_reform = steppe_horde
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		trade_goods = fur
+# 		OR = {
+# 			NOT = { has_province_flag = received_trade_goods }
+# 			had_province_flag = { flag = received_trade_goods days = 3650 }
+# 		}
+# 		NOT = {
+# 			any_neighbor_province = {
+# 				OR = {
+# 					culture_group = eskaleut
+# 					culture_group = central_algonquian
+# 					culture_group = eastern_algonquian
+# 					culture_group = iroquoian
+# 					culture_group = siouan
+# 					culture_group = muskogean
+# 					culture_group = sonoran
+# 				}
+# 			}
+# 		}
+# 		NOT = { has_empty_adjacent_province = yes }
+# 		NOT = {
+# 			any_neighbor_province = {
+# 				owner = {
+# 					has_reform = steppe_horde
+# 				}
+# 				controller = {
+# 					has_reform = steppe_horde
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	immediate = {
-		hidden_effect = {
-			clr_province_flag = received_trade_goods
-			set_province_flag = received_trade_goods
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			clr_province_flag = received_trade_goods
+# 			set_province_flag = received_trade_goods
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 	
-	option = {
-		name = "colonial.EVTOPTA13"
-		change_trade_goods = naval_supplies
-	}
-	option = {
-		name = "colonial.EVTOPTC13"
-		change_trade_goods = gu_wheat
-	}
-}
+# 	option = {
+# 		name = "colonial.EVTOPTA13"
+# 		change_trade_goods = naval_supplies
+# 	}
+# 	option = {
+# 		name = "colonial.EVTOPTC13"
+# 		change_trade_goods = gu_wheat
+# 	}
+# }
 
 # Jesuit mission founded
 province_event = {
@@ -861,12 +861,12 @@ province_event = {
 				has_country_modifier = counter_reformation
 			}
 		}
-		modifier = {
-			factor = 1.75
-			owner = {
-				culture_group = iberian
-			}
-		}
+		# modifier = {
+		# 	factor = 1.75
+		# 	owner = {
+		# 		culture_group = iberian
+		# 	}
+		# }
 	}
 	
 	option = {
