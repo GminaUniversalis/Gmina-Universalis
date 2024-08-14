@@ -12,7 +12,7 @@ march = {
 	end_date = 1821.1.1
 }
 
-march = 
+march = {
 	first = G41
 	second = G28
 	start_date = 1444.1.1
