@@ -1110,13 +1110,13 @@ province_event = {
 		random_list = {
 			30 = {
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 2
 				}
 			}
 			20 = {
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 3
 				}
 			}

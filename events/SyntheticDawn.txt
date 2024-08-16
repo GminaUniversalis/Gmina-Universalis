@@ -9,27 +9,14 @@ country_event = {
 	
 	trigger = {
 		ai = no
-		NOT = { tag = SYN }
-		any_province = {
-			owned_by = SYN
-			has_discovered = ROOT
-		}
 		NOT = { has_country_flag = discovered_synthetics }
 	}
 	
 	mean_time_to_happen = {
 		months = 1
+		random = 6
 	}
 	option = {
 		name = "synthetic_dawn.1.a"
-		set_country_flag = discovered_synthetics
-		if = {
-			limit = {
-				NOT = {
-					has_global_flag = synthetics_discovered_global
-				}
-			}
-			set_global_flag = synthetics_discovered_global
-		}
 	}
 }

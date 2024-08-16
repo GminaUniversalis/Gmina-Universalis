@@ -854,7 +854,7 @@ country_event = {
 		has_dlc = "Third Rome"
 		OR = {
 			has_reform = principality
-			has_reform = veche_republic
+			has_reform = 
 			has_reform = tsardom
 		}
 		has_government_mechanic = russian_mechanic

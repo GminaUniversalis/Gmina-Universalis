@@ -4568,7 +4568,7 @@ country_event = {
 			chance = 50
 			random_owned_province = {
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 1
 				}
 			}

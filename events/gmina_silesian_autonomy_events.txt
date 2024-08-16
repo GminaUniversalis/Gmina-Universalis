@@ -51,6 +51,8 @@ country_event = {
 
 	immediate = {
 		define_ruler = {
+			min_age = 30
+			max_age = 50
 			change_adm = 1
 			change_dip = 1
 			change_mil = 1

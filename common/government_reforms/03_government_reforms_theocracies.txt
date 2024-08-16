@@ -360,29 +360,16 @@ loyal_nobility_reform = {
 	modifiers = {
 		free_leader_pool = 1
 		army_tradition = 0.25
-		#nobles_influence_modifier = 0.1
-		#maratha_exclusive_influence_modifier = 0.1
-		#rajput_exclusive_influence_modifier = 0.1
-
-		#maratha_exclusive_loyalty_modifier = 0.05
-		#rajput_exclusive_loyalty_modifier = 0.05
 	}
 }
 
 monastic_breweries_reform = {
 	potential = {
 		OR = {
-			religion = catholic
-			culture_group = gaelic
-			primary_culture = scottish
+			gu_wheat = 1
 		}
 	}
 	trigger = {
-		OR = {
-			religion = catholic
-			culture_group = gaelic
-			primary_culture = scottish
-		}
 		any_owned_province = {
 			OR = {
 				trade_goods = wine
@@ -441,15 +428,8 @@ monastic_breweries_reform = {
 warrior_monks_reform = {
 	potential = {
 		OR = {
-			religion_group = eastern
-			AND = {
-				OR = {
-					culture_group = japanese_g
-					primary_culture = ainu
-				}
-				capital_scope = {
-					region = podlasie_region
-				}
+			capital_scope = {
+				region = podlasie_region
 			}
 			have_had_reform = warrior_monks_reform
 		}
@@ -470,9 +450,7 @@ safeguard_holy_sites_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		church_loyalty_modifier = 0.1
-		#brahmins_hindu_loyalty_modifier = 0.1
-		#brahmins_other_loyalty_modifier = 0.1
-		#jains_loyalty_modifier = 0.1
+
 		defensiveness = 0.15
 	}
 }

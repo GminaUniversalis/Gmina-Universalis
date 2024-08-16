@@ -2487,7 +2487,7 @@ country_event = {
 				highest_supply_limit_in_area = yes
 			}
 			spawn_rebels = {
-				type = noble_rebels
+				type = army_rebels
 				size = 1
 			}
 		}
@@ -6248,7 +6248,7 @@ country_event = {
 			}
 		}
 		event_target:unruly_nobles_province = {
-			noble_rebels = 2
+			army_rebels = 2
 		}
 		reduce_estate_nobles_loyalty_effect = yes
 	}
@@ -7674,7 +7674,7 @@ country_event = {
 	
 	trigger = {
 		government = monarchy
-		NOT = { has_reform = celestial_empire }
+
 		legitimacy_or_horde_unity = 20
 		has_regency = no
 		is_lesser_in_union = no
@@ -8956,7 +8956,7 @@ country_event = {
 		}
 		event_target:rebel_province = {
 			spawn_large_scaled_rebels = {
-				type = noble_rebels
+				type = army_rebels
 				no_defined_leader = yes
 			}
 		}
@@ -8982,7 +8982,7 @@ country_event = {
 		is_at_war = yes
 		war_exhaustion = 5
 		government = monarchy
-		NOT = { has_reform = celestial_empire }
+
 		is_lesser_in_union = no
 		NOT = { legitimacy_or_horde_unity = 80 }
 		any_owned_province = {
@@ -11118,7 +11118,6 @@ country_event = {
 	}
 	option = {
 		name = "random_event.EVTOPTB5"
-		trigger = { NOT = { has_reform = celestial_empire } }
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -11640,42 +11639,6 @@ country_event = {
 		}
 	}
 }
-
-# The White Elephant
-# country_event = {
-# 	id = random_event.12
-# 	title = "random_event.EVTNAME12"
-# 	desc = "random_event.EVTDESC12"
-# 	picture = COURT_eventPicture
-	
-# 	is_triggered_only = yes
-	
-# 	trigger = {
-# 		OR = {
-# 			culture_group = southeastasian_group
-# 			culture_group = burman
-# 			culture_group = eastern_aryan
-# 			culture_group = hindusthani
-# 			culture_group = western_aryan
-# 			culture_group = dravidian
-# 			culture_group = central_indic
-# 		}
-# 		NOT = { primary_culture = tibetan }
-# 		NOT = { primary_culture = tibetan_new }
-# 		NOT = {
-# 			stability = 3
-# 		}
-# 	}
-	
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
-	
-# 	option = {
-# 		name = "random_event.EVTOPTA12"
-# 		add_stability_or_adm_power = yes
-# 	}
-# }
 
 # Profits in Mecca!
 country_event = {
@@ -13430,7 +13393,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA5063"		# Side with one family
 		event_target:province_in_question = {
-			noble_rebels = 1
+			army_rebels = 1
 		}
 	}
 	option = {

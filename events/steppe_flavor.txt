@@ -1173,7 +1173,7 @@ country_event = {
 		technology_group = nomad_group
 		NOT = { has_institution = feudalism }
 		NOT = { has_reform = steppe_horde }
-		NOT = { has_reform = celestial_empire }
+
 		NOT = { has_dlc = "Dharma" }
 		NOT = { has_dlc = "Emperor" }
 	}

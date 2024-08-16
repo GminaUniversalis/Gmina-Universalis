@@ -56,9 +56,9 @@ country_event = {
 		is_lesser_in_union = no
 		has_regency = no
 		government = monarchy
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
-		NOT = { has_reform = mamluk_government }
+
+
+
 		NOT = { has_government_attribute = has_harem_events }
 		any_owned_province = {
 			num_free_building_slots = 1
@@ -114,9 +114,9 @@ country_event = {
 		}
 		has_regency = no
 		government = monarchy
-		NOT = { has_reform = mamluk_government }
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
+
 		NOT = { has_government_attribute = has_harem_events }
 	}
 	
@@ -164,10 +164,10 @@ country_event = {
 			}
 		}
 		government = monarchy
-		NOT = { has_reform = mamluk_government }
+
 		heir_age = 4
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
 	}
 	
 	mean_time_to_happen = {
@@ -196,7 +196,7 @@ country_event = {
 	trigger = {
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
+
 		is_month = 3
 		NOT = { is_month = 6 }
 		has_heir = no
@@ -286,7 +286,7 @@ country_event = {
 		government = monarchy
 		has_regency = no
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
+
 		has_government_attribute = heir
 	}
 	
@@ -386,8 +386,8 @@ country_event = {
 		government = monarchy
 		has_regency = no
 		is_lesser_in_union = no
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
 		NOT = { has_country_flag = healthy_heir_diet }
 	}
 	
@@ -432,9 +432,9 @@ country_event = {
 		religion_group = christian
 		has_regency = no
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
+
 		has_government_attribute = heir
 	}
 	
@@ -480,10 +480,10 @@ country_event = {
 		has_heir = yes
 		heir_age = 15
 		is_lesser_in_union = no
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
+
 		NOT = {
 			is_year = 1450
 		}
@@ -534,8 +534,8 @@ country_event = {
 		has_heir = yes
 		heir_age = 15
 		is_lesser_in_union = no
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
 		NOT = { has_country_flag = no_more_hunting_for_heir }
 	}
 	mean_time_to_happen = {
@@ -583,9 +583,9 @@ country_event = {
 		heir_age = 15
 		is_lesser_in_union = no
 		government = monarchy
-		NOT = { has_reform = mamluk_government }
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
+
 	}
 	
 	mean_time_to_happen = {
@@ -616,9 +616,9 @@ country_event = {
 		NOT = { has_dlc = "Dharma" }
 		NOT = { has_dlc = "Emperor" }
 		is_free_or_tributary_trigger = yes
-		NOT = { has_reform = mamluk_government }
+
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = celestial_empire }
+
 		adm_tech = 20
 		adm_power = 200
 		has_factions = no
@@ -654,7 +654,7 @@ country_event = {
 		stability = 3
 		treasury = 100
 		government = monarchy
-		NOT = { has_reform = mamluk_government }
+
 		has_regency = no
 		is_lesser_in_union = no
 		any_known_country = {
@@ -715,8 +715,8 @@ country_event = {
 		government = monarchy
 		NOT = { legitimacy_or_horde_unity = 50 }
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = celestial_empire }
-		NOT = { has_reform = mamluk_government }
+
+
 		has_regency = yes
 		has_consort_regency = no
 		has_heir = yes
@@ -759,9 +759,9 @@ country_event = {
 			AND = {
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
+
 		is_lesser_in_union = no
 		has_heir = no
 		has_regency = no
@@ -1205,10 +1205,10 @@ country_event = {
 	trigger = {
 		religion_group = christian
 		government = monarchy
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
+
 		has_regency = no
 		is_lesser_in_union = no
 		num_of_royal_marriages = 4
@@ -1217,10 +1217,10 @@ country_event = {
 		any_country = {
 			religion_group = christian
 			government = monarchy
-			NOT = { has_reform = elective_monarchy }
-			NOT = { has_reform = polish_elective_monarchy }
+	
+	
 			NOT = { has_government_attribute = has_harem_events }
-			NOT = { has_reform = mamluk_government }
+	
 			marriage_with = ROOT
 			NOT = { dynasty = ROOT }
 			has_heir = no
@@ -1368,8 +1368,8 @@ province_event = {
 			has_regency = no
 			has_heir = yes
 			religion_group = christian
-			NOT = { has_reform = elective_monarchy }
-			NOT = { has_reform = polish_elective_monarchy }
+	
+	
 			NOT = { has_government_attribute = has_harem_events }
 			is_lesser_in_union = no
 			NOT = { has_country_flag = murdering_bastard }
@@ -1697,8 +1697,8 @@ country_event = {
 	
 	trigger = {
 		government = monarchy
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
 		has_heir = yes
 		is_heir_leader = yes
 		heir_age = 20
@@ -1766,9 +1766,9 @@ country_event = {
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
+
 		has_heir = no
 		is_female = no
 		has_regency = no
@@ -1823,9 +1823,9 @@ country_event = {
 		government = monarchy
 		religion_group = christian
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
+
 		is_lesser_in_union = no
 		has_government_attribute = heir
 	}
@@ -1918,9 +1918,9 @@ country_event = {
 		government = monarchy
 		NOT = { religion_group = muslim }
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
+
 		NOT = { has_reform = shogunate }
 		is_lesser_in_union = no
 		NOT = {
@@ -1980,11 +1980,11 @@ country_event = {
 		has_heir = no
 		ruler_age = 40
 		government = monarchy
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
+
+
 		NOT = { religion_group = muslim }
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
+
 		NOT = { has_reform = shogunate }
 		has_government_attribute = heir
 		is_lesser_in_union = no
@@ -2079,9 +2079,9 @@ country_event = {
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = elective_monarchy }
-		NOT = { has_reform = polish_elective_monarchy }
-		NOT = { has_reform = mamluk_government }
+
+
+
 		religion_group = christian
 		capital_scope = {
 			continent = europe
@@ -2090,8 +2090,8 @@ country_event = {
 			government = monarchy
 			religion_group = christian
 			NOT = { has_government_attribute = has_harem_events }
-			NOT = { has_reform = elective_monarchy }
-			NOT = { has_reform = polish_elective_monarchy }
+	
+	
 			has_regency = no
 			is_free_or_tributary_trigger = yes
 			num_of_cities = ROOT
@@ -2116,8 +2116,8 @@ country_event = {
 				limit = {
 					government = monarchy
 					NOT = { has_government_attribute = has_harem_events }
-					NOT = { has_reform = elective_monarchy }
-					NOT = { has_reform = polish_elective_monarchy }
+			
+			
 					has_regency = no
 					is_free_or_tributary_trigger = yes
 					num_of_cities = ROOT
@@ -2224,8 +2224,8 @@ country_event = {
 		has_heir = no
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_reform = mamluk_government }
-		NOT = { has_reform = elective_monarchy }
+
+
 		religion_group = christian
 		is_free_or_tributary_trigger = yes
 		has_consort = no
@@ -2236,7 +2236,7 @@ country_event = {
 		any_neighbor_country = {
 			government = monarchy
 			NOT = { has_government_attribute = has_harem_events }
-			NOT = { has_reform = elective_monarchy }
+	
 			religion_group = christian
 			has_heir = no
 			ruler_age = 16
@@ -2288,9 +2288,9 @@ country_event = {
 			limit = {
 				government = monarchy
 				NOT = { has_government_attribute = has_harem_events }
-				NOT = { has_reform = elective_monarchy }
-				NOT = { has_reform = polish_elective_monarchy }
-				NOT = { has_reform = mamluk_government }
+		
+		
+		
 				religion_group = christian
 				has_heir = no
 				ruler_age = 16

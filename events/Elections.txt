@@ -409,7 +409,6 @@ country_event = {
 		if = {
 			limit = { 
 				republic_with_female_rulers_trigger = yes
-				NOT = { has_reform = signoria_reform }
 			}
 			define_ruler = {
 				change_mil = -2
@@ -419,26 +418,6 @@ country_event = {
 				max_age = 50
 				name = "lastname"
 				random_gender = yes # Allows random gender for republics
-			}
-		}
-		else_if = {
-			limit = { 
-				republic_with_female_rulers_trigger = yes
-				has_reform = signoria_reform
-			}
-			define_ruler = {
-				min_age = 30
-				max_age = 50
-				name = "lastname"
-				random_gender = yes # Allows random gender for republics
-			}
-		}
-		else_if = {
-			limit = { has_reform = signoria_reform }
-			define_ruler = {
-				min_age = 30
-				max_age = 50
-				name = "lastname"
 			}
 		}
 		else = {
@@ -656,35 +635,11 @@ country_event = {
 		if = {
 			limit = { 
 				republic_with_female_rulers_trigger = yes
-				NOT = { has_reform = signoria_reform }
 			}
 			define_ruler = {
 				change_mil = -2
 				change_adm = -2
 				change_dip = -2
-				min_age = 30
-				max_age = 50
-				name = "lastname"
-				random_gender = yes # Allows random gender for republics
-			}
-		}
-		else_if = {
-			limit = { 
-				republic_with_female_rulers_trigger = yes
-				has_reform = signoria_reform
-			}
-			define_ruler = {
-				min_age = 30
-				max_age = 50
-				name = "lastname"
-				random_gender = yes # Allows random gender for republics
-			}
-		}
-		else_if = {
-			limit = { 
-				has_reform = signoria_reform
-			}
-			define_ruler = {
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -834,11 +789,6 @@ country_event = {
 	}
 	
 	desc = {
-		trigger = { has_reform = feuillant_reform }
-		desc = elections.720.de
-	}
-	
-	desc = {
 		trigger = { 
 			NOT = {
 				has_government_attribute = has_dutch_election
@@ -862,7 +812,6 @@ country_event = {
 		name = elections.720.a
 		trigger = { 
 			NOT = { has_reform = monastic_elections_reform }
-			NOT = { has_reform = feuillant_reform }
 		}
 		if = {
 			limit = {
@@ -889,30 +838,6 @@ country_event = {
 		}
 		change_statists_vs_orangists = -0.33
 	
-	}
-	
-	option = {
-		trigger = { has_reform = feuillant_reform }
-		name = elections.720.g
-		define_ruler = {
-		}
-		add_faction_influence = {
-			faction = rr_jacobins
-			influence = 20
-		}
-		change_statists_vs_orangists = -0.33
-	}
-	
-	option = {
-		trigger = { has_reform = feuillant_reform }
-		name = elections.720.h
-		define_ruler = {
-		}
-		add_faction_influence = {
-			faction = rr_girondists
-			influence = 20
-		}
-		change_statists_vs_orangists = -0.33
 	}
 	
 	option = {
@@ -952,36 +877,6 @@ country_event = {
 			} 
 		}
 		name = elections.720.c
-		# if = {
-		# 	limit = {
-		# 		has_reform = feuillant_reform
-		# 		tag = FRA
-		# 	}
-		# 	define_ruler = {
-		# 		dynasty = "Bonaparte"
-		# 	}
-		# }
-		if = {
-		 	limit = {
-				has_reform = feuillant_reform
-		 	}
-		 	define_ruler = {
-	 		}
-		 }
-		 else = {
-		 	define_ruler = {
-		 		dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
-			}
-		 }
-		if = {
-			limit = {
-				has_reform = feuillant_reform
-			}
-			add_faction_influence = {
-				faction = rr_royalists
-				influence = 20
-			}
-		}
 		change_statists_vs_orangists = 0.33
 	}
 	
@@ -1017,10 +912,6 @@ country_event = {
 		desc = elections.721.dc
 	}
 	
-	desc = {
-		trigger = { has_reform = feuillant_reform }
-		desc = elections.721.de
-	}
 	
 	desc = {
 		trigger = {
@@ -1046,7 +937,6 @@ country_event = {
 		name = elections.720.a
 		trigger = { 
 			NOT = { has_reform = monastic_elections_reform }
-			NOT = { has_reform = feuillant_reform }
 		}
 		if = {
 			limit = {
@@ -1073,30 +963,6 @@ country_event = {
 		}
 		change_statists_vs_orangists = -0.33
 	
-	}
-	
-	option = {
-		trigger = { has_reform = feuillant_reform }
-		name = elections.720.g
-		define_ruler = {
-		}
-		add_faction_influence = {
-			faction = rr_jacobins
-			influence = 20
-		}
-		change_statists_vs_orangists = -0.33
-	}
-	
-	option = {
-		trigger = { has_reform = feuillant_reform }
-		name = elections.720.h
-		define_ruler = {
-		}
-		add_faction_influence = {
-			faction = rr_girondists
-			influence = 20
-		}
-		change_statists_vs_orangists = -0.33
 	}
 	
 	option = {
@@ -1136,36 +1002,13 @@ country_event = {
 			} 
 		}
 		name = elections.720.c
-		# if = {
-		# 	limit = {
-		# 		has_reform = feuillant_reform
-		# 		tag = FRA
-		# 	}
-		# 	define_ruler = {
-		# 		dynasty = "Bonaparte"
-		# 	}
-		# }
-		if = {
-		 	limit = {
-		 		has_reform = feuillant_reform
-		 	}
-		 	define_ruler = {
-		 	}
-		}
+}
 		else = {
 		 	define_ruler = {
 				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
 			}
 		}
-		if = {
-			limit = {
-				has_reform = feuillant_reform
-			}
-			add_faction_influence = {
-				faction = rr_royalists
-				influence = 20
-			}
-		}
+
 		change_statists_vs_orangists = 0.33
 	}
 	
@@ -1600,7 +1443,6 @@ country_event = {
 		if = {
 			limit = { 
 				republic_with_female_rulers_trigger = yes
-				NOT = { has_reform = signoria_reform }
 			}
 			define_ruler = {
 				min_age = 30
@@ -1610,29 +1452,6 @@ country_event = {
 				change_dip = -1
 				name = "lastname"
 				random_gender = yes # Allows random gender for republics
-			}
-		}
-		else_if = {
-			limit = { 
-				republic_with_female_rulers_trigger = yes
-				has_reform = signoria_reform
-			}
-			define_ruler = {
-				min_age = 30
-				max_age = 50
-				name = "lastname"
-				random_gender = yes # Allows random gender for republics
-			}
-		}
-		else_if = {
-			limit = { 
-				NOT = { republic_with_female_rulers_trigger = yes }
-				has_reform = signoria_reform
-			}
-			define_ruler = {
-				min_age = 30
-				max_age = 50
-				name = "lastname"
 			}
 		}
 		else = {

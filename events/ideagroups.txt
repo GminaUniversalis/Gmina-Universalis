@@ -508,7 +508,7 @@ country_event = {
 		name = "EVTOPTB800A"
 		reduce_estate_nobles_loyalty_effect = yes
 		random_owned_province = {
-			noble_rebels = 1
+			army_rebels = 1
 		}
 	}
 }
@@ -687,7 +687,7 @@ country_event = {
 				culture = ROOT
 				NOT = { religion = ROOT }
 			}
-			noble_rebels = 1
+			army_rebels = 1
 		}
 	}
 }

@@ -227,11 +227,11 @@ country_event = { #Plot Continues
 			random_owned_province = {
 				limit = { controlled_by = ROOT } 
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 3
 				}
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 2
 				}
 			} 

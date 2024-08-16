@@ -7,12 +7,14 @@ country_event = { #Estate setup
 	picture = MARCHING_PEASANTS_eventPicture
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	#fire_only_once = yes
 
 	trigger = {
+		is_year = 1444
+		NOT = { is_year = 1445}
 		OR = {
 			ai = no
-			ai = yes
+			ai = yes	`
 		}
 	}
 
@@ -93,15 +95,18 @@ country_event = { #Estate setup
 
 				OR = {
 					AND = {
-						any_owned_province = {
-							farmlands = 5 
+						num_of_owned_provinces_with = {
+							value = 5
+							has_terrain = farmlands
 						}
 						NOT = { religion_group = communism_group }
 					}
 					AND = {
-						any_owned_province = {
-							grasslands = 10
-					   }
+						num_of_owned_provinces_with = {
+							value = 10
+
+							has_terrain = grasslands
+						}
 					   NOT = { religion_group = communism_group }
 					}
 	
@@ -317,7 +322,10 @@ country_event = {
 					NOT = { 
 						current_age = age_of_discovery 
 					} 
-					innovativness = 50
+					ROOT = {
+						innovativness = 50
+					}
+
 				}
 				set_estate_privilege = estate_scientist_polish_thought
 			}
@@ -385,13 +393,13 @@ country_event = {
 			if = {
 				limit = {
 					OR = {
-						any_owned_province = {
-							has_terrain = farmlands 
+						num_of_owned_provinces_with = {
 							value = 5
+							has_terrain = farmlands
 						}
-						any_owned_province = {
-							has_terrain = grasslands
+						num_of_owned_provinces_with = {
 							value = 10
+							has_terrain = grasslands
 						}
 			
 					}
@@ -619,8 +627,9 @@ country_event = {
 					NOT = {
 						religion_group = communism_group
 					}
-					set_estate_privilege = estate_army_new_doctrine
 				}
+				
+				set_estate_privilege = estate_army_new_doctrine
 			}
 			
 			set_country_flag = picked_army_definer

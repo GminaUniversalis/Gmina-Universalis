@@ -951,7 +951,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				size = 1
-				type = noble_rebels
+				type = army_rebels
 			}
 		}
 		if = {

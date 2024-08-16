@@ -70,7 +70,7 @@ country_event = {
 			limit = {
 				has_province_flag = elective_monarchy_rebellion1
 			}
-			noble_rebels = 3
+			army_rebels = 3
 		}
 		if = {
 			limit = { num_of_cities = 8 }
@@ -78,7 +78,7 @@ country_event = {
 				limit = {
 					has_province_flag = elective_monarchy_rebellion2
 				}
-				noble_rebels = 2
+				army_rebels = 2
 			}
 		}
 		if = {
@@ -87,7 +87,7 @@ country_event = {
 				limit = {
 					has_province_flag = elective_monarchy_rebellion3
 				}
-				noble_rebels = 1
+				army_rebels = 1
 			}
 		}
 	}

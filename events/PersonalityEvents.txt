@@ -1537,7 +1537,7 @@ country_event = {
 				NOT = { heir_mil = 5 }
 			}
 		}
-		NOT = { has_reform = elective_monarchy }
+
 	}
 	
 	is_triggered_only = yes

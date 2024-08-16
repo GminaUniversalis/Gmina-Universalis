@@ -1453,7 +1453,7 @@ country_event = {
 		OR = {
 			AND = {
 				government = monarchy
-				NOT = { has_reform = celestial_empire }
+		
 				NOT = { legitimacy_or_horde_unity = 80 }
 			}
 			AND = {

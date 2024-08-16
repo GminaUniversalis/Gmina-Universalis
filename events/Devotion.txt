@@ -2187,7 +2187,7 @@ province_event = {
 # 		name = devotion_events.209.b
 # 		capital_scope = {
 # 			spawn_rebels = {
-# 				type = noble_rebels
+# 				type = army_rebels
 # 				size = 2
 # 			}
 # 		}

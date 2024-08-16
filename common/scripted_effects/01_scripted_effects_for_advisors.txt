@@ -167,606 +167,188 @@ internal_advisor_generation_effect = { #Only used within generate_advisor_of_typ
 				discount = $discount$
 			}
 		}
-		# jewish_advisor = {
+		communism_pzpr_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = communism_pzpr
+			}
+		}
+		communism_sd_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = communism_sd
+			}
+		}
+		communism_zsl_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = communism_zsl
+			}
+		}
+		liberalism_ud_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = liberalism_ud
+			}
+		}
+		liberalism_kld_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = liberalism_kld
+			}
+		}
+		liberalism_uw_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = liberalism_uw
+			}
+		}
+		conservatism_kpn_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = conservatism_kpn
+			}
+		}
+		conservatism_zchn_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = conservatism_zchn
+			}
+		}
+		conservatism_pc_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = conservatism_pc
+			}
+		}
+		conservatism_aws_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = conservatism_aws
+			}
+		}
+		conservatism_psl_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = conservatism_psl
+			}
+		}
+		conservatism_lpr_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = conservatism_lpr
+			}
+		}
+		socialism_sld_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = socialism_sld
+			}
+		}
+		socialism_up_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = socialism_up
+			}
+		}
+		populism_samoobrona_advisor = {
+			define_advisor = {
+				type = $advisor_type_if_not_state$
+				skill = $skill$
+				discount = $discount$
+				religion = populism_samoobrona
+			}
+		}
+		# XXX_advisor = {
 		# 	define_advisor = {
 		# 		type = $advisor_type_if_not_state$
 		# 		skill = $skill$
 		# 		discount = $discount$
-		# 		religion = jewish
+		# 		religion = XXX
 		# 	}
 		# }
-		# protestant_or_coptic_advisor = {
-		# 	if = {
-		# 		limit = {
-		# 			OR = {
-		# 				religion = catholic
-		# 				religion = reformed
-		# 			}
-		# 			is_religion_enabled = protestant
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = protestant
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion = catholic
-		# 			NOT = { is_religion_enabled = protestant }
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = orthodox
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion = protestant
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = catholic
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion = orthodox
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = coptic
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion = coptic
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = jewish
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# reformed_or_orthodox_advisor = {
-		# 	if = {
-		# 		limit = {
-		# 			OR = {
-		# 				religion = catholic
-		# 				religion = protestant
-		# 			}
-		# 			is_religion_enabled = reformed
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = reformed
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion = catholic
-		# 			NOT = { is_religion_enabled = reformed }
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = orthodox
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion = reformed
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = catholic
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion = orthodox
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = coptic
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion = coptic
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = orthodox
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# heathen_advisor = {
-		# 	if = {
-		# 		limit = {
-		# 			religion_group = christian
-		# 			capital_scope = { continent = europe }
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = jewish
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = { religion_group = christian }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = sunni
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion_group = muslim
-		# 			capital_scope = {
-		# 				OR = {
-		# 					continent = europe
-		# 					region = horn_of_africa_region
-		# 					region = maghreb_region
-		# 				}
-		# 				#NOT = { region = caucasia_region }
-		# 				#NOT = { region = anatolia_region }
-		# 			}
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = catholic
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion_group = muslim
-		# 			capital_scope = {
-		# 				OR = {
-		# 					#region = caucasia_region
-		# 					#region = anatolia_region
-		# 				}
-		# 			}
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = coptic
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = { religion_group = muslim }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = zoroastrian
-		# 			culture = parsi
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion_group = eastern #Most likely won't come here but could.
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = animism
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = { 
-		# 			religion_group = dharmic
-		# 			capital_scope = {
-		# 					# OR = {
-		# 					# 	region = persia_region
-		# 					# 	region = khorasan_region
-		# 					# 	region = west_india_region
-		# 					# 	region = hindusthan_region
-		# 					# }
-		# 			}
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = shiite
-		# 			culture = persian
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			religion_group = dharmic #Most likely won't come here but could.
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 			religion = animism
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# zoroastrian_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = zoroastrian } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = zoroastrian
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = hinduism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# sikh_advisor = {
-		# 	if = {
-		# 		limit = { religion = sikhism }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = hinduism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = { is_religion_enabled = sikhism }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = sikhism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = { religion = hinduism }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = zoroastrian
-		# 			culture = parsi
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else_if = {
-		# 		limit = { religion_group = muslim }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = hinduism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# confucian_advisor = {
+		# XXX_advisor = {
 		# 	define_advisor = {
 		# 		type = $advisor_type_if_not_state$
 		# 		skill = $skill$
-		# 		religion = confucianism
 		# 		discount = $discount$
+		# 		religion = XXX
 		# 	}
 		# }
-		# shinto_advisor = {
+		# XXX_advisor = {
 		# 	define_advisor = {
 		# 		type = $advisor_type_if_not_state$
 		# 		skill = $skill$
-		# 		religion = shinto
 		# 		discount = $discount$
+		# 		religion = XXX
 		# 	}
 		# }
-		# theravada_advisor = {
+		# XXX_advisor = {
 		# 	define_advisor = {
 		# 		type = $advisor_type_if_not_state$
 		# 		skill = $skill$
-		# 		religion = buddhism
 		# 		discount = $discount$
+		# 		religion = XXX
 		# 	}
 		# }
-		# mahayana_advisor = {
+		# XXX_advisor = {
 		# 	define_advisor = {
 		# 		type = $advisor_type_if_not_state$
 		# 		skill = $skill$
-		# 		religion = mahayana
 		# 		discount = $discount$
+		# 		religion = XXX
 		# 	}
 		# }
-		# vajrayana_advisor = {
+		# XXX_advisor = {
 		# 	define_advisor = {
 		# 		type = $advisor_type_if_not_state$
 		# 		skill = $skill$
-		# 		religion = vajrayana
 		# 		discount = $discount$
+		# 		religion = XXX
 		# 	}
 		# }
-		# catholic_advisor = {
-		# 	if = {
-		# 		limit = {
-		# 			any_province = {
-		# 				religion = catholic
-		# 				has_discovered = ROOT
-		# 			}
-		# 		}
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = catholic
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			discount = $discount$
-		# 		}
+		# XXX_advisor = {
+		# 	define_advisor = {
+		# 		type = $advisor_type_if_not_state$
+		# 		skill = $skill$
+		# 		discount = $discount$
+		# 		religion = XXX
 		# 	}
 		# }
-		# hinduism_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = hinduism } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = hinduism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = sunni
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# ibadi_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = ibadi } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = ibadi
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = shiite
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# shia_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = shiite } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = shiite
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = ibadi
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# sunni_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = sunni } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = sunni
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = shiite
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# coptic_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = coptic } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = coptic
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = jewish
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# norse_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = norse_pagan_reformed } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = norse_pagan_reformed
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = totemism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# animism_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = animism } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = animism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = totemism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# totemism_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = totemism } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = totemism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = animism
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# mayan_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = mesoamerican_religion } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = mesoamerican_religion
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = nahuatl
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# nahuatl_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = nahuatl } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = nahuatl
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = mesoamerican_religion
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# }
-		# inca_advisor = {
-		# 	if = {
-		# 		limit = { NOT = { religion = inti } }
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = inti
-		# 			discount = $discount$
-		# 		}
-		# 	}
-		# 	else = {
-		# 		define_advisor = {
-		# 			type = $advisor_type_if_not_state$
-		# 			skill = $skill$
-		# 			religion = animism
-		# 			discount = $discount$
-		# 		}
+		# XXX_advisor = {
+		# 	define_advisor = {
+		# 		type = $advisor_type_if_not_state$
+		# 		skill = $skill$
+		# 		discount = $discount$
+		# 		religion = XXX
 		# 	}
 		# }
 	}

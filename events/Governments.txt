@@ -13,7 +13,7 @@ country_event = {
 		reform_level = 5
 		NOT = { has_reform = parliamentary_reform }
 		NOT = { has_reform = constitutional_monarchy }
-		NOT = { has_reform = celestial_empire }
+
 		has_country_modifier = separation_of_powers
 	}
 	
@@ -29,7 +29,7 @@ country_event = {
 			limit = {
 				is_core = ROOT
 			}
-			noble_rebels = 3
+			army_rebels = 3
 		}
 	}
 	

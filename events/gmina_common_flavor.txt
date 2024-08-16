@@ -9,7 +9,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		is_ai = no
+		ai = no
+
 		ROOT = {
 			any_owned_province = {
 				OR = {
