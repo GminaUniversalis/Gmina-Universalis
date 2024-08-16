@@ -1,7 +1,7 @@
 #Country Name: Ostroleka
 graphical_culture = westerngfx
 color = { 
-	128 128 192 
+	254 59 2
 }
 
 revolutionary_colors = { 0 2 0 }

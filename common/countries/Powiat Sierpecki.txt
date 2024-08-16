@@ -1,6 +1,6 @@
 #Country Name: Powiat Sierpecki
 graphical_culture = westerngfx
-color = { 76 151 203 }
+color = { 255 60 34 }
 revolutionary_colors = { 14 4 6 }
 
 historical_units = { 

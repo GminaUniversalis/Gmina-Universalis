@@ -1,6 +1,6 @@
 #Country Name: Powiat Aleksandrowski
 graphical_culture = westerngfx
-color = { 70 231 44 }
+color = { 255 1 1 }
 revolutionary_colors = { 11 9 11 }
 
 historical_units = { 

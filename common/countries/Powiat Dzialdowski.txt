@@ -1,6 +1,6 @@
 #Country Name: Powiat Dzialdowski
 graphical_culture = westerngfx
-color = { 248 118 18 }
+color = { 255 1 1 }
 revolutionary_colors = { 1 7 6 }
 
 historical_units = { 

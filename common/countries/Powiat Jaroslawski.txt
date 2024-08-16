@@ -1,6 +1,6 @@
 #Country Name: Powiat Jaroslawski
 graphical_culture = westerngfx
-color = { 15 48 120 }
+color = { 127 214 255 }
 revolutionary_colors = { 14 5 1 }
 
 historical_units = { 

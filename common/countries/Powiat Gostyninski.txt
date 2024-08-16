@@ -1,6 +1,6 @@
 #Country Name: Powiat Gostyninski
 graphical_culture = westerngfx
-color = { 83 84 186 }
+color = { 0 10 145 }
 revolutionary_colors = { 14 6 0 }
 
 historical_units = { 

@@ -1,6 +1,6 @@
 #Country Name: Powiat Miedzyrzecki
 graphical_culture = westerngfx
-color = { 251 56 131 }
+color = { 251 56 75 }
 revolutionary_colors = { 10 11 6 }
 
 historical_units = { 

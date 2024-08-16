@@ -1,6 +1,6 @@
 #Country Name: Powiat Suski
 graphical_culture = westerngfx
-color = { 103 238 35 }
+color = { 255 0 0 }
 revolutionary_colors = { 0 7 2 }
 
 historical_units = { 

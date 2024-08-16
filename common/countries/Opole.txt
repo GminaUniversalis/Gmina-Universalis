@@ -1,7 +1,7 @@
 #Country Name: Opole
 graphical_culture = westerngfx
 color = { 
-	39 255 15 
+	255 215 81 
 }
 revolutionary_colors = { 16 10 3 }
 

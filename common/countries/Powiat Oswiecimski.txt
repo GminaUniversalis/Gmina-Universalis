@@ -1,6 +1,6 @@
 #Country Name: Powiat Oswiecimski
 graphical_culture = westerngfx
-color = { 199 155 32 }
+color = { 70 70 70 }
 revolutionary_colors = { 6 0 8 }
 
 historical_units = { 

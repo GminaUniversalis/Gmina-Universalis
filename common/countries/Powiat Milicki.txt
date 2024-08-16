@@ -1,6 +1,6 @@
 #Country Name: Powiat Milicki
 graphical_culture = westerngfx
-color = { 38 232 125 }
+color = { 238 240 0}
 revolutionary_colors = { 11 13 16 }
 
 historical_units = { 

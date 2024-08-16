@@ -1,6 +1,6 @@
 #Country Name: Powiat Piaseczynski
 graphical_culture = westerngfx
-color = { 221 85 76 }
+color = { 255 1 51 }
 revolutionary_colors = { 13 15 8 }
 
 historical_units = { 

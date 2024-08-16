@@ -857,7 +857,7 @@ establish_religious_institution_for_pirates_reform = {
 		max_absolutism = -15
 	}
 	custom_attributes = {
-		enables_estate_church = yes
+		enables_estate_priests = yes
 	}
 	effect = {
 		change_estate_land_share = {

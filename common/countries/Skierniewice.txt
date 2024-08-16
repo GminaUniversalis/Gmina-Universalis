@@ -1,7 +1,7 @@
 #Country Name: Skierniewice
 graphical_culture = westerngfx
 color = { 
-	28 255 209 
+	16 109 224 
 }
 revolutionary_colors = { 0 2 0 }
 

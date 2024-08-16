@@ -1,6 +1,6 @@
 #Country Name: Powiat Janowski
 graphical_culture = westerngfx
-color = { 125 186 21 }
+color = { 125 255 21 }
 revolutionary_colors = { 15 13 2 }
 
 historical_units = { 

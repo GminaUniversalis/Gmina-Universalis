@@ -1,6 +1,6 @@
 #Country Name: Powiat Nowodworski Pomorskie
 graphical_culture = westerngfx
-color = { 79 199 198 }
+color = { 0 127 14 }
 revolutionary_colors = { 6 8 4 }
 
 historical_units = { 

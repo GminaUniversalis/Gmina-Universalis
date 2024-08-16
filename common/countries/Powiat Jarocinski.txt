@@ -1,6 +1,6 @@
 #Country Name: Powiat Jarocinski
 graphical_culture = westerngfx
-color = { 150 48 110 }
+color = { 44 165 255 }
 revolutionary_colors = { 11 6 7 }
 
 historical_units = { 

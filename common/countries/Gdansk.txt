@@ -1,7 +1,7 @@
 #Country Name: Gdansk
 graphical_culture = westerngfx
 color = { 
-	48 170 216 
+	255 1 1 
 }
 revolutionary_colors = { 3 3 8 }
 

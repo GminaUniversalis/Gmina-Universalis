@@ -1,7 +1,7 @@
 #Country Name: Powiat Bydgoski
 graphical_culture = westerngfx
 color = { 
-	128 64 64 
+	108 222 251
 }
 revolutionary_colors = { 0 10 15 }
 

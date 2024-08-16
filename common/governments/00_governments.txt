@@ -8,6 +8,7 @@ monarchy = {
 				familial_rule_reform
 				constitutional_monarchy_reform
 				capital_city_reform_monarchy
+				silesian_presidency_reform
 			}
 		}
 		hereditary_vs_nobility = { #2

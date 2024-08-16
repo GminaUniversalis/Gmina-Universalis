@@ -1,7 +1,7 @@
 #Country Name: Bytom
 graphical_culture = westerngfx
 color = { 
-	255 0 0 
+	255 255 0 
 }
 revolutionary_colors = { 16 14 8 }
 

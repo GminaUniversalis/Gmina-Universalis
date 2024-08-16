@@ -1,7 +1,7 @@
 #Country Name: Powiat Poznanski
 graphical_culture = westerngfx
 color = { 
-	62 255 13 
+	44 189 252
 }
 revolutionary_colors = { 11 16 9 }
 

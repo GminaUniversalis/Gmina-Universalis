@@ -1,7 +1,7 @@
 #Country Name: Grudziadz
 graphical_culture = westerngfx
 color = { 
-	151 151 255 
+	255 210 212
 }
 revolutionary_colors = { 0 2 0 }
 

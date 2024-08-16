@@ -1,7 +1,7 @@
 #Country Name: Powiat Szczecinecki
 
 graphical_culture = westerngfx
-color = { 130 1 130 }
+color = { 243 33 18 }
 revolutionary_colors = { 1 2 3 }
 historical_idea_groups = {
 }

@@ -326,24 +326,11 @@ europe = {
 	4873 4874 2643 4489 4485 4486 4487 4488 286 4653
 	2414 4554 4577 4518 4519 4514 4515 4490 2759 4517
 }
-asia = { 
-	#Middle east + central asia
-}
-africa = { 
-	#North Africa
-}
 north_america = { 
-	#Greenland
 	3887 3288 3888 3677 3721 3289 3013 3219 2009 3200
 	2007 2008 3238 3218 550 3290 3105 3419 
 }
-south_america = { 
-}
-oceania = { 
-	#Australia
-}
 island_check_provinces = { 
 }
-# Used for RNW
 new_world = { 
 }

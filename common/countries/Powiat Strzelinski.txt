@@ -1,6 +1,6 @@
 #Country Name: Powiat Strzelinski
 graphical_culture = westerngfx
-color = { 7 12 184 }
+color = { 255 1 1 }
 revolutionary_colors = { 13 7 14 }
 
 historical_units = { 

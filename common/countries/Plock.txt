@@ -1,7 +1,7 @@
 #Country Name: Plock
 graphical_culture = westerngfx
 color = { 
-	82 239 235 
+	255 14 106
 }
 revolutionary_colors = { 0 2 0 }
 

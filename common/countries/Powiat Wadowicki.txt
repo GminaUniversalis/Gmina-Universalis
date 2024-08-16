@@ -1,6 +1,6 @@
 #Country Name: Powiat Wadowicki
 graphical_culture = westerngfx
-color = { 237 213 231 }
+color = { 255 255 0 }
 revolutionary_colors = { 0 0 12 }
 
 historical_units = { 

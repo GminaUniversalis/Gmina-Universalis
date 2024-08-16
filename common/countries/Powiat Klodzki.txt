@@ -1,6 +1,6 @@
 #Country Name: Powiat Klodzki
 graphical_culture = westerngfx
-color = { 149 255 224 }
+color = { 255 255 0 }
 revolutionary_colors = { 15 14 8 }
 
 historical_units = { 

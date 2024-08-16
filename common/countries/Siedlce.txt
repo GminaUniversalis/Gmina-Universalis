@@ -1,7 +1,7 @@
 #Country Name: Siedlce
 graphical_culture = westerngfx
 color = { 
-	64 255 255 
+	253 167 150 
 }
 
 revolutionary_colors = { 0 2 0 }

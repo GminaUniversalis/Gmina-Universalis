@@ -1,6 +1,6 @@
 #Country Name: Powiat Wagrowiecki
 graphical_culture = westerngfx
-color = { 136 52 124 }
+color = { 255 1 1 }
 revolutionary_colors = { 7 5 14 }
 
 historical_units = { 

@@ -194,7 +194,6 @@ country_event = {
 			random_country = {
 				limit = {
 					has_reform = free_city 
-					religion = catholic
 					is_at_war = no
 				}
 				country_event = {

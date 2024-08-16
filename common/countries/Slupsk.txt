@@ -1,7 +1,7 @@
 #Country Name: Slupsk
 graphical_culture = westerngfx
 color = { 
-	170 0 85 
+	255 255 255 
 }
 revolutionary_colors = { 0 2 0 }
 

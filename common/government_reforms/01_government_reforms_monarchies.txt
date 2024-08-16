@@ -21,12 +21,14 @@ silesian_autonomy_reform = {
 		OR = {
 			is_playing_custom_nation = yes
 			have_had_reform = silesian_autonomy_reform
+			is_emperor = yes
+			is_part_of_hre = yes
 		}
-		
 	}
 
 	trigger = {
 		is_part_of_hre = yes
+		is_emperor = no
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
@@ -39,6 +41,84 @@ silesian_autonomy_reform = {
 		relation_with_same_culture_group = 50
 		enemy_core_creation = 0.25
 		reasons_to_elect = 100
+		no_stability_loss_on_monarch_death = yes
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	conditional = {
+		allow = {
+			or = {
+				has_dlc = "Res Publica"
+				has_dlc = "Winds of Change"
+			}
+		}
+
+		duration = 5
+		has_term_election = yes
+
+		states_general_mechanic = {
+
+			Unionists = {
+				global_unrest = 2
+				miners_loyalty_modifier = -0.1
+				legitimacy = -1
+				diplomatic_reputation = 2
+				development_cost_modifier = -0.1
+			}
+
+			Separationists = {
+				global_unrest = -2
+				miners_loyalty_modifier = 0.1
+				legitimacy = 1
+				reduced_stab_impacts = yes
+				ae_impact = -0.25
+			}
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+silesian_presidency_reform = {
+	icon = "peasant_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_playing_custom_nation = yes
+			have_had_reform = silesian_presidency_reform
+			is_emperor = yes
+		}
+	}
+
+	trigger = {
+		is_part_of_hre = yes
+		is_emperor = yes
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	is_eligible_for_hre_emperor = yes
+	queen = no
+	heir = no
+
+	modifiers = {
+		can_not_declare_war = yes
+		diplomatic_reputation = 2
+		improve_relation_modifier = 0.50
+		envoy_travel_time = -0.25
 		no_stability_loss_on_monarch_death = yes
 	}
 
@@ -1025,22 +1105,6 @@ clergy_in_administration_reform = {
 	}
 	ai = {
 		factor = 1
-		modifier = {
-			factor = 0.1
-			OR = {
-				AND = {
-					religion = hinduism
-					estate_influence = {
-						estate = estate_brahmins
-						influence = 90
-					}
-				}
-				estate_influence = {
-					estate = estate_church
-					influence = 90
-				}
-			}
-		}
 	}
 }
 

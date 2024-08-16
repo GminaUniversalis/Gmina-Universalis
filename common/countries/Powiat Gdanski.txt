@@ -1,6 +1,6 @@
 #Country Name: Powiat Gdanski
 graphical_culture = westerngfx
-color = { 185 68 136 }
+color = { 255 68 30 }
 revolutionary_colors = { 1 4 11 }
 
 historical_units = { 

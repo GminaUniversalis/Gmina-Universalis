@@ -1,6 +1,6 @@
-#Country Name: Powiat Bytom
+#Country Name: Bytom
 graphical_culture = westerngfx
-color = { 232 190 230 }
+color = { 237 209 77 }
 revolutionary_colors = { 9 5 1 }
 
 historical_units = { 

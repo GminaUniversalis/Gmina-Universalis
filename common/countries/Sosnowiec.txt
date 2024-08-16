@@ -1,7 +1,7 @@
 #Country Name: Sosnowiec
 graphical_culture = westerngfx
 color = { 
-	128 0 255 
+	141 247 242
 }
 revolutionary_colors = { 9 5 1 }
 

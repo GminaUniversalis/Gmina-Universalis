@@ -1,7 +1,7 @@
 #Country Name: Konin
 graphical_culture = westerngfx
 color = { 
-	98 254 22 
+	255 255 255 
 }
 revolutionary_colors = { 0 2 0 }
 

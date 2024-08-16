@@ -10,7 +10,6 @@ country_event = { #Estate setup
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 1444
 		OR = {
 			ai = no
 			ai = yes
@@ -203,6 +202,7 @@ country_event = { #Estate setup
 				}
 			}
 
+			
 			set_country_flag = estate_picked_miners
 			set_country_flag = has_estate_picked_flag
 		}
@@ -252,10 +252,10 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		#OR = {
-			#ai = no
+		OR = {
+			ai = no
 			ai = yes
-		#}
+		}
 	}
 
 	#Estates setup
@@ -490,7 +490,7 @@ country_event = {
 					religion_group = communism_group
 				}
 				#For later use / Dummy
-				set_estate_privilege = separation_from_state
+				set_estate_privilege = estate_priests_separation_from_state
 
 			}
 

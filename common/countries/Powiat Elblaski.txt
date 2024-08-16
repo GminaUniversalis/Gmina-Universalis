@@ -1,6 +1,6 @@
 #Country Name: Powiat Elblaski
 graphical_culture = westerngfx
-color = { 243 193 244 }
+color = { 255 255 1 }
 revolutionary_colors = { 12 4 12 }
 
 historical_units = { 

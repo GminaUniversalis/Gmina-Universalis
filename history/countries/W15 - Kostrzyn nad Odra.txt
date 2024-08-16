@@ -1,5 +1,5 @@
 government = republic
-1399.1.1 = {
+1.1.1 = {
 	monarch = {
 		name = "Collegium"
 		adm = 3
@@ -8,8 +8,8 @@ government = republic
 		regent = yes
 	}
 }
-add_government_reform = powiat_government_reform
-government_rank = 2
+add_government_reform = gmina_government_reform
+government_rank = 1
 technology_group = western
 religion = communism_pzpr
 capital = 808

@@ -1,7 +1,7 @@
 #Country Name: Powiat Gorowski
 
 graphical_culture = westerngfx
-color = { 182  119  105 }
+color = { 211  211  211 }
 revolutionary_colors = { 15 5 8 }
 historical_idea_groups = {
 }

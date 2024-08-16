@@ -1,6 +1,6 @@
 #Country Name: Powiat Bialski
 graphical_culture = westerngfx
-color = { 148 123 122 }
+color = { 255 30 30 }
 revolutionary_colors = { 12 13 7 }
 
 historical_units = { 

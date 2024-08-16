@@ -1,6 +1,6 @@
 #Country Name: Powiat Wielunski
 graphical_culture = westerngfx
-color = { 186 227 179 }
+color = { 255 61 51 }
 revolutionary_colors = { 7 7 9 }
 
 historical_units = { 

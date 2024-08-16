@@ -1,6 +1,6 @@
 #Country Name: Powiat Tczewski
 graphical_culture = westerngfx
-color = { 230 120 108 }
+color = { 0 250 255 }
 revolutionary_colors = { 16 6 3 }
 
 historical_units = { 

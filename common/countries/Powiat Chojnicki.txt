@@ -1,6 +1,6 @@
 #Country Name: Powiat Chojnicki
 graphical_culture = westerngfx
-color = { 232 47 133 }
+color = { 0 0 255 }
 revolutionary_colors = { 4 1 12 }
 
 historical_units = { 

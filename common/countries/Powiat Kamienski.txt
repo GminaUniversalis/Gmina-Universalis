@@ -1,6 +1,6 @@
 #Country Name: Powiat Kamienski
 graphical_culture = westerngfx
-color = { 62 73 121 }
+color = { 72, 173, 255 }
 revolutionary_colors = { 13 9 12 }
 
 historical_units = { 

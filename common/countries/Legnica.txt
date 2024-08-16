@@ -1,7 +1,7 @@
 #Country Name: Legnica
 graphical_culture = westerngfx
 color = { 
-	255 215 53 
+	29 87 255
 }
 revolutionary_colors = { 0 2 0 }
 

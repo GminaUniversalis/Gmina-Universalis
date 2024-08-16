@@ -1,6 +1,6 @@
 #Country Name: Powiat Bedzinski
 graphical_culture = westerngfx
-color = { 122 189 217 }
+color = { 255 255 255 }
 revolutionary_colors = { 3 6 12 }
 
 historical_units = { 

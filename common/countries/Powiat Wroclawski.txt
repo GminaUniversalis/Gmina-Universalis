@@ -1,6 +1,6 @@
 #Country Name: Powiat Wroclawski
 graphical_culture = westerngfx
-color = { 97  209  251 }
+color = { 238 241 65 }
 revolutionary_colors = { 6 0 10 }
 
 historical_units = { 

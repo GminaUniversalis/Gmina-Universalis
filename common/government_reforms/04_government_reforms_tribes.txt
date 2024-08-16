@@ -238,6 +238,7 @@ siberian_tribe = {
 		factor = 1
 	}
 }
+
 stateless_society = {
 	icon = "fist_in_air"
 	allow_normal_conversion = no

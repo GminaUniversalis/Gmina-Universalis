@@ -1,6 +1,6 @@
 #Country Name: Powiat Gnieznienski
 graphical_culture = westerngfx
-color = { 61 109 193 }
+color = { 255 255 255 }
 revolutionary_colors = { 10 2 13 }
 
 historical_units = { 

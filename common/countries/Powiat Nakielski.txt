@@ -1,6 +1,6 @@
 #Country Name: Powiat Nakielski
 graphical_culture = westerngfx
-color = { 169 134 53 }
+color = { 100 100 100 }
 revolutionary_colors = { 6 11 13 }
 
 historical_units = { 

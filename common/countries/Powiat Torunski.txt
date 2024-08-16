@@ -1,6 +1,6 @@
 #Country Name: Powiat Torunski
 graphical_culture = westerngfx
-color = { 164 75 128 }
+color = { 255 190 186 }
 revolutionary_colors = { 2 3 4 }
 
 historical_units = { 

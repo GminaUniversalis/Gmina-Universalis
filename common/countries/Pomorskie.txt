@@ -1,6 +1,6 @@
 graphical_culture = westerngfx
 color = { 
-	0 128 0 
+	100 128 100 
 }
 
 ship_names = { 

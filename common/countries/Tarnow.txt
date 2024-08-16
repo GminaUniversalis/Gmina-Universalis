@@ -1,7 +1,7 @@
 #Country Name: Tarnow
 graphical_culture = westerngfx
 color = { 
-	255 0 128 
+	29 75 154 
 }
 revolutionary_colors = { 14 4 8 }
 

@@ -1,7 +1,7 @@
 #Country Name: Wloclawek
 graphical_culture = westerngfx
 color = { 
-	216 208 63 
+	240 192 0 
 }
 
 revolutionary_colors = { 0 2 0 }

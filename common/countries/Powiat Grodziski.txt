@@ -1,6 +1,6 @@
 #Country Name: Powiat Grodziski
 graphical_culture = westerngfx
-color = { 27 221 59 }
+color = { 255 255 1 }
 revolutionary_colors = { 13 7 4 }
 
 historical_units = { 

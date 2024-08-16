@@ -1,6 +1,6 @@
 #Country Name: Katowice
 graphical_culture = westerngfx
-color = { 175 193 187 }
+color = { 255 255 107 }
 revolutionary_colors = { 16 14 8 }
 
 historical_units = { 

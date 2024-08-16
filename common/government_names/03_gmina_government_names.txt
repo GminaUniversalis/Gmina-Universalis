@@ -622,3 +622,558 @@ hre_county = {
 		NOT = { total_development = 50 }
 	}
 }
+
+gov_free_city = {
+	rank = {
+		3 = FREE_CITY
+	}
+
+	ruler_male = {
+		3 = PREZYDENT_MIASTA
+	}
+
+	ruler_female = {
+		3 = PREZYDENT_MIASTA
+	}
+
+	consort_male = {
+		3 = PREZYDENT_MIASTA_CONSORT
+	}
+
+	consort_female = {
+		3 = PREZYDENT_MIASTA
+	}
+
+	trigger = {
+		has_reform = free_city
+	}
+}
+
+holy_roman_electors_monarchy = {
+	rank = {
+		1 = GMINA
+		2 = POWIAT
+		3 = MIASTO_POWIATOWE
+		4 = WOJEWODZTWO
+		5 = COUNTRY
+	}
+
+	ruler_male = {
+		1 = WOJT
+		2 = STAROSTA
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	ruler_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	consort_male = {
+		1 = WOJT_CONSORT
+		2 = STAROSTA_CONSORT
+		3 = PREZYDENT_MIASTA_CONSORT
+		4 = MARSZALEK_WOJEWODZTWA_CONSORT
+		5 = FIRST_GENTELMAN
+	}
+
+	consort_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = FIRST_LADY
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+		4 = HEIR
+		5 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+		4 = HEIR_fem
+		5 = HEIR_fem
+	}
+
+	
+	trigger = {
+		government = monarchy
+		is_elector = yes
+		is_emperor = no
+		NOT = { tag = HAB } #Archdukes
+	}
+}
+
+holy_roman_electors_bishoprics = {
+	rank = {
+		1 = PARAFIA
+		2 = DEKANAT
+		3 = DIECEZJA
+		4 = ARCHIDIECEZJA
+		5 = EPISKOPAT
+	}
+
+	ruler_male = {
+		1 = KSIADZ
+		2 = DZIEKAN
+		3 = BISKUP
+		4 = ARCYBISKUP
+		5 = METROPOLITA
+	}
+
+	ruler_female = {
+		1 = SIOSTRA
+		2 = PRZEORYSZA
+		3 = Provincial_Superior
+		4 = Mother_General
+		5 = HOLY_MOTHER
+	}
+	
+	consort_male = {
+		1 = SEX_SLAVE
+		2 = SEX_SLAVE
+		3 = SEX_SLAVE
+		4 = SEX_SLAVE
+		5 = SEX_SLAVE
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+		4 = CONSORT
+		5 = CONSORT
+	}
+	
+	heir_male = {
+		1 = KLERYK
+		2 = SEMINARZYSTA
+		3 = AKOLITA
+		4 = LEKTOR
+		5 = DIAKON
+	}
+
+	heir_female = {
+		1 = SIOSTRA_JUNIORKA
+		2 = SIOSTRA_JUNIORKA
+		3 = SIOSTRA_JUNIORKA
+		4 = SIOSTRA_JUNIORKA
+		5 = SIOSTRA_JUNIORKA
+	}
+
+	trigger = {
+		government = theocracy
+		is_elector = yes
+		is_emperor = no
+	}
+}
+
+holy_roman_electors_republic = {
+	rank = {
+		1 = GMINA
+		2 = POWIAT
+		3 = MIASTO_POWIATOWE
+		4 = WOJEWODZTWO
+		5 = COUNTRY
+	}
+
+	ruler_male = {
+		1 = WOJT
+		2 = STAROSTA
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	ruler_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	consort_male = {
+		1 = WOJT_CONSORT
+		2 = STAROSTA_CONSORT
+		3 = PREZYDENT_MIASTA_CONSORT
+		4 = MARSZALEK_WOJEWODZTWA_CONSORT
+		5 = FIRST_GENTELMAN
+	}
+
+	consort_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = FIRST_LADY
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+		4 = HEIR
+		5 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+		4 = HEIR_fem
+		5 = HEIR_fem
+	}
+	
+	trigger = {
+		government = republic
+		is_elector = yes
+		is_emperor = no
+	}
+}
+
+dutch_monarchy = {
+	rank = {
+		1 = GMINA
+		2 = POWIAT
+		3 = MIASTO_POWIATOWE
+		4 = WOJEWODZTWO
+		5 = COUNTRY
+	}
+
+	ruler_male = {
+		1 = WOJT
+		2 = STAROSTA
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	ruler_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	consort_male = {
+		1 = WOJT_CONSORT
+		2 = STAROSTA_CONSORT
+		3 = PREZYDENT_MIASTA_CONSORT
+		4 = MARSZALEK_WOJEWODZTWA_CONSORT
+		5 = FIRST_GENTELMAN
+	}
+
+	consort_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = FIRST_LADY
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+		4 = HEIR
+		5 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+		4 = HEIR_fem
+		5 = HEIR_fem
+	}
+
+	
+	trigger = {
+		government = monarchy
+		has_reform = stadthalter_monarchy_reform
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { has_reform = presidential_despot_reform }
+	}
+}
+
+celestial_parliament = {
+	rank = {
+		1 = GMINA
+		2 = POWIAT
+		3 = MIASTO_POWIATOWE
+		4 = WOJEWODZTWO
+		5 = COUNTRY
+	}
+
+	ruler_male = {
+		1 = WOJT
+		2 = STAROSTA
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	ruler_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	consort_male = {
+		1 = WOJT_CONSORT
+		2 = STAROSTA_CONSORT
+		3 = PREZYDENT_MIASTA_CONSORT
+		4 = MARSZALEK_WOJEWODZTWA_CONSORT
+		5 = FIRST_GENTELMAN
+	}
+
+	consort_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = FIRST_LADY
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+		4 = HEIR
+		5 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+		4 = HEIR_fem
+		5 = HEIR_fem
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+			has_reform = celestial_empire
+			has_reform = parliamentary_reform
+			}
+			has_reform = presidential_despot_reform
+		}
+
+	}
+}
+
+
+gov_steppe_horde = {
+	rank = {
+		1 = KIBICOWSKA_KOMUNA
+		2 = ULTRASOWA_ENKLAWA
+		3 = REPUBLIKA_FANATYCZNA
+		4 = FEDERACJA_ULTRASOW
+		5 = KIBICOWSKIE_IMPERIUM
+	}
+	
+	ruler_male = {
+		1 = RECRUIT
+		2 = ACTIVE_MEMBER
+		3 = SECTION_LEADER
+		4 = CAPITAN
+		5 = BOSS
+	}
+	
+	ruler_female = {
+		1 = RECRUIT
+		2 = ACTIVE_MEMBER
+		3 = SECTION_LEADER
+		4 = CAPITAN
+		5 = BOSS
+	}
+	
+	consort_male = {
+		1 = SEX_SLAVE
+		2 = SEX_SLAVE
+		3 = SEX_SLAVE
+		4 = SEX_SLAVE
+		5 = SEX_SLAVE
+
+	}
+
+	consort_female = {
+		1 = SZMULA
+		2 = SWINIA
+		3 = SZMATA
+		4 = ZDZIRA
+		5 = Kamil_Majewski
+	}
+	
+	heir_male = {
+		1 = MLODY
+		2 = MLODY
+		3 = MLODY
+		4 = MLODY
+		5 = MLODY
+	}
+
+	heir_female = {
+		1 = MLODA
+		2 = MLODA
+		3 = MLODA
+		4 = MLODA
+		5 = MLODA
+	}
+	
+	trigger = {
+		has_reform = steppe_horde
+	}
+}
+
+gov_native_council = {
+	rank = {
+		1 = KIBICOWSKA_KOMUNA
+		2 = ULTRASOWA_ENKLAWA
+		3 = REPUBLIKA_FANATYCZNA
+		4 = FEDERACJA_ULTRASOW
+		5 = KIBICOWSKIE_IMPERIUM
+	}
+	
+	ruler_male = {
+		1 = RECRUIT
+		2 = ACTIVE_MEMBER
+		3 = SECTION_LEADER
+		4 = CAPITAN
+		5 = BOSS
+	}
+	
+	ruler_female = {
+		1 = RECRUIT
+		2 = ACTIVE_MEMBER
+		3 = SECTION_LEADER
+		4 = CAPITAN
+		5 = BOSS
+	}
+	
+	consort_male = {
+		1 = SEX_SLAVE
+		2 = SEX_SLAVE
+		3 = SEX_SLAVE
+		4 = SEX_SLAVE
+		5 = SEX_SLAVE
+
+	}
+
+	consort_female = {
+		1 = SZMULA
+		2 = SWINIA
+		3 = SZMATA
+		4 = ZDZIRA
+		5 = Kamil_Majewski
+	}
+	
+	heir_male = {
+		1 = MLODY
+		2 = MLODY
+		3 = MLODY
+		4 = MLODY
+		5 = MLODY
+	}
+
+	heir_female = {
+		1 = MLODA
+		2 = MLODA
+		3 = MLODA
+		4 = MLODA
+		5 = MLODA
+	}
+	
+	trigger = {
+		OR = {
+			government = native
+			has_reform = siberian_tribe
+			has_reform = native_basic_reform
+			AND = {
+				has_reform = steppe_horde
+			}
+		}
+	}
+}
+
+hre_county = {
+	rank = {
+		1 = GMINA
+		2 = POWIAT
+		3 = MIASTO_POWIATOWE
+		4 = WOJEWODZTWO
+		5 = COUNTRY
+	}
+
+	ruler_male = {
+		1 = WOJT
+		2 = STAROSTA
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	ruler_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = PREZYDENT
+	}
+
+	consort_male = {
+		1 = WOJT_CONSORT
+		2 = STAROSTA_CONSORT
+		3 = PREZYDENT_MIASTA_CONSORT
+		4 = MARSZALEK_WOJEWODZTWA_CONSORT
+		5 = FIRST_GENTELMAN
+	}
+
+	consort_female = {
+		1 = WOJTOWA
+		2 = STAROSCINI
+		3 = PREZYDENT_MIASTA
+		4 = MARSZALEK_WOJEWODZTWA
+		5 = FIRST_LADY
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+		4 = HEIR
+		5 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+		4 = HEIR_fem
+		5 = HEIR_fem
+	}
+
+	government_reform = monarchy_mechanic
+
+	trigger = {
+		has_reform = monarchy_mechanic
+		is_part_of_hre = yes
+		NOT = { total_development = 50 }
+	}
+}

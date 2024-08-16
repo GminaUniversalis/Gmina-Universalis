@@ -1,6 +1,6 @@
 #Country Name: Powiat Pleszewski
 graphical_culture = westerngfx
-color = { 65 126 74 }
+color = { 255 255 255 }
 revolutionary_colors = { 14 10 1 }
 
 historical_units = { 

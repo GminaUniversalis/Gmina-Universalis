@@ -1,6 +1,6 @@
-#Country Name: Powiat Jaworzno
+#Country Name: Jaworzno
 graphical_culture = westerngfx
-color = { 130 213 227 }
+color = { 32 246 113 }
 revolutionary_colors = { 4 0 12 }
 
 historical_units = { 

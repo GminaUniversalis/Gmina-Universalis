@@ -1,7 +1,7 @@
 #Country Name: Lublin
 graphical_culture = westerngfx
 color = { 
-	0 0 128 
+	21 203 76
 }
 revolutionary_colors = { 3 3 8 }
 

@@ -1,6 +1,6 @@
 #Country Name: Powiat Tarnobrzeski
 graphical_culture = westerngfx
-color = { 122 94 29 }
+color = { 40 19 255 }
 revolutionary_colors = { 6 5 2 }
 
 historical_units = { 

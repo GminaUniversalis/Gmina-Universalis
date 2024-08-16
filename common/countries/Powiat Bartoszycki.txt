@@ -1,6 +1,6 @@
 #Country Name: Powiat Bartoszycki
 graphical_culture = westerngfx
-color = { 146 209 85 }
+color = { 255 24 15 }
 revolutionary_colors = { 6 1 4 }
 
 historical_units = { 

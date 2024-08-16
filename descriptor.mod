@@ -30,7 +30,7 @@ replace_path="common/estate_privileges"
 replace_path="common/event_modifiers"
 replace_path="common/triggered_modifiers.txt"
 
-
+replace_path="history/diplomacy"
 replace_path="history/countries"
 replace_path="history/wars"
 replace_path="history/provinces"
@@ -49,5 +49,5 @@ replace_path="missions"
 
 replace_path="tutorial"
 
-supported_version="1.37.*"
+supported_version="1.37.2"
 remote_file_id="3119311190"

@@ -1,6 +1,6 @@
 #Country Name: Powiat Nowodworski Mazowieckie
 graphical_culture = westerngfx
-color = { 107 172 22 }
+color = { 230 230 230 }
 revolutionary_colors = { 1 6 10 }
 
 historical_units = { 

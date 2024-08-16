@@ -10,9 +10,22 @@ on_startup = {
 	events = {	
 		gmina_setup.0
 		#gmina_setup.1
+		silesian_autonomy.2
 	}
+		
 }
 
+on_emperor_elected = {
+
+	Emperor = {
+		remove_government_reform = silesian_autonomy_reform
+		add_government_reform = silesian_presidency_reform
+	}
+
+	# events = {
+	# 	silesian_autonomy.1 
+	# }
+}
 
 on_revoke_estate_land = {
 	add_province_modifier = {
@@ -217,8 +230,8 @@ on_revoke_estate_land = {
 		}
 		province_event = { id = gmina_estates.1 }
 	}
+	
 }
-
 on_five_year_pulse = {
 	random_events = {
 
@@ -226,3 +239,5 @@ on_five_year_pulse = {
 		
 	}
 }
+
+
