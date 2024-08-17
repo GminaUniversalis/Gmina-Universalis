@@ -1,4 +1,4 @@
-version="0.1"
+version="0.5"
 tags={
 	"Map"
 	"Alternative History"
@@ -11,6 +11,7 @@ dependencies={
 name="Gmina Universalis"
 picture="thumnbnail.png"
 
+replace_path="common/triggered_modifiers.txt"
 replace_path="common/bookmarks"
 replace_path="common/church_aspects"
 replace_path="common/personal_deities"
@@ -26,7 +27,7 @@ replace_path="common/estates"
 replace_path="common/estate_agendas"
 replace_path="common/estate_privileges"
 replace_path="common/event_modifiers"
-replace_path="common/triggered_modifiers.txt"
+
 
 replace_path="history/diplomacy"
 replace_path="history/countries"

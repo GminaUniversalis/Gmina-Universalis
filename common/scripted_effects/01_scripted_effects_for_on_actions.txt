@@ -1586,3 +1586,16 @@ on_conquest_effect = {
 	clr_province_flag = has_estate_unrest_flag
 	
 }
+
+on_convert_by_trade_policy_effect = {
+	FROM = { change_variable = { which = propogation_counter value = 1 } }
+}
+
+on_age_ability_taken_age_of_discovery = { } #for future use (and modders!) :)
+on_age_ability_taken_age_of_reformation = { }
+on_age_ability_taken_age_of_absolutism = { }
+on_age_ability_taken_age_of_revolutions = { }
+on_age_ability_taken = {
+	on_age_ability_taken_$age$ = yes
+
+}
