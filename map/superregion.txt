@@ -47,3 +47,6 @@ slaskie_superregion = {
 lodzkie_superregion = { 
 	lodzkie_region 
 }
+krolewiec_superregion = { 
+	Krolewiec 
+}

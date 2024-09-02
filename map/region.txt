@@ -8,8 +8,9 @@ malopolska_region = {
 		ksiaz_wielki oswiecim spytkowice powiat_chrzanowski wadowice tomice powiat_oswiecimski krzeszowice makow_podhalanski jordanow
 		pcim kalwaria_zebrzydowska jablonka powiat_tatrzanski nowy_targ kroscienko_nad_dunajcem gorlice stary_sacz grzybow nowy_sacz
 		krynica_zdroj chelmiec limanowa mszana_dolna powiat_wielicki dobczyce lapanow bochnia powiat_proszowicki powiat_olkuski
-		miechow michalowice zielonki krakow_huta krakow_centrum krakow_polnoc skawina krakow_poludnie sekowa moszczenica sucha_beskidzka
-		tuchow powiat_dabrowski powiat_tarnowski radlow gnojnik brzesko zakliczyn tarnow_wschod tarnow_zachod myslenice
+		miechow michalowice zielonki krakow_huta krakow_centrum krakow_polnoc skawina krakow_poludnie sekowa moszczenica
+		sucha_beskidzka tuchow powiat_dabrowski powiat_tarnowski radlow gnojnik brzesko zakliczyn tarnow_wschod tarnow_zachod
+		myslenice 
 	}
 }
 swietokrzyskie_region = { 
@@ -136,13 +137,13 @@ slaskie_region = {
 	areas = { 
 		kruszyna krzepice pietrowice_wielkie raciborz radlin powiat_rybnicki rybnik_polnoc wodzislaw_slaski zory_rowien zory_centrum
 		rybnik_poludnie jastrzebie_poludnie gorzyce jastrzebie_polnoc cieszyn skoczow powiat_pszczynski jasienica szczyrk bielsko_biala_polnoc
-		bielsko_biala_poludnie bielsko_biala_centrum bielsko_biala_wschod zywiec lipowa milowka koszarawa gilowice wilamowice
-		wisla_area myslowice_poludnie katowice_zachod knurow gliwice_wschod gliwice_bojkow zabrze_zaborze powiat_mikolowski katowice_poludnie tychy_stare
-		powiat_bierunsko-ledzinski jaworzno_poludnie jaworzno_centrum sosnowiec_bobrek myslowice_srodmiescie siemanowice katowice_srodmiescie chorzow swietochlowice ruda_polnoc
-		ruda_poludnie zabrze_centrum zabrze_polnoc pyskowice gliwice_labedy gliwice_srodmiescie bytom_polnoc piekary powiat_bytom tychy_polnoc
-		sosnowiec_centrum sosnowiec_pogon powiat_bedzinski sosnowiec_zagorze dabrowa_gornicza_strzemieszyce siewierz bedzin dabrowa_gornicza_bledow jaworzno_polnoc szczekociny
-		zawiercie koniecpol czestochowa_zachod czestochowa_wschod czestochowa_polnoc czestochowa_centrum lubliniec konopiska boronow powiat_myszkowski
-		tarnowskie_gory ozarowice mstow klobuck popow dabrowa_gornicza_pogoria dabrowa_gornicza_srodmiescie 
+		bielsko_biala_poludnie bielsko_biala_centrum bielsko_biala_wschod zywiec lipowa milowka koszarawa gilowice wilamowice wisla_area
+		myslowice_poludnie katowice_zachod knurow gliwice_wschod gliwice_bojkow zabrze_zaborze powiat_mikolowski katowice_poludnie tychy_stare powiat_bierunsko-ledzinski
+		jaworzno_poludnie jaworzno_centrum sosnowiec_bobrek myslowice_srodmiescie siemanowice katowice_srodmiescie chorzow swietochlowice ruda_polnoc ruda_poludnie
+		zabrze_centrum zabrze_polnoc pyskowice gliwice_labedy gliwice_srodmiescie bytom_polnoc piekary powiat_bytom tychy_polnoc sosnowiec_centrum
+		sosnowiec_pogon powiat_bedzinski sosnowiec_zagorze dabrowa_gornicza_strzemieszyce siewierz bedzin dabrowa_gornicza_bledow jaworzno_polnoc szczekociny zawiercie
+		koniecpol czestochowa_zachod czestochowa_wschod czestochowa_polnoc czestochowa_centrum lubliniec konopiska boronow powiat_myszkowski tarnowskie_gory
+		ozarowice mstow klobuck popow dabrowa_gornicza_pogoria dabrowa_gornicza_srodmiescie 
 	}
 }
 lodzkie_region = { 
@@ -155,212 +156,181 @@ lodzkie_region = {
 		rozprza dobryszyce zytno maslowice sulejow opoczno paradyz 
 	}
 }
-
-wisla_region = {
-	areas = {
-		wisla_river_area
+wisla_region = { 
+	areas = { 
+		wisla_river_area 
 	}
 }
-
-nida_region = {
-	areas = {
-		nida_area
+nida_region = { 
+	areas = { 
+		nida_area 
 	}
 }
-
-czarna_nida_region = {
-	areas = {
-		czarna_nida_area
+czarna_nida_region = { 
+	areas = { 
+		czarna_nida_area 
 	}
 }
-
-bobrza_region = {
-	areas = {
-		bobrza_area
+bobrza_region = { 
+	areas = { 
+		bobrza_area 
 	}
 }
-
-raba_region = {
-	areas = {
-		raba_area
+raba_region = { 
+	areas = { 
+		raba_area 
 	}
 }
-
-dunajec_region = {
-	areas = {
-		dunajec_area
+dunajec_region = { 
+	areas = { 
+		dunajec_area 
 	}
 }
-
-wislok_region = {
-	areas = {
-		wislok_area
+wislok_region = { 
+	areas = { 
+		wislok_area 
 	}
 }
-
-wisloka_region = {
-	areas = {
-		wisloka_area
+wisloka_region = { 
+	areas = { 
+		wisloka_area 
 	}
 }
-
-san_region = {
-	areas = {
-		san_area
+san_region = { 
+	areas = { 
+		san_area 
 	}
 }
-wieprz_region = {
-	areas = {
-		wieprz_area
+wieprz_region = { 
+	areas = { 
+		wieprz_area 
 	}
 }
-
-pilica_region = {
-	areas = {
-		pilica_area
+pilica_region = { 
+	areas = { 
+		pilica_area 
 	}
 }
-
-czarna_region = {
-	areas = {
-		czarna_area
+czarna_region = { 
+	areas = { 
+		czarna_area 
 	}
 }
-
-bug_region = {
-	areas = {
-		bug_area
+bug_region = { 
+	areas = { 
+		bug_area 
 	}
 }
-
-wkra_region = {
-	areas = {
-		wkra_area
+wkra_region = { 
+	areas = { 
+		wkra_area 
 	}
 }
-
-obra_region = {
-	areas = {
-		obra_area
+obra_region = { 
+	areas = { 
+		obra_area 
 	}
 }
-
-warta_region = {
-	areas = {
-		warta_river_area
+warta_region = { 
+	areas = { 
+		warta_river_area 
 	}
 }
-narew_region = {
-	areas = {
-		narew_river_area
+narew_region = { 
+	areas = { 
+		narew_river_area 
 	}
 }
-
-biebrza_region = {
-	areas = {
-		biebrza_area
+biebrza_region = { 
+	areas = { 
+		biebrza_area 
 	}
 }
-
-netta_region = {
-	areas = {
-		netta_area
+netta_region = { 
+	areas = { 
+		netta_area 
 	}
 }
-
-kanal_augustowski_region = {
-	areas = {
-		kanal_augustowski_area
+kanal_augustowski_region = { 
+	areas = { 
+		kanal_augustowski_area 
 	}
 }
-czarna_hancza_region = {
-	areas = {
-		czarna_hancza_area
+czarna_hancza_region = { 
+	areas = { 
+		czarna_hancza_area 
 	}
 }
-
-pisa_region = {
-	areas = {
-		pisa_area
+pisa_region = { 
+	areas = { 
+		pisa_area 
 	}
 }
-
-bzura_region = {
-	areas = {
-		bzura_area
+bzura_region = { 
+	areas = { 
+		bzura_area 
 	}
 }
-rega_region = {
-	areas = {
-		rega_area
+rega_region = { 
+	areas = { 
+		rega_area 
 	}
 }
-
-parseta_region = {
-	areas = {
-		parseta_area
+parseta_region = { 
+	areas = { 
+		parseta_area 
 	}
 }
-slupia_region = {
-	areas = {
-		slupia_area
+slupia_region = { 
+	areas = { 
+		slupia_area 
 	}
 }
-
-gwda_region = {
-	areas = {
-		gwda_area
+gwda_region = { 
+	areas = { 
+		gwda_area 
 	}
 }
-
-drawa_region = {
-	areas = {
-		drawa_area
+drawa_region = { 
+	areas = { 
+		drawa_area 
 	}
 }
-
-notec_region = {
-	areas = {
-		notec_area
+notec_region = { 
+	areas = { 
+		notec_area 
 	}
 }
-
-odra_region = {
-	areas = {
-		odra_area
+odra_region = { 
+	areas = { 
+		odra_area 
 	}
 }
-
-barycz_region = {
-	areas = {
-		barycz_area
+barycz_region = { 
+	areas = { 
+		barycz_area 
 	}
 }
-
-bobr_region = {
-	areas = {
-		bobr_area
+bobr_region = { 
+	areas = { 
+		bobr_area 
 	}
 }
-
-nysa_klodzka_region = {
-	areas = {
-		nysa_klodzka_area
+nysa_klodzka_region = { 
+	areas = { 
+		nysa_klodzka_area 
 	}
 }
-
-mala_panew_region = {
-	areas = {
-		mala_panew_area
+mala_panew_region = { 
+	areas = { 
+		mala_panew_area 
 	}
 }
-
-nysa_luzycka_region = {
-	areas = {
-		nysa_luzycka_area
+nysa_luzycka_region = { 
+	areas = { 
+		nysa_luzycka_area 
 	}
 }
-
 # ALL_RIVERS_region = {
 # 	areas = {
 # 		gwda_area mala_panew_area nysa_klodzka_area bobr_area barycz_area odra_area notec_area
@@ -370,3 +340,8 @@ nysa_luzycka_region = {
 # 		bobrza_area czarna_nida_area nida_area wisla_area
 # 	}
 # }
+Krolewiec = { 
+	areas = { 
+		Western_kralovec Northern_kralovec eastern_kralovec Southern_kralovec 
+	}
+}

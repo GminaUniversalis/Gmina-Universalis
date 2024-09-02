@@ -164,6 +164,16 @@ can_burn_colony = {
 }
 
 can_colonize_province = {
+	tooltip = "NO_ACCES_THROUGHT_BORDER"
+	condition = {
+		potential = {
+			always = yes
+		}
+		
+		allow = {
+			always = no
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {

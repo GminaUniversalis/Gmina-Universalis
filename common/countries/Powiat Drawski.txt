@@ -1,6 +1,6 @@
 #Country Name: Powiat Drawski
 graphical_culture = westerngfx
-color = { 148 212 2551 }
+color = { 148 212 255 }
 revolutionary_colors = { 4 3 10 }
 
 historical_units = { 

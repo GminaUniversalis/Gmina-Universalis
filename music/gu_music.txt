@@ -8,7 +8,29 @@ song = {
 	}
 }
 song = {
-	name = "MAIN_THEME"
+	name = "D2 Startup"
+
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+
+song = {
+	name = "Rising Star"
+
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+
+song = {
+	name = "Fading Echoes"
 
 	chance = {
 		modifier = {

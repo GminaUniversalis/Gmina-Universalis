@@ -14,7 +14,7 @@ country_event = { #Estate setup
 		NOT = { is_year = 1445}
 		OR = {
 			ai = no
-			ai = yes	`
+			ai = yes
 		}
 	}
 
@@ -257,6 +257,8 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		is_year = 1444
+		NOT = { is_year = 1445}
 		OR = {
 			ai = no
 			ai = yes

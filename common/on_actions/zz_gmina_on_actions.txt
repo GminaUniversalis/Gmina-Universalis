@@ -1,4 +1,10 @@
 on_startup = {
+	
+	events = {	
+		gmina_setup.0
+		#gmina_setup.1
+		silesian_autonomy.2
+	}
 
 	random_country = {
 		limit = {
@@ -7,11 +13,7 @@ on_startup = {
 		country_event = { id = clock.2 }
 	}
 
-	events = {	
-		gmina_setup.0
-		#gmina_setup.1
-		silesian_autonomy.2
-	}
+
 		
 }
 
@@ -240,5 +242,3 @@ on_five_year_pulse = {
 		
 	}
 }
-
-

@@ -1,6 +1,6 @@
 #Country Name: Powiat Walecki
 graphical_culture = westerngfx
-color = { 240 234,82 }
+color = { 240 234 82 }
 revolutionary_colors = { 4 3 0 }
 
 historical_units = { 
