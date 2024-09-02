@@ -515,7 +515,7 @@
  POSSIBLE_POLICY_BASE:1 "Base: $VALUE|Y$\n"
  USED_POLICIES_TOOLTIP:0 "We have $USED$ / $MAX|Y$ active $ABILITY$ policy slot(s)."
  USED_POLICIES_TOOLTIP_DESC:0 "We have $FREE|G$ free $ABILITY$ policy slot(s) and because of this we pay $COST|Y$ $POWERICON$ in monthly maintenance."
- TERRITORY_CONVERT_RELIGION_NOT_ALLOWED:1 "\n§RProvince needs to be a full core and part of a state to convert religion§!"
+ TERRITORY_CONVERT_RELIGION_NOT_ALLOWED:1 "\n§RProvince needs to be a full core and part of a state to convert political view!"
  TERRITORY_CONVERT_CULTURE_NOT_ALLOWED:1 "§RProvince needs to be a full core and part of a state to convert dialect!"
  INVESTMENTS_IN_COMPANY_REGION_LESS_THAN:1 "$TAG|Y$ has less than $VAL|Y$ $INVESTMENT|Y$ in $REGION|Y$.\n"
  INVESTMENTS_IN_COMPANY_REGION_AT_LEAST:1 "$TAG|Y$ has at least $VAL|Y$ $INVESTMENT|Y$ in $REGION|Y$.\n"
