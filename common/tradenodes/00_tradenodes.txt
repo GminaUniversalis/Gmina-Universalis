@@ -80,13 +80,15 @@ tn_bialorus = {
 	}
 }
 tn_krolewiec = { 
-	location = 3887
+	location = 881
 	end = yes
 	color = { 
 		255 0 0 
 	}
 	members = { 
-		3887 
+		3860 2949 3119 3317 3815 3121 3216 3400 3120 3212
+		3887 3316 3318 3215 3123 881 3213 3315 3214 1202
+		3313 
 	}
 }
 tn_litwa = { 
