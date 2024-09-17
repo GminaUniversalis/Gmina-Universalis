@@ -5206,7 +5206,7 @@ statue_of_jesus_christ_king_of_the_universe = {
 		}
 		country_modifiers = {
 			prestige = 0.25
-			church_loyalty_modifier = 0.05
+			priests_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -5226,7 +5226,7 @@ statue_of_jesus_christ_king_of_the_universe = {
 		country_modifiers = {
 			prestige = 0.5
 			tolerance_own = 0.5
-			church_loyalty_modifier = 0.1
+			priests_loyalty_modifier = 0.1
 			monthly_splendor = 0.25
 		}
 		on_upgraded = {
@@ -5247,7 +5247,7 @@ statue_of_jesus_christ_king_of_the_universe = {
 		country_modifiers = {
 			prestige = 1
 			tolerance_own = 1
-			church_loyalty_modifier = 0.15
+			priests_loyalty_modifier = 0.15
 			monthly_splendor = 0.5
 		}
 		on_upgraded = {
@@ -19441,7 +19441,7 @@ gniezno_cathedral = {
 		}
 		country_modifiers = {
 			global_institution_spread = 0.15
-			church_loyalty_modifier = 0.05
+			priests_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -19461,7 +19461,7 @@ gniezno_cathedral = {
 		country_modifiers = {
 			global_institution_spread = 0.3
 			technology_cost = -0.025
-			church_loyalty_modifier = 0.1
+			priests_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
 		}
@@ -19481,7 +19481,7 @@ gniezno_cathedral = {
 		country_modifiers = {
 			global_institution_spread = 0.5
 			technology_cost = -0.05
-			church_loyalty_modifier = 0.15
+			priests_loyalty_modifier = 0.15
 			administrative_efficiency = 0.025
 		}
 		on_upgraded = {
@@ -20472,7 +20472,7 @@ pomeranian_dukes_castle = {
 		}
 		country_modifiers = {
 			religious_unity = 0.1
-			church_loyalty_modifier = 0.05
+			priests_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -20493,7 +20493,7 @@ pomeranian_dukes_castle = {
 		country_modifiers = {
 			horde_unity = 0.5
 			religious_unity = 0.2
-			church_loyalty_modifier = 0.1
+			priests_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
 		}
@@ -20514,7 +20514,7 @@ pomeranian_dukes_castle = {
 		country_modifiers = {
 			horde_unity = 1
 			religious_unity = 0.3
-			church_loyalty_modifier = 0.15
+			priests_loyalty_modifier = 0.15
 		}
 		on_upgraded = {
 		}

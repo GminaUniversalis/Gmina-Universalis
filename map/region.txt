@@ -345,3 +345,58 @@ Krolewiec = {
 		Western_kralovec Northern_kralovec eastern_kralovec Southern_kralovec 
 	}
 }
+germany = { 
+	areas = { 
+		germany 
+	}
+}
+netherlands = { 
+	areas = { 
+		netherlands 
+	}
+}
+belgium = { 
+	areas = { 
+		belgium 
+	}
+}
+luxembourg = { 
+	areas = { 
+		luxembourg 
+	}
+}
+france = { 
+	areas = { 
+		france 
+	}
+}
+bohemia = { 
+	areas = { 
+		bohemia 
+	}
+}
+slovakia = { 
+	areas = { 
+		slovakia 
+	}
+}
+ukraine = { 
+	areas = { 
+		ukraine 
+	}
+}
+belarus = { 
+	areas = { 
+		belarus 
+	}
+}
+lithuania = { 
+	areas = { 
+		lithuania 
+	}
+}
+bornholm = { 
+	areas = { 
+		bornholm 
+	}
+}

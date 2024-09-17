@@ -347,6 +347,142 @@ capital_city_reform_monarchy = {
 	}
 }
 
+mughal_government = {
+	icon = "peacock_throne"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+			has_dlc = "Winds of Change"
+		}
+	}
+	lock_level_when_selected = yes
+
+	modifiers = {
+		tolerance_own = 1
+		governing_capacity = 150
+	}
+
+	assimilation_cultures = {
+		zachodniopomorska_cg = {
+			naval_forcelimit_modifier = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		pomorska_cg = {
+			ship_durability = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		slonska_cg = {
+			legitimacy = 0.25
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		ruska_cg = {
+			land_attrition = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		kujawska_cg = {
+			state_maintenance_modifier = -0.2
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		staropolska_cg = {
+			heir_chance = 0.5
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		dolnoslaska_cg = {
+			global_trade_goods_size_modifier = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		zydowska_cg = {
+			global_tax_income = 10
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		wschodnia_cg = {
+			production_efficiency = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		srodkowa_cg = {
+			diplomats = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		wielkopolska_cg = {
+			advisor_cost = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		mazowiecka_cg = {
+			land_morale = 0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		warminskomazurska_cg = {
+			hostile_attrition = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		gornoslaska_cg = {
+			idea_cost = -0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		malopolska = {
+			embracement_cost = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		goralska = {
+			discipline = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		kaszubska_cg = {
+			privateer_efficiency = 0.25
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		dobrzynska_cg = {
+			merchants = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		litewska_cg = {
+			movement_speed = 0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		niemiecka_cg = {
+			mil_advisor_cost = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		ukrainska_cg = {
+			development_cost = -0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		podlaska_cg = {
+			trade_efficiency = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		poleska = {
+			province_warscore_cost = -0.15
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+	}
+}
+
 #Tier 2
 
 enforce_privileges_reform = {
@@ -357,7 +493,7 @@ enforce_privileges_reform = {
 	}
 	modifiers = {
 		global_manpower_modifier = 0.1
-		#nobles_influence_modifier = 0.1
+		army_influence_modifier = 0.1
 		#maratha_exclusive_influence_modifier = 0.1
 		#rajput_exclusive_influence_modifier = 0.1
 	}
@@ -378,10 +514,10 @@ quash_noble_power_reform = {
 	}
 	modifiers = {
 		global_tax_modifier = 0.15
-		#nobles_influence_modifier = -0.1
+		army_influence_modifier = -0.1
 		#maratha_exclusive_influence_modifier = -0.1
 		#rajput_exclusive_influence_modifier = -0.1
-		#parliament_effect_duration = -2
+		parliament_effect_duration = -2
 	}
 	ai = {
 		factor = 1
@@ -400,7 +536,7 @@ grant_noble_castle_rights_reform = {
 	}
 	modifiers = {
 		fort_maintenance_modifier = -0.2
-		#nobles_influence_modifier = 0.05
+		army_influence_modifier = 0.05
 		#maratha_exclusive_influence_modifier = 0.05
 		#rajput_exclusive_influence_modifier = 0.05
 	}
@@ -456,7 +592,7 @@ grant_military_command_reform = {
 	modifiers = {
 		army_tradition = 0.25
 		cavalry_cost = -0.1
-		#nobles_influence_modifier = 0.05
+		army_influence_modifier = 0.05
 		#maratha_exclusive_influence_modifier = 0.05
 		#rajput_exclusive_influence_modifier = 0.05
 	}
@@ -479,7 +615,7 @@ grant_nobles_electorate_reform = {
 		NOT = { has_reform = celestial_empire }
 	}
 	modifiers = {
-		#
+		army_influence_modifier = 0.05
 		#maratha_loyalty_modifier = 0.1
 		#rajput_loyalty_modifier = 0.1
 		no_stability_loss_on_monarch_death = yes
@@ -515,7 +651,7 @@ blackmail_nobility_reform = {
 		full_idea_group = spy_ideas
 	}
 	modifiers = {
-		#nobles_influence_modifier = -0.1
+		army_influence_modifier = -0.1
 		#maratha_exclusive_influence_modifier = -0.1
 		#rajput_exclusive_influence_modifier = -0.1
 		allow_free_estate_privilege_revocation = yes
@@ -1387,10 +1523,6 @@ political_absolutism_reform = {
 	}
 	ai = {
 		factor = 1.5
-		# modifier = {
-		# 	factor = 2
-		# 	#tag = FRA
-		# }
 	}
 }
 

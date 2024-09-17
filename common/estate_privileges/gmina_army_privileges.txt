@@ -61,10 +61,14 @@ estate_army_old_doctrine = {
 			remove_estate_privilege = estate_army_martial_law
 			clr_country_flag = picked_army_definer
 			set_country_flag = picked_army_definer
+			clr_country_flag = picked_army_old_doctrine
+			set_country_flag = picked_army_old_doctrine
 		}
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_army_definer
+		clr_country_flag = picked_army_old_doctrine
 	}
 	can_revoke = {
 		OR = {
@@ -147,10 +151,14 @@ estate_army_new_doctrine = {
 			remove_estate_privilege = estate_army_martial_law
 			clr_country_flag = picked_army_definer
 			set_country_flag = picked_army_definer
+			clr_country_flag = picked_army_new_doctrine
+			set_country_flag = picked_army_new_doctrine
 		}
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_army_new_doctrine
+		clr_country_flag = picked_army_definer
 	}
 	can_revoke = {
 		OR = {

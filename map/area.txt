@@ -2626,3 +2626,36 @@ eastern_kralovec = {
 Northern_kralovec = { 
 	881 3215 3887 3316 3120 
 }
+germany = { 
+	2007 3238 2008 3200 
+}
+netherlands = { 
+	3218 
+}
+belgium = { 
+	550 
+}
+luxembourg = { 
+	3290 
+}
+france = { 
+	3105 
+}
+bohemia = { 
+	2009 3219 
+}
+slovakia = { 
+	3013 
+}
+ukraine = { 
+	3289 3721 
+}
+belarus = { 
+	3677 3888 
+}
+lithuania = { 
+	3288 
+}
+bornholm = { 
+	3419 
+}

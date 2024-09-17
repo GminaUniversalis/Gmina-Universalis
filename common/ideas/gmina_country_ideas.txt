@@ -796,7 +796,7 @@ X05_ideas = { #Powiat Nowosadecki
 	}
 	
 	bonus = {
-		burghers_loyalty_modifier = 0.1
+		investors_loyalty_modifier = 0.1
 	}	
 
 	trigger = {
@@ -887,7 +887,7 @@ X15_ideas = { #Powiat Krakowski
 	}
 	City_of_Trade = {
 		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 	}
 	Cracovian_Churches = {
 		tolerance_own = 2
@@ -1013,7 +1013,7 @@ X20_ideas = { #Krakow
 	}
 	City_of_Trade = {
 		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 	}
 	Cracovian_Churches = {
 		tolerance_own = 2
@@ -1039,7 +1039,7 @@ X22_ideas = { #Nowy Sacz
 	}
 	
 	bonus = {
-		burghers_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 	}	
 
 	trigger = {
@@ -2098,7 +2098,7 @@ Y18_ideas = { #Powiat Nowodworski (Pomorskie)
 	Y18_6 = {
 		governing_cost = -0.1
 	}
-	Y18_7 = { = 
+	Y18_7 = {
 		advisor_pool = 1
 	}
 }
@@ -2428,7 +2428,95 @@ L39_ideas = { #Rybnik Coal Area
 
 #Swietokrzyskie -M
 
+M00_ideas = { #Wojewodztwo Swietokrzyskie
+	start ={
+		land_attrition = -0.25
+		infantry_power = 0.15
+	}
+	trigger = {
+		tag = M00
+	}
+	free = yes
+	mix_the_concrete = {
+		build_cost = -0.1
+		build_time = -0.25
+		investors_loyalty_modifier = 0.1
+	}
+	polish_brethren = {
+		global_institution_spread = 0.5
+		embracement_cost = -0.5
+	}
+	dymarka_industry = {
+		defensiveness = 0.15
+		miners_loyalty_modifier = 0.1
+	}
+	little_mountains_polygon = {
+		discipline = 0.1
+	}
+	next_station_wloszczowa_polnoc = {
+		movement_speed = 0.10
+		farmers_loyalty_modifier = 0.1
+	}
+	starachowice_equipment = {
+		artillery_barrage_cost = -0.25
+		artillery_cost = -0.5
+	}
+	the_last_voivodeship = {
+		diplomatic_reputation = 3
+		global_unrest = -2
+	}
+	bonus = {
+		development_cost = -0.15
+	}
+
+}
 #Warminsko-Mazurskie -N
+
+N00_ideas = { #Wojewodztwo Warminsko-Mazurskie
+	start ={
+		global_autonomy = -0.075
+		advisor_cost = -0.25
+	}
+	trigger = {
+		tag = N00
+	}
+	free = yes
+	Kulturfreundschaft = {
+		no_religion_penalty = yes
+		num_accepted_cultures = 5
+		promote_culture_cost = -0.25
+	}
+	great_masurian_lakes = {
+		naval_morale = 0.33
+		global_ship_cost = -0.33
+	}
+	grunwald_experiences = {
+		land_forcelimit_modifier = 0.3
+		army_tradition_from_battle = 1
+	}
+	natural_born_smugglers = {
+		trade_efficiency = 0.2
+		caravan_power = 0.25
+	}
+	old_whenforged = {
+		spy_offence = 0.5
+		global_spy_defence = 0.5
+		ub_loyalty_modifier = 0.1
+	}
+	how_to_pronounce_that = {
+		core_creation = -0.2
+		families_loyalty_modifier = 0.1
+	}
+	i_like_sand = {
+		build_cost = -0.1
+		defensiveness = 0.2
+		own_territory_dice_roll_bonus = 1
+	}
+	bonus = {
+		stability_cost_modifier = -0.25
+	}
+
+}
 
 #Wielkopolskie -R
 
@@ -2510,6 +2598,57 @@ R28_ideas = { #Powiat Pilski
 }
 
 #Zachodnio-Pomorskie -P
+
+P00_ideas = { #Wojewodztwo Zachodniopomorskie
+	start ={
+		religious_unity = 0.5
+		technology_cost = -0.1
+	}
+	trigger = {
+		tag = P00
+	}
+	free = yes
+	lakes_hills_forests = {
+		hostile_attrition = 2
+		max_hostile_attrition = 3
+		defensiveness = 0.4
+	}
+	swinoujscie_szczecin_waterway = {
+		naval_morale = 0.25
+		naval_forcelimit_modifier = 0.5
+		global_sailors_modifier = 0.5
+	}
+	drawsko_training_ground = {
+		drill_gain_modifier = 2
+		land_maintenance_modifier = -0.10
+		has_marines = yes
+	}
+	BIG_FIELDS = {
+		production_efficiency = 0.33
+		farmers_loyalty_modifier = 0.1
+	}
+	griffin_legacy = {
+		prestige = 3
+		monthly_splendor = 3
+	}
+	primoria_rivers = {
+		merchants = 1
+		global_own_trade_power = 0.5
+		has_voc_indiamen = yes
+		#can_transport_units = yes  /// do dodania jako osobny efekt zamiast voc
+		#ship_trade_power = 5
+	}
+	dealing_with_the_minors = {
+		vassal_forcelimit_bonus = 1
+		vassal_income = 1
+		liberty_desire_from_subject_development = -0.25
+		accept_vassalization_reasons = 25
+	}
+	bonus = {
+		cavalry_power = 0.25
+	}
+
+}
 
 P02_ideas = { #Powiat Koszalinski
 	start = {

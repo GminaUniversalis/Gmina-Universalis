@@ -453,6 +453,8 @@ republican_authoritarianism_reform = {
 	modifiers = {
 		global_unrest = -1
 		max_absolutism = 5
+		ub_influence_modifier = 0.1
+		ub_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 1
@@ -488,6 +490,8 @@ nepotism_reform = {
 	}
 	modifiers = {
 		candidate_random_bonus = 1
+		families_influence_modifier = 0.1
+		families_loyalty_modifier = 0.05
 	}
 
 	custom_attributes = {
@@ -511,7 +515,7 @@ republicanism_reform = {
 		}
 	}
 	modifiers = {
-		republican_tradition = 0.2
+		republican_tradition = 0.3
 	}
 	ai = {
 		factor = 1.5
@@ -534,8 +538,8 @@ democratic_values_reform = {
 		global_trade_goods_size_modifier = 0.05
 		#maratha_muslim_influence_modifier = 0.1
 		#rajput_muslim_influence_modifier = 0.1
-		#burghers_influence_modifier = 0.1
-		#burghers_loyalty_modifier = 0.05
+		families_influence_modifier = 0.1
+		families_loyalty_modifier = 0.05
 		#vaisyas_non_muslim_influence_modifier = 0.1
 		may_recruit_female_generals = yes
 		female_advisor_chance = 0.25
@@ -559,10 +563,10 @@ aristocratic_values_reform = {
 	}
 	modifiers = {
 		global_manpower_modifier = 0.1
-		#nobles_influence_modifier = 0.1
+		army_influence_modifier = 0.1
 		#maratha_exclusive_influence_modifier = 0.1
 		#rajput_exclusive_influence_modifier = 0.1
-		#nobles_loyalty_modifier = 0.05
+		army_loyalty_modifier = 0.05
 		#maratha_exclusive_loyalty_modifier = 0.05
 		#rajput_exclusive_loyalty_modifier = 0.05
 	}
@@ -586,10 +590,8 @@ religious_values_reform = {
 	modifiers = {
 		missionaries = 1
 		
-		#brahmins_hindu_influence_modifier = 0.1
-		#brahmins_hindu_loyalty_modifier = 0.05
-
-		#church_influence_modifier = 0.1
+		priests_influence_modifier = 0.1
+		priests_loyalty_modifier = 0.05
 
 	}
 	ai = {
@@ -1087,16 +1089,6 @@ proclaim_divine_guidance_reform = {
 		set_country_flag = populists_in_government
 		add_stability = -3
 		change_government = theocracy
-		if = {
-			limit = {
-				tag = AVE
-			}
-			hidden_effect = {
-				country_event = {
-					id = flavor_gbr.20
-				}
-			}
-		}
 	}
 	ai = {
 		factor = 0
@@ -1122,16 +1114,7 @@ seize_executive_power_reform = {
 		set_country_flag = populists_in_government
 		add_stability = -3
 		change_government = monarchy
-		if = {
-			limit = {
-				tag = AVE
-			}
-			hidden_effect = {
-				country_event = {
-					id = flavor_gbr.20
-				}
-			}
-		}
+
 		if = {
 			limit = { has_country_flag = had_states_general_mechanic }
 			country_event = { id = dutch_republic.33 }
@@ -1265,8 +1248,8 @@ empowered_quartermasters_reform = {
 	}
 	trigger = {	
 		OR = {
-			NOT = { has_estate = estate_burghers }
-			crown_stronger_than_estate = { estate = estate_burghers }
+			NOT = { has_estate = estate_banks }
+			crown_stronger_than_estate = { estate = estate_banks }
 			has_reform = empowered_quartermasters_reform
 		}
 	}
@@ -1276,12 +1259,12 @@ empowered_quartermasters_reform = {
 	}
 	effect = {
 		change_estate_land_share = {
-			estate = estate_burghers
+			estate = estate_banks
 			share = 20
 		}
 	}
 	custom_attributes = {
-		enables_estate_burghers = yes
+		enables_estate_banks = yes
 	}
 	ai = {
 		factor = 1
@@ -1352,10 +1335,10 @@ master_smugglers_reform = {
 	trigger = {
 		if = {
 			limit = {
-				has_government_attribute = enables_estate_burghers
+				has_government_attribute = enables_estate_banks
 			}
 			can_swap_out_of_estate_granting_reform = {
-				estate = estate_burghers
+				estate = estate_banks
 			}
 		}
 	}
@@ -1380,10 +1363,10 @@ cutthroat_approach_reform = {
 	trigger = {
 		if = {
 			limit = {
-				has_government_attribute = enables_estate_burghers
+				has_government_attribute = enables_estate_banks
 			}
 			can_swap_out_of_estate_granting_reform = {
-				estate = estate_burghers
+				estate = estate_banks
 			}
 		}
 	}

@@ -794,17 +794,6 @@ tribal_succession_crisis = {
 	global_unrest = 10
 }
 
-the_statue_in_restraint_of_appeals = {
-	stability_cost_modifier = -0.10
-	global_unrest = -1
-	prestige = 0.5
-	papal_influence = -10
-	church_loyalty_modifier = 0.05
-	religion = yes
-}
-
-
-
 the_abolish_slavery_act = {
 	global_tax_modifier = -0.05
 	stability_cost_modifier = -0.05
@@ -1119,11 +1108,7 @@ the_popery_act = {
 	religion = yes
 }
 
-the_sheikh_ul_islam = {
-	global_missionary_strength = 0.01
-	church_loyalty_modifier = 0.05
-	religion = yes
-}
+
 
 muslim_enforced_religion = {
 	global_heretic_missionary_strength = 0.02
@@ -2385,42 +2370,13 @@ vasa_centralization_reforms = {
 	global_autonomy = -0.05
 }
 
-swe_debt_with_the_clergy = {
-	legitimacy = -0.5
-	church_loyalty_modifier = -0.1
-	church_influence_modifier = 0.1
-}
 
-swe_debt_with_the_burghers = {
-	legitimacy = -0.5
-	burghers_loyalty_modifier = -0.1
-	burghers_influence_modifier = 0.1
-}
-
-swe_debt_with_the_nobles = {
-	legitimacy = -0.5
-	nobles_loyalty_modifier = -0.1
-	nobles_influence_modifier = 0.1
-}
 
 church_reduction = {
 	global_unrest = 1
 	religion = yes
 }
 
-wallon_immigrants = {
-	trade_goods_size = 0.2
-}
-
-swedish_military_reforms = {
-	infantry_cost = -0.1
-	land_morale = 0.05
-}
-
-swedish_mercenary_core = {
-	merc_maintenance_modifier = -0.1
-	mercenary_manpower = 0.5
-}
 
 swedish_naval_reforms = {
 	heavy_ship_cost = -0.1
@@ -3065,11 +3021,6 @@ tur_opposed_valide_sultan_modifier = {
 	all_estate_loyalty_equilibrium = 0.05
 }
 
-tur_secured_vali_ahad_modifier = {
-	stability_cost_modifier = -0.1
-	nobles_loyalty_modifier = 0.05
-}
-
 tur_rebellion_line_modifier = {
 	global_unrest = 2 
 	all_estate_loyalty_equilibrium = -0.05
@@ -3094,11 +3045,6 @@ tur_jade_techniques_of_far_east_modifier = {
 	trade_goods_size = 1 
 }
 
-tur_abu_hanifa_mosque_modifier = { 
-	church_loyalty_modifier = 0.05
-	church_influence_modifier = 0.05
-	tolerance_own = 1 
-}
 
 tur_inefficient_tax_collection = {
 	vassal_forcelimit_bonus = -0.25
@@ -5072,44 +5018,6 @@ dan_granting_privileges_to_juniors_extra = {
 	vassal_forcelimit_bonus = -0.2
 }
 
-dan_granted_privileges_to_nobility = {
-	global_tax_modifier = 0.1
-	nobles_loyalty_modifier = 0.1
-	nobles_influence_modifier = 0.1
-	liberty_desire = -5
-}
-
-dan_granted_privileges_to_nobility_extra = {
-	global_tax_modifier = 0.25
-	nobles_loyalty_modifier = 0.2
-	nobles_influence_modifier = 0.2
-	liberty_desire = -15
-}
-
-dan_losing_ruling_grip = {
-	liberty_desire = 20
-	global_unrest = -1
-}
-
-stockholm_bloodbath = {
-	liberty_desire = 25
-	nobles_influence_modifier = -0.25
-}
-
-dan_danish_investment = {
-	global_trade_goods_size_modifier = 0.15
-	global_own_trade_power = -0.1
-}
-
-dan_dream_of_freedom = {
-	liberty_desire = 50
-}
-
-#Timurids
-
-shahrukhs_empire = {
-	reduced_liberty_desire = 50
-}
 
 # Argonese Decisions
 city_of_the_kings = {
@@ -11304,26 +11212,12 @@ eng_taxation_of_the_clergy = {
 	religion = yes
 }
 
-eng_protects_the_clergy = {
-	church_loyalty_modifier = 0.1
-	tolerance_own = 2
-	tolerance_heretic = -2
-	religion = yes
-}
-
 eng_taxation_of_the_clergy_prot = {
 	global_tax_modifier = 0.33
 	monthly_fervor_increase = 0.25
 	monthly_church_power = 0.5
 	tolerance_own = 2
 	tolerance_heretic = -2
-	religion = yes
-}
-
-eng_protects_the_clergy_prot = {
-	church_loyalty_modifier = 0.1
-	tolerance_heretic = 2
-	tolerance_own = -2
 	religion = yes
 }
 
@@ -11335,10 +11229,6 @@ eng_end_of_the_english_reformation = {
 	diplomatic_reputation = 2
 }
 
-eng_order_of_chivalry = {	#Permanent
-	nobles_loyalty_modifier = 0.05
-	monthly_splendor = 0.25
-}
 
 eng_jousting_tournaments = {	#Permanent until end of age
 	global_unrest = -2
@@ -11484,10 +11374,7 @@ ingolstadt_beer_city = {
 	trade_goods_size = 0.5
 }
 
-bav_religious_mandate_mod = {
-	global_religious_conversion_resistance = 0.5
-	church_loyalty_modifier = -0.05
-}
+
 
 bav_building_wife_church = {
 	heir_chance = 1
@@ -12187,8 +12074,8 @@ sisters_takeover = {
 	may_recruit_female_generals = yes
 	global_manpower_modifier = 0.2
 	female_advisor_chance = 1.0
-	church_privilege_slots = 1
-	church_loyalty_modifier = 0.05
+	priests_privilege_slots = 1
+	priests_loyalty_modifier = 0.05
 	tolerance_own = 1
 	tolerance_heretic = -3
 }
@@ -12447,12 +12334,6 @@ makahiki_mod = {
 	global_unrest = -2
 }
 
-historic_ava_mod = {
-	global_unrest = -1
-	burghers_loyalty_modifier = 0.05
-	church_loyalty_modifier = 0.05
-	nobles_loyalty_modifier = 0.05
-}
 
 respect_faamatai_mod = {
 	stability_cost_modifier = -0.25
@@ -12802,10 +12683,7 @@ mal_radical_clergy = {
 	####dhimmi_loyalty_modifier = -0.2
 }
 
-mal_radical_dhimmi = {
-	tolerance_own = -3
-	church_loyalty_modifier = -0.2
-}
+
 
 mal_burghers_take_over = {
 	trade_goods_size_modifier = -1
@@ -12937,8 +12815,8 @@ gathers_soldiers_for_the_ruler = {
 }
 
 internal_marriage = {
-	nobles_loyalty_modifier = 0.1
-	nobles_influence_modifier = 0.05
+	families_loyalty_modifier = 0.1
+	families_influence_modifier = 0.05
 	heir_chance = 1
 }
 
@@ -13393,9 +13271,7 @@ PRU_toleranzedikt = {
 	tolerance_heretic = 2
 	advisor_cost = -0.05
 }
-PRU_bitter_resistance = {
-	church_loyalty_modifier = -0.05
-}
+
 
 BRA_reformed_kreditwerk = {
 	interest = -0.5
@@ -13953,13 +13829,6 @@ per_shirley_reforms_the_army2_modifier = {
 per_porcelain_exports_to_the_west_modifier = {
 	trade_efficiency = 0.15
 }
-zoroastrian_interests = {
-	tolerance_own = -2
-	tolerance_heathen = 2
-	church_loyalty_modifier = -0.2
-	can_not_build_missionaries = yes
-	religion = yes
-}
 zoroastrian_prophet_inspiration = {
 	land_morale = 0.15
 	defensiveness = 0.33
@@ -14129,18 +13998,6 @@ grand_vizier_grand_captain = {
 	yearly_corruption = -0.05
 	country_military_power = 1
 	siege_ability = 0.1
-}
-
-estate_church_TIM_promote_ijazah_scaling = {
-	yearly_innovativeness = 0.5
-}
-
-TIM_full_army_trad = {
-	army_tradition = 1 
-}
-
-TIM_full_army_prof = {
-	yearly_army_professionalism = 0.01 
 }
 
 #Perisna Influence Counter

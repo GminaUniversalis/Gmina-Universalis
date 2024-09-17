@@ -14,7 +14,7 @@ aristocracy_ideas = {
 
 	bonus = {
 		leader_siege = 1
-		nobles_loyalty_modifier = 0.1
+		families_loyalty_modifier = 0.1
 		#rajput_loyalty_modifier = 0.1
 		#maratha_loyalty_modifier = 0.1
 	}
@@ -92,8 +92,8 @@ plutocracy_ideas = {
 
 	bonus = {
 		global_prov_trade_power_modifier = 0.25
-		burghers_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
+		investors_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -200,9 +200,8 @@ theocracy_gov_ideas = {
 	
 	bonus = {
 		global_heretic_missionary_strength = 0.01
-		church_loyalty_modifier = 0.1
-		#brahmins_hindu_loyalty_modifier = 0.1
-		brahmins_muslim_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
+		retirees_loyalty_modifier = 0.1
 	}
 	
 	trigger = {
@@ -385,7 +384,7 @@ religious_ideas = {
 	bonus = {
 		culture_conversion_cost = -0.25
 		#brahmins_hindu_loyalty_modifier = 0.1
-		church_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
 	}
 
 	missionary_schools = {
@@ -814,8 +813,8 @@ trade_ideas = {
 
 	bonus = {
 		merchants = 1
-		burghers_loyalty_modifier = 0.1
-		#jains_loyalty_modifier = 0.1
+		investors_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 		#vaisyas_loyalty_modifier = 0.1
 	}
 
@@ -1568,8 +1567,7 @@ humanist_ideas = {
 	bonus = {
 		idea_cost = -0.1
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
-		brahmins_muslim_loyalty_modifier = 0.1
-		#dhimmi_loyalty_modifier = 0.1
+		families_loyalty_modifier = 0.1
 	}
 
 	local_traditions = {

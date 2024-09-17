@@ -1,12 +1,73 @@
-# timewalker = {
-# 	potential = {
-# 		any_owned_province = {
-# 			has_province_triggered_modifier = {
-# 				OR = {
-	
-# 				}
-# 			}
-# 		}
-# 		}
+timewalker = {
+	potential = {
+		any_owned_province = {
+			
+			OR = {
+				has_province_modifier = clock_ptm_1
+				has_province_modifier = clock_ptm_2
+				has_province_modifier = clock_ptm_3
+				has_province_modifier = clock_ptm_4
+				has_province_modifier = clock_ptm_5
+				has_province_modifier = clock_ptm_6
+				has_province_modifier = clock_ptm_7
+				has_province_modifier = clock_ptm_8
+				has_province_modifier = clock_ptm_9
+				has_province_modifier = clock_ptm_10
+				has_province_modifier = clock_ptm_11
+				has_province_modifier = clock_ptm_12
+			}
+		
+		}
+	}
 
-# }
+	trigger = {
+		calc_true_if = {
+			amount = 6
+			desc = timewalker_desc
+			any_owned_province = {
+				has_province_modifier = clock_ptm_1
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_2
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_3
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_4
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_5
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_6
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_7
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_8
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_9
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_10
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_11
+			}
+			any_owned_province = {
+				has_province_modifier = clock_ptm_12
+			}
+		}
+
+	}
+
+	movement_speed = 0.5
+	build_time = -0.5
+	great_project_upgrade_time = -0.5
+	envoy_travel_time = -0.5
+	autonomy_change_time = -0.5
+	culture_conversion_time = -0.5
+}

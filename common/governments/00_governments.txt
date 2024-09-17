@@ -9,6 +9,7 @@ monarchy = {
 				constitutional_monarchy_reform
 				capital_city_reform_monarchy
 				silesian_presidency_reform
+				mughal_government
 			}
 		}
 		hereditary_vs_nobility = { #2

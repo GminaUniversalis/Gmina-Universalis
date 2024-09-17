@@ -35,7 +35,7 @@ country_event = {
 	title = "silesian_autonomy.2_title"
 	desc = "silesian_autonomy.2_desc"
 	picture = HRE_eventPicture
-	
+	hidden = yes
 	is_triggered_only = yes
 	
 	trigger = {

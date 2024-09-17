@@ -17,8 +17,8 @@ theocracy_mechanic = {
 
 	modifiers = {
 		#brahmins_hindu_influence_modifier = 0.1
-		church_loyalty_modifier = 0.1
-		#church_influence_modifier = 0.05
+		priests_loyalty_modifier = 0.1
+		priests_influence_modifier = 0.05
 	}
 }
 
@@ -31,7 +31,7 @@ leading_clergy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		church_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
 		global_tax_modifier = 0.1
 	}
 	conditional = {
@@ -336,7 +336,7 @@ religious_administrators_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		stability_cost_modifier = -0.1
-		church_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
 		culture_conversion_cost = -0.15
 	}
 }
@@ -449,7 +449,7 @@ safeguard_holy_sites_reform = {
 	icon = "church"
 	allow_normal_conversion = yes
 	modifiers = {
-		church_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
 
 		defensiveness = 0.15
 	}

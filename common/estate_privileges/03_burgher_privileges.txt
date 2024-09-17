@@ -3192,14 +3192,6 @@ estate_burghers_exkousseiai_for_latins = {
 	
 	conditional_modifier = {
 		trigger = {
-			has_country_flag = BYZ_kommerkion_will_give_5_less_loyalty_flag
-		}
-		modifier = {
-			burghers_loyalty_modifier = -0.05
-		}
-	}
-	conditional_modifier = {
-		trigger = {
 			has_country_flag = BYZ_kommerkion_will_give_5_less_trade_eff_flag
 		}
 		modifier = {
