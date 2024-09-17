@@ -7,7 +7,7 @@ country_event = { #Estate setup
 	picture = MARCHING_PEASANTS_eventPicture
 
 	is_triggered_only = yes
-	#fire_only_once = yes
+	fire_only_once = yes
 
 	trigger = {
 		is_year = 1444

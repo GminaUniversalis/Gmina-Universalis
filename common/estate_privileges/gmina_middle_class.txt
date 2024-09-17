@@ -1,7 +1,7 @@
 estate_middle_class_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
@@ -37,7 +37,7 @@ estate_middle_class_land_rights = {
 estate_middle_class_empty_promises = {
 	icon = privilege_grant_autonomy
 	land_share = 0
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1

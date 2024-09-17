@@ -347,16 +347,17 @@ capital_city_reform_monarchy = {
 	}
 }
 
-mughal_government = {
+big_family_government = {
 	icon = "peacock_throne"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_dlc = "Dharma"
-			has_dlc = "King of Kings"
-			has_dlc = "Winds of Change"
+			full_idea_group = court_ideas #poki nie ma cutom ideii
+			have_had_reform = big_family_government
 		}
+
 	}
+
 	lock_level_when_selected = yes
 
 	modifiers = {
@@ -435,12 +436,7 @@ mughal_government = {
 			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}
-		malopolska = {
-			embracement_cost = -0.1
-			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
-			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
-		}
-		goralska = {
+		malopolska_cg = {
 			discipline = 0.05
 			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
@@ -471,15 +467,135 @@ mughal_government = {
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}
 		podlaska_cg = {
-			trade_efficiency = 0.05
-			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
-			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
-		}
-		poleska = {
 			province_warscore_cost = -0.15
 			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}
+	}
+}
+
+feudalism_reform = {
+	icon = "castle"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		vassal_income = 0.25
+		families_influence_modifier = 0.05
+
+	}
+	# custom_attributes = {
+	# 	buffed_strong_duchies = yes #+5% Loyalty
+	# }
+	ai = {
+		factor = 0.5 #generic
+	}
+}
+
+autocracy_reform = {
+	icon = "crown"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		unjustified_demands = -0.1
+		harsh_treatment_cost = -0.1
+		global_rebel_suppression_efficiency = 0.1
+	}
+	ai = {
+		factor = 0.5 #generic
+	}
+}
+
+elective_monarchy_reform = {
+	icon = "ballot_box"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		max_absolutism = -40
+		all_estate_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		has_ruler_election = yes
+	}
+	ai = {
+		factor = 0.5
+	}
+}
+
+centralized_collectivizm = {
+	icon = "mandala_system"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	potential = {
+		religion_group = communism_group
+	}
+
+	modifiers = {
+		vassal_income = 0.25
+		vassal_forcelimit_bonus = 1.5
+		monthly_church_power = 0.15
+	}
+	free_concentrate_development = yes
+}
+
+academic_autocracy = {
+	icon = "korean_monarchy"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 20
+	has_meritocracy = yes
+	fixed_rank = 1
+	potential = {
+		OR = {
+			AND = {
+				any_owned_province = {
+					has_building = university
+					development = 30
+				}
+				full_idea_group = innovativeness_ideas
+			}
+			have_had_reform = academic_autocracy
+		}
+
+	}
+	modifiers = {
+		development_cost_in_primary_culture = -0.1
+		same_culture_advisor_cost = -0.1
+		global_institution_spread = 0.15
+	}
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = no_perfectionism_focus
+				duration = -1
+				desc = has_no_perfectionism_focus
+			}
+		}
+
+		set_government_rank = 1
+	}
+	removed_effect = {
+		remove_country_modifier = no_perfectionism_focus
+		remove_country_modifier = inward_focus_modifier
+		remove_country_modifier = outward_focus_modifier
+		remove_country_modifier = expansion_focus_modifier
+	}
+
+	custom_attributes = {
+		has_weaker_harem_events = yes
+	}
+	
+	government_abilities = {
+		perfectionism_mechanic
+	}
+	
+	ai = {
+		factor = 100
 	}
 }
 
@@ -494,8 +610,6 @@ enforce_privileges_reform = {
 	modifiers = {
 		global_manpower_modifier = 0.1
 		army_influence_modifier = 0.1
-		#maratha_exclusive_influence_modifier = 0.1
-		#rajput_exclusive_influence_modifier = 0.1
 	}
 	ai = {
 		factor = 1
@@ -540,9 +654,9 @@ grant_noble_castle_rights_reform = {
 		#maratha_exclusive_influence_modifier = 0.05
 		#rajput_exclusive_influence_modifier = 0.05
 	}
-	custom_attributes = {
-		on_fort_built_nobles_loyalty = yes	#5 Loyalty
-	}
+	# custom_attributes = {
+	# 	on_fort_built_nobles_loyalty = yes	#5 Loyalty
+	# }
 	ai = {
 		factor = 1
 		modifier = {
@@ -571,9 +685,9 @@ maintain_nobles_status_quo_reform = {
 		meritocracy = 0.5
 		stability_cost_modifier = -0.15
 	}
-	custom_attributes = {
-		free_noble_levies = yes
-	}
+	# custom_attributes = {
+	# 	free_noble_levies = yes
+	# }
 	ai = {
 		factor = 1
 		modifier = {
@@ -596,9 +710,9 @@ grant_military_command_reform = {
 		#maratha_exclusive_influence_modifier = 0.05
 		#rajput_exclusive_influence_modifier = 0.05
 	}
-	custom_attributes = {
-		recruiting_generals_increases_nobles_loyalty = yes
-	}
+	# custom_attributes = {
+	# 	recruiting_generals_increases_nobles_loyalty = yes
+	# }
 	ai = {
 		factor = 1
 	}
@@ -652,7 +766,7 @@ blackmail_nobility_reform = {
 	}
 	modifiers = {
 		army_influence_modifier = -0.1
-		#maratha_exclusive_influence_modifier = -0.1
+		ub_influence_modifier = 0.1
 		#rajput_exclusive_influence_modifier = -0.1
 		allow_free_estate_privilege_revocation = yes
 	}

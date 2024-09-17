@@ -3,13 +3,17 @@ monarchy = {
 	reform_levels = {
 		feudalism_vs_autocracy = { #1
 			reforms = {
+				feudalism_reform
+				autocracy_reform
+				elective_monarchy_reform
 				silesian_autonomy_reform
 				monarchical_army_coup_reform
 				familial_rule_reform
 				constitutional_monarchy_reform
 				capital_city_reform_monarchy
 				silesian_presidency_reform
-				mughal_government
+				big_family_government
+				academic_autocracy
 			}
 		}
 		hereditary_vs_nobility = { #2

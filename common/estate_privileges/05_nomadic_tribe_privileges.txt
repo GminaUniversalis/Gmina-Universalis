@@ -1,7 +1,7 @@
 estate_nomadic_tribes_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
@@ -187,7 +187,7 @@ estate_nomadic_tribes_land_rights = {
 
 estate_nomadic_tribes_share_of_the_spoils = {
 	icon = privilege_supply_arms
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	penalties = {
@@ -218,7 +218,7 @@ estate_nomadic_tribes_chieftains_autonomy = {
 
 estate_nomadic_tribes_guaranteed_leadgership_in_host = {
 	icon = privilege_conscript_cossack_elite
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
 	can_select = {
@@ -239,7 +239,7 @@ estate_nomadic_tribes_guaranteed_leadgership_in_host = {
 
 estate_nomadic_tribes_tribal_host = {
 	icon = privilege_raise_host
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = -0.05
 	influence = 0.1
@@ -257,7 +257,7 @@ estate_nomadic_tribes_tribal_host = {
 
 estate_nomadic_tribes_primacy_to_the_bannermen = {
 	icon = privilege_royal_authority
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
 	is_valid = {
@@ -286,7 +286,7 @@ estate_nomadic_tribes_primacy_to_the_bannermen = {
 
 estate_nomadic_tribes_autonomy_of_the_tribes = {
 	icon = privilege_land_rights
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0
 	loyalty = 0.1
@@ -308,7 +308,7 @@ estate_nomadic_tribes_freedom_of_the_steppes = {
 	icon = privilege_development_efficiency
 	loyalty = 0.05
 	influence = 0.05
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
@@ -360,7 +360,7 @@ estate_nomadic_tribes_grant_military_leadership = {
 	icon = privilege_army_tradition
 	loyalty = 0.05
 	influence = 0.05
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
@@ -390,7 +390,7 @@ estate_nomadic_tribes_military_service = {
 	icon = privilege_military
 	loyalty = 0.0
 	influence = 0.05
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
@@ -429,7 +429,7 @@ estate_nomadic_tribes_ensure_tribal_loyalty = {
 	icon = privilege_discipline
 	loyalty = 0.0
 	influence = 0.1
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
@@ -467,7 +467,7 @@ estate_nomadic_tribes_secured_succession = {
 	icon = privilege_legitimacy
 	loyalty = 0.0
 	influence = 0.1
-	max_absolutism = -5
+	max_absolutism = 0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"

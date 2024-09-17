@@ -1,3 +1,39 @@
+academic_autocracy = {
+	rank = {
+		1 = REKTORAT
+	}
+
+	ruler_male = {
+		1 = REKTOR
+	}
+
+	ruler_female = {
+		1 = REKTORKA
+	}
+
+	consort_male = {	
+		1 = WOJT_CONSORT
+	}
+
+	consort_female = {
+		1 = WIFE
+	}
+
+	heir_male = {
+		1 = PRODZIEKAN
+	}
+
+	heir_female = {
+		1 = PRODZIEKAN
+	}
+	
+	trigger = {
+
+		has_reform = academic_autocracy
+
+	}
+}
+
 military_dictatorship = {
 	rank = {
 		1 = GMINA
