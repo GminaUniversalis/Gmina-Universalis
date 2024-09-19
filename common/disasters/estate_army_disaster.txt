@@ -111,6 +111,7 @@ estate_army_disaster = {
 		land_morale = -0.25
 		reinforce_speed = -0.5
 		infantry_cost = 0.25
+		global_unrest = 2
 	}
 
 	on_start = gmina_estate_disasters.5

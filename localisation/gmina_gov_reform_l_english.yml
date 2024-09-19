@@ -1,7 +1,8 @@
 ﻿l_english:
  silesian_autonomy_reform:0 "Silesian Autonomy"
- unionists_MECHANIC_TOOLTIP:0 "Unionists"
- separationists_MECHANIC_TOOLTIP:0 "Separationists"
+ silesian_autonomy_reform_desc: ""Silesian Autonomy" as government reform, represents silesian desires to be recognized as a separate entity from Poland."
+ Unionists_MECHANIC_TOOLTIP:0 "Unionists"
+ Separationists_MECHANIC_TOOLTIP:0 "Separationists"
  STRENG_STATISTS_EFFECT:1 "Strengthen $NAME$ by $VAL|Y%$"
  STRENG_MONARCHISTS_EFFECT:0 "Strengthen $NAME$ by $VAL|Y%$"
  STATISTS_IRO:1 "$NAME|Y$\n"
@@ -89,3 +90,6 @@
  centralized_collectivizm_desc: "Centralized Collectivism is a government system where all means of production, resources, and goods are controlled and managed by a central authority. In this model, decision-making regarding production, distribution, and consumption is concentrated at the national level, eliminating private ownership and market competition in favor of achieving social equality and resource allocation according to central plans."
  academic_autocracy: "Academic Autocracy"
  academic_autocracy_desc: "Academic Autocracy is a form of government where a university rector rules as an absolute monarch, wielding unlimited power over the state. This system combines academic leadership with monarchical authority, where the rector governs based on educational ideals and dictates all major decisions. The rector also has the sole authority to designate their successor, ensuring control over the future leadership and direction of the country."
+ farmholders: "Farmholders"
+ farmholders_desc: "Farmholders are the owners of farms and ranches in the region. They are responsible for the production and distribution of food, while also providing access to land and other resources."
+ CAN_EXPORT_GRAIN: "You gain acces to "§YExport Grain§!" diplomatic action.\n"

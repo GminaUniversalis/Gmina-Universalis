@@ -107,10 +107,11 @@ estate_families_disaster = {
 	}
 	
 	modifier = {	
-		interest = 5
-		inflation_reduction = 0.5
-		production_efficiency = -0.2
-		trade_efficiency = -0.2
+		republican_tradition = -1
+		manpower_recovery_speed = -0.5
+		global_tax_modifier = -0.5
+		inflation_reduction = -0.1
+		global_unrest = 2
 	}
 
 	on_start = gmina_estate_disasters.3

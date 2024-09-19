@@ -65,15 +65,18 @@ province_event = {
 		}
 	}
 	
+	immediate = {
+		owner = {
+			clr_country_flag = separatist_sentiment_cooldown
+			set_country_flag = separatist_sentiment_cooldown
+		}
+	}
+
 	option = {
 		name = "EVTOPTA3098" # A minor inconvenience
 		add_province_modifier = {
 			name = "rebel_sentiment"
 			duration = 1825
-		}
-		owner = {
-			clr_country_flag = separatist_sentiment_cooldown
-			set_country_flag = separatist_sentiment_cooldown
 		}
 		random_neighbor_province = {
 			limit = {

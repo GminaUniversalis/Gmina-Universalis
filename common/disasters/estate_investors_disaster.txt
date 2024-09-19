@@ -107,10 +107,12 @@ estate_investors_disaster = {
 	}
 	
 	modifier = {	
-		interest = 5
-		inflation_reduction = 0.5
-		production_efficiency = -0.2
-		trade_efficiency = -0.2
+		build_cost = 2
+		build_time = 2
+		great_project_upgrade_cost = 2
+		great_project_upgrade_time = 2
+		global_trade_power = -0.5
+		global_unrest = 2
 	}
 
 	on_start = gmina_estate_disasters.16
