@@ -27,6 +27,7 @@ communism_group = {
 			conservatism_pc
 			conservatism_psl
 			socialism_sld
+			populism_PPU
 		}
 
 		on_convert = {
@@ -79,6 +80,7 @@ communism_group = {
 			conservatism_pc
 			conservatism_psl
 			socialism_sld
+			populism_PPU
 		}
 
 		on_convert = {
@@ -131,6 +133,7 @@ communism_group = {
 			conservatism_pc
 			conservatism_psl
 			socialism_sld
+			populism_PPU
 		}
 
 		on_convert = {
@@ -177,6 +180,7 @@ liberalism_group = {
 		allowed_conversion = {
 			liberalism_kld
 			liberalism_uw
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -254,6 +258,7 @@ liberalism_group = {
 		allowed_conversion = {
 			liberalism_ud
 			liberalism_uw
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -335,6 +340,7 @@ liberalism_group = {
 			communism_zsl
 			liberalism_kld
 			liberalism_ud
+			populism_PPU
 		}
 
 		on_convert = {
@@ -432,6 +438,7 @@ conservatism_group = {
 			conservatism_pc
 			conservatism_psl
 			conservatism_lpr
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -475,12 +482,10 @@ conservatism_group = {
 				idea_cost = -0.15
 				
 				allow = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
@@ -494,12 +499,10 @@ conservatism_group = {
 				manpower_recovery_speed = 0.2
 				
 				allow = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
@@ -521,12 +524,10 @@ conservatism_group = {
 				global_unrest = -2
 				
 				allow = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
@@ -560,12 +561,10 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
@@ -587,12 +586,10 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_kpn
 				}
 
@@ -606,12 +603,10 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
@@ -625,12 +620,10 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
@@ -644,12 +637,10 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
@@ -685,12 +676,10 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
@@ -704,12 +693,10 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
@@ -723,13 +710,136 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_kpn }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
 				}
 
 				ai_will_do = {
@@ -759,6 +869,7 @@ conservatism_group = {
 			conservatism_pc
 			conservatism_psl
 			conservatism_lpr
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -802,12 +913,10 @@ conservatism_group = {
 				idea_cost = -0.15
 				
 				allow = {
-					always = yes
 					religion = conservatism_zchn
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_zchn
 				}
 
@@ -821,13 +930,11 @@ conservatism_group = {
 				manpower_recovery_speed = 0.2
 				
 				allow = {
-					always = yes
 					religion = conservatism_zchn
 				}
 
 				visible = {
-					always = yes
-					religion = conservatism_kpn
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -848,12 +955,10 @@ conservatism_group = {
 				global_unrest = -2
 				
 				allow = {
-					always = yes
 					religion = conservatism_zchn
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_zchn
 				}
 
@@ -887,12 +992,10 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
@@ -914,12 +1017,10 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
@@ -933,12 +1034,10 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = yes
 					religion = conservatism_zchn 
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_zchn
 				}
 
@@ -952,13 +1051,11 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = yes
-					religion = conservatism_zchn
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
-					religion = conservatism_zchn
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -971,12 +1068,10 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
@@ -1012,12 +1107,10 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
@@ -1031,12 +1124,10 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
@@ -1050,13 +1141,136 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_zchn }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
 				}
 
 				ai_will_do = {
@@ -1086,6 +1300,7 @@ conservatism_group = {
 			conservatism_zchn
 			conservatism_psl
 			conservatism_lpr
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -1129,12 +1344,10 @@ conservatism_group = {
 				idea_cost = -0.15
 				
 				allow = {
-					always = yes
 					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_pc
 				}
 
@@ -1148,12 +1361,10 @@ conservatism_group = {
 				manpower_recovery_speed = 0.2
 				
 				allow = {
-					always = yes
 					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_pc
 				}
 
@@ -1175,12 +1386,10 @@ conservatism_group = {
 				global_unrest = -2
 				
 				allow = {
-					always = yes
 					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_pc
 				}
 
@@ -1214,12 +1423,10 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
@@ -1241,12 +1448,10 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
@@ -1260,12 +1465,10 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
@@ -1279,12 +1482,10 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
@@ -1298,12 +1499,10 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = yes
 					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_pc
 				}
 
@@ -1339,12 +1538,10 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = yes
 					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_pc
 				}
 
@@ -1358,12 +1555,10 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
@@ -1377,13 +1572,136 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_pc }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
 				}
 
 				ai_will_do = {
@@ -1413,6 +1731,8 @@ conservatism_group = {
 			conservatism_pc
 			conservatism_psl
 			conservatism_lpr
+			conservatism_PIS
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -1458,12 +1778,10 @@ conservatism_group = {
 				idea_cost = -0.15
 				
 				allow = {
-					always = yes
 					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_aws
 				}
 
@@ -1477,12 +1795,10 @@ conservatism_group = {
 				manpower_recovery_speed = 0.2
 				
 				allow = {
-					always = yes
 					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_aws
 				}
 
@@ -1504,12 +1820,10 @@ conservatism_group = {
 				global_unrest = -2
 				
 				allow = {
-					always = yes
 					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_aws
 				}
 
@@ -1543,12 +1857,10 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_aws }
 				}
 
@@ -1570,12 +1882,10 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
 					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_aws
 				}
 
@@ -1589,12 +1899,10 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = yes
 					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_aws
 				}
 
@@ -1608,12 +1916,10 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_aws }
 				}
 
@@ -1627,12 +1933,10 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_aws }
 				}
 
@@ -1668,12 +1972,10 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = no
 					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
-					always = no
 					NOT = { religion = conservatism_aws }
 				}
 
@@ -1687,12 +1989,10 @@ conservatism_group = {
 				improve_relation_modifier = 0.25
 				
 				allow = {
-					always = yes
 					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_aws
 				}
 
@@ -1711,13 +2011,136 @@ conservatism_group = {
 				spy_action_cost_modifier = -0.60
 				
 				allow = {
-					always = yes
 					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
 					religion = conservatism_aws
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
 				}
 
 				ai_will_do = {
@@ -1747,6 +2170,7 @@ conservatism_group = {
 			conservatism_zchn
 			conservatism_pc
 			conservatism_lpr
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -2036,6 +2460,7 @@ conservatism_group = {
 			conservatism_zchn
 			conservatism_pc
 			conservatism_psl
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -2072,15 +2497,327 @@ conservatism_group = {
 
 		fervor = yes
 	}
+
+	conservatism_PIS = {
+		color = { 7 58 118 }
+		icon = 44
+
+		allowed_conversion = {
+			populism_PPU
+		}
+
+		country = {
+			tolerance_own = 3
+			global_heathen_missionary_strength = 0.05
+		}
+		
+		country_as_secondary = {
+			global_tax_modifier = 0.5
+			advisor_pool = 5
+		}
+		
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_aws
+			liberalism_PO
+			populism_konfederacja
+		}
+
+		on_convert = {
+			change_religion = conservatism_PIS
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { }
+		
+		papacy = {
+			papal_tag = P1S
+			election_cost = 5
+			seat_of_papacy = 1016 # Ochota
+			
+			
+			#Council of Trent Positions
+			harsh = {
+				relation_with_heretics = -25
+				relation_with_heathens = -50
+				global_religious_conversion_resistance = 0.5
+				global_institution_spread = -0.5
+				global_missionary_strength = 0.03
+			}
+			neutral = {
+				global_religious_conversion_resistance = -1
+			}
+			concilatory = {
+				relation_with_heretics = 10
+				relation_with_heathens = 25
+				global_religious_conversion_resistance = 0.5
+				global_heathen_missionary_strength = -0.05
+				improve_relation_modifier = 0.5
+			}
+			
+			#Council of Trent Concessions
+			concessions = {
+				first_concession = {
+					harsh = {
+						relation_with_heretics = -12.5
+						relation_with_heathens = -25
+						global_heretic_missionary_strength = 0.05
+					}	
+					concilatory = {
+						relation_with_heretics = 12.5
+						relation_with_heathens = 25
+						tolerance_heathen = 3
+					}
+				}
+				second_concession = {
+					harsh = {
+						relation_with_heretics = -25
+						relation_with_heathens = -50
+						papal_influence_from_cardinals = 5
+						curia_treasury_contribution = 0.33
+					}	
+					concilatory = {
+						relation_with_heretics = 25
+						relation_with_heathens = 50
+						tolerance_of_heathens_capacity = 3
+						religious_unity = 0.5
+					}
+				}
+				third_concession = {
+					harsh = {
+						relation_with_heretics = -37.5
+						relation_with_heathens = -75
+						manpower_in_true_faith_provinces = 0.25
+						extra_manpower_at_religious_war = yes
+					}	
+					concilatory = {
+						relation_with_heretics = 37.5
+						relation_with_heathens = 75
+						global_manpower_modifier = 0.10
+						curia_powers_cost = -0.5
+					}
+				}
+				fourth_concession = {
+					harsh = {
+						relation_with_heretics = -50
+						relation_with_heathens = -100
+						enforce_religion_cost = -0.75
+						missionaries = 3
+					}	
+					concilatory = {
+						relation_with_heretics = 50
+						relation_with_heathens = 100
+						no_religion_penalty = yes
+						can_not_build_missionaries = yes
+					}
+				}
+			}
+			
+			
+			# PIS Actions below!
+			
+			levy_party_tax = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_sanction_for_church_taxes }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_sanction_for_church_taxes"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}				
+			}			
+			bless_local_leader = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_blessing }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_blessing"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			indulgence_for_sins = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_indulgence }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_indulgence"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}	
+			local_saint = {
+				cost = 100
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { stability = 3 }
+				}
+				effect = {
+					add_stability = 1
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 2
+						NOT = { stability = 0 }
+					}
+				}
+			}
+			forgiveness_for_usury = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = usury_forgiven }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "usury_forgiven"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						NOT = { num_of_loans = 1 }
+					}
+				}
+			}			
+			proclaim_holy_war = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					is_at_war = yes
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_sanction_for_holy_war }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_sanction_for_holy_war"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						manpower_percentage = 0.5
+					}
+				}
+			}
+			send_pis_legate = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+					is_papal_controller = no
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_legate }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_legate"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}	
+			sanction_commercial_monopoly = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { mercantilism = 100 }
+				}
+				effect = {
+					add_mercantilism = 1
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						NOT = { has_idea_group = trade_ideas }
+					}
+				}
+			}
+			investigate_heresy = {
+				curia_treasury_cost = 500
+				potential = {
+					is_papal_controller = yes
+					tag = P1S
+				}
+				allow = {
+					is_papal_controller = yes
+					reform_desire = 0.05
+				}
+				effect = {
+					add_reform_desire = -0.05
+					add_reform_desire_scale = 0.5
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+	}
 }
 
 socialism_group = {
 	defender_of_faith = yes
 	flags_with_emblem_percentage = 33
-	flag_emblem_index_range = { 97 106 } #Including Star of David / Seal of Suleyman
+	flag_emblem_index_range = { 97 106 }
 
 	religious_schools = {
-		#
 	}
 
 	socialism_sld = {
@@ -2241,5 +2978,432 @@ populism_group = {
 		date = 1503.1.1
 	}
 
-	crusade_name = WAR_FOR_FREE_MARKET
+	populism_PPU = {
+		color = { 188 3 0 }
+		icon = 2
+		country = {
+			religious_unity = 0.25
+			global_unrest = -2
+		}
+		country_as_secondary = {
+			global_unrest = -1
+		}
+		province = {
+			trade_goods_size_modifier = 0.05
+		}
+
+		allowed_conversion = {
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+			liberalism_PO
+			conservatism_PIS
+
+		}
+		on_convert = {
+			change_religion = populism_PPU
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_PPU
+						}
+					}
+					change_religion = populism_PPU
+					add_reform_center = populism_PPU
+				}
+			}			
+		}
+		
+		heretic = { }
+		
+		date = 1615.01.01
+		has_patriarchs = yes		# Uses patriarch authority
+		
+		orthodox_icons = {
+			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
+
+			icon_jan_pawel_2 = {
+				monarch_diplomatic_power = 2
+				idea_cost = -0.15
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_stefan_wyszynski = {
+				discipline = 0.05
+				manpower_recovery_speed = 0.2
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}
+
+			icon_jerzy_popieluszko = {
+				stability_cost_modifier = -0.40
+				global_unrest = -2
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 0.02
+					modifier = {
+						factor = 0
+						NOT = {
+							calc_true_if = {
+								all_owned_province = {
+									unrest = 1
+								}
+								amount = 2
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						calc_true_if = {
+							all_owned_province = {
+								unrest = 1
+							}
+							amount = 5
+						}
+					}
+				}
+			}
+
+			icon_leszek_moczulski = {
+				culture_conversion_cost = -0.30
+				global_missionary_strength = 0.03
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						NOT = {religious_unity = 0.7} 
+					}
+				}
+			}
+
+			icon_romuald_szeremietiew = {
+				build_cost = -0.15
+				great_project_upgrade_cost = -0.15	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_stefan_niesiolowski = {
+				cavalry_cost = -0.15	
+				cavalry_power = 0.15		
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_marek_jurek = {
+				mercenary_cost = -0.15	
+				mercenary_discipline = 0.10
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_lech_kaczynski = {
+				embracement_cost = -0.4	
+				global_institution_spread = 0.25	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 0.02
+					modifier = {
+						factor = 0
+						NOT = {
+							calc_true_if = {
+								all_owned_province = {
+									current_institution = 1
+									NOT = { current_institution = 95 }
+								}
+								amount = 1
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						calc_true_if = {
+							all_owned_province = {
+								current_institution = 1
+								NOT = { current_institution = 95 }
+							}
+							amount = 5
+						}
+					}
+				}
+			}
+
+			icon_jaroslaw_kaczynski = {
+				artillery_levels_available_vs_fort = 1	
+				siege_ability = 0.25	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_jerzy_buzek = {
+				build_cost = -0.15
+				great_project_upgrade_cost = -0.15	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_marian_krzaklewski = {
+				build_cost = -0.15
+				great_project_upgrade_cost = -0.15	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+	}
+
+	crusade_name = WAR_FOR_FREE_TRADE
 }

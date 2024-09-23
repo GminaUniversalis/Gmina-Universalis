@@ -1869,10 +1869,10 @@ country_event = {
 			factor = 75
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 40
 					}
 				}
@@ -2704,7 +2704,7 @@ country_event = {
 		name = ideagroups.604.b
 		trigger = {
 			religion = catholic
-			NOT = { tag = PAP }
+			NOT = { tag = P1S }
 		}
 		add_papal_influence = 20
 	}
@@ -8523,7 +8523,7 @@ country_event = {
 		has_idea_group = theocracy_gov_ideas
 		OR = {
 			estate_influence = {
-				estate = estate_church
+				estate = estate_priests
 				influence = 75
 			}
 			estate_influence = {	
@@ -8539,10 +8539,10 @@ country_event = {
 		name = ideagroups.1916.a
 		if = {
 			limit = {
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_loyalty = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = -10
 			}
 		}

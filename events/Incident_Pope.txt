@@ -18,7 +18,7 @@ namespace = incident_pope
 # 		113 = { is_part_of_hre = yes }
 # 		is_part_of_hre = no
 # 		is_subject = no		
-# 		tag = PAP
+# 		tag = P1S
 # 		NOT = { num_of_cities = 10 }
 # 		hre_leagues_enabled = no
 # 		hre_religion_treaty = no
@@ -37,7 +37,7 @@ namespace = incident_pope
 # 				factor = 0
 # 				OR = {
 # 					is_rival = emperor
-# 					emperor = { is_rival = PAP }
+# 					emperor = { is_rival = P1S }
 # 				}
 # 			}
 # 		}
@@ -72,12 +72,12 @@ namespace = incident_pope
 # 			modifier = {
 # 				factor = 0
 # 				OR = {
-# 					is_rival = PAP
-# 					PAP = { is_rival = ROOT }
+# 					is_rival = P1S
+# 					P1S = { is_rival = ROOT }
 # 				}
 # 			}
 # 		}
-# 		PAP = {
+# 		P1S = {
 # 			set_in_empire = yes
 # 			add_opinion = {
 # 				who = ROOT
@@ -94,7 +94,7 @@ namespace = incident_pope
 # 					}
 # 				}
 # 			}
-# 			PAP = { elector = yes }
+# 			P1S = { elector = yes }
 # 		}
 # 		custom_tooltip = pope_incident_tt2
 # 		# enables triggered modifier pope_in_hre_triggered_modifier
@@ -110,8 +110,8 @@ namespace = incident_pope
 # 				factor = 0
 # 				NOT = {
 # 					OR = {
-# 						is_rival = PAP
-# 						PAP = { is_rival = ROOT }
+# 						is_rival = P1S
+# 						P1S = { is_rival = ROOT }
 # 					}
 # 				}
 # 			}
@@ -131,7 +131,7 @@ namespace = incident_pope
 # 	major = yes
 	
 # 	trigger = {
-# 		tag = PAP
+# 		tag = P1S
 # 		is_part_of_hre = yes
 # 		OR = {
 # 			hre_religion_treaty = yes

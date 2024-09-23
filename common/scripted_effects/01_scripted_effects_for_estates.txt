@@ -4029,33 +4029,33 @@ estate_action_COMISSION_MERCHANT_SHIPS_FOR_WAR_BURGHERS = {
 estate_action_MAKE_GENEROUS_DONATION_CHURCH = {
 	add_years_of_income = -0.25
 	add_estate_loyalty = {
-		estate = estate_church
+		estate = estate_priests
 		loyalty = 10
 	}
 }
 estate_action_RECRUIT_MINISTER_CHURCH = {
 	generate_estate_advisor = {
-		estate = estate_church
+		estate = estate_priests
 		type = theologian
 	}
 	#add_estate_influence_modifier = {
-	#	estate = estate_church
+	#	estate = estate_priests
 	#	desc = EST_VAL_CLERGY_MINISTER
 	#	influence = 15
 	#	duration = 10950
 	#}
 	add_estate_loyalty = {
-		estate = estate_church
+		estate = estate_priests
 		loyalty = -10
 	}
 }
 estate_action_RECRUIT_INQUISITOR_CHURCH = {
 	generate_estate_advisor = {
-		estate = estate_church
+		estate = estate_priests
 		type = inquisitor
 	}
 	#add_estate_influence_modifier = {
-	#	estate = estate_church
+	#	estate = estate_priests
 	#	desc = EST_VAL_CLERGY_INQUISITOR
 	#	influence = 10
 	#	duration = 10950
@@ -4068,7 +4068,7 @@ estate_action_RECRUIT_INQUISITOR_CHURCH = {
 	# 	}
 	# }
 	add_estate_loyalty = {
-		estate = estate_church
+		estate = estate_priests
 		loyalty = -10
 	}
 }
@@ -4083,20 +4083,20 @@ estate_action_RELIGIOUS_DELEGATION_CHURCH = {
 		}
 	}
 	add_estate_loyalty = {
-		estate = estate_church
+		estate = estate_priests
 		loyalty = 10
 	}
 	auto_complete_estate_agenda = {
-		estate = estate_church
+		estate = estate_priests
 	}
 }
 estate_action_DEMAND_SUPPORT_CHURCH = {
 	estate_action_monarch_power = {
-		estate = estate_church
+		estate = estate_priests
 		type = adm
 	}
 	add_estate_loyalty = {
-		estate = estate_church
+		estate = estate_priests
 		loyalty = -20
 	}
 }
@@ -4146,13 +4146,13 @@ estate_action_SEEK_SUPPORT_OF_CLERGY_CHURCH = {
 	}
 	add_papal_influence = 15
 	add_estate_influence_modifier = {
-		estate = estate_church
+		estate = estate_priests
 		desc = EST_VAL_SOUGHT_SUPPORT
 		influence = 10
 		duration = 7300
 	}
 	add_estate_loyalty = {
-		estate = estate_church
+		estate = estate_priests
 		loyalty = 15
 	}
 }
@@ -4162,7 +4162,7 @@ estate_action_NEW_WORLD_MISSION_CHURCH = {
 		duration = 7300
 	}
 	add_estate_influence_modifier = {
-		estate = estate_church
+		estate = estate_priests
 		desc = EST_VAL_NEW_WORLD_MISSION
 		influence = 15
 		duration = 7300

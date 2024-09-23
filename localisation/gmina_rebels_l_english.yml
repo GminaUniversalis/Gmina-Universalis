@@ -109,12 +109,12 @@
    conservatism_lpr_rebels_desc:0 "Political fanatics tend to rise up in provinces controlled by nations of a different party. They seek to spread their beliefs and exterminate all who don't comply with their demands."
    conservatism_lpr_rebels_army:0 "$RELIGION$ Army" 
   #PIS
-   conservatism_pis_rebels_demands:0 "Enforce Re-election in $COUNTRYNAME$"
-   conservatism_pis_rebels_demands_desc:0 "The political rebels fight for the $RELIGION$ party. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them be."
-   conservatism_pis_rebels_title:0 "Political"
-   conservatism_pis_rebels_name:0 "$RELIGION$ Zealots"
-   conservatism_pis_rebels_desc:0 "Political fanatics tend to rise up in provinces controlled by nations of a different party. They seek to spread their beliefs and exterminate all who don't comply with their demands."
-   conservatism_pis_rebels_army:0 "$RELIGION$ Army" 
+   conservatism_PIS_rebels_demands:0 "Enforce Re-election in $COUNTRYNAME$"
+   conservatism_PIS_rebels_demands_desc:0 "The political rebels fight for the $RELIGION$ party. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them be."
+   conservatism_PIS_rebels_title:0 "Political"
+   conservatism_PIS_rebels_name:0 "$RELIGION$ Zealots"
+   conservatism_PIS_rebels_desc:0 "Political fanatics tend to rise up in provinces controlled by nations of a different party. They seek to spread their beliefs and exterminate all who don't comply with their demands."
+   conservatism_PIS_rebels_army:0 "$RELIGION$ Army" 
  #Socialism
   #SLD
    socialism_sld_rebels_demands:0 "Enforce Re-election in $COUNTRYNAME$"

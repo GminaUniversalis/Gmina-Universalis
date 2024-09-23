@@ -1697,10 +1697,10 @@ country_event = {
 		add_prestige = 20
 		if = {
 			limit = {
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_loyalty = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = 10
 			}
 		}

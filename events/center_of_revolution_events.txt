@@ -26,7 +26,7 @@ province_event = {
 			is_great_power = yes
 			has_institution = enlightenment
 			is_free_or_tributary_trigger = yes
-			NOT = { tag = PAP }
+			NOT = { tag = P1S }
 
 		}
 		NOT = { has_province_modifier = religious_center }
@@ -420,7 +420,7 @@ province_event = {
 			is_great_power = yes
 			has_institution = enlightenment
 			is_free_or_tributary_trigger = yes
-			NOT = { tag = PAP }
+			NOT = { tag = P1S }
 
 		}
 		NOT = { has_province_modifier = religious_center }

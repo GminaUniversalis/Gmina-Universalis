@@ -2,7 +2,7 @@ estate_middle_class_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
@@ -38,7 +38,7 @@ estate_middle_class_empty_promises = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -64,7 +64,7 @@ estate_middle_class_empty_promises = {
 }
 estate_middle_class_low_taxes = {
 	icon = privilege_loot
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.15
@@ -98,6 +98,14 @@ estate_middle_class_low_taxes = {
 		}
 	}	
 
+	is_valid = {
+		NOT = {
+			OR = {
+				has_country_flag = picked_high_taxes
+				has_country_flag = picked_high_taxes
+			}
+		}
+	}
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_taxation_tooltip
@@ -123,7 +131,7 @@ estate_middle_class_low_taxes = {
 		OR = {
 			NOT = { has_country_flag = picked_middle_class_taxation}
 			had_country_flag = {
-				flag = picked_investors_taxation
+				flag = picked_middle_class_taxation
 				days = 9125
 			}
 		}
@@ -152,7 +160,7 @@ estate_middle_class_low_taxes = {
 }
 estate_middle_class_high_taxes = {
 	icon = estate_eunuchs_western_bureau_privilege
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
@@ -185,6 +193,15 @@ estate_middle_class_high_taxes = {
 			is_in_deficit = yes
 		}
 	}	
+
+	is_valid = {
+		NOT = {
+			OR = {
+				has_country_flag = picked_low_taxes
+				has_country_flag = picked_very_high_taxes
+			}
+		}
+	}
 
 	can_select = {
 		custom_trigger_tooltip = {
@@ -238,7 +255,7 @@ estate_middle_class_high_taxes = {
 }
 estate_middle_class_very_high_taxes = {
 	icon = estate_burghers_GER_customs_union
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.05
@@ -272,6 +289,15 @@ estate_middle_class_very_high_taxes = {
 		}
 	}	
 
+	is_valid = {
+		NOT = {
+			OR = {
+				has_country_flag = picked_low_taxes
+				has_country_flag = picked_high_taxes
+			}
+		}
+	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_taxation_tooltip
@@ -289,8 +315,8 @@ estate_middle_class_very_high_taxes = {
 		hidden_effect = {
 			clr_country_flag = picked_middle_class_taxation
 			set_country_flag = picked_middle_class_taxation
-			clr_country_flag = picked_high_taxes
-			set_country_flag = picked_high_taxes
+			clr_country_flag = picked_very_high_taxes
+			set_country_flag = picked_very_high_taxes
 		}
 	}
 	can_revoke = {
@@ -310,11 +336,11 @@ estate_middle_class_very_high_taxes = {
 	}
 	on_invalid = {
 		clr_country_flag = picked_middle_class_taxation
-		clr_country_flag = picked_high_taxes
+		clr_country_flag = picked_very_high_taxes
 	}
 	on_revoked = {
 		clr_country_flag = picked_middle_class_taxation
-		clr_country_flag = picked_high_taxes
+		clr_country_flag = picked_very_high_taxes
 	}
 
 
@@ -326,7 +352,7 @@ estate_middle_class_very_high_taxes = {
 }
 estate_middle_class_allow_exclusive_goods = {
 	icon = privilege_monopoly_of_goods_gems
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
@@ -386,7 +412,7 @@ estate_middle_class_allow_exclusive_goods = {
 }
 estate_middle_class_accept_aspirations = {
 	icon = privilege_reform_progress
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
@@ -449,7 +475,7 @@ estate_middle_class_accept_aspirations = {
 #Definers
 estate_middle_class_american_model = {
 	icon = estate_eunuchs_supremacy_over_crown_privilege
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
@@ -543,7 +569,7 @@ estate_middle_class_american_model = {
 }
 estate_middle_early_polish_model = {
 	icon = privilege_golden_liberty
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
@@ -635,7 +661,7 @@ estate_middle_early_polish_model = {
 }
 estate_middle_class_european_model = {
 	icon = estate_burghers_fugger_family
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
@@ -739,7 +765,7 @@ estate_middle_class_european_model = {
 }
 estate_middle_class_soviet_model = {
 	icon = estate_burghers_sindicat_remensa_privilege
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
@@ -841,7 +867,7 @@ estate_middle_class_soviet_model = {
 }
 estate_middle_class_japan_model = {
 	icon = estate_church_fund_madrasas
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
@@ -946,7 +972,7 @@ estate_middle_class_japan_model = {
 estate_middle_class_party_appreciation = { #Political Party
 	icon = privilege_recruit_minister
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	influence = 0.10
 	on_granted = {
 

@@ -6,6 +6,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "PISPicture"
+		texturefile = "gfx/event_pictures/politics/PIS_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "PPUPicture"
+		texturefile = "gfx/event_pictures/politics/PPU_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "UWPicture"
 		texturefile = "gfx/event_pictures/politics/UW_event.dds"
 		alwaystransparent = yes

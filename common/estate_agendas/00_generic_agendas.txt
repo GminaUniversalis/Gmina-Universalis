@@ -198,12 +198,12 @@ estate_church_build_temple_in_y = {
 			limit = {
 				NOT = { crown_land_share = 15 }
 				estate_territory = {
-					estate = estate_church
+					estate = estate_priests
 					territory = 10
 				}
-				estate_not_has_exempt_from_seize_land_privilege = { estate = estate_church }
+				estate_not_has_exempt_from_seize_land_privilege = { estate = estate_priests }
 			}
-			take_estate_land_share_small = { estate = estate_church }
+			take_estate_land_share_small = { estate = estate_priests }
 		}
 		else = {
 			event_target:agenda_province = {
@@ -224,7 +224,7 @@ estate_church_build_temple_in_y = {
 			}
 		}
 		add_estate_loyalty_modifier = {
-			estate = estate_church
+			estate = estate_priests
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -7564,11 +7564,11 @@ estate_burghers_build_production_building_in_y = {
 # 		if = {
 # 			limit = {
 # 				has_estate_agenda_auto_completion = {
-# 					estate = estate_church
+# 					estate = estate_priests
 # 				}
 # 			}
 # 			has_estate_agenda_auto_completion = {
-# 				estate = estate_church
+# 				estate = estate_priests
 # 			}
 # 		}
 # 		else = {

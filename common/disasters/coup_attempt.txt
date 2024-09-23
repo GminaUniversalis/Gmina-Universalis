@@ -37,11 +37,11 @@ coup_attempt_disaster = {
 		}
 		else_if = { 
 			limit = { 
-				has_estate_led_regency = { estate = estate_church }	
+				has_estate_led_regency = { estate = estate_priests }	
 			}
 			NOT = {
 				estate_loyalty = {
-					estate = estate_church 
+					estate = estate_priests 
 					loyalty = 60
 				}
 			}

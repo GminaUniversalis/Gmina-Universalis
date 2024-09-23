@@ -69,6 +69,19 @@ country_event = {
 							}
 						}
 					}
+					AND = {
+						num_of_owned_provinces_with = {
+							value = 5
+							trade_goods = gu_coal
+						}
+						capital_scope = {
+							OR = {
+								region = dolnoslaskie_region
+								region = opolskie_region
+								region = slaskie_region
+							}
+						}
+					}
 				}
 			}
 
@@ -108,7 +121,7 @@ country_event = {
 	
 				}
 				OR = {
-					AND = {
+					OR = {
 						NOT = { 
 							num_of_owned_provinces_with = {
 								value = 5
@@ -121,6 +134,23 @@ country_event = {
 									region = dolnoslaskie_region
 									region = opolskie_region
 									region = slaskie_region
+								}
+							}
+						}
+						AND = {
+							NOT = { 
+								num_of_owned_provinces_with = {
+									value = 5
+									trade_goods = gu_coal 
+								}
+							}
+							NOT = {
+								capital_scope = {
+									OR = {
+										region = dolnoslaskie_region
+										region = opolskie_region
+										region = slaskie_region
+									}
 								}
 							}
 						}

@@ -1786,13 +1786,13 @@ country_event = {
 				}
 			}
 		}
-		has_estate = estate_church
+		has_estate = estate_priests
 		estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 60
 		}
 		estate_influence = {
-			estate = estate_church
+			estate = estate_priests
 			influence = 40
 		}
 	}

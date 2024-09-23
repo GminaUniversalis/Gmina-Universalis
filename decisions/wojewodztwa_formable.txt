@@ -608,7 +608,7 @@ country_decisions = {
 				capital_scope = {
 					region = malopolska_region
 				}
-				culture_group = malopolska
+				culture_group = malopolska_cg
 				primary_culture = lemkowa
 			}
 			normal_or_historical_nations = yes

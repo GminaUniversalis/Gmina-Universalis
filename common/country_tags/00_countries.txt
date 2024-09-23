@@ -115,6 +115,7 @@ U21 = "countries/Lublin.txt"
 U22 = "countries/Zamosc.txt"
 U23 = "countries/Chelm.txt"
 U24 = "countries/Biala Podlaska.txt"
+U25 = "countries/Gmina Wilkowyje.txt"
 
 #Lubuskie
 W00 = "countries/Lubuskie.txt"
@@ -445,3 +446,4 @@ GER = "countries/Germany.txt"
 HCE = "countries/Holy Coal Empire.txt"
 PRL = "countries/Polska Republika Ludowa.txt"
 KSH = "countries/Kashubia.txt"
+P1S = "countries/PIS.txt"

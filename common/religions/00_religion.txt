@@ -1727,7 +1727,7 @@ christian = {
 # 		country = {
 # 			land_morale = 0.1
 # 			global_unrest = -2
-# 			#burghers_influence_modifier = -0.05
+# 			##burghers_influence_modifier = -0.05
 # 		}
 # 		country_as_secondary = {
 # 			land_morale = 0.05
@@ -1910,7 +1910,7 @@ christian = {
 # 						has_government_attribute = loyalty_from_celebration
 # 					}
 # 					add_estate_loyalty = {
-# 						estate = estate_church
+# 						estate = estate_priests
 # 						loyalty = 20
 # 					}
 # 				}

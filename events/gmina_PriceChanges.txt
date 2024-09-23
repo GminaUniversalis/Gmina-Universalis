@@ -866,12 +866,11 @@ country_event = {
 	major = yes
 
 	trigger = {
+		
 		is_year = 1550
-		ROOT = {
-			any_owned_province = {
-				gu_electronics = 1
-			}
-		}
+
+		gu_electronics = 1
+		
 		has_global_flag = tel_analogowa
 	}
 	

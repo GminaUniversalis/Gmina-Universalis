@@ -1212,10 +1212,10 @@ country_event = {
 				event_target:enemy_neighbor_ottomans = {
 					NOT = { religion_group = muslim }
 				}
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_loyalty = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = 10
 			}
 		}

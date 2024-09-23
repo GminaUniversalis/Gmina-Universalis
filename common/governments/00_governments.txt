@@ -447,7 +447,7 @@ theocracy = {
 				monastic_order_reform
 				crusading_kingdom_reform
 				sisterhood_of_jeanne_darc_reform
-
+				papacy_reform
 			}
 		}
 		internal_vs_external_mission = { #2

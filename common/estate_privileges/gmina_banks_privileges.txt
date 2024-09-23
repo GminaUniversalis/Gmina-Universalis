@@ -263,7 +263,7 @@ estate_banks_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
@@ -299,7 +299,7 @@ estate_banks_empty_promises = {
 	icon = privilege_comission_merchant_ships_for_war
 	land_share = 0
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -330,7 +330,7 @@ estate_banks_empty_promises = {
 estate_banks_promote_mortgages = {
 	icon = privilege_recruit_minister
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	influence = 0.1
 	loyalty = 0.1
 	penalties = {
@@ -378,11 +378,40 @@ estate_banks_market_trading_focus = {
 	loyalty = 0.2
 	influence = 0.05
 	ai_will_do = {
-		factor = 10
+		factor = 0
 
+		modifier = {
+			factor = -1000
+
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+			}
+		}
 		modifier = {
 			factor = 2
 			has_idea_group = trade_ideas
+		}
+
+		modifier = {
+			factor = -1000
+			ruler_has_bad_dip_personality = yes
+		}
+
+		modifier = {
+			factor = -1000
+			ruler_has_good_mil_personality = yes
+		}
+
+		modifier = {
+			factor = -1000
+			mil = 3
+		}
+
+		modifier = {
+			factor = -1000
+			NOT = {
+				dip = 3
+			}
 		}
 
 		modifier = {
@@ -458,7 +487,7 @@ estate_banks_hire_regional_director = {
 	icon = privilege_recruit_minister
 	land_share = 0
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 5 } }
+	
 	influence = 0.15
 	loyalty = 0.1
 	penalties = {	
@@ -503,7 +532,7 @@ estate_banks_hire_regional_director = {
 estate_banks_indebted_to_free_banks = {
 	icon = privilege_give_money
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
@@ -572,7 +601,7 @@ estate_banks_indebted_to_free_banks = {
 estate_banks_indebted_to_mixed = {
 	icon = privilege_give_money
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
@@ -641,7 +670,7 @@ estate_banks_indebted_to_mixed = {
 estate_banks_indebted_to_state_controlled = {
 	icon = privilege_give_money
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
@@ -737,7 +766,7 @@ estate_banks_appoint_president_of_nationaL_bank = {
 	loyalty = 0.0
 	influence = 0.05
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	is_valid = {
 
 	}
@@ -769,7 +798,7 @@ estate_banks_economic_stimulation = {
 	loyalty = 0.05
 	influence = 0.05
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 
 	on_granted = {
 		custom_tooltip = estate_burghers_development_of_cities_gt  #Do zmiany na potem
@@ -833,7 +862,7 @@ estate_banks_economic_stimulation = {
 estate_banks_trained_brokers = {
 	icon = privilege_make_generous_donation
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	
 
 	influence = 0.05
 	loyalty = 0.05
@@ -876,7 +905,7 @@ estate_banks_trained_brokers = {
 estate_banks_regulate_money_supply = {
 	icon = privilege_monopoly
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	
 	influence = 0.05
 	loyalty = 0.05
 	penalties = {
@@ -911,7 +940,7 @@ estate_banks_insider_info = {
 	icon = privilege_land_rights
 	land_share = 10
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.1
 	influence = 0.1
 
@@ -965,7 +994,7 @@ estate_banks_insider_info = {
 estate_banks_advertisement_national_bank = {
 	icon = privilege_build_jain_temple
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	benefits = {
@@ -1055,7 +1084,7 @@ estate_banks_advertisement_national_bank = {
 estate_banks_commercial_experts = {
 	icon = privilege_recruit_minister
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	influence = 0.1
 	loyalty = 0.05
 	penalties = {

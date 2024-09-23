@@ -129,7 +129,7 @@ temple = {
 			}
 			FROM = {
 				add_estate_loyalty = {
-					estate = estate_church
+					estate = estate_priests
 					loyalty = 2
 				}
 			}
@@ -210,7 +210,7 @@ temple = {
 			}
 			FROM = {
 				add_estate_loyalty = {
-					estate = estate_church
+					estate = estate_priests
 					loyalty = -2
 				}
 			}
@@ -1106,7 +1106,7 @@ cathedral = {
 			}
 			FROM = {
 				add_estate_loyalty = {
-					estate = estate_church
+					estate = estate_priests
 					loyalty = 5
 				}
 			}
@@ -1182,7 +1182,7 @@ cathedral = {
 			}
 			FROM = {
 				add_estate_loyalty = {
-					estate = estate_church
+					estate = estate_priests
 					loyalty = -5
 				}
 			}

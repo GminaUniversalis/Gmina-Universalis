@@ -11649,10 +11649,20 @@ ranczo_recording_site= {
 
 
 		country_modifiers = {
-			discipline = 0.025
 			fire_damage_received = -0.05
+			fire_damage = 0.05
 		}
 
+		conditional_modifier = {
+			trigger = {
+				owner = { 
+					religion = populism_PPU
+				}
+			}
+			modifier = {
+				discipline = 0.025
+			}
+		}	
 
 		on_upgraded = {
 		}
@@ -11679,13 +11689,28 @@ ranczo_recording_site= {
 
 
 		country_modifiers = {
-			discipline = 0.05
 			fire_damage_received = -0.1
 			fire_damage = 0.1
 		}
 
+		conditional_modifier = {
+			trigger = {
+				owner = { 
+					religion = populism_PPU
+				}
+			}
+			modifier = {
+				discipline = 0.05
+			}
+		}	
+
 
 		on_upgraded = {
+
+			custom_tooltip = enable_wilkowyje_formable_tooltip
+
+			owner = { set_country_flag = enable_wilkowyje_formable }
+			
 		}
 	}
 
@@ -11709,12 +11734,21 @@ ranczo_recording_site= {
 		}
 
 
-		country_modifiers = {
-			discipline = 0.05
-			fire_damage_received = -0.1
-			fire_damage = 0.1			
+		country_modifiers = {			
+			fire_damage_received = -0.15
+			fire_damage = 0.15
 		}
 
+		conditional_modifier = {
+			trigger = {
+				owner = { 
+					religion = populism_PPU
+				}
+			}
+			modifier = {
+				discipline = 0.1
+			}
+		}	
 
 		on_upgraded = {	
 		}

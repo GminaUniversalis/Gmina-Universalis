@@ -728,11 +728,11 @@ estate_church_restore_devotion = {
 # 		if = {
 # 			limit = {
 # 				has_estate_agenda_auto_completion = {
-# 					estate = estate_church
+# 					estate = estate_priests
 # 				}
 # 			}
 # 			has_estate_agenda_auto_completion = {
-# 				estate = estate_church
+# 				estate = estate_priests
 # 			}
 # 		}
 # 		else = {
@@ -756,10 +756,10 @@ estate_church_restore_devotion = {
 # 	}
 #     task_completed_effect = {
 # 		on_completed_agenda_effect = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 		}
 # 		add_estate_loyalty = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 			loyalty = 10
 # 		}
 # 		generate_scaled_advisor_of_type_and_religion_effect = {
@@ -772,7 +772,7 @@ estate_church_restore_devotion = {
 # 		on_failed_agenda_effect = yes
 # 		clr_auto_complete_flag = yes
 #         add_estate_loyalty_modifier = {
-#             estate = estate_church
+#             estate = estate_priests
 # 			desc = EST_VAL_AGENDA_DENIED
 # 			loyalty = -5
 # 			duration = 7300
@@ -808,7 +808,7 @@ estate_church_restore_devotion = {
 # 	}
 # 	invalid_trigger = {
 # 		OR = {
-# 			NOT = { has_estate = estate_church }
+# 			NOT = { has_estate = estate_priests }
 # 			NOT = { religion = catholic }
 # 		}
 # 	}
@@ -819,11 +819,11 @@ estate_church_restore_devotion = {
 # 		if = {
 # 			limit = {
 # 				has_estate_agenda_auto_completion = {
-# 					estate = estate_church
+# 					estate = estate_priests
 # 				}
 # 			}
 # 			has_estate_agenda_auto_completion = {
-# 				estate = estate_church
+# 				estate = estate_priests
 # 			}
 # 		}
 # 		else = {
@@ -832,10 +832,10 @@ estate_church_restore_devotion = {
 # 	}
 #     task_completed_effect = {
 # 		on_completed_agenda_effect = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 		}
 # 		add_estate_loyalty = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 			loyalty = 10
 # 		}
 # 		add_country_modifier = {
@@ -847,7 +847,7 @@ estate_church_restore_devotion = {
 # 		on_failed_agenda_effect = yes
 # 		clr_auto_complete_flag = yes
 #         add_estate_loyalty_modifier = {
-#             estate = estate_church
+#             estate = estate_priests
 # 			desc = EST_VAL_AGENDA_DENIED
 # 			loyalty = -5
 # 			duration = 7300
@@ -898,7 +898,7 @@ estate_church_restore_devotion = {
 # 	}
 # 	invalid_trigger = {
 # 		OR = {
-# 			NOT = { has_estate = estate_church }
+# 			NOT = { has_estate = estate_priests }
 # 			NOT = { religion = catholic }
 # 		}
 # 	}
@@ -918,11 +918,11 @@ estate_church_restore_devotion = {
 # 		if = {
 # 			limit = {
 # 				has_estate_agenda_auto_completion = {
-# 					estate = estate_church
+# 					estate = estate_priests
 # 				}
 # 			}
 # 			has_estate_agenda_auto_completion = {
-# 				estate = estate_church
+# 				estate = estate_priests
 # 			}
 # 		}
 # 		else = {
@@ -937,10 +937,10 @@ estate_church_restore_devotion = {
 # 	}
 #     task_completed_effect = {
 # 		on_completed_agenda_effect = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 		}
 # 		add_estate_loyalty = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 			loyalty = 10
 # 		}
 # 		if = {
@@ -967,7 +967,7 @@ estate_church_restore_devotion = {
 # 		on_failed_agenda_effect = yes
 # 		clr_auto_complete_flag = yes
 #         add_estate_loyalty_modifier = {
-#             estate = estate_church
+#             estate = estate_priests
 # 			desc = EST_VAL_AGENDA_DENIED
 # 			loyalty = -5
 # 			duration = 7300

@@ -4938,7 +4938,7 @@ country_event = {
 			}
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 	}
@@ -5059,7 +5059,7 @@ province_event = {
 		else = {
 			owner = {
 				add_estate_loyalty = {
-					estate = estate_church
+					estate = estate_priests
 					loyalty = 5
 				}
 			}
@@ -5068,7 +5068,7 @@ province_event = {
 	
 	option = { #we must inform the pope immediately!
 		name = colonial_nation.191.b 
-		trigger = { owner = { NOT = { tag = PAP } } }
+		trigger = { owner = { NOT = { tag = P1S } } }
 		owner = {
 			add_papal_influence = 10
 		}
@@ -5083,7 +5083,7 @@ province_event = {
 		owner = {
 			add_adm_power = 50
 			add_estate_loyalty = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = -5
 			}
 		}

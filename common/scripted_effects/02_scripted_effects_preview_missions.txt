@@ -54,7 +54,7 @@ enable_branching_mission_review_without_ai = {
 # 		limit = { has_country_flag = son_islamic_focus }
 # 		hidden_effect = { clr_country_flag = son_tolerance_focus }
 # 		add_estate_loyalty = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 			loyalty = 10
 # 		}
 # 		add_estate_loyalty = {
@@ -70,7 +70,7 @@ enable_branching_mission_review_without_ai = {
 # 		limit = { has_country_flag = son_tolerance_focus }
 # 		hidden_effect = { clr_country_flag = son_islamic_focus }
 # 		add_estate_loyalty = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 			loyalty = -10
 # 		}
 # 		add_estate_loyalty = {
@@ -828,7 +828,7 @@ enable_branching_mission_review_without_ai = {
 # 			country_event = { id = flavor_per.35 } 
 # 		} 
 # 		else = { 
-# 			change_estate_land_share = { estate = estate_church share = -5 } 
+# 			change_estate_land_share = { estate = estate_priests share = -5 } 
 # 		} 
 # 	}
 # }

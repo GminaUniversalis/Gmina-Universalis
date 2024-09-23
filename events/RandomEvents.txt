@@ -1725,13 +1725,13 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_estate = estate_church
+		has_estate = estate_priests
 		OR = {
 			religion = catholic
 			religion = orthodox
 			religion_group = muslim
 		}
-		NOT = { tag = PAP }
+		NOT = { tag = P1S }
 	}
 
 	mean_time_to_happen = {
@@ -1748,10 +1748,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -2757,7 +2757,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB5061"		# Their actions have shown us the true path
 		ai_chance = { factor = 45 }
-		trigger = { NOT = { tag = PAP } }
+		trigger = { NOT = { tag = P1S } }
 		add_papal_influence = 20
 	}
 	option = {
@@ -2955,11 +2955,11 @@ country_event = {
 	trigger = {
 		religion = catholic
 		NOT = { has_country_modifier = church_functions }
-		NOT = { tag = PAP }
+		NOT = { tag = P1S }
 		has_estate = estate_nobles
-		has_estate = estate_church
+		has_estate = estate_priests
 		estate_territory = {
-			estate = estate_church
+			estate = estate_priests
 			territory = 10
 		}
 	}
@@ -2974,10 +2974,10 @@ country_event = {
 			factor = 55
 			modifier = {
 				factor = 0.25
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -2994,10 +2994,10 @@ country_event = {
 		if = {
 			limit = {
 				has_estate = estate_nobles
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			change_estate_land_share = {
-				estate = estate_church
+				estate = estate_priests
 				share = -5
 			}
 			change_estate_land_share = {
@@ -4147,10 +4147,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -4160,9 +4160,9 @@ country_event = {
 		reduce_estate_church_loyalty_effect = yes
 		if = {
 			limit = {
-				exists = PAP
+				exists = P1S
 			}
-			PAP = {
+			P1S = {
 				add_opinion = {
 					who = root
 					modifier = opinion_heretical_philosopher
@@ -4179,9 +4179,9 @@ country_event = {
 		reduce_estate_church_loyalty_effect = yes
 		if = {
 			limit = {
-				exists = PAP
+				exists = P1S
 			}
-			PAP = {
+			P1S = {
 				add_opinion = {
 					who = root
 					modifier = opinion_heretical_philosopher
@@ -4556,7 +4556,7 @@ country_event = {
 
 	trigger = {
 		government = theocracy
-		has_estate = estate_church
+		has_estate = estate_priests
 		employed_advisor = {
 			religion = heretic
 		}
@@ -4635,10 +4635,10 @@ country_event = {
 			factor = 60
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -4792,7 +4792,7 @@ country_event = {
 	trigger = {
 		NOT = { stability = -1 }
 		government = theocracy
-		has_estate = estate_church
+		has_estate = estate_priests
 	}
 
 	mean_time_to_happen = {
@@ -4805,10 +4805,10 @@ country_event = {
 			factor = 55
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -5541,10 +5541,10 @@ country_event = {
 			factor = 45
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -6331,10 +6331,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -8416,7 +8416,7 @@ country_event = {
 	
 	trigger = {
 		religion = catholic
-		NOT = { tag = PAP }
+		NOT = { tag = P1S }
 	}
 	
 	mean_time_to_happen = {
@@ -8872,12 +8872,12 @@ country_event = {
 	trigger = {
 		religion = catholic
 		government = monarchy
-		exists = PAP
+		exists = P1S
 		capital_scope = {
 			continent = europe
 		}
 		has_estate = estate_nobles
-		has_estate = estate_church
+		has_estate = estate_priests
 		any_owned_province = {
 			continent = europe
 			culture_group = root
@@ -8926,16 +8926,16 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.25
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
 			}
 		}
-		reverse_add_opinion = { who = PAP modifier = opinion_upset_pope }
+		reverse_add_opinion = { who = P1S modifier = opinion_upset_pope }
 		reduce_estate_church_loyalty_effect = yes
 		add_estate_nobles_loyalty_effect = yes
 	}
@@ -11289,7 +11289,7 @@ country_event = {
 	
 	trigger = {
 		religion = catholic
-		NOT = { tag = PAP }
+		NOT = { tag = P1S }
 		OR = {
 			advisor = natural_scientist
 			advisor = philosopher
@@ -11390,10 +11390,10 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -11705,16 +11705,16 @@ country_event = {
 		name = "random_event.EVTOPTC13"
 		trigger = {
 			religion_group = muslim
-			has_estate = estate_church
+			has_estate = estate_priests
 		}
 		ai_chance = {
 			factor = 33
 			modifier = {
 				factor = 2
-				has_estate = estate_church
+				has_estate = estate_priests
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}
@@ -11985,9 +11985,9 @@ province_event = {
 			add_reform_desire = -0.005
 			if = {
 				limit = {
-					exists = PAP
+					exists = P1S
 				}
-				PAP = {
+				P1S = {
 					add_opinion = { who = ROOT modifier = opinion_grateful }
 				}
 			}
@@ -12051,9 +12051,9 @@ province_event = {
 			add_reform_desire = 0.015
 			if = {
 				limit = {
-					exists = PAP
+					exists = P1S
 				}
-				PAP = {
+				P1S = {
 					add_opinion = { who = ROOT modifier = opinion_angry }
 				}
 			}
@@ -12398,7 +12398,7 @@ province_event = {
 # 		name = "random_event.EVTOPTA25" # Send guards to stop these vandals!
 # 		ai_chance = { factor = 30 }
 # 		add_prestige = 10
-# 		PAP = {
+# 		P1S = {
 # 			add_opinion = { who = ROOT modifier = "stopped_iconoclastic_fury" }
 # 		}
 # 		add_mil_power = -50
@@ -12429,7 +12429,7 @@ province_event = {
 # 	}
 # 	option = {
 # 		name = "random_event.EVTOPTC25" # Time to take the lead and break Papal stranglehold!
-# 		trigger = { NOT = { tag = PAP } }
+# 		trigger = { NOT = { tag = P1S } }
 # 		goto = target_province
 # 		ai_chance = {
 # 			factor = 50
@@ -12439,7 +12439,7 @@ province_event = {
 # 			}
 # 		}
 # 		add_stability = -1
-# 		PAP = {
+# 		P1S = {
 # 			add_opinion = { who = ROOT modifier = "allowed_iconoclastic_fury" }
 # 		}
 # 		event_target:target_province = {

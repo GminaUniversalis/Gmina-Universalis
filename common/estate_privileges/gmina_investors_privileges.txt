@@ -1,6 +1,6 @@
 estate_investors_support_foreign_corporations = {
 	icon = estate_burghers_foreign_expeditions
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = -10
 	max_absolutism = 0
 	loyalty = -0.1
@@ -100,7 +100,7 @@ estate_investors_support_foreign_corporations = {
 }
 estate_investors_support_local_corporations = {
 	icon = estate_burghers_fund_karimi
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = -15
 	max_absolutism = 0
 	loyalty = 0.1
@@ -201,7 +201,7 @@ estate_investors_support_local_corporations = {
 }
 estate_investors_support_state_owned_corporations = {
 	icon = estate_church_fund_madrasas
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.2
@@ -304,7 +304,7 @@ estate_investors_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
@@ -340,7 +340,7 @@ estate_investors_empty_promises = {
 	icon = estate_church_sponsor_waqf_payments
 	land_share = 0
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -366,7 +366,7 @@ estate_investors_empty_promises = {
 }
 estate_investors_minimal_taxation = {
 	icon = estate_nobles_GER_diploma_andreanum
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.15
@@ -462,7 +462,7 @@ estate_investors_minimal_taxation = {
 }
 estate_investors_basic_taxation = {
 	icon = privilege_aged_paper_
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.05
@@ -558,7 +558,7 @@ estate_investors_basic_taxation = {
 }
 estate_investors_high_taxation = {
 	icon = estate_burghers_GER_customs_union
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.05
@@ -654,7 +654,7 @@ estate_investors_high_taxation = {
 }
 estate_investors_lobbists = {
 	icon = estate_eunuchs_royal_intrigue_keepers_privilege
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.1
@@ -727,7 +727,7 @@ estate_investors_lobbists = {
 }
 estate_investors_rapid_modernisation = {
 	icon = privilege_goods_produced
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.1
@@ -905,7 +905,7 @@ estate_investors_rapid_modernisation = {
 }
 estate_investors_adm_support = {
 	icon = privilege_admin_power
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = -15
 	max_absolutism = 0
 	loyalty = 0.1
@@ -978,7 +978,7 @@ estate_investors_adm_support = {
 }
 estate_investors_high_influence = {
 	icon = privilege_grant_autonomy
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = -10
 	max_absolutism = 0
 	loyalty = -0.1
@@ -1032,7 +1032,7 @@ estate_investors_high_influence = {
 estate_investors_free_market_ideals = { #Political Party
 	icon = privilege_recruit_minister
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	influence = 0.10
 
 	on_granted = {

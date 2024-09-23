@@ -2,7 +2,7 @@ estate_miners_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
@@ -38,7 +38,7 @@ estate_miners_empty_promises = {
 	icon = estate_church_sponsor_waqf_payments
 	land_share = 0
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
@@ -64,7 +64,7 @@ estate_miners_empty_promises = {
 }
 estate_miners_work_leaders = {
 	icon = horse
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 5
 	max_absolutism = 0
 	loyalty = 0.05
@@ -132,7 +132,7 @@ estate_miners_work_leaders = {
 }
 estate_miners_barborka = {
 	icon = privilege_aghas
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
@@ -490,7 +490,7 @@ estate_miners_state_owned_industry = {
 #Mines related
 estate_miners_golden_age_mines = {
 	icon = privilege_golden_liberty
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.15
@@ -595,7 +595,7 @@ estate_miners_golden_age_mines = {
 }
 estate_miners_unprofitable_mines = {
 	icon = privilege_monopoly_of_goods_incence
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
@@ -684,7 +684,7 @@ estate_miners_unprofitable_mines = {
 }
 estate_miners_silver_age_mines = {
 	icon = privilege_golden_liberty
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 10
 	max_absolutism = 0
 	loyalty = 0.1
@@ -796,7 +796,7 @@ estate_miners_silver_age_mines = {
 
 estate_miners_EU_mining_regulations = {
 	icon = privilege_jungle_adaptation
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.05

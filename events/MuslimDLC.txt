@@ -320,7 +320,7 @@ country_event = {
 		add_years_of_income = -0.5
 		add_ruler_modifier = { name = repaired_masjid_al_haram }
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 15
 		}
 	}
@@ -328,7 +328,7 @@ country_event = {
 		name = "muslim_dlc.EVTOPTB7"
 		add_years_of_income = -0.2
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 15
 		}
 		add_ruler_modifier = { name = repaired_masjid_al_haram }
@@ -444,9 +444,9 @@ country_event = {
 			factor = 33
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				estate_influence = {
-					estate = estate_church
+					estate = estate_priests
 					influence = 60
 				}
 			}
@@ -486,10 +486,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
 				influence = 10
 				duration = 3650
@@ -508,9 +508,9 @@ country_event = {
 			factor = 33
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				estate_influence = {
-					estate = estate_church
+					estate = estate_priests
 					influence = 60
 				}
 			}
@@ -546,10 +546,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
 				influence = 5
 				duration = 3650
@@ -650,9 +650,9 @@ country_event = {
 			factor = 33
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				estate_influence = {
-					estate = estate_church
+					estate = estate_priests
 					influence = 60
 				}
 			}
@@ -662,10 +662,10 @@ country_event = {
 		add_piety = 0.10
 		if = {
 			limit = {
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
 				influence = 10
 				duration = 3650
@@ -719,9 +719,9 @@ country_event = {
 			factor = 33
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				estate_influence = {
-					estate = estate_church
+					estate = estate_priests
 					influence = 60
 				}
 			}
@@ -729,10 +729,10 @@ country_event = {
 		add_ruler_modifier = { name = tax_alcohol_tobacco_coffee }
 		if = {
 			limit = {
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
 				influence = 5
 				duration = 3650
@@ -1093,9 +1093,9 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				has_estate = estate_church
+				has_estate = estate_priests
 				estate_influence = {
-					estate = estate_church
+					estate = estate_priests
 					influence = 60
 				}
 			}
@@ -1106,10 +1106,10 @@ country_event = {
 		add_piety = 0.1
 		if = {
 			limit = {
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				influence = 10
 				desc = EST_VAL_SHARIA
 				duration = 3650
@@ -1343,10 +1343,10 @@ country_event = {
 		add_prestige = 20
 		if = {
 			limit = {
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_loyalty = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = 10
 			}
 		}

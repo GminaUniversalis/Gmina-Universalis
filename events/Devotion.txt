@@ -1474,12 +1474,12 @@ province_event = {
 # 		if = {
 # 			limit = {
 # 				religion = catholic
-# 				exists = PAP
-# 				PAP = {
+# 				exists = P1S
+# 				P1S = {
 # 					religion = catholic
 # 				}
 # 			}
-# 			PAP = {
+# 			P1S = {
 # 				country_event = {
 # 					id = devotion_events.108
 # 				}
@@ -1542,7 +1542,7 @@ province_event = {
 # 			has_country_flag = dev_jubilee_bad_flag
 # 		}
 # 		tooltip = {
-# 			PAP = {
+# 			P1S = {
 # 				add_opinion = {
 # 					who = ROOT
 # 					modifier = opinion_jubilee_bad
@@ -1558,7 +1558,7 @@ province_event = {
 # 		}
 # 		clr_country_flag = dev_jubilee_good_flag
 # 		tooltip = {
-# 			PAP = {
+# 			P1S = {
 # 				add_opinion = {
 # 					who = ROOT
 # 					modifier = opinion_jubilee_good

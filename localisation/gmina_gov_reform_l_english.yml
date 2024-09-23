@@ -93,3 +93,5 @@
  farmholders: "Farmholders"
  farmholders_desc: "Farmholders are the owners of farms and ranches in the region. They are responsible for the production and distribution of food, while also providing access to land and other resources."
  CAN_EXPORT_GRAIN: "You gain acces to "§YExport Grain§!" diplomatic action.\n"
+ papacy_reform: "Prezes Main Office"
+ papacy_reform_desc:0 "A political structure where the nation is governed by a spiritual leader, the Prezes, the highest ranking office of the Prawo i Sprawiedliwość Party."

@@ -46,7 +46,7 @@ country_event = { #Estate in power surpassed by another
 			else_if = {
 				limit = {
 					estate_influence = {
-						estate = estate_church
+						estate = estate_priests
 						influence = 70
 					}
 				}
@@ -91,7 +91,7 @@ country_event = { #Estate in power surpassed by another
 			}
 			define_ruler = {
 				regency = {
-					estate = estate_church
+					estate = estate_priests
 				}
 			}
 			clr_country_flag = church_coup
@@ -137,7 +137,7 @@ country_event = { #Estate in power surpassed by another
 						has_country_flag = church_coup
 					}
 					add_estate_loyalty_modifier = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = -10
 						desc = REFUSED_REGENCY
 						duration = 10950
@@ -175,7 +175,7 @@ country_event = { #Estate in power surpassed by another
 						has_country_flag = church_coup
 					}
 					add_estate_loyalty_modifier = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = -10
 						desc = REFUSED_REGENCY
 						duration = 10950
@@ -243,10 +243,10 @@ country_event = { #Estate in power wants to add a privilege
 					}
 					AND = {
 						has_estate_led_regency = {
-							estate = estate_church
+							estate = estate_priests
 						}
 						num_of_estate_privileges = {
-							estate = estate_church
+							estate = estate_priests
 							value = 2
 						}
 					}
@@ -293,10 +293,10 @@ country_event = { #Estate in power wants to add a privilege
 					}
 					AND = {
 						has_estate_led_regency = {
-							estate = estate_church
+							estate = estate_priests
 						}
 						num_of_estate_privileges = {
-							estate = estate_church
+							estate = estate_priests
 							value = 2
 						}
 					}
@@ -341,10 +341,10 @@ country_event = { #Estate in power wants to add a privilege
 					}
 					AND = {
 						has_estate_led_regency = {
-							estate = estate_church
+							estate = estate_priests
 						}
 						num_of_estate_privileges = {
-							estate = estate_church
+							estate = estate_priests
 							value = 2
 						}
 					}
@@ -377,11 +377,11 @@ country_event = { #Estate in power wants to add a privilege
 		else_if = {
 			limit = {
 				has_estate_led_regency = {
-					estate = estate_church
+					estate = estate_priests
 				}
 			}
 			add_estate_loyalty_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = -10
 				desc = REFUSED_PRIVILEGE
 				duration = 7300
@@ -444,13 +444,13 @@ country_event = { #Estate in power attacks rivals
 				duration = 7300
 			}
 			add_estate_loyalty_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = -20
 				desc = REGENCY_SLUR
 				duration = 7300
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				influence = -5
 				desc = REGENCY_SLUR
 				duration = 7300
@@ -471,11 +471,11 @@ country_event = { #Estate in power attacks rivals
 		else_if = {
 			limit = {
 				has_estate_led_regency = {
-					estate = estate_church
+					estate = estate_priests
 				}
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				influence = 10
 				duration = 7300
 			}
@@ -528,13 +528,13 @@ country_event = { #Estate in power attacks rivals
 				duration = 7300
 			}
 			add_estate_loyalty_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = -20
 				desc = REGENCY_SLUR
 				duration = 7300
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				influence = -5
 				desc = REGENCY_SLUR
 				duration = 7300
@@ -566,11 +566,11 @@ country_event = { #Estate in power attacks rivals
 		else_if = {
 			limit = {
 				has_estate_led_regency = {
-					estate = estate_church
+					estate = estate_priests
 				}
 			}
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				influence = -20
 				desc = REGENCY_SLUR
 				duration = 7300
@@ -734,16 +734,16 @@ country_event = { #Clerical fanaticism
 	
 	trigger = {
 		has_estate_led_regency = {
-			estate = estate_church
+			estate = estate_priests
 			duration = 2
 		}
 		estate_influence = {
-			estate = estate_church
+			estate = estate_priests
 			influence = 80
 		}
 		NOT = {
 			estate_loyalty = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = 30
 			}
 		}
@@ -816,15 +816,15 @@ country_event = { #Assassination/Coup attempt
 			}
 			AND = {
 				has_estate_led_regency = { 
-					estate = estate_church
+					estate = estate_priests
 				}
 				estate_influence = {
-					estate = estate_church
+					estate = estate_priests
 					influence = 50
 				}
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 40
 					}
 				}
@@ -876,7 +876,7 @@ country_event = { #Assassination/Coup attempt
 				}
 				else_if = {
 					limit = { 
-						has_estate_led_regency = { estate = estate_church } 
+						has_estate_led_regency = { estate = estate_priests } 
 					}
 					set_country_flag = church_coup 
 				}
@@ -953,12 +953,12 @@ country_event = { #Estate Leader is a Great Influence
 #			}
 #			AND = {
 #				estate_influence = {
-#					estate = estate_church
+#					estate = estate_priests
 #					influence = 70
 #				}
 #				NOT = {
 #					estate_loyalty = {
-#						estate = estate_church
+#						estate = estate_priests
 #						loyalty = 40
 #					}
 #				}
@@ -997,12 +997,12 @@ country_event = { #Estate Leader is a Great Influence
 #		else_if = {
 #			limit = {
 #				estate_influence = {
-#					estate = estate_church
+#					estate = estate_priests
 #					influence = 70
 #				}
 #				NOT = {
 #					estate_loyalty = {
-#						estate = estate_church
+#						estate = estate_priests
 #						loyalty = 40
 #					}
 #				}

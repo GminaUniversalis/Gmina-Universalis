@@ -8,56 +8,25 @@ defined_text = {
 		trigger = {
 			
 			OR = {
-
-				NOT = { has_country_flag = has_estate_picked_flag }
-				had_country_flag = {
-					flag = has_estate_picked_flag
-					days = 9125
+				num_of_owned_provinces_with = {
+					value = 5
+					trade_goods = gu_coal
 				}
-			}
-
-			num_of_owned_provinces_with = {
-				value = 5
-				trade_goods = gu_coal
-			}
-
-			capital_scope = {
-				OR = {
-					region = dolnoslaskie_region
-					region = opolskie_region
-					region = slaskie_region
-				}
-			}
-		}
-	}
-
-
-	text = {
-		localisation_key = string_NOT_available_miners
-
-		trigger = {
-			OR = {
-
-				OR = {
-
-					NOT = { 
-						had_country_flag = {
-							flag = has_estate_picked_flag
-							days = 9125
-						}
+	
+				capital_scope = {
+					OR = {
+						region = dolnoslaskie_region
+						region = opolskie_region
+						region = slaskie_region
 					}
-	
-					has_country_flag = has_estate_picked_flag 
-	
 				}
 
 				AND = {
-					NOT = { 				
-						num_of_owned_provinces_with = {
-							value = 5
-							trade_goods = gu_coal
-						} 
+					num_of_owned_provinces_with = {
+						value = 5
+						trade_goods = gu_coal
 					}
+		
 					capital_scope = {
 						OR = {
 							region = dolnoslaskie_region
@@ -66,7 +35,34 @@ defined_text = {
 						}
 					}
 				}
-				
+			}
+
+		}
+	}
+
+
+	text = {
+		localisation_key = string_NOT_available_miners
+
+		trigger = {
+
+			OR = {
+				NOT = { 				
+					num_of_owned_provinces_with = {
+						value = 5
+						trade_goods = gu_coal
+					} 
+				}
+				NOT = {
+					capital_scope = {
+						OR = {
+							region = dolnoslaskie_region
+							region = opolskie_region
+							region = slaskie_region
+						}
+					}
+				}
+			
 				AND = {
 					NOT = { 
 						num_of_owned_provinces_with = {
@@ -85,6 +81,7 @@ defined_text = {
 					}
 				}
 			}
+			
 		}
 	}
 }

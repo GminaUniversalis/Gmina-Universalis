@@ -324,9 +324,9 @@ country_event = {
 		}
 		add_innovativeness_small_effect = yes
 		if = {
-			limit = { has_estate = estate_church }
+			limit = { has_estate = estate_priests }
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				desc = EST_VAL_PUBLIC_SCHOOLS
 				influence = 10
 				duration = 3650

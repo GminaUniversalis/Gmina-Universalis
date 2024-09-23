@@ -3358,11 +3358,11 @@ country_event = {
 # 		custom_tooltip = muslim_school_events.21.a.tt #From now on the religious establishment will react more strongly to impious conduct of the [Root.Monarch.GetTitle].
 # 		if = {
 # 			limit = {
-# 				has_estate = "estate_church"
+# 				has_estate = "estate_priests"
 # 			}
 # 			tooltip = {
 # 				add_estate_influence_modifier = {
-# 					estate = estate_church
+# 					estate = estate_priests
 # 					desc = EST_VAL_NEO_SUFISM
 # 					influence = 10
 # 					duration = -1

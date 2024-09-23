@@ -242,3 +242,49 @@ on_five_year_pulse = {
 		
 	}
 }
+
+on_create_vassal = {
+	if = {
+		limit = {
+			tag = P1S
+		}
+		change_government = theocracy
+		change_religion = conservatism_PIS
+		add_government_reform = papacy_reform
+		adopt_reform_progress = FROM
+	}
+}
+
+on_country_released = {
+	if = {
+		limit = {
+			tag = P1S
+		}
+		change_government = theocracy
+		change_religion = conservatism_PIS
+		add_government_reform = papacy_reform
+		adopt_reform_progress = FROM
+	}
+}
+
+on_country_creation = {
+	if = {
+		limit = {
+			tag = P1S
+			OR = {
+				NOT = {
+					religion = conservatism_PIS
+				}
+				NOT = {
+					has_reform = papacy_reform
+				}
+				NOT = {
+					government = theocracy
+				}
+			}
+		}
+		change_religion = conservatism_PIS
+		change_government = theocracy
+		add_government_reform = papacy_reform
+	}
+}

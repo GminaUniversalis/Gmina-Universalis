@@ -651,14 +651,14 @@ defined_text = {
 	text = {
 		localisation_key = string_ruler_adj_and_title
 		trigger = {
-			NOT = { tag = PAP }
+			NOT = { tag = P1S }
 			has_regency = no
 		}
 	}
 	text = {
 		localisation_key = string_ruler_title
 		trigger = {
-			tag = PAP
+			tag = P1S
 		}
 	}
 	text = {
@@ -1413,14 +1413,14 @@ defined_text = {
 # 	text = {
 # 		localisation_key = country_estate_church_name
 # 		trigger = {
-# 			has_estate = estate_church
+# 			has_estate = estate_priests
 # 		}
 # 	}
 	
 # 	text = {
-# 		localisation_key = estate_church
+# 		localisation_key = estate_priests
 # 		trigger = {
-# 			NOT = { has_estate = estate_church }
+# 			NOT = { has_estate = estate_priests }
 # 		}
 # 	}
 # }
@@ -2067,7 +2067,7 @@ defined_text = {
 			has_country_flag = advisor_events_adm
 			has_estate = estate_brahmins
 			OR = {
-				NOT = { has_estate = estate_church }
+				NOT = { has_estate = estate_priests }
 				employed_advisor = {
 					category = ADM
 					religion = hinduism
@@ -2090,7 +2090,7 @@ defined_text = {
 		localisation_key = this_clergy
 		trigger = {
 			has_country_flag = advisor_events_adm
-			has_estate = estate_church
+			has_estate = estate_priests
 		}
 	}
 	# text = {
@@ -3479,23 +3479,23 @@ defined_text = {
 	text = {
 		localisation_key = ESTATE_LOYAL
 		trigger = {
-			has_estate = estate_church
-			estate_loyalty = { estate = estate_church loyalty = 60 }
+			has_estate = estate_priests
+			estate_loyalty = { estate = estate_priests loyalty = 60 }
 		}
 	}
 	text = {
 		localisation_key = ESTATE_NEUTRAL
 		trigger = {
-			has_estate = estate_church
-			NOT = { estate_loyalty = { estate = estate_church loyalty = 60 } }
-			estate_loyalty = { estate = estate_church loyalty = 30 }
+			has_estate = estate_priests
+			NOT = { estate_loyalty = { estate = estate_priests loyalty = 60 } }
+			estate_loyalty = { estate = estate_priests loyalty = 30 }
 		}
 	}
 	text = {
 		localisation_key = ESTATE_DISLOYAL
 		trigger = {
-			has_estate = estate_church
-			NOT = { estate_loyalty = { estate = estate_church loyalty = 30 } }
+			has_estate = estate_priests
+			NOT = { estate_loyalty = { estate = estate_priests loyalty = 30 } }
 		}
 	}
 }
@@ -4178,12 +4178,12 @@ defined_text = {
 		trigger = {
 			AND = {
 				estate_influence = {
-					estate = estate_church
+					estate = estate_priests
 					influence = 80
 				}
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 30
 					}
 				}

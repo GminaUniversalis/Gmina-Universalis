@@ -486,7 +486,7 @@ gen_europe_hre_republic = {
 						loyalty = 60
 					}
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_priests
 						loyalty = 60
 					}
 				}

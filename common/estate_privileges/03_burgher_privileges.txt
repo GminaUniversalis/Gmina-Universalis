@@ -1339,7 +1339,7 @@ estate_burghers_control_over_monetary_policy = {
 		}
 		modifier = {
 			all_power_cost = -0.05
-			burghers_influence_modifier = 0.025 
+			#burghers_influence_modifier = 0.025 
 		}
 	}
 	conditional_modifier = {
@@ -1422,7 +1422,7 @@ estate_burghers_private_trade_fleets = {
 		trigger = { has_country_flag = mam_upgrade_private_trade_fleets_flag }
 		modifier = { 
 			global_ship_trade_power = 0.1 
-			burghers_influence_modifier = -0.1
+			#burghers_influence_modifier = -0.1
 		}
 	}
 	conditional_modifier = {
@@ -2092,7 +2092,7 @@ estate_burghers_orthodox_tolerance = {
 			limit = { has_estate_privilege = estate_church_anti_heresy_act }
 			remove_estate_privilege = estate_church_anti_heresy_act
 			add_estate_loyalty = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = -20
 			}
 		}
@@ -2319,7 +2319,7 @@ estate_burghers_sindicat_remensa_privilege = {
 	benefits = {
 		burghers_privilege_slots = 1
 		global_trade_goods_size_modifier = 0.1
-		nobles_influence_modifier = -0.1
+		#nobles_influence_modifier = -0.1
 		development_cost = -0.05
 	}
 

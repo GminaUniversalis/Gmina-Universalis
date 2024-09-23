@@ -251,7 +251,7 @@ country_event = {
 # 			loyalty = 5
 # 		}
 # 		add_estate_loyalty = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 			loyalty = -5
 # 		}
 # 		capital_scope = {
@@ -266,7 +266,7 @@ country_event = {
 # 			loyalty = 5
 # 		}
 # 		add_estate_loyalty = {
-# 			estate = estate_church
+# 			estate = estate_priests
 # 			loyalty = 10
 # 		}
 # 		random_owned_province = {
@@ -495,7 +495,7 @@ country_event = {
 			}
 			NOT = {
 				estate_loyalty = {
-					estate = estate_church
+					estate = estate_priests
 					loyalty = 50
 				}
 			}
