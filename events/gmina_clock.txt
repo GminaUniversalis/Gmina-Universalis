@@ -60,7 +60,14 @@ country_event = {
                     value = 11
                 }
             }
-
+            # 1500 = { #redundancy for year progression
+            #     change_variable = {
+            #         which = clock_year 
+            #         value = 1
+            #     }
+            # } 
+            # clr_global_flag = clock_init_year
+            # set_global_flag = clock_init_year
         }
         else_if = { #Redundancy
             limit = {
@@ -137,7 +144,7 @@ country_event = {
         1500 = {
             set_variable = {
                 which = clock_month
-                value = 1
+                value = 9
             }
         }
 

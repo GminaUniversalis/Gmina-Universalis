@@ -3,6 +3,7 @@ communism_group = {
 	flag_emblem_index_range = { 1 18 }
 	
 	communism_pzpr = {
+		#hre_religion = yes
 		icon = 30
 		color = { 128 10 0 }
 		country = {
@@ -56,6 +57,7 @@ communism_group = {
 	}
 
 	communism_sd = {
+		#hre_religion = yes
 		icon = 31
 		color = { 0.1 0.45 0.77 }
 		country = {
@@ -109,6 +111,7 @@ communism_group = {
 	}
 
 	communism_zsl = {
+		#hre_religion = yes
 		icon = 32
 		color = { 0.6 0.9 0.1 }
 		country = {
@@ -251,6 +254,7 @@ liberalism_group = {
 	}
 
 	liberalism_kld = {
+		#hre_religion = yes
 		color = { 224 224 218 }
 		icon = 34
 		allow_female_defenders_of_the_faith = yes
@@ -327,6 +331,7 @@ liberalism_group = {
 	}
 
 	liberalism_uw = {
+		#hre_religion = yes
 		color = { 173 3 252 }
 		icon = 35
 		allow_female_defenders_of_the_faith = yes
@@ -419,6 +424,7 @@ conservatism_group = {
 	crusade_name = WAR_WITH_COMMUNISM
 
 	conservatism_kpn = {
+		#hre_religion = yes
 		color = { 48 0 0 }
 		icon = 39
 		country = {
@@ -850,6 +856,7 @@ conservatism_group = {
 	}
 
 	conservatism_zchn = {
+		#hre_religion = yes
 		color = { 46 178 255 }
 		icon = 40
 		country = {
@@ -1281,6 +1288,7 @@ conservatism_group = {
 	}
 
 	conservatism_pc = {
+		#hre_religion = yes
 		color = { 255 134 59 }
 		icon = 41
 		country = {
@@ -1712,6 +1720,7 @@ conservatism_group = {
 	}
 
 	conservatism_aws = {
+		#hre_religion = yes
 		color = { 235 245 255 }
 		icon = 42
 		country = {
@@ -2151,6 +2160,7 @@ conservatism_group = {
 	}
 
 	conservatism_psl = {
+		#hre_religion = yes
 		color = { 0.0 0.7 0.04 }
 		icon = 43
 		country = {
@@ -2238,7 +2248,22 @@ conservatism_group = {
 
 			guru_waldemar_pawlak = {
 				trigger = {
-					is_year = 1520
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 1991
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 6
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -2271,7 +2296,22 @@ conservatism_group = {
 
 			guru_jaroslaw_kalinowski = {
 				trigger = {
-					is_year = 1545
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 1997
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 4
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -2304,7 +2344,22 @@ conservatism_group = {
 
 			guru_janusz_wojciechowski = {
 				trigger = {
-					is_year = 1595
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2004
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 3
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -2337,7 +2392,22 @@ conservatism_group = {
 
 			guru_antoni_podraza = {
 				trigger = {
-					is_year = 1610
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2005
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 1
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -2370,7 +2440,22 @@ conservatism_group = {
 
 			guru_janusz_piechocinski = {
 				trigger = {
-					is_year = 1650
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2012
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 11
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -2403,7 +2488,22 @@ conservatism_group = {
 
 			guru_wladyslaw_kosiniak_kamysz = {
 				trigger = {
-					is_year = 1680
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2015
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 7
+						}
+					}
+					
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -2441,6 +2541,7 @@ conservatism_group = {
 	}
 
 	conservatism_lpr = {
+		#hre_religion = yes
 		color = { 101 57 130 }
 		icon = 45
 		country = {
@@ -2499,6 +2600,7 @@ conservatism_group = {
 	}
 
 	conservatism_PIS = {
+		#hre_religion = yes
 		color = { 7 58 118 }
 		icon = 44
 
@@ -2626,7 +2728,7 @@ conservatism_group = {
 			
 			# PIS Actions below!
 			
-			levy_party_tax = {
+			redirect_party_funding = {
 				cost = 50
 				potential = {
 					NOT = { tag = P1S }
@@ -2645,7 +2747,7 @@ conservatism_group = {
 					factor = 1
 				}				
 			}			
-			bless_local_leader = {
+			nationalize_private_media = {
 				cost = 50
 				potential = {
 					NOT = { tag = P1S }
@@ -2664,7 +2766,7 @@ conservatism_group = {
 					factor = 1
 				}
 			}
-			indulgence_for_sins = {
+			promote_propaganda_radio_maryja = {
 				cost = 50
 				potential = {
 					NOT = { tag = P1S }
@@ -2683,7 +2785,7 @@ conservatism_group = {
 					factor = 1
 				}
 			}	
-			local_saint = {
+			get_support_housewife = {
 				cost = 100
 				potential = {
 					NOT = { tag = P1S }
@@ -2703,7 +2805,7 @@ conservatism_group = {
 					}
 				}
 			}
-			forgiveness_for_usury = {
+			win_favor_archbishop = {
 				cost = 50
 				potential = {
 					NOT = { tag = P1S }
@@ -2790,7 +2892,7 @@ conservatism_group = {
 					}
 				}
 			}
-			investigate_heresy = {
+			detect_german_spy = {
 				curia_treasury_cost = 500
 				potential = {
 					is_papal_controller = yes
@@ -2821,6 +2923,7 @@ socialism_group = {
 	}
 
 	socialism_sld = {
+		#hre_religion = yes
 		color = { 252 0 0 }
 		icon = 46
 		allow_female_defenders_of_the_faith = yes
@@ -2871,6 +2974,7 @@ socialism_group = {
 	}
 
 	socialism_up = {
+		#hre_religion = yes
 		color = { 255 157 150 }
 		icon = 47
 		allow_female_defenders_of_the_faith = yes
@@ -2926,6 +3030,7 @@ socialism_group = {
 populism_group = {
 
 	populism_samoobrona = {
+		#hre_religion = yes
 		color = { 101 57 130 }
 		icon = 49
 		country = {
@@ -2979,6 +3084,7 @@ populism_group = {
 	}
 
 	populism_PPU = {
+		#hre_religion = yes
 		color = { 188 3 0 }
 		icon = 2
 		country = {
@@ -3406,4 +3512,84 @@ populism_group = {
 	}
 
 	crusade_name = WAR_FOR_FREE_TRADE
+}
+
+christian = {
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+	
+	center_of_religion = 262 # Rome
+
+	# Flag emblem values - Used for Dynamic Setup of Random Nations.
+	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
+	# Can be overridden per religion.
+	flags_with_emblem_percentage = 33 # default == 0
+	flag_emblem_index_range = { 1 57 }
+
+	
+	crusade_name = CRUSADE
+	
+	christian_catholic = {
+		color = { 204 204 0 }
+		icon = 1
+		allowed_conversion = {
+
+		}
+		
+		crusade_name = CRUSADE
+
+		country = {
+			tolerance_own = 1
+			global_heathen_missionary_strength = 0.01
+		}
+		
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			advisor_pool = 1
+		}
+		
+		#hre_religion = yes
+		
+		on_convert = {
+			change_religion = christian_catholic
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
+		
+		holy_sites = { 
+			1170 #Kalwaria Zebrzydowska
+			441 #Jasna Gora
+			99 #Lichen
+			4247 #Gietrzwald
+			3236 #Lagiewniki
+			4260 #Sw Lipka
+			1802 #Swiebodzin
+			1180 #Zakopane
+			1084 #Kalwaria Paclawska
+			2954 #Sw Krzyz
+			4174 #Gora Sw Anny
+		}
+		
+		blessings = {
+			legitimize_government
+			encourage_warriors_of_the_faith
+			send_monks_to_establish_monasteries
+			promote_territorial_rights
+			will_of_the_martyrs
+			holy_commune
+			pastral_care
+			priests_in_schools
+			family_protection
+			church_funds
+			gods_word
+			christ_king_of_universe
+		}
+	}
 }

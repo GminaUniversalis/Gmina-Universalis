@@ -92,7 +92,7 @@ emancipated_woman = {
 
 rural_life = {
 	local_unrest = -2
-	development_cost = -0.1
+	local_development_cost = -0.1
 
 }
 
@@ -101,7 +101,7 @@ wood_abundance = {
 }
 
 city_life = {
-	development_cost = 0.1
+	local_development_cost = 0.1
 	local_unrest = 2
 }
 
@@ -214,4 +214,10 @@ emerald_kaczka = {
 
 emerald_kaczka_alternate = {
 	prestige = -5
+}
+
+smolensk_catastrophe = {
+	land_morale_constant = -1
+	religious_unity = 0.5
+	can_not_declare_war = yes
 }

@@ -24,7 +24,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-
 		iconType =
 		{
 			name ="topbar_1"
@@ -48,7 +47,6 @@ guiTypes = {
 			position = { x= 991532 y = -1 }
 			Orientation = "UPPER_LEFT"
 		}
-
 
 
 
@@ -744,6 +742,19 @@ guiTypes = {
 				maxHeight = 32
 				format = center
 			}
+		}
+
+		instantTextBoxType = {
+			name = "clock_date_speed"
+			position = { x = -290 y = 65 }
+			font = "vic_22"
+			borderSize = {x = 10 y = 10}
+			maxWidth = 130
+			maxHeight = 32
+			format = centre
+			Orientation = "UPPER_RIGHT"
+			scripted = yes
+			scale = 0.9
 		}
 	} ### end of "topbar"
 

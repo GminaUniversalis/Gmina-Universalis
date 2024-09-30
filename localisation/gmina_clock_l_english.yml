@@ -35,5 +35,8 @@
  clock_ptm_12:0 "December clock"
  desc_clock_ptm_12:0 "You've found twelfth clock!"
 
+ clock_date_speed: "[1500.clock_month_check] [1500.clock_year.GetValue]"
+ clock_date_speed_tooltip: "This date is is used as internal counter for events and other stuff. It helps keep track of real time"
+
  timewalker:0 "Timewalker"
  timewalker_desc:0 "\n    Any owned province:\n      Has any clock modifier"

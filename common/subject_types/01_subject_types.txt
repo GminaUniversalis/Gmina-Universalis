@@ -142,3 +142,88 @@ silesian_state = {
 		}
 	}
 }
+
+controlled_bureau = {
+	copy_from = default
+	
+	# Graphics:
+    sprite = GFX_icon_eyalet
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_eyalet
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_eyalet 
+
+	# Properties:
+	transfer_trade_power = yes
+	joins_overlords_wars = no
+	can_be_annexed = no
+	has_power_projection = yes
+	gets_help_with_rebels = yes
+	forms_trade_companies = no
+	takes_diplo_slot = no
+	extend_trading_range = yes
+	counts_for_borders = yes
+	max_government_rank = 1
+	can_be_co_belligerented = yes
+	must_accept_cta_from_overlord = yes
+	can_gain_favors = yes
+	favors_cost_to_join_offensive_wars = 40   #Defines how much favors the overlord need to invest to call the subject into an offensive war
+	favors_cost_to_join_defensive_wars = 20   #Defines how much favors the overlord need to invest to call the subject into a defensive war
+	opinion_cost_to_join_offensive_wars = 80   #Defines how much opinion the subject loses of the overlord to call the subject into an offensive war. Applied if you do not have Leviathan
+	opinion_cost_to_join_defensive_wars = 40   #Defines how much opinion the subject loses of the overlord to call the subject into a defensive war. Applied if you do not have Leviathan
+	opinion_on_subject_integration = 0
+	can_release_and_play = yes
+	overlord_enforce_peace_attacking = yes
+
+	liberty_desire_development_ratio = 0.1
+	liberty_desire_same_dynasty = -5.0
+	pays_overlord = 0.5
+	forcelimit_to_overlord = -0.5						# Percent of subject FL to use as base for modifiers
+	naval_forcelimit_to_overlord = -0.5			# Percent of subject FL to use as base for modifiers
+	manpower_to_overlord = -0.5						# Percent of subject FL to use as base for modifiers
+	sailors_to_overlord = -0.5						# Percent of subject FL to use as base for modifiers
+
+	relative_power_class = 2
+	should_quit_wars_on_activation = yes
+
+	restoration_cb = cb_disloyal_eyalet
+
+	can_fight = {
+		independent_nations = yes
+	}
+
+	can_rival = {
+		independent_nations = yes
+	}
+
+	# Subject Interactions:
+	embargo_rivals = yes
+	subsidize_armies = yes
+	send_additional_troops = yes
+	send_officers = yes
+	support_loyalists = yes
+	scutage = yes
+	enforce_culture = no
+	siphon_income = yes
+	grant_province = yes
+	grant_core_claim = yes
+	seize_court_resources = yes
+	return_land = yes
+
+
+	# Modifiers:
+	modifier_subject = clear # Use this to clear after copy_from.
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = eyalet_modifier
+	}
+
+	overlord_opinion_modifier = is_eyalet
+	subject_opinion_modifier = is_eyalet
+}

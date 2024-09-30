@@ -63,7 +63,7 @@
  AI_RULER_DISCLOSE_ATTACK:0 "Disclose their attack plans ahead of time."
  AI_RULER_AVOID_UGLY_BORDERS:0 "Try to avoid ugly map borders."
  AI_RULER_BETRAY_ALLIES:0 "Betray their allies without second thoughts."
- AI_RULER_EXCOMMUNICATE:0 "Use Excommunicate a lot more if they are the Prezes."
+ AI_RULER_EXCOMMUNICATE:0 "Use Disfavour a lot more if they are the Prezes."
  AI_RULER_HERETIC_LAND:0 "Desire neighboring competitor land."
  AI_RULER_HEATHEN_LAND:0 "Desire neighboring antagonist land."
  AI_RULER_COLONIES:0 "Seek to establish colonies with greater intent."

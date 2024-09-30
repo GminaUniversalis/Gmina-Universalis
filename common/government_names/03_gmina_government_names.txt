@@ -1,3 +1,64 @@
+pis_papal_government = {
+	rank = {
+		1 = Main_Party_Bureau
+		2 = Main_Party_Bureau
+		3 = Main_Party_Bureau
+		4 = Main_Party_Bureau
+		5 = Main_Party_Bureau
+	}
+	
+	ruler_male = {
+		1 = POPE_PIS
+		2 = POPE_PIS
+		3 = POPE_PIS
+		4 = POPE_PIS
+		5 = POPE_PIS
+	}
+	
+	ruler_female ={
+		1 = POPE_PIS
+		2 = POPE_PIS
+		3 = POPE_PIS
+		4 = POPE_PIS
+		5 = POPE_PIS
+	}
+	consort_male = {
+		1 = POPE_PIS
+		2 = POPE_PIS
+		3 = POPE_PIS
+		4 = POPE_PIS
+		5 = POPE_PIS
+	}
+
+	consort_female = {
+		1 = POPE_PIS
+		2 = POPE_PIS
+		3 = POPE_PIS
+		4 = POPE_PIS
+		5 = POPE_PIS
+	}
+	
+	heir_male = {
+		1 = Pupilek
+		2 = Pupilek
+		3 = Pupilek
+		4 = Pupilek
+		5 = Pupilek
+	}
+
+	heir_female = {
+		1 = Pupilek
+		2 = Pupilek
+		3 = Pupilek
+		4 = Pupilek
+		5 = Pupilek
+	}
+
+	trigger = {
+		has_reform = papacy_reform
+	}
+}
+
 academic_autocracy = {
 	rank = {
 		1 = REKTORAT

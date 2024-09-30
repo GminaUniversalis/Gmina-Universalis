@@ -6,6 +6,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "SMOLENSK_eventPicture"
+		texturefile = "gfx/event_pictures/politics/smolensk_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "PISPicture"
 		texturefile = "gfx/event_pictures/politics/PIS_event.dds"
 		alwaystransparent = yes

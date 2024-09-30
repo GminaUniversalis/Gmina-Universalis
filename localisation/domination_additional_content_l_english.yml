@@ -256,7 +256,7 @@
  desc_tur_city_of_faiths:1 "[This.GetName] is a great Holy Site for many religions. As one of the few places, the gates are open to every kind of faith who wants to make a pilgrimage to [This.GetName]."
  desc_rise_of_the_ottomans:1 "§YLasts until the end of the Age of Discovery.§!"
  desc_zenith_of_the_ottomans:1 "§YLasts until the end of the Age of Reformation.§!"
- desc_twilight_of_the_ottomans:1 "§YLasts until the end of the Age of Absolutism.§!"
+ desc_twilight_of_the_ottomans:1 "§YLasts until the end of the Age of Polarization.§!"
  desc_decline_of_the_ottomans:1 "Our great [Root.GovernmentName] is one of the world powers. We shaped the world and left a mark in history which shall be remembered forever.\nHowever, our great success bred complacency. What our ancestors have achieved is now seen as a given privilege. [Root.GetUsableName] has to face the reality of a time where its very own administration and elite threaten the survival of the state."
  desc_kor_expanded_capital:1 "[This.GetName]'s administration and infrastructure are the jewel of [Owner.GetAdjective] [Owner.GovernmentName]."
  desc_rus_western_military_tactics:1 "Our military has studied foreign tactics in the matter of warfare. Additionally, the training of our troops has been adjusted with those strategies in mind, improving the overall quality of our troops in combat significantly."

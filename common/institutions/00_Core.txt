@@ -391,83 +391,38 @@ new_world_i = {
 	trade_company_efficiency = 1
 	historical_start_date = 1500.1.1
 
-	 history = {
-	# 	OR = {
-	# 		AND = {
-	 			is_year = 1500
-				continent = europe
-	# 			OR = {
-	# 				owner = { has_idea = quest_for_the_new_world }
-	# 				owner = { colony = 1 }
-	# 			}
-	# 		}
-	# 		AND = {
-	# 			is_year = 1550
-	# 			owner = {
-	# 				NOT = { technology_group = north_american }
-	# 				NOT = { technology_group = mesoamerican }
-	# 				NOT = { technology_group = south_american }
-	# 				NOT = { technology_group = andean }
-	# 			}
-	# 			superregion = south_america_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1550
-	# 			owner = {
-	# 				NOT = { technology_group = north_american }
-	# 				NOT = { technology_group = mesoamerican }
-	# 				NOT = { technology_group = south_american }
-	# 				NOT = { technology_group = andean }
-	# 			}
-	# 			superregion = north_america_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1550
-	# 			owner = {
-	# 				NOT = { technology_group = north_american }
-	# 				NOT = { technology_group = mesoamerican }
-	# 				NOT = { technology_group = south_american }
-	# 				NOT = { technology_group = andean }
-	# 			}
-	# 			superregion = central_america_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1600
-	# 			superregion = near_east_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1600
-	# 			continent = europe
-	# 		}
-	# 		AND = {
-	# 			is_year = 1625
-	# 			superregion = persia_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1650
-	# 			superregion = india_superregion
-	# 		}
-			
-			
-	# 		AND = {
-	# 			is_year = 1650
-	# 			superregion = china_superregion
-	# 		}
-			
-	# 		AND = {
-	# 			is_year = 1650
-	# 			superregion = east_indies_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1700
-	# 			superregion = africa_superregion
-	# 		}
-	# 		is_year = 1800
-	# 	}
-	 }
+	history = {
+
+		is_year = 1500
+		continent = europe
+	
+	}
 
 	can_start = {
-		is_year = 1500
+
+		custom_trigger_tooltip = {
+			tooltip = date_is_fall_of_communism
+			1500 = {
+
+				check_variable = {
+					which = clock_year
+					value = 1988
+				}
+	
+			}
+			# 1500 = {
+			# 	check_variable = {
+			# 		which = clock_month
+			# 		value = 12
+			# 	}
+			# }
+		}
+
+		custom_trigger_tooltip = {
+			tooltip = had_event_fall_of_communism
+			has_global_flag = fall_of_communism
+		}
+
 		is_institution_enabled = renaissance
 		is_island = no
 		highest_value_trade_node = yes
@@ -494,6 +449,7 @@ new_world_i = {
 	
 	can_embrace = {
 		always = yes
+		
 	}
 	
 	embracement_speed = {
@@ -676,84 +632,31 @@ printing_press = {
 	historical_start_date = 1550.1.1
 
 	 history = {
-	# 	OR = {
-	# 		AND = {
-	# 			province_id = 1876
-	# 			is_year = 1550
-	# 		}
-	# 		AND = {
-				is_year = 1560
-	# 			OR = {
-	# 				religion = protestant
-	# 				religion = reformed
-	# 				region = italy_region
-	# 				region = france_region
-	# 			}
-	# 		}
-	# 		AND = {
-	# 			is_year = 1575
-	# 			continent = europe
-	# 			development = 12
-	# 		}
-	# 		AND = {
-	# 			is_year = 1600
-	# 			continent = europe
-	# 		}
-	# 		AND = {
-	# 			is_year = 1600
-	# 			owner = {
-	# 				NOT = { technology_group = north_american }
-	# 				NOT = { technology_group = mesoamerican }
-	# 				NOT = { technology_group = south_american }
-	# 				NOT = { technology_group = andean }
-	# 			}
-	# 			superregion = south_america_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1600
-	# 			owner = {
-	# 				NOT = { technology_group = north_american }
-	# 				NOT = { technology_group = mesoamerican }
-	# 				NOT = { technology_group = south_american }
-	# 				NOT = { technology_group = andean }
-	# 			}
-	# 			superregion = north_america_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1600
-	# 			owner = {
-	# 				NOT = { technology_group = north_american }
-	# 				NOT = { technology_group = mesoamerican }
-	# 				NOT = { technology_group = south_american }
-	# 				NOT = { technology_group = andean }
-	# 			}
-	# 			superregion = central_america_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1625
-	# 			superregion = near_east_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1650
-	# 			superregion = persia_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1725
-	# 			superregion = china_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1725
-	# 			superregion = india_superregion
-	# 		}
-	# 		AND = {
-	# 			is_year = 1725
-	# 			superregion = east_indies_superregion
-	# 		}
-	# 	}
+
+		is_year = 1560
+	
 	 }
 	
 	can_start = {
-		is_year = 1550
+
+		custom_trigger_tooltip = {
+			tooltip = TP_SA_0_20_21_22
+			1500 = {
+
+				check_variable = {
+					which = clock_year
+					value = 1996
+				}
+	
+			}
+			# 1500 = {
+			# 	check_variable = {
+			# 		which = clock_month
+			# 		value = 5
+			# 	}
+			# }
+		}
+			
 		is_institution_enabled = new_world_i
 		is_in_capital_area = yes
 		is_state = yes

@@ -41,6 +41,7 @@ papacy_reform = {
 	allow_convert = no
 	lock_level_when_selected = yes
 	fixed_rank = 1
+	heir = no
 
 	custom_attributes = {
 		locked_government_type = yes

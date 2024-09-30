@@ -228,7 +228,7 @@ guiTypes = {
 		guiButtonType = {
 			name ="shield"
 			quadTextureSprite ="GFX_shield_thin_old"
-			position = { x= 81 y = 40 }
+			position = { x= 81 y = 31 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -240,7 +240,7 @@ guiTypes = {
 		guiButtonType = {
 			name ="button"
 			quadTextureSprite = "GFX_estates_icons"
-			position = { x= 50 y = 34 }
+			position = { x= 50 y = 25 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -250,14 +250,14 @@ guiTypes = {
 		iconType = {
 			name ="progress_bg"
 			spriteType = "GFX_hegemon_progress_bg"
-			position = { x= 80 y = 80 }
+			position = { x= 80 y = 146 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="progress"
 			spriteType = "GFX_hegemon_progress"
-			position = { x = 85 y = 80 }
+			position = { x = 85 y = 146 }
 			Orientation = "UPPER_LEFT"
 
 		}
@@ -265,7 +265,7 @@ guiTypes = {
 		iconType = {
 			name ="progress_frame"
 			spriteType = "GFX_diplomacy_progress_frame"
-			position = { x= 77 y = 78 }
+			position = { x= 77 y = 144 }
 			Orientation = "UPPER_LEFT"
 		}
 

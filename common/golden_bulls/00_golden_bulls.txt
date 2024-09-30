@@ -1,0 +1,118 @@
+smolensk_investigation = {
+    mechanics = {
+        crusades_after_age_limit
+    }
+	modifier = {
+		ae_impact = -0.1
+	}
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+        custom_trigger_tooltip = {
+            tooltip = had_smolensk_tooltip
+            has_global_flag = smolensk_disaster_enable 
+        }
+
+    }
+    ai_will_do = {
+        factor = 0
+    }
+}
+
+apostolicae_servitutis = {
+    modifier = {
+        curia_powers_cost = -0.5
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 0
+    }
+}
+
+dobra_zmiana = {
+    modifier = {
+		tolerance_heathen = 2
+        development_cost = -0.05
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 2
+    }
+}
+
+immensa_aeterni_dei = {
+    modifier = {
+        embracement_cost = -0.1
+        global_institution_spread = 0.25
+    }
+    mechanics = {
+        cardinals_spread_institution
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 0
+        modifier = {
+            factor = 5
+            is_lacking_institutions = yes
+        }
+    }
+}
+
+libertas_ecclesiae = {
+    modifier = {
+        imperial_authority = 0.2
+		imperial_reform_catholic_approval = 5
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+        is_emperor = yes
+    }
+    ai_will_do = {
+        factor = 0
+    }
+}
+
+wina_tuska = {
+    modifier = {
+        yearly_absolutism = +0.5
+        unrest_catholic_provinces = -2
+        drill_decay_modifier = -0.25
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+        is_religion_enabled = liberalism_PO
+        absolutism = 50
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            average_unrest = 2
+        }
+        modifier = {
+            factor = 1
+            average_unrest = 4
+        }
+        modifier = {
+            factor = 1
+            average_unrest = 6
+        }
+    }
+}

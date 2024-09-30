@@ -281,6 +281,18 @@ guiTypes = {
 			format = left
 		}
 
+		instantTextBoxType = {
+			name = "HRE_IS_COMMUNIST"
+			position = { x = -500 y = -270 }
+			font = "vic_22"
+			borderSize = {x = 10 y = 10}
+			maxWidth = 200
+			maxHeight = 50
+			format = center
+			Orientation = "LOWER_RIGHT"
+			scripted = yes
+		}
+
 		iconType = {
 			name = "hre_bg_princes"
 			spriteType = "GFX_hre_bg_princes1"

@@ -803,6 +803,13 @@ estate_families_family_welfare_benefits = {
 			factor = 0.1
 			is_in_deficit = yes
 		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				current_income_balance = 5
+			}
+		}
 	}	
 
 	can_select = {
@@ -815,6 +822,7 @@ estate_families_family_welfare_benefits = {
 	}
 	penalties = {
 		global_tax_income = -48
+		families_privilege_slots = -1
 	}
 	benefits = {
 		overextension_impact_modifier = -0.2
@@ -877,6 +885,13 @@ estate_families_maternal_leave = {
 		modifier = {
 			factor = 0.1
 			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				current_income_balance = 5
+			}
 		}
 	}	
 
@@ -951,6 +966,13 @@ estate_families_paternal_leave = {
 			factor = 0.1
 			is_in_deficit = yes
 		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				current_income_balance = 5
+			}
+		}
 	}	
 
 	can_select = {
@@ -1023,6 +1045,13 @@ estate_families_free_housing = {
 		modifier = {
 			factor = 0.1
 			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				current_income_balance = 5
+			}
 		}
 	}	
 

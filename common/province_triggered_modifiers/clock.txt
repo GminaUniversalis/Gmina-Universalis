@@ -13,109 +13,109 @@ clock_ptm_1 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -130,12 +130,41 @@ clock_ptm_1 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -150,6 +179,37 @@ clock_ptm_1 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -173,109 +233,109 @@ clock_ptm_2 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -290,12 +350,41 @@ clock_ptm_2 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -310,6 +399,37 @@ clock_ptm_2 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
     on_deactivation = {
@@ -331,109 +451,109 @@ clock_ptm_3 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -448,12 +568,41 @@ clock_ptm_3 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -468,6 +617,37 @@ clock_ptm_3 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -491,109 +671,109 @@ clock_ptm_4 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -608,12 +788,41 @@ clock_ptm_4 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -628,6 +837,37 @@ clock_ptm_4 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -651,109 +891,109 @@ clock_ptm_5 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -768,12 +1008,41 @@ clock_ptm_5 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -788,6 +1057,37 @@ clock_ptm_5 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -811,109 +1111,109 @@ clock_ptm_6 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -928,12 +1228,41 @@ clock_ptm_6 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -948,6 +1277,37 @@ clock_ptm_6 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -971,109 +1331,109 @@ clock_ptm_7 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -1088,12 +1448,41 @@ clock_ptm_7 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -1108,6 +1497,37 @@ clock_ptm_7 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -1131,109 +1551,109 @@ clock_ptm_8 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -1248,12 +1668,41 @@ clock_ptm_8 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -1268,6 +1717,37 @@ clock_ptm_8 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -1291,109 +1771,109 @@ clock_ptm_9 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -1408,12 +1888,41 @@ clock_ptm_9 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -1428,6 +1937,37 @@ clock_ptm_9 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -1451,109 +1991,109 @@ clock_ptm_10 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -1568,12 +2108,41 @@ clock_ptm_10 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -1588,6 +2157,37 @@ clock_ptm_10 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -1611,109 +2211,109 @@ clock_ptm_11 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -1728,12 +2328,41 @@ clock_ptm_11 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -1748,6 +2377,37 @@ clock_ptm_11 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 
@@ -1771,109 +2431,109 @@ clock_ptm_12 = {
     }
 
     on_activation = {
-        if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 1056
-                }
-                NOT = { is_year = 1500}
-            }
+        # if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 960
+        #         }
+        #         NOT = { is_year = 1500}
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
-            }
+        #         country_event = {
+        #             id = clock.1
+        #         }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                had_global_flag = {
-                    flag = clock_init_year
-                    days = 2184
-                }
-                is_year = 1500
-            }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
+        # else_if = {
+        #     limit = {
+        #         had_global_flag = {
+        #             flag = clock_init_year
+        #             days = 2100
+        #         }
+        #         is_year = 1500
+        #     }
 
-            random_country = {
-                limit = { 
-                    tag = REB
-                }
+        #     random_country = {
+        #         limit = { 
+        #             tag = REB
+        #         }
                 
-                country_event = {
-                    id = clock.1
-                }
+        #         country_event = {
+        #             id = clock.1
+        #         }
 
-            }
+        #     }
 
-            if = {
-                limit = {
-                    1500 = {
-                        check_variable = {
-                            which = clock_month
-                            value = 12
-                        }
-                    }
-                    1500 = {
-                        NOT = {
-                            check_variable = {
-                                which = clock_month
-                                value = 13
-                            }
-                        }
-                    }
-                }
+        #     if = {
+        #         limit = {
+        #             1500 = {
+        #                 check_variable = {
+        #                     which = clock_month
+        #                     value = 12
+        #                 }
+        #             }
+        #             1500 = {
+        #                 NOT = {
+        #                     check_variable = {
+        #                         which = clock_month
+        #                         value = 13
+        #                     }
+        #                 }
+        #             }
+        #         }
     
-                random_country = {
-                    limit = { 
-                        tag = REB
-                    }
+        #         random_country = {
+        #             limit = { 
+        #                 tag = REB
+        #             }
                     
-                    country_event = {
-                        id = clock.3
-                    }
-                }
-            }
-        }
+        #             country_event = {
+        #                 id = clock.3
+        #             }
+        #         }
+        #     }
+        # }
 
         if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 88
+                    days = 80
                 }
                 NOT = { is_year = 1500}
             }
@@ -1888,12 +2548,41 @@ clock_ptm_12 = {
                 }
 
             }
+            
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }                                        
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+
+                    country_event = {
+                        id = clock.1
+                    }
+                }
+            }
         }
         else_if = {
             limit = {
                 had_global_flag = {
                     flag = clock_init_month
-                    days = 182
+                    days = 175
                 }
                 is_year = 1500
             }
@@ -1908,6 +2597,37 @@ clock_ptm_12 = {
                 }
 
             }
+
+            if = {
+                limit = {
+                    1500 = {
+                        check_variable = {
+                            which = clock_month
+                            value = 1
+                        }
+                    }
+                    1500 = {
+                        NOT = {
+                            check_variable = {
+                                which = clock_month
+                                value = 2
+                            }
+                        }
+                    }
+                }
+
+                random_country = {
+                    limit = { 
+                        tag = REB
+                    }
+                    
+                    country_event = {
+                        id = clock.1
+                    }
+    
+                }
+            }
+
         }
     }
 

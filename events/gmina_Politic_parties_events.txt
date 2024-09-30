@@ -11,7 +11,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1991
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -215,7 +230,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1990
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -403,7 +433,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1979
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 9
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -582,7 +627,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1989
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 9
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -760,7 +820,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1990
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -930,7 +1005,7 @@ country_event = {
 }
 
 # Start of PSL
-country_event = {
+country_event = {	
 	id = politics.6
 	title = politics.6.t
 	desc = politics.6.d
@@ -940,7 +1015,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1485
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1990
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+
 		religion = communism_zsl
 
 		any_owned_province = {
@@ -1118,7 +1208,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1485
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1999
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 4
+			}
+		}
+
 		religion = communism_pzpr
 
 		any_owned_province = {
@@ -1282,26 +1387,98 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1490
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1988 #1990
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 12 #1
+			}
+		}
+
 		religion = communism_pzpr
     }
 
+	immediate = {
+		set_global_flag = fall_of_communism
+	}
     mean_time_to_happen = {
-	    months = 100
+	    months = 120
 
 		modifier = {
 			factor = 0.8
-			NOT = {corruption = 6}
+			
+			has_hostile_reformation_center = yes
+		}
+
+		modifier = {
+			factor = 0.5
+			calc_true_if = {
+				amount = 2
+				has_hostile_reformation_center = yes
+			}
+
+		}
+
+		modifier = {
+			factor = 0.2
+			calc_true_if = {
+				amount = 3
+				has_hostile_reformation_center = yes
+			}
+
+		}
+
+		modifier = {
+			factor = 0.9
+			NOT = { religious_unity = 0.9 }
+		}
+
+		modifier = {
+			factor = 0.6
+			NOT = { religious_unity = 0.6 }
+		}
+		
+		modifier = {
+			factor = 0.3
+			NOT = { religious_unity = 0.3 }
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = { religious_unity = 0.1 }
+		}
+
+		modifier = {
+			factor = 0.5
+			corruption = 10
+		}
+
+		modifier = {
+			factor = 0.6
+			corruption = 8
+		}
+
+		modifier = {
+			factor = 0.7
+			corruption = 6
 		}
 
 		modifier = {
 			factor = 0.8
-			NOT = {corruption = 4}
+			corruption = 4
 		}
 
 		modifier = {
-			factor = 0.8
-			NOT = {corruption = 2}
+			factor = 0.9
+			corruption = 2
 		}
 	}
 
@@ -1849,7 +2026,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1487
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1990
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 1
+			}
+		}
+
 		religion = communism_sd
     }
 
@@ -2416,7 +2608,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1506
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1992
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
 		OR = {
 			religion = communism_pzpr
 			religion = socialism_sld
@@ -2586,7 +2793,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1530
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1996
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 10
+			}
+		}
+
 		OR = {
 			religion = conservatism_kpn
 			religion = conservatism_zchn
@@ -2773,7 +2995,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1520
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1994
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 4
+			}
+		}
+
 		OR = {
 			religion = liberalism_kld
 			religion = liberalism_ud
@@ -2960,7 +3197,20 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1610
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2005
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
 
 		any_owned_province = {
 			can_have_center_of_reformation_trigger = {
@@ -3133,7 +3383,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1520
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2001
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
 		OR = {
 			religion = conservatism_aws
 			religion = liberalism_uw
@@ -3255,24 +3520,71 @@ country_event = {
 		}
 		change_religion = conservatism_PIS
 		
+		tooltip = {
+			1016 = {
+				add_core = P1S
+				change_religion = conservatism_PIS
+			}
+		}
 
-		hidden_effect = {
-			if = {
-				limit = {
-					tag = G12
-				}
-	
+		if = {
+			limit = {
+				tag = G12
+			}
+
+			custom_tooltip = release_pissowcy
+
+			hidden_effect = {
 				release = P1S
 				P1S = {
 					change_religion = conservatism_PIS	
 					change_government = theocracy
 					add_government_reform = papacy_reform
+					change_primary_culture = warszawska
+					if = {
+						limit = {
+							P1S = {
+								ai = yes
+							}
+						}
+
+						define_ruler = {
+							culture = ROOT
+							name = "Lech"
+							dynasty = "Kaczyński"
+							claim = 100
+							male = yes
+							age = 54
+							adm = 4
+							mil = 2
+							dip = 5
+							hide_skills = yes
+							add_ruler_personality = immortal_personality
+						}
+					}
+					else = {
+						define_ruler = {
+							culture = ROOT
+							name = "Lech"
+							dynasty = "Kaczyński"
+							claim = 100
+							male = yes
+							age = 54
+							adm = 4
+							mil = 2
+							dip = 5
+							hide_skills = yes
+						}
+					}
 					
 				}
+				
+				1016 = {
+					remove_core = G12
+				}
 			}
-		}
 
-		custom_tooltip = release_pissowcy
+		}
 	}
 
 	option = {
@@ -3301,15 +3613,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-
-		hidden_effect = {
-			1016 = {
-				add_core = P1S
-				change_religion = conservatism_PIS
-			}
-		}
-	}
 	option = {
 		name = politics.14.a
 
@@ -3345,13 +3648,25 @@ country_event = {
 
 		change_religion = conservatism_PIS
 
-		tooltip = {
-			if = {
-				limit = {
-					tag = G12
-				}
-	
+		if = {
+			limit = {
+				tag = G12
+			}
+
+			custom_tooltip = release_pissowcy
+
+			hidden_effect = {
 				release = P1S
+				P1S = {
+					change_religion = conservatism_PIS	
+					change_government = theocracy
+					add_government_reform = papacy_reform
+					change_primary_culture = warszawska
+					
+				}
+				1016 = {
+					remove_core = G12
+				}
 			}
 		}
 	}

@@ -1,0 +1,75 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_copts_bg_cut"
+		texturefile = "gfx//interface//copts_bg_cut.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_1170"
+		texturefile = "gfx//interface//holy_sites//kalwaria_zeb.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_441"
+		texturefile = "gfx//interface//holy_sites//jasna_gora.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_99"
+		texturefile = "gfx//interface//holy_sites//lichen.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_4247"
+		texturefile = "gfx//interface//holy_sites//gietrzwald.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_3236"
+		texturefile = "gfx//interface//holy_sites//lagiewniki.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_4260"
+		texturefile = "gfx//interface//holy_sites//sw_lipka.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_1802"
+		texturefile = "gfx//interface//holy_sites//swiebodzin.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_1180"
+		texturefile = "gfx//interface//holy_sites//zakopane.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_1084"
+		texturefile = "gfx//interface//holy_sites//kalwaria_paclawska.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_2954"
+		texturefile = "gfx//interface//holy_sites//sw_krzyz.dds"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_holy_site_4174"
+		texturefile = "gfx//interface//holy_sites//gora_sw_anny.dds"
+		loadType = "INGAME"
+	}	
+
+}

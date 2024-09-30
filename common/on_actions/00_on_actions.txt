@@ -1021,6 +1021,32 @@ on_monarch_death = {
 		# flavor_mal.47 # Pilgrimage ends prematurely
 		government_events.3	# Election of a new Ruler
 	}
+
+	
+
+	if = {
+		limit = {
+			tag = P1S
+			is_papal_controller = no
+		}
+
+		papal_controller = { 
+			create_subject = {
+				subject_type = controlled_bureau
+				subject = PREV
+			}
+		}
+
+
+	}
+	else_if = {
+		limit = {
+			tag = P1S
+			is_papal_controller = yes
+		}
+
+		grant_independence = yes
+	}
 }
 
 # country
