@@ -494,6 +494,11 @@
  estate_priests_land_rights_desc:0 "Priests Rights TBD"
  curtail_estate_priests_title:0 "Curtail Priests"
  curtail_estate_priests_desc:0 "Curtail Priests TBD"
+ estate_priests_empowered_concordat: "Empowered Concordat"
+ estate_priests_empowered_concordat_desc: "Empowered Concordat TBD"
+ HAS_FULL_RATIFY_CONCORDAT: "Has §YRatify the concordat§! estate privilege and 6 corespoding privileges"
+ embrace_catholic_title: "Embrace Catholicism"
+ embrace_catholic_desc: "Due to the significant support of our population for the Clergy in our government, there have been increasing calls to abandon the current system of governing our state. Constant power struggles, unfulfilled promises, corruption. These are among the few problems of our time, so it is natural that people will gravitate to proven and humble servants of God to guide them. Like Jesus leading his sheep to eternal salvation."
 #Families
  picked_families_definer:0 "Picked Families Definer"
  estate_families_definer_tooltip:0 "You already choosen another definer"

@@ -3517,8 +3517,6 @@ populism_group = {
 christian = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
-	
-	center_of_religion = 262 # Rome
 
 	# Flag emblem values - Used for Dynamic Setup of Random Nations.
 	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
@@ -3536,7 +3534,6 @@ christian = {
 
 		}
 		
-		crusade_name = CRUSADE
 
 		country = {
 			tolerance_own = 1
@@ -3575,21 +3572,22 @@ christian = {
 			1084 #Kalwaria Paclawska
 			2954 #Sw Krzyz
 			4174 #Gora Sw Anny
+			1212 #Góra Kalwaria
 		}
 		
 		blessings = {
-			legitimize_government
-			encourage_warriors_of_the_faith
-			send_monks_to_establish_monasteries
-			promote_territorial_rights
-			will_of_the_martyrs
-			holy_commune
-			pastral_care
-			priests_in_schools
-			family_protection
-			church_funds
-			gods_word
-			christ_king_of_universe
+			aposthole_peter
+			aposthole_andrew
+			aposthole_james
+			aposthole_john
+			aposthole_philip
+			aposthole_bartholomew
+			aposthole_matthew
+			aposthole_thomas
+			aposthole_james
+			aposthole_thaddeus
+			aposthole_simon
+			aposthole_judas_iscariot		
 		}
 	}
 }

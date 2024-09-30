@@ -1,0 +1,56 @@
+country_decisions = {
+	embrace_catholic = {
+		potential = {
+			has_privilege = estate_priests_bishops_in_government
+		}
+	
+		allow = {
+			has_not_any_estate_disaster_active = yes
+	
+			estate_loyalty = {
+				estate = estate_priests
+				loyalty = 80
+			}
+	
+			estate_influence = {
+				estate = estate_priests
+				influence = 60
+			}
+	
+			stability = 2
+			custom_trigger_tooltip = {
+				tooltip = HAS_FULL_RATIFY_CONCORDAT
+
+				has_privilege = estate_priests_religion_schools
+				has_privilege = estate_priests_sacred_marriage
+				has_privilege = estate_priests_tend_to_sites
+				has_privilege = estate_priests_social_participation
+				has_privilege = estate_priests_ecclesiastical_tax
+				has_privilege = estate_priests_pastoral_care
+				has_privilege = estate_priests_ratify_the_concordat
+					
+			}
+	
+		}
+	
+		effect = {
+			change_religion = christian_catholic
+			add_stability = -2
+
+			hidden_effect = {
+				remove_estate_privilege = estate_priests_religion_schools
+				remove_estate_privilege = estate_priests_sacred_marriage
+				remove_estate_privilege = estate_priests_tend_to_sites
+				remove_estate_privilege = estate_priests_social_participation
+				remove_estate_privilege = estate_priests_ecclesiastical_tax
+				remove_estate_privilege = estate_priests_pastoral_care
+				remove_estate_privilege = estate_priests_ratify_the_concordat
+
+				
+			}
+
+			set_estate_privilege = estate_priests_empowered_concordat
+		}
+	}
+
+}

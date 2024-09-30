@@ -386,6 +386,7 @@ estate_priests_reject_the_concordat = {
 	is_valid = {
 		NOT = { has_country_flag = picked_bishops_in_government }
 		NOT = { has_estate_privilege = estate_priests_ratify_the_concordat }
+		NOT = { religion = christian_catholic }
 	}
 	can_select = {
 		NOT = { has_country_flag = picked_bishops_in_government }
@@ -864,6 +865,7 @@ estate_priests_ratify_the_concordat = {
 	}
 	is_valid = {
 		NOT = { has_estate_privilege = estate_priests_reject_the_concordat}
+		NOT = { religion = christian_catholic }
 	}
 	can_select = {
 		custom_trigger_tooltip = {
@@ -967,21 +969,13 @@ estate_priests_religion_schools = {
 		has_country_flag = ratify_the_concordat
 	}
 
-
-
 	penalties = {
 		global_tax_modifier = 0.05
 	}
 	benefits = {
 		global_missionary_strength = 0.01
+		priests_privilege_slots = 1
 	}
-
-
-
-
-
-
-
 
 }
 estate_priests_sacred_marriage = {
@@ -1038,6 +1032,7 @@ estate_priests_sacred_marriage = {
 	benefits = {
 		morale_damage_received = -0.025
 		manpower_recovery_speed = 0.05
+		priests_privilege_slots = 1
 	}
 
 
@@ -1101,6 +1096,7 @@ estate_priests_tend_to_sites = {
 
 	benefits = {
 		development_cost_in_primary_culture = -0.1
+		priests_privilege_slots = 1
 	}
 
 
@@ -1164,6 +1160,7 @@ estate_priests_social_participation = {
 
 	benefits = {
 		idea_cost = -0.1
+		priests_privilege_slots = 1
 	}
 
 
@@ -1227,6 +1224,7 @@ estate_priests_ecclesiastical_tax = {
 
 	benefits = {
 		country_admin_power = 1
+		priests_privilege_slots = 1
 	}
 
 
@@ -1285,20 +1283,72 @@ estate_priests_pastoral_care = {
 		has_country_flag = ratify_the_concordat
 	}
 
-
-
-
 	benefits = {
 		same_religion_advisor_cost = -0.1
+		priests_privilege_slots = 1
 	}
 
+}
+estate_priests_empowered_concordat = {
+	icon = privilege_tolerance_own
 
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.3
+	ai_will_do = {
+		factor = 10
 
+		modifier = {
+			factor = 10
+			current_age = age_of_discovery
+		}
 
+		modifier = {
+			factor = 100
+			current_age = age_of_reformation
+		}
 
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
 
+		modifier = {
+			factor = 1
+			current_age = age_of_revolutions
+		}
 
+		modifier = {
+			factor = 0.01
+			religion_group = communism_group
+		}
 
+		modifier = {
+			factor = 100
+			religion_group = conservatism_group
+		}
+
+		modifier = {
+			factor = 100
+			religion_group = christian
+		}
+
+	}
+
+	is_valid = {
+		religion = christian_catholic
+	}
+
+	benefits = {
+		global_missionary_strength = 0.03
+		morale_damage_received = -0.1
+		manpower_recovery_speed = 0.15
+		development_cost_in_primary_culture = -0.15
+		idea_cost = -0.15
+		country_admin_power = 2
+		same_religion_advisor_cost = -0.2
+	}
 }
 #Concordat end
 estate_priests_family_protection = {

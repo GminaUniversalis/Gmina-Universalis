@@ -289,6 +289,7 @@ guiTypes = {
 			spriteType = "GFX_copts_blessing_slot"
 			position = { x= -3 y = -24 }
 			Orientation = "UPPER_LEFT"
+			scale = 0.6
 		}
 
 		guiButtonType = {
@@ -296,15 +297,17 @@ guiTypes = {
 			position = { x=-5 y = -26}
 			quadTextureSprite ="GFX_coptic_blessing_select"
 			buttonFont = "vic_18"
+			scale = 0.6
 		}
 		
 		iconType =
 		{
 			name = "blessing_icon"
 			spriteType = "GFX_idea_unknown"
-			position = { x= -6 y = -27 }
+			position = { x= -3 y = -25 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
+			scale = 0.6
 		}
 	}
 	

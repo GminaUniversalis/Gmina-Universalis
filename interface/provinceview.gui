@@ -2929,13 +2929,13 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "center_of_trade_button"
-					position = { x=174 y=180 }
+					position = { x=174 y=377 }
 					spriteType = "GFX_center_of_trade_inland_1"
 				}
 
 				iconType = {
 					name = "center_of_trade_icon"
-					position = { x=174 y=180 }
+					position = { x=174 y = 377 }
 					spriteType = "GFX_center_of_trade_inland_1"
 				}
 

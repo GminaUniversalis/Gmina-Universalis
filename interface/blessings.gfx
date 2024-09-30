@@ -72,4 +72,10 @@ spriteTypes = {
 		loadType = "INGAME"
 	}	
 
+	spriteType = {
+		name = "GFX_holy_site_1212"
+		texturefile = "gfx//interface//holy_sites//sanktuarium_marianki.dds"
+		loadType = "INGAME"
+	}	
+
 }
