@@ -2,7 +2,8 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = ottoman
 is_city = no
-add_permanent_province_modifier = {
+add_permanent_province_modifier = { 
 	name = local_airport_modifier
 	duration = -1
 }
+religion = communism_pzpr

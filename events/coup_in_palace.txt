@@ -227,11 +227,11 @@ country_event = { #Plot Continues
 			random_owned_province = {
 				limit = { controlled_by = ROOT } 
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 3
 				}
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 2
 				}
 			} 
@@ -263,11 +263,11 @@ country_event = { #Plot Continues
 			limit = { 
 				OR = {
 					has_country_flag = church_coup
-					has_estate_led_regency = { estate = estate_church }
+					has_estate_led_regency = { estate = estate_priests }
 				}
 			}
 			add_estate_loyalty = { 
-				estate = estate_church
+				estate = estate_priests
 				loyalty = -25
 			}
 			random_owned_province = {
@@ -330,7 +330,7 @@ country_event = { #Plot Succeeds
 		if = { 
 			limit = { has_country_flag = church_coup } 
 			change_estate_land_share = { 
-				estate = estate_church 
+				estate = estate_priests 
 				share = 25 
 			}
 		}

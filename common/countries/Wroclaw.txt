@@ -1,6 +1,6 @@
 #Country Name: Wroclaw
 graphical_culture = westerngfx
-color = { 80 165 10 }
+color = { 250 162 0 }
 revolutionary_colors = { 6 0 10 }
 
 historical_units = { 
@@ -20,8 +20,29 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
+
 ship_names = { 
-	"WKS Dzida" "WKS Tarcza" "WKS Miecz" 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
 }
 army_names = { 
 	"Kohorta $PROVINCE$" 

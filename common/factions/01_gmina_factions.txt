@@ -1,0 +1,37 @@
+########################################
+# Silesian Autonomy Free City
+########################################
+separationists_movement = {
+	monarch_power = MIL
+	always = yes
+
+	modifier = {
+		land_morale = 0.05
+		global_sailors_modifier = 0.25
+		global_foreign_trade_power = -0.1
+	}
+}
+
+
+local_politicians = {
+	monarch_power = DIP
+	always = yes
+
+	modifier = {
+		global_trade_power = 0.10
+		naval_maintenance_modifier = -0.10
+		global_tax_modifier = -0.05
+		
+	}
+}
+
+mining_corporations = {
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+		global_trade_goods_size_modifier = 0.10
+		build_cost = -0.10
+		global_manpower_modifier = -0.1
+	}
+}

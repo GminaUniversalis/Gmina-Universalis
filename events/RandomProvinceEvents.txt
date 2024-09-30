@@ -546,7 +546,7 @@ province_event = {
 			NOT = { owned_by = ROOT }
 			NOT = { is_core = ROOT }
 			NOT = { is_claim = ROOT }
-			NOT = { owned_by = PAP }
+			NOT = { owned_by = P1S }
 			has_discovered = ROOT
 			is_capital = no
 			owner = {
@@ -564,7 +564,7 @@ province_event = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 				NOT = { is_claim = ROOT }
-				NOT = { owned_by = PAP }
+				NOT = { owned_by = P1S }
 				has_discovered = ROOT
 				is_capital = no
 				owner = {
@@ -582,7 +582,7 @@ province_event = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 				NOT = { is_claim = ROOT }
-				NOT = { owned_by = PAP }
+				NOT = { owned_by = P1S }
 				has_discovered = ROOT
 				is_capital = no
 				owner = {
@@ -629,7 +629,7 @@ province_event = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
-					NOT = { owned_by = PAP }
+					NOT = { owned_by = P1S }
 					has_discovered = ROOT
 					is_capital = no
 					NOT = { owner = { is_subject_of = ROOT } }
@@ -1110,13 +1110,13 @@ province_event = {
 		random_list = {
 			30 = {
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 2
 				}
 			}
 			20 = {
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 3
 				}
 			}

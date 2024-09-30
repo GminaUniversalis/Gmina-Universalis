@@ -16,3 +16,10 @@ add_core = J17
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_lumber_trade_good
+
+1444.11.13 = {
+remove_core = J17
+add_core = J00
+owner = J00
+controller = J00
+}

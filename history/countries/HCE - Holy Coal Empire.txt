@@ -1,5 +1,36 @@
 government = monarchy
-add_government_reform = stadthalter_monarchy_reform
+1390.1.1 = {
+	set_estate_privilege = estate_families_old_model
+	set_estate_privilege = estate_army_old_doctrine
+	set_estate_privilege = estate_ub_grasp_over_police
+	set_estate_privilege = estate_ub_grasp_over_politics
+	set_estate_privilege = estate_ub_grasp_over_economy
+	set_estate_privilege = estate_ub_classes_opression
+	set_estate_privilege = estate_ub_iron_propaganda
+
+}
+1399.1.1 = {
+	monarch = {
+		name = "Collegium"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+1444.1.1 = {
+	set_country_flag = picked_families_definer
+	set_country_flag = picked_families_old
+	set_country_flag = picked_army_definer
+	set_country_flag = picked_army_old_doctrine
+	set_country_flag = has_estate_picked_flag
+	set_country_flag = estate_picked_miners
+	set_country_flag = picked_miners_definer
+	set_country_flag = picked_state_owned_industry
+	set_estate_privilege = estate_miners_state_owned_industry
+	set_estate_privilege = estate_miners_golden_age_mines
+}
+add_government_reform = silesian_autonomy_reform
 government_rank = 5
 technology_group = western
 

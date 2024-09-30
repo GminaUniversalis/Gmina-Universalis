@@ -3,6 +3,36 @@ color = {
 	255 9 9 
 }
 
+ship_names = { 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
+}
+army_names = { 
+	"$PROVINCE$ army" 
+}
+fleet_names = { 
+	"$PROVINCE$ fleet" 
+}
+
 monarch_names = {
 "Hanna" = -216
 "Zofia" = -206

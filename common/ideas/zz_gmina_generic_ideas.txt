@@ -1,0 +1,652 @@
+generic_dolnoslaskie_ideas = {
+	start ={
+		ae_impact = -0.10
+		years_of_nationalism = -5
+	}
+	trigger = {
+		capital_scope = {
+			region = dolnoslaskie_region
+		}
+	}
+
+	free=yes
+
+	generic_dolnoslaskie_1 = {
+		land_attrition = -0.20
+	}
+	generic_dolnoslaskie_2 = {
+		land_maintenance_modifier = -0.05
+	}
+	generic_dolnoslaskie_3 = {
+		leader_land_shock = 1
+	}
+	generic_dolnoslaskie_4 = {
+		global_garrison_growth = 0.1
+		garrison_size = 0.1
+	}
+	generic_dolnoslaskie_5 = {
+		global_tax_modifier = 0.10
+	}
+	generic_dolnoslaskie_6 = {
+		hostile_attrition = 1
+	}
+	generic_dolnoslaskie_7 = {
+		global_unrest = -1
+	}
+	bonus = {
+		stability_cost_modifier = -0.10
+	}
+}
+
+generic_kujawsko_pomorskie_ideas = {
+	start ={
+		tolerance_own = 1
+		stability_cost_modifier = -0.1
+	}
+	trigger = {
+		capital_scope = {
+			region = kujawsko_pomorskie_region
+		}
+	}
+
+	free=yes
+
+	generic_kujawsko_pomorskie_1 = {
+		movement_speed = 0.1
+	}
+	generic_kujawsko_pomorskie_2 = {
+		improve_relation_modifier = 0.2
+	}
+	generic_kujawsko_pomorskie_3 = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	generic_kujawsko_pomorskie_4 = {
+		prestige = 1
+	}
+	generic_kujawsko_pomorskie_5 = {
+		production_efficiency = 0.1
+	}
+	generic_kujawsko_pomorskie_6 = {
+		trade_range_modifier = 0.25
+	}
+	generic_kujawsko_pomorskie_7 = {
+		global_manpower_modifier = 0.15
+	}
+	bonus = {
+		shock_damage = 0.1
+	}
+}
+
+generic_lodzkie_ideas = {
+	start ={
+		tolerance_heathen = 2
+		prestige_decay = -0.01	
+	}
+	trigger = {
+		capital_scope = {
+			region = lodzkie_region
+		}
+	}
+
+	free=yes
+
+	generic_lodzkie_1 = {
+		global_institution_spread = 0.1
+	}
+	generic_lodzkie_2 = {
+		merchants = 1
+	}
+	generic_lodzkie_3 = {
+		trade_steering = 0.10
+	}
+	generic_lodzkie_4 = {
+		province_warscore_cost = -0.1
+	}
+	generic_lodzkie_5 = {
+		build_cost = -0.1
+	}
+	generic_lodzkie_6 = {
+		fire_damage = 0.1
+	}
+	generic_lodzkie_7 = {
+		war_exhaustion = -0.05
+	}
+	bonus = {
+		unjustified_demands = -0.25
+	}
+}
+
+generic_lubelskie_ideas = {
+	start ={
+		global_own_trade_power = 0.1
+		production_efficiency = 0.1
+	}
+	trigger = {
+		capital_scope = {
+			region = lubelskie_region
+		}
+	}
+
+	free=yes
+
+	generic_lubelskie_1 = {
+		idea_cost = -0.1
+	}
+	generic_lubelskie_2 = {
+		defensiveness = 0.15
+		reinforce_speed = 0.05
+	}
+	generic_lubelskie_3 = {
+		global_trade_power = 0.1
+	}
+	generic_lubelskie_4 = {
+		diplomatic_reputation = 1
+	}
+	generic_lubelskie_5 = {
+		global_unrest = -2
+	}
+	generic_lubelskie_6 = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	generic_lubelskie_7 = {
+		development_cost = -0.1
+	}
+	bonus = {
+		envoy_travel_time = -0.25
+	}
+}
+
+generic_lubuskie_ideas = {
+	start ={
+		global_tax_modifier = 0.25
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	trigger = {
+		capital_scope = {
+			region = lubuskie_region
+		}
+	}
+
+	free=yes
+
+	generic_lubuskie_1 = {
+		inflation_reduction = 0.1
+	}
+	generic_lubuskie_2 = {
+		prestige_decay = -0.01
+	}
+	generic_lubuskie_3 = {
+		stability_cost_modifier = -0.15
+	}
+	generic_lubuskie_4 = {
+		global_prov_trade_power_modifier = 0.1
+	}
+	generic_lubuskie_5 = {
+		infantry_cost = -0.10		
+	}
+	generic_lubuskie_6 = {
+		global_regiment_recruit_speed = -0.10
+	}
+	generic_lubuskie_7 = {
+		army_tradition_decay = -0.01
+	}
+	bonus = {
+		global_garrison_growth = 0.25
+	}
+}
+
+generic_malopolskie_ideas = {
+	start ={
+		num_accepted_cultures = 1
+		land_forcelimit_modifier = 0.2
+	}
+	trigger = {
+		capital_scope = {
+			region = malopolska_region
+		}
+	}
+
+	free=yes
+
+	generic_malopolskie_1 = {
+		diplomatic_reputation = 1
+	}
+	generic_malopolskie_2 = {
+		manpower_recovery_speed = 0.15
+	}
+	generic_malopolskie_3 = {
+		loot_amount = 0.10
+	}
+	generic_malopolskie_4 = {
+		defensiveness = 0.2
+	}
+	generic_malopolskie_5 = {
+		tolerance_own = 2
+	}
+	generic_malopolskie_6 = {
+		tolerance_heretic = 2
+	}
+	generic_malopolskie_7 = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+}
+
+generic_mazowieckie_ideas = {
+	start ={
+		infantry_cost = -0.1
+		trade_steering = 0.15
+	}
+	trigger = {
+		capital_scope = {
+			region = mazowieckie_region
+		}
+	}
+
+	free=yes
+
+	generic_mazowieckie_1 = {
+		global_manpower_modifier = 0.15
+	}
+	generic_mazowieckie_2 = {
+		trade_efficiency = 0.1
+	}
+	generic_mazowieckie_3 = {
+		ae_impact = -0.10
+	}
+	generic_mazowieckie_4 = {
+		global_unrest = -1
+	}
+	generic_mazowieckie_5 = {
+		improve_relation_modifier = 0.2
+	}
+	generic_mazowieckie_6 = {
+		advisor_cost = -0.1
+	}
+	generic_mazowieckie_7 = {
+		diplomats = 1
+	}
+	bonus = {
+		land_morale = 0.2
+	}
+}
+
+generic_opolskie_ideas = {
+	start ={
+		hostile_attrition = 1.0
+		land_attrition = -0.1
+	}
+	trigger = {
+		capital_scope = {
+			region = opolskie_region
+		}
+	}
+
+	free=yes
+
+	generic_opolskie_1 = {
+		development_cost = -0.1
+	}
+	generic_opolskie_2 = {
+		stability_cost_modifier = -0.1
+	}
+	generic_opolskie_3 = {
+		num_accepted_cultures = 1
+	}
+	generic_opolskie_4 = {
+		global_manpower_modifier = 0.15
+	}
+	generic_opolskie_5 = {
+		siege_ability = 0.15
+	}
+	generic_opolskie_6 = {
+		global_tax_modifier = 0.25
+	}
+	generic_opolskie_7 = {
+		infantry_cost = -0.1
+	}
+	bonus = {
+		merchants = 2
+	}
+}
+
+generic_podkarpackie_ideas = {
+	start ={
+		fort_maintenance_modifier = -0.15
+		land_attrition = -0.10
+	}
+	trigger = {
+		capital_scope = {
+			region = podkarpackie_region
+		}
+	}
+
+	free=yes
+
+	generic_podkarpackie_1 = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	generic_podkarpackie_2 = {
+		global_unrest = -1
+	}
+	generic_podkarpackie_3 = {
+		harsh_treatment_cost = -0.20
+	}
+	generic_podkarpackie_4 = {
+		defensiveness = 0.25
+	}
+	generic_podkarpackie_5 = {
+		core_creation = -0.10
+	}
+	generic_podkarpackie_6 = {
+		rival_change_cost = -0.2
+	}
+	generic_podkarpackie_7 = {
+		movement_speed = 0.15
+	}
+	bonus = {
+		leader_land_manuever = 2
+	}
+}
+
+generic_podlaskie_ideas = {
+	start ={
+		years_of_nationalism = -5
+		promote_culture_cost = -0.25
+	}
+	trigger = {
+		capital_scope = {
+			region = podlasie_region
+		}
+	}
+
+	free=yes
+
+	generic_podlaskie_1 = {
+		diplomatic_upkeep = 1
+		stability_cost_modifier = -0.10
+	}
+	generic_podlaskie_2 = {
+		religious_unity = 0.5
+	}
+	generic_podlaskie_3 = {
+		land_attrition = -0.10
+	}
+	generic_podlaskie_4 = {
+		prestige_decay = -0.01
+		global_unrest = -2
+	}
+	generic_podlaskie_5 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	generic_podlaskie_6 = {
+		fabricate_claims_cost = -0.25
+	}
+	generic_podlaskie_7 = {
+		improve_relation_modifier = 0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+}
+
+generic_pomorskie_ideas = {
+	start ={
+		may_recruit_female_generals = yes
+		light_ship_power = 0.1
+	}
+	trigger = {
+		capital_scope = {
+			region = pomorskie_region
+		}
+	}
+
+	free=yes
+
+	generic_pomorskie_1 = {
+		naval_attrition = -0.1
+	}
+	generic_pomorskie_2 = {
+		naval_tradition_from_battle = 0.5
+	}
+	generic_pomorskie_3 = {
+		global_missionary_strength = 0.02
+	}
+	generic_pomorskie_4 = {
+		land_attrition = -0.25
+	}
+	generic_pomorskie_5 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	generic_pomorskie_6 = {
+		range = 0.4
+		leader_naval_manuever = 1
+	}
+	generic_pomorskie_7 = {
+		development_cost = -0.1
+	}
+	bonus = {
+		tolerance_heathen = 2
+	}
+}
+
+generic_slaskie_ideas = {
+	start ={
+		core_creation = -0.10
+		development_cost = -0.1
+	}
+	trigger = {
+		capital_scope = {
+			region = slaskie_region
+		}
+	}
+
+	free=yes
+
+	generic_slaskie_1 = {
+		global_manpower_modifier = 0.20
+	}
+	generic_slaskie_2 = {
+		heir_chance = 0.5
+		global_unrest = -2
+	}
+	generic_slaskie_3 = {
+		prestige_from_land = 1.0
+	}
+	generic_slaskie_4 = {
+		defensiveness = 0.2
+	}
+	generic_slaskie_5 = {
+		global_unrest = -1
+	}
+	generic_slaskie_6 = {
+		improve_relation_modifier = 0.15
+	}
+	generic_slaskie_7 = {
+		hostile_attrition = 1
+	}
+	bonus = {
+		development_cost = -0.1
+	}
+}
+
+generic_swietokrzyskie_ideas = {
+	start ={
+		global_unrest = -2
+		loot_amount = 0.25
+	}
+	trigger = {
+		capital_scope = {
+			region = swietokrzyskie_region
+		}
+	}
+
+	free=yes
+
+	generic_swietokrzyskie_1 = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.5
+		meritocracy = 1
+		horde_unity = 1
+	}
+	generic_swietokrzyskie_2 = {
+		war_exhaustion = -0.03
+	}
+	generic_swietokrzyskie_3 = {
+		caravan_power = 0.25
+	}
+	generic_swietokrzyskie_4 = {
+		diplomatic_reputation = 1
+	}
+	generic_swietokrzyskie_5 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	generic_swietokrzyskie_6 = {
+		years_of_nationalism = -5
+		leader_land_fire = 1
+	}
+	generic_swietokrzyskie_7 = {
+		development_cost = -0.1
+	}
+	bonus = {
+		manpower_recovery_speed = 0.2
+	}
+}
+
+generic_warminsko_mazurskie_ideas = {
+	start ={
+		merchants = 1
+		war_exhaustion_cost = -0.10
+	}
+	trigger = {
+		capital_scope = {
+			region = warminsko_mazurskie_region
+		}
+	}
+
+	free=yes
+
+	generic_warminsko_mazurskie_1 = {
+		global_institution_spread = 0.1
+	}
+	generic_warminsko_mazurskie_2 = {
+		fort_maintenance_modifier = -0.15
+	}
+	generic_warminsko_mazurskie_3 = {
+		interest = -1
+	}
+	generic_warminsko_mazurskie_4 = {
+		trade_range_modifier = 0.2
+	}
+	generic_warminsko_mazurskie_5 = {
+		global_manpower_modifier = 0.10
+	}
+	generic_warminsko_mazurskie_6 = {
+		infantry_power = 0.1
+	}
+	generic_warminsko_mazurskie_7 = {
+		tolerance_heathen = 2
+	}
+	bonus = {
+		stability_cost_modifier = -0.1
+	}
+}
+
+generic_wielkopolskie_ideas = {
+	start ={
+		global_unrest = -1
+		diplomatic_reputation = 1
+	}
+	trigger = {
+		capital_scope = {
+			region = wielkopolska_region
+		}
+	}
+
+	free=yes
+
+	generic_wielkopolskie_1 = {
+		leader_land_shock = 1
+	}
+	generic_wielkopolskie_2 = {
+		global_manpower_modifier = 0.25
+	}
+	generic_wielkopolskie_3 = {
+		hostile_attrition = 1
+	}
+	generic_wielkopolskie_4 = {
+		army_tradition = 0.5
+	}
+	generic_wielkopolskie_5 = {
+		global_tax_modifier = 0.10
+	}
+	generic_wielkopolskie_6 = {
+		global_garrison_growth = 0.1
+		garrison_size = 0.1
+	}
+	generic_wielkopolskie_7 = {
+		development_cost = -0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+}
+
+generic_zachodniopomorskie_ideas = {
+	start ={
+		land_attrition = -0.15
+		diplomatic_reputation = 1
+	}
+	trigger = {
+		capital_scope = {
+			region = zachodnio_pomorskie_region
+		}
+	}
+
+	free=yes
+
+	generic_zachodniopomorskie_1 = {
+		trade_steering = 0.15
+	}
+	generic_zachodniopomorskie_2 = {
+		cavalry_cost = -0.1
+		cavalry_flanking = 0.25
+	}
+	generic_zachodniopomorskie_3 = {
+		global_unrest = -1
+	}
+	generic_zachodniopomorskie_4 = {
+		global_trade_power = 0.1
+	}
+	generic_zachodniopomorskie_5 = {
+		leader_land_manuever = 1
+	}
+	generic_zachodniopomorskie_6 = {
+		movement_speed = 0.2
+	}
+	generic_zachodniopomorskie_7 = {
+		development_cost = -0.1
+	}
+	bonus = {
+		improve_relation_modifier = 0.2
+	}
+}

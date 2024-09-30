@@ -424,7 +424,7 @@ country_event = {
 				share = 1
 			}
 			any_trade_node_member_province = {
-				trade_goods = slaves
+				trade_goods = gu_pigs
 			}
 		}
 	}
@@ -449,7 +449,7 @@ country_event = {
 					share = 1
 				}
 				any_trade_node_member_province = {
-					trade_goods = slaves
+					trade_goods = gu_pigs
 				}
 			}
 			every_trade_node_member_country = {

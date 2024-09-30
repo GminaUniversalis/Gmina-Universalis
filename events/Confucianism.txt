@@ -500,11 +500,6 @@ country_event = {
 		name = "confucian_events.13.b" #We have much to learn from the [harmonization_province.Religion.GetName] people.
 		ai_chance = {
 			factor = 70
-			modifier = {
-				factor = 0
-				has_reform = celestial_empire
-				NOT = { imperial_mandate = 50 }
-			}
 		}
 		add_harmonization_progress = 9
 		reduce_mandate_effect = yes

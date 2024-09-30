@@ -116,7 +116,7 @@ country_event = {
 			}
 			has_church_aspect = clerical_poverty_aspect
 		}
-		has_estate = estate_church
+		has_estate = estate_priests
 	}
 	
 	# encourage vows of poverty
@@ -124,7 +124,7 @@ country_event = {
 		name = "hussite.3.a"
 		add_church_power = -25
 		change_estate_land_share = {
-			estate = estate_church
+			estate = estate_priests
 			share = -5.0
 		}
 	}
@@ -134,7 +134,7 @@ country_event = {
 		name = "hussite.3.b"
 		add_church_power = 15
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 	}
@@ -158,7 +158,7 @@ country_event = {
 			has_church_aspect = punishment_of_sins_aspect
 		}
 		has_estate = estate_nobles
-		has_estate = estate_church
+		has_estate = estate_priests
 		NOT = {
 			has_estate_influence_modifier = {
 				estate = estate_nobles
@@ -200,7 +200,7 @@ country_event = {
 			loyalty = 10
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = -10
 		}
 	}

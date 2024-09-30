@@ -1,0 +1,57 @@
+defined_text = {
+	name = GetCustomPartyNaming
+
+	text = {
+		localisation_key = string_gminna_party
+
+		trigger = {
+
+			government_rank = 1
+			NOT = { government_rank = 2}
+
+		}
+	}
+
+	text = {
+		localisation_key = string_powiatowa_party
+
+		trigger = {
+
+			government_rank = 2
+			NOT = { government_rank = 3}
+
+		}
+	}
+
+	text = {
+		localisation_key = string_powiatowe_miasto_party
+
+		trigger = {
+
+			government_rank = 3
+			NOT = { government_rank = 4}
+
+		}
+	}
+
+	text = {
+		localisation_key = string_wojewodzkie_party
+
+		trigger = {
+
+			government_rank = 4
+			NOT = { government_rank = 5}
+
+		}
+	}
+
+	text = {
+		localisation_key = string_national_party
+
+		trigger = {
+
+			government_rank = 5
+
+		}
+	}
+}

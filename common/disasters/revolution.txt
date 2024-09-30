@@ -39,12 +39,12 @@ revolution = {
 	
 	can_start = {
 		current_age = age_of_revolutions
-		if = {
-			limit = {
-				NOT = { has_disaster = tur_disaster_ottoman_power_struggle }
-			}
-			has_any_disaster = no
-		}
+		# if = {
+		# 	limit = {
+		# 		NOT = { has_disaster = tur_disaster_ottoman_power_struggle }
+		# 	}
+		# 	has_any_disaster = no
+		# }
 		# else = {
 		# 	calc_true_if = {
 		# 		has_disaster = tur_disaster_eyalet_rebellion

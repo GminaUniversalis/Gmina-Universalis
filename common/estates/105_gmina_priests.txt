@@ -47,6 +47,7 @@ estate_priests = {
     privileges = {
 		estate_priests_land_rights
 		estate_priests_empty_promises
+		estate_priests_empowered_concordat
 		estate_priests_ratify_the_concordat
 		estate_priests_religion_schools
 		estate_priests_sacred_marriage

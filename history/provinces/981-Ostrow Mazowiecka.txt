@@ -15,3 +15,10 @@ add_core = G31
 discovered_by = ottoman
 center_of_trade = 1
 
+
+1444.11.13 = {
+remove_core = G31
+add_core = G00
+owner = G00
+controller = G00
+}

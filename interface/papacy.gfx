@@ -34,6 +34,24 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_wina_tuska"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_wina_tuska.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_dobra_zmiana"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_dobra_zmiana.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_smolensk_investigation"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_smolensk_investigation.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
 		name = "GFX_apostolicae_servitutis"
 		texturefile = "gfx/interface/the_holy_see/golden_bull_apostolicae_servitutis.dds"
 		loadType = "INGAME"

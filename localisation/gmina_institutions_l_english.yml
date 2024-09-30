@@ -5,3 +5,6 @@
  desc_birthplace_of_the_solidarity:0 "This province was a major center of the Solidarity and still benefits from the developments that brought."
  desc_birthplace_of_the_free_market:0 "This province was a major center of the Free Market and still benefits from the developments that brought."
  desc_birthplace_of_the_internet:0 "This province was a major center of the Internet and still benefits from the developments that brought."
+ date_is_fall_of_communism: "Real time is at least: §YDecember 1988§!\n     Current: §Y[1500.clock_month_check] [1500.clock_year.GetValue]§!"
+ had_event_fall_of_communism: "Had event: §YDissolution of the PZPR§!\n     Which might happen after §YDecember 1988§! (Real Time)"
+ TP_SA_0_20_21_22: "Real time is at least: §YMay 1996§!\n     Current: §Y[1500.clock_month_check] [1500.clock_year.GetValue]§!"

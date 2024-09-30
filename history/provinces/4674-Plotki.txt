@@ -7,3 +7,10 @@ culture = krainska
 religion = communism_sd
 controller = R28
 is_city = no
+
+1444.11.13 = {
+remove_core = R28
+add_core = R00
+owner = R00
+controller = R00
+}

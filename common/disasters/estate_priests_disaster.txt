@@ -15,6 +15,7 @@ estate_priests_disaster = {
 			influence = 100
 		}
 		is_at_war = no
+		NOT = { government = theocracy }
 	}
 	
 	can_stop = {
@@ -107,10 +108,16 @@ estate_priests_disaster = {
 	}
 	
 	modifier = {	
-		interest = 5
-		inflation_reduction = 0.5
-		production_efficiency = -0.2
-		trade_efficiency = -0.2
+		global_unrest = 4
+		stability_cost_modifier = 0.5
+		republican_tradition = -1
+		legitimacy = -3
+		meritocracy = -3
+		devotion = -3
+		horde_unity = -3
+		tolerance_own = -8
+		tolerance_heathen = 8
+		global_religious_conversion_resistance = 20
 	}
 
 	on_start = gmina_estate_disasters.18

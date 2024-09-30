@@ -113,7 +113,27 @@ country_event = {
 country_event = {
 	id = gmina_estate_disasters.6
 	title = gmina_estate_disasters.6.t
-	desc = gmina_estate_disasters.6.d
+	desc = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_reform = republican_army_coup_reform
+					has_reform = monarchical_army_coup_reform
+				}
+			}
+		}
+		desc = "gmina_estate_disasters.6.d"
+	}
+
+	desc = {
+		trigger = {
+			OR = {
+				has_reform = republican_army_coup_reform
+				has_reform = monarchical_army_coup_reform
+			}
+		}
+		desc = "gmina_estate_disasters.6.d.2"
+	}
 	picture = GMINA_ESTATE_estate_event_picture
 	
 	major = yes
@@ -122,6 +142,8 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = has_estate_disaster_flag
+			set_country_flag = access_to_prussian_militarization_flag
+			set_country_flag = enable_third_mil_level_flag
 		}
 	}
 	

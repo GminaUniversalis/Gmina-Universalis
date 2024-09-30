@@ -1,6 +1,6 @@
 #Koniusza
 culture = zachodnio-krakowska
-religion = communism_pzpr
+religion = communism_sd
 base_tax = 1
 base_production = 1
 trade_goods = gu_wheat
@@ -15,3 +15,10 @@ add_core = X09
 discovered_by = ottoman
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_wheat_trade_good
+
+1444.11.13 = {
+remove_core = X09
+add_core = X00
+owner = X00
+controller = X00
+}

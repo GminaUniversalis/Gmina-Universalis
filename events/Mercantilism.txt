@@ -441,7 +441,7 @@ country_event = {
 		NOT = { has_country_modifier = importing_cocoa }
 		any_neighbor_country = {
 			trading_bonus = {
-				trade_goods = cocoa
+				trade_goods = gu_beer
 				value = yes
 			}
 			NOT = { war_with = ROOT }
@@ -492,7 +492,7 @@ country_event = {
 		NOT = { has_country_modifier = importing_coffee }
 		any_neighbor_country = {
 			trading_bonus = {
-				trade_goods = coffee
+				trade_goods = gu_mushrooms
 				value = yes
 			}
 			NOT = { war_with = ROOT }
@@ -516,7 +516,7 @@ country_event = {
 		trigger = {
 			NOT = {
 				trading_bonus = {
-					trade_goods = tea
+					trade_goods = gu_vodka
 					value = yes
 				}
 			}
@@ -528,7 +528,7 @@ country_event = {
 		name = "mercantilism_events.9.c"
 		trigger = {
 			trading_bonus = {
-				trade_goods = tea
+				trade_goods = gu_vodka
 				value = yes
 			}
 		}
@@ -550,7 +550,7 @@ country_event = {
 		NOT = { has_country_modifier = importing_tea }
 		any_neighbor_country = {
 			trading_bonus = {
-				trade_goods = tea
+				trade_goods = gu_vodka
 				value = yes
 			}
 			NOT = { war_with = ROOT }
@@ -581,7 +581,7 @@ country_event = {
 		name = "mercantilism_events.10.c"
 		trigger = {
 			trading_bonus = {
-				trade_goods = coffee
+				trade_goods = gu_mushrooms
 				value = yes
 			}
 		}

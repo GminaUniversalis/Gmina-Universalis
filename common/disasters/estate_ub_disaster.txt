@@ -107,10 +107,13 @@ estate_ub_disaster = {
 	}
 	
 	modifier = {	
-		interest = 5
-		inflation_reduction = 0.5
-		production_efficiency = -0.2
-		trade_efficiency = -0.2
+		global_unrest = 4
+		harsh_treatment_cost = -1
+		can_not_declare_war = yes
+		can_not_build_missionaries = yes
+		can_not_send_merchants = yes
+		can_not_build_buildings = yes
+		stability_cost_modifier = 0.5
 	}
 
 	on_start = gmina_estate_disasters.12

@@ -1,4 +1,10 @@
 on_startup = {
+	
+	events = {	
+		gmina_setup.0
+		#gmina_setup.1
+		silesian_autonomy.2
+	}
 
 	random_country = {
 		limit = {
@@ -7,12 +13,31 @@ on_startup = {
 		country_event = { id = clock.2 }
 	}
 
-	events = {	
-		gmina_setup.0
-		#gmina_setup.1
+
+		
+}
+
+on_bi_yearly_pulse = {
+	random_events = {
+		50 = 0
+		50 = communism.2
+		50 = communism.3
+		50 = communism.4
+		50 = communism.5
 	}
 }
 
+on_emperor_elected = {
+
+	Emperor = {
+		remove_government_reform = silesian_autonomy_reform
+		add_government_reform = silesian_presidency_reform
+	}
+
+	# events = {
+	# 	silesian_autonomy.1 
+	# }
+}
 
 on_revoke_estate_land = {
 	add_province_modifier = {
@@ -216,5 +241,63 @@ on_revoke_estate_land = {
 			size = 1
 		}
 		province_event = { id = gmina_estates.1 }
+	}
+
+}
+
+on_five_year_pulse = {
+	random_events = {
+		10 = 0
+		90 = gmina_common_flavor.1
+		
+	}
+}
+
+on_create_vassal = {
+	if = {
+		limit = {
+			tag = P1S
+		}
+		change_government = theocracy
+		change_religion = conservatism_PIS
+		add_government_reform = papacy_reform
+		adopt_reform_progress = FROM
+		change_primary_culture = warszawska
+	}
+}
+
+on_country_released = {
+	if = {
+		limit = {
+			tag = P1S
+		}
+		change_government = theocracy
+		change_religion = conservatism_PIS
+		add_government_reform = papacy_reform
+		adopt_reform_progress = FROM
+		
+	}
+}
+
+on_country_creation = {
+	if = {
+		limit = {
+			tag = P1S
+			OR = {
+				NOT = {
+					religion = conservatism_PIS
+				}
+				NOT = {
+					has_reform = papacy_reform
+				}
+				NOT = {
+					government = theocracy
+				}
+			}
+		}
+		change_religion = conservatism_PIS
+		change_government = theocracy
+		add_government_reform = papacy_reform
+		change_primary_culture = warszawska
 	}
 }

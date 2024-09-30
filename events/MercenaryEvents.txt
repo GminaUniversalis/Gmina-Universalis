@@ -308,7 +308,7 @@ country_event = {
 	title = mercs.5.t
 	desc = {
 		trigger = {
-			technology_group = indian
+			#technology_group = indian
 		}
 		desc = mercs.5.d
 	}
@@ -327,7 +327,7 @@ country_event = {
 		NOT = { has_country_modifier = elephants_in_europe }
 		OR = {
 			AND = {
-				technology_group = indian
+				#technology_group = indian
 				any_country = {
 					war_with = ROOT
 					any_owned_province = {
@@ -369,7 +369,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						technology_group = indian
+						#technology_group = indian
 					}
 				}
 				random_hired_mercenary_company = {
@@ -401,7 +401,7 @@ country_event = {
 	option = {
 		name = mercs.5.b
 		trigger = {
-			technology_group = indian
+			#technology_group = indian
 		}
 		add_country_modifier = {
 			name = "elephants_in_europe"

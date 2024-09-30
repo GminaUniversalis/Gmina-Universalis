@@ -61,7 +61,7 @@ province_event = {
 			is_colonial_nation = yes
 		}
 		is_colony = no
-		NOT = { trade_goods = grain }
+		NOT = { trade_goods = gu_wheat }
 		NOT = { trade_goods = fish }
 		has_empty_adjacent_province = yes
 		is_month = 3 # April
@@ -133,7 +133,7 @@ province_event = {
 		is_colony = no
 		OR = {
 			trade_goods = fur
-			trade_goods = grain
+			trade_goods = gu_wheat
 		}
 		owner = {
 			NOT = { has_country_flag = iron_discovered }
@@ -202,7 +202,7 @@ province_event = {
 		is_colony = no
 		OR = {
 			trade_goods = fur
-			trade_goods = grain
+			trade_goods = gu_wheat
 		}
 		owner = {
 			NOT = { has_country_flag = domestic_wool_industry }
@@ -271,7 +271,7 @@ province_event = {
 		is_colony = no
 		OR = {
 			trade_goods = fur
-			trade_goods = grain
+			trade_goods = gu_wheat
 		}
 		owner = {
 			NOT = { has_country_flag = a_wharf_needed }
@@ -348,11 +348,11 @@ province_event = {
 		OR = {
 			trade_goods = wine
 			trade_goods = wool
-			trade_goods = coffee
-			trade_goods = cotton
+			trade_goods = gu_mushrooms
+			trade_goods = gu_hemp
 			trade_goods = sugar
-			trade_goods = tobacco
-			trade_goods = cocoa
+			trade_goods = gu_oscypek
+			trade_goods = gu_beer
 		}
 		owner = {
 			NOT = { has_country_flag = cash_crop_ban }
@@ -402,7 +402,7 @@ province_event = {
 	trigger = {
 		has_dlc = "Conquest of Paradise"
 		is_colony = no
-		trade_goods = tobacco
+		trade_goods = gu_oscypek
 		owner = {
 			NOT = { has_country_flag = banned_tobacco_planting }
 			is_colonial_nation = yes

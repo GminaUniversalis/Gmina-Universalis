@@ -1,6 +1,6 @@
 #Country Name: Powiat Miedzyrzecki
 graphical_culture = westerngfx
-color = { 251 56 131 }
+color = { 251 56 75 }
 revolutionary_colors = { 10 11 6 }
 
 historical_units = { 
@@ -20,14 +20,35 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
+
 ship_names = { 
-	"Comte de Smet de Nayer" 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
 }
 army_names = { 
-	"Placeholder $PROVINCE$" 
+	"$PROVINCE$ army" 
 }
 fleet_names = { 
-	"Placeholder_Fleet1" 
+	"$PROVINCE$ fleet" 
 }
 
 # Lista imion z pliku: Lubuskie.txt

@@ -88,25 +88,25 @@ A22_ideas = { #Powiat Wroclawski
 	}
 	free = yes
 
-	Wroclawski_throne_for_king = {
+	throne_for_king = {
 		ae_impact = -0.15	
 	}
-	Wroclawski_sleza_mountain = {
+	sleza_mountain = {
 		tolerance_own = 2
 	}
-	Wroclawski_silesian_black_soils = {
+	silesian_black_soils = {
 		global_trade_goods_size_modifier = 0.1	
 	}
-	Wroclawski_road_junctions = {
+	road_junctions = {
 		global_trade_power = 0.1
 	}
-	Wroclawski_korean_minority = {
+	korean_minority = {
 		num_accepted_cultures = 2	
 	}
-	Wroclawski_pearl_of_mannerism = {
+	pearl_of_mannerism = {
 		global_missionary_strength = 0.02	
 	}
-	Wroclawski_nation_of_palaces = {
+	nation_of_palaces = {
 		horde_unity = 1
 		legitimacy = 1
 		republican_tradition = 0.3
@@ -132,32 +132,32 @@ A27_ideas = { #Wroclaw
 	}
 	free = yes
 
-	Wroclaw_rat_undercity = {
+	rat_undercity = {
 		spy_offence = 0.4
 	}
-	Wroclaw_city_of_bridges = {
+	city_of_bridges = {
 		trade_efficiency = 0.1
 	}
-	Wroclaw_city_of_gnomes = {
+	city_of_gnomes = {
 		administrative_efficiency = 0.05
 	}
-	Wroclaw_festung_breslau = {
+	festung_breslau = {
 		siege_ability = 0.2
 	}
-	Wroclaw_polish_twink_town = {
+	polish_twink_town = {
 		tolerance_heathen = 3
 	}
-	Wroclaw_MPK = {
+	MPK = {
 		hostile_attrition = 2
 	}
-	Wroclaw_memory_of_our_flood = {
+	memory_of_our_flood = {
 		discipline = 0.05
 	}
 }
 
 #Kujawsko-Pomorskie -B
 
-B00_ideas = { #Powiat Wloclawski
+B00_ideas = { #Kujawsko - Pomorskie
 	start = {
 		
 		diplomatic_upkeep = 2
@@ -182,27 +182,27 @@ B00_ideas = { #Powiat Wloclawski
 		meritocracy = 2
 	}
 	Black_but_efficient = {
-		estate_farmers_loyalty_modifier = 0.1
+		farmers_loyalty_modifier = 0.1
 		global_tax_modifier = 0.15
 		manpower_recovery_speed = 0.15
 	}
 	Down_here_salt_is_a_way_of_life = {
-		estate_miners_loyalty_modifier = 0.1
+		miners_loyalty_modifier = 0.1
 		global_trade_goods_size_modifier = 0.1
 	}
 	Bydgoszcz_NATO_base = {
-		estate_army_loyalty_modifier = 0.1
+		army_loyalty_modifier = 0.1
 		leader_land_fire = 1
 		leader_land_manuever = 1
 		leader_land_shock = 1
 	}
 	Vistulan_magazines = {
-		estate_investors_loyalty_modifier = 0.1
+		investors_loyalty_modifier = 0.1
 		trade_efficiency = 0.15
 		trade_steering = 0.25
 	}
 	Scientist_of_gingerbread = {
-		estate_scientists_loyalty_modifier = 0.1
+		scientists_loyalty_modifier = 0.1
 		technology_cost = -0.1
 		global_institution_spread = 0.2
 	}
@@ -265,7 +265,7 @@ B12_ideas = { #Powiat Grudziadzki
 	}
 	
 	bonus = {
-		leader_land_siege = 1
+		leader_siege = 1
 	}	
 
 	trigger = {
@@ -312,7 +312,7 @@ B16_ideas = { #Powiat Rypinski
 	}
 	free = yes
 
-	Hostile_borderland  = {
+	Hostile_borderland = {
 		global_monthly_devastation = -0.05
 	}
 	better_place = {
@@ -337,7 +337,7 @@ B16_ideas = { #Powiat Rypinski
 	}
 }
 
-B17_ideas = { #Powiat Torunski
+B17_ideas = { #Powiat Torunski //Złe idee
 	start = {
 		
 		power_projection_from_insults = 1
@@ -357,7 +357,7 @@ B17_ideas = { #Powiat Torunski
 	Akademia_Nauk_Stosowanych = {
 		idea_cost = -0.1
 	}
-	Trade_Roots  = {
+	Trade_Roots = {
 		caravan_power = 0.2
 	}
 	Eksperyment_Sadeck = {
@@ -377,7 +377,7 @@ B17_ideas = { #Powiat Torunski
 	}
 }	
 
-B21_ideas = { #Torun
+B21_ideas = { #Torun //Złe idee
 	start = {
 		
 		power_projection_from_insults = 1
@@ -397,7 +397,7 @@ B21_ideas = { #Torun
 	Akademia_Nauk_Stosowanych = {
 		idea_cost = -0.1
 	}
-	Trade_Roots  = {
+	Trade_Roots = {
 		caravan_power = 0.2
 	}
 	Eksperyment_Sadeck = {
@@ -439,7 +439,7 @@ Q14_ideas = { #Powiat Lodzki
 	Ziemia_Obiecana = {
 		development_cost = -0.1
 	}
-	Balucki_Folklor  = {
+	Balucki_Folklor = {
 		land_morale = 0.1
 	}
 	Miasto_kultur = {
@@ -599,18 +599,18 @@ W00_ideas = { #Wojewodztwo Lubuskie
 	free = yes
 
 	the_forests_of_the_lubusz_voivodeship = {
-		estate_army_loyalty_modifier = 0.1
+		army_loyalty_modifier = 0.1
 		hostile_attrition = 2
 	}
 	The_Shattered_Region = {
 		state_maintenance_modifier = -0.5
 	}
 	Cistercians_of_Paradyz = {
-		estate_priests_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
 		idea_cost = -0.1
 	}
 	Rivers_of_Trade = {
-		estate_investors_loyalty_modifier = 0.1
+		investors_loyalty_modifier = 0.1
 		global_trade_power = 0.2
 	}
 	Speedway_in_my_mind = {
@@ -740,7 +740,7 @@ W14_ideas = { # Gorzow
 
 #Malopolskie -X
 
-X00_ideas = { #Powiat Nowosadecki
+X00_ideas = { #Malopolska
 	start = {
 		
 		diplomats = 1
@@ -762,7 +762,7 @@ X00_ideas = { #Powiat Nowosadecki
 		global_trade_goods_size = 0.5
 	}
 	Ciupaska_soldiers = {
-		estate_army_loyalty_modifier = 0.1
+		army_loyalty_modifier = 0.1
 		global_manpower_modifier = 0.25
 		manpower_recovery_speed = 0.2
 	}
@@ -778,7 +778,7 @@ X00_ideas = { #Powiat Nowosadecki
 		enemy_core_creation = 0.25
 	}
 	The_monument_of_the_Pope_in_every_backyard = {
-		estate_priests_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
 		global_unrest = -2
 	}
 	Bergitka_Roma = {
@@ -796,7 +796,7 @@ X05_ideas = { #Powiat Nowosadecki
 	}
 	
 	bonus = {
-		burghers_loyalty_modifier = 0.1
+		investors_loyalty_modifier = 0.1
 	}	
 
 	trigger = {
@@ -807,7 +807,7 @@ X05_ideas = { #Powiat Nowosadecki
 	Akademia_Nauk_Stosowanych = {
 		idea_cost = -0.1
 	}
-	Trade_Roots  = {
+	Trade_Roots = {
 		caravan_power = 0.2
 	}
 	Eksperyment_Sadeck = {
@@ -887,7 +887,7 @@ X15_ideas = { #Powiat Krakowski
 	}
 	City_of_Trade = {
 		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 	}
 	Cracovian_Churches = {
 		tolerance_own = 2
@@ -1013,7 +1013,7 @@ X20_ideas = { #Krakow
 	}
 	City_of_Trade = {
 		global_trade_power = 0.1
-		burghers_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 	}
 	Cracovian_Churches = {
 		tolerance_own = 2
@@ -1039,7 +1039,7 @@ X22_ideas = { #Nowy Sacz
 	}
 	
 	bonus = {
-		burghers_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 	}	
 
 	trigger = {
@@ -1050,7 +1050,7 @@ X22_ideas = { #Nowy Sacz
 	Akademia_Nauk_Stosowanych = {
 		idea_cost = -0.1
 	}
-	Trade_Roots  = {
+	Trade_Roots = {
 		caravan_power = 0.2
 	}
 	Eksperyment_Sadeck = {
@@ -1314,7 +1314,7 @@ H01_ideas = { #Powiat Kedzierzynsko-Kozielski
 
 #Podkarpackie -I
 
-I18_ideas = { #Powiat Bieszczadzki
+I18_ideas = { #Powiat Bieszczadzki //Złe idee
 	start = {
 		
 		defensiveness = 0.15
@@ -1334,7 +1334,7 @@ I18_ideas = { #Powiat Bieszczadzki
 	Szlagier_Maszyna = {
 		monthly_splendor = 1
 	}
-	Zak³ady_Azotowe = {
+	Zaklady_Azotowe = {
 		global_trade_goods_size_modifier = 0.05
 	}
 	Unification = {
@@ -1422,7 +1422,7 @@ Y01_ideas = { #Powiat Bytowski
 		 global_regiment_cost = -0.15
 	}
 	Y01_3 = {
-		envoy_travel_travel = -0.33
+		envoy_travel_time = -0.33
 	}
 	Y01_4 = {
 		unjustified_demands = -0.15
@@ -2098,7 +2098,7 @@ Y18_ideas = { #Powiat Nowodworski (Pomorskie)
 	Y18_6 = {
 		governing_cost = -0.1
 	}
-	Y18_7 = { = 
+	Y18_7 = {
 		advisor_pool = 1
 	}
 }
@@ -2233,7 +2233,7 @@ Y21_ideas = { #Gdynia
 
 #Slaskie -L
 
-L20_ideas = {
+L20_ideas = { #Powiat Zywiecki
     start = {
         land_morale = 0.10
         improve_relation_modifier = 0.3
@@ -2428,7 +2428,95 @@ L39_ideas = { #Rybnik Coal Area
 
 #Swietokrzyskie -M
 
+M00_ideas = { #Wojewodztwo Swietokrzyskie
+	start ={
+		land_attrition = -0.25
+		infantry_power = 0.15
+	}
+	trigger = {
+		tag = M00
+	}
+	free = yes
+	mix_the_concrete = {
+		build_cost = -0.1
+		build_time = -0.25
+		investors_loyalty_modifier = 0.1
+	}
+	polish_brethren = {
+		global_institution_spread = 0.5
+		embracement_cost = -0.5
+	}
+	dymarka_industry = {
+		defensiveness = 0.15
+		miners_loyalty_modifier = 0.1
+	}
+	little_mountains_polygon = {
+		discipline = 0.1
+	}
+	next_station_wloszczowa_polnoc = {
+		movement_speed = 0.10
+		farmers_loyalty_modifier = 0.1
+	}
+	starachowice_equipment = {
+		artillery_barrage_cost = -0.25
+		artillery_cost = -0.5
+	}
+	the_last_voivodeship = {
+		diplomatic_reputation = 3
+		global_unrest = -2
+	}
+	bonus = {
+		development_cost = -0.15
+	}
+
+}
 #Warminsko-Mazurskie -N
+
+N00_ideas = { #Wojewodztwo Warminsko-Mazurskie
+	start ={
+		global_autonomy = -0.075
+		advisor_cost = -0.25
+	}
+	trigger = {
+		tag = N00
+	}
+	free = yes
+	Kulturfreundschaft = {
+		no_religion_penalty = yes
+		num_accepted_cultures = 5
+		promote_culture_cost = -0.25
+	}
+	great_masurian_lakes = {
+		naval_morale = 0.33
+		global_ship_cost = -0.33
+	}
+	grunwald_experiences = {
+		land_forcelimit_modifier = 0.3
+		army_tradition_from_battle = 1
+	}
+	natural_born_smugglers = {
+		trade_efficiency = 0.2
+		caravan_power = 0.25
+	}
+	old_whenforged = {
+		spy_offence = 0.5
+		global_spy_defence = 0.5
+		ub_loyalty_modifier = 0.1
+	}
+	how_to_pronounce_that = {
+		core_creation = -0.2
+		families_loyalty_modifier = 0.1
+	}
+	i_like_sand = {
+		build_cost = -0.1
+		defensiveness = 0.2
+		own_territory_dice_roll_bonus = 1
+	}
+	bonus = {
+		stability_cost_modifier = -0.25
+	}
+
+}
 
 #Wielkopolskie -R
 
@@ -2510,6 +2598,57 @@ R28_ideas = { #Powiat Pilski
 }
 
 #Zachodnio-Pomorskie -P
+
+P00_ideas = { #Wojewodztwo Zachodniopomorskie
+	start ={
+		religious_unity = 0.5
+		technology_cost = -0.1
+	}
+	trigger = {
+		tag = P00
+	}
+	free = yes
+	lakes_hills_forests = {
+		hostile_attrition = 2
+		max_hostile_attrition = 3
+		defensiveness = 0.4
+	}
+	swinoujscie_szczecin_waterway = {
+		naval_morale = 0.25
+		naval_forcelimit_modifier = 0.5
+		global_sailors_modifier = 0.5
+	}
+	drawsko_training_ground = {
+		drill_gain_modifier = 2
+		land_maintenance_modifier = -0.10
+		has_marines = yes
+	}
+	BIG_FIELDS = {
+		production_efficiency = 0.33
+		farmers_loyalty_modifier = 0.1
+	}
+	griffin_legacy = {
+		prestige = 3
+		monthly_splendor = 3
+	}
+	primoria_rivers = {
+		merchants = 1
+		global_own_trade_power = 0.5
+		has_voc_indiamen = yes
+		#can_transport_units = yes  /// do dodania jako osobny efekt zamiast voc
+		#ship_trade_power = 5
+	}
+	dealing_with_the_minors = {
+		vassal_forcelimit_bonus = 1
+		vassal_income = 1
+		liberty_desire_from_subject_development = -0.25
+		accept_vassalization_reasons = 25
+	}
+	bonus = {
+		cavalry_power = 0.25
+	}
+
+}
 
 P02_ideas = { #Powiat Koszalinski
 	start = {

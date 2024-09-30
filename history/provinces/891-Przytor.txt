@@ -7,3 +7,10 @@ culture = zachodniopomorska
 religion = communism_pzpr
 controller = P15
 is_city = no
+
+1444.11.13 = {
+remove_core = P15
+add_core = P00
+owner = P00
+controller = P00
+}

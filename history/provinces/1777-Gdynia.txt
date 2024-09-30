@@ -20,3 +20,10 @@ fort_15th = yes
 center_of_trade = 2
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_tourists_trade_good
+
+1444.11.13 = {
+remove_core = Y21
+add_core = Y00
+owner = Y00
+controller = Y00
+}

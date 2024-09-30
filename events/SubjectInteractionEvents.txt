@@ -247,7 +247,7 @@ country_event = {
 		num_of_subjects = 1
 		has_regency = no
 		government = monarchy
-		NOT = { has_reform = celestial_empire }
+
 		NOT = { legitimacy_or_horde_unity = 100 }
 		any_subject_country = {
 			government = monarchy
@@ -1104,7 +1104,7 @@ country_event = {
 				}
 			}
 			spawn_rebels = {
-				type = noble_rebels
+				type = army_rebels
 				size = 1
 			}
 		}
@@ -1118,7 +1118,7 @@ country_event = {
 				}
 				clr_province_flag = si_province_rebels_flag
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 1
 				}
 			}
@@ -1568,7 +1568,7 @@ country_event = {
 		num_of_subjects = 1
 		NOT = { legitimacy_or_horde_unity = 50 }
 		government = monarchy
-		NOT = { has_reform = celestial_empire }
+
 		any_subject_country = {
 			government = monarchy
 			OR = {

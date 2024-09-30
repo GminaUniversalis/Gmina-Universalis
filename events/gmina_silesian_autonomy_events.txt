@@ -1,0 +1,62 @@
+namespace = silesian_autonomy
+
+country_event = {
+	id = silesian_autonomy.1
+	title = "silesian_autonomy.1_title"
+	desc = "silesian_autonomy.1_desc"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_emperor = no
+		is_part_of_hre = yes
+		#is_subject_of_type = silesian_state
+	}
+
+	option = {
+		name = "silesian_autonomy.1_option_1"
+
+
+	}
+
+	immediate = {
+		Emperor = {
+			create_subject = {
+				subject_type = silesian_state
+				subject = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = silesian_autonomy.2
+	title = "silesian_autonomy.2_title"
+	desc = "silesian_autonomy.2_desc"
+	picture = HRE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1444
+		NOT = { is_year = 1445 }
+		has_regency = yes
+		is_part_of_hre = yes
+		has_reform = silesian_autonomy_reform
+	}
+
+	option = {
+		name = "silesian_autonomy.2_option_1"
+	}
+
+	immediate = {
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+	}
+}

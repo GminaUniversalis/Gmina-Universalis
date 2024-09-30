@@ -39,4 +39,67 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2606;2676;sea;1686;-1;-1;-1;-1; Wroblin - Czarnowasy
 2606;2669;sea;1263;-1;-1;-1;-1; Wroblin - Slawice
 4761;2670;sea;1263;-1;-1;-1;-1; Stare Miasto Opole - Zaodrze
+58;4743;sea;1287;-1;-1;-1;-1; Krzyzanowice - Lubomia
+61;4759;sea;1283;-1;-1;-1;-1; Cisek - Bierawa
+60;1863;sea;1280;-1;-1;-1;-1; Krapkowice - Gogolin
+860;4648;sea;1272;-1;-1;-1;-1; Lewin Brzeski - Popielow
+4640;2617;sea;1270;-1;-1;-1;-1; Brzeg - Lubsza
+851;4580;sea;851;-1;-1;-1;-1; Olawa City - Olawa
+3681;3531;sea;1266;-1;-1;-1;-1; Pilczyce - Redzin
+2637;839;sea;1252;-1;-1;-1;-1; Mieknina - Brzeg dolny
+2838;2940;sea;1250;-1;-1;-1;-1; Prochowice - Wolow
+2840;2946;sea;1260;-1;-1;-1;-1; Scinawa - Winsko
+795;483;sea;1259;-1;-1;-1;-1; Rudna - Jemielno
+1004;4617;sea;1257;-1;-1;-1;-1; Glogow - Glogow city
+820;4604;sea;1254;-1;-1;-1;-1; Nowa Sol City - Nowa sol
+818;741;sea;1252;-1;-1;-1;-1; Zabor - Bojadla
+2011;802;sea;1622;-1;-1;-1;-1; Sulechow - Krepa
+803;2933;sea;1618;-1;-1;-1;-1; Krosno Odrzanskie - Dabie
+1858;892;sea;4000;-1;-1;-1;-1; Warszow - Swinioujcie centrum
+152;1772;sea;1471;-1;-1;-1;-1; Goczalowice Zdroj - Czechowice-Dziedzice
+137;136;sea;1469;-1;-1;-1;-1; Brzeszcze - Miedzna
+1793;1488;sea;1468;-1;-1;-1;-1; Auschwitz - Bierun
+1306;1795;sea;1466;-1;-1;-1;-1; Zator - Babice
+1165;4100;sea;1465;-1;-1;-1;-1; Czernichow - Brzeznica
+4855;3162;sea;1463;-1;-1;-1;-1; Liszki - Dębniki
+3016;2951;sea;1461;-1;-1;-1;-1; Nowa Huta - Niepolomice
+1191;1187;sea;1458;-1;-1;-1;-1; Nowe Brzesko - Drwinia
+1228;4034;sea;1456;-1;-1;-1;-1; Koszyce - Szczurowa
+1226;1215;sea;1454;-1;-1;-1;-1; Nowy Korczyn - Greboszow
+1230;2767;sea;1452;-1;-1;-1;-1; Pacanow - Szczucin
+2799;2769;sea;1450;-1;-1;-1;-1; Polaniec - Borowa
+4521;689;sea;1447;-1;-1;-1;-1; Nagnajow - Loniow
+363;4322;sea;1441;-1;-1;-1;-1; Ozarow - Annopol
+4287;400;sea;1439;-1;-1;-1;-1; Solec nad Wisla - Laziska
+386;2347;sea;1436;-1;-1;-1;-1; Pulawy - City of Pulawy
+383;2328;sea;1435;-1;-1;-1;-1; Deblin - Sieciechow
+1212;718;sea;1428;-1;-1;-1;-1; Gora Kalwaria - Karczew
+2412;1017;sea;1420;-1;-1;-1;-1; Nowy Dwor Mazowiecki - Czosnow
+2412;4180;sea;1419;-1;-1;-1;-1; Czosnow - Zakroczym
+1074;4691;sea;1416;-1;-1;-1;-1; Mlodzieszyn - Wyszogrod
+567;573;sea;1412;-1;-1;-1;-1; Pradolina Wisly - Borowiczki-Imielnica
+568;972;sea;1412;-1;-1;-1;-1; Radziwie - Plock Centrum
+663;661;sea;1408;-1;-1;-1;-1; Rybnica - Agricola
+660;2975;sea;1408;-1;-1;-1;-1; Centrum Wloclawek - Zawisle
+1871;74;sea;1402;-1;-1;-1;-1; Nieszawka - Lubicz
+49;2963;sea;1392;-1;-1;-1;-1; Dragacz - Srodmiescie grodziadz
+49;2997;sea;1393;-1;-1;-1;-1; Dragacz - gm Grudziadz
+1866;91;sea;1389;-1;-1;-1;-1; Gniew - Kwidzyn
+4;7;sea;1386;-1;-1;-1;-1; Tczew - Miloradz
+5;4164;sea;1385;-1;-1;-1;-1; City of Tczew - Lichowy
+2200;2428;1514;-1;-1;-1;-1; Sarnaki - Siemiatycze
+1071;2236;sea;1512;-1;-1;-1;-1; Repki - Drohiczyn
+2118;980;sea;1510;-1;-1;-1;-1; Perlejewo - Jablonna Lacka
+4184;1830;sea;1508;-1;-1;-1;-1; Nur - Ceranow
+4218;2155;sea;1505;-1;-1;-1;-1; Brok - Sadowne
+2185;4660;sea;1502;-1;-1;-1;-1; Wyszkow - Baranczak
+2409;4193;sea;1498;-1;-1;-1;-1; Nieporet - Serock
+4183;4193;sea;1497;-1;-1;-1;-1; Wieliszew - Serock
+479;2351;sea;888;-1;-1;-1;-1; Narewka - Michalowo
+456;1064;sea;885;-1;-1;-1;-1; Bielsk Podlaski - Juchowiec-Koscielny
+2437;1061;sea;1918;-1;-1;-1;-1; Zawady - Trzcianne
+1058;715;sea;1916;-1;-1;-1;-1; Lomza Stare Miasto - Piatnica
+1057;715;sea;1917;-1;-1;-1;-1; Lomza - Piatnica
+723;722;sea;1910;-1;-1;-1;-1; Wojciechowice - Lazek
+880;808;sea;1592;-1;-1;-1;-1; Kostrzyn Stare Miasto - Kostrzyn nad Odra
 -1;-1;;-1;-1;-1;-1;-1;-1;

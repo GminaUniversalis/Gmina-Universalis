@@ -13,7 +13,7 @@ country_event = {
 	
 	trigger = {
 		2002 = {
-			trade_goods = livestock
+			trade_goods = gu_cattle
 			owner = {
 				ai = no
 				tag = ROOT

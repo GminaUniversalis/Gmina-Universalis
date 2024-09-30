@@ -581,7 +581,7 @@ country_event = {
 		event_target:quarrelsome_nobles_province = {
 			set_province_flag = cnc_quarrelsome_nobles
 			spawn_rebels = {
-				type = noble_rebels
+				type = army_rebels
 				size = 2
 			}
 		}
@@ -596,7 +596,7 @@ country_event = {
 					is_in_capital_area = yes
 				}
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 1
 				}
 			}
@@ -612,7 +612,7 @@ country_event = {
 					is_in_capital_area = yes
 				}
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 1
 				}
 			}
@@ -628,7 +628,7 @@ country_event = {
 					is_in_capital_area = yes
 				}
 				spawn_rebels = {
-					type = noble_rebels
+					type = army_rebels
 					size = 1
 				}
 			}

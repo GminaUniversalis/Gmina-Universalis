@@ -2,7 +2,7 @@ families_rebels = {
 	color = { 170 95 25 }
 
 	area = nation 					# Stays within the nation
-	government = theocracy		# Likes monarchy
+	government = monarchy		# Likes monarchy
 	defection = none				# Does not defect
 	independence = none				# Does not strive for independence
 	unit_transfer = no
@@ -137,5 +137,28 @@ families_rebels = {
 		}
 		add_absolutism = -20
 		kill_ruler = yes
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_disaster = estate_families_disaster
+					government = monarchy
+				}
+	
+				add_government_reform = familial_rule_reform
+	
+			}
+			else_if = {
+				limit = {
+					has_disaster = estate_families_disaster
+					NOT = { government = monarchy }
+				}
+
+				change_government = monarchy
+
+				add_government_reform = familial_rule_reform
+			}
+		}
+
 	}
 }

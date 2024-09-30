@@ -2358,7 +2358,6 @@ province;red;green;blue;x;x
 3502;219;23;202;Frampol;
 3503;219;23;203;Sztutowo;
 3504;219;23;204;Mor¹g;
-3887;100;12;187;Krolewiec;
 3505;219;23;205;Krasnobród;
 3584;225;25;184;Goraj;
 4020;239;204;149;Dukla;x
@@ -4116,3 +4115,25 @@ province;red;green;blue;x;x
 3633;100;10;133;Jezioro Gopło;
 3117;207;110;66;Pilica;
 3999;100;13;199;Wieprz;
+4003;100;14;103;Border;
+4723;63;106;212;Wasteland gorski;x
+3118;207;110;67;Wasteland lesny;
+2949;72;199;51;Bagriatonovsk;x
+3119;207;110;68;Pravdinsk;
+3120;207;110;69;Slavsk;
+3121;207;110;70;Nesterov;
+3123;207;110;72;Zelonograd;
+3212;219;32;22;Chernyahovsk;
+3213;219;32;23;Svetlyi;
+3214;219;32;24;Pionersky;
+3215;219;32;25;Guryevsk;
+3216;219;32;26;Krasnoznamensk;
+3313;219;32;123;Ladushkin;
+3315;219;32;125;Svetlogorsk;
+3316;219;32;126;Polessk;
+3317;219;32;127;Ozorsk;
+3318;219;32;128;Sowetsk;
+3400;219;32;210;Nemansk;
+3815;100;12;115;Gusev;
+3860;100;12;160;Mamonovo;
+3887;100;12;187;Krolewiec;

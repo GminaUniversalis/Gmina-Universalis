@@ -1,6 +1,6 @@
 #Krakow - Pradnik Bialy
 culture = krakowska
-religion = catholic
+religion = communism_pzpr
 base_tax = 4
 base_production = 3
 trade_goods = gu_consumer_goods
@@ -13,6 +13,15 @@ discovered_by = ottoman
 add_core = X20
 owner = X20
 controller = X20
+
 latent_trade_goods = { gu_finances }
+
 set_province_flag = has_static_trade_good
 set_province_flag = has_{ gu_finances }_trade_good
+
+1444.11.13 = {
+remove_core = X20
+add_core = X00
+owner = X00
+controller = X00
+}

@@ -1,15 +1,54 @@
 estate_families_old_model = {
 	icon = estate_church_sponsor_waqf_payments
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 5
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 5
+			NOT = { innovativeness = 50 }
+		}
+
+		modifier = {
+			factor = 5
+			NOT = { crown_land_share = estate_families }
+		}
+
+		modifier = {
+			factor = 100
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 1.5
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 0.5
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 2
+			production_income_percentage = 0.35
+		}
 	}
-	is_valid = {
-	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_families_definer_tooltip
@@ -53,8 +92,7 @@ estate_families_old_model = {
 			}
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 		manpower_recovery_speed = 0.2
 	}
@@ -71,13 +109,53 @@ estate_families_old_model = {
 }
 estate_families_new_model = {
 	icon = privilege_land_rights
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 5
+			innovativeness = 50
+		}
+
+		modifier = {
+			factor = 5
+			crown_land_share = estate_families
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = no
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.5
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 5
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 2
+			reform_level = 5
+		}
 	}
 	is_valid = {
 		NOT = { current_age = age_of_discovery }
@@ -149,11 +227,23 @@ estate_families_empty_promises = {
 	icon = estate_burghers_GER_turn_towards_mercantilism
 	land_share = 0
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.1
+
+			NOT = {
+				estate_influence = {
+					estate = estate_families
+					influence = 80
+				}
+			}
+
+		}
 	}	
 	on_granted = {
 	
@@ -169,7 +259,7 @@ estate_families_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	loyalty = 0.05
 	influence = 0.05
 	
@@ -180,8 +270,7 @@ estate_families_land_rights = {
 	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
+
 	conditional_modifier = {
 	}
 	benefits = {
@@ -331,11 +420,58 @@ estate_families_pp = {
 	icon = estate_burghers_GER_customs_union
 	land_share = 0
 	max_absolutism = 0
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 5 } }
+	
 	loyalty = 0.15
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 0.5
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 3
+			has_estate_privilege = estate_families_new_model
+		}
+
+		modifier = {
+			factor = 5
+			estate_influence = {
+				estate = estate_families
+				influence = 60
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				religion_group = populism_group
+				religion_group = socialism_group
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			religion_group = communism_group
+		}
+		
 	}	
 	on_granted = {
 	
@@ -356,7 +492,32 @@ estate_families_healthy_food = {
 	loyalty = 0.05
 	influence = 0
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
 	}	
 	on_granted = {
 	
@@ -370,16 +531,40 @@ estate_families_healthy_food = {
 }
 estate_families_subsidies_for_kindergartens = {
 	icon = privilege_aztec_artisans
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.05
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -394,11 +579,8 @@ estate_families_subsidies_for_kindergartens = {
 	benefits = {
 		production_efficiency = 0.1
 	}
-	on_invalid = {
-	}
-	conditional_modifier = {
 
-	}
+
 	modifier_by_land_ownership = {
 
 	}
@@ -412,16 +594,40 @@ estate_families_subsidies_for_kindergartens = {
 }
 estate_families_support_private_schools = {
 	icon = privilege_build_jain_temple
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.05
 	influence = -0.1
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -437,8 +643,7 @@ estate_families_support_private_schools = {
 	benefits = {
 		all_power_cost = -0.05
 	}
-	on_invalid = {
-	}
+
 	conditional_modifier = {
 	}
 	modifier_by_land_ownership = {
@@ -454,16 +659,40 @@ estate_families_support_private_schools = {
 }
 estate_families_support_highschools = {
 	icon = privilege_aged_paper
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.05
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -472,12 +701,9 @@ estate_families_support_highschools = {
 	}
 	can_revoke = {
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	on_invalid = {
-	}
+
+
+
 	conditional_modifier = {
 	}
 	modifier_by_land_ownership = {
@@ -494,8 +720,8 @@ estate_families_support_highschools = {
 estate_families_governmental_responsibility = {
 	icon = privilege_diplo_power
 	land_share = 10
-	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	max_absolutism = 0
+	
 	loyalty = -0.05
 	can_select = {
 		can_select_monarch_power_privilege = {
@@ -505,8 +731,7 @@ estate_families_governmental_responsibility = {
 	}
 	on_granted = {
 	}
-	penalties = {
-	}
+
 	benefits = {
 		country_diplomatic_power = 1
 	}
@@ -546,16 +771,47 @@ estate_families_governmental_responsibility = {
 }
 estate_families_family_welfare_benefits = {
 	icon = privilege_loot
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 10
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				current_income_balance = 5
+			}
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -566,13 +822,13 @@ estate_families_family_welfare_benefits = {
 	}
 	penalties = {
 		global_tax_income = -48
+		families_privilege_slots = -1
 	}
 	benefits = {
 		overextension_impact_modifier = -0.2
 		stability_cost_modifier = -0.2
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -598,16 +854,47 @@ estate_families_family_welfare_benefits = {
 }
 estate_families_maternal_leave = {
 	icon = privilege_land_rights
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 5
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				current_income_balance = 5
+			}
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -624,8 +911,7 @@ estate_families_maternal_leave = {
 		manpower_recovery_speed = 0.1
 		monthly_splendor = 8
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -648,16 +934,47 @@ estate_families_maternal_leave = {
 }
 estate_families_paternal_leave = {
 	icon = privilege_macuahuitl
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 5
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				current_income_balance = 5
+			}
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -674,8 +991,7 @@ estate_families_paternal_leave = {
 		possible_mil_policy = 1
 		global_prosperity_growth = 0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -698,16 +1014,47 @@ estate_families_paternal_leave = {
 }
 estate_families_free_housing = {
 	icon = privilege_grant_new_world_charter
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 10
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				current_income_balance = 5
+			}
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -723,8 +1070,7 @@ estate_families_free_housing = {
 	benefits = {
 		development_cost_in_primary_culture = -0.1
 	}
-	on_invalid = {
-	}
+
 	on_granted_province = {
 
 	}
@@ -743,5 +1089,108 @@ estate_families_free_housing = {
 	cooldown_years = 5
 	on_cooldown_expires = {
 		add_inflation = 5
+	}
+}
+estate_families_political_commitment = { #Political Party
+	icon = privilege_recruit_minister
+	max_absolutism = 0
+	
+	influence = 0.10
+	on_granted = {
+
+		custom_tooltip = has_no_effects_on_granted
+		
+	}
+
+	can_select = {
+		OR = {
+			religion_group = populism_group
+			religion_group = liberalism_group
+			religion_group = conservatism_group
+			religion_group = socialism_group
+		}
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_ub_strenghten_communist_thought
+				has_estate_privilege = estate_middle_class_party_appreciation
+				has_estate_privilege = estate_investors_free_market_ideals
+			}
+
+		}
+	}
+
+	conditional_modifier = {
+		trigger = {
+
+			religion = populism_samoobrona 
+		 	
+		}
+		modifier = {
+			missionary_maintenance_cost = -0.25
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			religion = conservatism_lpr
+		}
+		modifier = {
+			monthly_fervor_increase = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			religion_group = socialism_group
+		}
+		modifier = {
+			monthly_piety = 0.01
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			religion_group = liberalism_group
+		}
+		modifier = {
+			church_power_modifier = 0.5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				religion = conservatism_kpn
+				religion = conservatism_zchn
+				religion = conservatism_pc
+				religion = conservatism_aws
+				religion = conservatism_psl
+			}
+		}
+		modifier = {
+			yearly_patriarch_authority = 1
+		}
+	}
+
+
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0.01
+
+			religion_group = liberalism_group
+			
+			num_of_aspects = 3
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				religion = conservatism_kpn
+				religion = conservatism_zchn
+				religion = conservatism_pc
+				religion = conservatism_aws
+				religion = conservatism_psl
+			}
+		}
 	}
 }

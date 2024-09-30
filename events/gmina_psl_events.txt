@@ -1,21 +1,311 @@
-# namespace = psl_events
+namespace = psl_events
+
+country_event = {
+	id = psl_events.1
+	title = psl_events.1.t
+	desc = psl_events.1.d
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+
+		religion = conservatism_psl
+		
+		1500 = {
+			check_variable = {
+				which = clock_year
+				value = 1991
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
+		current_guru_is = guru_roman_bartoszcze
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = psl_events.1.a
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = psl_events.2
+	title = psl_events.1.t
+	desc = psl_events.1.d
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = conservatism_psl
+
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1997
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 10
+			}
+		}
+
+		current_guru_is = guru_waldemar_pawlak
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = psl_events.1.a
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = psl_events.3
+	title = psl_events.1.t
+	desc = psl_events.1.d
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = conservatism_psl
+
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2004
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 3
+			}
+		}
+
+		current_guru_is = guru_jaroslaw_kalinowski
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = psl_events.1.a
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = psl_events.4
+	title = psl_events.1.t
+	desc = psl_events.1.d
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = conservatism_psl
+
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2004
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
+		current_guru_is = guru_janusz_wojciechowski
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = psl_events.1.a
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = psl_events.5
+	title = psl_events.1.t
+	desc = psl_events.1.d
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = conservatism_psl
+
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2012
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 11
+			}
+		}
+
+		current_guru_is = guru_antoni_podraza
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = psl_events.1.a
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = psl_events.6
+	title = psl_events.1.t
+	desc = psl_events.1.d
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = conservatism_psl
+
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2015
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 7
+			}
+		}
+
+		current_guru_is = guru_janusz_piechocinski
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = psl_events.1.a
+		appoint_next_guru = yes
+	}
+}
 
 # country_event = {
-# 	id = psl_events.1
+# 	id = psl_events.7
 # 	title = psl_events.1.t
 # 	desc = psl_events.1.d
 # 	picture = ADVISOR_eventPicture
 
 # 	trigger = {
 # 		religion = conservatism_psl
-# 		is_year = 1520
-# 		NOT = { is_year = 1545 }
-# 		current_guru_is = guru_roman_bartoszcze
+
+# 		1500 = {
+
+# 			check_variable = {
+# 				which = clock_year
+# 				value = 2044
+# 			}
+			
+# 		}
+# 		1500 = {
+# 			check_variable = {
+# 				which = clock_month
+# 				value = 7
+# 			}
+# 		}
+
+# 		current_guru_is = guru_wladyslaw_kosiniak_kamysz
 # 		NOT = { has_global_flag = guru_event_happening }
 # 	}
 
 # 	mean_time_to_happen = {
-# 		days = 7
+# 		days = 14
 # 	}
 	
 # 	immediate = {
@@ -32,161 +322,4 @@
 # 	}
 # }
 
-# country_event = {
-# 	id = psl_events.2
-# 	title = psl_events.1.t
-# 	desc = psl_events.1.d
-# 	picture = ADVISOR_eventPicture
-
-# 	trigger = {
-# 		religion = conservatism_psl
-# 		is_year = 1545
-# 		NOT = { is_year = 1595 }
-# 		current_guru_is = guru_waldemar_pawlak
-# 		NOT = { has_global_flag = guru_event_happening }
-# 	}
-
-# 	mean_time_to_happen = {
-# 		days = 7
-# 	}
-	
-# 	immediate = {
-# 		set_global_flag = guru_event_happening
-# 	}
-
-# 	after = {
-# 		clr_global_flag = guru_event_happening
-# 	}
-
-# 	option = {
-# 		name = psl_events.1.a
-# 		appoint_next_guru = yes
-# 	}
-# }
-
-# country_event = {
-# 	id = psl_events.3
-# 	title = psl_events.1.t
-# 	desc = psl_events.1.d
-# 	picture = ADVISOR_eventPicture
-
-# 	trigger = {
-# 		religion = conservatism_psl
-# 		is_year = 1595
-# 		NOT = { is_year = 1610 }
-# 		current_guru_is = guru_jaroslaw_kalinowski
-# 		NOT = { has_global_flag = guru_event_happening }
-# 	}
-
-# 	mean_time_to_happen = {
-# 		days = 7
-# 	}
-	
-# 	immediate = {
-# 		set_global_flag = guru_event_happening
-# 	}
-
-# 	after = {
-# 		clr_global_flag = guru_event_happening
-# 	}
-
-# 	option = {
-# 		name = psl_events.1.a
-# 		appoint_next_guru = yes
-# 	}
-# }
-
-# country_event = {
-# 	id = psl_events.4
-# 	title = psl_events.1.t
-# 	desc = psl_events.1.d
-# 	picture = ADVISOR_eventPicture
-
-# 	trigger = {
-# 		religion = conservatism_psl
-# 		is_year = 1610
-# 		NOT = { is_year = 1650 }
-# 		current_guru_is = guru_janusz_wojciechowski
-# 		NOT = { has_global_flag = guru_event_happening }
-# 	}
-
-# 	mean_time_to_happen = {
-# 		days = 7
-# 	}
-	
-# 	immediate = {
-# 		set_global_flag = guru_event_happening
-# 	}
-
-# 	after = {
-# 		clr_global_flag = guru_event_happening
-# 	}
-
-# 	option = {
-# 		name = psl_events.1.a
-# 		appoint_next_guru = yes
-# 	}
-# }
-
-# country_event = {
-# 	id = psl_events.5
-# 	title = psl_events.1.t
-# 	desc = psl_events.1.d
-# 	picture = ADVISOR_eventPicture
-
-# 	trigger = {
-# 		religion = conservatism_psl
-# 		is_year = 1650
-# 		NOT = { is_year = 1680 }
-# 		current_guru_is = guru_antoni_podraza
-# 		NOT = { has_global_flag = guru_event_happening }
-# 	}
-
-# 	mean_time_to_happen = {
-# 		days = 7
-# 	}
-	
-# 	immediate = {
-# 		set_global_flag = guru_event_happening
-# 	}
-
-# 	after = {
-# 		clr_global_flag = guru_event_happening
-# 	}
-
-# 	option = {
-# 		name = psl_events.1.a
-# 		appoint_next_guru = yes
-# 	}
-# }
-
-# country_event = {
-# 	id = psl_events.6
-# 	title = psl_events.1.t
-# 	desc = psl_events.1.d
-# 	picture = ADVISOR_eventPicture
-
-# 	trigger = {
-# 		religion = conservatism_psl
-# 		is_year = 1680
-# 		current_guru_is = guru_janusz_piechocinski
-# 		NOT = { has_global_flag = guru_event_happening }
-# 	}
-
-# 	mean_time_to_happen = {
-# 		days = 7
-# 	}
-	
-# 	immediate = {
-# 		set_global_flag = guru_event_happening
-# 	}
-
-# 	after = {
-# 		clr_global_flag = guru_event_happening
-# 	}
-
-# 	option = {
-# 		name = psl_events.1.a
-# 		appoint_next_guru = yes
-# 	}
-# }
+#To be continued

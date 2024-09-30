@@ -11,3 +11,10 @@ add_core = I03
 discovered_by = ottoman
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_poultry_trade_good
+
+1444.11.13 = {
+remove_core = I03
+add_core = I00
+owner = I00
+controller = I00
+}

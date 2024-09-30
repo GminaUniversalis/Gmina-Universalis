@@ -34,11 +34,11 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "musicminicontroller_window"
-		position = { x= -300 y = 35}
-		show_position = { x= -300 y = 72 }
+		position = { x= -400 y = 34}
+		show_position = { x= -455 y = 34 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 30
+		animation_time = 200
 		Orientation = upper_right
 		size = { width=228 height=42 }
 

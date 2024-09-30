@@ -2,7 +2,7 @@ ub_rebels = {
 	color = { 170 95 25 }
 
 	area = nation 					# Stays within the nation
-	government = theocracy		# Likes monarchy
+	government = tribal		# Likes monarchy
 	defection = none				# Does not defect
 	independence = none				# Does not strive for independence
 	unit_transfer = no

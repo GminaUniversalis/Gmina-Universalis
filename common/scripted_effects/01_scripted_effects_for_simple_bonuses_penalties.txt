@@ -276,7 +276,7 @@ reduce_curia_treasury_huge_effect = {
 add_manufactory = {
 	if = {
 		limit = {
-			trade_goods = coal
+			trade_goods = gu_coal
 			has_dlc = "Rule Britannia"
 		}
 		add_building = furnace

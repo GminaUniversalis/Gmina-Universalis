@@ -107,10 +107,11 @@ estate_scientists_disaster = {
 	}
 	
 	modifier = {	
-		interest = 5
-		inflation_reduction = 0.5
-		production_efficiency = -0.2
-		trade_efficiency = -0.2
+		global_unrest = 2
+		yearly_innovativeness = -0.25
+		technology_cost = 0.5
+		idea_cost = 0.5
+		all_power_cost = 0.25
 	}
 
 	on_start = gmina_estate_disasters.14

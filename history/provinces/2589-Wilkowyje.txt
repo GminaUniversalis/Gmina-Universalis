@@ -18,3 +18,10 @@ add_core = L24
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_consumer_goods_trade_good
+
+1444.11.13 = {
+remove_core = L24
+add_core = L00
+owner = L00
+controller = L00
+}

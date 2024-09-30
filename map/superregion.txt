@@ -47,3 +47,39 @@ slaskie_superregion = {
 lodzkie_superregion = { 
 	lodzkie_region 
 }
+krolewiec_superregion = { 
+	Krolewiec 
+}
+germany = { 
+	germany 
+}
+bornholm = { 
+	bornholm 
+}
+netherlands = { 
+	netherlands 
+}
+belgium = { 
+	belgium 
+}
+luxembourg = { 
+	luxembourg 
+}
+france = { 
+	france 
+}
+bohemia = { 
+	bohemia 
+}
+slovakia = { 
+	slovakia 
+}
+ukraine = { 
+	ukraine 
+}
+belarus = { 
+	belarus 
+}
+lithuania = { 
+	lithuania 
+}

@@ -7,10 +7,11 @@ country_event = { #Estate setup
 	picture = MARCHING_PEASANTS_eventPicture
 
 	is_triggered_only = yes
-
+	#fire_only_once = yes
 
 	trigger = {
 		is_year = 1444
+		NOT = { is_year = 1445}
 		OR = {
 			ai = no
 			ai = yes
@@ -32,10 +33,6 @@ country_event = { #Estate setup
 			}
 			change_estate_land_share = {
 				estate = estate_banks
-				share = -100
-			}
-			change_estate_land_share = {
-				estate = estate_miners
 				share = -100
 			}
 			change_estate_land_share = {
@@ -63,13 +60,19 @@ country_event = { #Estate setup
 				share = -100
 			}
 			change_estate_land_share = {
+				estate = estate_miners
+				share = -100
+			}
+			
+			change_estate_land_share = {
 				estate = estate_ub
-				share = 50
+				share = 36.337
 			}
 			change_estate_land_share = {
 				estate = estate_army
-				share = 50
+				share = 100
 			}
+
 			add_estate_loyalty = {
 				estate = estate_ub
 				loyalty = 20
@@ -94,15 +97,18 @@ country_event = { #Estate setup
 
 				OR = {
 					AND = {
-						any_owned_province = {
-							farmlands = 5 
+						num_of_owned_provinces_with = {
+							value = 5
+							has_terrain = farmlands
 						}
 						NOT = { religion_group = communism_group }
 					}
 					AND = {
-						any_owned_province = {
-							grasslands = 10
-					   }
+						num_of_owned_provinces_with = {
+							value = 10
+
+							has_terrain = grasslands
+						}
 					   NOT = { religion_group = communism_group }
 					}
 	
@@ -203,6 +209,7 @@ country_event = { #Estate setup
 				}
 			}
 
+			
 			set_country_flag = estate_picked_miners
 			set_country_flag = has_estate_picked_flag
 		}
@@ -252,17 +259,19 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		#OR = {
-			#ai = no
+		is_year = 1444
+		NOT = { is_year = 1445}
+		OR = {
+			ai = no
 			ai = yes
-		#}
+		}
 	}
 
 	#Estates setup
 	option = {
 		name = gmina_setup.1.a
 
-#Miners
+	#Miners
 		if = {
 			limit = {
 				OR = {
@@ -292,7 +301,7 @@ country_event = {
 			set_country_flag = picked_miners_definer
 
 		}
-#Scientists
+	#Scientists
 		if = {
 			limit = {
 				OR = {
@@ -317,7 +326,10 @@ country_event = {
 					NOT = { 
 						current_age = age_of_discovery 
 					} 
-					innovativness = 50
+					ROOT = {
+						innovativness = 50
+					}
+
 				}
 				set_estate_privilege = estate_scientist_polish_thought
 			}
@@ -326,7 +338,7 @@ country_event = {
 
 		}
 		
-#Investors
+	#Investors
 		if = {
 			limit = {
 				OR = {
@@ -368,7 +380,7 @@ country_event = {
 			set_country_flag = picked_investors_definer
 
 		}
-#Farmers
+	#Farmers
 		if = {
 			limit = {
 				OR = {
@@ -385,13 +397,13 @@ country_event = {
 			if = {
 				limit = {
 					OR = {
-						any_owned_province = {
-							has_terrain = farmlands 
+						num_of_owned_provinces_with = {
 							value = 5
+							has_terrain = farmlands
 						}
-						any_owned_province = {
-							has_terrain = grasslands
+						num_of_owned_provinces_with = {
 							value = 10
+							has_terrain = grasslands
 						}
 			
 					}
@@ -406,16 +418,17 @@ country_event = {
 			set_country_flag = picked_farmers_definer
 
 		}
-#Retirees
+	#Retirees
 		if = {
 			limit = {
 				OR = {
 					NOT = {
 						has_country_flag = picked_retirees_definer
 				   }	
-				   has_estate = estate_reitrees
+
 				   #has_country_flag = estate_picked_retirees
 				}
+				has_estate = estate_reitrees
 
 			}
 			if = {
@@ -434,16 +447,17 @@ country_event = {
 			#set_country_flag = picked_retirees_definer
 
 		}
-#Banks
+	#Banks
 		if = {
 			limit = {
 				OR = {
 					NOT = {
 						has_country_flag = picked_banks_definer
 					}
-					has_estate = estate_banks
+
 					#has_country_flag = estate_picked_banks
 				}
+				has_estate = estate_banks
 			}
 			if = {
 				limit = {
@@ -465,16 +479,17 @@ country_event = {
 			set_country_flag = picked_banks_definer
 
 		}
-#Priests		
+	#Priests		
 		if = {
 			limit = {
 				OR = {
 					NOT = {
 						has_country_flag = picked_priests_definer
 					}
-					has_estate = estate_priests
+
 					#has_country_flag = estate_picked_priests
 				}
+				has_estate = estate_priests
 			}
 			if = {
 				limit = {
@@ -490,23 +505,24 @@ country_event = {
 					religion_group = communism_group
 				}
 				#For later use / Dummy
-				set_estate_privilege = separation_from_state
+				set_estate_privilege = estate_priests_separation_from_state
 
 			}
 
 			set_country_flag = picked_priests_definer
 
 		}
-#Families
+	#Families
 		if = {
 			limit = {
 				OR = {
 					NOT = {
 						has_country_flag = picked_families_definer
 					}
-					has_estate = estate_families
+
 					#has_country_flag = estate_picked_families
 				}
+				has_estate = estate_families
 			}
 			if = {
 				limit = {
@@ -525,16 +541,17 @@ country_event = {
 			set_country_flag = picked_families_definer
 
 		}
-#Middle Class
+	#Middle Class
 		if = {
 			limit = {
 				OR = {
 					NOT = {
 						has_country_flag = picked_middle_class_definer
 					}
-					has_estate = estate_middle_class
+
 					#has_country_flag = estate_picked_middle_class
 				}
+				has_estate = estate_middle_class
 			}
 			if = {
 				limit = {
@@ -559,16 +576,17 @@ country_event = {
 			set_country_flag = picked_middle_class_definer
 
 		}
-#Repression Apparatus
+	#Repression Apparatus
 		if = {
 			limit = {
 				OR = {
 					NOT = {
 						has_country_flag = picked_ub_definer
 					}
-					has_estate = estate_ub
+
 					#has_country_flag = estate_picked_ub
 				}
+				has_estate = estate_ub
 			}
 				if = {
 					limit = {
@@ -595,6 +613,7 @@ country_event = {
 			#set_country_flag = picked_ub_definer
 
 		}
+	#Army
 		if = {
 			limit = {
 				OR = {
@@ -619,11 +638,19 @@ country_event = {
 					NOT = {
 						religion_group = communism_group
 					}
-					set_estate_privilege = estate_army_new_doctrine
 				}
+				
+				set_estate_privilege = estate_army_new_doctrine
 			}
 			
 			set_country_flag = picked_army_definer
+		}
+
+		ROOT = {
+			set_variable = {
+				which = boar_counter
+				value = 0
+			}
 		}
 
 	}

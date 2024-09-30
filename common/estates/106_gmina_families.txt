@@ -54,6 +54,7 @@ estate_families = {
 		estate_families_support_highschools
 		estate_families_maternal_leave
 		estate_families_paternal_leave
+		estate_families_political_commitment
 		estate_families_free_housing
 		estate_families_old_model
 		estate_families_new_model

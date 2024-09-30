@@ -15,3 +15,10 @@ add_core = I10
 discovered_by = ottoman
 set_province_flag = has_static_trade_good
 set_province_flag = has_wine_trade_good
+
+1444.11.13 = {
+remove_core = I10
+add_core = I00
+owner = I00
+controller = I00
+}

@@ -8,56 +8,25 @@ defined_text = {
 		trigger = {
 			
 			OR = {
-
-				NOT = { has_country_flag = has_estate_picked_flag }
-				had_country_flag = {
-					flag = has_estate_picked_flag
-					days = 9125
+				num_of_owned_provinces_with = {
+					value = 5
+					trade_goods = gu_coal
 				}
-			}
-
-			num_of_owned_provinces_with = {
-				value = 5
-				trade_goods = gu_coal
-			}
-
-			capital_scope = {
-				OR = {
-					region = dolnoslaskie_region
-					region = opolskie_region
-					region = slaskie_region
-				}
-			}
-		}
-	}
-
-
-	text = {
-		localisation_key = string_NOT_available_miners
-
-		trigger = {
-			OR = {
-
-				OR = {
-
-					NOT = { 
-						had_country_flag = {
-							flag = has_estate_picked_flag
-							days = 9125
-						}
+	
+				capital_scope = {
+					OR = {
+						region = dolnoslaskie_region
+						region = opolskie_region
+						region = slaskie_region
 					}
-	
-					has_country_flag = has_estate_picked_flag 
-	
 				}
 
 				AND = {
-					NOT = { 				
-						num_of_owned_provinces_with = {
-							value = 5
-							trade_goods = gu_coal
-						} 
+					num_of_owned_provinces_with = {
+						value = 5
+						trade_goods = gu_coal
 					}
+		
 					capital_scope = {
 						OR = {
 							region = dolnoslaskie_region
@@ -66,7 +35,34 @@ defined_text = {
 						}
 					}
 				}
-				
+			}
+
+		}
+	}
+
+
+	text = {
+		localisation_key = string_NOT_available_miners
+
+		trigger = {
+
+			OR = {
+				NOT = { 				
+					num_of_owned_provinces_with = {
+						value = 5
+						trade_goods = gu_coal
+					} 
+				}
+				NOT = {
+					capital_scope = {
+						OR = {
+							region = dolnoslaskie_region
+							region = opolskie_region
+							region = slaskie_region
+						}
+					}
+				}
+			
 				AND = {
 					NOT = { 
 						num_of_owned_provinces_with = {
@@ -85,6 +81,7 @@ defined_text = {
 					}
 				}
 			}
+			
 		}
 	}
 }
@@ -218,20 +215,20 @@ defined_text = {
 
 		trigger = {
 			
+			NOT = { religion_group = communism_group }
 			OR = {
 				AND = {
 					num_of_owned_provinces_with = {
 						value = 5
 						has_terrain = farmlands
 					}
-					NOT = { religion_group = communism_group }
 				}
 				AND = {
 					num_of_owned_provinces_with = {
 						value = 10
 						has_terrain = grasslands
 					}
-				   NOT = { religion_group = communism_group }
+
 				}
 
 				capital_scope = {
@@ -241,6 +238,53 @@ defined_text = {
 						region = kujawsko_pomorskie_region
 					}
 				}
+
+				AND = {
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = lubelskie_region
+								region = wielkopolska_region
+								region = kujawsko_pomorskie_region
+							}
+						}
+
+						num_of_owned_provinces_with = {
+							value = 10
+							has_terrain = grasslands
+						}
+
+					}
+
+					num_of_owned_provinces_with = {
+						value = 5
+						has_terrain = farmlands
+					}
+						
+				}
+
+				AND = {
+					NOT = {
+						capital_scope = {
+							OR = {
+								region = lubelskie_region
+								region = wielkopolska_region
+								region = kujawsko_pomorskie_region
+							}
+						}
+
+						num_of_owned_provinces_with = {
+							value = 5
+							has_terrain = farmlands
+						}
+					}
+
+					num_of_owned_provinces_with = {
+						value = 10
+						has_terrain = grasslands
+					}
+				}
+
 			}
 		}
 	}
@@ -309,6 +353,8 @@ defined_text = {
 				}
 				AND = {
 
+					religion_group = communism_group
+
 					capital_scope = {
 						OR = {
 							region = lubelskie_region
@@ -317,21 +363,19 @@ defined_text = {
 						}
 					}
 
-						NOT = {
-							OR = {
-								num_of_owned_provinces_with = {
-									value = 10
-									has_terrain = grasslands
-								}
-								num_of_owned_provinces_with = {
-									value = 5
-									has_terrain = farmlands
-								}
-
-								religion_group = communism_group
+					NOT = {
+						OR = {
+							num_of_owned_provinces_with = {
+								value = 10
+								has_terrain = grasslands
 							}
-						
-						}	
+							num_of_owned_provinces_with = {
+								value = 5
+								has_terrain = farmlands
+							}
+						}
+											
+					}	
 				}
 
 			}

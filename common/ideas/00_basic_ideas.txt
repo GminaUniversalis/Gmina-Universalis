@@ -14,9 +14,9 @@ aristocracy_ideas = {
 
 	bonus = {
 		leader_siege = 1
-		nobles_loyalty_modifier = 0.1
-		rajput_loyalty_modifier = 0.1
-		maratha_loyalty_modifier = 0.1
+		families_loyalty_modifier = 0.1
+		#rajput_loyalty_modifier = 0.1
+		#maratha_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -92,8 +92,8 @@ plutocracy_ideas = {
 
 	bonus = {
 		global_prov_trade_power_modifier = 0.25
-		burghers_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
+		investors_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -200,9 +200,8 @@ theocracy_gov_ideas = {
 	
 	bonus = {
 		global_heretic_missionary_strength = 0.01
-		church_loyalty_modifier = 0.1
-		brahmins_hindu_loyalty_modifier = 0.1
-		brahmins_muslim_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
+		retirees_loyalty_modifier = 0.1
 	}
 	
 	trigger = {
@@ -384,8 +383,8 @@ religious_ideas = {
 
 	bonus = {
 		culture_conversion_cost = -0.25
-		brahmins_hindu_loyalty_modifier = 0.1
-		church_loyalty_modifier = 0.1
+		#brahmins_hindu_loyalty_modifier = 0.1
+		priests_loyalty_modifier = 0.1
 	}
 
 	missionary_schools = {
@@ -703,35 +702,35 @@ defensive_ideas = {
 	}
 	improved_foraging = {
 		garrison_size = 0.33
-		effect = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_country_flag = ned_buffed_forts_flag
-					}
-					every_owned_province = {
-						limit = {
-							region = low_countries_region
-							has_fort_building_trigger = yes
-						}
-						remove_province_modifier = ned_low_countries_fort_buff
-						add_province_modifier = {
-							name = ned_low_countries_fort_buff_buffed
-							duration = -1
-							hidden = yes
-						}
-					}
-				}
-			}
-		}
-		removed_effect = {
-			hidden_effect = {
-				every_owned_province = {
-					limit = { has_province_modifier = ned_low_countries_fort_buff_buffed }
-					remove_province_modifier = ned_low_countries_fort_buff_buffed
-				}
-			}
-		}
+		# effect = {
+		# 	hidden_effect = {
+		# 		if = {
+		# 			limit = {
+		# 				has_country_flag = ned_buffed_forts_flag
+		# 			}
+		# 			every_owned_province = {
+		# 				limit = {
+		# 					region = low_countries_region
+		# 					has_fort_building_trigger = yes
+		# 				}
+		# 				remove_province_modifier = ned_low_countries_fort_buff
+		# 				add_province_modifier = {
+		# 					name = ned_low_countries_fort_buff_buffed
+		# 					duration = -1
+		# 					hidden = yes
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# removed_effect = {
+		# 	hidden_effect = {
+		# 		every_owned_province = {
+		# 			limit = { has_province_modifier = ned_low_countries_fort_buff_buffed }
+		# 			remove_province_modifier = ned_low_countries_fort_buff_buffed
+		# 		}
+		# 	}
+		# }
 	}
 
 	#until_the_last_man = {
@@ -814,9 +813,9 @@ trade_ideas = {
 
 	bonus = {
 		merchants = 1
-		burghers_loyalty_modifier = 0.1
-		jains_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
+		investors_loyalty_modifier = 0.1
+		banks_loyalty_modifier = 0.1
+		#vaisyas_loyalty_modifier = 0.1
 	}
 
 	shrewd_commerce_practise = {
@@ -1112,24 +1111,24 @@ exploration_ideas = {
 			factor = 2.0
 			num_of_ports = 20
 		}
-		modifier = {
-			factor = 1000
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = SPA
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				tag = GBR
-				tag = NED
-				tag = ENG
-				tag = FRA
-				tag = KUR
-			}
-		}
+		# modifier = {
+		# 	factor = 1000
+		# 	OR = {
+		# 		tag = POR
+		# 		tag = CAS
+		# 		tag = SPA
+		# 	}
+		# }
+		# modifier = {
+		# 	factor = 2
+		# 	OR = {
+		# 		tag = GBR
+		# 		tag = NED
+		# 		tag = ENG
+		# 		tag = FRA
+		# 		tag = KUR
+		# 	}
+		# }
 	}
 }
 
@@ -1242,7 +1241,7 @@ quality_ideas = {
 
 	bonus = {
 		discipline = 0.05
-		janissaries_loyalty_modifier = 0.1
+		#janissaries_loyalty_modifier = 0.1
 		ghulams_loyalty_modifier = 0.1
 	}
 
@@ -1484,7 +1483,7 @@ expansion_ideas = {
 			NOT = {
 				technology_group = western
 				technology_group = eastern
-				technology_group = muslim
+				# technology_group = muslim
 			}
 		}
 	}
@@ -1568,8 +1567,7 @@ humanist_ideas = {
 	bonus = {
 		idea_cost = -0.1
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
-		brahmins_muslim_loyalty_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
+		families_loyalty_modifier = 0.1
 	}
 
 	local_traditions = {

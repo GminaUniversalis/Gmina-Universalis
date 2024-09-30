@@ -379,7 +379,7 @@ country_event = {
 			}
 		}
 		trading_part = {
-			trade_goods = tea
+			trade_goods = gu_vodka
 			value = 0.1
 		}
 	}
@@ -462,46 +462,46 @@ country_event = {
 }
 
 # The South German Organ Tradition
-country_event = {
-	id = cultural_event.11
-	title = cultural_event.11.t
-	desc = cultural_event.11.d
-	picture = CULTURE_eventPicture
+# country_event = {
+# 	id = cultural_event.11
+# 	title = cultural_event.11.t
+# 	desc = cultural_event.11.d
+# 	picture = CULTURE_eventPicture
 
-	trigger = {
-		current_age = age_of_absolutism
-		NOT = { has_country_flag = south_german_organ_tradition }
-		capital_scope = { continent = europe }
-		culture_group = germanic
-		any_owned_province = {
-			has_building = temple
-		}
-		adm_power = 30
-		years_of_income = 0.5
-	}
+# 	trigger = {
+# 		current_age = age_of_absolutism
+# 		NOT = { has_country_flag = south_german_organ_tradition }
+# 		capital_scope = { continent = europe }
+# 		culture_group = germanic
+# 		any_owned_province = {
+# 			has_building = temple
+# 		}
+# 		adm_power = 30
+# 		years_of_income = 0.5
+# 	}
 	
-	mean_time_to_happen = {
-		months = 180
-	}
+# 	mean_time_to_happen = {
+# 		months = 180
+# 	}
 	
-	immediate = {
-		set_country_flag = south_german_organ_tradition
-	}
+# 	immediate = {
+# 		set_country_flag = south_german_organ_tradition
+# 	}
 	
-	option = {
-		name = cultural_event.4.a
-		add_country_modifier = {
-			name = "south_german_organ_tradition"
-			duration = 10950
-		}
-		add_adm_power = -30
-		add_years_of_income = -0.5
-	}
-	option = {
-		name = cultural_event.4.b
-		add_prestige = -5
-	}
-}
+# 	option = {
+# 		name = cultural_event.4.a
+# 		add_country_modifier = {
+# 			name = "south_german_organ_tradition"
+# 			duration = 10950
+# 		}
+# 		add_adm_power = -30
+# 		add_years_of_income = -0.5
+# 	}
+# 	option = {
+# 		name = cultural_event.4.b
+# 		add_prestige = -5
+# 	}
+# }
 
 # Support Baroque Music
 country_event = {

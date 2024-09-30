@@ -1,0 +1,22 @@
+spawnable_ideas = {	
+	reason = {
+		tooltip_desc = "ideas_available_desc"
+		tooltip_reason = ""
+		weight = 100
+		trigger = {
+			ideas_available_scripted_trigger = yes
+		}
+	}
+}
+
+
+spawnable_no = {
+	reason = {
+		tooltip_desc = "spawnable_no_desc"
+		tooltip_reason = ""
+		weight = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

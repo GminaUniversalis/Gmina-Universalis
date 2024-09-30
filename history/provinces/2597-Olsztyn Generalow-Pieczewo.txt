@@ -16,3 +16,10 @@ add_core = N21
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_wool_trade_good
+
+1444.11.13 = {
+remove_core = N21
+add_core = N00
+owner = N00
+controller = N00
+}

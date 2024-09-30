@@ -1,6 +1,6 @@
 graphical_culture = westerngfx
 color = { 
-	73 254 128 
+	3 172 255
 }
 
 # Lista imion z pliku: Slaskie.txt
@@ -1844,4 +1844,34 @@ leader_names = {
  Radwaªski
  Frankiewicz
  Ludwiczak
+}
+
+ship_names = { 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
+}
+army_names = { 
+	"$PROVINCE$ army" 
+}
+fleet_names = { 
+	"$PROVINCE$ fleet" 
 }

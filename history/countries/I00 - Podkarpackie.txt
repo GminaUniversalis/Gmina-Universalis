@@ -1,5 +1,31 @@
 government = republic
-add_government_reform = parliamentary_republic_reform
+1390.1.1 = {
+	set_estate_privilege = estate_families_old_model
+	set_estate_privilege = estate_army_old_doctrine
+	set_estate_privilege = estate_ub_grasp_over_police
+	set_estate_privilege = estate_ub_grasp_over_politics
+	set_estate_privilege = estate_ub_grasp_over_economy
+	set_estate_privilege = estate_ub_classes_opression
+	set_estate_privilege = estate_ub_iron_propaganda
+
+}
+1399.1.1 = {
+	monarch = {
+		name = "Collegium"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+1444.1.1 = {
+	set_country_flag = picked_families_definer
+	set_country_flag = picked_families_old
+	set_country_flag = picked_army_definer
+	set_country_flag = picked_army_old_doctrine
+
+}
+add_government_reform = wojewodztwo_government_reform
 government_rank = 4
 technology_group = western
 capital = 2788

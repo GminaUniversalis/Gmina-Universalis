@@ -1,0 +1,22 @@
+#anbennar - used for the missions button
+missions_yes = {
+	reason = {
+		tooltip_desc = "missions_yes_desc"
+		tooltip_reason = ""
+		weight = 100
+		trigger = {
+			missions_available_scripted_trigger = yes
+		}
+	}
+}
+
+missions_no = {
+	reason = {
+		tooltip_desc = "missions_no_desc"
+		tooltip_reason = ""
+		weight = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

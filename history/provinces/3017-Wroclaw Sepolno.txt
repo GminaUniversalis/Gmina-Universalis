@@ -18,3 +18,10 @@ add_core = A27
 center_of_trade = 1
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_tourists_trade_good
+
+1444.11.13 = {
+remove_core = A27
+add_core = A00
+owner = A00
+controller = A00
+}

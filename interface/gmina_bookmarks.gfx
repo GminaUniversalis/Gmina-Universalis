@@ -80,6 +80,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/bookmarks/dlc_button_empty.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_dlc_button_missions"
+		texturefile = "gfx/interface/bookmarks/dlc_button_missions.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_dlc_button_spawnable"
+		texturefile = "gfx/interface/bookmarks/dlc_button_spawnable.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_lobby_shield"

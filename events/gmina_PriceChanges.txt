@@ -1,0 +1,1114 @@
+namespace = prices
+
+
+# Radom June 1976
+country_event = {
+	id = prices.1
+	title = prices.1.t
+	desc = prices.1.d
+	picture = RADOM_JUNEPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		controls = 2330
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1976
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = prices.1.a
+		change_price = {
+			trade_goods = gu_poultry
+			key = RADOM_JUNE
+			value = 0.5
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_pigs
+			key = RADOM_JUNE
+			value = 0.5
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_cattle
+			key = RADOM_JUNE
+			value = 0.5
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_dairy
+			key = RADOM_JUNE
+			value = 0.5
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = sugar
+			key = RADOM_JUNE
+			value = 1
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_vegetables
+			key = RADOM_JUNE
+			value = 0.3
+			duration = -1
+		}
+
+		add_country_modifier = {
+			name = "communism_price_increase"
+			duration = 1825
+		}
+
+		2330 = {
+			add_devastation = 50
+		}
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+				}
+				
+				country_event = { 
+					id = communism.1
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+
+# December Massacres 1970
+country_event = {
+	id = prices.2
+	title = prices.2.t
+	desc = prices.2.d
+	picture = DECEMBER_MASSACRESPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			has_terrain = urban
+			value = 1 
+		}
+		num_of_owned_provinces_with = {
+			has_terrain = coastline
+			value = 1 
+		}
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1970
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 12
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = prices.1.a
+		change_price = {
+			trade_goods = gu_wheat
+			key = DECEMBER_MASSACRES
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_triticale
+			key = DECEMBER_MASSACRES
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_barley
+			key = DECEMBER_MASSACRES
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_maize
+			key = DECEMBER_MASSACRES
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = fish
+			key = DECEMBER_MASSACRES
+			value = 0.2
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_fruits
+			key = DECEMBER_MASSACRES
+			value = 0.4
+			duration = -1
+		}
+
+		add_country_modifier = {
+			name = "communism_price_increase"
+			duration = 1825
+		}
+		
+		capital_scope = {
+			add_devastation = 50
+			add_base_manpower = -1
+		}
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+				}
+				
+				country_event = { 
+					id = communism.1
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+
+# Martial Law Economic Reform 1982
+country_event = {
+	id = prices.3
+	title = prices.3.t
+	desc = prices.3.d
+	picture = MARTIAL_LAW_ECONOMIC_REFORMPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			has_terrain = urban
+			value = 3 
+		}
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1982
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = prices.1.a
+		change_price = {
+			trade_goods = gu_lumber
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.5
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_coal
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.5
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = fish
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_wheat
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_triticale
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_barley
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_maize
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_mushrooms
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_vegetables
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_fruits
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_dairy
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		change_price = {
+			trade_goods = gu_oil
+			key = MARTIAL_LAW_ECONOMIC_REFORM
+			value = 0.3
+			duration = -1
+		}
+
+		add_country_modifier = {
+			name = "communism_price_increase"
+			duration = 1825
+		}
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+				}
+				
+				country_event = { 
+					id = communism.1
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+
+# Stonka ziemniaczana 1975
+country_event = {
+	id = prices.4
+	title = prices.4.t
+	desc = prices.4.d
+	picture = STONKAPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			trade_goods = gu_vegetables
+			value = 2
+		}
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1975
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = prices.4.a
+		change_price = {
+			trade_goods = gu_vegetables
+			key = STONKA
+			value = -0.25
+			duration = 3650
+		}
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				trade_goods = gu_vegetables
+			}
+			add_province_modifier = {
+				name = stonka_attack
+				duration = 730
+			}
+		}
+	}
+}
+
+
+# Bimbrownie 1980
+country_event = {
+	id = prices.5
+	title = prices.5.t
+	desc = prices.5.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			trade_goods = gu_vodka
+			value = 3
+		}
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1980
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 3
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = prices.5.a
+		change_price = {
+			trade_goods = gu_vodka
+			key = MOONSHINERS
+			value = -0.15
+			duration = -1
+		}
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				trade_goods = gu_vodka
+			}
+			add_province_modifier = {
+				name = moonshiners_problem
+				duration = 3650
+			}
+		}
+	}
+}
+
+# IKEA
+country_event = {
+	id = prices.6
+	title = prices.6.t
+	desc = prices.6.d
+	picture = price_event_ikea
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_terrain = high_urban
+				has_terrain = urban
+			}
+		}
+		current_age = age_of_reformation
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.6.a
+		change_price = {
+			trade_goods = gu_lumber
+			key = IKEA
+			value = 0.25
+			duration = -1}
+		change_price = {
+			trade_goods = gu_woodworking
+			key = IKEA
+			value = 0.50
+			duration = -1
+				
+		}
+		every_owned_province = {
+			limit = {
+				trade_goods = gu_lumber
+			}
+			add_base_production = 1
+		}	
+		
+		if = {
+			limit = {
+				gu_woodworking = 1
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = gu_woodworking
+				}
+				add_base_production = 4
+			}
+		}
+	}
+
+	immediate = {}
+}
+# ORLEN
+
+country_event = {
+	id = prices.7
+	title = prices.7.t
+	desc = prices.7.d
+	picture = price_event_orlen
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		current_age = age_of_reformation
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1999
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+
+		OR = {
+			religion = conservatism_aws
+			religion = liberalism_uw}
+		any_owned_province = {
+			trade_goods = gu_chemicals
+			base_production = 10
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.7.a
+		change_price = {
+			trade_goods = gu_chemicals
+			key = ORLEN
+			value = 0.25
+			duration = -1
+		}
+		random_owned_province = {
+			limit = {
+				AND = {
+				trade_goods = gu_chemicals
+				base_production = 10
+				}
+			}
+			add_province_modifier = {
+				name = orlen_head
+				duration = -1
+			}
+			add_base_production = 2
+		}
+	}
+
+	immediate = {}
+}
+
+#Rada Wzajemnej Pomocy Gospodarczej
+
+country_event = {
+	id = prices.13
+	title = prices.13.t
+	desc = prices.13.d
+	picture = price_event_rwpg
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		current_age = age_of_reformation
+		
+		calc_true_if = {
+			OR = {
+				trade_goods = gu_coal
+				trade_goods = gu_sulfur
+				trade_goods = iron
+				trade_goods = copper
+				trade_goods = naval_supplies
+			}
+			amount = 4
+		}
+
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.13.a
+		change_price = {
+			trade_goods = gu_coal
+			key = RWPG_left
+			value = -0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = gu_sulfur
+			key = RWPG_left
+			value = -0.15
+			duration = -1
+		}
+		change_price = {
+			trade_goods = iron
+			key = RWPG_left
+			value = -0.15
+			duration = -1
+		}
+		change_price = {
+			trade_goods = copper
+			key = RWPG_left
+			value = -0.15
+			duration = -1
+		}
+		change_price = {
+			trade_goods = naval_supplies
+			key = RWPG_left
+			value = -0.15
+			duration = -1
+		}
+		
+			add_stability = -1
+			
+	}
+	option = {
+		name = prices.13.b
+			change_price = {
+				trade_goods = gu_coal
+				key = RWPG_left
+				value = -0.25
+				duration = -1
+			}
+			change_price = {
+				trade_goods = gu_sulfur
+				key = RWPG_left
+				value = -0.15
+				duration = -1
+			}
+			change_price = {
+				trade_goods = iron
+				key = RWPG_left
+				value = -0.15
+				duration = -1
+			}
+			change_price = {
+				trade_goods = copper
+				key = RWPG_left
+				value = -0.15
+				duration = -1
+			}
+			change_price = {
+				trade_goods = naval_supplies
+				key = RWPG_left
+				value = -0.15
+				duration = -1
+			}
+
+
+			add_stability = -2
+			add_years_of_income = -0.5
+
+
+			every_country = { 
+				limit = { religion_group = communist_group }
+				add_opinion = {
+					who = ROOT
+					modifier = traitors_of_rwpg
+				}
+			}
+
+			every_owned_province = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = gu_coal
+							trade_goods = gu_sulfur
+							trade_goods = iron
+							trade_goods = copper
+							trade_goods = naval_supplies
+						}
+					}
+				}
+				add_province_modifier = {
+					name = structural_reform
+					duration = 5400
+				}		
+			}
+
+
+	}
+}
+
+#Paprykarz
+
+country_event = {
+	id = prices.8
+	title = prices.8.t
+	desc = prices.8.d
+	picture = price_event_paprykarz
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+		}
+
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2000
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 1
+			}
+		}
+
+		NOT = {
+			navy_size = 5
+		}
+		num_of_ports = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = prices.8.a
+		change_price = {
+			trade_goods = fish
+			key = Paprykarz
+			value = -0.40
+			duration = -1
+		}
+	
+		add_country_modifier = {
+			name = shipbuilding_problem
+			duration = 5473
+		}
+	
+			
+		
+	}
+
+	immediate = {}
+	
+}
+
+#Dobranocny 
+
+country_event = {
+	id = prices.9
+	title = prices.9.t
+	desc = prices.9.d
+	picture = price_event_nightgarden
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2008
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 1
+			}
+		}
+
+		OR = {
+			NOT = {
+				heir_age = 8
+			}
+			has_heir = no
+		}
+
+		OR = {
+			has_consort_regency	= yes
+			has_regency	= yes
+			government = republic
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = prices.9.a
+		change_price = {
+			trade_goods = gu_stone
+			key = makapaka
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = natural_scientist
+			name = "Makka Pakka"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+
+		}
+		extend_regency = 7
+    }
+	option = {
+		name = prices.9.b
+		change_price = {
+			trade_goods = cloth
+			key = igglepiggle
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = statesman
+			name = "Iggle Piggle"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+		}
+		extend_regency = 7
+	}
+	option = {
+		name = prices.9.c
+		change_price = {
+			trade_goods = gu_confectionery
+			key = upsydaisy
+			value = 0.20
+			duration = -1
+		}
+	
+		hire_advisor = {
+    		type = quartermaster
+			name = "Upsy Daisy"
+			skill = 2
+			culture = ruler_culture
+			religion = ruler_religion
+			cost_multiplier = 0.33
+			max_age = 50
+			female = yes
+		}
+		extend_regency = 7
+	}
+	option = {
+		name = prices.9.e
+	}
+	immediate = {}
+	
+}
+
+#Telefonia analogowa
+
+country_event = {
+	id = prices.10
+	title = prices.10.t
+	desc = prices.10.d
+	picture = price_event_tel_1
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		NOT = {
+			current_age = age_of_discovery
+		}
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1991
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = prices.10.a
+		change_price = {
+			trade_goods = paper
+			key = tel_1
+			value = -0.10
+			duration = -1
+		}
+		change_innovativeness = 5
+		custom_tooltip = prices.10.a.t
+		set_global_flag = tel_analogowa
+
+	}
+
+	immediate = {}
+}
+
+#Nowoczesna telefonia cyfrowa
+
+country_event = {
+	id = prices.12
+	title = prices.12.t
+	desc = prices.12.d
+	picture = price_event_tel_2
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1996
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
+		gu_electronics = 1
+		
+		has_global_flag = tel_analogowa
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = prices.12.a
+		change_price = {
+			trade_goods = paper
+			key = tel_2
+			value = -0.40
+			duration = -1
+		}
+		change_price = {
+			trade_goods = gu_electronics
+			key = tel_2
+			value = 0.40
+			duration = -1  
+			
+		}
+		change_innovativeness = 7
+	}
+
+	immediate = {}
+}
+
+#Wolny slot
+
+# # Coldest Period of the  Little Ice Age 
+# country_event = {
+# 	id = prices.11
+# 	title = prices.11.t
+# 	desc = prices.11.d
+# 	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
+
+# 	fire_only_once = yes
+	
+# 	major = yes
+
+# 	trigger = {
+# 		OR = {
+# 			owns = 371 #Iceland was hit badly by the Little Ice Age
+# 			owns = 370 #Iceland was hit badly by the Little Ice Age
+# 		}
+# 		is_year = 1650
+# 		not = { is_year = 1660 }
+# 	}
+# 	mean_time_to_happen = {
+# 		months = 3
+# 	}
+	
+	
+# 	option = {
+# 		name = prices.11.a
+# 		change_price = {
+# 			trade_goods = grain #Agriculture is having a hard time coping.
+# 			key = LITTLE_ICE_AGE
+# 			value = -0.25
+# 			duration = 3650
+# 		}
+# 		change_price = {
+# 			trade_goods = livestock #Agriculture is having a hard time coping.
+# 			key = LITTLE_ICE_AGE
+# 			value = -0.25
+# 			duration = 3650
+# 		}
+# 		change_price = {
+# 			trade_goods = wine #Spoiled by the cold
+# 			key = LITTLE_ICE_AGE
+# 			value = -0.25
+# 			duration = 3650
+# 		}
+# 		change_price = {
+# 			trade_goods = fish #Fishing fleets are having a hard time to coping.
+# 			key = LITTLE_ICE_AGE
+# 			value = -0.25
+# 			duration = 3650
+# 		}
+# 		change_price = {
+# 			trade_goods = salt	#Food Preservation.
+# 			key = LITTLE_ICE_AGE
+# 			value = 0.25
+# 			duration = 3650
+# 		}
+# 		change_price = {
+# 			trade_goods = fur #Increased demand due to colder climate.
+# 			key = LITTLE_ICE_AGE
+# 			value = 0.25
+# 			duration = 3650
+# 		}
+# 	}
+# }

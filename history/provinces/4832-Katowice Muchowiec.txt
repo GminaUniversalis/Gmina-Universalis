@@ -17,3 +17,10 @@ discovered_by = ottoman
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_lumber_trade_good
+
+1444.11.13 = {
+remove_core = L14
+add_core = L00
+owner = L00
+controller = L00
+}

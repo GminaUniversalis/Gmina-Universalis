@@ -40,10 +40,6 @@ country_event = {
 	trigger = {
 		current_age = age_of_discovery
 	}
-
-	mean_time_to_happen = {
-		days = 20
-	}
 	
 	option = {
 		name = communism.2.a
@@ -64,10 +60,6 @@ country_event = {
 	trigger = {
 		current_age = age_of_discovery
 	}
-
-	mean_time_to_happen = {
-		days = 20
-	}
 	
 	option = {
 		name = communism.3.a
@@ -87,10 +79,6 @@ country_event = {
 
 	trigger = {
 		current_age = age_of_discovery
-	}
-
-	mean_time_to_happen = {
-		days = 60
 	}
 	
 	option = {
@@ -124,10 +112,6 @@ country_event = {
 
 	trigger = {
 		current_age = age_of_discovery
-	}
-
-	mean_time_to_happen = {
-		days = 60
 	}
 	
 	option = {

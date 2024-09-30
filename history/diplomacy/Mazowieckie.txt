@@ -1,0 +1,27 @@
+march = {
+	first = G39
+	second = G20
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+march = {
+	first = G40
+	second = G35
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+march = {
+	first = G41
+	second = G28
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+
+march = {
+	first = G42
+	second = G09
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}

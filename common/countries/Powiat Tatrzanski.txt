@@ -1,6 +1,6 @@
 #Country Name: Powiat Tatrzanski
 graphical_culture = westerngfx
-color = { 124 231 42 }
+color = { 0 115 57 }
 revolutionary_colors = { 13 10 4 }
 
 historical_units = { 
@@ -20,14 +20,35 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
+
 ship_names = { 
-	"Comte de Smet de Nayer" 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
 }
 army_names = { 
-	"Placeholder $PROVINCE$" 
+	"$PROVINCE$ army" 
 }
 fleet_names = { 
-	"Placeholder_Fleet1" 
+	"$PROVINCE$ fleet" 
 }
 
 # Lista imion z pliku: Malopolskie.txt

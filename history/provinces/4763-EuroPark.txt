@@ -1,0 +1,16 @@
+add_core = I03
+owner = I03
+culture = wschodnio-krakowska
+religion = communism_pzpr
+controller = I03
+is_city = no
+discovered_by = western
+discovered_by = eastern
+discovered_by = ottoman
+
+1444.11.13 = {
+remove_core = I03
+add_core = I00
+owner = I00
+controller = I00
+}

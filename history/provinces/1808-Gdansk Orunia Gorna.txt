@@ -18,3 +18,10 @@ controller = Y19
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_beer_trade_good
+
+1444.11.13 = {
+remove_core = Y19
+add_core = Y00
+owner = Y00
+controller = Y00
+}

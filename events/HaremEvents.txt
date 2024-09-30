@@ -7,339 +7,339 @@ namespace = harem_events
 
 
 # The Sons of [Root.Monarch.GetName]
-country_event = {
-	id = harem_events.1
-	title = harem_events.1.t
-	picture = 3_SONS_eventPicture
+# country_event = {
+# 	id = harem_events.1
+# 	title = harem_events.1.t
+# 	picture = 3_SONS_eventPicture
 	
-	trigger = {
-		OR = {
-			has_dlc = "Rights of Man"
-			has_dlc = "Domination"
-		}
-		#NOT = { has_disaster = tur_disaster_plot_of_the_harem }
-		#We shouldn't block the ability to get heirs for harem countries as they can't get any heirs the normal way
-		has_government_attribute = has_harem_events
-		ruler_age = 30
-		has_heir = no
-		has_government_attribute = heir
-	}
+# 	trigger = {
+# 		OR = {
+# 			has_dlc = "Rights of Man"
+# 			has_dlc = "Domination"
+# 		}
+# 		#NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+# 		#We shouldn't block the ability to get heirs for harem countries as they can't get any heirs the normal way
+# 		has_government_attribute = has_harem_events
+# 		ruler_age = 30
+# 		has_heir = no
+# 		has_government_attribute = heir
+# 	}
 	
-	desc = {
-		trigger = {
-			is_female = yes
-		}
-		desc = harem_events.1.female #Fallback, not likely to ever be used in vanilla.
-	}
-	desc = {
-		trigger = {
-			is_female = no
-			NOT = { has_country_modifier = custodian_of_the_two_holy_mosques }
-			OR = {
-				NOT = { owns = 149 } #Edirne
-				NOT = { owns = 151 } #Constantinople
-				NOT = { owns = 317 } #Bursa
-			}
-			NOT = { owns = 361 } #Cairo
-		}
-		desc = harem_events.1.da
-	}
-	desc = {
-		trigger = {
-			is_female = no
-			NOT = { has_country_modifier = custodian_of_the_two_holy_mosques }
-			owns = 149 #Edirne
-			owns = 151 #Constantinople
-			owns = 317 #Bursa
-			NOT = { owns = 361 } #Cairo
-		}
-		desc = harem_events.1.db
-	}
-	desc = {
-		trigger = {
-			is_female = no
-			has_country_modifier = custodian_of_the_two_holy_mosques
-			owns = 149 #Edirne
-			owns = 151 #Constantinople
-			owns = 317 #Bursa
-			NOT = { owns = 361 } #Cairo
-		}
-		desc = harem_events.1.dc
-	}
-	desc = {
-		trigger = {
-			is_female = no
-			has_country_modifier = custodian_of_the_two_holy_mosques
-			owns = 149 #Edirne
-			owns = 151 #Constantinople
-			owns = 317 #Bursa
-			owns = 361 #Cairo
-		}
-		desc = harem_events.1.dd
-	}
+# 	desc = {
+# 		trigger = {
+# 			is_female = yes
+# 		}
+# 		desc = harem_events.1.female #Fallback, not likely to ever be used in vanilla.
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			is_female = no
+# 			NOT = { has_country_modifier = custodian_of_the_two_holy_mosques }
+# 			OR = {
+# 				NOT = { owns = 149 } #Edirne
+# 				NOT = { owns = 151 } #Constantinople
+# 				NOT = { owns = 317 } #Bursa
+# 			}
+# 			NOT = { owns = 361 } #Cairo
+# 		}
+# 		desc = harem_events.1.da
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			is_female = no
+# 			NOT = { has_country_modifier = custodian_of_the_two_holy_mosques }
+# 			owns = 149 #Edirne
+# 			owns = 151 #Constantinople
+# 			owns = 317 #Bursa
+# 			NOT = { owns = 361 } #Cairo
+# 		}
+# 		desc = harem_events.1.db
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			is_female = no
+# 			has_country_modifier = custodian_of_the_two_holy_mosques
+# 			owns = 149 #Edirne
+# 			owns = 151 #Constantinople
+# 			owns = 317 #Bursa
+# 			NOT = { owns = 361 } #Cairo
+# 		}
+# 		desc = harem_events.1.dc
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			is_female = no
+# 			has_country_modifier = custodian_of_the_two_holy_mosques
+# 			owns = 149 #Edirne
+# 			owns = 151 #Constantinople
+# 			owns = 317 #Bursa
+# 			owns = 361 #Cairo
+# 		}
+# 		desc = harem_events.1.dd
+# 	}
 
-	immediate = {
-		hidden_effect = {
-			random_list = {
-				33 = {
-					set_country_flag = harem_fairest_heir #Completely Random
-				}
-				33 = {
-					set_country_flag = harem_strong_heir #Atleast 1 MIl
-				}
-				33 = {
-					set_country_flag = harem_leadership_heir #Atleast 1 MIL
-				}
-				1 = {
-					set_country_flag = harem_genious_heir #Atleast 1 in every stat.
-				}
-			}
-			random_list = {
-				33 = {
-					set_country_flag = harem_studious_heir #Atleast 1 ADM
-				}
-				33 = {
-					set_country_flag = harem_pious_heir #Atleast 1 ADM
-				}
-				33 = {
-					set_country_flag = harem_inquisitive_heir #Completely Random
-				}
-			}
-			random_list = {
-				33 = {
-					set_country_flag = harem_gregarious_heir #Atleast 1 DIP
-				}
-				33 = {
-					set_country_flag = harem_entrepreneurial_heir #Atleast 1 DIP
-				}
-				33 = {
-					set_country_flag = harem_generous_heir #Completely Random
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_list = {
+# 				33 = {
+# 					set_country_flag = harem_fairest_heir #Completely Random
+# 				}
+# 				33 = {
+# 					set_country_flag = harem_strong_heir #Atleast 1 MIl
+# 				}
+# 				33 = {
+# 					set_country_flag = harem_leadership_heir #Atleast 1 MIL
+# 				}
+# 				1 = {
+# 					set_country_flag = harem_genious_heir #Atleast 1 in every stat.
+# 				}
+# 			}
+# 			random_list = {
+# 				33 = {
+# 					set_country_flag = harem_studious_heir #Atleast 1 ADM
+# 				}
+# 				33 = {
+# 					set_country_flag = harem_pious_heir #Atleast 1 ADM
+# 				}
+# 				33 = {
+# 					set_country_flag = harem_inquisitive_heir #Completely Random
+# 				}
+# 			}
+# 			random_list = {
+# 				33 = {
+# 					set_country_flag = harem_gregarious_heir #Atleast 1 DIP
+# 				}
+# 				33 = {
+# 					set_country_flag = harem_entrepreneurial_heir #Atleast 1 DIP
+# 				}
+# 				33 = {
+# 					set_country_flag = harem_generous_heir #Completely Random
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 6
-	}
+# 	mean_time_to_happen = {
+# 		months = 6
+# 	}
 
-	option = {
-		name = harem_events.1.a #Pious
-		trigger = {
-			ai = no
-			has_country_flag = harem_pious_heir
-		}
-		define_heir = {
-			dynasty = original_dynasty
-			male = yes
-			change_adm = 1
-			max_random_dip = 5
-			age = 10
-		}
-	}
-	option = {	 
-		name = harem_events.1.b #Strong
-		trigger = {
-			ai = no
-			has_country_flag = harem_strong_heir
-		}
-		if = {
-			limit = { has_country_modifier = tur_weakened_the_harem }
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_mil = 1
-				max_random_dip = 3
-				age = 10
-			}
-		}
-		else = {
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_mil = 1
-				max_random_dip = 5
-				age = 10
-			}
-		}
-	}
-	option = {	 
-		name = harem_events.1.c #Studious
-		trigger = {
-			ai = no
-			has_country_flag = harem_studious_heir
-		}
-		if = {
-			limit = { has_country_modifier = tur_weakened_the_harem }
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_adm = 1
-				max_random_mil = 3
-				age = 10
-			}
-		}
-		else = {
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_adm = 1
-				max_random_mil = 5
-				age = 10
-			}
-		}
-	}
-	option = {	 
-		name = harem_events.1.e #leadership
-		trigger = {
-			ai = no
-			has_country_flag = harem_leadership_heir
-		}
-		if = {
-			limit = { has_country_modifier = tur_weakened_the_harem }
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_mil = 1
-				max_random_adm = 3
-				age = 10
-			}
-		}
-		else = {
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_mil = 1
-				max_random_adm = 5
-				age = 10
-			}
-		}
-	}
-	option = {	 
-		name = harem_events.1.d
-		trigger = {
-			ai = no
-			has_country_flag = harem_gregarious_heir
-		}
-		if = {
-			limit = { has_country_modifier = tur_weakened_the_harem }
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_dip = 1
-				max_random_mil = 3
-				age = 10
-			}
-		}
-		else = {
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_dip = 1
-				max_random_mil = 5
-				age = 10
-			}
-		}
-	}
-	option = {	 
-		name = harem_events.1.f
-		trigger = {
-			ai = no
-			has_country_flag = harem_fairest_heir
-		}
-		define_heir = {
-			dynasty = original_dynasty
-			male = yes
-			age = 10
-		}
-	}
-	option = {	 
-		name = harem_events.1.g
-		trigger = {
-			ai = no
-			has_country_flag = harem_entrepreneurial_heir
-		}
-		if = {
-			limit = { has_country_modifier = tur_weakened_the_harem }
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_dip = 1
-				max_random_adm = 3
-				age = 10
-			}
-		}
-		else = {
-			define_heir = {
-				dynasty = original_dynasty
-				male = yes
-				change_dip = 1
-				max_random_adm = 5
-				age = 10
-			}
-		}
-	}
-	option = {	 
-		name = harem_events.1.h
-		trigger = { has_country_flag = harem_inquisitive_heir }
-		define_heir = {
-			dynasty = original_dynasty
-			male = yes
-			age = 10
-		}
-	}
-	option = {	 
-		name = harem_events.1.i
-		trigger = {
-			ai = no
-			has_country_flag = harem_genious_heir
-		}
-		define_heir = {
-			dynasty = original_dynasty
-			male = yes
-			change_dip = 1
-			change_mil = 1
-			change_adm = 1
-			age = 10
-		}
-	}
-	option = {	 
-		name = harem_events.1.j
-		trigger = {
-			ai = no
-			has_country_flag = harem_generous_heir
-		}
-		define_heir = {
-			dynasty = original_dynasty
-			male = yes
-			age = 10
-		}
-	}
-	option = {
-		trigger = { ai = yes } #Because the AI cannot tell the candidates apart (like a human would) it instead gets a small boost to every stat.
-		name = harem_events.1.j
-		define_heir = {
-			dynasty = original_dynasty
-			male = yes
-			age = 10
-			change_adm = 1
-			change_dip = 1
-			change_mil = 1
-		}
-	}
-	after = {
-		clr_country_flag = harem_pious_heir
-		clr_country_flag = harem_strong_heir
-		clr_country_flag = harem_leadership_heir
-		clr_country_flag = harem_genious_heir
-		clr_country_flag = harem_studious_heir
-		clr_country_flag = harem_inquisitive_heir
-		clr_country_flag = harem_gregarious_heir
-		clr_country_flag = harem_entrepreneurial_heir
-		clr_country_flag = harem_generous_heir
-		clr_country_flag = harem_fairest_heir
-	}
-}
+# 	option = {
+# 		name = harem_events.1.a #Pious
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_pious_heir
+# 		}
+# 		define_heir = {
+# 			dynasty = original_dynasty
+# 			male = yes
+# 			change_adm = 1
+# 			max_random_dip = 5
+# 			age = 10
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.b #Strong
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_strong_heir
+# 		}
+# 		if = {
+# 			limit = { has_country_modifier = tur_weakened_the_harem }
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_mil = 1
+# 				max_random_dip = 3
+# 				age = 10
+# 			}
+# 		}
+# 		else = {
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_mil = 1
+# 				max_random_dip = 5
+# 				age = 10
+# 			}
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.c #Studious
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_studious_heir
+# 		}
+# 		if = {
+# 			limit = { has_country_modifier = tur_weakened_the_harem }
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_adm = 1
+# 				max_random_mil = 3
+# 				age = 10
+# 			}
+# 		}
+# 		else = {
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_adm = 1
+# 				max_random_mil = 5
+# 				age = 10
+# 			}
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.e #leadership
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_leadership_heir
+# 		}
+# 		if = {
+# 			limit = { has_country_modifier = tur_weakened_the_harem }
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_mil = 1
+# 				max_random_adm = 3
+# 				age = 10
+# 			}
+# 		}
+# 		else = {
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_mil = 1
+# 				max_random_adm = 5
+# 				age = 10
+# 			}
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.d
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_gregarious_heir
+# 		}
+# 		if = {
+# 			limit = { has_country_modifier = tur_weakened_the_harem }
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_dip = 1
+# 				max_random_mil = 3
+# 				age = 10
+# 			}
+# 		}
+# 		else = {
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_dip = 1
+# 				max_random_mil = 5
+# 				age = 10
+# 			}
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.f
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_fairest_heir
+# 		}
+# 		define_heir = {
+# 			dynasty = original_dynasty
+# 			male = yes
+# 			age = 10
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.g
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_entrepreneurial_heir
+# 		}
+# 		if = {
+# 			limit = { has_country_modifier = tur_weakened_the_harem }
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_dip = 1
+# 				max_random_adm = 3
+# 				age = 10
+# 			}
+# 		}
+# 		else = {
+# 			define_heir = {
+# 				dynasty = original_dynasty
+# 				male = yes
+# 				change_dip = 1
+# 				max_random_adm = 5
+# 				age = 10
+# 			}
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.h
+# 		trigger = { has_country_flag = harem_inquisitive_heir }
+# 		define_heir = {
+# 			dynasty = original_dynasty
+# 			male = yes
+# 			age = 10
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.i
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_genious_heir
+# 		}
+# 		define_heir = {
+# 			dynasty = original_dynasty
+# 			male = yes
+# 			change_dip = 1
+# 			change_mil = 1
+# 			change_adm = 1
+# 			age = 10
+# 		}
+# 	}
+# 	option = {	 
+# 		name = harem_events.1.j
+# 		trigger = {
+# 			ai = no
+# 			has_country_flag = harem_generous_heir
+# 		}
+# 		define_heir = {
+# 			dynasty = original_dynasty
+# 			male = yes
+# 			age = 10
+# 		}
+# 	}
+# 	option = {
+# 		trigger = { ai = yes } #Because the AI cannot tell the candidates apart (like a human would) it instead gets a small boost to every stat.
+# 		name = harem_events.1.j
+# 		define_heir = {
+# 			dynasty = original_dynasty
+# 			male = yes
+# 			age = 10
+# 			change_adm = 1
+# 			change_dip = 1
+# 			change_mil = 1
+# 		}
+# 	}
+# 	after = {
+# 		clr_country_flag = harem_pious_heir
+# 		clr_country_flag = harem_strong_heir
+# 		clr_country_flag = harem_leadership_heir
+# 		clr_country_flag = harem_genious_heir
+# 		clr_country_flag = harem_studious_heir
+# 		clr_country_flag = harem_inquisitive_heir
+# 		clr_country_flag = harem_gregarious_heir
+# 		clr_country_flag = harem_entrepreneurial_heir
+# 		clr_country_flag = harem_generous_heir
+# 		clr_country_flag = harem_fairest_heir
+# 	}
+# }
 
 # Kiliç alayi
 country_event = {
@@ -353,7 +353,7 @@ country_event = {
 			has_dlc = "Rights of Man"
 			has_dlc = "Domination"
 		}
-		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+#		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
 	}
 	
 	immediate = {
@@ -410,7 +410,7 @@ country_event = {
 				}
 			}
 		}
-		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+#		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
 	}
 	
 	immediate = {
@@ -499,7 +499,7 @@ country_event = {
 				has_province_modifier = heir_in_training
 			}
 		}
-		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+#		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
 	}
 	
 	mean_time_to_happen = {
@@ -1212,10 +1212,10 @@ country_event = {
 				event_target:enemy_neighbor_ottomans = {
 					NOT = { religion_group = muslim }
 				}
-				has_estate = estate_church
+				has_estate = estate_priests
 			}
 			add_estate_loyalty = {
-				estate = estate_church
+				estate = estate_priests
 				loyalty = 10
 			}
 		}
@@ -1280,7 +1280,7 @@ country_event = {
 		has_government_attribute = queen
 		has_government_attribute = heir
 		NOT = { has_ruler_flag = death_of_valide_sultan }
-		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+#		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
 	 }
 	
 	mean_time_to_happen = {
@@ -1340,7 +1340,7 @@ country_event = {
 			}
 		}
 		stability = 1
-		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+#		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
 	 }
 	
 	mean_time_to_happen = {
@@ -1376,55 +1376,55 @@ country_event = {
 }
 
 # Charitable work of the Haseki Sultan
-province_event = {
-	id = harem_events.19
-	title = harem_events.19.t
-	desc = harem_events.19.d
-	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+# province_event = {
+# 	id = harem_events.19
+# 	title = harem_events.19.t
+# 	desc = harem_events.19.d
+# 	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
 	
-	trigger = {
-		OR = {
-			has_dlc = "Rights of Man"
-			has_dlc = "Domination"
-		}
-		is_capital = no
-		is_state = yes
-		owner = {
-			has_government_attribute = has_harem_events
-			has_heir = yes
-			has_consort = yes
-			OR = {
-				consort_mil = 4
-				consort_dip = 4
-				consort_adm = 4
-			}
-		}
+# 	trigger = {
+# 		OR = {
+# 			has_dlc = "Rights of Man"
+# 			has_dlc = "Domination"
+# 		}
+# 		is_capital = no
+# 		is_state = yes
+# 		owner = {
+# 			has_government_attribute = has_harem_events
+# 			has_heir = yes
+# 			has_consort = yes
+# 			OR = {
+# 				consort_mil = 4
+# 				consort_dip = 4
+# 				consort_adm = 4
+# 			}
+# 		}
 		
-		NOT = { has_province_modifier = charitable_work_of_haseki }
-		owner = { NOT = { has_disaster = tur_disaster_plot_of_the_harem } }
-	}
+# 		NOT = { has_province_modifier = charitable_work_of_haseki }
+# 		owner = { NOT = { has_disaster = tur_disaster_plot_of_the_harem } }
+# 	}
 	
-	mean_time_to_happen = {
-		months = 400
-	}
+# 	mean_time_to_happen = {
+# 		months = 400
+# 	}
 	
-	is_mtth_scaled_to_size = 1
+# 	is_mtth_scaled_to_size = 1
 	 
-	option = {
-		name = harem_events.19.a
-		area = {
-			limit = {
-				owned_by = ROOT
-				is_capital = no
-				NOT = { has_province_modifier = charitable_work_of_haseki }
-			}
-			add_province_modifier = {
-				name = "charitable_work_of_haseki"
-				duration = 3650
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = harem_events.19.a
+# 		area = {
+# 			limit = {
+# 				owned_by = ROOT
+# 				is_capital = no
+# 				NOT = { has_province_modifier = charitable_work_of_haseki }
+# 			}
+# 			add_province_modifier = {
+# 				name = "charitable_work_of_haseki"
+# 				duration = 3650
+# 			}
+# 		}
+# 	}
+# }
 
 # Haseki Sultan Challenged
 country_event = {
@@ -1442,7 +1442,7 @@ country_event = {
 		has_regency = no
 		has_consort = yes
 		has_government_attribute = queen
-		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+#		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
 	}
 	
 	mean_time_to_happen = {
@@ -1483,7 +1483,7 @@ country_event = {
 		has_consort = no
 		has_government_attribute = queen
 		NOT = { has_ruler_flag = death_of_valide_sultan }
-		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+#		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
 	}
 	
 	mean_time_to_happen = {
@@ -1534,10 +1534,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 400
-		modifier = {
-			owner = { has_disaster = tur_disaster_plot_of_the_harem }
-			factor = 0.5
-		}
+		# modifier = {
+		# 	owner = { has_disaster = tur_disaster_plot_of_the_harem }
+		# 	factor = 0.5
+		# }
 	}
 	
 	is_mtth_scaled_to_size = 1
@@ -1602,10 +1602,10 @@ country_event = {
 	 
 	mean_time_to_happen = {
 		months = 400
-		modifier = {
-			has_disaster = tur_disaster_plot_of_the_harem
-			factor = 0.5
-		}
+		# modifier = {
+		# 	has_disaster = tur_disaster_plot_of_the_harem
+		# 	factor = 0.5
+		# }
 	}
 	
 
@@ -1637,7 +1637,7 @@ province_event = {
 			has_heir = yes
 			heir_age = 15
 			has_government_attribute = has_harem_events
-			NOT = { has_disaster = tur_disaster_plot_of_the_harem }
+	#		NOT = { has_disaster = tur_disaster_plot_of_the_harem }
 		}
 		
 		OR = {

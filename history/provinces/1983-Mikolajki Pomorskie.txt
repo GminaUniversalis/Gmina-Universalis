@@ -15,3 +15,10 @@ add_core = Y07
 discovered_by = ottoman
 set_province_flag = has_static_trade_good
 set_province_flag = has_gu_vegetables_trade_good
+
+1444.11.13 = {
+remove_core = Y07
+add_core = Y00
+owner = Y00
+controller = Y00
+}

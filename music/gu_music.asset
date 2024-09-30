@@ -1,0 +1,12 @@
+music = {
+	name = "D2 Startup" #Yes, I stole that from Volvo
+	file = "Dota2_Startup_2014.ogg"
+}
+music = {
+	name = "Rising Star"
+	file = "Rising Star.ogg"
+}
+music = {
+	name = "Fading Echoes"
+	file = "Fading Echoes.ogg"
+}

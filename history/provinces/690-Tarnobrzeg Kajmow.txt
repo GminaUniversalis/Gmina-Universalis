@@ -16,3 +16,10 @@ add_core = I24
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_fish_trade_good
+
+1444.11.13 = {
+remove_core = I24
+add_core = I00
+owner = I00
+controller = I00
+}

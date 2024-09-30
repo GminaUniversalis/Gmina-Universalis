@@ -30,78 +30,23 @@ has_loyal_sheikh_ul_islam_trigger = {
 #Any religious Scholar?
 #Country Scope
 has_religious_scholars_trigger = {
-	custom_trigger_tooltip = {
-		tooltip = has_religious_scholars_trigger_tooltip
-		OR = {
-			has_country_modifier = hanafi_scholar_modifier
-			has_country_modifier = hanbali_scholar_modifier
-			has_country_modifier = maliki_scholar_modifier
-			has_country_modifier = shafii_scholar_modifier
-			has_country_modifier = ismaili_scholar_modifier
-			has_country_modifier = jafari_scholar_modifier
-			has_country_modifier = zaidi_scholar_modifier
-		}
-	}
 }
 
 #Scholars from where?
 #Country Scope
 scholar_from_our_school_trigger = {
-	has_country_modifier = $school$_scholar_modifier
-	ROOT = {
-		religious_school = {
-			group = muslim
-			school = $school$_school
-		}
-	}
 }
 our_scholar_matches_their_school_trigger = {
-	PREV = { has_country_modifier = $school$_scholar_modifier }
-	religious_school = {
-		group = muslim
-		school = $school$_school
-	}
+
 }
 
 #Uses one of the Shia schools:
 #Country
 has_shia_school_trigger = {
-	OR = {
-		religious_school = {
-			group = muslim
-			school = ismaili_school
-		}
-		religious_school = {
-			group = muslim
-			school = jafari_school
-		}
-		religious_school = {
-			group = muslim
-			school = zaidi_school
-		}
-	}
 }
 #Uses one of the Sunni schools:
 #Country
 has_sunni_school_trigger = {
-	OR = {
-		religious_school = {
-			group = muslim
-			school = hanbali_school
-		}
-		religious_school = {
-			group = muslim
-			school = hanafi_school
-		}
-		religious_school = {
-			group = muslim
-			school = shafii_school
-		}
-		religious_school = {
-			group = muslim
-			school = maliki_school
-		}
-	}
 }
 
 #Country Scope

@@ -156,12 +156,12 @@ estate_church_build_temple_in_y = {
     task_requirements = {
 		if = {
 			limit = {
-				has_estate_agenda_auto_completion = {
-					estate = estate_church
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_investors
+			}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_church
+				estate = estate_priests
 			}
 		}
 		else = {
@@ -188,22 +188,22 @@ estate_church_build_temple_in_y = {
     }
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_church
+			estate = estate_priests
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 		if = {
 			limit = {
 				NOT = { crown_land_share = 15 }
 				estate_territory = {
-					estate = estate_church
+					estate = estate_priests
 					territory = 10
 				}
-				estate_not_has_exempt_from_seize_land_privilege = { estate = estate_church }
+				estate_not_has_exempt_from_seize_land_privilege = { estate = estate_priests }
 			}
-			take_estate_land_share_small = { estate = estate_church }
+			take_estate_land_share_small = { estate = estate_priests }
 		}
 		else = {
 			event_target:agenda_province = {
@@ -224,7 +224,7 @@ estate_church_build_temple_in_y = {
 			}
 		}
 		add_estate_loyalty_modifier = {
-			estate = estate_church
+			estate = estate_priests
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -828,7 +828,7 @@ estate_nobles_build_army_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3083,7 +3083,7 @@ estate_nobles_build_fort_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -5985,7 +5985,7 @@ estate_burghers_build_trade_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -6309,7 +6309,7 @@ estate_burghers_build_port_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -6610,7 +6610,7 @@ estate_burghers_build_production_building_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -7564,11 +7564,11 @@ estate_burghers_build_production_building_in_y = {
 # 		if = {
 # 			limit = {
 # 				has_estate_agenda_auto_completion = {
-# 					estate = estate_church
+# 					estate = estate_priests
 # 				}
 # 			}
 # 			has_estate_agenda_auto_completion = {
-# 				estate = estate_church
+# 				estate = estate_priests
 # 			}
 # 		}
 # 		else = {
@@ -8602,7 +8602,7 @@ estate_nobles_build_manufactory_in_y = {
 		any_owned_province = {
 			is_state_core = root
 			root_can_build_manufactory_here_trigger = yes
-			has_nobles_trade_good_trigger = yes
+			#has_nobles_trade_good_trigger = yes
 		}
 		monthly_income = 30
 	}
@@ -8634,7 +8634,7 @@ estate_nobles_build_manufactory_in_y = {
 			limit = {
 				is_state_core = root
 				root_can_build_manufactory_here_trigger = yes
-				has_nobles_trade_good_trigger = yes
+				#has_nobles_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -8643,7 +8643,7 @@ estate_nobles_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 5
 				root_can_build_manufactory_here_trigger = yes
-				has_nobles_trade_good_trigger = yes
+				#has_nobles_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -8652,7 +8652,7 @@ estate_nobles_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 10
 				root_can_build_manufactory_here_trigger = yes
-				has_nobles_trade_good_trigger = yes
+				#has_nobles_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -8673,7 +8673,7 @@ estate_nobles_build_manufactory_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -8705,8 +8705,8 @@ estate_nobles_build_manufactory_in_y = {
 								OR = {
 									trade_goods = wool
 									trade_goods = cloth
-									trade_goods = silk
-									trade_goods = dyes
+									trade_goods = gu_vehicles
+									trade_goods = gu_oil
 								}
 							}
 							has_building = textile
@@ -8714,12 +8714,12 @@ estate_nobles_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = ivory
-									trade_goods = slaves
-									trade_goods = spices
+									trade_goods = gu_stone
+									trade_goods = gu_pigs
+									trade_goods = gu_fruits
 									trade_goods = cloves
 									trade_goods = fur
-									trade_goods = incense
+									trade_goods = gu_sulfur
 								}
 							}
 							has_building = tradecompany
@@ -8727,8 +8727,8 @@ estate_nobles_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = grain
-									trade_goods = livestock
+									trade_goods = gu_wheat
+									trade_goods = gu_cattle
 									trade_goods = wine
 								}
 							}
@@ -8738,17 +8738,17 @@ estate_nobles_build_manufactory_in_y = {
 							limit = {
 								OR = {
 									trade_goods = paper
-									trade_goods = gems
-									trade_goods = tropical_wood
+									trade_goods = gu_amber
+									trade_goods = gu_lumber
 									trade_goods = glass
-									trade_goods = chinaware
+									trade_goods = gu_ceramics
 								}
 							}
 							has_building = mills
 						}
 						else_if = {
 							limit = {
-								trade_goods = coal
+								trade_goods = gu_coal
 							}
 							has_building = furnace
 						}
@@ -8909,8 +8909,8 @@ estate_nobles_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -8918,9 +8918,9 @@ estate_nobles_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -8931,8 +8931,8 @@ estate_nobles_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -8942,8 +8942,8 @@ estate_nobles_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -8952,7 +8952,7 @@ estate_nobles_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -9113,8 +9113,8 @@ estate_nobles_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -9122,9 +9122,9 @@ estate_nobles_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -9135,8 +9135,8 @@ estate_nobles_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -9146,8 +9146,8 @@ estate_nobles_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -9156,7 +9156,7 @@ estate_nobles_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -9215,7 +9215,7 @@ estate_burghers_build_manufactory_in_y = {
 		any_owned_province = {
 			is_state_core = root
 			root_can_build_manufactory_here_trigger = yes
-			has_burghers_trade_good_trigger = yes
+			#has_burghers_trade_good_trigger = yes
 		}
 		monthly_income = 30
 	}
@@ -9247,7 +9247,7 @@ estate_burghers_build_manufactory_in_y = {
 			limit = {
 				is_state_core = root
 				root_can_build_manufactory_here_trigger = yes
-				has_burghers_trade_good_trigger = yes
+				#has_burghers_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9256,7 +9256,7 @@ estate_burghers_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 5
 				root_can_build_manufactory_here_trigger = yes
-				has_burghers_trade_good_trigger = yes
+				#has_burghers_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9265,7 +9265,7 @@ estate_burghers_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 10
 				root_can_build_manufactory_here_trigger = yes
-				has_burghers_trade_good_trigger = yes
+				#has_burghers_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9286,7 +9286,7 @@ estate_burghers_build_manufactory_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -9318,8 +9318,8 @@ estate_burghers_build_manufactory_in_y = {
 								OR = {
 									trade_goods = wool
 									trade_goods = cloth
-									trade_goods = silk
-									trade_goods = dyes
+									trade_goods = gu_vehicles
+									trade_goods = gu_oil
 								}
 							}
 							has_building = textile
@@ -9327,12 +9327,12 @@ estate_burghers_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = ivory
-									trade_goods = slaves
-									trade_goods = spices
+									trade_goods = gu_stone
+									trade_goods = gu_pigs
+									trade_goods = gu_fruits
 									trade_goods = cloves
 									trade_goods = fur
-									trade_goods = incense
+									trade_goods = gu_sulfur
 								}
 							}
 							has_building = tradecompany
@@ -9340,8 +9340,8 @@ estate_burghers_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = grain
-									trade_goods = livestock
+									trade_goods = gu_wheat
+									trade_goods = gu_cattle
 									trade_goods = wine
 								}
 							}
@@ -9351,17 +9351,17 @@ estate_burghers_build_manufactory_in_y = {
 							limit = {
 								OR = {
 									trade_goods = paper
-									trade_goods = gems
-									trade_goods = tropical_wood
+									trade_goods = gu_amber
+									trade_goods = gu_lumber
 									trade_goods = glass
-									trade_goods = chinaware
+									trade_goods = gu_ceramics
 								}
 							}
 							has_building = mills
 						}
 						else_if = {
 							limit = {
-								trade_goods = coal
+								trade_goods = gu_coal
 							}
 							has_building = furnace
 						}
@@ -9522,8 +9522,8 @@ estate_burghers_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -9531,9 +9531,9 @@ estate_burghers_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -9544,8 +9544,8 @@ estate_burghers_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -9555,8 +9555,8 @@ estate_burghers_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -9565,7 +9565,7 @@ estate_burghers_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -9726,8 +9726,8 @@ estate_burghers_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -9735,9 +9735,9 @@ estate_burghers_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -9748,8 +9748,8 @@ estate_burghers_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -9759,8 +9759,8 @@ estate_burghers_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -9769,7 +9769,7 @@ estate_burghers_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -9827,7 +9827,7 @@ estate_church_build_manufactory_in_y = {
 		any_owned_province = {
 			is_state_core = root
 			root_can_build_manufactory_here_trigger = yes
-			has_church_trade_good_trigger = yes
+			#has_church_trade_good_trigger = yes
 		}
 		monthly_income = 30
 	}
@@ -9863,7 +9863,7 @@ estate_church_build_manufactory_in_y = {
 			limit = {
 				is_state_core = root
 				root_can_build_manufactory_here_trigger = yes
-				has_church_trade_good_trigger = yes
+				#has_church_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9872,7 +9872,7 @@ estate_church_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 5
 				root_can_build_manufactory_here_trigger = yes
-				has_church_trade_good_trigger = yes
+				#has_church_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9881,7 +9881,7 @@ estate_church_build_manufactory_in_y = {
 				is_state_core = root
 				base_production = 10
 				root_can_build_manufactory_here_trigger = yes
-				has_church_trade_good_trigger = yes
+				#has_church_trade_good_trigger = yes
 			}
 			save_event_target_as = agenda_province
 		}
@@ -9897,12 +9897,12 @@ estate_church_build_manufactory_in_y = {
     task_requirements = {
 		if = {
 			limit = {
-				has_estate_agenda_auto_completion = {
-					estate = estate_church
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_priests
+			}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_church
+				estate = estate_priests
 			}
 		}
 		else = {
@@ -9934,8 +9934,8 @@ estate_church_build_manufactory_in_y = {
 								OR = {
 									trade_goods = wool
 									trade_goods = cloth
-									trade_goods = silk
-									trade_goods = dyes
+									trade_goods = gu_vehicles
+									trade_goods = gu_oil
 								}
 							}
 							has_building = textile
@@ -9943,12 +9943,12 @@ estate_church_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = ivory
-									trade_goods = slaves
-									trade_goods = spices
+									trade_goods = gu_stone
+									trade_goods = gu_pigs
+									trade_goods = gu_fruits
 									trade_goods = cloves
 									trade_goods = fur
-									trade_goods = incense
+									trade_goods = gu_sulfur
 								}
 							}
 							has_building = tradecompany
@@ -9956,8 +9956,8 @@ estate_church_build_manufactory_in_y = {
 						else_if = {
 							limit = {
 								OR = {
-									trade_goods = grain
-									trade_goods = livestock
+									trade_goods = gu_wheat
+									trade_goods = gu_cattle
 									trade_goods = wine
 								}
 							}
@@ -9967,17 +9967,17 @@ estate_church_build_manufactory_in_y = {
 							limit = {
 								OR = {
 									trade_goods = paper
-									trade_goods = gems
-									trade_goods = tropical_wood
+									trade_goods = gu_amber
+									trade_goods = gu_lumber
 									trade_goods = glass
-									trade_goods = chinaware
+									trade_goods = gu_ceramics
 								}
 							}
 							has_building = mills
 						}
 						else_if = {
 							limit = {
-								trade_goods = coal
+								trade_goods = gu_coal
 							}
 							has_building = furnace
 						}
@@ -9995,10 +9995,10 @@ estate_church_build_manufactory_in_y = {
     }
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_church
+			estate = estate_priests
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 		event_target:agenda_province = {
@@ -10022,7 +10022,7 @@ estate_church_build_manufactory_in_y = {
 			}
 		}
         add_estate_loyalty_modifier = {
-            estate = estate_church
+            estate = estate_priests
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -10142,8 +10142,8 @@ estate_church_build_manufactory_in_y = {
 # 								OR = {
 # 									trade_goods = wool
 # 									trade_goods = cloth
-# 									trade_goods = silk
-# 									trade_goods = dyes
+# 									trade_goods = gu_vehicles
+# 									trade_goods = gu_oil
 # 								}
 # 							}
 # 							has_building = textile
@@ -10151,9 +10151,9 @@ estate_church_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = ivory
-# 									trade_goods = slaves
-# 									trade_goods = spices
+# 									trade_goods = gu_stone
+# 									trade_goods = gu_pigs
+# 									trade_goods = gu_fruits
 # 									trade_goods = cloves
 # 									trade_goods = fur
 # 									trade_goods = incense
@@ -10164,8 +10164,8 @@ estate_church_build_manufactory_in_y = {
 # 						else_if = {
 # 							limit = {
 # 								OR = {
-# 									trade_goods = grain
-# 									trade_goods = livestock
+# 									trade_goods = gu_wheat
+# 									trade_goods = gu_cattle
 # 									trade_goods = wine
 # 								}
 # 							}
@@ -10175,8 +10175,8 @@ estate_church_build_manufactory_in_y = {
 # 							limit = {
 # 								OR = {
 # 									trade_goods = paper
-# 									trade_goods = gems
-# 									trade_goods = tropical_wood
+# 									trade_goods = gu_amber
+# 									trade_goods = gu_lumber
 # 									trade_goods = glass
 # 									trade_goods = chinaware
 # 								}
@@ -10185,7 +10185,7 @@ estate_church_build_manufactory_in_y = {
 # 						}
 # 						else_if = {
 # 							limit = {
-# 								trade_goods = coal
+# 								trade_goods = gu_coal
 # 							}
 # 							has_building = furnace
 # 						}
@@ -10326,12 +10326,12 @@ estate_church_build_university_in_y = {
     task_requirements = {
 		if = {
 			limit = {
-				has_estate_agenda_auto_completion = {
-					estate = estate_church
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_priests
+			}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_church
+				estate = estate_priests
 			}
 		}
 		else = {
@@ -10342,10 +10342,10 @@ estate_church_build_university_in_y = {
     }
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_church
+			estate = estate_priests
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 		add_adm_power = 35
@@ -10365,7 +10365,7 @@ estate_church_build_university_in_y = {
 			}
 		}
         add_estate_loyalty_modifier = {
-            estate = estate_church
+            estate = estate_priests
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -10594,7 +10594,7 @@ estate_nobles_build_university_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -10987,7 +10987,7 @@ estate_burghers_build_university_in_y = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -11398,12 +11398,12 @@ estate_church_develop_x = {
     task_requirements = {
 		if = {
 			limit = {
-				has_estate_agenda_auto_completion = {
-					estate = estate_church
-				}
+			has_estate_agenda_auto_completion = {
+				estate = estate_priests
+			}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_church
+				estate = estate_priests
 			}
 		}
 		else = {
@@ -11414,10 +11414,10 @@ estate_church_develop_x = {
     }
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_church
+			estate = estate_priests
 		}
 		add_estate_loyalty = {
-			estate = estate_church
+			estate = estate_priests
 			loyalty = 10
 		}
 		add_prestige = 10
@@ -11435,7 +11435,7 @@ estate_church_develop_x = {
 			}
 		}
         add_estate_loyalty_modifier = {
-            estate = estate_church
+            estate = estate_priests
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -11732,7 +11732,7 @@ estate_nobles_develop_x = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -12173,7 +12173,7 @@ estate_burghers_develop_x = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_burghers
+				estate = estate_investors
 			}
 		}
 		else = {
@@ -12790,589 +12790,3 @@ estate_nomadic_tribes_develop_x = {
         }
     }
 }
-
-# estate_qizilbash_develop_x = {
-# 	selection_weight = {
-# 		factor = 1
-# 	}
-# 	can_select = {
-# 		capital_scope = {
-# 			is_state_core = root
-# 		}
-# 	}
-# 	pre_effect = {
-# 		random_list = {
-# 			1 = {
-# 				random_owned_province = {
-# 					limit = {
-# 						is_state_core = root
-# 						area_for_scope_province = {
-# 							is_capital_of = root
-# 						}
-# 					}
-# 					save_event_target_as = agenda_province
-# 				}
-# 			}
-# 			1 = {
-# 				trigger = {
-# 					any_owned_province = {
-# 						is_state_core = root
-# 						OR = {
-# 							AND = {
-# 								religion = root
-# 								OR = {
-# 									culture = root
-# 									has_owner_accepted_culture = yes
-# 								}
-# 							}
-# 						}
-# 						region_for_scope_province = {
-# 							is_capital_of = root
-# 						}
-# 					}
-# 				}
-# 				random_owned_province = {
-# 					limit = {
-# 						is_state_core = root
-# 						OR = {
-# 							AND = {
-# 								religion = root
-# 								OR = {
-# 									culture = root
-# 									has_owner_accepted_culture = yes
-# 								}
-# 							}
-# 						}
-# 						region_for_scope_province = {
-# 							is_capital_of = root
-# 						}
-# 					}
-# 					save_event_target_as = agenda_province
-# 				}
-# 			}
-# 			1 = {
-# 				random_owned_province = {
-# 					limit = {
-# 						is_state_core = root
-# 					}
-# 					save_event_target_as = agenda_province
-# 				}
-# 			}
-# 			7 = {
-# 				trigger = {
-# 					any_owned_province = {
-# 						is_state_core = root
-# 						OR = {
-# 							culture = turco_iranian
-# 							culture = azerbaijani
-# 							culture = turkish
-# 							culture = turkmeni
-# 						}
-# 						region_for_scope_province = {
-# 							is_capital_of = root
-# 						}
-# 					}
-# 				}
-# 				random_owned_province = {
-# 					limit = {
-# 						is_state_core = root
-# 					}
-# 					save_event_target_as = agenda_province
-# 				}
-# 			}
-# 		}
-# 		event_target:agenda_province = {
-# 			if = {
-# 				limit = {
-# 					check_variable = {
-# 						which = province_mil_var
-# 						value = 1
-# 					}
-# 				}
-# 				set_variable = {
-# 					which = province_mil_var
-# 					value = 0
-# 				}
-# 			}
-# 			export_to_variable = {
-# 				which = province_mil_var
-# 				value = trigger_value:base_manpower
-# 			}
-# 			change_variable = {
-# 				which = province_mil_var
-# 				value = 2
-# 			}
-# 		}
-# 	}
-# 	provinces_to_highlight = {
-# 		province_id = event_target:agenda_province
-# 	}
-# 	fail_if = {
-# 		event_target:agenda_province = {
-# 			NOT = { owned_by = root }
-# 		}
-# 	}
-#     task_requirements = {
-# 		if = {
-# 			limit = {
-# 				has_estate_agenda_auto_completion = {
-# 					estate = estate_qizilbash
-# 				}
-# 			}
-# 			has_estate_agenda_auto_completion = {
-# 				estate = estate_qizilbash
-# 			}
-# 		}
-# 		else = {
-# 			event_target:agenda_province = {
-# 				base_manpower = "province_mil_var"
-# 			}
-# 		}
-#     }
-#     task_completed_effect = {
-# 		on_completed_agenda_effect = {
-# 			estate = estate_qizilbash
-# 		}
-# 		add_estate_loyalty = {
-# 			estate = estate_qizilbash
-# 			loyalty = 10
-# 		}
-# 		 add_yearly_manpower = 0.3
-#     }
-#     failing_effect = {
-# 		on_failed_agenda_effect = yes
-# 		clr_auto_complete_flag = yes
-# 		event_target:agenda_province = {
-# 			if = {
-# 				limit = { owned_by = root }
-# 				add_named_unrest = {
-# 					name = local_qizilbash_displeased
-# 					value = 5
-# 				}
-# 			}
-# 		}
-#         add_estate_loyalty_modifier = {
-#             estate = estate_qizilbash
-# 			desc = EST_VAL_AGENDA_DENIED
-# 			loyalty = -5
-# 			duration = 7300
-#         }
-#     }
-# }
-
-# estate_ghulams_develop_x = {
-# 	selection_weight = {
-# 		factor = 1
-# 	}
-# 	can_select = {
-# 		capital_scope = {
-# 			is_state_core = root
-# 		}
-# 	}
-# 	pre_effect = {
-# 		random_list = {
-# 			1 = {
-# 				random_owned_province = {
-# 					limit = {
-# 						is_state_core = root
-# 						area_for_scope_province = {
-# 							is_capital_of = root
-# 						}
-# 					}
-# 					save_event_target_as = agenda_province
-# 				}
-# 			}
-# 			1 = {
-# 				trigger = {
-# 					any_owned_province = {
-# 						is_state_core = root
-# 						OR = {
-# 							AND = {
-# 								religion = root
-# 								OR = {
-# 									culture = root
-# 									has_owner_accepted_culture = yes
-# 								}
-# 							}
-# 						}
-# 						region_for_scope_province = {
-# 							is_capital_of = root
-# 						}
-# 					}
-# 				}
-# 				random_owned_province = {
-# 					limit = {
-# 						is_state_core = root
-# 						OR = {
-# 							AND = {
-# 								religion = root
-# 								OR = {
-# 									culture = root
-# 									has_owner_accepted_culture = yes
-# 								}
-# 							}
-# 						}
-# 						region_for_scope_province = {
-# 							is_capital_of = root
-# 						}
-# 					}
-# 					save_event_target_as = agenda_province
-# 				}
-# 			}
-# 			1 = {
-# 				random_owned_province = {
-# 					limit = {
-# 						is_state_core = root
-# 					}
-# 					save_event_target_as = agenda_province
-# 				}
-# 			}
-# 			7 = {
-# 				trigger = {
-# 					any_owned_province = {
-# 						is_state_core = root
-# 						culture_group = caucasian
-# 						region_for_scope_province = {
-# 							is_capital_of = root
-# 						}
-# 					}
-# 				}
-# 				random_owned_province = {
-# 					limit = {
-# 						is_state_core = root
-# 					}
-# 					save_event_target_as = agenda_province
-# 				}
-# 			}
-# 		}
-# 		event_target:agenda_province = {
-# 			if = {
-# 				limit = {
-# 					check_variable = {
-# 						which = province_mil_var
-# 						value = 1
-# 					}
-# 				}
-# 				set_variable = {
-# 					which = province_mil_var
-# 					value = 0
-# 				}
-# 			}
-# 			export_to_variable = {
-# 				which = province_mil_var
-# 				value = trigger_value:base_manpower
-# 			}
-# 			change_variable = {
-# 				which = province_mil_var
-# 				value = 2
-# 			}
-# 		}
-# 	}
-# 	provinces_to_highlight = {
-# 		province_id = event_target:agenda_province
-# 	}
-# 	fail_if = {
-# 		event_target:agenda_province = {
-# 			NOT = { owned_by = root }
-# 		}
-# 	}
-#     task_requirements = {
-# 		if = {
-# 			limit = {
-# 				has_estate_agenda_auto_completion = {
-# 					estate = estate_ghulams
-# 				}
-# 			}
-# 			has_estate_agenda_auto_completion = {
-# 				estate = estate_ghulams
-# 			}
-# 		}
-# 		else = {
-# 			event_target:agenda_province = {
-# 				base_manpower = "province_mil_var"
-# 			}
-# 		}
-#     }
-#     task_completed_effect = {
-# 		on_completed_agenda_effect = {
-# 			estate = estate_ghulams
-# 		}
-# 		add_estate_loyalty = {
-# 			estate = estate_ghulams
-# 			loyalty = 10
-# 		}
-# 		 add_yearly_manpower = 0.3
-#     }
-#     failing_effect = {
-# 		on_failed_agenda_effect = yes
-# 		clr_auto_complete_flag = yes
-# 		event_target:agenda_province = {
-# 			if = {
-# 				limit = { owned_by = root }
-# 				add_named_unrest = {
-# 					name = local_ghulams_displeased
-# 					value = 5
-# 				}
-# 			}
-# 		}
-#         add_estate_loyalty_modifier = {
-#             estate = estate_ghulams
-# 			desc = EST_VAL_AGENDA_DENIED
-# 			loyalty = -5
-# 			duration = 7300
-#         }
-#     }
-# }
-
-# estate_cossacks_develop_x = {
-# 	selection_weight = {
-# 		factor = 1
-# 	}
-# 	can_select = {
-# 		any_owned_province = {
-# 			is_state_core = root
-# 		}
-# 	}
-# 	pre_effect = {
-# 		set_variable = {
-# 			which = develop_x_category
-# 			value = 0
-# 		}
-# 		random_list = {
-# 			2 = { #Mil is weighted higher
-# 				set_variable = {
-# 					which = develop_x_category
-# 					value = 3
-# 				}
-# 			}
-# 			1 = { #dip
-# 				set_variable = {
-# 					which = develop_x_category
-# 					value = 2
-# 				}
-# 			}
-# 			1 = { #adm
-# 				set_variable = {
-# 					which = develop_x_category
-# 					value = 1
-# 				}
-# 			}
-# 		}
-# 		random_owned_province = {
-# 			limit = {
-# 				is_state_core = root
-# 			}
-# 			save_event_target_as = agenda_province
-# 		}
-# 		random_owned_province = {
-# 			limit = {
-# 				is_state_core = root
-# 				OR = {
-# 					culture_group = east_slavic
-# 					culture_group = slavic
-# 				}
-# 			}
-# 			save_event_target_as = agenda_province
-# 		}
-# 		random_owned_province = {
-# 			limit = {
-# 				is_state_core = root
-# 				has_terrain = steppe
-# 			}
-# 			save_event_target_as = agenda_province
-# 		}
-# 		random_owned_province = {
-# 			limit = {
-# 				is_state_core = root
-# 				has_terrain = steppe
-# 				OR = {
-# 					culture_group = east_slavic
-# 					culture_group = slavic
-# 				}
-# 			}
-# 			save_event_target_as = agenda_province
-# 		}
-# 		event_target:agenda_province = {
-# 			if = {
-# 				limit = {
-# 					root = {
-# 						check_variable = {
-# 							which = develop_x_category
-# 							value = 3
-# 						}
-# 					}
-# 				}
-# 				if = {
-# 					limit = {
-# 						check_variable = {
-# 							which = province_mil_var
-# 							value = 1
-# 						}
-# 					}
-# 					set_variable = {
-# 						which = province_mil_var
-# 						value = 0
-# 					}
-# 				}
-# 				export_to_variable = {
-# 					which = province_mil_var
-# 					value = trigger_value:base_manpower
-# 				}
-# 				change_variable = {
-# 					which = province_mil_var
-# 					value = 2
-# 				}
-# 			}
-# 			else_if = {
-# 				limit = {
-# 					root = {
-# 						check_variable = {
-# 							which = develop_x_category
-# 							value = 2
-# 						}
-# 					}
-# 				}
-# 				if = {
-# 					limit = {
-# 						check_variable = {
-# 							which = province_dip_var
-# 							value = 1
-# 						}
-# 					}
-# 					set_variable = {
-# 						which = province_dip_var
-# 						value = 0
-# 					}
-# 				}
-# 				export_to_variable = {
-# 					which = province_dip_var
-# 					value = trigger_value:base_production
-# 				}
-# 				change_variable = {
-# 					which = province_dip_var
-# 					value = 2
-# 				}
-# 			}
-# 			else = {
-# 				if = {
-# 					limit = {
-# 						check_variable = {
-# 							which = province_adm_var
-# 							value = 1
-# 						}
-# 					}
-# 					set_variable = {
-# 						which = province_adm_var
-# 						value = 0
-# 					}
-# 				}
-# 				export_to_variable = {
-# 					which = province_adm_var
-# 					value = trigger_value:base_tax
-# 				}
-# 				change_variable = {
-# 					which = province_adm_var
-# 					value = 2
-# 				}
-# 			}
-# 		}
-# 	}
-# 	provinces_to_highlight = {
-# 		province_id = event_target:agenda_province
-# 	}
-# 	fail_if = {
-# 		event_target:agenda_province = {
-# 			NOT = { owned_by = root }
-# 		}
-# 	}
-#     task_requirements = {
-# 		if = {
-# 			limit = {
-# 				has_estate_agenda_auto_completion = {
-# 					estate = estate_cossacks
-# 				}
-# 			}
-# 			has_estate_agenda_auto_completion = {
-# 				estate = estate_cossacks
-# 			}
-# 		}
-# 		else = {
-# 			event_target:agenda_province = {
-# 				if = {
-# 					limit = {
-# 						root = {
-# 							check_variable = {
-# 								which = develop_x_category
-# 								value = 3
-# 							}
-# 						}
-# 					}
-# 					base_manpower = "province_mil_var"
-# 				}
-# 				else_if = {
-# 					limit = {
-# 						root = {
-# 							check_variable = {
-# 								which = develop_x_category
-# 								value = 2
-# 							}
-# 						}
-# 					}
-# 					base_production = "province_dip_var"
-# 				}
-# 				else = {
-# 					base_tax = "province_adm_var"
-# 				}
-# 			}
-# 		}
-#     }
-#     task_completed_effect = {
-# 		on_completed_agenda_effect = {
-# 			estate = estate_cossacks
-# 		}
-# 		add_estate_loyalty = {
-# 			estate = estate_cossacks
-# 			loyalty = 10
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = {
-# 					which = develop_x_category
-# 					value = 3
-# 				}
-# 			}
-# 			 add_yearly_manpower = 0.3
-# 		}
-# 		else_if = {
-# 			limit = {
-# 				check_variable = {
-# 					which = develop_x_category
-# 					value = 2
-# 				}
-# 			}
-# 			add_years_of_income = 0.3
-# 		}
-# 		else = {
-# 			add_prestige = 10
-# 		}
-#     }
-#     failing_effect = {
-# 		on_failed_agenda_effect = yes
-# 		clr_auto_complete_flag = yes
-# 		event_target:agenda_province = {
-# 			if = {
-# 				limit = { owned_by = root }
-# 				add_named_unrest = {
-# 					name = local_cossacks_displeased
-# 					value = 5
-# 				}
-# 			}
-# 		}
-#         add_estate_loyalty_modifier = {
-#             estate = estate_cossacks
-# 			desc = EST_VAL_AGENDA_DENIED
-# 			loyalty = -5
-# 			duration = 7300
-#         }
-#     }
-# }

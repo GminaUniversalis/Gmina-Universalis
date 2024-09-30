@@ -289,4 +289,134 @@ country_decisions = {
 		ai_importance = 400 #If there is no Poland then Polish minors will prioritize reforming it.
 	}
 	
+	gmina_wilkowyje_formable = {
+		potential = {
+
+			has_country_flag = enable_wilkowyje_formable
+
+			NOT = { has_country_flag = formed_metropolis_gzm_flag }
+			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
+			
+			NOT = { exists = U25 }
+			NOT = { tag = U25 }
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+
+		}
+		provinces_to_highlight = {
+
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					
+					OR = {
+						province_id = 2231
+						province_id = 454
+						province_id = 475
+						province_id = 1820
+					}
+
+				}
+				
+				AND = {
+					province_id = 2231
+					is_core = ROOT
+					owned_by = ROOT
+					is_capital = no
+				}
+			}
+		}
+		allow = {
+			is_or_was_wojewodztwo_check = yes
+			poland_powiatowe_formed_check = yes
+
+			capital = 2231
+
+			primary_culture = lubelska
+
+			2231 = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			NOT = { exists = U25 }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+		}
+		effect = {
+
+			change_tag = U25
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 1 } }
+				set_government_rank = 1
+			}
+		
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		
+			set_country_flag = formed_gmina_wilkowyje_flag
+
+			if = {
+				limit = {
+					NOT = {
+						religion = populism_PPU
+					}
+				}
+
+				country_event = {
+					id = politics.13
+					days = 365
+				}
+			}
+
+			2231 = {
+				change_province_name = "Wilkowyje"
+				rename_capital = "Wilkowyje"
+				add_base_tax = 3
+				add_base_production = 5
+				add_base_manpower = 4
+				add_building = temple
+				add_building = town_hall
+				add_building = fort_16th
+				add_building = university
+				center_of_trade = 2
+				set_seat_in_parliament = yes
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 
+	}
 }

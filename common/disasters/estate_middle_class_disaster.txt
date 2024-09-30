@@ -107,10 +107,10 @@ estate_middle_class_disaster = {
 	}
 	
 	modifier = {	
-		interest = 5
-		inflation_reduction = 0.5
-		production_efficiency = -0.2
-		trade_efficiency = -0.2
+		global_unrest = 10
+		stability_cost_modifier = 1
+		production_efficiency = -0.5
+		global_tax_modifier = -0.5
 	}
 
 	on_start = gmina_estate_disasters.10

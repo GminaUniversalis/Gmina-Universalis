@@ -1,8 +1,8 @@
 estate_middle_class_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
-	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	max_absolutism = 0
+	
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
@@ -12,8 +12,7 @@ estate_middle_class_land_rights = {
 	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
+
 	conditional_modifier = {
 	}
 	benefits = {
@@ -38,12 +37,20 @@ estate_middle_class_land_rights = {
 estate_middle_class_empty_promises = {
 	icon = privilege_grant_autonomy
 	land_share = 0
-	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	max_absolutism = 0
+	
 	loyalty = 0.1
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
+		factor = 10
+
+		modifier = {
+			factor = 0.01
+			estate_influence = {
+				estate = estate_middle_class
+				influence = 80
+			}
+		}
 	}	
 	on_granted = {
 	
@@ -57,15 +64,47 @@ estate_middle_class_empty_promises = {
 }
 estate_middle_class_low_taxes = {
 	icon = privilege_loot
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.15
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = no
+		}
+	}	
+
 	is_valid = {
+		NOT = {
+			OR = {
+				has_country_flag = picked_high_taxes
+				has_country_flag = picked_high_taxes
+			}
+		}
 	}
 	can_select = {
 		custom_trigger_tooltip = {
@@ -82,8 +121,6 @@ estate_middle_class_low_taxes = {
 	on_granted = {
 		custom_tooltip = estate_low_taxes_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_high_taxes
-			remove_estate_privilege = estate_middle_class_very_high_taxes
 			clr_country_flag = picked_middle_class_taxation
 			set_country_flag = picked_middle_class_taxation
 			clr_country_flag = picked_low_taxes
@@ -94,7 +131,7 @@ estate_middle_class_low_taxes = {
 		OR = {
 			NOT = { has_country_flag = picked_middle_class_taxation}
 			had_country_flag = {
-				flag = picked_investors_taxation
+				flag = picked_middle_class_taxation
 				days = 9125
 			}
 		}
@@ -106,41 +143,66 @@ estate_middle_class_low_taxes = {
 		global_unrest = -1
 	}
 	on_invalid = {
+		clr_country_flag = picked_middle_class_taxation
+		clr_country_flag = picked_low_taxes
 	}
-	on_granted_province = {
+	on_revoked = {
+		clr_country_flag = picked_middle_class_taxation
+		clr_country_flag = picked_low_taxes
+	}
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
 	conditional_modifier = {
 	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
 }
 estate_middle_class_high_taxes = {
 	icon = estate_eunuchs_western_bureau_privilege
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 10
+			is_in_deficit = yes
+		}
+	}	
+
 	is_valid = {
+		NOT = {
+			OR = {
+				has_country_flag = picked_low_taxes
+				has_country_flag = picked_very_high_taxes
+			}
+		}
 	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_taxation_tooltip
@@ -156,8 +218,6 @@ estate_middle_class_high_taxes = {
 	on_granted = {
 		custom_tooltip = estate_high_taxes_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_low_taxes
-			remove_estate_privilege = estate_middle_class_very_high_taxes
 			clr_country_flag = picked_middle_class_taxation
 			set_country_flag = picked_middle_class_taxation
 			clr_country_flag = picked_high_taxes
@@ -173,47 +233,71 @@ estate_middle_class_high_taxes = {
 			}
 		}
 	}
-	penalties = {
-	}
+
 	benefits = {
 		global_tax_modifier = 0.1
 	}
 	on_invalid = {
+		clr_country_flag = picked_middle_class_taxation
+		clr_country_flag = picked_high_taxes
 	}
-	on_granted_province = {
+	on_revoked = {
+		clr_country_flag = picked_middle_class_taxation
+		clr_country_flag = picked_high_taxes
+	}
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
 	conditional_modifier = {
 	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
 }
 estate_middle_class_very_high_taxes = {
 	icon = estate_burghers_GER_customs_union
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = -0.05
 	influence = 0.1
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 100
+			is_in_deficit = yes
+		}
+	}	
+
 	is_valid = {
+		NOT = {
+			OR = {
+				has_country_flag = picked_low_taxes
+				has_country_flag = picked_high_taxes
+			}
+		}
 	}
+
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_taxation_tooltip
@@ -229,12 +313,10 @@ estate_middle_class_very_high_taxes = {
 	on_granted = {
 		custom_tooltip = estate_very_high_taxes_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_low_taxes
-			remove_estate_privilege = estate_middle_class_very_high_taxes
 			clr_country_flag = picked_middle_class_taxation
 			set_country_flag = picked_middle_class_taxation
-			clr_country_flag = picked_high_taxes
-			set_country_flag = picked_high_taxes
+			clr_country_flag = picked_very_high_taxes
+			set_country_flag = picked_very_high_taxes
 		}
 	}
 	can_revoke = {
@@ -253,41 +335,57 @@ estate_middle_class_very_high_taxes = {
 		global_tax_modifier = 0.15
 	}
 	on_invalid = {
+		clr_country_flag = picked_middle_class_taxation
+		clr_country_flag = picked_very_high_taxes
 	}
-	on_granted_province = {
+	on_revoked = {
+		clr_country_flag = picked_middle_class_taxation
+		clr_country_flag = picked_very_high_taxes
+	}
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
 	conditional_modifier = {
 	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
 }
 estate_middle_class_allow_exclusive_goods = {
 	icon = privilege_monopoly_of_goods_gems
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -299,27 +397,14 @@ estate_middle_class_allow_exclusive_goods = {
 	penalties = {
 		global_own_trade_power = -0.1
 	}
-	benefits = {
-	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
+
+
 	conditional_modifier = {
 	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
 	cooldown_years = 5
 	on_cooldown_expires = {
 		add_mercantilism = 1
@@ -327,16 +412,40 @@ estate_middle_class_allow_exclusive_goods = {
 }
 estate_middle_class_accept_aspirations = {
 	icon = privilege_reform_progress
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0.1
 	influence = 0.05
 	ai_will_do = {
-		factor = 1
-	}
-	is_valid = {
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.1
+			is_in_deficit = yes
+		}
+	}	
+
 	can_select = {
 	}
 	on_granted = {
@@ -351,25 +460,13 @@ estate_middle_class_accept_aspirations = {
 	benefits = {
 		advisor_cost = -0.05
 	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
+
 	conditional_modifier = {
 	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
 	cooldown_years = 5
 	on_cooldown_expires = {
 		add_mercantilism = 1
@@ -378,18 +475,47 @@ estate_middle_class_accept_aspirations = {
 #Definers
 estate_middle_class_american_model = {
 	icon = estate_eunuchs_supremacy_over_crown_privilege
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+	}	
 	is_valid = {
 		NOT = { current_age = age_of_discovery }
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_early_polish_model
+				has_estate_privilege = estate_middle_class_european_model
+				has_estate_privilege = estate_middle_class_soviet_model
+				has_estate_privilege = estate_middle_class_japan_model
+			}
+		}
 		has_estate = estate_investors
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_definer_tooltip
@@ -405,10 +531,6 @@ estate_middle_class_american_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_japan_model
-			remove_estate_privilege = estate_middle_class_european_model
-			remove_estate_privilege = estate_middle_class_early_polish_model
-			remove_estate_privilege = estate_middle_class_soviet_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_american_model
@@ -417,6 +539,13 @@ estate_middle_class_american_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_american_model
+		clr_country_flag = picked_middle_class_definer
+	}
+
+	on_invalid = {
+		clr_country_flag = picked_american_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -428,49 +557,59 @@ estate_middle_class_american_model = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	on_invalid = {
-	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
 
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
+
+
 }
 estate_middle_early_polish_model = {
 	icon = privilege_golden_liberty
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 200
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_revolutions
+		}
+
+	}	
 	is_valid = {
 		NOT = { current_age = age_of_discovery }
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_class_american_model
+				has_estate_privilege = estate_middle_class_european_model
+				has_estate_privilege = estate_middle_class_soviet_model
+				has_estate_privilege = estate_middle_class_japan_model
+			}
+		}
 		NOT = { current_age = age_of_discovery }
 		custom_trigger_tooltip = {
 			tooltip = estate_middle_class_definer_tooltip
@@ -486,10 +625,6 @@ estate_middle_early_polish_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_japan_model
-			remove_estate_privilege = estate_middle_class_european_model
-			remove_estate_privilege = estate_middle_class_soviet_model
-			remove_estate_privilege = estate_middle_class_american_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_early_polish_model
@@ -498,6 +633,8 @@ estate_middle_early_polish_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_early_polish_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -509,47 +646,50 @@ estate_middle_early_polish_model = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	on_invalid = {
 		clr_country_flag = picked_early_polish_model
 		clr_country_flag = picked_middle_class_definer
 	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
 
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
 }
 estate_middle_class_european_model = {
 	icon = estate_burghers_fugger_family
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_revolutions
+		}
+
+	}	
 	is_valid = {
 		NOT = { 
 			OR = {
@@ -560,6 +700,14 @@ estate_middle_class_european_model = {
 		}
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_class_american_model
+				has_estate_privilege = estate_middle_early_polish_model
+				has_estate_privilege = estate_middle_class_soviet_model
+				has_estate_privilege = estate_middle_class_japan_model
+			}
+		}
 		NOT = { 
 			OR = {
 				current_age = age_of_discovery 
@@ -581,10 +729,6 @@ estate_middle_class_european_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_japan_model
-			remove_estate_privilege = estate_middle_class_soviet_model
-			remove_estate_privilege = estate_middle_class_early_polish_model
-			remove_estate_privilege = estate_middle_class_american_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_european_model
@@ -593,6 +737,8 @@ estate_middle_class_european_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_european_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -604,45 +750,54 @@ estate_middle_class_european_model = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
 	on_invalid = {
+		clr_country_flag = picked_european_model
+		clr_country_flag = picked_middle_class_definer
 	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
 
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
 }
 estate_middle_class_soviet_model = {
 	icon = estate_burghers_sindicat_remensa_privilege
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 100
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 50
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 0.1
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 1000
+			religion_group = communism_group
+		}
+	}	
 	is_valid = {
 		OR = {
 			religion_group = communism_group
@@ -650,6 +805,14 @@ estate_middle_class_soviet_model = {
 		}
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_class_american_model
+				has_estate_privilege = estate_middle_early_polish_model
+				has_estate_privilege = estate_middle_class_european_model
+				has_estate_privilege = estate_middle_class_japan_model
+			}
+		}
 		OR = {
 			religion_group = communism_group
 			current_age = age_of_discovery 
@@ -668,10 +831,6 @@ estate_middle_class_soviet_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_japan_model
-			remove_estate_privilege = estate_middle_class_european_model
-			remove_estate_privilege = estate_middle_class_early_polish_model
-			remove_estate_privilege = estate_middle_class_american_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_soviet_model
@@ -680,6 +839,8 @@ estate_middle_class_soviet_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_soviet_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -691,45 +852,50 @@ estate_middle_class_soviet_model = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
 	on_invalid = {
+		clr_country_flag = picked_soviet_model
+		clr_country_flag = picked_middle_class_definer
 	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
-		
-	}
-	conditional_modifier = {
 
-	}
-	modifier_by_land_ownership = {
 
-	}
-	mechanics = {
 
-	}
-	cooldown_years = 0
-	on_cooldown_expires = {
 
-	}
+
 }
 estate_middle_class_japan_model = {
 	icon = estate_church_fund_madrasas
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	
 	land_share = 0
 	max_absolutism = 0
 	loyalty = 0
 	influence = 0
 	ai_will_do = {
-		factor = 1
-	}
+		factor = 10
+
+		modifier = {
+			factor = 0.2
+			current_age = age_of_discovery
+		}
+
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 100
+			current_age = age_of_revolutions
+		}
+
+	}	
 	is_valid = {
 		NOT = { 
 			OR = {
@@ -740,6 +906,14 @@ estate_middle_class_japan_model = {
 		}
 	}
 	can_select = {
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_middle_class_american_model
+				has_estate_privilege = estate_middle_early_polish_model
+				has_estate_privilege = estate_middle_class_european_model
+				has_estate_privilege = estate_middle_class_soviet_model
+			}
+		}
 		NOT = { 
 			OR = {
 				current_age = age_of_discovery 
@@ -761,10 +935,6 @@ estate_middle_class_japan_model = {
 	on_granted = {
 		custom_tooltip = estate_banks_free_banks_definer_tooltip
 		hidden_effect = {
-			remove_estate_privilege = estate_middle_class_soviet_model
-			remove_estate_privilege = estate_middle_class_european_model
-			remove_estate_privilege = estate_middle_class_early_polish_model
-			remove_estate_privilege = estate_middle_class_american_model
 			clr_country_flag = picked_middle_class_definer
 			set_country_flag = picked_middle_class_definer
 			clr_country_flag = picked_japan_model
@@ -773,6 +943,8 @@ estate_middle_class_japan_model = {
 	}
 	on_revoked = { 
 		add_stability = -2
+		clr_country_flag = picked_japan_model
+		clr_country_flag = picked_middle_class_definer
 	}
 
 	can_revoke = {
@@ -784,32 +956,104 @@ estate_middle_class_japan_model = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+
+
+
 	on_invalid = {
+		clr_country_flag = picked_japan_model
+		clr_country_flag = picked_middle_class_definer
 	}
-	on_granted_province = {
 
-	}
-	on_revoked_province = {
 
-	}
-	on_invalid_province = {
+
+
+
+}
+estate_middle_class_party_appreciation = { #Political Party
+	icon = privilege_recruit_minister
+	max_absolutism = 0
+	
+	influence = 0.10
+	on_granted = {
+
+		custom_tooltip = has_no_effects_on_granted
 		
 	}
+
+	can_select = {
+		OR = {
+			religion_group = populism_group
+			religion_group = liberalism_group
+		}
+		NOT = {
+			OR = {
+				has_estate_privilege = estate_ub_strenghten_communist_thought
+				has_estate_privilege = estate_families_political_commitment
+				has_estate_privilege = estate_investors_free_market_ideals
+			}
+
+		}
+	}
+
 	conditional_modifier = {
+		trigger = {
 
+			religion = populism_samoobrona 
+		 	
+		}
+		
+		modifier = {
+			missionary_maintenance_cost = -0.2
+		}
 	}
-	modifier_by_land_ownership = {
-
+	conditional_modifier = {
+		trigger = {
+			religion = conservatism_lpr
+		}
+		modifier = {
+			monthly_fervor_increase = 0.5
+		}
 	}
-	mechanics = {
-
+	conditional_modifier = {
+		trigger = {
+			religion_group = liberalism_group
+		}
+		modifier = {
+			church_power_modifier = 0.7
+		}
 	}
-	cooldown_years = 0
-	on_cooldown_expires = {
+	conditional_modifier = {
+		trigger = {
+			religion_group = socialism_group
+		}
+		modifier = {
+			monthly_piety = 0.001
+		}
+	}
 
+
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0.01
+
+			religion_group = liberalism_group
+			
+			num_of_aspects = 3
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				religion = conservatism_kpn
+				religion = conservatism_zchn
+				religion = conservatism_pc
+				religion = conservatism_aws
+				religion = conservatism_psl
+			}
+		}
 	}
 }

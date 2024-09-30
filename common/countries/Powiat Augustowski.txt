@@ -1,6 +1,6 @@
 #Country Name: Powiat Augustowski
 graphical_culture = westerngfx
-color = { 102 43 205 }
+color = { 100 137 236 }
 revolutionary_colors = { 3 1 16 }
 
 historical_units = { 
@@ -20,14 +20,35 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
+
 ship_names = { 
-	"Comte de Smet de Nayer" 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
 }
 army_names = { 
-	"Placeholder $PROVINCE$" 
+	"$PROVINCE$ army" 
 }
 fleet_names = { 
-	"Placeholder_Fleet1" 
+	"$PROVINCE$ fleet" 
 }
 
 # Lista imion z pliku: Podlasie.txt

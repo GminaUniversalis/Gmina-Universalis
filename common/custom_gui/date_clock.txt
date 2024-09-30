@@ -1,0 +1,5 @@
+custom_text_box = {
+    name = clock_date_speed
+    potential = { always = yes }
+    tooltip = clock_date_speed_tooltip
+}

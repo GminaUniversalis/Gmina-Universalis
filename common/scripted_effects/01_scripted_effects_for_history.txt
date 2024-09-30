@@ -63,7 +63,7 @@ add_brahmins_or_church_effect = { #deprecated
 #		set_estate = estate_brahmins
 #	}
 #	else = {
-#		set_estate = estate_church
+#		set_estate = estate_priests
 #	}
 }
 
@@ -144,7 +144,7 @@ change_brahmins_or_church_land_share_effect = {
 	}
 	else = {
 		change_estate_land_share = {
-			estate = estate_church
+			estate = estate_priests
 			share = $share$
 		}
 	}
@@ -162,7 +162,7 @@ change_dhimmi_or_church_land_share_effect = {
 	}
 	else = {
 		change_estate_land_share = {
-			estate = estate_church
+			estate = estate_priests
 			share = $share$
 		}
 	}

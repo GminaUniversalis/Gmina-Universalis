@@ -58,18 +58,6 @@ guiTypes = {
 			frame = 1
 		}
 
-		guiButtonType  = {
-			name = "hint_heretic_princes6kzhk"
-			position = { x = 540 y = 855 }
-			quadTextureSprite ="GFX_hint_green"
-			pdx_tooltip =""
-			delayedTooltipText = "a_hint_heretic_princes"
-			#tooltipText = "a_hint_heretic_princes"
-			borderSize = { x=4 y= 4}
-			scale = 0.6
-			shortcut = "The fastest way to see heretic princes §l if you are the emperor §! is to use diplomacy macrobuilder and check who can you enforce religion on"
-		}
-
 		## Religion league
 		iconType = { 
 			name ="hre_religion_icon"
@@ -293,6 +281,18 @@ guiTypes = {
 			format = left
 		}
 
+		instantTextBoxType = {
+			name = "HRE_IS_COMMUNIST"
+			position = { x = -500 y = -270 }
+			font = "vic_22"
+			borderSize = {x = 10 y = 10}
+			maxWidth = 200
+			maxHeight = 50
+			format = center
+			Orientation = "LOWER_RIGHT"
+			scripted = yes
+		}
+
 		iconType = {
 			name = "hre_bg_princes"
 			spriteType = "GFX_hre_bg_princes1"
@@ -419,6 +419,18 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
+		guiButtonType  = {
+			name = "hint_heretic_princes6kzhk"
+			position = { x = 350 y = 150 }
+			quadTextureSprite ="GFX_hint_green"
+			pdx_tooltip =""
+			delayedTooltipText = "a_hint_heretic_princes"
+			#tooltipText = "a_hint_heretic_princes"
+			borderSize = { x=4 y= 4}
+			scale = 0.6
+			shortcut = "The fastest way to see heretic princes if you are the emperor is to use diplomacy macrobuilder and check who can you enforce religion on"
+		}
+		
 		windowType = {
 			name = "emepror_feature_window"
 
@@ -559,7 +571,7 @@ guiTypes = {
 
 		smoothListboxType = {
 			name = "hre_free_cities"
-			position = { x=480 y =438 }
+			position = { x=480 y =434 }
 			backGround=""
 			size = { x=110 y=220 }
 			Orientation = "UPPER_LEFT"
@@ -650,7 +662,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "vote_button"
-			position = { x=53 y =800}
+			position = { x=130 y =848}
 			quadTextureSprite ="button_type_1"
 			tooltip = ""
 			tooltipText =""
@@ -670,7 +682,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "leave_button"
-			position = { x= 153 y = 848}
+			position = { x= 275 y = 848}
 			quadTextureSprite ="button_type_1"
 			buttonText = "HRE_LEAVE"
 			buttonFont = "vic_18"
@@ -678,7 +690,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "join_button"
-			position = { x= 153 y = 848}
+			position = { x= 275 y = 848}
 			quadTextureSprite ="button_type_1"
 			buttonText = "HRE_JOIN"
 			buttonFont = "vic_18"
@@ -686,7 +698,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "add_all_button"
-			position = { x= 302 y = 848}
+			position = { x= 420 y = 848}
 			quadTextureSprite ="button_type_1"
 			buttonText = "HRE_ADD_ALL"
 			buttonFont = "vic_18"

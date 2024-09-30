@@ -3,6 +3,7 @@ communism_group = {
 	flag_emblem_index_range = { 1 18 }
 	
 	communism_pzpr = {
+		#hre_religion = yes
 		icon = 30
 		color = { 128 10 0 }
 		country = {
@@ -27,6 +28,7 @@ communism_group = {
 			conservatism_pc
 			conservatism_psl
 			socialism_sld
+			populism_PPU
 		}
 
 		on_convert = {
@@ -55,6 +57,7 @@ communism_group = {
 	}
 
 	communism_sd = {
+		#hre_religion = yes
 		icon = 31
 		color = { 0.1 0.45 0.77 }
 		country = {
@@ -79,6 +82,7 @@ communism_group = {
 			conservatism_pc
 			conservatism_psl
 			socialism_sld
+			populism_PPU
 		}
 
 		on_convert = {
@@ -107,6 +111,7 @@ communism_group = {
 	}
 
 	communism_zsl = {
+		#hre_religion = yes
 		icon = 32
 		color = { 0.6 0.9 0.1 }
 		country = {
@@ -131,6 +136,7 @@ communism_group = {
 			conservatism_pc
 			conservatism_psl
 			socialism_sld
+			populism_PPU
 		}
 
 		on_convert = {
@@ -175,7 +181,9 @@ liberalism_group = {
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
+			liberalism_kld
 			liberalism_uw
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -246,12 +254,15 @@ liberalism_group = {
 	}
 
 	liberalism_kld = {
+		#hre_religion = yes
 		color = { 224 224 218 }
 		icon = 34
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
+			liberalism_ud
 			liberalism_uw
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -320,12 +331,12 @@ liberalism_group = {
 	}
 
 	liberalism_uw = {
+		#hre_religion = yes
 		color = { 173 3 252 }
 		icon = 35
 		allow_female_defenders_of_the_faith = yes
 
 		allowed_conversion = {
-
 		}
 
 		allowed_center_conversion = {
@@ -334,6 +345,7 @@ liberalism_group = {
 			communism_zsl
 			liberalism_kld
 			liberalism_ud
+			populism_PPU
 		}
 
 		on_convert = {
@@ -412,6 +424,7 @@ conservatism_group = {
 	crusade_name = WAR_WITH_COMMUNISM
 
 	conservatism_kpn = {
+		#hre_religion = yes
 		color = { 48 0 0 }
 		icon = 39
 		country = {
@@ -427,6 +440,11 @@ conservatism_group = {
 
 		allowed_conversion = {
 			conservatism_aws
+			conservatism_zchn
+			conservatism_pc
+			conservatism_psl
+			conservatism_lpr
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -470,11 +488,11 @@ conservatism_group = {
 				idea_cost = -0.15
 				
 				allow = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -487,11 +505,11 @@ conservatism_group = {
 				manpower_recovery_speed = 0.2
 				
 				allow = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -512,11 +530,11 @@ conservatism_group = {
 				global_unrest = -2
 				
 				allow = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -549,11 +567,11 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -574,11 +592,11 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_kpn
 				}
 
 				ai_will_do = {
@@ -591,11 +609,11 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -608,11 +626,11 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -625,11 +643,11 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -664,11 +682,11 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -681,11 +699,11 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_kpn }
 				}
 
 				ai_will_do = {
@@ -698,11 +716,136 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_kpn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_kpn }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
 				}
 
 				ai_will_do = {
@@ -713,6 +856,7 @@ conservatism_group = {
 	}
 
 	conservatism_zchn = {
+		#hre_religion = yes
 		color = { 46 178 255 }
 		icon = 40
 		country = {
@@ -728,6 +872,11 @@ conservatism_group = {
 
 		allowed_conversion = {
 			conservatism_aws
+			conservatism_kpn
+			conservatism_pc
+			conservatism_psl
+			conservatism_lpr
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -771,11 +920,11 @@ conservatism_group = {
 				idea_cost = -0.15
 				
 				allow = {
-					always = yes
+					religion = conservatism_zchn
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -788,11 +937,11 @@ conservatism_group = {
 				manpower_recovery_speed = 0.2
 				
 				allow = {
-					always = yes
+					religion = conservatism_zchn
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -813,11 +962,11 @@ conservatism_group = {
 				global_unrest = -2
 				
 				allow = {
-					always = yes
+					religion = conservatism_zchn
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -850,11 +999,11 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -875,11 +1024,11 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -892,11 +1041,11 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = yes
+					religion = conservatism_zchn 
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_zchn
 				}
 
 				ai_will_do = {
@@ -909,11 +1058,11 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = yes
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -926,11 +1075,11 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -965,11 +1114,11 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -982,11 +1131,11 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_zchn }
 				}
 
 				ai_will_do = {
@@ -999,11 +1148,136 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_zchn }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_zchn }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
 				}
 
 				ai_will_do = {
@@ -1014,6 +1288,7 @@ conservatism_group = {
 	}
 
 	conservatism_pc = {
+		#hre_religion = yes
 		color = { 255 134 59 }
 		icon = 41
 		country = {
@@ -1028,7 +1303,12 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-
+			conservatism_aws
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_psl
+			conservatism_lpr
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -1072,11 +1352,11 @@ conservatism_group = {
 				idea_cost = -0.15
 				
 				allow = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1089,11 +1369,11 @@ conservatism_group = {
 				manpower_recovery_speed = 0.2
 				
 				allow = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1114,11 +1394,11 @@ conservatism_group = {
 				global_unrest = -2
 				
 				allow = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1151,11 +1431,11 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1176,11 +1456,11 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1193,11 +1473,11 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1210,11 +1490,11 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1227,11 +1507,11 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1266,11 +1546,11 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_pc
 				}
 
 				ai_will_do = {
@@ -1283,11 +1563,11 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_pc }
 				}
 
 				ai_will_do = {
@@ -1300,11 +1580,136 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_pc }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_pc }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
 				}
 
 				ai_will_do = {
@@ -1315,6 +1720,7 @@ conservatism_group = {
 	}
 
 	conservatism_aws = {
+		#hre_religion = yes
 		color = { 235 245 255 }
 		icon = 42
 		country = {
@@ -1329,7 +1735,13 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -1375,11 +1787,11 @@ conservatism_group = {
 				idea_cost = -0.15
 				
 				allow = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1392,11 +1804,11 @@ conservatism_group = {
 				manpower_recovery_speed = 0.2
 				
 				allow = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1417,11 +1829,11 @@ conservatism_group = {
 				global_unrest = -2
 				
 				allow = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1454,11 +1866,11 @@ conservatism_group = {
 				global_missionary_strength = 0.03
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				ai_will_do = {
@@ -1479,11 +1891,11 @@ conservatism_group = {
 				great_project_upgrade_cost = -0.15	
 				
 				allow = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1496,11 +1908,11 @@ conservatism_group = {
 				cavalry_power = 0.15		
 				
 				allow = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1513,11 +1925,11 @@ conservatism_group = {
 				mercenary_discipline = 0.10
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				ai_will_do = {
@@ -1530,11 +1942,11 @@ conservatism_group = {
 				global_institution_spread = 0.25	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				ai_will_do = {
@@ -1569,11 +1981,11 @@ conservatism_group = {
 				siege_ability = 0.25	
 				
 				allow = {
-					always = yes
+					NOT = { religion = conservatism_aws }
 				}
 
 				visible = {
-					always = no
+					NOT = { religion = conservatism_aws }
 				}
 
 				ai_will_do = {
@@ -1586,11 +1998,11 @@ conservatism_group = {
 				improve_relation_modifier = 0.25
 				
 				allow = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				ai_will_do = {
@@ -1608,11 +2020,136 @@ conservatism_group = {
 				spy_action_cost_modifier = -0.60
 				
 				allow = {
-					always = yes
+					religion = conservatism_aws
 				}
 
 				visible = {
-					always = yes
+					religion = conservatism_aws
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
 				}
 
 				ai_will_do = {
@@ -1623,6 +2160,7 @@ conservatism_group = {
 	}
 
 	conservatism_psl = {
+		#hre_religion = yes
 		color = { 0.0 0.7 0.04 }
 		icon = 43
 		country = {
@@ -1637,7 +2175,12 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-
+			conservatism_aws
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_lpr
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -1705,7 +2248,22 @@ conservatism_group = {
 
 			guru_waldemar_pawlak = {
 				trigger = {
-					is_year = 1520
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 1991
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 6
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -1738,7 +2296,22 @@ conservatism_group = {
 
 			guru_jaroslaw_kalinowski = {
 				trigger = {
-					is_year = 1545
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 1997
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 4
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -1771,7 +2344,22 @@ conservatism_group = {
 
 			guru_janusz_wojciechowski = {
 				trigger = {
-					is_year = 1595
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2004
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 3
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -1804,7 +2392,22 @@ conservatism_group = {
 
 			guru_antoni_podraza = {
 				trigger = {
-					is_year = 1610
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2005
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 1
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -1837,7 +2440,22 @@ conservatism_group = {
 
 			guru_janusz_piechocinski = {
 				trigger = {
-					is_year = 1650
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2012
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 11
+						}
+					}
+
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -1870,7 +2488,22 @@ conservatism_group = {
 
 			guru_wladyslaw_kosiniak_kamysz = {
 				trigger = {
-					is_year = 1680
+					
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2015
+						}
+						
+					}
+					1500 = {
+						check_variable = {
+							which = clock_month
+							value = 7
+						}
+					}
+					
 					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
@@ -1908,6 +2541,7 @@ conservatism_group = {
 	}
 
 	conservatism_lpr = {
+		#hre_religion = yes
 		color = { 101 57 130 }
 		icon = 45
 		country = {
@@ -1915,14 +2549,19 @@ conservatism_group = {
 			tolerance_own = 2
 		}
 		country_as_secondary = {
-			manpower_percentage = 0.1
+			global_manpower_modifier = 0.1
 		}
 		province = {
 			local_years_of_nationalism = 15
 		}
 
 		allowed_conversion = {
-			
+			conservatism_aws
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_psl
+			populism_PPU
 		}
 
 		allowed_center_conversion = {
@@ -1959,523 +2598,332 @@ conservatism_group = {
 
 		fervor = yes
 	}
+
+	conservatism_PIS = {
+		#hre_religion = yes
+		color = { 7 58 118 }
+		icon = 44
+
+		allowed_conversion = {
+			populism_PPU
+		}
+
+		country = {
+			tolerance_own = 3
+			global_heathen_missionary_strength = 0.05
+		}
+		
+		country_as_secondary = {
+			global_tax_modifier = 0.5
+			advisor_pool = 5
+		}
+		
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_aws
+			liberalism_PO
+			populism_konfederacja
+		}
+
+		on_convert = {
+			change_religion = conservatism_PIS
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { }
+		
+		papacy = {
+			papal_tag = P1S
+			election_cost = 5
+			seat_of_papacy = 1016 # Ochota
+			
+			
+			#Council of Trent Positions
+			harsh = {
+				relation_with_heretics = -25
+				relation_with_heathens = -50
+				global_religious_conversion_resistance = 0.5
+				global_institution_spread = -0.5
+				global_missionary_strength = 0.03
+			}
+			neutral = {
+				global_religious_conversion_resistance = -1
+			}
+			concilatory = {
+				relation_with_heretics = 10
+				relation_with_heathens = 25
+				global_religious_conversion_resistance = 0.5
+				global_heathen_missionary_strength = -0.05
+				improve_relation_modifier = 0.5
+			}
+			
+			#Council of Trent Concessions
+			concessions = {
+				first_concession = {
+					harsh = {
+						relation_with_heretics = -12.5
+						relation_with_heathens = -25
+						global_heretic_missionary_strength = 0.05
+					}	
+					concilatory = {
+						relation_with_heretics = 12.5
+						relation_with_heathens = 25
+						tolerance_heathen = 3
+					}
+				}
+				second_concession = {
+					harsh = {
+						relation_with_heretics = -25
+						relation_with_heathens = -50
+						papal_influence_from_cardinals = 5
+						curia_treasury_contribution = 0.33
+					}	
+					concilatory = {
+						relation_with_heretics = 25
+						relation_with_heathens = 50
+						tolerance_of_heathens_capacity = 3
+						religious_unity = 0.5
+					}
+				}
+				third_concession = {
+					harsh = {
+						relation_with_heretics = -37.5
+						relation_with_heathens = -75
+						manpower_in_true_faith_provinces = 0.25
+						extra_manpower_at_religious_war = yes
+					}	
+					concilatory = {
+						relation_with_heretics = 37.5
+						relation_with_heathens = 75
+						global_manpower_modifier = 0.10
+						curia_powers_cost = -0.5
+					}
+				}
+				fourth_concession = {
+					harsh = {
+						relation_with_heretics = -50
+						relation_with_heathens = -100
+						enforce_religion_cost = -0.75
+						missionaries = 3
+					}	
+					concilatory = {
+						relation_with_heretics = 50
+						relation_with_heathens = 100
+						no_religion_penalty = yes
+						can_not_build_missionaries = yes
+					}
+				}
+			}
+			
+			
+			# PIS Actions below!
+			
+			redirect_party_funding = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_sanction_for_church_taxes }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_sanction_for_church_taxes"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}				
+			}			
+			nationalize_private_media = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_blessing }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_blessing"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			promote_propaganda_radio_maryja = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_indulgence }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_indulgence"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}	
+			get_support_housewife = {
+				cost = 100
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { stability = 3 }
+				}
+				effect = {
+					add_stability = 1
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 2
+						NOT = { stability = 0 }
+					}
+				}
+			}
+			win_favor_archbishop = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = usury_forgiven }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "usury_forgiven"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						NOT = { num_of_loans = 1 }
+					}
+				}
+			}			
+			proclaim_holy_war = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					is_at_war = yes
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_sanction_for_holy_war }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_sanction_for_holy_war"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						manpower_percentage = 0.5
+					}
+				}
+			}
+			send_pis_legate = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+					is_papal_controller = no
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { has_country_modifier = papal_legate }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "papal_legate"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}	
+			sanction_commercial_monopoly = {
+				cost = 50
+				potential = {
+					NOT = { tag = P1S }
+				}
+				allow = {
+					NOT = { war_with = P1S }
+					NOT = { mercantilism = 100 }
+				}
+				effect = {
+					add_mercantilism = 1
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						NOT = { has_idea_group = trade_ideas }
+					}
+				}
+			}
+			detect_german_spy = {
+				curia_treasury_cost = 500
+				potential = {
+					is_papal_controller = yes
+					tag = P1S
+				}
+				allow = {
+					is_papal_controller = yes
+					reform_desire = 0.05
+				}
+				effect = {
+					add_reform_desire = -0.05
+					add_reform_desire_scale = 0.5
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+	}
 }
 
 socialism_group = {
 	defender_of_faith = yes
 	flags_with_emblem_percentage = 33
-	flag_emblem_index_range = { 97 106 } #Including Star of David / Seal of Suleyman
+	flag_emblem_index_range = { 97 106 }
 
 	religious_schools = {
-		hanafi_school = {
-			potential_invite_scholar = {
-				has_matching_religion = socialism_sld
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				if = {
-					limit = {
-						NOT = { religion = sunni }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = can_always_invite_hanafi_school }
-						NOT = { has_country_flag = privilege_can_always_invite_hanafi_school }
-					}
-					reverse_has_opinion = { who = FROM value = 150 }
-					OR = {
-						alliance_with = FROM
-						is_subject_of = FROM
-						overlord_of = FROM
-					}
-					hidden_progressive_opinion_for_scholar_trigger = yes
-				}
-				if = {
-					limit = {
-						ai = yes
-					}
-					NOT = { has_country_modifier = has_invited_scholar_recently }
-				}
-				NOT = { has_country_modifier = hanafi_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = hanafi_scholar_modifier duration = 7300 }
-				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
-					limit = {
-						ai = yes
-					}
-					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = hanafi_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_hanafi"
-
-			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			adm_tech_cost_modifier = -0.05
-		}
-		hanbali_school = {
-			potential_invite_scholar = {
-				OR = {
-					knows_of_scholar_country_capital_trigger = yes
-					has_country_flag = can_always_invite_hanbali_school
-					has_country_flag = privilege_can_always_invite_hanbali_school
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				if = {
-					limit = {
-						NOT = { religion = sunni }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = can_always_invite_hanbali_school }
-						NOT = { has_country_flag = privilege_can_always_invite_hanbali_school }
-					}
-					reverse_has_opinion = { who = FROM value = 150 }
-					OR = {
-						alliance_with = FROM
-						is_subject_of = FROM
-						overlord_of = FROM
-					}
-					hidden_progressive_opinion_for_scholar_trigger = yes
-				}
-				if = {
-					limit = {
-						ai = yes
-					}
-					NOT = { has_country_modifier = has_invited_scholar_recently }
-				}
-				NOT = { has_country_modifier = hanbali_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = hanbali_scholar_modifier duration = 7300 }
-				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
-					limit = {
-						ai = yes
-					}
-					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = hanbali_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_hanbali"
-
-			ae_impact = -0.1
-		}
-		maliki_school = {
-			potential_invite_scholar = {
-				OR = {
-					knows_of_scholar_country_capital_trigger = yes
-					has_country_flag = can_always_invite_maliki_school
-					has_country_flag = privilege_can_always_invite_maliki_school
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				if = {
-					limit = {
-						NOT = { religion = sunni }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = can_always_invite_maliki_school }
-						NOT = { has_country_flag = privilege_can_always_invite_maliki_school }
-					}
-					reverse_has_opinion = { who = FROM value = 150 }
-					OR = {
-						alliance_with = FROM
-						is_subject_of = FROM
-						overlord_of = FROM
-					}
-					hidden_progressive_opinion_for_scholar_trigger = yes
-				}
-				if = {
-					limit = {
-						ai = yes
-					}
-					NOT = { has_country_modifier = has_invited_scholar_recently }
-				}
-				NOT = { has_country_modifier = maliki_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = maliki_scholar_modifier duration = 7300 }
-				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
-					limit = {
-						ai = yes
-					}
-					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = maliki_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_maliki"
-
-			development_cost = -0.1
-		}
-		shafii_school = {
-			potential_invite_scholar = {
-				OR = {
-					knows_of_scholar_country_capital_trigger = yes
-					has_country_flag = can_always_invite_shafii_school
-					has_country_flag = privilege_can_always_invite_shafii_school
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				if = {
-					limit = {
-						NOT = { religion = sunni }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = can_always_invite_shafii_school }
-						NOT = { has_country_flag = privilege_can_always_invite_shafii_school }
-					}
-					reverse_has_opinion = { who = FROM value = 150 }
-					OR = {
-						alliance_with = FROM
-						is_subject_of = FROM
-						overlord_of = FROM
-					}
-					hidden_progressive_opinion_for_scholar_trigger = yes
-				}
-				if = {
-					limit = {
-						ai = yes
-					}
-					NOT = { has_country_modifier = has_invited_scholar_recently }
-				}
-				NOT = { has_country_modifier = shafii_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = shafii_scholar_modifier duration = 7300 }
-				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
-					limit = {
-						ai = yes
-					}
-					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = shafii_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_shafii"
-
-			merchants = 1
-		}
-		#Shias
-		ismaili_school = {
-			potential_invite_scholar = {
-				OR = {
-					knows_of_scholar_country_capital_trigger = yes
-					has_country_flag = can_always_invite_ismaili_school
-					has_country_flag = privilege_can_always_invite_ismaili_school
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				if = {
-					limit = {
-						NOT = { religion = shiite }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = can_always_invite_ismaili_school }
-						NOT = { has_country_flag = privilege_can_always_invite_ismaili_school }
-					}
-					reverse_has_opinion = { who = FROM value = 150 }
-					OR = {
-						alliance_with = FROM
-						is_subject_of = FROM
-						overlord_of = FROM
-					}
-					hidden_progressive_opinion_for_scholar_trigger = yes
-				}
-				if = {
-					limit = {
-						ai = yes
-					}
-					NOT = { has_country_modifier = has_invited_scholar_recently }
-				}
-				NOT = { has_country_modifier = ismaili_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = ismaili_scholar_modifier duration = 7300 }
-				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
-					limit = {
-						ai = yes
-					}
-					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
-				}
-			}
-			
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = ismaili_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_ismaili"
-
-			horde_unity = 1
-			legitimacy = 1
-			republican_tradition = 0.2
-			devotion = 1
-		}
-		jafari_school = {
-			potential_invite_scholar = {
-				OR = {
-					knows_of_scholar_country_capital_trigger = yes
-					has_country_flag = can_always_invite_jafari_school
-					has_country_flag = privilege_can_always_invite_jafari_school
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				if = {
-					limit = {
-						NOT = { religion = shiite }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = can_always_invite_jafari_school }
-						NOT = { has_country_flag = privilege_can_always_invite_jafari_school }
-					}
-					reverse_has_opinion = { who = FROM value = 150 }
-					OR = {
-						alliance_with = FROM
-						is_subject_of = FROM
-						overlord_of = FROM
-					}
-					hidden_progressive_opinion_for_scholar_trigger = yes
-				}
-				if = {
-					limit = {
-						ai = yes
-					}
-					NOT = { has_country_modifier = has_invited_scholar_recently }
-				}
-				NOT = { has_country_modifier = jafari_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = jafari_scholar_modifier duration = 7300 }
-				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
-					limit = {
-						ai = yes
-					}
-					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
-				}
-			}
-			
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = jafari_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_jafari"
-
-			shock_damage = 0.1
-		}
-		zaidi_school = {
-			potential_invite_scholar = {
-				OR = {
-					knows_of_scholar_country_capital_trigger = yes
-					has_country_flag = can_always_invite_zaidi_school
-					has_country_flag = privilege_can_always_invite_zaidi_school
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				if = {
-					limit = {
-						NOT = { religion = shiite }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = can_always_invite_zaidi_school }
-						NOT = { has_country_flag = privilege_can_always_invite_zaidi_school }
-					}
-					reverse_has_opinion = { who = FROM value = 150 }
-					OR = {
-						alliance_with = FROM
-						is_subject_of = FROM
-						overlord_of = FROM
-					}
-					hidden_progressive_opinion_for_scholar_trigger = yes
-				}
-				if = {
-					limit = {
-						ai = yes
-					}
-					NOT = { has_country_modifier = has_invited_scholar_recently }
-				}
-				NOT = { has_country_modifier = zaidi_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = no_scholar_adm_cost }
-					}
-					adm_power_cost = 50
-				}
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = zaidi_scholar_modifier duration = 7300 }
-				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
-					limit = {
-						ai = yes
-					}
-					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
-				}
-			}
-			
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = zaidi_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_zaidi"
-
-			shock_damage_received = -0.1
-		}
-		
 	}
 
 	socialism_sld = {
+		#hre_religion = yes
 		color = { 252 0 0 }
 		icon = 46
 		allow_female_defenders_of_the_faith = yes
@@ -2526,6 +2974,7 @@ socialism_group = {
 	}
 
 	socialism_up = {
+		#hre_religion = yes
 		color = { 255 157 150 }
 		icon = 47
 		allow_female_defenders_of_the_faith = yes
@@ -2581,6 +3030,7 @@ socialism_group = {
 populism_group = {
 
 	populism_samoobrona = {
+		#hre_religion = yes
 		color = { 101 57 130 }
 		icon = 49
 		country = {
@@ -2631,5 +3081,513 @@ populism_group = {
 		personal_deity = yes
 
 		date = 1503.1.1
+	}
+
+	populism_PPU = {
+		#hre_religion = yes
+		color = { 188 3 0 }
+		icon = 2
+		country = {
+			religious_unity = 0.25
+			global_unrest = -2
+		}
+		country_as_secondary = {
+			global_unrest = -1
+		}
+		province = {
+			trade_goods_size_modifier = 0.05
+		}
+
+		allowed_conversion = {
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+			liberalism_PO
+			conservatism_PIS
+
+		}
+		on_convert = {
+			change_religion = populism_PPU
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_PPU
+						}
+					}
+					change_religion = populism_PPU
+					add_reform_center = populism_PPU
+				}
+			}			
+		}
+		
+		heretic = { }
+		
+		date = 1615.01.01
+		has_patriarchs = yes		# Uses patriarch authority
+		
+		orthodox_icons = {
+			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
+
+			icon_jan_pawel_2 = {
+				monarch_diplomatic_power = 2
+				idea_cost = -0.15
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_stefan_wyszynski = {
+				discipline = 0.05
+				manpower_recovery_speed = 0.2
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						is_in_important_war = yes
+					}
+				}
+			}
+
+			icon_jerzy_popieluszko = {
+				stability_cost_modifier = -0.40
+				global_unrest = -2
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 0.02
+					modifier = {
+						factor = 0
+						NOT = {
+							calc_true_if = {
+								all_owned_province = {
+									unrest = 1
+								}
+								amount = 2
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						calc_true_if = {
+							all_owned_province = {
+								unrest = 1
+							}
+							amount = 5
+						}
+					}
+				}
+			}
+
+			icon_leszek_moczulski = {
+				culture_conversion_cost = -0.30
+				global_missionary_strength = 0.03
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						is_at_war = no
+					}
+					modifier = {
+						factor = 3
+						NOT = {religious_unity = 0.7} 
+					}
+				}
+			}
+
+			icon_romuald_szeremietiew = {
+				build_cost = -0.15
+				great_project_upgrade_cost = -0.15	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_stefan_niesiolowski = {
+				cavalry_cost = -0.15	
+				cavalry_power = 0.15		
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_marek_jurek = {
+				mercenary_cost = -0.15	
+				mercenary_discipline = 0.10
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_lech_kaczynski = {
+				embracement_cost = -0.4	
+				global_institution_spread = 0.25	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 0.02
+					modifier = {
+						factor = 0
+						NOT = {
+							calc_true_if = {
+								all_owned_province = {
+									current_institution = 1
+									NOT = { current_institution = 95 }
+								}
+								amount = 1
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						calc_true_if = {
+							all_owned_province = {
+								current_institution = 1
+								NOT = { current_institution = 95 }
+							}
+							amount = 5
+						}
+					}
+				}
+			}
+
+			icon_jaroslaw_kaczynski = {
+				artillery_levels_available_vs_fort = 1	
+				siege_ability = 0.25	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_jerzy_buzek = {
+				build_cost = -0.15
+				great_project_upgrade_cost = -0.15	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_marian_krzaklewski = {
+				build_cost = -0.15
+				great_project_upgrade_cost = -0.15	
+				
+				allow = {
+					NOT = { religion = populism_PPU }
+				}
+
+				visible = {
+					NOT = { religion = populism_PPU }
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+			icon_pawel_koziol = {
+				discipline = 0.05
+				harsh_treatment_cost = -0.5
+				
+				allow = {
+					religion = populism_PPU
+				}
+
+				visible = {
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_arkadiusz_czerepach = {
+				spy_offence = 0.5
+				idea_cost = -0.15
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_maciej_solejuk = {
+				can_bypass_forts = yes
+				movement_speed = -0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_wieslawa_oles = {
+				technology_cost = -0.1
+				global_institution_spread = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_andrzej_wieclawski = {
+				build_cost = -0.25
+				build_time = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_mieczyslaw_wezol = {
+				manpower_recovery_speed = 0.25
+				innovativeness_gain = 0.5
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			icon_ryszard_polakowski = {
+				assault_fort_ability = 0.25
+				ae_impact = -0.25
+				
+				allow = {
+					
+					religion = populism_PPU
+				}
+
+				visible = {
+					
+					religion = populism_PPU
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+	}
+
+	crusade_name = WAR_FOR_FREE_TRADE
+}
+
+christian = {
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	# Flag emblem values - Used for Dynamic Setup of Random Nations.
+	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
+	# Can be overridden per religion.
+	flags_with_emblem_percentage = 33 # default == 0
+	flag_emblem_index_range = { 1 57 }
+
+	
+	crusade_name = CRUSADE
+	
+	christian_catholic = {
+		color = { 204 204 0 }
+		icon = 1
+		allowed_conversion = {
+
+		}
+		
+
+		country = {
+			tolerance_own = 1
+			global_heathen_missionary_strength = 0.01
+		}
+		
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			advisor_pool = 1
+		}
+		
+		#hre_religion = yes
+		
+		on_convert = {
+			change_religion = christian_catholic
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
+		
+		holy_sites = { 
+			1170 #Kalwaria Zebrzydowska
+			441 #Jasna Gora
+			99 #Lichen
+			4247 #Gietrzwald
+			3236 #Lagiewniki
+			4260 #Sw Lipka
+			1802 #Swiebodzin
+			1180 #Zakopane
+			1084 #Kalwaria Paclawska
+			2954 #Sw Krzyz
+			4174 #Gora Sw Anny
+			1212 #Góra Kalwaria
+		}
+		
+		blessings = {
+			aposthole_peter
+			aposthole_andrew
+			aposthole_james
+			aposthole_john
+			aposthole_philip
+			aposthole_bartholomew
+			aposthole_matthew
+			aposthole_thomas
+			aposthole_james
+			aposthole_thaddeus
+			aposthole_simon
+			aposthole_judas_iscariot		
+		}
 	}
 }

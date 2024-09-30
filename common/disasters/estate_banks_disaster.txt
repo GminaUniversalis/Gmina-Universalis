@@ -108,9 +108,12 @@ estate_banks_disaster = {
 	
 	modifier = {	
 		interest = 5
-		inflation_reduction = 0.5
-		production_efficiency = -0.2
-		trade_efficiency = -0.2
+		may_not_reduce_inflation = yes
+		yearly_corruption = 0.5
+		inflation_reduction = -0.25
+		advisor_cost = 1
+		trade_efficiency = -0.25
+		global_unrest = 2
 	}
 
 	on_start = gmina_estate_disasters.8

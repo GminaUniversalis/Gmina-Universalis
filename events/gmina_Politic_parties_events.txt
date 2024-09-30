@@ -11,7 +11,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1991
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -160,10 +175,6 @@ country_event = {
 	picture = UDPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.1.a
@@ -219,7 +230,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+		
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1990
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -352,10 +378,6 @@ country_event = {
 	picture = KLDPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.2.a
@@ -411,7 +433,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1979
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 9
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -535,10 +572,6 @@ country_event = {
 	picture = KPNPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.3.a
@@ -594,7 +627,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1989
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 9
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -717,10 +765,6 @@ country_event = {
 	picture = ZCHNPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.4.a
@@ -776,7 +820,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1480
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1990
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+
 		has_institution = renaissance
 		OR = {
 			religion = communism_pzpr
@@ -901,10 +960,6 @@ country_event = {
 	picture = PCPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.5.a
@@ -950,7 +1005,7 @@ country_event = {
 }
 
 # Start of PSL
-country_event = {
+country_event = {	
 	id = politics.6
 	title = politics.6.t
 	desc = politics.6.d
@@ -960,7 +1015,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1485
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1990
+			}
+			
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+
 		religion = communism_zsl
 
 		any_owned_province = {
@@ -1083,10 +1153,6 @@ country_event = {
 	picture = PSLPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.6.a
@@ -1142,7 +1208,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1485
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1999
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 4
+			}
+		}
+
 		religion = communism_pzpr
 
 		any_owned_province = {
@@ -1251,10 +1332,6 @@ country_event = {
 	picture = SLDPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.7.a
@@ -1310,26 +1387,98 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1490
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1988 #1990
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 12 #1
+			}
+		}
+
 		religion = communism_pzpr
     }
 
+	immediate = {
+		set_global_flag = fall_of_communism
+	}
     mean_time_to_happen = {
-	    months = 100
+	    months = 120
 
 		modifier = {
 			factor = 0.8
-			NOT = {corruption = 6}
+			
+			has_hostile_reformation_center = yes
+		}
+
+		modifier = {
+			factor = 0.5
+			calc_true_if = {
+				amount = 2
+				has_hostile_reformation_center = yes
+			}
+
+		}
+
+		modifier = {
+			factor = 0.2
+			calc_true_if = {
+				amount = 3
+				has_hostile_reformation_center = yes
+			}
+
+		}
+
+		modifier = {
+			factor = 0.9
+			NOT = { religious_unity = 0.9 }
+		}
+
+		modifier = {
+			factor = 0.6
+			NOT = { religious_unity = 0.6 }
+		}
+		
+		modifier = {
+			factor = 0.3
+			NOT = { religious_unity = 0.3 }
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = { religious_unity = 0.1 }
+		}
+
+		modifier = {
+			factor = 0.5
+			corruption = 10
+		}
+
+		modifier = {
+			factor = 0.6
+			corruption = 8
+		}
+
+		modifier = {
+			factor = 0.7
+			corruption = 6
 		}
 
 		modifier = {
 			factor = 0.8
-			NOT = {corruption = 4}
+			corruption = 4
 		}
 
 		modifier = {
-			factor = 0.8
-			NOT = {corruption = 2}
+			factor = 0.9
+			corruption = 2
 		}
 	}
 
@@ -1612,10 +1761,6 @@ country_event = {
 	picture = PZPR_ENDPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.8.ud
@@ -1881,7 +2026,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1487
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1990
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 1
+			}
+		}
+
 		religion = communism_sd
     }
 
@@ -2183,10 +2343,6 @@ country_event = {
 	picture = SD_DILEMAPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.8.ud
@@ -2452,7 +2608,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1506
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1992
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
 		OR = {
 			religion = communism_pzpr
 			religion = socialism_sld
@@ -2567,10 +2738,6 @@ country_event = {
 	picture = UPPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.10.a
@@ -2626,7 +2793,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1530
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1996
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 10
+			}
+		}
+
 		OR = {
 			religion = conservatism_kpn
 			religion = conservatism_zchn
@@ -2758,10 +2940,6 @@ country_event = {
 	picture = AWSPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.11.a
@@ -2817,7 +2995,22 @@ country_event = {
     fire_only_once = yes
 	
     trigger = {
-        is_year = 1520
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 1994
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 4
+			}
+		}
+
 		OR = {
 			religion = liberalism_kld
 			religion = liberalism_ud
@@ -2949,10 +3142,6 @@ country_event = {
 	picture = UWPicture
 
 	is_triggered_only = yes
-	
-    mean_time_to_happen = {
-	    months = 30
-	}
 
 	option = {
 		name = politics.12.a
@@ -2994,5 +3183,505 @@ country_event = {
 
 		ai_chance = { factor = 10 }
 		add_stability = -1
+	}
+}
+
+# Start of PPU
+country_event = {
+	id = politics.13
+	title = politics.13.t
+	desc = politics.13.d
+	picture = PPUPicture
+
+	major = yes
+    fire_only_once = yes
+	
+    trigger = {
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2005
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = populism_PPU
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+	    months = 30
+
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				type = random
+				amount = 6
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					capital_scope = {
+						OR = {
+							region = podlasie_region
+							region = mazowieckie_region
+							region = lubelskie_region
+							region = podkarpackie_region
+							region = malopolska_region
+							region = swietokrzyskie_region
+						}
+					}
+					any_owned_province = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_PPU
+						}
+					}
+				}
+
+				country_event = { 
+					id = politics.113
+					days = 30
+				}
+			}
+
+		}
+	}
+
+	option = {
+		name = politics.13.a
+
+		ai_chance = { factor = 100 }
+
+		enable_religion = populism_PPU
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = populism_PPU
+				}
+			}
+			change_religion = populism_PPU
+			add_reform_center = populism_PPU
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				ROOT = {
+					capital_scope = {
+						change_religion = populism_PPU
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = populism_PPU
+	}
+
+	option = {
+		name = politics.13.b
+
+		ai_chance = { factor = 0 }
+
+		enable_religion = populism_PPU
+		add_stability = -1
+	}
+}
+
+# Accept PPU?
+country_event = {
+	id = politics.113
+	title = politics.113.t
+	desc = politics.113.d
+	picture = PPUPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = politics.13.a
+
+		ai_chance = { factor = 100 }
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = populism_PPU
+				}
+			}
+			change_religion = populism_PPU
+			add_reform_center = populism_PPU
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = populism_PPU
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = populism_PPU
+	}
+
+	option = {
+		name = politics.13.b
+
+		ai_chance = { factor = 10 }
+		add_stability = -1
+	}
+}
+
+# Start of PIS
+country_event = {
+	id = politics.14
+	title = politics.14.t
+	desc = politics.14.d
+	picture = PISPicture
+
+	major = yes
+    fire_only_once = yes
+	
+    trigger = {
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2001
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
+
+		OR = {
+			religion = conservatism_aws
+			religion = liberalism_uw
+		}
+		
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = conservatism_PIS
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+	    months = 30
+
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			1016 = {
+				add_core = P1S
+				change_religion = conservatism_PIS
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				type = random
+				amount = 6
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						religion = conservatism_aws
+						religion = liberalism_uw
+					}
+					any_owned_province = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = conservatism_PIS
+						}
+					}
+				}
+
+				country_event = { 
+					id = politics.114
+					days = 30
+				}
+			}
+
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						religion = conservatism_aws
+						religion = liberalism_uw
+					}
+				}
+
+				country_event = { 
+					id = politics.114
+					days = 70
+				}
+			}
+		}
+	}
+
+	option = {
+		name = politics.14.a
+
+		ai_chance = { factor = 100 }
+
+		enable_religion = conservatism_PIS
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = conservatism_PIS
+				}
+			}
+			change_religion = conservatism_PIS
+			add_reform_center = conservatism_PIS
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = conservatism_PIS
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = conservatism_PIS
+		
+		tooltip = {
+			1016 = {
+				add_core = P1S
+				change_religion = conservatism_PIS
+			}
+		}
+
+		if = {
+			limit = {
+				tag = G12
+			}
+
+			custom_tooltip = release_pissowcy
+
+			hidden_effect = {
+				release = P1S
+				P1S = {
+					change_religion = conservatism_PIS	
+					change_government = theocracy
+					add_government_reform = papacy_reform
+					change_primary_culture = warszawska
+					if = {
+						limit = {
+							P1S = {
+								ai = yes
+							}
+						}
+
+						define_ruler = {
+							culture = ROOT
+							name = "Lech"
+							dynasty = "Kaczyński"
+							claim = 100
+							male = yes
+							age = 54
+							adm = 4
+							mil = 2
+							dip = 5
+							hide_skills = yes
+							add_ruler_personality = immortal_personality
+						}
+					}
+					else = {
+						define_ruler = {
+							culture = ROOT
+							name = "Lech"
+							dynasty = "Kaczyński"
+							claim = 100
+							male = yes
+							age = 54
+							adm = 4
+							mil = 2
+							dip = 5
+							hide_skills = yes
+						}
+					}
+					
+				}
+				
+				1016 = {
+					remove_core = G12
+				}
+			}
+
+		}
+	}
+
+	option = {
+		name = politics.14.b
+
+		ai_chance = { factor = 0 }
+
+		enable_religion = conservatism_PIS
+		add_stability = -1
+
+		tooltip = {
+			1016 = {
+				add_core = P1S
+				change_religion = conservatism_PIS
+			}
+		}
+	}
+}
+
+# Accept PIS?
+country_event = {
+	id = politics.114
+	title = politics.114.t
+	desc = politics.14.d
+	picture = PISPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = politics.14.a
+
+		ai_chance = { factor = 100 }
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = conservatism_PIS
+				}
+			}
+			change_religion = conservatism_PIS
+			add_reform_center = conservatism_PIS
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = conservatism_PIS
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+
+		change_religion = conservatism_PIS
+
+		if = {
+			limit = {
+				tag = G12
+			}
+
+			custom_tooltip = release_pissowcy
+
+			hidden_effect = {
+				release = P1S
+				P1S = {
+					change_religion = conservatism_PIS	
+					change_government = theocracy
+					add_government_reform = papacy_reform
+					change_primary_culture = warszawska
+					
+				}
+				1016 = {
+					remove_core = G12
+				}
+			}
+		}
+	}
+
+	option = {
+		name = politics.14.b
+
+		ai_chance = { factor = 10 }
+		add_stability = -1
+
+		tooltip = {
+			1016 = {
+				add_core = P1S
+				change_religion = conservatism_PIS
+			}
+		}
 	}
 }

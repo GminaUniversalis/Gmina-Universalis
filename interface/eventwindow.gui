@@ -83,6 +83,15 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
+		guiButtonType = {
+			name = "event_goto_province"
+			position = { x = 0 y = 14 }
+			quadTextureSprite ="GFX_event_goto_province"
+			buttonFont = "Main_14_black"
+			shortcut = "f"
+			clicksound = click
+		}
+		
 		listboxType = 
 		{
 			name = "event_option_listbox"

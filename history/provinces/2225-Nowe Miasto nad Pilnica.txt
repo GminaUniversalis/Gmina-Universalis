@@ -1,11 +1,10 @@
-#Nowe Miasto nad Pilnica
+#Nowe Miasto nad Pilica
 culture = radomska
 religion = communism_zsl
 base_tax = 1
 base_production = 1
 trade_goods = unknown
 base_manpower = 1
-capital = "Nowe Miasto nad Pilnica"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
@@ -14,3 +13,10 @@ controller = G17
 add_core = G17
 discovered_by = ottoman
 
+
+1444.11.13 = {
+remove_core = G17
+add_core = G00
+owner = G00
+controller = G00
+}

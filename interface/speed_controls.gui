@@ -28,13 +28,13 @@ guiTypes = {
 		{
 			name ="icon_score"
 			spriteType = "GFX_icon_score"
-			position = { x= -170 y = 73 }
+			position = { x= -120 y = 73 }
 			Orientation = "UPPER_RIGHT"
 			hint_tag = "hint_score"
 		}
 		instantTextBoxType = {
 			name = "text_score"
-			position = { x = -235 y = 71 }
+			position = { x = -185 y = 71 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}

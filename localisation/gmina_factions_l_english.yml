@@ -1,0 +1,10 @@
+﻿l_english:
+ mining_corporations: "Mining Corporations"
+ mining_corporations_influence: "Mining Corporations Influence"
+ mining_corporations_FACTION_DESC: "Mining corporations are responsible for providing workplace for the local population. Mainly focusing on production and extraction of high quality coal and whatever raw ore you could find in the abundant richeness of Silesia. Whether they are in private hands or state owned, they are very important for the local economy, a literally reinvigorating Silesia's circulatory system. Without them, there is no Silesia.\n\n§YGains influence from Goods Produced (or something)§!"
+ local_politicians: "Local Politicians"
+ local_politicians_influence: "Local Politicians Influence"
+ local_politicians_FACTION_DESC: "Local politics is an important topic in Silesia. Due to historical circumstances we've never had an easy time in the world. To combat that, we had to adapt. Whether working in the interest of our industry or our people, our politicians have their hearts only one premise: to make Silesia great again!\n\n§YGains influence from Diplomatic Reputation (i guess)§!"
+ separationists_movement: "Separationists Movement"
+ separationists_movement_influence: "Separationists Movement Influence"
+ separationists_movement_FACTION_DESC: "The embers of separatist thought still burn in the hearts of our people. Proud Silesians, forged by years of occupation from Czechs, Austrians, Germans and Poles, have learned their way, misleading them into thinking that the old Silesia is no more. They could not have been more wrong. Whether by fire and sword or by fine words, Silesia will regain its glory and its rightful place in the world. Where no one will be able to tell a Silesian that he is a German or a Pole, a Silesian will always remain a Silesian\n\nGains influence from Overextension, being at war and being over Governing Capactiy (probably).§!"

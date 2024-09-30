@@ -18,3 +18,10 @@ latent_trade_goods = { gu_vehicles }
 
 set_province_flag = has_static_trade_good
 set_province_flag = has_{ gu_vehicles }_trade_good
+
+1444.11.13 = {
+remove_core = L21
+add_core = L00
+owner = L00
+controller = L00
+}

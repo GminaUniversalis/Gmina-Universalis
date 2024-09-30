@@ -19,7 +19,7 @@ estate_nobles_hire_advisor = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -79,7 +79,7 @@ estate_nobles_fire_advisor = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -181,7 +181,7 @@ estate_nobles_get_allies = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -387,7 +387,7 @@ estate_nobles_befriend_rival_of_rival = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -458,7 +458,7 @@ estate_nobles_restore_legitimacy = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -662,7 +662,7 @@ estate_nobles_relations_with_X = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -785,7 +785,7 @@ estate_nobles_break_coalition = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -977,7 +977,7 @@ estate_nobles_condottieri_rivals = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -1099,7 +1099,7 @@ estate_nobles_support_independence = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -1247,7 +1247,7 @@ estate_nobles_retake_core = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -1321,7 +1321,7 @@ estate_nobles_crush_revolts = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -1392,7 +1392,7 @@ estate_nobles_regain_liberty = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -1507,7 +1507,7 @@ estate_nobles_convert_province_culture = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -1740,7 +1740,7 @@ estate_nobles_protect_our_culture = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -1954,7 +1954,7 @@ estate_nobles_vassalise_vulnerable_country = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -2213,7 +2213,7 @@ estate_nobles_expand_into_x = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -2496,7 +2496,7 @@ estate_nobles_complete_conquest_of_x = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -2639,7 +2639,7 @@ estate_nobles_annex_subject = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -2775,7 +2775,7 @@ estate_nobles_build_an_army = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -2868,7 +2868,7 @@ estate_nobles_bigger_army_than_rival = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -2981,7 +2981,7 @@ estate_nobles_build_up_manpower_reserves = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3075,7 +3075,7 @@ estate_nobles_recover_abysmal_prestige = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3174,7 +3174,7 @@ estate_nobles_improve_prestige = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3270,7 +3270,7 @@ estate_nobles_mam_three_privileges = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3354,7 +3354,7 @@ estate_nobles_mam_recruit_mamluks = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3473,7 +3473,7 @@ estate_nobles_mam_develop_military_infrastructure = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3569,7 +3569,7 @@ estate_nobles_mam_increase_army_tradition = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3620,7 +3620,7 @@ estate_nobles_mam_increase_army_professionalism = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {
@@ -3675,7 +3675,7 @@ estate_nobles_mam_focus_on_military_matters = {
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_nobles
+				estate = estate_army
 			}
 		}
 		else = {

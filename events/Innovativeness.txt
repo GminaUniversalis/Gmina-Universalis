@@ -324,9 +324,9 @@ country_event = {
 		}
 		add_innovativeness_small_effect = yes
 		if = {
-			limit = { has_estate = estate_church }
+			limit = { has_estate = estate_priests }
 			add_estate_influence_modifier = {
-				estate = estate_church
+				estate = estate_priests
 				desc = EST_VAL_PUBLIC_SCHOOLS
 				influence = 10
 				duration = 3650
@@ -645,12 +645,12 @@ country_event = {
 			}
 			OR = {
 				any_owned_province = {
-					trade_goods = coffee
+					trade_goods = gu_mushrooms
 				}
 				any_subject_country = {
 					is_colonial_nation = yes
 					any_owned_province = {
-						trade_goods = coffee
+						trade_goods = gu_mushrooms
 					}
 				}
 			}

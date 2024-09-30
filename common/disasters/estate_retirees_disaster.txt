@@ -107,10 +107,16 @@ estate_retirees_disaster = {
 	}
 	
 	modifier = {	
-		interest = 5
-		inflation_reduction = 0.5
-		production_efficiency = -0.2
-		trade_efficiency = -0.2
+		global_unrest = 2
+		stability_cost_modifier = 0.25
+		republican_tradition = -0.5
+		legitimacy = -1.5
+		meritocracy = -1.5
+		devotion = -1.5
+		horde_unity = -1.5
+		tolerance_own = -4
+		tolerance_heathen = 4
+		global_religious_conversion_resistance = 5
 	}
 
 	on_start = gmina_estate_disasters.1

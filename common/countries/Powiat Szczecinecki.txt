@@ -1,7 +1,7 @@
 #Country Name: Powiat Szczecinecki
 
 graphical_culture = westerngfx
-color = { 130 1 130 }
+color = { 243 33 18 }
 revolutionary_colors = { 1 2 3 }
 historical_idea_groups = {
 }
@@ -22,15 +22,38 @@ historical_units = {
 	eastern_carabinier
 	russian_mass
 }
-ship_names = {
-    "Comte de Smet de Nayer"
+
+ship_names = { 
+	Dar Pomorza
+    ORP B³yskawica
+    ORP Burza
+    Mewa
+    Rybitwa
+    Czajka
+    ¯uraw
+    Ryœ
+    ¯bik
+    Pelikan
+    Albatros
+    Karpaty
+    Beskidy
+    Sudety
+    Tatry
+    Rysy
+    Zawrat
+    Czantoria
+    Sokolica
+    Roztocze
+    "$PROVINCE$"
 }
-army_names = {
-	"Placeholder $PROVINCE$"
+army_names = { 
+	"$PROVINCE$ army" 
 }
 fleet_names = { 
-	"Stadtflotte" 
+	"$PROVINCE$ fleet" 
 }
+
+
 # Lista imion z pliku: Zachodnio-Pomorskie.txt
 monarch_names = {
     "Hanna" = -216

@@ -7,7 +7,7 @@ internal_conflicts = {
 			has_country_flag = had_internal_conflicts
 		}
 		is_year = 1500
-		NOT = { has_disaster = tur_disaster_ottoman_power_struggle }
+		# NOT = { has_disaster = tur_disaster_ottoman_power_struggle }
 	}
 
 	can_start = {

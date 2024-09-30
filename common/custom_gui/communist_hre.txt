@@ -1,0 +1,5 @@
+custom_text_box = {
+    name = HRE_IS_COMMUNIST
+    potential = { always = yes }
+    tooltip = HRE_IS_COMMUNIST_tooltip
+}

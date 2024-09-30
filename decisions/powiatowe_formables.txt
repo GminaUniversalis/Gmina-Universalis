@@ -74,51 +74,51 @@ country_decisions = {
 		}
 		effect = {
 
-		change_tag = X20
-		on_change_tag_effect = yes
-		restore_country_name = yes
-		swap_non_generic_missions = yes
-		if = {
-			limit = { NOT = { government_rank = 2 } }
-			set_government_rank = 2
-		}
-
-		add_country_modifier = {
-			name = "centralization_modifier"
-			duration = 7300
-		}
-
-		if = {
-			limit = { has_custom_ideas = no }
-			country_event = { id = ideagroups.1 } #Swap Ideas
-		}
-
-		krakow_centrum = {
-			limit = {
-				NOT = { owned_by = ROOT }
+			change_tag = X20
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
 			}
-			add_permanent_claim = X20
-		}
-		krakow_polnoc = {
-			limit = {
-				NOT = { owned_by = ROOT }
+		
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
 			}
-			add_permanent_claim = X20
-		}
-		krakow_poludnie = {
-			limit = {
-				NOT = { owned_by = ROOT }
+		
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			add_permanent_claim = X20
-		}
-		krakow_huta = {
-			limit = {
-				NOT = { owned_by = ROOT }
+		
+			krakow_centrum = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X20
 			}
-			add_permanent_claim = X20
-		}
-
-		set_country_flag = formed_miasto_krakow_flag
+			krakow_polnoc = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X20
+			}
+			krakow_poludnie = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X20
+			}
+			krakow_huta = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = X20
+			}
+		
+			set_country_flag = formed_miasto_krakow_flag
 
 		}
 		ai_will_do = {
@@ -2802,7 +2802,7 @@ country_decisions = {
 					}
 					
 					OR = {
-						province_id = 3190
+						province_id = 2906
 	
 						area = legnica
 					}
@@ -2810,7 +2810,7 @@ country_decisions = {
 				}
 				
 				AND = {
-					province_id = 3190
+					province_id = 2906
 					is_core = ROOT
 					owned_by = ROOT
 					is_capital = no
@@ -2822,7 +2822,7 @@ country_decisions = {
 			is_or_was_wojewodztwo_check = yes
 			poland_powiatowe_formed_check = yes
 
-			capital = 3190
+			capital = 2906
 
 			legnica = {
 				is_core = ROOT
