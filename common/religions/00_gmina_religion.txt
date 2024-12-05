@@ -543,7 +543,9 @@ liberalism_group = {
 				}
 			}
 		}
-	
+		
+		uses_harmony = yes
+
 		heretic = { FASCISTS }
 		date = 1520.1.1
 	}
@@ -3160,6 +3162,57 @@ socialism_group = {
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
+
+	socialism_lewica = {
+		#hre_religion = yes
+		color = { 252 0 0 }
+		icon = 46
+		allow_female_defenders_of_the_faith = yes
+
+		country = {
+			build_cost = -0.10
+			tolerance_own = 3
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.10
+		}
+		province = {
+			local_tax_modifier = 0.15
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = socialism_lewica
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = socialism_lewica
+						}
+					}
+					change_religion = socialism_lewica
+					add_reform_center = socialism_lewica
+				}
+			}			
+		}
+
+		heretic = { FASCISTS }
+		date = 1480.1.1
+		
+		uses_piety = yes				# Uses piety mechanics
+	}
 	
 	crusade_name = WAR_WITH_FASCISM
 }
@@ -3646,6 +3699,277 @@ populism_group = {
 				}
 			}
 		}
+	}
+
+	populism_K15 = {
+		#hre_religion = yes
+		color = { 101 57 130 }
+		icon = 49
+		country = {
+			global_spy_defence = 0.2
+			advisor_cost = -0.1
+		}
+		country_as_secondary = {
+			global_spy_defence = 0.1
+		}
+		province = {
+			local_tax_modifier = 0.1
+		}
+
+		allowed_conversion = {
+			
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = populism_K15
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_K15
+						}
+					}
+					change_religion = populism_K15
+					add_reform_center = populism_K15
+				}
+			}			
+		}
+		
+		heretic = {  }
+
+		uses_church_power = yes
+
+		date = 1503.1.1
+	}
+
+	populism_RP = {
+		#hre_religion = yes
+		color = { 101 57 130 }
+		icon = 49
+		country = {
+			global_spy_defence = 0.2
+			advisor_cost = -0.1
+		}
+		country_as_secondary = {
+			global_spy_defence = 0.1
+		}
+		province = {
+			local_tax_modifier = 0.1
+		}
+
+		allowed_conversion = {
+			
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = populism_RP
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_RP
+						}
+					}
+					change_religion = populism_RP
+					add_reform_center = populism_RP
+				}
+			}			
+		}
+		
+		holy_sites = { 358 1227 2313 1234 419 }
+
+		misguided_heretic = yes
+		
+		heretic = {  }
+
+		blessings = {
+			RP_1
+			RP_2
+			RP_3
+			RP_4
+			RP_5
+		}
+
+		date = 1503.1.1
+	}
+
+	populism_konfederacja = {
+		#hre_religion = yes
+		color = { 101 57 130 }
+		icon = 49
+		country = {
+			global_spy_defence = 0.2
+			advisor_cost = -0.1
+		}
+		country_as_secondary = {
+			global_spy_defence = 0.1
+		}
+		province = {
+			local_tax_modifier = 0.1
+		}
+
+		allowed_conversion = {
+			
+		}
+
+		allowed_center_conversion = {
+			communism_sd
+			communism_pzpr
+			communism_zsl
+		}
+
+		on_convert = {
+			change_religion = populism_konfederacja
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_konfederacja
+						}
+					}
+					change_religion = populism_konfederacja
+					add_reform_center = populism_konfederacja
+				}
+			}			
+		}
+		
+		heretic = {  }
+
+		uses_judaism_power = yes
+		aspects_name = JEWISH_ASPECTS
+			
+		aspects = {
+			judaism_rosh_hashanah_aspect
+			judaism_simchat_torah_aspect
+			judaism_sukkot_aspect
+			judaism_communities_aspect
+			jewish_abrahamic_aspect
+			judaism_diplomatic_rabbi_aspect
+			judaism_yom_kippur_aspect
+			judaism_remember_passover_aspect
+			judaism_purim_teachings_aspect
+		}
+
+		celebrate = {
+			cost = 200
+			potential = {
+			}
+			allow = {
+				custom_trigger_tooltip = {
+					tooltip = JUDAISM_HAS_ADM_ASPECT
+					OR = {
+						has_church_aspect = judaism_rosh_hashanah_aspect
+						has_church_aspect = judaism_simchat_torah_aspect
+						has_church_aspect = judaism_sukkot_aspect
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = judaism_rosh_hashanah_aspect
+					}
+					NOT = { stability = 3 }
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						has_church_aspect = judaism_rosh_hashanah_aspect
+					}
+					add_stability = 1
+				}
+				if = {
+					limit = {
+						has_church_aspect = judaism_simchat_torah_aspect
+					}
+					change_government_reform_progress = 25
+					add_legitimacy_equivalent = {
+						amount = 5
+						republican_tradition = 5
+					}
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						add_heir_claim = 5
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = judaism_sukkot_aspect
+					}
+					add_years_of_income = 0.3
+					add_inflation = -1
+				}
+				if = {
+					limit = {
+						has_government_attribute = loyalty_from_celebration
+					}
+					add_estate_loyalty = {
+						estate = estate_church
+						loyalty = 20
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { NOT = { has_country_flag = has_celebrated_festival } }
+						set_country_flag = has_celebrated_festival
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					OR = {
+						AND = {
+							NOT = { has_church_aspect = judaism_communities_aspect }
+							NOT = { has_church_aspect = jewish_abrahamic_aspect }
+							NOT = { has_church_aspect = judaism_diplomatic_rabbi_aspect }
+						}
+						AND = {
+							NOT = { has_church_aspect = judaism_yom_kippur_aspect }
+							NOT = { has_church_aspect = judaism_remember_passover_aspect }
+							NOT = { has_church_aspect = judaism_purim_teachings_aspect }
+						}
+					}
+				}
+			}
+		}
+
+		date = 1503.1.1
 	}
 
 	crusade_name = WAR_FOR_FREE_TRADE
