@@ -790,6 +790,7 @@ estate_farmers_promoting_rural_life = {
 			}
 			remove_province_modifier = rural_life
 		}
+
 		if = {
 			limit = {
 				OR = {
