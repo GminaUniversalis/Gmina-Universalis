@@ -2,6 +2,11 @@ communism_group = {
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 1 18 }
 	
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	crusade_name = WAR_WITH_COUNTER_REVISIONISM
+
 	communism_pzpr = {
 		#hre_religion = yes
 		icon = 30
@@ -164,14 +169,16 @@ communism_group = {
 		aspects_name = PROTESTANT_ASPECTS
 	}
 
-	defender_of_faith = yes
-	can_form_personal_unions = yes
-	crusade_name = WAR_WITH_COUNTER_REVISIONISM
 }
 
 liberalism_group = {
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 1 18 }
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	crusade_name = WAR_WITH_FASCISM
 
 	ai_will_propagate_through_trade = yes
 
@@ -623,16 +630,16 @@ liberalism_group = {
 		date = 1520.1.1
 	}
 
-	defender_of_faith = yes
-	can_form_personal_unions = yes
-	crusade_name = WAR_WITH_FASCISM
 }
 
 conservatism_group = {
-	defender_of_faith = yes
-	can_form_personal_unions = yes
+
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 1 57 }
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
 	crusade_name = WAR_WITH_COMMUNISM
 
 	conservatism_kpn = {
@@ -3127,9 +3134,14 @@ conservatism_group = {
 }
 
 socialism_group = {
-	defender_of_faith = yes
+
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 97 106 }
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	crusade_name = WAR_WITH_FASCISM
 
 	religious_schools = {
 		marxism_doctrine = {
@@ -3683,10 +3695,17 @@ socialism_group = {
 		uses_piety = yes				# Uses piety mechanics
 	}
 	
-	crusade_name = WAR_WITH_FASCISM
 }
 
 populism_group = {
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 97 106 }
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	crusade_name = WAR_FOR_FREE_TRADE
 
 	populism_samoobrona = {
 		#hre_religion = yes
@@ -4441,20 +4460,16 @@ populism_group = {
 		date = 1503.1.1
 	}
 
-	crusade_name = WAR_FOR_FREE_TRADE
 }
 
 christian = {
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 57 }
+
 	defender_of_faith = yes
 	can_form_personal_unions = yes
 
-	# Flag emblem values - Used for Dynamic Setup of Random Nations.
-	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
-	# Can be overridden per religion.
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 57 }
-
-	
 	crusade_name = CRUSADE
 	
 	christian_catholic = {
@@ -4520,4 +4535,16 @@ christian = {
 			aposthole_judas_iscariot		
 		}
 	}
+}
+
+silesian_group = {
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 57 }
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+	
+	crusade_name = CRUSADE
+	
 }
