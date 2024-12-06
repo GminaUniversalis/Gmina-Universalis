@@ -1,4 +1,52 @@
 spriteTypes = {
+
+	# PO Aspects
+
+	spriteType = {
+		name = "GFX_administrative_reform_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/administrative_reform_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_financial_reform_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/financial_reform_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_social_reforms_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/social_reforms_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pro_european_movement_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/pro_european_movement_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_close_ties_with_east_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/close_ties_with_east_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_prepare_sports_events_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/prepare_sports_events_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_reform_electoral_system_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/reform_electoral_system_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_limit_subsidies_to_pp_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/limit_subsidies_to_pp_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tight_regulations_aspect"
+		texturefile = "gfx/interface/liberalism_aspects/tight_regulations_aspect_icon.dds"
+	}
+
 	# Liberalism Aspects
 
 	spriteType = {

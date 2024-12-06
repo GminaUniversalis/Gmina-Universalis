@@ -475,6 +475,18 @@ liberalism_group = {
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
+			#local
+			administrative_reform_aspect
+			financial_reform_aspect
+			social_reforms_aspect
+			#international
+			pro_european_movement_aspect
+			close_ties_with_east_aspect
+			prepare_sports_events_aspect
+			#political
+			reform_electoral_system_aspect
+			limit_subsidies_to_pp_aspect
+			tight_regulations_aspect
 
 		}
 

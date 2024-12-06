@@ -1,0 +1,153 @@
+administrative_reform_aspect = {
+
+	sprite = "GFX_administrative_reform_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = administrative_reform_aspect_tooltip
+		hidden_effect = {
+			country_event = { id = po_events.1}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+financial_reform_aspect = {
+
+	sprite = "GFX_financial_reform_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = financial_reform_aspect_tooltip
+		hidden_effect = {
+			country_event = { id = po_events.2}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+social_reforms_aspect = {
+
+	sprite = "GFX_social_reforms_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = social_reforms_aspect_tooltip
+		hidden_effect = {
+			country_event = { id = po_events.3}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pro_european_movement_aspect = {
+
+	sprite = "GFX_pro_european_movement_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = pro_european_movement_aspect_tooltip
+		hidden_effect = {
+			country_event = { id = po_events.4}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+close_ties_with_east_aspect = {
+
+	sprite = "GFX_close_ties_with_east_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = close_ties_with_east_aspect_tooltip
+		hidden_effect = {
+			 country_event = { id = po_events.5}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prepare_sports_events_aspect = {
+
+	sprite = "GFX_prepare_sports_events_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = prepare_sports_events_aspect_tooltip
+		hidden_effect = {
+			 country_event = { id = po_events.6}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+reform_electoral_system_aspect = {
+
+	sprite = "GFX_reform_electoral_system_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = reform_electoral_system_aspect_tooltip
+		hidden_effect = {
+			 country_event = { id = po_events.7}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+limit_subsidies_to_pp_aspect = {
+
+	sprite = "GFX_limit_subsidies_to_pp_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = limit_subsidies_to_pp_aspect_tooltip
+		hidden_effect = {
+			 country_event = { id = po_events.8}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+tight_regulations_aspect = {
+
+	sprite = "GFX_tight_regulations_aspect"
+
+	cost = 100
+
+	effect = {
+		custom_tooltip = tight_regulations_aspect_tooltip
+		hidden_effect = {
+			country_event = { id = po_events.9}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+

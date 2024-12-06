@@ -1,0 +1,10 @@
+﻿l_english:
+ global_election_decision_title: "Global Election System"
+ global_election_decision_desc: "This decision shows current level of political leadership across entire Poland\n\nProvinces: §O[Root.communism_pzpr_city.GetName]§! | Development: §O[Root.communism_pzpr_dev.GetName]§!"
+ calculate_current_province_and_dev: "This decision will calculate everything. Use at your own risk"
+ global_election_event.1.t: "Global Election Menu"
+ global_election_event.1.d: "\n\n\n\n\n\n\nMain Menu gowno"
+ global_election_event.1.a: "Dev and prov calculator"
+ global_election_event.1.b: "Countries calculator"
+ global_election_event.1.c: "Cos innego calculator"
+ global_election_event.1.dd: "Exit"

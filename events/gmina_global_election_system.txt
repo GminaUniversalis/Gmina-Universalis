@@ -1,0 +1,692 @@
+namespace = global_election_event
+
+country_event = {
+	id = global_election_event.1
+	title = global_election_event.1.t
+	desc = global_election_event.1.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	#calculate province + development
+	option = {
+		name = global_election_event.1.a
+		custom_tooltip = calculate_current_province_and_dev
+
+		hidden_effect = {
+			while = {
+				limit = {
+					all_province = {
+						religion = communism_pzpr
+					}
+				}
+
+				export_to_variable = {
+					variable_name = communism_pzpr_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = communism_pzpr_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = communism_sd
+					}
+				}
+
+				export_to_variable = {
+					variable_name = communism_sd_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = communism_sd_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = communism_zsl
+					}
+				}
+
+				export_to_variable = {
+					variable_name = communism_zsl_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = communism_zsl_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = liberalism_ud
+					}
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_ud_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_ud_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = liberalism_kld
+					}
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_kld_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_kld_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = liberalism_uw
+					}
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_uw_dev
+					value = developmentfive
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_uw_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = liberalism_PO
+					}
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_PO_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_PO_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = liberalism_N
+					}
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_N_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_N_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = liberalism_P2050
+					}
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_P2050_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = liberalism_P2050_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = conservatism_kpn
+					}
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_kpn_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_kpn_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = conservatism_zchn
+					}
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_zchn_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_zchn_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = conservatism_pc
+					}
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_pc_dev
+					value = development
+					who = this
+				}
+				
+				export_to_variable = {
+					variable_name = conservatism_pc_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = conservatism_aws
+					}
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_aws_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_aws_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = conservatism_psl
+					}
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_psl_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_psl_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = conservatism_lpr
+					}
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_lpr_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_lpr_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = conservatism_PIS
+					}
+				}
+
+				export_to_variable = {
+					variable_name = conservatism_PIS_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = socialism_sld_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = socialism_sld
+					}
+				}
+
+				export_to_variable = {
+					variable_name = socialism_sld_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = socialism_up_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = socialism_up
+					}
+				}
+
+				export_to_variable = {
+					variable_name = socialism_up_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = socialism_lewica_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = socialism_lewica
+					}
+				}
+
+				export_to_variable = {
+					variable_name = socialism_lewica_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = socialism_lewica_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = populism_samoobrona
+					}
+				}
+
+				export_to_variable = {
+					variable_name = populism_samoobrona_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = populism_samoobrona_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = populism_PPU
+					}
+				}
+
+				export_to_variable = {
+					variable_name = populism_PPU_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = populism_PPU_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = populism_K15
+					}
+				}
+
+				export_to_variable = {
+					variable_name = populism_K15_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = populism_K15_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = populism_RP
+					}
+				}
+
+				export_to_variable = {
+					variable_name = populism_RP_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = populism_RP_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = populism_konfederacja
+					}
+				}
+
+				export_to_variable = {
+					variable_name = populism_konfederacja_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = populism_konfederacja_city
+					value = num_of_cities
+					who = this
+				}
+			}
+			if = {
+				limit = {
+					all_province = {
+						religion = christian_catholic
+					}
+				}
+
+				export_to_variable = {
+					variable_name = christian_catholic_dev
+					value = development
+					who = this
+				}
+
+				export_to_variable = {
+					variable_name = christian_catholic_city
+					value = num_of_cities
+					who = this
+				}
+			}
+
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		all_province = {
+			# 			religion = X
+			# 		}
+			# 	}
+
+			# 	export_to_variable = {
+			# 		variable_name = X_dev
+			# 		value = development
+			# 		who = this
+			# 	}
+			# }
+
+
+			#refresh
+			country_event = {
+				id = global_election_event.
+			}
+		}
+
+		ai_chance = { factor = 0 }
+
+	}
+
+	#calculate countries
+	option = {
+		name = global_election_event.1.b
+
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			
+			#refresh
+			country_event = {
+				id = global_election_event.
+			}
+		}
+	}
+
+	option = {
+		name = global_election_event.1.c
+
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			
+			#refresh
+			country_event = {
+				id = global_election_event.
+			}
+		}
+	}
+
+	#exit
+	option = {
+		name = global_election_event.1.dd
+
+		ai_chance = { factor = 1 }
+	}
+}
+
+#refresh
+
+country_event = {
+	id = global_election_event.2137
+	title = global_election_event.2137.t
+	desc = global_election_event.2137.d
+	picture = NoPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	#calculate development
+	option = {
+		name = global_election_event.2137.a
+
+		country_event = {
+			id = global_election_event.1
+		}
+		ai_chance = { factor = 0 }
+	}
+
+}

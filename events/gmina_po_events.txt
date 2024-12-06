@@ -1,0 +1,280 @@
+namespace = po_events
+
+#administrative_reform_aspect
+country_event = {
+	id = po_events.1
+	title = po_events.1.t
+	desc = po_events.1.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.1.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = po_events.1.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = po_events.1.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}
+
+#financial_reform_aspect
+country_event = {
+	id = po_events.2
+	title = po_events.2.t
+	desc = po_events.2.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.2.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = politics.2.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = politics.2.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}
+
+#social_reforms_aspect
+country_event = {
+	id = po_events.3
+	title = po_events.3.t
+	desc = po_events.3.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.3.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = politics.3.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = politics.3.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}
+
+#pro_european_movement_aspect
+country_event = {
+	id = po_events.4
+	title = po_events.4.t
+	desc = po_events.4.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.4.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = politics.4.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = politics.4.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}
+
+#close_ties_with_east_aspect
+country_event = {
+	id = po_events.5
+	title = po_events.5.t
+	desc = po_events.5.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.5.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = politics.5.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = politics.5.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}
+
+#prepare_sports_events_aspect
+country_event = {
+	id = po_events.6
+	title = po_events.6.t
+	desc = po_events.6.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.6.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = politics.6.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = politics.6.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}
+
+#reform_electoral_system_aspect
+country_event = {
+	id = po_events.7
+	title = po_events.7.t
+	desc = po_events.7.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.7.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = politics.7.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = politics.7.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}
+
+#limit_subsidies_to_pp_aspect
+country_event = {
+	id = po_events.8
+	title = po_events.8.t
+	desc = po_events.8.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.8.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = politics.8.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = politics.8.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}
+
+#tight_regulations_aspect
+country_event = {
+	id = po_events.9
+	title = po_events.9.t
+	desc = po_events.9.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = po_events.9.a
+
+		ai_chance = { factor = 100 }
+
+	}
+
+	option = {
+		name = politics.9.b
+
+		ai_chance = { factor = 20 }
+
+	}
+
+	option = {
+		name = politics.9.c
+
+		ai_chance = { factor = 20 }
+
+	}
+}

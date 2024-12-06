@@ -1,0 +1,12 @@
+defined_text = {
+	name = GetPzprDevelopment
+
+	text = {
+		localisation_key = cos
+
+		trigger = {
+
+		}
+	}
+
+}
