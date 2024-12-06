@@ -3,7 +3,7 @@
 -- NDefines.NDiplomacy.MAX_CLIENT_STATES = 20
 
 
--- NDefines.NGame.END_DATE = "2024.17.07"
+NDefines.NGame.END_DATE = "2024.12.06"
 NDefines.NGame.DAYS_BEHIND_PAUSE = 60			    
 NDefines.NGame.DAYS_BEHIND_LOWER_SPEED = 30		
 NDefines.NGame.DESIRED_NUM_OF_ELECTORS = 8

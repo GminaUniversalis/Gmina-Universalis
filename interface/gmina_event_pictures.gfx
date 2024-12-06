@@ -12,6 +12,48 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "P2050Picture"
+		texturefile = "gfx/event_pictures/politics/P2050_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "KonfederacjaPicture"
+		texturefile = "gfx/event_pictures/politics/Konfederacja_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "NPicture"
+		texturefile = "gfx/event_pictures/politics/N_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "RPPicture"
+		texturefile = "gfx/event_pictures/politics/RP_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "LewicaPicture"
+		texturefile = "gfx/event_pictures/politics/Lewica_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "K15Picture"
+		texturefile = "gfx/event_pictures/politics/K15_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "POPicture"
+		texturefile = "gfx/event_pictures/politics/PO_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "PISPicture"
 		texturefile = "gfx/event_pictures/politics/PIS_event.dds"
 		alwaystransparent = yes
