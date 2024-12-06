@@ -3837,7 +3837,7 @@ country_event = {
 				}
 
 				country_event = { 
-					id = politics.115
+					id = politics.116
 					days = 30
 				}
 			}
@@ -3854,7 +3854,7 @@ country_event = {
 				}
 
 				country_event = { 
-					id = politics.115
+					id = politics.116
 					days = 70
 				}
 			}
@@ -4175,6 +4175,429 @@ country_event = {
 
 		random_owned_province = {
 			change_religion = populism_RP
+		}
+		add_stability = -1
+	}
+}
+
+# Start of .N
+country_event = {
+	id = politics.17
+	title = politics.17.t
+	desc = politics.17.d
+	picture = NPicture
+
+	major = yes
+    fire_only_once = yes
+	
+    trigger = {
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2015
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 5
+			}
+		}
+
+		OR = {
+			religion = liberalism_uw
+			religion = liberalism_PO
+		}
+		
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = liberalism_N
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+	    months = 30
+
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				type = random
+				amount = 6
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						religion = conservatism_aws
+						religion = liberalism_uw
+					}
+					any_owned_province = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_RP
+						}
+					}
+				}
+
+				country_event = { 
+					id = politics.115
+					days = 30
+				}
+			}
+
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						religion = conservatism_aws
+						religion = liberalism_uw
+					}
+				}
+
+				country_event = { 
+					id = politics.115
+					days = 70
+				}
+			}
+		}
+	}
+
+	option = {
+		name = politics.16.a
+
+		ai_chance = { factor = 100 }
+
+		enable_religion = populism_RP
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = populism_RP
+				}
+			}
+			change_religion = populism_RP
+			add_reform_center = populism_RP
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = populism_RP
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = populism_RP
+
+	}
+
+	option = {
+		name = politics.16.b
+
+		ai_chance = { factor = 0 }
+
+		enable_religion = populism_RP
+		random_owned_province = {
+			change_religion = populism_RP
+		}
+		add_stability = -1
+
+	}
+}
+
+# Accept N?
+country_event = {
+	id = politics.117
+	title = politics.117.t
+	desc = politics.117.d
+	picture = NPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = politics.17.a
+
+		ai_chance = { factor = 100 }
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_N
+				}
+			}
+			change_religion = liberalism_N
+			add_reform_center = liberalism_N
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = liberalism_N
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = liberalism_N
+	}
+
+	option = {
+		name = politics.17.b
+
+		ai_chance = { factor = 10 }
+
+		random_owned_province = {
+			change_religion = liberalism_N
+		}
+		add_stability = -1
+	}
+}
+
+# Start of K15
+country_event = {
+	id = politics.18
+	title = politics.18.t
+	desc = politics.18.d
+	picture = K15Picture
+
+	major = yes
+    fire_only_once = yes
+	
+    trigger = {
+        
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2015
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 7
+			}
+		}
+
+		OR = {
+			religion = conservatism_PIS
+			religion = liberalism_PO
+			religion = conservatism_psl
+		}
+		
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = populism_K15
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+	    months = 30
+
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				type = random
+				amount = 6
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						religion = conservatism_aws
+						religion = liberalism_uw
+					}
+					any_owned_province = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_RP
+						}
+					}
+				}
+
+				country_event = { 
+					id = politics.115
+					days = 30
+				}
+			}
+
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						religion = conservatism_aws
+						religion = liberalism_uw
+					}
+				}
+
+				country_event = { 
+					id = politics.115
+					days = 70
+				}
+			}
+		}
+	}
+
+	option = {
+		name = politics.18.a
+
+		ai_chance = { factor = 100 }
+
+		enable_religion = populism_K15
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = populism_K15
+				}
+			}
+			change_religion = populism_K15
+			add_reform_center = populism_K15
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = populism_K15
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = populism_K15
+
+	}
+
+	option = {
+		name = politics.18.b
+
+		ai_chance = { factor = 0 }
+
+		enable_religion = populism_K15
+		random_owned_province = {
+			change_religion = populism_K15
+		}
+		add_stability = -1
+
+	}
+}
+
+# Accept K15?
+country_event = {
+	id = politics.118
+	title = politics.118.t
+	desc = politics.118.d
+	picture = NPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = politics.18.a
+
+		ai_chance = { factor = 100 }
+
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = populism_K15
+				}
+			}
+			change_religion = populism_K15
+			add_reform_center = populism_K15
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = populism_K15
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		change_religion = populism_K15
+	}
+
+	option = {
+		name = politics.18.b
+
+		ai_chance = { factor = 10 }
+
+		random_owned_province = {
+			change_religion = populism_K15
 		}
 		add_stability = -1
 	}
