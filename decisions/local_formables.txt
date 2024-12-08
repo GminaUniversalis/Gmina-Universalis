@@ -292,7 +292,7 @@ country_decisions = {
 	gmina_wilkowyje_formable = {
 		potential = {
 
-			has_country_flag = enable_wilkowyje_formable
+			has_global_flag = enable_wilkowyje_formable
 
 			NOT = { has_country_flag = formed_metropolis_gzm_flag }
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
@@ -317,6 +317,12 @@ country_decisions = {
 					is_former_colonial_nation = yes
 					ai = no
 				}
+			}
+
+			AND = {
+				province_id = 2231
+				is_core = ROOT
+				owned_by = ROOT
 			}
 
 		}

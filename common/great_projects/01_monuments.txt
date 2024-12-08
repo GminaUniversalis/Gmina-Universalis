@@ -11709,7 +11709,7 @@ ranczo_recording_site= {
 
 			custom_tooltip = enable_wilkowyje_formable_tooltip
 
-			owner = { set_country_flag = enable_wilkowyje_formable }
+			set_global_flag = enable_wilkowyje_formable
 			
 		}
 	}
