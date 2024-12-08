@@ -63,169 +63,169 @@ global_election_calculator = {
 		
 		}
 	]
-# 	[[communism_pzpr]
-# 		1500 = {
-# 			set_variable = {
-# 				which = communism_pzpr_dev
-# 				value = 0
-# 			}
-# 			set_variable = {
-# 				which = communism_pzpr_city
-# 				value = 0
-# 			}
-# 		}
-# 		europe = {
-# 			limit = {
-# 				is_wasteland = no
-# 				religion = communism_pzpr
-# 			}
-# 			export_to_variable = {
-# 				which = communism_pzpr_dev_temp
-# 				value = development
-# 			}
-# 			1500 = {
-# 				set_variable = {
-# 					which = communism_pzpr_dev_temp
-# 					which = PREV
-# 				}
-# 				change_variable = {
-# 					which = communism_pzpr_dev
-# 					which = communism_pzpr_dev_temp
-# 				}
-# 				change_variable = {
-# 					which = communism_pzpr_city
-# 					value = 1
-# 				}
-# 				set_variable = {
-# 					which = communism_pzpr_percentage
-# 					which = communism_pzpr_dev
-# 				}
-# 				change_variable = {	
-# 					which = global_dev_temp
-# 					which = communism_pzpr_dev
-# 				}
-# 				# %% caluclate
-# 				multiply_variable = {
-# 					which = communism_pzpr_percentage
-# 					value = 100
-# 				}
-# 				divide_variable = {
-# 					which = communism_pzpr_percentage
-# 					which = global_dev
-# 				}
+	[[communism_pzpr]
+		1500 = {
+			set_variable = {
+				which = communism_pzpr_dev
+				value = 0
+			}
+			set_variable = {
+				which = communism_pzpr_city
+				value = 0
+			}
+		}
+		europe = {
+			limit = {
+				is_wasteland = no
+				religion = communism_pzpr
+			}
+			export_to_variable = {
+				which = communism_pzpr_dev_temp
+				value = development
+			}
+			1500 = {
+				set_variable = {
+					which = communism_pzpr_dev_temp
+					which = PREV
+				}
+				change_variable = {
+					which = communism_pzpr_dev
+					which = communism_pzpr_dev_temp
+				}
+				change_variable = {
+					which = communism_pzpr_city
+					value = 1
+				}
+				set_variable = {
+					which = communism_pzpr_percentage
+					which = communism_pzpr_dev
+				}
+				change_variable = {	
+					which = global_dev_temp
+					which = communism_pzpr_dev
+				}
+				# %% caluclate
+				multiply_variable = {
+					which = communism_pzpr_percentage
+					value = 100
+				}
+				divide_variable = {
+					which = communism_pzpr_percentage
+					which = global_dev
+				}
 
-# 			}
+			}
 		
-# 		}
-# 	]
-# 	[[communism_sd]
-# 		1500 = {
-# 			set_variable = {
-# 				which = communism_sd_dev
-# 				value = 0
-# 			}
-# 			set_variable = {
-# 				which = communism_sd_city
-# 				value = 0
-# 			}
-# 		}
-# 		europe = {
-# 			limit = {
-# 				is_wasteland = no
-# 				religion = communism_sd
-# 			}
-# 			export_to_variable = {
-# 				which = communism_sd_dev_temp
-# 				value = development
-# 			}
-# 			1500 = {
-# 				set_variable = {
-# 					which = communism_sd_dev_temp
-# 					which = PREV
-# 				}
-# 				change_variable = {
-# 					which = communism_sd_dev
-# 					which = communism_sd_dev_temp
-# 				}
-# 				change_variable = {
-# 					which = communism_sd_city
-# 					value = 1
-# 				}
-# 				set_variable = {
-# 					which = communism_sd_percentage
-# 					which = communism_sd_dev
-# 				}
-# 				change_variable = {
-# 					which = global_dev_temp
-# 					which = communism_sd_dev
-# 				}
-# 				# %% caluclate
-# 				divide_variable = {
-# 					which = communism_sd_percentage
-# 					which = global_dev
-# 				}
-# 				multiply_variable = {
-# 					which = communism_sd_percentage
-# 					value = 10
-# 				}
-# 			}
+		}
+	]
+	[[communism_sd]
+		1500 = {
+			set_variable = {
+				which = communism_sd_dev
+				value = 0
+			}
+			set_variable = {
+				which = communism_sd_city
+				value = 0
+			}
+		}
+		europe = {
+			limit = {
+				is_wasteland = no
+				religion = communism_sd
+			}
+			export_to_variable = {
+				which = communism_sd_dev_temp
+				value = development
+			}
+			1500 = {
+				set_variable = {
+					which = communism_sd_dev_temp
+					which = PREV
+				}
+				change_variable = {
+					which = communism_sd_dev
+					which = communism_sd_dev_temp
+				}
+				change_variable = {
+					which = communism_sd_city
+					value = 1
+				}
+				set_variable = {
+					which = communism_sd_percentage
+					which = communism_sd_dev
+				}
+				change_variable = {
+					which = global_dev
+					which = communism_sd_dev
+				}
+				# %% caluclate
+				divide_variable = {
+					which = communism_sd_percentage
+					which = global_dev
+				}
+				multiply_variable = {
+					which = communism_sd_percentage
+					value = 10
+				}
+			}
 		
-# 		}
-# 	]
-# 	[[communism_zsl]
-# 		1500 = {
-# 			set_variable = {
-# 				which = communism_zsl_dev
-# 				value = 0
-# 			}
-# 			set_variable = {
-# 				which = communism_zsl_city
-# 				value = 0
-# 			}
-# 		}
-# 		europe = {
-# 			limit = {
-# 				is_wasteland = no
-# 				religion = communism_zsl
-# 			}
-# 			export_to_variable = {
-# 				which = communism_zsl_dev_temp
-# 				value = development
-# 			}
-# 			1500 = {
-# 				set_variable = {
-# 					which = communism_zsl_dev_temp
-# 					which = PREV
-# 				}
-# 				change_variable = {
-# 					which = communism_zsl_dev
-# 					which = communism_zsl_dev_temp
-# 				}
-# 				change_variable = {
-# 					which = communism_zsl_city
-# 					value = 1
-# 				}
-# 				set_variable = {
-# 					which = communism_zsl_percentage
-# 					which = communism_zsl_dev
-# 				}
-# 				change_variable = {
-# 					which = global_dev_temp
-# 					which = communism_zsl_dev
-# 				}
-# 				# %% caluclate
-# 				divide_variable = {
-# 					which = communism_zsl_percentage
-# 					which = global_dev
-# 				}
-# 				multiply_variable = {
-# 					which = communism_zsl_percentage
-# 					value = 10
-# 				}
-# 			}
+		}
+	]
+	[[communism_zsl]
+		1500 = {
+			set_variable = {
+				which = communism_zsl_dev
+				value = 0
+			}
+			set_variable = {
+				which = communism_zsl_city
+				value = 0
+			}
+		}
+		europe = {
+			limit = {
+				is_wasteland = no
+				religion = communism_zsl
+			}
+			export_to_variable = {
+				which = communism_zsl_dev_temp
+				value = development
+			}
+			1500 = {
+				set_variable = {
+					which = communism_zsl_dev_temp
+					which = PREV
+				}
+				change_variable = {
+					which = communism_zsl_dev
+					which = communism_zsl_dev_temp
+				}
+				change_variable = {
+					which = communism_zsl_city
+					value = 1
+				}
+				set_variable = {
+					which = communism_zsl_percentage
+					which = communism_zsl_dev
+				}
+				change_variable = {
+					which = global_dev_temp
+					which = communism_zsl_dev
+				}
+				# %% caluclate
+				divide_variable = {
+					which = communism_zsl_percentage
+					which = global_dev
+				}
+				multiply_variable = {
+					which = communism_zsl_percentage
+					value = 10
+				}
+			}
 		
-# 		}
-# 	]
+		}
+	]
 # 	[[liberalism_ud]
 # 		1500 = {
 # 			set_variable = {
