@@ -9,102 +9,102 @@
  global_election_event.1.c: "Monke"
  global_election_event.1.dd: "Exit"
 
- communism_pzprAvailable: "Provinces: §O[1500.communism_pzpr_city.GetValue]§! | Development: §O[1500.communism_pzpr_dev_temp.GetValue]§! | §O[1500.communism_pzpr_percentage.GetValue]%§!"
+ communism_pzprAvailable: "Provinces: §O[1500.communism_pzpr_city.GetValue]§! | Development: §O[1500.communism_pzpr_dev_final.GetValue]§! | §O[1500.communism_pzpr_percentage.GetValue]%§!"
  communism_pzprAvailableNot: "§RDoes not exist yet§!"
  communism_pzprAvailableNotExists: "§gHas lost all of it's significance§!"  
 
- communism_sdAvailable: "Provinces: §O[1500.communism_sd_city.GetValue]§! | Development: §O[1500.communism_sd_dev_temp.GetValue]§! | §O[1500.communism_sd_percentage.GetValue]%§!"
+ communism_sdAvailable: "Provinces: §O[1500.communism_sd_city.GetValue]§! | Development: §O[1500.communism_sd_dev_final.GetValue]§! | §O[1500.communism_sd_percentage.GetValue]%§!"
  communism_sdAvailableNot: "§RDoes not exist yet§!"
  communism_sdAvailableNotExists: "§gHas lost all of it's significance§!"
 
- communism_zslAvailable: "Provinces: §O[1500.communism_zsl_city.GetValue]§! | Development: §O[1500.communism_zsl_dev_temp.GetValue]§! | §O[1500.communism_zsl_percentage.GetValue]%§!"
+ communism_zslAvailable: "Provinces: §O[1500.communism_zsl_city.GetValue]§! | Development: §O[1500.communism_zsl_dev_final.GetValue]§! | §O[1500.communism_zsl_percentage.GetValue]%§!"
  communism_zslAvailableNot: "§RDoes not exist yet§!"
  communism_zslAvailableNotExists: "§gHas lost all of it's significance§!"
 
- liberalism_udAvailable: "Provinces: §O[1500.liberalism_ud_city.GetValue]§! | Development: §O[1500.liberalism_ud_dev_temp.GetValue]§! | §O[1500.liberalism_ud_percentage.GetValue]%§!"
+ liberalism_udAvailable: "Provinces: §O[1500.liberalism_ud_city.GetValue]§! | Development: §O[1500.liberalism_ud_dev_final.GetValue]§! | §O[1500.liberalism_ud_percentage.GetValue]%§!"
  liberalism_udAvailableNot: "§RDoes not exist yet§!"
  liberalism_udAvailableNotExists: "§gHas lost all of it's significance§!"
 
- liberalism_kldAvailable: "Provinces: §O[1500.liberalism_kld_city.GetValue]§! | Development: §O[1500.liberalism_kld_dev_temp.GetValue]§! | §O[1500.liberalism_kld_percentage.GetValue]%§!"
+ liberalism_kldAvailable: "Provinces: §O[1500.liberalism_kld_city.GetValue]§! | Development: §O[1500.liberalism_kld_dev_final.GetValue]§! | §O[1500.liberalism_kld_percentage.GetValue]%§!"
  liberalism_kldAvailableNot: "§RDoes not exist yet§!"
  liberalism_kldAvailableNotExists: "§gHas lost all of it's significance§!"
 
- liberalism_uwAvailable: "Provinces: §O[1500.liberalism_uw_city.GetValue]§! | Development: §O[1500.liberalism_uw_dev_temp.GetValue]§! | §O[1500.liberalism_uw_percentage.GetValue]%§!"
+ liberalism_uwAvailable: "Provinces: §O[1500.liberalism_uw_city.GetValue]§! | Development: §O[1500.liberalism_uw_dev_final.GetValue]§! | §O[1500.liberalism_uw_percentage.GetValue]%§!"
  liberalism_uwAvailableNot: "§RDoes not exist yet§!"
  liberalism_uwAvailableNotExists: "§gHas lost all of it's significance§!"
 
- liberalism_POAvailable: "Provinces: §O[1500.liberalism_PO_city.GetValue]§! | Development: §O[1500.liberalism_PO_dev_temp.GetValue]§! | §O[1500.liberalism_PO_percentage.GetValue]%§!"
+ liberalism_POAvailable: "Provinces: §O[1500.liberalism_PO_city.GetValue]§! | Development: §O[1500.liberalism_PO_dev_final.GetValue]§! | §O[1500.liberalism_PO_percentage.GetValue]%§!"
  liberalism_POAvailableNot: "§RDoes not exist yet§!"
  liberalism_POAvailableNotExists: "§gHas lost all of it's significance§!"
 
- liberalism_NAvailable: "Nowoczesna - Provinces: §O[1500.liberalism_N_city.GetValue]§! | Development: §O[1500.liberalism_N_dev_temp.GetValue]§! | §O[1500.liberalism_N_percentage.GetValue]%§!"
+ liberalism_NAvailable: "Nowoczesna - Provinces: §O[1500.liberalism_N_city.GetValue]§! | Development: §O[1500.liberalism_N_dev_final.GetValue]§! | §O[1500.liberalism_N_percentage.GetValue]%§!"
  liberalism_NAvailableNot: "§RDoes not exist yet§!"
  liberalism_NAvailableNotExists: "§gHas lost all of it's significance§!"
 
- liberalism_P2050Available: "Provinces: §O[1500.liberalism_P2050_city.GetValue]§! | Development: §O[1500.liberalism_P2050_dev_temp.GetValue]§! | §O[1500.liberalism_P2050_percentage.GetValue]%§!"
+ liberalism_P2050Available: "Provinces: §O[1500.liberalism_P2050_city.GetValue]§! | Development: §O[1500.liberalism_P2050_dev_final.GetValue]§! | §O[1500.liberalism_P2050_percentage.GetValue]%§!"
  liberalism_P2050AvailableNot: "§RDoes not exist yet§!"
  liberalism_P2050AvailableNotExists: "§gHas lost all of it's significance§!"
 
- conservatism_kpnAvailable: "Provinces: §O[1500.conservatism_kpn_city.GetValue]§! | Development: §O[1500.conservatism_kpn_dev_temp.GetValue]§! | §O[1500.conservatism_kpn_percentage.GetValue]%§!"
+ conservatism_kpnAvailable: "Provinces: §O[1500.conservatism_kpn_city.GetValue]§! | Development: §O[1500.conservatism_kpn_dev_final.GetValue]§! | §O[1500.conservatism_kpn_percentage.GetValue]%§!"
  conservatism_kpnAvailableNot: "§RDoes not exist yet§!"
  conservatism_kpnAvailableNotExists: "§gHas lost all of it's significance§!"
 
- conservatism_zchnAvailable: "Provinces: §O[1500.conservatism_zchn_city.GetValue]§! | Development: §O[1500.conservatism_zchn_dev_temp.GetValue]§! | §O[1500.conservatism_zchn_percentage.GetValue]%§!"
+ conservatism_zchnAvailable: "Provinces: §O[1500.conservatism_zchn_city.GetValue]§! | Development: §O[1500.conservatism_zchn_dev_final.GetValue]§! | §O[1500.conservatism_zchn_percentage.GetValue]%§!"
  conservatism_zchnAvailableNot: "§RDoes not exist yet§!"
  conservatism_zchnAvailableNotExists: "§gHas lost all of it's significance§!"
 
- conservatism_pcAvailable: "Provinces: §O[1500.conservatism_pc_city.GetValue]§! | Development: §O[1500.conservatism_pc_dev_temp.GetValue]§! | §O[1500.conservatism_pc_percentage.GetValue]%§!"
+ conservatism_pcAvailable: "Provinces: §O[1500.conservatism_pc_city.GetValue]§! | Development: §O[1500.conservatism_pc_dev_final.GetValue]§! | §O[1500.conservatism_pc_percentage.GetValue]%§!"
  conservatism_pcAvailableNot: "§RDoes not exist yet§!"
  conservatism_pcAvailableNotExists: "§gHas lost all of it's significance§!"
 
- conservatism_awsAvailable: "Provinces: §O[1500.conservatism_aws_city.GetValue]§! | Development: §O[1500.conservatism_aws_dev_temp.GetValue]§! | §O[1500.conservatism_aws_percentage.GetValue]%§!"
+ conservatism_awsAvailable: "Provinces: §O[1500.conservatism_aws_city.GetValue]§! | Development: §O[1500.conservatism_aws_dev_final.GetValue]§! | §O[1500.conservatism_aws_percentage.GetValue]%§!"
  conservatism_awsAvailableNot: "§RDoes not exist yet§!"
  conservatism_awsAvailableNotExists: "§gHas lost all of it's significance§!"
 
- conservatism_pslAvailable: "Provinces: §O[1500.conservatism_psl_city.GetValue]§! | Development: §O[1500.conservatism_psl_dev_temp.GetValue]§! | §O[1500.conservatism_psl_percentage.GetValue]%§!"
+ conservatism_pslAvailable: "Provinces: §O[1500.conservatism_psl_city.GetValue]§! | Development: §O[1500.conservatism_psl_dev_final.GetValue]§! | §O[1500.conservatism_psl_percentage.GetValue]%§!"
  conservatism_pslAvailableNot: "§RDoes not exist yet§!"
  conservatism_pslAvailableNotExists: "§gHas lost all of it's significance§!"
 
- conservatism_lprAvailable: "Provinces: §O[1500.conservatism_lpr_city.GetValue]§! | Development: §O[1500.conservatism_lpr_dev_temp.GetValue]§! | §O[1500.conservatism_lpr_percentage.GetValue]%§!"
+ conservatism_lprAvailable: "Provinces: §O[1500.conservatism_lpr_city.GetValue]§! | Development: §O[1500.conservatism_lpr_dev_final.GetValue]§! | §O[1500.conservatism_lpr_percentage.GetValue]%§!"
  conservatism_lprAvailableNot: "§RDoes not exist yet§!"
  conservatism_lprAvailableNotExists: "§gHas lost all of it's significance§!"
 
- conservatism_PISAvailable: "Provinces: §O[1500.conservatism_PIS_city.GetValue]§! | Development: §O[1500.conservatism_PIS_dev_temp.GetValue]§! | §O[1500.conservatism_PIS_percentage.GetValue]%§!"
+ conservatism_PISAvailable: "Provinces: §O[1500.conservatism_PIS_city.GetValue]§! | Development: §O[1500.conservatism_PIS_dev_final.GetValue]§! | §O[1500.conservatism_PIS_percentage.GetValue]%§!"
  conservatism_PISAvailableNot: "§RDoes not exist yet§!"
  conservatism_PISAvailableNotExists: "§gHas lost all of it's significance§!"
 
- socialism_sldAvailable: "Provinces: §O[1500.socialism_sld_city.GetValue]§! | Development: §O[1500.socialism_sld_dev_temp.GetValue]§! | §O[1500.socialism_sld_percentage.GetValue]%§!"
+ socialism_sldAvailable: "Provinces: §O[1500.socialism_sld_city.GetValue]§! | Development: §O[1500.socialism_sld_dev_final.GetValue]§! | §O[1500.socialism_sld_percentage.GetValue]%§!"
  socialism_sldAvailableNot: "§RDoes not exist yet§!"
  socialism_sldAvailableNotExists: "§gHas lost all of it's significance§!"
 
- socialism_upAvailable: "Provinces: §O[1500.socialism_up_city.GetValue]§! | Development: §O[1500.socialism_up_dev_temp.GetValue]§! | §O[1500.socialism_up_percentage.GetValue]%§!"
+ socialism_upAvailable: "Provinces: §O[1500.socialism_up_city.GetValue]§! | Development: §O[1500.socialism_up_dev_final.GetValue]§! | §O[1500.socialism_up_percentage.GetValue]%§!"
  socialism_upAvailableNot: "§RDoes not exist yet§!"
  socialism_upAvailableNotExists: "§gHas lost all of it's significance§!"
 
- socialism_lewicaAvailable: "Provinces: §O[1500.socialism_lewica_city.GetValue]§! | Development: §O[1500.socialism_lewica_dev_temp.GetValue]§! | §O[1500.socialism_lewica_percentage.GetValue]%§!"
+ socialism_lewicaAvailable: "Provinces: §O[1500.socialism_lewica_city.GetValue]§! | Development: §O[1500.socialism_lewica_dev_final.GetValue]§! | §O[1500.socialism_lewica_percentage.GetValue]%§!"
  socialism_lewicaAvailableNot: "§RDoes not exist yet§!"
  socialism_lewicaAvailableNotExists: "§gHas lost all of it's significance§!"
 
- populism_samoobronaAvailable: "Provinces: §O[1500.populism_samoobrona_city.GetValue]§! | Development: §O[1500.populism_samoobrona_dev_temp.GetValue]§! | §O[1500.populism_samoobrona_percentage.GetValue]%§!"
+ populism_samoobronaAvailable: "Provinces: §O[1500.populism_samoobrona_city.GetValue]§! | Development: §O[1500.populism_samoobrona_dev_final.GetValue]§! | §O[1500.populism_samoobrona_percentage.GetValue]%§!"
  populism_samoobronaAvailableNot: "§RDoes not exist yet§!"
  populism_samoobronaAvailableNotExists: "§gHas lost all of it's significance§!"
 
- populism_PPUAvailable: "Provinces: §O[1500.populism_PPU_city.GetValue]§! | Development: §O[1500.populism_PPU_dev_temp.GetValue]§! | §O[1500.populism_PPU_percentage.GetValue]%§!"
+ populism_PPUAvailable: "Provinces: §O[1500.populism_PPU_city.GetValue]§! | Development: §O[1500.populism_PPU_dev_final.GetValue]§! | §O[1500.populism_PPU_percentage.GetValue]%§!"
  populism_PPUAvailableNot: "§RDoes not exist yet§!"
  populism_PPUAvailableNotExists: "§gHas lost all of it's significance§!"
 
- populism_K15Available: "Provinces: §O[1500.populism_K15_city.GetValue]§! | Development: §O[1500.populism_K15_dev_temp.GetValue]§! | §O[1500.populism_K15_percentage.GetValue]%§!"
+ populism_K15Available: "Provinces: §O[1500.populism_K15_city.GetValue]§! | Development: §O[1500.populism_K15_dev_final.GetValue]§! | §O[1500.populism_K15_percentage.GetValue]%§!"
  populism_K15AvailableNot: "§RDoes not exist yet§!"
  populism_K15AvailableNotExists: "§gHas lost all of it's significance§!"
 
- populism_RPAvailable: "Provinces: §O[1500.populism_RP_city.GetValue]§! | Development: §O[1500.populism_RP_dev_temp.GetValue]§! | §O[1500.populism_RP_percentage.GetValue]%§!"
+ populism_RPAvailable: "Provinces: §O[1500.populism_RP_city.GetValue]§! | Development: §O[1500.populism_RP_dev_final.GetValue]§! | §O[1500.populism_RP_percentage.GetValue]%§!"
  populism_RPAvailableNot: "§RDoes not exist yet§!"
  populism_RPAvailableNotExists: "§gHas lost all of it's significance§!"
 
- populism_konfederacjaAvailable: "Provinces: §O[1500.populism_konfederacja_city.GetValue]§! | Development: §O[1500.populism_konfederacja_dev_temp.GetValue]§! | §O[1500.populism_konfederacja_percentage.GetValue]%§!"
+ populism_konfederacjaAvailable: "Provinces: §O[1500.populism_konfederacja_city.GetValue]§! | Development: §O[1500.populism_konfederacja_dev_final.GetValue]§! | §O[1500.populism_konfederacja_percentage.GetValue]%§!"
  populism_konfederacjaAvailableNot: "§RDoes not exist yet§!"
  populism_konfederacjaAvailableNotExists: "§gHas lost all of it's significance§!"
 
- christian_catholicAvailable: "Provinces: §O[1500.christian_catholic_city.GetValue]§! | Development: §O[1500.christian_catholic_dev_temp.GetValue]§! | §O[1500.christian_catholic_percentage.GetValue]%§!"
+ christian_catholicAvailable: "Provinces: §O[1500.christian_catholic_city.GetValue]§! | Development: §O[1500.christian_catholic_dev_final.GetValue]§! | §O[1500.christian_catholic_percentage.GetValue]%§!"
  christian_catholicAvailableNot: "§RDoes not exist yet§!"
  christian_catholicAvailableNotExists: "§gHas lost all of it's significance§!"

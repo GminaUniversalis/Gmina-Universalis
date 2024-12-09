@@ -11,9 +11,8 @@ on_startup = {
 			ai = no
 		}
 		country_event = { id = clock.2 }
+		country_event = { id = global_election_event.2 }
 	}
-
-
 		
 }
 
