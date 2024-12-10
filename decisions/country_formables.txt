@@ -161,14 +161,14 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = SIL }
-			adm_tech = 20
+			adm_tech = 10
 
 			num_of_owned_provinces_with = {
 				custom_trigger_tooltip = {
 					tooltip = poland_formable_decision_check_tooltip
 					silesia_formable_decision_check = yes
 				}
-				value = 1000
+				value = 300
 			}
 			is_at_war = no
 		}

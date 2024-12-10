@@ -1,6 +1,6 @@
 #Estate Privilege on_action effects are in 01_scripted_effects_for_estates.txt
 
-initialize_schools_effect = { #Used in on_startup on_action
+gu_initialize_schools_effect = { 
 
 }
 

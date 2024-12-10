@@ -217,7 +217,8 @@ emerald_kaczka_alternate = {
 }
 
 smolensk_catastrophe = {
-	land_morale_constant = -1
+	global_missionary_strength = 0.5 #Intended
+	land_morale_constant = -3
 	religious_unity = 0.5
 	can_not_declare_war = yes
 }

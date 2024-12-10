@@ -346,53 +346,53 @@ defined_text = {
 }
 #Gets name of the religious scholars you currently have invited. Uses loc for schools.
 #Ex: The Maliki scholars we have invited are making themselves at home. 
-# defined_text = {
-# 	name = GetReligiousScholars
-# 	random = no
+defined_text = {
+	name = GetReligiousScholars
+	random = no
 	
-# 	text = {
-# 		localisation_key = ismaili_school
-# 		trigger = {
-# 			has_country_modifier = ismaili_scholar_modifier
-# 		}
-# 	}
-# 	text = {
-# 		localisation_key = zaidi_school
-# 		trigger = {
-# 			has_country_modifier = zaidi_scholar_modifier
-# 		}
-# 	}
-# 	text = {
-# 		localisation_key = jafari_school
-# 		trigger = {
-# 			has_country_modifier = jafari_scholar_modifier
-# 		}
-# 	}
-# 	text = {
-# 		localisation_key = shafii_school
-# 		trigger = {
-# 			has_country_modifier = shafii_scholar_modifier
-# 		}
-# 	}
-# 	text = {
-# 		localisation_key = hanafi_school
-# 		trigger = {
-# 			has_country_modifier = hanafi_scholar_modifier
-# 		}
-# 	}
-# 	text = {
-# 		localisation_key = maliki_school
-# 		trigger = {
-# 			has_country_modifier = maliki_scholar_modifier
-# 		}
-# 	}
-# 	text = {
-# 		localisation_key = hanbali_school
-# 		trigger = {
-# 			has_country_modifier = hanbali_scholar_modifier
-# 		}
-# 	}
-# }
+	text = {
+		localisation_key = eco_socialism_doctrine
+		trigger = {
+			has_country_modifier = ismaili_scholar_modifier
+		}
+	}
+	text = {
+		localisation_key = eco_terrorism_doctrine
+		trigger = {
+			has_country_modifier = zaidi_scholar_modifier
+		}
+	}
+	text = {
+		localisation_key = democratic_socialism_doctrine
+		trigger = {
+			has_country_modifier = jafari_scholar_modifier
+		}
+	}
+	text = {
+		localisation_key = marxism_doctrine
+		trigger = {
+			has_country_modifier = shafii_scholar_modifier
+		}
+	}
+	text = {
+		localisation_key = radical_communism_doctrine
+		trigger = {
+			has_country_modifier = hanafi_scholar_modifier
+		}
+	}
+	text = {
+		localisation_key = anarchism_doctrine
+		trigger = {
+			has_country_modifier = maliki_scholar_modifier
+		}
+	}
+	text = {
+		localisation_key = social_democratic_doctrine
+		trigger = {
+			has_country_modifier = hanbali_scholar_modifier
+		}
+	}
+}
 
 #Definite Article before name? (ie for country names in plural form)
 defined_text = {

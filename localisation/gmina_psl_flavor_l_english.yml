@@ -2,3 +2,6 @@
  psl_events.1.t:0 "New Folk Leader!"
  psl_events.1.d:0 "We are only humans after all. Only PSL is eternal."
  psl_events.1.a:0 "New era for PSL!"
+ psl_events.99.t: "Political shift in [fellow_coalitiant.GetName]"
+ psl_events.99.d: "Due to our succesfull cooperation with our friends from [fellow_coalitiant.Religion.GetName] party, some of our agreements seems to have a positive effect on local population in [fellow_coalitiant.GetName] and as a result our party is leading in local popularity ratings!"
+ psl_events.99.a: "Another succes!"

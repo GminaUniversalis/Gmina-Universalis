@@ -1790,7 +1790,7 @@ country_event = {
 	option = {
 		name = politics.8.pzpr
 
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 1 }
 		add_stability = -2
 	}
 }
@@ -2052,7 +2052,7 @@ country_event = {
 	option = {
 		name = politics.8.pzpr
 
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 1 }
 		add_stability = -2
 	}
 }
@@ -2372,7 +2372,7 @@ country_event = {
 	option = {
 		name = politics.8.pzpr
 
-		ai_chance = { factor = 60 }
+		ai_chance = { factor = 1 }
 		add_stability = -2
 	}
 }
@@ -2634,7 +2634,7 @@ country_event = {
 	option = {
 		name = politics.8.pzpr
 
-		ai_chance = { factor = 60 }
+		ai_chance = { factor = 1 }
 		add_stability = -2
 	}
 }
@@ -2728,7 +2728,7 @@ country_event = {
 	option = {
 		name = politics.10.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 90 }
 
 		enable_religion = socialism_up
 
@@ -2765,7 +2765,7 @@ country_event = {
 	option = {
 		name = politics.10.b
 
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 10 }
 
 		enable_religion = socialism_up
 		random_owned_province = {
@@ -2787,7 +2787,7 @@ country_event = {
 	option = {
 		name = politics.10.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 90 }
 
 		random_owned_province = {
 			limit = {
@@ -2822,7 +2822,7 @@ country_event = {
 	option = {
 		name = politics.10.b
 
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 10 }
 		random_owned_province = {
 			change_religion = socialism_up
 		}
@@ -2936,7 +2936,7 @@ country_event = {
 	option = {
 		name = politics.11.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 90 }
 
 		enable_religion = conservatism_aws
 
@@ -2973,7 +2973,7 @@ country_event = {
 	option = {
 		name = politics.11.b
 
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 10 }
 
 		enable_religion = conservatism_aws
 		random_owned_province = {
@@ -2995,7 +2995,7 @@ country_event = {
 	option = {
 		name = politics.11.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 90 }
 
 		random_owned_province = {
 			limit = {
@@ -3144,7 +3144,7 @@ country_event = {
 	option = {
 		name = politics.12.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 90 }
 
 		enable_religion = liberalism_uw
 
@@ -3181,7 +3181,7 @@ country_event = {
 	option = {
 		name = politics.12.b
 
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 10 }
 
 		enable_religion = liberalism_uw
 		random_owned_province = {
@@ -3203,7 +3203,7 @@ country_event = {
 	option = {
 		name = politics.12.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 90 }
 
 		random_owned_province = {
 			limit = {
@@ -3401,7 +3401,7 @@ country_event = {
 	option = {
 		name = politics.13.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 10 }
 
 		random_owned_province = {
 			limit = {
@@ -3436,7 +3436,7 @@ country_event = {
 	option = {
 		name = politics.13.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 90 }
 		random_owned_province = {
 			change_religion = populism_PPU
 		}
@@ -3474,6 +3474,7 @@ country_event = {
 		OR = {
 			religion = conservatism_aws
 			religion = liberalism_uw
+			religion = conservatism_pc
 		}
 		
 		any_owned_province = {
@@ -3523,6 +3524,7 @@ country_event = {
 					OR = {
 						religion = conservatism_aws
 						religion = liberalism_uw
+						religion = conservatism_pc
 					}
 					any_owned_province = {
 						can_have_center_of_reformation_trigger = {
@@ -3545,6 +3547,7 @@ country_event = {
 					OR = {
 						religion = conservatism_aws
 						religion = liberalism_uw
+						religion = conservatism_pc
 					}
 				}
 
@@ -3691,7 +3694,14 @@ country_event = {
 	option = {
 		name = politics.14.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { 
+			factor = 100
+			
+			modifier = {
+				factor = 100
+				religion = conservatism_pc
+			}
+		}
 
 		random_owned_province = {
 			limit = {
@@ -3749,7 +3759,7 @@ country_event = {
 	option = {
 		name = politics.14.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 1 }
 		random_owned_province = {
 			change_religion = conservatism_PIS
 		}
@@ -3908,7 +3918,7 @@ country_event = {
 	option = {
 		name = politics.15.b
 
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 1 }
 
 		enable_religion = liberalism_PO
 		random_owned_province = {
@@ -3931,7 +3941,13 @@ country_event = {
 	option = {
 		name = politics.15.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 1000
+				religion = conservatism_aws
+			}
+		}
 
 		random_owned_province = {
 			limit = {
@@ -3966,7 +3982,7 @@ country_event = {
 	option = {
 		name = politics.15.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 1 }
 
 		random_owned_province = {
 			change_religion = liberalism_PO
@@ -4142,7 +4158,7 @@ country_event = {
 	option = {
 		name = politics.16.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 10 }
 
 		random_owned_province = {
 			limit = {
@@ -4177,7 +4193,7 @@ country_event = {
 	option = {
 		name = politics.16.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 90 }
 
 		random_owned_province = {
 			change_religion = populism_RP
@@ -4353,7 +4369,7 @@ country_event = {
 	option = {
 		name = politics.17.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 20 }
 
 		random_owned_province = {
 			limit = {
@@ -4388,7 +4404,7 @@ country_event = {
 	option = {
 		name = politics.17.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 80 }
 
 		random_owned_province = {
 			change_religion = liberalism_N
@@ -4567,7 +4583,7 @@ country_event = {
 	option = {
 		name = politics.18.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 20 }
 
 		random_owned_province = {
 			limit = {
@@ -4602,7 +4618,7 @@ country_event = {
 	option = {
 		name = politics.18.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 80 }
 
 		random_owned_province = {
 			change_religion = populism_K15
@@ -4813,7 +4829,7 @@ country_event = {
 	option = {
 		name = politics.19.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 1 }
 
 		random_owned_province = {
 			change_religion = socialism_lewica
@@ -4992,7 +5008,7 @@ country_event = {
 	option = {
 		name = politics.20.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 10 }
 
 		random_owned_province = {
 			limit = {
@@ -5027,7 +5043,7 @@ country_event = {
 	option = {
 		name = politics.20.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 90 }
 
 		random_owned_province = {
 			change_religion = populism_konfederacja
@@ -5212,7 +5228,7 @@ country_event = {
 	option = {
 		name = politics.21.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 50 }
 
 		random_owned_province = {
 			limit = {
@@ -5247,7 +5263,7 @@ country_event = {
 	option = {
 		name = politics.21.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }
 
 		random_owned_province = {
 			change_religion = liberalism_P2050
@@ -5423,7 +5439,7 @@ country_event = {
 	option = {
 		name = politics.22.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 20 }
 
 		random_owned_province = {
 			limit = {
@@ -5458,7 +5474,7 @@ country_event = {
 	option = {
 		name = politics.22.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 80 }
 
 		random_owned_province = {
 			change_religion = conservatism_lpr
@@ -5637,7 +5653,7 @@ country_event = {
 	option = {
 		name = politics.23.a
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 20 }
 
 		random_owned_province = {
 			limit = {
@@ -5672,7 +5688,7 @@ country_event = {
 	option = {
 		name = politics.23.b
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 80 }
 
 		random_owned_province = {
 			change_religion = populism_samoobrona
@@ -5680,3 +5696,6 @@ country_event = {
 		add_stability = -1
 	}
 }
+
+###################################################################################
+

@@ -1,0 +1,368 @@
+namespace = socialism_school_events
+
+country_event = {
+	id = socialism_school_events.1
+	title = socialism_school_events.1.t
+	desc = socialism_school_events.1.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	trigger = {
+		religion_group = socialism_group
+
+		has_religious_school = no
+
+		OR = {
+			religion = socialism_sld
+
+			religion = socialism_up
+
+			religion = socialism_lewica
+		}
+	}
+
+	#is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = socialism_school_events.1.a #Gives areas historical school of region
+		trigger = {
+			ai = yes
+		}
+		if = {
+			limit = {
+				NOT = { 
+					religion = socialism_lewica 
+
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 2000
+						}
+			
+					}
+				}
+			}
+			set_religious_school = {
+				group = socialism_group
+				school = marxism_doctrine
+			}
+		}
+		else_if = { 
+			limit = {
+				NOT = { 
+					religion = socialism_up 
+				}
+				religious_unity = 90
+			}
+			set_religious_school = {
+				group = socialism_group
+				school = social_democratic_doctrine
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { 
+					OR = {
+						religion = socialism_lewica
+						government = republic
+					}
+				}
+			}
+			set_religious_school = {
+				group = socialism_group
+				school = anarchism_doctrine
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { 
+					religion = socialism_lewica
+
+					1500 = {
+
+						check_variable = {
+							which = clock_year
+							value = 1995
+						}
+			
+					}
+				}
+			}
+			set_religious_school = {
+				group = socialism_group
+				school = radical_communism_doctrine
+			}
+		}
+		else_if = {
+			limit = {
+				religion = socialism_lewica
+
+				1500 = {
+
+					check_variable = {
+						which = clock_year
+						value = 2010
+					}
+		
+				}
+			}
+			set_religious_school = {
+				group = socialism_group
+				school = eco_socialism_doctrine
+			}
+		}
+		else_if = {
+			limit = {
+				religion_group = socialism_group
+
+				1500 = {
+
+					check_variable = {
+						which = clock_year
+						value = 2000
+					}
+		
+				}
+				# 1500 = {
+				# 	check_variable = {
+				# 		which = clock_month
+				# 		value = 1
+				# 	}
+				# }
+			}
+			set_religious_school = {
+				group = socialism_group
+				school = democratic_socialism_doctrine
+			}
+		}
+		else_if = { 
+			limit = { 
+				NOT = { 
+					religion = socialism_lewica 
+				} 
+			}
+			set_religious_school = {
+				group = socialism_group
+				school = marxism_doctrine
+			}
+		}
+		else = {
+			set_religious_school = {
+				group = socialism_group
+				school = social_democratic_doctrine
+			}
+		}
+	}
+	option = {
+		name = socialism_school_events.1.b
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+			group = socialism_group
+			school = radical_communism_doctrine
+		}
+	}
+	option = {
+		name = socialism_school_events.1.c
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+			group = socialism_group
+			school = social_democratic_doctrine
+		}
+	}
+	option = {
+		name = socialism_school_events.1.dd
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+			group = socialism_group
+			school = anarchism_doctrine
+		}
+	}
+	option = {
+		name = socialism_school_events.1.e
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+			group = socialism_group
+			school = marxism_doctrine
+		}
+	}
+	option = {
+		name = socialism_school_events.1.f
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+			group = socialism_group
+			school = eco_socialism_doctrine
+		}
+	}
+	option = {
+		name = socialism_school_events.1.g
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+			group = socialism_group
+			school = democratic_socialism_doctrine
+		}
+	}
+	option = {
+		name = socialism_school_events.1.h
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+			group = socialism_group
+			school = eco_terrorism_doctrine
+		}
+	}
+}
+
+
+#Invite a Permanent Scholar
+country_event = {
+	id = socialism_school_events.2
+	title = socialism_school_events.2.t
+	desc = socialism_school_events.2.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		disallow_baseline_invite_scholar = yes
+	}
+
+	option = {
+		name = socialism_school_events.2.a
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_radical_communism_doctrine }
+			NOT = { has_country_flag = privilege_can_always_invite_radical_communism_doctrine }
+			NOT = {
+				religious_school = {
+					group = socialism_group
+					school = radical_communism_doctrine
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = radical_communism_doctrine
+		}
+	}
+
+	option = {
+		name = socialism_school_events.2.b
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_social_democratic_doctrine }
+			NOT = { has_country_flag = privilege_can_always_invite_social_democratic_doctrine }
+			NOT = {
+				religious_school = {
+					group = socialism_group
+					school = social_democratic_doctrine
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = social_democratic_doctrine
+		}
+	}
+
+	option = {
+		name = socialism_school_events.2.c
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_anarchism_doctrine }
+			NOT = { has_country_flag = privilege_can_always_invite_anarchism_doctrine }
+			NOT = {
+				religious_school = {
+					group = socialism_group
+					school = anarchism_doctrine
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = anarchism_doctrine
+		}
+	}
+
+	option = {
+		name = socialism_school_events.2.e
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_marxism_doctrine }
+			NOT = { has_country_flag = privilege_can_always_invite_marxism_doctrine }
+			NOT = {
+				religious_school = {
+					group = socialism_group
+					school = marxism_doctrine
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = marxism_doctrine
+		}
+	}
+
+	option = {
+		name = socialism_school_events.2.f
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_eco_socialism_doctrine }
+			NOT = { has_country_flag = privilege_can_always_invite_eco_socialism_doctrine }
+			NOT = {
+				religious_school = {
+					group = socialism_group
+					school = eco_socialism_doctrine
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = eco_socialism_doctrine
+		}
+	}
+
+	option = {
+		name = socialism_school_events.2.g
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_democratic_socialism_doctrine }
+			NOT = { has_country_flag = privilege_can_always_invite_democratic_socialism_doctrine }
+			NOT = {
+				religious_school = {
+					group = socialism_group
+					school = democratic_socialism_doctrine
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = democratic_socialism_doctrine
+		}
+	}
+
+	option = {
+		name = socialism_school_events.2.h
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_eco_terrorism_doctrine }
+			NOT = { has_country_flag = privilege_can_always_invite_eco_terrorism_doctrine }
+			NOT = {
+				religious_school = {
+					group = socialism_group
+					school = eco_terrorism_doctrine
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = eco_terrorism_doctrine
+		}
+	}
+
+	after = {
+		clr_country_flag = swaps_scholar_flag
+	}
+}

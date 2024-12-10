@@ -22,7 +22,6 @@ on_startup = {
 	}
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes
-	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
 }
 
 # country

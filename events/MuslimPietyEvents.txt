@@ -70,7 +70,7 @@ country_event = {
 			# 	factor = 2
 			# 	religious_school = {
 			# 		group = muslim
-			# 		school = hanbali_school
+			# 		school = social_democratic_doctrine
 			# 	}
 			# }
 			modifier = {
@@ -135,13 +135,13 @@ country_event = {
 			NOT = {
 				religious_school = {
 					group = muslim
-					school = ismaili_school
+					school = eco_socialism_doctrine
 				}
 			}
 			NOT = {
 				religious_school = {
 					group = muslim
-					school = zaidi_school
+					school = eco_terrorism_doctrine
 				}
 			}
 		}
@@ -180,7 +180,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -276,7 +276,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -395,7 +395,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -488,7 +488,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -586,7 +586,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -681,7 +681,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -773,7 +773,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -863,7 +863,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -965,7 +965,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -1099,7 +1099,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -1246,7 +1246,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -1375,7 +1375,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
@@ -1496,7 +1496,7 @@ country_event = {
 				factor = 2
 				religious_school = {
 					group = muslim
-					school = hanbali_school
+					school = social_democratic_doctrine
 				}
 			}
 			modifier = {
