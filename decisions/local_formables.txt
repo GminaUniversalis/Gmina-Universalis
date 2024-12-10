@@ -1,6 +1,7 @@
 country_decisions = {
 	silesian_conurbation_forming = {
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 
 			NOT = { has_country_flag = formed_metropolis_gzm_flag }
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
@@ -85,6 +86,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			NOT = { exists = L38 }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -144,6 +147,7 @@ country_decisions = {
 
     rybnik_coal_area_forming = {
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 
 			NOT = { has_country_flag = formed_metropolis_gzm_flag }
 			NOT = { has_country_flag = formed_rybnik_coal_area_flag }
@@ -228,6 +232,8 @@ country_decisions = {
 
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			NOT = { exists = L39 }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -291,6 +297,7 @@ country_decisions = {
 	
 	gmina_wilkowyje_formable = {
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 
 			has_global_flag = enable_wilkowyje_formable
 
@@ -354,6 +361,7 @@ country_decisions = {
 		}
 		allow = {
 			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			poland_powiatowe_formed_check = yes
 
 			capital = 2231

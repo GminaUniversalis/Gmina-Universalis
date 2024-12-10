@@ -16,13 +16,23 @@ smolensk_investigation = {
 
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
     }
 }
 
 apostolicae_servitutis = {
     modifier = {
         curia_powers_cost = -0.5
+        relation_with_same_religion = 20
+        tolerance_own = 3
+
+        tolerance_heathen = -2
+        relation_with_heathens = -20
+        yearly_corruption = 0.15
+        republican_tradition = -1
+
+        # Being disfavoured by Prezes also grants:
+        # +50% Radio Maryja Donation Cost TBD
     }
 	potential = {
 	}
@@ -30,7 +40,7 @@ apostolicae_servitutis = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
     }
 }
 
@@ -38,6 +48,7 @@ dobra_zmiana = {
     modifier = {
 		tolerance_heathen = 2
         development_cost = -0.05
+        investors_influence_modifier = 0.1
     }
 	potential = {
 	}
@@ -51,8 +62,13 @@ dobra_zmiana = {
 
 immensa_aeterni_dei = {
     modifier = {
-        embracement_cost = -0.1
-        global_institution_spread = 0.25
+
+        technology_cost = -0.05
+        build_cost = -0.1
+        great_project_upgrade_cost = -0.1
+        inflation_reduction = -0.15
+        interest = 2
+        
     }
     mechanics = {
         cardinals_spread_institution
@@ -73,32 +89,47 @@ immensa_aeterni_dei = {
 
 libertas_ecclesiae = {
     modifier = {
-        imperial_authority = 0.2
-		imperial_reform_catholic_approval = 5
+        yearly_corruption = -0.1
+
+        republican_tradition = 0.5
+        legitimacy = 1
+        devotion = 1
+        meritocracy = 1
+        horde_unity = 1
+
+        stability_cost_modifier = -0.1
+        yearly_absolutism = -0.5
+        papal_influence = -0.5
+        all_estate_loyalty_equilibrium = -0.05
     }
 	potential = {
 	}
     trigger = {
         is_papal_controller = yes
-        is_emperor = yes
+        custom_trigger_tooltip = {
+            tooltip = had_smolensk_tooltip
+            has_global_flag = smolensk_disaster_enable 
+        }
+
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
     }
 }
 
 wina_tuska = {
     modifier = {
-        yearly_absolutism = +0.5
-        unrest_catholic_provinces = -2
-        drill_decay_modifier = -0.25
+        yearly_absolutism = 0.5
+        manpower_in_true_faith_provinces = 0.1
+        global_heretic_missionary_strength = 0.02
+        global_heathen_missionary_strength = -0.02
+        ae_impact = 0.15
     }
 	potential = {
 	}
     trigger = {
         is_papal_controller = yes
         is_religion_enabled = liberalism_PO
-        absolutism = 50
     }
     ai_will_do = {
         factor = 1

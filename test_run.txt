@@ -1,3 +1,9 @@
 add_treasury = 1
 
-global_election_calculator = yes
+#global_election_calculator = yes
+1500 = {
+	set_variable = {
+		which = clock_year
+		value = 2020	
+	}
+}

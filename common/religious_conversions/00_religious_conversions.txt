@@ -948,138 +948,422 @@ conservatism_PIS_center_of_reformation = {
 	}
 }
 
-# Centers of Reformation
-# From Scope is center of Reformation Province
-# Will only target provinces on same continent
-
-# hussite_center_of_reformation = {
+liberalism_PO_center_of_reformation = {
 	
-# 	religion = hussite
+	religion = liberalism_PO
 
-# 	map_icon = GFX_religious_conversion_center_protestant
+	map_icon = GFX_religious_conversion_center_protestant
 
-# 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-# 	base_conversion_speed = 2.5
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2
 
-# 	target_province_weights = {
-# 		factor = 2
+	target_province_weights = {
+		factor = 2
 		
-# 		modifier = {
-# 			factor = 0
-# 			is_empty = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_missionary = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			province_id = 118 # Rome, seat of Papacy
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_center
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_zeal_at_conv
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = reformed
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = protestant
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = anglican
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { religion_group = christian }
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { continent = FROM }
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 1
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 2
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 3
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 4
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 5
-# 			}
-# 		}
-# 		# modifier = {
-# 		# 	factor = 5
-# 		# 	owner = {
-# 		# 		religion = hussite
-# 		# 	}
-# 		# }
-# 		modifier = {
-# 			factor = 2
-# 			culture_group = FROM
-# 		}
-# 		modifier = {
-# 			factor = 0.5
-# 			NOT = {
-# 				culture_group = FROM
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 2
-# 			culture = FROM
-# 		}
-# 		# modifier = {
-# 		# 	factor = 0.01
-# 		# 	religion = coptic
-# 		# }		
-# 		# modifier = {
-# 		# 	factor = 0.01
-# 		# 	religion = orthodox
-# 		# }
-# 		# modifier = {
-# 		# 	factor = 0.5
-# 		# 	has_state_edict = edict_religion_enforced
-# 		# }
-# 		# HRE is more resistant to reformation when the Pope is an Imperial Prince
-# 		# modifier = {
-# 		# 	factor = 0.75
-# 		# 	is_part_of_hre = yes
-# 		# 	# PAP = {
-# 		# 	# 	is_part_of_hre = yes
-# 		# 	# }
-# 		# }
-# 	}
-# }
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				religion = liberalism_PO
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+	}
+}
 
-# anglican_center_of_reformation = {
+populism_RP_center_of_reformation = {
 	
-# 	religion = anglican
+	religion = populism_RP
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				religion = populism_RP
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+	}
+}
+
+liberalism_N_center_of_reformation = {
+	
+	religion = liberalism_N
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				religion = liberalism_N
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+	}
+}
+
+populism_K15_center_of_reformation = {
+	
+	religion = populism_K15
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				religion = populism_K15
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+	}
+}
+
+socialism_lewica_center_of_reformation = {
+	
+	religion = socialism_lewica
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				religion = socialism_lewica
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+	}
+}
+
+populism_konfederacja_center_of_reformation = {
+	
+	religion = populism_konfederacja
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				religion = populism_konfederacja
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+	}
+}
+
+liberalism_P2050_center_of_reformation = {
+	
+	religion = liberalism_P2050
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				religion = liberalism_P2050
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+	}
+}
+
+# X_center_of_reformation = {
+	
+# 	religion = X
 
 # 	map_icon = GFX_religious_conversion_center_protestant
 
@@ -1099,10 +1383,6 @@ conservatism_PIS_center_of_reformation = {
 # 		}
 # 		modifier = {
 # 			factor = 0
-# 			province_id = 118 # Rome, seat of Papacy
-# 		}
-# 		modifier = {
-# 			factor = 0
 # 			has_province_modifier = religious_center
 # 		}
 # 		modifier = {
@@ -1111,62 +1391,13 @@ conservatism_PIS_center_of_reformation = {
 # 		}
 # 		modifier = {
 # 			factor = 0
-# 			religion = reformed
-# 			owner = { NOT = { religion = anglican } }
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = protestant
-# 			owner = { NOT = { religion = anglican } }
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { religion_group = christian }
-# 		}
-# 		modifier = {
-# 			factor = 0
 # 			NOT = { continent = FROM }
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 1
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 2
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 3
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 4
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.6
-# 			owner = {
-# 				num_of_cardinals = 5
-# 			}
 # 		}
 # 		modifier = {
 # 			factor = 2
 # 			owner = {
-# 				religion = anglican
+# 				religion = X
 # 			}
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = hussite
-# 			owner = { NOT = { religion = anglican } }
 # 		}
 # 		modifier = {
 # 			factor = 2
@@ -1183,36 +1414,20 @@ conservatism_PIS_center_of_reformation = {
 # 			culture = FROM
 # 		}
 # 		modifier = {
-# 			factor = 0.01
-# 			religion = coptic
-# 		}		
-# 		modifier = {
-# 			factor = 0.01
-# 			religion = orthodox
-# 		}
-# 		modifier = {
 # 			factor = 0.5
 # 			has_state_edict = edict_religion_enforced
-# 		}
-# 		# HRE is more resistant to reformation when the Pope is an Imperial Prince
-# 		modifier = {
-# 			factor = 0.75
-# 			is_part_of_hre = yes
-# 			PAP = {
-# 				is_part_of_hre = yes
-# 			}
 # 		}
 # 	}
 # }
 
-# protestant_center_of_reformation = {
+# X_center_of_reformation = {
 	
-# 	religion = protestant
+# 	religion = X
 
 # 	map_icon = GFX_religious_conversion_center_protestant
 
 # 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-# 	base_conversion_speed = 2.5
+# 	base_conversion_speed = 2
 
 # 	target_province_weights = {
 # 		factor = 2
@@ -1227,10 +1442,6 @@ conservatism_PIS_center_of_reformation = {
 # 		}
 # 		modifier = {
 # 			factor = 0
-# 			province_id = 118 # Rome, seat of Papacy
-# 		}
-# 		modifier = {
-# 			factor = 0
 # 			has_province_modifier = religious_center
 # 		}
 # 		modifier = {
@@ -1239,116 +1450,54 @@ conservatism_PIS_center_of_reformation = {
 # 		}
 # 		modifier = {
 # 			factor = 0
-# 			religion = reformed
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = anglican
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = hussite
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { religion_group = christian }
-# 		}
-# 		modifier = {
-# 			factor = 0
 # 			NOT = { continent = FROM }
 # 		}
 # 		modifier = {
-# 			factor = 0.7
+# 			factor = 2
 # 			owner = {
-# 				num_of_cardinals = 1
+# 				religion = X
 # 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 2
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 3
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 4
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 5
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			owner = {
-# 				religion = protestant
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			culture_group = FROM
 # 		}
 # 		modifier = {
 # 			factor = 2
 # 			culture_group = FROM
-# 			development = 10
-# 			NOT = { num_of_centers_of_reformation = { religion = protestant count = 2 } }
 # 		}
 # 		modifier = {
-# 			factor = 0.01
-# 			religion = coptic
-# 		}		
+# 			factor = 0.5
+# 			NOT = {
+# 				culture_group = FROM
+# 			}
+# 		}
 # 		modifier = {
-# 			factor = 0.01
-# 			religion = orthodox
-# 		}		
+# 			factor = 2
+# 			culture = FROM
+# 		}
 # 		modifier = {
 # 			factor = 0.5
 # 			has_state_edict = edict_religion_enforced
 # 		}
-# 		# HRE is more resistant to reformation when the Pope is an Imperial Prince
-# 		modifier = {
-# 			factor = 0.75
-# 			is_part_of_hre = yes
-# 			PAP = {
-# 				is_part_of_hre = yes
-# 			}
-# 		}
 # 	}
 # }
 
-# reformed_center_of_reformation = {
-
-# 	religion = reformed
+# X_center_of_reformation = {
 	
+# 	religion = X
+
 # 	map_icon = GFX_religious_conversion_center_protestant
 
 # 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-# 	base_conversion_speed = 2.5
+# 	base_conversion_speed = 2
 
 # 	target_province_weights = {
 # 		factor = 2
 		
 # 		modifier = {
 # 			factor = 0
-# 			has_missionary = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
 # 			is_empty = yes
 # 		}
 # 		modifier = {
 # 			factor = 0
-# 			province_id = 118 # Rome, seat of Papacy
+# 			has_missionary = yes
 # 		}
 # 		modifier = {
 # 			factor = 0
@@ -1357,410 +1506,30 @@ conservatism_PIS_center_of_reformation = {
 # 		modifier = {
 # 			factor = 0
 # 			has_province_modifier = religious_zeal_at_conv
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = protestant
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = anglican
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = hussite
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { religion_group = christian }
 # 		}
 # 		modifier = {
 # 			factor = 0
 # 			NOT = { continent = FROM }
 # 		}
 # 		modifier = {
-# 			factor = 0.7
+# 			factor = 2
 # 			owner = {
-# 				num_of_cardinals = 1
+# 				religion = X
 # 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 2
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 3
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 4
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 5
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			owner = {
-# 				religion = reformed
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			culture_group = FROM
 # 		}
 # 		modifier = {
 # 			factor = 2
 # 			culture_group = FROM
-# 			development = 10
-# 			NOT = { num_of_centers_of_reformation = { religion = reformed count = 2 } }
 # 		}
-# 		modifier = {
-# 			factor = 0.01
-# 			religion = coptic
-# 		}		
-# 		modifier = {
-# 			factor = 0.01
-# 			religion = orthodox
-# 		}		
 # 		modifier = {
 # 			factor = 0.5
-# 			has_state_edict = edict_religion_enforced
-# 		}
-# 		# HRE is more resistant to reformation when the Pope is an Imperial Prince
-# 		modifier = {
-# 			factor = 0.75
-# 			is_part_of_hre = yes
-# 			PAP = {
-# 				is_part_of_hre = yes
+# 			NOT = {
+# 				culture_group = FROM
 # 			}
-# 		}
-# 	}
-# }
-
-# catholic_center_of_reformation = {
-
-# 	religion = catholic
-	
-# 	map_icon = GFX_religious_conversion_center_protestant
-
-# 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-# 	base_conversion_speed = 2.5
-
-# 	target_province_weights = {
-# 		factor = 2
-		
-# 		modifier = {
-# 			factor = 0
-# 			has_missionary = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			is_empty = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			province_id = 118 # Rome, seat of Papacy
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_center
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_zeal_at_conv
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = protestant
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = anglican
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = hussite
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { religion_group = christian }
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { continent = FROM }
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 5
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 4
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 3
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 2
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 1
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			owner = {
-# 				religion = reformed
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			culture_group = FROM
 # 		}
 # 		modifier = {
 # 			factor = 2
-# 			culture_group = FROM
-# 			development = 10
-# 		}
-# 		modifier = {
-# 			factor = 0.1
-# 			religion = coptic
-# 		}		
-# 		modifier = {
-# 			factor = 0.5
-# 			religion = orthodox
-# 		}		
-# 		modifier = {
-# 			factor = 0.5
-# 			has_state_edict = edict_religion_enforced
-# 		}
-# 		# HRE is more resistant to reformation when the Pope is an Imperial Prince
-# 		modifier = {
-# 			factor = 0.75
-# 			is_part_of_hre = yes
-# 			PAP = {
-# 				is_part_of_hre = yes
-# 			}
-# 		}
-# 	}
-	
-# }
-	
-# coptic_center_of_reformation = {
-
-# 	religion = coptic
-	
-# 	map_icon = GFX_religious_conversion_center_protestant
-
-# 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-# 	base_conversion_speed = 2.5
-
-# 	target_province_weights = {
-# 		factor = 2
-		
-# 		modifier = {
-# 			factor = 0
-# 			has_missionary = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			is_empty = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			province_id = 118 # Rome, seat of Papacy
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_center
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_zeal_at_conv
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = protestant
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = anglican
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = hussite
-# 		}
-# 		modifier = {
-# 			factor = 3
-# 			NOT = { religion_group = christian }
-# 		}
-# 		modifier = {
-# 			factor = 1
-# 			NOT = { continent = FROM }
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 5
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 4
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 3
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 2
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 0.7
-# 			owner = {
-# 				num_of_cardinals = 1
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			owner = {
-# 				religion = coptic
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			culture_group = FROM
-# 		}
-# 		modifier = {
-# 			factor = 2
-# 			culture_group = FROM
-# 			development = 10
-# 		}
-# 		modifier = {
-# 			factor = 3
-# 			religion_group = muslim
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = coptic
-# 		}		
-# 		modifier = {
-# 			factor = 0.5
-# 			religion = orthodox
-# 		}		
-# 		modifier = {
-# 			factor = 0.5
-# 			has_state_edict = edict_religion_enforced
-# 		}
-# 		# HRE is more resistant to reformation when the Pope is an Imperial Prince
-# 		modifier = {
-# 			factor = 0.75
-# 			is_part_of_hre = yes
-# 			PAP = {
-# 				is_part_of_hre = yes
-# 			}
-# 		}
-# 	}
-# }
-
-# shiite_center_of_reformation = {
-# 	religion = shiite
-# 	map_icon = GFX_religious_conversion_center_protestant
-# 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-# 	base_conversion_speed = 2.5
-# 	target_province_weights = {
-# 		factor = 2
-# 		modifier = {
-# 			factor = 0
-# 			has_missionary = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			is_empty = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			province_id = 118 # Rome, seat of Papacy
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_center
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_zeal_at_conv
-# 		}
-# 		modifier = {
-# 			factor = 1
-# 			NOT = { continent = FROM }
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			owner = {
-# 				religion = shiite
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			culture_group = FROM
-# 		}
-# 		modifier = {
-# 			factor = 2
-# 			culture_group = FROM
-# 			development = 10
-# 		}
-# 		modifier = {
-# 			factor = 3
-# 			religion_group = muslim
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = shiite
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = orthodox
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			religion = coptic
-# 		}
-# 		modifier = {
-# 			factor = 0.2
-# 			religion = hinduism
-# 		}
-# 		modifier = {
-# 			factor = 0.1
-# 			religion = sikhism
+# 			culture = FROM
 # 		}
 # 		modifier = {
 # 			factor = 0.5
@@ -1769,49 +1538,3 @@ conservatism_PIS_center_of_reformation = {
 # 	}
 # }
 
-# zoroastrian_center_of_reformation = {
-# 	religion = zoroastrian
-# 	map_icon = GFX_religious_conversion_center_protestant
-# 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-# 	base_conversion_speed = 2.5
-# 	target_province_weights = {
-# 		factor = 2
-# 		modifier = {
-# 			factor = 0
-# 			has_missionary = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			is_empty = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			province_id = 118 # Rome, seat of Papacy
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_center
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			has_province_modifier = religious_zeal_at_conv
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			from = { owns = prev }
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			culture_group = FROM
-# 		}
-# 		modifier = {
-# 			factor = 2
-# 			culture_group = FROM
-# 			development = 10
-# 		}
-# 		modifier = {
-# 			factor = 0.5
-# 			has_state_edict = edict_religion_enforced
-# 		}
-# 	}
-# }

@@ -2,6 +2,7 @@ country_decisions = {
 	poland_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				has_country_flag = formed_dolnoslaskie_flag
 				has_country_flag = formed_kujawsko_pomorskie_flag
@@ -127,6 +128,7 @@ country_decisions = {
 	silesia_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			primary_culture = slonska
 			NOT = { 
 				OR = { 
@@ -154,24 +156,18 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-			region = dolnoslaskie_region
-			region = opolskie_region
-			region = slaskie_region
-			NOT = {
-				OR = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
-			}
+			silesia_formable_decision_check = yes
+			NOT = { owned_by = ROOT }
 		}
 		allow = {
 			NOT = { exists = SIL }
 			adm_tech = 20
 
 			num_of_owned_provinces_with = {
-				region = dolnoslaskie_region
-				region = opolskie_region
-				region = slaskie_region
+				custom_trigger_tooltip = {
+					tooltip = poland_formable_decision_check_tooltip
+					silesia_formable_decision_check = yes
+				}
 				value = 1000
 			}
 			is_at_war = no
@@ -242,6 +238,7 @@ country_decisions = {
 	germany_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			primary_culture = niemiecka
 			NOT = { 
 				OR = { 
@@ -278,7 +275,7 @@ country_decisions = {
 				region = zachodnio_pomorskie_region
 				region = warminsko_mazurskie_region
 			}
-			NOT = {X`
+			NOT = {
 				OR = {
 					owned_by = ROOT
 					is_core = ROOT
@@ -378,6 +375,7 @@ country_decisions = {
 	prl_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			religion_group = communism_group
 
 			OR = {
@@ -505,6 +503,7 @@ country_decisions = {
 	kashubia_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			region = pomorskie_region
 			NOT = { 
 				OR = { 

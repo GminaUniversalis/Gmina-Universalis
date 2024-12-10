@@ -66,12 +66,22 @@ country_event = {
 	title = global_election_event.2.t
 	desc = global_election_event.2.d
 	picture = NoPicture
+	is_triggered_only = yes
 	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = global_election_init }
+	}
 
 	option = {
 		name = global_election_event.2.a
 
-		global_election_calculator = yes
+		set_global_flag = global_election_init
+		hidden_effect = {
+			global_election_calculator = yes
+		}
+
 	}
 }
 #refresh

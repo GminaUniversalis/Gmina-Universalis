@@ -90,6 +90,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "SAMOOBRONA2Picture"
+		texturefile = "gfx/event_pictures/politics/SAMOOBRONA2_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "LPRPicture"
+		texturefile = "gfx/event_pictures/politics/LPR_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "UDPicture"
 		texturefile = "gfx/event_pictures/politics/UD_event.dds"
 		alwaystransparent = yes

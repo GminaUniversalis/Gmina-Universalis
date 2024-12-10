@@ -5,7 +5,15 @@ defined_text = {
 		localisation_key = communism_pzprAvailable
 
 		trigger = {
-			is_religion_enabled = communism_pzpr
+			
+				is_religion_enabled = communism_pzpr
+
+			1500 = {
+				check_variable = {
+					which = communism_pzpr_city
+					value = 1
+				}
+			}
 		}
 	}
 
@@ -14,6 +22,7 @@ defined_text = {
 
 		trigger = {
 			NOT = { is_religion_enabled = communism_pzpr }
+			
 		}
 	}
 
@@ -90,6 +99,15 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = communism_sd
+
+			1500 = {
+
+					check_variable = {
+						which = communism_sd_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -132,6 +150,15 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = communism_zsl
+
+			1500 = {
+
+					check_variable = {
+						which = communism_zsl_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -174,6 +201,15 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = liberalism_ud
+
+			1500 = {
+
+					check_variable = {
+						which = liberalism_ud_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -216,6 +252,15 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = liberalism_kld
+
+			1500 = {
+
+					check_variable = {
+						which = liberalism_kld_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -258,6 +303,15 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = liberalism_uw
+
+			1500 = {
+
+					check_variable = {
+						which = liberalism_uw_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -300,6 +354,15 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = liberalism_PO
+
+			1500 = {
+
+					check_variable = {
+						which = liberalism_PO_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -342,6 +405,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = liberalism_N
+			1500 = {
+
+					check_variable = {
+						which = liberalism_N_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -384,6 +455,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = liberalism_P2050
+			1500 = {
+
+					check_variable = {
+						which = liberalism_P2050_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -425,15 +504,21 @@ defined_text = {
 		localisation_key = conservatism_kpnAvailable
 
 		trigger = {
-			is_religion_enabled = conservatism_kpn
-		}
-	}
 
-	text = {
-		localisation_key = conservatism_kpnAvailableNot
+			OR = {
+				is_religion_enabled = conservatism_kpn
+				any_country = {
+					religion = conservatism_kpn
+				}
+			}
+			1500 = {
 
-		trigger = {
-			NOT = { is_religion_enabled = conservatism_kpn }
+				check_variable = {
+					which = conservatism_kpn_city
+					value = 1
+				}
+				
+			}
 		}
 	}
 
@@ -458,6 +543,13 @@ defined_text = {
 		}
 	}
 
+	text = {
+		localisation_key = conservatism_kpnAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = conservatism_kpn }
+		}
+	}
 }
 
 defined_text = {
@@ -468,6 +560,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = conservatism_zchn
+			1500 = {
+
+				check_variable = {
+					which = conservatism_zchn_city
+					value = 1
+				}
+				
+			}
 		}
 	}
 
@@ -510,6 +610,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = conservatism_pc
+			1500 = {
+
+					check_variable = {
+						which = conservatism_pc_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -552,6 +660,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = conservatism_aws
+			1500 = {
+
+					check_variable = {
+						which = conservatism_aws_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -594,6 +710,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = conservatism_psl
+			1500 = {
+
+					check_variable = {
+						which = conservatism_psl_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -636,6 +760,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = conservatism_lpr
+			1500 = {
+
+					check_variable = {
+						which = conservatism_lpr_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -678,6 +810,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = conservatism_PIS
+			1500 = {
+
+					check_variable = {
+						which = conservatism_PIS_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -720,6 +860,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = socialism_sld
+			1500 = {
+
+					check_variable = {
+						which = socialism_sld_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -762,6 +910,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = socialism_up
+			1500 = {
+
+					check_variable = {
+						which = socialism_up_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -804,6 +960,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = socialism_lewica
+			1500 = {
+
+					check_variable = {
+						which = socialism_lewica_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -846,6 +1010,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = populism_samoobrona
+			1500 = {
+
+					check_variable = {
+						which = populism_samoobrona_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -888,6 +1060,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = populism_PPU
+			1500 = {
+
+					check_variable = {
+						which = populism_PPU_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -930,6 +1110,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = populism_K15
+			1500 = {
+
+					check_variable = {
+						which = populism_K15_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -972,6 +1160,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = populism_RP
+			1500 = {
+
+					check_variable = {
+						which = populism_RP_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -1014,6 +1210,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = populism_konfederacja
+			1500 = {
+
+					check_variable = {
+						which = populism_konfederacja_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 
@@ -1056,6 +1260,14 @@ defined_text = {
 
 		trigger = {
 			is_religion_enabled = christian_catholic
+			1500 = {
+
+					check_variable = {
+						which = christian_catholic_city
+						value = 1
+					}
+				
+			}
 		}
 	}
 

@@ -1,5 +1,6 @@
 country_decisions = {
 	global_election_decision = {
+		color = { 50 50 200 }
 		potential = {
 			ai = no
 		}

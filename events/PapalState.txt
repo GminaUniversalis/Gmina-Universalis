@@ -6,17 +6,35 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	trigger = {
-		papacy_active = yes
+		#papacy_active = yes
 		owns = 1016		# Ochota
-		religion = conservatism_PIS
+		#religion = conservatism_PIS
 		NOT = { exists = P1S }
 		NOT = { has_country_flag = no_support }
-		NOT = { has_country_flag = general_flag_Rome_flag }	
+
+		1500 = {
+
+			check_variable = {
+				which = clock_year
+				value = 2001
+			}
+
+		}
+		1500 = {
+			check_variable = {
+				which = clock_month
+				value = 6
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
 		months = 2
 		
+		modifier = {
+			factor = 0.1
+			is_religion_enabled = conservatism_PIS
+		}
 		modifier = {
 			factor = 0.95
 			num_of_cardinals = 1
@@ -49,7 +67,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA1081" # We will never support such a state
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 0 }
 		add_prestige = -10
 		add_stability = -1
 		every_country = {
@@ -62,23 +80,27 @@ country_event = {
 		set_country_flag = no_support
 	}
 	option = {
-		name = "EVTOPTB1081" # Rome is rightfully theirs
+		name = "EVTOPTB1081" # Ochota is rightfully theirs
 		ai_chance = { 
 			factor = 75 
 			modifier = {
 				factor = 0
 				is_core = 118
 			}
+			modifier = {
+				factor = 1000
+				ai = yes
+			}
 		}
-		118 = {
+		1016 = {
 			add_core = P1S
 			cede_province = P1S
-			if = {
-				limit = {
-					is_core = ROOT
-				}
-				remove_core = ROOT
-			}
+			# if = {
+			# 	limit = {
+			# 		is_core = ROOT
+			# 	}
+			# 	remove_core = ROOT
+			# }
 		}
 		add_prestige = 25
 		P1S = {

@@ -11,7 +11,16 @@ on_startup = {
 			ai = no
 		}
 		country_event = { id = clock.2 }
-		country_event = { id = global_election_event.2 }
+
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = global_election_init
+				}
+			}
+			country_event = { id = global_election_event.2 }
+		}
+
 	}
 		
 }
@@ -274,6 +283,10 @@ on_country_released = {
 		change_religion = conservatism_PIS
 		add_government_reform = papacy_reform
 		adopt_reform_progress = FROM
+		change_primary_culture = warszawska
+		capital_scope = {
+			change_religion = FROM
+		}
 		
 	}
 }
