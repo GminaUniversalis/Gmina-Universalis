@@ -250,4 +250,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/politics/PO_aspects_event.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "P2050_Harmonization_Picture"
+		texturefile = "gfx/event_pictures/politics/P2050_harmonization_event.dds"
+		alwaystransparent = yes
+	}
 }

@@ -7,6 +7,8 @@ communism_group = {
 
 	crusade_name = WAR_WITH_COUNTER_REVISIONISM
 
+	harmonized_modifier = harmonized_communism_group
+
 	communism_pzpr = {
 		#hre_religion = yes
 		icon = 30
@@ -346,6 +348,8 @@ liberalism_group = {
 		icon = 33
 		allow_female_defenders_of_the_faith = yes
 
+		harmonized_modifier = harmonized_liberalism_ud
+
 		allowed_conversion = {
 			#communism_pzpr
 			#communism_sd
@@ -479,6 +483,8 @@ liberalism_group = {
 		icon = 34
 		allow_female_defenders_of_the_faith = yes
 
+		harmonized_modifier = harmonized_liberalism_kld
+
 		allowed_conversion = {
 			#communism_pzpr
 			#communism_sd
@@ -609,6 +615,8 @@ liberalism_group = {
 		color = { 57 191 0 }
 		icon = 35
 		allow_female_defenders_of_the_faith = yes
+
+		harmonized_modifier = harmonized_liberalism_uw
 
 		allowed_conversion = {
 			#communism_pzpr
@@ -745,6 +753,8 @@ liberalism_group = {
 		icon = 6
 		allow_female_defenders_of_the_faith = yes
 
+		harmonized_modifier = harmonized_liberalism_PO
+
 		allowed_conversion = {
 			#communism_pzpr
 			#communism_sd
@@ -834,16 +844,16 @@ liberalism_group = {
 		}
 
 		country = {
-			trade_efficiency = 0.15
-			free_dip_policy = 1
+			prestige_per_development_from_conversion = 0.5
+			warscore_cost_vs_other_religion = -0.25
 		}
 		
 		country_as_secondary = {
-			trade_efficiency = 0.10
+			warscore_cost_vs_other_religion = -0.1
 		}
 
 		province = {
-			trade_value_modifier = 0.15
+			local_tax_modifier = 0.25
 		}
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
@@ -882,6 +892,8 @@ liberalism_group = {
 		color = { 34 126 247 }
 		icon = 7
 		allow_female_defenders_of_the_faith = yes
+
+		harmonized_modifier = harmonized_liberalism_N
 
 		allowed_conversion = {
 			#communism_pzpr
@@ -972,16 +984,16 @@ liberalism_group = {
 		}
 
 		country = {
-			trade_efficiency = 0.15
-			free_dip_policy = 1
+			embracement_cost = -0.25
+			institution_spread_from_true_faith = 0.25
 		}
 		
 		country_as_secondary = {
-			trade_efficiency = 0.10
+			embracement_cost = -0.1
 		}
 
 		province = {
-			trade_value_modifier = 0.15
+			local_development_cost = -0.1
 		}
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
@@ -1098,16 +1110,16 @@ liberalism_group = {
 		}
 
 		country = {
-			trade_efficiency = 0.15
-			free_dip_policy = 1
+			reverse_relation_with_heathen_religion = 25
+			reverse_relation_with_heretic_religion = 25
 		}
 		
 		country_as_secondary = {
-			trade_efficiency = 0.10
+			reverse_relation_with_heathen_religion = 15
 		}
 
 		province = {
-			trade_value_modifier = 0.15
+			local_prosperity_growth = 0.05
 		}
 		
 
@@ -1136,6 +1148,8 @@ conservatism_group = {
 	can_form_personal_unions = yes
 
 	crusade_name = WAR_WITH_COMMUNISM
+
+	harmonized_modifier = harmonized_conservatism_group
 
 	conservatism_kpn = {
 		#hre_religion = yes
@@ -3622,7 +3636,7 @@ conservatism_group = {
 		icon = 44
 
 		country = {
-			tolerance_own = 3
+			global_religious_conversion_resistance = 0.5
 			global_heathen_missionary_strength = 0.05
 		}
 		
@@ -3993,6 +4007,8 @@ socialism_group = {
 	can_form_personal_unions = yes
 
 	crusade_name = WAR_WITH_FASCISM
+
+	harmonized_modifier = harmonized_socialism_group
 
 	religious_schools = {
 		marxism_doctrine = {
@@ -4803,6 +4819,8 @@ populism_group = {
 	can_form_personal_unions = yes
 
 	crusade_name = WAR_FOR_FREE_TRADE
+
+	harmonized_modifier = harmonized_populism_group
 
 	populism_samoobrona = {
 		#hre_religion = yes
@@ -5854,6 +5872,8 @@ christian = {
 
 	crusade_name = CRUSADE
 	
+	harmonized_modifier = harmonized_christian
+
 	christian_catholic = {
 		color = { 204 204 0 }
 		icon = 1
@@ -5993,4 +6013,5 @@ silesian_group = {
 	
 	crusade_name = CRUSADE
 	
+	harmonized_modifier = harmonized_silesian_group
 }

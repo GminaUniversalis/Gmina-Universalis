@@ -335,3 +335,57 @@ lobbying_denied = {
 	yearly_corruption = -0.05
 }
 
+harmonized_communism_group = {
+	yearly_corruption = -0.05
+	religion = yes
+}
+
+harmonized_liberalism_ud = {
+	free_dip_policy = 1
+	religion = yes
+}
+
+harmonized_liberalism_kld = {
+	innovativeness_gain = 0.1
+	religion = yes
+}
+
+harmonized_liberalism_uw = {
+	trade_efficiency = 0.1
+	religion = yes
+}
+
+harmonized_liberalism_PO = {
+	warscore_cost_vs_other_religion = -0.1
+	religion = yes
+}
+
+harmonized_liberalism_N = {
+	embracement_cost = -0.1
+	religion = yes
+}
+
+harmonized_conservatism_group = {
+	global_religious_conversion_resistance = 0.25
+	religion = yes
+}
+
+harmonized_socialism_group = {
+	extra_manpower_at_religious_war = yes
+	religion = yes
+}
+
+harmonized_populism_group = {
+	liberty_desire_from_subject_development = -0.25
+	religion = yes
+}
+
+harmonized_christian = {
+	missionaries = 1
+	religion = yes
+}
+
+harmonized_silesian_group = {
+	global_trade_goods_size_modifier = 0.1
+	religion = yes
+}

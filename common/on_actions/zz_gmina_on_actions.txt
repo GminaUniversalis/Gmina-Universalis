@@ -27,6 +27,94 @@ on_startup = {
 	gu_initialize_schools_effect = yes
 }
 
+on_harmonized_communism_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.1
+	}
+}
+
+on_harmonized_liberalism_ud = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.2
+	}
+}
+
+on_harmonized_liberalism_kld = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.3
+	}
+}
+
+on_harmonized_liberalism_uw = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.4
+	}
+}
+
+on_harmonized_liberalism_PO = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.5
+	}
+}
+
+on_harmonized_liberalism_N = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.6
+	}
+}
+
+on_harmonized_conservatism_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.7
+	}
+}
+
+on_harmonized_socialism_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.8
+	}
+}
+
+on_harmonized_populism_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.9
+	}
+}
+
+on_harmonized_christian = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.10
+	}
+}
+
+on_harmonized_silesian_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		gmina_harmonization.20
+	}
+}
+
 on_new_monarch = {
 	events = {
 		socialism_school_events.1
