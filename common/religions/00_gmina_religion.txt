@@ -342,7 +342,7 @@ liberalism_group = {
 	ai_will_propagate_through_trade = yes
 
 	liberalism_ud = {
-		color = { 52 52 140 }
+		color = { 52 52 182 }
 		icon = 33
 		allow_female_defenders_of_the_faith = yes
 
@@ -606,7 +606,7 @@ liberalism_group = {
 
 	liberalism_uw = {
 		#hre_religion = yes
-		color = { 173 3 252 }
+		color = { 57 191 0 }
 		icon = 35
 		allow_female_defenders_of_the_faith = yes
 
@@ -3508,7 +3508,7 @@ conservatism_group = {
 
 	conservatism_lpr = {
 		#hre_religion = yes
-		color = { 101 57 130 }
+		color = { 106 188 250 }
 		icon = 45
 		country = {
 			global_manpower_modifier = 0.2
@@ -4687,11 +4687,12 @@ socialism_group = {
 		allow_female_defenders_of_the_faith = yes
 
 		country = {
-			build_cost = -0.10
-			tolerance_own = 3
+			innovativeness_gain = 0.5
+			institution_spread_from_true_faith = 1
 		}
 		country_as_secondary = {
-			global_tax_modifier = 0.10
+			technology_cost = -0.05
+			embracement_cost = -0.25
 		}
 		province = {
 			local_tax_modifier = 0.15
@@ -4805,7 +4806,7 @@ populism_group = {
 
 	populism_samoobrona = {
 		#hre_religion = yes
-		color = { 101 57 130 }
+		color = { 255 246 144 }
 		icon = 49
 		country = {
 			global_spy_defence = 0.2
@@ -5400,11 +5401,18 @@ populism_group = {
 		color = { 238 150 150 }
 		icon = 4
 		country = {
-			global_spy_defence = 0.2
-			advisor_cost = -0.1
+			legitimacy = 1
+			republican_tradition = 0.5
+			devotion = 1
+			meritocracy = 1
+			horde_unity = 1
+
+			monthly_reform_progress = 0.5
 		}
 		country_as_secondary = {
-			global_spy_defence = 0.1
+			monthly_reform_progress_modifier = 0.25
+			move_capital_cost_modifier = -0.5
+
 		}
 		province = {
 			local_tax_modifier = 0.1

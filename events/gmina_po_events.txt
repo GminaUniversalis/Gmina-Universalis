@@ -5,29 +5,82 @@ country_event = {
 	id = po_events.1
 	title = po_events.1.t
 	desc = po_events.1.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
 
 	option = {
 		name = po_events.1.a
 
-		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				has_country_modifier = decentralized_managament
+			}
+		}
+
+		add_country_modifier = { 
+			name = decentralized_managament
+			duration = -1  
+		}
+
+		hidden_effect = {
+			set_country_flag = adm_reform_long_term_solution
+		}
+
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
 		name = po_events.1.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = shared_service_centers
+			}
+		}
+
+		add_country_modifier = { 
+			name = shared_service_centers
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = adm_reform_medium_term_solution
+			set_country_flag = adm_reform_medium_term_solution
+		}
+
+
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
 		name = po_events.1.c
 
-		ai_chance = { factor = 20 }
+		add_owned_provinces_development_ducats = {
+			multiplier = 1
+			age_multiplier = 1
+			trigger = { always = yes}
+		}
 
+		hidden_effect = {
+			clr_country_flag = adm_reform_short_term_solution
+			set_country_flag = adm_reform_short_term_solution
+		}
+
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+		
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -36,29 +89,77 @@ country_event = {
 	id = po_events.2
 	title = po_events.2.t
 	desc = po_events.2.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
 
 	option = {
 		name = po_events.2.a
 
-		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				has_country_modifier = spending_rule
+			}
+		}
+
+		add_country_modifier = { 
+			name = spending_rule
+			duration = -1  
+		}
+
+		hidden_effect = {
+			set_country_flag = fin_reform_long_term_solution
+		}
+
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
-		name = politics.2.b
+		name = po_events.2.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = reformed_pension_system
+			}
+		}
+
+		add_country_modifier = { 
+			name = reformed_pension_system
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = fin_reform_medium_term_solution
+			set_country_flag = fin_reform_medium_term_solution
+		}
+
+
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
-		name = politics.2.c
+		name = po_events.2.c
 
-		ai_chance = { factor = 20 }
+		hidden_effect = {
+			clr_country_flag = fin_reform_short_term_solution
+			set_country_flag = fin_reform_short_term_solution
+		}
 
+		add_mercantilism = 5
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+		
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -67,29 +168,83 @@ country_event = {
 	id = po_events.3
 	title = po_events.3.t
 	desc = po_events.3.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
 
 	option = {
 		name = po_events.3.a
 
-		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				has_country_modifier = social_welfare_program
+			}
+		}
+
+		add_country_modifier = { 
+			name = social_welfare_program
+			duration = -1  
+		}
+		
+		hidden_effect = {
+			set_country_flag = soc_reform_long_term_solution
+		}
+
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
-		name = politics.3.b
+		name = po_events.3.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = introduced_maternity_leave
+			}
+		}
+
+		add_country_modifier = { 
+			name = introduced_maternity_leave
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = soc_reform_medium_term_solution
+			set_country_flag = soc_reform_medium_term_solution
+		}
+
+
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
-		name = politics.3.c
+		name = po_events.3.c
 
-		ai_chance = { factor = 20 }
+		add_years_of_owned_provinces_manpower = {
+			years = 1
+			trigger = {
+				always = yes
+			}
+		}
 
+		hidden_effect = {
+			clr_country_flag = soc_reform_short_term_solution
+			set_country_flag = soc_reform_short_term_solution
+		}
+
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+		
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -98,29 +253,78 @@ country_event = {
 	id = po_events.4
 	title = po_events.4.t
 	desc = po_events.4.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
 
 	option = {
 		name = po_events.4.a
 
-		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				has_country_modifier = euro_preparations
+			}
+		}
+
+		add_country_modifier = { 
+			name = euro_preparations
+			duration = -1  
+		}
+		
+		hidden_effect = {
+			set_country_flag = proeu_reform_long_term_solution
+		}
+
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
-		name = politics.4.b
+		name = po_events.4.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = assistance_in_EU_politics
+			}
+		}
+
+		add_country_modifier = { 
+			name = assistance_in_EU_politics
+			duration = 1825
+		}
+		
+		hidden_effect = {
+			clr_country_flag = proeu_reform_medium_term_solution
+			set_country_flag = proeu_reform_medium_term_solution
+		}
+
+
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
-		name = politics.4.c
+		name = po_events.4.c
 
-		ai_chance = { factor = 20 }
+		add_stability = 1
 
+		hidden_effect = {
+			clr_country_flag = proeu_reform_short_term_solution
+			set_country_flag = proeu_reform_short_term_solution
+		}
+
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+		
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -129,29 +333,80 @@ country_event = {
 	id = po_events.5
 	title = po_events.5.t
 	desc = po_events.5.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
+
+
 
 	option = {
 		name = po_events.5.a
 
-		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				has_country_modifier = eastern_partnership
+			}
+		}
+
+		add_country_modifier = { 
+			name = eastern_partnership
+			duration = -1  
+		}
+
+		hidden_effect = {
+			set_country_flag = ties_reform_long_term_solution
+		}
+
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
-		name = politics.5.b
+		name = po_events.5.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = energy_cooperation
+			}
+		}
+
+		add_country_modifier = { 
+			name = energy_cooperation
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = ties_reform_medium_term_solution
+			set_country_flag = ties_reform_medium_term_solution
+		}
+		
+
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
-		name = politics.5.c
+		name = po_events.5.c
 
-		ai_chance = { factor = 20 }
+		add_prestige = 25
 
+		hidden_effect = {
+			clr_country_flag = ties_reform_short_term_solution
+			set_country_flag = ties_reform_short_term_solution
+		}
+
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+		
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -160,29 +415,150 @@ country_event = {
 	id = po_events.6
 	title = po_events.6.t
 	desc = po_events.6.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
 
 	option = {
+		name = po_events.6.ab
+
+		highlight = yes
+
+		trigger = {
+
+			OR = {
+				any_owned_province = {
+					OR = {
+						NOT = { development = 30 }
+						NOT = { has_terrain = urban } #tooltip reasons
+						NOT = { has_terrain = high_urban } 
+					}
+	
+				}
+	
+				NOT = {
+					had_country_flag = {
+						flag = sport_reform_long_term_solution
+						days = 1825
+					}
+				}
+			}
+			
+		}
+
+		add_church_power = 100
+
+		ai_chance = { factor = 0 }
+
+	}
+
+	option = {
 		name = po_events.6.a
 
-		ai_chance = { factor = 100 }
+		trigger = {
+			any_owned_province = {
+				OR = {
+					development = 30
+					has_terrain = urban
+					has_terrain = high_urban
+				}
+			}
+
+			had_country_flag = {
+				flag = sport_reform_long_term_solution
+				days = 1825
+			}
+			
+		}
+
+		random_owned_province = {
+			limit = {
+				OR = {
+					development = 30
+					has_terrain = urban
+					has_terrain = high_urban
+				}
+			}
+			add_province_modifier = { 
+				name = stadium_infrastructure
+				duration = -1  
+			}
+		}
+
+
+		hidden_effect = {
+			set_country_flag = sport_reform_long_term_solution
+		}
+
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
-		name = politics.6.b
+		name = po_events.6.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = orlik_2012
+			}
+		}
+
+		add_country_modifier = { 
+			name = orlik_2012
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = sport_reform_medium_term_solution
+			set_country_flag = sport_reform_medium_term_solution
+		}
+		
+		
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
-		name = politics.6.c
+		name = po_events.6.c
 
-		ai_chance = { factor = 20 }
+		add_estate_loyalty_modifier = {
+			estate = estate_families
+			desc = TBD
+			loyalty = 10
+			duration = 1825
+		}
 
+		add_estate_loyalty_modifier = {
+			estate = estate_retirees
+			desc = TBD
+			loyalty = 10
+			duration = 1825
+		}
+
+		add_estate_loyalty_modifier = {
+			estate = estate_middle_class
+			desc = TBD
+			loyalty = 10
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = sport_reform_short_term_solution
+			set_country_flag = sport_reform_short_term_solution
+		}
+		
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -191,29 +567,74 @@ country_event = {
 	id = po_events.7
 	title = po_events.7.t
 	desc = po_events.7.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
 
 	option = {
 		name = po_events.7.a
 
-		ai_chance = { factor = 100 }
+		add_country_modifier = { 
+			name = SM_electoral_districts
+			duration = -1  
+		}
+
+		hidden_effect = {
+			set_country_flag = elect_reform_long_term_solution
+		}
+		
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
-		name = politics.7.b
+		name = po_events.7.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = postal_voting
+			}
+		}
+
+		add_country_modifier = { 
+			name = postal_voting
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = elect_reform_medium_term_solutions
+			set_country_flag = elect_reform_medium_term_solution
+		}
+		
+
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
-		name = politics.7.c
+		name = po_events.7.c
 
-		ai_chance = { factor = 20 }
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
 
+		hidden_effect = {
+			clr_country_flag = elect_reform_short_term_solution
+			set_country_flag = elect_reform_short_term_solution
+		}
+		
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+		
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -222,29 +643,78 @@ country_event = {
 	id = po_events.8
 	title = po_events.8.t
 	desc = po_events.8.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
 
 	option = {
 		name = po_events.8.a
 
-		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				has_country_modifier = political_autdit
+			}
+		}
+
+		add_country_modifier = { 
+			name = political_autdit
+			duration = -1  
+		}
+
+		hidden_effect = {
+			set_country_flag = subs_reform_long_term_solution
+		}
+		
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
-		name = politics.8.b
+		name = po_events.8.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = public_funding_adjusted
+			}
+		}
+
+		add_country_modifier = { 
+			name = public_funding_adjusted
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = subs_reform_medium_term_solution
+			set_country_flag = subs_reform_medium_term_solution
+		}
+		
+
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
-		name = politics.8.c
+		name = po_events.8.c
 
-		ai_chance = { factor = 20 }
+		add_inflation = -2
 
+		hidden_effect = {
+			clr_country_flag = subs_reform_short_term_solution
+			set_country_flag = subs_reform_short_term_solution
+		}
+		
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+		
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -253,28 +723,77 @@ country_event = {
 	id = po_events.9
 	title = po_events.9.t
 	desc = po_events.9.d
-	picture = UDPicture
+	picture = PO_ASPECT_Picture
 
 	is_triggered_only = yes
 
 	option = {
 		name = po_events.9.a
 
-		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				has_country_modifier = labor_market_reform
+			}
+		}
+
+		add_country_modifier = { 
+			name = labor_market_reform
+			duration = -1  
+		}
+
+		hidden_effect = {
+			set_country_flag = rgl_reform_long_term_solution
+		}
+		
+
+		ai_chance = { factor = 10 }
 
 	}
 
 	option = {
-		name = politics.9.b
+		name = po_events.9.b
 
-		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = {
+				has_country_modifier = lobbying_denied
+			}
+		}
+
+		add_country_modifier = { 
+			name = lobbying_denied
+			duration = 1825
+		}
+
+		hidden_effect = {
+			clr_country_flag = rgl_reform_medium_term_solution
+			set_country_flag = rgl_reform_medium_term_solution
+		}
+		
+
+		ai_chance = { factor = 40 }
 
 	}
 
 	option = {
-		name = politics.9.c
+		name = po_events.9.c
 
-		ai_chance = { factor = 20 }
+		add_corruption = -2
 
+		hidden_effect = {
+			clr_country_flag = rgl_reform_short_term_solution
+			set_country_flag = rgl_reform_short_term_solution
+		}
+		
+
+		ai_chance = { factor = 50 }
+
+	}
+
+	option = {
+		name = po_events.Exit.d
+
+		add_church_power = 100
+		
+		ai_chance = { factor = 0 }
 	}
 }

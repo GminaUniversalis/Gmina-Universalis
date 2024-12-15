@@ -244,4 +244,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/estate_decision_event_pictures/ESTATE_PICKER_eventPicture.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "PO_ASPECT_Picture"
+		texturefile = "gfx/event_pictures/politics/PO_aspects_event.dds"
+		alwaystransparent = yes
+	}
 }
