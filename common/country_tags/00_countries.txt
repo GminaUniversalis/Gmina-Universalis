@@ -452,3 +452,5 @@ P1S = "countries/PIS.txt"
 #Gminy
  #Mazowieckie
  GKW = "countries/Gora Kalwaria.txt"
+ #Lodzkie
+ PIA = "countries/Gmina Piatek.txt"

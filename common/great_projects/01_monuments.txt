@@ -21627,9 +21627,9 @@ swinoujscie_container_harbour = {
 	}
 }
 
-Ćwiartki_3_4 = {
+cwiartki_3_4 = {
 	start = 3190
-	date = 1444.01.01 #800.01.01
+	date = 1444.01.01
 	time = { months = 0	}
 	build_cost = 0
 	can_be_moved = no

@@ -2897,6 +2897,45 @@ GKW_ideas = { #Góra Kalwaria
 	}
 }
 
+PIA_ideas = { #Gmina Piatek
+	start = {
+		discipline = 0.05
+		merchants = 1
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}	
+
+	trigger = {
+		tag = PIA
+	}
+	free = yes
+	
+	friday_markets = {
+		global_trade_power = 0.15
+	}
+	abundace_of_builders = {
+		build_cost = -0.2
+	}
+	local_produce = {
+		production_efficiency = 0.33
+	}
+	craving_for_land = {
+		core_creation = -0.15
+	}
+	local_officials = {
+		missionaries = 2
+		global_missionary_strength = 0.03
+	}
+	land_of_the_weeks_end = {
+		siege_ability = 0.1
+	}
+	social_equality = {
+		diplomatic_reputation = 2
+	}
+}
+
 
 
 

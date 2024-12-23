@@ -1046,7 +1046,7 @@
  INCIDENT_VOTES:0 "If picked Silesian Cohesion will change by $IA|Y$.\nElector Support:\n$ELECTORS$\nPrince Support:\n$MEMBERS$"
  IMPERIAL_NO_INCIDENT_TITLE_TOOLTIP:0 "Once in a while a matter will come before the Diet that affects the entirety of the Silesian Autonomy. The Emperor will be forced to take action upon this and adhere to the will of the Princes and Electors or erode this proud institution."
  kingdom_of_god_reform:0 "Kingdom of God"
- kingdom_of_god_reform_desc:0 "The PiS Bureau has established the Kingdom of Żoliborz. The authority of the PiS Bureau, led by the Prezes, shall be absolute in both the spiritual and temporal realms."
+ kingdom_of_god_reform_desc:0 "The PiS Bureau has established the Kingdom of ¯oliborz. The authority of the PiS Bureau, led by the Prezes, shall be absolute in both the spiritual and temporal realms."
  LOCK_CURIA_EFFECT:0 "$WHO$ will be permanently the Prezes Controller."
  PAPAL_INFLUENCE_CURIA_LOCKED:0 "§RThe PiS Bureau is locked to $WHO$.§!"
  MODIFIER_PAPAL_INFLUENCE_FROM_CARDINALS:0 "Prezes Influence from Dzia³acze"
