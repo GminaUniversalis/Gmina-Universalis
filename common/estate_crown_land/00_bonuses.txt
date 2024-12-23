@@ -7,7 +7,7 @@ bonus = {
     modifier = {
         state_maintenance_modifier = 2
         all_estate_loyalty_equilibrium = 0.25
-        all_estate_influence_modifier = 0.5
+        #all_estate_influence_modifier = 0.5
         inflation_reduction = -0.5
     }
 }
@@ -19,7 +19,7 @@ bonus = {
     modifier = {
         state_maintenance_modifier = 1.5
         all_estate_loyalty_equilibrium = 0.20
-        all_estate_influence_modifier = 0.4
+        #all_estate_influence_modifier = 0.4
         inflation_reduction = -0.4
     }
 }
@@ -31,7 +31,7 @@ bonus = {
     modifier = {
         state_maintenance_modifier = 1
         all_estate_loyalty_equilibrium = 0.15
-        all_estate_influence_modifier = 0.3
+       # all_estate_influence_modifier = 0.3
         inflation_reduction = -0.3
     }
 }
@@ -43,7 +43,7 @@ bonus = {
     modifier = {
         state_maintenance_modifier = 1
         all_estate_loyalty_equilibrium = 0.10
-        all_estate_influence_modifier = 0.25
+        #all_estate_influence_modifier = 0.25
         inflation_reduction = -0.25
     }
 }
@@ -55,7 +55,7 @@ bonus = {
     modifier = {
         state_maintenance_modifier = 0.5
         all_estate_loyalty_equilibrium = 0.05
-        all_estate_influence_modifier = 0.1
+        #all_estate_influence_modifier = 0.1
         inflation_reduction = -0.1
     }
 }
@@ -82,8 +82,6 @@ bonus = {
         all_estate_influence_modifier = -0.1
     }
 }
-
-# No effect from 30 to 50
 
 bonus = {
     key = crown_land_level_6

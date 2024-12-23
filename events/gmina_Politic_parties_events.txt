@@ -4047,6 +4047,53 @@ country_event = {
 			factor = 0.9
 			stability = 3
 		}
+
+		modifier = {
+			factor = 0.01
+
+			OR = {
+				OR = {
+					tag = G12
+					was_tag = G12
+					tag = U21
+					was_tag = U21
+					tag = X20
+					was_tag = X20
+					tag = A27
+					was_tag = A27
+					tag = Y19
+					was_tag = Y19
+					tag = R32
+					was_tag = R32
+					tag = Q22
+					was_tag = Q22
+					tag = P17
+					was_tag = P17
+					tag = B20
+					was_tag = B20
+					tag = L14
+					was_tag = L14
+				}
+				ROOT = {
+					any_owned_province = {
+						OR = {
+							province_group = warszawa_city_group
+							province_group = lublin_city_group
+							province_group = krakow_city_group
+							province_group = wroclaw_city_group
+							province_group = gdansk_city_group
+							province_group = poznan_city_group
+							province_group = lodz_city_group
+							province_group = szczecin_city_group
+							province_group = bydgoszcz_city_group
+							province_group = katowice_city_group
+						}
+					}
+				}
+			}
+
+		}
+	
 	}
 
 	after = {
@@ -4158,7 +4205,54 @@ country_event = {
 	option = {
 		name = politics.16.a
 
-		ai_chance = { factor = 10 }
+		ai_chance = { 
+			factor = 10 
+
+			modifier = {
+				factor = 1000
+
+				OR = {
+					OR = {
+						tag = G12
+						was_tag = G12
+						tag = U21
+						was_tag = U21
+						tag = X20
+						was_tag = X20
+						tag = A27
+						was_tag = A27
+						tag = Y19
+						was_tag = Y19
+						tag = R32
+						was_tag = R32
+						tag = Q22
+						was_tag = Q22
+						tag = P17
+						was_tag = P17
+						tag = B20
+						was_tag = B20
+						tag = L14
+						was_tag = L14
+					}
+					ROOT = {
+						any_owned_province = {
+							OR = {
+								province_group = warszawa_city_group
+								province_group = lublin_city_group
+								province_group = krakow_city_group
+								province_group = wroclaw_city_group
+								province_group = gdansk_city_group
+								province_group = poznan_city_group
+								province_group = lodz_city_group
+								province_group = szczecin_city_group
+								province_group = bydgoszcz_city_group
+								province_group = katowice_city_group
+							}
+						}
+					}
+				}
+			}
+		}
 
 		random_owned_province = {
 			limit = {

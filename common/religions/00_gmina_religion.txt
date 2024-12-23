@@ -416,6 +416,10 @@ liberalism_group = {
 			christian_catholic
 		}
 
+		province = {
+			local_friendly_movement_speed = 0.15
+		}
+
 		on_convert = {
 			change_religion = liberalism_ud
 			add_prestige = -100
@@ -551,6 +555,10 @@ liberalism_group = {
 			christian_catholic
 		}
 
+		province = {
+			local_warscore_cost_modifier = 0.1
+		}
+
 		on_convert = {
 			change_religion = liberalism_kld
 			add_prestige = -100
@@ -682,6 +690,10 @@ liberalism_group = {
 			populism_konfederacja
 			#
 			christian_catholic
+		}
+
+		province = {
+			local_prosperity_growth = 0.05
 		}
 
 		on_convert = {
@@ -819,6 +831,10 @@ liberalism_group = {
 			populism_konfederacja
 			#
 			christian_catholic
+		}
+
+		province = {
+			local_center_of_trade_upgrade_cost = -0.25
 		}
 
 		on_convert = {
@@ -961,6 +977,10 @@ liberalism_group = {
 			christian_catholic
 		}
 
+		province = {
+			local_tolerance_of_heathens = 2
+		}
+
 		on_convert = {
 			change_religion = liberalism_N
 			add_prestige = -100
@@ -999,7 +1019,16 @@ liberalism_group = {
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-
+			reform_tax_system
+			reduce_bureaucracy
+			reinforce_democracy
+			fight_corruption
+			education_and_innovativeness
+			enforce_equality
+			support_the_labor_market
+			pro_family_policy
+			cooperation_with_eu
+			enviromental_protection
 		}
 
 		will_get_center = { #Refered to even for initial CoR Spawn
@@ -1010,7 +1039,7 @@ liberalism_group = {
 			}
 		}
 	
-		aspects_name = ANGLICAN_ASPECTS
+		aspects_name = NOWOCZESNA_ASPECTS
 		heretic = { FASCISTS }
 		date = 1520.1.1
 	}
@@ -1085,6 +1114,10 @@ liberalism_group = {
 			populism_konfederacja
 			#
 			christian_catholic
+		}
+
+		province = {
+			local_religious_unity_contribution = 0.25
 		}
 
 		on_convert = {
@@ -3532,7 +3565,7 @@ conservatism_group = {
 			global_manpower_modifier = 0.1
 		}
 		province = {
-			local_years_of_nationalism = 15
+			local_years_of_nationalism = -15
 		}
 
 		allowed_conversion = {
@@ -3645,6 +3678,10 @@ conservatism_group = {
 			advisor_pool = 5
 		}
 		
+		province = {
+			local_state_maintenance_modifier = -0.1
+		}
+
 		allowed_conversion = {
 			#communism_pzpr
 			#communism_sd
@@ -4488,7 +4525,7 @@ socialism_group = {
 			global_tax_modifier = 0.10
 		}
 		province = {
-			local_tax_modifier = 0.15
+			min_local_autonomy = -10
 		}
 
 		allowed_conversion = {
@@ -4711,7 +4748,7 @@ socialism_group = {
 			embracement_cost = -0.25
 		}
 		province = {
-			local_tax_modifier = 0.15
+			local_religious_conversion_resistance = 0.25
 		}
 
 		allowed_conversion = {
@@ -5433,7 +5470,7 @@ populism_group = {
 
 		}
 		province = {
-			local_tax_modifier = 0.1
+			local_governing_cost = -0.1
 		}
 
 		allowed_conversion = {
@@ -5527,6 +5564,24 @@ populism_group = {
 		heretic = {  }
 
 		uses_church_power = yes
+		aspects = {
+			single_mandate_electoral_discrits
+			mandatory_citizen_referendums
+			abolition_of_funding_of_political_parties
+			increase_accountability_of_politicians
+			justice_system_reform
+			decentralization_of_public_power
+			promotion_of_direct_democracy
+			introduction_of_magistrate
+			defend_polish_national_interests_in_EU
+			protect_family_values
+			simplify_tax_system
+			strenghten_country_defence
+			support_for_small_medium_enterprises
+			protecting_poland_energetical_sovereignity
+			promote_patriotism
+		}
+		aspects_name = KUKIZ15_ASPECTS
 
 		date = 1503.1.1
 	}
@@ -5536,14 +5591,14 @@ populism_group = {
 		color = { 255 153 51 }
 		icon = 3
 		country = {
-			global_spy_defence = 0.2
-			advisor_cost = -0.1
+			reduced_stab_impacts = yes
+			improve_relation_modifier = 0.2
 		}
 		country_as_secondary = {
-			global_spy_defence = 0.1
+			improve_relation_modifier = 0.1
 		}
 		province = {
-			local_tax_modifier = 0.1
+			local_institution_spread = 0.1
 		}
 
 		allowed_conversion = {
@@ -5634,7 +5689,7 @@ populism_group = {
 			}			
 		}
 		
-		holy_sites = { 358 1227 2313 1234 419 }
+		holy_sites = { 257 969 262 3190 43 501 2461 2978 2991 1318 }
 
 		misguided_heretic = yes
 		
@@ -5646,6 +5701,11 @@ populism_group = {
 			RP_3
 			RP_4
 			RP_5
+			RP_6
+			RP_7
+			RP_8
+			RP_9
+			RP_10
 		}
 
 		date = 1503.1.1
@@ -5656,14 +5716,14 @@ populism_group = {
 		color = { 0 51 153 }
 		icon = 5
 		country = {
-			global_spy_defence = 0.2
-			advisor_cost = -0.1
+			culture_conversion_cost = -0.25
+			global_tax_modifier = -0.2
 		}
 		country_as_secondary = {
-			global_spy_defence = 0.1
+			culture_conversion_cost = -0.15
 		}
 		province = {
-			local_tax_modifier = 0.1
+			local_development_cost = -0.05
 		}
 
 		allowed_conversion = {
@@ -5757,18 +5817,24 @@ populism_group = {
 		heretic = {  }
 
 		uses_judaism_power = yes
-		aspects_name = JEWISH_ASPECTS
+		aspects_name = KONFEDERACJA_ASPECTS
 			
 		aspects = {
-			judaism_rosh_hashanah_aspect
-			judaism_simchat_torah_aspect
-			judaism_sukkot_aspect
-			judaism_communities_aspect
-			jewish_abrahamic_aspect
-			judaism_diplomatic_rabbi_aspect
-			judaism_yom_kippur_aspect
-			judaism_remember_passover_aspect
-			judaism_purim_teachings_aspect
+			ruch_narodowy_leadership
+			ruch_narodowy_ideology
+			ruch_narodowy_demands
+			partia_korwin_leadership
+			partia_korwin_ideology
+			partia_korwin_demands
+			partia_wolnosciowcy_leadership
+			partia_wolnosciowcy_ideology
+			partia_wolnosciowcy_demands
+			monarchists_leadership
+			monarchists_ideology
+			monarchists_demands
+			pro_life_leadership
+			pro_life_ideology
+			pro_life_demands
 		}
 
 		celebrate = {
@@ -5779,81 +5845,75 @@ populism_group = {
 				custom_trigger_tooltip = {
 					tooltip = JUDAISM_HAS_ADM_ASPECT
 					OR = {
-						has_church_aspect = judaism_rosh_hashanah_aspect
-						has_church_aspect = judaism_simchat_torah_aspect
-						has_church_aspect = judaism_sukkot_aspect
+						has_church_aspect = ruch_narodowy_leadership
+						has_church_aspect = partia_korwin_leadership
+						has_church_aspect = partia_wolnosciowcy_leadership
+						has_church_aspect = monarchists_leadership
+						has_church_aspect = pro_life_leadership
 					}
-				}
-				if = {
-					limit = {
-						has_church_aspect = judaism_rosh_hashanah_aspect
-					}
-					NOT = { stability = 3 }
 				}
 			}
 			effect = {
 				if = {
 					limit = {
-						has_church_aspect = judaism_rosh_hashanah_aspect
+						has_church_aspect = ruch_narodowy_leadership
 					}
 					add_stability = 1
 				}
 				if = {
 					limit = {
-						has_church_aspect = judaism_simchat_torah_aspect
+						has_church_aspect = partia_korwin_leadership
 					}
-					change_government_reform_progress = 25
-					add_legitimacy_equivalent = {
-						amount = 5
-						republican_tradition = 5
-					}
-					if = {
-						limit = {
-							has_heir = yes
+					ROOT = {
+						random_owned_province = {
+							limit = {
+								NOT = {
+									development = 10
+								}
+							}
+							add_base_tax = 3
+							add_base_production = 3
+							add_base_manpower = 3
 						}
-						add_heir_claim = 5
 					}
 				}
 				if = {
 					limit = {
-						has_church_aspect = judaism_sukkot_aspect
+						has_church_aspect = partia_wolnosciowcy_leadership
 					}
-					add_years_of_income = 0.3
+					add_years_of_income = 0.4
 					add_inflation = -1
 				}
 				if = {
 					limit = {
-						has_government_attribute = loyalty_from_celebration
+						has_church_aspect = monarchists_leadership
 					}
-					add_estate_loyalty = {
-						estate = estate_church
-						loyalty = 20
+					if = {
+						limit = {
+							NOT = {
+								government = monarchy
+							}
+						}
+						change_government = monarchy
+						add_government_reform = constitutional_monarchy_reform
+					}
+					else_if = {
+						limit = {
+							government = monarchy
+						}
+						change_government_reform_progress = 25
 					}
 				}
-				hidden_effect = {
-					if = {
-						limit = { NOT = { has_country_flag = has_celebrated_festival } }
-						set_country_flag = has_celebrated_festival
+				if = {
+					limit = {
+						has_church_aspect = pro_life_leadership
 					}
+
+					add_army_professionalism = 0.01
 				}
 			}
 			ai_will_do = {
 				factor = 1
-				modifier = {
-					factor = 0
-					OR = {
-						AND = {
-							NOT = { has_church_aspect = judaism_communities_aspect }
-							NOT = { has_church_aspect = jewish_abrahamic_aspect }
-							NOT = { has_church_aspect = judaism_diplomatic_rabbi_aspect }
-						}
-						AND = {
-							NOT = { has_church_aspect = judaism_yom_kippur_aspect }
-							NOT = { has_church_aspect = judaism_remember_passover_aspect }
-							NOT = { has_church_aspect = judaism_purim_teachings_aspect }
-						}
-					}
-				}
 			}
 		}
 
@@ -5954,6 +6014,10 @@ christian = {
 			advisor_pool = 1
 		}
 		
+		province = {
+			local_unrest = -1
+		}
+
 		#hre_religion = yes
 		
 		on_convert = {

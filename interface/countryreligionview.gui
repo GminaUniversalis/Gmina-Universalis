@@ -18,11 +18,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x= -42 y = 6 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 102
+			maxWidth = 98
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -30,11 +30,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 98 y = -2 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 206
+			maxWidth = 198
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -69,11 +69,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x= -42 y = 6 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 102
+			maxWidth = 98
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -81,11 +81,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 98 y = -2 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 206
+			maxWidth = 198
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -120,11 +120,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x= -42 y = 6 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 102
+			maxWidth = 98
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -132,11 +132,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 98 y = -2 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 206
+			maxWidth = 198
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -155,8 +155,8 @@ guiTypes = {
 	windowType = {
 		name = "countryreligionview_aspectitem_liberalism_kld"
 		backGround =""
-		position = { x=10 y=-30 }	
-		size = { x=50 y=55 }
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -166,36 +166,36 @@ guiTypes = {
 		{
 			name ="aspect_icon"
 			spriteType = "GFX_hindu_deities_strip"
-			position = { x= -51 y = -10 }
+			position = { x= 45 y = -14 }
 		}
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x=11 y = -7 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 300
-			maxHeight = 24
+			maxWidth = 98
+			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 11 y = 11 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 300
-			maxHeight = 24
+			maxWidth = 198
+			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
 		
 		guiButtonType = {
 			name = "pick_aspect"
-			position = { x=316 y = 6}
+			position = { x=301 y = 1}
 			quadTextureSprite ="GFX_standard_button_71"
 			buttonText = "SELECT"
 			buttonFont = "vic_18"
@@ -206,8 +206,8 @@ guiTypes = {
 	windowType = {
 		name = "countryreligionview_aspectitem_liberalism_ud"
 		backGround =""
-		position = { x=10 y=-30 }	
-		size = { x=50 y=55 }
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -217,36 +217,36 @@ guiTypes = {
 		{
 			name ="aspect_icon"
 			spriteType = "GFX_hindu_deities_strip"
-			position = { x= -51 y = -10 }
+			position = { x= 45 y = -14 }
 		}
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x=11 y = -7 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 300
-			maxHeight = 24
+			maxWidth = 98
+			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 11 y = 11 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 300
-			maxHeight = 24
+			maxWidth = 198
+			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
 		
 		guiButtonType = {
 			name = "pick_aspect"
-			position = { x=316 y = 6}
+			position = { x=301 y = 1}
 			quadTextureSprite ="GFX_standard_button_71"
 			buttonText = "SELECT"
 			buttonFont = "vic_18"
@@ -257,8 +257,8 @@ guiTypes = {
 	windowType = {
 		name = "countryreligionview_aspectitem_liberalism_uw"
 		backGround =""
-		position = { x=10 y=-30 }	
-		size = { x=50 y=55 }
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -268,36 +268,36 @@ guiTypes = {
 		{
 			name ="aspect_icon"
 			spriteType = "GFX_hindu_deities_strip"
-			position = { x= -51 y = -10 }
+			position = { x= 45 y = -14 }
 		}
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x=11 y = -7 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 300
-			maxHeight = 24
+			maxWidth = 98
+			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 11 y = 11 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 300
-			maxHeight = 24
+			maxWidth = 198
+			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
 		
 		guiButtonType = {
 			name = "pick_aspect"
-			position = { x=316 y = 6}
+			position = { x=301 y = 1}
 			quadTextureSprite ="GFX_standard_button_71"
 			buttonText = "SELECT"
 			buttonFont = "vic_18"
@@ -324,11 +324,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x= -42 y = 6 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 102
+			maxWidth = 98
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -336,11 +336,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 98 y = -2 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 206
+			maxWidth = 198
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -375,11 +375,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x= -42 y = 6 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 102
+			maxWidth = 98
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -387,11 +387,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 98 y = -2 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 206
+			maxWidth = 198
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -426,11 +426,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x= -42 y = 6 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 102
+			maxWidth = 98
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -438,11 +438,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 98 y = -2 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 206
+			maxWidth = 198
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -528,11 +528,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_name"
-			position = { x= -42 y = 6 }
+			position = { x= -48 y = -4 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 102
+			maxWidth = 98
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -540,11 +540,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 98 y = -2 }
+			position = { x = 106 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
-			maxWidth = 206
+			maxWidth = 198
 			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
@@ -596,6 +596,57 @@ guiTypes = {
 			text = "AspectEffect"	
 			maxWidth = 206
 			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_aspect"
+			position = { x=301 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+	}
+
+	windowType = {
+		name = "countryreligionview_aspectitem_populism_K15"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+		
+		iconType =
+		{
+			name ="aspect_icon"
+			spriteType = "GFX_hindu_deities_strip"
+			position = { x= 45 y = -14 }
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_name"
+			position = { x= -48 y = -4 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectName"	
+			maxWidth = 98
+			maxHeight = 108
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_effect"
+			position = { x = 106 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectEffect"	
+			maxWidth = 198
+			maxHeight = 108
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
