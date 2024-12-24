@@ -2470,6 +2470,45 @@ M00_ideas = { #Wojewodztwo Swietokrzyskie
 	}
 
 }
+
+M13_ideas = { #Skarzyski
+	start = {
+		hostile_attrition = 1
+		enemy_core_creation = 0.33
+	}
+	
+	bonus = {
+		num_accepted_cultures = -1
+	}	
+
+	trigger = {
+		tag = M13
+	}
+	free = yes
+	
+	M13_1 = {
+		global_religious_conversion_resistance = 1
+	}
+	M13_2 = {
+		movement_speed = 0.15
+	}
+	M13_3 = {
+		artillery_fire = 1
+		artillery_cost = 0.33
+	}
+	M13_4 = {
+		army_tradition_decay = -0.01
+	}
+	M13_5 = {
+		attack_bonus_in_capital_terrain = 1
+	}
+	M13_6 = {
+		production_efficiency = 0.15
+	}
+	M13_7 = {
+		diplomatic_reputation = 1
+	}
+}
 #Warminsko-Mazurskie -N
 
 N00_ideas = { #Wojewodztwo Warminsko-Mazurskie
