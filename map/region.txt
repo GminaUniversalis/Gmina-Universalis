@@ -57,10 +57,10 @@ mazowieckie_region = {
 }
 podlasie_region = { 
 	areas = { 
-		kolno stawiski jedwabne bialystok_centrum bialystok_wschod bialystok_zachod bialystok_poludnie czarna_bialostocka kryszyn monki
-		powiat_grajewski filipow powiat_suwalski powiat_sejnenski suwalki_poludnie suwalki_polnoc augustow powiat_augustowski powiat_sokolski sokolka
-		michalowo nowogrod powiat_lomzynski lomza choroszcz powiat_zambrowski wysokie_mazowieckie klukowo siematycze bransk
-		milejczyce kleszczele hajnowka narew_area bielsk_podlaski lapy 
+		kolno stawiski jedwabne bialystok_centrum bialystok_wschod bialystok_zachod bialystok_poludnie kryszyn monki powiat_grajewski
+		filipow powiat_suwalski powiat_sejnenski suwalki_poludnie suwalki_polnoc augustow powiat_augustowski powiat_sokolski sokolka michalowo
+		nowogrod powiat_lomzynski lomza choroszcz powiat_zambrowski wysokie_mazowieckie klukowo siematycze bransk milejczyce
+		kleszczele hajnowka narew_area bielsk_podlaski lapy czarna_bialostocka 
 	}
 }
 zachodnio_pomorskie_region = { 
