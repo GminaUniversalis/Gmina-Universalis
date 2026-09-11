@@ -2,6 +2,7 @@ country_decisions = {
 	dolnoslaskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = dolnoslaskie_region
@@ -45,6 +46,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 3190
 			NOT = { exists = A00 }
 			adm_tech = 10
@@ -105,6 +108,7 @@ country_decisions = {
 	kujawsko_pomorskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = kujawsko_pomorskie_region
@@ -149,6 +153,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			OR = {
 				owns_core_province = 2991
 				owns_core_province = 72
@@ -254,6 +260,7 @@ country_decisions = {
 	lodzkie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = lodzkie_region
@@ -298,6 +305,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 2461
 			NOT = { exists = Q00 }
 			adm_tech = 10
@@ -358,6 +367,7 @@ country_decisions = {
 	lubelskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = lubelskie_region
@@ -402,6 +412,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 969
 			NOT = { exists = U00 }
 			adm_tech = 10
@@ -462,6 +474,7 @@ country_decisions = {
 	lubuskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = lubuskie_region
@@ -507,6 +520,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			OR = {
 				owns_core_province = 2831
 				owns_core_province = 1006
@@ -604,6 +619,7 @@ country_decisions = {
 	malopolska_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = malopolska_region
@@ -647,6 +663,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 262
 			NOT = { exists = X00 }
 			adm_tech = 10
@@ -707,6 +725,7 @@ country_decisions = {
 	mazowieckie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = mazowieckie_region
@@ -750,6 +769,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 257
 			NOT = { exists = G00 }
 			adm_tech = 10
@@ -810,6 +831,7 @@ country_decisions = {
 	opolskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = opolskie_region
@@ -852,6 +874,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 4761
 			NOT = { exists = H00 }
 			adm_tech = 10
@@ -912,6 +936,7 @@ country_decisions = {
 	podkarpackie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = podkarpackie_region
@@ -960,6 +985,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 2788
 			NOT = { exists = I00 }
 			adm_tech = 10
@@ -1020,6 +1047,7 @@ country_decisions = {
 	podlasie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = podlasie_region
@@ -1063,6 +1091,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 1065
 			NOT = { exists = J00 }
 			adm_tech = 10
@@ -1123,6 +1153,7 @@ country_decisions = {
 	pomorskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = pomorskie_region
@@ -1169,6 +1200,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 43
 			NOT = { exists = Y00 }
 			adm_tech = 10
@@ -1229,6 +1262,7 @@ country_decisions = {
 	slaskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = slaskie_region
@@ -1274,6 +1308,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 1318
 			NOT = { exists = L00 }
 			adm_tech = 10
@@ -1334,6 +1370,7 @@ country_decisions = {
 	swietokrzyskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = swietokrzyskie_region
@@ -1377,6 +1414,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 1120
 			NOT = { exists = M00 }
 			adm_tech = 10
@@ -1437,6 +1476,7 @@ country_decisions = {
 	warminsko_mazurskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = warminsko_mazurskie_region
@@ -1480,6 +1520,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 292
 			NOT = { exists = N00 }
 			adm_tech = 10
@@ -1540,6 +1582,7 @@ country_decisions = {
 	wielkopolska_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = wielkopolska_region
@@ -1584,6 +1627,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 501
 			NOT = { exists = R00 }
 			adm_tech = 10
@@ -1644,6 +1689,7 @@ country_decisions = {
 	zachodniopomorskie_formation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
 					region = zachodni_pomorskie_region
@@ -1687,6 +1733,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_or_was_wojewodztwo_check = yes
+			is_country_formable_check = yes
 			owns_core_province = 2978
 			NOT = { exists = P00 }
 			adm_tech = 10

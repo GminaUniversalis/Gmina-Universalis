@@ -4,7 +4,7 @@ country_decisions = {
 		
 		potential = {
 			always = yes
-			is_ai = no
+			ai = no
 		}
 	
 		allow = {

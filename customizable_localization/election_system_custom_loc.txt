@@ -1,0 +1,1303 @@
+defined_text = {
+	name = Getcommunism_pzprAvailability
+
+	text = {
+		localisation_key = communism_pzprAvailable
+
+		trigger = {
+			
+				is_religion_enabled = communism_pzpr
+
+			1500 = {
+				check_variable = {
+					which = communism_pzpr_city
+					value = 1
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = communism_pzprAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = communism_pzpr }
+			
+		}
+	}
+
+	text = {
+		localisation_key = communism_pzprAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = communism_pzpr
+			1500 = {
+				check_variable = {
+					which = communism_pzpr_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = communism_pzpr_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+# defined_text = {
+# 	name = GetXAvailability
+
+# 	text = {
+# 		localisation_key = XAvailable
+
+# 		trigger = {
+# 			is_religion_enabled = X
+# 		}
+# 	}
+
+# 	text = {
+# 		localisation_key = XAvailableNot
+
+# 		trigger = {
+# 			NOT = { is_religion_enabled = X }
+# 		}
+# 	}
+
+# 	text = {
+# 		localisation_key = XAvailableNotExists
+
+# 		trigger = {
+# 			is_religion_enabled = X
+#			1500 = {
+# 				check_variable = {
+# 					which = X_city
+# 					value = 0
+# 				}
+# 				NOT = {
+# 					check_variable = {
+# 						which = X_city
+# 						value = 1
+# 					}
+# 				}
+#			}
+
+# 		}
+# 	}
+
+# }
+
+defined_text = {
+	name = Getcommunism_sdAvailability
+
+	text = {
+		localisation_key = communism_sdAvailable
+
+		trigger = {
+			is_religion_enabled = communism_sd
+
+			1500 = {
+
+					check_variable = {
+						which = communism_sd_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = communism_sdAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = communism_sd }
+		}
+	}
+
+	text = {
+		localisation_key = communism_sdAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = communism_sd
+			1500 = {
+				check_variable = {
+					which = communism_sd_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = communism_sd_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getcommunism_zslAvailability
+
+	text = {
+		localisation_key = communism_zslAvailable
+
+		trigger = {
+			is_religion_enabled = communism_zsl
+
+			1500 = {
+
+					check_variable = {
+						which = communism_zsl_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = communism_zslAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = communism_zsl }
+		}
+	}
+
+	text = {
+		localisation_key = communism_zslAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = communism_zsl
+			1500 = {
+				check_variable = {
+					which = communism_zsl_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = communism_zsl_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getliberalism_udAvailability
+
+	text = {
+		localisation_key = liberalism_udAvailable
+
+		trigger = {
+			is_religion_enabled = liberalism_ud
+
+			1500 = {
+
+					check_variable = {
+						which = liberalism_ud_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_udAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = liberalism_ud }
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_udAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = liberalism_ud
+			1500 = {
+				check_variable = {
+					which = liberalism_ud_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = liberalism_ud_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getliberalism_kldAvailability
+
+	text = {
+		localisation_key = liberalism_kldAvailable
+
+		trigger = {
+			is_religion_enabled = liberalism_kld
+
+			1500 = {
+
+					check_variable = {
+						which = liberalism_kld_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_kldAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = liberalism_kld }
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_kldAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = liberalism_kld
+			1500 = {
+				check_variable = {
+					which = liberalism_kld_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = liberalism_kld_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getliberalism_uwAvailability
+
+	text = {
+		localisation_key = liberalism_uwAvailable
+
+		trigger = {
+			is_religion_enabled = liberalism_uw
+
+			1500 = {
+
+					check_variable = {
+						which = liberalism_uw_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_uwAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = liberalism_uw }
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_uwAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = liberalism_uw
+			1500 = {
+				check_variable = {
+					which = liberalism_uw_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = liberalism_uw_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getliberalism_POAvailability
+
+	text = {
+		localisation_key = liberalism_POAvailable
+
+		trigger = {
+			is_religion_enabled = liberalism_PO
+
+			1500 = {
+
+					check_variable = {
+						which = liberalism_PO_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_POAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = liberalism_PO }
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_POAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = liberalism_PO
+			1500 = {
+				check_variable = {
+					which = liberalism_PO_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = liberalism_PO_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getliberalism_NAvailability
+
+	text = {
+		localisation_key = liberalism_NAvailable
+
+		trigger = {
+			is_religion_enabled = liberalism_N
+			1500 = {
+
+					check_variable = {
+						which = liberalism_N_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_NAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = liberalism_N }
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_NAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = liberalism_N
+			1500 = {
+				check_variable = {
+					which = liberalism_N_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = liberalism_N_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getliberalism_P2050Availability
+
+	text = {
+		localisation_key = liberalism_P2050Available
+
+		trigger = {
+			is_religion_enabled = liberalism_P2050
+			1500 = {
+
+					check_variable = {
+						which = liberalism_P2050_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_P2050AvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = liberalism_P2050 }
+		}
+	}
+
+	text = {
+		localisation_key = liberalism_P2050AvailableNotExists
+
+		trigger = {
+			is_religion_enabled = liberalism_P2050
+			1500 = {
+				check_variable = {
+					which = liberalism_P2050_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = liberalism_P2050_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getconservatism_kpnAvailability
+
+	text = {
+		localisation_key = conservatism_kpnAvailable
+
+		trigger = {
+
+			OR = {
+				is_religion_enabled = conservatism_kpn
+				any_country = {
+					religion = conservatism_kpn
+				}
+			}
+			1500 = {
+
+				check_variable = {
+					which = conservatism_kpn_city
+					value = 1
+				}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_kpnAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = conservatism_kpn
+			1500 = {
+				check_variable = {
+					which = conservatism_kpn_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = conservatism_kpn_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_kpnAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = conservatism_kpn }
+		}
+	}
+}
+
+defined_text = {
+	name = Getconservatism_zchnAvailability
+
+	text = {
+		localisation_key = conservatism_zchnAvailable
+
+		trigger = {
+			is_religion_enabled = conservatism_zchn
+			1500 = {
+
+				check_variable = {
+					which = conservatism_zchn_city
+					value = 1
+				}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_zchnAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = conservatism_zchn }
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_zchnAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = conservatism_zchn
+			1500 = {
+				check_variable = {
+					which = conservatism_zchn_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = conservatism_zchn_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getconservatism_pcAvailability
+
+	text = {
+		localisation_key = conservatism_pcAvailable
+
+		trigger = {
+			is_religion_enabled = conservatism_pc
+			1500 = {
+
+					check_variable = {
+						which = conservatism_pc_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_pcAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = conservatism_pc }
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_pcAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = conservatism_pc
+			1500 = {
+				check_variable = {
+					which = conservatism_pc_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = conservatism_pc_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getconservatism_awsAvailability
+
+	text = {
+		localisation_key = conservatism_awsAvailable
+
+		trigger = {
+			is_religion_enabled = conservatism_aws
+			1500 = {
+
+					check_variable = {
+						which = conservatism_aws_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_awsAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = conservatism_aws }
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_awsAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = conservatism_aws
+			1500 = {
+				check_variable = {
+					which = conservatism_aws_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = conservatism_aws_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getconservatism_pslAvailability
+
+	text = {
+		localisation_key = conservatism_pslAvailable
+
+		trigger = {
+			is_religion_enabled = conservatism_psl
+			1500 = {
+
+					check_variable = {
+						which = conservatism_psl_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_pslAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = conservatism_psl }
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_pslAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = conservatism_psl
+			1500 = {
+				check_variable = {
+					which = conservatism_psl_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = conservatism_psl_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getconservatism_lprAvailability
+
+	text = {
+		localisation_key = conservatism_lprAvailable
+
+		trigger = {
+			is_religion_enabled = conservatism_lpr
+			1500 = {
+
+					check_variable = {
+						which = conservatism_lpr_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_lprAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = conservatism_lpr }
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_lprAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = conservatism_lpr
+			1500 = {
+				check_variable = {
+					which = conservatism_lpr_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = conservatism_lpr_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getconservatism_PISAvailability
+
+	text = {
+		localisation_key = conservatism_PISAvailable
+
+		trigger = {
+			is_religion_enabled = conservatism_PIS
+			1500 = {
+
+					check_variable = {
+						which = conservatism_PIS_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_PISAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = conservatism_PIS }
+		}
+	}
+
+	text = {
+		localisation_key = conservatism_PISAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = conservatism_PIS
+			1500 = {
+				check_variable = {
+					which = conservatism_PIS_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = conservatism_PIS_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getsocialism_sldAvailability
+
+	text = {
+		localisation_key = socialism_sldAvailable
+
+		trigger = {
+			is_religion_enabled = socialism_sld
+			1500 = {
+
+					check_variable = {
+						which = socialism_sld_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = socialism_sldAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = socialism_sld }
+		}
+	}
+
+	text = {
+		localisation_key = socialism_sldAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = socialism_sld
+			1500 = {
+				check_variable = {
+					which = socialism_sld_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = socialism_sld_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getsocialism_upAvailability
+
+	text = {
+		localisation_key = socialism_upAvailable
+
+		trigger = {
+			is_religion_enabled = socialism_up
+			1500 = {
+
+					check_variable = {
+						which = socialism_up_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = socialism_upAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = socialism_up }
+		}
+	}
+
+	text = {
+		localisation_key = socialism_upAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = socialism_up
+			1500 = {
+				check_variable = {
+					which = socialism_up_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = socialism_up_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getsocialism_lewicaAvailability
+
+	text = {
+		localisation_key = socialism_lewicaAvailable
+
+		trigger = {
+			is_religion_enabled = socialism_lewica
+			1500 = {
+
+					check_variable = {
+						which = socialism_lewica_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = socialism_lewicaAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = socialism_lewica }
+		}
+	}
+
+	text = {
+		localisation_key = socialism_lewicaAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = socialism_lewica
+			1500 = {
+				check_variable = {
+					which = socialism_lewica_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = socialism_lewica_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getpopulism_samoobronaAvailability
+
+	text = {
+		localisation_key = populism_samoobronaAvailable
+
+		trigger = {
+			is_religion_enabled = populism_samoobrona
+			1500 = {
+
+					check_variable = {
+						which = populism_samoobrona_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = populism_samoobronaAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = populism_samoobrona }
+		}
+	}
+
+	text = {
+		localisation_key = populism_samoobronaAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = populism_samoobrona
+			1500 = {
+				check_variable = {
+					which = populism_samoobrona_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = populism_samoobrona_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getpopulism_PPUAvailability
+
+	text = {
+		localisation_key = populism_PPUAvailable
+
+		trigger = {
+			is_religion_enabled = populism_PPU
+			1500 = {
+
+					check_variable = {
+						which = populism_PPU_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = populism_PPUAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = populism_PPU }
+		}
+	}
+
+	text = {
+		localisation_key = populism_PPUAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = populism_PPU
+			1500 = {
+				check_variable = {
+					which = populism_PPU_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = populism_PPU_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getpopulism_K15Availability
+
+	text = {
+		localisation_key = populism_K15Available
+
+		trigger = {
+			is_religion_enabled = populism_K15
+			1500 = {
+
+					check_variable = {
+						which = populism_K15_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = populism_K15AvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = populism_K15 }
+		}
+	}
+
+	text = {
+		localisation_key = populism_K15AvailableNotExists
+
+		trigger = {
+			is_religion_enabled = populism_K15
+			1500 = {
+				check_variable = {
+					which = populism_K15_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = populism_K15_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getpopulism_RPAvailability
+
+	text = {
+		localisation_key = populism_RPAvailable
+
+		trigger = {
+			is_religion_enabled = populism_RP
+			1500 = {
+
+					check_variable = {
+						which = populism_RP_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = populism_RPAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = populism_RP }
+		}
+	}
+
+	text = {
+		localisation_key = populism_RPAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = populism_RP
+			1500 = {
+				check_variable = {
+					which = populism_RP_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = populism_RP_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getpopulism_konfederacjaAvailability
+
+	text = {
+		localisation_key = populism_konfederacjaAvailable
+
+		trigger = {
+			is_religion_enabled = populism_konfederacja
+			1500 = {
+
+					check_variable = {
+						which = populism_konfederacja_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = populism_konfederacjaAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = populism_konfederacja }
+		}
+	}
+
+	text = {
+		localisation_key = populism_konfederacjaAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = populism_konfederacja
+			1500 = {
+				check_variable = {
+					which = populism_konfederacja_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = populism_konfederacja_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+defined_text = {
+	name = Getchristian_catholicAvailability
+
+	text = {
+		localisation_key = christian_catholicAvailable
+
+		trigger = {
+			is_religion_enabled = christian_catholic
+			1500 = {
+
+					check_variable = {
+						which = christian_catholic_city
+						value = 1
+					}
+				
+			}
+		}
+	}
+
+	text = {
+		localisation_key = christian_catholicAvailableNot
+
+		trigger = {
+			NOT = { is_religion_enabled = christian_catholic }
+		}
+	}
+
+	text = {
+		localisation_key = christian_catholicAvailableNotExists
+
+		trigger = {
+			is_religion_enabled = christian_catholic
+			1500 = {
+				check_variable = {
+					which = christian_catholic_city
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = christian_catholic_city
+						value = 1
+					}
+				}
+			}
+
+		}
+	}
+
+}

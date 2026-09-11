@@ -1,0 +1,367 @@
+single_mandate_electoral_discrits = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = organised_through_bishops_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		development_cost_modifier = -0.05
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 2
+			is_at_war = no
+		}
+	}
+}
+
+mandatory_citizen_referendums = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = priests_may_marry_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		improve_relation_modifier = 0.2
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			num_of_diplomatic_relations = 3
+		}
+	}
+}
+
+abolition_of_funding_of_political_parties = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = adult_baptism_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = { 
+		global_missionary_strength = 0.02
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_owner_religion = no
+				}
+			}
+		}
+	}
+}
+
+increase_accountability_of_politicians = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = holy_sacraments_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = { 
+		discipline = 0.025
+		reelection_cost = -0.25
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+justice_system_reform = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = saints_accept_prayers_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = { 
+		republican_tradition = 0.5
+		legitimacy = 1
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 1
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = {
+				OR = {
+					republican_tradition = 50
+					legitimacy = 50
+					devotion = 50
+					horde_unity = 50
+					meritocracy = 50
+				}
+			}
+		}
+	}
+}
+
+decentralization_of_public_power = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = icons_images_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = { 
+		prestige = 1
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { prestige = -40 }
+		}
+	}
+}
+
+promotion_of_direct_democracy = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = legalised_divorces_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		national_focus_years = -10
+		advisor_pool = 1
+	}
+	ai_will_do = {
+		factor = 6
+	}
+}
+
+introduction_of_magistrate = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = heretics_deported_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		all_estate_loyalty_equilibrium = 0.1
+		estate_interaction_cooldown_modifier = -0.2
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = {
+				crown_land_share = 30
+			}
+		}
+	}
+}
+
+defend_polish_national_interests_in_EU = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = parish_registers_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		free_policy = 1
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+protect_family_values = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = individual_creeds_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = { 
+		all_power_cost = -0.05
+		relation_with_same_culture = 20
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+simplify_tax_system = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = allow_usury_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = { 
+		production_efficiency = 0.1
+		min_autonomy = -10
+	}
+	ai_will_do = {
+		factor = 17
+		modifier = {
+			factor = 0.5
+			treasury = 500
+		}
+		modifier = {
+			factor = 0
+			treasury = 2500
+		}
+	}
+}
+
+strenghten_country_defence = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = translated_bibles_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		global_unrest = -2
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			unrest = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_rebel_controlled_provinces = 1
+		}	
+	}
+}
+
+support_for_small_medium_enterprises = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = justified_religious_war_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		placed_merchant_power = 15
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 15
+			is_at_war = no
+		}
+	}
+}
+
+protecting_poland_energetical_sovereignity = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = war_preaches_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		yearly_innovativeness = 0.25
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 15
+			is_at_war = no
+		}
+	}
+}
+
+promote_patriotism = {
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = head_of_the_church_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		enemy_core_creation = 0.5
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 100
+			is_at_war = yes
+		}
+	}
+}

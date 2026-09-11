@@ -1,0 +1,31 @@
+country_decisions = {
+	hide_all_formables = {
+		color = { 182 50 218 }
+
+		potential = {
+			always = yes
+			ai = no
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = hide_all_formables }
+				}
+
+				set_country_flag = hide_all_formables
+			}
+			else_if = {
+				limit = {
+					has_country_flag = hide_all_formables
+				}
+
+				clr_country_flag = hide_all_formables
+			}
+		}
+	}
+}

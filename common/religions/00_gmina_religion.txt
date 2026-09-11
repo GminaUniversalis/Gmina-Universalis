@@ -2,6 +2,13 @@ communism_group = {
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 1 18 }
 	
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	crusade_name = WAR_WITH_COUNTER_REVISIONISM
+
+	harmonized_modifier = harmonized_communism_group
+
 	communism_pzpr = {
 		#hre_religion = yes
 		icon = 30
@@ -19,16 +26,69 @@ communism_group = {
 		heretic = { REVISIONIST }
 
 		allowed_conversion = {
+			#communism_pzpr
 			communism_sd
 			communism_zsl
+			#
 			liberalism_ud
 			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_aws
 			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
 			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			#christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -74,15 +134,68 @@ communism_group = {
 
 		allowed_conversion = {
 			communism_pzpr
+			#communism_sd
 			communism_zsl
+			#
 			liberalism_ud
 			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_aws
 			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
 			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			#christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -127,16 +240,69 @@ communism_group = {
 		heretic = { REVISIONIST }
 
 		allowed_conversion = {
-			communism_sd
 			communism_pzpr
+			communism_sd
+			#communism_zsl
+			#
 			liberalism_ud
 			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_aws
 			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
 			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			#christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -164,32 +330,94 @@ communism_group = {
 		aspects_name = PROTESTANT_ASPECTS
 	}
 
-	defender_of_faith = yes
-	can_form_personal_unions = yes
-	crusade_name = WAR_WITH_COUNTER_REVISIONISM
 }
 
 liberalism_group = {
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 1 18 }
 
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	crusade_name = WAR_WITH_FASCISM
+
 	ai_will_propagate_through_trade = yes
 
 	liberalism_ud = {
-		color = { 52 52 140 }
+		color = { 52 52 182 }
 		icon = 33
 		allow_female_defenders_of_the_faith = yes
 
+		harmonized_modifier = harmonized_liberalism_ud
+
 		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			#liberalism_ud
 			liberalism_kld
 			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			#liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
-		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+		province = {
+			local_friendly_movement_speed = 0.15
 		}
 
 		on_convert = {
@@ -259,16 +487,76 @@ liberalism_group = {
 		icon = 34
 		allow_female_defenders_of_the_faith = yes
 
+		harmonized_modifier = harmonized_liberalism_kld
+
 		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
 			liberalism_ud
+			#liberalism_kld
 			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			#liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
-		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+		province = {
+			local_warscore_cost_modifier = 0.1
 		}
 
 		on_convert = {
@@ -332,20 +620,80 @@ liberalism_group = {
 
 	liberalism_uw = {
 		#hre_religion = yes
-		color = { 173 3 252 }
+		color = { 57 191 0 }
 		icon = 35
 		allow_female_defenders_of_the_faith = yes
 
+		harmonized_modifier = harmonized_liberalism_uw
+
 		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			#liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			#liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
-		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
-			liberalism_kld
-			liberalism_ud
-			populism_PPU
+		province = {
+			local_prosperity_growth = 0.05
 		}
 
 		on_convert = {
@@ -411,17 +759,430 @@ liberalism_group = {
 		date = 1520.1.1
 	}
 
-	defender_of_faith = yes
-	can_form_personal_unions = yes
-	crusade_name = WAR_WITH_FASCISM
+	liberalism_PO = {
+		#hre_religion = yes
+		color = { 255 147 15 }
+		icon = 6
+		allow_female_defenders_of_the_faith = yes
+
+		harmonized_modifier = harmonized_liberalism_PO
+
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			#liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			#liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+
+		province = {
+			local_center_of_trade_upgrade_cost = -0.25
+		}
+
+		on_convert = {
+			change_religion = liberalism_PO
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_PO
+						}
+					}
+					change_religion = liberalism_PO
+					add_reform_center = liberalism_PO
+				}
+			}			
+		}
+
+		country = {
+			prestige_per_development_from_conversion = 0.5
+			warscore_cost_vs_other_religion = -0.25
+		}
+		
+		country_as_secondary = {
+			warscore_cost_vs_other_religion = -0.1
+		}
+
+		province = {
+			local_tax_modifier = 0.25
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			#local
+			administrative_reform_aspect
+			financial_reform_aspect
+			social_reforms_aspect
+			#international
+			pro_european_movement_aspect
+			close_ties_with_east_aspect
+			prepare_sports_events_aspect
+			#political
+			reform_electoral_system_aspect
+			limit_subsidies_to_pp_aspect
+			tight_regulations_aspect
+
+		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_PO
+				}
+			}
+		}
+	
+		aspects_name = ANGLICAN_ASPECTS
+		heretic = { FASCISTS }
+		date = 1520.1.1
+	}
+
+	liberalism_N = {
+		#hre_religion = yes
+		color = { 34 126 247 }
+		icon = 7
+		allow_female_defenders_of_the_faith = yes
+
+		harmonized_modifier = harmonized_liberalism_N
+
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			#liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			#liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+
+		province = {
+			local_tolerance_of_heathens = 2
+		}
+
+		on_convert = {
+			change_religion = liberalism_N
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_N
+						}
+					}
+					change_religion = liberalism_N
+					add_reform_center = liberalism_N
+				}
+			}			
+		}
+
+		country = {
+			embracement_cost = -0.25
+			institution_spread_from_true_faith = 0.25
+		}
+		
+		country_as_secondary = {
+			embracement_cost = -0.1
+		}
+
+		province = {
+			local_development_cost = -0.1
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			reform_tax_system
+			reduce_bureaucracy
+			reinforce_democracy
+			fight_corruption
+			education_and_innovativeness
+			enforce_equality
+			support_the_labor_market
+			pro_family_policy
+			cooperation_with_eu
+			enviromental_protection
+		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_N
+				}
+			}
+		}
+	
+		aspects_name = NOWOCZESNA_ASPECTS
+		heretic = { FASCISTS }
+		date = 1520.1.1
+	}
+
+	liberalism_P2050 = {
+		#hre_religion = yes
+		color = { 245 224 0 }
+		icon = 8
+		allow_female_defenders_of_the_faith = yes
+
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			#liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			#liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+
+		province = {
+			local_religious_unity_contribution = 0.25
+		}
+
+		on_convert = {
+			change_religion = liberalism_P2050
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = liberalism_P2050
+						}
+					}
+					change_religion = liberalism_P2050
+					add_reform_center = liberalism_P2050
+				}
+			}			
+		}
+
+		country = {
+			reverse_relation_with_heathen_religion = 25
+			reverse_relation_with_heretic_religion = 25
+		}
+		
+		country_as_secondary = {
+			reverse_relation_with_heathen_religion = 15
+		}
+
+		province = {
+			local_prosperity_growth = 0.05
+		}
+		
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = liberalism_P2050
+				}
+			}
+		}
+		
+		uses_harmony = yes
+
+		heretic = { FASCISTS }
+		date = 1520.1.1
+	}
+
 }
 
 conservatism_group = {
-	defender_of_faith = yes
-	can_form_personal_unions = yes
+
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 1 57 }
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
 	crusade_name = WAR_WITH_COMMUNISM
+
+	harmonized_modifier = harmonized_conservatism_group
 
 	conservatism_kpn = {
 		#hre_religion = yes
@@ -439,18 +1200,69 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-			conservatism_aws
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			#conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_aws
 			conservatism_psl
 			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
-
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			#conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -871,18 +1683,69 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-			conservatism_aws
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
+			#conservatism_zchn
 			conservatism_pc
+			conservatism_aws
 			conservatism_psl
 			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
-
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			#conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -1303,18 +2166,69 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-			conservatism_aws
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
+			#conservatism_pc
+			conservatism_aws
 			conservatism_psl
 			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
-
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			#conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -1735,21 +2649,69 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			#conservatism_aws
 			conservatism_psl
 			conservatism_lpr
 			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
-
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
+			conservatism_pc
+			#conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -2175,18 +3137,69 @@ conservatism_group = {
 		}
 
 		allowed_conversion = {
-			conservatism_aws
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_aws
+			#conservatism_psl
 			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
-
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			#conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -2542,7 +3555,7 @@ conservatism_group = {
 
 	conservatism_lpr = {
 		#hre_religion = yes
-		color = { 101 57 130 }
+		color = { 106 188 250 }
 		icon = 45
 		country = {
 			global_manpower_modifier = 0.2
@@ -2552,22 +3565,73 @@ conservatism_group = {
 			global_manpower_modifier = 0.1
 		}
 		province = {
-			local_years_of_nationalism = 15
+			local_years_of_nationalism = -15
 		}
 
 		allowed_conversion = {
-			conservatism_aws
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
 			conservatism_pc
+			conservatism_aws
 			conservatism_psl
+			#conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
 			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
-
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			#conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -2604,12 +3668,8 @@ conservatism_group = {
 		color = { 7 58 118 }
 		icon = 44
 
-		allowed_conversion = {
-			populism_PPU
-		}
-
 		country = {
-			tolerance_own = 3
+			global_religious_conversion_resistance = 0.5
 			global_heathen_missionary_strength = 0.05
 		}
 		
@@ -2618,15 +3678,74 @@ conservatism_group = {
 			advisor_pool = 5
 		}
 		
-		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+		province = {
+			local_state_maintenance_modifier = -0.1
+		}
+
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
 			conservatism_kpn
 			conservatism_zchn
+			conservatism_pc
 			conservatism_aws
-			liberalism_PO
+			conservatism_psl
+			conservatism_lpr
+			#conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
 			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			#conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -2640,7 +3759,9 @@ conservatism_group = {
 		
 		}
 		
-		heretic = { }
+		date = 1500.01.01
+
+		heretic = { GERMAN_AGENTS RUSSIANS HOMEOSEXUALISTS}
 		
 		papacy = {
 			papal_tag = P1S
@@ -2915,11 +4036,479 @@ conservatism_group = {
 }
 
 socialism_group = {
-	defender_of_faith = yes
+
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 97 106 }
 
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	crusade_name = WAR_WITH_FASCISM
+
+	harmonized_modifier = harmonized_socialism_group
+
 	religious_schools = {
+		marxism_doctrine = {
+			potential_invite_scholar = {
+				OR = {
+					knows_of_scholar_country_capital_trigger = yes
+					has_country_flag = can_always_invite_marxism
+					has_country_flag = privilege_can_always_invite_marxism
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_marxism }
+						NOT = { has_country_flag = privilege_can_always_invite_marxism }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = hanafi_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = hanafi_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = hanafi_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_hanafi"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			adm_tech_cost_modifier = -0.05
+		}
+		social_democratic_doctrine = {
+			potential_invite_scholar = {
+				OR = {
+					knows_of_scholar_country_capital_trigger = yes
+					has_country_flag = can_always_invite_social_democratic_doctrine
+					has_country_flag = privilege_can_always_invite_social_democratic_doctrine
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_social_democratic_doctrine }
+						NOT = { has_country_flag = privilege_can_always_invite_social_democratic_doctrine }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = hanbali_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = hanbali_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = hanbali_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_hanbali"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			ae_impact = -0.1
+		}
+		anarchism_doctrine = {
+			potential_invite_scholar = {
+				OR = {
+					knows_of_scholar_country_capital_trigger = yes
+					has_country_flag = can_always_invite_anarchism_doctrine
+					has_country_flag = privilege_can_always_invite_anarchism_doctrine
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_anarchism_doctrine }
+						NOT = { has_country_flag = privilege_can_always_invite_anarchism_doctrine }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = maliki_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = maliki_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = maliki_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_maliki"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			development_cost = -0.1
+		}
+		radical_communism_doctrine = {
+			potential_invite_scholar = {
+				OR = {
+					knows_of_scholar_country_capital_trigger = yes
+					has_country_flag = can_always_invite_radical_communism_doctrine
+					has_country_flag = privilege_can_always_invite_radical_communism_doctrine
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_radical_communism_doctrine }
+						NOT = { has_country_flag = privilege_can_always_invite_radical_communism_doctrine }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = shafii_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = shafii_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = shafii_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_shafii"
+
+			merchants = 1
+		}
+		eco_socialism_doctrine = {
+			potential_invite_scholar = {
+				OR = {
+					knows_of_scholar_country_capital_trigger = yes
+					has_country_flag = can_always_invite_eco_socialism_doctrine
+					has_country_flag = privilege_can_always_invite_eco_socialism_doctrine
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_eco_socialism_doctrine }
+						NOT = { has_country_flag = privilege_can_always_invite_eco_socialism_doctrine }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = ismaili_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = ismaili_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = ismaili_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_ismaili"
+
+			horde_unity = 1
+			legitimacy = 1
+			republican_tradition = 0.2
+			devotion = 1
+		}
+		democratic_socialism_doctrine = {
+			potential_invite_scholar = {
+				OR = {
+					knows_of_scholar_country_capital_trigger = yes
+					has_country_flag = can_always_invite_democratic_socialism_doctrine
+					has_country_flag = privilege_can_always_invite_democratic_socialism_doctrine
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_democratic_socialism_doctrine }
+						NOT = { has_country_flag = privilege_can_always_invite_democratic_socialism_doctrine }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = jafari_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = jafari_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = jafari_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_jafari"
+
+			shock_damage = 0.1
+		}
+		eco_terrorism_doctrine = {
+			potential_invite_scholar = {
+				OR = {
+					knows_of_scholar_country_capital_trigger = yes
+					has_country_flag = can_always_invite_eco_terrorism_doctrine
+					has_country_flag = privilege_can_always_invite_eco_terrorism_doctrine
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_eco_terrorism_doctrine }
+						NOT = { has_country_flag = privilege_can_always_invite_eco_terrorism_doctrine }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = zaidi_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = zaidi_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = zaidi_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_zaidi"
+
+			shock_damage_received = -0.1
+		}
 	}
 
 	socialism_sld = {
@@ -2936,13 +4525,73 @@ socialism_group = {
 			global_tax_modifier = 0.10
 		}
 		province = {
-			local_tax_modifier = 0.15
+			min_local_autonomy = -10
 		}
 
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			#socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			#socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -2990,10 +4639,70 @@ socialism_group = {
 			local_build_cost = -0.10
 		}
 
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -3023,15 +4732,136 @@ socialism_group = {
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
+
+	socialism_lewica = {
+		#hre_religion = yes
+		color = { 245 107 242 }
+		icon = 9
+		allow_female_defenders_of_the_faith = yes
+
+		country = {
+			innovativeness_gain = 0.5
+			institution_spread_from_true_faith = 1
+		}
+		country_as_secondary = {
+			technology_cost = -0.05
+			embracement_cost = -0.25
+		}
+		province = {
+			local_religious_conversion_resistance = 0.25
+		}
+
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			#socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			#socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+
+		on_convert = {
+			change_religion = socialism_lewica
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = socialism_lewica
+						}
+					}
+					change_religion = socialism_lewica
+					add_reform_center = socialism_lewica
+				}
+			}			
+		}
+
+		heretic = { FASCISTS }
+		date = 1480.1.1
+		
+		uses_piety = yes				# Uses piety mechanics
+	}
 	
-	crusade_name = WAR_WITH_FASCISM
 }
 
 populism_group = {
 
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 97 106 }
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+
+	crusade_name = WAR_FOR_FREE_TRADE
+
+	harmonized_modifier = harmonized_populism_group
+
 	populism_samoobrona = {
 		#hre_religion = yes
-		color = { 101 57 130 }
+		color = { 255 246 144 }
 		icon = 49
 		country = {
 			global_spy_defence = 0.2
@@ -3045,13 +4875,69 @@ populism_group = {
 		}
 
 		allowed_conversion = {
-			
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			#populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
-
+		
 		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			#populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 
 		on_convert = {
@@ -3099,15 +4985,69 @@ populism_group = {
 		}
 
 		allowed_conversion = {
-		}
-
-		allowed_center_conversion = {
-			communism_sd
-			communism_pzpr
-			communism_zsl
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
 			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
 			conservatism_PIS
-
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			#populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			#populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
 		}
 		on_convert = {
 			change_religion = populism_PPU
@@ -3511,29 +5451,558 @@ populism_group = {
 		}
 	}
 
-	crusade_name = WAR_FOR_FREE_TRADE
+	populism_K15 = {
+		#hre_religion = yes
+		color = { 238 150 150 }
+		icon = 4
+		country = {
+			legitimacy = 1
+			republican_tradition = 0.5
+			devotion = 1
+			meritocracy = 1
+			horde_unity = 1
+
+			monthly_reform_progress = 0.5
+		}
+		country_as_secondary = {
+			monthly_reform_progress_modifier = 0.25
+			move_capital_cost_modifier = -0.5
+
+		}
+		province = {
+			local_governing_cost = -0.1
+		}
+
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			#populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			#populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+
+		on_convert = {
+			change_religion = populism_K15
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_K15
+						}
+					}
+					change_religion = populism_K15
+					add_reform_center = populism_K15
+				}
+			}			
+		}
+		
+		heretic = {  }
+
+		uses_church_power = yes
+		aspects = {
+			single_mandate_electoral_discrits
+			mandatory_citizen_referendums
+			abolition_of_funding_of_political_parties
+			increase_accountability_of_politicians
+			justice_system_reform
+			decentralization_of_public_power
+			promotion_of_direct_democracy
+			introduction_of_magistrate
+			defend_polish_national_interests_in_EU
+			protect_family_values
+			simplify_tax_system
+			strenghten_country_defence
+			support_for_small_medium_enterprises
+			protecting_poland_energetical_sovereignity
+			promote_patriotism
+		}
+		aspects_name = KUKIZ15_ASPECTS
+
+		date = 1503.1.1
+	}
+
+	populism_RP = {
+		#hre_religion = yes
+		color = { 255 153 51 }
+		icon = 3
+		country = {
+			reduced_stab_impacts = yes
+			improve_relation_modifier = 0.2
+		}
+		country_as_secondary = {
+			improve_relation_modifier = 0.1
+		}
+		province = {
+			local_institution_spread = 0.1
+		}
+
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			#populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			#populism_RP
+			populism_konfederacja
+			#
+			christian_catholic
+		}
+
+		on_convert = {
+			change_religion = populism_RP
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_RP
+						}
+					}
+					change_religion = populism_RP
+					add_reform_center = populism_RP
+				}
+			}			
+		}
+		
+		holy_sites = { 257 969 262 3190 43 501 2461 2978 2991 1318 }
+
+		misguided_heretic = yes
+		
+		heretic = {  }
+
+		blessings = {
+			RP_1
+			RP_2
+			RP_3
+			RP_4
+			RP_5
+			RP_6
+			RP_7
+			RP_8
+			RP_9
+			RP_10
+		}
+
+		date = 1503.1.1
+	}
+
+	populism_konfederacja = {
+		#hre_religion = yes
+		color = { 0 51 153 }
+		icon = 5
+		country = {
+			culture_conversion_cost = -0.25
+			global_tax_modifier = -0.2
+		}
+		country_as_secondary = {
+			culture_conversion_cost = -0.15
+		}
+		province = {
+			local_development_cost = -0.05
+		}
+
+		allowed_conversion = {
+			communism_pzpr
+			communism_sd
+			communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			#populism_konfederacja
+			#
+			christian_catholic
+		}
+		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			#populism_konfederacja
+			#
+			christian_catholic
+		}
+
+		on_convert = {
+			change_religion = populism_konfederacja
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = populism_konfederacja
+						}
+					}
+					change_religion = populism_konfederacja
+					add_reform_center = populism_konfederacja
+				}
+			}			
+		}
+		
+		heretic = {  }
+
+		uses_judaism_power = yes
+		aspects_name = KONFEDERACJA_ASPECTS
+			
+		aspects = {
+			ruch_narodowy_leadership
+			ruch_narodowy_ideology
+			ruch_narodowy_demands
+			partia_korwin_leadership
+			partia_korwin_ideology
+			partia_korwin_demands
+			partia_wolnosciowcy_leadership
+			partia_wolnosciowcy_ideology
+			partia_wolnosciowcy_demands
+			monarchists_leadership
+			monarchists_ideology
+			monarchists_demands
+			pro_life_leadership
+			pro_life_ideology
+			pro_life_demands
+		}
+
+		celebrate = {
+			cost = 200
+			potential = {
+			}
+			allow = {
+				custom_trigger_tooltip = {
+					tooltip = JUDAISM_HAS_ADM_ASPECT
+					OR = {
+						has_church_aspect = ruch_narodowy_leadership
+						has_church_aspect = partia_korwin_leadership
+						has_church_aspect = partia_wolnosciowcy_leadership
+						has_church_aspect = monarchists_leadership
+						has_church_aspect = pro_life_leadership
+					}
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						has_church_aspect = ruch_narodowy_leadership
+					}
+					add_stability = 1
+				}
+				if = {
+					limit = {
+						has_church_aspect = partia_korwin_leadership
+					}
+					ROOT = {
+						random_owned_province = {
+							limit = {
+								NOT = {
+									development = 10
+								}
+							}
+							add_base_tax = 3
+							add_base_production = 3
+							add_base_manpower = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = partia_wolnosciowcy_leadership
+					}
+					add_years_of_income = 0.4
+					add_inflation = -1
+				}
+				if = {
+					limit = {
+						has_church_aspect = monarchists_leadership
+					}
+					if = {
+						limit = {
+							NOT = {
+								government = monarchy
+							}
+						}
+						change_government = monarchy
+						add_government_reform = constitutional_monarchy_reform
+					}
+					else_if = {
+						limit = {
+							government = monarchy
+						}
+						change_government_reform_progress = 25
+					}
+				}
+				if = {
+					limit = {
+						has_church_aspect = pro_life_leadership
+					}
+
+					add_army_professionalism = 0.01
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		date = 1503.1.1
+	}
+
 }
 
 christian = {
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 57 }
+
 	defender_of_faith = yes
 	can_form_personal_unions = yes
 
-	# Flag emblem values - Used for Dynamic Setup of Random Nations.
-	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
-	# Can be overridden per religion.
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 57 }
-
-	
 	crusade_name = CRUSADE
 	
+	harmonized_modifier = harmonized_christian
+
 	christian_catholic = {
 		color = { 204 204 0 }
 		icon = 1
-		allowed_conversion = {
 
+		allowed_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			#christian_catholic
 		}
 		
+		allowed_center_conversion = {
+			#communism_pzpr
+			#communism_sd
+			#communism_zsl
+			#
+			liberalism_ud
+			liberalism_kld
+			liberalism_uw
+			liberalism_PO
+			liberalism_N
+			liberalism_P2050
+			#
+			conservatism_kpn
+			conservatism_zchn
+			conservatism_pc
+			conservatism_aws
+			conservatism_psl
+			conservatism_lpr
+			conservatism_PIS
+			#
+			socialism_sld
+			socialism_up
+			socialism_lewica
+			#
+			populism_samoobrona
+			populism_PPU
+			populism_K15
+			populism_RP
+			populism_konfederacja
+			#
+			#christian_catholic
+		}
 
 		country = {
 			tolerance_own = 1
@@ -3545,6 +6014,10 @@ christian = {
 			advisor_pool = 1
 		}
 		
+		province = {
+			local_unrest = -1
+		}
+
 		#hre_religion = yes
 		
 		on_convert = {
@@ -3558,6 +6031,8 @@ christian = {
 		
 		}
 		
+		date = 1500.01.01
+
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 		
 		holy_sites = { 
@@ -3590,4 +6065,17 @@ christian = {
 			aposthole_judas_iscariot		
 		}
 	}
+}
+
+silesian_group = {
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 57 }
+
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+	
+	crusade_name = CRUSADE
+	
+	harmonized_modifier = harmonized_silesian_group
 }

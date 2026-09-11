@@ -1,7 +1,7 @@
 country_decisions = {
 	embrace_catholic = {
 		potential = {
-			has_privilege = estate_priests_bishops_in_government
+			has_estate_privilege = estate_priests_bishops_in_government
 		}
 	
 		allow = {
@@ -21,13 +21,13 @@ country_decisions = {
 			custom_trigger_tooltip = {
 				tooltip = HAS_FULL_RATIFY_CONCORDAT
 
-				has_privilege = estate_priests_religion_schools
-				has_privilege = estate_priests_sacred_marriage
-				has_privilege = estate_priests_tend_to_sites
-				has_privilege = estate_priests_social_participation
-				has_privilege = estate_priests_ecclesiastical_tax
-				has_privilege = estate_priests_pastoral_care
-				has_privilege = estate_priests_ratify_the_concordat
+				has_estate_privilege = estate_priests_religion_schools
+				has_estate_privilege = estate_priests_sacred_marriage
+				has_estate_privilege = estate_priests_tend_to_sites
+				has_estate_privilege = estate_priests_social_participation
+				has_estate_privilege = estate_priests_ecclesiastical_tax
+				has_estate_privilege = estate_priests_pastoral_care
+				has_estate_privilege = estate_priests_ratify_the_concordat
 					
 			}
 	
@@ -35,7 +35,7 @@ country_decisions = {
 	
 		effect = {
 			change_religion = christian_catholic
-			add_stability = -2
+			add_stability = -4
 
 			hidden_effect = {
 				remove_estate_privilege = estate_priests_religion_schools

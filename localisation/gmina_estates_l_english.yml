@@ -64,7 +64,7 @@
  estate_picked_miners:0 "Estate §YMiners§! is already active"
 
  gmina_estates.2.title:0 "Choose your estate of interest"
- gmina_estates.2.desc:0 "\n\n\n\n\n\n\nYou are presented with available options, to enable or change your current most favorable estate.\nYou can change them once 25 years.\nEach event option will tell you what's goning to happen or what you need to enable your desired estate"
+ gmina_estates.2.desc:0 "\n\n\n\n\n\n\nYou are presented with available options, to enable or change your current most favorable estate.\nYou can change them once 25 years.\nEach event option will tell you what's goning to happen or what you need to enable your desired estate\n\n\nIf you have more than 4 available options (excluding Exit option), that's a bug and I would appreciate reporting that on Discord"
  gmina_estates.2.a1:0 "You §GCAN§! enable Miners Estate!"
  gmina_estates.2.a1.tt:0 "Selecting this option will enable Miners Estate (after 1 day) for 25 years, after which you will be able to change it again"
  gmina_estates.2.a2:0 "You §RCAN'T§! enable Miners Estate!"

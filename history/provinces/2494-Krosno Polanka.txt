@@ -15,7 +15,7 @@ discovered_by = ottoman
 latent_trade_goods = { gu_woodworking }
 add_core = I25
 set_province_flag = has_static_trade_good
-set_province_flag = has_{ gu_woodworking }_trade_good
+set_province_flag = has_gu_lumber_trade_good
 
 1444.11.13 = {
 remove_core = I25

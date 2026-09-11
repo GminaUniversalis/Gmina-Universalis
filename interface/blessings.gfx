@@ -76,6 +76,72 @@ spriteTypes = {
 		name = "GFX_holy_site_1212"
 		texturefile = "gfx//interface//holy_sites//sanktuarium_marianki.dds"
 		loadType = "INGAME"
-	}	
+	}
+	
+	spriteType = {
+		name = "GFX_holy_site_1212"
+		texturefile = "gfx//interface//holy_sites//sanktuarium_marianki.dds"
+		loadType = "INGAME"
+	}
 
+	#RP
+	spriteType = {
+		name = "GFX_holy_site_257"
+		texturefile = "gfx//interface//holy_sites//warszawa.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_969"
+		texturefile = "gfx//interface//holy_sites//lublin.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_262"
+		texturefile = "gfx//interface//holy_sites//krakow.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_3190"
+		texturefile = "gfx//interface//holy_sites//wroclaw.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_43"
+		texturefile = "gfx//interface//holy_sites//gdansk.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_501"
+		texturefile = "gfx//interface//holy_sites//poznan.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_2991"
+		texturefile = "gfx//interface//holy_sites//bydgoszcz.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_2461"
+		texturefile = "gfx//interface//holy_sites//lodz.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_2978"
+		texturefile = "gfx//interface//holy_sites//szczecin.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_1318"
+		texturefile = "gfx//interface//holy_sites//katowice.dds"
+		loadType = "INGAME"
+	}
 }

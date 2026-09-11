@@ -1164,7 +1164,7 @@ estate_families_political_commitment = { #Political Party
 			}
 		}
 		modifier = {
-			yearly_patriarch_authority = 1
+			yearly_patriarch_authority = 0.05
 		}
 	}
 

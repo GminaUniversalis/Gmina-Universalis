@@ -205,6 +205,7 @@ G40 = "countries/Plock.txt"
 G41 = "countries/Siedlce.txt"
 G42 = "countries/Ostroleka.txt"
 
+
 #Opolskie
 H00 = "countries/Opolskie.txt"
 H01 = "countries/Powiat Kedzierzynsko-Kozielski.txt"
@@ -447,3 +448,9 @@ HCE = "countries/Holy Coal Empire.txt"
 PRL = "countries/Polska Republika Ludowa.txt"
 KSH = "countries/Kashubia.txt"
 P1S = "countries/PIS.txt"
+
+#Gminy
+ #Mazowieckie
+ GKW = "countries/Gora Kalwaria.txt"
+ #Lodzkie
+ PIA = "countries/Gmina Piatek.txt"

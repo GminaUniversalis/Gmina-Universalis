@@ -1,0 +1,169 @@
+ruch_narodowy_leadership = {	#ADM aspect
+	cost = 100
+	modifier = {
+		core_creation = -0.15
+	}
+	monarch_power = adm
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+ruch_narodowy_ideology = {	#DIP aspect
+	cost = 100
+	modifier = {
+		enemy_core_creation = 0.5
+	}
+	monarch_power = dip
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+ruch_narodowy_demands = {	#MIL aspect
+	cost = 100
+	modifier = {
+		discipline = 0.05
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+partia_korwin_leadership = {	#ADM aspect
+	cost = 100
+	modifier = {
+		global_unrest = -2
+	}
+	monarch_power = adm
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+partia_korwin_ideology = {	#DIP aspect
+	cost = 100
+	modifier = {
+		free_concentrate_development = yes
+	}
+	monarch_power = dip
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+partia_korwin_demands = {	#MIL aspect
+	cost = 100
+	modifier = {
+		stability_cost_to_declare_war = 1
+		province_warscore_cost = -0.25
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+partia_wolnosciowcy_leadership = {	#ADM aspect
+	cost = 100
+	modifier = {
+		may_not_reduce_inflation = yes
+		inflation_reduction = 0.1
+	}
+	monarch_power = adm
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+partia_wolnosciowcy_ideology = {	#DIP aspect
+	cost = 100
+	modifier = {
+		mercantilism_cost = -0.25
+	}
+	monarch_power = dip
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+partia_wolnosciowcy_demands = {	#MIL aspect
+	cost = 100
+	modifier = {
+		overextension_impact_modifier = -0.25
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+monarchists_leadership = {	#ADM aspect
+	cost = 100
+	modifier = {
+		no_stability_loss_on_monarch_death = yes
+		legitimacy = 1
+	}
+	monarch_power = adm
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+monarchists_ideology = {	#DIP aspect
+	cost = 100
+	modifier = {
+		yearly_corruption = -0.15
+	}
+	monarch_power = dip
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+monarchists_demands = {	#MIL aspect
+	cost = 100
+	modifier = {
+		years_of_nationalism = -10
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pro_life_leadership = {	#ADM aspect
+	cost = 100
+	modifier = {
+		relation_with_heathens = 25
+		reverse_relation_with_heathen_religion = 25
+	}
+	monarch_power = adm
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pro_life_ideology = {	#DIP aspect
+	cost = 100
+	modifier = {
+		church_power_modifier = 1
+	}
+	monarch_power = dip
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pro_life_demands = {	#MIL aspect
+	cost = 100
+	modifier = {
+		extra_manpower_at_religious_war = yes
+		manpower_in_true_faith_provinces= 0.25
+	}
+	monarch_power = mil
+	ai_will_do = {
+		factor = 1
+	}
+}

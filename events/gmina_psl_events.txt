@@ -323,3 +323,47 @@ country_event = {
 # }
 
 #To be continued
+
+country_event = {	
+	id = psl_events.99
+	title = psl_events.99.t
+	desc = psl_events.99.d
+	picture = TEMPORAL_RIFT_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		ROOT = {
+			religion = conservatism_psl
+		}
+		any_owned_province = {
+			NOT = { religion = ROOT }
+		}
+
+	}
+
+	immediate = {
+
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { religion = ROOT }
+					has_owner_secondary_religion = yes
+				}
+	
+				save_event_target_as = fellow_coalitiant
+			}
+		}
+
+	}
+
+
+	option = {
+		name = psl_events.99.a
+
+		event_target:fellow_coalitiant = {
+			change_religion = ROOT
+		}
+	}
+
+}

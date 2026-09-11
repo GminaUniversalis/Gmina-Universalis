@@ -1,0 +1,219 @@
+RP_1 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_2 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_3 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_4 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_5 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_6 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_7 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_8 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_9 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}
+
+RP_10 = {
+	is_blessing = yes
+
+	modifier = {
+		legitimacy = 0.5
+	}
+
+	ai_will_do = {
+		factor = 10
+	# 	modifier = {
+	# 		factor = 3
+	# 		NOT = {
+	# 			OR = {
+	# 				legitimacy = 70
+	# 				republican_tradition = 70
+	# 				devotion = 70
+	# 			}
+	# 		}
+	# 	}	
+	}
+}

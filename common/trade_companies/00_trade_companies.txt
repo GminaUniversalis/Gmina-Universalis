@@ -10,13 +10,12 @@ tc_biala_podlaska = {
 		4463 4480 4491 4501 4510 4513 4687 4689 4511 708
 		707 704 705 706 
 	}
-	
 	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_BIALA_PODLASKA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_BIALA_PODLASKA_Company"
 	}
 }
@@ -30,18 +29,17 @@ tc_bialystok = {
 		1061 1062 1063 1064 1066 1067 1068 1070 1076 1942
 		1944 1969 1970 1973 2102 2119 2236 2351 2352 2353
 		2356 2357 2358 2359 2361 2363 2364 2369 2370 2428
-		2429 2430 2431 2432 2433 2434 2437 2441 2442 2443
-		2966 4185 4493 4679 4684 4690 4692 4349 4348 3226
-		3225 3224 3191 3189 3152 3099 3098 3052 2725 2724
-		1065
+		2429 2430 2431 2432 2433 2434 2437 2442 2443 2966
+		4185 4493 4679 4684 4690 4692 4349 4348 3226 3225
+		3224 3191 3189 3152 3099 3098 3052 2725 2724 1065
+		2441 3889 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_BIALYSTOK_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_BIALYSTOK_Company"
 	}
 }
@@ -56,13 +54,12 @@ tc_bydgoszcz = {
 		4719 4746 4766 4775 4001 4019 4018 4017 4016 3695
 		3657 3609 3565 3544 3515 3281 3268 3184 3124 2991
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_BYDGOSZCZ_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_BYDGOSZCZ_Company"
 	}
 }
@@ -81,13 +78,12 @@ tc_czestochowa = {
 		2257 2511 2510 2509 2512 2506 2504 2505 2507 2508
 		2514 2513 441 2515 2516 368 679 680 681 678
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_CZESTOCHOWA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_CZESTOCHOWA_Company"
 	}
 }
@@ -102,13 +98,12 @@ tc_gorzow = {
 		2947 2984 4145 4728 4736 4737 485 639 638 1006
 		637 636 640 642 641 807 808 879 878 880
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_GORZOW_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_GORZOW_Company"
 	}
 }
@@ -127,13 +122,12 @@ tc_kalisz = {
 		4643 4647 407 2040 2041 2044 2045 2046 2039 2038
 		2023 2022 2042 2643 4489 4485 4486 4487 4488 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KALISZ_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KALISZ_Company"
 	}
 }
@@ -152,13 +146,12 @@ tc_kielce = {
 		4521 2778 3095 3133 3148 3560 3561 4639 4638 4637
 		4636 4635 4634 1120 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KIELCE_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KIELCE_Company"
 	}
 }
@@ -177,13 +170,12 @@ tc_konin = {
 		4777 418 2971 676 677 673 674 675 672 670
 		671 668 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KONIN_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KONIN_Company"
 	}
 }
@@ -200,13 +192,12 @@ tc_koszalin = {
 		585 584 376 643 4119 645 644 646 650 648
 		649 647 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KOSZALIN_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KOSZALIN_Company"
 	}
 }
@@ -228,13 +219,12 @@ tc_krakow = {
 		3162 3140 3100 3065 3042 3016 3007 3008 3236 3237
 		998 1173 1488 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KRAKOW_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_KRAKOW_Company"
 	}
 }
@@ -256,13 +246,12 @@ tc_lodz = {
 		4804 4803 4802 4801 4800 4799 4798 4797 4796 4795
 		4794 4793 4792 4791 4790 4932 4933 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_LODZ_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_LODZ_Company"
 	}
 }
@@ -277,13 +266,12 @@ tc_lomza = {
 		2436 2439 2694 2745 4208 4227 4228 4229 4230 4231
 		4540 4658 1058 736 862 730 728 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_LOMZA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_LOMZA_Company"
 	}
 }
@@ -303,13 +291,12 @@ tc_lublin = {
 		4819 4818 4817 4816 4815 4814 4813 4812 4811 4810
 		4809 4808 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_LUBLIN_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_LUBLIN_Company"
 	}
 }
@@ -326,13 +313,12 @@ tc_nowy_targ = {
 		4856 4863 4864 4865 4866 4867 4042 2498 2502 2503
 		2500 2501 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_NOWY_TARG_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_NOWY_TARG_Company"
 	}
 }
@@ -351,13 +337,12 @@ tc_olsztyn = {
 		604 599 600 601 597 602 605 603 591 598
 		596 595 594 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_OLSZTYN_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_OLSZTYN_Company"
 	}
 }
@@ -375,13 +360,12 @@ tc_opole = {
 		2613 2612 2611 2610 2609 2608 2607 2606 2605 2604
 		2603 4761 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_OPOLE_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_OPOLE_Company"
 	}
 }
@@ -399,13 +383,12 @@ tc_ostroleka = {
 		4655 4657 4659 4662 4666 4186 726 725 877 723
 		722
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_OSTROLEKA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_OSTROLEKA_Company"
 	}
 }
@@ -421,13 +404,12 @@ tc_pila = {
 		4735 2751 4669 4670 4671 4676 4677 4549 220 4675
 		4674 4673 4672 221 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_PILA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_PILA_Company"
 	}
 }
@@ -446,13 +428,12 @@ tc_plock = {
 		972 580 570 579 574 567 568 566 565 4382
 		664 1801 2975 665 662 985 659 660 661 663
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_PLOCK_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_PLOCK_Company"
 	}
 }
@@ -473,13 +454,12 @@ tc_poznan = {
 		4843 4844 4845 4826 4825 4824 4823 4615 871 874
 		2810 876 875 873 872 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_POZNAN_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_POZNAN_Company"
 	}
 }
@@ -496,13 +476,12 @@ tc_przemysl = {
 		1086 2490 2486 2485 2489 2487 2488 2484 2481 2482
 		2483
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_PRZEMYSL_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_PRZEMYSL_Company"
 	}
 }
@@ -522,13 +501,12 @@ tc_radom = {
 		4277 4278 4279 4280 4281 4283 4284 4286 4287 4297
 		4327 4520 4566 2330 2477 2478 2047 2476 2479 2480
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_RADOM_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_RADOM_Company"
 	}
 }
@@ -550,13 +528,12 @@ tc_rzeszow = {
 		4352 4351 4350 2788 2053 687 692 691 690 689
 		688 686 693 4514 4515 4490 2759 4517 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_RZESZOW_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_RZESZOW_Company"
 	}
 }
@@ -573,13 +550,12 @@ tc_siedlce = {
 		4222 4265 4269 4272 4306 4343 4344 4516 4681 4685
 		4686 4688 4693 739 720 721 717 709 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SIEDLCE_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SIEDLCE_Company"
 	}
 }
@@ -606,13 +582,12 @@ tc_silesian_conurbation = {
 		2553 2554 2555 2556 2557 2558 2549 2548 2547 2546
 		2545 2544 2543 2542 2541 2540 2539 2538 2537 2536
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SILESIAN_CONURBATION_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SILESIAN_CONURBATION_Company"
 	}
 }
@@ -633,13 +608,12 @@ tc_southern_silesia = {
 		632 633 626 265 634 635 627 628 624 625
 		623 631 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SOUTHERN_SILESIA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SOUTHERN_SILESIA_Company"
 	}
 }
@@ -656,13 +630,12 @@ tc_suwalki = {
 		4266 4530 4116 866 296 865 864 863 867 870
 		869 868 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SUWALKI_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SUWALKI_Company"
 	}
 }
@@ -680,13 +653,12 @@ tc_swidnica = {
 		4645 799 617 2879 615 616 614 618 620 619
 		622 621 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SWIDNICA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SWIDNICA_Company"
 	}
 }
@@ -705,13 +677,12 @@ tc_szczecin = {
 		4394 4393 3585 3451 2978 3196 1858 890 892 891
 		4875 4556 902 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SZCZECIN_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SZCZECIN_Company"
 	}
 }
@@ -724,13 +695,12 @@ tc_szczecinek = {
 		244 245 1746 1749 2754 4130 4366 4369 4374 4375
 		4385 4551 4747 4789 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SZCZECINEK_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_SZCZECINEK_Company"
 	}
 }
@@ -747,15 +717,14 @@ tc_tarnow = {
 		4071 4072 4073 4076 4077 4098 4099 4101 4103 4104
 		4109 4146 4422 4527 4063 2517 2520 2519 2521 2522
 		2518 4065 4678 4870 4871 4763 4053 4872 2779 4873
-		4874 
+		4874
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_TARNOW_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_TARNOW_Company"
 	}
 }
@@ -774,13 +743,12 @@ tc_torun = {
 		3314 3396 3422 3482 3520 3808 72 2963 651 652
 		653 657 658 656 655 654 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_TORUN_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_TORUN_Company"
 	}
 }
@@ -801,13 +769,12 @@ tc_trojmiasto = {
 		1817 1821 1822 1823 1824 1829 1833 1836 1838 1840
 		1844 3062 3063 3064 986 666 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_TROJMIASTO_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_TROJMIASTO_Company"
 	}
 }
@@ -833,13 +800,12 @@ tc_warszawa = {
 		4206 4898 304 4896 4899 4901 4680 4900 468 286
 		4653 2414 4554 4577 4518 4519 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_WARSZAWA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_WARSZAWA_Company"
 	}
 }
@@ -857,13 +823,12 @@ tc_wroclaw = {
 		4580 4587 4589 4594 4598 4640 3650 3681 3655 3577
 		3531 3135 3122 3083 3073 3037 3017 3060 3134 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_WROCLAW_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_WROCLAW_Company"
 	}
 }
@@ -882,13 +847,12 @@ tc_zamosc = {
 		4507 4508 4859 4860 4861 547 694 695 696 697
 		698 4419 701 702 703 700 699 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_ZAMOSC_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_ZAMOSC_Company"
 	}
 }
@@ -903,13 +867,12 @@ tc_zgorzelec = {
 		2926 2927 2928 2922 606 607 608 613 2921 609
 		610 611 612 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_ZGORZELEC_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_ZGORZELEC_Company"
 	}
 }
@@ -927,13 +890,12 @@ tc_zielona_gora = {
 		553 498 562 445 438 561 436 435 2014 2015
 		2016
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_ZIELONA_GORA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_ZIELONA_GORA_Company"
 	}
 }
@@ -948,13 +910,12 @@ tc_legnica = {
 		2896 2897 2904 2907 2913 2914 2920 2941 4617 2906
 		2017 2018 2019 2021 2020 
 	}
-
-		# Specific
+	# Specific
 	# Generic
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_LEGNICA_Root_Culture_GetName"
 	}
-	names = {
+	names = { 
 		name = "TRADE_COMPANY_LEGNICA_Company"
 	}
 }

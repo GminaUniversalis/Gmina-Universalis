@@ -10,7 +10,6 @@ dependencies={
 }
 name="Gmina Universalis"
 picture="thumnbnail.png"
-
 replace_path="common/triggered_modifiers.txt"
 replace_path="common/bookmarks"
 replace_path="common/church_aspects"
@@ -27,26 +26,17 @@ replace_path="common/estates"
 replace_path="common/estate_agendas"
 replace_path="common/estate_privileges"
 replace_path="common/event_modifiers"
-
-
 replace_path="history/diplomacy"
 replace_path="history/countries"
 replace_path="history/wars"
 replace_path="history/provinces"
 replace_path="history/advisors"
-
 replace_path="gfx/loadingscreens"
 replace_path="gfx/flags"
-
 replace_path="events"
-
 replace_path="decisions"
-
 replace_path="map"
-
 replace_path="missions"
-
 replace_path="tutorial"
-
 supported_version="1.37.2"
 remote_file_id="3119311190"

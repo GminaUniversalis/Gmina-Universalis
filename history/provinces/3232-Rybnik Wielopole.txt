@@ -17,7 +17,7 @@ add_core = L21
 latent_trade_goods = { gu_vehicles }
 
 set_province_flag = has_static_trade_good
-set_province_flag = has_{ gu_vehicles }_trade_good
+set_province_flag = has_gu_triticale_trade_good
 
 1444.11.13 = {
 remove_core = L21

@@ -564,7 +564,7 @@ enable_baseline_invite_scholar = {
 	custom_tooltip = enable_baseline_invite_scholar_tt
 	hidden_effect = {
 		country_event = {
-			id = muslim_school_events.24
+			id = socialism_school_events.2
 		}
 		set_country_flag = enabled_baseline_invite_scholar
 	}
@@ -574,7 +574,7 @@ enable_baseline_invite_scholar_no_privilege = {
 	custom_tooltip = enable_baseline_invite_scholar_tt
 	hidden_effect = {
 		country_event = {
-			id = muslim_school_events.24
+			id = socialism_school_events.2
 		}
 		set_country_flag = enabled_baseline_invite_scholar_no_priv
 	}
@@ -591,13 +591,13 @@ allow_baseline_invite_scholar_privilege = {
 
 disallow_baseline_invite_scholar = {
 	hidden_effect = {
-		clr_country_flag = privilege_can_always_invite_hanafi_school
-		clr_country_flag = privilege_can_always_invite_hanbali_school
-		clr_country_flag = privilege_can_always_invite_maliki_school
-		clr_country_flag = privilege_can_always_invite_shafii_school
-		clr_country_flag = privilege_can_always_invite_ismaili_school
-		clr_country_flag = privilege_can_always_invite_jafari_school
-		clr_country_flag = privilege_can_always_invite_zaidi_school
+		clr_country_flag = privilege_can_always_invite_radical_communism_doctrine
+		clr_country_flag = privilege_can_always_invite_social_democratic_doctrine
+		clr_country_flag = privilege_can_always_invite_anarchism_doctrine
+		clr_country_flag = privilege_can_always_invite_marxism_doctrine
+		clr_country_flag = privilege_can_always_invite_eco_socialism_doctrine
+		clr_country_flag = privilege_can_always_invite_democratic_socialism_doctrine
+		clr_country_flag = privilege_can_always_invite_eco_terrorism_doctrine
 	}
 }
 
@@ -607,13 +607,13 @@ disable_baseline_invite_scholar = {
 		clr_country_flag = enabled_baseline_invite_scholar
 		if = {
 			limit = { NOT = { has_country_flag = enabled_baseline_invite_scholar_no_priv } }
-			clr_country_flag = privilege_can_always_invite_hanafi_school
-			clr_country_flag = privilege_can_always_invite_hanbali_school
-			clr_country_flag = privilege_can_always_invite_maliki_school
-			clr_country_flag = privilege_can_always_invite_shafii_school
-			clr_country_flag = privilege_can_always_invite_ismaili_school
-			clr_country_flag = privilege_can_always_invite_jafari_school
-			clr_country_flag = privilege_can_always_invite_zaidi_school
+			clr_country_flag = privilege_can_always_invite_radical_communism_doctrine
+			clr_country_flag = privilege_can_always_invite_social_democratic_doctrine
+			clr_country_flag = privilege_can_always_invite_anarchism_doctrine
+			clr_country_flag = privilege_can_always_invite_marxism_doctrine
+			clr_country_flag = privilege_can_always_invite_eco_socialism_doctrine
+			clr_country_flag = privilege_can_always_invite_democratic_socialism_doctrine
+			clr_country_flag = privilege_can_always_invite_eco_terrorism_doctrine
 		}
 	}
 }

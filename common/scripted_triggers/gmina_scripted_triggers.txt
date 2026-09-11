@@ -118,6 +118,14 @@ poland_powiatowe_formed_check = {
 
 }
 
+silesia_formable_decision_check = {
+	OR = {
+		region = dolnoslaskie_region
+		region = opolskie_region
+		region = slaskie_region
+	}
+}
+
 is_or_was_powiatowe_check = {
 	custom_trigger_tooltip = {
 		tooltip = poland_was_is_powiatowe_check_tt
@@ -255,6 +263,21 @@ is_or_was_powiatowe_check = {
 				was_tag = P21
 			}
 		 }
+	}
+}
+
+is_country_formable_check = {
+	custom_trigger_tooltip = {
+		tooltip = is_country_formable_check_tt
+		NOT = {
+			OR = {
+				tag = HCE
+				tag = POL
+				tag = PRL
+				tag = GER
+				tag = KSH
+			}
+		}
 	}
 }
 
@@ -622,7 +645,7 @@ ideas_available_scripted_trigger = {
 		#tag = M10
 		#tag = M11
 		#tag = M12
-		#tag = M13
+		tag = M13
 		#tag = M14
 		tag = N00
 		#tag = N01

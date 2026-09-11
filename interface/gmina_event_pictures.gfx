@@ -12,6 +12,48 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "P2050Picture"
+		texturefile = "gfx/event_pictures/politics/P2050_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "KonfederacjaPicture"
+		texturefile = "gfx/event_pictures/politics/Konfederacja_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "NPicture"
+		texturefile = "gfx/event_pictures/politics/N_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "RPPicture"
+		texturefile = "gfx/event_pictures/politics/RP_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "LewicaPicture"
+		texturefile = "gfx/event_pictures/politics/Lewica_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "K15Picture"
+		texturefile = "gfx/event_pictures/politics/K15_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "POPicture"
+		texturefile = "gfx/event_pictures/politics/PO_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "PISPicture"
 		texturefile = "gfx/event_pictures/politics/PIS_event.dds"
 		alwaystransparent = yes
@@ -44,6 +86,18 @@ spriteTypes = {
 	spriteType = {
 		name = "SAMOOBRONAPicture"
 		texturefile = "gfx/event_pictures/politics/SAMOOBRONA_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "SAMOOBRONA2Picture"
+		texturefile = "gfx/event_pictures/politics/SAMOOBRONA2_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "LPRPicture"
+		texturefile = "gfx/event_pictures/politics/LPR_event.dds"
 		alwaystransparent = yes
 	}
 
@@ -188,6 +242,18 @@ spriteTypes = {
 	spriteType = {
 		name = "ESTATEPICKERPicture"
 		texturefile = "gfx/event_pictures/estate_decision_event_pictures/ESTATE_PICKER_eventPicture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "PO_ASPECT_Picture"
+		texturefile = "gfx/event_pictures/politics/PO_aspects_event.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "P2050_Harmonization_Picture"
+		texturefile = "gfx/event_pictures/politics/P2050_harmonization_event.dds"
 		alwaystransparent = yes
 	}
 }

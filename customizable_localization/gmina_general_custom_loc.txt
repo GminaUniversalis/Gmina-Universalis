@@ -1,0 +1,43 @@
+defined_text = {
+	name = GetFormablesStatusTitle
+
+	text = {
+		localisation_key = string_all_formables_hidden_title
+
+		trigger = {
+			has_country_flag = hide_all_formables
+		}
+	}
+
+
+	text = {
+		localisation_key = string_all_formables_NOT_hidden_title
+
+		trigger = {
+			NOT = { has_country_flag = hide_all_formables }
+		}
+
+	}
+}
+
+defined_text = {
+	name = GetFormablesStatusDesc
+
+	text = {
+		localisation_key = string_all_formables_hidden_desc
+
+		trigger = {
+			has_country_flag = hide_all_formables
+		}
+	}
+
+
+	text = {
+		localisation_key = string_all_formables_NOT_hidden_desc
+
+		trigger = {
+			NOT = { has_country_flag = hide_all_formables }
+		}
+
+	}
+}

@@ -180,3 +180,11 @@
  is_or_was_powiatowe_check:0 "Is §RNOT§! or was §YMiasto Powiatowe§! before!"
  poland_was_is_wojewodztwo_check_tt:0 "Is §RNOT§! or was §YWojewództwo§! before!"
  enable_wilkowyje_formable_tooltip: "Enable national decision to form §YGmina Wilkowyje§!"
+ is_country_formable_check_tt: "Has §RNOT§! formed any §YCountry§! before!"
+ 
+ hide_all_formables_title: "Information: [ROOT.GetFormablesStatusTitle]"
+ hide_all_formables_desc: "[ROOT.GetFormablesStatusDesc]"
+ string_all_formables_hidden_title: "Show all formables!"
+ string_all_formables_NOT_hidden_title: "Hide all formables!"
+ string_all_formables_hidden_desc: "Do you want to see all formables again? Nice"
+ string_all_formables_NOT_hidden_desc: "Tired of having to watch countless countries which you can't form? Worry not! Click me and hide them!"

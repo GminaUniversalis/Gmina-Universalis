@@ -1,0 +1,107 @@
+namespace = global_election_event
+
+country_event = {
+	id = global_election_event.1
+	title = global_election_event.1.t
+	desc = global_election_event.1.d
+	picture = UDPicture
+
+	is_triggered_only = yes
+
+	#calculate province + development
+	option = {
+		name = global_election_event.1.a
+		custom_tooltip = calculate_current_province_and_dev
+
+
+		hidden_effect = {
+			global_election_calculator = yes
+		}
+
+
+		ai_chance = { factor = 0 }
+
+	}
+
+	#calculate countries
+	option = {
+		name = global_election_event.1.b
+
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			
+			#refresh
+			country_event = {
+				id = global_election_event.2137
+			}
+		}
+	}
+
+	option = {
+		name = global_election_event.1.c
+
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			
+			#refresh
+			country_event = {
+				id = global_election_event.2137
+			}
+		}
+	}
+
+	#exit
+	option = {
+		name = global_election_event.1.dd
+
+		ai_chance = { factor = 1 }
+	}
+}
+
+#on_startup
+country_event = {
+	id = global_election_event.2
+	title = global_election_event.2.t
+	desc = global_election_event.2.d
+	picture = NoPicture
+	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = global_election_init }
+	}
+
+	option = {
+		name = global_election_event.2.a
+
+		set_global_flag = global_election_init
+		hidden_effect = {
+			global_election_calculator = yes
+		}
+
+	}
+}
+#refresh
+
+country_event = {
+	id = global_election_event.2137
+	title = global_election_event.2137.t
+	desc = global_election_event.2137.d
+	picture = NoPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	#calculate development
+	option = {
+		name = global_election_event.2137.a
+
+		country_event = {
+			id = global_election_event.1
+		}
+		ai_chance = { factor = 0 }
+	}
+
+}

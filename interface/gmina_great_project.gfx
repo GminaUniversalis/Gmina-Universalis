@@ -8,6 +8,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_cwiartki_3_4"	
+		texturefile = "gfx//interface//great_projects//great_project_cwiartki_3_4.dds"
+	}
+
+	spriteType = {
 		name = "GFX_great_project_sky_tower"	
 		texturefile = "gfx//interface//great_projects//great_project_sky_tower.dds"
 	}
