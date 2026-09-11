@@ -3699,6 +3699,18 @@ on_completed_agenda_effect_estate_ghulams = {
 		change_statists_vs_orangists = 0.05
 	}
 }
+# Gmina estates - shared reward for every completed agenda of that estate (called by on_completed_agenda_effect = { estate = estate_X })
+on_completed_agenda_effect_estate_retirees = {}
+on_completed_agenda_effect_estate_banks = {}
+on_completed_agenda_effect_estate_miners = {}
+on_completed_agenda_effect_estate_scientists = {}
+on_completed_agenda_effect_estate_investors = {}
+on_completed_agenda_effect_estate_priests = {}
+on_completed_agenda_effect_estate_families = {}
+on_completed_agenda_effect_estate_farmers = {}
+on_completed_agenda_effect_estate_middle_class = {}
+on_completed_agenda_effect_estate_ub = {}
+on_completed_agenda_effect_estate_army = {}
 
 on_completed_agenda_effect = {
 	on_completed_agenda_effect_$estate$ = yes

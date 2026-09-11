@@ -1,0 +1,159 @@
+###############################################################################
+# GMINA ESTATE AGENDA TEMPLATE (whole file commented out - the game loads nothing from it)
+#
+# Estates: retirees, banks, miners, scientists, investors, priests, families,
+#          farmers, middle_class, ub, army   ->   key estate = estate_<estate>
+#
+# CHECKLIST when adding an agenda:
+#  1. Definition in common/estate_agendas/gmina_<estate>_agendas.txt
+#  2. Agenda key in the agendas = { } list in common/estates/1xx_gmina_<estate>.txt
+#     (an estate only ever rolls agendas from that list)
+#  3. has_active_estate_agenda = <key> in has_estate_agenda_of_estate_<estate>
+#     (common/scripted_triggers/00_scripted_triggers_estates.txt)
+#  4. Localisation in localisation/gmina_estates_l_english.yml:
+#       <key>:0 "Title"
+#       <key>_desc:0 "Description"   (province target: [agenda_province.GetName])
+#     Polish letters -> substitution characters (sciaga.txt / CLAUDE.md)
+#  5. New modifiers -> common/event_modifiers/gmina_event_modifiers.txt + localisation
+#
+# Naming: estate_<estate>_<goal>; suffix _x = agenda with a province target
+# (vanilla convention: develop_x, build_<something>_in_y).
+#
+# Shared reward for every completed agenda of an estate: on_completed_agenda_effect_estate_<estate>
+# in common/scripted_effects/01_scripted_effects_for_estates.txt (currently empty).
+#
+# Definer flags (picked_<variant>, e.g. picked_free_banks) can be used in can_select,
+# selection_weight and rewards so that agendas react to the defining privilege.
+###############################################################################
+
+
+#------------------------------------------------------------------------------
+# VARIANT A: country agenda (no province target)
+#------------------------------------------------------------------------------
+# estate_ESTATE_NAME = {
+# 	can_select = {											# when the estate may offer this agenda
+# 		# e.g. NOT = { num_of_loans = 1 }
+# 	}
+# 	selection_weight = {									# weight against the estate's other agendas
+# 		factor = 1
+# 		modifier = {
+# 			factor = 2
+# 			has_country_flag = picked_VARIANT					# e.g. the definer makes it more likely
+# 		}
+# 	}
+# 	# max_days_active = 7300								# default is 20 years
+# 	# modifier = { }										# country modifier while the agenda is active
+# 	# immediate_effect = { }								# when the agenda is accepted
+# 	task_requirements = {
+# 		if = {
+# 			limit = {
+# 				has_estate_agenda_auto_completion = {
+# 					estate = estate_ESTATE
+# 				}
+# 			}
+# 			has_estate_agenda_auto_completion = {
+# 				estate = estate_ESTATE
+# 			}
+# 		}
+# 		else = {
+# 			# completion conditions
+# 		}
+# 	}
+# 	fail_if = {
+# 		# auto-fail conditions (optional)
+# 	}
+# 	task_completed_effect = {
+# 		on_completed_agenda_effect = {
+# 			estate = estate_ESTATE
+# 		}
+# 		add_estate_loyalty = {
+# 			estate = estate_ESTATE
+# 			loyalty = 10
+# 		}
+# 		# reward
+# 	}
+# 	failing_effect = {
+# 		on_failed_agenda_effect = yes
+# 		clr_auto_complete_flag = yes
+# 		add_estate_loyalty_modifier = {
+# 			estate = estate_ESTATE
+# 			desc = EST_VAL_AGENDA_DENIED
+# 			loyalty = -5
+# 			duration = 7300
+# 		}
+# 	}
+# 	# invalid_trigger = { }									# ends without counting as a failure (e.g. definer changed)
+# 	# on_invalid = { }										# clean up flags/modifiers
+# }
+
+
+#------------------------------------------------------------------------------
+# VARIANT B: agenda with a province target (estate_ESTATE_NAME_x)
+#------------------------------------------------------------------------------
+# estate_ESTATE_NAME_x = {
+# 	can_select = {
+# 		any_owned_province = {
+# 			is_state_core = root
+# 			# province conditions
+# 		}
+# 	}
+# 	selection_weight = {
+# 		factor = 1
+# 	}
+# 	pre_effect = {											# picks the province before the agenda is shown
+# 		random_owned_province = {
+# 			limit = {
+# 				is_state_core = root
+# 				# same conditions as in can_select
+# 			}
+# 			save_event_target_as = agenda_province
+# 		}
+# 	}
+# 	provinces_to_highlight = {
+# 		province_id = event_target:agenda_province
+# 	}
+# 	fail_if = {
+# 		event_target:agenda_province = {
+# 			NOT = { owned_by = root }
+# 		}
+# 	}
+# 	task_requirements = {
+# 		if = {
+# 			limit = {
+# 				has_estate_agenda_auto_completion = {
+# 					estate = estate_ESTATE
+# 				}
+# 			}
+# 			has_estate_agenda_auto_completion = {
+# 				estate = estate_ESTATE
+# 			}
+# 		}
+# 		else = {
+# 			event_target:agenda_province = {
+# 				# conditions inside the province
+# 			}
+# 		}
+# 	}
+# 	task_completed_effect = {
+# 		on_completed_agenda_effect = {
+# 			estate = estate_ESTATE
+# 		}
+# 		add_estate_loyalty = {
+# 			estate = estate_ESTATE
+# 			loyalty = 10
+# 		}
+# 		event_target:agenda_province = {
+# 			# reward inside the province
+# 		}
+# 	}
+# 	failing_effect = {
+# 		on_failed_agenda_effect = yes
+# 		clr_auto_complete_flag = yes
+# 		add_estate_loyalty_modifier = {
+# 			estate = estate_ESTATE
+# 			desc = EST_VAL_AGENDA_DENIED
+# 			loyalty = -5
+# 			duration = 7300
+# 		}
+# 	}
+# }

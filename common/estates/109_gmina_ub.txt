@@ -48,26 +48,8 @@ estate_ub = {
 		estate_ub_strenghten_communist_thought
 	}
 	 agendas = {
-		estate_ub_hire_advisor
-		estate_nobles_build_army_building_in_y
-		estate_nobles_build_fort_building_in_y
-		estate_burghers_build_production_building_in_y
-		estate_nobles_build_manufactory_in_y
-		estate_nobles_build_university_in_y
-		estate_church_develop_x
-		estate_nobles_develop_x
-		estate_burghers_develop_x
-		estate_church_relations_with_dotf
-		estate_nobles_hire_advisor
-		estate_nobles_fire_advisor
-		estate_nobles_break_coalition
-		estate_nobles_crush_revolts
-		estate_nobles_regain_liberty
-		estate_nobles_build_an_army
-		estate_nobles_bigger_army_than_rival
-		estate_nobles_build_up_manpower_reserves
-		estate_nobles_recover_abysmal_prestige
-	 }
+		# Agenda keys go here, defined in common/estate_agendas/gmina_<estate>_agendas.txt
+	}
 	 
      influence_from_dev_modifier = 1.0
             

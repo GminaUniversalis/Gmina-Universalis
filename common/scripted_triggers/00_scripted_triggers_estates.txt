@@ -394,83 +394,58 @@ estate_action_off_shared_cooldown = {
 }
 has_estate_agenda_of_estate_army = {
 	OR = {
-		has_active_estate_agenda = estate_army_increase_army_professionalism
-		has_active_estate_agenda = estate_army_hire_advisor
-		has_active_estate_agenda = estate_army_get_allies
-		has_active_estate_agenda = estate_army_befriend_rival_of_rival
-		has_active_estate_agenda = estate_army_break_coalition
-		has_active_estate_agenda = estate_army_build_an_army
-		has_active_estate_agenda = estate_army_bigger_army_than_rival
-		has_active_estate_agenda = estate_army_build_up_manpower_reserves
-		has_active_estate_agenda = estate_army_develop_x
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_army
+	}
 }
 has_estate_agenda_of_estate_farmers = {
 	OR = {
-		has_active_estate_agenda = estate_farmers_hire_advisor
-		has_active_estate_agenda = estate_farmers_develop_x
-		has_active_estate_agenda = estate_farmers_expand_into_x 
-		has_active_estate_agenda = estate_farmers_reduce_war_exhaustion
-		has_active_estate_agenda = estate_farmers_build_production_building_in_y
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_farmers
+	}
 }
 has_estate_agenda_of_estate_families = {
 	OR = {
-		has_active_estate_agenda = estate_families_hire_advisor
-		has_active_estate_agenda = estate_families_build_temple_in_y
-		has_active_estate_agenda = estate_families_build_port_building_in_y
-		has_active_estate_agenda = estate_families_build_production_building_in_y 
-		has_active_estate_agenda = estate_families_develop_x_manpower
-		has_active_estate_agenda = estate_families_develop_x_production
-		has_active_estate_agenda = estate_families_recover_stability
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_families
+	}
 }
 has_estate_agenda_of_estate_retirees = {
 	OR = {
-		has_active_estate_agenda = estate_retirees_hire_advisor
-		has_active_estate_agenda = estate_retirees_build_temple_in_y
-		has_active_estate_agenda = estate_retirees_legitimacy
-		has_active_estate_agenda = estate_retirees_prestige
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_retirees
+	}
 }
 has_estate_agenda_of_estate_scientists = {
 	OR = {
-		has_active_estate_agenda = estate_scientists_hire_advisor
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_scientists
+	}
 }
 has_estate_agenda_of_estate_investors = {
 	OR = {
-		has_active_estate_agenda = estate_investors_hire_advisor
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_investors
+	}
 }
 has_estate_agenda_of_estate_priests = {
 	OR = {
-		has_active_estate_agenda = estate_priests_hire_advisor
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_priests
+	}
 }
 has_estate_agenda_of_estate_middle_class = {
 	OR = {
-		has_active_estate_agenda = estate_middle_class_hire_advisor
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_middle_class
+	}
 }
 has_estate_agenda_of_estate_ub = {
 	OR = {
-		has_active_estate_agenda = estate_ub_hire_advisor
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_ub
+	}
 }
 has_estate_agenda_of_estate_banks = {
 	OR = {
-		has_active_estate_agenda = estate_banks_hire_advisor 
-		has_active_estate_agenda = estate_banks_pay_off_loans
-		has_active_estate_agenda = estate_banks_restore_currency
-		has_active_estate_agenda = estate_banks_get_cash
-		has_active_estate_agenda = estate_banks_reduce_corruption
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_banks
+	}
 }
 has_estate_agenda_of_estate_miners = {
 	OR = {
-		has_active_estate_agenda = estate_miners_hire_advisor
-}
+		always = no # Replace with has_active_estate_agenda entries for every agenda of estate_miners
+	}
 }
 has_estate_agenda_of_estate_nobles = {
 	OR = {

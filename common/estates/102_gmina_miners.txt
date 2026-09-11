@@ -59,12 +59,7 @@ estate_miners = {
 		estate_miners_state_owned_industry
 	 }
      agendas = {
-		estate_miners_hire_advisor
-		estate_church_develop_x
-		estate_nobles_develop_x
-		estate_burghers_develop_x
-		estate_church_increase_stability
-		estate_nobles_recover_abysmal_prestige
-     }
+		# Agenda keys go here, defined in common/estate_agendas/gmina_<estate>_agendas.txt
+	}
      influence_from_dev_modifier = 1.0     
 }
