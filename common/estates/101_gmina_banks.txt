@@ -42,27 +42,9 @@ estate_banks = {
     base_influence = 40
     contributes_to_curia_treasury = no
     color = { 255 215 0 }
-    privileges = {
-		estate_banks_indebted_to_free_banks
-		estate_banks_indebted_to_mixed
-		estate_banks_indebted_to_state_controlled
-		estate_banks_land_rights
-		estate_banks_empty_promises
-		estate_banks_promote_mortgages
-		estate_banks_market_trading_focus
-		estate_banks_hire_regional_director
-		estate_banks_appoint_president_of_nationaL_bank
-		estate_banks_economic_stimulation
-		estate_banks_trained_brokers
-		estate_banks_regulate_money_supply
-		estate_banks_insider_info
-		estate_banks_advertisement_national_bank
-		estate_banks_free_banks
-		estate_banks_commercial_experts
-		estate_banks_mixed
-		estate_banks_state_controlled
-
-	}
+    
+		# Detached 2026-09-12: old privileges kept as reference in common/estate_privileges/gmina_*.txt, nothing selectable until the new system lands
+	
      agendas = {
 		# Agenda keys go here, defined in common/estate_agendas/gmina_<estate>_agendas.txt
 	}

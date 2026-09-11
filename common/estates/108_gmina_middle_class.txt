@@ -42,21 +42,9 @@ estate_middle_class = {
     base_influence = 40
     contributes_to_curia_treasury = no
     color = { 255 172 248 }
-    privileges = {
-		estate_middle_class_land_rights
-		estate_middle_class_empty_promises
-		estate_middle_class_low_taxes
-		estate_middle_class_high_taxes
-		estate_middle_class_very_high_taxes
-		estate_middle_class_allow_exclusive_goods
-		estate_middle_class_party_appreciation
-		estate_middle_class_accept_aspirations
-		estate_middle_class_american_model
-		estate_middle_early_polish_model
-		estate_middle_class_european_model
-		estate_middle_class_soviet_model
-		estate_middle_class_japan_model
-	}
+    
+		# Detached 2026-09-12: old privileges kept as reference in common/estate_privileges/gmina_*.txt, nothing selectable until the new system lands
+	
      agendas = {
 		# Agenda keys go here, defined in common/estate_agendas/gmina_<estate>_agendas.txt
 	}

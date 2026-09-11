@@ -289,13 +289,13 @@ country_event = {
 			if = {
 				limit = { current_age = age_of_discovery }
 
-				set_estate_privilege = estate_miners_state_owned_industry
+				#set_estate_privilege = estate_miners_state_owned_industry # detached 2026-09-12
 			}
 
 			else_if = {
 				limit = { NOT = { current_age = age_of_discovery } }
 
-				set_estate_privilege = estate_miners_privatized_industry
+				#set_estate_privilege = estate_miners_privatized_industry # detached 2026-09-12
 			}
 
 			set_country_flag = picked_miners_definer
@@ -331,7 +331,7 @@ country_event = {
 					}
 
 				}
-				set_estate_privilege = estate_scientist_polish_thought
+				#set_estate_privilege = estate_scientist_polish_thought # detached 2026-09-12
 			}
 			
 			set_country_flag = picked_scientists_definer
@@ -374,7 +374,7 @@ country_event = {
 						}
 					}
 				}
-				set_estate_privilege = estate_investors_support_local_corporations
+				#set_estate_privilege = estate_investors_support_local_corporations # detached 2026-09-12
 			}
 			
 			set_country_flag = picked_investors_definer
@@ -412,7 +412,7 @@ country_event = {
 					}
 				}
 				
-				set_estate_privilege = estate_farmers_natural_farming
+				#set_estate_privilege = estate_farmers_natural_farming # detached 2026-09-12
 			}
 			
 			set_country_flag = picked_farmers_definer
@@ -466,14 +466,14 @@ country_event = {
 					}
 				}
 
-				set_estate_privilege = estate_banks_free_banks
+				#set_estate_privilege = estate_banks_free_banks # detached 2026-09-12
 			}
 			else_if = { 
 				limit = {
 					religion_group = communism_group
 				}
 				#For later use
-				set_estate_privilege = estate_banks_state_controlled
+				#set_estate_privilege = estate_banks_state_controlled # detached 2026-09-12
 			}
 
 			set_country_flag = picked_banks_definer
@@ -498,15 +498,15 @@ country_event = {
 					}
 				}
 
-				set_estate_privilege = estate_priests_subsidies_from_state
+				#set_estate_privilege = estate_priests_subsidies_from_state # detached 2026-09-12
 			}
 			else_if = {
 				limit = {
 					religion_group = communism_group
 				}
 				#For later use / Dummy
-				set_estate_privilege = estate_priests_separation_from_state
-
+				#set_estate_privilege = estate_priests_separation_from_state
+ # detached 2026-09-12
 			}
 
 			set_country_flag = picked_priests_definer
@@ -528,7 +528,7 @@ country_event = {
 				limit = {
 					current_age = age_of_discovery
 				}
-				set_estate_privilege = estate_families_old_model
+				#set_estate_privilege = estate_families_old_model # detached 2026-09-12
 			}
 			else_if = {
 				limit = {
@@ -560,17 +560,17 @@ country_event = {
 						current_age = age_of_discovery
 					}
 				}
-				set_estate_privilege = estate_middle_early_polish_model
+				#set_estate_privilege = estate_middle_early_polish_model # detached 2026-09-12
 			}
 			else_if = {
 				limit = {
 					religion_group = communism_group
 					current_age = age_of_discovery
 				}
-				set_estate_privilege = estate_middle_class_soviet_model
+				#set_estate_privilege = estate_middle_class_soviet_model # detached 2026-09-12
 			}
 			else = {
-				set_estate_privilege = estate_middle_class_soviet_model
+				#set_estate_privilege = estate_middle_class_soviet_model # detached 2026-09-12
 			}
 			
 			set_country_flag = picked_middle_class_definer
@@ -593,10 +593,10 @@ country_event = {
 						religion_group = communism_group
 					}
 
-					set_estate_privilege = estate_ub_grasp_over_police
-					set_estate_privilege = estate_ub_grasp_over_politics
-					set_estate_privilege = estate_ub_grasp_over_economy
-					set_estate_privilege = estate_ub_classes_opression
+					#set_estate_privilege = estate_ub_grasp_over_police # detached 2026-09-12
+					#set_estate_privilege = estate_ub_grasp_over_politics # detached 2026-09-12
+					#set_estate_privilege = estate_ub_grasp_over_economy # detached 2026-09-12
+					#set_estate_privilege = estate_ub_classes_opression # detached 2026-09-12
 				}
 				else_if = {
 					limit = {
@@ -606,7 +606,7 @@ country_event = {
 						}
 					}
 					
-					set_estate_privilege = estate_ub_iron_propaganda
+					#set_estate_privilege = estate_ub_iron_propaganda # detached 2026-09-12
 				}
 			
 			#TBD
@@ -630,7 +630,7 @@ country_event = {
 					religion_group = communism_group
 				}
 				
-				set_estate_privilege = estate_army_old_doctrine
+				#set_estate_privilege = estate_army_old_doctrine # detached 2026-09-12
 			}
 
 			else_if = {
@@ -640,7 +640,7 @@ country_event = {
 					}
 				}
 				
-				set_estate_privilege = estate_army_new_doctrine
+				#set_estate_privilege = estate_army_new_doctrine # detached 2026-09-12
 			}
 			
 			set_country_flag = picked_army_definer

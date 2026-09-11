@@ -271,18 +271,7 @@ interaction = {
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		#The following if/else_if-statements match those in estate_privileges_and_agendas_events.2.a. If those change, these should too.
-		if = {
-			limit = {
-				OR = {
-					has_estate_privilege = estate_ub_statutory_rights
-					AND = {
-						has_estate = estate_ub
-						government = monarchy
-					}
-				}
-			}
-			NOT = { has_estate_privilege = estate_ub_statutory_rights }
-		}
+		# Detached 2026-09-12: referenced estate_ub_statutory_rights, a privilege that was never defined. Re-add an equivalent with the new privilege system.
         is_at_war = no
 		if = {
 			limit = { has_government_attribute = can_not_seize_land }

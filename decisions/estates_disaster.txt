@@ -302,7 +302,7 @@ country_decisions = {
 					remove_estate_privilege = estate_army_new_doctrine
 					remove_estate_privilege = estate_army_martial_law
 		
-					set_estate_privilege = estate_army_underfunded_army
+					#set_estate_privilege = estate_army_underfunded_army # detached 2026-09-12
 				}
 			}
 

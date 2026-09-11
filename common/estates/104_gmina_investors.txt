@@ -55,21 +55,9 @@ estate_investors = {
     base_influence = 40
     contributes_to_curia_treasury = no
     color = { 230 137 38 }
-     privileges = {
-		estate_investors_land_rights
-		estate_investors_rapid_modernisation
-		estate_investors_empty_promises
-		estate_investors_minimal_taxation
-		estate_investors_basic_taxation
-		estate_investors_high_taxation
-		estate_investors_lobbists
-		estate_investors_adm_support
-		estate_investors_high_influence
-		estate_investors_support_foreign_corporations
-		estate_investors_support_local_corporations
-		estate_investors_support_state_owned_corporations
-		estate_investors_free_market_ideals
-	 }
+     
+		# Detached 2026-09-12: old privileges kept as reference in common/estate_privileges/gmina_*.txt, nothing selectable until the new system lands
+	
      agendas = {
 		# Agenda keys go here, defined in common/estate_agendas/gmina_<estate>_agendas.txt
 	}

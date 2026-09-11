@@ -49,7 +49,7 @@ country_decisions = {
 				
 			}
 
-			set_estate_privilege = estate_priests_empowered_concordat
+			#set_estate_privilege = estate_priests_empowered_concordat # detached 2026-09-12
 		}
 	}
 
