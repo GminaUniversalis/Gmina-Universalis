@@ -44,9 +44,9 @@ estate_priests = {
     base_influence = 40
     contributes_to_curia_treasury = no
     color = { 207 179 33 }
-    
+     privileges = {
 		# Detached 2026-09-12: old privileges kept as reference in common/estate_privileges/gmina_*.txt, nothing selectable until the new system lands
-	
+	}
      agendas = {
 		# Agenda keys go here, defined in common/estate_agendas/gmina_<estate>_agendas.txt
 	}
