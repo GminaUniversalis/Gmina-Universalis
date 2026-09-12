@@ -5986,7 +5986,7 @@ country_event = {
 	trigger = {
 		has_idea_group = quantity_ideas
 		NOT = { has_country_modifier = "horse_population_boom" }
-		livestock = 1
+		gu_horses = 1
 	}
 	
 	mean_time_to_happen = {

@@ -12317,7 +12317,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		grain = 1
+		gu_wheat = 1
 	}
 
 	mean_time_to_happen = {
@@ -12683,7 +12683,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
-		ivory = 1
+		gu_vodka = 1
 	}
 
 	is_triggered_only = yes
@@ -12750,7 +12750,7 @@ country_event = {
 	goto = chinaware_province
 
 	trigger = {
-		chinaware = 1
+		gu_ceramics = 1
 	}
 
 	is_triggered_only = yes
@@ -12791,7 +12791,7 @@ country_event = {
 	goto = spice_province
 
 	trigger = {
-		spices = 1
+		gu_fruits = 1
 		any_owned_province = {
 			trade_goods = gu_fruits
 			NOT = { has_province_modifier = harvest_fails }
@@ -13004,7 +13004,7 @@ country_event = {
 	goto = plague_province
 
 	trigger = {
-		grain = 1
+		gu_wheat = 1
 		num_of_cities = 2
 		any_owned_province = {
 			trade_goods = gu_wheat
@@ -13064,7 +13064,7 @@ country_event = {
 	goto = province_in_question
 
 	trigger = {
-		grain = 1
+		gu_wheat = 1
 	}
 	
 	
