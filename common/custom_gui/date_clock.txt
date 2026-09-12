@@ -3,3 +3,10 @@ custom_text_box = {
     potential = { always = yes }
     tooltip = clock_date_speed_tooltip
 }
+
+# topbar.gui is not a scriptable scope, so the game also looks for a button of this name.
+# The dummy silences 'Scripted button clock_date_speed hasn't been defined' (same trick Anbennar uses).
+custom_button = {
+    name = clock_date_speed
+    potential = { always = no }
+}

@@ -21703,7 +21703,7 @@ cwiartki_3_4 = {
 		on_upgraded = {
 			if = {
 				limit = {
-					gu_vodka = 1
+					owner = { gu_vodka = 1 }
 				}
 				every_owned_province = {
 					limit = {

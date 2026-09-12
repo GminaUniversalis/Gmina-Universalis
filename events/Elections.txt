@@ -1002,11 +1002,8 @@ country_event = {
 			} 
 		}
 		name = elections.720.c
-}
-		else = {
-		 	define_ruler = {
-				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
-			}
+		define_ruler = {
+			dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
 		}
 
 		change_statists_vs_orangists = 0.33

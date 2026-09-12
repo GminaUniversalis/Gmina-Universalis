@@ -215,12 +215,13 @@ country_decisions = {
 			}
 
 
-			if = {
+			every_province = {
 				limit = {
-					region = dolnoslaskie_region
-					region = opolskie_region
-					region = slaskie_region
-
+					OR = {
+						region = dolnoslaskie_region
+						region = opolskie_region
+						region = slaskie_region
+					}
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = SIL
@@ -347,7 +348,7 @@ country_decisions = {
 			}
 
 
-			if = {
+			every_province = {
 				limit = {
 					OR = {
 						region = dolnoslaskie_region
@@ -357,7 +358,6 @@ country_decisions = {
 						region = zachodnio_pomorskie_region
 						region = warminsko_mazurskie_region
 					}
-
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = GER
@@ -504,7 +504,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = hide_all_formables }
-			region = pomorskie_region
+			capital_scope = { region = pomorskie_region }
 			NOT = { 
 				OR = { 
 					has_country_flag = formed_pol_flag

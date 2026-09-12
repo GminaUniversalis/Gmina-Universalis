@@ -1092,7 +1092,7 @@ country_event = {
 		# 		short = yes
 		# 	}
 		# }
-		else_if = {
+		if = {
 			limit = {
 				has_government_attribute = seizing_land_loyalty
 			}

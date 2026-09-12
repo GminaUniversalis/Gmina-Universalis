@@ -2423,13 +2423,11 @@ spawn_rebels_from_unhappy_estate = {
 						}
 					}
 				}
-				else = {
-					spawn_rebels = {
-						type = noble_rebels
-						size = $size$
-						estate = estate_nobles
-						as_if_faction = yes
-					}
+				spawn_rebels = {
+					type = noble_rebels
+					size = $size$
+					estate = estate_nobles
+					as_if_faction = yes
 				}
 			}
 			1 = {
