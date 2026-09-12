@@ -468,7 +468,6 @@ nepotism_reform = {
 		NOT = {
 			has_government_attribute = is_pirate_republic_reform
 		}
-		NOT = { has_reform = signoria_reform }
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
@@ -477,14 +476,9 @@ nepotism_reform = {
 	trigger = {
 		NOT = { 
 			OR = {
-				has_reform = venice_merchants_reform 
 				has_government_attribute = has_dutch_election
-				has_reform = presidential_despot_reform
-				has_reform = military_dictatorship_reform
 				has_reform = admiralty_reform
 				has_reform = military_rulership_reform
-				has_reform = prussian_republic
-				has_reform = prussian_republic_reform
 			}
 		}
 	}
@@ -790,14 +784,9 @@ lottery_reform = {
 	trigger = {
 		NOT = { 
 			OR = {
-				has_reform = venice_merchants_reform 
 				has_government_attribute = has_dutch_election
-				has_reform = presidential_despot_reform
-				has_reform = military_dictatorship_reform
 				has_reform = admiralty_reform
 				has_reform = military_rulership_reform
-				has_reform = prussian_republic
-				has_reform = prussian_republic_reform
 			}
 		}
 	}
@@ -1166,13 +1155,6 @@ administrative_divisions_reform = {
 				is_territorial_core = root
 			}
 		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				has_reform = merchants_reform
-				has_reform = venice_merchants_reform
-			}
-		}
 	}
 }
 
@@ -1200,13 +1182,6 @@ union_of_states_reform = {
 		modifier = {
 			factor = 1.5
 			trade_income_percentage = 0.35
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_reform = merchants_reform
-				has_reform = venice_merchants_reform
-			}
 		}
 		modifier = {
 			factor = 0

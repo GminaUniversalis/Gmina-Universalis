@@ -1304,10 +1304,8 @@ check_reducing_estate_revolt_size_more_trigger = {
 }
 
 is_revolutionary_republic_trigger = {
-	OR = {
-		has_reform = revolutionary_republic_reform
-		has_reform = junior_revolutionary_republic_reform
-	}
+	#The revolutionary republic reforms were cut from this mod, so nothing is one.
+	always = no
 }
 
 revolution_event_can_happen_trigger = {
@@ -2510,12 +2508,6 @@ has_not_modifier_locking_military_tier = {
 
 has_not_locked_first_tier_reform = {
 	NOT = { has_reform = free_city }
-	NOT = { has_reform = trading_city }
-	NOT = { has_reform = colonial_government }
-	NOT = { has_reform = crown_colony_government }
-	NOT = { has_reform = private_enterprise_colony_government }
-	NOT = { has_reform = self_governing_colony_government }
-	NOT = { has_reform = trade_company_government }
 	NOT = { has_reform = great_mongol_state_reform }	
 }
 

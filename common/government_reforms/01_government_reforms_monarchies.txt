@@ -778,7 +778,6 @@ grant_nobles_electorate_reform = {
 	}
 	trigger = {
 		has_idea_group = aristocracy_ideas
-		NOT = { has_reform = celestial_empire }
 	}
 	modifiers = {
 		families_influence_modifier = 0.05

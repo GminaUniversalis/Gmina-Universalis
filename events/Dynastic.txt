@@ -1921,7 +1921,6 @@ country_event = {
 
 
 
-		NOT = { has_reform = shogunate }
 		is_lesser_in_union = no
 		NOT = {
 			has_country_modifier = dyn_newborn_daughter
@@ -1985,7 +1984,6 @@ country_event = {
 		NOT = { religion_group = muslim }
 		NOT = { has_government_attribute = has_harem_events }
 
-		NOT = { has_reform = shogunate }
 		has_government_attribute = heir
 		is_lesser_in_union = no
 		NOT = { has_ruler_flag = talented_daughter_happened }

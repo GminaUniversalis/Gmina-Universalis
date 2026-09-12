@@ -1647,7 +1647,6 @@ country_event = {
 		any_owned_province = {
 			NOT = { has_province_modifier = demands_representation }
 		}
-		NOT = { has_reform = english_monarchy }
 		NOT = { has_reform = parliamentary_reform }
 		NOT = { has_reform = steppe_horde }
 		NOT = { has_reform = tribal_despotism }
@@ -1658,18 +1657,10 @@ country_event = {
 		NOT = { has_reform = free_city }
 		NOT = { has_government_attribute = has_dutch_election }
 		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { has_reform = presidential_despot_reform }
-		NOT = { has_reform = ambrosian_republic }
 
 		NOT = { has_government_attribute = is_peasants_republic }
 
-		NOT = { has_reform = feudal_theocracy }
 
-		NOT = { has_reform = daimyo }
-		NOT = { has_reform = appanage_reform }
-		NOT = { has_reform = shogunate }
-		NOT = { has_reform = colonial_government }
-		NOT = { has_reform = revolutionary_empire_reform }
 		NOT = { government = theocracy }
 		NOT = { government = native }
 	}
@@ -1734,13 +1725,7 @@ country_event = {
 
 		NOT = { has_government_attribute = is_peasants_republic }
 
-		NOT = { has_reform = feudal_theocracy }
 
-		NOT = { has_reform = daimyo }
-		NOT = { has_reform = appanage_reform }
-		NOT = { has_reform = shogunate }
-		NOT = { has_reform = colonial_government }
-		NOT = { has_reform = revolutionary_empire_reform }
 		NOT = { government = theocracy }
 		NOT = { has_country_modifier = yearning_for_representation }
 		NOT = { has_ruler_flag = cities_offered_to_help }
@@ -1750,7 +1735,6 @@ country_event = {
 		months = 500
 		modifier = {
 			factor = 0.6
-			NOT = { has_reform = english_monarchy }
 			NOT = { has_reform = parliamentary_reform }
 		}
 	}
@@ -1759,7 +1743,6 @@ country_event = {
 		name = parlaments.24.a #Grant them Greater Representation
 		trigger = {
 			OR = {
-				has_reform = english_monarchy
 				has_reform = parliamentary_reform
 			}
 		}
@@ -1782,7 +1765,6 @@ country_event = {
 		name = parlaments.24.b #Refuse their money.
 		trigger = {
 			OR = {
-				has_reform = english_monarchy
 				has_reform = parliamentary_reform
 			}
 		}
@@ -1805,9 +1787,6 @@ country_event = {
 		name = parlaments.24.c #
 		trigger = {
 			NOT = {
-				has_reform = english_monarchy
-			}
-			NOT = {
 				has_reform = parliamentary_reform
 			}
 		}
@@ -1822,9 +1801,6 @@ country_event = {
 	option = {
 		name = parlaments.24.dd #
 		trigger = {
-			NOT = {
-				has_reform = english_monarchy
-			}
 			NOT = {
 				has_reform = parliamentary_reform
 			}
@@ -1856,7 +1832,6 @@ province_event = {
 		owner = {
 			adm_tech = 22
 			NOT = { stability = 2 }
-			NOT = { has_reform = english_monarchy }
 			NOT = { has_reform = parliamentary_reform }
 			NOT = { government = tribal }
 			NOT = { government = native }
@@ -1864,14 +1839,8 @@ province_event = {
 			NOT = { government = republic }
 	
 	
-			NOT = { has_reform = feudal_theocracy }
 	
-			NOT = { has_reform = daimyo }
 			NOT = { has_government_attribute = is_peasants_republic }
-			NOT = { has_reform = appanage_reform }
-			NOT = { has_reform = shogunate }
-			NOT = { has_reform = colonial_government }
-			NOT = { has_reform = revolutionary_empire_reform }
 			NOT = { government = theocracy }
 			NOT = { has_ruler_flag = minorities_denied_representation }
 			num_of_owned_provinces_with = {

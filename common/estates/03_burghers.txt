@@ -17,7 +17,6 @@ always = no
 				NOT = { has_reform = siberian_tribe }
 				is_nomad = no
 				is_colonial_nation = no
-				NOT = { has_reform = revolutionary_empire_reform }
 				NOT = { has_estate = estate_vaisyas }
 				NOT = { has_estate = estate_jains }
 			}

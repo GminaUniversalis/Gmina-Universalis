@@ -1721,14 +1721,11 @@ promote_vassal_to_eyalet = {
 			if = {
 				limit = {
 					NOT = { has_reform = papacy_reform }
-					NOT = { has_reform = celestial_empire }
-					NOT = { has_reform = shogunate }
 				}
 				if = {
 					limit = {
 						OR = {
 							culture_group = maghrebi
-							has_reform = pirate_republic_reform
 						}
 					}
 					set_country_flag = pirate_eyalet

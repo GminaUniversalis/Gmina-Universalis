@@ -924,7 +924,6 @@ country_event = {
 			OR = {
 				has_heir = no
 				can_heir_be_child_of_consort = no
-				has_reform = elective_monarchy
 			}
 		}
 		desc = consort_events.51.db # They have a great time

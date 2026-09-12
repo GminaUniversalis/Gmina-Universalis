@@ -9851,7 +9851,6 @@ country_event = {
 				1 = {
 					trigger = {
 						government = republic
-						NOT = { has_reform = military_dictatorship_reform }
 					}
 					set_country_flag = noble_man_a_new_politician
 				}

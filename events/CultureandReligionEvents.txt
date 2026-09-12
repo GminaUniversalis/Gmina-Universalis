@@ -254,7 +254,6 @@ country_event = {
 		trigger = {
 			OR = {
 				has_regency = yes #It is also possible to enter a regency
-				has_reform = mamluk_government #It is even possible to suddenly get the Mamluk Government form.
 				AND = {
 					ruler_culture = ROOT
 					ruler_religion = ROOT
@@ -1203,7 +1202,6 @@ country_event = {
 		trigger = {
 			OR = {
 				has_regency = yes #It is also possible to enter a regency
-				has_reform = mamluk_government #It is even possible to suddenly get the Mamluk Government form.
 				AND = {
 					ruler_culture = ROOT
 					ruler_religion = ROOT
@@ -3593,7 +3591,6 @@ country_event = {
 		government = monarchy
 		has_regency = no
 		has_heir = no
-		NOT = { has_reform = ottoman_government }
 
 		NOT = { has_reform = states_general_reform }
 		is_lesser_in_union = no

@@ -1621,46 +1621,6 @@ country_event = {
 }
 
 # Iqta: Underage ruler is replaced
-country_event = {
-	id = muslim_piety.20
-	title = muslim_piety.20.t
-	desc = muslim_piety.20.d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	trigger = {
-		uses_piety = yes
-		OR = {
-			has_reform = iqta
-			has_reform = indian_sultanate_reform
-		}
-		has_regency = yes
-		has_consort_regency = no
-	}
-	
-	mean_time_to_happen = {
-		months = 180
-	}
-	
-	option = {
-		name = muslim_piety.20.a
-		if = {
-			limit = { has_heir = yes }
-			define_ruler = { dynasty = ROOT }
-		}
-		else = {
-			define_ruler = { }
-		}
-		if = {
-			limit = {
-				has_heir = yes
-			}
-			remove_heir = {}
-		}
-		add_piety = -0.25
-		add_legitimacy = -25
-		add_stability = -1
-	}
-}
 
 # Convert Hagia Sophia into a Mosque
 country_event = {

@@ -50,9 +50,7 @@ country_event = {
 		NOT = { has_states_general_mechanic = yes }
 		NOT = { has_government_attribute = lottery_election }
 		NOT = { has_government_attribute = is_pirate_republic_reform }
-		NOT = { has_reform = military_dictatorship_reform }
 		NOT = { has_reform = admiralty_reform }
-		NOT = { has_reform = prussian_republic_reform }
 		# NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 		if = {
 			limit = {
@@ -479,9 +477,7 @@ country_event = {
 		NOT = { has_states_general_mechanic = yes }
 		NOT = { has_government_attribute = lottery_election }
 		NOT = { has_government_attribute = is_pirate_republic_reform }
-		NOT = { has_reform = military_dictatorship_reform }
 		NOT = { has_reform = admiralty_reform }
-		NOT = { has_reform = prussian_republic_reform }
 		# NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 		NOT = { has_country_modifier = just_had_revolution_bringing_someone_to_power_timer }
 		if = {
