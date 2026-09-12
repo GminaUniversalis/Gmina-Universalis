@@ -132,8 +132,8 @@ country_event = {
 			religion = conservatism_PIS
 			continent = europe
 			OR = {
-				terrain = high_urban
-				terrain = urban
+				has_terrain = high_urban
+				has_terrain = urban
 			}
 		}
 		1016 = {
@@ -176,8 +176,8 @@ country_event = {
 					religion = conservatism_PIS
 					continent = europe
 					OR = {
-						terrain = high_urban
-						terrain = urban
+						has_terrain = high_urban
+						has_terrain = urban
 					}
 					any_neighbor_province = {
 						NOT = { owned_by = ROOT }
@@ -191,8 +191,8 @@ country_event = {
 					religion = conservatism_PIS
 					continent = europe
 					OR = {
-						terrain = high_urban
-						terrain = urban
+						has_terrain = high_urban
+						has_terrain = urban
 					}
 					owner = {
 						NOT = {

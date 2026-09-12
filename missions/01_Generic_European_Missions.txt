@@ -342,61 +342,6 @@ gen_europe_hre_theocracy = {
 			}
 		}
 	}
-	gen_hre_theocracy_divine_empire = {
-		icon = mission_monarch_in_throne_room
-		required_missions = { gen_hre_theocracy_lords_army }
-		position = 5
-
-		provinces_to_highlight = {
-			OR = {
-				region = north_german_region
-				region = south_german_region
-			}
-			NOT = { religion = root }
-			NOT = {
-				root = {
-					calc_true_if = {
-						amount = 50
-						all_province = {
-							OR = {
-								region = north_german_region
-								region = south_german_region
-							}
-							religion = root
-						}
-					}
-				}
-			}
-		}
-
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = emp_bav_center_of_counter_reformation_tooltip2
-				had_global_flag = {
-					flag = reformation_started
-					days = 18250
-				}
-			}
-			calc_true_if = {
-				desc = gen_hre_theocracy_divine_empire_trigger_tooltip
-				amount = 50
-				all_province = {
-					OR = {
-						region = north_german_region
-						region = south_german_region
-					}
-					religion = root
-				}
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = theocracy_divine_empire_mod
-				duration = 5475
-			}
-		}
-	}
 }
 
 

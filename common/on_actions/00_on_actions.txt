@@ -1794,7 +1794,6 @@ on_colonial_pulse = {
 		100 = colonial.10
 		100 = colonial.11
 		100 = colonial.14
-		100 = colonial.15
 		100 = colonial.16
 		100 = colonial.17
 		25 = dodo.1
