@@ -1,4 +1,4 @@
-version="0.5"
+version="0.6"
 tags={
 	"Map"
 	"Alternative History"
@@ -38,5 +38,5 @@ replace_path="decisions"
 replace_path="map"
 replace_path="missions"
 replace_path="tutorial"
-supported_version="1.37.2"
+supported_version="v1.37.*.*"
 remote_file_id="3119311190"
