@@ -113,7 +113,7 @@ namespace = papacy_events
 # 	}
 # }
 
-Dzia?acz-Nephew
+#Dzialacz-Nephew
 country_event = {
 	id = papacy_events.6
 	title = papacy_events.6.t

@@ -149,12 +149,10 @@ P03_conquest ={
 		}
 		trigger = { 
 			4552={
-				type = all
 				owned_by = ROOT
 				is_core = ROOT
 				}
 			237={
-			type = all
 			owned_by = ROOT
 			is_core = ROOT
 			}
@@ -212,7 +210,6 @@ P03_conquest_2 ={
 		}
 		trigger = {
 			4370={
-			type = all
 			owned_by = ROOT
 			is_core = ROOT
 			}
@@ -242,7 +239,6 @@ P03_conquest_2 ={
 		}
 		trigger = {
 			48={
-			type = all
 			owned_by = ROOT
 			is_core = ROOT
 			}
@@ -283,7 +279,6 @@ P03_conquest_4 ={
 		}
 		trigger = {
 			1746={
-			type = all
 			owned_by = ROOT
 			is_core = ROOT
 			}
@@ -313,7 +308,6 @@ P03_conquest_4 ={
 		}
 		trigger = {
 			4551={
-			type = all
 			owned_by = ROOT
 			is_core = ROOT
 			}
