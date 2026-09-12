@@ -335,14 +335,6 @@ insult_drunkard = {
 	}
 }
 
-insult_against_england2 = {
-	trigger = {
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-	}
-}
 
 capital_insult = {
 	trigger = {

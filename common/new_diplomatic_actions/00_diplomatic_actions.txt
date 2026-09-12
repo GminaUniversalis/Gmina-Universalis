@@ -227,24 +227,10 @@ sell_indulgence = {
 			}
 		}
 		if = {
-			limit = { FROM = { tag = PAP } }
-			custom_trigger_tooltip = {
-				tooltip = sell_indulgence_pope
-				FROM = { NOT = { tag = PAP } }
-			}
-		}
-		if = {
 			limit = { FROM = { is_subject_other_than_tributary_trigger = yes } }
 			custom_trigger_tooltip = {
 				tooltip = sell_indulgence_subject
 				FROM = { is_free_or_tributary_trigger = yes }
-			}
-		}
-		if = {
-			limit = { NOT = { papal_influence = 50 } NOT = { tag = PAP } }
-			custom_trigger_tooltip = {
-				tooltip = sell_indulgence_pi
-				papal_influence = 50
 			}
 		}
 		if = {
@@ -256,10 +242,6 @@ sell_indulgence = {
 		}
 	}
 	on_accept = {
-		if = {
-			limit = { NOT = { tag = PAP } }
-			add_papal_influence = -50
-		}
 		else = {
 			add_corruption = 0.5
 		}
@@ -4399,13 +4381,6 @@ invite_to_zoroastrian_community = {
 			custom_trigger_tooltip = {
 				tooltip = FROM_MORE_DEV_THAN_ROOT_TT
 				FROM = { NOT = { total_development = root } }
-			}
-		}
-		if = {
-			limit = { FROM = { tag = PAP } }
-			custom_trigger_tooltip = {
-				tooltip = FROM_IS_THE_POPE_TT
-				FROM = { NOT = { tag = PAP } }
 			}
 		}
 		if = {

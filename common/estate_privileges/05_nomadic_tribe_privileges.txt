@@ -274,13 +274,6 @@ estate_nomadic_tribes_primacy_to_the_bannermen = {
 	}
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 10
-			OR = {
-				tag = MCH
-				tag = MJZ
-			}
-		}
 	}
 }
 

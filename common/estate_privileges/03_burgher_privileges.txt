@@ -439,18 +439,6 @@ estate_burghers_new_world_charter = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 10
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = SPA
-				tag = ENG
-				tag = GBR
-				tag = SCO
-				tag = FRA
-			}
-		}
-		modifier = {
 			factor = 0
 			is_absolutism_active = yes
 		}
@@ -1455,47 +1443,6 @@ estate_burghers_private_trade_fleets = {
 	}
 }
 
-estate_burghers_prussian_confederation = {
-	icon = privilege_royal_authority
-	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	influence = 0.1
-	loyalty = 0.1
-	is_valid = {
-		tag = TEU
-		has_disaster = prussian_confederation_disaster
-	}
-	on_granted = {
-		custom_tooltip = prussian_confederation_privilege_tt
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = 20
-		}
-		change_estate_land_share = {
-			estate = estate_burghers
-			share = 20
-		}
-	}
-	penalties = {
-		min_autonomy = 35
-	}
-
-	ai_will_do = {
-		factor = 7.5
-		modifier = {
-			factor = 1.5
-			owns = 43
-			NOT = { num_of_cities = 6 }
-			crown_land_share = 50
-			NOT = {
-				estate_influence = {
-					estate = estate_burghers
-					influence = 70
-				}
-			}
-		}
-	}
-}
 
 estate_burghers_statutory_rights = {
 	icon = privilege_grant_autonomy
@@ -2758,29 +2705,6 @@ estate_burghers_promote_burgher_bookkeeping = {
 
 #Mamluks
 
-estate_burghers_fund_karimi = {
-	icon = estate_burghers_fund_karimi
-	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	land_share = 5
-	loyalty = 0.1
-	influence = 0.1
-	is_valid = {
-		is_or_was_tag = {
-			tag = MAM
-		}
-		has_dlc = "King of Kings"
-	}
-	modifier_by_land_ownership = {
-		global_tax_modifier = -0.25
-		trade_efficiency = 0.2
-		placed_merchant_power = 10
-	}
-	
-	ai_will_do = {
-		factor = 5
-	}
-}
 
 estate_burghers_foreign_expeditions = {
 	icon = estate_burghers_foreign_expeditions
@@ -2956,8 +2880,7 @@ estate_burghers_reliance_on_republics = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		OR = {
-			tag = BYZ
-			has_estate_privilege = estate_burghers_reliance_on_republics
+has_estate_privilege = estate_burghers_reliance_on_republics
 		}
 		NOT = { has_country_flag = estate_burghers_reliance_on_republics_removed }
 	}
@@ -3038,8 +2961,7 @@ estate_burghers_exkousseiai_for_latins = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	is_valid = {
 		OR = {
-			tag = BYZ
-			has_estate_privilege = estate_burghers_exkousseiai_for_latins
+has_estate_privilege = estate_burghers_exkousseiai_for_latins
 		}
 		NOT = { has_country_flag = estate_burghers_exkousseiai_for_latins_removed }
 	}

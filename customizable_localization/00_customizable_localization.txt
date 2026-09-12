@@ -315,20 +315,6 @@ defined_text = {
 	name = GetStateForm
 
 	text = {
-		localisation_key = string_crown
-		trigger = {
-			government = monarchy
-			NOT = { tag = TUR }
-		}
-	}
-	text = {
-		localisation_key = string_sublime_porte
-		trigger = {
-			government = monarchy
-			tag = TUR
-		}
-	}
-	text = {
 		localisation_key = string_council
 		trigger = {
 			government = republic

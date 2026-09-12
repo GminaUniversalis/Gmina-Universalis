@@ -3325,8 +3325,7 @@ estate_nobles_mam_recruit_mamluks = {
 			NOT = { num_of_mamluks = 40 }
 		}
 		OR = {
-			tag = MAM
-			has_government_mechanic = mamluk_mechanic
+has_government_mechanic = mamluk_mechanic
 		}
 		NOT = { mamluks_percentage = 0.1 }
 	}
@@ -3383,8 +3382,7 @@ estate_nobles_mam_develop_military_infrastructure = {
 		has_country_flag = mam_access_new_agendas_about_mamluks_flag
 		mil_tech = 8
 		OR = {
-			tag = MAM
-			has_government_mechanic = mamluk_mechanic
+has_government_mechanic = mamluk_mechanic
 		}
 		if = {
 			limit = { NOT = { num_of_provinces_in_states = 150 } }
@@ -3540,8 +3538,7 @@ estate_nobles_mam_increase_army_tradition = {
 	can_select = {
 		has_country_flag = mam_access_new_agendas_about_mamluks_flag
 		OR = {
-			tag = MAM
-			has_estate_privilege = estate_nobles_enlist_the_mamluks
+has_estate_privilege = estate_nobles_enlist_the_mamluks
 		}
 		NOT = { army_tradition = 30 }
 	}
@@ -3590,8 +3587,7 @@ estate_nobles_mam_increase_army_professionalism = {
 		has_dlc = "Cradle of Civilization"
 		has_country_flag = mam_access_new_agendas_about_mamluks_flag
 		OR = {
-			tag = MAM
-			has_estate_privilege = estate_nobles_enlist_the_mamluks
+has_estate_privilege = estate_nobles_enlist_the_mamluks
 		}
 		army_professionalism = 0.1
 		NOT = { army_professionalism = 0.25 }

@@ -222,7 +222,6 @@ holy_roman_electors_monarchy = {
 		government = monarchy
 		is_elector = yes
 		is_emperor = no
-		NOT = { tag = HAB } #Archdukes
 	}
 }
 
@@ -644,7 +643,6 @@ holy_roman_electors_monarchy = {
 		government = monarchy
 		is_elector = yes
 		is_emperor = no
-		NOT = { tag = HAB } #Archdukes
 	}
 }
 

@@ -538,16 +538,6 @@ personal_union = {
 		}
 		modifier = pu_overlord_bonus
 	}
-	modifier_overlord = {
-		trigger = {
-			OR = {
-				tag = ENG
-				tag = GBR
-			}
-			overlord = { has_country_flag = ned_man_o_wars_from_pu_flag }
-		}
-		modifier = ned_man_o_war_modifier
-	}
 	modifier_subject = {
 		trigger = {
 			overlord = { has_government_attribute = personal_union_war_contribution }

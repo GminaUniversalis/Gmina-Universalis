@@ -908,58 +908,6 @@ country_event = {
 }
 
 # Last of the Mahican
-province_event = {
-	id = conquest_of_paradise.321
-	title = "colonial_nation.EVTNAME321"
-	desc = "colonial_nation.EVTDESC321"
-	picture = NATIVES_eventPicture
-	goto = root
-
-	trigger = {
-		has_dlc = "Conquest of Paradise"
-		is_colony = no
-		is_core = MAH
-		owner = {
-			NOT = { has_country_flag = last_of_the_mahican }
-			is_colonial_nation = yes
-		}
-		
-		MAH = {
-			exists = no
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 2000
-	}
-	
-	immediate = {
-		hidden_effect = {
-			owner = {
-				set_country_flag = last_of_the_mahican
-			}
-		}
-	}
-	
-	option = {
-		name = "colonial_nation.EVTOPTA321" # Offer them protection
-		ai_chance = { factor = 75 }
-		owner = {
-			add_mil_power = -10
-		}
-		add_province_modifier = {
-			name = "last_of_the_mahican"
-			duration = -1
-		}
-	}
-	option = {
-		name = "colonial_nation.EVTOPTB321" # Deny them
-		ai_chance = { factor = 25 }
-		owner = {
-			add_prestige = -15
-		}
-	}
-}
 
 # The PROVINCE Boys
 province_event = {

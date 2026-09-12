@@ -27,18 +27,6 @@ eyalet_effect = {
 			change_primary_culture = ROOT
 		}
 	}
-	if = {
-		limit = {
-			ROOT = { tag = TUR }
-		}
-		change_country_color = { color = { 169 220 165 } }
-	}
-	else_if = {
-		limit = {
-			ROOT = { tag = RUM }
-		}
-		change_country_color = { color = { 75 190 228 } }
-	}
 	else = {
 		change_country_color = { country = ROOT }
 	}
@@ -52,25 +40,6 @@ eyalet_name_effect = {
 }
 
 eyalet_dynamic_name_change_effect = {
-	if = { limit = { tag = HUN } eyalet_name_effect = { tag = EY0 } }
-	if = { limit = { tag = SLO } eyalet_name_effect = { tag = EY1 } }
-	if = { limit = { tag = TRA } eyalet_name_effect = { tag = EY2 } }
-	if = { limit = { tag = HAB } eyalet_name_effect = { tag = EY3 } }
-	if = { limit = { tag = MLO } eyalet_name_effect = { tag = EY4 } }
-	if = { limit = { tag = SIC } eyalet_name_effect = { tag = EY5 } }
-	if = { limit = { tag = TUS } eyalet_name_effect = { tag = EY6 } }
-	if = { limit = { tag = EGY } eyalet_name_effect = { tag = EY7 } }
-	if = { limit = { tag = TRP } eyalet_name_effect = { tag = EY8 } }
-	if = { limit = { tag = TUN } eyalet_name_effect = { tag = EY9 } }
-	if = { limit = { tag = ALG } eyalet_name_effect = { tag = E10 } }
-	if = { limit = { tag = GRA } eyalet_name_effect = { tag = E11 } }
-	if = { limit = { tag = PER } eyalet_name_effect = { tag = E12 } }
-	if = { limit = { tag = ADA } eyalet_name_effect = { tag = E13 } }
-	if = { limit = { tag = VEN } eyalet_name_effect = { tag = E14 } }
-	if = { limit = { tag = GEN } eyalet_name_effect = { tag = E15 } }
-	if = { limit = { tag = MOR } eyalet_name_effect = { tag = E16 } }
-	if = { limit = { tag = SAV } eyalet_name_effect = { tag = E17 } }
-	if = { limit = { tag = YEM } eyalet_name_effect = { tag = E17 } }
 }
 
 convert_special_subject_to_vassal = {

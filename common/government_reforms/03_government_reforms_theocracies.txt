@@ -285,13 +285,6 @@ proclaim_republic_reform = {
 		set_country_flag = populists_in_government
 		add_stability = -3
 		change_government = republic
-		if = {
-			limit = {
-				tag = AVE
-			}
-			hidden_effect = {
-			}
-		}
 	}
 	ai = {
 		factor = 0

@@ -8,78 +8,6 @@ namespace = special_regency_events
 normal_or_historical_nations = yes
 
 #Joao Takes the Crown
-country_event = { 
-	id = special_regency_events.1
-	title = special_regency_events.1.t
-	desc = special_regency_events.1.d
-	picture = {
-		trigger = {
-			has_dlc = "Mandate of Heaven"
-		}
-		picture = BAD_WITH_MONARCH_eventPicture
-	}
-	picture = {
-		trigger = {
-			NOT = { has_dlc = "Art of War" }
-		}
-		picture = KING_SICK_IN_BED_eventPicture
-	}
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = POR
-		has_regency = no
-		is_lesser_in_union = no
-		has_ruler = "Maria I"
-		is_year = 1792
-		NOT = { is_year = 1816 }
-		has_heir = "Joao"
-		heir_age = 15
-		NOT = { has_country_flag = queen_maria_illness }
-		government = monarchy
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-		modifier = {
-			factor = 0.5
-			NOT = { stability = 1 }
-		}
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_country_flag = queen_maria_illness
-		}
-	}
-	
-	option = { #push him to take the throne
-		name = special_regency_events.1.a
-		custom_tooltip = special_regency_events.1.tt
-		hidden_effect = {
-			exile_ruler_as = { name = por_exhiled_maria }
-		}
-		if = {
-			limit = {
-				has_dlc = "Rights of Man" 
-			}
-			hidden_effect = { add_ruler_personality = naive_personality }
-		}
-	}
-	
-	option = { #she can still rule
-		name = special_regency_events.1.b
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -5
-		}
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = -5
-		}
-	}
-}
 
 # Recovering the Château de Chenonceau
 # country_event = {
@@ -302,8 +230,7 @@ country_event = {
 		is_year = 1440
 		NOT = { is_year = 1459 }
 		OR = {
-			tag = DAI
-			primary_culture = vietnamese
+primary_culture = vietnamese
 			primary_culture = vietnamese_new
 		}
 		NOT = { has_global_flag = nguyen_thi_anh }
@@ -418,8 +345,7 @@ country_event = {
 		is_year = 1440
 		NOT = { is_year = 1459 }
 		OR = {
-			tag = DAI
-			primary_culture = vietnamese
+primary_culture = vietnamese
 			primary_culture = vietnamese_new
 		}
 		has_ruler = "Nguyen Thi Anh"
@@ -476,8 +402,7 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			tag = KOR
-			primary_culture = korean
+primary_culture = korean
 			primary_culture = korean_new
 		}
 		is_year = 1759

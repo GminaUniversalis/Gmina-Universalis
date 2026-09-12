@@ -5163,13 +5163,6 @@ country_event = {
 	option = {
 		trigger = { has_female_consort = yes }
 		name = consort_events.314.d
-		if = {
-			limit = {
-				religion = catholic 
-				exists = PAP
-			}
-			set_country_flag = desires_of_flesh_divorce
-		}
 		divorce_consort_effect = yes
 	}
 
@@ -5177,13 +5170,6 @@ country_event = {
 	option = {
 		trigger = { has_female_consort = no }
 		name = consort_events.314.e
-		if = {
-			limit = {
-				religion = catholic 
-				exists = PAP
-			}
-			set_country_flag = desires_of_flesh_divorce
-		}
 		divorce_consort_effect = yes
 	}
 }

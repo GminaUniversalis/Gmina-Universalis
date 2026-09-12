@@ -102,8 +102,7 @@ country_event = {
 		religion_group = christian
 		current_age = age_of_discovery
 		NOT = {
-			exists = BYZ
-			has_country_flag = received_byzantines
+has_country_flag = received_byzantines
 		}
 		151 = {
 			culture = turkish

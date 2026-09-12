@@ -1039,19 +1039,9 @@ exploration_ideas = {
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { has_institution = renaissance }
-			NOT = { tag = POR }
-			NOT = { tag = CAS }
-		}
-		modifier = {
-			factor = 0.1
 			capital_scope = {
 			}
 			NOT = { technology_group = high_american }
-		}
-		modifier = {
-			factor = 0.5
-			tag = ARA
 		}
 		modifier = {
 			factor = 0.1
@@ -1417,23 +1407,6 @@ expansion_ideas = {
 			OR = {
 				has_idea_group = exploration_ideas
 				is_colonial_nation = yes
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				tag = CAS
-				tag = POR
-				tag = SPA
-			}
-		}
-		modifier = {
-			factor = 10
-			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
-			tag = RUS
-			num_of_cities = 20
-			any_owned_province = {
-				has_empty_adjacent_province = yes
 			}
 		}
 		modifier = {
