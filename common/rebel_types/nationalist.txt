@@ -106,7 +106,6 @@ nationalist_rebels = {
 			factor = 0.4
 			owner = {
 				accepted_culture = ROOT
-				NOT = { has_country_modifier = the_mandate_of_heaven_lost }
 				OR = {
 					NOT = { has_dlc = "Mandate of Heaven" }
 					AND = {

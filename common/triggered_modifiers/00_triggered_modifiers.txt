@@ -28,24 +28,6 @@ submission_to_emperor = {
 }
 
 
-the_mandate_of_heaven_lost = {
-	potential = {
-		has_reform = celestial_empire
-		NOT = { has_dlc = "Mandate of Heaven" }
-	}
-
-	trigger = {
-		OR = {
-			NOT = { stability = 0 }
-			NOT = { legitimacy = 60 }
-			NOT = { num_of_cities = 20 }	
-		}
-	}
-
-	discipline = -0.1
-	stability_cost_modifier = 0.5
-	global_unrest = 10
-}
 
 ######################################
 # Defense of the Empire
@@ -97,18 +79,3 @@ ahmudan_system_defender = {
 }
 
 #Restored from vanilla: referenced by rebel types and needed for the planned Mandate of Heaven mechanic
-the_mandate_of_heaven = {
-	potential = {
-		has_reform = celestial_empire
-		NOT = { has_dlc = "Mandate of Heaven" }
-	}
-	
-	trigger = {	
-		stability = 0
-		legitimacy = 60
-		num_of_cities = 20
-	}
-
-	stability_cost_modifier = -0.10
-	global_unrest = -5
-}

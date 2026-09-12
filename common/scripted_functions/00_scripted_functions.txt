@@ -129,17 +129,6 @@ can_change_culture = {
 }
 
 can_move_capital = {
-	condition = {
-		tooltip = "NO_CAPITAL_MOVE_SHOGUN"
-		potential = {
-			FROM = {
-				has_reform = shogunate
-			}
-		}
-		allow = {
-			always = no
-		}
-	}
 }
 
 can_move_trade_port = {

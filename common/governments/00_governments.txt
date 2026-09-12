@@ -73,7 +73,6 @@ monarchy = {
 				parliament_vs_monarchy_reform
 				become_a_republic_reform
 				install_theocratic_government_reform
-				become_rev_republic_reform
 			}
 		}
 		growth_of_administration = { #7
@@ -305,7 +304,6 @@ republic = {
 		}
 		question_of_dictatorship = { #13
 			reforms = {
-				pirates_become_republic_reform
 				strengthen_executive_powers_reform
 				reinforce_republican_values_reform
 				federal_senate_reform

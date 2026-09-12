@@ -473,17 +473,8 @@ estate_nobles_restore_legitimacy = {
 			estate = estate_nobles
 			loyalty = 10
 		}
-		if = {
-			limit = {
-				has_reform = celestial_empire
-				has_dlc = "Mandate of Heaven"
-			}
-			add_prestige = 10
-		}
-		else = {
-			add_ruler_modifier = {
-				name = legitimacy_defended
-			}
+		add_ruler_modifier = {
+			name = legitimacy_defended
 		}
     }
     failing_effect = {

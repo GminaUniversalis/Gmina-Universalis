@@ -480,13 +480,6 @@ country_event = {
 		NOT = { has_reform = admiralty_reform }
 		# NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 		NOT = { has_country_modifier = just_had_revolution_bringing_someone_to_power_timer }
-		if = {
-			limit = {
-				has_reform = junior_revolutionary_republic_reform
-				has_country_flag = caretaker_revolutionary_government
-			}
-			republican_tradition = 50
-		}
 	}
 
 	immediate = {

@@ -72,14 +72,6 @@ propagate_religion_policy = {
 			}
 		}
 		modifier = {
-			factor = 10
-			religion = catholic
-			FROM = {
-				#has_government_attribute = can_spread_the_reformation
-				has_reform = reformer_state_reform
-			}
-		}
-		modifier = {
 			factor = 0.25
 			has_port = no
 		}

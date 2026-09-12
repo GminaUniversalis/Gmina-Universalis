@@ -14,12 +14,6 @@ on_startup = {
 		save_global_event_target_as = EmperorOfChina
 	}
 	}
-	else = {
-		if = {
-			limit = { has_reform = celestial_empire }
-			save_global_event_target_as = EmperorOfChina
-		}
-	}
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes
 }
@@ -1083,10 +1077,6 @@ on_new_term_election = {
 
 # country
 on_death_election = {
-	if = {
-		limit = { has_reform = presidential_despot_reform }
-		remove_government_reform = presidential_despot_reform
-	}
 	if = {
 		limit = {
 			has_government_attribute = is_pirate_republic_reform
@@ -4147,12 +4137,6 @@ on_leader_recruited = {
 # country
 on_general_recruited = {
 	on_general_recruited_effect = yes
-	if = {
-		limit = {
-			has_reform = sparapet_office
-		}
-		add_army_tradition = 0.25
-	}
 }
 
 # country
@@ -4741,10 +4725,6 @@ on_create_client_state = {
 
 # this = new target, from = previous target (both can be non-existent tag)
 on_change_revolution_target = {
-	if = {
-		limit = { has_reform = junior_revolutionary_republic_reform }
-		add_government_reform = revolutionary_republic_reform
-	}
 }
 
 # this = curia controller (enactor of the bull)

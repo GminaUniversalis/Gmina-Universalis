@@ -1338,51 +1338,6 @@ install_theocratic_government_reform = {
 	}
 }
 
-become_rev_republic_reform = {
-	icon = "become_rev_republic_reform"
-	allow_normal_conversion = yes
-
-	potential = { 
-		is_revolutionary = yes
-	}
-	
-	trigger = {
-		has_reform = revolutionary_empire_reform
-		if = {
-			limit = {
-				has_dlc = "Rights of Man"
-			}
-			faction_influence = {
-				faction = rr_girondists
-				influence = 75
-			}
-		}
-		else = {
-			NOT = { stability = 2 }
-		}
-	}
-
-	modifiers = {
-	}
-	effect = {
-		if = {
-			limit = { has_government_attribute = states_general_mechanic }
-			set_country_flag = had_states_general_mechanic
-		}
-		set_country_flag = populists_in_government
-		hidden_effect = {
-			change_government = republic
-		}
-		add_government_reform = revolutionary_republic_reform
-		if = {
-			limit = { has_country_flag = had_states_general_mechanic }
-			clr_country_flag = had_states_general_mechanic
-		}
-	}
-	ai = {
-		factor = 0
-	}
-}
 
 #Tier 7
 

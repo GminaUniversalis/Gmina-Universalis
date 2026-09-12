@@ -1416,99 +1416,11 @@ country_event = {
 				remove_revolution_from_province_effect = yes
 			}
 		}
-		if = {
-			limit = { has_reform = junior_revolutionary_republic_reform }
-			add_government_reform = noble_elite_reform
-			add_government_reform = parliamentary_reform
-			add_republican_tradition = -50
-		}
-		if = {
-			limit = { has_reform = revolutionary_empire_reform }
-			add_government_reform = autocracy_reform
-		}
 		hidden_effect = { log = "The Revolution has failed" }
 	}
 }
 
 
-country_event = {
-	id = center_of_revolution.3001
-	title = center_of_revolution.3000.name
-	desc = {
-		desc = center_of_revolution.3000.desc.last_rev
-		trigger = {
-			OR = {
-				has_country_flag = last_revolutionary_country
-				any_country = {
-					has_country_flag = last_revolutionary_country
-				}
-			}
-		}
-	}
-	desc = {
-		desc = center_of_revolution.3000.desc.no_last_rev
-		trigger = {
-			NOT = { has_country_flag = last_revolutionary_country }
-			NOT = {
-				any_country = {
-					has_country_flag = last_revolutionary_country
-				}
-			}
-			NOT = {
-				AND = {
-					had_global_flag = {
-						flag = first_revolution_center_spawned
-						days = 10950
-					}
-					revolution_target_exists = no
-					NOT = { years_since_dismantle_revolution = 0 }
-				}
-			}
-		}
-	}
-	desc = {
-		desc = center_of_revolution.3000.desc.never_rev
-		trigger = {
-			had_global_flag = {
-				flag = first_revolution_center_spawned
-				days = 10950
-			}
-			revolution_target_exists = no
-			NOT = { years_since_dismantle_revolution = 0 }
-		}
-	}
-	picture = FAILED_REVOLUTION_eventPicture
-	is_triggered_only = yes
-	#major = yes
-
-	
-	option = {
-		name = center_of_revolution.3000.A
-		trigger = {
-			is_revolutionary = no
-		}
-		custom_tooltip = center_of_revolution.3000.A.tt2
-		custom_tooltip = center_of_revolution.3000.A.tt
-	}
-	option = {
-		name = center_of_revolution.3000.B
-		trigger = {
-			is_revolutionary = yes
-		}
-		custom_tooltip = center_of_revolution.3000.A.tt2
-		custom_tooltip = center_of_revolution.3000.A.tt
-		if = {
-			limit = { has_reform = junior_revolutionary_republic_reform }
-			add_government_reform = noble_elite_reform
-			add_government_reform = parliamentary_reform
-			add_republican_tradition = -50
-		}
-		if = {
-			limit = { has_reform = revolutionary_empire_reform }
-			add_government_reform = autocracy_reform
-		}
-	}
-}
 
 
 ###Flavour Events relating to spread of Revolution
