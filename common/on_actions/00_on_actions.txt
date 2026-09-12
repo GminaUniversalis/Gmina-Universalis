@@ -4594,7 +4594,7 @@ on_trade_good_changed = {
 		if = {
 			limit = { 
 				trade_goods = gu_coal 
-				FROM = { economic_ideas = 3 }
+				owner = { economic_ideas = 3 }
 				has_manufactory_trigger = yes 
 				base_production = 2
 			}
