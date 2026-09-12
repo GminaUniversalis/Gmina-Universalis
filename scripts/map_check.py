@@ -96,10 +96,61 @@ def read_bmp_colours(path):
     return counts, width, rows
 
 
+VANILLA_DEFINITION = os.path.join(
+    "C:", os.sep, "Steam", "steamapps", "common", "Europa Universalis IV", "map", "definition.csv"
+)
+
+
+def read_vanilla_colours(path):
+    """{province_id: (r, g, b)} from the vanilla definition.csv, if it is where we expect it."""
+    if not os.path.exists(path):
+        return {}
+    out = {}
+    with open(path, "r", encoding="cp1252", errors="replace") as handle:
+        for line in handle:
+            parts = line.split(";")
+            if len(parts) >= 4 and parts[0].strip().isdigit() and parts[1].strip().isdigit():
+                out[int(parts[0])] = (int(parts[1]), int(parts[2]), int(parts[3]))
+    return out
+
+
+def free_ids(count, declared_ids, used_colours, max_provinces, vanilla):
+    """Suggest unused province ids with a colour that is free both in the csv and on the map."""
+    suggestions = []
+    taken = set(used_colours)
+    for province_id in range(1, max_provinces or 0):
+        if len(suggestions) >= count:
+            break
+        if province_id in declared_ids:
+            continue
+        colour = vanilla.get(province_id)
+        source = "vanilla"
+        if colour is None or colour in taken:
+            source = "generated"
+            colour = None
+            for red in range(1, 256):
+                candidate = (red, (province_id * 7) % 256, (province_id * 13) % 256)
+                if candidate not in taken:
+                    colour = candidate
+                    break
+        if colour is None:
+            continue
+        taken.add(colour)
+        suggestions.append((province_id, colour, source))
+    return suggestions
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--sort", action="store_true", help="rewrite definition.csv sorted by province id")
     parser.add_argument("--csv", help="write the full per-province report to this file")
+    parser.add_argument(
+        "--free",
+        nargs="?",
+        type=int,
+        const=20,
+        help="list N unused province ids with a free colour, ready to paste into definition.csv",
+    )
     args = parser.parse_args()
 
     definition_path = os.path.join(MAP_DIR, "definition.csv")
@@ -179,6 +230,16 @@ def main():
     print()
     print("ids >= max_provinces: %s" % (sorted(over_max) or "none"))
     print("unparsable lines: %s" % ([number for number, _ in broken] or "none"))
+
+    if args.free:
+        vanilla = read_vanilla_colours(VANILLA_DEFINITION)
+        used = set(by_colour) | set(colours)
+        print()
+        print("free province ids (colour taken from vanilla where that id exists and the colour is unused):")
+        if not vanilla:
+            print("    vanilla definition.csv not found at %s - colours are generated" % VANILLA_DEFINITION)
+        for province_id, rgb, source in free_ids(args.free, set(by_id), used, max_provinces, vanilla):
+            print("    %d;%d;%d;%d;NewProvince;x    # %s colour" % (province_id, rgb[0], rgb[1], rgb[2], source))
 
     if args.csv:
         with open(args.csv, "w", encoding="utf-8", newline="") as handle:

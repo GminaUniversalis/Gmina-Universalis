@@ -937,7 +937,6 @@ province;red;green;blue;x;x
 936;14;108;126;Wieprz;x
 937;142;110;173;Wieprz;x
 938;14;112;32;Wieprz;x
-939;143;114;79;Wieprz;x
 939;143;114;79;Rega;x
 940;15;116;126;Wieprz;x
 941;143;118;173;Wieprz;x
@@ -1253,7 +1252,6 @@ province;red;green;blue;x;x
 1251;2;200;250;Odra;x
 1252;3;220;250;Odra;x
 1253;4;250;250;Odra;x
-1253;4;250;250;Odra;x
 1254;5;200;200;Odra;x
 1255;6;200;250;Odra;x
 1256;7;220;250;Odra;x
@@ -1443,7 +1441,6 @@ province;red;green;blue;x;x
 1440;63;221;251;Wisła;x
 1441;64;251;251;Wisła;x
 1442;65;201;201;Wisła;x
-1443;66;201;251;Wisła;x
 1443;66;201;251;Prosna;x
 1444;67;221;251;Wisła;x
 1445;68;251;251;Wisła;x
@@ -1518,7 +1515,6 @@ province;red;green;blue;x;x
 1514;9;202;202;Bug;x
 1515;10;202;252;Bug;x
 1516;11;222;252;Bug;x
-1517;12;252;252;Bug;x
 1517;12;252;252;Prosna;x
 1518;13;202;202;Bug;x
 1519;14;202;252;Bug;x
@@ -1691,7 +1687,6 @@ province;red;green;blue;x;x
 1686;53;203;203;Mala Panew;x
 1687;54;203;253;Wieprz;x
 1688;55;223;253;Baryczx
-1689;56;253;253;Pisa;x
 1689;56;253;253;Prosna;x
 1690;57;203;203;Nysa Kłodzka;x
 1691;58;203;253;Bóbr;x
@@ -1719,7 +1714,6 @@ province;red;green;blue;x;x
 1713;80;253;253;Sund;x
 1714;81;203;203;Sund;x
 1715;82;203;253;Baltyk;x
-1716;83;223;253;Baltyk;x
 1716;83;223;253;Prosna;x
 1717;85;203;203;Baltyk;x
 1718;86;203;253;Baltyk;x
@@ -1923,7 +1917,6 @@ province;red;green;blue;x;x
 1916;33;0;244;Narew;x
 1917;34;0;248;Narew;x
 1918;35;0;232;Narew;x
-1919;36;0;236;Bug;x
 1919;36;0;236;Prosna;x
 1920;37;0;240;Narew;x
 1921;38;0;244;Narew;x
@@ -1982,7 +1975,6 @@ province;red;green;blue;x;x
 1974;215;110;173;Podkowa Lesna;x
 1975;105;225;255;Pilica;x
 1976;93;0;244;Zalew Szczecinski Wschod;x
-1977;94;0;248;MÃ¤laren;x
 1977;94;0;248;Pilica;x
 1978;95;0;232;Glowczyce;x
 1979;96;0;236;Leba;x
@@ -2006,9 +1998,7 @@ province;red;green;blue;x;x
 1997;114;0;248;Marki;x
 1998;115;0;232;Stryszawa;x
 1999;116;0;236;Myslenice;x
-2000;60;221;221;Qinghai Lake;x
 2000;60;221;221;Pilica;x
-2001;95;200;200;Siling Lake;x
 2001;95;200;200;Pilica;x
 2002;200;135;255;Piaski;x
 2003;120;2;232;Pilica;X
@@ -2143,7 +2133,6 @@ province;red;green;blue;x;x
 2132;119;138;144;San;x
 2133;118;126;240;San;x
 2134;119;120;192;San;x
-2135;118;130;80;San;x
 2135;118;130;80;Prosna;x
 2136;124;210;144;San;x
 2137;72;198;51;Wadowice;x
@@ -2152,7 +2141,6 @@ province;red;green;blue;x;x
 2140;238;254;148;San;x
 2141;107;218;111;San;x
 2142;84;80;128;San;x
-2143;190;53;53;San;x
 2143;190;53;53;Prosna;x
 2144;82;62;176;San;x
 2145;185;51;51;San;x
@@ -2191,7 +2179,6 @@ province;red;green;blue;x;x
 2178;90;172;96;Wisłok;x
 2179;91;188;224;Wisłok;x
 2180;79;246;240;Wisłok;x
-2181;93;216;64;Wisłok;x
 2181;93;216;64;Prosna;x
 2182;95;236;224;Wisłok;x
 2183;93;222;112;Wisłok;x
@@ -2482,7 +2469,6 @@ province;red;green;blue;x;x
 2468;189;221;145;Dmosin;x
 2469;126;1;95;City of Glowno;x
 2470;252;31;46;Strykow;x
-2471;1;246;246;Chott el-Jerid;x
 2471;1;246;246;Dunajec;x
 2472;252;131;46;Blizn;x
 2473;189;121;145;Wasniow;x
@@ -2965,7 +2951,6 @@ province;red;green;blue;x;x
 2950;32;218;173;Biskupice;x
 2951;236;57;116;Niepolomice;x
 2952;236;220;116;Lapanow;x
-2953;236;222;116;HjÃ¤lmaren;x
 2953;236;222;116;Dunajec;x
 2954;29;59;159;Nowa Slupia;x
 2955;107;121;191;Zebrzydowice;x
