@@ -2388,11 +2388,6 @@ on_thri_yearly_pulse = {
 		100 = republics.21
 		100 = republics.22
 		100 = republics.23
-		100 = republics.24
-		100 = republics.25
-		100 = republics.26
-		100 = republics.27
-		100 = republics.28
 		100 = republics.29
 		100 = republics.30
 		100 = republics.31
@@ -2682,8 +2677,6 @@ on_four_year_pulse = {
 		100 = revolutionary_republic_factions.9
 		
 		# Revolutionary Empires
-		100 = napoleon.1
-		100 = napoleon.2
 
 		# Pirate Factions
 		100 = pirates.11
