@@ -1148,3 +1148,31 @@ missions_available_scripted_trigger = {
 		#tag = KSH
 	}
 }
+
+#lore date check: true from $year$.$month$ onward. $next_year$ must be $year$ + 1.
+#Needed because check_variable is >=, so a plain year+month pair stays false in the early
+#months of every later year. clock_total_months on province 1500 is the alternative for durations.
+lore_date_reached = {
+	OR = {
+		1500 = {
+			check_variable = {
+				which = clock_year
+				value = $next_year$
+			}
+		}
+		AND = {
+			1500 = {
+				check_variable = {
+					which = clock_year
+					value = $year$
+				}
+			}
+			1500 = {
+				check_variable = {
+					which = clock_month
+					value = $month$
+				}
+			}
+		}
+	}
+}

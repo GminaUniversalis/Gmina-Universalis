@@ -424,3 +424,26 @@ on_country_creation = {
 		change_technology_group = ROOT
 	}
 }
+#clock watchdog - re-arm the lore clock if it ever stops ticking (events/gmina_clock.txt)
+on_yearly_pulse_2 = {
+	if = {
+		limit = {
+			ai = no
+			has_global_flag = clock_started
+			had_global_flag = {
+				flag = clock_alive
+				days = 400
+			}
+		}
+		clr_global_flag = clock_alive
+		set_global_flag = clock_alive
+		random_country = {
+			limit = {
+				tag = REB
+			}
+			country_event = {
+				id = clock.10
+			}
+		}
+	}
+}

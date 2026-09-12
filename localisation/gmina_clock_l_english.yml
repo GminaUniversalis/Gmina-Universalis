@@ -1,11 +1,11 @@
 ﻿l_english:
  show_year_loc:0 "[1500.clock_month_check] [1500.clock_year.GetValue]"
- clock.1.t:0 "I am year clock"
- clock.3.t:0 "I am month clock"
- clock.1.d:0 "§RYou shouldn't be here§!"
- clock.3.d:0 "§RYou shouldn't be here§!"
- clock.1.a:0 "GµUPCZE, NARUSZYµEŒ RÓWNOWAG‡ 9000 WYMIARÓW"
- clock.3.a:0 "GµUPCZE, NARUSZYµEŒ RÓWNOWAG‡ 9000 WYMIARÓW"
+ clock.2.t:0 "Clock Initialisation"
+ clock.2.d:0 "§RYou shouldn't be here§!"
+ clock.2.a:0 "GµUPCZE, NARUSZYµEŒ RÓWNOWAG‡ 9000 WYMIARÓW"
+ clock.10.t:0 "I am the clock"
+ clock.10.d:0 "§RYou shouldn't be here§!"
+ clock.10.a:0 "GµUPCZE, NARUSZYµEŒ RÓWNOWAG‡ 9000 WYMIARÓW"
 
  clock_in_decision_title:0 "Show Current Time"
  clock_in_decision_desc:0 "It shows our convetred time! Conversion rate is around 6 EU years to 1 IRL year so that way we avoid thrashing entire date system"

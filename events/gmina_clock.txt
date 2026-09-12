@@ -1,193 +1,172 @@
 namespace = clock
 
-#year clock
-country_event = {
-    id = clock.1
-	title = "clock.1.t"
-	desc = "clock.1.d"
-    is_triggered_only = yes
-	hidden = yes
-    
-    immediate = {
-
-        1500 = {
-            change_variable = {
-                which = clock_year
-                value = 1
-            }
-        }
-
-        clr_global_flag = clock_init_year
-        set_global_flag = clock_init_year
-        
-    }
-
-    option = {
-        name = "clock.1.a"
-    }
-}
-
-#month clock
-country_event = {
-    id = clock.3
-	title = "clock.3.t"
-	desc = "clock.3.d"
-    is_triggered_only = yes
-	hidden = yes
-    
-    immediate = {
-        
-        if = {
-            limit = {
-                1500 = {
-                    check_variable = {
-                        which = clock_month
-                        value = 12
-                    }
-                }
-                1500 = {
-                    NOT = {
-                        check_variable = {
-                            which = clock_month
-                            value = 13
-                        }
-                    }
-                }
-            }
-            1500 = {
-                subtract_variable = {
-                    which = clock_month
-                    value = 11
-                }
-            }
-            # 1500 = { #redundancy for year progression
-            #     change_variable = {
-            #         which = clock_year 
-            #         value = 1
-            #     }
-            # } 
-            # clr_global_flag = clock_init_year
-            # set_global_flag = clock_init_year
-        }
-        else_if = { #Redundancy
-            limit = {
-                1500 = {
-                    check_variable = {
-                        which = clock_month
-                        value = 13
-                    }
-                }
-                1500 = {
-                    NOT = {
-                        check_variable = {
-                            which = clock_month
-                            value = 14
-                        }
-                    }
-                }
-
-            }
-            1500 = {
-                subtract_variable = {
-                    which = clock_month
-                    value = 12
-                }
-            }
-
-        }
-        else = {
-            1500 = {
-                change_variable = {
-                    which = clock_month
-                    value = 1
-                }
-            }
-
-
-        }
-        
-        clr_global_flag = clock_init_month
-        set_global_flag = clock_init_month
-        
-    }
-
-    option = {
-        name = "clock.3.a"
-    }
-}
+# THE LORE CLOCK
+#
+# One hidden event on REB advances the lore date by a month and schedules the next tick:
+#   90 game days per lore month until game year 1500, 180 days from then on.
+# That mapping puts game 1444.11.11 at lore 1969.09 and game year 1500 at lore 1988, which is
+# where the fall of communism sits. Do NOT change those numbers - every dated event, institution
+# and price change in the mod is built on them.
+#
+# State lives on province 1500:
+#   clock_year          lore year
+#   clock_month         lore month, 1-12
+#   clock_total_months  monotonic counter since 1969.09, for date checks
+#
+# Date checks belong in lore_date_reached (common/scripted_triggers/gmina_scripted_triggers.txt),
+# never in a hand-written clock_year + clock_month pair.
+#
+# Failsafe: every tick re-stamps the global flag clock_alive. on_yearly_pulse_2 in
+# common/on_actions/zz_gmina_on_actions.txt re-arms the chain if it ever stops.
 
 #on_startup
 country_event = {
-    id = clock.2
-    title = "clock.2.t"
+	id = clock.2
+	title = "clock.2.t"
 	desc = "clock.2.d"
-    is_triggered_only = yes
+	is_triggered_only = yes
 	hidden = yes
-    fire_only_once = yes
+	fire_only_once = yes
 
-    immediate = {
-        if = {
-            limit = {
-                start_date = 1444.11.11
-            }
-            set_global_flag = clock_init_year
-            set_global_flag = clock_init_month
-        }
+	immediate = {
+		1500 = {
+			set_variable = {
+				which = clock_year
+				value = 1969
+			}
+			set_variable = {
+				which = clock_month
+				value = 9
+			}
+			set_variable = {
+				which = clock_total_months
+				value = 0
+			}
+		}
 
-        1500 = {
-            set_variable = {
-                which = clock_year
-                value = 1969
-            }
-        }
-        
-        1500 = {
-            set_variable = {
-                which = clock_month
-                value = 9
-            }
-        }
+		# Clock towers - legacy easter egg, see common/province_triggered_modifiers/clock.txt
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_1
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_2
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_3
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_4
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_5
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_6
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_7
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_8
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_9
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_10
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_11
+		}
+		random_province = {
+			add_province_triggered_modifier = clock_ptm_12
+		}
 
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_1
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_2
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_3
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_4
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_5
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_6
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_7
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_8
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_9
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_10
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_11
-        }
-        random_province = {
-            add_province_triggered_modifier = clock_ptm_12
-        }
+		set_global_flag = clock_started
+		clr_global_flag = clock_alive
+		set_global_flag = clock_alive
 
-    }
+		random_country = {
+			limit = {
+				tag = REB
+			}
+			country_event = {
+				id = clock.10
+				days = 90
+			}
+		}
+	}
 
-    option = {
+	option = {
+		name = "clock.2.a"
+	}
+}
 
-    }
+#one lore month, fired on REB by the previous tick
+country_event = {
+	id = clock.10
+	title = "clock.10.t"
+	desc = "clock.10.d"
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		1500 = {
+			change_variable = {
+				which = clock_total_months
+				value = 1
+			}
+			change_variable = {
+				which = clock_month
+				value = 1
+			}
+		}
+
+		#year rollover
+		if = {
+			limit = {
+				1500 = {
+					check_variable = {
+						which = clock_month
+						value = 13
+					}
+				}
+			}
+			1500 = {
+				subtract_variable = {
+					which = clock_month
+					value = 12
+				}
+				change_variable = {
+					which = clock_year
+					value = 1
+				}
+			}
+		}
+
+		#the clock is alive, see the watchdog in zz_gmina_on_actions.txt
+		clr_global_flag = clock_alive
+		set_global_flag = clock_alive
+
+		#schedule the next tick - faster while communism lasts
+		if = {
+			limit = {
+				NOT = { is_year = 1500 }
+			}
+			country_event = {
+				id = clock.10
+				days = 90
+			}
+		}
+		else = {
+			country_event = {
+				id = clock.10
+				days = 180
+			}
+		}
+	}
+
+	option = {
+		name = "clock.10.a"
+	}
 }
