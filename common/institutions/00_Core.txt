@@ -2184,7 +2184,6 @@ industrialization = {
 			potential = {
 				has_dlc = "Rule Britannia"
 				OR = {
-					trade_goods = coal
 					has_latent_trade_goods = coal
 				}
 				industrialization_origin = {
@@ -2203,7 +2202,6 @@ industrialization = {
 			potential = {
 				has_dlc = "Rule Britannia"
 				OR = {
-					trade_goods = coal
 					has_latent_trade_goods = coal
 				}
 				industrialization_origin = {

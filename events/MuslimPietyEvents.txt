@@ -1314,7 +1314,6 @@ country_event = {
 		piety = 0.5
 		OR = {
 			has_global_flag = triangle_happened
-			tobacco = 1
 		}
 		any_owned_province = {
 			NOT = { has_province_modifier = coffee_house_turmoil }

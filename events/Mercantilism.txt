@@ -55,7 +55,6 @@ country_event = {
 			capital_scope = {
 				OR = {
 					continent = north_america
-					continent = south_america
 					continent = new_world
 				}
 			}
@@ -70,7 +69,6 @@ country_event = {
 				capital_scope = {
 					OR = {
 						continent = north_america
-						continent = south_america
 						continent = new_world
 					}
 				}
@@ -91,7 +89,6 @@ country_event = {
 					capital_scope = {
 						OR = {
 							continent = north_america
-							continent = south_america
 							continent = new_world
 						}
 					}
@@ -105,7 +102,6 @@ country_event = {
 					capital_scope = {
 						OR = {
 							continent = north_america
-							continent = south_america
 							continent = new_world
 						}
 					}

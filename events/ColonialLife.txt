@@ -412,24 +412,6 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 2000
-		modifier = {
-			factor = 0.75
-			owner = {
-				tobacco = 2
-			}
-		}
-		modifier = {
-			factor = 0.75
-			owner = {
-				tobacco = 3
-			}
-		}
-		modifier = {
-			factor = 0.75
-			owner = {
-				tobacco = 4
-			}
-		}
 	}
 	
 	immediate = {
@@ -887,7 +869,6 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				continent = north_america
-				continent = south_america
 			}
 			has_empty_adjacent_province = yes
 		}
@@ -911,7 +892,6 @@ country_event = {
 			limit = {
 				OR = {
 					continent = north_america
-					continent = south_america
 				}
 				has_empty_adjacent_province = yes
 			}

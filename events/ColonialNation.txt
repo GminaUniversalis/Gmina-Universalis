@@ -1091,27 +1091,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				grain = 3
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				grain = 5
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				grain = 7
-			}
-		}
 	}
 	
 	option = {
@@ -2004,27 +1983,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				ivory = 3
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				ivory = 5
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				ivory = 7
-			}
-		}
 	}
 	
 	option = {
@@ -2095,27 +2053,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				tea = 3
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				tea = 5
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				tea = 7
-			}
-		}
 	}
 	
 	option = {
@@ -2186,27 +2123,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				chinaware = 3
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				chinaware = 5
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				chinaware = 7
-			}
-		}
 	}
 	
 	option = {
@@ -2277,27 +2193,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				spices = 3
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				spices = 5
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				spices = 7
-			}
-		}
 	}
 	
 	option = {
@@ -2458,27 +2353,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				cotton = 3
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				cotton = 5
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				cotton = 7
-			}
-		}
 	}
 	
 	option = {
@@ -2640,27 +2514,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				tobacco = 3
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				tobacco = 5
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				tobacco = 7
-			}
-		}
 	}
 	
 	option = {
@@ -2731,27 +2584,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				cocoa = 3
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				cocoa = 5
-			}
-		}
-		modifier = {
-			factor = 1.25
-			any_subject_country = {
-				is_colonial_nation_of = ROOT
-				cocoa = 7
-			}
-		}
 	}
 	
 	option = {
@@ -2819,18 +2651,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			grain = 3
-		}
-		modifier = {
-			factor = 1.25
-			grain = 5
-		}
-		modifier = {
-			factor = 1.25
-			grain = 7
-		}
 	}
 	
 	option = {
@@ -3689,18 +3509,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			ivory = 3
-		}
-		modifier = {
-			factor = 1.25
-			ivory = 5
-		}
-		modifier = {
-			factor = 1.25
-			ivory = 7
-		}
 	}
 	
 	option = {
@@ -3776,18 +3584,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			tea = 3
-		}
-		modifier = {
-			factor = 1.25
-			tea = 5
-		}
-		modifier = {
-			factor = 1.25
-			tea = 7
-		}
 	}
 	
 	option = {
@@ -3863,18 +3659,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			chinaware = 3
-		}
-		modifier = {
-			factor = 1.25
-			chinaware = 5
-		}
-		modifier = {
-			factor = 1.25
-			chinaware = 7
-		}
 	}
 	
 	option = {
@@ -3950,18 +3734,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			spices = 3
-		}
-		modifier = {
-			factor = 1.25
-			spices = 5
-		}
-		modifier = {
-			factor = 1.25
-			spices = 7
-		}
 	}
 	
 	option = {
@@ -4124,18 +3896,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			cotton = 3
-		}
-		modifier = {
-			factor = 1.25
-			cotton = 5
-		}
-		modifier = {
-			factor = 1.25
-			cotton = 7
-		}
 	}
 	
 	option = {
@@ -4298,18 +4058,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			tobacco = 3
-		}
-		modifier = {
-			factor = 1.25
-			tobacco = 5
-		}
-		modifier = {
-			factor = 1.25
-			tobacco = 7
-		}
 	}
 	
 	option = {
@@ -4386,18 +4134,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			cocoa = 3
-		}
-		modifier = {
-			factor = 1.25
-			cocoa = 5
-		}
-		modifier = {
-			factor = 1.25
-			cocoa = 7
-		}
 	}
 	
 	option = {

@@ -429,7 +429,6 @@ country_event = {
 		}
 		capital_scope = {
 			NOT = { continent = north_america }
-			NOT = { continent = south_america }
 			NOT = { continent = new_world }
 		}
 		NOT = { has_country_modifier = naval_improvements }

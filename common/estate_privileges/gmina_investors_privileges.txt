@@ -868,7 +868,7 @@ estate_investors_rapid_modernisation = {
 	}
 	penalties = {
 		can_not_declare_war = yes
-		unrest = 3
+		global_unrest = 3
 		inflation_reduction = -0.1
 		stability_cost_modifier = 0.5
 	}

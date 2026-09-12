@@ -8137,7 +8137,6 @@ country_event = {
 			is_colony = yes
 			OR = {
 				continent = north_america
-				continent = south_america
 				continent = new_world
 			}
 		}
@@ -12094,10 +12093,6 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 2000
-		modifier = {
-			factor = 0.9
-			region = australia_region
-		}
 	}
 	
 	immediate = {
@@ -12720,7 +12715,6 @@ country_event = {
 		OR = {
 			capital_scope = {
 				NOT = { continent = north_america }
-				NOT = { continent = south_america }
 				NOT = { continent = new_world }
 			}
 			is_former_colonial_nation = yes

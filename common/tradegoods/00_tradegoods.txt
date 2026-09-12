@@ -41,10 +41,6 @@ gold = {
 			normal_or_historical_nations = no
 		}
 		modifier = {
-			factor = 3.5
-			region = peru_region
-		}
-		modifier = {
 			factor = 2
 			FROM = {
 				OR = {

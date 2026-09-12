@@ -126,7 +126,6 @@ vodka_of_the_crown_reform = {
 				OR = {
 					region = podlasie_region
 					region = lubelskie_region
-					region = podkarpacie_region
 				}
 			}
 

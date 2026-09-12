@@ -8717,7 +8717,6 @@ estate_nobles_build_manufactory_in_y = {
 									trade_goods = gu_stone
 									trade_goods = gu_pigs
 									trade_goods = gu_fruits
-									trade_goods = cloves
 									trade_goods = fur
 									trade_goods = gu_sulfur
 								}
@@ -9330,7 +9329,6 @@ estate_burghers_build_manufactory_in_y = {
 									trade_goods = gu_stone
 									trade_goods = gu_pigs
 									trade_goods = gu_fruits
-									trade_goods = cloves
 									trade_goods = fur
 									trade_goods = gu_sulfur
 								}
@@ -9946,7 +9944,6 @@ estate_church_build_manufactory_in_y = {
 									trade_goods = gu_stone
 									trade_goods = gu_pigs
 									trade_goods = gu_fruits
-									trade_goods = cloves
 									trade_goods = fur
 									trade_goods = gu_sulfur
 								}

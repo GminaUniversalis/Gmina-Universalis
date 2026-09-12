@@ -2655,7 +2655,6 @@ estate_nobles_annex_subject = {
 								NOT = { 
 									OR = {
 										continent = north_america 
-										continent = south_america 
 									}
 								}
 							}

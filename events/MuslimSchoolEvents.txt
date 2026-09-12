@@ -1814,13 +1814,6 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = 1.5
-				NOT = { has_global_flag = neo_sufism }
-				capital_scope = {
-					continent = asia
-				}
-			}
-			modifier = {
 				factor = 0.25
 				has_global_flag = neo_sufism
 			}

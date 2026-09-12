@@ -1307,7 +1307,6 @@ country_event = {
 			capital_scope = {
 				NOT = { continent = new_world }
 				NOT = { continent = north_america }
-				NOT = { continent = south_america }
 			}
 		}
 		desc = institution_events.20.da
@@ -1318,7 +1317,6 @@ country_event = {
 				OR = {
 					continent = new_world
 					continent = north_america
-					continent = south_america
 				}
 			}
 		}
@@ -1344,13 +1342,11 @@ country_event = {
 		any_owned_province = {
 			NOT = { continent = new_world }
 			NOT = { continent = north_america }
-			NOT = { continent = south_america }
 		}
 		any_owned_province = {
 			OR = {
 				continent = new_world
 				continent = north_america
-				continent = south_america
 			}
 		}
 	}
@@ -1372,7 +1368,6 @@ country_event = {
 						}
 						NOT = { continent = new_world }
 						NOT = { continent = north_america }
-						NOT = { continent = south_america }
 					}
 					save_event_target_as = institution_province
 				}
@@ -1401,15 +1396,6 @@ country_event = {
 		goto = institution_province
 		ai_chance = {
 			factor = 90
-			modifier = {
-				factor = 0
-				NOT = { capital_scope = { continent = new_world } }
-				NOT = { capital_scope = { continent = north_america } }
-				NOT = { capital_scope = { continent = south_america } }
-				any_neighbor_country = {
-					has_institution = new_world_i #Better to wait for natural spread
-				}
-			}
 		}
 		add_years_of_income = -0.75
 		add_dip_power = -100
@@ -1428,7 +1414,6 @@ country_event = {
 					}
 					NOT = { continent = new_world }
 					NOT = { continent = north_america }
-					NOT = { continent = south_america }
 				}
 				add_institution_embracement = {
 					which = new_world_i
@@ -1462,7 +1447,6 @@ country_event = {
 					OR = {
 						continent = new_world
 						continent = north_america
-						continent = south_america
 					}
 				}
 			}
@@ -1514,7 +1498,6 @@ country_event = {
 				any_trade_node_member_province = {
 					owned_by = ROOT
 					NOT = { continent = europe }
-					NOT = { continent = africa }
 					NOT = { new_world_i = 100 }
 					OR = {
 						trade_goods = gu_wheat

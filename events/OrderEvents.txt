@@ -21,7 +21,6 @@ country_event = {
 			any_owned_province = {
 				OR = {
 					continent = north_america
-					continent = south_america
 					continent = new_world
 				}
 				holy_order = dominican_order
@@ -41,7 +40,6 @@ country_event = {
 					any_owned_province = {
 						OR = {
 							continent = north_america
-							continent = south_america
 							continent = new_world
 						}
 						holy_order = dominican_order
@@ -51,7 +49,6 @@ country_event = {
 					limit = {
 						OR = {
 							continent = north_america
-							continent = south_america
 							continent = new_world
 						}
 						holy_order = dominican_order
@@ -65,7 +62,6 @@ country_event = {
 						limit = {
 							OR = {
 								continent = north_america
-								continent = south_america
 								continent = new_world
 							}
 							holy_order = dominican_order

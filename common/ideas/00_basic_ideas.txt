@@ -1028,29 +1028,6 @@ exploration_ideas = {
 			}
 		}
 		modifier = {
-			factor = 0.5
-			NOT = {
-				any_owned_province = {
-					has_port = yes
-					sea_zone = {
-						OR = {
-							NOT = { region = mediterrenean_region }
-							province_id = 1293 #Gibraltar
-							province_id = 1294 #Almeria
-						}
-						NOT = { area = red_sea_area }
-						NOT = { area = baltic_area }
-					}
-				}
-			}
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				} 
-			}
-		}
-		modifier = {
 			factor = 0.1
 			NOT = { num_of_ports = 3 }
 			NOT = { 
@@ -1069,12 +1046,6 @@ exploration_ideas = {
 		modifier = {
 			factor = 0.1
 			capital_scope = {
-				NOT = {
-					region = france_region
-					region = iberia_region
-					region = british_isles_region
-					region = low_countries_region
-				}
 			}
 			NOT = { technology_group = high_american }
 		}
@@ -1086,9 +1057,6 @@ exploration_ideas = {
 			factor = 0.1
 			NOT = { is_year = 1490 }
 			capital_scope = {
-				NOT = {
-					region = iberia_region
-				}
 			}
 		}
 		modifier = {

@@ -1677,7 +1677,7 @@ country_decisions = {
 			NOT = { has_country_flag = hide_all_formables }
 			OR = {
 				capital_scope = {
-					region = zachodni_pomorskie_region
+					region = zachodnio_pomorskie_region
 				}
 				primary_culture = zachodniopomorska
 				primary_culture = srodkowopomorska

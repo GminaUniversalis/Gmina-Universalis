@@ -2781,8 +2781,6 @@ estate_burghers_great_works_of_iran = {
 				has_terrain = drylands
 			}
 			OR = {
-				region = persia_region
-				region = khorasan_region
 			}
 		}
 	}
@@ -2794,8 +2792,6 @@ estate_burghers_great_works_of_iran = {
 			limit = {
 				has_terrain = mountain
 				OR = {
-					region = persia_region
-					region = khorasan_region
 				}
 			}
 			add_province_modifier = {
@@ -2807,8 +2803,6 @@ estate_burghers_great_works_of_iran = {
 			limit = {
 				has_terrain = highlands
 				OR = {
-					region = persia_region
-					region = khorasan_region
 				}
 			}
 			add_province_modifier = {
@@ -2820,8 +2814,6 @@ estate_burghers_great_works_of_iran = {
 			limit = {
 				has_terrain = desert
 				OR = {
-					region = persia_region
-					region = khorasan_region
 				}
 			}
 			add_province_modifier = {
@@ -2833,8 +2825,6 @@ estate_burghers_great_works_of_iran = {
 			limit = {
 				has_terrain = drylands
 				OR = {
-					region = persia_region
-					region = khorasan_region
 				}
 			}
 			add_province_modifier = {

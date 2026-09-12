@@ -383,7 +383,6 @@ province_event = {
 		NOT = { has_province_modifier = religious_migration }
 		OR = {
 			continent = north_america
-			continent = south_america
 			continent = new_world
 		}
 		owner = {
@@ -839,7 +838,6 @@ province_event = {
 		is_colony = yes
 		OR = {
 			continent = north_america
-			continent = south_america
 		}
 		owner = {
 			has_country_modifier = the_societas_jesu
@@ -891,10 +889,6 @@ province_event = {
 	trigger = {
 		is_colony = yes
 		OR = {
-			continent = asia
-			continent = africa
-			continent = south_america
-			continent = oceania
 		}
 		NOT = {
 			owner = {
