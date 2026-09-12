@@ -152,23 +152,19 @@ renegade_sultan_son_rebels = {
 		}
 		if = {
 			limit = { has_disaster = internal_conflicts }
-			country_event = { id = internal_conflicts.8 }
 			end_disaster = internal_conflicts
 		}
 		if = {
 			limit = { has_disaster = castilian_civil_war }
 			set_country_flag = cas_civil_war_rebels_won
-			country_event = { id = castilian_civil_war.100 }
 			end_disaster = castilian_civil_war
 		}
 		if = {
 			limit = { has_disaster = time_of_troubles }
-			country_event = { id = time_of_troubles.10 }
 			end_disaster = time_of_troubles
 		}
 		if = {
 			limit = { has_disaster = english_civil_war }
-			country_event = { id = english_civil_war.100 }
 			end_disaster = english_civil_war
 		}
 		if = {
@@ -177,9 +173,6 @@ renegade_sultan_son_rebels = {
 		}
 		if = {
 			limit = { is_eyalet_trigger = yes }
-			country_event = {
-				id = flavor_tur.998
-			}
 		}
 	}
 }

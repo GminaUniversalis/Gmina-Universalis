@@ -86,8 +86,6 @@ court_and_country = {
 	on_end = court_and_country_events.100
 	
 	on_monthly = {
-		events = {
-		}
 		random_events = {
 			1000 = 0
 			50 = court_and_country_events.2 #

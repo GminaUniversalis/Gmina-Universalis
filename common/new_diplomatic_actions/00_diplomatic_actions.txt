@@ -267,9 +267,6 @@ sell_indulgence = {
 		FROM = {
 			add_stability = 1
 			add_prestige = 10
-			country_event = {
-				id = flavor_rig.5
-			}
 		}
 		change_variable = {
 			which = sold_indulgences
@@ -2213,9 +2210,6 @@ request_access_to_modern_ideas = {
 			add_government_power = { mechanic_type = russian_modernization_mechanic power_type = russian_modernization value = 0.5 }
 		}
 		FROM = {
-			country_event = {
-				id = flavor_rus.294
-			}
 		}
 	}
 	on_decline = {
@@ -2503,9 +2497,6 @@ share_modern_ideas = {
 			FROM = { add_government_power = { mechanic_type = russian_modernization_mechanic power_type = russian_modernization value = 0.5 } }
 		}
 		FROM = {
-			country_event = {
-				id = flavor_rus.297
-			}
 		}
 	}
 	on_decline = {
@@ -3720,9 +3711,6 @@ elevate_influenced_country_to_vassal = {
 			value = 1
 		}
 		from = {
-			country_event = {
-				id = persian_influence_events.100
-			}
 		}
 		if = {
 			limit = { has_country_flag = improved_elevation_effect }
@@ -4446,9 +4434,6 @@ invite_to_zoroastrian_community = {
 		}
 		FROM = { 
 			change_religion = root 
-			country_event = {
-				id = flavor_per.72
-			}
 		}
 	}
 	on_decline = {

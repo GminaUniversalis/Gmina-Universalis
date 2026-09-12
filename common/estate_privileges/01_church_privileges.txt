@@ -1291,7 +1291,6 @@ estate_church_monopoly_of_slaves = {
 		}
 	}
 	on_cooldown_expires = {
-		country_event = { id = monopoly_privileges.11 }
 	}
 	ai_will_do = {
 		factor = 0

@@ -100,8 +100,5 @@ coup_attempt_disaster = {
 	on_end = coup_in_palace_events.6
 	
 	on_monthly = {
-		events = {
-			
-		}
 	}
 }

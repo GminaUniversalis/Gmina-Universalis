@@ -111,8 +111,6 @@ estate_nobility_disaster = {
 		trade_efficiency = -0.25
 	}
 
-	on_start = estate_disasters.1
-	on_end = estate_disasters.2
 	
 	on_monthly = {
 	}

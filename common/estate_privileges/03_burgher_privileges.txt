@@ -3072,7 +3072,6 @@ estate_burghers_monopoly_of_coffee = {
 		}
 	}
 	on_cooldown_expires = {
-		country_event = { id = flavor_mam.116 }
 	}
 	ai_will_do = { #having the AI use these could lead to an unstoppable downwards spiral if it can't work out how to get rid of them
 		factor = 0

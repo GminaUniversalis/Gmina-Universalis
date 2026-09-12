@@ -246,12 +246,9 @@ revolution = {
 	}
 	
 	
-	on_start = revolution.1
-	on_end = revolution.9
 	
 	on_monthly = {
 		events = { #Revolution for different nations
-			revolution.10 #Generic
 #			revolution.15 #France (non-monarchy)
 #			flavor_rus.2000 #Russia
 #			revolution.31 #Spain
@@ -266,21 +263,7 @@ revolution = {
 		}
 		random_events = { 
 			1000 = 0
-			100 = revolution.2
-			100 = revolution.3
-			100 = revolution.4
-			100 = revolution.5
-			100 = revolution.6
-			100 = revolution.7
-			100 = revolution.8
 			100 = center_of_revolution.1
-			100 = french_revolution.10 #Revolutionary Republic - Manpower Drain
-			100 = french_revolution.11 #Revolutionary Republic - War Exhaustion
-			100 = french_revolution.12 #Revolutionary Republic - Financial Mismanagement
-			100 = french_revolution.13 #Revolutionary Republic - National Debt
-			100 = french_revolution.14 #Revolutionary Republic - Halting Revolution
-			100 = french_revolution.15 #Revolutionary Republic - Instability
-			100 = french_revolution.16 #Revolutionary Republic - Declining Popularity
 		}
 	}
 }

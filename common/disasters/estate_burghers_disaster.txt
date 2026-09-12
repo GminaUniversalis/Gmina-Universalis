@@ -114,8 +114,6 @@ estate_burghers_disaster = {
 		prestige = -1
 	}
 
-	on_start = estate_disasters.5
-	on_end = estate_disasters.6
 	
 	on_monthly = {
 	}

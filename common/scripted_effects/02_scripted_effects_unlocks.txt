@@ -405,9 +405,6 @@ enable_cult_for_heirs = {
 			limit = {
 				has_heir = yes
 			}
-			country_event = {
-				id = fetishist_flavor.600
-			}
 		}
 	}
 }
@@ -425,9 +422,6 @@ enable_cult_for_heirs_mission = {
 		if = {
 			limit = {
 				has_heir = yes
-			}
-			country_event = {
-				id = fetishist_flavor.600
 			}
 		}
 	}
@@ -469,9 +463,6 @@ disable_cult_for_heirs = {
 unlock_cult_through_selection = {
 	custom_tooltip = unlock_cult_through_selection_tt
 	hidden_effect = {
-		country_event = {
-			id = fetishist_flavor.601
-		}
 	}
 }
 
@@ -527,9 +518,6 @@ enable_primary_cult = {
 	custom_tooltip = enable_primary_cult_tt
 	hidden_effect = {
 		set_country_flag = uses_primary_cult
-		country_event = {
-			id = fetishist_flavor.602
-		}
 	}
 }
 

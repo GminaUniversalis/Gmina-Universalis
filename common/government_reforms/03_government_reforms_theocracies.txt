@@ -223,9 +223,6 @@ education_of_the_bishop_reform = {
 	}
 	effect = {
 		hidden_effect = {
-			country_event = {
-				id = flavor_sca.2
-			}
 		}
 	}
 	removed_effect = {
@@ -293,9 +290,6 @@ proclaim_republic_reform = {
 				tag = AVE
 			}
 			hidden_effect = {
-				country_event = {
-					id = flavor_gbr.20
-				}
 			}
 		}
 	}

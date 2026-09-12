@@ -123,8 +123,6 @@ aspiration_for_liberty = {
 	on_end = aspiration_for_liberty.4
 	
 	on_monthly = {
-		events = {
-		}
 		random_events = { 
 			1000 = 0
 			100 = aspiration_for_liberty.2

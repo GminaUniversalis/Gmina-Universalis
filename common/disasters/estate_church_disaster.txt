@@ -113,8 +113,6 @@ estate_church_disaster = {
 		tolerance_heathen = -2
 	}
 
-	on_start = estate_disasters.3
-	on_end = estate_disasters.4
 	
 	on_monthly = {
 	}

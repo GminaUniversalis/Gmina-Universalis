@@ -1213,7 +1213,6 @@ states_general_reform = {
 	}
 
 	removed_effect = {
-		country_event = { id = dutch_republic.33 }
 	}
 
 	conditional = {
@@ -1378,7 +1377,6 @@ become_rev_republic_reform = {
 		add_government_reform = revolutionary_republic_reform
 		if = {
 			limit = { has_country_flag = had_states_general_mechanic }
-			country_event = { id = dutch_republic.33 }
 			clr_country_flag = had_states_general_mechanic
 		}
 	}

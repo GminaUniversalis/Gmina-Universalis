@@ -63,20 +63,10 @@ internal_conflicts = {
 	}	
 	
 	
-	on_start = internal_conflicts.1
-	on_end = internal_conflicts.8
 	
 	on_monthly = {
-		events = {
-		}
 		random_events = { 
 			1000 = 0
-			100 = internal_conflicts.2
-			100 = internal_conflicts.3
-			100 = internal_conflicts.4
-			100 = internal_conflicts.5
-			100 = internal_conflicts.6
-			100 = internal_conflicts.7
 		
 		}
 	}

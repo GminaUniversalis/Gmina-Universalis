@@ -167,7 +167,6 @@ anti_tax_rebels = {
 		if = {
 			limit = { has_disaster = castilian_civil_war }
 			set_country_flag = cas_civil_war_rebels_won
-			country_event = { id = castilian_civil_war.100 }
 			end_disaster = castilian_civil_war
 		}
 		if = {
@@ -179,7 +178,6 @@ anti_tax_rebels = {
 				is_part_of_hre = yes
 				NOT = { has_reform = peasants_republic }
 			}
-			country_event = { id = great_peasant_war.2 }
 			hidden_effect = {
 				1 = {
 					change_variable = {

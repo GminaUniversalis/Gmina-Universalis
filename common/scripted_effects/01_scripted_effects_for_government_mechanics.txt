@@ -347,9 +347,6 @@ complete_artwork_effect = {
 	complete_artwork_effect_$type$ = yes
 	if = {
 		limit = { has_country_modifier = promoting_art }
-		country_event = {
-			id = promoting_art_events.1
-		}
 	}
 	hidden_effect = {
 		set_variable = {

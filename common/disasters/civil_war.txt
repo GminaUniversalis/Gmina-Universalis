@@ -114,11 +114,6 @@ civil_war = {
 	on_end = civil_war.100
 	
 	on_monthly = {
-		events = {
-			flavor_lxa.1
-			flavor_lxa.2
-			flavor_lxa.3
-		}
 		random_events = { 
 			1000 = 0
 			100 = civil_war.2

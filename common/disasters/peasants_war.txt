@@ -116,9 +116,6 @@ peasant_war = {
 	on_end = peasants_war.6
 	
 	on_monthly = {
-		events = {
-	
-		}
 		random_events = { 
 			1000 = 0
 			100 = peasants_war.2
