@@ -2331,8 +2331,6 @@ textile = {
 	manufactory = {
 		wool
 		cloth
-		silk
-		dyes
 	}
 	onmap = yes
 	on_built = {
@@ -2369,12 +2367,7 @@ textile = {
 
 plantations = {
 	manufactory = {
-		coffee
-		cotton
 		sugar
-		tobacco
-		tea
-		cocoa
 		gu_fruits
 		gu_hemp
 	}
@@ -2413,9 +2406,6 @@ plantations = {
 
 tradecompany = {
 	manufactory = {
-		ivory
-		spices
-		cloves
 		fur
 		gu_mushrooms
 		gu_stone
@@ -2464,8 +2454,6 @@ tradecompany = {
 
 farm_estate = {
 	manufactory = {
-		grain
-		livestock
 		wine
 		gu_vegetables
 		gu_dairy
@@ -2532,10 +2520,7 @@ farm_estate = {
 mills = {
 	manufactory = {
 		paper
-		gems
-		tropical_wood
 		glass
-		chinaware
 		gu_lumber
 		gu_amber
 		gu_ceramics
@@ -2577,7 +2562,7 @@ mills = {
 
 furnace = {
 	manufactory = {
-		coal
+		gu_coal
 	}
 
 	potential = {
