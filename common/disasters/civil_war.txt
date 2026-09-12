@@ -29,32 +29,14 @@ civil_war = {
 		has_any_disaster = no
 		has_regency = no
 		average_home_autonomy = 30
-		if = {
-			limit = {
-				has_reform = celestial_empire
-				has_dlc = "Mandate of Heaven"
-			}
-			NOT = { imperial_mandate = 50 }
-			else = {
-				NOT = { legitimacy_or_horde_unity = 50 }
-			}
-		}
+		NOT = { legitimacy_or_horde_unity = 50 }
 	}
 	
 	
 	can_stop = {
 		OR = {
 			has_any_disaster = yes
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-					has_reform = celestial_empire
-				}
-				imperial_mandate = 75
-				else = {
-					legitimacy_or_horde_unity = 75
-				}
-			}
+			legitimacy_or_horde_unity = 75
 			has_regency = yes
 		}
 	}

@@ -44,17 +44,8 @@ nationalist_rebels = {
 					culture_group = ROOT
 					primary_culture = ROOT
 				}
-				OR = {
-					NOT = { has_reform = celestial_empire }
-					has_country_modifier = the_mandate_of_heaven
-					AND = {
-						has_reform = celestial_empire
-						has_dlc = "Mandate of Heaven"
-						imperial_mandate = 80
-					}
-				}
 			}
-			tolerance_to_this = 0			
+			tolerance_to_this = 0
 	 	}
 		modifier = {
 			factor = 0.01
@@ -62,35 +53,6 @@ nationalist_rebels = {
 			has_owner_religion = no
 			owner = { has_disaster = french_wars_of_religion }			
 	 	}
-		modifier = {
-			factor = 0.01
-			owner = {
-				culture_group = ROOT
-				has_reform = celestial_empire
-				OR = {
-					has_country_modifier = the_mandate_of_heaven
-					AND = {
-						has_dlc = "Mandate of Heaven"
-						imperial_mandate = 80
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				NOT = { primary_culture = ROOT }
-				has_reform = celestial_empire
-				OR = {
-					has_country_modifier = the_mandate_of_heaven_lost
-					has_country_modifier = lost_mandate_of_heaven
-					AND = {
-						has_dlc = "Mandate of Heaven"
-						NOT = { imperial_mandate = 50 } 
-					}
-				}
-			}
-		}
 		modifier = {
 			factor = 10
 			nationalism_debug = 1
@@ -150,11 +112,6 @@ nationalist_rebels = {
 					AND = {
 						has_dlc = "Mandate of Heaven"
 						NOT = { has_country_modifier = lost_mandate_of_heaven }
-					}
-					AND = {
-						has_dlc = "Mandate of Heaven"
-						has_reform = celestial_empire
-						imperial_mandate = 80
 					}
 				}
 			}
