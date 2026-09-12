@@ -30,7 +30,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = A00 
 			}
 
@@ -138,7 +137,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = B00
 			}
 		}
@@ -290,7 +288,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = Q00
 			}
 		}
@@ -397,7 +394,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = U00
 			}
 		}
@@ -504,7 +500,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = W00
 			}
 		}
@@ -648,7 +643,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = X00
 			}
 		}
@@ -754,7 +748,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = G00
 			}
 		}
@@ -859,7 +852,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = H00
 			}
 		}
@@ -970,7 +962,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = I00
 			}
 		}
@@ -1076,7 +1067,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = I00
 			}
 		}
@@ -1185,7 +1175,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = Y00
 			}
 		}
@@ -1293,7 +1282,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = L00
 			}
 		}
@@ -1399,7 +1387,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = M00
 			}
 		}
@@ -1505,7 +1492,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = N00
 			}
 		}
@@ -1612,7 +1598,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = R00
 			}
 		}
@@ -1718,7 +1703,6 @@ country_decisions = {
 					has_country_flag = formed_zachodniopomorskie_flag
 				}
 
-				has_reform = celestial_empire 
 				exists = P00
 			}
 		}

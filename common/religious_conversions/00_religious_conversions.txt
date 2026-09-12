@@ -69,7 +69,6 @@ propagate_religion_policy = {
 			FROM = {
 				NOT = { has_country_flag = can_propagate_religion_in_abrahamic_provinces }
 				#NOT = { has_government_attribute = can_spread_the_reformation }
-				NOT = { has_reform = reformer_state_reform }
 			}
 		}
 		modifier = {

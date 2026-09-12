@@ -1543,7 +1543,6 @@ country_event = {
 			NOT = { has_province_modifier = no_revolution_here_dummy }
 		}
 		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { has_reform = revolutionary_empire_reform }
 	}
 	
 	is_triggered_only = yes
@@ -1710,7 +1709,6 @@ country_event = {
 			}
 		}
 		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { has_reform = revolutionary_empire_reform }
 	}
 	
 	is_triggered_only = yes
@@ -1998,7 +1996,6 @@ country_event = {
 			}
 		}
 		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { has_reform = revolutionary_empire_reform }
 	}
 	
 	is_triggered_only = yes

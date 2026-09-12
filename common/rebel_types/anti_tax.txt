@@ -176,7 +176,6 @@ anti_tax_rebels = {
 					has_global_flag = gpw_peasants_win_major
 				}
 				is_part_of_hre = yes
-				NOT = { has_reform = peasants_republic }
 			}
 			hidden_effect = {
 				1 = {

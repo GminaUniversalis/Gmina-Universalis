@@ -3161,7 +3161,6 @@ country_event = {
 	trigger = {
 		OR = {
 			government = monarchy
-			has_reform = noble_elite_reform
 		}
 		NOT = {
 			has_country_modifier = tax_income_loss
@@ -11162,7 +11161,6 @@ country_event = {
 		}
 		OR = {
 			government = monarchy
-			has_reform = revolutionary_empire_reform
 		}
 		is_lesser_in_union = no
 		religion_group = christian

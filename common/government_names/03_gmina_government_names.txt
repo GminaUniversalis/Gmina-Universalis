@@ -154,7 +154,6 @@ military_dictatorship = {
 	
 	trigger = {
 		OR = {
-			has_reform = military_dictatorship_reform
 			has_reform = military_rulership_reform
 		}
 	}
@@ -223,7 +222,6 @@ celestial_parliament = {
 			has_reform = celestial_empire
 			has_reform = parliamentary_reform
 			}
-			has_reform = presidential_despot_reform
 		}
 
 	}
@@ -486,7 +484,6 @@ dutch_monarchy = {
 		government = monarchy
 		has_reform = stadthalter_monarchy_reform
 		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { has_reform = presidential_despot_reform }
 	}
 }
 
@@ -623,36 +620,6 @@ gov_native_council = {
 	}
 }
 
-gov_colonial_government = {
-	rank = {
-		1 = COLONY
-	}
-	
-	ruler_male = {
-		1 = GOVERNOR
-	}
-	
-	ruler_female = {
-		1 = GOVERNESS
-	}
-	
-	consort_male = {
-		1 = CONSORT
-	}
-	
-	consort_female = {
-		1 = CONSORT
-	}
-	
-	trigger = {
-		OR = {
-			has_reform = colonial_government
-			has_reform = crown_colony_government
-			has_reform = private_enterprise_colony_government
-			has_reform = self_governing_colony_government
-		}
-	}
-}
 
 hre_county = {
 	rank = {
@@ -1002,7 +969,6 @@ dutch_monarchy = {
 		government = monarchy
 		has_reform = stadthalter_monarchy_reform
 		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { has_reform = presidential_despot_reform }
 	}
 }
 
@@ -1069,7 +1035,6 @@ celestial_parliament = {
 			has_reform = celestial_empire
 			has_reform = parliamentary_reform
 			}
-			has_reform = presidential_despot_reform
 		}
 
 	}

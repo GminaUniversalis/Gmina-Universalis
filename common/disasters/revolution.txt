@@ -228,7 +228,6 @@ revolution = {
 					NOT = { num_of_rebel_armies = 1 }
 					OR = {
 						government = monarchy
-						has_reform = revolutionary_republic_reform
 					}
 				}
 				AND = {

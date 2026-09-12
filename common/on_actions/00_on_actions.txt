@@ -2697,14 +2697,6 @@ on_four_year_pulse = {
 		100 = pirates.19
 
 		# Republican Dictatorship
-		100 = republican_dictatorship.1
-		100 = republican_dictatorship.2
-		100 = republican_dictatorship.3
-		100 = republican_dictatorship.4
-		100 = republican_dictatorship.5
-		100 = republican_dictatorship.6
-		100 = republican_dictatorship.7
-		100 = republican_dictatorship.8
 
 		# Elective Monarchy
 		150 = elective_monarchy.1

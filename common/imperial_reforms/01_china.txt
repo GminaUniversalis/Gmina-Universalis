@@ -169,7 +169,6 @@ new_keju_formats_decision = {
 	empire = celestial_empire 
 	trigger = {
 		OR = {
-			has_reform = examination_system_reform
 			full_idea_group = administrative_ideas  
 		}
 		OR = { 

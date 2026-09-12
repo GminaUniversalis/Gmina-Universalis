@@ -115,7 +115,6 @@ renegade_sultan_son_rebels = {
 					OR = {
 						government = theocracy
 						has_reform = steppe_horde
-						has_reform = colonial_government
 						has_reform = siberian_tribe
 						government = native
 						has_reform = tribal_federation

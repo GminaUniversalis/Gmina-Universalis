@@ -4858,7 +4858,6 @@ defined_text = {
 		trigger = {
 			religion = confucianism
 			OR = {
-				has_reform = celestial_empire
 				is_emperor_of_china = yes
 			}
 		}

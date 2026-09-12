@@ -150,7 +150,6 @@ nationalist_rebels = {
 					AND = {
 						has_dlc = "Mandate of Heaven"
 						NOT = { has_country_modifier = lost_mandate_of_heaven }
-						NOT = { has_reform = celestial_empire }
 					}
 					AND = {
 						has_dlc = "Mandate of Heaven"
