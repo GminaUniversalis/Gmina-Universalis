@@ -69,6 +69,7 @@ zachodnio_pomorskie_region = {
 		powiat_lobeski powiat_drawski powiat_walecki barwice bobolice koszalin_centrum koszalin_zachod koszalin_poludnie koszalin_wschod powiat_koszalinski
 		powiat_bialogardzki polczyn_zdroj swidwin powiat_kolobrzeski goscino rewal powiat_goleniowski miedzyzdroje powiat_swinioujscie powiat_policki
 		szczecin_zachod szczecin_srodmiescie szczecin_polnoc szczecin_prawobrzerze chociwel powiat_pyrzycki swinoujscie kamien_pomorski 
+		powiat_slawienski 
 	}
 }
 pomorskie_region = { 
@@ -94,6 +95,7 @@ lubuskie_region = {
 		powiat_slubnicki powiat_swiebodzinski babimost gubin laknica lubsko zary gozdnica szprotawa zagan
 		nowa_sol zielona_gora_poludnie swidnica zg_centrum_poludnie zielona_gora_centrum zielona_gora_wschod zg_centrum_polnoc zielona_gora_polnoc krosno_odrzanskie trzebiechow
 		nowe_miasteczko 
+		powiat_miedzyrzecki 
 	}
 }
 wielkopolska_region = { 
@@ -106,6 +108,7 @@ wielkopolska_region = {
 		powiat_obornicki powiat_chodzieski czarnkow powiat_miedzychodzki obrzycko szamotuly tomysl powiat_wolsztynski lwowek powiat_grodziski_poznan
 		rokietnica puszczykowo poznan_grunwald poznan_jezyce poznan_stare_miasto poznan_polnoc wyrzysk zlotow jastrowie trzcinianka
 		staszyce kalina pila ostrow komorniki 
+		powiat_zlotowski 
 	}
 }
 warminsko_mazurskie_region = { 
@@ -114,6 +117,7 @@ warminsko_mazurskie_region = {
 		powiat_lidzbarski powiat_bartoszycki dobre_miasto olsztyn_mazurskie olsztyn_wojska_polskiego olsztyn_dajtki olsztyn_centrum morag susz ilawa
 		lubawa powiat_nowomiejski lidzbark ostroda powiat_nidzicki wielbark olsztynek pasym barczewo szczytno
 		swietajno powiat_ketrzynski powiat_wegorzewski powiat_mragowski powiat_piski powiat_gizycki powiat_olecki powiat_elcki 
+		powiat_szczycienski 
 	}
 }
 dolnoslaskie_region = { 
@@ -304,6 +308,7 @@ notec_region = {
 odra_region = { 
 	areas = { 
 		odra_area 
+		zalew_szczecinski_area 
 	}
 }
 barycz_region = { 
@@ -398,5 +403,23 @@ lithuania = {
 bornholm = { 
 	areas = { 
 		bornholm 
+	}
+}
+
+#Sea regions added 2026-09-12 so every sea province belongs somewhere
+baltic_sea_region = { 
+	areas = { 
+		baltic_area 
+	}
+}
+jeziora_region = { 
+	areas = { 
+		wielkie_jeziora_area 
+		jeziora_pozostale_area 
+	}
+}
+prosna_region = { 
+	areas = { 
+		prosna_area 
 	}
 }
