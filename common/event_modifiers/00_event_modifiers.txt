@@ -14021,3 +14021,16 @@ used_persian_influece_interaction_20 = { influence_to_vassal_elevation_cost = -4
 #free_slot_for_turkish = { num_accepted_cultures = 1 }
 #free_slot_for_al_iraqiya_arabic = { num_accepted_cultures = 1 }
 #free_slot_for_al_suryah_arabic = { num_accepted_cultures = 1 }
+
+#Restored from vanilla: referenced by missions, reforms and events but missing from this file
+swedish_mercenary_core = {
+	merc_maintenance_modifier = -0.1
+	mercenary_manpower = 0.5
+}
+zoroastrian_interests = {
+	tolerance_own = -2
+	tolerance_heathen = 2
+	church_loyalty_modifier = -0.2
+	can_not_build_missionaries = yes
+	religion = yes
+}
