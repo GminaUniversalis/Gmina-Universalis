@@ -62,21 +62,21 @@ conservatism_pis_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = conservatism_pis
-			owner = { religion = conservatism_pis }
+			religion = conservatism_PIS
+			owner = { religion = conservatism_PIS }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = conservatism_pis }
+			NOT = { religion = conservatism_PIS }
 			any_neighbor_province = {
-	 			religion = conservatism_pis
+	 			religion = conservatism_PIS
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = conservatism_pis
+			religion = conservatism_PIS
 		}
 		modifier = {
 			factor = 1.5
@@ -98,9 +98,9 @@ conservatism_pis_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = conservatism_pis
+						religion = conservatism_PIS
 						is_reformation_center = yes
-						owner = { religion = conservatism_pis }
+						owner = { religion = conservatism_PIS }
 					}
 				}
 				add_province_modifier = {
@@ -110,11 +110,11 @@ conservatism_pis_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = conservatism_pis }
+					NOT = { religion = conservatism_PIS }
 					is_reformation_center = no
-					NOT = { owner = { religion = conservatism_pisn } }
+					NOT = { owner = { religion = conservatism_PIS } }
 				}
-				change_religion = conservatism_pis
+				change_religion = conservatism_PIS
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -127,7 +127,7 @@ conservatism_pis_rebels = {
 	can_negotiate_trigger = {
 		OR = {
 			religion_group = conservatism_group
-			dominant_religion = conservatism_pis
+			dominant_religion = conservatism_PIS
 		}
 	}
 	
@@ -162,7 +162,7 @@ conservatism_pis_rebels = {
 		}
 		if = {
 			limit = {
-				religion = conservatism_pis
+				religion = conservatism_PIS
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -171,16 +171,16 @@ conservatism_pis_rebels = {
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = conservatism_pis }
-				dominant_religion = conservatism_pis
+				NOT = { religion = conservatism_PIS }
+				dominant_religion = conservatism_PIS
 			}
-			change_religion = conservatism_pis
+			change_religion = conservatism_PIS
 			force_converted = yes
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = conservatism_pis }
-				NOT = { dominant_religion = conservatism_pis }
+				NOT = { religion = conservatism_PIS }
+				NOT = { dominant_religion = conservatism_PIS }
 				religion_group = conservatism_group
 				NOT = { has_country_modifier = heretic_tolerance }
 			}

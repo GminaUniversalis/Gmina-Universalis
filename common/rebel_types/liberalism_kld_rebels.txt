@@ -112,7 +112,7 @@ liberalism_kld_rebels = {
 				limit = {
 					NOT = { religion = liberalism_kld }
 					is_reformation_center = no
-					NOT = { owner = { religion = liberalism_kldn } }
+					NOT = { owner = { religion = liberalism_kld } }
 				}
 				change_religion = liberalism_kld
 				add_province_modifier = {

@@ -112,7 +112,7 @@ socialism_lewica_rebels = {
 				limit = {
 					NOT = { religion = socialism_lewica }
 					is_reformation_center = no
-					NOT = { owner = { religion = socialism_lewican } }
+					NOT = { owner = { religion = socialism_lewica } }
 				}
 				change_religion = socialism_lewica
 				add_province_modifier = {

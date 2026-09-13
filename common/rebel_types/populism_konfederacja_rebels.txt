@@ -112,7 +112,7 @@ populism_konfederacja_rebels = {
 				limit = {
 					NOT = { religion = populism_konfederacja }
 					is_reformation_center = no
-					NOT = { owner = { religion = populism_konfederacjan } }
+					NOT = { owner = { religion = populism_konfederacja } }
 				}
 				change_religion = populism_konfederacja
 				add_province_modifier = {

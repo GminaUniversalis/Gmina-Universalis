@@ -62,21 +62,21 @@ populism_k15_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = populism_k15
-			owner = { religion = populism_k15 }
+			religion = populism_K15
+			owner = { religion = populism_K15 }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = populism_k15 }
+			NOT = { religion = populism_K15 }
 			any_neighbor_province = {
-	 			religion = populism_k15
+	 			religion = populism_K15
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = populism_k15
+			religion = populism_K15
 		}
 		modifier = {
 			factor = 1.5
@@ -98,9 +98,9 @@ populism_k15_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = populism_k15
+						religion = populism_K15
 						is_reformation_center = yes
-						owner = { religion = populism_k15 }
+						owner = { religion = populism_K15 }
 					}
 				}
 				add_province_modifier = {
@@ -110,11 +110,11 @@ populism_k15_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = populism_k15 }
+					NOT = { religion = populism_K15 }
 					is_reformation_center = no
-					NOT = { owner = { religion = populism_k15n } }
+					NOT = { owner = { religion = populism_K15 } }
 				}
-				change_religion = populism_k15
+				change_religion = populism_K15
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -127,7 +127,7 @@ populism_k15_rebels = {
 	can_negotiate_trigger = {
 		OR = {
 			religion_group = populism_group
-			dominant_religion = populism_k15
+			dominant_religion = populism_K15
 		}
 	}
 	
@@ -162,7 +162,7 @@ populism_k15_rebels = {
 		}
 		if = {
 			limit = {
-				religion = populism_k15
+				religion = populism_K15
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -171,16 +171,16 @@ populism_k15_rebels = {
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = populism_k15 }
-				dominant_religion = populism_k15
+				NOT = { religion = populism_K15 }
+				dominant_religion = populism_K15
 			}
-			change_religion = populism_k15
+			change_religion = populism_K15
 			force_converted = yes
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = populism_k15 }
-				NOT = { dominant_religion = populism_k15 }
+				NOT = { religion = populism_K15 }
+				NOT = { dominant_religion = populism_K15 }
 				religion_group = populism_group
 				NOT = { has_country_modifier = heretic_tolerance }
 			}

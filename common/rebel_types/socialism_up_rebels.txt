@@ -112,7 +112,7 @@ socialism_up_rebels = {
 				limit = {
 					NOT = { religion = socialism_up }
 					is_reformation_center = no
-					NOT = { owner = { religion = socialism_upn } }
+					NOT = { owner = { religion = socialism_up } }
 				}
 				change_religion = socialism_up
 				add_province_modifier = {

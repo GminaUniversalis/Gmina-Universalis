@@ -62,21 +62,21 @@ liberalism_n_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = liberalism_n
-			owner = { religion = liberalism_n }
+			religion = liberalism_N
+			owner = { religion = liberalism_N }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = liberalism_n }
+			NOT = { religion = liberalism_N }
 			any_neighbor_province = {
-	 			religion = liberalism_n
+	 			religion = liberalism_N
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = liberalism_n
+			religion = liberalism_N
 		}
 		modifier = {
 			factor = 1.5
@@ -98,9 +98,9 @@ liberalism_n_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = liberalism_n
+						religion = liberalism_N
 						is_reformation_center = yes
-						owner = { religion = liberalism_n }
+						owner = { religion = liberalism_N }
 					}
 				}
 				add_province_modifier = {
@@ -110,11 +110,11 @@ liberalism_n_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = liberalism_n }
+					NOT = { religion = liberalism_N }
 					is_reformation_center = no
-					NOT = { owner = { religion = liberalism_nn } }
+					NOT = { owner = { religion = liberalism_N } }
 				}
-				change_religion = liberalism_n
+				change_religion = liberalism_N
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -127,7 +127,7 @@ liberalism_n_rebels = {
 	can_negotiate_trigger = {
 		OR = {
 			religion_group = liberalism_group
-			dominant_religion = liberalism_n
+			dominant_religion = liberalism_N
 		}
 	}
 	
@@ -162,7 +162,7 @@ liberalism_n_rebels = {
 		}
 		if = {
 			limit = {
-				religion = liberalism_n
+				religion = liberalism_N
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -171,16 +171,16 @@ liberalism_n_rebels = {
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = liberalism_n }
-				dominant_religion = liberalism_n
+				NOT = { religion = liberalism_N }
+				dominant_religion = liberalism_N
 			}
-			change_religion = liberalism_n
+			change_religion = liberalism_N
 			force_converted = yes
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = liberalism_n }
-				NOT = { dominant_religion = liberalism_n }
+				NOT = { religion = liberalism_N }
+				NOT = { dominant_religion = liberalism_N }
 				religion_group = liberalism_group
 				NOT = { has_country_modifier = heretic_tolerance }
 			}

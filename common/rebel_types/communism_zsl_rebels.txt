@@ -112,7 +112,7 @@ communism_zsl_rebels = {
 				limit = {
 					NOT = { religion = communism_zsl }
 					is_reformation_center = no
-					NOT = { owner = { religion = communism_zsln } }
+					NOT = { owner = { religion = communism_zsl } }
 				}
 				change_religion = communism_zsl
 				add_province_modifier = {
