@@ -65,19 +65,15 @@ estate_church = {
 		estate_church_independent_inquisition
 		estate_church_new_world_mission
 		estate_church_clerical_ministers
-		estate_church_freedom_of_interpretation
 		estate_church_clerical_oversight
-		estate_church_inwards_perfection
 		estate_church_enforced_one_faith
 		estate_church_for_the_faith
 		estate_church_karma_temples
 		estate_church_influence_temples
-		estate_church_brahmins_at_court
 		estate_church_lao_animism
 		estate_church_administrative_privileges
 		estate_church_monopoly_of_incense
 		estate_church_monopoly_of_wool
-		estate_church_monopoly_of_wine
 		estate_church_monopoly_of_slaves
 		estate_church_statutory_rights
 		estate_church_yakobs_churches
@@ -86,8 +82,6 @@ estate_church = {
 		estate_church_heir_shrine
 		estate_church_embrace_singluar_cult
 		estate_church_flexible_cults
-		estate_church_scholar_connections
-		estate_church_integrated_school
 		estate_church_anti_heresy_act
 		estate_church_lands_of_riga
 		estate_church_bishopric_of_dorpat
@@ -104,10 +98,6 @@ estate_church = {
 		estate_church_union_of_the_churches
 		estate_church_BYZ_legitimization_of_dynasty
 		#1.36
-		estate_church_fund_dar_al_hadith
-		estate_church_fund_madrasas
-		estate_church_sponsor_waqf_payments
-		estate_church_muslim_integration
 	}
 
 	agendas = {
@@ -121,12 +111,8 @@ estate_church = {
 		estate_church_increase_stability
 		estate_church_reduce_overextension
 		estate_church_restore_devotion
-		estate_church_root_out_heresy
-		estate_church_relations_with_pope
-		estate_church_restore_the_holy_see
 		estate_church_crush_religious_revolts
 		estate_church_protect_brethren
-		estate_church_propagate_religion
 		estate_church_relations_with_dotf
 		estate_church_hire_advisor
 		estate_church_fire_advisor

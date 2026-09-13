@@ -6307,18 +6307,11 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = PLC_country_string
-		trigger = {
-			tag = PLC
-		}
-	}
-	text = {
 		localisation_key = already_has_proper_name
 		trigger = {
 			OR = {
 				NOT = {
 					OR = {
-						tag = PLC
 						#Chinese
 						culture_group = east_asian
 						#All the American tribes
@@ -6374,18 +6367,11 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = PLC_country_string_CAP
-		trigger = {
-			tag = PLC
-		}
-	}
-	text = {
 		localisation_key = already_has_proper_name
 		trigger = {
 			OR = {
 				NOT = {
 					OR = {
-						tag = PLC
 						#Chinese
 						culture_group = east_asian
 						#All the American tribes
@@ -6519,45 +6505,13 @@ defined_text = {
 			has_parliament = yes
 			NOT = {
 				OR = {
-					tag = AYD
-					tag = CND
-					tag = DUL
-					tag = ERE
-					tag = FRA
-					tag = GEN
-					tag = GRM
-					tag = HLR
-					tag = KAR
-					tag = MEN
-					tag = MOS
-					tag = NED
-					tag = PLC
 					tag = POL
-					tag = PSK
-					tag = RAM
-					tag = RUS
-					tag = QUE
-					tag = SPA
-					tag = SRU
-					tag = SWI
-					tag = TUR
-					tag = VEN
-					tag = WES
-					tag = CRO
-					tag = HUN
 					culture_group = altaic
 					culture_group = germanic
 					tag = GER
-					tag = SWE
-					tag = DAN
-					tag = NOR
-					tag = ICE
 					culture_group = iberian
 					culture_group = east_slavic
 					culture_group = slavic
-					tag = LIT
-					tag = BYZ
-					tag = ROM
 					culture_group = turko_semitic
 					culture_group = maghrebi
 				}
@@ -6569,45 +6523,13 @@ defined_text = {
 		trigger = {
 			has_parliament = yes
 			OR = {
-				tag = AYD
-				tag = CND
-				tag = DUL
-				tag = ERE
-				tag = FRA
-				tag = GEN
-				tag = GRM
-				tag = HLR
-				tag = KAR
-				tag = MEN
-				tag = MOS
-				tag = NED
-				tag = PLC
 				tag = POL
-				tag = PSK
-				tag = RAM
-				tag = RUS
-				tag = QUE
-				tag = SPA
-				tag = SRU
-				tag = SWI
-				tag = TUR
-				tag = VEN
-				tag = WES
-				tag = CRO
-				tag = HUN
 				culture_group = altaic
 				culture_group = germanic
 				tag = GER
-				tag = SWE
-				tag = DAN
-				tag = NOR
-				tag = ICE
 				culture_group = iberian
 				culture_group = east_slavic
 				culture_group = slavic
-				tag = LIT
-				tag = BYZ
-				tag = ROM
 				culture_group = turko_semitic
 				culture_group = maghrebi
 			}

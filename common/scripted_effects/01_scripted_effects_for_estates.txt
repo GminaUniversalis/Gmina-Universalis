@@ -4085,7 +4085,7 @@ estate_action_RELIGIOUS_DELEGATION_CHURCH = {
 			religion = catholic
 		}
 		reverse_add_opinion = {
-			who = PAP
+			who = X20
 			modifier = religious_delegation
 		}
 	}

@@ -91,7 +91,6 @@ always = no
 		estate_nobles_nobility_primacy
 		estate_nobles_officer_corp
 		estate_nobles_levies
-		estate_nobles_advisors
 		estate_nobles_right_of_counsel
 		# estate_nobles_french_strong_duchies
 		estate_nobles_supremacy_over_crown
@@ -110,10 +109,6 @@ always = no
 		#estate_nobles_cawa_peace_keepers
 		# estate_nobles_cawa_offensive_fighters
 		estate_nobles_neighbor_raids
-		estate_nobles_decentralized_tribe
-		estate_nobles_tribe_unification
-		estate_nobles_tribe_centralization
-		estate_nobles_grant_power_to_the_bashorun
 		# estate_nobles_danish_nobility
 		# estate_nobles_nobles_instead_of_royal_court
 		# estate_nobles_leidang_conscription
@@ -134,9 +129,6 @@ always = no
 		# estate_nobles_devastating_serfdom
 		# estate_nobles_increased_peasant_freedom
 		# estate_nobles_peasant_liberation
-		estate_nobles_rynda
-		estate_nobles_landed_army
-		estate_nobles_factionalist_nobility
 		estate_nobles_consolidated_noble_contracts
 		# estate_nobles_english_villeinage
 		# estate_nobles_english_copyhold_tenure
@@ -146,8 +138,6 @@ always = no
 		estate_nobles_diet_right
 		estate_nobles_force_conscription
 		estate_nobles_noble_officer_right
-		estate_nobles_expedition_rights
-		estate_nobles_highland_fortifications
 		# estate_nobles_emirs_of_baghdad
 		# estate_nobles_deteriorating_army
 		# estate_nobles_defensive_policy
