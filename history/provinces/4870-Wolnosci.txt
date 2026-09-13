@@ -6,7 +6,7 @@ owner = I03
 culture = wschodnio-krakowska
 religion = communism_pzpr
 controller = I03
-is_city = no
+
 
 1444.11.13 = {
 remove_core = I03

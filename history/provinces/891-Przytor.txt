@@ -6,7 +6,7 @@ owner = P15
 culture = zachodniopomorska
 religion = communism_pzpr
 controller = P15
-is_city = no
+
 
 1444.11.13 = {
 remove_core = P15

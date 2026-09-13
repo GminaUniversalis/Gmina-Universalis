@@ -643,17 +643,7 @@ age_of_revolutions = {
 				ignore_coring_distance = yes
 			}
 			ai_will_do = {
-				factor = 15
-				modifier = {
-					# AI peace code relies on being limited by coring range, or it will create crazy border gore where it can't reach its new lands
-					factor = 0
-					OR = {
-						is_subject = no
-						overlord = {
-							ai = yes
-						}
-					}
-				}
+				factor = 0
 			}
 		}
 		

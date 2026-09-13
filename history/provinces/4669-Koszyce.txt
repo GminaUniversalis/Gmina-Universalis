@@ -6,7 +6,7 @@ owner = R28
 culture = krainska
 religion = communism_sd
 controller = R28
-is_city = no
+
 
 1444.11.13 = {
 remove_core = R28
