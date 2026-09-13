@@ -1,1 +1,9 @@
 ﻿l_english:
+ # Only the ruler personalities our own events actually use. Everything else in this
+ # file stays cut; own traits will replace the rest.
+ humane_personality:0 "Humane"
+ desc_humane_personality:0 "This ruler is Humane. Compassion, benevolence and an unwavering dedication to upstanding moral values are characteristic of our ruler's relations with all people."
+ humane_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] subjects will remember [Root.Monarch.GetHerHis] compassion and benevolence fondly."
+ petty_personality:0 "Petty"
+ desc_petty_personality:0 "This ruler is Petty. Even the most trivial slight will rouse this ruler's indignation, and no possession no matter how insignificant is beneath this ruler's envy."
+ petty_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] pettiness and envy has brought nothing but ill to our dynasty."

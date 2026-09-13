@@ -4,25 +4,43 @@ namespace = gmina_harmonization
 country_event = {
 	id = gmina_harmonization.1
 	title = "gmina_harmonization.1.t"
-	desc = "gmina_harmonization.1.d"
+	# The group is harmonized as a whole, so the flavour follows whichever of its parties
+	# we actually hold a gmina of. The last block catches the case where we hold none.
+	desc = {
+		desc = "gmina_harmonization.1.d.pzpr"
+		trigger = { event_target:communist_province = { religion = communism_pzpr } }
+	}
+	desc = {
+		desc = "gmina_harmonization.1.d.sd"
+		trigger = { event_target:communist_province = { religion = communism_sd } }
+	}
+	desc = {
+		desc = "gmina_harmonization.1.d.zsl"
+		trigger = { event_target:communist_province = { religion = communism_zsl } }
+	}
+	desc = {
+		desc = "gmina_harmonization.1.d"
+		trigger = { always = yes }
+	}
 	picture = P2050_Harmonization_Picture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
 					religion_group = communism_group
+					has_owner_religion = no
 				}
 				save_event_target_as = communist_province
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 
@@ -56,10 +74,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -93,10 +111,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -130,10 +148,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -167,10 +185,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -204,10 +222,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -226,25 +244,57 @@ country_event = {
 country_event = {
 	id = gmina_harmonization.7
 	title = "gmina_harmonization.7.t"
-	desc = "gmina_harmonization.7.d"
+	desc = {
+		desc = "gmina_harmonization.7.d.kpn"
+		trigger = { event_target:conservatism_group_province = { religion = conservatism_kpn } }
+	}
+	desc = {
+		desc = "gmina_harmonization.7.d.zchn"
+		trigger = { event_target:conservatism_group_province = { religion = conservatism_zchn } }
+	}
+	desc = {
+		desc = "gmina_harmonization.7.d.pc"
+		trigger = { event_target:conservatism_group_province = { religion = conservatism_pc } }
+	}
+	desc = {
+		desc = "gmina_harmonization.7.d.aws"
+		trigger = { event_target:conservatism_group_province = { religion = conservatism_aws } }
+	}
+	desc = {
+		desc = "gmina_harmonization.7.d.psl"
+		trigger = { event_target:conservatism_group_province = { religion = conservatism_psl } }
+	}
+	desc = {
+		desc = "gmina_harmonization.7.d.lpr"
+		trigger = { event_target:conservatism_group_province = { religion = conservatism_lpr } }
+	}
+	desc = {
+		desc = "gmina_harmonization.7.d.pis"
+		trigger = { event_target:conservatism_group_province = { religion = conservatism_PIS } }
+	}
+	desc = {
+		desc = "gmina_harmonization.7.d"
+		trigger = { always = yes }
+	}
 	picture = P2050_Harmonization_Picture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
 					religion_group = conservatism_group
+					has_owner_religion = no
 				}
 				save_event_target_as = conservatism_group_province
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -263,25 +313,41 @@ country_event = {
 country_event = {
 	id = gmina_harmonization.8
 	title = "gmina_harmonization.8.t"
-	desc = "gmina_harmonization.8.d"
+	desc = {
+		desc = "gmina_harmonization.8.d.sld"
+		trigger = { event_target:socialism_group_province = { religion = socialism_sld } }
+	}
+	desc = {
+		desc = "gmina_harmonization.8.d.up"
+		trigger = { event_target:socialism_group_province = { religion = socialism_up } }
+	}
+	desc = {
+		desc = "gmina_harmonization.8.d.lewica"
+		trigger = { event_target:socialism_group_province = { religion = socialism_lewica } }
+	}
+	desc = {
+		desc = "gmina_harmonization.8.d"
+		trigger = { always = yes }
+	}
 	picture = P2050_Harmonization_Picture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
 					religion_group = socialism_group
+					has_owner_religion = no
 				}
 				save_event_target_as = socialism_group_province
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -300,25 +366,49 @@ country_event = {
 country_event = {
 	id = gmina_harmonization.9
 	title = "gmina_harmonization.9.t"
-	desc = "gmina_harmonization.9.d"
+	desc = {
+		desc = "gmina_harmonization.9.d.samoobrona"
+		trigger = { event_target:populism_group_province = { religion = populism_samoobrona } }
+	}
+	desc = {
+		desc = "gmina_harmonization.9.d.ppu"
+		trigger = { event_target:populism_group_province = { religion = populism_PPU } }
+	}
+	desc = {
+		desc = "gmina_harmonization.9.d.k15"
+		trigger = { event_target:populism_group_province = { religion = populism_K15 } }
+	}
+	desc = {
+		desc = "gmina_harmonization.9.d.rp"
+		trigger = { event_target:populism_group_province = { religion = populism_RP } }
+	}
+	desc = {
+		desc = "gmina_harmonization.9.d.konfederacja"
+		trigger = { event_target:populism_group_province = { religion = populism_konfederacja } }
+	}
+	desc = {
+		desc = "gmina_harmonization.9.d"
+		trigger = { always = yes }
+	}
 	picture = P2050_Harmonization_Picture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
 					religion_group = populism_group
+					has_owner_religion = no
 				}
 				save_event_target_as = populism_group_province
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -352,10 +442,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -383,19 +473,19 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					religion = christian
+					religion_group = silesian_group
 				}
-				save_event_target_as = christian_province
+				save_event_target_as = silesian_province
 			}
 		}
 		hidden_effect = {
-			clr_country_flag = harmonization_shangdi_conflict
-			clr_country_flag = harmonization_han_kitab
-			clr_country_flag = harmonization_fate_of_advisor
-			clr_country_flag = harmonization_empowering_ceremonies
+			clr_country_flag = dialog_naming_dispute
+			clr_country_flag = dialog_programme_retranslated
+			clr_country_flag = dialog_advisor_card
+			clr_country_flag = dialog_office_strengthened
 		}
 	}
-	
+
 	option = {
 		name = "gmina_harmonization.20.a"
 		tooltip = {
@@ -426,7 +516,7 @@ country_event = {
 				is_harmonizing_with = PREV
 			}
 		}
-		NOT = { has_country_flag = harmonization_shangdi_conflict }
+		NOT = { has_country_flag = dialog_naming_dispute }
 	}
 	
 	immediate = {
@@ -439,7 +529,7 @@ country_event = {
 				}
 				save_event_target_as = harmonization_province
 			}
-			set_country_flag = harmonization_shangdi_conflict
+			set_country_flag = dialog_naming_dispute
 		}
 	}
 	
@@ -492,7 +582,7 @@ country_event = {
 				is_harmonizing_with = PREV
 			}
 		}
-		NOT = { has_country_flag = harmonization_han_kitab }
+		NOT = { has_country_flag = dialog_programme_retranslated }
 	}
 	
 	immediate = {
@@ -505,7 +595,7 @@ country_event = {
 				}
 				save_event_target_as = harmonization_province
 			}
-			set_country_flag = harmonization_han_kitab
+			set_country_flag = dialog_programme_retranslated
 		}
 	}
 	
@@ -558,7 +648,7 @@ country_event = {
 				is_harmonizing_with = PREV
 			}
 		}
-		NOT = { has_country_flag = harmonization_fate_of_advisor }
+		NOT = { has_country_flag = dialog_advisor_card }
 	}
 	
 	immediate = {
@@ -571,7 +661,7 @@ country_event = {
 				}
 				save_event_target_as = harmonization_province
 			}
-			set_country_flag = harmonization_fate_of_advisor
+			set_country_flag = dialog_advisor_card
 		}
 	}
 	
@@ -697,7 +787,7 @@ country_event = {
 				}
 				save_event_target_as = harmonization_province
 			}
-			set_country_flag = harmonization_empowering_ceremonies
+			set_country_flag = dialog_office_strengthened
 		}
 	}
 	
@@ -971,8 +1061,8 @@ country_event = {
 		
 		religion = liberalism_P2050
 		OR = {
-			NOT = { has_country_flag = harmony_book_timer }
-			had_country_flag = { flag = harmony_book_timer days = 1825 }
+			NOT = { has_country_flag = dialog_book_timer }
+			had_country_flag = { flag = dialog_book_timer days = 1825 }
 		}
 		NOT = {
 			has_country_modifier = harmony_banned_book
@@ -994,15 +1084,15 @@ country_event = {
 	option = {
 		name = "gmina_harmonization.19.b"
 		add_harmony = -10
-		set_country_flag = harmony_book_timer
+		set_country_flag = dialog_book_timer
 	}
 }
 
 #Civil Service
 country_event = {
-	id = gmina_harmonization.20
-	title = "gmina_harmonization.20.t"
-	desc = "gmina_harmonization.20.d"
+	id = gmina_harmonization.21
+	title = "gmina_harmonization.21.t"
+	desc = "gmina_harmonization.21.d"
 	picture = IMPERIAL_EXAMINATION_eventPicture
 	
 	is_triggered_only = yes
@@ -1017,14 +1107,14 @@ country_event = {
 	}
 	
 	option = {
-		name = "gmina_harmonization.20.a"
+		name = "gmina_harmonization.21.a"
 		add_years_of_income = -0.4
 		add_harmony = 10
 		add_meritocracy_effect = yes
 	}
 	option = {
-		name = "gmina_harmonization.20.b"
-		
+		name = "gmina_harmonization.21.b"
+
 		add_harmony = -10
 		reduce_meritocracy_effect = yes
 	}
