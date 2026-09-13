@@ -85,7 +85,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA2061"		# Increase your efforts
 		ai_chance = { factor = 55 }
-		heretic_rebels = 1
 		owner = {
 			add_piety = 0.05
 		}
@@ -149,7 +148,6 @@ province_event = {
 		ai_chance = { factor = 45 }
 		random = {
 			chance = 50
-			heretic_rebels = 1
 		}
 		owner = { add_piety = -0.05 }
 	}
@@ -198,7 +196,6 @@ province_event = {
 		ai_chance = { factor = 45 }
 		random = {
 			chance = 40
-			heretic_rebels = 1
 		}
 		owner = { add_piety = -0.05 }
 	}

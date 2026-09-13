@@ -143,12 +143,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3023" # Crush the rebels!
 		ai_chance = { factor = 60 }		
-		random_owned_province = { 
-			spawn_rebels = {
-				type = religious_rebels
-				size = 1
-			}
-		}
 		add_mil_power = -50
 		if = {
 			limit = {

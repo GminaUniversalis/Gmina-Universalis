@@ -111,7 +111,6 @@ estate_church = {
 		estate_church_increase_stability
 		estate_church_reduce_overextension
 		estate_church_restore_devotion
-		estate_church_crush_religious_revolts
 		estate_church_protect_brethren
 		estate_church_relations_with_dotf
 		estate_church_hire_advisor

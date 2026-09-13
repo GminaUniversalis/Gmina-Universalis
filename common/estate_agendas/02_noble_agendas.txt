@@ -1273,15 +1273,6 @@ estate_nobles_retake_core = {
 estate_nobles_crush_revolts = {
 	can_select = {
 		num_of_rebel_armies = 1
-		NOT = {
-			OR = {
-				has_spawned_rebels = noble_rebels
-				has_spawned_rebels = polish_noble_rebels
-				#Clergy agenda covers heretic rebels
-				has_spawned_rebels = heretic_rebels
-				has_spawned_rebels = lollard_rebels
-			}
-		}
 	}
 	selection_weight = {
 		factor = 2

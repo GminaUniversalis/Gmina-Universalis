@@ -1803,15 +1803,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB6196"
 		add_piety = -0.15
-		random_owned_province = {
-			limit = {
-				religion = ROOT 
-			}
-			spawn_rebels = {
-				type = religious_rebels
-				size = 1
-			}
-		 } 
 	}
 }
 
@@ -1954,15 +1945,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB6161"
 		add_piety = 0.2
-		random_owned_province = {
-			limit = {
-				religion = ROOT
-			}
-			spawn_rebels = {
-				type = religious_rebels
-				size = 1
-			}
-		}
 	} 
 }
 

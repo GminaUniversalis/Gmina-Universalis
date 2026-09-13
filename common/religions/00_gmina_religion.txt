@@ -4962,7 +4962,7 @@ populism_group = {
 			}			
 		}
 		
-		heretic = {  }
+		heretic = { CITY_ELITES }
 
 		personal_deity = yes
 
@@ -5071,7 +5071,7 @@ populism_group = {
 			}			
 		}
 		
-		heretic = { }
+		heretic = { THE_DISHONEST }
 		
 		date = 1615.01.01
 		has_patriarchs = yes		# Uses patriarch authority
@@ -5561,7 +5561,7 @@ populism_group = {
 			}			
 		}
 		
-		heretic = {  }
+		heretic = { PARTYOCRATS }
 
 		uses_church_power = yes
 		aspects = {
@@ -5693,7 +5693,7 @@ populism_group = {
 
 		misguided_heretic = yes
 		
-		heretic = {  }
+		heretic = { CLERICALS }
 
 		blessings = {
 			RP_1
@@ -5814,7 +5814,7 @@ populism_group = {
 			}			
 		}
 		
-		heretic = {  }
+		heretic = { ETATISTS }
 
 		uses_judaism_power = yes
 		aspects_name = KONFEDERACJA_ASPECTS
