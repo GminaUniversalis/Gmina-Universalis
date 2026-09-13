@@ -113,7 +113,9 @@ sky_tower = {
 
 
 		on_upgraded = {
-			add_prestige = 10
+			owner = {
+				add_prestige = 10
+			}
 		}
 	}
 
@@ -146,7 +148,9 @@ sky_tower = {
 
 
 		on_upgraded = {
-			add_prestige = 30
+			owner = {
+				add_prestige = 30
+			}
 		}
 	}
 
@@ -180,9 +184,11 @@ sky_tower = {
 
 
 		on_upgraded = {
-			add_adm_power = 100	
-			add_dip_power = 100	
-			add_prestige = 50
+			owner = {
+				add_adm_power = 100	
+				add_dip_power = 100	
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -362,8 +368,10 @@ centennial_hall = {
 
 
 		on_upgraded = {
-			add_dip_power = 100	
-			add_prestige = 50
+			owner = {
+				add_dip_power = 100	
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -542,7 +550,9 @@ ostrow_tumski = {
 
 
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -723,7 +733,9 @@ japanese_garden = {
 
 
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -888,7 +900,9 @@ wroclaw_market_square = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -1623,7 +1637,9 @@ church_of_peace_in_jawor = {
 
 
 		on_upgraded = {
-			add_dip_power = 100
+			owner = {
+				add_dip_power = 100
+			}
 		}
 
 		conditional_modifier = {
@@ -1834,7 +1850,9 @@ church_of_peace_in_swidnica = {
 
 
 		on_upgraded = {
-			add_dip_power = 100
+			owner = {
+				add_dip_power = 100
+			}
 		}
 
 		conditional_modifier = {
@@ -1950,8 +1968,10 @@ sniezka_observatory = {
 			advisor_pool = 1
 		}
 		on_upgraded = {
-			add_prestige = 10
-			change_innovativeness = 1
+			owner = {
+				add_prestige = 10
+				change_innovativeness = 1
+			}
 		}
 	}
 
@@ -1976,8 +1996,10 @@ sniezka_observatory = {
 			idea_cost = -0.05
 		}	
 		on_upgraded = {
-			add_prestige = 25
-			change_innovativeness = 2
+			owner = {
+				add_prestige = 25
+				change_innovativeness = 2
+			}
 		}
 	}
 
@@ -1999,10 +2021,12 @@ sniezka_observatory = {
 			yearly_government_power = 0.1
 		}
 		on_upgraded = {
-			add_dip_power = 100
-			add_adm_power = 100
-			add_prestige = 50
-			change_innovativeness = 3
+			owner = {
+				add_dip_power = 100
+				add_adm_power = 100
+				add_prestige = 50
+				change_innovativeness = 3
+			}
 		}
 	}
 }
@@ -2656,7 +2680,9 @@ riese_underground_complex = {
 			army_loyalty_modifier = 0.15
 		}
 		on_upgraded = {
-			add_mil_tech = 1
+			owner = {
+				add_mil_tech = 1
+			}
 		}
 	}
 }
@@ -3389,7 +3415,9 @@ wloclawek_hydropowerplant = {
 
 		on_upgraded = {
 			change_trade_goods = gu_tourists
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 
@@ -3418,7 +3446,9 @@ wloclawek_hydropowerplant = {
 
 		}
 		on_upgraded = {			
-			add_prestige = 100
+			owner = {
+				add_prestige = 100
+			}
 
 		}
 	}
@@ -3529,10 +3559,12 @@ biskupin_settlment = {
 
 
 		on_upgraded = {
-			add_adm_power = 50
-			add_dip_power = 50
-			add_mil_power = 50
-			add_splendor = 200
+			owner = {
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+				add_splendor = 200
+			}
 		}
 	}
 
@@ -3557,12 +3589,16 @@ biskupin_settlment = {
 			mil_advisor_cost = -0.1
 		}
 		on_upgraded = {			
-			add_prestige = 100
+			owner = {
+				add_prestige = 100
+			}
 			change_trade_goods = gu_tourists
-			add_adm_power = 100
-			add_dip_power = 100
-			add_mil_power = 100
-			add_splendor = 200
+			owner = {
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_splendor = 200
+			}
 
 		}
 	}
@@ -4041,7 +4077,9 @@ torun_market_square = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -6081,7 +6119,9 @@ belchatow_powerplant = {
 
 		on_upgraded = {
 			change_trade_goods = gu_coal
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 			add_devastation = 40
 		}
 	}
@@ -6111,7 +6151,9 @@ belchatow_powerplant = {
 			global_tax_income = 40
 		}
 		on_upgraded = {			
-			add_prestige = 100
+			owner = {
+				add_prestige = 100
+			}
 			add_devastation = 60
 
 		}
@@ -6716,7 +6758,9 @@ manufaktura = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 	tier_2 = {
@@ -6735,7 +6779,9 @@ manufaktura = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 
@@ -6755,7 +6801,9 @@ manufaktura = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -6822,7 +6870,9 @@ piotrkowska_street = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 	tier_2 = {
@@ -6843,7 +6893,9 @@ piotrkowska_street = {
 			liberty_desire_from_subject_development = -0.05
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 
@@ -6865,7 +6917,9 @@ piotrkowska_street = {
 			liberty_desire_from_subject_development = -0.05
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -7148,7 +7202,9 @@ wawel_royal_castle = {
 			diplomatic_upkeep = 1
 		}
 		on_upgraded = {
-			add_prestige = 20
+			owner = {
+				add_prestige = 20
+			}
 
 		}
 	}
@@ -7171,7 +7227,9 @@ wawel_royal_castle = {
 			diplomatic_upkeep = 1
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 			
 		}
 	}
@@ -7195,7 +7253,9 @@ wawel_royal_castle = {
 			monarch_admin_power = 1
 		}
 		on_upgraded = {
-			add_prestige = 100
+			owner = {
+				add_prestige = 100
+			}
 			
 		}
 	}
@@ -7476,7 +7536,9 @@ podgorski_square = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 	tier_2 = {
@@ -7495,7 +7557,9 @@ podgorski_square = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 
@@ -7515,7 +7579,9 @@ podgorski_square = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -7632,7 +7698,9 @@ bochnia_salt_mine = {
 
 
 		on_upgraded = {
-			add_stability = 1
+			owner = {
+				add_stability = 1
+			}
 		}
 
 		conditional_modifier = {
@@ -7677,7 +7745,9 @@ bochnia_salt_mine = {
 
 
 		on_upgraded = {
-			add_stability = 1
+			owner = {
+				add_stability = 1
+			}
 		}
 
 		conditional_modifier = {
@@ -7722,7 +7792,9 @@ bochnia_salt_mine = {
 
 
 		on_upgraded = {
-			add_stability = 3
+			owner = {
+				add_stability = 3
+			}
 		}
 
 		conditional_modifier = {
@@ -7849,7 +7921,9 @@ wieliczka_salt_mine = {
 
 
 		on_upgraded = {
-			add_stability = 1
+			owner = {
+				add_stability = 1
+			}
 		}
 
 		conditional_modifier = {
@@ -7894,7 +7968,9 @@ wieliczka_salt_mine = {
 
 
 		on_upgraded = {
-			add_stability = 1
+			owner = {
+				add_stability = 1
+			}
 		}
 
 		conditional_modifier = {
@@ -7939,7 +8015,9 @@ wieliczka_salt_mine = {
 
 
 		on_upgraded = {
-			add_stability = 3
+			owner = {
+				add_stability = 3
+			}
 		}
 
 		conditional_modifier = {
@@ -9342,7 +9420,9 @@ auschwitz= {
 
 
 		on_upgraded = {
-			add_prestige = -50
+			owner = {
+				add_prestige = -50
+			}
 			add_devastation = 20
 
 		}
@@ -9377,7 +9457,9 @@ auschwitz= {
 
 
 		on_upgraded = {
-			add_prestige = -100
+			owner = {
+				add_prestige = -100
+			}
 			add_devastation = 50
 		}
 	}
@@ -9411,7 +9493,9 @@ auschwitz= {
 
 
 		on_upgraded = {	
-			add_prestige = -200
+			owner = {
+				add_prestige = -200
+			}
 			add_devastation = 100
 			
 		}
@@ -10169,7 +10253,9 @@ kalwaria_zebrzydowska_sanctuary = {
 			missionary_maintenance_cost = -0.2
 		}
 		on_upgraded = {
-			add_manpower = 69
+			owner = {
+				add_manpower = 69
+			}
 		}
 	}
 }
@@ -10274,7 +10360,9 @@ papiez_jadl_tutaj_kremowki = {
 			extra_manpower_at_religious_war = 1000000000
 		}
 		on_upgraded = {
-			add_manpower = 420
+			owner = {
+				add_manpower = 420
+			}
 			change_trade_goods = gu_confectionery
 		}
 	}
@@ -10527,7 +10615,9 @@ royal_castle = {
 			imperial_mandate = 0.01
 		}
 		on_upgraded = {
-			add_prestige = 20
+			owner = {
+				add_prestige = 20
+			}
 
 		}
 	}
@@ -10550,7 +10640,9 @@ royal_castle = {
 			imperial_mandate = 0.02
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 			
 		}
 	}
@@ -10574,7 +10666,9 @@ royal_castle = {
 			imperial_mandate = 0.03
 		}
 		on_upgraded = {
-			add_prestige = 100
+			owner = {
+				add_prestige = 100
+			}
 			
 		}
 	}
@@ -12889,11 +12983,10 @@ stalowa_wola = {
 		}
 		area_modifier = {
 		}
-		country_modifiers = {	
+		country_modifiers = {
+			artillery_levels_available_vs_fort = 1
 		}
 		on_upgraded = {
-			artillery = 10
-			artillery_levels_available_vs_fort = 1
 		}
 	}
 
@@ -14560,7 +14653,9 @@ dluga_street = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 	tier_2 = {
@@ -14581,7 +14676,9 @@ dluga_street = {
 			liberty_desire_from_subject_development = -0.05
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 
@@ -14603,7 +14700,9 @@ dluga_street = {
 			liberty_desire_from_subject_development = -0.05
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -14961,7 +15060,9 @@ malbork_castle = {
 			garrison_size = 0.1
 		}
 		on_upgraded = {
-			add_prestige_or_monarch_power = 50			
+			owner = {
+				add_prestige_or_monarch_power = 50			
+			}
 		}
 	}
 
@@ -14987,7 +15088,9 @@ malbork_castle = {
 		}
 		on_upgraded = {
 			change_trade_goods = gu_tourists
-			add_prestige_or_monarch_power = 50
+			owner = {
+				add_prestige_or_monarch_power = 50
+			}
 		}
 	}
 
@@ -15013,7 +15116,9 @@ malbork_castle = {
 		}
 		on_upgraded = {
 			change_trade_goods = gu_tourists
-			add_prestige_or_monarch_power = 75
+			owner = {
+				add_prestige_or_monarch_power = 75
+			}
 		}
 	}
 }
@@ -15411,7 +15516,9 @@ slowinski_sand_dunes = {
 
 
 		on_upgraded = {	
-			add_prestige_or_monarch_power = 100
+			owner = {
+				add_prestige_or_monarch_power = 100
+			}
 		}
 	}
 }
@@ -15532,7 +15639,9 @@ gniew_castle = {
 		}
 		on_upgraded = {
 			change_trade_goods = gu_tourists
-			add_prestige_or_monarch_power = 25
+			owner = {
+				add_prestige_or_monarch_power = 25
+			}
 		}
 	}
 }
@@ -16787,7 +16896,9 @@ jasna_gora= {
 
 
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 
@@ -16819,7 +16930,9 @@ jasna_gora= {
 
 
 		on_upgraded = {
-			add_prestige = 75
+			owner = {
+				add_prestige = 75
+			}
 		}
 	}
 
@@ -16851,7 +16964,9 @@ jasna_gora= {
 
 
 		on_upgraded = {	
-			add_prestige = 100
+			owner = {
+				add_prestige = 100
+			}
 		}
 	}
 }
@@ -18820,7 +18935,9 @@ lidzbarg_castle = {
 			garrison_size = 0.1
 		}
 		on_upgraded = {
-			add_prestige_or_monarch_power = 50			
+			owner = {
+				add_prestige_or_monarch_power = 50			
+			}
 		}
 	}
 
@@ -18846,7 +18963,9 @@ lidzbarg_castle = {
 		}
 		on_upgraded = {
 			change_trade_goods = gu_tourists
-			add_prestige_or_monarch_power = 50
+			owner = {
+				add_prestige_or_monarch_power = 50
+			}
 		}
 	}
 
@@ -18872,7 +18991,9 @@ lidzbarg_castle = {
 		}
 		on_upgraded = {
 			change_trade_goods = gu_tourists
-			add_prestige_or_monarch_power = 75
+			owner = {
+				add_prestige_or_monarch_power = 75
+			}
 		}
 	}
 }
@@ -19739,7 +19860,9 @@ konin_powerplant = {
 
 		on_upgraded = {
 			change_trade_goods = gu_coal
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 			add_devastation = 40
 		}
 	}
@@ -19769,7 +19892,9 @@ konin_powerplant = {
 			global_tax_income = 30
 		}
 		on_upgraded = {			
-			add_prestige = 100
+			owner = {
+				add_prestige = 100
+			}
 			add_devastation = 60
 
 		}
@@ -20267,7 +20392,9 @@ poznan_market_square = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_prestige = 50
+			owner = {
+				add_prestige = 50
+			}
 		}
 	}
 }
@@ -21668,15 +21795,17 @@ cwiartki_3_4 = {
 			discovered_relations_impact = -0.25
 		}
 		on_upgraded = {
-			if = {
-				limit = {
-					gu_beer = 1
-				}
-				every_owned_province = {
+			owner = {
+				if = {
 					limit = {
-						trade_goods = gu_beer
+						gu_beer = 1
 					}
-					add_base_production = 4
+					every_owned_province = {
+						limit = {
+							trade_goods = gu_beer
+						}
+						add_base_production = 4
+					}
 				}
 			}
 			change_price = {
@@ -21701,15 +21830,17 @@ cwiartki_3_4 = {
 			discovered_relations_impact = -0.4
 		}
 		on_upgraded = {
-			if = {
-				limit = {
-					owner = { gu_vodka = 1 }
-				}
-				every_owned_province = {
+			owner = {
+				if = {
 					limit = {
-						trade_goods = gu_vodka
+						gu_vodka = 1
 					}
-					add_base_production = 4
+					every_owned_province = {
+						limit = {
+							trade_goods = gu_vodka
+						}
+						add_base_production = 4
+					}
 				}
 			}
 			change_price = {

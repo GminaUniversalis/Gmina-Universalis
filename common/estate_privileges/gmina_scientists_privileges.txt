@@ -374,7 +374,9 @@ estate_scientists_panstwowa_akademia_nauk = {
 		
 	}
 
-	on_granted_province = {
+	# Country-scope hooks: capital_scope is a country-scope target, and the academy is a
+	# single national institution, so it must be granted once rather than per estate province.
+	on_granted = {
 		capital_scope = {
 			add_province_modifier = {
 				name = panstwowa_akademia_nauk
@@ -382,12 +384,12 @@ estate_scientists_panstwowa_akademia_nauk = {
 			}
 		}
 	}
-	on_revoked_province = {
+	on_revoked = {
 		capital_scope = {
 			remove_province_modifier = panstwowa_akademia_nauk
 		}
 	}
-	on_invalid_province = {
+	on_invalid = {
 		capital_scope = {
 			remove_province_modifier = panstwowa_akademia_nauk
 		}

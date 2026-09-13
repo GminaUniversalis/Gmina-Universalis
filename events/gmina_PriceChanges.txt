@@ -631,14 +631,13 @@ country_event = {
 	trigger = {
 		current_age = age_of_reformation
 		
+		# trade_goods is a province trigger, so each good is checked through any_owned_province.
 		calc_true_if = {
-			OR = {
-				trade_goods = gu_coal
-				trade_goods = gu_sulfur
-				trade_goods = iron
-				trade_goods = copper
-				trade_goods = naval_supplies
-			}
+			any_owned_province = { trade_goods = gu_coal }
+			any_owned_province = { trade_goods = gu_sulfur }
+			any_owned_province = { trade_goods = iron }
+			any_owned_province = { trade_goods = copper }
+			any_owned_province = { trade_goods = naval_supplies }
 			amount = 4
 		}
 

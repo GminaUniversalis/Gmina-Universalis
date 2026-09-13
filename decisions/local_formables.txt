@@ -326,11 +326,7 @@ country_decisions = {
 				}
 			}
 
-			AND = {
-				province_id = 2231
-				is_core = ROOT
-				owned_by = ROOT
-			}
+			owns_core_province = 2231
 
 		}
 		provinces_to_highlight = {
