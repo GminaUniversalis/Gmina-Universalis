@@ -472,9 +472,6 @@ age_of_absolutism = {
 	
 	
 		ab_french_absolutism = {
-			allow = {
-				#tag = FRA
-			}
 			modifier = {
 				max_absolutism_effect = 0.3
 			}
@@ -483,9 +480,6 @@ age_of_absolutism = {
 			}
 		}
 		ab_dutch_trade = {
-			allow = {
-				#tag = NED
-			}
 			modifier = {
 				trade_steering = 0.33
 			}
@@ -494,12 +488,6 @@ age_of_absolutism = {
 			}
 		}	
 		ab_sweden_manpower = {
-			allow = {
-				OR = {
-					#tag = SWE
-					#tag = SCA
-				}
-			}
 			modifier = {
 				manpower_recovery_speed = 0.35
 			}
@@ -509,18 +497,10 @@ age_of_absolutism = {
 		}
 
 		ab_manchu_banner = {
-			allow = {
-				OR = {
-					#tag = MCH
-					#tag = QNG
-				}
-			}
 			effect = {
 				if = {
 					limit = {
-						NOT = { primary_culture = manchu }
-						NOT = { primary_culture = manchu_new }
-						NOT = { has_government_attribute = allow_banners }
+						always = yes
 					}
 					custom_tooltip = ab_manchu_banner_tt
 				}
@@ -673,12 +653,6 @@ age_of_revolutions = {
 			}
 		}
 		ab_pru_military = {
-			allow = {
-				OR = {
-					#tag = PRU
-					#tag = GER
-				}
-			}
 			modifier = {
 				fire_damage_received = -0.2
 			}
@@ -687,12 +661,6 @@ age_of_revolutions = {
 			}
 		}
 		ab_gbr_fleet = {
-			allow = {
-				OR = {
-					#tag = AVE
-					#tag = GBR
-				}
-			}
 			modifier = {
 				max_admiral_fire = 1
 			}
@@ -712,12 +680,6 @@ age_of_revolutions = {
 			}
 		}
 		ab_austrian_morale = {
-			allow = {
-				OR = {
-					#tag = HAB
-					#tag = HLR
-				}
-			}
 			modifier = {
 				morale_damage_received = -0.2
 			}
