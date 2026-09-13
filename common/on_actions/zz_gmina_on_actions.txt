@@ -227,7 +227,7 @@ on_revoke_estate_land = {
 			}
 		}
 		spawn_rebels = {
-			type = farmer_rebels
+			type = farmers_rebels
 			size = 1
 		}
 		province_event = { id = gmina_estates.1 }
