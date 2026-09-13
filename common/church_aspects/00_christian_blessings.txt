@@ -134,7 +134,7 @@ aposthole_thomas = {
 	}
 }
 
-aposthole_james = {
+aposthole_james_the_less = {
 	is_blessing = yes
 
 	modifier = {
