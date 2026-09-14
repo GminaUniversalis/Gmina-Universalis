@@ -1678,7 +1678,7 @@ province;red;green;blue;x;x
 1677;44;253;253;Drawa;x
 1678;45;203;203;Obra;x
 1679;46;203;253;Wisloka;x
-1680;47;223;253;Prosna;x
+1680;47;223;253;Unused 1680;x
 1681;48;253;253;Wislok;x
 1682;49;203;203;Raba;x
 1683;50;203;253;Rega;x
@@ -3174,7 +3174,7 @@ province;red;green;blue;x;x
 3288;219;32;98;Litwa;
 3289;219;32;99;Ukraina Zachod;
 3290;219;32;100;Luksemburg;
-3291;219;32;101;Bronowice;
+3291;219;32;101;Unused 3291;
 3298;219;32;108;Bydgoskie przedmiescie;
 3313;219;32;123;Ladushkin;
 3314;219;32;124;Bielawy;
@@ -3363,14 +3363,14 @@ province;red;green;blue;x;x
 4129;53;164;53;City of Sejny;x
 4130;222;47;96;Borne Sulinowo;x
 4131;227;54;54;Dabrowka;x
-4132;70;229;231;Mweru;x
-4133;88;239;241;Kivu;x
-4134;103;216;217;Rutanzige;x
+4132;70;229;231;Unused 4132;x
+4133;88;239;241;Unused 4133;x
+4134;103;216;217;Unused 4134;x
 4135;139;230;231;Male Dabie;x
-4137;79;222;224;Alakol;x
-4138;40;196;198;Issyk-Kul;x
-4139;54;54;236;OulujÃ¤rvi;x
-4140;34;34;210;Saimaa;x
+4137;79;222;224;Unused 4137;x
+4138;40;196;198;Unused 4138;x
+4139;54;54;236;Unused 4139;x
+4140;34;34;210;Unused 4140;x
 4141;207;42;19;Przedecz;x
 4142;198;219;57;Skorcz;x
 4143;127;186;98;Nowy Staw;x
@@ -3438,7 +3438,7 @@ province;red;green;blue;x;x
 4230;158;186;44;Zareby Koscielne;x
 4231;231;184;20;Ostrow Mazowiecka;x
 4232;145;81;35;Zuromin;x
-4235;144;225;232;Vistula Lagoon;x
+4235;144;225;232;Unused 4235;x
 4236;255;0;0;Imielin;x
 4238;37;208;93;Radzyn Chelminski;x
 4239;239;10;10;Psary;x
