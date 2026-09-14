@@ -10357,7 +10357,7 @@ papiez_jadl_tutaj_kremowki = {
 		}
 		country_modifiers = {
 			warscore_cost_vs_other_religion = -0.1
-			extra_manpower_at_religious_war = 1000000000
+			extra_manpower_at_religious_war = yes
 		}
 		on_upgraded = {
 			owner = {
@@ -15061,7 +15061,7 @@ malbork_castle = {
 		}
 		on_upgraded = {
 			owner = {
-				add_prestige_or_monarch_power = 50			
+				add_prestige_or_monarch_power = { amount = 50 }
 			}
 		}
 	}
@@ -15089,7 +15089,7 @@ malbork_castle = {
 		on_upgraded = {
 			change_trade_goods = gu_tourists
 			owner = {
-				add_prestige_or_monarch_power = 50
+				add_prestige_or_monarch_power = { amount = 50 }
 			}
 		}
 	}
@@ -15117,7 +15117,7 @@ malbork_castle = {
 		on_upgraded = {
 			change_trade_goods = gu_tourists
 			owner = {
-				add_prestige_or_monarch_power = 75
+				add_prestige_or_monarch_power = { amount = 75 }
 			}
 		}
 	}
@@ -15517,7 +15517,7 @@ slowinski_sand_dunes = {
 
 		on_upgraded = {	
 			owner = {
-				add_prestige_or_monarch_power = 100
+				add_prestige_or_monarch_power = { amount = 100 }
 			}
 		}
 	}
@@ -15640,7 +15640,7 @@ gniew_castle = {
 		on_upgraded = {
 			change_trade_goods = gu_tourists
 			owner = {
-				add_prestige_or_monarch_power = 25
+				add_prestige_or_monarch_power = { amount = 25 }
 			}
 		}
 	}
@@ -18936,7 +18936,7 @@ lidzbarg_castle = {
 		}
 		on_upgraded = {
 			owner = {
-				add_prestige_or_monarch_power = 50			
+				add_prestige_or_monarch_power = { amount = 50 }
 			}
 		}
 	}
@@ -18964,7 +18964,7 @@ lidzbarg_castle = {
 		on_upgraded = {
 			change_trade_goods = gu_tourists
 			owner = {
-				add_prestige_or_monarch_power = 50
+				add_prestige_or_monarch_power = { amount = 50 }
 			}
 		}
 	}
@@ -18992,7 +18992,7 @@ lidzbarg_castle = {
 		on_upgraded = {
 			change_trade_goods = gu_tourists
 			owner = {
-				add_prestige_or_monarch_power = 75
+				add_prestige_or_monarch_power = { amount = 75 }
 			}
 		}
 	}
